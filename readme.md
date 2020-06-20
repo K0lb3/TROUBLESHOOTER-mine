@@ -7,6 +7,8 @@ While it's possible to bypass the protection, out of respect for the developers,
 ## Scripts
 
 Python 3.5+ is required to run the scripts.
+You have to copy both scripts and the ``index.html`` to the main dir of the game and execute the scripts there.
+(So in ``\TROUBLESHOOTER Abandoned Children\`` and not in any of its subfolders.)
 
 * extract_files.py - uses index.html to restore the data structure
 * extract_imagesets.py - splits the imagesets into its single images
