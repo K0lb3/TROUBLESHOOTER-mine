@@ -7,14 +7,32 @@ While it's possible to bypass the protection, out of respect for the developers,
 ## Scripts
 
 Python 3.5+ is required to run the scripts.
-You have to copy both scripts and the ``index.xml`` to the main dir of the game and execute the scripts there.
-(So in ``\TROUBLESHOOTER Abandoned Children\`` and not in any of its subfolders.)
 
-* extract_files.py - uses index.html to restore the data structure
-* extract_imagesets.py - splits the imagesets into its single images
+You have to clone/copy this repo into the Troubleshooter main folder
+e.g. ``Steam\steamapps\common\Troubleshooter\TROUBLESHOOTER-mine``
+or adjust the ROOT folder in ``path.py``.
+
+* extract_files.py - uses index.xml to restore the data structure
+* extract_imagesets.py - splits the extracted imagesets into its single images
+* index_dumper.py - used to extract the index.xml from the game
 
 ## index.xml
 
-The file ``index.xml`` is used by the game to figure out the location of the files in the packet structure and how to load them.
-The original file is encrypted (``Package\index``) but it's quite easy to get the decrypted version,
-so I will share it here. ~~And well, without it it wouldn't be possible to restore the original data structure. ~~
+This file lists all game assets with their original path, package path and virtual path (in zips).
+It's the bridge that is neceassry to restore the original data structure from the package structure every normal user has.
+
+The original index.xml is encrypted, but you can use ``index_dumper.py`` to dump the decrypted version from the game itself.
+This can be done with the following steps:
+
+1. start index_dumper.py
+2. use mode 0 - ``memory size log``
+3. enter 100000000 as break size
+4. open Process Monitor
+5. start the game and exit it once it reachs the start screen
+6. in Process Monitor, look for the exact time when the game opend package/index
+7. open log.txt and search for that time - copy the memory size used at that time (static for some entries)
+8. start index_dumper.py again
+9. use mode 1 - ``index.xml extraction``
+10. enter the copied memory size as break size
+11. run the game again
+12. now you should have the latest index.xml in the folder

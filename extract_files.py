@@ -2,14 +2,11 @@ import os, shutil, zipfile
 from PIL import Image
 import xml.etree.ElementTree as ET
 
-# set dirs
-ROOT = os.path.dirname(os.path.realpath(__file__))
-PACK = os.path.join(ROOT, "Package")
-DATA = os.path.join(ROOT, "Data")
+from path import LOCAL, PACK, DATA
 
 # copy or extract files
 def main():
-    tree = ET.parse(os.path.join(ROOT, "index.xml"))
+    tree = ET.parse(os.path.join(LOCAL, "index.xml"))
     for item in tree.getroot():
         src = os.path.join(PACK, *item.get("pack").split("/"))
         dst = os.path.join(DATA, *item.get("original").split("\\"))
@@ -18,23 +15,33 @@ def main():
             continue
         os.makedirs(os.path.dirname(dst), exist_ok=True)
 
-        method = item.get("method")
-        if method == "raw":
-            shutil.copy(src, dst)
-        elif method == "zip":
-            try:
-                z = zipfile.ZipFile(src)
-                with open(dst, "wb") as f:
-                    f.write(z.open(item.get("virtual")).read())
-            except zipfile.BadZipFile:
-                continue
-        elif method == "encrypted_zip":
-            # create dummy file
-            dst += "(encrypted)"
-            with open(dst, "wb") as f:
-                pass
-        print(dst)
+        PROCESS[item.get("method")](src, dst, item)
 
+
+def process_raw(src, dst, item):
+    shutil.copy(src, dst)
+
+
+def process_zip(src, dst, item):
+    try:
+        z = zipfile.ZipFile(src)
+        with open(dst, "wb") as f:
+            f.write(z.open(item.get("virtual")).read())
+    except zipfile.BadZipFile:
+        return
+
+
+def process_encrypted_zip(src, dst, item):
+    # create dummy file
+    with open(dst, "wb") as f:
+        pass
+
+
+PROCESS = {
+    "raw": process_raw,
+    "zip": process_zip,
+    "encrypted_zip": process_encrypted_zip,
+}
 
 if __name__ == "__main__":
     main()

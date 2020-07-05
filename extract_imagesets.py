@@ -2,7 +2,7 @@ import os
 from PIL import Image
 import xml.etree.ElementTree as ET
 
-from extract_files import DATA
+from path import DATA
 
 
 def handle_imageset(xml, delete_src=True):
@@ -15,8 +15,9 @@ def handle_imageset(xml, delete_src=True):
     # get img
     img_path = os.path.join(folder, root.get("imagefile"))
     if not os.path.exists(img_path):
-        print("File not found:", img_path)
+        print("Image not found:", img_path)
         return
+    print("Unpack", img_path)
     img = Image.open(img_path)
 
     # set dst path
