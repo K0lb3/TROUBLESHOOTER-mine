@@ -1,0 +1,1197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="WordCollection">
+	<class name="Ability" Text="어빌리티"/>
+	<class name="Ability_Menu" Text="[!Menu]어빌리티"/>
+	<class name="Ability_Save" Text="[!Menu]편성 저장"/>
+	<class name="Ability_Slot" Text="어빌리티 특성 슬롯"/>
+	<class name="AbilityChange" Text="어빌리티 변경"/>
+	<class name="AbilityChange_Menu" Text="[!Menu]어빌리티 변경"/>
+	<class name="AbilityMastery" Text="어빌리티 특성"/>
+	<class name="AbilityMastery_Menu" Text="[!Menu]어빌리티 특성"/>
+	<class name="AbilityPreset" Text="프리셋 설정"/>
+	<class name="AbilitySlotCount_Menu" Text="[!Menu]어빌리티 슬롯"/>
+	<class name="AbilitySubEffect" Text="추가 효과"/>
+	<class name="AbilityUseCount" Text="사용 가능 횟수"/>
+	<class name="AbilityUseGuide_Reference1" Text="공격 가능 대상"/>
+	<class name="AbilityUseGuide_Reference2" Text="공격 정보창"/>
+	<class name="AbilityUseGuide_Reference3" Text="코스트 정보창"/>
+	<class name="AbilityUseGuide_Reference4" Text="어빌리티 창"/>
+	<class name="Accept" Text="수락"/>
+	<class name="Accesable" Text="접근 가능한"/>
+	<class name="AccesableTroubles" Text="접근 가능한 사건 정보"/>
+	<class name="Accessory" Text="악세사리"/>
+	<class name="Accessory_Menu" Text="[!Menu]악세사리"/>
+	<class name="AcquireFromEnemy" Text="[!Menu]재료 획득 가능한 적 목록"/>
+	<class name="AcquireFromMission" Text="[!Menu]해당 적 출현 장소"/>
+	<class name="AcquireMastery" Text="특성 획득"/>
+	<class name="AcquireMastery_Menu" Text="[!Menu]특성 획득"/>
+	<class name="AcquireReward" Text="보상 수령"/>
+	<class name="ActivityReport" Text="활동 보고서"/>
+	<class name="ActivityReport_Activity" Text="현재 총 사건 해결 수"/>
+	<class name="ActivityReport_Install" Text="소형 책상 설치하기"/>
+	<class name="ActivityReport_Menu" Text="[!Menu]활동 보고서"/>
+	<class name="ActivityReportRewardWaiting" Text="보상 내역 계산 중..."/>
+	<class name="ActivityReprotAreaReward" Text="지역 주민 사례금"/>
+	<class name="ActivityReprotCurrentReward" Text="사건 해결 보상금"/>
+	<class name="ActivityReprotGradeReward" Text="트러블슈터 활동 지원금"/>
+	<class name="AddExp_Heal" Text="회복"/>
+	<class name="AddExp_MonsterKill" Text="적 처치"/>
+	<class name="AddExp_MonsterOverKill" Text="오버 킬"/>
+	<class name="AddExp_MonsterPerfectKill" Text="일격필살"/>
+	<class name="AddExp_PartyMonsterKill" Text="팀 분배"/>
+	<class name="AdditionalCP" Text="추가 소모 의욕"/>
+	<class name="AdditionalEffect" Text="추가 효과"/>
+	<class name="AddMastery" Text="추가 연구 재료"/>
+	<class name="AddModule" Text="추가 재료 모듈"/>
+	<class name="AddOrEdit" Text="추가 및 편집"/>
+	<class name="Addressee" Text="받는 사람"/>
+	<class name="AddTeamMember" Text="편성 추가"/>
+	<class name="AddWait" Text="턴 대기 시간"/>
+	<class name="AIModule_Slot" Text="인공지능 모듈 슬롯"/>
+	<class name="AlbusRoom" Text="알버스의 오피스텔"/>
+	<class name="AlbusRoom_Company" Text="짐 정리하기"/>
+	<class name="AlbusRoom_End" Text="떠나기"/>
+	<class name="AlbusRoom_Inventory" Text="찬장 정리하기"/>
+	<class name="AlbusRoom_Mail" Text="이메일 확인하기"/>
+	<class name="AlbusRoom_MasteryInventory" Text="책장 정리하기"/>
+	<class name="AlbusRoom_Quest" Text="탁자 정리하기"/>
+	<class name="AlbusRoom_Roster" Text="파일 정리하기"/>
+	<class name="Alignment" Text="성향"/>
+	<class name="AliveRoster" Text="생환자"/>
+	<class name="All" Text="전체"/>
+	<class name="AllowDivision" Text="관할 구역 관리"/>
+	<class name="AllowDivisionAccept" Text="관할 구역 신청"/>
+	<class name="AllowDivisionArea" Text="관할 구역"/>
+	<class name="AllowDivisionCost" Text="관할 확장 비용"/>
+	<class name="AllowDivisionList" Text="관할 구역 목록"/>
+	<class name="AllowDivisionMission" Text="관할 구역 사건 목록"/>
+	<class name="AllowDivisionPolicy" Text="관할 구역 지원 정책"/>
+	<class name="AllowDivisionReward" Text="관할 구역 지원금"/>
+	<class name="AllSelect" Text="모두 선택하기"/>
+	<class name="Ally" Text="아군"/>
+	<class name="AlreadySummoned" Text="소환 중"/>
+	<class name="Amount" Text="수량"/>
+	<class name="AngerKillCivil" Text="적 상태: 화남"/>
+	<class name="ApplyCondition" Text="관할 구역 신청 조건"/>
+	<class name="ApplyDivisionClose_Menu" Text="[!Menu]관할 구역 취소"/>
+	<class name="ApplyDivisionCount" Text="관할 구역 개수"/>
+	<class name="ApplyDivisionOpen_Menu" Text="[!Menu]관할 구역 신청"/>
+	<class name="ApplyVill" Text="신청 비용"/>
+	<class name="AquiredCount" Text="개수"/>
+	<class name="AquiredMasteryCount" Text="보유한 특성 수"/>
+	<class name="Area_Center" Text="중앙 지구"/>
+	<class name="Area_North" Text="북부 지구"/>
+	<class name="Area_Outside" Text="외곽 지구"/>
+	<class name="Area_South" Text="남부 지구"/>
+	<class name="AreaBonus" Text="관할 평판 지원금"/>
+	<class name="Aseet" Text="자산"/>
+	<class name="Aseet_Menu" Text="[!Menu]자산"/>
+	<class name="AskRumor" Text="잡담하기"/>
+	<class name="AssistUnits" Text="지원 병력"/>
+	<class name="Attachment" Text="첨부 물품"/>
+	<class name="Attack_Slot" Text="공격 특성 슬롯"/>
+	<class name="AttackMastery_Menu" Text="[!Menu]공격 특성"/>
+	<class name="AttackRadius" Text="공격 범위"/>
+	<class name="AttackRange" Text="사거리"/>
+	<class name="AttackTarget" Text="목표 대상"/>
+	<class name="AttackType" Text="공격 형태"/>
+	<class name="Audio" Text="오디오"/>
+	<class name="Augment" Text="강화"/>
+	<class name="AvailableMission" Text="현재 진행 가능한 임무"/>
+	<class name="Back" Text="뒤로"/>
+	<class name="Bar_JukeBox" Text="쥬크박스"/>
+	<class name="Bar_Leave" Text="외출하기"/>
+	<class name="Base" Text="거점"/>
+	<class name="BaseActivityReward" Text="기본 활동 지원금"/>
+	<class name="BaseStatus" Text="기본 능력"/>
+	<class name="BasicInfo" Text="기본 정보"/>
+	<class name="BasicMastery_Menu" Text="[!Menu]기본 특성"/>
+	<class name="BasicMastery_Menu2" Text="[!Menu2]기본 특성"/>
+	<class name="BasicMastery_Menu3" Text="[!Menu]개인 특성 변경"/>
+	<class name="Basket" Text="장바구니"/>
+	<class name="Battleduration" Text="임무 수행 시간"/>
+	<class name="BattleGuideEnemySizeBig" Text="적 다수"/>
+	<class name="BattleGuideEnemySizeSmall" Text="적 소수"/>
+	<class name="BattleGuideSignal" Text="인기척 감지"/>
+	<class name="BattleGuideTimeElapsed" Text="인기척 감지 후 흐른 시간: [colour='FFFFFFFF']%d[colour='FF00C8FF']"/>
+	<class name="BattleInfoMode" Text="전투 미리 보기"/>
+	<class name="BattleState_Battle" Text="교전 중"/>
+	<class name="BattleStatus" Text="전투 능력"/>
+	<class name="Beast_Menu" Text="[!Menu]야수"/>
+	<class name="BeastEscaped" Text="겁에 질림"/>
+	<class name="BeastEvolution_Menu" Text="야수 진화"/>
+	<class name="BeastEvolution_NeedItem" Text="필요 아이템"/>
+	<class name="BeastEvolutionStage_Menu" Text="[!Menu]성장 단계"/>
+	<class name="BeastList" Text="야수 목록"/>
+	<class name="BeastManager" Text="야수 관리하기"/>
+	<class name="BeastManager_CageBeasts_Accept" Text="야수 데려오기"/>
+	<class name="BeastManager_CageBeasts_Title" Text="야수 보관 목록"/>
+	<class name="BeastManager_MyBeasts_Accept" Text="야수 맡기기"/>
+	<class name="BeastManager_MyBeasts_Title" Text="야수 목록"/>
+	<class name="BeastManager_SwapAccept" Text="야수 교환"/>
+	<class name="BeastRemove_Menu" Text="야수 포기"/>
+	<class name="BeastRename_Menu" Text="이름 변경"/>
+	<class name="BeastStartMasterySelect" Text="선택 중"/>
+	<class name="BeastTamingTime_Menu" Text="[!Menu]길들이는 시간"/>
+	<class name="BeastType_Menu" Text="야수 종류"/>
+	<class name="Bill" Text="주문서"/>
+	<class name="Birth" Text="출생"/>
+	<class name="BlackoutFlashed" Text="연쇄 효과: 눈부심"/>
+	<class name="Block" Text="방어"/>
+	<class name="Block_Enemy" Text="적 방어율"/>
+	<class name="Block_Enemy_Menu" Text="[!Menu]적 방어율"/>
+	<class name="Born" Text="출신"/>
+	<class name="Buff" Text="상태 효과"/>
+	<class name="BuffAdded" Text="상태 효과"/>
+	<class name="BuffGiver" Text="시전자"/>
+	<class name="BuffList" Text="현재 상태 정보"/>
+	<class name="BuffReferenceTarget" Text="참조 대상"/>
+	<class name="Buy" Text="구입"/>
+	<class name="Camera" Text="카메라 설정"/>
+	<class name="CameraInfo" Text="카메라 상태"/>
+	<class name="CameraRotate_Left" Text="카메라 왼쪽 회전"/>
+	<class name="CameraRotate_Right" Text="카메라 오른쪽 회전"/>
+	<class name="CameraView_Aiming" Text="[!Menu]조준"/>
+	<class name="CameraView_Direction" Text="카메라 방향"/>
+	<class name="CameraView_Direction_E" Text="동쪽"/>
+	<class name="CameraView_Direction_N" Text="북쪽"/>
+	<class name="CameraView_Direction_NE" Text="북동쪽"/>
+	<class name="CameraView_Direction_NW" Text="북서쪽"/>
+	<class name="CameraView_Direction_S" Text="남쪽"/>
+	<class name="CameraView_Direction_SE" Text="동남쪽"/>
+	<class name="CameraView_Direction_SW" Text="남서쪽"/>
+	<class name="CameraView_Direction_W" Text="서쪽"/>
+	<class name="CameraView_HawkEye" Text="[!Menu]전략"/>
+	<class name="CameraView_Height" Text="카메라 높이"/>
+	<class name="CameraView_Normal" Text="[!Menu]일반"/>
+	<class name="CameraView_Pitch" Text="카메라 각도"/>
+	<class name="CameraView_Zoom" Text="카메라 확대/축소"/>
+	<class name="CamHeight_WheelDown" Text="카메라 높이 내리기"/>
+	<class name="CamHeight_WheelUp" Text="카메라 높이 올리기"/>
+	<class name="Cancel" Text="취소"/>
+	<class name="Capacity" Text="소지 개수"/>
+	<class name="CapacityMastery" Text="보유 개수"/>
+	<class name="CastDelay" Text="시전 지연"/>
+	<class name="CastDelay_Menu" Text="[!Menu]시전 지연"/>
+	<class name="CastDelayTime" Text="시전 지연 시간"/>
+	<class name="CastTime" Text="시전 시간"/>
+	<class name="Category" Text="대분류"/>
+	<class name="ChainEvent_BlackoutFlashed" Text="눈부심"/>
+	<class name="ChainEvent_BuffGroup" Text="연환"/>
+	<class name="ChainEvent_Engaging" Text="휘말림"/>
+	<class name="ChainEvent_Faint" Text="혼절"/>
+	<class name="ChainEvent_Fracture" Text="균열"/>
+	<class name="ChainEvent_KnockbackStunOccured" Text="충돌"/>
+	<class name="ChainEvent_MudCaked" Text="진흙범벅"/>
+	<class name="ChainEvent_Slip" Text="미끄러짐"/>
+	<class name="ChangeMastery" Text="특성 변경"/>
+	<class name="CharacterExp" Text="캐릭터 경험치"/>
+	<class name="CharacterInformation" Text="캐릭터 정보"/>
+	<class name="CharacterLevel" Text="캐릭터 레벨"/>
+	<class name="CharacterMastery" Text="캐릭터 특성"/>
+	<class name="CharacterMasteryChange" Text="캐릭터 특성 관리"/>
+	<class name="CharacterSelection" Text="캐릭터 선택"/>
+	<class name="CharacterShow" Text="[!menu]캐릭터 보기"/>
+	<class name="Chat" Text="대화창"/>
+	<class name="ChatTabConfig" Text="대화 탭 설정"/>
+	<class name="ChatTabConfig_Menu" Text="[!Menu]대화 탭 설정"/>
+	<class name="ChatTabDelete" Text="대화 탭 삭제"/>
+	<class name="ChatTabReset" Text="대화 탭 초기화"/>
+	<class name="CheckFire" Text="[!피격메시지]견제"/>
+	<class name="CheckPointUpdated" Text="체크포인트"/>
+	<class name="Class" Text="클래스"/>
+	<class name="Class_Menu" Text="[!Menu]클래스"/>
+	<class name="ClassAchievableMastery" Text="클래스 특성 연구 가능 보상"/>
+	<class name="ClassBattleAdavantage_Main" Text="현재 클래스 경험으로 인한 전투 영향력"/>
+	<class name="ClassBattleAdavantage_Sub" Text="이전 클래스 경험으로 인한 전투 영향력"/>
+	<class name="ClassChange" Text="클래스 변경"/>
+	<class name="ClassChange_Menu" Text="[!Menu]클래스 변경"/>
+	<class name="ClassLevel_Menu" Text="[!Menu]클래스 레벨"/>
+	<class name="ClassLevelUpReward" Text="클래스 레벨업 보상"/>
+	<class name="ClassMastery_Menu" Text="[!Menu]클래스 특성"/>
+	<class name="ClassMasteryCategory_Menu" Text="[!Menu]사용 가능한 클래스 특성"/>
+	<class name="ClassRequireCondition_Menu" Text="[!Menu]클래스 필요 조건"/>
+	<class name="ClassRequireItem_Menu" Text="[!Menu]클래스 변경 필요 아이템"/>
+	<class name="ClassUsable_Menu" Text="[!Menu]변경 가능한 클래스"/>
+	<class name="Client" Text="의뢰인"/>
+	<class name="ClientOrganization" Text="의뢰 기관"/>
+	<class name="CloakingDetected" Text="발각"/>
+	<class name="Close" Text="닫기"/>
+	<class name="Collected" Text="획득"/>
+	<class name="CommandCenter" Text="관제실"/>
+	<class name="Company" Text="회사"/>
+	<class name="CompanyDelete" Text="회사 삭제"/>
+	<class name="CompanyDownload" Text="오프라인 동기화"/>
+	<class name="CompanyDownloadCool" Text="동기화 재활성화 : %d 시간 후"/>
+	<class name="CompanyEXP" Text="회사 경험치"/>
+	<class name="CompanyInfo_Menu" Text="[!Menu]회사 정보"/>
+	<class name="CompanyInfoDetail_CreateTime" Text="최초 생성 시간"/>
+	<class name="CompanyInfoDetail_LastMission" Text="마지막 진행한 시나리오"/>
+	<class name="CompanyInfoDetail_LastPlayTime" Text="마지막 플레이 시간"/>
+	<class name="CompanyLevel" Text="회사 레벨"/>
+	<class name="CompanyLocation" Text="회사 주소"/>
+	<class name="CompanyMastery" Text="회사 특성"/>
+	<class name="CompanyMastery_Menu" Text="[!Menu]회사 특성"/>
+	<class name="CompanyMasteryList" Text="회사 특성 목록"/>
+	<class name="CompanyName" Text="회사명"/>
+	<class name="CompanyName_Change" Text="회사명 변경"/>
+	<class name="CompanyName_Menu" Text="[!Menu]회사 이름"/>
+	<class name="CompanyNameChange_Cost" Text="변경 비용"/>
+	<class name="CompanyRank_Menu" Text="[!Menu]회사 등급"/>
+	<class name="CompanyRename" Text="회사 이름 변경"/>
+	<class name="CompanyReport" Text="회사 현황"/>
+	<class name="CompanyReputation" Text="회사 평판"/>
+	<class name="ComplementaryModule_Slot" Text="강화 모듈 슬롯"/>
+	<class name="Completed" Text="완료"/>
+	<class name="CompletedItem" Text="완료!"/>
+	<class name="Condition_Menu" Text="[!Menu]의욕"/>
+	<class name="ConditionPoint" Text="컨디션"/>
+	<class name="ConditionRestore" Text="캐릭터 컨디션"/>
+	<class name="Confirm" Text="확인"/>
+	<class name="Connecting" Text="접속중입니다"/>
+	<class name="ConnectionStatus" Text="통신 상태"/>
+	<class name="ConnectQuest" Text="관련 의뢰"/>
+	<class name="Consume" Text="소모품"/>
+	<class name="Consume_Menu" Text="[!Menu]소모품"/>
+	<class name="ConsumeAP" Text="소비 AP"/>
+	<class name="ContainmentAttack" Text="견제 공격"/>
+	<class name="Content" Text="내용"/>
+	<class name="ContentsBroken" Text="내용물 파손"/>
+	<class name="ControlMinimapAlpha" Text="투명도 조절"/>
+	<class name="CoolTime_Short" Text="재사용"/>
+	<class name="CoolTime_Short_Menu" Text="[!Menu]재사용"/>
+	<class name="Cost" Text="코스트"/>
+	<class name="CostBurnAmount" Text="태운 기력"/>
+	<class name="CPRestore_Drink" Text="음료를 주문한다."/>
+	<class name="CPRestore_Food" Text="요리를 주문한다."/>
+	<class name="Craft_Machine_Menu" Text="[!Menu]기계 제작"/>
+	<class name="Craft_Menu" Text="[!Menu]아이템 제작"/>
+	<class name="Crafting" Text="제작 중..."/>
+	<class name="CraftItem" Text="아이템 제작"/>
+	<class name="CraftItem_Install" Text="제작 작업대 설치하기"/>
+	<class name="CraftItem_Menu" Text="[!Menu]제작하기"/>
+	<class name="CraftItemCraftCount_Menu" Text="[!Menu]제작 개수"/>
+	<class name="CraftItemResult_Menu" Text="[!Menu]제작 숙련도"/>
+	<class name="CraftItemSubResult_Menu" Text="[!Menu]다음 제작 가능 아이템"/>
+	<class name="CraftItemTarget_Menu" Text="[!Menu]제작 아이템"/>
+	<class name="CraftleItemTarget_Menu" Text="[!Menu]제작 대상"/>
+	<class name="CraftLine" Text="제작실"/>
+	<class name="CraftMastery_Menu" Text="[!menu]특성 제작"/>
+	<class name="CraftRate" Text="제작 확률"/>
+	<class name="CraftRecipe" Text="제작법"/>
+	<class name="CraftTime" Text="제작 소요 시간"/>
+	<class name="CraftWaiting" Text="제작 대기 중"/>
+	<class name="CraftWorkmanship" Text="제작 숙련도"/>
+	<class name="CraftWorkmanship2" Text="숙련도"/>
+	<class name="CraftWorkmanship_Additional" Text="추가 숙련도"/>
+	<class name="CreditScore" Text="신용 점수"/>
+	<class name="CriticalStrike" Text="치명타"/>
+	<class name="CriticalStrikeChance" Text="치명타 적중률"/>
+	<class name="CriticalStrikeChance_Menu" Text="[!Menu]치명타 적중률"/>
+	<class name="CriticalStrikeDeal" Text="치명타 피해량"/>
+	<class name="CriticalStrikeDeal_Menu" Text="[!Menu]치명타 피해량"/>
+	<class name="CureentMastery" Text="현재 특성"/>
+	<class name="CurrentEquipedItem" Text="현재 장착 중인 아이템"/>
+	<class name="CurrentFormationPage" Text="현재 편성 화면"/>
+	<class name="CurrentSafty" Text="현재 치안 상황"/>
+	<class name="CurrentServer" Text="현재 접속 서버"/>
+	<class name="CurrentTurn" Text="현재 턴"/>
+	<class name="CurrentUsableAbility" Text="현재 사용 가능한 어빌리티"/>
+	<class name="CurrrentEvent" Text="사건 일람"/>
+	<class name="CurrrentMovableSector" Text="이동 가능한 지역"/>
+	<class name="Damage" Text="피해량"/>
+	<class name="Damage_Menu" Text="[!Menu]피해량"/>
+	<class name="DamageType" Text="피해 속성"/>
+	<class name="DangerMoved" Text="경고: 위험한 위치"/>
+	<class name="DangerRank" Text="사건 난이도"/>
+	<class name="DataLoadingCompany" Text="정보를 불러오는 중..."/>
+	<class name="DateFormat" Text="$Year$년 $Month$월 $Day$일"/>
+	<class name="DateFormatShort" Text="$Month$월 $Day$일"/>
+	<class name="DateMonth1" Text="1월"/>
+	<class name="DateMonth10" Text="10월"/>
+	<class name="DateMonth11" Text="11월"/>
+	<class name="DateMonth12" Text="12월"/>
+	<class name="DateMonth2" Text="2월"/>
+	<class name="DateMonth3" Text="3월"/>
+	<class name="DateMonth4" Text="4월"/>
+	<class name="DateMonth5" Text="5월"/>
+	<class name="DateMonth6" Text="6월"/>
+	<class name="DateMonth7" Text="7월"/>
+	<class name="DateMonth8" Text="8월"/>
+	<class name="DateMonth9" Text="9월"/>
+	<class name="Day" Text="시간"/>
+	<class name="Dead" Text="전투 불능"/>
+	<class name="DeathPosition" Text="사망지점: %s"/>
+	<class name="Defence_Slot" Text="방어 특성 슬롯"/>
+	<class name="DefenceMastery_Menu" Text="[!Menu]방어 특성"/>
+	<class name="DefensiveProperties" Text="방어 능력"/>
+	<class name="DeleteCompanyForever" Text="회사를 삭제하겠습니다"/>
+	<class name="Deposit_Menu" Text="[!Menu]보증금"/>
+	<class name="Detected" Text="발각됨"/>
+	<class name="DetectedShadowStep" Text="그림자 걷기"/>
+	<class name="DetectedShadowWind" Text="그림자 바람"/>
+	<class name="DetectEnemy" Text="적 발견"/>
+	<class name="DetectEnemyAlert" Text="적 경보 발령"/>
+	<class name="Device" Text="디바이스"/>
+	<class name="Dexterity" Text="기량"/>
+	<class name="Difficulty_Easy" Text="게임 난이도: 쉬움"/>
+	<class name="Difficulty_Hard" Text="게임 난이도: 어려움"/>
+	<class name="Difficulty_Merciless" Text="게임 난이도: 가혹한"/>
+	<class name="Difficulty_Normal" Text="게임 난이도: 보통"/>
+	<class name="Difficulty_Safty" Text="게임 난이도: 안전"/>
+	<class name="DirectingSkipAvailable" Text="연출 생략하기"/>
+	<class name="DisableConnectionArea" Text="통신 교란"/>
+	<class name="DisableCraft" Text="제작 불가"/>
+	<class name="DisableExtractMastery" Text="특성 해제 불가"/>
+	<class name="DisableIdentify" Text="감정 불가"/>
+	<class name="DisableSummon" Text="소환 불가"/>
+	<class name="DisableSummonBeast_Menu" Text="[!Menu]환경 영향"/>
+	<class name="DisableUpgrade" Text="강화 불가"/>
+	<class name="Disconnected" Text="접속 불가"/>
+	<class name="Dismantle_Menu" Text="[!Menu]아이템 분해"/>
+	<class name="DismantleItem_Menu" Text="[!Menu]분해하기"/>
+	<class name="DismantleItemAll_Menu" Text="[!Menu]모두 분해하기"/>
+	<class name="DismantleItemResult_Menu" Text="[!Menu]분해 결과물"/>
+	<class name="DismantleItemTarget_Menu" Text="[!Menu]분해 대상"/>
+	<class name="Distance" Text="거리"/>
+	<class name="DivisionInformation" Text="지역 정보"/>
+	<class name="Dodge" Text="회피"/>
+	<class name="Done" Text="완료"/>
+	<class name="DoTalk" Text="대화하기"/>
+	<class name="Downloading" Text="데이터 내려받는중.."/>
+	<class name="DurationTime" Text="제한 시간"/>
+	<class name="Earth" Text="대지"/>
+	<class name="EffectiveRange" Text="유효사거리"/>
+	<class name="EmailForResponse" Text="당신의 e-mail"/>
+	<class name="Empty" Text="없음"/>
+	<class name="EmptyChest" Text="아무것도 없음"/>
+	<class name="EmptyGarage" Text="비어 있는 차고"/>
+	<class name="EmptySlot" Text="비어 있는 슬롯"/>
+	<class name="EnableAcquired" Text="습득 가능"/>
+	<class name="EnableChangeName" Text="이름 변경 가능"/>
+	<class name="EnableCompleted" Text="완료 가능"/>
+	<class name="EnableConnectionArea" Text="통신 양호"/>
+	<class name="EnableCraft" Text="제작 가능"/>
+	<class name="EnableCraftMaterialCount" Text="[!Menu]필요 요구량"/>
+	<class name="EnableCraftMaterials" Text="[!Menu]제작 가능 아이템"/>
+	<class name="EnableEquipLevel" Text="착용 가능 레벨"/>
+	<class name="EnableEquipment" Text="착용 가능 장비"/>
+	<class name="EnableFormation" Text="출전 가능"/>
+	<class name="EnableFormationMember" Text="출전 가능 인원"/>
+	<class name="EnableIdentify" Text="감정 가능"/>
+	<class name="EnableMasterMasteryCount" Text="습득 가능한 특성"/>
+	<class name="EnableResearching" Text="연구 가능"/>
+	<class name="EnableResearching_Next" Text="다음 연구 가능 특성"/>
+	<class name="EnableReward" Text="보상 수령 가능"/>
+	<class name="EnableSummon" Text="소환 가능"/>
+	<class name="EnableUpgrade" Text="강화 가능"/>
+	<class name="Enemy" Text="적"/>
+	<class name="EnemyAccuracy" Text="적 명중률"/>
+	<class name="EnemyPlaying" Text="적 턴 진행 중"/>
+	<class name="Enterable" Text="이동 가능"/>
+	<class name="Equip" Text="착용"/>
+	<class name="EquipableRoster_Menu" Text="[!Menu]착용 가능 캐릭터"/>
+	<class name="EquipAndReturn" Text="착용 후 회수"/>
+	<class name="Equiped" Text="착용 중"/>
+	<class name="Equipment" Text="장비"/>
+	<class name="Equipment_Menu" Text="[!Menu]장비"/>
+	<class name="EquipmentList" Text="장비 목록"/>
+	<class name="EquipmentSet" Text="세트 장비"/>
+	<class name="EquippedItem" Text="착용 중인 아이템"/>
+	<class name="Error" Text="[!시스템메시지]데이터 수집"/>
+	<class name="Escape" Text="탈출"/>
+	<class name="ESP" Text="초능력"/>
+	<class name="ESPResistanceProperties" Text="초능력 저항"/>
+	<class name="EstimatedDuration" Text="예상 시간"/>
+	<class name="EstimatedResearchResult" Text="예상 연구 성과"/>
+	<class name="EventCustom" Text="사용자 정의 사건"/>
+	<class name="EventCustomFilter" Text="사건 사용자 정의하기"/>
+	<class name="EventQuest" Text="의뢰 사건"/>
+	<class name="EventRaid" Text="강력 사건"/>
+	<class name="EventRecommend" Text="모든 사건"/>
+	<class name="EventRepeat" Text="일반 사건"/>
+	<class name="EventScenario" Text="시나리오 사건"/>
+	<class name="EvolutionRequireCondition_Menu" Text="[!Menu]진화 필요 조건"/>
+	<class name="EvolutionRequireItem_Menu" Text="[!Menu]진화 필요 아이템"/>
+	<class name="ExitGame" Text="게임 종료"/>
+	<class name="Exp" Text="경험치"/>
+	<class name="Exp_Menu" Text="[!Menu]경험치"/>
+	<class name="ExpAmountNextLevel" Text="다음 레벨까지 경험치"/>
+	<class name="ExpAmountNextLevelBeastEvolution" Text="다음 진화까지 필요 경험치"/>
+	<class name="ExpAmountNextLevelClass" Text="다음 클래스 레벨 필요 경험치"/>
+	<class name="ExpAmountNextLevelMachineAIUpgrade" Text="다음 강화까지 필요 클래스 경험치"/>
+	<class name="Expired" Text="만료됨"/>
+	<class name="ExpireTime" Text="만료"/>
+	<class name="Extract" Text="추출"/>
+	<class name="Extract_Menu" Text="[!Menu]재료 추출"/>
+	<class name="ExtractingItem" Text="추출 중"/>
+	<class name="ExtractItem" Text="추출 소모 아이템"/>
+	<class name="ExtractItem_Menu" Text="[!Menu]추출하기"/>
+	<class name="ExtractItemResult_Menu" Text="[!Menu]추출 개수"/>
+	<class name="ExtractItemResult_Menu2" Text="[!Menu]추출 결과물"/>
+	<class name="ExtractItemTarget_Menu" Text="[!Menu]추출 대상"/>
+	<class name="ExtractMastery_Menu" Text="[!menu]특성 해제"/>
+	<class name="Failed" Text="실패"/>
+	<class name="Fame" Text="명성"/>
+	<class name="FastDialog" Text="빠른 대화"/>
+	<class name="FieldEffect_Affect_Land" Text="발생 불가 지형"/>
+	<class name="FieldEffect_Affect_Tile" Text="지형에 따른 영향"/>
+	<class name="FieldEffect_Affect_Weather" Text="날씨에 따른 영향"/>
+	<class name="FieldEffect_Bush" Text="지형효과 : 수풀"/>
+	<class name="FieldEffect_Fire" Text="지형효과 : 화재"/>
+	<class name="FieldEffect_PoisonGas" Text="지형효과 : 독 연기"/>
+	<class name="FieldEffect_Spark" Text="지형효과 : 전기장"/>
+	<class name="FieldEffect_Swamp" Text="지형효과 : 늪"/>
+	<class name="FieldEffectRemainTime" Text="남은 턴 대기 시간"/>
+	<class name="FilterCraftableModule" Text="제작 가능한 모듈만 보기"/>
+	<class name="FilterEnableCraft" Text="제작 가능한 장비만 보기"/>
+	<class name="FilterEnableDismantle" Text="분해 가능한 장비만 보기"/>
+	<class name="FilterEnableExtract" Text="추출 가능한 장비만 보기"/>
+	<class name="FilterEnableIdentify" Text="감정 가능한 장비만 보기"/>
+	<class name="FilterEnableUpgrade" Text="강화 가능한 장비만 보기"/>
+	<class name="FilterMasterable" Text="착용 가능한 특성만 보기"/>
+	<class name="FilterResearchable" Text="연구 가능한 특성만 보기"/>
+	<class name="FindAlly" Text="동맹 유닛"/>
+	<class name="FindChest" Text="상호작용 : 상자"/>
+	<class name="FindChildCivil" Text="아이"/>
+	<class name="FindConfusedCivil" Text="혼란에 빠진 시민"/>
+	<class name="FindDetecting" Text="적 상태: 감시"/>
+	<class name="FindElectricCharger" Text="위험물: 전기차 충전기"/>
+	<class name="FindEliteMonster" Text="경고: 정예"/>
+	<class name="FindEpicMonster" Text="경고: 영웅"/>
+	<class name="FindInjuredCivil" Text="부상 당한 시민"/>
+	<class name="FindInjuredRageCivil" Text="원망하는 시민"/>
+	<class name="FindJammer" Text="불법 설치물: 전파 방해기"/>
+	<class name="FindLegendMonster" Text="경고: 전설"/>
+	<class name="FindNeutral" Text="중립 유닛"/>
+	<class name="FindOilingMachin" Text="위험물: 가스 주유기"/>
+	<class name="FindPatrol" Text="적 상태: 순찰"/>
+	<class name="FindPsionicStone" Text="상호작용 : 이능석"/>
+	<class name="FindThirdForce" Text="제 3 세력 유닛"/>
+	<class name="FindTima" Text="티마"/>
+	<class name="FindToxicSubstance" Text="위험물: 유독물 탱크"/>
+	<class name="FindUnrestCivil" Text="불안한 시민"/>
+	<class name="Fire" Text="화염"/>
+	<class name="FoodSetConditions" Text="발동 조건"/>
+	<class name="FoodSetEffect" Text="음식 세트 효과"/>
+	<class name="Formation" Text="편성창"/>
+	<class name="FormationMaxMeber" Text="참가 가능 인원"/>
+	<class name="FormationMember" Text="출전 인원"/>
+	<class name="Formula" Text="상태"/>
+	<class name="FrameModule_Slot" Text="기체 모듈 슬롯"/>
+	<class name="FrameName" Text="기체명"/>
+	<class name="FriendList" Text="친구 목록"/>
+	<class name="Friendship" Text="우호도"/>
+	<class name="Fuel_Menu" Text="[!Menu]연료"/>
+	<class name="FullScreen" Text="전체 화면"/>
+	<class name="GainItem" Text="아이템 획득"/>
+	<class name="GainMastery" Text="새로운 특성 획득"/>
+	<class name="GainMastery_Menu" Text="[!Menu][font='NotoSansBlack-40']특성 획득"/>
+	<class name="GainResearchResult" Text="획득 연구 점수"/>
+	<class name="GameDifficultySelect" Text="난이도 선택"/>
+	<class name="GamePlay" Text="게임 플레이"/>
+	<class name="GetEnemyInformation" Text="현장 정보 수집"/>
+	<class name="GetReputation" Text="획득 명성치"/>
+	<class name="GetReward_Menu" Text="[!Menu]보상 받기"/>
+	<class name="Graph" Text="그래프"/>
+	<class name="Graphics" Text="그래픽"/>
+	<class name="Grenade" Text="수류탄"/>
+	<class name="Ground" Text="지면"/>
+	<class name="GrowthGrade" Text="성장단계"/>
+	<class name="Guide_MonsterOverKill" Text="오버 킬"/>
+	<class name="Guide_MonsterPerfectKill" Text="일격필살"/>
+	<class name="Guide_MovingKnockbackIgnored" Text="이동 중 넉백"/>
+	<class name="Guild" Text="길드"/>
+	<class name="Hacked" Text="해킹됨"/>
+	<class name="HackFailed" Text="해킹안됨"/>
+	<class name="HackingSuicide" Text="자폭"/>
+	<class name="HackingSuicideRemainTime" Text="자폭까지 남은 시간:"/>
+	<class name="HawkEyeMode" Text="전략 시점 보기"/>
+	<class name="Heal_Menu" Text="[!Menu]회복량"/>
+	<class name="Height" Text="신장"/>
+	<class name="Help_Menu" Text="[!Menu]도움말"/>
+	<class name="HighClass" Text="상위 클래스"/>
+	<class name="History" Text="열람 기록"/>
+	<class name="HitRate" Text="명중률"/>
+	<class name="HitRate_Menu" Text="[!Menu]명중률"/>
+	<class name="HP" Text="체력"/>
+	<class name="HP_Menu" Text="[!Menu]체력"/>
+	<class name="HungryWolf_GetBack" Text="내 간식 돌려줘!"/>
+	<class name="HungryWolf_Snack" Text="간식"/>
+	<class name="IdentifyCost_Menu" Text="[!Menu]감정 비용"/>
+	<class name="Identifying" Text="감정 중..."/>
+	<class name="IdentifyItem_Menu" Text="[!Menu]감정하기"/>
+	<class name="IdentifyItemAll_Menu" Text="[!Menu]모두 감정하기"/>
+	<class name="IdentifyItemTarget_Menu" Text="[!Menu]감정 아이템"/>
+	<class name="IdentifyWaiting" Text="감정 대기 중"/>
+	<class name="ImmuneRace" Text="종족면역"/>
+	<class name="ImpossibleGetEnemyInformation" Text="적 정보 수집 불가"/>
+	<class name="InfoBar" Text="정보 획득 진행도"/>
+	<class name="Information" Text="정보"/>
+	<class name="InformationAcquired" Text="정보 획득"/>
+	<class name="InitializeNow" Text="초기화 중.."/>
+	<class name="InitialModeSelect_Graphic" Text="그래픽 품질 선택"/>
+	<class name="InnerFlameImmune" Text="내면의 불꽃"/>
+	<class name="InstantEquip_CurItem" Text="현재 아이템"/>
+	<class name="InstantEquip_NewItem" Text="착용할 아이템"/>
+	<class name="InstantEquip_NewItemNotEquipment" Text="획득한 아이템"/>
+	<class name="InteractionObject" Text="상호작용"/>
+	<class name="Interface" Text="인터페이스"/>
+	<class name="InvCount" Text="소지 개수"/>
+	<class name="Inventory" Text="물품 목록"/>
+	<class name="Inventory_Menu" Text="[!Menu]물품 목록"/>
+	<class name="InventoryCustomCommon_Add" Text="추가"/>
+	<class name="InventoryCustomCommon_Remove" Text="삭제"/>
+	<class name="InventoryCustomCommon_Rename" Text="이름 변경"/>
+	<class name="InventoryCustomCommon_Save" Text="저장"/>
+	<class name="InventoryCustomFilter_Filter" Text="[!Menu]필터 목록"/>
+	<class name="InventoryCustomFilter_ItemCategory" Text="[!Menu]아이템 카테고리"/>
+	<class name="InventoryCustomFilter_ItemOptionStar" Text="[!Menu]아이템 감정 옵션"/>
+	<class name="InventoryCustomFilter_ItemRank" Text="[!Menu]아이템 등급"/>
+	<class name="InventoryCustomFilter_ItemRequireLv" Text="[!Menu]아이템 착용 레벨"/>
+	<class name="InventoryCustomFilter_ItemType" Text="[!Menu]아이템 종류"/>
+	<class name="InventoryCustomFilter_NewFilter" Text="새로운 필터"/>
+	<class name="InventoryCustomFilter_Roster" Text="[!Menu]착용 가능 캐릭터"/>
+	<class name="InventoryCustomFilter_Title" Text="[!Menu]필터 관리"/>
+	<class name="InventoryCustomSort_NewSort" Text="새로운 정렬"/>
+	<class name="InventoryCustomSort_Order1" Text="[!Menu]정렬 기준 1"/>
+	<class name="InventoryCustomSort_Order2" Text="[!Menu]정렬 기준 2"/>
+	<class name="InventoryCustomSort_Order3" Text="[!Menu]정렬 기준 3"/>
+	<class name="InventoryCustomSort_Sort" Text="[!Menu]정렬 목록"/>
+	<class name="InventoryCustomSort_Title" Text="[!Menu]정렬 관리"/>
+	<class name="ItemAcquireRate_Menu" Text="[!Menu]아이템 획득 확률"/>
+	<class name="ItemAugmentMaterial" Text="아이템 구성 소재"/>
+	<class name="ItemBook" Text="재료 도감"/>
+	<class name="ItemBook_Install" Text="책장 정리하기"/>
+	<class name="ItemBook_Menu" Text="[!Menu]재료 도감"/>
+	<class name="ItemCount" Text="아이템 개수"/>
+	<class name="ItemCountAll" Text="최대 개수 선택"/>
+	<class name="ItemCountPart" Text="부분 개수 선택"/>
+	<class name="ItemCraftFrontMessage" Text="아이템 제작 결과"/>
+	<class name="ItemCraftRequireLv" Text="필요 전문 기술 레벨"/>
+	<class name="ItemCraftRequireProfession" Text="필요 전문 기술"/>
+	<class name="ItemDisassembly" Text="아이템 분해"/>
+	<class name="ItemDismantle" Text="아이템 분해"/>
+	<class name="ItemDismantleFrontMessage" Text="아이템 분해 완료"/>
+	<class name="ItemEffect_GiveItem" Text="[!Menu][font='NotoSansBlack-40']아이템 획득"/>
+	<class name="ItemExtractFrontMessage" Text="아이템 추출 완료"/>
+	<class name="ItemExtractMaterial" Text="추출 시 획득 재료"/>
+	<class name="ItemIdentify" Text="아이템 감정"/>
+	<class name="ItemIdentify_Install" Text="분석 작업대 설치하기"/>
+	<class name="ItemIdentifyFrontMessage" Text="아이템 감정 결과"/>
+	<class name="ItemLock" Text="아이템 잠김"/>
+	<class name="ItemLock2" Text="아이템 보호"/>
+	<class name="ItemLv" Text="아이템 레벨"/>
+	<class name="ItemName" Text="아이템 이름"/>
+	<class name="ItemOptions_Menu" Text="[!Menu]감정 내역"/>
+	<class name="ItemPromotion" Text="아이템 승급"/>
+	<class name="ItemSet_SetCount" Text="%d 세트:"/>
+	<class name="ItemUpgrade" Text="작업대"/>
+	<class name="ItemUpgrade_Install" Text="작업대 설치하기"/>
+	<class name="ItemUpgrade_Menu" Text="[!Menu]아이템 개조"/>
+	<class name="ItemUpgradeFrontMessage" Text="아이템 강화 결과"/>
+	<class name="ItemUpgradeList" Text="강화 목록"/>
+	<class name="ItemUpgradeResult" Text="아이템 강화 시 예상 결과"/>
+	<class name="Job" Text="직업"/>
+	<class name="JobLevel" Text="클래스 레벨"/>
+	<class name="JukeBox" Text="음악 감상"/>
+	<class name="JukeBox_Composer" Text="작곡가"/>
+	<class name="JukeBox_LobbyBGM" Text="로비 BGM"/>
+	<class name="JukeBox_MissionBaseBGM" Text="미션 BGM"/>
+	<class name="JukeBox_MissionBattleBGM" Text="미션 전투 BGM"/>
+	<class name="JukeBox_NextSong" Text="다음 곡"/>
+	<class name="JukeBox_NotSet" Text="설정되지 않음"/>
+	<class name="JukeBox_OfficeBGM" Text="사무실 BGM"/>
+	<class name="JukeBox_Play" Text="선택 곡 재생"/>
+	<class name="JukeBox_Play_Button" Text="재생"/>
+	<class name="JukeBox_PrevSong" Text="다시 듣기 / 이전 곡"/>
+	<class name="JukeBox_Randomize" Text="임의 재생"/>
+	<class name="JukeBox_Repeat" Text="한곡 반복"/>
+	<class name="JukeBox_Stop" Text="정지"/>
+	<class name="JukeBox_Title" Text="현재 선택 곡"/>
+	<class name="KeyBinding_Menu" Text="[!Menu]단축키 설정"/>
+	<class name="KillEnemy" Text="적 처치"/>
+	<class name="KnockbackStunOccured" Text="기절: 뒤로 밀려남"/>
+	<class name="Known" Text="알려진"/>
+	<class name="LackOfCost" Text="$CostType$ 부족"/>
+	<class name="LastestCompany" Text="최근 접속한 회사"/>
+	<class name="Leader" Text="대표 캐릭터"/>
+	<class name="Leader_Menu" Text="[!Menu]대표 캐릭터"/>
+	<class name="LeaderChange" Text="대표 캐릭터 변경"/>
+	<class name="Leave" Text="나가기"/>
+	<class name="LeaveAfterSave" Text="저장 후 나가기"/>
+	<class name="LeftInformationCount" Text="남은정보개수"/>
+	<class name="Level" Text="레벨"/>
+	<class name="Level_Menu" Text="[!Menu]레벨"/>
+	<class name="LoadingNow" Text="불러오는 중.."/>
+	<class name="Location_Menu" Text="[!Menu]소재지"/>
+	<class name="LocationList" Text="지역 목록"/>
+	<class name="Lock" Text="잠김"/>
+	<class name="LockBeast" Text="야수 보호"/>
+	<class name="LockMachine" Text="기계 보호"/>
+	<class name="LostItem" Text="잃어버림"/>
+	<class name="LostItem_Menu" Text="유실물"/>
+	<class name="LostShop" Text="장물 구입"/>
+	<class name="Loyalty_Menu" Text="[!Menu]충성도"/>
+	<class name="Machine_CraftMastery_Menu" Text="[!menu]모듈 제작"/>
+	<class name="Machine_ExtractMastery_Menu" Text="[!menu]모듈 해제"/>
+	<class name="Machine_FilterMasterable" Text="장착 가능한 모듈만 보기"/>
+	<class name="Machine_LoadStatus" Text="무게"/>
+	<class name="Machine_MasterMastery_Menu" Text="[!menu]모듈 장착"/>
+	<class name="Machine_MasteryExtract" Text="모듈 추출하기"/>
+	<class name="Machine_MasteryExtractAll_Menu" Text="[!Menu]모듈 모두 해제"/>
+	<class name="Machine_MasteryExtractFrontMessage" Text="모듈 해제"/>
+	<class name="Machine_MasteryInventory" Text="모듈 목록"/>
+	<class name="Machine_MasteryMasterFrontMessage" Text="모듈 장착"/>
+	<class name="Machine_MasteryName" Text="모듈 이름"/>
+	<class name="Machine_Menu" Text="[!Menu]기계"/>
+	<class name="Machine_RemainTrainingPoint" Text="남은 출력"/>
+	<class name="Machine_Technique" Text="모듈 연구"/>
+	<class name="Machine_TrainingManual" Text="[!Menu]제작서"/>
+	<class name="Machine_TrainingPoint" Text="출력"/>
+	<class name="Machine_TrainingPoint_Menu" Text="[!Menu]출력"/>
+	<class name="MachineAIUpgrade_Menu" Text="AI 강화"/>
+	<class name="MachineAIUpgrade_NeedItem" Text="필요 아이템"/>
+	<class name="MachineAIUpgrade_StartMasterySelect" Text="선택 중"/>
+	<class name="MachineAIUpgradeRequireCondition_Menu" Text="[!Menu]AI 강화 필요 조건"/>
+	<class name="MachineAIUpgradeStage_Menu" Text="[!Menu]AI 강화 단계"/>
+	<class name="MachineChange_Menu" Text="기체 변경"/>
+	<class name="MachineCraft" Text="기계 제작"/>
+	<class name="MachineCraft_Apply" Text="기계 제작"/>
+	<class name="MachineCraft_Change" Text="기체 변경"/>
+	<class name="MachineCraft_CraftOrder" Text="제작 발주 번호 : "/>
+	<class name="MachineCraft_Install" Text="기계 제작대 설치하기"/>
+	<class name="MachineCraft_MachineFrame" Text="기체 선택"/>
+	<class name="MachineCraft_MachineInfo" Text="기체 정보"/>
+	<class name="MachineCraft_MachineOS" Text="운영 체제 구성"/>
+	<class name="MachineCraft_MachineParts" Text="기계 부품 구성"/>
+	<class name="MachineCraft_MachineSP" Text="SP 구성"/>
+	<class name="MachineDisabled" Text="작동 불능"/>
+	<class name="MachineLackOfPower" Text="출력 부족"/>
+	<class name="MachineOverloaded" Text="적재량 초과"/>
+	<class name="MachineRemove_Menu" Text="기계 폐기"/>
+	<class name="MachineRename_Menu" Text="이름 변경"/>
+	<class name="MachineRepair_Menu" Text="기계 수리"/>
+	<class name="MachineState_Menu" Text="[!Menu]가동률"/>
+	<class name="MachineType_Menu" Text="기체명"/>
+	<class name="Mail_Delete" Text="삭제"/>
+	<class name="Mail_MarkRead" Text="읽음 표시"/>
+	<class name="Mail_ReceiveAll" Text="모두 수령"/>
+	<class name="Mail_SelectAll" Text="전체 선택"/>
+	<class name="MailCount" Text="메일 개수"/>
+	<class name="MailPaymentPaid" Text="지불됨"/>
+	<class name="MailReturned" Text="반송됨"/>
+	<class name="MailReturnTime" Text="반송"/>
+	<class name="MailVill_Attached" Text="첨부 금액"/>
+	<class name="MailVill_Payment" Text="대금 청구"/>
+	<class name="MailVill_Payment2" Text="청구 금액"/>
+	<class name="MainProperties" Text="기본 능력"/>
+	<class name="MasteredMasteryCount" Text="습득한 특성 수"/>
+	<class name="MasterMastery_Menu" Text="[!menu]특성 습득"/>
+	<class name="Mastery" Text="특성"/>
+	<class name="Mastery_Menu" Text="[!Menu]특성"/>
+	<class name="MasteryAcquireRate_Menu" Text="[!menu]특성 획득 확률"/>
+	<class name="MasteryActiveSetOnly" Text="활성화된 추가 효과만 보기"/>
+	<class name="MasteryApplied" Text="특성 적용"/>
+	<class name="MasteryBoard" Text="특성판"/>
+	<class name="MasteryBoard_Menu" Text="[!Menu]특성판"/>
+	<class name="MasteryBoardManager_Add" Text="추가"/>
+	<class name="MasteryBoardManager_Change" Text="확인"/>
+	<class name="MasteryBoardManager_Menu" Text="[!Menu]특성판 관리"/>
+	<class name="MasteryBoardManager_Menu2" Text="[!Menu]캐릭터 관리"/>
+	<class name="MasteryBoardManager_Rename" Text="이름 변경"/>
+	<class name="MasteryBoardUsable_Menu" Text="[!Menu]현재 사용 중인 특성판"/>
+	<class name="MasteryBonus_Menu" Text="[!Menu]추가 특성 효과"/>
+	<class name="MasteryExtract" Text="특성 추출하기"/>
+	<class name="MasteryExtractAll_Menu" Text="[!Menu]특성 모두 해제"/>
+	<class name="MasteryExtractFrontMessage" Text="특성 해제"/>
+	<class name="MasteryFavorite" Text="관심 특성 등록"/>
+	<class name="MasteryFavoriteShow" Text="관심 특성 보기"/>
+	<class name="MasteryFilterTag_Full" Text="전체"/>
+	<class name="MasteryInventory" Text="특성 목록"/>
+	<class name="MasteryList" Text="특성 목록"/>
+	<class name="MasteryList_Menu" Text="[!Menu]특성 목록"/>
+	<class name="MasteryMasterFrontMessage" Text="특성 습득"/>
+	<class name="MasteryName" Text="특성 이름"/>
+	<class name="MasteryPoint" Text="특성 점수"/>
+	<class name="MasteryReset" Text="특성 초기화"/>
+	<class name="MasterySetViewMode_Active" Text="장착 중"/>
+	<class name="MasterySetViewMode_Active_Title" Text="현재 장착한 추가 특성"/>
+	<class name="MasterySetViewMode_All" Text="모두"/>
+	<class name="MasterySetViewMode_All_Title" Text="알려진 전체 추가 특성"/>
+	<class name="MasterySetViewMode_Basic" Text="장착 가능"/>
+	<class name="MasterySetViewMode_Basic_Title" Text="장착 가능한 추가 특성"/>
+	<class name="Material" Text="재료"/>
+	<class name="Material_Menu" Text="[!Menu]재료 아이템"/>
+	<class name="MaxCountClick" Text="최대 개수 적용"/>
+	<class name="MaxInventoryCount" Text="창고 수용량"/>
+	<class name="MaxLevel" Text="[!최대레벨]MAX"/>
+	<class name="MaxStackCount" Text="최대 소지 개수"/>
+	<class name="MentalImmune" Text="정신계면역"/>
+	<class name="MenuBoard" Text="메뉴판"/>
+	<class name="MinimapShow" Text="미니맵 보기"/>
+	<class name="Miss" Text="빗나감"/>
+	<class name="Mission" Text="사건"/>
+	<class name="MissionClearReward" Text="사건 해결 보상금"/>
+	<class name="MissionCompletedQuest" Text="완료된 의뢰 목록"/>
+	<class name="MissionContent" Text="사건 내용"/>
+	<class name="MissionDetails" Text="미션 통계 보기"/>
+	<class name="MissionDetailsReturn" Text="미션 결과 보기"/>
+	<class name="MissionGrade" Text="임무 등급"/>
+	<class name="MissionInfo" Text="추가 정보"/>
+	<class name="MissionLocation" Text="사건 현장"/>
+	<class name="MissionObjective" Text="임무 목표"/>
+	<class name="MissionRank" Text="사건 등급"/>
+	<class name="MissionSavedTime" Text="임무 저장 시간"/>
+	<class name="MissionStart" Text="임무 시작"/>
+	<class name="MissionType" Text="사건 유형"/>
+	<class name="Mode_Challenger" Text="[!Menu]도전 모드"/>
+	<class name="Mode_Normal" Text="[!Menu]일반 모드"/>
+	<class name="Module" Text="모듈"/>
+	<class name="Module_Mastery_Menu" Text="모듈"/>
+	<class name="Module_MasteryAcquireRate_Menu" Text="모듈 획득 확률"/>
+	<class name="Module_TroublemakerReward_Mastery" Text="정보 완료 보상: 연구 가능 모듈 발견"/>
+	<class name="ModuleAchievableMastery" Text="모듈 제작 가능 보상"/>
+	<class name="ModuleCraft" Text="모듈 제작"/>
+	<class name="ModuleCraft_Install" Text="모듈 제작대 설치"/>
+	<class name="ModuleFavorite" Text="관심 모듈 등록"/>
+	<class name="ModuleName" Text="모듈 이름"/>
+	<class name="MonsterInformation_Menu" Text="[!Menu]정보 획득율"/>
+	<class name="MonsterOnMission_Menu" Text="[!Menu]출현 지역"/>
+	<class name="MonsterOnMissionCondition_Menu" Text="[!Menu]출현 정보"/>
+	<class name="MoveLocation" Text="지역이동"/>
+	<class name="MultiSelect" Text="여러개 선택하기"/>
+	<class name="MyMoney" Text="현재 소지금"/>
+	<class name="Name" Text="이름"/>
+	<class name="Need" Text="필요"/>
+	<class name="NeedFuel" Text="필요 연료"/>
+	<class name="NeedRage" Text="필요 분노"/>
+	<class name="NeedSP" Text="필요 SP"/>
+	<class name="NeedTurnOrder" Text="턴 순서 보기 (Alt)"/>
+	<class name="NeedVigor" Text="필요 기력"/>
+	<class name="NegotiationPoint" Text="교섭 점수"/>
+	<class name="NeutralizeBuff" Text="버프"/>
+	<class name="NewTabName" Text="새 탭"/>
+	<class name="NewTechniqueSelect" Text="연구 선택"/>
+	<class name="Next" Text="다음"/>
+	<class name="NextDialog" Text="다음 대화"/>
+	<class name="NextMastery" Text="다음 레벨 특성"/>
+	<class name="NextTime" Text="다음 보고일"/>
+	<class name="No" Text="없음"/>
+	<class name="NoEnterable" Text="이동 불가능"/>
+	<class name="NoNameSlot" Text="새 슬롯"/>
+	<class name="Normal_Menu" Text="[!Menu]현재 상태"/>
+	<class name="Normal_Slot" Text="기본 특성 슬롯"/>
+	<class name="NotEquipEmptySlot" Text="장착 불가"/>
+	<class name="NothingGetEnemyInformation" Text="지원 없음"/>
+	<class name="Notice" Text="[!시스템메시지]알림"/>
+	<class name="NotIdentified" Text="감정되지 않은"/>
+	<class name="NotSellable" Text="판매 불가"/>
+	<class name="NotTradable" Text="거래 불가"/>
+	<class name="NotTradableItem" Text="귀속 아이템"/>
+	<class name="NPCJob_BeastManager" Text="상인 NPC"/>
+	<class name="NPCJob_Connoisseur" Text="상인 NPC"/>
+	<class name="NPCJob_Cook" Text="상인 NPC"/>
+	<class name="NPCJob_Engineer" Text="상인 NPC"/>
+	<class name="NPCJob_Merchant" Text="상인 NPC"/>
+	<class name="ObstacleDisabled" Text="비활성화"/>
+	<class name="OffensiveProperties" Text="공격 능력"/>
+	<class name="Office" Text="사무실"/>
+	<class name="OfficeInformation" Text="사무실 정보"/>
+	<class name="OfficeRent_Menu" Text="[!Menu]관리비"/>
+	<class name="Offline" Text="오프라인"/>
+	<class name="Option" Text="환경 설정"/>
+	<class name="Option_Menu" Text="[!Menu]환경 설정"/>
+	<class name="Order" Text="주문"/>
+	<class name="OrderCalling" Text="주문한다."/>
+	<class name="OrderCost" Text="주문 비용"/>
+	<class name="OrderCount" Text="주문 인원"/>
+	<class name="OrderList" Text="주문 목록"/>
+	<class name="OutOfAction" Text="전투 불능"/>
+	<class name="OverMaterial" Text="초과 확률"/>
+	<class name="Party" Text="파티"/>
+	<class name="PC" Text="개인"/>
+	<class name="PerformanceEffect" Text="공연 효과"/>
+	<class name="PerformanceEffectType" Text="공연 속성"/>
+	<class name="PerformanceFinish" Text="마무리"/>
+	<class name="PerformanceSlot_Empty" Text="비어있는 공연 슬롯"/>
+	<class name="PhysicalImmune" Text="물리계면역"/>
+	<class name="PhysicalResistanceProperties" Text="물리 저항"/>
+	<class name="PingSpeed" Text="반응 속도"/>
+	<class name="PlayTutorial" Text="튜토리얼 진행하기"/>
+	<class name="Prev" Text="이전"/>
+	<class name="PreviousTeam" Text="이전 팀 시작"/>
+	<class name="PrimaryKey" Text="[!Menu]주 사용키"/>
+	<class name="ProcessGetEnemyInformation" Text="적 정보 수집 중"/>
+	<class name="Profession_Menu" Text="[!Menu]전문 기술"/>
+	<class name="Profile" Text="프로필"/>
+	<class name="Progress" Text="진행 중"/>
+	<class name="PromotionLevel" Text="승급 레벨"/>
+	<class name="PsionicStone" Text="이능석"/>
+	<class name="PsionicStoneAmount" Text="이능석 정보"/>
+	<class name="Pub" Text="주점"/>
+	<class name="PurchaseCost" Text="구입 비용"/>
+	<class name="Quesst_CheckPoint1" Text="첫 번째 조건"/>
+	<class name="Quesst_CheckPoint10" Text="열 번째 조건"/>
+	<class name="Quesst_CheckPoint2" Text="두 번째 조건"/>
+	<class name="Quesst_CheckPoint3" Text="세 번째 조건"/>
+	<class name="Quesst_CheckPoint4" Text="네 번째 조건"/>
+	<class name="Quesst_CheckPoint5" Text="다섯 번째 조건"/>
+	<class name="Quesst_CheckPoint6" Text="여섯 번째 조건"/>
+	<class name="Quesst_CheckPoint7" Text="일곱 번째 조건"/>
+	<class name="Quesst_CheckPoint8" Text="여덟 번째 조건"/>
+	<class name="Quesst_CheckPoint9" Text="아홉 번째 조건"/>
+	<class name="Quest" Text="의뢰"/>
+	<class name="Quest_Completed" Text="완료"/>
+	<class name="Quest_InProgress" Text="진행 중"/>
+	<class name="QuestAccept" Text="의뢰 수락"/>
+	<class name="QuestAlignment" Text="의뢰 성향"/>
+	<class name="QuestCancel" Text="의뢰 포기"/>
+	<class name="QuestCompleted" Text="의뢰 완료"/>
+	<class name="QuestCompletedReward" Text="의뢰 보상금"/>
+	<class name="QuestEffect" Text="[!Menu][font='NotoSansBlack-40']새로운 의뢰"/>
+	<class name="QuestInfo" Text="의뢰 정보"/>
+	<class name="QuestList" Text="의뢰 목록"/>
+	<class name="QuestName" Text="의뢰명"/>
+	<class name="QuestRank" Text="사건 등급"/>
+	<class name="QuestReconstructure" Text="[!menu]사건 재구성"/>
+	<class name="QuestReconstrunctionMissionStart" Text="사건 재구성 중..."/>
+	<class name="QuestReconstrunctionWaiting" Text="사건 재구성 대기 중"/>
+	<class name="QuestRewardRandomRecipe" Text="제작 가능한 아이템의 숙련도"/>
+	<class name="QuestSelectableReward" Text="선택 가능한 보상"/>
+	<class name="QuestSelectReward" Text="선택"/>
+	<class name="QuestState" Text="의뢰 상태"/>
+	<class name="QuestType" Text="의뢰 분류"/>
+	<class name="QuickTeamFormation" Text="빠른 편성"/>
+	<class name="Race" Text="종족"/>
+	<class name="Rage_Menu" Text="[!Menu]분노"/>
+	<class name="Rank" Text="등급"/>
+	<class name="RankName" Text="등급명"/>
+	<class name="ReaserchList" Text="연구 목록"/>
+	<class name="Rebuy" Text="재구입"/>
+	<class name="Received" Text="수령함"/>
+	<class name="RecentBattleGuide" Text="최근 감지한 인기척"/>
+	<class name="Recipe" Text="제작법"/>
+	<class name="RecommendationToday" Text="오늘의 추천 메뉴"/>
+	<class name="RecommendedLevel" Text="권장 레벨"/>
+	<class name="Reconnecting" Text="재접속중입니다"/>
+	<class name="RemainCount" Text="남은 개수"/>
+	<class name="RemainTime" Text="남은 시간"/>
+	<class name="RemainTrainingPoint" Text="남은 훈련 점수"/>
+	<class name="Remove" Text="해제"/>
+	<class name="Rent_Menu" Text="[!Menu]임대료"/>
+	<class name="RepairAllMachine" Text="모든 기계 수리"/>
+	<class name="ReportResult_EtcReward" Text="그 외 지원 보상물"/>
+	<class name="ReportResult_ItemReward" Text="지원 보상 아이템"/>
+	<class name="ReportResult_Title" Text="트러블슈터 활동 평가 보상 내역"/>
+	<class name="ReportResult_VillReward" Text="지원 보상금"/>
+	<class name="Reputation" Text="평판"/>
+	<class name="ReputationPoint" Text="평판 점수"/>
+	<class name="Request" Text="요청"/>
+	<class name="RequireAddBoardNeedCount" Text="새로운 특성판 추가"/>
+	<class name="RequireCost" Text="필요 연구 점수"/>
+	<class name="RequireLevel" Text="요구 레벨"/>
+	<class name="RequireMastery" Text="고정 연구 재료"/>
+	<class name="RequireModuleItem" Text="고정 제작 재료"/>
+	<class name="RequireModulePower" Text="필요 출력"/>
+	<class name="RequireMsateryTypeCost" Text="연구 필요 조건"/>
+	<class name="RequireRecipe" Text="[!Menu]해당 필요 재료"/>
+	<class name="RequireResearchPoint" Text="필요 연구 점수"/>
+	<class name="RequireWorkmanship" Text="필요 숙련도"/>
+	<class name="Rescue" Text="구조자"/>
+	<class name="Rescued" Text="구조 성공"/>
+	<class name="RescueFailed" Text="구조 실패"/>
+	<class name="Research" Text="연구"/>
+	<class name="Research_Menu" Text="[!Menu]연구"/>
+	<class name="Researching" Text="연구 중..."/>
+	<class name="ResearchingMastery" Text="연구 중"/>
+	<class name="ResearchingProgress" Text="연구 재료 수집"/>
+	<class name="ResearchingWaiting" Text="연구 대기 중"/>
+	<class name="ResearchMaterial" Text="연구 재료"/>
+	<class name="ResearchPoint" Text="연구 점수"/>
+	<class name="ResearchPoint_Menu" Text="[!Menu]연구 점수"/>
+	<class name="ResearchValue" Text="연구 가치"/>
+	<class name="Reset" Text="초기화"/>
+	<class name="ResetMasteryCost" Text="특성 초기화 비용"/>
+	<class name="ResetUpdateActivityReport" Text="다음 보고서까지 남은 임무"/>
+	<class name="ResetUpdateChangeName" Text="다음 회사명 변경까지 남은 시간"/>
+	<class name="ResetUpdateFood" Text="다음 추천 메뉴 갱신 시간"/>
+	<class name="ResetUpdateShop" Text="다음 상품 입고 시간"/>
+	<class name="ResetUpdateTroublesum" Text="다음 의뢰 갱신 시간"/>
+	<class name="RestExp" Text="휴식 상태"/>
+	<class name="RestoreCost" Text="경고: 낮은 기력"/>
+	<class name="RestorePotion" Text="아이템: 회복약"/>
+	<class name="Retry" Text="재도전"/>
+	<class name="RetryFromCheckPoint" Text="체크포인트로 귀환"/>
+	<class name="ReturnBase" Text="귀환하기"/>
+	<class name="ReturnPrevPage" Text="이전 화면으로"/>
+	<class name="Reward" Text="보상"/>
+	<class name="RewardCompleted" Text="[!Menu]정보 획득 완료"/>
+	<class name="RewardMoney" Text="보상금"/>
+	<class name="RosterReadyToWorkFrontMessage" Text="무기력 상태 회복"/>
+	<class name="RosterReport" Text="사원 정보"/>
+	<class name="SaftyModule_Slot" Text="보안 모듈 슬롯"/>
+	<class name="SalaryAmount_Menu" Text="[!Menu]총 급여액"/>
+	<class name="SalaryChange_Menu" Text="[!Menu]급여 변경"/>
+	<class name="SalaryDay_Menu" Text="[!Menu]다음 급여 지급일"/>
+	<class name="MaintenanceDay" Text="다음 임대료 지급일"/>
+	<class name="MaintenanceDay2" Text="다음 관리비 지급일"/>
+	<class name="SalaryDayShort_Menu" Text="[!Menu]급여일"/>
+	<class name="SalaryDelay_Menu" Text="[!Menu]급여 연체 횟수"/>
+	<class name="SalaryType" Text="임금"/>
+	<class name="Screenshot" Text="스크린샷"/>
+	<class name="SearchFilterMode_Content" Text="내용"/>
+	<class name="SearchFilterMode_Full" Text="전체"/>
+	<class name="SearchFilterMode_Title" Text="이름"/>
+	<class name="SecondaryKey" Text="[!Menu]보조 사용키"/>
+	<class name="SelectableAdditionReward" Text="선택 가능한 추가 보상"/>
+	<class name="SelectMode" Text="모드 선택"/>
+	<class name="SelectMode_Offline" Text="오프라인 모드"/>
+	<class name="SelectMode_Online" Text="온라인 모드"/>
+	<class name="SelectServer" Text="접속 서버 선택"/>
+	<class name="Self" Text="자신"/>
+	<class name="SelfUse" Text="자신"/>
+	<class name="Sell" Text="판매"/>
+	<class name="SellPrice" Text="판매 가격"/>
+	<class name="SellPrice_Menu" Text="[!Menu]판매 가격"/>
+	<class name="Sender" Text="보낸 사람"/>
+	<class name="SendLogToDev" Text="로그 전송"/>
+	<class name="SendAllLog" Text="전체 로그 파일 포함"/>
+	<class name="SendingNow" Text="전송중.."/>
+	<class name="SendMail" Text="메일 보내기"/>
+	<class name="SendMail2" Text="편지 쓰기"/>
+	<class name="SendToInventory" Text="인벤토리로 보내기"/>
+	<class name="ServerList" Text="서버 목록"/>
+	<class name="Shooter" Text="슈터"/>
+	<class name="ShooterStreet" Text="운행 정지"/>
+	<class name="ShopBuyTitle" Text="상품 목록"/>
+	<class name="ShopDiscount" Text="%d%% 할인 판매"/>
+	<class name="ShopLostShopTitle" Text="유실물 목록"/>
+	<class name="ShopValkyrieTitle" Text="발키리 상점"/>
+	<class name="ShopSellTitle" Text="판매 목록"/>
+	<class name="ShortCut_Aim" Text="[!Menu]조준 모드"/>
+	<class name="ShortCut_Battle" Text="[!Menu]전투 모드"/>
+	<class name="ShortCut_Common" Text="[!Menu]공용 사용"/>
+	<class name="ShortCut_Direct" Text="[!Menu]대화/연출 모드"/>
+	<class name="ShortCut_Info" Text="[!Menu]키 설정 정보"/>
+	<class name="ShortCut_Office" Text="[!Menu]사무실 모드"/>
+	<class name="ShowGuild" Text="길드 정보 보기"/>
+	<class name="ShowProfile" Text="프로필 보기"/>
+	<class name="ShowReport" Text="보고서 보기"/>
+	<class name="Silverlining" Text="실버라이닝"/>
+	<class name="SiteInfo" Text="지역 정보"/>
+	<class name="SkipDirect" Text="건너뛰기"/>
+	<class name="SnipeType" Text="저격 대상"/>
+	<class name="SnowmanImmune" Text="눈사람"/>
+	<class name="SortByAmountAsc" Text="보유량 적은 순"/>
+	<class name="SortByAmountDsc" Text="보유량 많은 순"/>
+	<class name="SortByLevelAsc" Text="레벨 낮은 순"/>
+	<class name="SortByLevelDsc" Text="레벨 높은 순"/>
+	<class name="SortByMainOptionAsc" Text="주 능력치 낮은 순"/>
+	<class name="SortByMainOptionDsc" Text="주 능력치 높은 순"/>
+	<class name="SortByName" Text="이름순"/>
+	<class name="SortByReinforceAmountAsc" Text="강화 낮은 순"/>
+	<class name="SortByReinforceAmountDsc" Text="강화 높은 순"/>
+	<class name="SortByResearchCostAsc" Text="비용 낮은 순"/>
+	<class name="SortByResearchCostDsc" Text="비용 높은 순"/>
+	<class name="SortBySellPriceAsc" Text="판매 가격 낮은 순"/>
+	<class name="SortBySellPriceDsc" Text="판매 가격 높은 순"/>
+	<class name="SortByStarPointAsc" Text="별점 낮은 순"/>
+	<class name="SortByStarPointDsc" Text="별점 높은 순"/>
+	<class name="SortByWeightAsc" Text="등급 낮은 순"/>
+	<class name="SortByWeightDsc" Text="등급 높은 순"/>
+	<class name="Space_Menu" Text="[!Menu]전용 면적"/>
+	<class name="SPFullGained" Text="과충전"/>
+	<class name="SPFullGainedAlert" Text="SP %d%%"/>
+	<class name="SPGained" Text="SP 시스템"/>
+	<class name="Spoils_Menu" Text="[!Menu]획득 가능 아이템"/>
+	<class name="StartMenu_Continue" Text="이어서 하기"/>
+	<class name="StartMenu_KeyBinding" Text="[!Menu]단축키 설정"/>
+	<class name="StartMenu_Load" Text="회사 변경"/>
+	<class name="StartMenu_New" Text="새로운 회사 만들기"/>
+	<class name="StartMenu_Option" Text="옵션"/>
+	<class name="StartMenu_Quit" Text="바탕 화면으로 나가기"/>
+	<class name="StartMission" Text="의뢰 시작"/>
+	<class name="State_Good" Text="매우 좋음"/>
+	<class name="StateFatigue" Text="유닛 상태: 피로"/>
+	<class name="StateVitality" Text="유닛 상태: 활기"/>
+	<class name="Statistics" Text="회사 통계"/>
+	<class name="Statistics2" Text="통계"/>
+	<class name="Statistics_Difficulty" Text="난이도"/>
+	<class name="Statistics_Install" Text="작은 책장 설치하기"/>
+	<class name="Statistics_MissionType" Text="임무 종류"/>
+	<class name="Statistics_Normal" Text="[!통계]일반"/>
+	<class name="Statistics_Reputation" Text="지역"/>
+	<class name="Status" Text="상태"/>
+	<class name="Status_Menu" Text="[!Menu]능력치"/>
+	<class name="Status_Suffix_Decrease" Text="감소합니다."/>
+	<class name="Status_Suffix_Increase" Text="증가합니다."/>
+	<class name="StatusCompare_Menu" Text="[!Menu]능력치 비교"/>
+	<class name="StatusRole" Text="피해량 감소"/>
+	<class name="StatusRoleDischarge" Text="상태 이상 해제"/>
+	<class name="StopService" Text="운행 정지"/>
+	<class name="Sub_Slot" Text="보조 특성 슬롯"/>
+	<class name="SubCategory" Text="상세분류"/>
+	<class name="SubMastery_Menu" Text="[!Menu]보조 특성"/>
+	<class name="SubProperties" Text="보조 능력"/>
+	<class name="SubType" Text="부속성"/>
+	<class name="SuccessGetEnemyInformation" Text="적 정보 수집 성공"/>
+	<class name="SuccessRate_Menu" Text="[!Menu]성공률"/>
+	<class name="SunglassesImmune" Text="색안경"/>
+	<class name="SupportCall" Text="지원요청!"/>
+	<class name="SupportItem" Text="물품 지원"/>
+	<class name="SupportModule_Slot" Text="지원 모듈 슬롯"/>
+	<class name="Survivor" Text="생존자"/>
+	<class name="SymbolColor" Text="상징색"/>
+	<class name="SystemMenu_Logout" Text="메인 메뉴로 가기"/>
+	<class name="SystemMenu_Option" Text="환경 설정"/>
+	<class name="SystemMenu_Quit" Text="바탕 화면으로 나가기"/>
+	<class name="SystemMenu_Resume" Text="게임 계속하기"/>
+	<class name="SystemMenu_Retire" Text="임무 포기"/>
+	<class name="SystemMenu_Title" Text="시스템"/>
+	<class name="SystemSender" Text="시스템"/>
+	<class name="TabName" Text="탭 이름"/>
+	<class name="TargetItem" Text="작업 대상"/>
+	<class name="Technique" Text="특성 연구"/>
+	<class name="Technique_Add_Menu" Text="[!Menu]특성 추가"/>
+	<class name="Technique_Add_Menu_Module" Text="[!Menu]모듈 추가"/>
+	<class name="Technique_AutoSelect_Menu" Text="[!Menu]자동 선택"/>
+	<class name="Technique_Execution_Menu" Text="[!Menu]특성 연구"/>
+	<class name="Technique_Execution_Menu_Module" Text="[!Menu]모듈 제작"/>
+	<class name="Technique_Extract_Menu" Text="[!Menu]특성 해제"/>
+	<class name="Technique_Extract_Menu_Module" Text="[!Menu]모듈 해제"/>
+	<class name="Technique_Install" Text="책상 설치하기"/>
+	<class name="Technique_Menu" Text="[!Menu]특성 연구"/>
+	<class name="TechniqueFrontMessage" Text="연구 결과"/>
+	<class name="Temperature" Text="온도"/>
+	<class name="TemporaryCompanyName" Text="미등록 회사"/>
+	<class name="TheDead" Text="사망자"/>
+	<class name="Timing_BuffAdded" Text="적용"/>
+	<class name="Timing_End" Text="턴 종료"/>
+	<class name="Timing_Start" Text="턴 시작"/>
+	<class name="Title" Text="제목"/>
+	<class name="ToadSkinImmune" Text="두꺼비 피부"/>
+	<class name="TotalBuyCost" Text="총 구입 금액"/>
+	<class name="TotalCost" Text="총 금액"/>
+	<class name="TotalMissionClearCount" Text="임무 완료 경험"/>
+	<class name="TotalReward_Activity" Text="현재까지 지원 보상금"/>
+	<class name="TotalSellCost" Text="총 판매 금액"/>
+	<class name="TotalVill" Text="[!Menu]현재 소지 금액"/>
+	<class name="TradeAccept" Text="거래 수락"/>
+	<class name="TradeCancel" Text="거래 취소"/>
+	<class name="TradeLock" Text="거래 잠금"/>
+	<class name="TrainingManual" Text="[!Menu]훈련서"/>
+	<class name="TrainingPoint" Text="훈련 점수"/>
+	<class name="TrainingPoint_Menu" Text="[!Menu]훈련 점수"/>
+	<class name="TrainingPoint_Power_Menu" Text="[!Menu]출력"/>
+	<class name="TroubleBook" Text="사건 일지"/>
+	<class name="TroubleBook_Install" Text="책장 정리하기"/>
+	<class name="TroubleBook_Menu" Text="[!Menu]사건 일지"/>
+	<class name="TroubleBookCheckList" Text="사건 체크 리스트"/>
+	<class name="TroubleBookDifficulty" Text="사건 난이도"/>
+	<class name="TroubleBookExplain" Text="사건 개요"/>
+	<class name="TroublebookFrontMessage" Text="사건 조사 보상"/>
+	<class name="TroubleBookReward" Text="이해도 완료 보상"/>
+	<class name="TroubleBookStartCharacter" Text="사건 핵심 인물"/>
+	<class name="TroubleBookUnderstanding" Text="현재 사건 이해도"/>
+	<class name="Troublemaker_Marker1" Text="정보 획득 1 단계"/>
+	<class name="Troublemaker_Marker2" Text="정보 획득 2 단계"/>
+	<class name="Troublemaker_Marker3" Text="정보 획득 3 단계"/>
+	<class name="Troublemaker_Marker4" Text="정보 획득 4 단계"/>
+	<class name="Troublemaker_Marker5" Text="정보 획득 5 단계"/>
+	<class name="Troublemaker_Marker6" Text="정보 획득 6 단계"/>
+	<class name="Troublemaker_Marker7" Text="정보 획득 7 단계"/>
+	<class name="TroublemakerFrontMessage" Text="정보 수집 보상"/>
+	<class name="TroublemakerInfo" Text="적 정보"/>
+	<class name="TroublemakerList" Text="[!Menu]트러블메이커 일람"/>
+	<class name="TroublemakerList_Install" Text="[!Menu]책장 설치하기"/>
+	<class name="TroublemakerReward_Coin" Text="정보 완료 보상: 발키리 코인"/>
+	<class name="TroublemakerReward_Mastery" Text="정보 완료 보상: 연구 가능 특성 발견"/>
+	<class name="TroublemakerReward_Recipe" Text="정보 완료 보상: 제작 가능 아이템"/>
+	<class name="Troubleshooter" Text="트러블슈터"/>
+	<class name="Troubleshooter_Menu" Text="[!Menu]트러블슈터"/>
+	<class name="TroubleshooterActivity" Text="트러블슈터 활동"/>
+	<class name="TroubleshooterGrade" Text="트러블슈터 등급"/>
+	<class name="TroubleshooterUpgrade" Text="트러블슈터 승급"/>
+	<class name="Troublesum" Text="트러블섬 - 의뢰 수령"/>
+	<class name="TroublesumReward" Text="트러블섬 - 보상 수령"/>
+	<class name="TroubleUnderstanding" Text="사건 이해도"/>
+	<class name="Turn" Text="턴"/>
+	<class name="TurnEnd" Text="[!menu]턴 종료"/>
+	<class name="Type" Text="속성"/>
+	<class name="Uncontrollable" Text="제어 불가"/>
+	<class name="Undetected" Text="발견 안됨"/>
+	<class name="Unequiped" Text="미착용"/>
+	<class name="UnEquipment" Text="장비 해제"/>
+	<class name="UnEuipItem" Text="장비 해제"/>
+	<class name="UniqueMastery" Text="고유 특성"/>
+	<class name="UniqueMastery_Affiliation" Text="소속 특성"/>
+	<class name="UniqueMastery_Company" Text="회사 특성"/>
+	<class name="UniqueMastery_ESP" Text="SP 특성"/>
+	<class name="UniqueMastery_Job" Text="직업 특성"/>
+	<class name="UniqueMastery_Menu" Text="[!Menu]고유 특성"/>
+	<class name="UniqueMastery_Object" Text="사물 특성"/>
+	<class name="UniqueMastery_Organization" Text="조직 특성"/>
+	<class name="UniqueMastery_PC" Text="개인 특성"/>
+	<class name="UniqueMastery_Race" Text="종족 특성"/>
+	<class name="UnleashedCamouflage" Text="위장 해제"/>
+	<class name="Unlock_BeastSlot" Text="야수 보관 슬롯 확장"/>
+	<class name="Unlock_Warehouse" Text="창고 계약하기"/>
+	<class name="Unlock_Warehouse2" Text="지하 창고 계약하기"/>
+	<class name="Unlock_WarehouseManager" Text="창고 개설하기"/>
+	<class name="Unlock_WarehouseManager2" Text="창고 확장하기"/>
+	<class name="Unlock_Workshop" Text="작업실에 대하여"/>
+	<class name="Upgrade_MaxCountCraft" Text="제작 가능한 최대 개수"/>
+	<class name="Upgrade_MaxCountExtract" Text="추출 가능한 최대 개수"/>
+	<class name="UpgradeItem_Menu" Text="[!Menu]강화하기"/>
+	<class name="UpgradeItemResult_Menu" Text="[!Menu]강화 내역"/>
+	<class name="UpgradeItemResult_Menu2" Text="[!Menu]필요 재료"/>
+	<class name="UpgradeItemTarget_Menu" Text="[!Menu]강화 대상"/>
+	<class name="UpgradeWaiting" Text="강화 대기 중"/>
+	<class name="Upgrading" Text="강화 중..."/>
+	<class name="UpgradingItem" Text="강화 중"/>
+	<class name="UsableAbility" Text="사용 가능한 어빌리티"/>
+	<class name="UsableESP" Text="필요한 이능력"/>
+	<class name="UsableJobMasteryCategory" Text="사용 가능한 직업 특성"/>
+	<class name="UsableJobMasterySlot" Text="사용 가능한 특성 슬롯"/>
+	<class name="UsableWeapon" Text="필요한 무기"/>
+	<class name="UsedCCAbility" Text="견제 공격"/>
+	<class name="UserMenu_AddFriend" Text="[!유저메뉴]친구요청"/>
+	<class name="UserMenu_CompanyInfo" Text="[!유저메뉴]회사정보"/>
+	<class name="UserMenu_Trade" Text="[!유저메뉴]개인거래"/>
+	<class name="UserMenu_Whisper" Text="[!유저메뉴]귓속말"/>
+	<class name="ValkyrieShop" Text="발키리 상점"/>
+	<class name="Version_SteamBuildId" Text="빌드 ID"/>
+	<class name="Version_UpdateDate" Text="업데이트"/>
+	<class name="Video" Text="비디오"/>
+	<class name="Vigor_Menu" Text="[!Menu]기력"/>
+	<class name="Vill" Text="Vill"/>
+	<class name="WareHouse" Text="창고"/>
+	<class name="Warehouse_Menu" Text="[!Menu]창고 물품 목록"/>
+	<class name="WarehouseManager" Text="창고 관리하기"/>
+	<class name="Warning" Text="[!시스템메시지]경고"/>
+	<class name="Waypoint" Text="지역 이동"/>
+	<class name="Weapon" Text="무기"/>
+	<class name="Weapon_Menu" Text="[!Menu]무기"/>
+	<class name="Weather" Text="날씨"/>
+	<class name="Weight" Text="체중"/>
+	<class name="WhenEquipedBind" Text="착용 시 귀속"/>
+	<class name="WhenPickupBind" Text="획득 시 귀속"/>
+	<class name="WhisperFrom" Text="\[%s\] 님의 귓속말"/>
+	<class name="WhisperTo" Text="\[%s\] 님에게 귓속말"/>
+	<class name="WindWallArea" Text="바람장벽 지구"/>
+	<class name="WorkProcess" Text="부품 구성 진행도"/>
+	<class name="Workshop" Text="작업실"/>
+	<class name="Workshop_Locked" Text="창고"/>
+	<class name="WorkshopGet_Install" Text="상황판 가져가기"/>
+	<class name="WorldMap" Text="상황판"/>
+	<class name="WorldMap_Install" Text="상황판 설치하기"/>
+	<class name="WorldMap_Loading" Text="지역 정보 불러오는 중..."/>
+	<class name="WorldmapMarker1" Text="무법지대"/>
+	<class name="WorldmapMarker2" Text="활개치는 범죄자"/>
+	<class name="WorldmapMarker3" Text="팽팽한 긴장감"/>
+	<class name="WorldmapMarker4" Text="시민 응원"/>
+	<class name="WorldmapMarker5" Text="행복한 시민"/>
+	<class name="Yes" Text="있음"/>
+	<class name="Zone" Text="지역"/>
+</idspace>

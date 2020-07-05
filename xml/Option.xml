@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Option">
+		<class name="Audio" Title="오디오" Image="Loading_Ray_Heising" Order="1"/>
+		<class name="Video" Title="비디오" Image="Loading_Carter_Leton" Order="2"/>
+		<class name="Graphics" Title="그래픽" Image="Loading_Luna_Marco" Order="3"/>
+		<class name="GamePlay" Title="게임 플레이" Image="Loading_Irene_Albus" Order="4"/>
+		<class name="Interface" Title="인터페이스" Image="Loading_Alisa_Bianca" Order="5"/>
+		<class name="Report" Title="오류보고" Image="Loading_Alisa_Bianca" Order="6"/>
+	</idspace>
+	<idspace id="OptionAudio">
+		<schema>
+			<rule property="Initializer" type="function" default="StageMakerArgumentBasicInitializer"/>
+			<rule property="Form" type="link" target="ArgumentForm"/>
+			<rule property="Converter" type="function"/>
+		</schema>
+		<class name="Master" Title="마스터 볼륨" Desc="게임의 마스터 볼륨을 조절 합니다." Order="1" HiddenMultiplier="1" Form="OptionSliderLong" Initializer="OptionInitializeSlider" Min="0" Max="1" StepCount="20"/>
+		<class name="BGM" Title="음악 볼륨" Desc="배경 음악의 볼륨을 조절 합니다." Order="2" HiddenMultiplier="0.2375" Form="OptionSliderLong" Initializer="OptionInitializeSlider" Min="0" Max="1" StepCount="20"/>
+		<class name="Voice" Title="음성 볼륨" Desc="캐릭터의 음성 크기를 조절 합니다." Order="3" HiddenMultiplier="1" Form="OptionSliderLong" Initializer="OptionInitializeSlider" Min="0" Max="1" StepCount="20"/>
+		<class name="Effect" Title="효과음 볼륨" Desc="효과음의 크기를 조절 합니다." Order="4" HiddenMultiplier="1" Form="OptionSliderLong" Initializer="OptionInitializeSlider" Min="0" Max="1" StepCount="20"/>
+		<class name="UIEffect" Title="UI 볼륨" Desc="UI 효과음의 크기를 조절 합니다." Order="5" HiddenMultiplier="0.304167" Form="OptionSliderLong" Initializer="OptionInitializeSlider" Min="0" Max="1" StepCount="20"/>
+		<class name="MuteOnDeactivate" Title="비활성화 시 음소거" Desc="개임이 비활성화 되었을 때 게임소리를 음소거합니다." Order="6" Form="OptionCheckboxLong" Initializer="OptionInitializerCheckbox"/>
+	</idspace>
+	<idspace id="OptionGameplay">
+		<schema>
+			<rule property="Initializer" type="function" default="StageMakerArgumentBasicInitializer"/>
+			<rule property="Form" type="link" target="ArgumentForm"/>
+			<rule property="Order" type="number"/>
+			<rule property="Converter" type="function"/>
+		</schema>
+		<class name="AlwaysTurnOrder" Title="턴 순서 항상 표시" Desc="Alt키를 눌러서 볼 수 있는 캐릭터들의 턴 순서를 항상 표시합니다." Order="1" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="OtherActionAccel" Title="아군 외 행동 빠르게 연출" Desc="아군 캐릭터가 아닌 캐릭터들의 턴 진행을 가속합니다." Order="2" Form="OptionDroplist" Initializer="OptionInitializerDroplist" Converter="StageArgumentNumberConverter">
+			<Selection>
+				<property Title="보통" Value="0"/>
+				<property Title="약간 빠름" Value="1"/>
+				<property Title="빠름" Value="2"/>
+				<property Title="매우 빠름" Value="3"/>
+			</Selection>
+		</class>
+		<class name="MyActionAccel" Title="아군 행동 빠르게 연출" Desc="아군 캐릭터의 턴 진행을 가속합니다." Order="3" Form="OptionDroplist" Initializer="OptionInitializerDroplist" Converter="StageArgumentNumberConverter">
+			<Selection>
+				<property Title="보통" Value="0"/>
+				<property Title="약간 빠름" Value="1"/>
+				<property Title="빠름" Value="2"/>
+				<property Title="매우 빠름" Value="3"/>
+			</Selection>
+		</class>
+		<class name="DisableTargetCam" Title="타겟팅 카메라 끄기" Desc="타겟팅 전용 카메라 연출을 사용하지 않습니다." Order="4" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="DisableAbilityCam" Title="어빌리티 카메라 끄기" Desc="어빌리티 전용 카메라 연출을 사용하지 않습니다." Order="5" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="DisableRushCam" Title="이동시 근접 카메라 끄기" Desc="이동시 근접 카메라를 사용하지 않습니다." Order="6" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="DisableTurnCam" Title="내 턴 중 카메라 움직임 최소화" Desc="아군 캐릭터의 턴이 활성화 중일 때 조작에 따른 카메라의 움직임을 최소화 합니다." Order="7" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="ShowTileInfo" Title="타일 정보 표시" Desc="타일 정보를 표시합니다." Order="8" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="HUDCostBar" Title="캐릭터 상태창 기력 표시" Desc="캐릭터의 상태창에 각 캐릭터가 보유한 기력/분노/ 연료 등의 소모값을 표기합니다." Order="9" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="DelayedInventoryFlush" Title="인벤토리 새 아이템 갱신 지연" Desc="미션이 끝난 후 새로 획득한 아이템의 표기를 게임 로비를 나가기 전까지 보류합니다." Order="10" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="SimpleMasteryAchievement" Title="특성 획득표시 간략화" Desc="미션 중 특성을 획득하는 연출을 간소화 합니다." Order="11" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="SimpleGetItem" Title="아이템 획득 간략화" Desc="미션 중 아이템 상자를 열어 아이템을 획득하는 연출을 간소화합니다. 해당 옵션을 사용하면 상자에서 얻은 아이템은 바로 인벤토리로 이동합니다." Order="12" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="SimpleInteraction" Title="상호작용 연출 간략화" Desc="게임내의 상호작용 연출을 간소화 합니다." Order="13" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="SimpleLevelUp" Title="레벨업 연출 간략화" Desc="레벨업에 따른 능력치 변경 사항을 보여주지 않습니다." Order="14" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="AlwaysChallengerMode" Title="도전 모드 항상 활성화" Desc="미션 도전 모드를 항상 활성화 합니다." Order="15" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="ReinforcedMoveRange" Title="이동 범위 격자 표시" Desc="이동 범위를 더 잘 보이게 합니다." Order="16" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="SPAbilityAlwaysVisible" Title="과충전 어빌리티 항상 표시" Desc="과충전 어빌리티가 과충전 여부와 관계없이 항상 표기됩니다." Order="17" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="ShowAllianceListAct" Title="아군 목록에 턴 대기시간 표시하기" Desc="미션 진행중에 우하단의 아군 목록에 다음 턴 대기시간을 표시합니다." Order="18" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="ShowCSDDamage" Title="치명타 피해량 수치 보여주기" Desc="어빌리티 선택 시의 치명타 피해량 정보에 치명타 발생 시의 피해량 수치를 표시합니다." Order="19" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="HideSelectionCount" Title="선택지 비율 숨기기" Desc="선택지의 선택 비율을 표시하지 않습니다." Order="20" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="ShowCharacterVoiceText" Title="캐릭터 연출 시 대사 표시" Desc="캐릭터 연출 시의 음성 대사를 자막으로 표시합니다." Order="21" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+	</idspace>
+	<idspace id="OptionGraphics">
+		<schema>
+			<rule property="Initializer" type="function" default="StageMakerArgumentBasicInitializer"/>
+			<rule property="Form" type="link" target="ArgumentForm"/>
+			<rule property="Converter" type="function"/>
+			<rule property="NoPreset" type="bool" default="false"/>
+			<rule property="Hidden" type="bool" default="false"/>
+		</schema>
+		<class name="PresetSetting" Title="그래픽 품질" Desc="전체적인 그래픽 품질을 한번에 설정합니다." Order="1" Form="OptionDroplist" Initializer="OptionInitializerDroplist">
+			<Selection>
+				<property Title="매우 낮음" Value="verylow" Level="1"/>
+				<property Title="낮음" Value="low" Level="2"/>
+				<property Title="보통" Value="mid" Level="3"/>
+				<property Title="높음" Value="hi" Level="4"/>
+				<property Title="매우 높음" Value="veryhi" Level="5"/>
+			</Selection>
+		</class>
+		<class name="SpaceHolder" Order="2" Form="OptionSpaceHolder"/>
+		<class name="UseDetailSetting" Title="세부 설정" Order="3" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="RenderScale" Title="렌더링 스케일" Order="4" Form="OptionDroplist" Initializer="OptionInitializerDroplist" Converter="StageArgumentNumberConverter">
+			<Selection>
+				<property Title="50%" Value="0.5"/>
+				<property Title="67%" Value="0.6667"/>
+				<property Title="75%" Value="0.75"/>
+				<property Title="83%" Value="0.8334"/>
+				<property Title="90%" Value="0.90"/>
+				<property Title="100%" Value="1"/>
+				<property Title="150%" Value="1.5"/>
+			</Selection>
+		</class>
+		<class name="TextureSize" Title="텍스쳐 해상도" Order="5" Form="OptionDroplist" Initializer="OptionInitializerDroplist">
+			<Selection>
+				<property Title="낮음" Value="low"/>
+				<property Title="중간" Value="mid"/>
+				<property Title="높음" Value="hi"/>
+			</Selection>
+		</class>
+		<class name="TextureFiltering" Title="텍스쳐 필터링" Order="6" Form="OptionDroplist" Initializer="OptionInitializerDroplist" Converter="StageArgumentNumberConverter">
+			<Selection>
+				<property Title="이중선형" Value="1"/>
+				<property Title="삼선형" Value="2"/>
+				<property Title="비등방성 2x" Value="3"/>
+				<property Title="비등방성 4x" Value="4"/>
+				<property Title="비등방성 8x" Value="5"/>
+				<property Title="비등방성 16x" Value="6"/>
+			</Selection>
+		</class>
+		<class name="NormalMap" Title="텍스쳐 세부 묘사" Order="7" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="ShadowMapSize" Title="그림자 해상도" Order="8" Form="OptionDroplist" Initializer="OptionInitializerDroplist" Converter="StageArgumentNumberConverter">
+			<Selection>
+				<property Title="낮음" Value="0"/>
+				<property Title="중간" Value="1"/>
+				<property Title="높음" Value="2"/>
+			</Selection>
+		</class>
+		<class name="ShadowMapPCF" Title="그림자 퀄리티" Order="9" Form="OptionDroplist" Initializer="OptionInitializerDroplist" Converter="StageArgumentNumberConverter">
+			<Selection>
+				<property Title="낮음" Value="0"/>
+				<property Title="중간" Value="1"/>
+				<property Title="높음" Value="2"/>
+			</Selection>
+		</class>
+		<class name="ParticleLight" Title="이펙트 광원 효과" Order="10" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="ParticleDistortion" Title="이펙트 왜곡 효과" Order="11" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="Glow" Title="글로우 효과" Order="12" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="AntiAliasing" Title="앤티앨리어싱" Order="13" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="FieldEffectQuality" Title="지형 효과 퀄리티" Order="14" Form="OptionDroplist" Initializer="OptionInitializerDroplist" Converter="StageArgumentNumberConverter">
+			<Selection>
+				<property Title="매우 낮음" Value="1"/>
+				<property Title="낮음" Value="2"/>
+				<property Title="보통" Value="3"/>
+				<property Title="높음" Value="4"/>
+				<property Title="매우 높음" Value="5"/>
+			</Selection>
+		</class>
+		<class name="UseOptionalBgAmbient" Title="눈 눈부심 방지" Desc="눈 맵의 눈부심을 방지하기 위해서 라이팅 효과를 조정합니다." Order="15" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox" NoPreset="true"/>
+	</idspace>
+	<idspace id="OptionGraphicsPreset">
+		<schema>
+			<rule property="ParticleLight" type="bool"/>
+			<rule property="ParticleDistortion" type="bool"/>
+			<rule property="Glow" type="bool"/>
+			<rule property="AntiAliasing" type="bool"/>
+			<rule property="NormalMap" type="bool"/>
+			<rule property="Desc" type="calculated" default="CalculatedProperty_TextFormater_GameDifficulty"/>
+		</schema>
+		<class name="verylow" Image="Loading_Sion_Anne" RenderScale="0.75" TextureSize="low" TextureFiltering="1" NormalMap="false" ShadowMapSize="0" ShadowMapPCF="0" ParticleLight="false" ParticleDistortion="false" Glow="false" AntiAliasing="false" FieldEffectQuality="3">
+			<Desc_Base>
+				<property CaseColor="LimeGold" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="매우 낮은 그래픽 품질입니다."/>
+				<property CaseColor="White" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="그래픽 세부 설정은 게임 시작 후 게임 옵션을 통해 변경 가능합니다."/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="렌더링 스케일" CaseLineBreak="false" LineBreak="false" Text="75%"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="텍스쳐 해상도" CaseLineBreak="false" LineBreak="false" Text="낮음"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="텍스쳐 필터링" CaseLineBreak="false" LineBreak="false" Text="이중선형"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="텍스쳐 세부 묘사" CaseLineBreak="false" LineBreak="false" Text="아니오"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="그림자 해상도" CaseLineBreak="false" LineBreak="false" Text="낮음"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="그림자 퀄리티" CaseLineBreak="false" LineBreak="false" Text="낮음"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="이펙트 광원 효과" CaseLineBreak="false" LineBreak="false" Text="아니오"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="이펙트 왜곡 효과" CaseLineBreak="false" LineBreak="false" Text="아니오"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="글로우 효과" CaseLineBreak="false" LineBreak="false" Text="아니오"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="앤티앨리어싱" CaseLineBreak="false" LineBreak="false" Text="아니오"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="지형 효과 퀄리티" CaseLineBreak="false" LineBreak="false" Text="보통"/>
+			</Desc_Base>
+		</class>
+		<class name="low" Image="Loading_Irene_Albus" RenderScale="0.8334" TextureSize="low" TextureFiltering="2" NormalMap="true" ShadowMapSize="1" ShadowMapPCF="0" ParticleLight="false" ParticleDistortion="false" Glow="true" AntiAliasing="false" FieldEffectQuality="3">
+			<Desc_Base>
+				<property CaseColor="LimeGold" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="낮은 그래픽 품질입니다."/>
+				<property CaseColor="White" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="그래픽 세부 설정은 게임 시작 후 게임 옵션을 통해 변경 가능합니다."/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="렌더링 스케일" CaseLineBreak="false" LineBreak="false" Text="83%"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="텍스쳐 해상도" CaseLineBreak="false" LineBreak="false" Text="낮음"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="텍스쳐 필터링" CaseLineBreak="false" LineBreak="false" Text="삼선형"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="텍스쳐 세부 묘사" CaseLineBreak="false" LineBreak="false" Text="예"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="그림자 해상도" CaseLineBreak="false" LineBreak="false" Text="중간"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="그림자 퀄리티" CaseLineBreak="false" LineBreak="false" Text="낮음"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="이펙트 광원 효과" CaseLineBreak="false" LineBreak="false" Text="아니오"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="이펙트 왜곡 효과" CaseLineBreak="false" LineBreak="false" Text="아니오"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="글로우 효과" CaseLineBreak="false" LineBreak="false" Text="예"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="앤티앨리어싱" CaseLineBreak="false" LineBreak="false" Text="아니오"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="지형 효과 퀄리티" CaseLineBreak="false" LineBreak="false" Text="보통"/>
+			</Desc_Base>
+		</class>
+		<class name="mid" Image="Loading_Ray_Heising" RenderScale="1" TextureSize="mid" TextureFiltering="3" NormalMap="true" ShadowMapSize="1" ShadowMapPCF="1" ParticleLight="true" ParticleDistortion="true" Glow="true" AntiAliasing="true" FieldEffectQuality="4">
+			<Desc_Base>
+				<property CaseColor="LimeGold" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="보통 그래픽 품질입니다."/>
+				<property CaseColor="White" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="그래픽 세부 설정은 게임 시작 후 게임 옵션을 통해 변경 가능합니다."/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="렌더링 스케일" CaseLineBreak="false" LineBreak="false" Text="100%"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="텍스쳐 해상도" CaseLineBreak="false" LineBreak="false" Text="중간"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="텍스쳐 필터링" CaseLineBreak="false" LineBreak="false" Text="비등방성 2x"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="텍스쳐 세부 묘사" CaseLineBreak="false" LineBreak="false" Text="예"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="그림자 해상도" CaseLineBreak="false" LineBreak="false" Text="중간"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="그림자 퀄리티" CaseLineBreak="false" LineBreak="false" Text="중간"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="이펙트 광원 효과" CaseLineBreak="false" LineBreak="false" Text="예"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="이펙트 왜곡 효과" CaseLineBreak="false" LineBreak="false" Text="예"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="글로우 효과" CaseLineBreak="false" LineBreak="false" Text="예"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="앤티앨리어싱" CaseLineBreak="false" LineBreak="false" Text="예"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="지형 효과 퀄리티" CaseLineBreak="false" LineBreak="false" Text="높음"/>
+			</Desc_Base>
+		</class>
+		<class name="hi" Image="Loading_Luna_Marco" RenderScale="1" TextureSize="mid" TextureFiltering="4" NormalMap="true" ShadowMapSize="2" ShadowMapPCF="2" ParticleLight="true" ParticleDistortion="true" Glow="true" AntiAliasing="true" FieldEffectQuality="4">
+			<Desc_Base>
+				<property CaseColor="LimeGold" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="높은 그래픽 품질입니다."/>
+				<property CaseColor="White" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="그래픽 세부 설정은 게임 시작 후 게임 옵션을 통해 변경 가능합니다."/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="렌더링 스케일" CaseLineBreak="false" LineBreak="false" Text="100%"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="텍스쳐 해상도" CaseLineBreak="false" LineBreak="false" Text="중간"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="텍스쳐 필터링" CaseLineBreak="false" LineBreak="false" Text="비등방성 4x"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="텍스쳐 세부 묘사" CaseLineBreak="false" LineBreak="false" Text="예"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="그림자 해상도" CaseLineBreak="false" LineBreak="false" Text="높음"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="그림자 퀄리티" CaseLineBreak="false" LineBreak="false" Text="높음"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="이펙트 광원 효과" CaseLineBreak="false" LineBreak="false" Text="예"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="이펙트 왜곡 효과" CaseLineBreak="false" LineBreak="false" Text="예"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="글로우 효과" CaseLineBreak="false" LineBreak="false" Text="예"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="앤티앨리어싱" CaseLineBreak="false" LineBreak="false" Text="예"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="지형 효과 퀄리티" CaseLineBreak="false" LineBreak="false" Text="높음"/>
+			</Desc_Base>
+		</class>
+		<class name="veryhi" Image="Loading_Carter_Leton" RenderScale="1" TextureSize="hi" TextureFiltering="6" NormalMap="true" ShadowMapSize="2" ShadowMapPCF="2" ParticleLight="true" ParticleDistortion="true" Glow="true" AntiAliasing="true" FieldEffectQuality="5">
+			<Desc_Base>
+				<property CaseColor="LimeGold" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="매우 높은 그래픽 품질입니다."/>
+				<property CaseColor="White" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="그래픽 세부 설정은 게임 시작 후 게임 옵션을 통해 변경 가능합니다."/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="렌더링 스케일" CaseLineBreak="false" LineBreak="false" Text="100%"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="텍스쳐 해상도" CaseLineBreak="false" LineBreak="false" Text="높음"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="텍스쳐 필터링" CaseLineBreak="false" LineBreak="false" Text="비등방성 16x"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="텍스쳐 세부 묘사" CaseLineBreak="false" LineBreak="false" Text="예"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="그림자 해상도" CaseLineBreak="false" LineBreak="false" Text="높음"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="그림자 퀄리티" CaseLineBreak="false" LineBreak="false" Text="높음"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="이펙트 광원 효과" CaseLineBreak="false" LineBreak="false" Text="예"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="이펙트 왜곡 효과" CaseLineBreak="false" LineBreak="false" Text="예"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="글로우 효과" CaseLineBreak="false" LineBreak="false" Text="예"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="앤티앨리어싱" CaseLineBreak="false" LineBreak="false" Text="예"/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="지형 효과 퀄리티" CaseLineBreak="false" LineBreak="false" Text="매우 높음"/>
+			</Desc_Base>
+		</class>
+	</idspace>
+	<idspace id="OptionInterface">
+		<schema>
+			<rule property="Initializer" type="function" default="StageMakerArgumentBasicInitializer"/>
+			<rule property="Form" type="link" target="ArgumentForm"/>
+			<rule property="Converter" type="function"/>
+		</schema>
+		<class name="MissionCamRotAngle" Title="전투 카메라 회전 각도" Desc="카메라 회전 명령에 의해서 한번에 회전하는 카메라의 각도를 설정합니다." Order="1" Form="OptionDroplist" Initializer="OptionInitializerDroplist" Converter="StageArgumentNumberConverter">
+			<Selection>
+				<property Title="90" Value="90"/>
+				<property Title="30" Value="30"/>
+				<property Title="45" Value="45"/>
+			</Selection>
+		</class>
+		<class name="MissionCamZoomLevelMaxMore" Title="전투 카메라 최대 거리 증가" Desc="미션 중 카메라의 최대 거리를 늘려줍니다." Order="2" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="MissionCamPitchControl" Title="전투 카메라 수직 각도 조절" Desc="미션 중 카메라의 수직 각도를 조절할 수 있도록 기능을 개방합니다." Order="3" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="ShowMissionPing" Title="미션 응답속도 표시" Order="4" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="ShowOSClock" Title="현재 시간 표시" Order="5" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="LobbyMoveKey" Title="로비 이동" Order="6" Form="OptionDroplist" Initializer="OptionInitializerDroplist">
+			<Selection>
+				<property Title="왼쪽 버튼" Value="Left"/>
+				<property Title="가운데 버튼" Value="Middle"/>
+				<property Title="오른쪽 버튼" Value="Right"/>
+			</Selection>
+		</class>
+		<class name="RotateCamera" Title="로비 카메라 회전" Order="7" Form="OptionDroplist" Initializer="OptionInitializerDroplist">
+			<Selection>
+				<property Title="왼쪽 버튼" Value="Left"/>
+				<property Title="가운데 버튼" Value="Middle"/>
+				<property Title="오른쪽 버튼" Value="Right"/>
+			</Selection>
+		</class>
+		<class name="RotationSensitive" Title="로비 카메라 회전 민감도" Order="8" Form="OptionSlider" Initializer="OptionInitializeSlider" Min="0" Max="4" StepCount="5"/>
+		<class name="InvertLobbyCamZoom" Title="로비 카메라 줌 반전" Desc="로비 카메라의 줌 방향을 반대로 설정합니다." Order="9" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="DialogTypingSound" Title="대화 타이핑 사운드" Desc="다이얼로그 및 자막의 텍스트의 타이핑 사운드의 재생여부를 설정합니다." Order="10" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="MissionDragCam" Title="드래그를 이용한 카메라 이동" Desc="마우스 왼쪽 드래그를 이용하여 카메라를 이동할 수 있도록 합니다." Order="11" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="MissionChatInitialize" Title="미션 시작 시 대화창 활성화" Desc="미션 시작 시 채팅창을 열어줍니다." Order="12" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="MissionUDPConnection" Title="미션 UDP 커넥션 사용 (*beta)" Desc="네트워크 지연이 심한 유저들을 위한 보조 옵션입니다. 현재 테스트중인 기능으로 게임 진행상 불안정한 상황이 발생할 수 있습니다.
+미션을 진행중인 경우 다음 미션부터 적용됩니다." Order="13" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+	</idspace>
+	<idspace id="OptionVideo">
+		<schema>
+			<rule property="Initializer" type="function" default="StageMakerArgumentBasicInitializer"/>
+			<rule property="Form" type="link" target="ArgumentForm"/>
+			<rule property="Converter" type="function"/>
+		</schema>
+		<class name="Mode" Title="모드" Order="1" Form="OptionDroplistLong" Initializer="OptionInitializerDroplist">
+			<Selection>
+				<property Title="전체 화면" Value="fullscreen"/>
+				<property Title="창 테두리 없음" Value="borderless"/>
+				<property Title="창 모드" Value="windowed"/>
+			</Selection>
+		</class>
+		<class name="Resolution" Title="해상도" Order="2" Form="OptionDroplistLong" Initializer="OptionInitializerResolution"/>
+		<class name="VSync" Title="수직동기화" Order="3" Form="OptionCheckboxLong" Initializer="OptionInitializerCheckbox"/>
+		<class name="LimitMaxFPS" Title="최대 FPS 제한" Order="4" Form="OptionCheckboxLong" Initializer="OptionInitializerCheckbox"/>
+		<class name="MaxFPS" Title="최대 FPS 제한 수치" Order="5" Form="OptionSliderText" Initializer="OptionInitializeSlider" Min="20" Max="240" StepCount="220"/>
+	</idspace>
+</idspaces>

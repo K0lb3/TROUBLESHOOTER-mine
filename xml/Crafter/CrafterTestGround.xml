@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="CrafterTestGround">
+	<schema>
+		<rule property="Map" type="link" target="Map"/>
+		<rule property="MainObjPosition" type="table" default="x=0, y=0, z=0"/>
+		<rule property="CamPos" type="table" default="x=0, y=300, z=300"/>
+		<rule property="CamDir" type="table" default="x=0, y=0, z=-1"/>
+		<rule property="MovePath" type="table" subtype="table" default="{ x=0, y=0, z=0 }"/>
+	</schema>
+	<class name="CharacterTestGround" Map="CharacterTestGround">
+		<MainObjPosition x="6" y="6" z="18"/>
+		<CamPos x="75" y="384" z="584"/>
+		<CamDir x="0" y="-0.15" z="-1"/>
+		<MovePath>
+			<property x="8" y="8" z="17"/>
+			<property x="4" y="8" z="17"/>
+			<property x="4" y="4" z="17"/>
+			<property x="8" y="4" z="17"/>
+			<property x="8" y="8" z="17"/>
+			<property x="4" y="8" z="17"/>
+			<property x="4" y="4" z="17"/>
+			<property x="8" y="4" z="17"/>
+			<property x="8" y="8" z="17"/>
+		</MovePath>
+	</class>
+	<class name="OldCharacterTestGround" Map="OldCharacterTestGround">
+		<MainObjPosition x="6" y="6" z="18"/>
+		<CamPos x="75" y="384" z="584"/>
+		<CamDir x="0" y="-0.15" z="-1"/>
+		<MovePath>
+			<property x="8" y="8" z="17"/>
+			<property x="4" y="8" z="17"/>
+			<property x="4" y="4" z="17"/>
+			<property x="8" y="4" z="17"/>
+			<property x="8" y="8" z="17"/>
+			<property x="4" y="8" z="17"/>
+			<property x="4" y="4" z="17"/>
+			<property x="8" y="4" z="17"/>
+			<property x="8" y="8" z="17"/>
+		</MovePath>
+	</class>
+	<class name="new_test_stage" Map="new_test_stage">
+		<MainObjPosition x="13" y="13" z="0"/>
+		<CamPos x="370" y="210" z="900"/>
+		<CamDir x="0" y="-0.17" z="-0.985"/>
+	</class>
+</idspace>

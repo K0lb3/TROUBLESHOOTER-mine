@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="InvestigationTarget">
+		<schema>
+			<rule property="Arguments" type="table" subtype="link" target="StageMakerArgument" Default=""/>
+			<rule property="Interaction" type="link" target="Interaction"/>
+			<rule property="InvestigationOccuredCallback" type="function"/>
+		</schema>
+		<class name="Chest" Interaction="InvestigateChest" Arguments="OpenReward_Chest, ChestType" InvestigationOccuredCallback="OnInvestigationOccured_Chest"/>
+		<class name="Lock" Interaction="InvestigateLock" Arguments="OpenReward_Lock" InvestigationOccuredCallback="OnInvestigationOccured_Lock"/>
+		<class name="Pc" Interaction="InvestigateComputer" Arguments="Priority, ConditionOutputInteraction, OnSuccessActionList, OnFailActionList" InvestigationOccuredCallback="OnInvestigationOccured_Pc"/>
+		<class name="Server" Interaction="InvestigateComputer" Arguments="Priority, ServerType" InvestigationOccuredCallback="OnInvestigationOccured_Server"/>
+	</idspace>
+	<idspace id="ServerType">
+		<schema>
+			<rule property="Arguments" type="table" subtype="link" target="StageMakerArgument" Default=""/>
+		</schema>
+		<class name="Ally" Arguments="Organization"/>
+		<class name="Enemy" Arguments="Team"/>
+	</idspace>
+	<idspace id="InvestigationReward">
+		<schema>
+			<rule property="Arguments" type="table" subtype="link" target="StageMakerArgument" Default=""/>
+		</schema>
+		<class name="Information" Arguments="Priority"/>
+		<class name="Item_Chest" Arguments="ItemCollection"/>
+		<class name="Item_Chest_Difficulty" Arguments="ItemCollectionEasy, ItemCollectionNormal, ItemCollectionHard"/>
+		<class name="ItemSet_Chest" Arguments="ItemCollectionSet"/>
+		<class name="ItemSet_Chest_Difficulty" Arguments="ItemCollectionSetEasy, ItemCollectionSetNormal, ItemCollectionSetHard"/>
+		<class name="Item_Lock" Arguments="ItemCollection"/>
+	</idspace>
+	<idspace id="ChestType">
+		<schema>
+			<rule property="MonsterActive" type="link" target="Monster" Default="None"/>
+			<rule property="ObjectOff" type="link" target="Object" Default="None"/>
+		</schema>
+		<class name="Chest" MonsterActive="InvestigationTarget_Chest" ObjectOff="Object_ItemCube_Off"/>
+		<class name="Chest_White" MonsterActive="InvestigationTarget_Chest_White" ObjectOff="Object_ItemCube_White_Off"/>
+		<class name="Chest_Recovery" MonsterActive="InvestigationTarget_Chest_Recovery" ObjectOff="Object_ItemCube_Recovery_Off"/>
+	</idspace>
+</idspaces>

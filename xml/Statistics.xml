@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="CompanyStats">
+		<schema>
+			<rule property="MissionTroublebook" type="number" default="0"/>
+			<rule property="MissionTotal" type="number" default="0"/>
+			<rule property="MissionClear" type="number" default="0"/>
+			<rule property="MissionClearDifficulty" type="maptable" subtype="number" target="MissionDifficulty" default="0"/>
+			<rule property="MissionClearType" type="maptable" subtype="number" target="MissionType" default="0"/>
+			<rule property="MissionClearReputation" type="maptable" subtype="number" target="Reputation" default="0"/>
+			<rule property="MissionClearWithBeast" type="number" default="0"/>
+			<rule property="MissionFail" type="number" default="0"/>
+			<rule property="UnitDead" type="number" default="0"/>
+			<rule property="EnemyKill" type="number" default="0"/>
+			<rule property="EnemyKillPerMission" type="number" default="0"/>
+			<rule property="Rescue" type="number" default="0"/>
+			<rule property="Destruction" type="number" default="0"/>
+			<rule property="OpenChest" type="number" default="0"/>
+			<rule property="LegendaryBeastKill" type="number" default="0"/>
+			<rule property="LegendaryMachineKill" type="number" default="0"/>
+			<rule property="GiantKill" type="number" default="0"/>
+			<rule property="ExtractPsionicStone" type="number" default="0"/>
+			<rule property="RewardItemMaterial" type="number" default="0"/>
+			<rule property="UseAbilityStandBy" type="number" default="0"/>
+			<rule property="UseAbilityConceal" type="number" default="0"/>
+			<rule property="LuckAdded" type="number" default="0"/>
+			<rule property="DodgeOnCover" type="number" default="0"/>
+			<rule property="TamingSuccessCount" type="number" default="0"/>
+			<rule property="RestAction" type="maptable" subtype="number" target="RestAction" default="0"/>
+			<rule property="TrapUseCount" type="number" default="0"/>
+			<rule property="ProtocolUseCount" type="number" default="0"/>
+			<rule property="PerformanceFinishCount" type="number" default="0"/>
+			<rule property="FoodSetEffectCount" type="number" default="0"/>
+		</schema>
+		<class name="Stats"/>
+	</idspace>
+	<idspace id="RosterStats">
+		<schema>
+			<rule property="MissionTotal" type="number" default="0"/>
+			<rule property="MissionClear" type="number" default="0"/>
+			<rule property="UnitDead" type="number" default="0"/>
+			<rule property="EnemyKill" type="number" default="0"/>
+			<rule property="EnemyKillPerMission" type="number" default="0"/>
+			<rule property="Rescue" type="number" default="0"/>
+			<rule property="Destruction" type="number" default="0"/>
+			<rule property="ConditionRest" type="number" default="0"/>
+			<rule property="Attack" type="number" default="0"/>
+			<rule property="AttackDamage" type="number" default="0"/>
+			<rule property="AttackHit" type="number" default="0"/>
+			<rule property="AttackCritical" type="number" default="0"/>
+			<rule property="Defence" type="number" default="0"/>
+			<rule property="DefenceDamage" type="number" default="0"/>
+			<rule property="DefenceDodge" type="number" default="0"/>
+			<rule property="DefenceBlock" type="number" default="0"/>
+			<rule property="Heal" type="number" default="0"/>
+		</schema>
+		<class name="Stats"/>
+	</idspace>
+	<idspace id="StatsInfo">
+		<schema>
+			<rule property="IsTab" type="bool" default="false"/>
+		</schema>
+		<class name="Company">
+			<Stats>
+				<property Title="총 미션 참여 횟수" Type="Value" Stat="MissionTotal"/>
+				<property Title="미션 성공 횟수" Type="Value" Stat="MissionClear"/>
+				<property Title="미션 패배 수" Type="Value" Stat="MissionFail"/>
+				<property Title="미션 성공률" Type="Custom" Format="Percent" Custom="GetCompanyStats_MissionClearRatio"/>
+				<property Title="아군 전투 불능 수" Type="Value" Stat="UnitDead"/>
+				<property Title="전투 불능 확률" Type="Custom" Format="Percent" Custom="GetCompanyStats_UnitDeadRatio"/>
+				<property Title="처치한 적 총 수" Type="Value" Stat="EnemyKill"/>
+				<property Title="미션 당 처치한 적 수" Type="Value" Stat="EnemyKillPerMission"/>
+				<property Title="시민 구조 수" Type="Value" Stat="Rescue"/>
+				<property Title="오브젝트 파괴 수" Type="Value" Stat="Destruction"/>
+				<property Title="상자 획득 수" Type="Value" Stat="OpenChest"/>
+			</Stats>
+		</class>
+		<class name="CompanyDifficulty">
+			<Stats>
+				<property Title="안전" Type="Custom" Custom="GetCompanyStats_Difficulty1_3"/>
+				<property Title="쉬움" Type="Custom" Custom="GetCompanyStats_Difficulty4_6"/>
+				<property Title="보통" Type="Custom" Custom="GetCompanyStats_Difficulty7_9"/>
+				<property Title="어려움" Type="Custom" Custom="GetCompanyStats_Difficulty10_12"/>
+				<property Title="가혹한" Type="Custom" Custom="GetCompanyStats_Difficulty13_15"/>
+			</Stats>
+		</class>
+		<class name="CompanyMissionType"/>
+		<class name="CompanyReputation"/>
+		<class name="Roster">
+			<Stats>
+				<property Title="사원별 미션 사건 해결수" Type="Value" Stat="MissionClear"/>
+				<property Title="사원별 전투 불능 된 수" Type="Value" Stat="UnitDead"/>
+				<property Title="사원별 처치한 적 총 수" Type="Value" Stat="EnemyKill"/>
+				<property Title="사원별 미션당 처치한 불량배수" Type="Value" Format="Float" Stat="EnemyKillPerMission"/>
+				<property Title="시민 구조수" Type="Value" Stat="Rescue"/>
+				<property Title="오브젝트 파괴 수" Type="Value" Stat="Destruction"/>
+				<property Title="무기력 횟수" Type="Value" Stat="ConditionRest"/>
+				<property Title="평균 제압률" Type="Custom" Format="Percent" Custom="GetRosterStats_KillRatio"/>
+				<property Title="평균 명중률" Type="Custom" Format="Percent" Custom="GetRosterStats_HitRatio"/>
+				<property Title="평균 치명타 적중률" Type="Custom" Format="Percent" Custom="GetRosterStats_CriticalRatio"/>
+				<property Title="평균 회피율" Type="Custom" Format="Percent" Custom="GetRosterStats_DodgeRatio"/>
+				<property Title="평균 방어율" Type="Custom" Format="Percent" Custom="GetRosterStats_BlockRatio"/>
+			</Stats>
+		</class>
+	</idspace>
+</idspaces>

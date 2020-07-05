@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Tutorial_Orsay_OA9jSm" Value="[!Dashboard:Counter]남은 스푼교도 수"/>
+		<class name="Tutorial_Orsay_kAosBS" Value="[!Dashboard:TimeLimiter]경찰 도착까지 남은 시간"/>
+		<class name="Tutorial_Orsay_ActoQv" Value="[!Dashboard:Counter]남은 티마 수"/>
+		<class name="Tutorial_Orsay_sHDBrm" Value="[!Objective]모든 적을 제압하시오."/>
+		<class name="Tutorial_Orsay_RzUVBu" Value="[!Objective]침입자를 모두 제거하시오."/>
+		<class name="Tutorial_Orsay_DbkplW" Value="[!Objective]적을 모두 제압하시오."/>
+		<class name="Tutorial_Orsay_bj8qIi" Value="[!Title]어부지리"/>
+		<class name="Tutorial_Orsay_aihXzg" Value="[!Title]철의 숲 &apos;오르세&apos; 역"/>
+		<class name="Tutorial_Orsay_3mw2WZ" Value="[!Subtitle][!speaker:EmptySubTitle_]과거 철의 숲 개발이 한창이던 시절..."/>
+		<class name="Tutorial_Orsay_enbDX0" Value="[!Subtitle][!speaker:EmptySubTitle_]많은 사람이 숲을 정복하기 위해 이 곳을 거쳐 갔다."/>
+		<class name="Tutorial_Orsay_ZuKfUe" Value="[!Subtitle][!speaker:EmptySubTitle_]인부들의 망치질이 하루 하루 철도를 이어나갔고"/>
+		<class name="Tutorial_Orsay_gBg2pG" Value="[!Subtitle][!speaker:EmptySubTitle_]티마 무리는 매일 매일 더 깊숙한 숲속으로 몸을 피해야 했었다."/>
+		<class name="Tutorial_Orsay_4eCosl" Value="[!Dialog][!speaker:Gangster_SpoonSword_Normal]이상 없음. 이번에도 정확하군."/>
+		<class name="Tutorial_Orsay_GFtYZ1" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Wind_Normal]이런 구시대 열차까지 굴려 가며 물건을 가져오다니..."/>
+		<class name="Tutorial_Orsay_3XVP6F" Value="[!BalloonChat][!speaker:Direct_Spoon01]음??"/>
+		<class name="Tutorial_Orsay_ov7Bhd" Value="[!Dialog][!speaker:Carter_Normal]늦었다. 대니."/>
+		<class name="Tutorial_Orsay_n6NGPM" Value="[!BalloonChat][!speaker:Direct_Spoon01]저 녀석은!! "/>
+		<class name="Tutorial_Orsay_NdRdzF" Value="[!BalloonChat][!speaker:Direct_Spoon02]앨리!!"/>
+		<class name="Tutorial_Orsay_SbT8Sb" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Wind_Normal]물건 잘 받았소. 약속한 대금은 입금될 것이오."/>
+		<class name="Tutorial_Orsay_KC6G9W" Value="[!Dialog][!speaker:Gangster_DannyLaw_Normal]그래. 그런데 오늘따라 사람이 적군. 이 물건들은 언제 다 옮길 거냐?"/>
+		<class name="Tutorial_Orsay_BM60WC" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Wind_Normal]다들 지금 물류 캠프로 올라갔소. 금방 다시 올 것이오."/>
+		<class name="Tutorial_Orsay_3PWuvK" Value="[!Dialog][!speaker:Gangster_DannyLaw_Normal]하아... 멍청한 녀석들..."/>
+		<class name="Tutorial_Orsay_saTnQF" Value="[!Dialog][!speaker:Gangster_DannyLaw_Normal]이러니 그따위 트러블슈터들한테 얻어터지고 다니지..."/>
+		<class name="Tutorial_Orsay_OhQqYz" Value="[!Dialog][!speaker:Gangster_DannyLaw_Normal]이런 식이면 멍청한 황소파처럼 한 순간에 우르륵 무너지는 거야."/>
+		<class name="Tutorial_Orsay_fVLqYB" Value="[!BalloonChat][!speaker:Direct_Spoon02]뭐!! 이 녀석이!!"/>
+		<class name="Tutorial_Orsay_F0tRNF" Value="[!Dialog][!speaker:Gangster_SpoonSword_Normal]너! 저 앨리 녀석과 무슨 관계냐!"/>
+		<class name="Tutorial_Orsay_y0c45E" Value="[!Dialog][!speaker:Gangster_SpoonSword_Normal]제대로 말하지 않으면 지금 바로 이 자리에서 널 베어버리겠다!"/>
+		<class name="Tutorial_Orsay_0xrnvi" Value="[!BalloonChat][!speaker:Direct_SpoonBoss]진정하시오. 동지여. "/>
+		<class name="Tutorial_Orsay_WVOSO0" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Wind_Normal]이 분은 샤키 님과 직접 거래를 하는 자요."/>
+		<class name="Tutorial_Orsay_T3Tl5k" Value="[!BalloonChat][!speaker:Direct_Spoon02]샤키 님? 지랄하고 있네!"/>
+		<class name="Tutorial_Orsay_iP7RGp" Value="[!BalloonChat][!speaker:Direct_Spoon02]다들 움직이지 마!!"/>
+		<class name="Tutorial_Orsay_gq6Qsp" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Wind_Normal]동지여. 우리는 한솥밥을 먹은 형제 아니오. 그 분노를 잠시 거두길 바라오."/>
+		<class name="Tutorial_Orsay_blbDzP" Value="[!Dialog][!speaker:Gangster_SpoonGun_Normal]쓸데없는 소리! 이미 상황 다 파악됐어!"/>
+		<class name="Tutorial_Orsay_a8gDgh" Value="[!Dialog][!speaker:Gangster_SpoonGun_Normal]네 녀석들도 한통속이란 소리다!!!"/>
+		<class name="Tutorial_Orsay_JZvMHE" Value="[!BalloonChat][!speaker:Direct_Spoon01]황소파 일원이여!"/>
+		<class name="Tutorial_Orsay_d4SKdo" Value="[!Dialog][!speaker:Gangster_SpoonSword_Normal]이 사실을 하산 님이나 조홍 님에게 알려라!"/>
+		<class name="Tutorial_Orsay_oNszjs" Value="[!Dialog][!speaker:Gangster_SpoonGun_Normal]자넨!?"/>
+		<class name="Tutorial_Orsay_APy6Zr" Value="[!Dialog][!speaker:Gangster_SpoonSword_Normal]이 녀석들 발목을 잡겠다."/>
+		<class name="Tutorial_Orsay_67jDCB" Value="[!Dialog][!speaker:Gangster_SpoonGun_Normal]......"/>
+		<class name="Tutorial_Orsay_nTybOe" Value="[!Dialog][!speaker:Gangster_SpoonGun_Normal]미안하네! 꼭 조직원들에게 이 사실을 알리겠네!"/>
+		<class name="Tutorial_Orsay_x7pvtD" Value="[!BalloonChat][!speaker:Direct_SpoonBoss]처리해."/>
+		<class name="Tutorial_Orsay_PE7LMQ" Value="[!BalloonChat][!speaker:Direct_Spoon01]이 녀석들!!"/>
+		<class name="Tutorial_Orsay_DktsEE" Value="[!BalloonChat][!speaker:Danny]병신 녀석."/>
+		<class name="Tutorial_Orsay_sUHR4N" Value="[!Dialog][!speaker:Gangster_DannyLaw_Normal]칼 겨눈 자가 살아있건만 어딜 한눈파는 거야."/>
+		<class name="Tutorial_Orsay_zmiZd0" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Wind_Normal]미안하오. 이 일은 내가 샤키 님에게 잘 말씀드리겠소."/>
+		<class name="Tutorial_Orsay_t7iQpz" Value="[!Dialog][!speaker:Gangster_DannyLaw_Normal]카터."/>
+		<class name="Tutorial_Orsay_OVR1pU" Value="[!Dialog][!speaker:Carter_Normal]알았네."/>
+		<class name="Tutorial_Orsay_jar6zY" Value="[!BalloonChat][!speaker:Direct_Spoon03]!?"/>
+		<class name="Tutorial_Orsay_GzcRlz" Value="[!BalloonChat][!speaker:Direct_SpoonBoss]무슨 짓이오!!"/>
+		<class name="Tutorial_Orsay_U1EBgJ" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Wind_Normal]도대체 무슨 짓이란 말이오!"/>
+		<class name="Tutorial_Orsay_XXli9J" Value="[!Dialog][!speaker:Gangster_DannyLaw_Normal]기껏 큰 그림 그렸는데..."/>
+		<class name="Tutorial_Orsay_pu2PNu" Value="[!Dialog][!speaker:Gangster_DannyLaw_Rage]네 녀석이 방금 다 망쳤잖아!"/>
+		<class name="Tutorial_Orsay_FvcJMP" Value="[!BalloonChat][!speaker:Ray]총소리?? 카터!?"/>
+		<class name="Tutorial_Orsay_P1QYxn" Value="[!BalloonChat][!speaker:Leton]레이! 가지마!"/>
+		<class name="Tutorial_Orsay_mO7YpU" Value="[!Dialog][!speaker:Heissing_Normal]......"/>
+		<class name="Tutorial_Orsay_EaDNu4" Value="[!Dialog][!speaker:Ray_Surprise]카터는 도대체 뭘 하려는 거야!"/>
+		<class name="Tutorial_Orsay_log9EP" Value="[!Dialog][!speaker:Leton_Surprise]레이. 지금은 참아."/>
+		<class name="Tutorial_Orsay_8MzeLv" Value="[!Dialog][!speaker:Ray_Serious]레톤 넌 뭔가 알고 있구나! 당장 말해."/>
+		<class name="Tutorial_Orsay_rzIuIV" Value="[!Dialog][!speaker:Leton_Serious]카터가 직접 말해줄 거다."/>
+		<class name="Tutorial_Orsay_GDtFyq" Value="[!Dialog][!speaker:Heissing_EyeClose]......"/>
+		<class name="Tutorial_Orsay_RiqIRU" Value="[!Dialog][!speaker:Carter_Normal]이젠 어떻게 할 건가?"/>
+		<class name="Tutorial_Orsay_9eDzRR" Value="[!Dialog][!speaker:Gangster_DannyLaw_Normal]아무도 본 사람이 없으니 없던 일로 해야지."/>
+		<class name="Tutorial_Orsay_2cX2tV" Value="[!Dialog][!speaker:Gangster_DannyLaw_Normal]흔적은 지우고 근처에 티마 몇 마리 죽여서 근처에 둬."/>
+		<class name="Tutorial_Orsay_kj0xGI" Value="[!Dialog][!speaker:Carter_Normal]총상을 위장하긴 어렵다. 대니."/>
+		<class name="Tutorial_Orsay_aRRiIR" Value="[!Dialog][!speaker:Gangster_DannyLaw_Normal]그럼 네 능력으로 소각해버려."/>
+		<class name="Tutorial_Orsay_6UDNFk" Value="[!Dialog][!speaker:Gangster_DannyLaw_Normal]그 정도면 티마와 교전 중에 근처 폭발이라도 일어난 거로 알겠지."/>
+		<class name="Tutorial_Orsay_MC3Fu4" Value="[!Dialog][!speaker:Carter_Normal]......"/>
+		<class name="Tutorial_Orsay_bJkTcV" Value="[!Dialog][!speaker:Gangster_DannyLaw_Rage]카터. 일일이 불쾌감을 드러내지 마. 큰 그림을 그리라고!"/>
+		<class name="Tutorial_Orsay_M4vq77" Value="[!Dialog][!speaker:Gangster_DannyLaw_Rage]서로 물어뜯고 힘이 빠져버리길 원하잖아! 그게 조직이건 종교건 야수건!"/>
+		<class name="Tutorial_Orsay_Ovr8yg" Value="[!Dialog][!speaker:Carter_Normal]......"/>
+		<class name="Tutorial_Orsay_PxP4pQ" Value="[!Dialog][!speaker:Gangster_DannyLaw_Rage]내 야망이 바로 자네들이 원하는 미래 아닌가? 카터!"/>
+		<class name="Tutorial_Orsay_asEoXv" Value="[!Subtitle][!speaker:EmptySubTitle_]스푼교에 막대한 무기와 물자를 공급하는 대니 로."/>
+		<class name="Tutorial_Orsay_pg4VeJ" Value="[!Subtitle][!speaker:EmptySubTitle_]바람장벽 지구 5대 범죄 조직 중 하나 &apos;까마귀&apos;의 보스."/>
+		<class name="Tutorial_Orsay_AgJRD5" Value="[!Subtitle][!speaker:EmptySubTitle_]10년 전, &apos;성난 황소&apos;, &apos;백호&apos;, &apos;흑호&apos;의 카르텔에 의하여 발할라 장벽 바깥으로 밀려났고..."/>
+		<class name="Tutorial_Orsay_M2axo0" Value="[!Subtitle][!speaker:EmptySubTitle_]그 이후 동방연합의 무기 상인들 밑에서 힘을 잃은 조직을 유지하며 복수의 칼날을 갈아왔다."/>
+		<class name="Tutorial_Orsay_HM3khM" Value="[!Subtitle][!speaker:Gangster_DannyLaw_]카터. 어서 이 자리를 뜨자. 티마 녀석들이 오면 귀찮아진다."/>
+		<class name="Tutorial_Orsay_OAUA1G" Value="[!Title]약탈자 몰아내기"/>
+		<class name="Tutorial_Orsay_ftLLxc" Value="[!Title]스푼교 보급부대"/>
+		<class name="Tutorial_Orsay_gpsUgh" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Wind_Normal]대기조가 연락이 끊겼다."/>
+		<class name="Tutorial_Orsay_yWG105" Value="[!Dialog][!speaker:Gangster_SpoonGun_Normal]또 티마 녀석들인가..."/>
+		<class name="Tutorial_Orsay_swEUuu" Value="[!Dialog][!speaker:Gangster_SpoonFighter_Normal]이 철의 숲에 있는 한 어쩔 수 없는 생존 싸움이다."/>
+		<class name="Tutorial_Orsay_SAvhlu" Value="[!Dialog][!speaker:Gangster_SpoonSword_Normal]희생된 동지들의 복수를 해줘야지."/>
+		<class name="Tutorial_Orsay_HE0w4L" Value="[!Title]침입자 몰아내기"/>
+		<class name="Tutorial_Orsay_tSREBw" Value="[!Title]성난 티마 무리"/>
+		<class name="Tutorial_Orsay_KJgxwM" Value="[!Choice]크릉..."/>
+		<class name="Tutorial_Orsay_P0cAqV" Value="[!Choice]크르릉!!"/>
+		<class name="Tutorial_Orsay_Q1A6by" Value="[!Title]전면전"/>
+		<class name="Tutorial_Orsay_4K3yey" Value="[!Title]스푼교 수송대"/>
+		<class name="Tutorial_Orsay_Xobs0O" Value="[!Dialog][!speaker:Gangster_SpoonBottle_Naam_Normal]오늘 여기 물건을 다 옮겨가지 못하면 다른 동지들이 힘들어진다."/>
+		<class name="Tutorial_Orsay_Dqaxfo" Value="[!Dialog][!speaker:Gangster_SpoonBat_Turk_Normal]어차피 짐승. 다 족쳐버리면 돼."/>
+		<class name="Tutorial_Orsay_Tk7Gmu" Value="[!Dialog][!speaker:Gangster_SpoonDestroyer_Normal]그래도 그 은색 녀석은 피하죠."/>
+		<class name="Tutorial_Orsay_1IYlQA" Value="[!Dialog][!speaker:Gangster_SpoonBat_Turk_Normal]뭐냐! 너 겁먹은 거냐!"/>
+		<class name="Tutorial_Orsay_OunJ47" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Wind_Normal]그 녀석... 완전 괴물입니다."/>
+		<class name="Tutorial_Orsay_ena9fu" Value="[!Dialog][!speaker:Gangster_SpoonBottle_Naam_Normal]터크. 나도 그 녀석은 피하고 싶어."/>
+		<class name="Tutorial_Orsay_EV6HnO" Value="[!Dialog][!speaker:Gangster_SpoonBat_Turk_Normal]나암. 네 녀석마저 겁먹은 거냐?"/>
+		<class name="Tutorial_Orsay_sAvKPc" Value="[!Dialog][!speaker:Gangster_SpoonBottle_Naam_Normal]우리 임무는 이 물건들을 동지들에게 전달하는 거다."/>
+		<class name="Tutorial_Orsay_SGhuGW" Value="[!Dialog][!speaker:Gangster_SpoonBottle_Naam_Normal]은색 녀석하고 어울려버리면 지체될 뿐이다."/>
+		<class name="Tutorial_Orsay_sQK0QC" Value="[!Dialog][!speaker:Gangster_SpoonBat_Turk_Normal]네 녀석 &apos;앨리&apos; 시절 생각하면 헛웃음이 다 나오는군."/>
+		<class name="Tutorial_Orsay_i3jZFZ" Value="[!Dialog][!speaker:Gangster_SpoonBottle_Naam_Normal]그때는 카터 대장이 있었기 때문에 그럴 수 있었다."/>
+		<class name="Tutorial_Orsay_KV3YsJ" Value="[!Dialog][!speaker:Gangster_SpoonBottle_Naam_Normal]지금은 우리뿐이다."/>
+		<class name="Tutorial_Orsay_rT1ffk" Value="[!Dialog][!speaker:Gangster_SpoonBat_Turk_Normal]넌 언제나 죽었는지 살았는지도 모르는 대장 타령이군."/>
+		<class name="Tutorial_Orsay_S3jCxU" Value="[!Dialog][!speaker:Gangster_SpoonBat_Turk_Normal]그렇게 그 시절이 그리우면 다시 &apos;앨리&apos;로 돌아가든가!"/>
+		<class name="Tutorial_Orsay_Xt3LeM" Value="[!Dialog][!speaker:Gangster_SpoonBottle_Naam_Normal]지금은 우리는 스푼교도다. &apos;한술&apos;을 따르기로 했지 않은가. 터크."/>
+		<class name="Tutorial_Orsay_p0kLIX" Value="[!Dialog][!speaker:Gangster_SpoonBat_Turk_Normal]그랬지. 동지들은 &apos;앨리&apos; 출신이라는 이유로 차별하지 않으니까!!"/>
+		<class name="Tutorial_Orsay_n7dAjh" Value="[!Dialog][!speaker:Gangster_SpoonBat_Turk_Normal]더러운 발할라! 뭐가 자유의 도시야!"/>
+		<class name="Tutorial_Orsay_whiTQ6" Value="[!BalloonChat][!speaker:Spoon03_5]하아... 이 녀석들 또 시작했군..."/>
+		<class name="Tutorial_Orsay_v5iZOk" Value="[!Dialog][!speaker:Gangster_SpoonBottle_Naam_Normal]일단 맡은 소임을 다해야지. 터크."/>
+		<class name="Tutorial_Orsay_NkQ0eb" Value="[!Dialog][!speaker:Gangster_SpoonBottle_Naam_Normal]티마 녀석들을 이 주위에서 쫓아낸다!"/>
+		<class name="Tutorial_Orsay_djd5dJ" Value="[!Dialog][!speaker:Gangster_SpoonBat_Turk_Normal]제길... 다 두들겨 패주겠어!"/>
+		<class name="Tutorial_Orsay_pQAJbq" Value="[!Title]어리석은 자의 최후"/>
+		<class name="Tutorial_Orsay_0CUi0r" Value="[!Title]티마 우두머리 &apos;은색&apos;"/>
+		<class name="Tutorial_Orsay_bPXgGC" Value="[!BalloonChat][!speaker:Tima04_2]크릉..."/>
+		<class name="Tutorial_Orsay_Xhbq63" Value="[!BalloonChat][!speaker:Tima04_2]끄릉...끄릉.."/>
+		<class name="Tutorial_Orsay_4k01qP" Value="[!BalloonChat][!speaker:Tima04_1]카릉!!"/>
+		<class name="Tutorial_Orsay_PVHSg6" Value="[!BalloonChat][!speaker:Tima04_2]끄릉..."/>
+		<class name="Tutorial_Orsay_ONzj1x" Value="[!BalloonChat][!speaker:Tima04_1]크르르릉...."/>
+		<class name="Tutorial_Orsay_6EWXQE" Value="[!Dialog][!speaker:EmptySubTitle_][colour=&apos;FFFFFF00&apos;] 크르 크르 크르릉 카릉..."/>
+		<class name="Tutorial_Orsay_ziZ4OP" Value="바로 인간들을 공격하여 응징합니다."/>
+		<class name="Tutorial_Orsay_kiVqIo" Value="인간들의 동향을 살펴보고 대기합니다."/>
+		<class name="Tutorial_Orsay_70P8Ls" Value="[!Choice]끄릉...끄릉..."/>
+		<class name="Tutorial_Orsay_WBzDTh" Value="일단 퇴각합니다."/>
+		<class name="Tutorial_Orsay_L1a7Xy" Value="[!BalloonChat][!speaker:Tima04_1]크르릉!"/>
+		<class name="Tutorial_Orsay_k99M7b" Value="[!VictoryCondition]침입자를 모두 제거하시오."/>
+		<class name="Tutorial_Orsay_GXpZZK" Value="[!BalloonChat][!speaker:Tima04_1]크릉..."/>
+		<class name="Tutorial_Orsay_2Gndsw" Value="[!BalloonChat][!speaker:Tima04_1]끄릉...끄릉..."/>
+		<class name="Tutorial_Orsay_l67RNr" Value="[!Title]오비이락"/>
+		<class name="Tutorial_Orsay_zz0IvZ" Value="[!Title]철의 숲 &apos;오르세&apos; 역"/>
+		<class name="Tutorial_Orsay_h46MxI" Value="[!Dialog][!speaker:Irene_Surprise]이런 곳에 스푼교도들이 있다니..."/>
+		<class name="Tutorial_Orsay_LuSy34" Value="[!Dialog][!speaker:Sion_Stare]도대체 이걸 신고한 사람은 누구지..."/>
+		<class name="Tutorial_Orsay_d6XXRX" Value="[!Dialog][!speaker:Anne_Think]&apos;지금 상황이 왜 이상한 거지? 모르겠어...&apos;"/>
+		<class name="Tutorial_Orsay_Y2Z6Z0" Value="[!Dialog][!speaker:Albus_Serious]일단 현장의 상황부터 확인하도록 하자."/>
+		<class name="Tutorial_Orsay_S8w47f" Value="[!BalloonChat][!speaker:Albus]시온! 아이린 씨는 좌측으로!"/>
+		<class name="Tutorial_Orsay_eQtQh8" Value="[!BalloonChat][!speaker:Albus]앤 양은 경찰분들과 후방 대기."/>
+		<class name="Tutorial_Orsay_4PpeV1" Value="[!BalloonChat][!speaker:Sion]OK~☆"/>
+		<class name="Tutorial_Orsay_oWLiCN" Value="[!BalloonChat][!speaker:Irene]알았다! 맡겨줘!"/>
+		<class name="Tutorial_Orsay_68NZrU" Value="[!BalloonChat][!speaker:Anne]알겠습니다!"/>
+		<class name="Tutorial_Orsay_k3Ho4F" Value="[!BalloonChat][!speaker:Sion]아이린... 방향 감각 고치려면 정말 어렵겠다."/>
+		<class name="Tutorial_Orsay_zmQ3rI" Value="[!BalloonChat][!speaker:Irene]아차차.. 여기는 오른쪽이구나."/>
+		<class name="Tutorial_Orsay_S8UAp6" Value="[!Dialog]보통 상황판에 표시되는 사건들은 트러블슈터의 효율적인 투입을 위해"/>
+		<class name="Tutorial_Orsay_IbKvwx" Value="[!Dialog]경찰청에서 먼저 경찰력을 투입하여 현장 정보를 확인한 사건들이다."/>
+		<class name="Tutorial_Orsay_unzQBN" Value="[!Dialog]하지만 이번 사건은 전혀 현장 확인을 하지 않았음을 현장 출동 과정에서 알 수 있었다."/>
+		<class name="Tutorial_Orsay_JjSLLW" Value="[!BalloonChat][!speaker:Albus]이 사건 저번과 같은 부류는 아니겠지..."/>
+		<class name="Tutorial_Orsay_CdGyUj" Value="[!Dialog]&apos;잿빛공원묘지&apos; 사건 이후, $CompanyName$, 그리고 자신의 포함한 구성원의 정보가 스푼교도에게 노출되어 있다는 것을 실감했었다."/>
+		<class name="Tutorial_Orsay_lIPGOF" Value="[!Dialog]알버스는 그 이후 조금이라도 이상한 부분이 있는 것들에 조금 더 주의를 기울이려고 노력하고 있었다."/>
+		<class name="Tutorial_Orsay_9Sq6yF" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_Orsay_RnRxLI" Value="[!VictoryCondition]적을 모두 제압하시오."/>
+		<class name="Tutorial_Orsay_Nl4QwH" Value="[!BalloonChat][!speaker:Anne]어?? 저 티마는..."/>
+		<class name="Tutorial_Orsay_p5W32F" Value="[!BalloonChat][!speaker:Tima04_1]끄릉???"/>
+		<class name="Tutorial_Orsay_yoftj3" Value="[!BalloonChat][!speaker:Anne]실버??"/>
+		<class name="Tutorial_Orsay_khJLao" Value="[!BalloonChat][!speaker:Tima04_1]......"/>
+		<class name="Tutorial_Orsay_GMF3LA" Value="[!BalloonChat][!speaker:Tima04_1]끄릉...끄릉..."/>
+		<class name="Tutorial_Orsay_pEJsLG" Value="[!BalloonChat][!speaker:Anne]실버!!!"/>
+		<class name="Tutorial_Orsay_GcJHHo" Value="[!Subtitle][!speaker:EmptySubTitle_]복수에 불탄 성난 황소 조직원."/>
+		<class name="Tutorial_Orsay_QttNmc" Value="[!Subtitle][!speaker:EmptySubTitle_]급증하는 스푼교도."/>
+		<class name="Tutorial_Orsay_Wz93bU" Value="[!Subtitle][!speaker:EmptySubTitle_]인간에 대한 적개심이 쌓여가는 티마"/>
+		<class name="Tutorial_Orsay_WWGDJm" Value="[!Subtitle][!speaker:Gangster_DannyLaw_Normal]원래 이 세 개만 생각했는데 말이야..."/>
+		<class name="Tutorial_Orsay_gj1rEd" Value="[!Subtitle][!speaker:Gangster_DannyLaw_Normal]하나 더 넣어야겠다. 카터."/>
+		<class name="Tutorial_Orsay_g3v6Vi" Value="[!Subtitle][!speaker:Carter_Normal]다른 범죄 조직인가?"/>
+		<class name="Tutorial_Orsay_DPbvv7" Value="[!Subtitle][!speaker:Gangster_DannyLaw_Normal]아냐. 그 녀석들은 힘으로 눌러야지."/>
+		<class name="Tutorial_Orsay_m4oA2s" Value="[!Subtitle][!speaker:Carter_Normal]... 말해보게나."/>
+		<class name="Tutorial_Orsay_603BK2" Value="[!Subtitle][!speaker:Gangster_DannyLaw_Normal]트러블슈터 $CompanyName$."/>
+	</idspace>
+</idspaces>

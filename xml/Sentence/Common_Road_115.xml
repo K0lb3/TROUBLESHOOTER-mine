@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Common_Road_115_MGPYPI" Value="[!Dashboard:ObjectiveMarker]운송업자 리를 안정시키면 직접 조종이 가능합니다."/>
+		<class name="Common_Road_115_ZGylOW" Value="[!Dashboard:ObjectiveMarker]해당 지역으로 운송업자 리를 탈출시키면 승리합니다. 
+
+적이 해당 지역으로 진입했을 때, 해당 방어선의 경찰 병력이 모두 전투 불능이면 패배합니다."/>
+		<class name="Common_Road_115_PZMdri" Value="[!Objective]운송업자 리를 구출하시오."/>
+		<class name="Common_Road_115_aQEuzi" Value="[!BalloonChat][!speaker:Lee]아니!! 무슨 티마 녀석들은 휴일도 없나!!"/>
+		<class name="Common_Road_115_fhNFla" Value="[!BalloonChat][!speaker:Lee]도대체 벌써 몇 번째야..."/>
+		<class name="Common_Road_115_yQmKyR" Value="[!Dialog][!speaker:VHPD_Assault_Normal]$CompanyName$의 알버스 님. 본부로부터 연락입니다."/>
+		<class name="Common_Road_115_6NpOuE" Value="[!Dialog][!speaker:VHPD_Assault_Normal]현재 운송업자는 티마들에 의해 고립되어 휴게소 건물 옥상으로 대피한 상태라고 합니다."/>
+		<class name="Common_Road_115_CddG9a" Value="[!Dialog][!speaker:Albus_Normal]늦지 않아 다행이군요."/>
+		<class name="Common_Road_115_12hoKA" Value="[!Dialog][!speaker:Albus_Normal]그럼 빠르게 구출 작전을 수행하도록 하겠습니다."/>
+		<class name="Common_Road_115_RrhB0a" Value="[!Dialog][!speaker:VHPD_Assault_Normal]알겠습니다. 이 시각부터 저희 분대는 $CompanyName$ 소속으로 합류하겠습니다."/>
+		<class name="Common_Road_115_MBcpox" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Common_Road_115_Bm1HDo" Value="[!VictoryCondition]운송업자 리 전투 불능"/>
+		<class name="Common_Road_115_05zmi1" Value="[!VictoryCondition]적 방어선 돌파"/>
+		<class name="Common_Road_115_jRnRSX" Value="[!VictoryCondition]운송업자 리를 구출하시오."/>
+		<class name="Common_Road_115_sVNzsC" Value="[!BalloonChat][!speaker:Lee]?"/>
+		<class name="Common_Road_115_RjBtii" Value="[!Dialog][!speaker:Civil_Man_Lee_Normal]자네들이 와주다니... 역시 $CompanyName$이군."/>
+		<class name="Common_Road_115_k2IwOW" Value="[!Dialog][!speaker:Civil_Man_Lee_Normal]잘 부탁하네. $CompanyName$."/>
+		<class name="Common_Road_115_haSOhO" Value="[!Ignore][!BalloonChat][!speaker:Kim]Common_Road_115_P8Ytxb"/>
+		<class name="Common_Road_115_c1BSj3" Value="[!Ignore][!BalloonChat][!speaker:Kim]Common_Road_115_GTNMx4"/>
+		<class name="Common_Road_115_7kBf1A" Value="[!Ignore][!VictoryCondition]Common_Road_115_ZW1NYE"/>
+		<class name="Common_Road_115_yECMxW" Value="[!Ignore][!VictoryCondition]Common_Road_115_gjS4XQ"/>
+		<class name="Common_Road_115_1KV33s" Value="[!Dialog][!speaker:Irene_Surprise]괜찮으세요?"/>
+		<class name="Common_Road_115_dyMM37" Value="[!Dialog][!speaker:Civil_Man_Lee_Normal]&apos;이 녀석 히어로 아이린이잖아...&apos;"/>
+		<class name="Common_Road_115_kzdhcb" Value="[!Dialog][!speaker:Civil_Man_Lee_Normal]&apos;그때 그 녀석들과 잘되었나 보군...&apos;"/>
+		<class name="Common_Road_115_puloZE" Value="[!BalloonChat][!speaker:Lee]별 다른 문제 없다네. 자 일단 이 안전한 지역까지 날 데려다주게나!"/>
+	</idspace>
+</idspaces>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="lc_mission_8_1_U9ceiE" Value="[!Dashboard:Counter]네 곳 중 두 곳의 길목을 차단하세요!"/>
+		<class name="lc_mission_8_1_vYOZ5b" Value="[!Dashboard:TimeLimiter]경찰 지원까지 남은 시간"/>
+		<class name="lc_mission_8_1_L8lGfU" Value="[!Objective]경찰 지원 병력 도착까지 아이 보호"/>
+		<class name="lc_mission_8_1_3hVOfo" Value="[!Dialog][!speaker:VHPD_Jane_Normal]자세한 사정을 알려드릴 수 없지만, 이 아이를 노리는 적에게서 보호하는 것이 이번 의뢰의 핵심입니다.
+지원이 오기 전까지 부탁드립니다."/>
+		<class name="lc_mission_8_1_Lk4Nna" Value="[!Dialog][!speaker:Albus_Normal]지원이 올 때까지 이 아이를 보호하면 되는 거지요?
+아이를 보호하는 건 당연히 해야 하는 일이니 자세한 사정은 묻지 않겠습니다."/>
+		<class name="lc_mission_8_1_uF9sP2" Value="[!Dialog][!speaker:Albus_Smile]우리가 이곳으로 몰려오는 적의 길목을 막을 테니 제인 씨가 꼭 붙어서 밀착 보호해주세요."/>
+		<class name="lc_mission_8_1_o6HM8u" Value="[!SMMessage]열려있는 길목으로 적 지원병이 투입됩니다"/>
+		<class name="lc_mission_8_1_A8D9eE" Value="[!SMTitle]적 지원군 도착"/>
+		<class name="lc_mission_8_1_LBHSkD" Value="[!SMMessage]열려있는 길목으로 적 지원병이 투입됩니다"/>
+		<class name="lc_mission_8_1_6qr7J1" Value="[!SMTitle]적 지원군 도착"/>
+		<class name="lc_mission_8_1_Sa91e9" Value="[!SMMessage]열려있는 길목으로 적 지원병이 투입됩니다"/>
+		<class name="lc_mission_8_1_gqVNBe" Value="[!SMTitle]적 지원군 도착"/>
+		<class name="lc_mission_8_1_2ltRPW" Value="[!SMMessage]열려있는 길목으로 적 지원병이 투입됩니다"/>
+		<class name="lc_mission_8_1_acKwhz" Value="[!SMTitle]적 지원군 도착"/>
+	</idspace>
+</idspaces>

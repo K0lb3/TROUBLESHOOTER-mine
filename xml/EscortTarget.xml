@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="EscortTarget">
+	<schema>
+		<rule property="Arguments" type="table" subtype="link" target="StageMakerArgument" default=""/>
+	</schema>
+	<class name="People" Arguments="Object"/>
+	<class name="VIP" Arguments="Object"/>
+	<class name="TransportDrone" Arguments="PatrolRoute"/>
+	<class name="Combatant" Arguments="Object, CombatantAI, PatrolRoute"/>
+</idspace>

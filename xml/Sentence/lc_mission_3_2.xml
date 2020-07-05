@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="lc_mission_3_2_FxjaR3" Value="[!Objective]과격파 앨리 처리 후 보육원장과 대화"/>
+		<class name="lc_mission_3_2_8IWlom" Value="[!BalloonChat][!speaker:enemy1_3]이봐! 이봐!
+딴 길로 돌아가라고!
+이 총이 장난감인 것 같아?"/>
+		<class name="lc_mission_3_2_WD26ou" Value="[!BalloonChat][!speaker:enemy1_1]궁금한게 많으면 일찍 죽는다고.
+그냥 조용히 돌아가!"/>
+		<class name="lc_mission_3_2_dXtCG2" Value="[!BalloonChat][!speaker:npc1]아..알았어요.
+돌아갈게요."/>
+		<class name="lc_mission_3_2_YwSQDI" Value="[!BalloonChat][!speaker:enemy1_1]야!
+넌 또 뭐 하는 놈이야!"/>
+		<class name="lc_mission_3_2_dUZ4tn" Value="[!BalloonChat][!speaker:Albus]쓰레기 치우는 트러블슈터 다!"/>
+		<class name="lc_mission_3_2_da25fx" Value="[!BalloonChat][!speaker:Sion]말은 필요 없잖아!"/>
+		<class name="lc_mission_3_2_MGOv3D" Value="[!BalloonChat][!speaker:enemy1_1]간댕이가 부었지."/>
+		<class name="lc_mission_3_2_uK8Edd" Value="[!BalloonChat][!speaker:enemy1_1]쳐!"/>
+		<class name="lc_mission_3_2_sfC6Hf" Value="[!BalloonChat][!speaker:enemy5_1]이런.."/>
+		<class name="lc_mission_3_2_hH9LAN" Value="[!BalloonChat][!speaker:enemy2_1]영감.
+돈도 떨어졌잖아?
+애들을 넘겨. 우리가 잘 키워줄께."/>
+		<class name="lc_mission_3_2_C9APuz" Value="[!BalloonChat][!speaker:npc2]애들은 안되!
+네놈들이 무슨 짓을 하는지 사람들이 다 알아!"/>
+		<class name="lc_mission_3_2_Q3Duo0" Value="[!BalloonChat][!speaker:npc2]내가 죽으면 죽었지!
+애들을 보낼 수 없어!"/>
+		<class name="lc_mission_3_2_A4dLrT" Value="[!BalloonChat][!speaker:enemy5_1]대장.
+1조가 트러블슈터 놈들한테 다 당했어!"/>
+		<class name="lc_mission_3_2_htw5lG" Value="[!BalloonChat][!speaker:enemy2_1]하.. 씨..
+별 거지 같은 게.."/>
+		<class name="lc_mission_3_2_P9ieP3" Value="[!BalloonChat][!speaker:enemy2_1]야! 넌 애들 불러와."/>
+		<class name="lc_mission_3_2_i2VDHv" Value="[!BalloonChat][!speaker:enemy3_1]어떤 놈이 우리 일에 깽판을 놔!"/>
+		<class name="lc_mission_3_2_Trrm4C" Value="[!BalloonChat]후원자 중에 로윈이라는 사람이 있습니까?"/>
+		<class name="lc_mission_3_2_Jeo3zG" Value="[!Dialog][!speaker:Civil_OldmanBlue_]위험했는데..
+도와줘서 고맙소.
+그런데 로윈 이라.."/>
+		<class name="lc_mission_3_2_L5PvvC" Value="[!Dialog][!speaker:Civil_OldmanBlue_]그런 후원자가 있었지.
+아마 경찰관 이라고 들었는데.
+경찰치고는 많은 돈을 후원해줘서 기억하고 있네."/>
+		<class name="lc_mission_3_2_oGGpAW" Value="[!Dialog][!speaker:Civil_OldmanBlue_]그에게 안 좋은 일이 있다는 것도 들었지.
+참 안타까운 일이야. 
+언제나 좋은 사람이 먼저 떠나지.."/>
+		<class name="lc_mission_3_2_G2ELkw" Value="[!BalloonChat]흠.. 정말 좋은 독지가였나?
+꺼림칙하지만 일단 이 정도로 마무리군."/>
+		<class name="lc_mission_3_2_gbLx0V" Value="[!Dialog][!speaker:Sion_Angry]저 앞에 저거 앨리 과격파 놈들 아니야?"/>
+		<class name="lc_mission_3_2_mmxk6j" Value="[!Dialog][!speaker:Sion_Angry]저놈들 길막고 뭐 하는 거야?
+빨리 가보자!"/>
+		<class name="lc_mission_3_2_6fGdti" Value="[!Dialog][!speaker:Sion_Smile]꼬맹아 길을 잃었니?
+여긴 좀 위험해질 거야.
+빨리 집으로 가!"/>
+		<class name="lc_mission_3_2_J3RKnZ" Value="[!Dialog][!speaker:Civil_Boy_]무서운 아저씨들이 집 앞에 있어서 못 들어가요.
+빨리 안가면 원장 아버지가 웃으면서 화를 내요.
+어른들은 다 화를 내요.
+잘못했어요. 아저씨."/>
+		<class name="lc_mission_3_2_nl4bPE" Value="[!Dialog][!speaker:Albus_Smile]꼬마야 아저씨들은 화를 내는 게 아니야.
+여긴 위험하다고 알려주는 거야.
+화 안 낼게. 걱정 마."/>
+		<class name="lc_mission_3_2_iIpkRj" Value="[!Dialog][!speaker:Sion_Smile]맞아! 맞아!
+화내는 어른이 있으면 우리가 혼내줄게!
+무서운 아저씨들은 우리가 치워줄 테니까.
+여기서 조금만 숨어있다가 나와."/>
+		<class name="lc_mission_3_2_JWZWIw" Value="[!Dialog][!speaker:Civil_Boy_]진짜 화 안 낼 거지요?
+형들 감사합니다."/>
+		<class name="lc_mission_3_2_TrrUMZ" Value="[!Dialog][!speaker:Sion_Smile]그래 형이야. 형!
+꼬맹이가 똑똑한데."/>
+		<class name="lc_mission_3_2_fW1Eh7" Value="[!SMMessage]보육원에 대한 숨겨진 정보를 획득했습니다"/>
+		<class name="lc_mission_3_2_LCepT0" Value="[!SMTitle]숨겨진 정보 1"/>
+		<class name="lc_mission_3_2_2RpE4N" Value="[!SMTitle]숨겨진 정보 1"/>
+		<class name="lc_mission_3_2_z97XLP" Value="[!Dialog][!speaker:Civil_Girl_][작게 중얼거린다]
+원장 아빠 화났어요.
+화낼 때마다 친구들 데리고 가요."/>
+		<class name="lc_mission_3_2_kwZYI7" Value="[!SMMessage]보육원에 숨겨진 비밀을 알게 되었습니다.
+별도의 조사가 필요합니다."/>
+		<class name="lc_mission_3_2_mIuGJl" Value="[!SMTitle]숨겨진 정보 2"/>
+		<class name="lc_mission_3_2_hcHGs8" Value="[!SMTitle]숨겨진 정보 2"/>
+	</idspace>
+</idspaces>

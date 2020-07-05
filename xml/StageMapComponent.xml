@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="StageMapComponent">
+	<schema>
+		<rule property="ArgumentList" type="table" subtype="link" target="StageMakerArgument" default=""/>
+		<rule property="TitleFormatterListView" type="function" default="StageMapComponentTitleFormatterNormal"/>
+		<rule property="TitleFormatterScene" type="function" default="StageMapComponentTitleFormatterNormal2"/>
+		<rule property="ImageFormatter" type="function" default="StageMapComponentImageFormatterNormal"/>
+		<rule property="Locator" type="string" default="Position"/>
+	</schema>
+	<class name="StartPosition" Desc="[!Ignore]시작위치" MovableLoader="MapComponentStartingPointer" ArgumentList="Key, Team" TitleFormatterListView="StageMapComponentTitleFormatterStartPosition" TitleFormatterScene="StageMapComponentTitleFormatterStartPosition2"/>
+	<class name="Enemy" Desc="[!Ignore]적" MovableLoader="MapComponentNormal" ArgumentList="Key, Object, Team, Group, AI, RetreatPosition, RetreatOrder, PatrolRoute, PatrolMethod, PatrolRepeat, StartingBuff, AngerBuff, AutoPlayable, RosterInfo, DirectingObject, AutoBossEvent, DisableGradeUp"/>
+	<class name="Ally" Desc="[!Ignore]아군" MovableLoader="MapComponentNormal" ArgumentList="Key, Object, Team, Group, AI, RetreatPosition, RetreatOrder, StartingBuff, AngerBuff, AutoPlayable, RosterInfo, DirectingObject"/>
+	<class name="Neutral" Desc="[!Ignore]중립" MovableLoader="MapComponentNormal" ArgumentList="Key, Object, Team, Group, AI, RetreatPosition, RetreatOrder, StartingBuff, AngerBuff, AutoPlayable, RosterInfo, DirectingObject"/>
+	<class name="Obstacle" Desc="[!Ignore]장애물" MovableLoader="MapComponentObstacle" ArgumentList="Key, Obstacle, Team" TitleFormatterListView="StageMapComponentTitleFormatterObstacle" TitleFormatterScene="StageMapComponentTitleFormatterObstacle2"/>
+	<class name="Object" Desc="[!Ignore]오브젝트" MovableLoader="MapComponentNormal" ArgumentList="Key, Object, Team, AI, RosterInfo, DirectingObject"/>
+	<class name="Citizen" Desc="[!Ignore]시민" MovableLoader="MapComponentCitizen" ArgumentList="CitizenType, Key, Object, FakeObject, RetreatPosition, RetreatOrder, ConditionOutputCitizen, OnSuccessActionList, OnFailActionList" TitleFormatterListView="StageMapComponentTitleFormatterCitizen" TitleFormatterScene="StageMapComponentTitleFormatterCitizen2" ImageFormatter="StageMapComponentImageFormatterCitizen"/>
+	<class name="Interaction" Desc="[!Ignore]상호작용오브젝트" MovableLoader="MapComponentNormal" ArgumentList="Key, Object, Team, Interaction, ConditionOutputInteraction, ActionList" TitleFormatterListView="StageMapComponentTitleFormatterInteraction" TitleFormatterScene="StageMapComponentTitleFormatterInteraction2"/>
+	<class name="InteractionArea" Desc="[!Ignore]상호작용지역" MovableLoader="MapComponentInteractionArea" ArgumentList="SubKey, InteractionArea, NamedAssetKey, Active, ConditionOutputInteractionArea, ActionList" TitleFormatterListView="StageMapComponentTitleFormatterInteractionArea" TitleFormatterScene="StageMapComponentTitleFormatterInteractionArea2" Locator="Area"/>
+	<class name="Watchtower" Desc="[!Ignore]감시탑" MovableLoader="MapComponentWatchtower" ArgumentList="Team, TowerState" TitleFormatterListView="StageMapComponentTitleFormatterWatchtower" TitleFormatterScene="StageMapComponentTitleFormatterWatchtower2"/>
+	<class name="SurveillanceNetwork" Desc="[!Ignore]감시망" MovableLoader="MapComponentSurveillanceNetwork" ArgumentList="Team"/>
+	<class name="FieldEffect" Desc="[!Ignore]지형효과" MovableLoader="MapComponentFieldEffect" ArgumentList="FieldEffectType" TitleFormatterListView="StageMapComponentTitleFormatterFieldEffect" TitleFormatterScene="StageMapComponentTitleFormatterFieldEffect2" ImageFormatter="StageMapComponentImageFormatterFieldEffect"/>
+	<class name="InvestigationTarget" Desc="[!Ignore]조사대상" MovableLoader="MapComponentInvestigationTarget" ArgumentList="InvestigationType, Key"/>
+	<class name="SecretAgent" Desc="[!Ignore]정보원" MovableLoader="MapComponentNormal" ArgumentList="Key, Object, AI, SecretAgentType"/>
+	<class name="EscortTarget" Desc="[!Ignore]호위대상" MovableLoader="MapComponentNormal" ArgumentList="Key, EscortTargetType"/>
+	<class name="PsionicStone" Desc="[!Ignore]이능석" MovableLoader="MapComponentPsionicStone" ArgumentList="DashboardKey, Key" TitleFormatterListView="StageMapComponentTitleFormatterPsionicStone" TitleFormatterScene="StageMapComponentTitleFormatterPsionicStone2"/>
+	<class name="DrakyEgg" Desc="[!Ignore]드라키 알" MovableLoader="MapComponentDrakyEgg" ArgumentList="Key, Team" TitleFormatterListView="StageMapComponentTitleFormatterDrakyEgg" TitleFormatterScene="StageMapComponentTitleFormatterDrakyEgg2" ImageFormatter="StageMapComponentImageFormatterDrakyEgg"/>
+	<class name="PositionHolder" Desc="[!Ignore]위치지정" MovableLoader="MapComponentPositionHolder" ArgumentList="Key, Group" TitleFormatterListView="StageMapComponentTitleFormatterPositionHolder" TitleFormatterScene="StageMapComponentTitleFormatterPositionHolder2" ImageFormatter="StageMapComponentImageFormatterPositionHolder"/>
+</idspace>

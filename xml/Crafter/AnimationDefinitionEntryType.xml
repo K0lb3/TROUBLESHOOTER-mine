@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="AnimationDefinitionEntryType">
+	<schema>
+		<rule property="MakerArguments" type="table" subtype="link" target="CharacterTesterArgument" Default=""/>
+	</schema>
+	<class name="Effect" MakerArguments="Frame, ParticleName, ParticlePos, ParticleLength, AttachModel, DirectClear"/>
+	<class name="Sound" MakerArguments="Frame, SoundName, Volume, MinDistance, MaxDistance, MaxCount"/>
+	<class name="Visible" MakerArguments="Frame, Visible"/>
+</idspace>

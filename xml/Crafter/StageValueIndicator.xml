@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<idspaces>
+	<idspace id="StageValueIndicators">
+		<class name="Position" Title="위치"/>
+		<class name="Unit" Title="유닛"/>
+		<class name="Units" Title="유닛들"/>
+		<class name="Item" Title="아이템"/>
+		<class name="Dashboard" Title="대시보드"/>
+		<class name="Area" Title="영역"/>
+		<class name="Value" Title="아무값"/>
+		<class name="Text" Title="텍스트"/>
+	</idspace>
+	<idspace id="StagePositionIndicator">
+		<schema>
+			<rule property="MakerArguments" type="table" subtype="link" target="StageMakerArgument" Default=""/>
+		</schema>
+		<class name="Object" MakerArguments="ObjectKey"/>
+		<class name="Position" MakerArguments="Position"/>
+		<class name="ConditionOutput" MakerArguments="Key"/>
+		<class name="Variable" MakerArguments="Variable"/>
+		<class name="CenterOfArea" MakerArguments="Area"/>
+		<class name="ObjectInstantProperty" MakerArguments="Unit, Key"/>
+		<class name="EmptyNearObject" MakerArguments="Unit, Range"/>
+	</idspace>
+	<idspace id="StageUnitIndicator">
+		<schema>
+			<rule property="MakerArguments" type="table" subtype="link" target="StageMakerArgument" Default=""/>
+		</schema>
+		<class name="Object" MakerArguments="ObjectKey"/>
+		<class name="Type" MakerArguments="Team, GameObject"/>
+		<class name="ConditionOutput" MakerArguments="Key"/>
+		<class name="Interaction" MakerArguments="InteractionUnit"/>
+		<class name="Variable" MakerArguments="Variable"/>
+	</idspace>
+	<idspace id="StageAnyUnitIndicator">
+		<schema>
+			<rule property="MakerArguments" type="table" subtype="link" target="StageMakerArgument" Default=""/>
+		</schema>
+		<class name="Type" MakerArguments="Team, GameObject"/>
+		<class name="InstantProperty" MakerArguments="PropKey, SuccessExpression"/>
+		<class name="ConditionOutput" MakerArguments="Key"/>
+	</idspace>
+	<idspace id="StageAllUnitIndicator">
+		<schema>
+			<rule property="MakerArguments" type="table" subtype="link" target="StageMakerArgument" Default=""/>
+		</schema>
+		<class name="Team" MakerArguments="Team"/>
+		<class name="Area" MakerArguments="AreaIndicator"/>
+		<class name="TeamArea" MakerArguments="Team, AreaIndicator"/>
+	</idspace>
+	<idspace id="StageItemIndicator">
+		<schema>
+			<rule property="MakerArguments" type="table" subtype="link" target="StageMakerArgument" Default=""/>
+		</schema>
+		<class name="Simple" MakerArguments="ItemType, Count"/>
+		<class name="ConditionOutput" MakerArguments="Key"/>
+	</idspace>
+	<idspace id="StageDashboardIndicator">
+		<schema>
+			<rule property="MakerArguments" type="table" subtype="link" target="StageMakerArgument" Default=""/>
+		</schema>
+		<class name="Dashboard" MakerArguments="DashboardKey"/>
+		<class name="ConditionOutput" MakerArguments="Key"/>
+		<class name="KeyExpression" MakerArguments="StageDataBinding"/>
+	</idspace>
+	<idspace id="StageAreaIndicator">
+		<schema>
+			<rule property="MakerArguments" type="table" subtype="link" target="StageMakerArgument" Default=""/>
+		</schema>
+		<class name="Area" MakerArguments="Area"/>
+		<class name="Range" MakerArguments="PositionIndicator, Range"/>
+		<class name="PositionList" MakerArguments="PositionList"/>
+		<class name="PositionHolder" MakerArguments="PosHolderGroup"/>
+		<class name="Union" MakerArguments="AreaIndicatorList"/>
+		<class name="Difference" MakerArguments="AreaIndicatorFrom, AreaIndicatorDiff"/>
+		<class name="ConditionOutput" MakerArguments="Key"/>
+	</idspace>
+	<idspace id="StageValueIndicator">
+		<schema>
+			<rule property="MakerArguments" type="table" subtype="link" target="StageMakerArgument" Default=""/>
+		</schema>
+		<class name="Static" MakerArguments="Value"/>
+		<class name="Position" MakerArguments="PositionIndicator"/>
+		<class name="Mission" MakerArguments=""/>
+		<class name="StageVariable" MakerArguments="Variable"/>
+		<class name="Object" MakerArguments="Unit"/>
+		<class name="Dashboard" MakerArguments="DashboardKey"/>
+		<class name="Expr" MakerArguments="Env, TestExpression"/>
+		<class name="ConditionOutput" MakerArguments="Key"/>
+	</idspace>
+	<idspace id="StageValueInitializer">
+		<schema>
+			<rule property="MakerArguments" type="table" subtype="link" target="StageMakerArgument" Default=""/>
+		</schema>
+		<class name="Static" MakerArguments="Value"/>
+		<class name="Position" MakerArguments="PositionIndicator"/>
+		<class name="Object" MakerArguments="Unit"/>
+		<class name="Expr" MakerArguments="Env, TestExpression"/>
+	</idspace>
+	<idspace id="StageTextIndicator">
+		<schema>
+			<rule property="MakerArguments" type="table" subtype="link" target="StageMakerArgument" Default=""/>
+		</schema>
+		<class name="Raw" MakerArguments="Title"/>
+		<class name="ClassData" MakerArguments="StageVarExpr"/>
+		<class name="Word" MakerArguments="StageVarExpr"/>
+		<class name="GuideMessage" MakerArguments="StageVarExpr"/>
+		<class name="Custom" MakerArguments="StageVarExpr"/>
+		<class name="ConditionOutput" MakerArguments="Key"/>
+	</idspace>
+</idspaces>

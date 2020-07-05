@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Dialog">
+	<class name="JumpWithNpc">
+		<Scripts>
+			<property Type="Jump" C_JumpTo="env.dialog_type" C_Npc="env.npc_type"/>
+		</Scripts>
+	</class>
+	<class name="EmotionTest">
+		<Scripts>
+			<property Type="Script" Script="ProgressEmotionTest" C_ObjectInfo="env.object_info" C_DialogType="env.dialog_type"/>
+		</Scripts>
+	</class>
+	<class name="TitleMessageTest">
+		<Scripts>
+			<property Type="TitleMessage" Message="[!Ignore]Message" Title="[!Ignore]Title"/>
+			<property Type="Sleep" Time="1.5"/>
+			<property Type="TitleMessage" Message="" Title=""/>
+		</Scripts>
+	</class>
+	<class name="PlayDialogFunc">
+		<Scripts>
+			<property Type="Script" Script="ProgressPlayDialogFunc" C_Func="env.func" C_Args="env.args"/>
+		</Scripts>
+	</class>
+</idspace>

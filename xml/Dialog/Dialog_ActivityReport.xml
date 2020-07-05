@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Dialog">
+	<class name="ActivityReport_Main">
+		<Scripts>
+			<property Type="SceneFade" Direct="true" FadeType="Out"/>
+			<property Type="PlayBGM" BGMName="WeAreTroubleshooter" FadeTime="1" Volume="1"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="SceneFade" Direct="false" FadeType="In"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" Slot="Left3" SpeakerEmotion="Cry" Mode="Start" Close="true" Message="[colour=&apos;FFFFFFFF&apos;]활동 보고서[colour=&apos;FFFFE959&apos;]가 도착하였습니다." DialogType="Sub" Effect="Appear"/>
+			<property Type="Script" Script="ProgressActivityReport"/>
+			<property Type="StopBGM" Direct="true" FadeTime="3"/>
+		</Scripts>
+	</class>
+</idspace>

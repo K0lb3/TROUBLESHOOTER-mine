@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Dialog">
+	<class name="Notice_Common">
+		<Scripts>
+			<property Type="Script" Script="ProgressNoticeAction" C_NoticeType="env.notice_type"/>
+		</Scripts>
+	</class>
+</idspace>

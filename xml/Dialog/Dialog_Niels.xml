@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Dialog">
+	<class name="Niels_Main">
+		<Scripts>
+			<property Type="Script" Script="ProgressPreDialogCheck_CommonNPC"/>
+		</Scripts>
+	</class>
+	<class name="Niels_Selection">
+		<Scripts>
+			<property Type="Switch" C_DlgName="npc.Info.Title" C_TestTarget="company.Npc[npc.name].QP">
+				<property Case="0">
+					<property Type="Jump" JumpTo="Niels_QP_0"/>
+				</property>
+				<property Case="1">
+					<property Type="Jump" JumpTo="Niels_QP_1"/>
+				</property>
+				<property Case="2">
+					<property Type="Jump" JumpTo="Niels_QP_2"/>
+				</property>
+				<property Case="3">
+					<property Type="Jump" JumpTo="Niels_QP_3"/>
+				</property>
+				<property Case="4">
+					<property Type="Jump" JumpTo="Niels_QP_4"/>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+	<class name="Niels_QP_0">
+		<Scripts>
+			<property Type="Dialog" C_DlgName="npc.Info.Title">
+				<property Text="딱 보아하니 트러블슈터군"/>
+				<property Text="네 녀석들이 물건의 가치를 알아볼 수 있나?"/>
+				<property Text="살 것 없으면 기웃거리지 말고 가던 길 가게."/>
+			</property>
+			<property Type="Action" Command="UpdateCompanyProperty" PropertyType="Npc/Niels/QP" C_PropertyValue="1"/>
+		</Scripts>
+	</class>
+	<class name="Niels_QP_1">
+		<Scripts>
+			<property Type="Switch" C_DlgName="npc.Info.Title" C_TestTarget="math.random(1,5)">
+				<property Case="1">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="사람이 사용하는 물건을 보면 그 주인의 성격을 알 수 있지."/>
+						<property Text="알겠나! 물건은 주인을 닮는다."/>
+					</property>
+				</property>
+				<property Case="2">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="너희들은 모르겠지만 발할라 이전의 이곳은 전쟁터였다."/>
+						<property Text="그 시절의 세상을 기억하는 자는 거의 없지. 다~ 이주민이니까."/>
+					</property>
+				</property>
+				<property Case="3">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="이 발할라도 고작해야 20년 된 신생국가에 지나지 않아."/>
+						<property Text="그 이전 시대의 사람들이 일궈낸 것을 차지하고 있을 뿐이지"/>
+					</property>
+				</property>
+				<property Case="4">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="너희들이 가치를 제대로 쳐준다면 못 팔 것도 없지."/>
+					</property>
+				</property>
+				<property Case="5">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="나는 발할라 이전의 것에 중요한 가치를 두고 있지!"/>
+						<property Text="그런 것들을 찾으면 나에게 가져오게. 후한 값을 쳐줄 테니."/>
+					</property>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+</idspace>

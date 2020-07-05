@@ -1,0 +1,2554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="ItemBox">
+	<class name="Box_Lv45_Easy">
+		<Slot>
+			<property Priority="10">
+				<Item Count="1" ItemType="Boots_BlackIronEnhanced" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Boots_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sneakers_BlackIronEnhanced" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Sneakers_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="DressShoes_BlackIronEnhanced" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="DressShoes_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Wrist_BlackIronEnhanced" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Wrist_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Ring_BlackIronEnhanced" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Ring_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bracelet_BlackIronEnhanced" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Bracelet_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Tracksuit_BlackIronEnhanced" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Tracksuit_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Jacket_BlackIronEnhanced" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Jacket_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Coat_BlackIronEnhanced" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Coat_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_Thorn" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Bangle_Thorn_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_Unicorn" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Sword_Unicorn_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="MachinePistol_DynamesMPIBC_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="MachinePistol_DynamesMPIBR_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="SniperRifle_DynamesIB_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="SniperRifle_DynamesIBA_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Brush_Boom_QHD_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Brush_Boom_QHD_Rare" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv45_Normal">
+		<Slot>
+			<property Priority="10">
+				<Item Count="1" ItemType="Boots_BlackIronEnhanced" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Boots_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sneakers_BlackIronEnhanced" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sneakers_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="DressShoes_BlackIronEnhanced" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="DressShoes_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Wrist_BlackIronEnhanced" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Wrist_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Ring_BlackIronEnhanced" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Ring_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bracelet_BlackIronEnhanced" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bracelet_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Tracksuit_BlackIronEnhanced" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Tracksuit_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Jacket_BlackIronEnhanced" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Jacket_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Coat_BlackIronEnhanced" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Coat_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_Thorn" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_Thorn_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_Unicorn" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_Unicorn_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="MachinePistol_DynamesMPIBC_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="MachinePistol_DynamesMPIBR_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="SniperRifle_DynamesIB_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="SniperRifle_DynamesIBA_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Brush_Boom_QHD_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Brush_Boom_QHD_Rare" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv45_Hard">
+		<Slot>
+			<property Priority="10">
+				<Item Count="1" ItemType="Boots_BlackIronEnhanced" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Boots_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sneakers_BlackIronEnhanced" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Sneakers_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="DressShoes_BlackIronEnhanced" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="DressShoes_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Wrist_BlackIronEnhanced" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Wrist_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Ring_BlackIronEnhanced" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Ring_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bracelet_BlackIronEnhanced" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Bracelet_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Tracksuit_BlackIronEnhanced" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Tracksuit_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Jacket_BlackIronEnhanced" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Jacket_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Coat_BlackIronEnhanced" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Coat_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_Thorn" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Bangle_Thorn_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_Unicorn" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Sword_Unicorn_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="MachinePistol_DynamesMPIBC_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="MachinePistol_DynamesMPIBR_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="SniperRifle_DynamesIB_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="SniperRifle_DynamesIBA_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Brush_Boom_QHD_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Brush_Boom_QHD_Rare" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv45_Rare">
+		<Slot>
+			<property Priority="10">
+				<Item Count="1" ItemType="Boots_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sneakers_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="DressShoes_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Wrist_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Ring_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bracelet_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Tracksuit_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Jacket_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Coat_BlackIronEnhanced_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_Thorn_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_Unicorn_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="MachinePistol_DynamesMPIBR_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="SniperRifle_DynamesIBA_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Brush_Boom_QHD_Rare" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Boots_BlackIronEnhanced_Ice_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Boots_BlackIronEnhanced_Fire_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Boots_BlackIronEnhanced_Lightning_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Sneakers_BlackIronEnhanced_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="DressShoes_BlackIronEnhanced_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Wrist_BlackIronEnhanced_Ice_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Wrist_BlackIronEnhanced_Fire_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Wrist_BlackIronEnhanced_Lightning_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Ring_BlackIronEnhanced_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Bracelet_BlackIronEnhanced_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Tracksuit_BlackIronEnhanced_Ice_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Tracksuit_BlackIronEnhanced_Fire_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Tracksuit_BlackIronEnhanced_Lightning_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Jacket_BlackIronEnhanced_Ice_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Jacket_BlackIronEnhanced_Fire_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Jacket_BlackIronEnhanced_Lightning_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Coat_BlackIronEnhanced_Ice_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Coat_BlackIronEnhanced_Fire_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Coat_BlackIronEnhanced_Lightning_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Bangle_Thorn_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Sword_Unicorn_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="MachinePistol_DynamesMPIBE_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="SniperRifle_DynamesIBS_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Brush_Boom_QHD_Epic" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv40_Easy">
+		<Slot>
+			<property Priority="10">
+				<Item Count="1" ItemType="Boots_Draky" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Boots_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sneakers_Draky" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Sneakers_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="DressShoes_Draky" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="DressShoes_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Wrist_Draky" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Wrist_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Ring_Draky" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Ring_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bracelet_Draky" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Bracelet_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Tracksuit_Draky" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Tracksuit_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Jacket_Draky" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Jacket_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Coat_Draky" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Coat_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_Etros_Special" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Bangle_Etros_Special_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_Sever" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Sword_Sever_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="MachinePistol_RMS233_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="MachinePistol_RMS233_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="SniperRifle_RMS233_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="SniperRifle_RMS233_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Brush_Boom_FHD_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Brush_Boom_FHD_Rare" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv40_Normal">
+		<Slot>
+			<property Priority="10">
+				<Item Count="1" ItemType="Boots_Draky" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Boots_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sneakers_Draky" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sneakers_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="DressShoes_Draky" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="DressShoes_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Wrist_Draky" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Wrist_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Ring_Draky" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Ring_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bracelet_Draky" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bracelet_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Tracksuit_Draky" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Tracksuit_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Jacket_Draky" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Jacket_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Coat_Draky" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Coat_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_Etros_Special" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_Etros_Special_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_Sever" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_Sever_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="MachinePistol_RMS233_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="MachinePistol_RMS233_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="SniperRifle_RMS233_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="SniperRifle_RMS233_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Brush_Boom_FHD_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Brush_Boom_FHD_Rare" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv40_Hard">
+		<Slot>
+			<property Priority="10">
+				<Item Count="1" ItemType="Boots_Draky" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Boots_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sneakers_Draky" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Sneakers_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="DressShoes_Draky" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="DressShoes_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Wrist_Draky" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Wrist_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Ring_Draky" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Ring_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bracelet_Draky" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Bracelet_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Tracksuit_Draky" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Tracksuit_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Jacket_Draky" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Jacket_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Coat_Draky" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Coat_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_Etros_Special" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Bangle_Etros_Special_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_Sever" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Sword_Sever_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="MachinePistol_RMS233_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="MachinePistol_RMS233_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="SniperRifle_RMS233_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="SniperRifle_RMS233_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Brush_Boom_FHD_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Brush_Boom_FHD_Rare" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv40_Rare">
+		<Slot>
+			<property Priority="15">
+				<Item Count="1" ItemType="Boots_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Sneakers_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="DressShoes_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Wrist_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Ring_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Bracelet_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Tracksuit_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Jacket_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Coat_Draky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Bangle_Etros_Special_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Sword_Sever_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="MachinePistol_RMS233_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="SniperRifle_RMS233_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Brush_Boom_FHD_Rare" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Boots_Draky_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Sneakers_Draky_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="DressShoes_Draky_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Wrist_Draky_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Ring_Draky_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Bracelet_Draky_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Tracksuit_Draky_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Jacket_Draky_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Coat_Draky_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Bangle_Etros_Special_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Sword_Sever_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="MachinePistol_RMS233_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="SniperRifle_RMS233_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Brush_Boom_FHD_Epic" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv35_Easy">
+		<Slot>
+			<property Priority="10">
+				<Item Count="1" ItemType="Boots_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Boots_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sneakers_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Sneakers_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="DressShoes_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="DressShoes_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Wrist_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Wrist_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Ring_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Ring_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bracelet_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Bracelet_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Tracksuit_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Tracksuit_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Jacket_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Jacket_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Coat_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Coat_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Bangle_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Sword_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="MachinePistol_DynamesMPC_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="MachinePistol_DynamesMPR_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Brush_Boom_SM_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Brush_Boom_SM_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="SniperRifle_Dynames_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="SniperRifle_Dynames_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="BattleGlove_BlackIronFist" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="BattleGlove_BlackIronFist_Rare" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv35_Normal">
+		<Slot>
+			<property Priority="10">
+				<Item Count="1" ItemType="Boots_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Boots_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sneakers_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sneakers_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="DressShoes_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="DressShoes_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Wrist_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Wrist_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Ring_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Ring_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bracelet_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bracelet_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Tracksuit_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Tracksuit_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Jacket_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Jacket_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Coat_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Coat_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="MachinePistol_DynamesMPC_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="MachinePistol_DynamesMPR_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Brush_Boom_SM_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Brush_Boom_SM_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="SniperRifle_Dynames_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="SniperRifle_Dynames_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="BattleGlove_BlackIronFist" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="BattleGlove_BlackIronFist_Rare" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv35_Hard">
+		<Slot>
+			<property Priority="10">
+				<Item Count="1" ItemType="Boots_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Boots_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sneakers_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Sneakers_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="DressShoes_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="DressShoes_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Wrist_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Wrist_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Ring_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Ring_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bracelet_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Bracelet_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Tracksuit_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Tracksuit_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Jacket_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Jacket_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Coat_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Coat_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Bangle_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_BlackIron" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Sword_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="MachinePistol_DynamesMPC_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="MachinePistol_DynamesMPR_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="SniperRifle_Dynames_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="SniperRifle_Dynames_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Brush_Boom_SM_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Brush_Boom_SM_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="BattleGlove_BlackIronFist" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="BattleGlove_BlackIronFist_Rare" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv35_Rare">
+		<Slot>
+			<property Priority="15">
+				<Item Count="1" ItemType="Boots_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Sneakers_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="DressShoes_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Wrist_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Ring_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Bracelet_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Tracksuit_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Jacket_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Coat_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Bangle_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Sword_BlackIron_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="MachinePistol_DynamesMPR_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Brush_Boom_SM_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="SniperRifle_Dynames_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="BattleGlove_BlackIronFist_Rare" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Boots_BlackIron_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Sneakers_BlackIron_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="DressShoes_BlackIron_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Wrist_BlackIron_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Ring_BlackIron_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Bracelet_BlackIron_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Tracksuit_BlackIron_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Jacket_BlackIron_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Coat_BlackIron_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Bangle_BlackIron_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Sword_BlackIron_Fire_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Sword_BlackIron_Ice_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Sword_BlackIron_Wind_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="MachinePistol_DynamesMPE_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Brush_Boom_SM_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="SniperRifle_Dynames_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="BattleGlove_BlackIronFist_Epic" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv30_Easy">
+		<Slot>
+			<property Priority="10">
+				<Item Count="1" ItemType="Boots_Cyrus" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Boots_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sneakers_Cyrus" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Sneakers_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="DressShoes_Bonaparte" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="DressShoes_Bonaparte_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Wrist_Cyrus" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Wrist_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Ring_Bonaparte" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Ring_Bonaparte_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bracelet_BonaparteGold" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Bracelet_BonaparteGold_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Tracksuit_Cyrus" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Tracksuit_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Jacket_Cyrus" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Jacket_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Coat_Cyrus" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Coat_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_Cyrus" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Bangle_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_Cyrus" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Sword_Cyruse_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="MachinePistol_DrakeC_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="MachinePistol_DrakeC_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Brush_Boom_KS_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Brush_Boom_KS_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="SniperRifle_Cyrus_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="SniperRifle_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="BattleGlove_GiantFist" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="BattleGlove_GiantFist_Rare" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv30_Normal">
+		<Slot>
+			<property Priority="10">
+				<Item Count="1" ItemType="Boots_Cyrus" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Boots_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sneakers_Cyrus" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sneakers_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="DressShoes_Bonaparte" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="DressShoes_Bonaparte_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Wrist_Cyrus" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Wrist_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Ring_Bonaparte" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Ring_Bonaparte_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bracelet_BonaparteGold" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bracelet_BonaparteGold_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Tracksuit_Cyrus" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Tracksuit_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Jacket_Cyrus" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Jacket_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Coat_Cyrus" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Coat_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_Cyrus" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_Cyrus" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_Cyruse_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="MachinePistol_DrakeC_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="MachinePistol_DrakeC_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Brush_Boom_KS_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Brush_Boom_KS_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="SniperRifle_Cyrus_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="SniperRifle_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="BattleGlove_GiantFist" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="BattleGlove_GiantFist_Rare" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv30_Hard">
+		<Slot>
+			<property Priority="10">
+				<Item Count="1" ItemType="Boots_Cyrus" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Boots_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sneakers_Cyrus" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Sneakers_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="DressShoes_Bonaparte" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="DressShoes_Bonaparte_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Wrist_Cyrus" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Wrist_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Ring_Bonaparte" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Ring_Bonaparte_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bracelet_BonaparteGold" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Bracelet_BonaparteGold_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Tracksuit_Cyrus" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Tracksuit_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Jacket_Cyrus" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Jacket_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Coat_Cyrus" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Coat_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_Cyrus" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Bangle_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_Cyrus" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Sword_Cyruse_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="MachinePistol_DrakeC_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="MachinePistol_DrakeC_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Brush_Boom_KS_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Brush_Boom_KS_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="SniperRifle_Cyrus_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="SniperRifle_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="BattleGlove_GiantFist" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="BattleGlove_GiantFist_Rare" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv30_Rare">
+		<Slot>
+			<property Priority="15">
+				<Item Count="1" ItemType="Boots_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Sneakers_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="DressShoes_Bonaparte_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Wrist_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Ring_Bonaparte_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Bracelet_BonaparteGold_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Tracksuit_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Jacket_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Coat_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Bangle_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Sword_Cyruse_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="MachinePistol_DrakeC_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Brush_Boom_KS_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="SniperRifle_Cyrus_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="BattleGlove_GiantFist_Rare" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Boots_Cyrus_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Sneakers_Cyrus_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="DressShoes_Bonaparte_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Wrist_Cyrus_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Ring_Bonaparte_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Bracelet_BonaparteGold_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Tracksuit_Cyrus_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Jacket_Cyrus_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Coat_Cyrus_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Bangle_Cyrus_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Sword_Cyruse_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="MachinePistol_DrakeC_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Brush_Boom_KS_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="SniperRifle_Cyrus_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="BattleGlove_GiantFist_Epic" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv25_Easy">
+		<Slot>
+			<property Priority="10">
+				<Item Count="1" ItemType="Boots_Dorori" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Boots_Dorori_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="DressShoes_Dorori" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="DressShoes_Dorori_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sneakers_Yasha" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Sneakers_Yasha_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Wrist_Yasha" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Wrist_Yasha_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Ring_Sky" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Ring_Sky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bracelet_Arch" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Bracelet_Arch_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Tracksuit_Yasha" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Tracksuit_Yasha_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Jacket_Sentinel" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Jacket_Sentinel_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Coat_Yasha" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Coat_Yasha_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_Karas" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Bangle_Karas_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_Pulse" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Sword_Pulse_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="MachinePistol_DrakeB_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="MachinePistol_DrakeB_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Brush_Boom_HD_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Brush_Boom_HD_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="BattleGlove_TrolleFist" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="BattleGlove_TrolleFist_Rare" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv25_Normal">
+		<Slot>
+			<property Priority="10">
+				<Item Count="1" ItemType="Boots_Dorori" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Boots_Dorori_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="DressShoes_Dorori" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="DressShoes_Dorori_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sneakers_Yasha" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sneakers_Yasha_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Wrist_Yasha" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Wrist_Yasha_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Ring_Sky" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Ring_Sky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bracelet_Arch" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bracelet_Arch_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Tracksuit_Yasha" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Tracksuit_Yasha_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Jacket_Sentinel" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Jacket_Sentinel_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Coat_Yasha" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Coat_Yasha_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_Karas" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_Karas_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_Pulse" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_Pulse_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="MachinePistol_DrakeB_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="MachinePistol_DrakeB_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Brush_Boom_HD_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Brush_Boom_HD_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="BattleGlove_TrolleFist" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="BattleGlove_TrolleFist_Rare" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv25_Hard">
+		<Slot>
+			<property Priority="10">
+				<Item Count="1" ItemType="Boots_Dorori" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Boots_Dorori_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="DressShoes_Dorori" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="DressShoes_Dorori_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sneakers_Yasha" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Sneakers_Yasha_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Wrist_Yasha" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Wrist_Yasha_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Ring_Sky" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Ring_Sky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bracelet_Arch" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Bracelet_Arch_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Tracksuit_Yasha" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Tracksuit_Yasha_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Jacket_Sentinel" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Jacket_Sentinel_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Coat_Yasha" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Coat_Yasha_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_Karas" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Bangle_Karas_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_Pulse" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Sword_Pulse_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="MachinePistol_DrakeB_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="MachinePistol_DrakeB_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Brush_Boom_HD_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Brush_Boom_HD_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="BattleGlove_TrolleFist" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="BattleGlove_TrolleFist_Rare" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv25_Rare">
+		<Slot>
+			<property Priority="15">
+				<Item Count="1" ItemType="Boots_Dorori_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="DressShoes_Dorori_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Sneakers_Yasha_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Wrist_Yasha_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Ring_Sky_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Bracelet_Arch_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Tracksuit_Yasha_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Jacket_Sentinel_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Coat_Yasha_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Bangle_Karas_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Sword_Pulse_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="MachinePistol_DrakeB_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Brush_Boom_HD_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="BattleGlove_TrolleFist_Rare" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Boots_Dorori_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="DressShoes_Dorori_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Sneakers_Yasha_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Wrist_Yasha_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Ring_Sky_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Bracelet_Arch_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Tracksuit_Yasha_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Jacket_Sentinel_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Coat_Yasha_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Bangle_Karas_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Sword_Pulse_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="MachinePistol_DrakeB_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Brush_Boom_HD_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="BattleGlove_TrolleFist_Epic" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv20_Easy">
+		<Slot>
+			<property Priority="10">
+				<Item Count="1" ItemType="Boots_Ogre" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Boots_Ogre_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="DressShoes_Ogre" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="DressShoes_Ogre_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sneakers_Assassin" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Sneakers_Assassin_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Wrist_Titan_Black" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Wrist_Titan_Blacke_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Ring_Sage" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Ring_Sage_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bracelet_Mithril" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Bracelet_Mithril_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Tracksuit_Assassin" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Tracksuit_Assassin_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Jacket_Guard" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Jacket_Guard_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Coat_Guard" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Coat_Guard_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_Etros_New" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Bangle_Etros_New_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_SharpBlade" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Sword_SharpBlade_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="MachinePistol_DrakeA_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="MachinePistol_DrakeA_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Brush_Boom_CW_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Brush_Boom_CW_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="BattleGlove_OgreFist" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="BattleGlove_OgreFist_Rare" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv20_Normal">
+		<Slot>
+			<property Priority="10">
+				<Item Count="1" ItemType="Boots_Ogre" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Boots_Ogre_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="DressShoes_Ogre" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="DressShoes_Ogre_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sneakers_Assassin" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sneakers_Assassin_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Wrist_Titan_Black" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Wrist_Titan_Blacke_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Ring_Sage" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Ring_Sage_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bracelet_Mithril" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bracelet_Mithril_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Tracksuit_Assassin" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Tracksuit_Assassin_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Jacket_Guard" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Jacket_Guard_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Coat_Guard" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Coat_Guard_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_Etros_New" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_Etros_New_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_SharpBlade" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_SharpBlade_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="MachinePistol_DrakeA_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="MachinePistol_DrakeA_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Brush_Boom_CW_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Brush_Boom_CW_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="BattleGlove_OgreFist" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="BattleGlove_OgreFist_Rare" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv20_Hard">
+		<Slot>
+			<property Priority="10">
+				<Item Count="1" ItemType="Boots_Ogre" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Boots_Ogre_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="DressShoes_Ogre" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="DressShoes_Ogre_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sneakers_Assassin" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Sneakers_Assassin_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Wrist_Titan_Black" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Wrist_Titan_Blacke_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Ring_Sage" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Ring_Sage_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bracelet_Mithril" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Bracelet_Mithril_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Tracksuit_Assassin" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Tracksuit_Assassin_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Jacket_Guard" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Jacket_Guard_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Coat_Guard" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Coat_Guard_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_Etros_New" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Bangle_Etros_New_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_SharpBlade" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Sword_SharpBlade_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="MachinePistol_DrakeA_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="MachinePistol_DrakeA_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Brush_Boom_CW_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Brush_Boom_CW_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="BattleGlove_OgreFist" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="BattleGlove_OgreFist_Rare" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv20_Rare">
+		<Slot>
+			<property Priority="15">
+				<Item Count="1" ItemType="Boots_Yasha_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="DressShoes_Yasha_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Sneakers_Assassin_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Wrist_Tima_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Ring_Sage_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Bracelet_Mithril_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Tracksuit_Assassin_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Jacket_Guard_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Coat_Guard_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Bangle_Etros_New_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Sword_SharpBlade_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="MachinePistol_DrakeA_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Brush_Boom_CW_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="BattleGlove_OgreFist_Rare" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Boots_Yasha_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="DressShoes_Yasha_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Sneakers_Assassin_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Wrist_Tima_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Ring_Sage_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Bracelet_Mithril_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Tracksuit_Assassin_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Jacket_Guard_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Coat_Guard_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Bangle_Etros_New_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Sword_SharpBlade_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="MachinePistol_DrakeA_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="Brush_Boom_CW_Epic" Type="Simple"/>
+			</property>
+			<property Priority="1">
+				<Item Count="1" ItemType="BattleGlove_OgreFist_Epic" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv15_Easy">
+		<Slot>
+			<property Priority="10">
+				<Item Count="1" ItemType="Boots_Adventure" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Boots_Explore" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sneakers_Chaser" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Sneakers_Chaser_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="DressShoes_Tima" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="DressShoes_Tima_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Wrist_Ogre" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Wrist_Ogre_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Ring_Guard" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Ring_Guard_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bracelet_Platinum" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Bracelet_Platinum_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Tracksuit_Chaser" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Tracksuit_Chaser_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Jacket_EastAlliance" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Jacket_EastAlliance_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Coat_Chaser" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Coat_Chaser_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_EastAlliance" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_EastAlliance" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Bangle_EastAlliance_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_OgreBlade" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_AscaBlade_Red" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="Sword_AscaBlade_Red_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="BattleGlove_TitanFist" Type="Simple"/>
+			</property>
+			<property Priority="5">
+				<Item Count="1" ItemType="BattleGlove_TitanFist_Rare" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv15_Normal">
+		<Slot>
+			<property Priority="10">
+				<Item Count="1" ItemType="Boots_Adventure" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Boots_Explore" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sneakers_Chaser" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sneakers_Chaser_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="DressShoes_Tima" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="DressShoes_Tima_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Wrist_Ogre" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Wrist_Ogre_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Ring_Guard" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Ring_Guard_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bracelet_Platinum" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bracelet_Platinum_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Tracksuit_Chaser" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Tracksuit_Chaser_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Jacket_EastAlliance" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Jacket_EastAlliance_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Coat_Chaser" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Coat_Chaser_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_EastAlliance" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_EastAlliance" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_EastAlliance_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_OgreBlade" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_AscaBlade_Red" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_AscaBlade_Red_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="BattleGlove_TitanFist" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="BattleGlove_TitanFist_Rare" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv15_Hard">
+		<Slot>
+			<property Priority="10">
+				<Item Count="1" ItemType="Boots_Adventure" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Boots_Explore" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sneakers_Chaser" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Sneakers_Chaser_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="DressShoes_Tima" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="DressShoes_Tima_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Wrist_Ogre" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Wrist_Ogre_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Ring_Guard" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Ring_Guard_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bracelet_Platinum" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Bracelet_Platinum_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Tracksuit_Chaser" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Tracksuit_Chaser_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Jacket_EastAlliance" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Jacket_EastAlliance_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Coat_Chaser" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Coat_Chaser_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_EastAlliance" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Bangle_EastAlliance" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Bangle_EastAlliance_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_OgreBlade" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Sword_AscaBlade_Red" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Sword_AscaBlade_Red_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="BattleGlove_TitanFist" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="BattleGlove_TitanFist_Rare" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv15_Rare">
+		<Slot>
+			<property Priority="15">
+				<Item Count="1" ItemType="Boots_Explore" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Sneakers_Chaser_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="DressShoes_Tima_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Wrist_Ogre_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Ring_Guard_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Bracelet_Platinum_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Tracksuit_Chaser_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Jacket_EastAlliance_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Coat_Chaser_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Bangle_EastAlliance_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="Sword_AscaBlade_Red_Rare" Type="Simple"/>
+			</property>
+			<property Priority="15">
+				<Item Count="1" ItemType="BattleGlove_TitanFist_Rare" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv40_Recovery">
+		<Slot>
+			<property Priority="70">
+				<Item Count="1" ItemType="Potion_HP_Epic" Type="Simple"/>
+			</property>
+			<property Priority="30">
+				<Item Count="1" ItemType="Potion_HP_Legend" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv35_Recovery">
+		<Slot>
+			<property Priority="50">
+				<Item Count="1" ItemType="Potion_HP_Rare" Type="Simple"/>
+			</property>
+			<property Priority="40">
+				<Item Count="1" ItemType="Potion_HP_Epic" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Potion_HP_Legend" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv30_Recovery">
+		<Slot>
+			<property Priority="70">
+				<Item Count="1" ItemType="Potion_HP_Rare" Type="Simple"/>
+			</property>
+			<property Priority="30">
+				<Item Count="1" ItemType="Potion_HP_Epic" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv25_Recovery">
+		<Slot>
+			<property Priority="50">
+				<Item Count="1" ItemType="Potion_HP_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="30">
+				<Item Count="1" ItemType="Potion_HP_Rare" Type="Simple"/>
+			</property>
+			<property Priority="20">
+				<Item Count="1" ItemType="Potion_HP_Epic" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv20_Recovery">
+		<Slot>
+			<property Priority="70">
+				<Item Count="1" ItemType="Potion_HP_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="20">
+				<Item Count="1" ItemType="Potion_HP_Rare" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="1" ItemType="Potion_HP_Epic" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+	<class name="Box_Lv15_Recovery">
+		<Slot>
+			<property Priority="60">
+				<Item Count="1" ItemType="Potion_HP_Uncommon" Type="Simple"/>
+			</property>
+			<property Priority="40">
+				<Item Count="1" ItemType="Potion_HP_Rare" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
+</idspace>

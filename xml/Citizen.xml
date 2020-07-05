@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Citizen">
+		<schema>
+			<rule property="Initializer" type="function"/>
+		</schema>
+		<class name="Healthy" Initializer="InitializeCitizen_Healty">
+			<Objects>
+				<property Type="Civil_SalarywomanBlack"/>
+				<property Type="Civil_SalarywomanBlue"/>
+				<property Type="Civil_SalarywomanBlue2"/>
+				<property Type="Civil_SalarywomanBlue3"/>
+				<property Type="Civil_SalarywomanBlue4"/>
+				<property Type="Civil_SalarywomanBlue5"/>
+				<property Type="Civil_SalarywomanBlue6"/>
+				<property Type="Civil_SalarywomanBlue8"/>
+				<property Type="Civil_SalarywomanBlue9"/>
+				<property Type="Civil_SalarywomanBlue11"/>
+			</Objects>
+		</class>
+		<class name="Fake" Initializer="InitializeCitizen_Fake">
+			<Objects>
+				<property Type="Civil_SalarywomanBlue"/>
+			</Objects>
+		</class>
+		<class name="Injured" Initializer="InitializeCitizen_Injured">
+			<Objects>
+				<property Type="Civil_SalarywomanBlue"/>
+			</Objects>
+		</class>
+		<class name="Unrest" Initializer="InitializeCitizen_Unrest">
+			<Objects>
+				<property Type="Civil_SalarywomanBlack"/>
+				<property Type="Civil_SalarywomanBlue"/>
+				<property Type="Civil_SalarywomanBlue2"/>
+				<property Type="Civil_SalarywomanBlue3"/>
+				<property Type="Civil_SalarywomanBlue4"/>
+				<property Type="Civil_SalarywomanBlue5"/>
+				<property Type="Civil_SalarywomanBlue6"/>
+				<property Type="Civil_SalarywomanBlue8"/>
+				<property Type="Civil_SalarywomanBlue9"/>
+				<property Type="Civil_SalarywomanBlue11"/>
+			</Objects>
+		</class>
+		<class name="Child" Initializer="InitializeCitizen_Child">
+			<Objects>
+				<property Type="Civil_BoyBlue1"/>
+				<property Type="Civil_BoyBlue2"/>
+				<property Type="Civil_BoyBlue3"/>
+				<property Type="Civil_BoyBlue4"/>
+				<property Type="Civil_BoyBlue5"/>
+				<property Type="Civil_BoyBlue6"/>
+				<property Type="Civil_BoyBlue7"/>
+				<property Type="Civil_BoyBlue8"/>
+				<property Type="Civil_BoyBlue9"/>
+				<property Type="Civil_BoyBlue10"/>
+				<property Type="Civil_BoyBrown2"/>
+				<property Type="Civil_BoyBrown3"/>
+				<property Type="Civil_BoyBrown4"/>
+				<property Type="Civil_BoyBrown5"/>
+				<property Type="Civil_BoyBrown6"/>
+				<property Type="Civil_BoyBrown7"/>
+				<property Type="Civil_BoyBrown8"/>
+				<property Type="Civil_BoyBrown9"/>
+				<property Type="Civil_BoyBrown10"/>
+				<property Type="Civil_BoyOrange1"/>
+				<property Type="Civil_BoyOrange2"/>
+				<property Type="Civil_BoyOrange3"/>
+				<property Type="Civil_BoyOrange4"/>
+				<property Type="Civil_BoyOrange5"/>
+				<property Type="Civil_BoyOrange7"/>
+				<property Type="Civil_BoyOrange8"/>
+				<property Type="Civil_BoyOrange9"/>
+				<property Type="Civil_BoyOrange10"/>
+				<property Type="Civil_BoyWhite1"/>
+				<property Type="Civil_BoyWhite2"/>
+				<property Type="Civil_BoyWhite3"/>
+				<property Type="Civil_BoyWhite4"/>
+				<property Type="Civil_BoyWhite5"/>
+				<property Type="Civil_BoyWhite6"/>
+				<property Type="Civil_BoyWhite7"/>
+				<property Type="Civil_BoyWhite8"/>
+				<property Type="Civil_BoyWhite9"/>
+				<property Type="Civil_BoyWhite10"/>
+				<property Type="Civil_GirlBlack2"/>
+				<property Type="Civil_GirlBlack3"/>
+				<property Type="Civil_GirlBlack4"/>
+				<property Type="Civil_GirlBlack5"/>
+				<property Type="Civil_GirlBlack6"/>
+				<property Type="Civil_GirlBlack7"/>
+				<property Type="Civil_GirlBlack8"/>
+				<property Type="Civil_GirlBlack9"/>
+				<property Type="Civil_GirlBlack10"/>
+				<property Type="Civil_GirlStripe1"/>
+				<property Type="Civil_GirlStripe2"/>
+				<property Type="Civil_GirlStripe3"/>
+				<property Type="Civil_GirlStripe4"/>
+				<property Type="Civil_GirlStripe6"/>
+				<property Type="Civil_GirlStripe7"/>
+				<property Type="Civil_GirlStripe8"/>
+				<property Type="Civil_GirlStripe9"/>
+			</Objects>
+		</class>
+	</idspace>
+</idspaces>

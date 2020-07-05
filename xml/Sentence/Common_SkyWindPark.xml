@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Common_SkyWindPark_fxFYy0" Value="[!Dashboard:Counter]남은 적 수"/>
+		<class name="Common_SkyWindPark_bl4Qim" Value="[!Dashboard:Counter]남은 야수 수"/>
+		<class name="Common_SkyWindPark_TUhHFt" Value="[!Objective]현장의 야수를 모두 제압하시오."/>
+		<class name="Common_SkyWindPark_Uht9u4" Value="[!Objective]현장의 모든 적을 제압하시오."/>
+		<class name="Common_SkyWindPark_rdtW6X" Value="[!Title]비처럼 음악처럼..."/>
+		<class name="Common_SkyWindPark_6FqF57" Value="[!Title]하늘바람 공원"/>
+		<class name="Common_SkyWindPark_0r7KOb" Value="[!Dialog][!speaker:VHPD_Assault_Normal]알버스 님. 남은 네구리들을 한 곳으로 몰아 넣었습니다."/>
+		<class name="Common_SkyWindPark_12hKjk" Value="[!Dialog][!speaker:Albus_Serious]넵. 알겠습니다."/>
+		<class name="Common_SkyWindPark_aeaczl" Value="[!Dialog][!speaker:Albus_SurpriseStare]&apos;도대체 이 녀석들은 어디서 나타난거지...&apos;"/>
+		<class name="Common_SkyWindPark_Z8bfO5" Value="[!Dialog]최근 철의 숲에서 불법으로 밀렵된 야수를 호송하던 차량이 빙판 길에 전복하여 도심으로 야수가 풀려났었다."/>
+		<class name="Common_SkyWindPark_ezE2fN" Value="[!Dialog]경찰과 $CompanyName$의 빠른 대응으로 모든 야수를 제압했었다."/>
+		<class name="Common_SkyWindPark_klMagU" Value="[!Dialog][!speaker:Albus_Serious]&apos;오늘 같은 날이면 공기 중에 습기가 많아 피부 호흡이 용이하니 당연히 물가로 모여들겠지...&apos;"/>
+		<class name="Common_SkyWindPark_gdbSH5" Value="[!Dialog][!speaker:Albus_Serious]&apos;하지만... 당시 사고 현장에서 네구리를 봤다는 제보는 없었는데...&apos;"/>
+		<class name="Common_SkyWindPark_FTN53K" Value="[!Dialog][!speaker:VHPD_Assault_Normal]알버스 님. 이대로 포위망을 유지하고 지원을 요청할까요?"/>
+		<class name="Common_SkyWindPark_dHzG0J" Value="[!Dialog][!speaker:Albus_Serious]아닙니다. 이 현장은 우리가 바로 제압하도록 합니다!"/>
+		<class name="Common_SkyWindPark_1Bl05L" Value="[!Dialog][!speaker:VHPD_Assault_Normal]알겠습니다."/>
+		<class name="Common_SkyWindPark_quubpC" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Common_SkyWindPark_iOJH9n" Value="[!VictoryCondition]현장의 야수를 모두 제압하시오."/>
+		<class name="Common_SkyWindPark_aMeAjS" Value="[!Ignore][!FrontMessage]방어선이 무너졌습니다."/>
+		<class name="Common_SkyWindPark_8dZhX6" Value="[!Ignore][!BalloonChat]지금이 기회다!!"/>
+		<class name="Common_SkyWindPark_3rnPGG" Value="[!Ignore][!FrontMessage]스푼교도가 진입로를 향해 탈출을 시작합니다."/>
+		<class name="Common_SkyWindPark_Cs6Qy8" Value="[!Dialog][!speaker:Gangster_SmugglerThin_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Radio&apos;]김 씨 녀석. 쓸만한데요?"/>
+		<class name="Common_SkyWindPark_Nw7EvB" Value="[!Dialog][!speaker:Gangster_Felix_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Radio&apos;]$CompanyName$?"/>
+		<class name="Common_SkyWindPark_X5k9Hn" Value="[!Dialog][!speaker:Gangster_SmugglerThin_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Radio&apos;]넵. 확인하였습니다."/>
+		<class name="Common_SkyWindPark_7vtWTQ" Value="[!Dialog][!speaker:Gangster_Felix_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Radio&apos;]최근 우리 사업을 방해한 댓가는 치뤄야지."/>
+		<class name="Common_SkyWindPark_V6Qb38" Value="[!Dialog][!speaker:Gangster_SmugglerThin_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Radio&apos;]원래 대니 밑에 있던 그 앨리 녀석들이 처리하기로 하지 않았나요?"/>
+		<class name="Common_SkyWindPark_pY33oD" Value="[!Dialog][!speaker:Gangster_Felix_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Radio&apos;]그 녀석들 계속 미루더군."/>
+		<class name="Common_SkyWindPark_2ihYMx" Value="[!Dialog][!speaker:Gangster_Felix_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Radio&apos;]자신이 없는 거겠지."/>
+		<class name="Common_SkyWindPark_TlUZkf" Value="[!Dialog][!speaker:Gangster_Felix_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Radio&apos;]멍청한 앨리 출신들이라면 심부름꾼이 천직이겠지."/>
+		<class name="Common_SkyWindPark_0FOw5D" Value="[!Dialog][!speaker:Gangster_SmugglerThin_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Radio&apos;]대니 녀석은 그런 녀석들을 왜 쓸까요?"/>
+		<class name="Common_SkyWindPark_YtB54v" Value="[!Dialog][!speaker:Gangster_Felix_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Radio&apos;]어차피 처분하겠지."/>
+		<class name="Common_SkyWindPark_a2gSf2" Value="[!Dialog][!speaker:Gangster_Felix_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Radio&apos;]대니가 외지인 따위를 신뢰할 리가 없어."/>
+		<class name="Common_SkyWindPark_Gaqom6" Value="[!Dialog][!speaker:Gangster_SmugglerFat_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Radio&apos;] 펠릭스 형님. 공원 입구 모두 봉쇄하였습니다."/>
+		<class name="Common_SkyWindPark_ZNGyLQ" Value="[!Dialog][!speaker:Gangster_Felix_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Radio&apos;]다들 정신 바짝 차리고!"/>
+		<class name="Common_SkyWindPark_NMHKI3" Value="[!Dialog][!speaker:Gangster_Felix_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Radio&apos;]두 번 다시 우리를 건들지 못하도록 해 줘라!"/>
+		<class name="Common_SkyWindPark_xRopFp" Value="[!Dialog][!speaker:VHPD_Assault_Normal]알버스 님. 긴급 상황입니다!"/>
+		<class name="Common_SkyWindPark_sOB7u0" Value="[!Dialog][!speaker:VHPD_Assault_Normal]공원 외곽에 밀수꾼으로 보이는 자들에 의해 포위 당했습니다!"/>
+		<class name="Common_SkyWindPark_aid9zl" Value="[!Dialog][!speaker:Albus_Surprise]!!!"/>
+		<class name="Common_SkyWindPark_qhQ5Ss" Value="[!Dialog][!speaker:Albus_SurpriseStare]&apos;밀수꾼들이 왜 이 곳에...&apos;"/>
+		<class name="Common_SkyWindPark_iCmLDp" Value="[!Dialog][!speaker:Albus_Disappoint]&apos;도저히... 이 지구의 돌아가는 상황을 이해할 수가 없구나...&apos;"/>
+		<class name="Common_SkyWindPark_StZhbt" Value="[!Dialog][!speaker:Albus_Serious]&apos;......이 공원은 생각보다 넓어.&apos;"/>
+		<class name="Common_SkyWindPark_t3mOAJ" Value="[!Dialog][!speaker:Albus_Serious]&apos;경찰 눈을 피해 여기까지 오려면 다수 병력은 아닐 거야.&apos;"/>
+		<class name="Common_SkyWindPark_MuMqMS" Value="[!Dialog][!speaker:Albus_Smile]&apos;저쪽의 의도는 우리가 도망가지 못하도록 포위하는 것이겠지만...&apos;"/>
+		<class name="Common_SkyWindPark_ATLtIY" Value="[!Dialog][!speaker:Albus_Normal]&apos;그건 결국 병력이 분산되었다는 것.&apos;"/>
+		<class name="Common_SkyWindPark_q9TFKB" Value="[!Dialog][!speaker:Albus_Normal]&apos;적이 모여들기 전에 한 무리씩 격파해 나간다면 충분해.&apos;"/>
+		<class name="Common_SkyWindPark_TUuDym" Value="[!Dialog][!speaker:Albus_Serious]다들 빠르게 재정비 하세요!"/>
+		<class name="Common_SkyWindPark_Gy8OlJ" Value="[!Dialog][!speaker:Albus_Serious]최대한 빠르게 외곽을 선회하며 각개 격파하도록 하겠습니다!"/>
+		<class name="Common_SkyWindPark_023X50" Value="[!Dialog][!speaker:VHPD_Assault_Normal]알겠습니다!"/>
+		<class name="Common_SkyWindPark_zpY8Vs" Value="[!VictoryCondition]현장의 모든 적을 제압하시오."/>
+	</idspace>
+</idspaces>

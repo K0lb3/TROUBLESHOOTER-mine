@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Common_Road_114_cC11f5" Value="[!Dashboard:TimeLimiter]티마 무리 등장 시간"/>
+		<class name="Common_Road_114_ad1H0k" Value="[!Dashboard:Counter]남은 스푼교도 수"/>
+		<class name="Common_Road_114_ScoT4P" Value="[!Dashboard:Counter]남은 티마 수"/>
+		<class name="Common_Road_114_oSnx2H" Value="[!Objective]시민들을 전원 구출하시오."/>
+		<class name="Common_Road_114_CDRc8z" Value="[!Objective]스푼교도를 제압하시오."/>
+		<class name="Common_Road_114_yOMDf5" Value="[!Objective]티마를 제압하시오"/>
+		<class name="Common_Road_114_P8Uzhq" Value="[!VictoryCondition]알버스 전투 불능"/>
+		<class name="Common_Road_114_Nwbncp" Value="[!VictoryCondition]스푼교도들을 제압하시오."/>
+		<class name="Common_Road_114_FGu75j" Value="[!VictoryCondition]시민을 구출하시오."/>
+		<class name="Common_Road_114_Qv7gAn" Value="[!Ignore][!BalloonChat][!speaker:Player2]우왓 이 녀석 뭐야!"/>
+		<class name="Common_Road_114_gu3k5u" Value="[!Ignore][!DialogSystemMessageBox]티마는 철의 숲에서 서식하는 야수입니다.
+
+[colour=&apos;FFFFFF00&apos;]티마는 자신의 영역에 들어온 인간들을 모두 적으로 간주하여 공격적으로 대응합니다."/>
+		<class name="Common_Road_114_8ChoWF" Value="[!Ignore]야수 티마"/>
+		<class name="Common_Road_114_7sndKw" Value="[!Ignore][!BalloonChat]전방 티마입니다! 조심하세요!"/>
+		<class name="Common_Road_114_VNoi9G" Value="[!Ignore][!DialogSystemMessageBox]티마는 철의 숲에서 서식하는 야수입니다.
+
+[colour=&apos;FFFFFF00&apos;]티마는 자신의 영역에 들어온 인간들을 모두 적으로 간주하여 공격적으로 대응합니다."/>
+		<class name="Common_Road_114_Y9VPWx" Value="[!Ignore]야수 티마"/>
+		<class name="Common_Road_114_BDUCm8" Value="[!Ignore][!BalloonChat][!speaker:Albus]이런 티마다. 다들 조심해요!"/>
+		<class name="Common_Road_114_pQhCKX" Value="[!Ignore][!DialogSystemMessageBox]티마는 철의 숲에서 서식하는 야수입니다.
+
+[colour=&apos;FFFFFF00&apos;]티마는 자신의 영역에 들어온 인간들을 모두 적으로 간주하여 공격적으로 대응합니다."/>
+		<class name="Common_Road_114_8V45P1" Value="[!Ignore]야수 티마"/>
+		<class name="Common_Road_114_zIax6D" Value="[!Ignore][!BalloonChat][!speaker:Civil01]오. 살았다. 여기야 여기!"/>
+		<class name="Common_Road_114_2x9TCj" Value="[!Ignore][!BalloonChat][!speaker:Driver_02]어이! 이쪽이야! 이쪽!"/>
+		<class name="Common_Road_114_aP1J8Y" Value="[!Ignore][!Dialog][!speaker:VHPDMale2_Normal]상황 종료되었습니다. 시민들도 모두 안전하게 구출되었습니다."/>
+		<class name="Common_Road_114_YiZ1ws" Value="[!Ignore][!Dialog][!speaker:Sion_Normal]이야. 끝났다~☆ 개운하네!"/>
+		<class name="Common_Road_114_ih17s2" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]모두 고생하셨습니다. 일단 수습하고 복귀합니다."/>
+		<class name="Common_Road_114_klT4Ug" Value="[!Ignore][!Dialog][!speaker:VHPDMale2_Normal]알겠습니다."/>
+		<class name="Common_Road_114_5EYar5" Value="[!Ignore][!Dialog][!speaker:VHPDMale2_Normal]상황 종료되었습니다. 안타깝지만 일부 시민들이 중상을 입었습니다."/>
+		<class name="Common_Road_114_0lKkXM" Value="[!Ignore][!Dialog][!speaker:Sion_Depressed]아... 내가 좀 더 잘했으면 이렇게 되지 않았을 텐데..."/>
+		<class name="Common_Road_114_IiEAGN" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]아니야. 내가 부족했어. 일단 모두 고생하셨습니다."/>
+		<class name="Common_Road_114_4RhRlY" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]일단 티마들이 더 몰려 오기 전에 수습하고 복귀합시다."/>
+		<class name="Common_Road_114_jAvFh7" Value="[!Ignore][!Dialog][!speaker:VHPDFemale2_Normal]알겠습니다."/>
+		<class name="Common_Road_114_EhSIxd" Value="[!Ignore][!Dialog][!speaker:VHPDMale2_Normal]상황 종료되었습니다. 안타깝지만 시민들은 이미..."/>
+		<class name="Common_Road_114_gmB67R" Value="[!Ignore][!Dialog][!speaker:Sion_Depressed]......"/>
+		<class name="Common_Road_114_IE0ViY" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]알겠습니다."/>
+		<class name="Common_Road_114_1pNRHE" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]티마들이 몰려들기 전에 일단 복귀합니다.  "/>
+		<class name="Common_Road_114_PLXGm2" Value="[!Ignore][!Dialog][!speaker:VHPDMale2_Normal]알겠습니다."/>
+		<class name="Common_Road_114_N3YUp1" Value="[!Ignore][!Dialog][!speaker:Hakuya_Normal]그럼 여기까지다. 헤이싱."/>
+		<class name="Common_Road_114_IlzFpO" Value="[!Ignore][!Dialog][!speaker:Hakuya_Normal]다음번에 볼 때는 원래의 자리에서 보도록 하자."/>
+		<class name="Common_Road_114_V8tg2q" Value="[!Ignore][!Dialog][!speaker:Heissing_Normal]하쿠야. 기회를 줘서 고맙다."/>
+		<class name="Common_Road_114_YXvlyn" Value="[!Ignore][!Dialog][!speaker:Hakuya_Normal]이런 이런, 너한테 고맙다는 소리를 다 듣고..."/>
+		<class name="Common_Road_114_cK8ssU" Value="[!Ignore][!Dialog][!speaker:Hakuya_Normal]좋은 추억이나 가득 챙겨와라."/>
+		<class name="Common_Road_114_Y01kAP" Value="[!Ignore][!Dialog][!speaker:Heissing_Normal]물론이다. 하쿠야."/>
+		<class name="Common_Road_114_nR85Kn" Value="[!Ignore][!BalloonChat]시민 한 명 더 발견!"/>
+		<class name="Common_Road_114_sCmz3L" Value="[!Ignore][!BalloonChat][!speaker:Driver_04]살려주시오! 살려줘!"/>
+		<class name="Common_Road_114_vrkcLa" Value="[!Ignore][!BalloonChat]티마들이 난입하고 있습니다. 다들 조심하십시오!"/>
+		<class name="Common_Road_114_w9OPHb" Value="[!Ignore][!BalloonChat][!speaker:Player2]이 녀석들아! 저리 비켜!"/>
+		<class name="Common_Road_114_XCrAeu" Value="[!Ignore][!BalloonChat][!speaker:Albus]지체하다간 티마들이 엄청 몰려오겠군..."/>
+		<class name="Common_Road_114_zblrsn" Value="[!Ignore][!BalloonChat]이런 벌써 티마가 왔다! 다들 경계해!"/>
+		<class name="Common_Road_114_bEtC5b" Value="[!Ignore][!DialogSystemMessageBox]수풀 지형은 회피가 10 상승합니다. 해당 효과가 적용되면 왼쪽 하단에  [image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Icons/Bush&apos;] 마크가 표시 됩니다."/>
+		<class name="Common_Road_114_vgnQm6" Value="[!Ignore]지형 효과: 수풀"/>
+		<class name="Common_Road_114_xVMi4M" Value="[!Ignore][!DialogSystemMessageBox]늪 지형은  회피가 10, 이동력이 3 감소합니다.  해당 효과가 적용되면 왼쪽 하단에  [image-size=&amp;apos;w:$ImgSize$ h:$ImgSize$&amp;apos;][image=&amp;apos;Icons/Swamp&amp;apos;] 마크가 표시 됩니다."/>
+		<class name="Common_Road_114_SMqXRL" Value="[!Ignore]지형 효과: 늪"/>
+		<class name="Common_Road_114_Z7wfzq" Value="[!Ignore][!Title]포식자의 거리"/>
+		<class name="Common_Road_114_W7IbbY" Value="[!Ignore][!Title]철의 숲  113번  외곽 도로 "/>
+		<class name="Common_Road_114_JD9QCc" Value="[!Ignore][!Subtitle][!speaker:EmptySubTitle_]이 도로는 동방연합과 발할라를 잇는 가장 짧은 직선 육로로 많은 화물 트럭들이 끊이질 않는 도로다."/>
+		<class name="Common_Road_114_inHmH7" Value="[!Ignore][!Subtitle][!speaker:EmptySubTitle_]하지만 이 도로에서는 언제나 사고가 끊이질 않는데..."/>
+		<class name="Common_Road_114_iBeu4K" Value="[!Ignore][!Subtitle][!speaker:EmptySubTitle_]바로 철의 숲에 서식하는 야수 &apos;티마&apos; 때문이다."/>
+		<class name="Common_Road_114_16o0WJ" Value="[!Ignore][!Dialog][!speaker:Albus_Disappoint]수풀 사이로 도망갔다는 건..."/>
+		<class name="Common_Road_114_L8aHNI" Value="[!Ignore][!Dialog][!speaker:VHPDMale2_Normal]분명 노리고 있다는 것이겠지요. 제 동료들도 그 녀석들의 더러운 수법에..."/>
+		<class name="Common_Road_114_iKU9x1" Value="[!Ignore][!Dialog][!speaker:Sion_SurpriseStare]노리고 있다니?"/>
+		<class name="Common_Road_114_nZRgGx" Value="[!Ignore][!Dialog][!speaker:Albus_Stare]아마도 시민들과 같이 움직이는 타이밍을 노리고 있는 걸 거야."/>
+		<class name="Common_Road_114_CYVZO2" Value="[!Ignore][!Dialog][!speaker:Albus_Stare]적어도 최근 티마들의 습격 사건을 돌아보면 확실해."/>
+		<class name="Common_Road_114_bYg5s9" Value="[!Ignore][!Dialog][!speaker:Sion_Surprise]뭐야 티마란 건 그런 것도 하는 거야..."/>
+		<class name="Common_Road_114_c9PkWb" Value="[!Ignore][!Dialog][!speaker:VHPDMale2_Normal]구조 분대 편성은 어떻게 하시겠습니까?"/>
+		<class name="Common_Road_114_QKwHEV" Value="[!Ignore][!Dialog][!speaker:Sion_Laugh]나와 알버스 둘이면 충분하지 않을까?"/>
+		<class name="Common_Road_114_PnZDWC" Value="[!Ignore][!Dialog][!speaker:Sion_Normal]아니다. 이 틈에 전원 돌격해서 전원 데리고 무사히 귀환하면 되는 거 아니겠어?"/>
+		<class name="Common_Road_114_MWnDGt" Value="[!Ignore][!Dialog][!speaker:VHPDMale2_Normal]그게 말처럼 쉽지 않습니다."/>
+		<class name="Common_Road_114_Vuwzve" Value="[!Ignore][!Dialog][!speaker:VHPDMale2_Normal]저희가 현 방어선을 이탈하자마자 이 곳으로 티마들이 몰려들 확률이 높습니다."/>
+		<class name="Common_Road_114_or4D5s" Value="[!Ignore][!Dialog][!speaker:VHPDMale2_Normal]아마도 그렇게 되면 구조하고 복귀하는 길에 한꺼번에 다수의 티마들과 상대할 확률이 높습니다."/>
+		<class name="Common_Road_114_RxDmFc" Value="[!Ignore][!Dialog][!speaker:Sion_Angry]그럼 우리 둘이 가란 말인가?"/>
+		<class name="Common_Road_114_xR95hA" Value="[!Ignore][!Dialog][!speaker:VHPDMale2_Normal]아닙니다. 그만큼 현 상황이 시시각각 변화하고 있다는 말입니다."/>
+		<class name="Common_Road_114_kRGoun" Value="[!Ignore][!Dialog][!speaker:VHPDMale2_Normal]적어도 제가 보아온 티마 녀석들은 충분히 저희의 상황을 이해하고 움직이고 있습니다."/>
+		<class name="Common_Road_114_e0nNUf" Value="[!Ignore][!Dialog][!speaker:Sion_Stare]귀찮은 녀석들이네..."/>
+		<class name="Common_Road_114_xk3m38" Value="[!Ignore][!Dialog][!speaker:VHPDMale2_Normal]최소 2명은 방어선을 지켜야 한다고 생각합니다."/>
+		<class name="Common_Road_114_FTdnUB" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]상황은 잘 알겠습니다. 바로 구조 분대 편성을 시작합시다."/>
+		<class name="Common_Road_114_pPWL63" Value="[!Ignore][!Dialog][!speaker:VHPDMale2_Normal]알겠습니다. 이 시각부터 저희 분대는 현장 지휘권은 트러블슈터 알버스 님께 넘기고 $CompanyName$ 소속으로 합류하겠습니다."/>
+		<class name="Common_Road_114_n5RySU" Value="[!Dialog][!speaker:VHPDMale2_Normal]다수의 스푼교도가 약탈을 자행하고 있다고 합니다."/>
+		<class name="Common_Road_114_XJJ4I8" Value="[!Dialog][!speaker:VHPDMale2_Normal]본부에서는 아직 대피하지 못한 시민들이 있으니 최대한 시민들을 구조하라는 명령입니다."/>
+		<class name="Common_Road_114_SzBV3n" Value="[!Dialog][!speaker:VHPDMale2_Normal]그리고 아시겠지만, 이 지역은 티마 출몰 지역입니다. 조심하시길 바랍니다."/>
+		<class name="Common_Road_114_ClZ5iT" Value="[!Dialog][!speaker:Albus_Normal]알고 있습니다. 좀 더 신중히 임하도록 하겠습니다."/>
+		<class name="Common_Road_114_3j3Eqe" Value="[!Dialog][!speaker:VHPDMale2_Normal]그럼 저희 분대는 지금 이 시각부터 $CompanyName$ 소속으로 합류하여 임무를 수행합니다."/>
+		<class name="Common_Road_114_uJ9jAO" Value="[!Ignore][!BalloonChat][!speaker:Heissing]이봐 난 어떡할까? 그냥 가도 되나?"/>
+		<class name="Common_Road_114_NZVVNF" Value="[!Ignore][!BalloonChat][!speaker:VHPD_Neutral7]이 수상한 녀석. 어딜 가!"/>
+		<class name="Common_Road_114_LfYDry" Value="[!Ignore][!BalloonChat][!speaker:Albus]아까부터 궁금했는데... 누구지?"/>
+		<class name="Common_Road_114_2H6SU6" Value="[!Ignore][!BalloonChat][!speaker:Heissing]그냥은 안 보내주는 건가?"/>
+		<class name="Common_Road_114_eQJUta" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]저분은 누구십니까?"/>
+		<class name="Common_Road_114_LOt8or" Value="[!Ignore][!Dialog][!speaker:VHPD_Assault_Normal]어느 순간부터 이미 방어선으로 들어와 있던 분입니다. 티마와 혼전 중이었기에 어떻게 들어오셨는지 파악이 되지 않습니다."/>
+		<class name="Common_Road_114_WUvRR6" Value="[!Ignore][!Dialog][!speaker:VHPD_Assault_Normal]다만 신분을 밝히지 않아서 어쩔 수 없이 현장이 끝나면 동행할 예정입니다."/>
+		<class name="Common_Road_114_qzXkMf" Value="[!Ignore][!BalloonChat][!speaker:VHPD_Neutral7]딱 봐도 이상한 옷차림에 염색꼬라지를 보니 밀입국자지..."/>
+		<class name="Common_Road_114_SoKNpv" Value="[!Ignore][!Dialog][!speaker:Heissing_Smile]어이 거기 지휘관. 나와 거래를 하자."/>
+		<class name="Common_Road_114_phpocn" Value="[!Ignore][!Dialog][!speaker:Albus_SurpriseStare]거래? 이 상황에서?"/>
+		<class name="Common_Road_114_3SeitX" Value="[!Ignore][!Dialog][!speaker:Heissing_Normal]뭐, 별거 아냐. 심심하니 그쪽 일을 도와주마."/>
+		<class name="Common_Road_114_lKIJKt" Value="[!Ignore][!Dialog][!speaker:Heissing_Normal]대신 의심병 걸린 이 경찰들로부터 날 자유롭게 해줘."/>
+		<class name="Common_Road_114_NLn1Bt" Value="[!Ignore][!Dialog][!speaker:Heissing_Normal]현장 지휘관이라면 그 정도는 해 줄 수 있겠지?"/>
+		<class name="Common_Road_114_yTQOSp" Value="[!Ignore][!BalloonChat][!speaker:VHPD_Neutral10]설마 이런 수상한 녀석도 받아들이나?"/>
+		<class name="Common_Road_114_gmtJ9d" Value="[!Ignore][!Dialog][!speaker:Sion_Smile]&apos;딱 봐도 강해 보이네...&apos;"/>
+		<class name="Common_Road_114_y9HP7h" Value="[!Ignore][!Dialog][!speaker:Sion_Normal]알버스. 난 한 명이라도 더 돕는다면 좋다고 생각해."/>
+		<class name="Common_Road_114_YFfWCR" Value="[!Ignore][!Dialog][!speaker:VHPD_Assault_Normal]현장 지휘권은 알버스 씨에게 있습니다. 저분이 아직 범죄자인 것도 아니고 알버스 씨가 선택하시면 될 듯합니다."/>
+		<class name="Common_Road_114_c4nGik" Value="[!Ignore][!Dialog][!speaker:Albus_Think][colour=&apos;FFFFFF00&apos;]저분을 전력으로 삼아야 하나..."/>
+		<class name="Common_Road_114_sjFZJe" Value="[!Ignore][!Choice]구조 분대에 편입시킨다."/>
+		<class name="Common_Road_114_MExusB" Value="[!Ignore][!Choice]제안을 거절한다."/>
+		<class name="Common_Road_114_LYknBw" Value="[!Ignore][!BalloonChat][!speaker:Heissing]뭘 그렇게 고민하나?"/>
+		<class name="Common_Road_114_iTIfrT" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]아닙니다. 구조 분대에 합류해 주시길 바랍니다."/>
+		<class name="Common_Road_114_irJbgx" Value="[!Ignore][!Dialog][!speaker:Albus_Laugh]다만 최대한 지휘와 통제에 따라주시길 바랍니다."/>
+		<class name="Common_Road_114_r6AvSL" Value="[!Ignore][!Dialog][!speaker:Heissing_Smile]확실히 여기 경찰들보단 말이 통하는 친구군."/>
+		<class name="Common_Road_114_rGJ7fg" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]전 트러블슈터 알버스라고 합니다."/>
+		<class name="Common_Road_114_3GGkpp" Value="[!Ignore][!Dialog][!speaker:Sion_Normal]난 견습 트러블슈터 시온이야."/>
+		<class name="Common_Road_114_2nQWxK" Value="[!Ignore][!Dialog][!speaker:Heissing_Smile]난 굳이 이름을 밝힐 생각이 없다만..."/>
+		<class name="Common_Road_114_78bcdY" Value="[!Ignore][!BalloonChat][!speaker:VHPD_Neutral7]이 녀석!!"/>
+		<class name="Common_Road_114_drfQe9" Value="[!Ignore][!BalloonChat][!speaker:VHPD_Neutral7]이런 녀석은 받아들이면 안 됩니다."/>
+		<class name="Common_Road_114_tH4d7a" Value="[!Ignore][!Dialog][!speaker:Sion_Laugh]괜찮아. 나보다 나이 많은 것같으니 &apos;형&apos;이라고 부를게."/>
+		<class name="Common_Road_114_rmje51" Value="[!Ignore][!Dialog][!speaker:Sion_Angry]적어도 이번 임무 동안은 &apos;형&apos; 이라는 호칭으론 충분할 것 같은데?"/>
+		<class name="Common_Road_114_ezyYl9" Value="[!Ignore][!Dialog][!speaker:Sion_Angry]알버스, 어때?"/>
+		<class name="Common_Road_114_jTOMeX" Value="[!Ignore][!Dialog][!speaker:Heissing_Smile]훗. 재밌는 녀석이군."/>
+		<class name="Common_Road_114_QwpzvJ" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]이미 구조 분대 협조를 결정한 시점에서 상관없다고 봅니다."/>
+		<class name="Common_Road_114_RJCCI3" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]시온 씨 말대로 임무 중 호칭은 &apos;형&apos;으로 하는 건 어떠신가요?"/>
+		<class name="Common_Road_114_g9ZOAT" Value="[!Ignore][!Dialog][!speaker:Heissing_EyeClose]......"/>
+		<class name="Common_Road_114_f4XqlG" Value="[!Ignore][!Dialog][!speaker:Heissing_Rage]헤이싱이다."/>
+		<class name="Common_Road_114_njmTfp" Value="[!Ignore][!Dialog][!speaker:Heissing_Normal]오글거리는 &apos;형&apos;따위보단 차라리 이름으로 불러라."/>
+		<class name="Common_Road_114_GPQENy" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]알겠습니다. 헤이싱 씨."/>
+		<class name="Common_Road_114_PjXWEa" Value="[!Ignore][!Dialog][!speaker:Sion_Smile]잘 부탁해. 헤이싱 형~☆"/>
+		<class name="Common_Road_114_gRul4R" Value="[!Ignore][!Dialog][!speaker:Heissing_Smile]이 녀석..."/>
+		<class name="Common_Road_114_hHsr8E" Value="[!Ignore][!BalloonChat][!speaker:VHPD_Neutral9]보고서 복잡해지는군..."/>
+		<class name="Common_Road_114_uIIICK" Value="[!Ignore][!BalloonChat][!speaker:VHPD_Neutral9]임무가 끝나면 알버스 씨랑 상의해봐야겠어..."/>
+		<class name="Common_Road_114_m1YhHu" Value="[!Ignore][!BalloonChat][!speaker:Heissing]뭘 그렇게 고민하나?"/>
+		<class name="Common_Road_114_7uKRah" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]죄송합니다. 제안은 감사합니다만 이 일은 저희가 해결하겠습니다."/>
+		<class name="Common_Road_114_VPhpIK" Value="[!Ignore][!Dialog][!speaker:Albus_Laugh]죄송하지만 현 방어선 내에서 상황이 끝날 때까지 대기해주시길 바랍니다."/>
+		<class name="Common_Road_114_EZt1jn" Value="[!Ignore][!Dialog][!speaker:Heissing_Rage]꽉 막힌 친구군."/>
+		<class name="Common_Road_114_IPePHx" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]죄송합니다."/>
+		<class name="Common_Road_114_LATQzc" Value="[!Ignore][!Dialog][!speaker:Sion_Normal]심심하지 않게 후딱 끝내고 올 테니 기다려."/>
+		<class name="Common_Road_114_QQ6jSJ" Value="[!Ignore][!Dialog][!speaker:Heissing_Smile]훗..."/>
+		<class name="Common_Road_114_eftR3a" Value="[!Ignore][!Dialog][!speaker:Heissing_Normal]거기 지휘관? 여기가 위험해지면 자기방어 행위는 해도 되나?"/>
+		<class name="Common_Road_114_iaHfGx" Value="[!Ignore][!Dialog][!speaker:Heissing_Normal]귀찮은 일 만들기 싫으니 미리 양해를 구하겠네."/>
+		<class name="Common_Road_114_noy1nY" Value="[!Ignore][!Dialog][!speaker:Heissing_Rage]여기 워낙 의심병 많은 자들이 많아서말야."/>
+		<class name="Common_Road_114_I8LYmD" Value="[!Ignore][!BalloonChat][!speaker:VHPD_Neutral7]이 녀석!!"/>
+		<class name="Common_Road_114_TuZSV5" Value="[!Ignore][!BalloonChat][!speaker:VHPD_Neutral7]이 녀석 분명히 범죄자거나 밀입국자입니다!"/>
+		<class name="Common_Road_114_zfLDHr" Value="[!Ignore][!Dialog][!speaker:Sion_Laugh]그건 너무 하네. 신원을 안 밝힌 거지 범죄자가 아니잖아?"/>
+		<class name="Common_Road_114_KTvZGx" Value="[!Ignore][!Dialog][!speaker:Sion_Angry]적어도 이번 임무가 끝나기 전까지는 그런 언행은 별로인 것 같아."/>
+		<class name="Common_Road_114_kzxDMb" Value="[!Ignore][!Dialog][!speaker:Sion_Angry]알버스, 맞지?"/>
+		<class name="Common_Road_114_emXZgp" Value="[!Ignore][!Dialog][!speaker:Heissing_Smile]훗. 재밌는 녀석이군."/>
+		<class name="Common_Road_114_fL2tkJ" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]네. 경찰분들도 어디까지나 일반인으로 이분을 대해 주시길 바랍니다."/>
+		<class name="Common_Road_114_hfDFSp" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]그리고 말씀하신 자기방어 행위가 적절하다면 당연히 아무 문제 될 것 없다고 생각합니다."/>
+		<class name="Common_Road_114_FbDzFp" Value="[!Ignore][!Dialog][!speaker:Heissing_EyeClose]......"/>
+		<class name="Common_Road_114_pWSz78" Value="[!Ignore][!Dialog][!speaker:Heissing_Normal]이쪽에서 먼저 성의를 보일 테니 일이 끝나면 보내줬으면 하네."/>
+		<class name="Common_Road_114_Hm8lx8" Value="[!Ignore][!Dialog][!speaker:Albus_SurpriseStare]네?"/>
+		<class name="Common_Road_114_DkAh7o" Value="[!Ignore][!Dialog][!speaker:Sion_Smile]&apos;여기서 내가 제대로 한몫할 테니 일 끝나면 날 보내줘&apos; 정도의 이야기인 것 같다. 알버스."/>
+		<class name="Common_Road_114_xXBt9r" Value="[!Ignore][!Dialog][!speaker:Sion_Normal]그걸 떠나서 이 형 딱 봐도 강해. 방어선은 걱정 안 해도 될 것 같다."/>
+		<class name="Common_Road_114_xA3j6D" Value="[!Ignore][!Dialog][!speaker:Heissing_Smile]이 녀석..."/>
+		<class name="Common_Road_114_ABh8ZE" Value="[!Ignore][!BalloonChat][!speaker:VHPD_Neutral7]다들 미쳤군..."/>
+		<class name="Common_Road_114_70topC" Value="[!Ignore][!BalloonChat][!speaker:VHPD_Neutral7]혼란한 틈을 타 도망쳐온 녀석을 보고 뭘 믿는다는 거야..."/>
+		<class name="Common_Road_114_2yCsQL" Value="[!Ignore][!FrontMessage]헤이싱이 아군 캐릭터가 되었습니다."/>
+		<class name="Common_Road_114_UY3rFD" Value="[!Ignore][!FrontMessage]이제부터 방어선 주위에서 티마들의 공격을 방어합니다."/>
+		<class name="Common_Road_114_FJLKMe" Value="[!Ignore][!Dialog][!speaker:VHPDMale2_Normal]알버스 씨. 구조 분대에 추가 인원을 배치하시겠습니까?"/>
+		<class name="Common_Road_114_xnE2VM" Value="[!Ignore][!Dialog][!speaker:VHPDMale2_Normal]배치한 인원만큼 방어선의 인원이 줄어드니 고려해주십시오."/>
+		<class name="Common_Road_114_7v0NhL" Value="[!Ignore][!Dialog][!speaker:Albus_Think][colour=&apos;FFFFFF00&apos;]구조 분대와 방어 분대 비율을 어떻게 해야 될까..."/>
+		<class name="Common_Road_114_xxKCPN" Value="[!Ignore][!Choice]경찰 4명 전원 구조 분대 편성."/>
+		<class name="Common_Road_114_THDgfZ" Value="[!Ignore][!Choice]구조 분대 2명 합류. 나머지는 2명은 방어선 방어."/>
+		<class name="Common_Road_114_OL2mi2" Value="[!Ignore][!Choice]경찰 4명 전원 방어선 배치"/>
+		<class name="Common_Road_114_1UhEgJ" Value="[!Ignore][!Dialog][!speaker:Albus_Think][colour=&apos;FFFFFF00&apos;]구조 분대와 방어 분대 비율을 어떻게 해야 될까..."/>
+		<class name="Common_Road_114_CbDoYD" Value="[!Ignore][!Choice]경찰 4명 전원 구조 분대 편성."/>
+		<class name="Common_Road_114_imaGT5" Value="[!Ignore][!Choice]구조 분대 2명 합류. 나머지는 2명은 방어선 방어."/>
+		<class name="Common_Road_114_5e3KYN" Value="[!Ignore][!Choice]경찰 4명 전원 방어선 배치"/>
+		<class name="Common_Road_114_eRcDFs" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]저희도 구조 분대에 합류하겠습니다."/>
+		<class name="Common_Road_114_om2Xmx" Value="[!Ignore][!BalloonChat][!speaker:VHPD2]시민이 불안에 떨고 있습니다. 안정돼야 이동할 수 있을 것 같습니다."/>
+		<class name="Common_Road_114_p7ohTR" Value="[!Ignore][!BalloonChat][!speaker:Civil01]난 아무 데도 안 갈 거야..."/>
+		<class name="Common_Road_114_wBLT0t" Value="[!Ignore][!FrontMessage]불안한 시민을 이동시키려면 다가가 안정시켜야 합니다."/>
+		<class name="Common_Road_114_aY6uAY" Value="[!Ignore][!BalloonChat][!speaker:VHPD3]적절한 때 잘 오셨습니다."/>
+		<class name="Common_Road_114_7qMXHu" Value="[!Ignore][!BalloonChat][!speaker:VHPD4]저희도 귀환하겠습니다."/>
+		<class name="Common_Road_114_5Ft5AH" Value="[!Ignore][!BalloonChat][!speaker:Civil03]어딜 간다는 거야..."/>
+		<class name="Common_Road_114_ABYN8w" Value="[!Ignore][!BalloonChat][!speaker:Civil02]로베르토 녀석... 이럴 땐 왜 없는 거냐..."/>
+		<class name="Common_Road_114_YD5Lac" Value="[!Ignore][!FrontMessage]시민에게 다가가 안정시키십시오."/>
+		<class name="Common_Road_114_osZydD" Value="[!Ignore][!BalloonChat][!speaker:Heissing]가만히 있으라 하고 다들 나가버리다니..."/>
+		<class name="Common_Road_114_msBW2m" Value="[!Ignore][!BalloonChat][!speaker:Heissing]그냥 가면 되겠군."/>
+		<class name="Common_Road_114_rJVj1a" Value="[!Ignore][!FrontMessage]헤이싱이 현장을 이탈하였습니다."/>
+		<class name="Common_Road_114_2FY4b1" Value="[!Ignore][!BalloonChat]티마가 옵니다!!"/>
+		<class name="Common_Road_114_tuJOyU" Value="[!Ignore][!FrontMessage]방어선에 주둔한 경찰 병력이 전투에 돌입하였습니다."/>
+		<class name="Common_Road_114_eUx2PZ" Value="[!Ignore][!BalloonChat]제길! 티마다!"/>
+		<class name="Common_Road_114_mVlhvW" Value="[!Ignore][!FrontMessage]100m 전방의 수송 분대가 전투에 돌입하였습니다."/>
+		<class name="Common_Road_114_FAT8Sa" Value="[!Ignore][!BalloonChat]티마가 있다! 조심해!"/>
+		<class name="Common_Road_114_1z9UHZ" Value="[!Ignore][!FrontMessage]50m 전방의 수송 분대가 전투에 돌입하였습니다."/>
+		<class name="Common_Road_114_f1RdLE" Value="[!Ignore][!BalloonChat][!speaker:Heissing]흠. 고약한 강아지들이군..."/>
+		<class name="Common_Road_114_OSgiUK" Value="[!Ignore][!Dialog][!speaker:VHPD_Assault_Normal]시민들은 모두 차량에 탑승하였습니다."/>
+		<class name="Common_Road_114_EJ7HWJ" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]네. 시민들 차량부터 출발해주시고 저희는 제일 마지막에 분대 차량으로 이동하겠습니다."/>
+		<class name="Common_Road_114_YqNZB3" Value="[!Ignore][!Dialog][!speaker:VHPD_Assault_Normal]아까 그분은 어떻게 하실 겁니까?"/>
+		<class name="Common_Road_114_VaButU" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]시민들을 안전하게 구하는데 협력하신 분입니다."/>
+		<class name="Common_Road_114_CzGeSb" Value="[!Ignore][!Dialog][!speaker:Albus_Laugh]딱히 현재 범행이 없다면 굳이 의심만으로 연행하기엔..."/>
+		<class name="Common_Road_114_35qyfb" Value="[!Ignore][!Dialog][!speaker:VHPD_Assault_Normal]알겠습니다. 그렇다면 차라리 보고서에서 삭제해도 되려나요?"/>
+		<class name="Common_Road_114_eu9geQ" Value="[!Ignore][!Dialog][!speaker:Albus_Surprise]네??"/>
+		<class name="Common_Road_114_YyrW4t" Value="[!Ignore][!Dialog][!speaker:VHPD_Assault_Normal]보고서에서 삭제하면 굳이 해명하지 않아도 되니까요."/>
+		<class name="Common_Road_114_sTTWuw" Value="[!Ignore][!Dialog][!speaker:Albus_SurpriseStare]네..."/>
+		<class name="Common_Road_114_6UrLpL" Value="[!Ignore][!Dialog][!speaker:VHPD_Assault_Normal]그렇게 알고 저희는 먼저 복귀하겠습니다. 고생하셨습니다. 알버스 씨."/>
+		<class name="Common_Road_114_z16UlO" Value="[!Ignore][!Dialog][!speaker:Albus_Laugh]&apos;이거 잘한짓일까...&apos;"/>
+		<class name="Common_Road_114_WXCnzH" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]아냐 약속은 약속이니까..."/>
+		<class name="Common_Road_114_wo0Xuw" Value="[!Ignore][!Dialog][!speaker:Sion_Smile]같이 가자는 말 단칼에 거절하시던데?"/>
+		<class name="Common_Road_114_VFn3fT" Value="[!Ignore][!Dialog][!speaker:Albus_Laugh]어느 정도 예상은 했지만 역시 그렇구나..."/>
+		<class name="Common_Road_114_SeEte8" Value="[!Ignore][!Dialog][!speaker:Sion_Normal]영 내키지 않으면 그냥 경찰서로 동행하자고 해."/>
+		<class name="Common_Road_114_Rvwa6P" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]아니야. 약속은 지켜야지."/>
+		<class name="Common_Road_114_A0JVJZ" Value="[!Ignore][!Dialog][!speaker:Albus_Laugh]그리고 우리가 감당할 레벨도 아니야."/>
+		<class name="Common_Road_114_jcvew0" Value="[!Ignore][!Dialog][!speaker:Sion_Smile]&apos;알버스도 충분히 느끼고 있구나...&apos;"/>
+		<class name="Common_Road_114_aiGta0" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]그래서 지금 어디 계셔?"/>
+		<class name="Common_Road_114_nkQGr0" Value="[!Ignore][!BalloonChat][!speaker:Player2]응?"/>
+		<class name="Common_Road_114_PLxy6U" Value="[!Ignore][!Dialog][!speaker:Sion_Surprise]옆에 계셨는데?"/>
+		<class name="Common_Road_114_H45dvr" Value="[!Ignore][!Dialog][!speaker:Albus_Laugh]헤이싱 씨. 잠시만요."/>
+		<class name="Common_Road_114_ZdlmUk" Value="[!Ignore][!Dialog][!speaker:Heissing_]같이 갈 생각 없다고 분명 전했는데..."/>
+		<class name="Common_Road_114_zRPaDd" Value="[!Ignore][!Dialog][!speaker:Heissing_]지휘관님은 이제 와 마음이 바뀌신 건가?"/>
+		<class name="Common_Road_114_o9e5Q4" Value="[!Ignore][!Dialog][!speaker:Albus_Laugh]아니에요. 헤이싱 씨."/>
+		<class name="Common_Road_114_b7ZYBr" Value="[!Ignore][!Dialog][!speaker:Sion_Laugh]마중 나왔어. 헤이싱 형."/>
+		<class name="Common_Road_114_ow4X7F" Value="[!Ignore][!Dialog][!speaker:Heissing_]거참. 좋은 넉살이군."/>
+		<class name="Common_Road_114_Iactgv" Value="[!Ignore][!Dialog][!speaker:Sion_Laugh]헤이싱 형!"/>
+		<class name="Common_Road_114_2rpONU" Value="[!Ignore][!Dialog][!speaker:Heissing_Smile]무슨 할 말이라도 남았나?"/>
+		<class name="Common_Road_114_pNLdkP" Value="[!Ignore][!Dialog][!speaker:Sion_Laugh]헤이싱 형. 그거 형 차야?"/>
+		<class name="Common_Road_114_pZlQXg" Value="[!Ignore][!Dialog][!speaker:Heissing_Normal]....."/>
+		<class name="Common_Road_114_grHh1K" Value="[!Ignore][!Dialog][!speaker:Heissing_Smile]아니 지금부터 내 차다."/>
+		<class name="Common_Road_114_Ektpjn" Value="[!Ignore][!Dialog][!speaker:Albus_Disappoint]그 차량으로 발할라 진입하시면 도난 차량 처리됩니다."/>
+		<class name="Common_Road_114_IvgqZn" Value="[!Ignore][!Dialog][!speaker:Heissing_Rage]그래서 막을 건가?"/>
+		<class name="Common_Road_114_mCHnqD" Value="[!Ignore][!Dialog][!speaker:Albus_Smile]......"/>
+		<class name="Common_Road_114_1UgQvS" Value="[!Ignore][!Dialog][!speaker:Albus_Stare]제가 좀 더 강했다면 막아섰을 겁니다."/>
+		<class name="Common_Road_114_NbtNsp" Value="[!Ignore][!Dialog][!speaker:Sion_Surprise]알버스..."/>
+		<class name="Common_Road_114_TEnSql" Value="[!Ignore][!Dialog][!speaker:Heissing_Smile]좀 더 강했다면이라..."/>
+		<class name="Common_Road_114_iRxKfT" Value="[!Ignore][!Dialog][!speaker:Heissing_Smile]그런 순간은 오지 않아."/>
+		<class name="Common_Road_114_whmaE1" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]그럴지도 모르죠. 하지만 헤이싱 씨. 눈을 감아주는 건 오늘만입니다."/>
+		<class name="Common_Road_114_mm05BV" Value="[!Ignore][!Dialog][!speaker:Albus_Laugh]다른 위법 행위로 만나게 된다면 꼭 경찰서로 같이 가주셔야겠습니다."/>
+		<class name="Common_Road_114_2mECom" Value="[!Ignore][!Dialog][!speaker:Heissing_Normal]좋은 추억이 되겠군. 기대하고 있겠네."/>
+		<class name="Common_Road_114_uDtD49" Value="[!Ignore][!Subtitle][!speaker:Heissing_]&apos;역시 바깥세상은 심심치 않아서 좋군&apos;"/>
+		<class name="Common_Road_114_gqdv21" Value="[!Ignore][!Subtitle][!speaker:Heissing_Smile]그럼 다음에 보자."/>
+		<class name="Common_Road_114_eL40p1" Value="[!Ignore][!Dialog][!speaker:Sion_Normal]알버스~ 우리도 이제 돌아가자~☆"/>
+		<class name="Common_Road_114_QTRyxS" Value="[!Ignore][!Dialog][!speaker:Albus_Laugh]우리 둘이 덤볐으면 제압할 수 있었을까?"/>
+		<class name="Common_Road_114_DoJumg" Value="[!Ignore][!Dialog][!speaker:Sion_Stare]불가능."/>
+		<class name="Common_Road_114_KJXs3J" Value="[!Ignore][!Dialog][!speaker:Albus_Disappoint]분하네."/>
+		<class name="Common_Road_114_O44XfR" Value="[!Ignore][!Dialog][!speaker:Sion_Smile]아까 네 행동 충분히 옳은 판단이라고 봐."/>
+		<class name="Common_Road_114_VsPTJ9" Value="[!Ignore][!Dialog][!speaker:Sion_Normal]덤비자고 했음 내가 너 기절시키고 죄송하다고 빌었을지도..."/>
+		<class name="Common_Road_114_oV5KVN" Value="[!Ignore][!Dialog][!speaker:Albus_Embarrassed]뭐!! 너 그렇게까지..."/>
+		<class name="Common_Road_114_bdR3ww" Value="[!Ignore][!Dialog][!speaker:Sion_Angry]왜? 난 우리 좋은 사장님 잃고 싶지 않다고."/>
+		<class name="Common_Road_114_S5kh6u" Value="[!Ignore][!Dialog][!speaker:Albus_Embarrassed]......"/>
+		<class name="Common_Road_114_oO1tF9" Value="[!Ignore][!Dialog][!speaker:Albus_Laugh]쓸데없는 소리 그만하고 돌아가자."/>
+		<class name="Common_Road_114_X8lhCW" Value="[!Ignore][!Dialog][!speaker:EmptySubTitle_]이날 두 청년은 자신들이 얼마나 미약한지 새삼 깨닫는다."/>
+		<class name="Common_Road_114_uMPdqk" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]&apos;다음엔 이렇게 보내지 않겠습니다. 헤이싱 씨&apos;"/>
+		<class name="Common_Road_114_1oNrtu" Value="[!Ignore][!Dialog][!speaker:Sion_Smile]&apos;헤이싱 형. 두고 보자고&apos;"/>
+		<class name="Common_Road_114_eHHpzq" Value="[!Ignore][!Dialog][!speaker:VHPD_Assault_Normal]시민들은 모두 차량에 탑승하였습니다."/>
+		<class name="Common_Road_114_3GdxuF" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]네. 시민들 차량부터 출발해주시고 저희는 제일 마지막에 분대 차량으로 이동하겠습니다."/>
+		<class name="Common_Road_114_RdjEXJ" Value="[!Ignore][!Dialog][!speaker:VHPD_Assault_Normal]도망친 그 녀석은 어떻게 처리할까요?"/>
+		<class name="Common_Road_114_e48U5U" Value="[!Ignore][!Dialog][!speaker:Albus_Think]......"/>
+		<class name="Common_Road_114_pMS4t1" Value="[!Ignore][!Dialog][!speaker:VHPD_Assault_Normal]현상 수배를 내릴까요?"/>
+		<class name="Common_Road_114_IUX0vm" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]딱히 현재 범행이 없는데 굳이 현상수배까진..."/>
+		<class name="Common_Road_114_LnHRVC" Value="[!Ignore][!Dialog][!speaker:VHPD_Assault_Normal]적어도 공무 집행 관련 비협조 건으로 조사는 할 수 있을 겁니다."/>
+		<class name="Common_Road_114_DiPIYr" Value="[!Ignore][!Dialog][!speaker:Albus_Laugh]일단 알아서 보고해주십시오."/>
+		<class name="Common_Road_114_5n4fze" Value="[!Ignore][!Dialog][!speaker:VHPD_Assault_Normal]알겠습니다. 그럼 저희는 먼저 복귀하겠습니다. 고생하셨습니다. 알버스 씨."/>
+		<class name="Common_Road_114_2XmHMe" Value="[!Ignore][!Dialog][!speaker:Sion_Smile]언제나 일 끝나면 바쁘구나."/>
+		<class name="Common_Road_114_dyLQnI" Value="[!Ignore][!Dialog][!speaker:Albus_Laugh]뭐 언제나 똑같지."/>
+		<class name="Common_Road_114_IukNGh" Value="[!Ignore][!Dialog][!speaker:Sion_Normal]이제 우리도 가야지."/>
+		<class name="Common_Road_114_R2I8q1" Value="[!Ignore][!Dialog][!speaker:Albus_Laugh]그래. 고생했어. 시온."/>
+		<class name="Common_Road_114_i3Z0OR" Value="[!Ignore][!Subtitle][!speaker:Heissing_Normal]흠... 이제 다 돌아간 건가."/>
+		<class name="Common_Road_114_I8fhLG" Value="[!Ignore][!Subtitle][!speaker:Heissing_Normal]그럼 가볼까."/>
+		<class name="Common_Road_114_fP7kwL" Value="[!Ignore][!Subtitle][!speaker:Albus_Normal]저 차량은 뭐지... 이 도로는 통제되었을 텐데..."/>
+		<class name="Common_Road_114_5DNnod" Value="[!Ignore][!Subtitle][!speaker:Sion_Normal]알버스 뭐해? 빨리 돌아가자고~☆"/>
+		<class name="Common_Road_114_jlMWQF" Value="[!Ignore][!BalloonChat][!speaker:Civil02]아이구 이 무기들 아까워서 어째..."/>
+		<class name="Common_Road_114_8zTniG" Value="[!Ignore][!BalloonChat][!speaker:Albus]쉬지 않고 달려야 하나..."/>
+		<class name="Common_Road_114_14cZDH" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]기회를 봐서 섬광탄으로 티마의 공격을 봉인하겠습니다."/>
+		<class name="Common_Road_114_SBxNut" Value="[!Ignore][!BalloonChat][!speaker:VHPD4]명령 내리신다면 빙결탄으로 티마의 발을 묶겠습니다."/>
+		<class name="Common_Road_114_ZftnlJ" Value="[!Ignore][!BalloonChat][!speaker:Albus]쉬지 않고 달려야 하나..."/>
+		<class name="Common_Road_114_XiZzIw" Value="[!Ignore][!FrontMessage]티마 무리가 현장에 돌입하였습니다."/>
+		<class name="Common_Road_114_hSr42U" Value="[!BalloonChat]본부에서 티마 무리 중 일부가 현장에 돌입하였다고 합니다!!!"/>
+		<class name="Common_Road_114_XzmNqH" Value="[!BalloonChat][!speaker:Albus]알겠습니다. "/>
+		<class name="Common_Road_114_TlawoM" Value="[!BalloonChat][!speaker:Albus]다들 티마와의 교전을 최대한 자제하고 임무를 속행합니다!"/>
+		<class name="Common_Road_114_9Rs5yM" Value="[!Dialog][!speaker:VHPDMale2_Normal]알버스 씨. 주변의 스푼교도들은 다 정리된 것 같습니다. "/>
+		<class name="Common_Road_114_iry0Lc" Value="[!Dialog][!speaker:VHPDMale2_Normal]하지만 현장에 티마 무리가 아직 남아있습니다."/>
+		<class name="Common_Road_114_gT5LLv" Value="[!Dialog][!speaker:VHPDMale2_Normal]어떻게 하시겠습니까?"/>
+		<class name="Common_Road_114_EZMtU7" Value="[!Dialog][!speaker:Albus_Think][colour=&apos;FFFFFF00&apos;]임무는 완료했으니 어떻게 할까..."/>
+		<class name="Common_Road_114_vCNvBv" Value="[!Choice]안전하게 퇴각한다."/>
+		<class name="Common_Road_114_ax4ykG" Value="[!Choice]현장의 티마를 제압한다."/>
+		<class name="Common_Road_114_vPGoAg" Value="[!Dialog][!speaker:Albus_Serious]일단 여기서 물러납니다. 다들 퇴각하세요."/>
+		<class name="Common_Road_114_zDTSCR" Value="[!BalloonChat][!speaker:Albus]티마들을 제압하겠습니다. 다들 준비하세요!"/>
+		<class name="Common_Road_114_5qRlSi" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Common_Road_114_EZaQLY" Value="[!VictoryCondition]티마를 제압하시오."/>
+		<class name="Common_Road_114_oCRhBl" Value="[!Ignore][!BalloonChat][!speaker:Albus]남은 스푼교도를 처치하자."/>
+		<class name="Common_Road_114_04tUhQ" Value="[!Dialog][!speaker:VHPD_Assault_Normal]트러블슈터 알버스 씨. 현장 제압 완료하였습니다."/>
+		<class name="Common_Road_114_btUP6A" Value="[!Dialog][!speaker:Albus_Normal]다들 고생하셨습니다. 발할라로 복귀합니다."/>
+		<class name="Common_Road_114_BnDFYa" Value="[!BalloonChat][!speaker:Albus]지체되면 티마가 올 텐데..."/>
+	</idspace>
+</idspaces>

@@ -1,0 +1,1353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="HitEffectSound">
+	<schema>
+		<rule property="Human" type="table"/>
+		<rule property="Metal" type="table"/>
+	</schema>
+	<class name="BeastButt">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_BeastButt_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Blunt" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastButt_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Blunt" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_BeastButt_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Blunt" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastButt_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Blunt" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_BeastButt_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Blunt" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastButt_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Blunt" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_BeastButt_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Blunt" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastButt_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Blunt" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Bite_Blooding">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Blooding" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Blooding" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Blooding" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Blooding" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Blooding" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Blooding" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Blooding" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Blooding" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Bite_Earth">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Earth" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Earth" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Earth" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Earth" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Earth" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Earth" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Earth" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Earth" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Bite_Fire">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_BeastScratch_FireHit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Fire" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_FireHit_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Fire" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_BeastScratch_FireHit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Fire" EffectFrame="42" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_FireHit_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Fire" EffectFrame="9" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_BeastScratch_FireHit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Fire" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_FireHit_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Fire" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_BeastScratch_FireHit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Fire" EffectFrame="42" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_FireHit_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Fire" EffectFrame="9" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Bite_Ice">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_BeastScratch_IceHit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Ice" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_IceHit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Ice" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_BeastScratch_IceHit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Ice" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_IceHit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Ice" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_BeastScratch_IceHit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Ice" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_IceHit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Ice" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_BeastScratch_IceHit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Ice" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_IceHit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Bite_Ice" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Bite_Lightning">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Lightning_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Lightning_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="HitEffect/Hit_Lightning_Dodge.wav" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="1"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Lightning_Critical.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning" EffectFrame="12" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Lightning_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning" EffectFrame="12" MaxCount="1"/>
+				<Dodge Sound="HitEffect/Hit_Lightning_Dodge.wav" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="1"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Lightning_Hit_Metal.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning" EffectFrame="12" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Lightning_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning" EffectFrame="12" MaxCount="1"/>
+				<Dodge Sound="HitEffect/Hit_Lightning_Dodge.wav" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="1"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Lightning_Critical_Metal.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning" EffectFrame="12" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Lightning_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning" EffectFrame="12" MaxCount="1"/>
+				<Dodge Sound="HitEffect/Hit_Lightning_Dodge.wav" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="1"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Bite_Poison">
+		<Human>
+			<Normal>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Poison" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Poison" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Poison" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Poison" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Poison" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Poison" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Poison" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Poison" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Blind">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/HIt_Blunt.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blind" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Blunt_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blind" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/HIt_Blunt_CRT.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blind" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Blunt_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blind" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/HIt_Blunt.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blind" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Blunt_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blind" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/HIt_Blunt_CRT.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blind" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Blunt_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blind" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Breath_Dark">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Flame.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Dark_Small" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Flame_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Dark_Small" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Flame.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Dark_Small" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Flame_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Dark_Small" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Flame.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Dark_Small" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Flame_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Dark_Small" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Flame_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Dark_Small" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Flame_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Dark_Small" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Breath_Earth">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Flame.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Gray_Small" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Flame_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Gray_Small" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Flame.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Gray_Small" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Flame_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Gray_Small" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Flame.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Gray_Small" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Flame_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Gray_Small" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Flame_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Gray_Small" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Flame_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Gray_Small" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Breath_CorrosionPoison">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Flame.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_CorrosionPoison_Small" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Flame_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_CorrosionPoison_Small" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Flame.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_CorrosionPoison_Small" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Flame_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_CorrosionPoison_Small" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Flame.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_CorrosionPoison_Small" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Flame_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_CorrosionPoison_Small" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Flame_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_CorrosionPoison_Small" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Flame_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_CorrosionPoison_Small" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Breath_Water">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Flame.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Gas_Short_Small" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Flame_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Gas_Short_Small" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Flame.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Gas_Short_Small" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Flame_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Gas_Short_Small" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Flame.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Gas_Short_Small" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Flame_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Gas_Short_Small" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Flame_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Gas_Short_Small" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Flame_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Gas_Short_Small" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Blood">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Pierce.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blood" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Pierce.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blood" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Pierce.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blood" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Pierce.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blood" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Pierce.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blood" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Pierce.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blood" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Pierce.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blood" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Pierce.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blood" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Blunt">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/HIt_Blunt.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blunt" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Blunt_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blunt" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/HIt_Blunt_CRT.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blunt" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Blunt_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blunt" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/HIt_Blunt.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blunt" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Blunt_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blunt" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/HIt_Blunt_CRT.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blunt" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Blunt_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blunt" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="ChainSaw">
+		<Human>
+			<Normal>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Slash" EffectFrame="12" MaxCount="1"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Slash" EffectFrame="12" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Slash" EffectFrame="12" MaxCount="1"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Slash" EffectFrame="12" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Slash" EffectFrame="12" MaxCount="1"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Slash" EffectFrame="12" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Slash" EffectFrame="12" MaxCount="1"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Slash" EffectFrame="12" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Explosion">
+		<Human>
+			<Normal>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blood" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blood" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blood" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blood" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blood" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blood" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blood" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blood" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Fire">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Flame.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Fire" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Flame_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Fire" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Flame.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Fire" EffectFrame="42" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Flame_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Fire" EffectFrame="9" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Flame.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Fire" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Flame_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Fire" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Flame.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Fire" EffectFrame="42" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Flame_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Fire" EffectFrame="9" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Breath_Fire">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Flame.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Fire_Small" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Flame_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Fire_Small" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Flame.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Fire_Small" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Flame_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Fire_Small" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Flame.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Fire_Small" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Flame_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Fire_Small" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Flame.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Fire_Small" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Flame_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Fire_Small" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Fire_Blunt">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Fire_Blunt.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Fire" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Fire_Blunt2.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Fire" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Fire_Blunt.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Fire" EffectFrame="42" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Fire_Blunt2.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Fire" EffectFrame="9" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Fire_Blunt.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Fire" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Fire_Blunt2.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Fire" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Fire_Blunt.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Fire" EffectFrame="42" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Fire_Blunt2.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Fire" EffectFrame="9" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Fist">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Fist_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blunt" EffectFrame="12" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Fist_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blunt" EffectFrame="12" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Fist_Hit_Critical.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blunt" EffectFrame="12" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Fist_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blunt" EffectFrame="12" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Fist_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blunt" EffectFrame="12" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Fist_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blunt" EffectFrame="12" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Fist_Hit_Critical.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blunt" EffectFrame="12" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Fist_Block.ogg" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Blunt" EffectFrame="12" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Gunfire">
+		<Human>
+			<Normal>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Gunfire" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Gunfire" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Gunfire" EffectFrame="12" MaxCount="1"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Gunfire" EffectFrame="12" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Gunfire" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Gunfire" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Gunfire" EffectFrame="12" MaxCount="1"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Gunfire" EffectFrame="12" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Heal">
+		<Human>
+			<Normal>
+				<Heal Sound="HitEffect/Hit_Heal_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Heal" EffectFrame="30" MaxCount="1"/>
+			</Normal>
+			<Critical>
+				<Heal Sound="HitEffect/Hit_Heal_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Heal" EffectFrame="30" MaxCount="1"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Heal Sound="HitEffect/Hit_Heal_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Heal_Metal" EffectFrame="30" MaxCount="1"/>
+			</Normal>
+			<Critical>
+				<Heal Sound="HitEffect/Hit_Heal_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Heal_Metal" EffectFrame="30" MaxCount="1"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Heal_Star">
+		<Human>
+			<Normal>
+				<Heal Sound="HitEffect/Hit_Heal_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Heal" EffectFrame="30" MaxCount="1"/>
+			</Normal>
+			<Critical>
+				<Heal Sound="HitEffect/Hit_Heal_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Heal" EffectFrame="30" MaxCount="1"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Heal Sound="HitEffect/Hit_Heal_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Heal" EffectFrame="30" MaxCount="1"/>
+			</Normal>
+			<Critical>
+				<Heal Sound="HitEffect/Hit_Heal_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Heal" EffectFrame="30" MaxCount="1"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="HealCharging">
+		<Human>
+			<Normal>
+				<Heal Sound="HitEffect/Hit_Heal_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Heal_Charging" EffectFrame="30" MaxCount="1"/>
+			</Normal>
+			<Critical>
+				<Heal Sound="HitEffect/Hit_Heal_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Heal_Charging" EffectFrame="30" MaxCount="1"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Heal Sound="HitEffect/Hit_Heal_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Heal_Charging" EffectFrame="30" MaxCount="1"/>
+			</Normal>
+			<Critical>
+				<Heal Sound="HitEffect/Hit_Heal_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Heal_Charging" EffectFrame="30" MaxCount="1"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="HealVigor">
+		<Human>
+			<Normal>
+				<Heal Sound="HitEffect/Hit_Heal_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Heal_Vigor" EffectFrame="30" MaxCount="1"/>
+			</Normal>
+			<Critical>
+				<Heal Sound="HitEffect/Hit_Heal_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Heal_Vigor" EffectFrame="30" MaxCount="1"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Heal Sound="HitEffect/Hit_Heal_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Heal_Vigor" EffectFrame="30" MaxCount="1"/>
+			</Normal>
+			<Critical>
+				<Heal Sound="HitEffect/Hit_Heal_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Heal_Vigor" EffectFrame="30" MaxCount="1"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Ice">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Ice.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Ice" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Ice.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Ice" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Ice.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Ice" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Ice.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Ice" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Ice.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Ice" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Ice.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Ice" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Ice.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Ice" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Ice.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Ice" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Breath_Ice">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Ice.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Ice_Small" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Ice.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Ice_Small" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Ice.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Ice_Small" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Ice.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Ice_Small" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Ice.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Ice_Small" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Ice.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Ice_Small" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Ice.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Ice_Small" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Ice.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Ice_Small" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Ice_Blunt">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Ice_Blunt.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Ice" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Ice_Blunt_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Ice" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Ice_Blunt.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Ice" EffectFrame="42" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Ice_Blunt_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Ice" EffectFrame="9" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Ice_Blunt.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Ice" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Ice_Blunt_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Ice" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Ice_Blunt.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Ice" EffectFrame="42" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Ice_Blunt_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Ice" EffectFrame="9" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="IceSpike">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_IceSpike.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_IceSpike" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_IceSpike.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_IceSpike" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_IceSpike.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_IceSpike" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_IceSpike.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_IceSpike" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_IceSpike.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_IceSpike" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_IceSpike.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_IceSpike" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_IceSpike.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_IceSpike" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_IceSpike.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_IceSpike" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Lightning">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Lightning_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Lightning_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="HitEffect/Hit_Lightning_Dodge.wav" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="1"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Lightning_Critical.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning" EffectFrame="12" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Lightning_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning" EffectFrame="12" MaxCount="1"/>
+				<Dodge Sound="HitEffect/Hit_Lightning_Dodge.wav" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="1"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Lightning_Hit_Metal.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning" EffectFrame="12" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Lightning_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning" EffectFrame="12" MaxCount="1"/>
+				<Dodge Sound="HitEffect/Hit_Lightning_Dodge.wav" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="1"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Lightning_Critical_Metal.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning" EffectFrame="12" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Lightning_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning" EffectFrame="12" MaxCount="1"/>
+				<Dodge Sound="HitEffect/Hit_Lightning_Dodge.wav" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="1"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Breath_Lightning">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Lightning_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Lightning2" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Lightning_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Lightning2" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="HitEffect/Hit_Lightning_Dodge.wav" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="1"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Lightning_Critical.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Lightning2" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Lightning_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Lightning2" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="HitEffect/Hit_Lightning_Dodge.wav" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="1"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Lightning_Hit_Metal.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Lightning2" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Lightning_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Lightning2" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="HitEffect/Hit_Lightning_Dodge.wav" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="1"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Lightning_Critical_Metal.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Lightning2" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Lightning_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Lightning2" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="HitEffect/Hit_Lightning_Dodge.wav" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="1"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Lightning_Blunt">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Lightning_Blunt.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Lightning_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Lightning_Blunt.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning" EffectFrame="42" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Lightning_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning" EffectFrame="9" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Lightning_Blunt.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Lightning_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Lightning_Blunt.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning" EffectFrame="42" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Lightning_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning" EffectFrame="9" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Lightning_Yellow">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Lightning_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning_Yellow" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Lightning_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning_Yellow" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="HitEffect/Hit_Lightning_Dodge.wav" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="1"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Lightning_Critical.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning_Yellow" EffectFrame="12" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Lightning_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning_Yellow" EffectFrame="12" MaxCount="1"/>
+				<Dodge Sound="HitEffect/Hit_Lightning_Dodge.wav" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="1"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Lightning_Hit_Metal.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning_Yellow" EffectFrame="12" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Lightning_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning_Yellow" EffectFrame="12" MaxCount="1"/>
+				<Dodge Sound="HitEffect/Hit_Lightning_Dodge.wav" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="1"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Lightning_Critical_Metal.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning_Yellow" EffectFrame="12" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Lightning_Block.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Lightning_Yellow" EffectFrame="12" MaxCount="1"/>
+				<Dodge Sound="HitEffect/Hit_Lightning_Dodge.wav" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="1"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="LongSword">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Sword_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Vertical" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Sword_Block.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Vertical" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Sword_Hit_Critical.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Vertical" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Sword_Block.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Vertical" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Sword_Hit_Metal.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Vertical" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Sword_Block_Metal.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Vertical" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Sword_Hit_Critical_Metal.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Vertical" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Sword_Block_Metal.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Vertical" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Pistol">
+		<Human>
+			<Normal>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Gun" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Gun" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Gun" EffectFrame="12" MaxCount="1"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Gun" EffectFrame="12" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Gun" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Gun" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Gun" EffectFrame="12" MaxCount="1"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Gun" EffectFrame="12" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Pistol_Ground">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Pistol_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Gun" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Pistol_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Gun" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="HitEffect/Hit_Pistol_Hit.wav" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="1"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Pistol_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Gun" EffectFrame="12" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Pistol_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Gun" EffectFrame="12" MaxCount="1"/>
+				<Dodge Sound="HitEffect/Hit_Pistol_Hit.wav" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="1"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Pistol_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Gun" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Pistol_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Gun" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="HitEffect/Hit_Pistol_Hit.wav" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="1"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Pistol_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Gun" EffectFrame="12" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Pistol_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Gun" EffectFrame="12" MaxCount="1"/>
+				<Dodge Sound="HitEffect/Hit_Pistol_Hit.wav" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="1"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Poison">
+		<Human>
+			<Normal>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Poison" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Poison" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Poison" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Poison" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Poison" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Poison" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Poison" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Poison" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Scratch_DiagonalRight">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Scratch_DiagonalRight_Blind">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Blind" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Blind" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Blind" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Blind" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Blind" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Blind" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Blind" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Blind" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Scratch_DiagonalRight_Fire">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_BeastScratch_FireHit.wav" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Fire" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Fire" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_BeastScratch_FireHit_Block.wav" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Fire" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Fire" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_BeastScratch_FireHit.wav" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Fire" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Fire" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_BeastScratch_FireHit_Block.wav" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Fire" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Fire" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Scratch_DiagonalRight_Ice">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_BeastScratch_IceHit.wav" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Ice" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Ice" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_BeastScratch_IceHit.wav" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Ice" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Ice" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_BeastScratch_IceHit.wav" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Ice" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Ice" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_BeastScratch_IceHit.wav" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Ice" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Ice" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Scratch_DiagonalRight_Lightning">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_BeastScratch_LightningHit.wav" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Lightning" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_BeastScratch_LightningHit.wav" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Lightning" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_BeastScratch_LightningHit.wav" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Lightning" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_BeastScratch_LightningHit.wav" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Lightning" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Scratch_DiagonalRight_Poison">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Poison" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Poison" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Poison" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Poison" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Poison" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Poison" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Poison" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_BeastScratch_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Scratch_DiagonalRight_Poison" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Slash_Diagonal">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Sword_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_DiagonalRight" EffectFrame="15" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Sword_Block.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_DiagonalRight" EffectFrame="15" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="3000" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Sword_Hit_Critical.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_DiagonalRight" EffectFrame="15" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Sword_Block.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_DiagonalRight" EffectFrame="15" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="3000" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Sword_Hit_Metal.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_DiagonalRight" EffectFrame="15" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Sword_Block_Metal.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_DiagonalRight" EffectFrame="15" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="3000" Effect="None" EffectFrame="15" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Sword_Hit_Critical_Metal.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_DiagonalRight" EffectFrame="15" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Sword_Block_Metal.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_DiagonalRight" EffectFrame="15" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="3000" Effect="None" EffectFrame="15" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Slash_Horizontal">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Sword_Hit.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Horizontal" EffectFrame="15" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Sword_Block.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Horizontal" EffectFrame="15" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="3000" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Sword_Hit_Critical.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Horizontal" EffectFrame="15" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Sword_Block.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Horizontal" EffectFrame="15" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="3000" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Sword_Hit_Metal.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Horizontal" EffectFrame="15" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Sword_Block_Metal.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Horizontal" EffectFrame="15" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="3000" Effect="None" EffectFrame="15" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Sword_Hit_Critical_Metal.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Horizontal" EffectFrame="15" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Sword_Block_Metal.ogg" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Horizontal" EffectFrame="15" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="3000" Effect="None" EffectFrame="15" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Smoke">
+		<Human>
+			<Normal>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="StarLight">
+		<Human>
+			<Normal>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="42" MaxCount="0"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="9" MaxCount="0"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="42" MaxCount="0"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="9" MaxCount="0"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="SwordAura">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_SwordAura_Hit.wav" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Horizontal" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_SwordAura_Hit.wav" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Horizontal" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_SwordAura_Hit.wav" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Horizontal" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_SwordAura_Hit.wav" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Horizontal" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_SwordAura_Hit.wav" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Horizontal" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_SwordAura_Hit.wav" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Horizontal" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_SwordAura_Hit.wav" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Horizontal" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_SwordAura_Hit.wav" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Horizontal" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="SwordAura_Fire">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_SwordAura_Hit.wav" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Horizontal_Fire" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_SwordAura_Hit.wav" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Horizontal_Fire" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_SwordAura_Hit.wav" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Horizontal_Fire" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_SwordAura_Hit.wav" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Horizontal_Fire" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_SwordAura_Hit.wav" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Horizontal_Fire" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_SwordAura_Hit.wav" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Horizontal_Fire" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_SwordAura_Hit.wav" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Horizontal_Fire" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_SwordAura_Hit.wav" Volume="1" MinDistance="3000" Effect="Particles/Dandylion/Hit_Slash_Horizontal_Fire" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="0" MinDistance="0" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Wind">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Wind_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Wind" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Wind_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Wind" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Wind_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Wind" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Wind_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Wind" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Wind_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Wind" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Wind_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Wind" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Wind_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Wind" EffectFrame="30" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Wind_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Hit_Wind" EffectFrame="30" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="Breath_Wind">
+		<Human>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Wind_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Wind_Small" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Wind_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Wind_Small" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="60" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Wind_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Wind_Small" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Wind_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Wind_Small" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="HitEffect/Hit_Wind_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Wind_Small" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Wind_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Wind_Small" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="60" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="HitEffect/Hit_Wind_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Wind_Small" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="HitEffect/Hit_Wind_Hit.wav" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/Grenade_Explosion_Wind_Small" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="WindPressure">
+		<Human>
+			<Normal>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="30" MaxCount="0"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="0" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+	<class name="WindShield">
+		<Human>
+			<Normal>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/WindShield" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/WindShield" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/WindShield" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/WindShield" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Critical>
+		</Human>
+		<Metal>
+			<Normal>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/WindShield" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/WindShield" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2500" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Normal>
+			<Critical>
+				<Hit Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/WindShield" EffectFrame="60" MaxCount="1"/>
+				<Block Sound="None" Volume="1" MinDistance="2500" Effect="Particles/Dandylion/WindShield" EffectFrame="60" MaxCount="1"/>
+				<Dodge Sound="None" Volume="1" MinDistance="2000" Effect="None" EffectFrame="12" MaxCount="0"/>
+			</Critical>
+		</Metal>
+	</class>
+</idspace>

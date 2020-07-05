@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Common_PugoStreetAfter_YFYZ5B" Value="[!Dashboard:Counter]남은 적 수"/>
+		<class name="Common_PugoStreetAfter_6kzMCk" Value="[!Dashboard:Counter]남은 정보원 수"/>
+		<class name="Common_PugoStreetAfter_8R6BEu" Value="[!Dashboard:ObjectiveMarker]정보원 김에게 다가가면 대화를 진행할 수 있습니다."/>
+		<class name="Common_PugoStreetAfter_PjM8oT" Value="[!Dashboard:ObjectiveMarker]이곳으로 정보원을 이동시키면 탈출시킬 수 있습니다."/>
+		<class name="Common_PugoStreetAfter_mWbaAn" Value="[!Objective]고립된 정보원을 찾아 보호하시오."/>
+		<class name="Common_PugoStreetAfter_YZeRgC" Value="[!Objective]정보원 김 씨를 탈출시키시오."/>
+		<class name="Common_PugoStreetAfter_1rHasi" Value="[!Objective]적을 모두 제압하시오."/>
+		<class name="Common_PugoStreetAfter_5P8GGJ" Value="[!Objective]적을 모두 제압하시오."/>
+		<class name="Common_PugoStreetAfter_YE7vGH" Value="[!Objective]적을 모두 제압하시오."/>
+		<class name="Common_PugoStreetAfter_ECfo7r" Value="[!Title]기회주의자"/>
+		<class name="Common_PugoStreetAfter_pX2oUs" Value="[!Title]푸고 번화가"/>
+		<class name="Common_PugoStreetAfter_Ws2s2X" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]내부 정보를 누구한테서 확보했는지는 몰라도..."/>
+		<class name="Common_PugoStreetAfter_GiazD3" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]그 정보를 팔아 넘기는 녀석은 역시 김 씨. 그 미친 놈이 확실해."/>
+		<class name="Common_PugoStreetAfter_L8qymi" Value="[!Dialog][!speaker:Gangster_Ivan_Normal]김 씨? 듣도 보도 못한 녀석인데..."/>
+		<class name="Common_PugoStreetAfter_PitE7y" Value="[!Dialog][!speaker:Gangster_Ivan_Normal]네 녀석들 정보 보안이 엉망인 것 아냐?"/>
+		<class name="Common_PugoStreetAfter_LjGZLR" Value="[!Dialog][!speaker:Gangster_Ivan_Normal]이래서 같이 사업하겠어?"/>
+		<class name="Common_PugoStreetAfter_5tdmN7" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]이반. 백호는 많이 화나있다. 잘 생각하고 네 입을 놀리기 바란다."/>
+		<class name="Common_PugoStreetAfter_skudLN" Value="[!Dialog][!speaker:Gangster_Ivan_Normal]지금 당장이라도 그 녀석을 잡아야지. 뭐하나?"/>
+		<class name="Common_PugoStreetAfter_zczNj9" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]지금 최대한 내 아래 있는 녀석들을 동원해 수색 중이다."/>
+		<class name="Common_PugoStreetAfter_Ozfb0s" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]미안하지만 자네들도 힘을 빌려주게."/>
+		<class name="Common_PugoStreetAfter_1Nd0uC" Value="[!Dialog][!speaker:Gangster_Ivan_Normal]보수는 확실하겠지?"/>
+		<class name="Common_PugoStreetAfter_ybOXps" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]추후 내 관할의 수익의 10%를 3년간 양도하겠네."/>
+		<class name="Common_PugoStreetAfter_3CIvDh" Value="[!Dialog][!speaker:Gangster_CheChe_Normal]이거 도박이잖아."/>
+		<class name="Common_PugoStreetAfter_Jpj5P3" Value="[!Dialog][!speaker:Gangster_CheChe_Normal]기세가 기우는 백호파의 관할 수익이라니..."/>
+		<class name="Common_PugoStreetAfter_wKbLHM" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]이반. 이 녀석은 뭐지? 처음 보는 녀석인데?"/>
+		<class name="Common_PugoStreetAfter_pGXNlc" Value="[!Dialog][!speaker:Gangster_Ivan_Normal]브래드 형님이 대니 녀석 견제하려고 용병들을 고용하고 있지."/>
+		<class name="Common_PugoStreetAfter_zfnf9W" Value="[!Dialog][!speaker:Gangster_Ivan_Normal]이 녀석 꽤 괜찮은 녀석이야."/>
+		<class name="Common_PugoStreetAfter_LUt49M" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]대니. 진짜 오랜만에 듣는 이름이군."/>
+		<class name="Common_PugoStreetAfter_1c7kAh" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]네 녀석들 이제보니 그 녀석이랑 거래했었던 거냐?"/>
+		<class name="Common_PugoStreetAfter_ofzHd4" Value="[!Dialog][!speaker:Gangster_Ivan_Normal]허어. 무슨 상관이야. 원하는 거래만 확실하면 되지."/>
+		<class name="Common_PugoStreetAfter_16pgqh" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]&apos;빨리 조직 상황이 안정되면 이 녀석들도 한 번 손을 봐야겠군...&apos;"/>
+		<class name="Common_PugoStreetAfter_3OLvrM" Value="[!Dialog][!speaker:Gangster_Ivan_Normal]자. 그래서 그 박쥐같은 녀석을 일단 찾아야지."/>
+		<class name="Common_PugoStreetAfter_LdWp6A" Value="[!Dialog][!speaker:Gangster_Ivan_Normal]그 정보가 경찰들에게 넘어가면 골치 아파."/>
+		<class name="Common_PugoStreetAfter_B0sdQ4" Value="[!Dialog][!speaker:VHPD_Scout_Normal]정보원 김 씨와 연락이 두절된 지 30분이 지났습니다."/>
+		<class name="Common_PugoStreetAfter_wtNBYv" Value="[!Dialog][!speaker:Albus_Serious]알겠습니다."/>
+		<class name="Common_PugoStreetAfter_zy9KEF" Value="[!Dialog][!speaker:Albus_Serious]&apos;김 씨 정보원은 그만 두신 줄 알았는데...&apos;"/>
+		<class name="Common_PugoStreetAfter_wRDfos" Value="[!VictoryCondition]아군 전투 불능"/>
+		<class name="Common_PugoStreetAfter_pupEkL" Value="[!VictoryCondition]고립된 정보원을 찾아 보호하시오."/>
+		<class name="Common_PugoStreetAfter_oFHUCm" Value="[!Dialog][!speaker:Informant_Kim_Normal]시온 군! 여기야!"/>
+		<class name="Common_PugoStreetAfter_W27YRE" Value="[!Dialog][!speaker:Sion_SurpriseStare]또 이런 일에 손대신 거예요? 성실하게 장사하신 다면서요?"/>
+		<class name="Common_PugoStreetAfter_SZk5PX" Value="[!Dialog][!speaker:Informant_Kim_Normal]야~ 야~ 말도 마. 요즘 자영업으로 어떻게 돈을 버니?"/>
+		<class name="Common_PugoStreetAfter_HxY1XQ" Value="[!Dialog][!speaker:Informant_Kim_Normal]하루가 멀다고 정신없는 이 시기에는 돈 벌 수 있으면 뭐든 상관없지."/>
+		<class name="Common_PugoStreetAfter_zA4S6R" Value="[!Dialog][!speaker:Sion_Stare]그 트레일러 모는 이 씨 아저씨는 성실하게 잘만 지내시던데요."/>
+		<class name="Common_PugoStreetAfter_M7YLcO" Value="[!Dialog][!speaker:Informant_Kim_Normal]성실하면 모해. 몸만 고생하고."/>
+		<class name="Common_PugoStreetAfter_XwqyNt" Value="[!Dialog][!speaker:Informant_Kim_Normal]그래봐야 이 씨 딸 대학 보내는 돈 마련한다고 엄청 고민하잖아."/>
+		<class name="Common_PugoStreetAfter_wNANdS" Value="[!Dialog][!speaker:Informant_Kim_Normal]......"/>
+		<class name="Common_PugoStreetAfter_6gEvPt" Value="[!Dialog][!speaker:Informant_Kim_Normal]자. 뭐하는 거야. 빨리 안전한 곳으로 가자고!"/>
+		<class name="Common_PugoStreetAfter_dCPI2g" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Common_PugoStreetAfter_7Gk1Uz" Value="[!VictoryCondition]정보원 김 씨를 탈출시키시오."/>
+		<class name="Common_PugoStreetAfter_5XgvPA" Value="[!BalloonChat][!speaker:Kim]이봐! 여기야! 내가 정보원이라고!"/>
+		<class name="Common_PugoStreetAfter_rpnSzq" Value="[!BalloonChat][!speaker:Kim]빨리 이 곳을 빠져나가게 해줘!"/>
+		<class name="Common_PugoStreetAfter_Twem2G" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Common_PugoStreetAfter_ajr4wp" Value="[!VictoryCondition]정보원 김을 탈출시키시오."/>
+		<class name="Common_PugoStreetAfter_ejTJnU" Value="[!BalloonChat][!speaker:Kim]제길..."/>
+		<class name="Common_PugoStreetAfter_JEqIdU" Value="[!VictoryCondition]아군 전원 전투 불능."/>
+		<class name="Common_PugoStreetAfter_LdUqUK" Value="[!VictoryCondition]적을 모두 제압하시오."/>
+		<class name="Common_PugoStreetAfter_gxPwBF" Value="[!BalloonChat]이 녀석 찾았다!"/>
+		<class name="Common_PugoStreetAfter_9UJQ4B" Value="[!BalloonChat]쥐새끼 녀석이 여기 있어!!"/>
+		<class name="Common_PugoStreetAfter_ToKHKC" Value="[!BalloonChat][!speaker:Kim]으아아!!"/>
+		<class name="Common_PugoStreetAfter_znSRzJ" Value="[!BalloonChat][!speaker:Kim]이야~ 나 먼저 가겠네!"/>
+		<class name="Common_PugoStreetAfter_RhXPDr" Value="[!Dialog][!speaker:VHPDFemale2_Normal]알버스 님. 정보원이 무사히 탈출했습니다."/>
+		<class name="Common_PugoStreetAfter_lOa9kK" Value="[!Dialog][!speaker:VHPDFemale2_Normal]하지만 현장 치안이 매우 좋지 않습니다."/>
+		<class name="Common_PugoStreetAfter_fafL5P" Value="[!Dialog][!speaker:VHPDFemale2_Normal]어떻게 하시겠습니까?"/>
+		<class name="Common_PugoStreetAfter_yNZw08" Value="[!Dialog][!speaker:Albus_Think][colour=&apos;FFFFFF00&apos;]임무는 완료했으니 어떻게 할까..."/>
+		<class name="Common_PugoStreetAfter_cgC3Aw" Value="[!Choice]안전하게 퇴각한다."/>
+		<class name="Common_PugoStreetAfter_52Mn22" Value="[!Choice]적을 제압한다."/>
+		<class name="Common_PugoStreetAfter_GfKzON" Value="[!BalloonChat][!speaker:Kim]설마... 날 버리는 거냐..."/>
+		<class name="Common_PugoStreetAfter_uSsV5H" Value="[!VictoryCondition]아군 전원 전투 불능."/>
+		<class name="Common_PugoStreetAfter_FVfkGn" Value="[!VictoryCondition]적을 모두 제압하시오."/>
+		<class name="Common_PugoStreetAfter_wUlN5u" Value="[!BalloonChat]어딜 도망가!"/>
+		<class name="Common_PugoStreetAfter_hwuFOX" Value="[!Dialog][!speaker:Albus_Disappoint]&apos;...불필요한 일로 체력을 낭비하지 말자.&apos;"/>
+		<class name="Common_PugoStreetAfter_6zZRtO" Value="[!Dialog][!speaker:Albus_Serious]일단 여기서 물러납니다. 다들 퇴각하세요."/>
+		<class name="Common_PugoStreetAfter_YBcnvV" Value="[!Dialog][!speaker:Albus_Serious]지금부터 현장의 적을 제압하겠습니다!"/>
+		<class name="Common_PugoStreetAfter_4GmvXA" Value="[!VictoryCondition]아군 전원 전투 불능."/>
+		<class name="Common_PugoStreetAfter_iSkU1N" Value="[!VictoryCondition]적을 모두 제압하시오."/>
+		<class name="Common_PugoStreetAfter_82GVC8" Value="[!Dialog][!speaker:Informant_Kim_Normal]알버스 군! 여기야!"/>
+		<class name="Common_PugoStreetAfter_EhdUUN" Value="[!Dialog][!speaker:Albus_Serious]김 씨 아저씨. 괜찮으신가요?"/>
+		<class name="Common_PugoStreetAfter_7S3A6q" Value="[!Dialog][!speaker:Informant_Kim_Normal]아직은 괜찮다."/>
+		<class name="Common_PugoStreetAfter_MvO3dn" Value="[!Dialog][!speaker:Informant_Kim_Normal]어서 날 안전한 곳으로 데려가 줘!"/>
+		<class name="Common_PugoStreetAfter_QvA7bp" Value="[!Dialog][!speaker:Albus_Normal]네. 걱정마세요."/>
+		<class name="Common_PugoStreetAfter_DPFJyZ" Value="[!Dialog][!speaker:Albus_Normal]&apos;김 씨 아저씨. 이젠 이런 일만 하시네...&apos;"/>
+		<class name="Common_PugoStreetAfter_2AzKDb" Value="[!Dialog][!speaker:Albus_Smile]&apos;설마... 우리 정보도 팔고 계신 건 아니겠지...&apos;"/>
+		<class name="Common_PugoStreetAfter_7eFwCA" Value="[!VictoryCondition]정보원 김 씨를 탈출시키시오."/>
+		<class name="Common_PugoStreetAfter_0vBktk" Value="[!Dialog][!speaker:Informant_Kim_Normal]오! 히어로!! 히어로!!"/>
+		<class name="Common_PugoStreetAfter_YZcgG6" Value="[!Dialog][!speaker:Irene_Surprise]김 씨. 정보원 김 씨가 김 씨 였어?"/>
+		<class name="Common_PugoStreetAfter_hNsrQa" Value="[!Dialog][!speaker:Informant_Kim_Normal]그래. 나야 나."/>
+		<class name="Common_PugoStreetAfter_PUUcEh" Value="[!Dialog][!speaker:Informant_Kim_Normal]히어로! 날 어서 안전한 곳으로!"/>
+		<class name="Common_PugoStreetAfter_4BY5nO" Value="[!Dialog][!speaker:Irene_Normal]물론이지. 나만 믿으라고!"/>
+		<class name="Common_PugoStreetAfter_1vAraO" Value="[!Dialog][!speaker:Informant_Kim_Normal]오! 앤이구나!"/>
+		<class name="Common_PugoStreetAfter_GiYNUe" Value="[!Dialog][!speaker:Anne_Smile_Surprise]괜찮으세요? 김 씨 아저씨."/>
+		<class name="Common_PugoStreetAfter_7dXHtm" Value="[!Dialog][!speaker:Informant_Kim_Normal]응. 아직까지는 괜찮아."/>
+		<class name="Common_PugoStreetAfter_KdRZR2" Value="[!Dialog][!speaker:Informant_Kim_Normal]자. 앤. 날 안전한 곳으로 데려다 주겠니?"/>
+		<class name="Common_PugoStreetAfter_vm4sU2" Value="[!Dialog][!speaker:Anne_Smile]네. 걱정 마세요!"/>
+		<class name="Common_PugoStreetAfter_xHNzlR" Value="[!Dialog][!speaker:Informant_Kim_Normal]오! 자네!"/>
+		<class name="Common_PugoStreetAfter_q0756K" Value="[!Dialog][!speaker:Informant_Kim_Normal]자네. $CompanyName$ 소속 이잖은가!"/>
+		<class name="Common_PugoStreetAfter_WWyjmE" Value="[!Dialog][!speaker:Informant_Kim_Normal]어서 날 안전한 곳으로 부탁하네!"/>
+		<class name="Common_PugoStreetAfter_GzIVq5" Value="[!Dialog][!speaker:Heissing_EyeClose]적당히 팔아 먹어."/>
+		<class name="Common_PugoStreetAfter_DLTzyY" Value="[!Dialog][!speaker:Informant_Kim_Normal]??"/>
+		<class name="Common_PugoStreetAfter_3JQ1gs" Value="[!Dialog][!speaker:Heissing_Smile]쓸모가 없어지면 그 때는 기다리는 건 차가운 땅바닥이야."/>
+		<class name="Common_PugoStreetAfter_oHWy4Z" Value="[!Dialog][!speaker:Informant_Kim_Normal]자네가 내 사정을 이해할 수가 있나?"/>
+		<class name="Common_PugoStreetAfter_DA6ghi" Value="[!Dialog][!speaker:Informant_Kim_Normal]10년을 쉬지 않고 장사했어."/>
+		<class name="Common_PugoStreetAfter_mAx6qb" Value="[!Dialog][!speaker:Informant_Kim_Normal]그런데 나보다 노력 하나 안한 양아치 녀석들이 더 화려하게 살아."/>
+		<class name="Common_PugoStreetAfter_JkUwp2" Value="[!Dialog][!speaker:Heissing_Smile]그래서 양아치가 된 건가..."/>
+		<class name="Common_PugoStreetAfter_PwAoxb" Value="[!Dialog][!speaker:Heissing_Normal]돈이 된다면 선과 악 구분없이 아무한테나 정보를 팔고?"/>
+		<class name="Common_PugoStreetAfter_0MnGGp" Value="[!Dialog][!speaker:Informant_Kim_Normal]!!!"/>
+		<class name="Common_PugoStreetAfter_KELzun" Value="[!Dialog][!speaker:Informant_Kim_Normal]자네랑 더는 할 말이 없어. 난 경찰청으로 갈 거네."/>
+		<class name="Common_PugoStreetAfter_dOS0ER" Value="[!Dialog][!speaker:Informant_Kim_Normal]자넨 자네 일에 충실해. 이 앨리 녀석아."/>
+		<class name="Common_PugoStreetAfter_r7sEJU" Value="[!Dialog][!speaker:Heissing_Smile]앨리 녀석인가..."/>
+		<class name="Common_PugoStreetAfter_eBoGXr" Value="[!Dialog][!speaker:Informant_Kim_Normal]헛! 카일리!"/>
+		<class name="Common_PugoStreetAfter_1cwIeo" Value="[!Dialog][!speaker:Kylie_Serious]잘 만났어. 김 씨."/>
+		<class name="Common_PugoStreetAfter_82M1Zp" Value="[!Dialog][!speaker:Informant_Kim_Normal]왜... 난 자네에게 볼 일 없어."/>
+		<class name="Common_PugoStreetAfter_o6lKbk" Value="[!Dialog][!speaker:Kylie_Smile]왜 찔리나?"/>
+		<class name="Common_PugoStreetAfter_cpP1QI" Value="[!Dialog][!speaker:Informant_Kim_Normal]무.. 무슨 소리야! 난 절대 양심에 거리끼는 짓 한 적 없어!"/>
+		<class name="Common_PugoStreetAfter_iHsSf2" Value="[!Dialog][!speaker:Kylie_Satisfying]김 씨. 이젠 용감하게 내 앞에서 잘도 거짓말을 하는 구나."/>
+		<class name="Common_PugoStreetAfter_Zd11ph" Value="[!Dialog][!speaker:Kylie_Serious]옛날처럼 제대로 혼나 볼래?"/>
+		<class name="Common_PugoStreetAfter_6OA7cK" Value="[!Dialog][!speaker:Informant_Kim_Normal]이... 악마! 네 녀석이야 말로 천벌을 받을 거다!"/>
+		<class name="Common_PugoStreetAfter_yexJpT" Value="[!Dialog][!speaker:Kylie_Normal]그건 내가 알아서 하지."/>
+		<class name="Common_PugoStreetAfter_zD5sth" Value="[!Dialog][!speaker:Kylie_Normal]예전엔 굳이 내가 제 3자라 끼어들지 않았지만..."/>
+		<class name="Common_PugoStreetAfter_QGzU44" Value="[!Dialog][!speaker:Kylie_Smile]이미 알고 있겠지만 난 이제 $CompanyName$ 소속이야."/>
+		<class name="Common_PugoStreetAfter_Wtol8N" Value="[!Dialog][!speaker:Kylie_Satisfying]그러니 이젠 이쪽 정보를 흘리고 다니면 나한테 적대하는 거로 생각할 거야."/>
+		<class name="Common_PugoStreetAfter_naYrvb" Value="[!Dialog][!speaker:Informant_Kim_Normal]정의로운 척 하지마! 이 악의 근원아!"/>
+		<class name="Common_PugoStreetAfter_G9jk8V" Value="[!Dialog][!speaker:Informant_Kim_Normal]발할라에 있지 말고 네 나라로 돌아가!"/>
+		<class name="Common_PugoStreetAfter_SGJ4Sp" Value="[!Dialog][!speaker:Kylie_Normal]그 말은 더 살고 싶지 않다는 건가?"/>
+		<class name="Common_PugoStreetAfter_rd6EXs" Value="[!Dialog][!speaker:Kylie_Smile]내 성격 잘 알텐데. 그런 내가 저쪽 세계로 가면 널 가만둘 것 같아?"/>
+		<class name="Common_PugoStreetAfter_7bKDja" Value="[!Dialog][!speaker:Informant_Kim_Normal]......"/>
+		<class name="Common_PugoStreetAfter_3HDdwO" Value="[!Dialog][!speaker:Kylie_Smile]그 정도 해 먹었으면 이제 손 떼."/>
+		<class name="Common_PugoStreetAfter_6SihDL" Value="[!Dialog][!speaker:Kylie_Normal]경고는 이 번이 마직막이야."/>
+	</idspace>
+</idspaces>

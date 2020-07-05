@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Tutorial_GroundWaterSlum_925Wh5" Value="[!Dashboard:Counter]남은 스푼교도 수"/>
+		<class name="Tutorial_GroundWaterSlum_Solkao" Value="[!Objective]적을 모두 제압하시오."/>
+		<class name="Tutorial_GroundWaterSlum_gtUaYh" Value="[!Dialog][!speaker:EmptySubTitle_]이벤트 전투를 생략하시겠습니까?"/>
+		<class name="Tutorial_GroundWaterSlum_SJcgVS" Value="[!Choice]생략한다"/>
+		<class name="Tutorial_GroundWaterSlum_iGOft3" Value="[!Choice]그대로 진행한다"/>
+		<class name="Tutorial_GroundWaterSlum_H0r1Hy" Value="[!Dialog][!speaker:Leton_Stare]결국 명령입니까?"/>
+		<class name="Tutorial_GroundWaterSlum_wAsoIZ" Value="[!Dialog][!speaker:Lily_Smile]내가 그런 성격 아닌 건 네가 잘 알잖니?"/>
+		<class name="Tutorial_GroundWaterSlum_5l40Sp" Value="[!Dialog][!speaker:Lily_Smile]선택은 언제나 스스로 하는 거란다."/>
+		<class name="Tutorial_GroundWaterSlum_McVOxm" Value="[!Title]홀로된 아이"/>
+		<class name="Tutorial_GroundWaterSlum_A1KT2I" Value="[!Title]15년 전 빈민가 앨리"/>
+		<class name="Tutorial_GroundWaterSlum_NU2ccB" Value="[!Dialog][!speaker:Gangster_SpoonBottle_Naam_Normal_Boy]카터 형. 나 배고파..."/>
+		<class name="Tutorial_GroundWaterSlum_VDZHS1" Value="[!Dialog][!speaker:Carter_Normal_Boy]나암 좀 참아. 내가 감자 좀 구해올게."/>
+		<class name="Tutorial_GroundWaterSlum_KRBuPM" Value="[!Dialog][!speaker:Ray_Surprise_Girl]카터! 레톤 꺼도 구해와!"/>
+		<class name="Tutorial_GroundWaterSlum_TjaADv" Value="[!Dialog][!speaker:Karen_Normal]&apos;저 녀석들... 또 뭘 훔치려고...&apos;"/>
+		<class name="Tutorial_GroundWaterSlum_XUBFED" Value="[!Dialog][!speaker:Karen_Normal]아빠. 저 녀석들 계속 그냥 둘 거야?"/>
+		<class name="Tutorial_GroundWaterSlum_exuiea" Value="[!Dialog][!speaker:Morris_Normal]카렌. ......그냥 두렴."/>
+		<class name="Tutorial_GroundWaterSlum_nn79XA" Value="[!Dialog][!speaker:Karen_Normal]쟤네 때문에 다들 불편해한다고."/>
+		<class name="Tutorial_GroundWaterSlum_uBdbra" Value="[!Dialog][!speaker:Morris_Normal]카렌. 책임지지 못할 일은 관여하지 말아라."/>
+		<class name="Tutorial_GroundWaterSlum_1b6GvS" Value="[!Dialog][!speaker:Karen_Normal]아무리 그래도 도둑질은 아니잖아..."/>
+		<class name="Tutorial_GroundWaterSlum_yyRx0C" Value="[!Dialog][!speaker:Tana_Normal]요즘 부모 없는 아이들이 많아져서 문제네요."/>
+		<class name="Tutorial_GroundWaterSlum_IFFFeK" Value="[!Dialog][!speaker:AlleyWoman_Normal]저도 일 나가려다가 걱정되서 선뜻 나가질 못하고 있어요."/>
+		<class name="Tutorial_GroundWaterSlum_XNP3YD" Value="[!Dialog][!speaker:AlleyWoman_Normal]집에 아이들만 두고 가면 무슨 일이 생길지..."/>
+		<class name="Tutorial_GroundWaterSlum_Gt9JEe" Value="[!Dialog][!speaker:AlleyMan_Normal]저런 애들 새끼들은 다 쫓아내야 해."/>
+		<class name="Tutorial_GroundWaterSlum_uEAcyp" Value="[!Dialog][!speaker:AlleyMan_Normal]부모가 못 챙기는 걸 누가 챙길 거야."/>
+		<class name="Tutorial_GroundWaterSlum_RF3YxV" Value="[!Dialog][!speaker:EmptySubTitle_][colour=&apos;FFFFFF00&apos;]같은 처지의 사람들이 자신보다 더 약한 자를 비난한다."/>
+		<class name="Tutorial_GroundWaterSlum_sEaKrh" Value="[!Dialog][!speaker:AlleyWoman_Normal]그나저나 의사 어르신도 외진 나간 뒤로 돌아오시질 않네요."/>
+		<class name="Tutorial_GroundWaterSlum_HZGaFI" Value="[!Dialog][!speaker:AlleyWoman_Normal]아이가 그저께부터 계속 미열인데..."/>
+		<class name="Tutorial_GroundWaterSlum_BtZ5Aa" Value="[!Dialog][!speaker:Tana_Normal]어르신 아들에게 차가운 얼음이라도 만들어 달라고 해요."/>
+		<class name="Tutorial_GroundWaterSlum_Jxxbar" Value="[!Dialog][!speaker:AlleyWoman_Normal]그게..."/>
+		<class name="Tutorial_GroundWaterSlum_IgBn23" Value="[!Dialog][!speaker:Tana_Normal]왜요?  또 그 상태인가요?"/>
+		<class name="Tutorial_GroundWaterSlum_1dXVQ7" Value="[!Dialog][!speaker:AlleyWoman_Normal]네... 어르신이 없으면 전혀 능력을 쓰지 않아요."/>
+		<class name="Tutorial_GroundWaterSlum_zFCCwJ" Value="[!Dialog][!speaker:AlleyWoman_Normal]그 아이 나름대로 이유가 있는 건 알지만..."/>
+		<class name="Tutorial_GroundWaterSlum_beeS5v" Value="[!Dialog][!speaker:Tana_Sorrow]......애가 클수록 매정하네요."/>
+		<class name="Tutorial_GroundWaterSlum_i5rXgW" Value="[!Dialog][!speaker:AlleyWoman_Normal]타나씨. 듣겠어요..."/>
+		<class name="Tutorial_GroundWaterSlum_tKyTvJ" Value="[!Dialog][!speaker:Tana_Angry]들으라죠. 잘난 이능력 한 번 쓴다고 당장 죽는 것도 아닐텐데..."/>
+		<class name="Tutorial_GroundWaterSlum_HiiQGr" Value="[!Dialog][!speaker:Heissing_Smile]......"/>
+		<class name="Tutorial_GroundWaterSlum_amFkqU" Value="[!Dialog][!speaker:Tana_Normal]조금만 참아요. 곧 발할라에서 의료 봉사단이 올 시기에요."/>
+		<class name="Tutorial_GroundWaterSlum_07mjjq" Value="[!Dialog][!speaker:EmptySubTitle_][colour=&apos;FFFFFF00&apos;]타인에게 의존해서 살면서 돕지 않는 다는 이유로 비난한다."/>
+		<class name="Tutorial_GroundWaterSlum_70Rm3t" Value="[!Dialog][!speaker:Ray_Smile_Girl]레톤! 레톤!"/>
+		<class name="Tutorial_GroundWaterSlum_pMSsvH" Value="[!Dialog][!speaker:Ray_Smile_Girl]레톤! 어서 내려와! 카터가 감자 가져왔어!"/>
+		<class name="Tutorial_GroundWaterSlum_3LkY8v" Value="[!Dialog][!speaker:Gangster_SpoonBottle_Naam_Normal_Boy]레이 누나... 레톤 형이 안 먹으면 내가 먹을게."/>
+		<class name="Tutorial_GroundWaterSlum_DHnZw3" Value="[!Dialog][!speaker:Ray_Smile_Girl]안 돼! 나암은 이미 3개나 가지고 있잖아."/>
+		<class name="Tutorial_GroundWaterSlum_jnEo92" Value="[!Dialog][!speaker:Leton_Serious_Boy]&apos;꽥꽥꽥... 진짜 시끄럽네...&apos;"/>
+		<class name="Tutorial_GroundWaterSlum_ZYjXaR" Value="[!Dialog][!speaker:Alley_Boy01_Normal]야! 이녀석 끈질기네."/>
+		<class name="Tutorial_GroundWaterSlum_zs08I7" Value="[!Dialog][!speaker:Alley_Boy02_Normal]약쟁이. 넌 금방 죽을 거잖아. 그러니 양보해."/>
+		<class name="Tutorial_GroundWaterSlum_jmxEHy" Value="[!Dialog][!speaker:Leton_Hurt_Boy]싫어... 이건 내 꺼야."/>
+		<class name="Tutorial_GroundWaterSlum_zLj2hX" Value="[!Dialog][!speaker:Alley_Boy02_Normal]약쟁이 새끼가 어딜 노려 보는 거야?"/>
+		<class name="Tutorial_GroundWaterSlum_eXKIYp" Value="[!Dialog][!speaker:Alley_Boy01_Normal]이 녀석 사실 병자 코스프레 아닐까? 솔직히 정상인과 다를게 없잖아."/>
+		<class name="Tutorial_GroundWaterSlum_GTzkPJ" Value="[!Dialog][!speaker:Leton_Hurt_Boy]......"/>
+		<class name="Tutorial_GroundWaterSlum_vRdS9A" Value="[!Dialog][!speaker:Alley_Boy02_Normal]정곡을 찔렀나? 한 번 시험해 보면 되겠네."/>
+		<class name="Tutorial_GroundWaterSlum_CxcxwT" Value="[!Dialog][!speaker:Alley_Boy02_Normal]저 링거 떼보자. 죽나 안 죽나."/>
+		<class name="Tutorial_GroundWaterSlum_wmj69I" Value="[!Dialog][!speaker:Alley_Boy01_Normal]이거 코스프레면 대박인데. 완전 사기꾼이잖아."/>
+		<class name="Tutorial_GroundWaterSlum_dDkIxx" Value="[!Dialog][!speaker:EmptySubTitle_][colour=&apos;FFFFFF00&apos;]강자에게 순종하지 않는 다는 이유로 핍박한다."/>
+		<class name="Tutorial_GroundWaterSlum_8aaKJT" Value="[!Dialog][!speaker:Visha_Normal_Young]그만 하렴!"/>
+		<class name="Tutorial_GroundWaterSlum_ejMgZR" Value="[!Title]찾아온 손님"/>
+		<class name="Tutorial_GroundWaterSlum_lccTGX" Value="[!Title]15년 전 앨리 빈민가 외곽"/>
+		<class name="Tutorial_GroundWaterSlum_F7smiA" Value="[!Dialog][!speaker:Visha_Normal_Young]괜찮니?"/>
+		<class name="Tutorial_GroundWaterSlum_jOQco3" Value="[!Dialog][!speaker:Leton_Hurt_Serious_Boy]......"/>
+		<class name="Tutorial_GroundWaterSlum_TNEQDg" Value="[!Dialog][!speaker:Visha_Normal_Young]&apos;이 아이군...&apos;"/>
+		<class name="Tutorial_GroundWaterSlum_ydQsKC" Value="[!Dialog][!speaker:Visha_Normal_Young]&apos;리온... 아니 시온 또래인가...&apos;"/>
+		<class name="Tutorial_GroundWaterSlum_oZncwB" Value="[!Dialog][!speaker:Visha_Smile_Young]너무 경계하지 않아도 돼."/>
+		<class name="Tutorial_GroundWaterSlum_ZoDNJq" Value="[!Dialog][!speaker:Visha_Smile_Young]널 찾고 있는 분이 계신다."/>
+		<class name="Tutorial_GroundWaterSlum_OLJ8jE" Value="[!Dialog][!speaker:Leton_Hurt_Boy]전 가고 싶지 않아요."/>
+		<class name="Tutorial_GroundWaterSlum_ch5N00" Value="[!Dialog][!speaker:Visha_Smile_Young]그건 나보다는 널 찾아온 분에게 말해야 할 것 같다."/>
+		<class name="Tutorial_GroundWaterSlum_nfR9Od" Value="[!Dialog][!speaker:Visha_Smile_Young]난 그저 네 안전 확보하는 것이 일이니까."/>
+		<class name="Tutorial_GroundWaterSlum_HodT9c" Value="[!Dialog][!speaker:Leton_Hurt_Serious_Boy]......"/>
+		<class name="Tutorial_GroundWaterSlum_pF3l9b" Value="[!Dialog][!speaker:Visha_Normal_Young]그래도 잘 참았구나."/>
+		<class name="Tutorial_GroundWaterSlum_6M8xfL" Value="[!Dialog][!speaker:Visha_Normal_Young]이능력을 사용하면 쉽게 해결될 일을 참는다는 것이 쉬운 일이 아닌데..."/>
+		<class name="Tutorial_GroundWaterSlum_4fBatC" Value="[!Dialog][!speaker:Leton_Hurt_Serious_Boy]그런 쓸데없는 일로 이능력을 쓰지 않아."/>
+		<class name="Tutorial_GroundWaterSlum_1qP4Hz" Value="[!Dialog][!speaker:Visha_Normal_Young]너 그 링거의 의미를 알고 있는 거니?"/>
+		<class name="Tutorial_GroundWaterSlum_w35bxE" Value="[!Dialog][!speaker:Visha_Normal_Young]이미 알고 있구나."/>
+		<class name="Tutorial_GroundWaterSlum_fzeOkZ" Value="[!Dialog][!speaker:EmptySubTitle_][colour=&apos;FFFFFF00&apos;]타인은 자신의 불행을 덜어 줄 수 없다."/>
+		<class name="Tutorial_GroundWaterSlum_t2nQfj" Value="[!Dialog][!speaker:Ray_Surprise_Girl]레톤... 괜찮은 걸까?"/>
+		<class name="Tutorial_GroundWaterSlum_yImciQ" Value="[!Dialog][!speaker:Carter_Normal_Boy]...괜찮을 거야. 일단 기다려 보자."/>
+		<class name="Tutorial_GroundWaterSlum_ZHvojW" Value="[!Title]첫번째 선택"/>
+		<class name="Tutorial_GroundWaterSlum_NZSlQi" Value="[!Title]15년 전, 임시 의료 봉사단 기지"/>
+		<class name="Tutorial_GroundWaterSlum_Q6dQAj" Value="[!Dialog][!speaker:Lily_Normal_Young]얼굴을 보니 그동안 잘 참고 지냈구나."/>
+		<class name="Tutorial_GroundWaterSlum_SXF4YP" Value="[!Dialog][!speaker:Leton_Hurt_Serious_Boy]절 찾으셨다고 들었어요."/>
+		<class name="Tutorial_GroundWaterSlum_LLny30" Value="[!Dialog][!speaker:Lily_Normal_Young]그래. 난 네 보호자... 아니 아버지 남 박사님의 친구야."/>
+		<class name="Tutorial_GroundWaterSlum_XCKa1q" Value="[!Dialog][!speaker:Lily_Normal_Young]아버지는 아직도 돌아오시지 않으셨니?"/>
+		<class name="Tutorial_GroundWaterSlum_g83fN0" Value="[!Dialog][!speaker:Leton_Hurt_Serious_Boy]굳이 아버지라고 말씀 안 하셔도 돼요."/>
+		<class name="Tutorial_GroundWaterSlum_gJ03Oh" Value="[!Dialog][!speaker:Lily_Smile_Young]다 아는 거니?"/>
+		<class name="Tutorial_GroundWaterSlum_Ir9oDU" Value="[!Dialog][!speaker:Leton_Hurt_Serious_Boy]네... 아뇨... 남 박사님이 알려 주신 것만 다 알아요."/>
+		<class name="Tutorial_GroundWaterSlum_EkZgzU" Value="[!Dialog][!speaker:Lily_Normal_Young]그래..."/>
+		<class name="Tutorial_GroundWaterSlum_bdYSEv" Value="[!Dialog][!speaker:Leton_Hurt_Serious_Boy]전 이제 어떻게 되는 건가요?"/>
+		<class name="Tutorial_GroundWaterSlum_02h67Y" Value="[!Dialog][!speaker:Lily_Smile_Young]그건 네 선택에 달렸단다."/>
+		<class name="Tutorial_GroundWaterSlum_n4cXPa" Value="[!Dialog][!speaker:Lily_Smile_Young]넌 어떻게 하고 싶니?"/>
+		<class name="Tutorial_GroundWaterSlum_3s3iOU" Value="[!Dialog][!speaker:Lily_Stare_Young]발할라에서 오는 의료 봉사 지원은 이번이 마지막이야."/>
+		<class name="Tutorial_GroundWaterSlum_v3Us1m" Value="[!Dialog][!speaker:Lily_Normal_Young]발할라 시민들은 더 이상 전쟁 난민들에게 헛된 돈을 사용하고 싶지 않다고 난리지."/>
+		<class name="Tutorial_GroundWaterSlum_NWPgr8" Value="[!Dialog][!speaker:Lily_Smile_Young]우리랑 같이 돌아가면 추위나 배고픔의 고통은 더는 없을 거야."/>
+		<class name="Tutorial_GroundWaterSlum_KI9bgC" Value="[!Dialog][!speaker:Leton_Hurt_Serious_Boy]......전 실험체가 되는 건가요?"/>
+		<class name="Tutorial_GroundWaterSlum_lDDfNB" Value="[!Dialog][!speaker:Lily_Smile_Young]남 박사님이 생각보다 입이 가벼우셨나 보네."/>
+		<class name="Tutorial_GroundWaterSlum_0tZLyB" Value="[!Dialog][!speaker:Leton_Hurt_Boy]박사님은 언제나 진실되세요. 그렇게 말하지 마세요."/>
+		<class name="Tutorial_GroundWaterSlum_9PGxvw" Value="[!Dialog][!speaker:Lily_Normal_Young]두렵니?"/>
+		<class name="Tutorial_GroundWaterSlum_M9X4NZ" Value="[!Dialog][!speaker:Leton_Hurt_Serious_Boy]네..."/>
+		<class name="Tutorial_GroundWaterSlum_0AwRZ4" Value="[!Dialog][!speaker:Lily_Smile_Young]여기 남고 싶다면 남아도 돼."/>
+		<class name="Tutorial_GroundWaterSlum_Pyc98b" Value="[!Dialog][!speaker:Leton_Hurt_Serious_Boy]......정말 그래도 되는 건가요?"/>
+		<class name="Tutorial_GroundWaterSlum_VBepdJ" Value="[!Dialog][!speaker:Lily_Smile_Young]너 항동결 수액은 보충할 수 있니?"/>
+		<class name="Tutorial_GroundWaterSlum_Htja2T" Value="[!Dialog][!speaker:Leton_Hurt_Serious_Boy]네. 박사님으로부터 배웠어요. AFL 항생제만 있다면..."/>
+		<class name="Tutorial_GroundWaterSlum_K39IYp" Value="[!Dialog][!speaker:Lily_Smile_Young]비샤 씨. 남는 AFL 항생제 박스 좀  부탁해요."/>
+		<class name="Tutorial_GroundWaterSlum_YaPHWf" Value="[!Dialog][!speaker:Visha_Normal_Young]알겠습니다."/>
+		<class name="Tutorial_GroundWaterSlum_Nq13Ez" Value="[!Dialog][!speaker:Lily_Normal_Young]자. 이건 항동결 수액에 들어가는 AFL 항상제 제조법이야."/>
+		<class name="Tutorial_GroundWaterSlum_YrKuhG" Value="[!Dialog][!speaker:Leton_Hurt_Boy]!!!"/>
+		<class name="Tutorial_GroundWaterSlum_nTXY0I" Value="[!Dialog][!speaker:Lily_Smile_Young]만약을 위해서야."/>
+		<class name="Tutorial_GroundWaterSlum_kabhSB" Value="[!Dialog][!speaker:Lily_Smile_Young]언젠가 다시 만날 수 있으면 좋겠구나."/>
+		<class name="Tutorial_GroundWaterSlum_60a8Na" Value="[!Dialog][!speaker:EmptySubTitle_][colour=&apos;FFFFFF00&apos;]미래는 살아남는 자의 것이다."/>
+		<class name="Tutorial_GroundWaterSlum_zye6Ox" Value="[!Dialog][!speaker:Alley_Boy02_Normal]재수 없는 녀석. 잡종이면 잡종답게 놀아!"/>
+		<class name="Tutorial_GroundWaterSlum_0fHkKT" Value="[!Dialog][!speaker:Leton_Normal_Boy]이쪽~!"/>
+		<class name="Tutorial_GroundWaterSlum_LHKqlV" Value="[!Dialog][!speaker:Ray_Surprise_Girl]카터! 여기야!!"/>
+		<class name="Tutorial_GroundWaterSlum_9oTrdl" Value="[!Dialog][!speaker:Carter_Rage_Boy]다들 그만두지 못해!!"/>
+		<class name="Tutorial_GroundWaterSlum_crqCQM" Value="[!Dialog][!speaker:EmptySubTitle_][colour=&apos;FFFFFF00&apos;]버려진 아이들은 모두 저마다의 상처를 가지고 살아간다."/>
+		<class name="Tutorial_GroundWaterSlum_A8D9eE" Value="[!Dialog][!speaker:EmptySubTitle_][colour=&apos;FFFFFF00&apos;]그리고 의지할 곳 없는 아이들은 서로에 기대어 앞으로 나아간다."/>
+		<class name="Tutorial_GroundWaterSlum_3z4D5H" Value="[!Title]스틸헤드"/>
+		<class name="Tutorial_GroundWaterSlum_TaYd7t" Value="[!Title]6년 전, 카라스 국경 인근"/>
+		<class name="Tutorial_GroundWaterSlum_yo4opx" Value="[!Dialog][!speaker:Transporter_Normal]여기까지가 자네들의 몫일세."/>
+		<class name="Tutorial_GroundWaterSlum_a7oiKu" Value="[!Dialog][!speaker:Leton_Normal_Young]알겠습니다. 돌아오실 때 또 연락해 주세요."/>
+		<class name="Tutorial_GroundWaterSlum_TD4GMs" Value="[!Dialog][!speaker:Leton_Normal_Young]국경까지 마중 나가겠습니다."/>
+		<class name="Tutorial_GroundWaterSlum_fi1zg5" Value="[!Dialog][!speaker:Gangster_SpoonBat_Turk_Normal_Young]이 정도면 이번 달은 문제 없겠는데?"/>
+		<class name="Tutorial_GroundWaterSlum_rnzspg" Value="[!Dialog][!speaker:Ray_Smile_Young]그래. 마을 사람들이 좋아하겠어."/>
+		<class name="Tutorial_GroundWaterSlum_TPiUph" Value="[!Dialog][!speaker:Transporter_Normal]자네들 계속 이렇게 현물로 비용을 받을 생각인가?"/>
+		<class name="Tutorial_GroundWaterSlum_rbhzxf" Value="[!Dialog][!speaker:Leton_Normal_Young]네. 혹시 불편하신 건가요?"/>
+		<class name="Tutorial_GroundWaterSlum_3su0Hx" Value="[!Dialog][!speaker:Transporter_Normal]아니야. 나도 좋아."/>
+		<class name="Tutorial_GroundWaterSlum_sVUX4j" Value="[!Dialog][!speaker:Transporter_Normal]자네들 덕분에 재고 처리 부담이 줄어들었어."/>
+		<class name="Tutorial_GroundWaterSlum_Qyw8by" Value="[!Dialog][!speaker:Transporter_Normal]다만 얼마 남지 않은 거리지만 화물 공간을 비운 채 가려고하니 뭔가 허전하군."/>
+		<class name="Tutorial_GroundWaterSlum_eGjxoX" Value="[!Dialog][!speaker:Transporter_Normal]상인의 기질이지. 신경 쓰지 마."/>
+		<class name="Tutorial_GroundWaterSlum_8m19vm" Value="[!Dialog][!speaker:Leton_Normal_Young]어르신. 이 트레일러 냉각장치가 있나요?"/>
+		<class name="Tutorial_GroundWaterSlum_U23lIc" Value="[!Dialog][!speaker:Transporter_Normal]응? 당연히 냉장, 냉동 다 가능하지. 그런데 왜 그런가?"/>
+		<class name="Tutorial_GroundWaterSlum_aoYLHG" Value="[!Dialog][!speaker:Leton_Smile_Young]잘 됐네요."/>
+		<class name="Tutorial_GroundWaterSlum_iV6eYB" Value="[!Dialog][!speaker:Leton_Normal_Young]화물을 옮겨 한 트레일러를 비워주시면 남은 공간은 얼음으로 채워드리겠습니다."/>
+		<class name="Tutorial_GroundWaterSlum_0W4tpN" Value="[!Dialog][!speaker:Leton_Normal_Young]카라스 연방은 이제 한 여름이니 수요가 있을 거에요."/>
+		<class name="Tutorial_GroundWaterSlum_R3MBFj" Value="[!Dialog][!speaker:Transporter_Normal]오! 그래. 얼마나 가능한가?"/>
+		<class name="Tutorial_GroundWaterSlum_xLAOy9" Value="[!Dialog][!speaker:Leton_Smile_Young]어르신이 얼마나 주실 수 있는 가에 달렸죠."/>
+		<class name="Tutorial_GroundWaterSlum_bbbvHY" Value="[!Dialog][!speaker:Gangster_SpoonBottle_Naam_Normal_Young]카터 형. 레톤형 이능력 사용하면 안 되는 것 아니었어?"/>
+		<class name="Tutorial_GroundWaterSlum_1n8pIK" Value="[!Dialog][!speaker:Carter_Normal3_Young]음... 그렇긴 한데..."/>
+		<class name="Tutorial_GroundWaterSlum_TkARVZ" Value="[!Dialog][!speaker:Carter_Normal3_Young]&apos;최근 들어 더 빈번해지네... 말려야 하나...&apos;"/>
+		<class name="Tutorial_GroundWaterSlum_vYlRID" Value="[!Dialog][!speaker:EmptySubTitle_][colour=&apos;FFFFFF00&apos;]같이 살아가는 사람들의 웃음. 그리고 그 웃음을 바라보는 보람."/>
+		<class name="Tutorial_GroundWaterSlum_hqeueI" Value="[!Dialog][!speaker:EmptySubTitle_][colour=&apos;FFFFFF00&apos;]현재에 충실한 삶은 죽음에 대한 공포를 잊게 만든다."/>
+		<class name="Tutorial_GroundWaterSlum_k5aJFu" Value="[!Dialog][!speaker:EmptySubTitle_][colour=&apos;FFFFFF00&apos;]그것으로 충분했다."/>
+		<class name="Tutorial_GroundWaterSlum_5SCk8T" Value="[!Dialog][!speaker:EmptySubTitle_][colour=&apos;FFFFFF00&apos;]하지만 세상 일은 절대 순탄하지 않다."/>
+		<class name="Tutorial_GroundWaterSlum_eK8FiP" Value="[!Dialog][!speaker:EmptySubTitle_][colour=&apos;FFFFFF00&apos;]한 번 부서지기 시작한 행복의 조각은..."/>
+		<class name="Tutorial_GroundWaterSlum_tAfAGa" Value="[!Dialog][!speaker:EmptySubTitle_][colour=&apos;FFFFFF00&apos;]움켜쥐려고 할수록 많은 상처를 남긴다."/>
+		<class name="Tutorial_GroundWaterSlum_0WWRhz" Value="[!Dialog][!speaker:Leton_Normal_Young]무리하지 마. 카터."/>
+		<class name="Tutorial_GroundWaterSlum_e0IVr0" Value="[!Dialog][!speaker:Leton_Normal_Young]지금은 힘든 시기야. 불필요한 사람이 가는 것이 맞아."/>
+		<class name="Tutorial_GroundWaterSlum_pEshVN" Value="[!Dialog][!speaker:Carter_Rage_Young]네가 왜 불필요해!"/>
+		<class name="Tutorial_GroundWaterSlum_1Czu2z" Value="[!Dialog][!speaker:Carter_Rage_Young]네 이능력이야말로 우리에게 필요한 능력이야!"/>
+		<class name="Tutorial_GroundWaterSlum_KPGNKt" Value="[!Dialog][!speaker:Leton_Smile_Young]언제 얼어붙어 죽을까봐 제대로 사용하지 못하는 능력이?"/>
+		<class name="Tutorial_GroundWaterSlum_AriOnu" Value="[!Dialog][!speaker:Carter_Rage_Young]조금이라도 더 강한 사람이 필요해..."/>
+		<class name="Tutorial_GroundWaterSlum_xboLNZ" Value="[!Dialog][!speaker:Carter_Rage_Young]지금은 우리 중에서 가장 필요 없는 사람이 가야해..."/>
+		<class name="Tutorial_GroundWaterSlum_fCufA4" Value="[!Dialog][!speaker:Carter_Rage_Young]가장 필요 없는 사람..."/>
+		<class name="Tutorial_GroundWaterSlum_uWwPsw" Value="[!Dialog][!speaker:Leton_Smile_Young]...고마워. 카터."/>
+		<class name="Tutorial_GroundWaterSlum_E0pAli" Value="[!Dialog][!speaker:EmptySubTitle_][colour=&apos;FFFFFF00&apos;]아직은..."/>
+		<class name="Tutorial_GroundWaterSlum_ZdABIG" Value="[!Dialog][!speaker:EmptySubTitle_][colour=&apos;FFFFFF00&apos;]죽고 싶지 않다."/>
+		<class name="Tutorial_GroundWaterSlum_8lBYId" Value="[!Title]두번째 선택"/>
+		<class name="Tutorial_GroundWaterSlum_fKbFmp" Value="[!Title]3년 전,  발할라 국경 인근"/>
+		<class name="Tutorial_GroundWaterSlum_DLBeWp" Value="[!Dialog][!speaker:Leton_Stare]......"/>
+		<class name="Tutorial_GroundWaterSlum_fHserg" Value="[!Dialog][!speaker:Lily_Normal]오랜만이네. 잘 지냈니?"/>
+		<class name="Tutorial_GroundWaterSlum_NoSJDX" Value="[!Dialog][!speaker:Leton_Stare]......"/>
+		<class name="Tutorial_GroundWaterSlum_6jM3Ph" Value="[!Dialog][!speaker:Lily_Smile]키 많이 컸구나. 그 때는 네가 날 올려다 봤는데."/>
+		<class name="Tutorial_GroundWaterSlum_EoXv2r" Value="[!Dialog][!speaker:Leton_Stare]......"/>
+		<class name="Tutorial_GroundWaterSlum_PF83SN" Value="[!Dialog][!speaker:Leton_Serious]아직도 제게 볼 일이 남은 건가요?"/>
+		<class name="Tutorial_GroundWaterSlum_3sIsKc" Value="[!Dialog][!speaker:Lily_Normal]......"/>
+		<class name="Tutorial_GroundWaterSlum_AOrDit" Value="[!Dialog][!speaker:Lily_Smile]그건 네 선택에 달렸단다."/>
+		<class name="Tutorial_GroundWaterSlum_X5frPq" Value="[!Dialog][!speaker:Lily_Smile]넌 어떻게 하고 싶니?"/>
+		<class name="Tutorial_GroundWaterSlum_ZL4ANs" Value="[!Dialog][!speaker:Lily_Normal]아직도 많이 두렵다면 그냥 쭉 걸어가."/>
+		<class name="Tutorial_GroundWaterSlum_Mtp2Vz" Value="[!Dialog][!speaker:Lily_Smile]한 시간 쯤 걸어가면 마을 버스가 있어. 그럼 넌 자유야."/>
+		<class name="Tutorial_GroundWaterSlum_8jdX2i" Value="[!Dialog][!speaker:Lily_Normal]그리고 우리는 두 번 다시 볼 일은 없을 거야."/>
+		<class name="Tutorial_GroundWaterSlum_4nbmMc" Value="[!Dialog][!speaker:Leton_Normal]......"/>
+		<class name="Tutorial_GroundWaterSlum_hBX4rR" Value="[!Dialog][!speaker:Leton_Smile]......처분인가요?"/>
+		<class name="Tutorial_GroundWaterSlum_EaJt43" Value="[!Dialog][!speaker:Lily_Smile]......"/>
+		<class name="Tutorial_GroundWaterSlum_E5hxc9" Value="[!Dialog][!speaker:Leton_Normal]......"/>
+		<class name="Tutorial_GroundWaterSlum_BHFbwf" Value="[!Dialog][!speaker:Lily_Normal]이 제안도 마지막이야."/>
+		<class name="Tutorial_GroundWaterSlum_7KCo8o" Value="[!Dialog][!speaker:Lily_Normal]발할라는 그동안 자신들이 진행한 프로젝트들이 민간에 알려지길 꺼려해."/>
+		<class name="Tutorial_GroundWaterSlum_iup3vK" Value="[!Dialog][!speaker:Lily_Smile]불필요한 오해를 불러 일으키는 것들은 다 청소 중이지."/>
+		<class name="Tutorial_GroundWaterSlum_6EIcDl" Value="[!Dialog][!speaker:Leton_Smile]......여전히 실험체인가요? 일상적 생활은 가능해요?"/>
+		<class name="Tutorial_GroundWaterSlum_CT1pUM" Value="[!Dialog][!speaker:Lily_Smile]걱정하지 마. 남 박사의 프로젝트는 모두 파기됐어."/>
+		<class name="Tutorial_GroundWaterSlum_Whett4" Value="[!Dialog][!speaker:Lily_Smile]그리고 이미 발할라 정부는 불치병의 완치보다 지속적인 항동결 수액의 판매가 더 낫다고 생각해."/>
+		<class name="Tutorial_GroundWaterSlum_q6MbYs" Value="[!Dialog][!speaker:Leton_Normal]이제는 제 존재 가치가 없어졌군요."/>
+		<class name="Tutorial_GroundWaterSlum_MjweSb" Value="[!Dialog][!speaker:Lily_Smile]그래. 회수할 목적은 없어. 그러니 평생 실험실에서 지낼 일은 없어."/>
+		<class name="Tutorial_GroundWaterSlum_4EbA1K" Value="[!Dialog][!speaker:Leton_Smile]이전에 따라갔다면 이런 기회는 없었겠죠?"/>
+		<class name="Tutorial_GroundWaterSlum_gDmnfM" Value="[!Dialog][!speaker:Lily_Normal]그래. 그 때의 네 선택이 지금까지는 나쁘지 않아 보이네."/>
+		<class name="Tutorial_GroundWaterSlum_ss9IUg" Value="[!Dialog][!speaker:Lily_Normal]이번에도 잘 선택해."/>
+		<class name="Tutorial_GroundWaterSlum_5K1eD2" Value="[!Dialog][!speaker:Lily_Smile]나와 함께 가지 않아도 널 처분할 사람들이 오기 전에 도망칠 수도 있어."/>
+		<class name="Tutorial_GroundWaterSlum_MxkcNZ" Value="[!Dialog][!speaker:Lily_Smile]인생은 언제나 확률 게임이야."/>
+		<class name="Tutorial_GroundWaterSlum_IXQdcz" Value="[!Dialog][!speaker:EmptySubTitle_][colour=&apos;FFFFFF00&apos;]선택은 결과로 이어진다. 그렇기에 스스로 해야 한다."/>
+		<class name="Tutorial_GroundWaterSlum_gHaJ5P" Value="[!Dialog][!speaker:VHPD_Assault_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Radio&apos;][colour=&apos;FFFFE959&apos;]현장에 강력한 폭발 사고 발생!!"/>
+		<class name="Tutorial_GroundWaterSlum_9QL2rK" Value="[!Dialog][!speaker:VHPD_Assault_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Radio&apos;][colour=&apos;FFFFE959&apos;]지원 부대 부탁합니다!"/>
+		<class name="Tutorial_GroundWaterSlum_NKb4LT" Value="[!Dialog][!speaker:Lily_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]목표를 회수할 수 없으면 그냥 포기해."/>
+		<class name="Tutorial_GroundWaterSlum_qCQNwW" Value="[!Dialog][!speaker:Leton_Stare][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]회수하면 휴가 갑니다."/>
+		<class name="Tutorial_GroundWaterSlum_kp7iE8" Value="[!Dialog][!speaker:Lily_Smile][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]회수하지 못하면 다른 프로젝트 일도 처리 할 건가?"/>
+		<class name="Tutorial_GroundWaterSlum_8AWyfd" Value="[!Dialog][!speaker:Leton_Smile][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]상관없어요."/>
+		<class name="Tutorial_GroundWaterSlum_KFZdSK" Value="[!Dialog][!speaker:Lily_Smile][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]그래. 그럼 부탁한다."/>
+		<class name="Tutorial_GroundWaterSlum_Y4CP51" Value="[!Dialog][colour=&apos;FFFFFF00&apos;]그래. 이렇게 사는 것도 나쁘지 않다."/>
+		<class name="Tutorial_GroundWaterSlum_hFYqGE" Value="[!Title]세번째 선택"/>
+		<class name="Tutorial_GroundWaterSlum_dkVpeK" Value="[!Title]2년 반 전,  발할라 뒷거리"/>
+		<class name="Tutorial_GroundWaterSlum_C0d543" Value="[!Dialog][!speaker:Leton_Stare]카터..."/>
+		<class name="Tutorial_GroundWaterSlum_xWkhVY" Value="[!Dialog][!speaker:Carter_Rage]레톤..."/>
+		<class name="Tutorial_GroundWaterSlum_YMq1we" Value="[!Dialog][colour=&apos;FFFFFF00&apos;]인생이라는 것은 너무 가혹하다."/>
+		<class name="Tutorial_GroundWaterSlum_Es8yKD" Value="[!Dialog][colour=&apos;FFFFFF00&apos;]선택을 하고 그 책임을 짊어질 수 있게 될 쯤이면 또 다른 선택을 강요한다."/>
+		<class name="Tutorial_GroundWaterSlum_JwWy0v" Value="[!Dialog][!speaker:Lily_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]상황은 알았다. 그래서 넌 어떻게 할거니?"/>
+		<class name="Tutorial_GroundWaterSlum_fLMMLq" Value="[!Dialog][!speaker:Leton_Stare][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]....."/>
+		<class name="Tutorial_GroundWaterSlum_8zW5v6" Value="[!Dialog][!speaker:Lily_Smile][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]어떤 선택을 하든 네 마음에 충실하렴."/>
+		<class name="Tutorial_GroundWaterSlum_aErAnG" Value="[!Dialog][!speaker:Leton_Stare][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]....."/>
+		<class name="Tutorial_GroundWaterSlum_3gYKbB" Value="[!Dialog][!speaker:Leton_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]죄송합니다."/>
+		<class name="Tutorial_GroundWaterSlum_TLmAZu" Value="[!Dialog][!speaker:Leton_Laugh][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]그와 함께 하겠습니다."/>
+		<class name="Tutorial_GroundWaterSlum_qtgPAO" Value="[!Dialog][!speaker:Lily_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]그래. 그럼 당분간 휴직 처리하마."/>
+		<class name="Tutorial_GroundWaterSlum_KZPb8j" Value="[!Dialog][!speaker:Lily_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]급한 일이 아니면 달리 부르지 않을테니..."/>
+		<class name="Tutorial_GroundWaterSlum_NRRxJ7" Value="[!Dialog][!speaker:Lily_Smile][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]친구랑 좋은 시간 보내렴."/>
+		<class name="Tutorial_GroundWaterSlum_MY20H0" Value="[!Dialog][colour=&apos;FFFFFF00&apos;]과거는 언제나 현재의 선택을 강요한다."/>
+		<class name="Tutorial_GroundWaterSlum_TcX1dY" Value="[!Title]추억의 끄트머리"/>
+		<class name="Tutorial_GroundWaterSlum_Qc5eTR" Value="[!Title]1년 전,  철의 숲 인근 은신처"/>
+		<class name="Tutorial_GroundWaterSlum_EUWDut" Value="[!Dialog][!speaker:Ray_Smile]레톤?"/>
+		<class name="Tutorial_GroundWaterSlum_mUM03Y" Value="[!Dialog][!speaker:Ray_Smile]레톤~~"/>
+		<class name="Tutorial_GroundWaterSlum_FpEFlj" Value="[!Dialog][!speaker:Ray_Smile]레톤 혼자 무슨 생각을 그렇게 해?"/>
+		<class name="Tutorial_GroundWaterSlum_nevjPJ" Value="[!Dialog][!speaker:Leton_Normal]옛날 생각이 나서..."/>
+		<class name="Tutorial_GroundWaterSlum_tUYLjC" Value="[!Dialog][!speaker:Ray_Normal]맞아. 옛날에 힘들었어도 참 재밌었는데~"/>
+		<class name="Tutorial_GroundWaterSlum_9CaGJh" Value="[!Dialog][!speaker:Ray_Smile]지금 다시 그 동네로 돌아간다면 훨~ 씬 더 잘 지낼 수 있을 것 같아."/>
+		<class name="Tutorial_GroundWaterSlum_ETvOmd" Value="[!Dialog][!speaker:Ray_Serious]뭐야. 나만 너희들과의 추억이 좋은 거야?"/>
+		<class name="Tutorial_GroundWaterSlum_E4NHRk" Value="[!Dialog][!speaker:Leton_Smile]그럴 리가... 우리가 함께한 시간인데..."/>
+		<class name="Tutorial_GroundWaterSlum_HqyzKX" Value="[!Dialog][colour=&apos;FFFFFF00&apos;]함께한 추억은 소중하다."/>
+		<class name="Tutorial_GroundWaterSlum_B98kTD" Value="[!Dialog][!speaker:EmptySubTitle_][colour=&apos;FFFFFF00&apos;]그 추억이 있기에 잠시나마 함께 할 수 있는 순간이 아름답다."/>
+		<class name="Tutorial_GroundWaterSlum_NFVCYs" Value="[!Title]추억의 그림자"/>
+		<class name="Tutorial_GroundWaterSlum_A4K3Z6" Value="[!Title]6개월 전,  철의 숲 인근 은신처"/>
+		<class name="Tutorial_GroundWaterSlum_4tzYAB" Value="[!Dialog][colour=&apos;FFFFFF00&apos;]인생의 선택은 되돌릴 수 없다."/>
+		<class name="Tutorial_GroundWaterSlum_OB7BoS" Value="[!Dialog][!speaker:Ray_Smile]카터. 이제 그만하자."/>
+		<class name="Tutorial_GroundWaterSlum_NFohRD" Value="[!Dialog][!speaker:Ray_Normal_Smile]헤이싱도 돌아왔고 우리 넷이면 뭘하든 충분히 잘 지낼 수 있어."/>
+		<class name="Tutorial_GroundWaterSlum_bIRBtH" Value="[!Dialog][!speaker:Carter_Normal]미안. 레이."/>
+		<class name="Tutorial_GroundWaterSlum_EYnTQm" Value="[!Dialog][!speaker:Ray_Surprise_Smile]카터. 왜 그만두지 못하는 거야!"/>
+		<class name="Tutorial_GroundWaterSlum_LqGDyx" Value="[!Dialog][!speaker:Carter_Normal]그만하자. 레이."/>
+		<class name="Tutorial_GroundWaterSlum_SSm5Sg" Value="[!Dialog][colour=&apos;FFFFFF00&apos;]함께한 소중한 추억이 있기에 각자의 선택은 다르다."/>
+		<class name="Tutorial_GroundWaterSlum_jkS8ta" Value="[!Dialog][!speaker:Leton_Normal]같이 지낸 시간이 더 길어도..."/>
+		<class name="Tutorial_GroundWaterSlum_kyOO9T" Value="[!Dialog][!speaker:Leton_Smile]각자가 걷는 길이 모두 다르구나."/>
+		<class name="Tutorial_GroundWaterSlum_kxga7Z" Value="[!Dialog][!speaker:Carter_Normal]......"/>
+		<class name="Tutorial_GroundWaterSlum_xbSCEp" Value="[!Dialog][!speaker:Carter_Normal]당연하지. 우리는 이제 아이가 아니니까."/>
+		<class name="Tutorial_GroundWaterSlum_S7ZOml" Value="[!Dialog][!speaker:Carter_Smile]설령 우리가 계속 함께 하지 못한다고 해도 우리는 가족이다."/>
+		<class name="Tutorial_GroundWaterSlum_ZX6cLf" Value="[!Dialog][!speaker:Heissing_Smile]그래. 가족이지."/>
+		<class name="Tutorial_GroundWaterSlum_FxhbFl" Value="[!Dialog][!speaker:Leton_Smile]&apos;가족인가...&apos;"/>
+		<class name="Tutorial_GroundWaterSlum_dkfj2i" Value="[!Dialog][colour=&apos;FFFFFF00&apos;]추억의 잔향이 깊을수록 아쉬움은 깊어진다."/>
+		<class name="Tutorial_GroundWaterSlum_dGthYk" Value="[!Title]얼음과 불"/>
+		<class name="Tutorial_GroundWaterSlum_vUJZ48" Value="[!Title]까마귀폐허 지하수로"/>
+		<class name="Tutorial_GroundWaterSlum_HbATB7" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Earth2_Normal]샤키님. 외람된 말씀입니다만..."/>
+		<class name="Tutorial_GroundWaterSlum_fC9HXZ" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Earth2_Normal]내일이라도 당장 『 두술제 』를 열어 『 두술 』을 정하고 동지과 함께 『 배부름의 땅 』으로 나아가야 합니다."/>
+		<class name="Tutorial_GroundWaterSlum_qYlREi" Value="[!Dialog][!speaker:Gangster_SpoonGun2_Normal]존 님이 이 곳에서 추적자들의 발을 묶고 있을 때가 기회입니다."/>
+		<class name="Tutorial_GroundWaterSlum_gAsL8v" Value="[!Dialog][!speaker:Gangster_Sharky_Normal]이 시련 조차 모두 &apos;한술&apos;의 뜻일세."/>
+		<class name="Tutorial_GroundWaterSlum_8gfiT1" Value="[!Dialog][!speaker:Gangster_Sharky_Normal]조바심내지 말고 자리로 돌아가 동지들을 안심시키게."/>
+		<class name="Tutorial_GroundWaterSlum_OlFwdz" Value="[!Dialog][!speaker:Gangster_Sharky_Normal]지금에 와서 『 두술 』과 함께 긴 여정을 떠나야 할 동지들을 불안에 떨게 할 것인가?"/>
+		<class name="Tutorial_GroundWaterSlum_Qva4i4" Value="[!Dialog][!speaker:Gangster_Sharky_Normal]생각지도 않은 불청객이군."/>
+		<class name="Tutorial_GroundWaterSlum_ISbqhI" Value="[!Dialog][!speaker:Gangster_SpoonGun2_Normal]아니 저 녀석은!!"/>
+		<class name="Tutorial_GroundWaterSlum_hxw8MR" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Earth2_Normal]샤키 님! 일단 피하십시오!"/>
+		<class name="Tutorial_GroundWaterSlum_TyEIyr" Value="[!Dialog][!speaker:Gangster_Sharky_Normal]『 발할라 』는 저주 받은 욕망을 아직도 포기하지 못하는 건가..."/>
+		<class name="Tutorial_GroundWaterSlum_e73mrC" Value="[!Dialog][!speaker:Carter_Smile]레톤. 부탁한다."/>
+		<class name="Tutorial_GroundWaterSlum_kkUYhp" Value="[!Dialog][!speaker:Leton_Laugh]OK~☆"/>
+		<class name="Tutorial_GroundWaterSlum_cSBnzJ" Value="[!Dialog][!speaker:Gangster_Sharky_Normal]이 모든 것은 『 한술 』의 뜻인가..."/>
+		<class name="Tutorial_GroundWaterSlum_dfOc9M" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_GroundWaterSlum_5fPH9i" Value="[!VictoryCondition]적을 모두 제압하시오."/>
+		<class name="Tutorial_GroundWaterSlum_M8wg2S" Value="[!Title]강요하는 자"/>
+		<class name="Tutorial_GroundWaterSlum_kGfyam" Value="[!Title]1년 전, 발할라 오딘 지구"/>
+		<class name="Tutorial_GroundWaterSlum_c4wIxw" Value="[!Dialog][!speaker:Edward_Normal]그래. 한번 해 볼 텐가?"/>
+		<class name="Tutorial_GroundWaterSlum_QvpO2h" Value="[!Dialog][!speaker:Carter_Normal_Young_Band2]....."/>
+		<class name="Tutorial_GroundWaterSlum_LW5Gpd" Value="[!Dialog][!speaker:Edward_Normal]여전히 고집스러운 아이군."/>
+		<class name="Tutorial_GroundWaterSlum_eRBIUa" Value="[!Dialog][!speaker:Edward_Smile]세상에 모든 것을 다 가질 수 있는 선택이란 없네."/>
+		<class name="Tutorial_GroundWaterSlum_iIX1uS" Value="[!Dialog][!speaker:Edward_Smile]그리고 많은 것을 원하면 그만한 각오가 필요한 것이지."/>
+		<class name="Tutorial_GroundWaterSlum_tCSvPC" Value="[!Title]기다리는 자"/>
+		<class name="Tutorial_GroundWaterSlum_v4dS0T" Value="[!Title]트러블슈터 &apos;버밀리온&apos; 사무실"/>
+		<class name="Tutorial_GroundWaterSlum_oWLvzM" Value="[!Dialog][!speaker:Misty_Normal]야. 리온!"/>
+		<class name="Tutorial_GroundWaterSlum_rQYMF0" Value="[!Dialog][!speaker:Misty_Normal]할 일 없으면 전화나 받아!"/>
+		<class name="Tutorial_GroundWaterSlum_hHKHBt" Value="[!Dialog][!speaker:Rion_Think]......"/>
+		<class name="Tutorial_GroundWaterSlum_fWZYhr" Value="[!Dialog][!speaker:Misty_Normal]야! 명색이 사장이면 나가서 일 좀 해!"/>
+		<class name="Tutorial_GroundWaterSlum_ffixr5" Value="[!Dialog][!speaker:Rion_Think]......"/>
+		<class name="Tutorial_GroundWaterSlum_2OGLdE" Value="[!Title]기대하는 자"/>
+		<class name="Tutorial_GroundWaterSlum_6L6mmd" Value="[!Title]발할라 국경 어딘가..."/>
+		<class name="Tutorial_GroundWaterSlum_22QWzr" Value="[!Dialog][!speaker:Ramjist_Empty]오늘은 정말 날씨가 좋구나."/>
+		<class name="Tutorial_GroundWaterSlum_Z1UZXZ" Value="[!Dialog][!speaker:Ramjist_Empty]매일 같이 이런 날이면 좋을텐데..."/>
+		<class name="Tutorial_GroundWaterSlum_eY4FqB" Value="[!Dialog][!speaker:Cat_Bee_]냐옹~♡"/>
+		<class name="Tutorial_GroundWaterSlum_OSi5Ge" Value="[!Dialog][!speaker:Ramjist_Empty]너희들도 그렇게 생각하는 구나."/>
+		<class name="Tutorial_GroundWaterSlum_IZRXmc" Value="[!Dialog][!speaker:Dog_Lisa_]월월~!!"/>
+		<class name="Tutorial_GroundWaterSlum_WZgdcV" Value="[!Dialog][!speaker:Leton_Serious]여기는 우리가 살던 앨리보다 나을 게 없네..."/>
+		<class name="Tutorial_GroundWaterSlum_341Bxs" Value="[!Dialog][!speaker:Carter_Normal]그래도 다들 희망이라는 꿈을 버리지 않고 버텨내고 있지..."/>
+		<class name="Tutorial_GroundWaterSlum_1PtXKv" Value="[!Dialog][!speaker:Leton_Stare]그래. 그 꿈을 위해 또 다른 타인의 꿈을 짓밟고 있지."/>
+		<class name="Tutorial_GroundWaterSlum_fTDntx" Value="[!Dialog][!speaker:Leton_Normal]레이가 싫어할 만해. 진작 떨궈놔서 다행이야."/>
+		<class name="Tutorial_GroundWaterSlum_yhRAk2" Value="[!Dialog][!speaker:Carter_Smile]......"/>
+		<class name="Tutorial_GroundWaterSlum_RAzFbg" Value="[!Dialog][!speaker:Leton_Normal]......"/>
+		<class name="Tutorial_GroundWaterSlum_nbKHBg" Value="[!Dialog][!speaker:Leton_Normal]함께 가겠다고 큰 소리쳤는데..."/>
+		<class name="Tutorial_GroundWaterSlum_ubDIag" Value="[!Dialog][!speaker:Leton_Smile]미안하다. 카터."/>
+		<class name="Tutorial_GroundWaterSlum_osBSsH" Value="[!Dialog][!speaker:Leton_Normal]다음에 볼 땐 네 계획을 방해하게 될 거야."/>
+		<class name="Tutorial_GroundWaterSlum_WgBF8b" Value="[!Dialog][!speaker:Carter_Normal]괜찮아. 레톤."/>
+		<class name="Tutorial_GroundWaterSlum_KAhVhj" Value="[!Dialog][!speaker:Carter_Normal]이미 충분해."/>
+		<class name="Tutorial_GroundWaterSlum_mvk9Vj" Value="[!Dialog][!speaker:Carter_Smile]......"/>
+		<class name="Tutorial_GroundWaterSlum_Qh0BmW" Value="[!Dialog][!speaker:Leton_Normal]......"/>
+		<class name="Tutorial_GroundWaterSlum_JSx3rA" Value="[!Dialog][!speaker:Leton_Smile]절대 증오의 불꽃에 사로 잡히지 말고..."/>
+		<class name="Tutorial_GroundWaterSlum_gyK5QQ" Value="[!Dialog][!speaker:Leton_Serious]그 때처럼 폭주하지도 말고..."/>
+		<class name="Tutorial_GroundWaterSlum_da1xUz" Value="[!Dialog][!speaker:Leton_Stare]......"/>
+		<class name="Tutorial_GroundWaterSlum_BtD9qK" Value="[!Dialog][!speaker:Leton_Stare]자신의 소중한 것을 잃어가며 죽음을 마주하지 마."/>
+		<class name="Tutorial_GroundWaterSlum_VCmu1i" Value="[!Dialog][!speaker:Carter_Smile]......"/>
+		<class name="Tutorial_GroundWaterSlum_T27Erb" Value="[!Dialog][!speaker:Carter_Smile]고맙다. 레톤."/>
+		<class name="Tutorial_GroundWaterSlum_DwNoVx" Value="[!Dialog][!speaker:Leton_Smile]그럼 뒷처리는 내가 할테니 넌 네 바보같은 꿈을 쫓아가라."/>
+		<class name="Tutorial_GroundWaterSlum_AKZnfF" Value="[!Dialog][!speaker:Leton_Normal]빨리 가지 않으면 내가 철저하게 망가뜨려 버릴 거야."/>
+		<class name="Tutorial_GroundWaterSlum_X6eiFU" Value="[!Dialog][!speaker:Carter_Normal_BlackMask]고맙다. 형제여."/>
+		<class name="Tutorial_GroundWaterSlum_rcJoUf" Value="[!Dialog][!speaker:Carter_Normal_BlackMask]새로운 땅에서 다시 만나자."/>
+		<class name="Tutorial_GroundWaterSlum_Yyi7gv" Value="[!Dialog][!speaker:EmptySubTitle_][colour=&apos;FFFFFF00&apos;]인생의 갈림길에 주어진 선택마다..."/>
+		<class name="Tutorial_GroundWaterSlum_K48ORY" Value="[!Dialog][!speaker:EmptySubTitle_][colour=&apos;FFFFFF00&apos;]더 나은 미래를 바랄수록..."/>
+		<class name="Tutorial_GroundWaterSlum_8LMNho" Value="[!Dialog][!speaker:EmptySubTitle_][colour=&apos;FFFFFF00&apos;]바꿀 수 없는 과거와 불확실한 미래의 무게에 짓눌린다."/>
+		<class name="Tutorial_GroundWaterSlum_jcaGN5" Value="[!Dialog][!speaker:EmptySubTitle_][colour=&apos;FFFFFF00&apos;]책임을 짊어질 것인지 떨쳐 버릴 것인지..."/>
+		<class name="Tutorial_GroundWaterSlum_RX5ZaA" Value="[!Dialog][!speaker:EmptySubTitle_][colour=&apos;FFFFFF00&apos;]혼자 갈 것인지... 같이 갈 것인지..."/>
+		<class name="Tutorial_GroundWaterSlum_kUmtUE" Value="[!Dialog][!speaker:EmptySubTitle_][colour=&apos;FFFFFF00&apos;]그리고 그 무게를 견뎌내는 사람들을..."/>
+		<class name="Tutorial_GroundWaterSlum_fL0yLD" Value="[!Dialog][!speaker:EmptySubTitle_][colour=&apos;FFFFFF00&apos;]우리들은 &apos;어른&apos;이라고 말한다."/>
+		<class name="Tutorial_GroundWaterSlum_8k5Zqe" Value="[!Dialog][!speaker:Albus_Serious]지하 수로는 길이 좁고 복잡하니 흩어져 제압하겠습니다."/>
+		<class name="Tutorial_GroundWaterSlum_UUlT3s" Value="[!Dialog][!speaker:Albus_Serious]그쪽 방향을 잘 부탁드립니다."/>
+		<class name="Tutorial_GroundWaterSlum_eLZhKG" Value="[!Dialog][!speaker:Giselle_Normal]그래. 빨리 정리하고 퀘퀘한 이 곳을 나가야지."/>
+		<class name="Tutorial_GroundWaterSlum_CdVK7E" Value="[!Dialog][!speaker:Giselle_Satisfying]카일리. 사고 치지 말고 잘 따라와."/>
+		<class name="Tutorial_GroundWaterSlum_DGuwR8" Value="[!Dialog][!speaker:Kylie_Serious]무슨 소리야?"/>
+		<class name="Tutorial_GroundWaterSlum_aocOP3" Value="[!Dialog][!speaker:Kylie_Serious]너나 잘해."/>
+		<class name="Tutorial_GroundWaterSlum_3wFKXe" Value="[!Dialog][!speaker:Heissing_Normal]......"/>
+		<class name="Tutorial_GroundWaterSlum_4RXWvL" Value="[!Dialog][!speaker:Ray_Normal]&apos;또 시작이군... 도대체 둘 사이는 왜 이렇게 안 좋은거야...&apos;"/>
+		<class name="Tutorial_GroundWaterSlum_HfJ3na" Value="[!Dialog][!speaker:Irene_Fury]&apos;아... 도대체 스푼교도들은 왜 이런 곳에 숨는 거야...&apos;"/>
+		<class name="Tutorial_GroundWaterSlum_oRqUdH" Value="[!Dialog][!speaker:Anne_Smile]이렇게 넷이 있으니 처음 입사할 때 생각이 나네요."/>
+		<class name="Tutorial_GroundWaterSlum_x6BXU8" Value="[!Dialog][!speaker:Sion_Normal]&apos;그래 내가 맨 처음 구상한 이상적인 멤버였지...&apos;"/>
+		<class name="Tutorial_GroundWaterSlum_E3FZK7" Value="[!Dialog][!speaker:Sion_Depressed]&apos;하아... 그 때는 가벼운 의뢰를 하면서 즐거운 트러블슈터 생활을 생각했었는데...&apos;"/>
+		<class name="Tutorial_GroundWaterSlum_xQ2Gei" Value="[!Dialog][!speaker:Sion_Depressed]&apos;요즘은 이 지역 중요한 임무란 임무는 다 집중되는 것 같아...&apos;"/>
+		<class name="Tutorial_GroundWaterSlum_dirwyb" Value="[!Dialog][!speaker:Sion_Depressed]&apos;아무리 못해도 1, 2 시간 걸리는 대 진압, 토벌 임무 뿐이고...&apos;"/>
+		<class name="Tutorial_GroundWaterSlum_6R6ts9" Value="[!Dialog][!speaker:Albus_Serious]자. 그럼 이 구역까지만 진압하고 복귀하도록 하겠습니다."/>
+		<class name="Tutorial_GroundWaterSlum_YVUGA7" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_GroundWaterSlum_KdNXy5" Value="[!VictoryCondition]적을 모두 제압하시오."/>
+		<class name="Tutorial_GroundWaterSlum_2pLYbQ" Value="[!Dialog][!speaker:Gangster_Sharky_Normal]젊은이들의 성장은 매우 빠르군..."/>
+		<class name="Tutorial_GroundWaterSlum_8vd8O8" Value="[!Dialog][!speaker:Albus_Surprise]&apos;저 사람은...레톤 앨리...&apos;"/>
+		<class name="Tutorial_GroundWaterSlum_wl0wU3" Value="[!Dialog][!speaker:Leton_Smile]벌써 온 건가..."/>
+		<class name="Tutorial_GroundWaterSlum_lt2roo" Value="[!Dialog][!speaker:Leton_Normal]정말 몇 달 전하고는 딴판이군."/>
+		<class name="Tutorial_GroundWaterSlum_zE2bs7" Value="[!Dialog][!speaker:Irene_Surprise]가면을 안 쓴 사람?? "/>
+		<class name="Tutorial_GroundWaterSlum_4WYRVk" Value="[!Dialog][!speaker:Irene_Think]왜지... 왜 가면을 안 썼지??"/>
+		<class name="Tutorial_GroundWaterSlum_Mm4e4r" Value="[!Dialog][!speaker:Leton_Smile]람지 플라자에서 봤던 아가씨잖아~☆"/>
+		<class name="Tutorial_GroundWaterSlum_bSFKI9" Value="[!Dialog][!speaker:Leton_Smile]$CompanyName$... 생각보다 재밌겠는데?"/>
+		<class name="Tutorial_GroundWaterSlum_YRfvQ9" Value="[!Dialog][!speaker:Leton_Normal]저 아이가 그 유명한 바람장벽지구의 축복이라고 불리는 아이구나..."/>
+		<class name="Tutorial_GroundWaterSlum_mNV3aP" Value="[!Dialog][!speaker:Sion_Surprise]레톤 형??"/>
+		<class name="Tutorial_GroundWaterSlum_TUlCwz" Value="[!Dialog][!speaker:Leton_Normal]헤이싱하고 같이 다니던 녀석이잖아..."/>
+		<class name="Tutorial_GroundWaterSlum_QayRgm" Value="[!Dialog][!speaker:Leton_Smile]여전히 헤이싱하고 붙어 다니는 건가..."/>
+		<class name="Tutorial_GroundWaterSlum_HAUeZC" Value="[!Dialog][!speaker:Giselle_Smile2]재밌는 녀석이군."/>
+		<class name="Tutorial_GroundWaterSlum_91Wcjw" Value="[!Dialog][!speaker:Leton_Smile]휘유~☆"/>
+		<class name="Tutorial_GroundWaterSlum_dVcEQt" Value="[!Dialog][!speaker:Leton_Smile]$CompanyName$ 나름 재밌는 걸~☆"/>
+		<class name="Tutorial_GroundWaterSlum_qHrQFk" Value="[!Dialog][!speaker:Kylie_Serious]응? 저건 또 뭐하는 녀석이지."/>
+		<class name="Tutorial_GroundWaterSlum_Fizho1" Value="[!Dialog][!speaker:Kylie_Serious]모노. 비비. 색적 모드!"/>
+		<class name="Tutorial_GroundWaterSlum_lyXRWz" Value="[!Dialog][!speaker:Leton_Serious]&apos;구룡회의 잉어...&apos;"/>
+		<class name="Tutorial_GroundWaterSlum_j9W9Wp" Value="[!Dialog][!speaker:Leton_Stare]&apos;헤이싱 녀석...&apos;"/>
+		<class name="Tutorial_GroundWaterSlum_hEo6wC" Value="[!Dialog][!speaker:Heissing_Smile]......"/>
+		<class name="Tutorial_GroundWaterSlum_FomCxU" Value="[!Dialog][!speaker:Leton_Smile]......"/>
+		<class name="Tutorial_GroundWaterSlum_Yjgss2" Value="[!Dialog][!speaker:Ray_Surprise]레톤!!"/>
+		<class name="Tutorial_GroundWaterSlum_RRD58I" Value="[!Dialog][!speaker:Leton_Normal]레이구나!"/>
+		<class name="Tutorial_GroundWaterSlum_IsKs7G" Value="[!Dialog][!speaker:Leton_Smile]조만간 찾아 갈게!"/>
+		<class name="Tutorial_GroundWaterSlum_Mekyqu" Value="[!Dialog][!speaker:Ray_Surprise]그게 무슨 소리야! 거기 안 서!"/>
+	</idspace>
+</idspaces>

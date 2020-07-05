@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="SystemSound">
+	<schema>
+		<rule property="SoundPool" type="table" subtype="string"/>
+		<rule property="Randomize" type="bool" default="true"/>
+	</schema>
+	<class name="MoveTargetCoveredPosition" SoundPool="mouseover_1.wav, mouseover_2.wav, mouseover_3.wav, mouseover_4.wav"/>
+	<class name="CameraRotation" SoundPool="CameraRotation.wav"/>
+	<class name="MoveWarning" SoundPool="select_equipment_and_inven.wav"/>
+	<class name="AbilityUseFailFeedback" SoundPool="mouseover_ability.wav"/>
+	<class name="MoveClicked" SoundPool="MoveClicked.wav"/>
+	<class name="CameraZoomInOut" SoundPool="CameraZoomInOut.wav"/>
+	<class name="GuidePositionMouseOver" SoundPool="GuideSoundMouseOver.wav"/>
+	<class name="SwitchTarget" SoundPool="SwitchTarget.wav"/>
+	<class name="GroundAbilityAlert" SoundPool="AttackAlertLoop.wav"/>
+	<class name="UserTurnStarted" SoundPool="TurnStart.wav"/>
+	<class name="DialogTypingEffect">
+		<SoundPool>
+			<Default value="Dialog_Confirm.ogg"/>
+			<Male_Fast value="DialogTypingSound_Male_Fast.ogg"/>
+			<Male value="DialogTypingSound_Male.ogg"/>
+			<Female_Fast value="DialogTypingSound_Female_Fast.ogg"/>
+			<Female value="DialogTypingSound_Female.ogg"/>
+			<Light_Fast value="DialogTypingSound_Light_Fast.ogg"/>
+			<Light value="DialogTypingSound_Light.ogg"/>
+		</SoundPool>
+	</class>
+</idspace>

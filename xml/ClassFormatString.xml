@@ -1,0 +1,8 @@
+<idspace id="ClassFormatString">
+	<schema>
+		<rule property="KeyParser" type="function"/>
+		<rule property="PatternFlag" type="string"/>
+	</schema>
+	<class name="Person" PatternFlag="n" KeyParser="ClassFormatStringParser_ClassColumn" Idspace="ObjectInfo" Column="Title"/>
+	<class name="Site" PatternFlag="s" KeyParser="ClassFormatStringParser_ClassColumn" Idspace="Site" Column="Title"/>
+</idspace>

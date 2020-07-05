@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Tutorial_PugoShopAfter_jvCGUC" Value="[!Dashboard:Counter]남은 적 수"/>
+		<class name="Tutorial_PugoShopAfter_ztbNoW" Value="[!Objective]적을 모두 제압하시오"/>
+		<class name="Tutorial_PugoShopAfter_FIfQl5" Value="[!Title]잠시 멈춰 돌아보기"/>
+		<class name="Tutorial_PugoShopAfter_hMccLd" Value="[!Title]푸고거리 상점가"/>
+		<class name="Tutorial_PugoShopAfter_0a8ASE" Value="[!Dialog][!speaker:Albus_Normal]이 상점가도 오랜만이구나."/>
+		<class name="Tutorial_PugoShopAfter_UnPK0s" Value="[!Dialog][!speaker:Sion_Smile]매일 같이 사건 해결에만 매달려 있으니 그래."/>
+		<class name="Tutorial_PugoShopAfter_H8SvEW" Value="[!Dialog][!speaker:Albus_Happy]하하.... 많이 힘들었구나."/>
+		<class name="Tutorial_PugoShopAfter_fvLaBt" Value="[!BalloonChat][!speaker:Kim]폭력배 놈들이 없으니 세상 좋아..."/>
+		<class name="Tutorial_PugoShopAfter_odViBT" Value="[!Dialog][!speaker:Sion_Surprise]음??"/>
+		<class name="Tutorial_PugoShopAfter_QPfUIh" Value="[!Dialog][!speaker:Sion_SurpriseStare]김 씨 아저씨다!"/>
+		<class name="Tutorial_PugoShopAfter_qef2A9" Value="[!Dialog][!speaker:Albus_SurpriseStare]김 씨 아저씨?"/>
+		<class name="Tutorial_PugoShopAfter_mCUKGA" Value="[!Dialog][!speaker:EmptySubTitle_]멀리 황소파의 정보를 경찰에 전달해 준 정보원 김 씨의 모습이 알버스의 눈에 들어왔다."/>
+		<class name="Tutorial_PugoShopAfter_RXyeZM" Value="[!BalloonChat][!speaker:Kim]이제는 장사에 집중해서 빨리 내 가게를 가져야 할 텐데..."/>
+		<class name="Tutorial_PugoShopAfter_xWGWcY" Value="[!Dialog][!speaker:Albus_SurpriseStare]황소파 잔당의 정보를 얻기 위해 위장하고 계시는 건가..."/>
+		<class name="Tutorial_PugoShopAfter_2djKHy" Value="[!Dialog][!speaker:Sion_Stare]&apos;이 녀석. 매사 다 그쪽으로 생각하는군…  &apos;"/>
+		<class name="Tutorial_PugoShopAfter_rrSEcA" Value="[!Dialog][!speaker:Sion_Angry]김 씨 아저씨 본업이 만두 파는 거야."/>
+		<class name="Tutorial_PugoShopAfter_lqSjab" Value="[!Dialog][!speaker:Sion_Angry]이 거리에서 장사한 지 10년이 넘으셨대."/>
+		<class name="Tutorial_PugoShopAfter_j4W3Kx" Value="[!Dialog][!speaker:Albus_Surprise]아..."/>
+		<class name="Tutorial_PugoShopAfter_LCepT0" Value="[!Dialog][!speaker:Sion_Normal]거리가 안정되니 다시 장사하시는 거겠지."/>
+		<class name="Tutorial_PugoShopAfter_2RpE4N" Value="[!Dialog][!speaker:Sion_Normal]잘됐다. 저기로 가자. 알버스."/>
+		<class name="Tutorial_PugoShopAfter_awiEeg" Value="[!Dialog][!speaker:Albus_Normal]어.. 그래."/>
+		<class name="Tutorial_PugoShopAfter_Un4JOb" Value="[!BalloonChat][!speaker:Sion]김 씨 아저씨."/>
+		<class name="Tutorial_PugoShopAfter_kPUqzM" Value="[!BalloonChat][!speaker:Kim]아니! 넌?"/>
+		<class name="Tutorial_PugoShopAfter_6ArzLZ" Value="[!BalloonChat][!speaker:Albus]안녕하세요."/>
+		<class name="Tutorial_PugoShopAfter_v5MKWN" Value="[!Dialog][!speaker:Civil_Man_Boss_Green_Kim_Normal]하하. 너희들이 이 시간에 웬일이야!"/>
+		<class name="Tutorial_PugoShopAfter_4eURAY" Value="[!Dialog][!speaker:Civil_Man_Boss_Green_Kim_Normal]이 시간이면 사건 현장에 있어야 하는 거 아니냐?"/>
+		<class name="Tutorial_PugoShopAfter_9OILCJ" Value="[!Dialog][!speaker:Sion_Stare]지금 시간이 몇 시인데 그런 농담을 하세요~!"/>
+		<class name="Tutorial_PugoShopAfter_dBTaF2" Value="[!Dialog][!speaker:Albus_Laugh]오늘은 업무 종료했습니다."/>
+		<class name="Tutorial_PugoShopAfter_SbpCto" Value="[!Dialog][!speaker:Civil_Man_Boss_Green_Kim_Normal]하하. 그래. 쉬는 날도 있어야지."/>
+		<class name="Tutorial_PugoShopAfter_UatSbj" Value="[!Dialog][!speaker:Civil_Man_Boss_Green_Kim_Normal]트러블슈터가 경찰도 아닌데 너무 무리하지 마라. 다 돈 벌자고 하는 거 아니겠냐."/>
+		<class name="Tutorial_PugoShopAfter_1DsLwN" Value="[!Dialog][!speaker:Albus_Happy]아닙니다. 의뢰나 사건이 터지면 가능한 한 해결해야지요. 직업이 트러블슈터인데요."/>
+		<class name="Tutorial_PugoShopAfter_vDWNpu" Value="[!BalloonChat][!speaker:Sion]구제 불능..."/>
+		<class name="Tutorial_PugoShopAfter_ASjSFY" Value="[!Dialog][!speaker:Civil_Man_Boss_Green_Kim_Normal]음화화!! $CompanyName$!! 정말 대단해."/>
+		<class name="Tutorial_PugoShopAfter_FMkSx0" Value="[!Dialog][!speaker:Civil_Man_Boss_Green_Kim_Normal]내가 10년 동안 자네 같은 트러블슈터는 처음 봤어."/>
+		<class name="Tutorial_PugoShopAfter_GeIU2n" Value="[!Dialog][!speaker:Civil_Man_Boss_Green_Kim_Normal]자네들이라면 이 동네를 바꿔놓을 거야!! 믿고 있겠네!"/>
+		<class name="Tutorial_PugoShopAfter_kdbiIE" Value="[!Dialog][!speaker:Albus_Normal]여기 맛있구나. 역시 시온 네가 찾아가는 집들은 다 맛있네."/>
+		<class name="Tutorial_PugoShopAfter_XDXjzR" Value="[!Dialog][!speaker:Albus_Laugh]예전에 알려준 포장마차도 괜찮더라"/>
+		<class name="Tutorial_PugoShopAfter_3ay3Kp" Value="[!Dialog][!speaker:Sion_Smile]알버스."/>
+		<class name="Tutorial_PugoShopAfter_Tq4jcs" Value="[!Dialog][!speaker:Albus_Normal]할 말 많은 것 같다. 시온."/>
+		<class name="Tutorial_PugoShopAfter_G86386" Value="[!Dialog][!speaker:Sion_Smile][colour=&apos;FFFFFF00&apos;]이 녀석한테 무슨 말부터 해야 하지..."/>
+		<class name="Tutorial_PugoShopAfter_U4mQ5u" Value="[!Choice]무리한 업무 진행에 관해 이야기한다."/>
+		<class name="Tutorial_PugoShopAfter_KDH0Cx" Value="[!Choice]회사를 설립한 동기에 관해 묻는다."/>
+		<class name="Tutorial_PugoShopAfter_PGIbY7" Value="[!Choice]개인사 관련한 이야기를 한다."/>
+		<class name="Tutorial_PugoShopAfter_LHKqlV" Value="[!Dialog][!speaker:Sion_Smile]언제까지 이렇게 무리하게 임무를 수행할 거냐?"/>
+		<class name="Tutorial_PugoShopAfter_9oTrdl" Value="[!Dialog][!speaker:Albus_Laugh]그 일이라면 정말 미안해. 내가 너무 무신경했어."/>
+		<class name="Tutorial_PugoShopAfter_1PtXKv" Value="[!Dialog][!speaker:Albus_Normal]다음부터는 조금 더 신경 쓰도록 할게."/>
+		<class name="Tutorial_PugoShopAfter_goNxpj" Value="[!Dialog][!speaker:Sion_Smile]너랑 같이 현장을 뛰어다닌 지가 벌써 4개월이야."/>
+		<class name="Tutorial_PugoShopAfter_fTDntx" Value="[!Dialog][!speaker:Sion_Stare]솔직해지면 안 될까?"/>
+		<class name="Tutorial_PugoShopAfter_yhRAk2" Value="[!Dialog][!speaker:Albus_Laugh]응?"/>
+		<class name="Tutorial_PugoShopAfter_RAzFbg" Value="[!Dialog][!speaker:Sion_Angry]내가 아는 알버스는 절대 동료들이 무리하고 있는 걸 모르지 않아."/>
+		<class name="Tutorial_PugoShopAfter_nbKHBg" Value="[!Dialog][!speaker:Heissing_EyeClose]......"/>
+		<class name="Tutorial_PugoShopAfter_ubDIag" Value="[!Dialog][!speaker:Sion_Normal]더 정확히 말해줄까?"/>
+		<class name="Tutorial_PugoShopAfter_osBSsH" Value="[!Dialog][!speaker:Sion_Angry]지금 넌 우리가 무리해서라도 사건을 해결해주길 바라고 있지."/>
+		<class name="Tutorial_PugoShopAfter_WgBF8b" Value="[!Dialog][!speaker:Sion_Normal]하지만 그 과정에 쌓이는 불만감을 감당하지 못할까 봐 전전긍긍하고 있고..."/>
+		<class name="Tutorial_PugoShopAfter_KAhVhj" Value="[!Dialog][!speaker:Albus_Embarrassed]......"/>
+		<class name="Tutorial_PugoShopAfter_mvk9Vj" Value="[!Dialog][!speaker:Sion_Stare]말해봐. 도대체 왜 이렇게 무리를 하는지."/>
+		<class name="Tutorial_PugoShopAfter_Qh0BmW" Value="[!Dialog][!speaker:Albus_Laugh]별일 없는데..."/>
+		<class name="Tutorial_PugoShopAfter_C4qZpw" Value="[!Dialog][!speaker:Albus_Normal]진짜 다음부터는 조금 더 신경 쓸게."/>
+		<class name="Tutorial_PugoShopAfter_JSx3rA" Value="[!Dialog][!speaker:Albus_Happy]속상하게 해서 미안해."/>
+		<class name="Tutorial_PugoShopAfter_da1xUz" Value="[!Dialog][!speaker:Sion_Smile]$CompanyName$는 왜 만든 거야?"/>
+		<class name="Tutorial_PugoShopAfter_BtD9qK" Value="[!Dialog][!speaker:Albus_SurpriseStare]응? 왜 만들다니?"/>
+		<class name="Tutorial_PugoShopAfter_VCmu1i" Value="[!Dialog][!speaker:Sion_Angry]너라면 다른 큰 트러블슈터 회사에 들어가도 충분히 더 많은 돈을 벌 수 있을 텐데 말이야."/>
+		<class name="Tutorial_PugoShopAfter_T27Erb" Value="[!Dialog][!speaker:Albus_Laugh]그건... 큰 회사는 너무 딱딱하니까..."/>
+		<class name="Tutorial_PugoShopAfter_DwNoVx" Value="[!Dialog][!speaker:Sion_Stare].... 그럼 작은 회사를 가던가. 지금 나처럼 말야."/>
+		<class name="Tutorial_PugoShopAfter_AKZnfF" Value="[!Dialog][!speaker:Albus_Laugh]사장하면 좋잖아... 다들 자영업 하고 싶어 하는 시대인데..."/>
+		<class name="Tutorial_PugoShopAfter_6M8xfL" Value="[!Dialog][!speaker:Sion_Smile]알버스. 굳이 말하고 싶지 않으면 말 안 해도 돼."/>
+		<class name="Tutorial_PugoShopAfter_4fBatC" Value="[!Dialog][!speaker:Sion_Smile]하지만 굳이 날 이해시켜서 만족시키려고 노력하지 마라"/>
+		<class name="Tutorial_PugoShopAfter_rcJoUf" Value="[!Dialog][!speaker:Albus_Happy]말하면 상처받을 텐데..."/>
+		<class name="Tutorial_PugoShopAfter_dNRASN" Value="[!Dialog][!speaker:Sion_Smile]그런 식으로 피해 가는 거냐?"/>
+		<class name="Tutorial_PugoShopAfter_w35bxE" Value="[!Dialog][!speaker:Albus_Laugh]응. 피해 갈 수 있으면 좋겠다."/>
+		<class name="Tutorial_PugoShopAfter_fzeOkZ" Value="[!Dialog][!speaker:Sion_Normal]그럼. 말하지 마."/>
+		<class name="Tutorial_PugoShopAfter_XM4IzR" Value="[!Dialog][!speaker:EmptySubTitle_]시온의 말과 함께 긴 정적이 흘렀다."/>
+		<class name="Tutorial_PugoShopAfter_quG6a7" Value="[!Dialog][!speaker:EmptySubTitle_]동료이자 친구 시온. 릴리 고모 이후 날 꾸준히 걱정해주는 사람."/>
+		<class name="Tutorial_PugoShopAfter_nWeMKO" Value="[!Dialog][!speaker:Sion_Smile]너희 부모님은 너 이렇게 무리하는 거 걱정 안 하셔?"/>
+		<class name="Tutorial_PugoShopAfter_s7W4Pu" Value="[!Dialog][!speaker:Albus_SurpriseStare]응??"/>
+		<class name="Tutorial_PugoShopAfter_fFlfR9" Value="[!Dialog][!speaker:Sion_Angry]아들이 이렇게 하루 멀다 하고 현장에서 살아가는데 걱정 안 하시냐고~"/>
+		<class name="Tutorial_PugoShopAfter_3N3Urr" Value="[!Dialog][!speaker:Sion_Normal]사실 알고 보면 속 다 뒤집히시고 답답해하시는 거 아냐?"/>
+		<class name="Tutorial_PugoShopAfter_PqqSP7" Value="[!Dialog][!speaker:Albus_Embarrassed]......"/>
+		<class name="Tutorial_PugoShopAfter_RIbeCj" Value="[!Dialog][!speaker:Albus_Normal]나도 몰라. 답답해하시려나?"/>
+		<class name="Tutorial_PugoShopAfter_oF1IiZ" Value="[!Dialog][!speaker:Sion_SurpriseStare]설마 너 집에서 너 이렇게 사는 거 모르는 거야?"/>
+		<class name="Tutorial_PugoShopAfter_CSqfq4" Value="[!Dialog][!speaker:Sion_Stare]너 아무리 바빠도 부모님께 걱정 끼쳐드리지 말아야지..."/>
+		<class name="Tutorial_PugoShopAfter_dGPWPj" Value="[!Dialog][!speaker:Sion_Smile]&apos;남 말할 처지는 아니다만...&apos;"/>
+		<class name="Tutorial_PugoShopAfter_cGzZ7P" Value="[!Dialog][!speaker:Albus_Laugh]음... 그러네. 걱정 끼쳐드리지 말아야 할 텐데..."/>
+		<class name="Tutorial_PugoShopAfter_CVo49S" Value="[!Dialog][!speaker:Sion_Angry]그러면 안 돼. 알버스."/>
+		<class name="Tutorial_PugoShopAfter_DiRV88" Value="[!Dialog][!speaker:Sion_Angry]핸드폰 줘봐. 최근 연락드린 게 언제지?"/>
+		<class name="Tutorial_PugoShopAfter_KFis2P" Value="[!Dialog][!speaker:EmptySubTitle_]시온의 진지한 말에 알버스가 손가락으로 하늘을 가리켰다."/>
+		<class name="Tutorial_PugoShopAfter_6uR80j" Value="[!Dialog][!speaker:Sion_Angry]응 뭐야?"/>
+		<class name="Tutorial_PugoShopAfter_D9OtlO" Value="[!Dialog][!speaker:Albus_Happy]어머니는 저 위에 계시고..."/>
+		<class name="Tutorial_PugoShopAfter_T8mDLk" Value="[!Dialog][!speaker:Albus_Laugh]아버지는 어디 계신지 몰라."/>
+		<class name="Tutorial_PugoShopAfter_2YGeRn" Value="[!Dialog][!speaker:Sion_Surprise]아..."/>
+		<class name="Tutorial_PugoShopAfter_xJJC2Z" Value="[!Dialog][!speaker:EmptySubTitleWithPotrait_]알버스의 말과 함께 긴 정적이 흘렀다."/>
+		<class name="Tutorial_PugoShopAfter_wOtmj0" Value="[!Dialog][!speaker:EmptySubTitle_]동료이자 친구 알버스. 모든 일에 스스로 해결하려고 노력하던 사람."/>
+		<class name="Tutorial_PugoShopAfter_uHEEff" Value="[!Dialog][!speaker:EmptySubTitle_]현장에서는 말할 것 없는 콤비였으나 어디까지나 $CompanyName$ 안의 관계..."/>
+		<class name="Tutorial_PugoShopAfter_LVaIdT" Value="[!Dialog][!speaker:EmptySubTitle_]알버스 시온 둘 다 서로에 대해 자세히 알기에는 4개월이라는 시간이 짧은 시기라는 것을 충분히 인지하고 있었다."/>
+		<class name="Tutorial_PugoShopAfter_KeG0Qj" Value="[!Dialog][!speaker:EmptySubTitle_]시온이 더 이상 말을 잇지 않자 정적이 흐를 뿐이었다."/>
+		<class name="Tutorial_PugoShopAfter_wxEvgt" Value="[!Dialog][!speaker:Albus_Laugh][colour=&apos;FFFFFF00&apos;]무슨 말을 하지..."/>
+		<class name="Tutorial_PugoShopAfter_2CUeuB" Value="[!Choice]최근 계속 불만인 이유를 묻는다."/>
+		<class name="Tutorial_PugoShopAfter_NSNpds" Value="[!Choice]회사에 관하여 묻는다."/>
+		<class name="Tutorial_PugoShopAfter_Rxfo2S" Value="[!Dialog][!speaker:Albus_Laugh]최근 불만 많아 보이던데..."/>
+		<class name="Tutorial_PugoShopAfter_7EzPPw" Value="[!Dialog][!speaker:Albus_Normal]자세하게 말해주면 최선을 다해 개선해볼게."/>
+		<class name="Tutorial_PugoShopAfter_GCLdYg" Value="[!Dialog][!speaker:Sion_Angry]흠... 각오는 되어 있겠지?"/>
+		<class name="Tutorial_PugoShopAfter_uYN3P6" Value="[!Dialog][!speaker:Albus_SurpriseStare]어..."/>
+		<class name="Tutorial_PugoShopAfter_hoqgzA" Value="[!Dialog][!speaker:EmptySubTitleWithPotrait_]시온의 불평은 속사포처럼 이어졌다."/>
+		<class name="Tutorial_PugoShopAfter_vssfCL" Value="[!Dialog][!speaker:Sion_Stare]김 씨 아저씨 말대로 우리가 경찰이야? 왜 모든 사건을 해결해야 해?"/>
+		<class name="Tutorial_PugoShopAfter_bYBHOI" Value="[!Dialog][!speaker:Albus_SurpriseStare]......"/>
+		<class name="Tutorial_PugoShopAfter_xuKZNI" Value="[!Dialog][!speaker:Sion_Angry]업무 강도는 늘어나는 데 월급은 왜 그대로야?"/>
+		<class name="Tutorial_PugoShopAfter_jfhoDA" Value="[!Dialog][!speaker:Albus_Surprise]......"/>
+		<class name="Tutorial_PugoShopAfter_lBAenf" Value="[!Dialog][!speaker:Sion_Stare]그리고 꼭 그렇게 위험하게 팀을 운영해야겠어?"/>
+		<class name="Tutorial_PugoShopAfter_glBF1O" Value="[!Dialog][!speaker:Albus_Disappoint]&apos;내 지휘가 많이 위험했나...?&apos;"/>
+		<class name="Tutorial_PugoShopAfter_v4lGWR" Value="[!Dialog][!speaker:Sion_Normal]알버스."/>
+		<class name="Tutorial_PugoShopAfter_Od27pU" Value="[!Dialog][!speaker:Albus_Laugh]응?"/>
+		<class name="Tutorial_PugoShopAfter_j6lfuG" Value="[!Dialog][!speaker:Sion_Stare]너도 알다시피 아이린은 혼자 활동하다가 힘든 순간이 많았던 동료라고..."/>
+		<class name="Tutorial_PugoShopAfter_6jhGXB" Value="[!Dialog][!speaker:Sion_Stare]그런 아이린에게 매번 그렇게까지 위험을 감수한 역할을 줘야겠어?"/>
+		<class name="Tutorial_PugoShopAfter_0WRHvd" Value="[!Dialog][!speaker:Albus_Surprise]그건..."/>
+		<class name="Tutorial_PugoShopAfter_M4XqI2" Value="[!Dialog][!speaker:Sion_Angry]너라면 아이린을 양동 작전으로 사용하는 것이 임무 수행에 얼마나 효과적인지만 생각했겠지."/>
+		<class name="Tutorial_PugoShopAfter_li0gzL" Value="[!Dialog][!speaker:Albus_Embarrassed]......"/>
+		<class name="Tutorial_PugoShopAfter_eJk9tr" Value="[!Dialog][!speaker:EmptySubTitleWithPotrait_]알버스는 부정할 수 없는 사실에 입을 다물었다."/>
+		<class name="Tutorial_PugoShopAfter_2CPt78" Value="[!Dialog][!speaker:Sion_Angry]그리고 앤은 아직 14 살이라고!"/>
+		<class name="Tutorial_PugoShopAfter_egUAyV" Value="[!Dialog][!speaker:Sion_Angry]처음에는 전방의 위험한 일로부터 배제하는 것 같더니 요즘은..."/>
+		<class name="Tutorial_PugoShopAfter_R5QnhV" Value="[!Dialog][!speaker:Sion_Stare]그렇게 임무 하나 더 수행하는 것이 그렇게 중요해?"/>
+		<class name="Tutorial_PugoShopAfter_NJWtpJ" Value="[!Dialog][!speaker:Albus_Embarrassed]아니 그건..."/>
+		<class name="Tutorial_PugoShopAfter_w4Io4Q" Value="[!Dialog][!speaker:Sion_Stare]넌 의식하지 못했지만 그 아이가 네 요구에 맞춰 계속 위험한 순간에 노출되는 일이 한두 번인 줄 알아?"/>
+		<class name="Tutorial_PugoShopAfter_w2ESaK" Value="[!Dialog][!speaker:Sion_Stare]그 아이는 자신의 약함에 책임감을 느끼고 있는 아이라고..."/>
+		<class name="Tutorial_PugoShopAfter_VDHpey" Value="[!Dialog][!speaker:EmptySubTitleWithPotrait_]앤이 능력을 제대로 발휘하면 할수록 알버스 스스로 앤을 좀 더 적극적으로 임무 수행에 투입할 방법을 고민했던 알버스는..."/>
+		<class name="Tutorial_PugoShopAfter_fIPTxT" Value="[!Dialog][!speaker:EmptySubTitleWithPotrait_]시온의 말에 반박할 수 없었다."/>
+		<class name="Tutorial_PugoShopAfter_KDD3LT" Value="[!Dialog][!speaker:Sion_Smile]처음에는 안전한 임무 수행을 위해 경찰 병력의 활용을 최대한 고려하던 너였어."/>
+		<class name="Tutorial_PugoShopAfter_6MgoxV" Value="[!Dialog][!speaker:Sion_Smile]심지어 다른 트러블슈터들과 달리 경찰들의 안전까지 고려했다고."/>
+		<class name="Tutorial_PugoShopAfter_w85DxF" Value="[!Dialog][!speaker:Sion_Angry]하지만 지금은 임무 수행에 방해가 되면 철수시키기 일쑤고 중요한 역할은 전부 우리에게 의존하잖아."/>
+		<class name="Tutorial_PugoShopAfter_SJJZu6" Value="[!Dialog][!speaker:Albus_Surprise]오해하지마... 그건 말야..."/>
+		<class name="Tutorial_PugoShopAfter_mr7se0" Value="[!Dialog][!speaker:Sion_Normal]알버스. 알아. 호흡이 맞는 우리끼리 임무 수행하는 게 너한테도 지휘하기 편하다는 것..."/>
+		<class name="Tutorial_PugoShopAfter_F1kF1Z" Value="[!Dialog][!speaker:Albus_SurpriseStare]......"/>
+		<class name="Tutorial_PugoShopAfter_Bzf7Z2" Value="[!Dialog][!speaker:EmptySubTitleWithPotrait_]알버스는 시온의 말에 더 이상 대답하지 않았다."/>
+		<class name="Tutorial_PugoShopAfter_txMM2q" Value="[!Dialog][!speaker:EmptySubTitleWithPotrait_]그리고 임무 완료라는 목표 아래 달려가던 자신의 모습을 뒤돌아보았다."/>
+		<class name="Tutorial_PugoShopAfter_6qPIXG" Value="[!Dialog][!speaker:Albus_Normal]넌 $CompanyName$에 대해 어떻게 생각해?"/>
+		<class name="Tutorial_PugoShopAfter_Xv9J1t" Value="[!Dialog][!speaker:Sion_Angry]뭘 어떻게 생각해. 알버스 사장님 회사지."/>
+		<class name="Tutorial_PugoShopAfter_NZxZds" Value="[!Dialog][!speaker:Albus_Laugh]하하..."/>
+		<class name="Tutorial_PugoShopAfter_HK6kr8" Value="[!Dialog][!speaker:Sion_Normal]좋은 회사라고 생각해."/>
+		<class name="Tutorial_PugoShopAfter_m07irV" Value="[!Dialog][!speaker:EmptySubTitle_]$CompanyName$"/>
+		<class name="Tutorial_PugoShopAfter_uZVApE" Value="[!Dialog][!speaker:Sion_Smile]처음에는 당장 쓸 돈이 없어서 네 스카웃 제의에 덜컥 입사했지."/>
+		<class name="Tutorial_PugoShopAfter_vxok7s" Value="[!Dialog][!speaker:Sion_Normal]나도 발할라에서 달리하고 싶은 일이 있어 남아 있는 거라..."/>
+		<class name="Tutorial_PugoShopAfter_6qxHy0" Value="[!Dialog][!speaker:Sion_Normal]그냥 다른 아르바이트 자리처럼 당분간 거쳐 가는 곳이라고 생각했지."/>
+		<class name="Tutorial_PugoShopAfter_8QeRqq" Value="[!Dialog][!speaker:Albus_Laugh]그랬구나..."/>
+		<class name="Tutorial_PugoShopAfter_cL7mX5" Value="[!Dialog][!speaker:EmptySubTitleWithPotrait_]회상해보면 서로의 필요가 맞아 같이 일을 시작했던 것에 지나지 않았다."/>
+		<class name="Tutorial_PugoShopAfter_OZNXwR" Value="[!Dialog][!speaker:EmptySubTitleWithPotrait_]알버스는 더 많은 사건을 해결하기 위해 시온의 능력이 필요했고 시온은 잠시 안정적인 수입이 들어올 아르바이트 자리가 필요했었다."/>
+		<class name="Tutorial_PugoShopAfter_tLTxQz" Value="[!Dialog][!speaker:Sion_SurpriseStare]그런데 왠걸?"/>
+		<class name="Tutorial_PugoShopAfter_k25dGr" Value="[!Dialog][!speaker:Sion_Normal]$CompanyName$의 사장이 제법 괜찮은 녀석이었어."/>
+		<class name="Tutorial_PugoShopAfter_UHxtuA" Value="[!Dialog][!speaker:Albus_Surprise]??"/>
+		<class name="Tutorial_PugoShopAfter_Par4Np" Value="[!Dialog][!speaker:Sion_Happy]전리품 중에서 조금이라도 좋은 장비가 있음 나에게 주려고 하질 않나..."/>
+		<class name="Tutorial_PugoShopAfter_mGNNZ2" Value="[!Dialog][!speaker:Sion_Normal]직원 힘들다고 작업대를 들이지 않나..."/>
+		<class name="Tutorial_PugoShopAfter_Yb3g49" Value="[!Dialog][!speaker:Albus_Embarrassed]그건..."/>
+		<class name="Tutorial_PugoShopAfter_lTc7ab" Value="[!Dialog][!speaker:Sion_Laugh]하하. 의도하지 않은 걸 크게 받아들이니 낯부끄럽지?"/>
+		<class name="Tutorial_PugoShopAfter_5Ktmfm" Value="[!Dialog][!speaker:Sion_Normal]네가 모든 결정에는 효율적인 결과를 바라면서 한다는 것 다 알고 있어."/>
+		<class name="Tutorial_PugoShopAfter_6gHgbA" Value="[!Dialog][!speaker:Sion_Smile]나에게 좋은 장비를 준 것도 작업대를 들인 것도 날 위해서라기보다 $CompanyName$, 회사 그 자체를 위한 것이겠지."/>
+		<class name="Tutorial_PugoShopAfter_CcwiG6" Value="[!Dialog][!speaker:Albus_Embarrassed]......"/>
+		<class name="Tutorial_PugoShopAfter_BPAFZG" Value="[!Dialog][!speaker:Sion_Laugh]무얼 그렇게 미안해하는 거야. 회사 운영하는 사람이 당연히 그래야지."/>
+		<class name="Tutorial_PugoShopAfter_XqCnUj" Value="[!Dialog][!speaker:Albus_Normal]집에 돌아가고 싶지 않아?"/>
+		<class name="Tutorial_PugoShopAfter_z5SfMs" Value="[!Dialog][!speaker:Sion_Surprise]집? 벌써?"/>
+		<class name="Tutorial_PugoShopAfter_uc9Y3J" Value="[!Dialog][!speaker:Sion_SurpriseStare]기껏 나왔는데 바로 돌아가자고?"/>
+		<class name="Tutorial_PugoShopAfter_V5UvyT" Value="[!Dialog][!speaker:Albus_Laugh]아니...제국의 고향집."/>
+		<class name="Tutorial_PugoShopAfter_PVotWJ" Value="[!Dialog][!speaker:EmptySubTitle_]시온이 입사할 때 제출했던 간결한 자기소개서."/>
+		<class name="Tutorial_PugoShopAfter_xi4hT9" Value="[!Dialog][!speaker:EmptySubTitle_]아테르 제국의 귀족 가문 유학생. 고교 졸업 후 체류 중"/>
+		<class name="Tutorial_PugoShopAfter_MvwQR2" Value="[!Dialog][!speaker:EmptySubTitle_]자신이 스카웃을 한 시온이었지만 평범하지 않은 이력에 알버스는 조사하지 않을 수 없었다."/>
+		<class name="Tutorial_PugoShopAfter_NGmujJ" Value="[!Dialog][!speaker:Sion_Normal]네 성격이면 대충 조사해봤을 거 아냐."/>
+		<class name="Tutorial_PugoShopAfter_OLNnCT" Value="[!Dialog][!speaker:Albus_Happy]그러게... 그런데 조사해봤는데... 별 정보가 없더라."/>
+		<class name="Tutorial_PugoShopAfter_xlvMav" Value="[!Dialog][!speaker:EmptySubTitle_]현세대에 황제의 권력으로 국가가 운영되는 강대국. &apos;아테르 제국&apos;"/>
+		<class name="Tutorial_PugoShopAfter_ZSkfuv" Value="[!Dialog][!speaker:EmptySubTitle_]짧은 역사의 발할라와 달리 500년 넘게 유지해온 대제국이기에..."/>
+		<class name="Tutorial_PugoShopAfter_kbWPAI" Value="[!Dialog][!speaker:EmptySubTitle_]아테르의 귀족 가문들은 발할라의 귀족과 달리 &apos;귀족&apos; 매니아들에게는 매우 좋은 소재 거리였다."/>
+		<class name="Tutorial_PugoShopAfter_iSScqQ" Value="[!Dialog][!speaker:EmptySubTitle_]그런 이들에 의해 모여진 정보는 방대했으며..."/>
+		<class name="Tutorial_PugoShopAfter_AOiI7z" Value="[!Dialog][!speaker:EmptySubTitle_]웬만한 아테르 제국의 유명한 귀족 가문들의 정보는 웹상에서 쉽게 찾을 수 있었다."/>
+		<class name="Tutorial_PugoShopAfter_XBXFIi" Value="[!Dialog][!speaker:Sion_Smile]그만큼 별 볼일 없는 가문이라는 거지."/>
+		<class name="Tutorial_PugoShopAfter_CfZR8C" Value="[!Dialog][!speaker:Albus_Normal]너 같은 강한 능력자가 있는 가문이 별 볼 일 없을 리가..."/>
+		<class name="Tutorial_PugoShopAfter_3JjlrY" Value="[!Dialog][!speaker:EmptySubTitleWithPotrait_]아테르 제국은 이능력의 혈통을 중요시하는 국가."/>
+		<class name="Tutorial_PugoShopAfter_A21Eps" Value="[!Dialog][!speaker:EmptySubTitleWithPotrait_]후대의 이능력의 발현이 일정 수준이 이상이 되는 유전 정보를 가진 혈통이 바로 귀족."/>
+		<class name="Tutorial_PugoShopAfter_vQR7nO" Value="[!Dialog][!speaker:EmptySubTitleWithPotrait_]발현되지 않는 핏줄들이 평민인 국가였다."/>
+		<class name="Tutorial_PugoShopAfter_0opBGc" Value="[!Dialog][!speaker:Sion_Normal]뭘 그렇게 알고 싶어 해. 관심도 없으면서..."/>
+		<class name="Tutorial_PugoShopAfter_sOekQF" Value="[!Dialog][!speaker:EmptySubTitleWithPotrait_]알버스는 시온의 정곡을 찌르는 말에 더 이상 말을 잇지 못했다."/>
+		<class name="Tutorial_PugoShopAfter_7P9nbu" Value="[!Dialog][!speaker:Albus_Normal]그래. 맞아."/>
+		<class name="Tutorial_PugoShopAfter_oyQfLR" Value="[!Dialog][!speaker:Albus_Laugh]난 $CompanyName$의 시온이면 충분하지."/>
+		<class name="Tutorial_PugoShopAfter_Lc2e8I" Value="[!Dialog][!speaker:Sion_Smile]네~ 사장님~☆"/>
+		<class name="Tutorial_PugoShopAfter_wXjIsS" Value="[!Dialog][!speaker:EmptySubTitle_]$CompanyName$의 쉴 새 없이 달려온 4개월..."/>
+		<class name="Tutorial_PugoShopAfter_xdmoKs" Value="[!Dialog][!speaker:EmptySubTitle_]그 시간 속에서 자신들이 겪었던 일들에 관해 이야기를 나누었다."/>
+		<class name="Tutorial_PugoShopAfter_QfPYju" Value="[!Dialog][!speaker:Sion_Smile]그래서 우리는 계속 무리한 일정으로 가는 건가?"/>
+		<class name="Tutorial_PugoShopAfter_FQUtt7" Value="[!Dialog][!speaker:Sion_Normal]사장님이 가자고 한다면 내가 $CompanyName$ 소속인 한은 따라갈 거야."/>
+		<class name="Tutorial_PugoShopAfter_AtmXsP" Value="[!Dialog][!speaker:Sion_Angry]하지만 만약 알버스 네가 원하는 것이 더 많은 사건을 해결하는 것이라면..."/>
+		<class name="Tutorial_PugoShopAfter_uM3RgL" Value="[!Dialog][!speaker:Albus_SurpriseStare]해결하고 싶다면?"/>
+		<class name="Tutorial_PugoShopAfter_hTHOjB" Value="[!Dialog][!speaker:Sion_Angry]조금 더 새로운 동료 스카웃에 신경을 써."/>
+		<class name="Tutorial_PugoShopAfter_hJhd7p" Value="[!Dialog][!speaker:EmptySubTitleWithPotrait_]람지플라자 사건에서 레이 씨에게 들었던 말."/>
+		<class name="Tutorial_PugoShopAfter_IrjIMg" Value="[!Dialog][!speaker:Sion_Normal]날 데려왔을 때처럼."/>
+		<class name="Tutorial_PugoShopAfter_nkWjSX" Value="[!Dialog][!speaker:EmptySubTitle_]혼자였던 순간에는 누구 하나라도 더 동료로 들이기 위해 다급했었다."/>
+		<class name="Tutorial_PugoShopAfter_OLKMzm" Value="[!Dialog][!speaker:EmptySubTitle_]그리고 시온을 만났고 그는 시온을 잡기 위해 많은 설득을 했었다."/>
+		<class name="Tutorial_PugoShopAfter_isg8r0" Value="[!Dialog][!speaker:EmptySubTitle_]하지만 시온이 많은 역할을 해주다 보니..."/>
+		<class name="Tutorial_PugoShopAfter_2nl5ja" Value="[!Dialog][!speaker:EmptySubTitle_]자신도 모르게 인력에 대한 고민은 크게 하지 않았다."/>
+		<class name="Tutorial_PugoShopAfter_li9JTC" Value="[!Dialog][!speaker:Sion_Smile]넌 너무 주어진 것에서만 최선을 다하려는 경향이 있어."/>
+		<class name="Tutorial_PugoShopAfter_UZtVZT" Value="[!Dialog][!speaker:Sion_Smile]네가 $CompanyName$의 사장이고 네가 더 많은 의뢰를 해결하고 싶다면..."/>
+		<class name="Tutorial_PugoShopAfter_wot3D9" Value="[!Dialog][!speaker:Sion_Angry]가장 먼저 해야 할 일은 일을 해결할 수 있는 동료를 최대한 늘리는 거야."/>
+		<class name="Tutorial_PugoShopAfter_vZkkVU" Value="[!Dialog][!speaker:Sion_Normal]나 시온 같은 유능한 직원을 말이지."/>
+		<class name="Tutorial_PugoShopAfter_v7vPgw" Value="[!Dialog][!speaker:Albus_Laugh]알겠어... 명심할게."/>
+		<class name="Tutorial_PugoShopAfter_bdpY4X" Value="[!BalloonChat][!speaker:Kim]네. 여기 있습니다."/>
+		<class name="Tutorial_PugoShopAfter_ygNAvi" Value="[!BalloonChat][!speaker:Kim]네. 네. 잘 부탁합니다. 피터 씨."/>
+		<class name="Tutorial_PugoShopAfter_povxSu" Value="[!Dialog][!speaker:Irene_Smile]앤. 네 걱정보다는 사이좋아 보이네."/>
+		<class name="Tutorial_PugoShopAfter_nWl781" Value="[!Dialog][!speaker:Anne_Smile]그러게요. 전 두 분이 싸우는 줄 알고 가슴 떨려 죽는 줄 알았어요."/>
+		<class name="Tutorial_PugoShopAfter_RAwrg3" Value="[!Dialog][!speaker:Irene_Normal]앤은 상상력이 풍부하구나. 저 녀석들 다 심성이 착해서 싸울 리 없을 거야."/>
+		<class name="Tutorial_PugoShopAfter_cbVEzY" Value="[!Dialog][!speaker:Anne_Think]제가 너무 과하게 생각했나 봐요."/>
+		<class name="Tutorial_PugoShopAfter_QcPPzh" Value="[!Dialog][!speaker:Irene_Smile2]아니야. 동료를 생각하는 건 소중한 마음이야."/>
+		<class name="Tutorial_PugoShopAfter_s08X2F" Value="[!Dialog][!speaker:Irene_Normal]난 앤이 저 둘을 쫓아가자고 할 때 기뻤는걸?"/>
+		<class name="Tutorial_PugoShopAfter_PTgWmD" Value="[!Dialog][!speaker:Anne_Smile]저도 아이린 언니가 같이 와주셔서 너무 좋았어요."/>
+		<class name="Tutorial_PugoShopAfter_JZIH9z" Value="[!Dialog][!speaker:Irene_Smile2]&apos;저 바보 녀석들... 이렇게 걱정해주는 사람들이 있다는 걸 알까...&apos;"/>
+		<class name="Tutorial_PugoShopAfter_sPydIR" Value="[!Dialog][!speaker:Anne_Smile]그럼 우리는 이제 그냥 가야겠죠?"/>
+		<class name="Tutorial_PugoShopAfter_XBxisN" Value="[!Dialog][!speaker:Ray_Serious]카터!! 거기 서!! 나 아직 말 안 끝났어!"/>
+		<class name="Tutorial_PugoShopAfter_aeGjtu" Value="[!Dialog][!speaker:Ray_Surprise]카터!! 도대체 왜 이렇게까지 해야 하는 거야!"/>
+		<class name="Tutorial_PugoShopAfter_2FIb5o" Value="[!Dialog][!speaker:Ray_Serious]헤이싱도 돌아왔잖아!!"/>
+		<class name="Tutorial_PugoShopAfter_PV1VwE" Value="[!Dialog][!speaker:Carter_Normal]......"/>
+		<class name="Tutorial_PugoShopAfter_ucipo6" Value="[!Dialog][!speaker:Ray_Serious]카터!! 정신 차려!!"/>
+		<class name="Tutorial_PugoShopAfter_OlO6sh" Value="[!Dialog][!speaker:Carter_Normal]......"/>
+		<class name="Tutorial_PugoShopAfter_ZXReaq" Value="[!Dialog][!speaker:Ray_Serious]야!!! 너 정말 이럴 거야!!"/>
+		<class name="Tutorial_PugoShopAfter_xhZhnr" Value="[!Dialog][!speaker:Ray_Serious]차라리 국경 바깥으로 나가 옛날처럼 살어."/>
+		<class name="Tutorial_PugoShopAfter_DmQQCj" Value="[!Dialog][!speaker:Carter_Normal]그곳의 삶에서 벗어나고자 몸부림친 결과가 이곳이다. 레이."/>
+		<class name="Tutorial_PugoShopAfter_AehyK4" Value="[!Dialog][!speaker:Ray_Serious]그땐 어렸잖아. 지금 우리라면 다 제 몫을 할 수 있다고!"/>
+		<class name="Tutorial_PugoShopAfter_915u9Y" Value="[!Dialog][!speaker:Ray_Serious]우리는 옛날과 똑같지 않아! 카터!"/>
+		<class name="Tutorial_PugoShopAfter_caYBEv" Value="[!Dialog][!speaker:Carter_Normal]레이. 넌 정말 그곳으로 돌아갈 각오가 있는 건가?"/>
+		<class name="Tutorial_PugoShopAfter_pEKEYf" Value="[!Dialog][!speaker:Ray_Serious]그래!! 돌아갈 수 있어! 앨리로!!"/>
+		<class name="Tutorial_PugoShopAfter_sSoYbS" Value="[!Dialog][!speaker:Carter_Normal]......"/>
+		<class name="Tutorial_PugoShopAfter_jNoRVI" Value="[!Dialog][!speaker:Carter_Normal]그 선택은 3년 전에 해야 했다. 레이."/>
+		<class name="Tutorial_PugoShopAfter_ukwJky" Value="[!Dialog][!speaker:Ray_Serious]야!!!!"/>
+		<class name="Tutorial_PugoShopAfter_ovxLcv" Value="[!Dialog][!speaker:Heissing_EyeClose]......"/>
+		<class name="Tutorial_PugoShopAfter_P6dIkj" Value="[!Dialog][!speaker:Heissing_Rage]......"/>
+		<class name="Tutorial_PugoShopAfter_PxywhV" Value="[!Dialog][!speaker:Gangster_ButcherRyo_Normal]마르코. 너무 한 거 아냐. 만두 먹으러 가는 데까지 따라오다니..."/>
+		<class name="Tutorial_PugoShopAfter_t5JQZB" Value="[!Dialog][!speaker:Luna_Bored]마르코. 얘 짜증 나."/>
+		<class name="Tutorial_PugoShopAfter_cTFnxH" Value="[!Dialog][!speaker:Marco_Smile]참아. 루나."/>
+		<class name="Tutorial_PugoShopAfter_G8MDh2" Value="[!Dialog][!speaker:Marco_Smile]이 녀석. 이렇게 보여도 &apos;구룡회&apos;의 차기 보스 후보라고."/>
+		<class name="Tutorial_PugoShopAfter_ZfuLmZ" Value="[!Dialog][!speaker:Marco_Smile]뒷세계의 VIP 중의 VIP지."/>
+		<class name="Tutorial_PugoShopAfter_won6Xd" Value="[!BalloonChat][!speaker:Ryo]벤데타의 VIP 대우는 겨우 이 정도인 거냐?"/>
+		<class name="Tutorial_PugoShopAfter_Bb6yhL" Value="[!BalloonChat][!speaker:Ryo]실망이야. 대 실망..."/>
+		<class name="Tutorial_PugoShopAfter_I7Sv77" Value="[!Dialog][!speaker:Marco_Smile]......"/>
+		<class name="Tutorial_PugoShopAfter_NuwxyI" Value="[!Dialog][!speaker:Marco_Rage]네 녀석이 헤집어 놓는 판에 내가 아직 이 시골 바닥이니 신경 긁지 마라."/>
+		<class name="Tutorial_PugoShopAfter_xrJsr0" Value="[!BalloonChat][!speaker:Luna]뭐야... 자기도 짜증 나면서..."/>
+		<class name="Tutorial_PugoShopAfter_WwNLdM" Value="[!Dialog][!speaker:Anne_Surprise]루... 루나..."/>
+		<class name="Tutorial_PugoShopAfter_tIvooO" Value="[!Dialog][!speaker:Irene_Surprise]루나?"/>
+		<class name="Tutorial_PugoShopAfter_L3Qw1c" Value="[!BalloonChat][!speaker:Luna]??"/>
+		<class name="Tutorial_PugoShopAfter_lN62ZW" Value="[!BalloonChat][!speaker:Anne]루나!!!!!"/>
+		<class name="Tutorial_PugoShopAfter_wU3HuN" Value="[!BalloonChat][!speaker:Irene]저 칼잡이는... 분명 어디선가 봤는데..."/>
+		<class name="Tutorial_PugoShopAfter_4MwQ12" Value="[!Dialog][!speaker:Luna_Annoying]앤..."/>
+		<class name="Tutorial_PugoShopAfter_Of8gfK" Value="[!BalloonChat][!speaker:Marco]저 꼬마 아이는..."/>
+		<class name="Tutorial_PugoShopAfter_bFf4Sg" Value="[!Dialog][!speaker:Luna_Annoying]마르코..."/>
+		<class name="Tutorial_PugoShopAfter_NlTQTj" Value="[!Dialog][!speaker:Marco_Smile]......료. 만두는 다음이다. 돌아가자."/>
+		<class name="Tutorial_PugoShopAfter_N3M6wF" Value="[!BalloonChat][!speaker:Ryo]뭣!! 뭐야!!"/>
+		<class name="Tutorial_PugoShopAfter_L8ls8U" Value="[!BalloonChat][!speaker:Marco]빨리 뛰어! 아니면 네 머리에 바로 총알을 박아줄 테니까."/>
+		<class name="Tutorial_PugoShopAfter_amH6zr" Value="[!BalloonChat][!speaker:Ryo]쳇..."/>
+		<class name="Tutorial_PugoShopAfter_sUNKQD" Value="[!BalloonChat][!speaker:Anne]루나!!!!!"/>
+		<class name="Tutorial_PugoShopAfter_5OoSC3" Value="[!BalloonChat][!speaker:Luna]마르코... 빨리..."/>
+		<class name="Tutorial_PugoShopAfter_rRoj0r" Value="[!BalloonChat][!speaker:Marco]료! 당장 뛰지 못해!"/>
+		<class name="Tutorial_PugoShopAfter_bsOoK8" Value="[!BalloonChat][!speaker:Ryo]이 수모 내가 꼭 갚는다..."/>
+		<class name="Tutorial_PugoShopAfter_ujNeha" Value="[!Dialog][!speaker:Anne_Sorrow]루나..."/>
+		<class name="Tutorial_PugoShopAfter_RvawQO" Value="[!Dialog][!speaker:Anne_Cry]루나!!!"/>
+		<class name="Tutorial_PugoShopAfter_ISPYNc" Value="[!BalloonChat][!speaker:Irene]앤! 괜찮니?"/>
+		<class name="Tutorial_PugoShopAfter_AQYoMZ" Value="[!Dialog][!speaker:Albus_SurpriseStare]김 씨 아저씨 어디 가신 거지..."/>
+		<class name="Tutorial_PugoShopAfter_ETWhFX" Value="[!Dialog][!speaker:Sion_Normal]화장실이라도 가셨겠지... 기다려보자."/>
+		<class name="Tutorial_PugoShopAfter_jVBDuf" Value="[!Dialog][!speaker:Heissing_Smile]오호... 오랜만이군."/>
+		<class name="Tutorial_PugoShopAfter_S0O029" Value="[!Dialog][!speaker:Albus_SurpriseStare]당신은..."/>
+		<class name="Tutorial_PugoShopAfter_cyURzU" Value="[!BalloonChat][!speaker:Sion]헤이싱 형!"/>
+		<class name="Tutorial_PugoShopAfter_tvm6Wu" Value="[!Dialog][!speaker:Heissing_Normal]번개 꼬마. 난 네 형이 아니다."/>
+		<class name="Tutorial_PugoShopAfter_bNY0LQ" Value="[!Dialog][!speaker:Sion_Laugh]하하. 나보다 나이 많으면 형이지."/>
+		<class name="Tutorial_PugoShopAfter_2uI8gu" Value="[!Dialog][!speaker:Sion_Normal]형이 여기 웬일이야?"/>
+		<class name="Tutorial_PugoShopAfter_jq3a1P" Value="[!Dialog][!speaker:Heissing_EyeClose]말할 이유가 없지 않으냐."/>
+		<class name="Tutorial_PugoShopAfter_dBENUw" Value="[!Dialog][!speaker:Heissing_Smile]그래 너는 옆의 그 사장에게 인정받고 있나?"/>
+		<class name="Tutorial_PugoShopAfter_O0YTcn" Value="[!Dialog][!speaker:Sion_Laugh]당연하지!"/>
+		<class name="Tutorial_PugoShopAfter_ESnKVG" Value="[!Dialog][!speaker:Sion_Normal]형이야말로 그 친구들과 잘 지내고 있어?"/>
+		<class name="Tutorial_PugoShopAfter_tyA15b" Value="[!Dialog][!speaker:Sion_Laugh]그 날 그렇게 사라져서 서운했다고~☆"/>
+		<class name="Tutorial_PugoShopAfter_WpYitT" Value="[!Dialog][!speaker:Heissing_Smile]이제 너하고 세 번째 만났을 뿐이다."/>
+		<class name="Tutorial_PugoShopAfter_Bay0jP" Value="[!Dialog][!speaker:Albus_SurpriseStare]&apos;세 번? 두 번째 아닌가?&apos;"/>
+		<class name="Tutorial_PugoShopAfter_fOnqR0" Value="[!Dialog][!speaker:Sion_Normal]형도 그 친구들하고 온 거야?"/>
+		<class name="Tutorial_PugoShopAfter_CdFUsV" Value="[!Dialog][!speaker:Heissing_Rage]......"/>
+		<class name="Tutorial_PugoShopAfter_sjXzE1" Value="[!Dialog][!speaker:Sion_SurpriseStare]어... 하면 안 되는 질문을 한 건가?"/>
+		<class name="Tutorial_PugoShopAfter_IQ0vDL" Value="[!Dialog][!speaker:Heissing_EyeClose]흠..."/>
+		<class name="Tutorial_PugoShopAfter_kceeb8" Value="[!Dialog][!speaker:Heissing_Smile]네 녀석들 손님이다."/>
+		<class name="Tutorial_PugoShopAfter_JjsZHi" Value="[!Dialog][!speaker:Heissing_Smile]훗. 네 녀석들 곁은 언제나 흥미진진하군."/>
+		<class name="Tutorial_PugoShopAfter_I4nMl4" Value="[!Dialog][!speaker:Sion_Stare]아이 진짜... 퇴근 시간 이후 시간까지 이러기야..."/>
+		<class name="Tutorial_PugoShopAfter_z4bjNk" Value="[!Dialog][!speaker:Albus_Serious]시온. 아이린과 앤이 없으니 일단 평소보다 신중하게 가자."/>
+		<class name="Tutorial_PugoShopAfter_uEaUPO" Value="[!Dialog][!speaker:Sion_Normal]걱정 마. 알버스. 뒤에 든든한 형이 있잖아."/>
+		<class name="Tutorial_PugoShopAfter_aA8zUQ" Value="[!Dialog][!speaker:Heissing_Smile]난 상관없는 일이다."/>
+		<class name="Tutorial_PugoShopAfter_ANgX0w" Value="[!Dialog][!speaker:Sion_Laugh]헤이싱 형. 어차피 우리랑 같이 있어서 저 녀석들이 형을 가만 안 둘 거야."/>
+		<class name="Tutorial_PugoShopAfter_GWHxfw" Value="[!Dialog][!speaker:Albus_Smile]....."/>
+		<class name="Tutorial_PugoShopAfter_ViRsm7" Value="[!Dialog][!speaker:Albus_Normal]헤이싱 씨. 협력 부탁드립니다."/>
+		<class name="Tutorial_PugoShopAfter_jsTTOK" Value="[!Dialog][!speaker:Heissing_EyeClose]훗..."/>
+		<class name="Tutorial_PugoShopAfter_7qdpqi" Value="[!Dialog][!speaker:Heissing_Smile]그럼 기분이나 풀어볼까."/>
+		<class name="Tutorial_PugoShopAfter_mXb6RB" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_PugoShopAfter_p7Gy1D" Value="[!VictoryCondition]적을 모두 제압하시오."/>
+		<class name="Tutorial_PugoShopAfter_hMOMGE" Value="[!Dialog][!speaker:Gangster_SpoonDestroyer_Normal]터크 님. 피터 말대로 그 녀석들입니다."/>
+		<class name="Tutorial_PugoShopAfter_s79PxE" Value="[!Dialog][!speaker:Gangster_SpoonBat_Turk_Normal]그래. 그럼 가자!"/>
+		<class name="Tutorial_PugoShopAfter_y5unXu" Value="[!Dialog][!speaker:Gangster_SpoonDestroyer_Normal]나암 님. 피터 말대로 그 녀석들입니다."/>
+		<class name="Tutorial_PugoShopAfter_y9lP2U" Value="[!Dialog][!speaker:Gangster_SpoonBottle_Naam_Normal]그리고 다들 조심해라. 만만치 않은 녀석들이다."/>
+		<class name="Tutorial_PugoShopAfter_OpIfew" Value="[!BalloonChat][!speaker:Albus]헤이싱 씨!"/>
+		<class name="Tutorial_PugoShopAfter_Bd4Rrh" Value="[!Dialog][!speaker:Albus_Normal]도와주셔서 감사합니다."/>
+		<class name="Tutorial_PugoShopAfter_dK4jDX" Value="[!Dialog][!speaker:Sion_Happy]형. 고마워. 도와줘서."/>
+		<class name="Tutorial_PugoShopAfter_TkvcVV" Value="[!Dialog][!speaker:Heissing_Normal]좋은 추억이었다. 그걸로 충분해."/>
+		<class name="Tutorial_PugoShopAfter_MAfXEY" Value="[!Dialog][!speaker:Heissing_Smile]그리고 번개 꼬마. 저번의 빚은 갚았다."/>
+		<class name="Tutorial_PugoShopAfter_kuhBy6" Value="[!BalloonChat][!speaker:Albus]빚?"/>
+		<class name="Tutorial_PugoShopAfter_oisO1w" Value="[!Dialog][!speaker:Sion_Laugh]형과 나 사이에 무슨 빚이야~☆ 형 일이면 당연히 도와야지."/>
+		<class name="Tutorial_PugoShopAfter_Sdo7st" Value="[!Dialog][!speaker:Heissing_Smile]훗. 기억하겠다."/>
+		<class name="Tutorial_PugoShopAfter_KCdJ6q" Value="[!BalloonChat][!speaker:Sion]헤이싱 형! 또 봐!"/>
+		<class name="Tutorial_PugoShopAfter_Qw9f0Q" Value="[!BalloonChat][!speaker:Heissing]저 녀석들 성장한 걸 보니..."/>
+		<class name="Tutorial_PugoShopAfter_NQebqD" Value="[!BalloonChat][!speaker:Heissing]고생 꽤나 했겠군..."/>
+		<class name="Tutorial_PugoShopAfter_XCKa1q" Value="[!Dialog][!speaker:Albus_Normal]우리도 이제 돌아갈까?"/>
+		<class name="Tutorial_PugoShopAfter_g83fN0" Value="[!Dialog][!speaker:Sion_Depressed]그래. 진짜 피곤하다."/>
+		<class name="Tutorial_PugoShopAfter_XzxaOI" Value="[!Dialog][!speaker:Sion_Depressed]정말... 사건을 해결할수록 범죄가 줄어드는 게 아니고 범죄자들의 타겟이 되고 있다니..."/>
+		<class name="Tutorial_PugoShopAfter_NuYr53" Value="[!Dialog][!speaker:Albus_Normal]범죄자들이 감히 못 덤비는 그런 회사로 빨리 성장해야지."/>
+		<class name="Tutorial_PugoShopAfter_zGr1Zr" Value="[!Dialog][!speaker:Albus_Think]&apos;아이린하고 앤도 타겟이 될 수 있으니 주의하라고 해야겠어...&apos;"/>
+		<class name="Tutorial_PugoShopAfter_GtvXpt" Value="[!Dialog][!speaker:Sion_Smile]무얼 또 곰곰이 생각해?"/>
+		<class name="Tutorial_PugoShopAfter_SEJebc" Value="[!Dialog][!speaker:Albus_Laugh]네가 해 준 조언."/>
+		<class name="Tutorial_PugoShopAfter_uuX6eF" Value="[!Dialog][!speaker:Sion_SurpriseStare]조언?"/>
+		<class name="Tutorial_PugoShopAfter_ELFsUD" Value="[!Dialog][!speaker:Albus_Happy]새로운 동료."/>
+		<class name="Tutorial_PugoShopAfter_Zi57oh" Value="[!Dialog][!speaker:Sion_Normal]그래. 확실히 다수의 적을 상대할 때마다 나 혼자 감당하기 힘든데..."/>
+		<class name="Tutorial_PugoShopAfter_51yOdk" Value="[!Dialog][!speaker:Sion_Laugh]그래서 말이지 후방 화력 지원 확실한 사람이면 좋겠어~☆"/>
+		<class name="Tutorial_PugoShopAfter_x1SpTo" Value="[!Dialog][!speaker:Albus_SurpriseStare]헤이싱 씨 같은 사람?"/>
+		<class name="Tutorial_PugoShopAfter_u3B5sy" Value="[!Dialog][!speaker:Sion_Surprise]오! 좋지!"/>
+		<class name="Tutorial_PugoShopAfter_awHjmy" Value="[!Dialog][!speaker:Sion_Normal]헤이싱 형 같은 사람이 우리 회사에 온다면 난 적극 환영이지."/>
+		<class name="Tutorial_PugoShopAfter_Fbt5ZK" Value="[!Dialog][!speaker:Albus_Think]&apos;헤이싱 씨 같은 사람이라...&apos;"/>
+		<class name="Tutorial_PugoShopAfter_VhxSPR" Value="[!BalloonChat][!speaker:Albus]쉽지 않겠는걸..."/>
+		<class name="Tutorial_PugoShopAfter_N9CVkL" Value="[!Subtitle][!speaker:Heissing_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFFF55&apos;]......레이냐?"/>
+		<class name="Tutorial_PugoShopAfter_6rBfgi" Value="[!Subtitle][!speaker:Ray_Serious][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFFF55&apos;]미안. 헤이싱..."/>
+		<class name="Tutorial_PugoShopAfter_9w1iPm" Value="[!Subtitle][!speaker:Ray_Serious][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFFF55&apos;]부탁해. 헤이싱. 이제 믿을 건 너밖에 없어."/>
+		<class name="Tutorial_PugoShopAfter_SgkEd5" Value="[!Subtitle][!speaker:Heissing_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFFF55&apos;]&apos;결국 이렇게 된 건가...&apos;"/>
+		<class name="Tutorial_PugoShopAfter_QvdOKs" Value="[!Subtitle][!speaker:Heissing_Smile][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFFF55&apos;]도움이 필요하겠군..."/>
+		<class name="Tutorial_PugoShopAfter_IBykB2" Value="[!Ignore][!Title]무쇠 방망이 터크"/>
+		<class name="Tutorial_PugoShopAfter_x5yQe1" Value="[!Ignore][!Title]스푼교 수송대 리더"/>
+		<class name="Tutorial_PugoShopAfter_l7hrJg" Value="[!Ignore][!BalloonChat][!speaker:Turk]네 녀석들하고의 질긴 인연도 여기까지다!"/>
+		<class name="Tutorial_PugoShopAfter_MIP5kV" Value="[!Ignore][!FrontMessage]터크가 격앙 상태가 되었습니다."/>
+		<class name="Tutorial_PugoShopAfter_qDKWiw" Value="[!Ignore][!Title]성난 불꽃의 나암"/>
+		<class name="Tutorial_PugoShopAfter_sTUI3C" Value="[!Ignore][!Title]스푼교 시위대 리더"/>
+		<class name="Tutorial_PugoShopAfter_jVGnUl" Value="[!Ignore][!BalloonChat][!speaker:Naam]오늘 하루만 옛 시절로 돌아가 주지!"/>
+		<class name="Tutorial_PugoShopAfter_UI7AF9" Value="[!Ignore][!FrontMessage]나암이 격앙 상태가 되었습니다."/>
+		<class name="Tutorial_PugoShopAfter_ALuOHi" Value="[!Ignore][!BalloonChat][!speaker:Turk]이거 옛날처럼 하지 않으면 안 되겠는걸."/>
+		<class name="Tutorial_PugoShopAfter_I6yefM" Value="[!Ignore][!BalloonChat][!speaker:Turk]네 선택을 후회하게 해주마!"/>
+		<class name="Tutorial_PugoShopAfter_SqsKTl" Value="[!Ignore][!FrontMessage]터크가 분노 상태가 되었습니다."/>
+		<class name="Tutorial_PugoShopAfter_XhBhUC" Value="[!Ignore][!FrontMessage]터크가 과충전 상태가 되었습니다."/>
+		<class name="Tutorial_PugoShopAfter_vxQXSd" Value="[!Ignore][!BalloonChat][!speaker:Naam]최소한 한 명은 꼭 같이 데려가 주마!!"/>
+		<class name="Tutorial_PugoShopAfter_1tY9cm" Value="[!Ignore][!FrontMessage]나암이 격앙 상태가 되었습니다."/>
+		<class name="Tutorial_PugoShopAfter_DzPdSI" Value="[!Ignore][!FrontMessage]나암이 과충전 상태가 되었습니다."/>
+	</idspace>
+</idspaces>

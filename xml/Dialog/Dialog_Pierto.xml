@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Dialog">
+	<class name="Pierto_Main">
+		<Scripts>
+			<property Type="Script" Script="ProgressPreDialogCheck_CommonNPC"/>
+		</Scripts>
+	</class>
+	<class name="Pierto_Selection">
+		<Scripts>
+			<property Type="Switch" C_DlgName="npc.Info.Title" C_TestTarget="not company.Progress.Tutorial.LostShop and company.LostShop.IsNew">
+				<property C_Case="true">
+					<property Type="Jump" JumpTo="Pierto_Tutorial_LostShop"/>
+				</property>
+			</property>
+			<property Type="Switch" C_DlgName="npc.Info.Title" C_TestTarget="company.Progress.Character.Irene &gt;= 9 and company.LobbyMenu.ZoneMove.Opened == &apos;false&apos;">
+				<property C_Case="true">
+					<property Type="Jump" JumpTo="Pierto_Tutorial_ZoneMove"/>
+				</property>
+			</property>
+			<property Type="Switch" C_DlgName="npc.Info.Title" C_TestTarget="company.Npc[npc.name].QP">
+				<property Case="0">
+					<property Type="Jump" JumpTo="Pierto_QP_0"/>
+				</property>
+				<property Case="1">
+					<property Type="Jump" JumpTo="Pierto_QP_1"/>
+				</property>
+				<property Case="2">
+					<property Type="Jump" JumpTo="Pierto_QP_2"/>
+				</property>
+				<property Case="3">
+					<property Type="Jump" JumpTo="Pierto_QP_3"/>
+				</property>
+				<property Case="4">
+					<property Type="Jump" JumpTo="Pierto_QP_4"/>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+	<class name="Pierto_QP_0">
+		<Scripts>
+			<property Type="Dialog" C_DlgName="npc.Info.Title">
+				<property Text="아. 자네들. 당장 필요한 무기가 없더라도 하나 사두게나."/>
+				<property Text="생사를 가르는 순간이 온다면 지금 사지 않은 이 무기가 가장 눈에 어른거리는 법이라네."/>
+			</property>
+			<property Type="Action" Command="UpdateCompanyProperty" PropertyType="Npc/Pierto/QP" C_PropertyValue="1"/>
+		</Scripts>
+	</class>
+	<class name="Pierto_QP_1">
+		<Scripts>
+			<property Type="Switch" C_DlgName="npc.Info.Title" C_TestTarget="math.random(1,5)">
+				<property Case="1">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="오늘은 어떤 무기를 찾는 건가?"/>
+						<property Text="물건은 충분히 있으니 편하게 골라보게."/>
+					</property>
+				</property>
+				<property Case="2">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="게으름뱅이 녀석의 옆 가게를 갈 바에 우리 가게에 오게"/>
+						<property Text="방어구 따위 어차피 강한 무기 앞에선 다 똑같은 운명일세"/>
+					</property>
+				</property>
+				<property Case="3">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="좋은 무기란 비싼 무기지."/>
+						<property Text="시장 경제에서는 당연한 일일세."/>
+					</property>
+				</property>
+				<property Case="4">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="오늘도 찾아온 건가?"/>
+						<property Text="아들 녀석이 자네만큼 찾아오면 좋겠군."/>
+					</property>
+				</property>
+				<property Case="5">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="장벽 바깥 녀석들이 불법 무기를 유통해서 골치가 아프네."/>
+						<property Text="도대체 경찰들은 뭘 하고 있는 건지..."/>
+					</property>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+	<class name="Pierto_Tutorial_LostShop">
+		<Scripts>
+			<property Type="ShowFrontmessageFormat" MessageColor="Corn">
+				<GameMessageForm Type="EtcMessage22"/>
+			</property>
+			<property Type="BattleDialog" SpeakerInfo="Pierto" SpeakerEmotion="Normal" Mode="Start" Close="false" Message="[!speaker:Pierto_Normal]자네 회사로 유실물이 들어왔네. 어떻게 할 건가?" DialogType="Sub" Slot="Left3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="SurpriseStare" Mode="Continue" Close="false" Message="[!speaker:Albus_SurpriseStare]유실물이요?" DialogType="Sub" Slot="Right3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Pierto" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Pierto_Normal]그래. 자네 회사의 지난 사건 현장에서 유실물이 있었네." DialogType="Sub" Slot="Left3" Effect="Appear"/>
+			<property Type="SceneFade" Direct="false" FadeType="Out"/>
+			<property Type="ShowBackgroundImage" DialogType="Main" DialogEffect="Appear" BackgroundImage="LostItem" Slow="true"/>
+			<property Type="Sleep" Time="2"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Start" Close="false" Message="[colour=&apos;FFFFFF00&apos;]발할라의 &apos;유실물법&apos; 1조 2항." DialogType="Sub" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[colour=&apos;FFFFFF00&apos;]&apos;발할라 시민은 습득물 중 범행에 사용된 물건은 무조건 정부에 반환해야 한다.&apos;" DialogType="Sub" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="이 법에 따라 정부가 소유하는 사건 현장의 범행 물건들을 트러블슈터의 보상으로 양도하는 것이 트러블슈터의 &apos;전리품&apos; 제도이다." DialogType="Sub" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="그러나 트러블슈터가 사건 해결 과정에서 의뢰를 포기하거나 실패할 경우, 상황에 따라 &apos;전리품&apos;을 미처 회수하지 못하거나 잃어버리는 경우가 종종 발생한다." DialogType="Sub" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="이렇게 사건 현장에서 트러블슈터가 잃어버린 전리품을 &apos;유실물&apos;이라고 한다." DialogType="Sub" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="트러블슈터 제도 초기에는 트러블슈터의 참여를 독려하기 위해 이러한 &apos;유실물&apos;을 모두 트러블슈터 회사 소유로 인정하였으나..." DialogType="Sub" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="이를 악용하여 전리품만을 노리고 적극적으로 사건 해결을 하지 않은 채, 의뢰를 수락, 포기하는 악용 사례가 발생하였고..." DialogType="Sub" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="또한 &apos;전리품&apos;은 어디까지나 트러블슈터의 사건 해결 보상을 강화하는 제도이기에..." DialogType="Sub" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="사건을 원활히 해결하지 못한 트러블슈터에게 &apos;유실물&apos;마저 소유권을 부여하는 것은 부당하다는 여론이 형성되었다." DialogType="Sub" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="결국 발할라 정부는 조건 없는 소유권 부여 대신 각 현장을 담당했던 트러블슈터들에게 유실물에 대한 선 매입 권한을 부여하기로 하였다." DialogType="Sub" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="true" Message="이 결정에 따라 각 지역 상인들은 정부를 대신하여 사건 현장에서 습득된 유실물을 해당 사건을 담당한 트러블슈터 회사에 판매하고 있다." DialogType="Sub" Slot="Center" Effect="Appear"/>
+			<property Type="HideBackgroundImage" DialogType="Sub" Slow="true"/>
+			<property Type="Sleep" Time="2"/>
+			<property Type="SceneFade" Direct="false" FadeType="In"/>
+			<property Type="BattleDialog" SpeakerInfo="Pierto" SpeakerEmotion="Normal" Mode="Start" Close="false" Message="[!speaker:Pierto_Normal]자네들이 새로운 임무를 진행하면, 유실물은 포기한 것으로 처리되니 그 전에 필요한 것이 있는지 챙겨보게." DialogType="Sub" Slot="Left3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Laugh" Mode="Continue" Close="false" Message="[!speaker:Albus_Laugh]정부에서 공지하는 유실물 가격은 비싸서..." DialogType="Sub" Slot="Right3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Pierto" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Pierto_Normal]우리도 물건 들여 놓는 것이 다 비용이네. 마음에 들지 않으면 구입하지 않으면 그만일세." DialogType="Sub" Slot="Left3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Albus_Normal]알겠습니다." DialogType="Sub" Slot="Right3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[padding=&apos;l:0 t:0 r:0 b:$Pad$&apos;][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Icons/Vitality&apos;][padding=&apos;l:0 t:0 r:0 b:0&apos;] [colour=&apos;FFFFE959&apos;]임무 진행 중 잃어버린 전리품은 상점의 &apos;유실물&apos; 목록에 추가됩니다." DialogType="Main" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[padding=&apos;l:0 t:0 r:0 b:$Pad$&apos;][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Icons/Vitality&apos;][padding=&apos;l:0 t:0 r:0 b:0&apos;] [colour=&apos;FFFFE959&apos;]해당 목록은 새로운 임무 진행 전까지 유지되며 새로운 임무를 진행 시 초기화됩니다." DialogType="Main" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="true" Message="[padding=&apos;l:0 t:0 r:0 b:$Pad$&apos;][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Icons/Vitality&apos;][padding=&apos;l:0 t:0 r:0 b:0&apos;] [colour=&apos;FFFFE959&apos;]또한 유실물의 판매 가격은 해당 상인과의 우호도가 높을수록 소폭 감소합니다." DialogType="Main" Slot="Center" Effect="Appear"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="Progress/Tutorial/LostShop" PropertyValue="true"/>
+		</Scripts>
+	</class>
+	<class name="Pierto_Tutorial_ZoneMove">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Pierto" SpeakerEmotion="Normal" Mode="Start" Close="false" Message="[!speaker:Pierto_Normal]자주 이용해 줘서 고맙네." DialogType="Sub" Slot="Left3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Laugh" Mode="Continue" Close="false" Message="[!speaker:Albus_Laugh]아닙니다. 저희야말로 피에르토 씨 덕분에 저희도 편하게 거래하고 있습니다." DialogType="Sub" Slot="Right3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Pierto" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Pierto_Normal]그래? 그럼 그 편한만큼 가격을 더 받아야겠군." DialogType="Sub" Slot="Left3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Surprise" Mode="Continue" Close="false" Message="[!speaker:Albus_Surprise]아니 그건..." DialogType="Sub" Slot="Right3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Pierto" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Pierto_Normal]농담이네. 농담." DialogType="Sub" Slot="Left3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Embarrassed" Mode="Continue" Close="false" Message="[!speaker:Albus_Embarrassed]......" DialogType="Sub" Slot="Right3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Pierto" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Pierto_Normal]편한 것도 가끔은 시장 거리에도 나가고 해 봐." DialogType="Sub" Slot="Left3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="SurpriseStare" Mode="Continue" Close="false" Message="[!speaker:Albus_SurpriseStare]네?" DialogType="Sub" Slot="Right3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Pierto" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Pierto_Normal]일단 유통 단계를 하나 거치다보니 자네들이 직접 구하는 것보다는 비싸게 느껴질지 모르겠만..." DialogType="Sub" Slot="Left3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Pierto" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Pierto_Normal]돈만 있다면 언제든지 편하게 구할 수 있다네." DialogType="Sub" Slot="Left3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Albus_Normal]무슨 말씀인지 잘 알겠습니다." DialogType="Sub" Slot="Right3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Pierto" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Pierto_Normal]그래. 가장 가까운 시장 거리는 &apos;사수거리&apos; 일세." DialogType="Sub" Slot="Left3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Albus_Normal]알겠습니다." DialogType="Sub" Slot="Right3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="true" Message="[padding=&apos;l:0 t:0 r:0 b:$Pad$&apos;][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Icons/Vitality&apos;][padding=&apos;l:0 t:0 r:0 b:0&apos;] [colour=&apos;FFFFFFFF&apos;]지금부터 우하단 [colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Icons/ZoneMove&apos;][colour=&apos;FFCCCCCC&apos;] [colour=&apos;FFFFFF00&apos;]지역 이동[colour=&apos;FFFFFFFF&apos;]을 통하여 사수거리로 이동 할 수 있습니다." DialogType="Main" Slot="Center" Effect="Appear"/>
+			<property Type="ShowFrontmessageFormat" MessageColor="Corn">
+				<GameMessageForm Type="MenuActivated" Menu="MoveLocation"/>
+			</property>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="LobbyMenu/ZoneMove/Opened" PropertyValue="true"/>
+			<property Type="Jump" JumpTo="Pierto_Tutorial_ZoneMove_MailWrite"/>
+		</Scripts>
+	</class>
+	<class name="Pierto_Tutorial_ZoneMove_MailWrite">
+		<Scripts>
+			<property Type="ShowFrontmessageFormat" MessageColor="Corn">
+				<GameMessageForm Type="SubMenuActivated" Menu="Mailbox" SubMenu="MailWrite"/>
+			</property>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="LobbyMenu/MailBox/Write" PropertyValue="true"/>
+		</Scripts>
+	</class>
+</idspace>

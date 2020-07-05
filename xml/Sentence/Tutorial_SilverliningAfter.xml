@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Tutorial_SilverliningAfter_NE3IEa" Value="[!Dashboard:TimeLimiter]루나를 쫓아갈 수 있는 시간"/>
+		<class name="Tutorial_SilverliningAfter_rx2tdH" Value="[!Objective]루나를 제압하시오."/>
+		<class name="Tutorial_SilverliningAfter_hmjxEz" Value="[!Objective]루나가 도망칠 때까지 아이린을 방해하시오."/>
+		<class name="Tutorial_SilverliningAfter_wGaMFE" Value="[!Title]함께 하는 자..."/>
+		<class name="Tutorial_SilverliningAfter_CE6gmZ" Value="[!Title]은빛 구름 뒷거리 식당가"/>
+		<class name="Tutorial_SilverliningAfter_sjDcEs" Value="[!Dialog][!speaker:Sion_Laugh]사장님. 등장이요~☆"/>
+		<class name="Tutorial_SilverliningAfter_Obr5IB" Value="[!Dialog][!speaker:Albus_SurpriseStare]앤 양? 아이린 씨?"/>
+		<class name="Tutorial_SilverliningAfter_Xt8daB" Value="[!Dialog][!speaker:Irene_Normal]알버스 군. 잘 왔어."/>
+		<class name="Tutorial_SilverliningAfter_KZMuyK" Value="[!Dialog][!speaker:Anne_Smile]어서 오세요. 알버스 오빠."/>
+		<class name="Tutorial_SilverliningAfter_7pKIxr" Value="[!Dialog][!speaker:Albus_Surprise]무슨 날인거야?"/>
+		<class name="Tutorial_SilverliningAfter_1LLLTM" Value="[!Dialog][!speaker:Sion_Normal]매일 같이 야근하고 혼자 들어가는 사장님을 위한 자리지."/>
+		<class name="Tutorial_SilverliningAfter_766GV1" Value="[!Dialog]시온의 전화에 별 생각없이 불려나왔던 알버스."/>
+		<class name="Tutorial_SilverliningAfter_YkMErb" Value="[!Dialog][!speaker:Irene_Normal]알버스 군도 일이 많으면 우리에게 넘겨."/>
+		<class name="Tutorial_SilverliningAfter_L5ALmG" Value="[!Dialog][!speaker:Irene_Smile]할 수 있는 일이라면 최선을 다해 도와줄게."/>
+		<class name="Tutorial_SilverliningAfter_zGpZFw" Value="[!Dialog][!speaker:Albus_Surprise]아... 아닙니다."/>
+		<class name="Tutorial_SilverliningAfter_pUX7fA" Value="[!Dialog]정식으로 고용하고 제대로 된 월급을 줬다면 서류 업무까지 맡겼을 것이다."/>
+		<class name="Tutorial_SilverliningAfter_ocMb0f" Value="[!Dialog]하지만 어디까지나 참여 사건 해결 수당으로 계약된 계약직."/>
+		<class name="Tutorial_SilverliningAfter_KnGatq" Value="[!Dialog]일이 많지도 않았지만 알버스로서는 일을 맡기는 것이 당연히 부담이 되었다."/>
+		<class name="Tutorial_SilverliningAfter_L4vUwt" Value="[!Dialog][!speaker:Sion_Angry]자! 즐거운 저녁입니다~☆"/>
+		<class name="Tutorial_SilverliningAfter_3ttm5G" Value="[!Dialog][!speaker:Sion_Happy]이모~☆ 여기 소갈비찜 대자에 묵은지 김치찌개 2개 그리고 계란찜 추가요!"/>
+		<class name="Tutorial_SilverliningAfter_Gw9VTR" Value="[!Dialog][!speaker:Albus_Surprise]!?"/>
+		<class name="Tutorial_SilverliningAfter_CAtZRo" Value="[!Dialog][!speaker:Albus_SurpriseStare]시온!?"/>
+		<class name="Tutorial_SilverliningAfter_fI8Ktw" Value="[!Dialog][!speaker:Irene_Rage]시온 군. 주문할 때 너만 생각하지 말랬지!"/>
+		<class name="Tutorial_SilverliningAfter_CjDRPi" Value="[!Dialog][!speaker:Sion_Laugh]하하... 미안."/>
+		<class name="Tutorial_SilverliningAfter_Cd4uJI" Value="[!Dialog][!speaker:Sion_Happy]이모!! 김치전하고 얼큰 버섯탕도 추가합니다!"/>
+		<class name="Tutorial_SilverliningAfter_tN55VA" Value="[!Dialog][!speaker:Albus_Surprise]시온! 너무 많이 주문한 거 아냐?"/>
+		<class name="Tutorial_SilverliningAfter_FmSHSQ" Value="[!Dialog][!speaker:Anne_Smile]걱정 마세요. 알버스 오빠."/>
+		<class name="Tutorial_SilverliningAfter_GTuM4Y" Value="[!Dialog][!speaker:Anne_Strict]시온 오빠는 혼자 3인분 이상 먹으니까요..."/>
+		<class name="Tutorial_SilverliningAfter_FXwDr3" Value="[!Dialog][!speaker:Irene_Normal]시온하고 같이 하는 저녁은 이 정도는 시켜야 안 모잘라."/>
+		<class name="Tutorial_SilverliningAfter_KBZSMH" Value="[!Dialog][!speaker:Albus_Laugh]&apos;다들 이 상황이 익숙하구나...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_vjmcum" Value="[!Title]간절함 가득히..."/>
+		<class name="Tutorial_SilverliningAfter_LunreZ" Value="[!Title]10개월 전"/>
+		<class name="Tutorial_SilverliningAfter_eZz9nR" Value="[!Dialog]람지플라자 사건 이후 한 달."/>
+		<class name="Tutorial_SilverliningAfter_lJ1U9S" Value="[!Dialog]혼자서는 아무것도 할 수 없구나라는 현실을 실감하고 있었다."/>
+		<class name="Tutorial_SilverliningAfter_OPWX8C" Value="[!Dialog][!speaker:Albus_Laugh]꾸준히 사건을 해결해 나갈 자신만 있다면 충분한 고수익을 보장합니다."/>
+		<class name="Tutorial_SilverliningAfter_L2sb5u" Value="[!Dialog][!speaker:Sion_Think]흐음..."/>
+		<class name="Tutorial_SilverliningAfter_QEb7zd" Value="[!Dialog]어떤 수단을 동원해서라도 상대방을 쉽게 압도한 번개 능력자를 회사에 입사시키고 싶었다."/>
+		<class name="Tutorial_SilverliningAfter_gGgzPp" Value="[!Dialog][!speaker:Albus_Normal]시온 씨가 저희 회사 견습 트러블슈터로 입사하시면..."/>
+		<class name="Tutorial_SilverliningAfter_JEbrhq" Value="[!Dialog][!speaker:Albus_Laugh]식비, 활동비 등을 전액 제공하고 임무 성과에 따라 인센티브를 드리겠습니다."/>
+		<class name="Tutorial_SilverliningAfter_qI5W0w" Value="[!Dialog]고수익, 식비, 간식, 인센티브 제공."/>
+		<class name="Tutorial_SilverliningAfter_Bo68At" Value="[!Dialog][!speaker:Sion_Surprise]뭐!! 식비 전액? 하루 3끼? 간식 포함?"/>
+		<class name="Tutorial_SilverliningAfter_jlJVy2" Value="[!Dialog]지금 생각하면 장점 하나 없는 $CompanyName$의 입사 조건."/>
+		<class name="Tutorial_SilverliningAfter_GOXtY7" Value="[!Dialog][!speaker:Albus_Normal]물론입니다. 시온 씨가 무리 없이 일하도록 지원하겠습니다."/>
+		<class name="Tutorial_SilverliningAfter_5xR87e" Value="[!Dialog][!speaker:Sion_Stare]알버스 씨. 이거 사기 아니죠?"/>
+		<class name="Tutorial_SilverliningAfter_jtsQ4C" Value="[!Dialog]순간 넉넉치 않은 회사 사정으로 어떻게든 싸게 계약을 하려는 내 마음이 들킨 것 같아 당황하지 않을 수 없었다."/>
+		<class name="Tutorial_SilverliningAfter_xK5BdZ" Value="[!Dialog]하지만 세상 물정 모르는 것 같은 시온의 대답에 난 변명같지도 않은 말을 내 뱉는다."/>
+		<class name="Tutorial_SilverliningAfter_HKRhvQ" Value="[!Dialog][!speaker:Albus_Surprise]사기라뇨! 다 시온 씨 능력을 보고, 제가 투자하는 겁니다."/>
+		<class name="Tutorial_SilverliningAfter_kjDG7X" Value="[!Dialog]또래여서 였을까... 아니면 뛰어난 능력에 반해서 였을까..."/>
+		<class name="Tutorial_SilverliningAfter_juckF5" Value="[!Dialog]$CompanyName$의 입사 지원자가 아무도 없었기 때문일까..."/>
+		<class name="Tutorial_SilverliningAfter_OaTDvQ" Value="[!Dialog][!speaker:Albus_Laugh]시온 씨. 오늘처럼 같이 일해봐요."/>
+		<class name="Tutorial_SilverliningAfter_BZQhTI" Value="[!Dialog]그 말은 나의 간절함이었다."/>
+		<class name="Tutorial_SilverliningAfter_TPfEob" Value="[!Dialog][!speaker:Sion_Angry]좋습니다. 계약하죠!"/>
+		<class name="Tutorial_SilverliningAfter_gtGB1r" Value="[!Dialog]시온의 흔쾌한 한 마디."/>
+		<class name="Tutorial_SilverliningAfter_Vve8Sg" Value="[!Dialog]지금 돌이켜보면 그 말만큼 간절히 원했던 대답은 없었다."/>
+		<class name="Tutorial_SilverliningAfter_4i6xvU" Value="[!Dialog][!speaker:Anna_Normal]너희들. 오랜만이구나."/>
+		<class name="Tutorial_SilverliningAfter_GDWwcZ" Value="[!Dialog][!speaker:Sion_Happy]안녕하세요!"/>
+		<class name="Tutorial_SilverliningAfter_oewAPg" Value="[!Dialog][!speaker:Anne_Smile]안녕하세요! 지배인님!"/>
+		<class name="Tutorial_SilverliningAfter_771OOH" Value="[!Dialog][!speaker:Irene_Normal]안나. 우리 또 왔어."/>
+		<class name="Tutorial_SilverliningAfter_oozIHt" Value="[!Dialog][!speaker:Albus_SurpriseStare]&apos;가게 분이랑 다들 친하구나...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_TLP8Tc" Value="[!Dialog][!speaker:Anna_Normal]응? 못 보던 얼굴이네?"/>
+		<class name="Tutorial_SilverliningAfter_WRPm5o" Value="[!Dialog][!speaker:Anna_Laugh]또 신입 사원인가? 환영회야?"/>
+		<class name="Tutorial_SilverliningAfter_nb3iwf" Value="[!Dialog][!speaker:Sion_Surprise]아..."/>
+		<class name="Tutorial_SilverliningAfter_qtyU72" Value="[!Dialog][!speaker:Irene_Surprise]신입 사원?"/>
+		<class name="Tutorial_SilverliningAfter_fmmYIX" Value="[!Dialog][!speaker:Anne_Smile]지배인 님. 이 분은 저희 회사 사장님이세요."/>
+		<class name="Tutorial_SilverliningAfter_pCyvFL" Value="[!Dialog][!speaker:Albus_Laugh]안녕하세요."/>
+		<class name="Tutorial_SilverliningAfter_OAlZjW" Value="[!Dialog][!speaker:Anna_Laugh]아!! 이런 내가 실수했네."/>
+		<class name="Tutorial_SilverliningAfter_EmeU2G" Value="[!Dialog][!speaker:Anna_Normal]그 맨날 말하던 일 중독 사장님이구나!"/>
+		<class name="Tutorial_SilverliningAfter_ArNCLv" Value="[!Dialog][!speaker:Albus_Embarrassed]아... 네..."/>
+		<class name="Tutorial_SilverliningAfter_oezX9o" Value="[!Dialog][!speaker:Anna_Normal]젊은 사람이 일 열심히 하는 건 좋은 거지."/>
+		<class name="Tutorial_SilverliningAfter_sYAaAu" Value="[!Dialog][!speaker:Anna_Laugh]자. 그럼 오늘 사장님 오신 기념으로 묵은지 감자탕 하나 서비스로 줄까?"/>
+		<class name="Tutorial_SilverliningAfter_4fPX76" Value="[!Dialog][!speaker:Anna_Laugh]이미 주문 많은데 먹을 수 있겠어?"/>
+		<class name="Tutorial_SilverliningAfter_OY4sms" Value="[!Dialog][!speaker:Irene_Surprise]정말인가?"/>
+		<class name="Tutorial_SilverliningAfter_43CARu" Value="[!Dialog][!speaker:Sion_Happy]말이라고 해요~☆"/>
+		<class name="Tutorial_SilverliningAfter_shDUZx" Value="[!Dialog][!speaker:Albus_Surprise]더 먹을 수 있는 거야...?"/>
+		<class name="Tutorial_SilverliningAfter_PyGSNl" Value="[!Dialog][!speaker:Anne_Smile]시온 오빠는 가능할 거예요."/>
+		<class name="Tutorial_SilverliningAfter_paxVW7" Value="[!Dialog][!speaker:Sion_Happy]당연하지~☆ 평소에 식비가 아까워서 마음껏 못 먹었다고~!!"/>
+		<class name="Tutorial_SilverliningAfter_5riFCf" Value="[!Dialog][!speaker:Albus_SurpriseStare]&apos;시온이 이렇게 많이 먹었나...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_zzDYyb" Value="[!Dialog]하루 3끼 식비 전액 제공."/>
+		<class name="Tutorial_SilverliningAfter_flnIAu" Value="[!Dialog]시온의 식비는 언제나 평범한 금액 정도였다."/>
+		<class name="Tutorial_SilverliningAfter_zienfn" Value="[!Dialog][!speaker:Albus_SurpriseStare]&apos;설마 식비... 일부러 아끼는 건가...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_lxXpKi" Value="[!Dialog]시온은 언제나 말없이 사람을 배려해 준다."/>
+		<class name="Tutorial_SilverliningAfter_MGjZZh" Value="[!Dialog][!speaker:Sion_Normal]알버스~ 우리도 이제 돌아가자~☆"/>
+		<class name="Tutorial_SilverliningAfter_ACCSdK" Value="[!Dialog][!speaker:Albus_Laugh]우리 둘이 덤볐으면 제압할 수 있었을까?"/>
+		<class name="Tutorial_SilverliningAfter_JHrNzX" Value="[!Dialog]제압하지 못할 범죄자와 충돌하여 괜한 피해를 보고 싶지 않았다."/>
+		<class name="Tutorial_SilverliningAfter_iKIAvo" Value="[!Dialog]하지만 범죄자를 그냥 놔준 것으로 인해 마음이 무거운 것은 부정할 수 없는 사실이었다."/>
+		<class name="Tutorial_SilverliningAfter_yDcfAH" Value="[!Dialog][!speaker:Sion_Stare]불가능."/>
+		<class name="Tutorial_SilverliningAfter_w6YR8A" Value="[!Dialog]솔직한 말 한마디."/>
+		<class name="Tutorial_SilverliningAfter_918VMo" Value="[!Dialog][!speaker:Albus_Disappoint]분하네."/>
+		<class name="Tutorial_SilverliningAfter_vdwwND" Value="[!Dialog]그 말 한 마디가 무거운 마음을 가볍게 해준다."/>
+		<class name="Tutorial_SilverliningAfter_FwsweB" Value="[!Dialog][!speaker:Sion_Smile]아까 네 행동 충분히 옳은 판단이라고 봐."/>
+		<class name="Tutorial_SilverliningAfter_l8OajV" Value="[!Dialog][!speaker:Sion_Normal]덤비자고 했으면 내가 너 기절시키고 죄송하다고 빌었을지도..."/>
+		<class name="Tutorial_SilverliningAfter_9DXmft" Value="[!Dialog]내가 틀리지 않았다고 말해준다."/>
+		<class name="Tutorial_SilverliningAfter_yZyyci" Value="[!Dialog][!speaker:Albus_Laugh]이 시간에 사건 현장을 떠나 이러고 있다니..."/>
+		<class name="Tutorial_SilverliningAfter_Kcc9QH" Value="[!Dialog]언제나 최대한 빨리 회사 등급을 올리기 위한 실적을 쌓고 싶었기에 내 마음은 당장 닥친 사건 현장에만 있었다."/>
+		<class name="Tutorial_SilverliningAfter_Y2b64g" Value="[!Dialog][!speaker:Sion_Normal]사장님, 딴생각하지 말어. 오늘은 나하고 약속했잖아."/>
+		<class name="Tutorial_SilverliningAfter_FKMKEJ" Value="[!Dialog]내가 직원인 시온에게 여유를 줘야 하는데 직원인 시온이 나에게 한숨 돌릴 여유를 준다."/>
+		<class name="Tutorial_SilverliningAfter_5yvthw" Value="[!Dialog][!speaker:Albus_Surprise]아니야. 이런 여유도 나쁘지 않다고 생각해서 그래."/>
+		<class name="Tutorial_SilverliningAfter_cNUQjf" Value="[!Dialog]그저 사장 역할을 제대로 하지 못해서 미안했다."/>
+		<class name="Tutorial_SilverliningAfter_qFHRIN" Value="[!Dialog][!speaker:Sion_Smile]당연히 나쁘지 않지."/>
+		<class name="Tutorial_SilverliningAfter_XmjRJG" Value="[!Dialog][!speaker:Sion_Laugh]오늘 같은 날은 절~ 대~ 사건 현장에 안 갈 거야..."/>
+		<class name="Tutorial_SilverliningAfter_XzwoCR" Value="[!Dialog]시온 자신의 솔직한 불평."/>
+		<class name="Tutorial_SilverliningAfter_fh9wlo" Value="[!Dialog]그 말을 듣는 내 마음이 편해진다."/>
+		<class name="Tutorial_SilverliningAfter_7CqM5M" Value="[!Dialog]맛있는 음식 그리고 동료들의 이야기."/>
+		<class name="Tutorial_SilverliningAfter_kYRpTV" Value="[!Dialog][!speaker:Irene_Normal]최근 회사에서 내 역할도 애매하잖아?"/>
+		<class name="Tutorial_SilverliningAfter_5IV35U" Value="[!Dialog][!speaker:Sion_Normal]무슨 소리야. 히어로 역할이 왜 애매해? 완~ 전~ 절실해~!!"/>
+		<class name="Tutorial_SilverliningAfter_gLga2G" Value="[!Dialog][!speaker:Irene_Smile2]내가 입사했을 때와 다르게 팀 상황이 많이 변해서 계속 고민하고 있었어."/>
+		<class name="Tutorial_SilverliningAfter_OsnbW9" Value="[!Dialog][!speaker:Irene_Smile]입사 초기야 지금의 동료들이 없었으니 시온 군이 후위에서 활약했지만 지금은 날 대신하여 전위에 충분히 설 수 있잖아?"/>
+		<class name="Tutorial_SilverliningAfter_iQPEax" Value="[!Dialog][!speaker:Sion_Laugh]나랑 히어로랑 급이 다르지."/>
+		<class name="Tutorial_SilverliningAfter_wnVlje" Value="[!Dialog][!speaker:Irene_Smile2]시온 군이 아니더라도 막 입사한 레톤 군, 지젤 씨가 기르는 야수, 카일리의 드론도 현재의 내 역할을 충분히 대신 할 수 있다고 생각해."/>
+		<class name="Tutorial_SilverliningAfter_pR1Bhq" Value="[!Dialog][!speaker:Albus_Normal]아이린 씨가 지금 역할을 잘 해주시기에 다른 분들도 또 다른 역할에 집중하실 수 있어요."/>
+		<class name="Tutorial_SilverliningAfter_4akgWB" Value="[!Dialog][!speaker:Anne_Smile]맞아요. 아이린 언니가 있어서 얼마나 든든한데요."/>
+		<class name="Tutorial_SilverliningAfter_HhjDiv" Value="[!Dialog][!speaker:Albus_Serious]......"/>
+		<class name="Tutorial_SilverliningAfter_fEAjOX" Value="[!Dialog][!speaker:Irene_Smile]앤과 카일리 그리고 지젤 씨는 말할 것도 없이 자기 고유의 역할이 명확하잖아."/>
+		<class name="Tutorial_SilverliningAfter_mhreht" Value="[!Dialog][!speaker:Albus_Embarrassed]그런 면이라면 아이린 씨보다 제가 가장 역할이 애매하다고 생각해요."/>
+		<class name="Tutorial_SilverliningAfter_M8s1H4" Value="[!Dialog][!speaker:Irene_Normal]알버스 군은 $CompanyName$[를] 이끄는 사장이잖아."/>
+		<class name="Tutorial_SilverliningAfter_AEsmZi" Value="[!Dialog][!speaker:Albus_Normal]전 지금처럼 아이린 씨가 활약해주는 것만으로도 충분히 감사해요."/>
+		<class name="Tutorial_SilverliningAfter_ezQvzW" Value="[!Dialog][!speaker:Sion_Laugh]그래. 너무 고민하지마. 히어로."/>
+		<class name="Tutorial_SilverliningAfter_lzI7mC" Value="[!Dialog][!speaker:Irene_Normal]나 정식 트러블슈터 시험을 치려고 해."/>
+		<class name="Tutorial_SilverliningAfter_5prWyP" Value="[!Dialog][!speaker:Anne_Surprise]!?"/>
+		<class name="Tutorial_SilverliningAfter_UDwlBM" Value="[!Dialog][!speaker:Sion_SurpriseStare]정말!?"/>
+		<class name="Tutorial_SilverliningAfter_uK7aJm" Value="[!Dialog][!speaker:Albus_Surprise]정식 트러블슈터 시험이요?"/>
+		<class name="Tutorial_SilverliningAfter_WUWh6U" Value="[!Dialog][!speaker:Irene_Smile2]내가 정식 트러블슈터가 되면 회사의 관할 구역이 증가해 재정적 도움도 될 거야."/>
+		<class name="Tutorial_SilverliningAfter_UH6th2" Value="[!Dialog][!speaker:Irene_Normal]장기적으로는 우리 회사가 두번째 팀을 운영할 수 있다고 생각해."/>
+		<class name="Tutorial_SilverliningAfter_yyzGlN" Value="[!Dialog][!speaker:Albus_SurpriseStare]&apos;두번째 팀...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_Gbwb4D" Value="[!Dialog]복수의 팀 운영."/>
+		<class name="Tutorial_SilverliningAfter_y2w3U2" Value="[!Dialog]역할 군이 대체 가능한 동료는 같이 출동할 수도 있지만 만일의 사태를 대비해 사무실에 대기할 경우가 종종 생긴다."/>
+		<class name="Tutorial_SilverliningAfter_77lq6A" Value="[!Dialog]이렇게 대기하는 인원 중 정식 트러블슈터가 있다면 언제든지 또 다른 현장에 출동할 수 있다."/>
+		<class name="Tutorial_SilverliningAfter_4Wtp8G" Value="[!Dialog][!speaker:Irene_Normal]나말고는 현장에서 필요한 역할이 명확한 상태잖아."/>
+		<class name="Tutorial_SilverliningAfter_BCu0mX" Value="[!Dialog][!speaker:Anne_Sorrow]아이린 언니. 왜 계속 그런 말을 하세요."/>
+		<class name="Tutorial_SilverliningAfter_4kD19o" Value="[!Dialog][!speaker:Irene_Smile]앤. 이건 나쁜 일이 아니야."/>
+		<class name="Tutorial_SilverliningAfter_Ols3qG" Value="[!Dialog][!speaker:Irene_Smile2]내가 히어로로 당당해지려면 당연히 거쳐 가야 하는 과정이야."/>
+		<class name="Tutorial_SilverliningAfter_BP0Gc6" Value="[!Dialog][!speaker:Sion_Smile]......"/>
+		<class name="Tutorial_SilverliningAfter_nTJ3MB" Value="[!Dialog][!speaker:Sion_Normal]그래도 아직 견습이잖아?"/>
+		<class name="Tutorial_SilverliningAfter_IBCNpN" Value="[!Dialog][!speaker:Irene_Normal]근무 기간 1년 채우면 바로 지원하려고 해."/>
+		<class name="Tutorial_SilverliningAfter_tIc5Rh" Value="[!Dialog][!speaker:Irene_Smile2]그래서 요즘 퇴근 후 필기 시험 준비도 하고 있어."/>
+		<class name="Tutorial_SilverliningAfter_KF5cYB" Value="[!Dialog][!speaker:Anne_Sorrow]아이린 언니. 화이팅!!"/>
+		<class name="Tutorial_SilverliningAfter_NwtlvZ" Value="[!Dialog][!speaker:Sion_Happy]히어로! 화이팅!"/>
+		<class name="Tutorial_SilverliningAfter_bWRMB2" Value="[!Dialog][!speaker:Albus_Normal]알겠습니다. 제가 도울 수 있는 것이 있다면 최선을 다해 도울게요."/>
+		<class name="Tutorial_SilverliningAfter_jzn1ha" Value="[!Dialog][!speaker:Irene_Normal]응. 고마워."/>
+		<class name="Tutorial_SilverliningAfter_sKIpA8" Value="[!Dialog][!speaker:Albus_Normal]&apos;아이린 씨... 많은 것을 고민하고 계셨구나...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_fU94wV" Value="[!Dialog][!speaker:Sion_Think]흠..."/>
+		<class name="Tutorial_SilverliningAfter_oF5RCX" Value="[!Dialog][!speaker:Sion_Think]&apos;나도 도전해 볼까...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_uDvWPH" Value="[!Dialog][!speaker:Marco_Smile]다음 주면 지긋지긋한 이곳도 안녕이다."/>
+		<class name="Tutorial_SilverliningAfter_kYCCeV" Value="[!Dialog][!speaker:Marco_Smile]떠나기 전까지 맛집이라도 다녀야지."/>
+		<class name="Tutorial_SilverliningAfter_9XkBHN" Value="[!Dialog][!speaker:Luna_Bored]맘대로 해."/>
+		<class name="Tutorial_SilverliningAfter_RxfseA" Value="[!Dialog][!speaker:Marco_Smile]김씨가 여기 갈비 찜이 그렇게 맛있다더라."/>
+		<class name="Tutorial_SilverliningAfter_K0uJUf" Value="[!Dialog][!speaker:Luna_Annoying]마르코. 나가자."/>
+		<class name="Tutorial_SilverliningAfter_5CHMxp" Value="[!Dialog][!speaker:Marco_Normal]응!?"/>
+		<class name="Tutorial_SilverliningAfter_qZdOUR" Value="[!Dialog]마르코의 시선에 들어온 앤."/>
+		<class name="Tutorial_SilverliningAfter_36U67z" Value="[!Dialog][!speaker:Marco_Smile]&apos;루나를 봤군... 처리해야 하나...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_itnEs6" Value="[!Dialog][!speaker:Luna_Annoying]마르코. 난 약속 지켰어. 그러니 빨리 나가자."/>
+		<class name="Tutorial_SilverliningAfter_SYvGET" Value="[!Dialog][!speaker:Marco_Smile]&apos;이 녀석을 처분해야 하나...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_ObSpSS" Value="[!Dialog][!speaker:Irene_Surprise]앤. 갑자기 왜 그래?"/>
+		<class name="Tutorial_SilverliningAfter_XQIJq3" Value="[!Dialog][!speaker:Albus_SurpriseStare]앤 양 괜찮아?"/>
+		<class name="Tutorial_SilverliningAfter_iEjzdY" Value="[!Dialog][!speaker:Anne_Tired]아.. 아니에요."/>
+		<class name="Tutorial_SilverliningAfter_hOGmOY" Value="[!Dialog][!speaker:Anne_Tired_Smile]저 잠시 화장실 좀 다녀올게요."/>
+		<class name="Tutorial_SilverliningAfter_D8ZS1d" Value="[!Dialog][!speaker:Sion_SurpriseStare]&apos;앤이 갑자기 왜 저러지?&apos;"/>
+		<class name="Tutorial_SilverliningAfter_U35Fn1" Value="[!Dialog][!speaker:Irene_Normal]내가 따라가 볼게"/>
+		<class name="Tutorial_SilverliningAfter_C9Q60t" Value="[!Dialog][!speaker:Irene_Normal]앤. 괜찮아?"/>
+		<class name="Tutorial_SilverliningAfter_SDbJ6Q" Value="[!Dialog][!speaker:Irene_Surprise]어...!? 앤 어디 갔지?"/>
+		<class name="Tutorial_SilverliningAfter_2S97wW" Value="[!Dialog][!speaker:Irene_Surprise]앤. 전화도 안 받아."/>
+		<class name="Tutorial_SilverliningAfter_S3Fzx6" Value="[!Dialog][!speaker:Sion_Think]아까 앤 얼굴이 갑자기 어두워졌는데..."/>
+		<class name="Tutorial_SilverliningAfter_g8vYK3" Value="[!Dialog][!speaker:Albus_SurpriseStare]&apos;도대체 무슨 일이지...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_SQ62LJ" Value="[!Dialog][!speaker:Albus_Normal]일단 흩어져서 찾아 보자."/>
+		<class name="Tutorial_SilverliningAfter_ljCn3m" Value="[!Dialog][colour=&apos;FFFFFF00&apos;]아이린이 수색할 장소를 골라주세요."/>
+		<class name="Tutorial_SilverliningAfter_J3NcPB" Value="[!Choice]식당가 쉼터"/>
+		<class name="Tutorial_SilverliningAfter_eA8cR6" Value="가장 가까운 식당가 쉼터를 수색합니다."/>
+		<class name="Tutorial_SilverliningAfter_A3q3wF" Value="[!Choice]식당가 거리 입구"/>
+		<class name="Tutorial_SilverliningAfter_Kxv4HX" Value="가장 가까운 식당가 거리 입구를 수색합니다."/>
+		<class name="Tutorial_SilverliningAfter_nKagPd" Value="[!Choice]식당가 주차장"/>
+		<class name="Tutorial_SilverliningAfter_DBUoOM" Value="가장 가까운 식당가 주차장을 수색합니다."/>
+		<class name="Tutorial_SilverliningAfter_GmOqOC" Value="[!Title]너를 위해..."/>
+		<class name="Tutorial_SilverliningAfter_cyF2Uh" Value="[!Title]은빛 구름 거리 공터"/>
+		<class name="Tutorial_SilverliningAfter_2z1Smz" Value="[!Dialog][!speaker:Anne_Surprise]루나!?"/>
+		<class name="Tutorial_SilverliningAfter_wikN5f" Value="[!Dialog][!speaker:Luna_Annoying]마르코. 뭐해. 빨리 가자."/>
+		<class name="Tutorial_SilverliningAfter_hCNcvQ" Value="[!Dialog][!speaker:Marco_Normal]......"/>
+		<class name="Tutorial_SilverliningAfter_WMXSAV" Value="[!Dialog][!speaker:Luna_Rage]마르코!! 너!!"/>
+		<class name="Tutorial_SilverliningAfter_tjXQcM" Value="[!Dialog][!speaker:Anne_Sorrow_Smile]루나! 나 괜찮아!!"/>
+		<class name="Tutorial_SilverliningAfter_hC3c3Q" Value="[!Dialog][!speaker:Marco_Smile]&apos;이것 봐라? 위협이었지만 눈 하나 깜짝 안 하는군...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_4uHmzV" Value="[!Dialog][!speaker:Luna_Annoying]앤..."/>
+		<class name="Tutorial_SilverliningAfter_eOzeO5" Value="[!Dialog][!speaker:Marco_Smile]&apos;독한 녀석이네...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_BOl12l" Value="[!Dialog][!speaker:Anne_Sorrow]마지막 인사만 할게요."/>
+		<class name="Tutorial_SilverliningAfter_enN4Vk" Value="[!Dialog][!speaker:Marco_Smile]쓸데 없는 소리 말고 돌아가."/>
+		<class name="Tutorial_SilverliningAfter_qnSfuo" Value="[!Dialog][!speaker:Anne_Sorrow_Smile]작별 인사는 해도 되잖아요!"/>
+		<class name="Tutorial_SilverliningAfter_R9Db5H" Value="[!Dialog][!speaker:Luna_Depressed]......"/>
+		<class name="Tutorial_SilverliningAfter_bkjQa0" Value="[!Dialog][!speaker:Luna_Depressed]마르코. 빨리 가자."/>
+		<class name="Tutorial_SilverliningAfter_LdEgkp" Value="[!Dialog][!speaker:Marco_Smile]....."/>
+		<class name="Tutorial_SilverliningAfter_F7lo9X" Value="[!Dialog][!speaker:Marco_Smile]&apos;질질 짜는 꼬맹이들 정말 싫다...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_R2P6zX" Value="[!Dialog][!speaker:Anne_Cry]제발 부탁드려요!"/>
+		<class name="Tutorial_SilverliningAfter_nACve7" Value="[!Dialog][!speaker:Luna_Depressed]마르코.."/>
+		<class name="Tutorial_SilverliningAfter_dJHaFe" Value="[!Dialog][!speaker:Marco_Rage]둘 다 조용히 못 해!"/>
+		<class name="Tutorial_SilverliningAfter_FyOqd3" Value="[!Dialog][!speaker:Anne_Normal]루나."/>
+		<class name="Tutorial_SilverliningAfter_qGo3SH" Value="[!Dialog][!speaker:Luna_Depressed]......"/>
+		<class name="Tutorial_SilverliningAfter_IjKGt4" Value="[!Dialog][!speaker:Marco_Normal]저 녀석이 소중하다면 확실하게 말하고 와라."/>
+		<class name="Tutorial_SilverliningAfter_ilL48u" Value="[!Dialog][!speaker:Luna_Annoying]......"/>
+		<class name="Tutorial_SilverliningAfter_Q3H7y1" Value="[!Dialog][!speaker:Marco_Smile]&apos;정말 제대로 망가졌군...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_6DmIhf" Value="[!Dialog][!speaker:Anne_Smile]겨우 다시 만났다."/>
+		<class name="Tutorial_SilverliningAfter_AgQ2GI" Value="[!Dialog][!speaker:Luna_Depressed]......"/>
+		<class name="Tutorial_SilverliningAfter_YhcpS4" Value="[!Dialog][!speaker:Anne_Sorrow_Smile]잘 지냈어?"/>
+		<class name="Tutorial_SilverliningAfter_SBQ6UY" Value="[!Dialog][!speaker:Luna_Depressed2]왜 쫓아오는 거야?"/>
+		<class name="Tutorial_SilverliningAfter_vsASaQ" Value="[!Dialog][!speaker:Anne_Think]좋아하니까."/>
+		<class name="Tutorial_SilverliningAfter_c1JEaL" Value="[!Dialog][!speaker:Luna_Annoying]너 바보니...?"/>
+		<class name="Tutorial_SilverliningAfter_gT6MyB" Value="[!Dialog][!speaker:Anne_Smile]친구한테 바보라니?"/>
+		<class name="Tutorial_SilverliningAfter_5MhLQD" Value="[!Dialog][!speaker:Luna_Annoying]너와 난 어울리지 않아."/>
+		<class name="Tutorial_SilverliningAfter_9ZilfJ" Value="[!Dialog][!speaker:Anne_Strict]그런 말 하지마."/>
+		<class name="Tutorial_SilverliningAfter_VUNzud" Value="[!Dialog][!speaker:Luna_Annoying]네가 날 몰라서 그래."/>
+		<class name="Tutorial_SilverliningAfter_EpDlVK" Value="[!Dialog][!speaker:Luna_Annoying]난 그저 사람을 죽이는 청소부야."/>
+		<class name="Tutorial_SilverliningAfter_1ey9pu" Value="[!Dialog][!speaker:Anne_Normal]알고 있어."/>
+		<class name="Tutorial_SilverliningAfter_aUQ5mQ" Value="[!Dialog][!speaker:Luna_Surprise]!?"/>
+		<class name="Tutorial_SilverliningAfter_jJKlx0" Value="[!Dialog][!speaker:Anne_Smile]『 어쌔신 차일드 』라고 불리는 조직 벤데타의 암살자."/>
+		<class name="Tutorial_SilverliningAfter_cObctf" Value="[!Dialog][!speaker:Luna_Annoying]어째서 알고 있는 거야..."/>
+		<class name="Tutorial_SilverliningAfter_l87QM6" Value="[!Dialog][!speaker:Anne_Sorrow_Smile]그게 중요해?"/>
+		<class name="Tutorial_SilverliningAfter_17aofV" Value="[!Dialog][!speaker:Luna_Annoying]내가 어떤 인간인지 알고도 싫지 않은 거야?"/>
+		<class name="Tutorial_SilverliningAfter_Fex1uc" Value="[!Dialog][!speaker:Anne_Sorrow_Smile]응. 어떻게 널 싫어해."/>
+		<class name="Tutorial_SilverliningAfter_7pjotq" Value="[!Dialog][!speaker:Luna_Annoying]진짜 괜찮은 거야..."/>
+		<class name="Tutorial_SilverliningAfter_NEge0T" Value="[!Dialog][!speaker:Anne_Sorrow]나 이제 곧 15살이 돼."/>
+		<class name="Tutorial_SilverliningAfter_XjlFaG" Value="[!Dialog][!speaker:Anne_Sorrow_Smile]3년만 더 있으면 정식 트러블슈터가 될 수 있어."/>
+		<class name="Tutorial_SilverliningAfter_RPihg4" Value="[!Dialog][!speaker:Anne_Sorrow_Smile]정식 트러블슈터가 되면 내 회사를 만들어 내가 널 체포할거야."/>
+		<class name="Tutorial_SilverliningAfter_RsbhgR" Value="[!Dialog][!speaker:Anne_Sorrow]너와 함께 할 방법을 계속 찾아봤어."/>
+		<class name="Tutorial_SilverliningAfter_2mYlTn" Value="[!Dialog][!speaker:Anne_Sorrow]범죄자를 체포한 트러블슈터 회사 사장은 해당 범죄자에 대한 사법거래 권한을 가질 수 있대."/>
+		<class name="Tutorial_SilverliningAfter_nda1xV" Value="[!Dialog][!speaker:Anne_Sorrow]네가 받아야 하는 벌."/>
+		<class name="Tutorial_SilverliningAfter_oLVOyw" Value="[!Dialog][!speaker:Anne_Sorrow_Smile]내가 줄여 줄게."/>
+		<class name="Tutorial_SilverliningAfter_2dmEGC" Value="[!Dialog][!speaker:Anne_Sorrow_Smile]그리고 네가 받을 죗값이 끝나면 다시 같이 즐겁게 지내자."/>
+		<class name="Tutorial_SilverliningAfter_SqrplG" Value="[!Dialog][!speaker:Luna_Annoying]그게 가능할 것 같아?"/>
+		<class name="Tutorial_SilverliningAfter_8YiK6l" Value="[!Dialog][!speaker:Anne_Cry]그럼 어떻게 해!"/>
+		<class name="Tutorial_SilverliningAfter_gowxTl" Value="[!Dialog][!speaker:Anne_Cry]네가 더는 사람을 죽이지 않는 세상에서 같이 지내고 싶은 걸!!"/>
+		<class name="Tutorial_SilverliningAfter_z2V9Ux" Value="[!Dialog][!speaker:Luna_Depressed]불가능해..."/>
+		<class name="Tutorial_SilverliningAfter_plaZf2" Value="[!Dialog][!speaker:Luna_Depressed2]어차피 그 전에 처분되고 말아."/>
+		<class name="Tutorial_SilverliningAfter_vohTVG" Value="[!Dialog][!speaker:Anne_Sorrow_Smile]포기하지 말자. 루나."/>
+		<class name="Tutorial_SilverliningAfter_RGEcuV" Value="[!Dialog][!speaker:Anne_Sorrow]넌 날 위해 사람을 죽였어."/>
+		<class name="Tutorial_SilverliningAfter_bMDZ22" Value="[!Dialog][!speaker:Anne_Sorrow_Smile]나도 널 위해 할 수 있는 건 모두 하고 싶어."/>
+		<class name="Tutorial_SilverliningAfter_Jq4d73" Value="[!Dialog][!speaker:Luna_Annoying]......"/>
+		<class name="Tutorial_SilverliningAfter_OogzOb" Value="[!Dialog][!speaker:Anne_Sorrow_Smile]같이 람지플라자 가야 하잖아?"/>
+		<class name="Tutorial_SilverliningAfter_H5jJHE" Value="[!Dialog][!speaker:Luna_Depressed]난 그저 사람을 죽이는 기계야."/>
+		<class name="Tutorial_SilverliningAfter_4XlTs5" Value="[!Dialog][!speaker:Luna_Depressed2]그 날 일은 그저 내 정체를 들키지 않게 하기 위한 일이야."/>
+		<class name="Tutorial_SilverliningAfter_NMPYWt" Value="[!Dialog][!speaker:Anne_Sorrow_Smile]거짓말."/>
+		<class name="Tutorial_SilverliningAfter_nDAlfC" Value="[!Dialog][!speaker:Anne_Sorrow]내가 위험하지 않았다면 넌 그 상황을 피했을 거야."/>
+		<class name="Tutorial_SilverliningAfter_cLVcyY" Value="[!Dialog][!speaker:Anne_Sorrow]네가 어떤 사람이라도..."/>
+		<class name="Tutorial_SilverliningAfter_VEgqdS" Value="[!Dialog][!speaker:Anne_Sorrow_Smile]그 순간은 날 위해 한 행동이잖아."/>
+		<class name="Tutorial_SilverliningAfter_PV8JF2" Value="[!Dialog][!speaker:Luna_Rage]앤. 네가 날 몰라서 그래."/>
+		<class name="Tutorial_SilverliningAfter_x0RkvN" Value="[!Dialog][!speaker:Luna_Rage]사람 죽이지 않고도 널 구할 수 있었어."/>
+		<class name="Tutorial_SilverliningAfter_5WEr9R" Value="[!Dialog][!speaker:Luna_Normal]그냥 내가 이런 악당일 뿐이야."/>
+		<class name="Tutorial_SilverliningAfter_SbIecf" Value="[!Dialog][!speaker:Luna_Normal]그러니 우리 기억은 이제 추억으로 서로 남겨두자."/>
+		<class name="Tutorial_SilverliningAfter_S9cKnw" Value="[!Dialog][!speaker:Anne_Cry]난 포기 안해. 널 꼭 체포할거야."/>
+		<class name="Tutorial_SilverliningAfter_te3bYl" Value="[!Dialog][!speaker:Luna_Normal]우리 작별 인사한다고 했잖아."/>
+		<class name="Tutorial_SilverliningAfter_o90Spc" Value="[!Dialog][!speaker:Luna_Normal]잘있어. 앤."/>
+		<class name="Tutorial_SilverliningAfter_lBtGRP" Value="[!Dialog][!speaker:Marco_Smile]작별 인사는 잘 했나?"/>
+		<class name="Tutorial_SilverliningAfter_Us9N9o" Value="[!Dialog][!speaker:Luna_Depressed2]고마워. 마르코."/>
+		<class name="Tutorial_SilverliningAfter_fDm64n" Value="[!Dialog][!speaker:Marco_Smile]힘들면 그냥 여기서 처분해줄까?"/>
+		<class name="Tutorial_SilverliningAfter_HGPDoh" Value="[!Dialog][!speaker:Luna_Rage]아니. 나 하나도 안 힘들어."/>
+		<class name="Tutorial_SilverliningAfter_pGsueF" Value="[!Dialog][!speaker:Luna_Happy]일 잘할게. 말 잘 들을게."/>
+		<class name="Tutorial_SilverliningAfter_JciL4t" Value="[!Title]어쌔신 차일드"/>
+		<class name="Tutorial_SilverliningAfter_kcfJsU" Value="[!Title]1년 전, 벤데타 발할라 지부"/>
+		<class name="Tutorial_SilverliningAfter_KylpqF" Value="[!Dialog][!speaker:Marco_Stare2]누님. 저 녀석은 이미 망가졌어."/>
+		<class name="Tutorial_SilverliningAfter_IopV9Z" Value="[!Dialog][!speaker:Marco_Stare2]저런 감정 상태로는 암살은 커녕... 청소부 역할도 제대로 못할 거야."/>
+		<class name="Tutorial_SilverliningAfter_fZQvCl" Value="[!Dialog][!speaker:Marco_Smile2]망가진 도구는 그냥 버리는 게 낫소."/>
+		<class name="Tutorial_SilverliningAfter_iC7zlF" Value="[!Dialog][!speaker:Belladonna_Normal]네 녀석도 그때 폐기했어야 했나 보다."/>
+		<class name="Tutorial_SilverliningAfter_RDsnP5" Value="[!Dialog][!speaker:Marco_Smile2]그러시지 그랬어?"/>
+		<class name="Tutorial_SilverliningAfter_C9EXBG" Value="[!Dialog][!speaker:Belladonna_Smile]저 아이를 어떻게든 쓸만하게 만들어 봐."/>
+		<class name="Tutorial_SilverliningAfter_aexa1Z" Value="[!Dialog][!speaker:Marco_Smile2]내가 그런 걸 어떻게 해?"/>
+		<class name="Tutorial_SilverliningAfter_oofvHy" Value="[!Dialog][!speaker:Marco_Smile2]불가능 해."/>
+		<class name="Tutorial_SilverliningAfter_fh4uKI" Value="[!Dialog][!speaker:Belladonna_Satisfying]마르코."/>
+		<class name="Tutorial_SilverliningAfter_8IF8Rx" Value="[!Dialog][!speaker:Marco_Smile2]나보단 누님이 더 잘 알겠지."/>
+		<class name="Tutorial_SilverliningAfter_l3Y4aZ" Value="[!Dialog][!speaker:Marco_Smile2]날 인간으로 만든 건 누님이라오."/>
+		<class name="Tutorial_SilverliningAfter_6MlfeW" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]Tutorial_SkyBlueAfter_f37uYB"/>
+		<class name="Tutorial_SilverliningAfter_7eA34u" Value="[!Dialog][colour=&apos;FFFFFF00&apos;]시온이 수색할 장소를 골라주세요."/>
+		<class name="Tutorial_SilverliningAfter_Wdv3gt" Value="[!Dialog][!speaker:Irene_Normal]그럼 난 쉼터를 찾아볼게."/>
+		<class name="Tutorial_SilverliningAfter_ul72rL" Value="[!Dialog][!speaker:Irene_Normal]그럼 난 거리 입구를 찾아볼게."/>
+		<class name="Tutorial_SilverliningAfter_zy6YJ8" Value="[!Dialog][!speaker:Irene_Normal]그럼 난 주차장 쪽을 찾아볼게."/>
+		<class name="Tutorial_SilverliningAfter_rPQhAE" Value="[!Dialog][!speaker:Sion_Normal]그럼 난 근처 쉼터를 찾아볼게."/>
+		<class name="Tutorial_SilverliningAfter_Ipc5vh" Value="[!Dialog][!speaker:Sion_Normal]그럼 난 거리 입구를 찾아볼게."/>
+		<class name="Tutorial_SilverliningAfter_IA3xtt" Value="[!Dialog][!speaker:Sion_Normal]그럼 난 주차장 쪽을 찾아볼게."/>
+		<class name="Tutorial_SilverliningAfter_T6EVPN" Value="[!Dialog][!speaker:Albus_Normal]그럼 난 쉼터를 찾아봐야 겠군."/>
+		<class name="Tutorial_SilverliningAfter_WJKy40" Value="[!Dialog][!speaker:Albus_Normal]혹시 모르니 식당가 입구 거리 쪽으로 가 봐야겠다."/>
+		<class name="Tutorial_SilverliningAfter_JvFTb6" Value="[!Dialog][!speaker:Albus_Think]남은 곳은 주차장 쪽인가..."/>
+		<class name="Tutorial_SilverliningAfter_y8lmMd" Value="[!Title]식당가 쉼터"/>
+		<class name="Tutorial_SilverliningAfter_EjTsda" Value="[!Title]은빛 구름 뒷거리"/>
+		<class name="Tutorial_SilverliningAfter_Pz5ihw" Value="[!Dialog][!speaker:Irene_Surprise]앤!?"/>
+		<class name="Tutorial_SilverliningAfter_NmsbLF" Value="[!Dialog][!speaker:Anne_Surprise]알버스 오빠?"/>
+		<class name="Tutorial_SilverliningAfter_WzZ8iU" Value="[!Dialog][!speaker:Albus_Surprise]『 어쌔신 차일드 』!!"/>
+		<class name="Tutorial_SilverliningAfter_ADyHzF" Value="[!Dialog][!speaker:Albus_SurpriseStare][colour=&apos;FFFFFF00&apos;]&apos;저 아이... 혼자인가...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_biapIk" Value="[!Choice]못 본척 한다."/>
+		<class name="Tutorial_SilverliningAfter_IENhMj" Value="[!Choice]체포한다."/>
+		<class name="Tutorial_SilverliningAfter_Xcx7J5" Value="[!Objective]루나가 도망칠 때까지 알버스를 방해하시오."/>
+		<class name="Tutorial_SilverliningAfter_ROyRyQ" Value="[!Title]식당가 쉼터"/>
+		<class name="Tutorial_SilverliningAfter_lWY2uY" Value="[!Title]은빛 구름 뒷거리"/>
+		<class name="Tutorial_SilverliningAfter_6H6A2R" Value="[!Dialog][!speaker:Anne_Surprise]시온 오빠?"/>
+		<class name="Tutorial_SilverliningAfter_vlsRd7" Value="[!Dialog][!speaker:Sion_Stare]너 그 아이한테서 떨어져."/>
+		<class name="Tutorial_SilverliningAfter_J0H552" Value="[!Dialog][!speaker:Anne_Sorrow]시온 오빠. 아냐... 이 애는..."/>
+		<class name="Tutorial_SilverliningAfter_LNCnaa" Value="[!Dialog][!speaker:Sion_Stare]앤 가만히 있어."/>
+		<class name="Tutorial_SilverliningAfter_3p1eyD" Value="[!Dialog][!speaker:Luna_Normal]걱정하지 마. 난 이 아이한테 아무 짓도 하지 않아."/>
+		<class name="Tutorial_SilverliningAfter_b6TQXm" Value="[!Dialog][!speaker:Sion_Stare]당장 여기서 떠나."/>
+		<class name="Tutorial_SilverliningAfter_PujyAE" Value="[!Dialog][!speaker:Luna_Normal]안 그래도 그럴 거야."/>
+		<class name="Tutorial_SilverliningAfter_yXCPqP" Value="[!Dialog][!speaker:Sion_Stare]앤은 이 쪽으로 와!"/>
+		<class name="Tutorial_SilverliningAfter_F7QmNJ" Value="[!Dialog][!speaker:Anne_Sorrow]루나..."/>
+		<class name="Tutorial_SilverliningAfter_cVOsXi" Value="[!Dialog][!speaker:Luna_Normal]앤. 안녕."/>
+		<class name="Tutorial_SilverliningAfter_mQ0Laj" Value="[!Title]식당가 쉼터"/>
+		<class name="Tutorial_SilverliningAfter_0jMLBo" Value="[!Title]은빛 구름 뒷거리"/>
+		<class name="Tutorial_SilverliningAfter_5LZ2fk" Value="[!Dialog][!speaker:Anne_Surprise]아이린 언니?"/>
+		<class name="Tutorial_SilverliningAfter_41okgO" Value="[!Dialog][!speaker:Irene_Surprise]루나!?"/>
+		<class name="Tutorial_SilverliningAfter_Ayx9Ji" Value="[!Dialog][!speaker:Irene_Fury][colour=&apos;FFFFFF00&apos;]&apos;저 아이는...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_AepXX9" Value="[!Choice]악당이다."/>
+		<class name="Tutorial_SilverliningAfter_sG8NS8" Value="[!Choice]악당이지."/>
+		<class name="Tutorial_SilverliningAfter_R6y7pb" Value="[!Choice]악당일 뿐이다."/>
+		<class name="Tutorial_SilverliningAfter_MotOyS" Value="[!Choice]악당!!"/>
+		<class name="Tutorial_SilverliningAfter_Ot79Mx" Value="[!Dialog][!speaker:Irene_Heroic]루나!!"/>
+		<class name="Tutorial_SilverliningAfter_LWjyt1" Value="[!Dialog][!speaker:Irene_Heroic]앤의 마음을 더 아프게 하지 말고 지금 자수해라!"/>
+		<class name="Tutorial_SilverliningAfter_3evjJh" Value="[!Dialog][!speaker:Luna_Depressed]......"/>
+		<class name="Tutorial_SilverliningAfter_FO9ivL" Value="[!Dialog][!speaker:Anne_Surprise]아이린 언니..."/>
+		<class name="Tutorial_SilverliningAfter_bLur3S" Value="[!Dialog][!speaker:Irene_Normal]앤. 걱정하지 마."/>
+		<class name="Tutorial_SilverliningAfter_GhGAZ8" Value="[!Dialog][!speaker:Irene_Normal]오늘로 루나는 악당 일을 그만두게 될 거야!"/>
+		<class name="Tutorial_SilverliningAfter_uKvbfh" Value="[!Dialog][!speaker:Anne_Sorrow]루나! 도망쳐!"/>
+		<class name="Tutorial_SilverliningAfter_dHbdgV" Value="[!Dialog][!speaker:Irene_Surprise]!?"/>
+		<class name="Tutorial_SilverliningAfter_WcaNGh" Value="[!Dialog][!speaker:Luna_Annoying]......"/>
+		<class name="Tutorial_SilverliningAfter_JySIHL" Value="[!Dialog][!speaker:Anne_Sorrow_Smile]부탁이야. 루나."/>
+		<class name="Tutorial_SilverliningAfter_2EpQvI" Value="[!Dialog][!speaker:Luna_Depressed2]......"/>
+		<class name="Tutorial_SilverliningAfter_rcg4zi" Value="[!Dialog][!speaker:Luna_Normal]앤. 안녕."/>
+		<class name="Tutorial_SilverliningAfter_7SgMRO" Value="[!Dialog][!speaker:Irene_Surprise]앤..."/>
+		<class name="Tutorial_SilverliningAfter_Fs1SgF" Value="[!Dialog][!speaker:Irene_Fury]앤. 미안. 지금 놓치면 안 돼."/>
+		<class name="Tutorial_SilverliningAfter_Rc6KF5" Value="[!Dialog][!speaker:Anne_Cry]아이린 언니. 미안해요."/>
+		<class name="Tutorial_SilverliningAfter_6ywNu7" Value="[!VictoryCondition]포기하지 마시오."/>
+		<class name="Tutorial_SilverliningAfter_19Ue0A" Value="[!VictoryCondition]루나가 도망칠 때까지 아이린을 방해하시오."/>
+		<class name="Tutorial_SilverliningAfter_8jszK9" Value="[!Dialog][!speaker:Albus_Serious]당신을 보지 않았다고 할테니 당장 여기서 떠나주세요."/>
+		<class name="Tutorial_SilverliningAfter_CGIu8U" Value="[!Dialog][!speaker:Anne_Surprise]알버스 오빠."/>
+		<class name="Tutorial_SilverliningAfter_qwlM4v" Value="[!Dialog][!speaker:Albus_Serious]앤은 이 쪽으로 와!"/>
+		<class name="Tutorial_SilverliningAfter_Do6BWX" Value="[!Dialog][!speaker:Anne_Sorrow]루나..."/>
+		<class name="Tutorial_SilverliningAfter_yeVsR5" Value="[!Dialog][!speaker:Luna_Normal]앤. 안녕."/>
+		<class name="Tutorial_SilverliningAfter_C8LbMK" Value="[!Dialog][!speaker:Albus_Serious]당신을 이대로 보낼 수는 없습니다."/>
+		<class name="Tutorial_SilverliningAfter_zejpz3" Value="[!Dialog][!speaker:Luna_Normal]그래?"/>
+		<class name="Tutorial_SilverliningAfter_uKfYd0" Value="[!Dialog][!speaker:Anne_Surprise]알버스 오빠."/>
+		<class name="Tutorial_SilverliningAfter_v0SrYx" Value="[!Dialog][!speaker:Albus_Serious]앤은 이 쪽으로 와!"/>
+		<class name="Tutorial_SilverliningAfter_BMpKFT" Value="[!Dialog][!speaker:Albus_Surprise]!?"/>
+		<class name="Tutorial_SilverliningAfter_8VGFUf" Value="[!Dialog][!speaker:Albus_Surprise]이런... 쫓아가야 해."/>
+		<class name="Tutorial_SilverliningAfter_pldrGI" Value="[!Dialog][!speaker:Anne_Cry]알버스 오빠. 미안해요."/>
+		<class name="Tutorial_SilverliningAfter_vETh6M" Value="[!Dialog][!speaker:Albus_Surprise]앤!?"/>
+		<class name="Tutorial_SilverliningAfter_JLMVRl" Value="[!VictoryCondition]포기하지 마시오."/>
+		<class name="Tutorial_SilverliningAfter_6ON84z" Value="[!VictoryCondition]루나가 도망칠 때까지 알버스를 방해하시오."/>
+		<class name="Tutorial_SilverliningAfter_Dy3s0r" Value="[!Dialog][!speaker:Albus_Stare]&apos;쫓아가기는 무리인가...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_alqGmi" Value="[!Dialog][!speaker:Albus_Surprise]앤. 도대체..."/>
+		<class name="Tutorial_SilverliningAfter_XEKncb" Value="[!Dialog][!speaker:Anne_Sorrow]죄송합니다..."/>
+		<class name="Tutorial_SilverliningAfter_erwZX8" Value="[!Dialog][!speaker:Albus_SurpriseStare]그 아이는 범죄자야."/>
+		<class name="Tutorial_SilverliningAfter_uCVE5R" Value="[!Dialog][!speaker:Anne_Cry]......"/>
+		<class name="Tutorial_SilverliningAfter_2yNfvg" Value="[!Dialog][!speaker:Albus_Serious]그리고 더는 범죄를 저지르지 않게 하기 위해서도 체포해야 해."/>
+		<class name="Tutorial_SilverliningAfter_ycX63U" Value="[!Dialog][!speaker:Anne_Cry]지금 루나가 잡히면..."/>
+		<class name="Tutorial_SilverliningAfter_J5ixue" Value="[!Dialog][!speaker:Anne_Cry]사형 당할 거에요."/>
+		<class name="Tutorial_SilverliningAfter_Q40VIK" Value="[!Dialog][!speaker:Albus_Serious]......"/>
+		<class name="Tutorial_SilverliningAfter_sMQ53Q" Value="[!Dialog][!speaker:Anne_Cry]전 차마 그렇게 둘 수 없어요."/>
+		<class name="Tutorial_SilverliningAfter_LMOaAp" Value="[!Dialog][!speaker:Albus_EyeAversion]그것이 법이야."/>
+		<class name="Tutorial_SilverliningAfter_yNApU8" Value="[!Dialog][!speaker:Albus_EyeAversion]그리고 오늘 놓친 그 아이가 내일 또 누구를 죽일 수도 있어."/>
+		<class name="Tutorial_SilverliningAfter_3A3L1B" Value="[!Dialog][!speaker:Anne_Cry]알아요. 하지만..."/>
+		<class name="Tutorial_SilverliningAfter_uVT3oa" Value="[!Dialog][!speaker:Albus_EyeAversion]......"/>
+		<class name="Tutorial_SilverliningAfter_XTU7Lo" Value="[!Dialog][!speaker:Albus_EyeAversion]오늘 저녁은 아무 일도 없던 걸로 하자."/>
+		<class name="Tutorial_SilverliningAfter_gqTXXP" Value="[!Dialog][!speaker:Irene_Serious]&apos;이대로 앤을 두고 쫓아갈 수는 없어...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_FfxUsP" Value="[!Dialog][!speaker:Irene_Surprise]앤. 괜찮아?"/>
+		<class name="Tutorial_SilverliningAfter_w6Wz5l" Value="[!Dialog][!speaker:Anne_Cry]아이린 언니. 미안해요."/>
+		<class name="Tutorial_SilverliningAfter_vX8Fzc" Value="[!Dialog][!speaker:Irene_Normal]많이 힘들었구나."/>
+		<class name="Tutorial_SilverliningAfter_rvnZlx" Value="[!Dialog][!speaker:Anne_Cry]죄송해요. 전 차마 루나를..."/>
+		<class name="Tutorial_SilverliningAfter_TXxWf0" Value="[!Dialog][!speaker:Irene_Normal]괜찮아. 앤."/>
+		<class name="Tutorial_SilverliningAfter_hSUmQv" Value="[!Dialog][!speaker:Irene_Smile]루나가 또 범죄를 저지른다면 내가 막아줄게."/>
+		<class name="Tutorial_SilverliningAfter_C3M4Xj" Value="[!Dialog][!speaker:Irene_Smile2]루나가 악당을 그만 두고 네 친구일 수 있는 방법을 같이 찾아보자."/>
+		<class name="Tutorial_SilverliningAfter_ccXIcm" Value="[!Dialog][!speaker:Anne_Cry]아이린 언니..."/>
+		<class name="Tutorial_SilverliningAfter_1PjSx1" Value="[!Dialog][!speaker:Irene_Smile2]미안. 네 마음 못 알아줘서..."/>
+		<class name="Tutorial_SilverliningAfter_x2ONQl" Value="[!Dialog][!speaker:Anne_Cry]아이린 언니... 미안해요."/>
+		<class name="Tutorial_SilverliningAfter_609UMh" Value="[!Dialog][!speaker:Irene_Normal]그래. 날 믿어. 나 히어로 아이린이야."/>
+		<class name="Tutorial_SilverliningAfter_POJ9Pq" Value="[!Title]식당가 입구"/>
+		<class name="Tutorial_SilverliningAfter_WkoeWH" Value="[!Title]은빛 구름 뒷거리"/>
+		<class name="Tutorial_SilverliningAfter_8XfwGP" Value="[!Dialog][!speaker:Marco_Smile]저 녀석 이미 사람 다 됐구나."/>
+		<class name="Tutorial_SilverliningAfter_RhUuIH" Value="[!Dialog][!speaker:Marco_Smile]차라리 감정같은 것 못 느끼는 게 훨씬 편할텐데..."/>
+		<class name="Tutorial_SilverliningAfter_RLtI0x" Value="[!Dialog][!speaker:Marco_Smile]처분해야 되나..."/>
+		<class name="Tutorial_SilverliningAfter_urOs1D" Value="[!Objective]마르코를 제압하시오."/>
+		<class name="Tutorial_SilverliningAfter_GOoNaP" Value="[!Dialog][!speaker:Albus_Surprise]!?"/>
+		<class name="Tutorial_SilverliningAfter_3gs5AM" Value="[!Dialog][!speaker:Albus_SurpriseStare]벤데타..."/>
+		<class name="Tutorial_SilverliningAfter_yubj0w" Value="[!Dialog][!speaker:Marco_Smile]이건 또 누구야..."/>
+		<class name="Tutorial_SilverliningAfter_hM2Uyo" Value="[!Dialog][!speaker:Albus_Serious][colour=&apos;FFFFFF00&apos;]&apos;벤데타의 마르코잖아...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_GQ3lXN" Value="[!Choice]그냥 지나친다."/>
+		<class name="Tutorial_SilverliningAfter_SpzYnZ" Value="[!Objective]마르코를 제압하시오."/>
+		<class name="Tutorial_SilverliningAfter_iIdBdT" Value="[!Dialog][!speaker:Irene_Surprise]저 녀석은!?"/>
+		<class name="Tutorial_SilverliningAfter_OnHIzk" Value="[!Dialog][!speaker:Irene_Fury][colour=&apos;FFFFFF00&apos;]&apos;저 녀석은...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_v82ArE" Value="[!Choice]악당이다."/>
+		<class name="Tutorial_SilverliningAfter_cReE8a" Value="[!Choice]악당이지."/>
+		<class name="Tutorial_SilverliningAfter_stuRxr" Value="[!Choice]악당일 뿐이다."/>
+		<class name="Tutorial_SilverliningAfter_jVredV" Value="[!Choice]악당!!"/>
+		<class name="Tutorial_SilverliningAfter_7jgkua" Value="[!Dialog][!speaker:Irene_Heroic]너!!"/>
+		<class name="Tutorial_SilverliningAfter_ey3Dgv" Value="[!Dialog][!speaker:Irene_Heroic]루나를 놓아줘!"/>
+		<class name="Tutorial_SilverliningAfter_uv7mJX" Value="[!Dialog][!speaker:Marco_Smile]저 녀석은..."/>
+		<class name="Tutorial_SilverliningAfter_5jYURC" Value="[!Dialog][!speaker:Marco_Smile]아 그 때 그 녀석인가..."/>
+		<class name="Tutorial_SilverliningAfter_gnIJHz" Value="[!Dialog][!speaker:Irene_Normal]네 녀석을 체포하고 오늘로 루나를 구해 내겠다!"/>
+		<class name="Tutorial_SilverliningAfter_tYDoCm" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_SilverliningAfter_Ne1I5b" Value="[!VictoryCondition]마르코를 제압하시오."/>
+		<class name="Tutorial_SilverliningAfter_VKFYJg" Value="[!Dialog][!speaker:Sion_Surprise]!?"/>
+		<class name="Tutorial_SilverliningAfter_aIHvI8" Value="[!Dialog][!speaker:Sion_Stare]저 녀석은..."/>
+		<class name="Tutorial_SilverliningAfter_4IMXIx" Value="[!Dialog][!speaker:Marco_Smile]이건 또 누구야..."/>
+		<class name="Tutorial_SilverliningAfter_YjsmxX" Value="[!Dialog][!speaker:Sion_Stare]너희들 무슨 일을 꾸미는 거냐?"/>
+		<class name="Tutorial_SilverliningAfter_4Vy2hs" Value="[!Dialog][!speaker:Marco_Smile]건방진 귀족 도련님이네."/>
+		<class name="Tutorial_SilverliningAfter_pcZZT8" Value="[!Dialog][!speaker:Sion_Stare]허튼짓 하면 용서하지 않을 거다."/>
+		<class name="Tutorial_SilverliningAfter_m8c8rI" Value="[!Dialog][!speaker:Marco_Normal]&apos;블러드워커. 한 번쯤 싸워보고 싶은데 말야.&apos;"/>
+		<class name="Tutorial_SilverliningAfter_y61OFm" Value="[!Dialog][!speaker:Marco_Rage]&apos;이 녀석 건드린 것을 누님이 알았다간 난리 나겠지...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_DvihvX" Value="[!Dialog][!speaker:Sion_Stare]당장 여기를 떠나!"/>
+		<class name="Tutorial_SilverliningAfter_S694F4" Value="[!Dialog][!speaker:Albus_Serious]&apos;저 사람을 제압하려면 선수 필승이야.&apos;"/>
+		<class name="Tutorial_SilverliningAfter_YwJCFN" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_SilverliningAfter_Wo8m5W" Value="[!VictoryCondition]마르코를 제압하시오"/>
+		<class name="Tutorial_SilverliningAfter_hwwGUj" Value="[!Dialog][!speaker:Albus_Serious]&apos;이 상황은 위험해...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_o2zu4O" Value="[!Dialog][!speaker:Albus_Serious]&apos;그리고 앤을 찾는 게 더 급해...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_ntxR8d" Value="[!Dialog][!speaker:Marco_Smile]제법 강하구나."/>
+		<class name="Tutorial_SilverliningAfter_Mhx8A4" Value="[!Dialog][!speaker:Marco_Smile]하지만 여기까지만 하자."/>
+		<class name="Tutorial_SilverliningAfter_DLBTJk" Value="[!Dialog][!speaker:Albus_Serious]당신을 체포하겠습니다."/>
+		<class name="Tutorial_SilverliningAfter_pRJvgK" Value="[!Dialog][!speaker:Marco_Smile]괜찮겠어? 네 꼬마 여자아이 동료?"/>
+		<class name="Tutorial_SilverliningAfter_5ejtUX" Value="[!Dialog][!speaker:Albus_Surprise]!?"/>
+		<class name="Tutorial_SilverliningAfter_E99j0I" Value="[!Dialog][!speaker:Albus_Fury]앤을 어떻게 한 거냐!"/>
+		<class name="Tutorial_SilverliningAfter_joUk2j" Value="[!Dialog][!speaker:Marco_Smile]네 뒤를 봐."/>
+		<class name="Tutorial_SilverliningAfter_sAeSyZ" Value="[!Dialog][!speaker:Albus_Fury]허튼 수작 부리지 마."/>
+		<class name="Tutorial_SilverliningAfter_JYxxJN" Value="[!Dialog][!speaker:Marco_Smile]날 안다면 내 동료가 하나 더 있다는 거 알지 않아?"/>
+		<class name="Tutorial_SilverliningAfter_e01r00" Value="[!Dialog][!speaker:Albus_SurpriseStare]......"/>
+		<class name="Tutorial_SilverliningAfter_cBEUir" Value="[!Dialog][!speaker:Albus_Surprise]이런..."/>
+		<class name="Tutorial_SilverliningAfter_d8Qj2f" Value="[!Dialog][!speaker:Irene_Heroic]항복해라! 악당!"/>
+		<class name="Tutorial_SilverliningAfter_wCSQxs" Value="[!Dialog][!speaker:Marco_Smile]괜찮겠어? 네 꼬마 여자아이 동료?"/>
+		<class name="Tutorial_SilverliningAfter_gwtJQq" Value="[!Dialog][!speaker:Irene_Surprise]!?"/>
+		<class name="Tutorial_SilverliningAfter_fhTWB2" Value="[!Dialog][!speaker:Irene_Fury]이 악당! 앤을 어떻게 한 거냐!"/>
+		<class name="Tutorial_SilverliningAfter_h3Vwgd" Value="[!Dialog][!speaker:Marco_Smile]네 뒤를 봐."/>
+		<class name="Tutorial_SilverliningAfter_xXB6LS" Value="[!Dialog][!speaker:Irene_Fury]이 비겁한 녀석..."/>
+		<class name="Tutorial_SilverliningAfter_CWMGwh" Value="[!Dialog][!speaker:Albus_Serious]......"/>
+		<class name="Tutorial_SilverliningAfter_186WVu" Value="[!Dialog][!speaker:Albus_Serious]이렇게 보면 앤과 다를 바 없는 아이인데..."/>
+		<class name="Tutorial_SilverliningAfter_i3EtXo" Value="[!BalloonChat][!speaker:Albus]!!"/>
+		<class name="Tutorial_SilverliningAfter_ziua6n" Value="[!Dialog][!speaker:Albus_SurpriseStare]벤데타의 마르코!!"/>
+		<class name="Tutorial_SilverliningAfter_8wU96w" Value="[!Dialog][!speaker:Marco_Rage]날 안다면 네 머리를 조심해!"/>
+		<class name="Tutorial_SilverliningAfter_qlMnDK" Value="[!Dialog][!speaker:Albus_SurpriseStare]&apos;순간 날 공격하는 줄 알았는데...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_cHFPz2" Value="[!Dialog][!speaker:Albus_Embarrassed]차라리 이 정도에서 마무리 된 것이 다행인가..."/>
+		<class name="Tutorial_SilverliningAfter_ptPhr9" Value="[!Dialog][!speaker:Irene_Serious]루나. 네가 앤의 친구일 수 있도록 도와줄게."/>
+		<class name="Tutorial_SilverliningAfter_KLKGbr" Value="[!BalloonChat][!speaker:Irene]연막!?"/>
+		<class name="Tutorial_SilverliningAfter_uBGdQq" Value="[!Dialog][!speaker:Marco_Smile]히어로 놀이는 제발 혼자 하세요."/>
+		<class name="Tutorial_SilverliningAfter_Mha4Ps" Value="[!Dialog][!speaker:Irene_Surprise]넌!?"/>
+		<class name="Tutorial_SilverliningAfter_uX48lt" Value="[!Dialog][!speaker:Marco_Smile]그리고 히어로도 이 녀석은 못 구해. 그러니 포기해."/>
+		<class name="Tutorial_SilverliningAfter_PhB6P3" Value="[!Dialog][!speaker:Irene_Surprise]안돼!! 거기 멈추지 못해!"/>
+		<class name="Tutorial_SilverliningAfter_h31sYW" Value="[!Dialog][!speaker:Irene_Fury]이 악당 녀석..."/>
+		<class name="Tutorial_SilverliningAfter_jlYrtX" Value="[!Title]식당가 주차장"/>
+		<class name="Tutorial_SilverliningAfter_G08g8D" Value="[!Title]은빛 구름 뒷거리"/>
+		<class name="Tutorial_SilverliningAfter_HdxORV" Value="[!Dialog][!speaker:Luna_Surprise]마르코!"/>
+		<class name="Tutorial_SilverliningAfter_XHdjSZ" Value="[!Dialog][!speaker:Luna_Annoying]&apos;빨리 안 오고 뭐 하는 거야...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_Sl7yrU" Value="[!Dialog][!speaker:Albus_SurpriseStare]앤 도대체 어디로 간 거지..."/>
+		<class name="Tutorial_SilverliningAfter_FV21AS" Value="[!Dialog][!speaker:Luna_Annoying]트러블슈터."/>
+		<class name="Tutorial_SilverliningAfter_1fdttZ" Value="[!Dialog][!speaker:Albus_SurpriseStare][colour=&apos;FFFFFF00&apos;]&apos;벤데타의 『 어쌔신 차일드 』!?...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_b9XsmY" Value="[!Dialog][!speaker:Albus_Serious]&apos;여기서 일부러 사건을 일으킬 필요는 없어...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_HAgl6z" Value="[!Dialog][!speaker:Albus_Serious]&apos;앤을 찾는 게 더 급해...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_6JrEWv" Value="[!Dialog][!speaker:Albus_Serious]&apos;제압할 수 있을까...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_PvVdCd" Value="[!Dialog][!speaker:Albus_Serious]&apos;지금 아니면 체포할 기회가 없을지도 몰라...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_rBO9tH" Value="[!Dialog][!speaker:Albus_Serious]&apos;예전과는 달라. 할 수 있어.&apos;"/>
+		<class name="Tutorial_SilverliningAfter_8QVOnQ" Value="[!Dialog][!speaker:Luna_Annoying]곤란하게 만들지 마!"/>
+		<class name="Tutorial_SilverliningAfter_Ijs7RI" Value="[!VictoryCondition]포기하지 마시오."/>
+		<class name="Tutorial_SilverliningAfter_Gy4B7M" Value="[!VictoryCondition]루나를 제압하시오"/>
+		<class name="Tutorial_SilverliningAfter_hbC21k" Value="[!Dialog][!speaker:Irene_Think]앤. 도대체 어디로 간 거지..."/>
+		<class name="Tutorial_SilverliningAfter_patXmJ" Value="[!Dialog][!speaker:Irene_Surprise]너는!?"/>
+		<class name="Tutorial_SilverliningAfter_dOzqY0" Value="[!Dialog][!speaker:Irene_Fury][colour=&apos;FFFFFF00&apos;]&apos;앤의 친구 루나... 하지만...역시 &apos;"/>
+		<class name="Tutorial_SilverliningAfter_ymMauM" Value="[!Choice]악당이다."/>
+		<class name="Tutorial_SilverliningAfter_ZrRUjq" Value="[!Choice]악당이지."/>
+		<class name="Tutorial_SilverliningAfter_GZ3XU4" Value="[!Choice]악당일 뿐이다."/>
+		<class name="Tutorial_SilverliningAfter_HUcgoz" Value="[!Choice]악당!!"/>
+		<class name="Tutorial_SilverliningAfter_zLqZvu" Value="[!Dialog][!speaker:Irene_Heroic]항복해!"/>
+		<class name="Tutorial_SilverliningAfter_5Ubphe" Value="[!Dialog][!speaker:Luna_Depressed2]짜증 나게 하지 마."/>
+		<class name="Tutorial_SilverliningAfter_DyB4fb" Value="[!VictoryCondition]포기하지 마시오."/>
+		<class name="Tutorial_SilverliningAfter_YG2cIN" Value="[!VictoryCondition]루나를 제압하시오."/>
+		<class name="Tutorial_SilverliningAfter_MnU0iL" Value="[!Dialog][!speaker:Sion_Think]앤이 갑자기 나갈 이유가 있었나..."/>
+		<class name="Tutorial_SilverliningAfter_Jyk5Cb" Value="[!Dialog][!speaker:Sion_Surprise]......"/>
+		<class name="Tutorial_SilverliningAfter_b3Ohp2" Value="[!Dialog][!speaker:Sion_Laugh]에이. 아무 것도 못 본거지."/>
+		<class name="Tutorial_SilverliningAfter_5ADq47" Value="[!Dialog][!speaker:Sion_Normal]앤을 찾는 게 더 급해."/>
+		<class name="Tutorial_SilverliningAfter_XcKC9i" Value="[!Dialog][!speaker:Albus_Stare]&apos;아무리 예상 못 한 상황이지만 앤 한 명을 못 떨쳐내다니...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_ha2r7o" Value="[!Dialog][!speaker:Anne_Sorrow]죄송합니다..."/>
+		<class name="Tutorial_SilverliningAfter_Z80k8q" Value="[!Dialog][!speaker:Anne_Cry]......"/>
+		<class name="Tutorial_SilverliningAfter_tzH0B2" Value="[!Dialog][!speaker:Albus_EyeAversion]......"/>
+		<class name="Tutorial_SilverliningAfter_tgNc29" Value="[!Dialog][!speaker:Marco_Smile]너도 덤빌려는 건가?"/>
+		<class name="Tutorial_SilverliningAfter_QG32KA" Value="[!Dialog][!speaker:Leton_Smile]서로 귀찮게 충돌하지 맙시다."/>
+		<class name="Tutorial_SilverliningAfter_YF6NIf" Value="[!Dialog][!speaker:Leton_Laugh]그쪽도 챙겨야 할 아이가 있을 텐데요?"/>
+		<class name="Tutorial_SilverliningAfter_2Zz2CR" Value="[!Dialog][!speaker:Marco_Smile]그래. 서로 이해해주니 좋군."/>
+		<class name="Tutorial_SilverliningAfter_vwW3a9" Value="[!Dialog][!speaker:Leton_Smile]동감합니다."/>
+		<class name="Tutorial_SilverliningAfter_TMlxBQ" Value="[!Dialog][!speaker:Marco_Smile]그럼 이만."/>
+		<class name="Tutorial_SilverliningAfter_JnmInb" Value="[!Dialog][!speaker:Marco_Smile]너도 덤빌려는 건가?"/>
+		<class name="Tutorial_SilverliningAfter_KTIX3X" Value="[!Dialog][!speaker:Leton_Smile]서로 귀찮게 충돌하지 맙시다."/>
+		<class name="Tutorial_SilverliningAfter_Er2ON7" Value="[!Dialog][!speaker:Leton_Laugh]그쪽도 챙겨야 할 아이가 있을 텐데요?"/>
+		<class name="Tutorial_SilverliningAfter_3LDF49" Value="[!Dialog][!speaker:Marco_Smile]그래. 서로 이해가 상충하니 좋네."/>
+		<class name="Tutorial_SilverliningAfter_EbSDE5" Value="[!Dialog][!speaker:Leton_Smile]동감합니다."/>
+		<class name="Tutorial_SilverliningAfter_uP5SRS" Value="[!Dialog][!speaker:Marco_Smile]그럼 이만."/>
+		<class name="Tutorial_SilverliningAfter_KkmyZ6" Value="[!Dialog][!speaker:Luna_Depressed]너희들 너무 약하잖아."/>
+		<class name="Tutorial_SilverliningAfter_5ccyLh" Value="[!Dialog][!speaker:Luna_Depressed]너희들과 함께하는 앤이 매 순간 얼마나 위험한지 알아?"/>
+		<class name="Tutorial_SilverliningAfter_NtrvL5" Value="[!Dialog][!speaker:Luna_Depressed2]제발 좀 강해져..."/>
+		<class name="Tutorial_SilverliningAfter_eSyz3c" Value="[!Dialog][!speaker:Luna_Depressed]히어로는 강해야 하잖아."/>
+		<class name="Tutorial_SilverliningAfter_GR1Cft" Value="[!Dialog][!speaker:Luna_Depressed]히어로와 함께하는 앤이 매 순간 얼마나 위험한지 알아?"/>
+		<class name="Tutorial_SilverliningAfter_zV2sSG" Value="[!Dialog][!speaker:Luna_Depressed2]제발 말로만 히어로라고 하지 말라고..."/>
+		<class name="Tutorial_SilverliningAfter_TpKq2P" Value="[!Dialog][!speaker:Irene_Serious]&apos;앤이 이렇게까지...&apos;"/>
+		<class name="Tutorial_SilverliningAfter_YTSKGh" Value="[!Dialog][!speaker:Irene_Serious]&apos;정말 절실하구나...&apos;"/>
+	</idspace>
+</idspaces>

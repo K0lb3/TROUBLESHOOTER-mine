@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Common_FogCliff_FFpC9v" Value="[!Dashboard:Counter]남은 야수 수"/>
+		<class name="Common_FogCliff_JErOxA" Value="[!Objective]구역 내 야수를 모두 사냥하시오."/>
+		<class name="Common_FogCliff_hceRaw" Value="[!Title]이상 징후"/>
+		<class name="Common_FogCliff_HjmytC" Value="[!Title]철의 숲 안개 절벽"/>
+		<class name="Common_FogCliff_64KdN9" Value="[!Subtitle][!speaker:EmptySubTitle_]트러블슈터의 야수 사냥이 시작되었음에도..."/>
+		<class name="Common_FogCliff_xyEV6H" Value="[!Subtitle][!speaker:EmptySubTitle_]시간이 지나갈수록  야수들은 인간의 영역으로 다가온다."/>
+		<class name="Common_FogCliff_nO6J3W" Value="[!Subtitle][!speaker:EmptySubTitle_]심지어 인간을 꺼리는 도로리조차..."/>
+		<class name="Common_FogCliff_SgsAvK" Value="[!Subtitle][!speaker:EmptySubTitle_]경비를 서는 경찰들에게 쉽게 발견되었다."/>
+		<class name="Common_FogCliff_6lHQJN" Value="[!Dialog][!speaker:VHPD_Assault_Normal]현재 일부 도로리 무리가 방어선 근처까지 진출하였습니다."/>
+		<class name="Common_FogCliff_9SSSSg" Value="[!Dialog][!speaker:Albus_Think]도로리들은 자신의 영역에서 벗어나지 않는 야수일 텐데..."/>
+		<class name="Common_FogCliff_UeriQv" Value="[!Dialog][!speaker:Albus_Think]역시 철의 숲 내부에 무슨 일이 벌어지고 있는 건가..."/>
+		<class name="Common_FogCliff_MUOQFY" Value="[!Dialog][!speaker:VHPD_Assault_Normal]위협이 될 수 있는 요소는 철저히 배제하라는 본청의 요청입니다."/>
+		<class name="Common_FogCliff_0jfAtI" Value="[!Dialog][!speaker:Albus_Serious]알겠습니다. 일단 전자망 100m 내 야수들은 모두 배제하도록 하겠습니다."/>
+		<class name="Common_FogCliff_iZ8uT6" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Common_FogCliff_5bvePv" Value="[!VictoryCondition]구역 내 야수를 모두 사냥하시오."/>
+	</idspace>
+</idspaces>

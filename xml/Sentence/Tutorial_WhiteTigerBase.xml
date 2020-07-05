@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Tutorial_WhiteTigerBase_TteX6H" Value="[!Dashboard:Counter]남은 백호파 조직원 수"/>
+		<class name="Tutorial_WhiteTigerBase_oBio63" Value="[!Dashboard:Counter]북쪽 방어진 경찰 수"/>
+		<class name="Tutorial_WhiteTigerBase_V1NGez" Value="[!Dashboard:Counter]남쪽 방어진 경찰 수"/>
+		<class name="Tutorial_WhiteTigerBase_rgMCzt" Value="[!Objective]적을 모두 제압하시오."/>
+		<class name="Tutorial_WhiteTigerBase_OCjBw8" Value="[!Dialog][!speaker:VHPD_Jane_Normal]방어선까지 후퇴! 전열을 정비한다!"/>
+		<class name="Tutorial_WhiteTigerBase_cz0pOm" Value="[!Dialog][!speaker:VHPD_Jane_Normal]그리고 정비가 끝나는대로 다시 한번 돌입한다!"/>
+		<class name="Tutorial_WhiteTigerBase_WfSFxP" Value="[!Title]떠나간 자리"/>
+		<class name="Tutorial_WhiteTigerBase_bqlUZZ" Value="[!Title]10년 전, 자홍 뒷거리"/>
+		<class name="Tutorial_WhiteTigerBase_bAVrtV" Value="[!Dialog][!speaker:Gangster_Foo_Normal_Young]케빈. 네 녀석은 이제 보스의 명령조차 무시하는 건가?"/>
+		<class name="Tutorial_WhiteTigerBase_sYVp0d" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal_Young]보스만 있다면 『 백호 』는 언제든지 재기합니다."/>
+		<class name="Tutorial_WhiteTigerBase_CSDbcG" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal_Young]하지만 보스가 없는 조직은 『 백호 』가 아닙니다."/>
+		<class name="Tutorial_WhiteTigerBase_IsM5UM" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal_Young]보스."/>
+		<class name="Tutorial_WhiteTigerBase_OQORsZ" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal_Young]당신의 『 백호 』는 고작 여기까지입니까?"/>
+		<class name="Tutorial_WhiteTigerBase_cfUEvo" Value="[!Dialog][!speaker:Gangster_Foo_Blood_Young][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Radio&apos;][colour=&apos;FFFFE959&apos;]케빈. 쓸데 없는 짓 하지 말고 임무나 수행해."/>
+		<class name="Tutorial_WhiteTigerBase_E0BlV8" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal_Young][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Radio&apos;][colour=&apos;FFFFE959&apos;]죄송합니다. 보스."/>
+		<class name="Tutorial_WhiteTigerBase_clUtSw" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal_Young][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Radio&apos;][colour=&apos;FFFFE959&apos;]보스와 상의없이 보스를 살리기 위해 스콧님과 트레이님의 동의도 확보했습니다."/>
+		<class name="Tutorial_WhiteTigerBase_YVQYYS" Value="[!Dialog][!speaker:Gangster_Foo_Blood_Young][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Radio&apos;][colour=&apos;FFFFE959&apos;]케빈. 그 녀석들에게 빚을 만들지 말고 그냥 날 버려라. 그리고 네가 백호파를 이끌어라."/>
+		<class name="Tutorial_WhiteTigerBase_G8crft" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]보스. 그 방법은 보스의 인망에 타격이 갑니다."/>
+		<class name="Tutorial_WhiteTigerBase_jFS0zy" Value="[!Dialog][!speaker:Gangster_Foo_Normal]두 번 말하지 않는다. 케빈."/>
+		<class name="Tutorial_WhiteTigerBase_VWjXOk" Value="[!Dialog][!speaker:Gangster_Foo_Normal]지금 우리에게 필요한 건 뼈에 사무치는 『공포』다."/>
+		<class name="Tutorial_WhiteTigerBase_qVRVzj" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]알겠습니다. 보스."/>
+		<class name="Tutorial_WhiteTigerBase_qyIpPT" Value="[!Dialog][!speaker:Gangster_Foo_Normal]당분간 조직을 떠나 여행이나 다녀와라."/>
+		<class name="Tutorial_WhiteTigerBase_d0eQbO" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]보스??"/>
+		<class name="Tutorial_WhiteTigerBase_SNeAs3" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]지금 같은 시기에 여행이라니요??"/>
+		<class name="Tutorial_WhiteTigerBase_rG9jnU" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]보스!! 차라리 밑바닥부터... 처음부터... 다시 시작하겠습니다."/>
+		<class name="Tutorial_WhiteTigerBase_T1aapq" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]보스. 차라리 백호의 기강을 위해 절..."/>
+		<class name="Tutorial_WhiteTigerBase_ry6RwE" Value="[!Title]끝을 알리는 빗소리"/>
+		<class name="Tutorial_WhiteTigerBase_3GnByg" Value="[!Title]9개월 전, 자홍 뒷거리"/>
+		<class name="Tutorial_WhiteTigerBase_qemZJd" Value="[!Dialog][!speaker:Gangster_Foo_Normal]트레이. 어떻게 할 거냐?"/>
+		<class name="Tutorial_WhiteTigerBase_kPd7fR" Value="[!Dialog][!speaker:Gangster_Trey_Normal]너는 왜 거기 가만히 있는 것이냐?"/>
+		<class name="Tutorial_WhiteTigerBase_0A8VZX" Value="[!Dialog][!speaker:Gangster_Foo_Normal]고민 중이다."/>
+		<class name="Tutorial_WhiteTigerBase_iOpQ2y" Value="[!Dialog][!speaker:Gangster_Trey_Normal]네가 들어간다면 우리도 들어간다."/>
+		<class name="Tutorial_WhiteTigerBase_2KfMfF" Value="[!Dialog][!speaker:Gangster_Foo_Normal]왜 네 조직의 결정을 나에게 의존하나?"/>
+		<class name="Tutorial_WhiteTigerBase_kuMXrY" Value="[!Dialog][!speaker:Gangster_Trey_Normal]의존? 아니 내 뒤를 너에게 보일 수 없을 뿐이야."/>
+		<class name="Tutorial_WhiteTigerBase_VbFrCt" Value="[!Dialog][!speaker:Gangster_Foo_Normal]하하...하하하하..."/>
+		<class name="Tutorial_WhiteTigerBase_WNcnmJ" Value="[!Dialog]그날 꺼트렸어야 할 불씨. $CompanyName$."/>
+		<class name="Tutorial_WhiteTigerBase_36zIq6" Value="[!Title]백수의 왕"/>
+		<class name="Tutorial_WhiteTigerBase_uVrtsi" Value="[!Title]자홍 뒷골목 중앙 진지"/>
+		<class name="Tutorial_WhiteTigerBase_ST4Hfs" Value="[!Dialog][!speaker:Gangster_Foo_Normal]......"/>
+		<class name="Tutorial_WhiteTigerBase_hr4paz" Value="[!Dialog][!speaker:Gangster_WhiteTigerSniper2_Normal]보스. 트러블슈터 $CompanyName$[이] 출동한 것 같습니다."/>
+		<class name="Tutorial_WhiteTigerBase_JoWNXr" Value="[!Dialog][!speaker:Gangster_Foo_Normal]어느 쪽인가?"/>
+		<class name="Tutorial_WhiteTigerBase_qtPhCs" Value="[!Dialog][!speaker:Gangster_WhiteTigerSniper2_Normal]남쪽 방향입니다."/>
+		<class name="Tutorial_WhiteTigerBase_uwkZco" Value="[!Dialog][!speaker:Gangster_Foo_Normal]알았다."/>
+		<class name="Tutorial_WhiteTigerBase_E5oORC" Value="[!Title]마지막 어금니"/>
+		<class name="Tutorial_WhiteTigerBase_ZtIERz" Value="[!Title]자홍 뒷골목 북쪽 진지"/>
+		<class name="Tutorial_WhiteTigerBase_CTHu3j" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]보스는?"/>
+		<class name="Tutorial_WhiteTigerBase_a2jvo3" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]많이 지치셨는지 백운과 백뢰를 끌고 잠시 뒤로 빠지셨습니다."/>
+		<class name="Tutorial_WhiteTigerBase_D4oZOP" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]......"/>
+		<class name="Tutorial_WhiteTigerBase_olRf9M" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]자네도 같이 가지 그랬나?"/>
+		<class name="Tutorial_WhiteTigerBase_JLJaI8" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]그럼 베르케 님 혼자서 외롭지 않겠습니까?"/>
+		<class name="Tutorial_WhiteTigerBase_HR2Pqb" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]자네 제법 재밌는 사람이었군."/>
+		<class name="Tutorial_WhiteTigerBase_v5EoPf" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]저 방어진. 뚫을 수는 있겠습니까?"/>
+		<class name="Tutorial_WhiteTigerBase_mbzZ7E" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]힘들어. 후성이 데리고 있던 전력이 있으면 모를까..."/>
+		<class name="Tutorial_WhiteTigerBase_HzdiP4" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]일단 머트가 키우던 정예들이 있어."/>
+		<class name="Tutorial_WhiteTigerBase_pj5yfv" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]몇 안되지만 요소에 배치시켰네."/>
+		<class name="Tutorial_WhiteTigerBase_u9PQIt" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]우리 세력이 약해졌다고 방심하고 들어오면 제대로 전력을 갉아낼 수 있을 거네."/>
+		<class name="Tutorial_WhiteTigerBase_zqMO1c" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]베르케 님과 같은 무투파가 전략을 짜고 있다니 신선하네요."/>
+		<class name="Tutorial_WhiteTigerBase_ogwfpR" Value="[!Title]굳은 신뢰"/>
+		<class name="Tutorial_WhiteTigerBase_jZZHuc" Value="[!Title]자홍 뒷골목 남쪽 진입로"/>
+		<class name="Tutorial_WhiteTigerBase_I390lB" Value="[!Dialog][!speaker:Giselle_Annoying]밤새 이렇게 무리한거야?"/>
+		<class name="Tutorial_WhiteTigerBase_ASkH2F" Value="[!Dialog][!speaker:VHPD_Jane_Angry]상부 명령이라 어쩔 수 없었어."/>
+		<class name="Tutorial_WhiteTigerBase_ZJmxLl" Value="[!Dialog][!speaker:VHPD_Jane_Angry]선거 전까지 백호파 푸를 체포해 경찰 포토라인에 세우라는 명령이야."/>
+		<class name="Tutorial_WhiteTigerBase_8xsB9o" Value="[!Dialog][!speaker:VHPD_Jane_Angry]아침까지 너희를 기다렸다면 여기 출동한 경찰들 모두 직위 해제까지 각오해야 해."/>
+		<class name="Tutorial_WhiteTigerBase_DJrZOx" Value="[!Dialog][!speaker:Albus_Surprise]현장 상황이 어떻게 된 건가요?"/>
+		<class name="Tutorial_WhiteTigerBase_t0iBHS" Value="[!Dialog][!speaker:Giselle_Annoying]백호파 남은 전력이야 별 볼일 없을텐데..."/>
+		<class name="Tutorial_WhiteTigerBase_gGMZ4b" Value="[!Dialog][!speaker:VHPD_Jane_Normal]남은 백호파 조직원들은 최정예라고 보면 돼."/>
+		<class name="Tutorial_WhiteTigerBase_rulAbQ" Value="[!Dialog][!speaker:VHPD_Jane_Normal]그리고 적 중에 잘 훈련된 저격수들이 섞여 있어."/>
+		<class name="Tutorial_WhiteTigerBase_p23Nmn" Value="[!Dialog][!speaker:Giselle_Normal]범죄 조직이 저격수를 너무 좋아하네.."/>
+		<class name="Tutorial_WhiteTigerBase_ehLMCr" Value="[!Dialog][!speaker:Irene_Surprise]평소처럼 연막을 치고 안전하게 접근하여 하나씩 제거하면 되지 않아?"/>
+		<class name="Tutorial_WhiteTigerBase_mAxoVF" Value="[!Dialog][!speaker:Sion_Happy]거리만 좁히면 한 방이지~☆"/>
+		<class name="Tutorial_WhiteTigerBase_Sz5hti" Value="[!Dialog][!speaker:Anne_Strict]저도 뒤에서 열심히 지원할게요."/>
+		<class name="Tutorial_WhiteTigerBase_qL69gW" Value="[!Dialog][!speaker:Kylie_Normal]자홍 뒷골목은 생각보다 저격수들이 유리한 위치가 많아."/>
+		<class name="Tutorial_WhiteTigerBase_3yD9Rs" Value="[!Dialog][!speaker:VHPD_Jane_Normal]카일리 말대로야."/>
+		<class name="Tutorial_WhiteTigerBase_hUIRYR" Value="[!Dialog][!speaker:Albus_Normal]위치만 확인되면 저나 다른 기동성 빠른 사람들이 바로 제압하겠습니다."/>
+		<class name="Tutorial_WhiteTigerBase_YAKVeO" Value="[!Dialog][!speaker:Sion_Angry]그래도 옛날 성난 황소파 토벌 현장보다 든든한 걸~☆"/>
+		<class name="Tutorial_WhiteTigerBase_hOf4G6" Value="[!Dialog][!speaker:Sion_Depressed]그때는 생각만 해도 토가 나와."/>
+		<class name="Tutorial_WhiteTigerBase_PDQJ0V" Value="[!Dialog][!speaker:Irene_Normal]&apos;그 때는 정말 혼자 뛰어다니느라 바빴는데...&apos;"/>
+		<class name="Tutorial_WhiteTigerBase_uLYC6N" Value="[!Dialog][!speaker:VHPD_Jane_Smile]&apos;성난 황소 파가 토벌된 지 벌써 9개월인가...&apos;"/>
+		<class name="Tutorial_WhiteTigerBase_Zfvfcz" Value="[!Dialog][!speaker:Sion_Normal]히어로. 오늘 잘 부탁해~☆"/>
+		<class name="Tutorial_WhiteTigerBase_7gb8bF" Value="[!Dialog][!speaker:Irene_Smile2]물론이지."/>
+		<class name="Tutorial_WhiteTigerBase_isc57z" Value="[!Dialog][!speaker:VHPD_Jane_Normal]북쪽 방어선이 걱정되긴 하지만 우회할 여유는 없어."/>
+		<class name="Tutorial_WhiteTigerBase_u4xoAz" Value="[!Dialog][!speaker:VHPD_Jane_Normal]자칫 병력을 우회하는 도중 오히려 이쪽 방어선이 뚫릴 위험이 있어."/>
+		<class name="Tutorial_WhiteTigerBase_7zW6Gz" Value="[!Dialog][!speaker:Albus_Normal]알겠습니다. 고려하도록 하겠습니다."/>
+		<class name="Tutorial_WhiteTigerBase_e8vfwN" Value="[!Dialog][!speaker:Albus_Smile]......"/>
+		<class name="Tutorial_WhiteTigerBase_Lt22ps" Value="[!Dialog][!speaker:Albus_Normal]레이 씨와 헤이싱 씨는 밀집한 적들 중심으로 부탁합니다."/>
+		<class name="Tutorial_WhiteTigerBase_jm9sZ0" Value="[!Dialog][!speaker:Ray_Smile]그래~☆"/>
+		<class name="Tutorial_WhiteTigerBase_2grVc8" Value="[!Dialog][!speaker:Heissing_Smile]알았다."/>
+		<class name="Tutorial_WhiteTigerBase_BOHSBF" Value="[!Dialog][!speaker:Albus_Laugh]레톤 씨와 아이린 씨는 평소처럼 전위에서 적의 화력을 분산시켜주세요."/>
+		<class name="Tutorial_WhiteTigerBase_mJLd1s" Value="[!Dialog][!speaker:Albus_Normal]다만 너무 빨리 들어가시면 저격수의 위협이 있으니 조심해 주세요."/>
+		<class name="Tutorial_WhiteTigerBase_OIqUtb" Value="[!Dialog][!speaker:Leton_Smile]OK~☆"/>
+		<class name="Tutorial_WhiteTigerBase_0CxJCh" Value="[!Dialog][!speaker:Irene_Smile2]믿고 맡겨줘."/>
+		<class name="Tutorial_WhiteTigerBase_42ZODn" Value="[!Dialog][!speaker:Albus_Normal]앤 양, 지젤 씨, 카일리 씨. 평소대로 잘 부탁드립니다."/>
+		<class name="Tutorial_WhiteTigerBase_zOmyeN" Value="[!Dialog][!speaker:Anne_Strict]넵!"/>
+		<class name="Tutorial_WhiteTigerBase_V1tnIL" Value="[!Dialog][!speaker:Kylie_Satisfying]제대로 월급 값 해줄게."/>
+		<class name="Tutorial_WhiteTigerBase_oqE1BK" Value="[!Dialog][!speaker:Giselle_Satisfying]......"/>
+		<class name="Tutorial_WhiteTigerBase_WwHp0A" Value="[!Dialog][!speaker:Albus_Normal]그럼 지금부터 각자가 맡은 역할에 따라 백호파 토벌을 시작하겠습니다."/>
+		<class name="Tutorial_WhiteTigerBase_3uHGc8" Value="[!Dialog][!speaker:VHPD_Jane_Smile]그럼 현장을 잘 부탁하네."/>
+		<class name="Tutorial_WhiteTigerBase_aYOZBB" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_WhiteTigerBase_TqMpcc" Value="[!VictoryCondition]북쪽 방어진 병력 전원 전투 불능"/>
+		<class name="Tutorial_WhiteTigerBase_WwUIeF" Value="[!VictoryCondition]남쪽 방어진 병력 전원 전투 불능"/>
+		<class name="Tutorial_WhiteTigerBase_mPi8aI" Value="[!VictoryCondition]적을 모두 제압하시오."/>
+		<class name="Tutorial_WhiteTigerBase_YI7oSM" Value="[!Ignore][!BalloonChat]자! 지금이다!!"/>
+		<class name="Tutorial_WhiteTigerBase_IIWS3a" Value="[!Title]막판 뒤집기"/>
+		<class name="Tutorial_WhiteTigerBase_E4ejya" Value="[!Title]시장 선거 3일 전,"/>
+		<class name="Tutorial_WhiteTigerBase_97pdNU" Value="[!Dialog][!speaker:MayorSecretary_Normal]바람장벽지구 경찰청에서 지역 범죄 조직인 백호파의 보스 푸를 체포하였습니다."/>
+		<class name="Tutorial_WhiteTigerBase_MENEar" Value="[!Dialog][!speaker:MayorSecretary_Normal]방송국과 섭외하여 이 토벌에 참여했던 $CompanyName$의 활약상을 다큐멘터리로 제작하여 오늘 밤에 방영할 예정입니다."/>
+		<class name="Tutorial_WhiteTigerBase_1u8lnZ" Value="[!Dialog][!speaker:Karl_Normal]일반 시민들은 바람장벽지구에 대해 잘 알지 못해."/>
+		<class name="Tutorial_WhiteTigerBase_ZIXy3k" Value="[!Dialog][!speaker:Karl_Think]평생 갈 일도 없지."/>
+		<class name="Tutorial_WhiteTigerBase_BzZ0HW" Value="[!Dialog][!speaker:Karl_Smile]그러니 악당은 최대한 비열하게 그리고 영웅들을 화려하게 포장하도록 부탁하네."/>
+		<class name="Tutorial_WhiteTigerBase_bkFiEC" Value="[!Dialog][!speaker:Karl_Smile]그리고 가능하다면 작년에 바람장벽지구에서 일어난 강력 사건들은 모두 그 지방 조직이 벌인 일로 하면 좋을 것 같네."/>
+		<class name="Tutorial_WhiteTigerBase_QLtohz" Value="[!Dialog][!speaker:Karl_Normal]한 때 이슈가 되었던 톨게이트 테러 사건 같은 것 말야."/>
+		<class name="Tutorial_WhiteTigerBase_zqVkmc" Value="[!Dialog][!speaker:MayorSecretary_Normal]알겠습니다."/>
+		<class name="Tutorial_WhiteTigerBase_NELVjo" Value="[!Title]석연치 않은 마음"/>
+		<class name="Tutorial_WhiteTigerBase_R6ln25" Value="[!Title]바람장벽지구 경찰청"/>
+		<class name="Tutorial_WhiteTigerBase_G5nYoo" Value="[!Dialog][!speaker:VHPD_Jane_Normal]백호파 토벌 너무 깔끔하게 끝나버렸군."/>
+		<class name="Tutorial_WhiteTigerBase_EXoNm9" Value="[!Dialog][!speaker:VHPD_Jane_Normal]......"/>
+		<class name="Tutorial_WhiteTigerBase_nv0jrk" Value="[!Dialog][!speaker:VHPD_Jane_Normal]10년 전의 민간인 무차별 저격같은 건 기우였나..."/>
+		<class name="Tutorial_WhiteTigerBase_90RBll" Value="[!Dialog][!speaker:VHPD_Jane_Angry]아니면..."/>
+		<class name="Tutorial_WhiteTigerBase_3BWVr7" Value="[!Dialog][!speaker:VHPD_Jane_Angry]......"/>
+		<class name="Tutorial_WhiteTigerBase_i3ipBY" Value="[!Dialog][!speaker:VHPD_Jane_Normal]아이작. 넌 이곳에서 무엇을 바라보고 있었지..."/>
+		<class name="Tutorial_WhiteTigerBase_af5y3m" Value="[!Dialog][!speaker:VHPD_Jane_Normal]경찰이라는 위치에서는 할 수 없었던 일은 대체 무엇이었냐..."/>
+		<class name="Tutorial_WhiteTigerBase_DI5j7o" Value="[!Dialog][!speaker:VHPD_Jane_Normal]......"/>
+		<class name="Tutorial_WhiteTigerBase_oLaDBw" Value="[!Title]응원하는 자"/>
+		<class name="Tutorial_WhiteTigerBase_c0q1rc" Value="[!Title]트러블슈터 특집 방송"/>
+		<class name="Tutorial_WhiteTigerBase_Fecqwp" Value="[!Dialog][!speaker:Pierto_Smile]왜. 자네가 했어야 하는 일이었는데 아쉽나?"/>
+		<class name="Tutorial_WhiteTigerBase_4p0ZDu" Value="[!Dialog][!speaker:Don_Smile]아닙니다. 저보다 저 아이들이 저 자리에 더 어울리네요."/>
+		<class name="Tutorial_WhiteTigerBase_gj17EJ" Value="[!Dialog][!speaker:Niels_Smile]괜찮어. 이 녀석아."/>
+		<class name="Tutorial_WhiteTigerBase_EN7RNy" Value="[!Dialog][!speaker:Niels_Smile]네가 10년 전에 멈춰줬기에 나나 이 영감이나 다 살아있는 거지."/>
+		<class name="Tutorial_WhiteTigerBase_KyA2ki" Value="[!Dialog][!speaker:Diane_Smile2]클레어! 안젤라! 지금부터 시작한다!"/>
+		<class name="Tutorial_WhiteTigerBase_hRUj7z" Value="[!Dialog][!speaker:Angela_Smile2]우리 레이 유명인 됐네. TV에도 나오고~♡"/>
+		<class name="Tutorial_WhiteTigerBase_htX5M6" Value="[!Dialog][!speaker:Clare_Smile2]주말에 레이 불러서 쇼핑 갈까?"/>
+		<class name="Tutorial_WhiteTigerBase_jaxHuv" Value="[!Dialog][!speaker:Clare_Smile2]TV에 나가려면 옷도 잘 입어야 하니까 말야."/>
+		<class name="Tutorial_WhiteTigerBase_WfftM8" Value="[!Dialog][!speaker:Angela_Smile2]그거 좋은 생각이다. 당장 연락 해!"/>
+		<class name="Tutorial_WhiteTigerBase_hwmofH" Value="[!Dialog][!speaker:AL_Smile]히어로 얼굴이 무척이나 밝아 보이네요."/>
+		<class name="Tutorial_WhiteTigerBase_yIoiw1" Value="[!Dialog][!speaker:Civil_Oldman_Bebo_Normal]그래. 저 아이 웃음만큼 힘나는 게 없지."/>
+		<class name="Tutorial_WhiteTigerBase_KGO4M1" Value="[!Dialog][!speaker:AL_Smile]언제 한 번 제가 붙잡아서 데려올게요."/>
+		<class name="Tutorial_WhiteTigerBase_Q8Xk6Y" Value="[!Dialog][!speaker:Civil_Oldman_Bebo_Normal]됐다. 그 아이도 여기는 졸업해야지. 여기는 그 아이가 힘들 때 오는 것만으로 충분해."/>
+		<class name="Tutorial_WhiteTigerBase_kcFQ79" Value="[!Dialog][!speaker:Gyube_Normal]오! 알버스랑 지젤 과장님이다."/>
+		<class name="Tutorial_WhiteTigerBase_GhXTf4" Value="[!Dialog][!speaker:Kate_Normal]그래도 저렇게 동료들 앞에 서 있으니 제법 사장님 티가 나네요."/>
+		<class name="Tutorial_WhiteTigerBase_ij87xg" Value="[!Dialog][!speaker:Gyube_Normal]저 녀석 폭탄 든 녀석한테 무작정 돌진할 때가 엊그제 같은데 세월 빠르네."/>
+		<class name="Tutorial_WhiteTigerBase_DRJtOf" Value="[!Dialog][!speaker:Kate_Smile]원래 저 때가 제일 빠르게 성장할 때죠."/>
+		<class name="Tutorial_WhiteTigerBase_w9ectV" Value="[!Dialog][!speaker:Taesoo_Smile]황랑. 저 아가씨 옆에 있는 흰머리 기억나냐?"/>
+		<class name="Tutorial_WhiteTigerBase_K5gvbM" Value="[!Dialog][!speaker:Hwangrang_Normal]어? 저 녀석?"/>
+		<class name="Tutorial_WhiteTigerBase_nDkNvM" Value="[!Dialog][!speaker:Taesoo_Smile]그래. 기억나지?"/>
+		<class name="Tutorial_WhiteTigerBase_MUyaPM" Value="[!Dialog][!speaker:Hwangrang_Normal]그럼 저 녀석이 고난의 성채를 나왔단 녀석이었군요."/>
+		<class name="Tutorial_WhiteTigerBase_uUmMDJ" Value="[!Dialog][!speaker:Taesoo_Normal]그래. 저녀석이 틀림없어."/>
+		<class name="Tutorial_WhiteTigerBase_T9hlRl" Value="[!Dialog][!speaker:Yuske_Smile]이야!  시온 군이네."/>
+		<class name="Tutorial_WhiteTigerBase_tDWQhU" Value="[!Dialog][!speaker:Yuske_Smile]어제도 우리 포장마차에 와서 우동 3인분을 먹고 갔지."/>
+		<class name="Tutorial_WhiteTigerBase_jGTOHZ" Value="[!Dialog][!speaker:Civil_Man_Boss_Green_Kim_Normal]먹성 좋은 녀석이 큰 일도 하는 법이지."/>
+		<class name="Tutorial_WhiteTigerBase_ZP5xrV" Value="[!Dialog][!speaker:Anna_Laugh]다들 매출이 늘어서 좋아하는 건 아니죠?"/>
+		<class name="Tutorial_WhiteTigerBase_qDgIFZ" Value="[!Title]잠깐의 휴식"/>
+		<class name="Tutorial_WhiteTigerBase_0Gvhpn" Value="[!Title]백호파 토벌 1주일 후..."/>
+		<class name="Tutorial_WhiteTigerBase_rKZdqK" Value="[!Dialog]백호파 토벌이 끝나자마자 기다렸다듯이 여러 지구의 방송국에서 $CompanyName$의 활약상을 다루는 방송을 내보냈다."/>
+		<class name="Tutorial_WhiteTigerBase_jqXvku" Value="[!Dialog]대부분의 방송은 과거 경찰청이 보유한 사건 해결 장면을 편집하여 제작되었다."/>
+		<class name="Tutorial_WhiteTigerBase_zURpde" Value="[!Dialog]그리고 그 방송은 트러블슈터 제도를 지지하는 칼 시장의 선거 막판 이슈 몰이에 사용되었다."/>
+		<class name="Tutorial_WhiteTigerBase_VRI7XF" Value="[!Dialog]그리고 평소에는 전혀 없었던 응원 전화가 수시로 회사 안에 울려 퍼졌다."/>
+		<class name="Tutorial_WhiteTigerBase_GZ3ewi" Value="[!Dialog][!speaker:Albus_Think]이래선 당분간 사무실에 앉아 있기도 불편하겠는 걸..."/>
+		<class name="Tutorial_WhiteTigerBase_z2Gwjc" Value="[!Dialog][!speaker:Albus_Think]......"/>
+		<class name="Tutorial_WhiteTigerBase_rrdXE8" Value="[!Dialog][!speaker:Albus_Think]카일리 씨도 다음 주에 고향에 다녀오신다고 하고..."/>
+		<class name="Tutorial_WhiteTigerBase_o7GUL1" Value="[!Dialog][!speaker:Albus_Think]앤도 학교 빠진 날이 많아 보충 수업을 들어야 한다고 하니..."/>
+		<class name="Tutorial_WhiteTigerBase_bJQPF7" Value="[!Dialog][!speaker:Albus_Normal]다들 계속 개인 시간도 없이 야근 하느라 많이 힘들었을텐데..."/>
+		<class name="Tutorial_WhiteTigerBase_vxybYC" Value="[!Dialog][!speaker:Albus_Normal]이왕 이렇게 된 거 다음 한 주는 전원 쉬도록 하자."/>
+		<class name="Tutorial_WhiteTigerBase_kJzHJg" Value="[!Dialog][!speaker:Albus_Normal]......"/>
+		<class name="Tutorial_WhiteTigerBase_GUUTI9" Value="[!Dialog][!speaker:Albus_Laugh]엄마 묘에도 여유롭게 갈 수 있겠다."/>
+		<class name="Tutorial_WhiteTigerBase_gYkOhg" Value="[!Dialog][!speaker:Albus_Laugh]트러블슈터가 되지 않았으면 이런 현실은 마주할 수 없었겠지..."/>
+		<class name="Tutorial_WhiteTigerBase_82g0XE" Value="[!Dialog]트러블슈터."/>
+		<class name="Tutorial_WhiteTigerBase_tdZDi9" Value="[!Dialog]$CompanyName$"/>
+		<class name="Tutorial_WhiteTigerBase_s2QkFh" Value="[!Dialog]알버스는 자신이 결정한 이 길을 다시 한번 되뇌어 본다."/>
+		<class name="Tutorial_WhiteTigerBase_iKrk4U" Value="[!Dialog][!speaker:Albus_Laugh]그분이 아니셨다면 트러블슈터가 될 생각은 하지도 못했을거야..."/>
+		<class name="Tutorial_WhiteTigerBase_TivOPe" Value="[!Dialog][!speaker:Albus_Sorrow_Boy]우리 엄마 아빠는요?"/>
+		<class name="Tutorial_WhiteTigerBase_jE9eOF" Value="[!Dialog][!speaker:Albus_Sorrow_Boy]아저씨는 누구세요?"/>
+		<class name="Tutorial_WhiteTigerBase_XH9On0" Value="[!Dialog][!speaker:Visha_Smile_Young]나는 비샤란다. 트러블슈터 비샤 블러드워커."/>
+		<class name="Tutorial_WhiteTigerBase_LipOId" Value="[!BalloonChat]보스가 위험하다!"/>
+		<class name="Tutorial_WhiteTigerBase_w5bN07" Value="[!BalloonChat]보스가 당했다!"/>
+	</idspace>
+</idspaces>

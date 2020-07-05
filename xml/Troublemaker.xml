@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="TroublemakerCategory">
+		<class name="Crimnal" Title="범죄자" Image="Icons/Crimnal" PushedImage="Icons/Crimnal_Pushed" HoverImage="Icons/Crimnal_Hover" Order="1"/>
+		<class name="Spoon" Title="스푼교" Image="Icons/Spoon" PushedImage="Icons/Spoon_Pushed" HoverImage="Icons/Spoon_Hover" Order="2"/>
+		<class name="Wanted" Title="현상 수배범" Image="Icons/Wanted" PushedImage="Icons/Wanted_Pushed" HoverImage="Icons/Wanted_Hover" Order="3"/>
+		<class name="Beast" Title="야수" Image="Icons/Beast" PushedImage="Icons/Beast_Pushed" HoverImage="Icons/Beast_Hover" Order="4"/>
+		<class name="Machine" Title="기계" Image="Icons/Machine" PushedImage="Icons/Machine_Pushed" HoverImage="Icons/Machine_Hover" Order="5"/>
+	</idspace>
+	<idspace id="TroublemakerWantedMailType">
+		<class name="Wanted" Mail="VHPD_Reward_Wanted"/>
+		<class name="Hunting" Mail="VHPD_Reward_WantedHunting"/>
+	</idspace>
+	<idspace id="TroublemakerWanted">
+		<schema>
+			<rule property="Type" type="link" target="TroublemakerWantedMailType" default="None"/>
+		</schema>
+		<class name="Mon_Gangster_Javer" Type="Wanted" Vill="1000"/>
+		<class name="Mon_Gangster_Oliver" Type="Wanted" Vill="1000"/>
+		<class name="Mon_Gangster_PinkHorn" Type="Wanted" Vill="1250"/>
+		<class name="Mon_Gangster_DeliveryFat" Type="Wanted" Vill="1250"/>
+		<class name="Mon_Gangster_DeliveryHelmet" Type="Wanted" Vill="1250"/>
+		<class name="Mon_Gangster_Felix" Type="Wanted" Vill="1500"/>
+		<class name="Mon_Gangster_TwinkleJack" Type="Wanted" Vill="2000"/>
+		<class name="Mon_Gangster_Shandian" Type="Wanted" Vill="2000"/>
+		<class name="Mon_Gangster_Brad" Type="Wanted" Vill="2000"/>
+		<class name="Mon_Gangster_Ivan" Type="Wanted" Vill="2000"/>
+		<class name="Mon_Gangster_ButcherRyo" Type="Wanted" Vill="2500"/>
+		<class name="Mon_Gangster_YukyunHyang" Type="Wanted" Vill="2500"/>
+		<class name="Mon_Gangster_RyungLi" Type="Wanted" Vill="2500"/>
+		<class name="Mon_Gangster_CheChe" Type="Wanted" Vill="2500"/>
+		<class name="Mon_Gangster_Tyron" Type="Wanted" Vill="2500"/>
+		<class name="Mon_Gangster_SkullFat" Type="Wanted" Vill="2500"/>
+		<class name="Mon_Gangster_SkullHelmet" Type="Wanted" Vill="2500"/>
+		<class name="Mon_Gangster_SkullNormal" Type="Wanted" Vill="2500"/>
+		<class name="Mon_Gangster_SkullThin" Type="Wanted" Vill="2500"/>
+		<class name="Mon_Gangster_HellFire" Type="Wanted" Vill="3000"/>
+		<class name="Mon_Beast_Dragon_White3_Ground" Type="Hunting" Vill="3000"/>
+		<class name="Mon_Beast_Dragon_Black3_Ground" Type="Hunting" Vill="3000"/>
+	</idspace>
+	<idspace id="Troublemaker">
+		<schema>
+			<rule property="Exp" type="number" default="0"/>
+			<rule property="MaxExp" type="number" default="500"/>
+			<rule property="Date" type="number" default="0"/>
+			<rule property="Reward" type="bool" default="false"/>
+			<rule property="BonusInfo" type="bool" default="false"/>
+			<rule property="Category" type="link" target="TroublemakerCategory" default="None"/>
+			<rule property="IsNew" type="bool" default="false"/>
+			<rule property="IsKill" type="bool" default="false"/>
+			<rule property="Achievement" type="link" target="SteamAchievement" default="None"/>
+			<rule property="AchievementCheckFunc" type="string" default="None"/>
+			<rule property="Developing" type="bool" default="false"/>
+		</schema>
+		<class name="Mon_Beast_Bat_Black" Category="Beast" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Bat_Black_Leader" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Bat_Crazy" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Bat_Flame" Category="Beast" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Bat_Flame_Leader" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Bat_RedRock" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Bat_Rock" Category="Beast" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Bat_Rock_Leader" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Bat_White" Category="Beast" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Bat_White_Leader" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Bat_Wind" Category="Beast" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Bat_Wind_Challenger" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Bat_Wind_Leader" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerBatWindLeader"/>
+		<class name="Mon_Beast_Frog_Black1" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Frog_Black2" Category="Beast" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Frog_Black3" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Frog_Dot" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerBeastFrogDot"/>
+		<class name="Mon_Beast_Frog_Fire1" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Frog_Fire2" Category="Beast" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Frog_Fire3" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Frog_Glutton" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Frog_Lightning1" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Frog_Lightning2" Category="Beast" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Frog_Lightning3" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Frog_Normal1" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Frog_Normal2" Category="Beast" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Frog_Normal3" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Frog_Poison1" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Frog_Poison2" Category="Beast" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Frog_Poison3" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Frog_White" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerBeastFrogWhite"/>
+		<class name="Mon_Beast_Spider_Grey1" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Spider_Grey2" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Spider_Grey3" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Spider_Black1" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Spider_Black2" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Spider_Black3" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Spider_Earth1" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Spider_Earth2" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Spider_Earth3" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Spider_Ice1" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Spider_Ice2" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Spider_Ice3" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Spider_Lightning1" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Spider_Lightning2" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Spider_Lightning3" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Spider_Poison1" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Spider_Poison2" Category="Beast" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Spider_Poison2_Mutation" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Spider_Poison3" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Spider_RedPoison" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Tima_Base" Category="Beast" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Tima_Black" Category="Beast" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Tima_Black_Ash" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerTimaAsh"/>
+		<class name="Mon_Beast_Tima_Glacier" Category="Beast" MaxExp="50" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Tima_Magma" Category="Beast" MaxExp="100" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Tima_RedMagma" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Tima_Snow" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Tima_Spark" Category="Beast" MaxExp="50" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Tima_Stone" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Tima_WhiteTiger" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Tima_WhiteTiger2" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Egg_A" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Hatchling" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Earth" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Flame" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Frost" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Lightning" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Water" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_White" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Black" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Earth2" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Flame2" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Frost2" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Lightning2" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Water2" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_White2" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Black2" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Earth2_Ground" Category="Beast" MaxExp="100" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Flame2_Ground" Category="Beast" MaxExp="100" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Frost2_Ground" Category="Beast" MaxExp="100" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Lightning2_Ground" Category="Beast" MaxExp="100" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Water2_Ground" Category="Beast" MaxExp="100" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_White2_Ground" Category="Beast" MaxExp="100" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Black2_Ground" Category="Beast" MaxExp="100" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Earth3" Category="Beast" MaxExp="50" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Water3" Category="Beast" MaxExp="50" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Flame3" Category="Beast" MaxExp="50" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Lightning3" Category="Beast" MaxExp="50" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Frost3" Category="Beast" MaxExp="50" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_White3" Category="Beast" MaxExp="50" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Black3" Category="Beast" MaxExp="50" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Earth3_Ground" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Water3_Ground" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Flame3_Ground" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Lightning3_Ground" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_Frost3_Ground" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Dragon_White3_Ground" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerDrakyQueen"/>
+		<class name="Mon_Beast_Dragon_Black3_Ground" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerDrakyKing"/>
+		<class name="Mon_Drone_Flamethrower" Category="Machine" MaxExp="100" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Drone_Flamethrower_Enhanced" Category="Machine" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Drone_Flamethrower_Rust" Category="Machine" MaxExp="100" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Drone_Rifle" Category="Machine" MaxExp="100" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Drone_Rifle_Enhanced" Category="Machine" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Drone_Rifle_Rust" Category="Machine" MaxExp="100" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Drone_Sprinkler" Category="Machine" MaxExp="100" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Drone_Sprinkler_Enhanced" Category="Machine" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Drone_Sprinkler_Rust" Category="Machine" MaxExp="100" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Drone_Transport_Bomb" Category="Machine" MaxExp="50" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_BlackTigerFat" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_BlackTigerNormal" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_BlackTigerThin" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_Brad" Category="Wanted" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerBrad"/>
+		<class name="Mon_Gangster_BullFat" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_BullNormal" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_BullNormal_Scott" Category="Crimnal" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerScott" AchievementCheckFunc="CheckTroublemakerAchievement_Scott"/>
+		<class name="Mon_Gangster_BullThin" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_BullThin_Miles" Category="Crimnal" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_ButcherRyo" Category="Wanted" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerRyo"/>
+		<class name="Mon_Gangster_DeliveryFat" Category="Wanted" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerBrothers" AchievementCheckFunc="CheckTroublemakerAchievement_Brothers"/>
+		<class name="Mon_Gangster_DeliveryHelmet" Category="Wanted" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerBrothers" AchievementCheckFunc="CheckTroublemakerAchievement_Brothers"/>
+		<class name="Mon_Gangster_Foo" Category="Crimnal" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerFoo"/>
+		<class name="Mon_Gangster_HellFire" Category="Wanted" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerHellFire"/>
+		<class name="Mon_Gangster_Ivan" Category="Wanted" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerIvan"/>
+		<class name="Mon_Gangster_Jason" Category="Crimnal" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_Javer" Category="Wanted" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_Oliver" Category="Wanted" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerOliver"/>
+		<class name="Mon_Gangster_PinkHorn" Category="Wanted" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerPinkHorn"/>
+		<class name="Mon_Gangster_Roubaozi" Category="Crimnal" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_Shandian" Category="Wanted" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerShandian"/>
+		<class name="Mon_Gangster_YukyunHyang" Category="Wanted" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerYukyunHyang"/>
+		<class name="Mon_Gangster_RyungLi" Category="Wanted" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerRyungLi"/>
+		<class name="Mon_Gangster_SkullFat" Category="Wanted" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerSkulls" AchievementCheckFunc="CheckTroublemakerAchievement_Skulls"/>
+		<class name="Mon_Gangster_SkullHelmet" Category="Wanted" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerSkulls" AchievementCheckFunc="CheckTroublemakerAchievement_Skulls"/>
+		<class name="Mon_Gangster_SkullNormal" Category="Wanted" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerSkulls" AchievementCheckFunc="CheckTroublemakerAchievement_Skulls"/>
+		<class name="Mon_Gangster_SkullThin" Category="Wanted" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerSkulls" AchievementCheckFunc="CheckTroublemakerAchievement_Skulls"/>
+		<class name="Mon_Gangster_SkullThin2" Category="Crimnal" MaxExp="100" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SmugglerDagger" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SmugglerFat" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SmugglerFat_Hans" Category="Crimnal" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SmugglerHelmet" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SmugglerHelmet_Snake" Category="Crimnal" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SmugglerHunter_Zeff" Category="Crimnal" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerZeff"/>
+		<class name="Mon_Gangster_SmugglerThin" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonAssualt" Category="Spoon" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonBat" Category="Spoon" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonBat2" Category="Spoon" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonBat_Turk" Category="Spoon" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonBottle" Category="Spoon" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonBottle2" Category="Spoon" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonBottle_Naam" Category="Spoon" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonDestroyer" Category="Spoon" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonDestroyer2" Category="Spoon" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonDestroyer_Chang" Category="Spoon" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonFat" Category="Spoon" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonFat_Black" Category="Spoon" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonFighter" Category="Spoon" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonFighter_ZhoHong" Category="Spoon" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonGun" Category="Spoon" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonGun2" Category="Spoon" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonNormal" Category="Spoon" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonNormal_Black" Category="Spoon" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonNormal_Earth" Category="Spoon" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonNormal_Earth2" Category="Spoon" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonNormal_Flame" Category="Spoon" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonNormal_Hasan" Category="Spoon" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonNormal_John" Category="Spoon" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerJohn"/>
+		<class name="Mon_Gangster_SpoonNormal_Julio" Category="Spoon" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonNormal_Kaze" Category="Spoon" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonNormal_Lightning" Category="Spoon" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonNormal_Lightning2" Category="Spoon" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonNormal_Wind" Category="Spoon" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonNormal_Wind2" Category="Spoon" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonSword" Category="Spoon" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonSword_Ralph" Category="Spoon" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonThin" Category="Spoon" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SpoonThin_Nevil" Category="Spoon" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Carter_Black" Category="Spoon" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_StreetFat" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_StreetHelmet" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_StreetNormal2" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_StreetThin" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_Tray" Category="Crimnal" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_CheChe" Category="Wanted" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerCheChe"/>
+		<class name="Mon_Gangster_Felix" Category="Wanted" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerFelix"/>
+		<class name="Mon_Gangster_TwinkleJack" Category="Wanted" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerTwinkleJack"/>
+		<class name="Mon_Gangster_Tyron" Category="Wanted" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerTyron"/>
+		<class name="Mon_Gangster_WhiteFat" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_WhiteHelmet" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_WhiteNormal" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_WhiteThin" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_WhiteTigerDagger" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_WhiteTigerDagger_HouCheng" Category="Crimnal" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_WhiteTigerFat" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_WhiteTigerFat2" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_WhiteTigerFat_Berke" Category="Crimnal" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_WhiteTigerHelmet" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_WhiteTigerHelmet_Darius" Category="Crimnal" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_WhiteTigerNormal" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_WhiteTigerNormal2" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_WhiteTigerNormal_Andrei" Category="Crimnal" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_WhiteTigerSniper" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_WhiteTigerSniper2" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_WhiteTigerSniper_Mert" Category="Crimnal" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_WhiteTigerSword" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_WhiteTigerSword2" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_WhiteTigerSword_Joshua" Category="Crimnal" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_WhiteTigerThin" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_WhiteTigerThin2" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_WhiteTigerThin_Kevin" Category="Crimnal" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SmugglerDagger2" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SmugglerFat2" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SmugglerHelmet2" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SmugglerThin2" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Gangster_SmugglerSniper" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Machine_Bikron" Category="Machine" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Machine_Bikron_Enhanced" Category="Machine" MaxExp="50" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Machine_Bikron_Enhanced_Fire" Category="Machine" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Machine_Bikron_Enhanced_Ice" Category="Machine" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Machine_Bikron_Enhanced_Lightning" Category="Machine" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Machine_Bikron_RedEye" Category="Machine" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerRedEye"/>
+		<class name="Mon_Machine_Bikron_Small" Category="Machine" MaxExp="50" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Marco" Category="Crimnal" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerMarco"/>
+	</idspace>
+</idspaces>

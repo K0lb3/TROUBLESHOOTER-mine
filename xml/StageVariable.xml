@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="StageVariable">
+	<schema>
+		<rule property="ArgumentList" type="table" subtype="link" target="StageMakerArgument" default=""/>
+		<rule property="Initializer" type="function"/>
+		<rule property="Caption" type="function" default="GetStageVariableCaption"/>
+	</schema>
+	<class name="Static" Desc="[!Ignore]고정값" Initializer="InitializeStageVariableStatic" ArgumentList="Value"/>
+	<class name="StaticEx" Desc="[!Ignore]고정값(확장)" Initializer="InitializeStageVariableStaticEx" ArgumentList="StageDataBindingInit"/>
+	<class name="TeamUnitCounter" Desc="[!Ignore]팀 유닛 수" Initializer="InitializeStageVariableTeamUnitCounter" ArgumentList="Team, Linked"/>
+	<class name="TeamAbilityUseCount" Desc="[!Ignore]팀 어빌리티 사용가능 횟수" Initializer="InitializeStageVariableTeamAbilityUseCount" ArgumentList="Team, Ability, Linked"/>
+	<class name="TeamInteractionUseCount" Desc="[!Ignore]팀 상호작용 사용가능 횟수" Initializer="InitializeStageVariableTeamInteractionUseCount" ArgumentList="Team, Interaction, Linked"/>
+	<class name="Dummy" Desc="[!Ignore]더미" Initializer="InitializeStageVariableDummy"/>
+	<class name="ContinuousVariable" Desc="[!Ignore]컴퍼니미션프로퍼티" Initializer="InitializeStageVariableCompanyMissionProperty" ArgumentList="Value, MergeMethod, Linked"/>
+	<class name="VariableReferrer" Desc="[!Ignore]변수 레퍼런스" Initializer="InitializeStageVariableVariableReferrer" ArgumentList="Referrer, StageVarExpr"/>
+	<class name="ExistUnit" Desc="[!Ignore]유닛 존재" Initializer="InitializeStageVariableExistUnit" ArgumentList="Unit"/>
+</idspace>

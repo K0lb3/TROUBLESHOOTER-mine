@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="QuestKeyword">
+		<schema>
+			<rule property="Title" type="function" default="QuestKeywordTitle_Empty"/>
+			<rule property="NoTailColor" type="bool" default="false"/>
+		</schema>
+		<class name="Word" Title="QuestKeywordTitle_Word" Color="Silver"/>
+		<class name="Org" Title="QuestKeywordTitle_Org" Color="Silver"/>
+		<class name="Person" Title="QuestKeywordTitle_Person" Color="Silver"/>
+		<class name="Monster" Title="QuestKeywordTitle_Person" Color="Silver"/>
+		<class name="FPerson" Title="QuestKeywordTitle_FPerson" Color="Silver"/>
+		<class name="JPerson" Title="QuestKeywordTitle_JPerson" Color="Silver"/>
+		<class name="Site" Title="QuestKeywordTitle_Site" Color="Silver"/>
+		<class name="Zone" Title="QuestKeywordTitle_Zone" Color="Silver"/>
+		<class name="Job" Title="QuestKeywordTitle_Job" Color="Silver"/>
+		<class name="Item" Title="QuestKeywordTitle_Item" Color="Silver"/>
+		<class name="TargetItem" Title="QuestKeywordTitle_TargetItem" Color="Silver"/>
+		<class name="TargetCount" Title="QuestKeywordTitle_TargetCount" Color="Silver"/>
+	</idspace>
+	<idspace id="QuestDesc">
+		<schema>
+			<rule property="Desc" type="calculated" default="CalculatedProperty_QuestDesc"/>
+			<rule property="BaseColor" type="string" default="Silver"/>
+			<rule property="HighlightColor" type="string" default="Silver"/>
+			<rule property="NoHighlightSelfRedirect" type="bool" default="true"/>
+		</schema>
+		<class name="EP1_Quest01" Base_Desc="$Org(Arwall)$의 $Person(Jean)$[은] $Person(Albus)$[가] $Zone(WindWallTown)$ 지구로 이주하여 $Word(Troubleshooter)$ 생활을 시작할 거라는 말을 듣자 명함 하나를 건네준다. 해당 명함에는 $Org(Disarming)$라는 붉은 글자에 대표 $FPerson(Roberto)$라는 이름이 금빛으로 반짝이는 글자로 새겨져 있었다."/>
+		<class name="EP1_Quest_Roberto01" Base_Desc="$Person(Roberto)$[은] $FPerson(Jean)$ 밑에서 훈련을 받았다는 $Person(Albus)$의 이야기를 듣자 $Person(Albus)$의 능력을 시험해 보고 싶어한다."/>
+		<class name="EP1_Quest_Roberto02" Base_Desc="$Person(Roberto)$[은] 은빛 구름 지하 주차장에 나타난 $Job(Yasha)$를 처리하는 데 협력해달라고 요청한다."/>
+		<class name="EP1_Quest_Roberto03" Base_Desc="$Person(Roberto)$[은] $Person(Irene)$의 능력을 시험해 보고 싶어한다."/>
+		<class name="EP1_Quest_Roberto04" Base_Desc="$Person(Roberto)$[은] $Person(Anne)$의 능력을 시험해 보고 싶어한다."/>
+		<class name="EP1_Quest_Roberto05" Base_Desc="$Person(Roberto)$[은] 지젤의 요청에 따라 경찰청 실내 훈련장에서 시가지 훈련에 참여한다."/>
+		<class name="EP1_Quest_Roberto06" Base_Desc="$Person(Roberto)$[은] 지젤의 요청에 따라 경찰청 실내 훈련장에서 기계전 훈련에 참여한다."/>
+		<class name="EP1_Quest_Roberto07" Base_Desc="$Person(Roberto)$[은] 지젤의 요청에 따라 경찰청 실내 훈련장에서 정기 훈련에 참여한다."/>
+		<class name="EP1_Quest_AL01" Base_Desc="$JPerson(AL)$[은] 최근 삼청 마을에 밤마다 나타나는 $Job(Yasha)$로 인해 주민들이 겁을 먹고 있으니 처리해 달라고 부탁한다."/>
+		<class name="EP1_Quest_AL02" Base_Desc="$JPerson(AL)$[은] 철의 숲에 서식하는 $Monster(Beast_Tima_Magma)$의 불타는 용암 가죽을 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_AL03" Base_Desc="$JPerson(AL)$[은] 철의 숲에 서식하는 $Monster(Beast_Tima_Spark)$의 빛나는 번개 가죽을 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_AL04" Base_Desc="$JPerson(AL)$[은] 철의 숲에 서식하는 $Monster(Beast_Tima_Glacier)$의 온전한 얼음 가죽을 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_AL05" Base_Desc="$JPerson(AL)$[은] 철의 숲에 서식하는 $Monster(Beast_Spider_Poison2_Mutation)$의 돌연변이 맹독 가죽을 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_AL06" Base_Desc="$JPerson(AL)$[은] 철의 숲에 서식하는 $Monster(Beast_Bat_Crazy)$의 $TargetItem$[을] 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_AL07" Base_Desc="$JPerson(AL)$[은] 철의 숲에 서식하는 $Monster(Beast_Bat_Wind_Leader)$의 오색 왕도로리 가죽을 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Oleg01" Base_Desc="$JPerson(Oleg)$[는] 외곽 도로에 흩어져 있는 자신의 화물을 회수해 달라고 요청한다."/>
+		<class name="EP1_Quest_Oleg02" Base_Desc="$JPerson(Oleg)$[는] 자홍 뒷거리로 흘러 들어간 자신의 화물을 회수해 달라고 요청한다."/>
+		<class name="EP1_Quest_Oleg03" Base_Desc="$JPerson(Oleg)$[는] 철의 숲 내부로 흘러 들어간 자신의 화물을 회수해 달라고 요청한다."/>
+		<class name="EP1_Quest_Oleg04" Base_Desc="$JPerson(Oleg)$[는] 그늘 안개 슬럼가로 흘러 들어간 자신의 화물을 회수해 달라고 요청한다."/>
+		<class name="EP1_Quest_Oleg05" Base_Desc="$JPerson(Oleg)$[는] 메트로디움 거주구로 흘러 들어간 자신의 화물을 회수해 달라고 요청한다."/>
+		<class name="EP1_Quest_Hundred01" Base_Desc="$JPerson(Hundred)$[는] 자신의 고물 처리장에 숨어 있는 $Job(Yasha)$[를] 처리해 달라고 요청한다."/>
+		<class name="EP1_Quest_Hundred02" Base_Desc="$JPerson(Hundred)$[는] 납품할 물건 확보를 위해 청동 숟가락을 확보해 달라고 요청한다."/>
+		<class name="EP1_Quest_Hundred03" Base_Desc="$JPerson(Hundred)$[는] 해체작업장의 드론을 모두 파괴해 달라고 요청한다."/>
+		<class name="EP1_Quest_Hundred04" Base_Desc="$JPerson(Hundred)$[는] 철의 숲에 방치된 폐기된 수송 드론의 부품을 회수해 달라고 요청한다."/>
+		<class name="EP1_Quest_Hundred05" Base_Desc="$JPerson(Hundred)$[는] 자홍 거리에 방치된 폐기된 강화 드론의 부품을 회수해 달라고 요청한다."/>
+		<class name="EP1_Quest_Hundred06" Base_Desc="$JPerson(Hundred)$[는] 초전도 케이블을 확보해 달라고 요청한다.
+
+목표 대상: $Monster(Drone_Sprinkler_Rust)$, $Monster(Drone_Sprinkler)$, $Monster(Drone_Sprinkler_Enhanced)$"/>
+		<class name="EP1_Quest_Hundred07" Base_Desc="$JPerson(Hundred)$[는] $Monster(Drone_Sprinkler_Rust)$으로부터 초전도 케이블을 회수해 달라고 요청한다."/>
+		<class name="EP1_Quest_Sam01" Base_Desc="$JPerson(Sam)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Sam02" Base_Desc="$JPerson(Sam)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Sam03" Base_Desc="$JPerson(Sam)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Sam04" Base_Desc="$JPerson(Sam)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Sam05" Base_Desc="$JPerson(Sam)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Sam06" Base_Desc="$JPerson(Sam)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Sam07" Base_Desc="$JPerson(Sam)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Sam08" Base_Desc="$JPerson(Sam)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Sam09" Base_Desc="$JPerson(Sam)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Camila01" Base_Desc="$JPerson(Camila)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Camila02" Base_Desc="$JPerson(Camila)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Camila03" Base_Desc="$JPerson(Camila)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Camila04" Base_Desc="$JPerson(Camila)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Camila05" Base_Desc="$JPerson(Camila)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Camila06" Base_Desc="$JPerson(Camila)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Camila07" Base_Desc="$JPerson(Camila)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Camila08" Base_Desc="$JPerson(Camila)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Camila09" Base_Desc="$JPerson(Camila)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Camila10" Base_Desc="$JPerson(Camila)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Camila11" Base_Desc="$JPerson(Camila)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Camila12" Base_Desc="$JPerson(Camila)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Camila13" Base_Desc="$JPerson(Camila)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Camila14" Base_Desc="$JPerson(Camila)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Camila15" Base_Desc="$JPerson(Camila)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Camila16" Base_Desc="$JPerson(Camila)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Camila17" Base_Desc="$JPerson(Camila)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Camila18" Base_Desc="$JPerson(Camila)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Camila19" Base_Desc="$JPerson(Camila)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Dembel01" Base_Desc="$JPerson(Dembel)$[는] $Org(AngryBull)$ 조직원에게 빼앗긴 할아버지의 회중시계를 찾아달라고 부탁한다."/>
+		<class name="EP1_Quest_Dembel02" Base_Desc="$JPerson(Dembel)$[는] $Org(Spoon)$[로] 입교한 $Org(AngryBull)$ 조직원이 가지고 있는 시곗줄을 찾아달라고 부탁한다.
+
+목표 대상: $Monster(Gangster_SpoonFighter)$, $Monster(Gangster_SpoonSword)$, $Monster(Gangster_SpoonGun)$"/>
+		<class name="EP1_Quest_Dembel03" Base_Desc="$JPerson(Dembel)$[는] 연락이 끊긴 $Person(Civil_Man_Lee)$의 신변 보호를 요청한다."/>
+		<class name="EP1_Quest_Dembel04" Base_Desc="$JPerson(Dembel)$[는] 푸른 안개 거리로 흘러 들어간 자신의 화물을 회수해 달라고 요청한다."/>
+		<class name="EP1_Quest_Sabana01" Base_Desc="$JPerson(Sabana)$[는] $Monster(Gangster_Javer)$[를] 체포해 달라고 요청합니다."/>
+		<class name="EP1_Quest_Sabana02" Base_Desc="$JPerson(Sabana)$[는] $Monster(Gangster_Javer)$[를] 체포해 달라고 요청합니다."/>
+		<class name="EP1_Quest_Sabana03" Base_Desc="$JPerson(Sabana)$[는] $Monster(Gangster_Javer)$[를] 체포해 달라고 요청합니다."/>
+		<class name="EP1_Quest_Sabana04" Base_Desc="$JPerson(Sabana)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Sabana05" Base_Desc="$JPerson(Sabana)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Sabana06" Base_Desc="$JPerson(Sabana)$[는] $TargetItem$ $TargetCount$개를 구해 달라고 부탁한다."/>
+		<class name="EP1_Quest_Dimitri01" Base_Desc="$JPerson(Dimitri)$[는] 자신의 미술품을 회수해 달라고 요청한다."/>
+		<class name="EP1_Quest_Dimitri02" Base_Desc="$JPerson(Dimitri)$[는] 자신의 미술품을 회수해 달라고 요청한다."/>
+		<class name="EP1_Quest_Hundred_Repeat01" Base_Desc="[!Ignore]$JPerson(Hundred)$[는] 자신의 고물 처리장에 숨어 있는 $Job(Yasha)$[를] 처리해 달라고 요청한다."/>
+		<class name="EP1_Quest_Hundred_Repeat02" Base_Desc="[!Ignore]$JPerson(Hundred)$[는] 자신의 고물 처리장에 숨어 있는 $Job(Yasha)$[를] 처리해 달라고 요청한다."/>
+	</idspace>
+</idspaces>

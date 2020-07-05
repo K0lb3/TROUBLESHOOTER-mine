@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="ReputationPolicy">
+		<schema>
+			<rule property="Title" type="calculated" default="CalculatedProperty_TextFormater_Common"/>
+		</schema>
+		<class name="EnoughSupport" EventType="Division" Title_Format="넉넉한 후원" Image="Reputation/EnoughSupport" Desc_Prefix="$Sector$의 $SectorCitizen$들은 $Division$에서 일어난 사건을 해결할 때마다 후원금을 지급합니다." Desc="$Division$ 임무 완료 시, 임무 완료 보상금의 $ApplyAmountValue$에 해당하는 추가 보상금이 주어집니다." DescSub="" ApplyAmountType="Percent" ApplyAmountType2="None" ApplyAmount="200" ApplyAmount2="0"/>
+		<class name="CitizenReport" EventType="Division" Title_Format="시민 제보" Image="Reputation/CitizenReport" Desc_Prefix="$Sector$의 $SectorCitizen$들은  자신들이 목격한 정보를 $Troubleshooter$에게 적극적으로 제공합니다." Desc="$Division$ 임무 수행 시, 트러블슈터 적 정보 획득률이 $ApplyAmountValue$ 증가합니다. 또한 미니맵에 영웅 등급 이상의 적 유닛의 위치가 표시됩니다." DescSub="미니맵에 영웅 등급 이상의 적 유닛의 위치가 표시됩니다." ApplyAmountType="Percent" ApplyAmountType2="Percent" ApplyAmount="50" ApplyAmount2="0"/>
+		<class name="SupportItem_Potion" EventType="Division" Title_Format="$SupportItem$ 회복약" Image="Reputation/SupportItem_Potion" Desc_Prefix="$Sector$의 $SectorCitizen$들은 $Division$에서 일어난 사건을 해결할 때마다 자신들의 상품을 지원합니다." Desc="$Division$ 임무 완료 시, $Rare$ 등급 이상의 물약을 $ApplyAmountValue$개 지급합니다." DescSub="" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmount="1" ApplyAmount2="0"/>
+		<class name="SupportItem_RareEquipment" EventType="Division" Title_Format="$SupportItem$ 희귀 장비" Image="Reputation/SupportItem_RareEquipment" Desc_Prefix="$Sector$의 $SectorCitizen$들은 $Division$에서 일어난 사건을 해결할 때마다 자신들의 상품을 지원합니다." Desc="$Division$ 임무 완료 시, $Rare$ 등급 이상의 장비 아이템을 $ApplyAmountValue$개 지급합니다." DescSub="" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmount="1" ApplyAmount2="0"/>
+		<class name="SupportItem_RareArmor" EventType="Division" Title_Format="$SupportItem$ 희귀 방어구" Image="Reputation/SupportItem_RareArmor" Desc_Prefix="$Sector$의 $SectorCitizen$들은 $Division$에서 일어난 사건을 해결할 때마다 자신들의 상품을 지원합니다." Desc="$Division$ 임무 완료 시, $Rare$ 등급 이상의 방어구 아이템을 $ApplyAmountValue$개 지급합니다." DescSub="" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmount="1" ApplyAmount2="0"/>
+		<class name="SupportItem_RareMaterial" EventType="Division" Title_Format="$SupportItem$ 희귀 소재" Image="Reputation/SupportItem_RareMaterial" Desc_Prefix="$Sector$의 $SectorCitizen$들은 $Division$에서 일어난 사건을 해결할 때마다 자신들의 상품을 지원합니다." Desc="$Division$ 임무 완료 시, $Rare$ 등급 이상의 소재 아이템을 $ApplyAmountValue$개 지급합니다." DescSub="" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmount="3" ApplyAmount2="0"/>
+		<class name="SupportItem_RareAccessory" EventType="Division" Title_Format="$SupportItem$ 희귀 악세서리" Image="Reputation/SupportItem_RareAccessory" Desc_Prefix="$Sector$의 $SectorCitizen$들은 $Division$에서 일어난 사건을 해결할 때마다 자신들의 상품을 지원합니다." Desc="$Division$ 임무 완료 시, $Rare$ 등급 이상의 악세서리 아이템을 $ApplyAmountValue$개 지급합니다." DescSub="" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmount="1" ApplyAmount2="0"/>
+		<class name="SupportItem_RareWeapon" EventType="Division" Title_Format="$SupportItem$ 희귀 무기" Image="Reputation/SupportItem_RareWeapon" Desc_Prefix="$Sector$의 $SectorCitizen$들은 $Division$에서 일어난 사건을 해결할 때마다 자신들의 상품을 지원합니다." Desc="$Division$ 임무 완료 시, $Rare$ 등급 이상의 무기 아이템을 $ApplyAmountValue$개 지급합니다." DescSub="" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmount="1" ApplyAmount2="0"/>
+		<class name="SupportItem_Extractor" EventType="Division" Title_Format="$SupportItem$ 에너지 추출기" Image="Reputation/SupportItem_Extractor" Desc_Prefix="$Sector$의 $SectorCitizen$들은 $Division$에서 일어난 사건을 해결할 때마다 자신들의 장비를 지원합니다." Desc="$Division$ 임무 완료 시, $Rare$ 등급 이상의 에너지 추출기을 $ApplyAmountValue$개 지급합니다." DescSub="" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmount="3" ApplyAmount2="0"/>
+		<class name="SupportItem_Psistone" EventType="Division" Title_Format="$SupportItem$ 순도 높은 이능석" Image="Reputation/SupportItem_Psistone" Desc_Prefix="$Sector$의 $SectorCitizen$들은 $Division$에서 일어난 사건을 해결할 때마다 자신들의 연구 결과물을 지원합니다." Desc="$Division$ 임무 완료 시, $Rare$ 등급 이상의 이능석을 $ApplyAmountValue$개 지급합니다." DescSub="" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmount="3" ApplyAmount2="0"/>
+		<class name="FieldControl" EventType="Division" Title_Format="현장 수습" Image="Reputation/FieldControl" Desc_Prefix="$Sector$의 $SectorCitizen$들은 $Division$에서 일어난 사건을 해결할 때마다 사건 현장 수습을 도와줍니다." Desc="$Division$ 임무 완료 시, 해당 임무에서 획득 가능한 $Rare$ 등급 이상의 장비 아이템을 $ApplyAmountValue$개 지급합니다." DescSub="" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmount="1" ApplyAmount2="0"/>
+		<class name="MerchantsAssociation" EventType="Division" Title_Format="상인조합" Image="Reputation/MerchantsAssociation" Desc_Prefix="$Sector$의 $SectorCitizen$들은 $Troubleshooter$의 활동을 타 지구 상인들에게 홍보합니다." Desc="$Division$ 임무 완료 시, 모든 상업 지구의 평판이 $ApplyAmountValue$ 상승합니다." DescSub="" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmount="10" ApplyAmount2="0"/>
+		<class name="LaborAssociation" EventType="Division" Title_Format="노동조합" Image="Reputation/LaborAssociation" Desc_Prefix="$Sector$의 $SectorCitizen$들은 $Troubleshooter$의 활동을 타 지구 노동자들에게 홍보합니다." Desc="$Division$ 임무 완료 시, 모든 산업 지구의 평판이 $ApplyAmountValue$ 상승합니다." DescSub="" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmount="10" ApplyAmount2="0"/>
+		<class name="CivilCheer" EventType="Division" Title_Format="시민 응원" Image="Reputation/CivilCheer" Desc_Prefix="$Sector$의 $SectorCitizen$들은 $Troubleshooter$의 활동을 꾸준히 이웃들에게 홍보합니다." Desc="$Division$ 임무 완료 시, 모든 거주구의 평판이 $ApplyAmountValue$ 상승합니다." DescSub="" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmount="10" ApplyAmount2="0"/>
+		<class name="TechnicalAgreements" EventType="Division" Title_Format="기술 협약" Image="Reputation/TechnicalAgreements" Desc_Prefix="$Sector$의 $SectorCitizen$들은 $Division$에서 일어난 사건을 해결할 때마다 자신들의 기술 지식을 지원합니다." Desc="$Division$ 임무 완료 시, 무작위의 제작 가능한 아이템의 숙련도가 $ApplyAmountValue$ 상승합니다." DescSub="" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmount="20" ApplyAmount2="0"/>
+		<class name="BlackMarket" EventType="Division" Title_Format="암거래 적발" Image="Reputation/BlackMarket" Desc_Prefix="$Sector$의 $SectorCitizen$들의 불법적인 암거래 물품을 적발합니다." Desc="$Division$ 임무 완료 시, $Rare$ 등급 이상의 아이템을 $ApplyAmountValue$개 지급합니다. 해당 지구 평판이 $ApplyAmountValue2$ 감소하며 타 상업 지구의 평판이 $ApplyAmountValue2$ 상승합니다." DescSub="" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmount="1" ApplyAmount2="5"/>
+		<class name="InformationMerchant" EventType="Division" Title_Format="정보상" Image="Reputation/InformationMerchant" Desc_Prefix="$Sector$의 $SectorCitizen$들부터 바람장벽 지구 전역의 범죄자들의 정보를 제공 받습니다." Desc="$Division$ 임무 완료 시, 알려진 트러블메이커 대상 중 정보가 부족한 무작위의 대상에 대한 정보를 $ApplyAmountValue$ 획득합니다." DescSub="" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmount="25" ApplyAmount2="0"/>
+		<class name="Check" EventType="Sector" Title_Format="검문" Image="Reputation/Check" Desc_Prefix="바람장벽 지구의 $SectorCitizen$들은 $Sector$를 통해 많은 범죄자들이 유입된다고 믿고 있습니다." Desc="$Sector$ 임무 완료 시, 모든 지구의 평판이 $ApplyAmountValue$ 상승합니다." DescSub="" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmount="2" ApplyAmount2="0"/>
+		<class name="EntireConfidence" EventType="Global" Title_Format="전폭적인 지지" Image="Reputation/EntireConfidence" Desc_Prefix="$Sector$의 $SectorCitizen$들은 다른 지구의 사건 해결도 $Division$의 치안과 연결되어 있다고 믿습니다" Desc="임무 완료 시, 모든 $Division$의 평판이 $ApplyAmountValue$ 상승합니다." DescSub="" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmount="10" ApplyAmount2="0"/>
+		<class name="Map_Psistone" EventType="Global" Title_Format="이능석 지도" Image="Reputation/Map_Psistone" Desc_Prefix="$Sector$의 $SectorCitizen$들은 원활한 이능석 수급을 위해 $Troubleshooter$에게 이능석이 분포된 자료를 제공합니다." Desc="임무 수행 시, 미니맵에 이능석의 위치가 표시됩니다." DescSub="임무 수행 시, 미니맵에 이능석의 위치가 표시됩니다." ApplyAmountType="None" ApplyAmountType2="None" ApplyAmount="0" ApplyAmount2="0"/>
+		<class name="LostProperty" EventType="Global" Title_Format="유실물 정보" Image="Reputation/LostProperty" Desc_Prefix="바람장벽 지구 경찰청으로부터 바람장벽 지구 전역의 유실물 정보를 제공 받습니다." Desc="임무 수행 시, 미니맵에 아이템 상자의 위치가 표시됩니다. 또한 유실물이 발생하지 않습니다." DescSub="임무 수행 시, 미니맵에 아이템 상자의 위치가 표시됩니다. 또한 유실물이 발생하지 않습니다." ApplyAmountType="None" ApplyAmountType2="None" ApplyAmount="0" ApplyAmount2="0"/>
+	</idspace>
+	<idspace id="ReputationDivisionType">
+		<class name="Area_North" Desc="[colour='FFFFFF00']관할 구역 지원금이 [colour='FFFFFFFF']%d%%[colour='FFFFFF00'] 증가합니다." Desc2="[colour='FFFFFF00']관할 구역 지원금[colour='FFFFFFFF']이 증가합니다.">
+			<Bonus>
+				<property AmountValue="25"/>
+				<property AmountValue="50"/>
+				<property AmountValue="100"/>
+			</Bonus>
+		</class>
+		<class name="Area_South" Desc="[colour='FFFFFF00']시민 구조 시, 감사 편지의 보상이 [colour='FFFFFFFF']100%%[colour='FFFFFF00'] 증가합니다. NPC와 우호도 상승량이 [colour='FFFFFFFF']%d%%[colour='FFFFFF00'] 증가합니다." Desc2="시민 구조 시, [colour='FFFFFF00']감사 편지[colour='FFFFFFFF']의 보상이 증가합니다. NPC와 우호도 상승량이 증가합니다.">
+			<Bonus>
+				<property AmountValue="25"/>
+				<property AmountValue="50"/>
+				<property AmountValue="75"/>
+				<property AmountValue="100"/>
+			</Bonus>
+		</class>
+		<class name="Area_Center" Desc="[colour='FFFFFF00']미션 수행 시, 의욕 소모량이 [colour='FFFFFFFF']%d%%[colour='FFFFFF00'] 감소합니다." Desc2="미션 수행 시, [colour='FFFFFF00']의욕 소모량[colour='FFFFFFFF'] 이 감소합니다.">
+			<Bonus>
+				<property AmountValue="10"/>
+				<property AmountValue="20"/>
+				<property AmountValue="30"/>
+				<property AmountValue="40"/>
+			</Bonus>
+		</class>
+		<class name="Area_Wall" Desc="[colour='FFFFFF00']트러블메이커의 정보 획득량이 [colour='FFFFFFFF']%d%%[colour='FFFFFF00'] 증가합니다." Desc2="트러블메이커의 [colour='FFFFFF00']정보 획득량[colour='FFFFFFFF'] 이 증가합니다.">
+			<Bonus>
+				<property AmountValue="20"/>
+				<property AmountValue="50"/>
+				<property AmountValue="100"/>
+			</Bonus>
+		</class>
+		<class name="Area_Outside" Desc="[colour='FFFFFF00']트러블슈터 활동 평가 시, 하락하는 평판이 [colour='FFFFFFFF']%d%%[colour='FFFFFF00'] 감소합니다." Desc2="트러블슈터 활동 평가 시, 하락하는 [colour='FFFFFF00']평판[colour='FFFFFFFF']이 감소합니다.">
+			<Bonus>
+				<property AmountValue="25"/>
+				<property AmountValue="50"/>
+			</Bonus>
+		</class>
+	</idspace>
+	<idspace id="ReputationSectorType">
+		<class name="Residence" Desc="[colour='FFFFFF00']임무 완료 시, 획득하는 평판이 [colour='FFFFFFFF']%d%%[colour='FFFFFF00'] 증가합니다." Desc2="임무 완료 시, 획득하는 [colour='FFFFFF00']평판[colour='FFFFFFFF']이 증가합니다." Title="거주구" Color="DarkLimeGreen" FrameColor="BrightGreen">
+			<Bonus>
+				<property AmountValue="50"/>
+				<property AmountValue="75"/>
+				<property AmountValue="100"/>
+				<property AmountValue="125"/>
+				<property AmountValue="150"/>
+			</Bonus>
+		</class>
+		<class name="Business" Desc="[colour='FFFFFF00']NPC 상인과 물품 거래 시, [colour='FFFFFFFF']%d%%[colour='FFFFFF00'] 할인된 가격으로 거래합니다." Desc2="NPC 상인과 [colour='FFFFFF00']물품 거래[colour='FFFFFFFF'] 시, 할인된 가격으로 거래합니다." Title="상업 지구" Color="WhiteBlue" FrameColor="WhiteBlue">
+			<Bonus>
+				<property AmountValue="8"/>
+				<property AmountValue="16"/>
+				<property AmountValue="24"/>
+				<property AmountValue="32"/>
+			</Bonus>
+		</class>
+		<class name="Industry" Desc="[colour='FFFFFF00']트러블슈터 활동 평가 시, [colour='FF0070FF']희귀[colour='FFFFFF00'] 등급 이상의 장비 아이템을 [colour='FFFFFFFF']%d[colour='FFFFFF00']개 지원합니다." Desc2="트러블슈터 활동 평가 시, [colour='FF0070FF']희귀[colour='FFFFFFFF'] 등급 이상의 [colour='FFFFFF00']장비 아이템[colour='FFFFFFFF']을 지원합니다." Title="산업 지구" Color="Gamboge" FrameColor="Yellow">
+			<Bonus>
+				<property AmountValue="4"/>
+				<property AmountValue="8"/>
+				<property AmountValue="12"/>
+			</Bonus>
+		</class>
+		<class name="Special" Desc="[colour='FFFFFF00']트러블슈터 활동 평가 시, 훈련서를 [colour='FFFFFFFF']%d[colour='FFFFFF00']개 지원합니다." Desc2="트러블슈터 활동 평가 시, [colour='FFFFFF00']훈련서[colour='FFFFFFFF']를 지원합니다." Title="특수 지구" Color="LimeGold" FrameColor="HotPink">
+			<Bonus>
+				<property AmountValue="30"/>
+				<property AmountValue="60"/>
+				<property AmountValue="90"/>
+				<property AmountValue="120"/>
+			</Bonus>
+		</class>
+	</idspace>
+	<idspace id="Reputation">
+		<schema>
+			<rule property="Reward" type="table"/>
+			<rule property="Type" type="link" target="ReputationSectorType"/>
+			<rule property="Division" type="link" target="Division"/>
+			<rule property="Organization" type="link" target="Organization"/>
+			<rule property="Opened" type="bool" default="false"/>
+			<rule property="Lv" type="number" default="0"/>
+			<rule property="RequireLevel" type="number" default="5"/>
+			<rule property="MaxLv" type="number" default="100"/>
+			<rule property="TotalMissionClearCount" type="number" default="30"/>
+			<rule property="RewardLv" type="calculated" default="CalculatedProperty_Reputation_RewardLv"/>
+			<rule property="Desc" type="calculated" default="CalculatedProperty_TextFormater_Common"/>
+			<rule property="Desc_Prefix" type="calculated" default="CalculatedProperty_TextFormater_Common"/>
+			<rule property="Desc_Postfix" type="calculated" default="CalculatedProperty_TextFormater_Common"/>
+			<rule property="BonusIndex" type="number" default="1"/>
+			<rule property="PrevLv" type="number" default="0"/>
+			<rule property="NextLv" type="number" default="0"/>
+		</schema>
+		<class name="GoldHand" Image="Loading_Pride" Title="황금손" Opened="false" Type="Residence" Organization="Empty" Citizen="시민" Division="Area_North" TotalMissionClearCount="50" RequireLevel="5" Cost="4500" Desc_Prefix_Format="$Division$에 위치한 $AreaType$입니다." Desc_Format="$WindWallArea$의 중산층들이 거주하는 지역으로 경험이 많은 $Troubleshooter$를 선호하고 있습니다." Desc_Postfix_Format="$WindWallArea$ 내 $AreaType$ 중 가장 높은 $AllowDivisionReward$을 제공하고 있습니다.">
+			<Bonus>
+				<property Type="EnoughSupport"/>
+				<property Type="CitizenReport"/>
+				<property Type="EntireConfidence"/>
+			</Bonus>
+			<Reward>
+				<property Vill="0"/>
+				<property Vill="120"/>
+				<property Vill="240"/>
+				<property Vill="360"/>
+				<property Vill="480"/>
+				<property Vill="600"/>
+				<property Vill="720"/>
+				<property Vill="900"/>
+				<property Vill="1200"/>
+				<property Vill="1800"/>
+			</Reward>
+		</class>
+		<class name="RageaWineBarrel" Image="Loading_Common_ParkPlace" Title="화난 술통" Opened="false" Type="Business" Organization="BlackTiger" Citizen="상인" Division="Area_North" TotalMissionClearCount="30" RequireLevel="8" Cost="6000" Desc_Prefix_Format="$Division$에 위치한 $AreaType$입니다." Desc_Format="오랜 기간 범죄 조직 $OrganizationName$파의 세력권에 있던 지역으로 $WindWallArea$의 대다수 물류, 이능석 채굴 회사의 본사가 위치한 $AreaType$입니다." Desc_Postfix_Format="$Troubleshooter$가 자신의 지역을 관할로 하는 것을 매우 꺼려합니다.">
+			<Bonus>
+				<property Type="SupportItem_Potion"/>
+				<property Type="SupportItem_RareEquipment"/>
+				<property Type="MerchantsAssociation"/>
+			</Bonus>
+			<Reward>
+				<property Vill="0"/>
+				<property Vill="180"/>
+				<property Vill="372"/>
+				<property Vill="552"/>
+				<property Vill="732"/>
+				<property Vill="924"/>
+				<property Vill="1104"/>
+				<property Vill="1380"/>
+				<property Vill="1836"/>
+				<property Vill="2760"/>
+			</Reward>
+		</class>
+		<class name="YellowEar" Image="Loading_Pride" Title="노란귀 연구 단지" Opened="false" Type="Industry" Organization="Empty" Citizen="연구원" Division="Area_North" TotalMissionClearCount="50" RequireLevel="5" Cost="6400" Desc_Prefix_Format="$Division$에 위치한 $AreaType$입니다." Desc_Format="대부분의 연구소는 이능석 광맥인 『 리치 베인 』과 이능석 채굴에 관련된 기술 연구에 집중되어 있습니다." Desc_Postfix_Format="사건 경험이 많은 $Troubleshooter$를 선호하고 있습니다.">
+			<Bonus>
+				<property Type="SupportItem_Extractor"/>
+				<property Type="SupportItem_Psistone"/>
+				<property Type="Map_Psistone"/>
+			</Bonus>
+			<Reward>
+				<property Vill="0"/>
+				<property Vill="170"/>
+				<property Vill="340"/>
+				<property Vill="500"/>
+				<property Vill="670"/>
+				<property Vill="840"/>
+				<property Vill="1010"/>
+				<property Vill="1180"/>
+				<property Vill="1340"/>
+				<property Vill="1510"/>
+			</Reward>
+		</class>
+		<class name="SilverCloud" Image="Loading_Common_SilverCloud" Title="은빛 구름" Opened="true" Type="Residence" Organization="Empty" Citizen="시민" Division="Area_South" TotalMissionClearCount="0" RequireLevel="3" Cost="1000" Desc_Prefix_Format="$Division$에 위치한 $AreaType$입니다." Desc_Format="대부분 근로 노동자들이 거주하는 지역이며 재개발 공사가 한창 진행 중인 지역입니다." Desc_Postfix_Format="$Troubleshooter$의 관할 구역이 되기를 희망합니다.">
+			<Bonus>
+				<property Type="CivilCheer"/>
+				<property Type="CitizenReport"/>
+				<property Type="EntireConfidence"/>
+			</Bonus>
+			<Reward>
+				<property Vill="0"/>
+				<property Vill="120"/>
+				<property Vill="240"/>
+				<property Vill="360"/>
+				<property Vill="480"/>
+				<property Vill="600"/>
+				<property Vill="720"/>
+				<property Vill="840"/>
+				<property Vill="960"/>
+				<property Vill="1080"/>
+			</Reward>
+		</class>
+		<class name="PugoStreet" Image="Loading_PugoShop" Title="푸고 거리" Opened="false" Type="Business" Organization="AngryBull" Citizen="상인" Division="Area_South" TotalMissionClearCount="10" RequireLevel="8" Cost="2400" Desc_Prefix_Format="$Division$에 위치한 $AreaType$입니다." Desc_Format="오랜 기간 범죄 조직 $OrganizationName$파의 세력권에 있던 지역으로 소규모 자영업자들 중심의 $AreaType$입니다." Desc_Postfix_Format="$Troubleshooter$가 자신의 지역을 관할로 하는 것을 매우 꺼려합니다.">
+			<Bonus>
+				<property Type="SupportItem_Potion"/>
+				<property Type="SupportItem_RareArmor"/>
+				<property Type="MerchantsAssociation"/>
+			</Bonus>
+			<Reward>
+				<property Vill="0"/>
+				<property Vill="130"/>
+				<property Vill="260"/>
+				<property Vill="380"/>
+				<property Vill="520"/>
+				<property Vill="650"/>
+				<property Vill="780"/>
+				<property Vill="970"/>
+				<property Vill="1300"/>
+				<property Vill="1940"/>
+			</Reward>
+		</class>
+		<class name="BlueFog" Image="Loading_BlueFogStreet" Title="푸른 안개" Opened="false" Type="Industry" Organization="Empty" Citizen="노동자" Division="Area_South" TotalMissionClearCount="10" RequireLevel="5" Cost="5400" Desc_Prefix_Format="$Division$에 위치한 $AreaType$입니다." Desc_Format="먼지 바람 고속도로와 잿빛 항구에 인접하여 물류 산업이 발달한 지역입니다." Desc_Postfix_Format="">
+			<Bonus>
+				<property Type="SupportItem_RareAccessory"/>
+				<property Type="TechnicalAgreements"/>
+				<property Type="LaborAssociation"/>
+			</Bonus>
+			<Reward>
+				<property Vill="0"/>
+				<property Vill="170"/>
+				<property Vill="350"/>
+				<property Vill="520"/>
+				<property Vill="700"/>
+				<property Vill="860"/>
+				<property Vill="1030"/>
+				<property Vill="1300"/>
+				<property Vill="1730"/>
+				<property Vill="2590"/>
+			</Reward>
+		</class>
+		<class name="DustWind" Image="Loading_DustWindRestArea" Title="먼지 바람 고속도로" Opened="false" Type="Special" Organization="Empty" Citizen="시민" Division="Area_South" TotalMissionClearCount="50" RequireLevel="3" Cost="2700" Desc_Prefix_Format="$Division$에 위치한 $AreaType$입니다." Desc_Format="발할라 중심부와 이어지는 고속도로를 중심으로 내수 산업의 물류들이 해당 도로를 이용하고 있습니다. 밀수꾼들과 경찰력의 충돌이 빈번합니다." Desc_Postfix_Format="사건 경험이 많은 $Troubleshooter$를 선호하고 있습니다.">
+			<Bonus>
+				<property Type="Check"/>
+			</Bonus>
+			<Reward>
+				<property Vill="0"/>
+				<property Vill="120"/>
+				<property Vill="240"/>
+				<property Vill="360"/>
+				<property Vill="480"/>
+				<property Vill="600"/>
+				<property Vill="720"/>
+				<property Vill="840"/>
+				<property Vill="960"/>
+				<property Vill="1080"/>
+			</Reward>
+		</class>
+		<class name="SkyWind" Image="Loading_SkyWindPark" Title="하늘 바람" Opened="false" Type="Residence" Organization="Empty" Citizen="시민" Division="Area_Center" TotalMissionClearCount="30" RequireLevel="5" Cost="3200" Desc_Prefix_Format="$Division$에 위치한 $AreaType$입니다." Desc_Format="발할라 경찰청과 가까운만큼 평소의 치안은 높은 편이지만, 경찰청 세력과 반목하는 범죄 조직이나 반 발할라 단체들이 일으키는 대형 사건들이 끊이지 않는 지역입니다." Desc_Postfix_Format="사건 경험이 많은 $Troubleshooter$를 선호하고 있습니다.">
+			<Bonus>
+				<property Type="EnoughSupport"/>
+				<property Type="CitizenReport"/>
+				<property Type="EntireConfidence"/>
+			</Bonus>
+			<Reward>
+				<property Vill="0"/>
+				<property Vill="110"/>
+				<property Vill="200"/>
+				<property Vill="310"/>
+				<property Vill="410"/>
+				<property Vill="520"/>
+				<property Vill="610"/>
+				<property Vill="770"/>
+				<property Vill="1020"/>
+				<property Vill="1540"/>
+			</Reward>
+		</class>
+		<class name="Metrodium" Image="Loading_MetrodiumStreet" Title="메트로디움" Opened="false" Type="Business" Organization="Empty" Citizen="상인" Division="Area_Center" TotalMissionClearCount="30" RequireLevel="6" Cost="9600" Desc_Prefix_Format="$Division$에 위치한 $AreaType$입니다." Desc_Format="발할라 경찰청과 가까운만큼 평소의 치안은 높은 편이지만, 경찰청 세력과 반목하는 범죄 조직이나 반 발할라 단체들이 일으키는 대형 사건들이 끊이지 않는 지역입니다." Desc_Postfix_Format="$WindWallArea$ 내 $AreaType$ 중 가장 높은 $AllowDivisionReward$을 제공하고 있습니다.">
+			<Bonus>
+				<property Type="SupportItem_Potion"/>
+				<property Type="MerchantsAssociation"/>
+				<property Type="LostProperty"/>
+			</Bonus>
+			<Reward>
+				<property Vill="0"/>
+				<property Vill="260"/>
+				<property Vill="520"/>
+				<property Vill="780"/>
+				<property Vill="1030"/>
+				<property Vill="1300"/>
+				<property Vill="1560"/>
+				<property Vill="1940"/>
+				<property Vill="2590"/>
+				<property Vill="3890"/>
+			</Reward>
+		</class>
+		<class name="GrayPort" Image="Loading_GrayPortWareHouse" Title="잿빛 항구" Opened="false" Type="Industry" Organization="Empty" Citizen="노동자" Division="Area_Center" TotalMissionClearCount="50" RequireLevel="6" Cost="9800" Desc_Prefix_Format="$Division$에 위치한 $AreaType$입니다." Desc_Format="발할라 남쪽의 동방연합과 주로 교류를 하는 항구로 발할라에서 소비하는 많은 원자재가 이 항구를 통해 유통되고 있습니다." Desc_Postfix_Format="$WindWallArea$ 내 $AreaType$ 중 가장 높은 $AllowDivisionReward$을 제공하고 있습니다.">
+			<Bonus>
+				<property Type="SupportItem_RareWeapon"/>
+				<property Type="SupportItem_RareMaterial"/>
+				<property Type="LaborAssociation"/>
+			</Bonus>
+			<Reward>
+				<property Vill="0"/>
+				<property Vill="290"/>
+				<property Vill="580"/>
+				<property Vill="860"/>
+				<property Vill="1150"/>
+				<property Vill="1440"/>
+				<property Vill="1730"/>
+				<property Vill="2160"/>
+				<property Vill="2880"/>
+				<property Vill="4320"/>
+			</Reward>
+		</class>
+		<class name="AshStream" Image="Loading_Hansando" Title="재의 강" Opened="false" Type="Special" Organization="Empty" Citizen="시민" Division="Area_Center" TotalMissionClearCount="20" RequireLevel="5" Cost="3600" Desc_Prefix_Format="$Division$에 위치한 $AreaType$입니다." Desc_Format="재의 강 지역에는 잿빛 항구의 물류를 분담하기 위한 수상 물류 기지가 위치하고 있습니다." Desc_Postfix_Format="">
+			<Bonus>
+				<property Type="Check"/>
+			</Bonus>
+			<Reward>
+				<property Vill="0"/>
+				<property Vill="160"/>
+				<property Vill="310"/>
+				<property Vill="480"/>
+				<property Vill="640"/>
+				<property Vill="800"/>
+				<property Vill="960"/>
+				<property Vill="1130"/>
+				<property Vill="1280"/>
+				<property Vill="1440"/>
+			</Reward>
+		</class>
+		<class name="ShadeFog" Image="Loading_ShadowFogSlum" Title="그늘 안개" Opened="false" Type="Residence" Organization="Empty" Citizen="시민" Division="Area_Wall" TotalMissionClearCount="10" RequireLevel="3" Cost="2700" Desc_Prefix_Format="$Division$에 위치한 $AreaType$입니다." Desc_Format="바람장벽 지구의 외곽 지역에 위치하다 보니 범죄율이 높습니다." Desc_Postfix_Format="$Troubleshooter$의 관할 구역이 되기를 희망합니다.">
+			<Bonus>
+				<property Type="FieldControl"/>
+				<property Type="CitizenReport"/>
+				<property Type="EntireConfidence"/>
+			</Bonus>
+			<Reward>
+				<property Vill="0"/>
+				<property Vill="120"/>
+				<property Vill="240"/>
+				<property Vill="360"/>
+				<property Vill="480"/>
+				<property Vill="600"/>
+				<property Vill="720"/>
+				<property Vill="840"/>
+				<property Vill="960"/>
+				<property Vill="1080"/>
+			</Reward>
+		</class>
+		<class name="PurlpleStreet" Image="Loading_PurpleBackStreet" Title="자홍거리" Opened="false" Type="Business" Organization="WhiteTiger" Citizen="상인" Division="Area_Wall" TotalMissionClearCount="30" RequireLevel="8" Cost="7200" Desc_Prefix_Format="$Division$에 위치한 $AreaType$입니다." Desc_Format="오랜 기간 범죄 조직 $OrganizationName$파의 비호 아래 국경 검문소 중심으로 발달한 $AreaType$로 불법적인 환락가들이 성행하고 있는 지역입니다. 또한 바람장벽 지구 내 암거래 대부분이 이 지구에서 일어나고 있습니다." Desc_Postfix_Format="$Troubleshooter$가 자신의 지역을 관할로 하는 것을 매우 꺼려합니다.">
+			<Bonus>
+				<property Type="BlackMarket"/>
+				<property Type="MerchantsAssociation"/>
+				<property Type="InformationMerchant"/>
+			</Bonus>
+			<Reward>
+				<property Vill="0"/>
+				<property Vill="160"/>
+				<property Vill="300"/>
+				<property Vill="460"/>
+				<property Vill="600"/>
+				<property Vill="770"/>
+				<property Vill="1140"/>
+				<property Vill="1510"/>
+				<property Vill="2280"/>
+				<property Vill="3790"/>
+			</Reward>
+		</class>
+		<class name="ShadowWall" Image="Loading_Pride" Title="그림자 장벽" Opened="false" Type="Special" Organization="Empty" Citizen="시민" Division="Area_Wall" TotalMissionClearCount="20" RequireLevel="3" Cost="2700" Desc_Prefix_Format="$Division$에 위치한 $AreaType$입니다." Desc_Format="발할라 초기 외부 위험 요소로부터 시민들을 보호하기 위하여 설치되었지만 현재는 외부 이주민들의 무차별적인 유입을 막는 역할을 하고 있습니다." Desc_Postfix_Format="$Troubleshooter$의 관할 구역이 되기를 희망합니다.">
+			<Bonus>
+				<property Type="Check"/>
+			</Bonus>
+			<Reward>
+				<property Vill="0"/>
+				<property Vill="120"/>
+				<property Vill="240"/>
+				<property Vill="360"/>
+				<property Vill="480"/>
+				<property Vill="600"/>
+				<property Vill="720"/>
+				<property Vill="840"/>
+				<property Vill="960"/>
+				<property Vill="1080"/>
+			</Reward>
+		</class>
+		<class name="CrowStreet" Image="Loading_Pride" Title="까마귀 골목" Opened="false" Type="Residence" Organization="Empty" Citizen="시민" Division="Area_Outside" TotalMissionClearCount="10" RequireLevel="10" Cost="1500" Desc_Prefix_Format="$Division$에 위치한 $AreaType$입니다." Desc_Format="이곳에 거주하는 대부분은 발할라로 입국 심사가 허락되지 않은 이주민들과 발할라의 경찰로부터 도망친 범죄자입니다. " Desc_Postfix_Format="$Troubleshooter$가 자신의 지역을 관할로 하는 것을 싫어합니다.">
+			<Bonus>
+				<property Type="FieldControl"/>
+				<property Type="CitizenReport"/>
+			</Bonus>
+			<Reward>
+				<property Vill="0"/>
+				<property Vill="60"/>
+				<property Vill="120"/>
+				<property Vill="180"/>
+				<property Vill="300"/>
+				<property Vill="420"/>
+				<property Vill="540"/>
+				<property Vill="660"/>
+				<property Vill="780"/>
+				<property Vill="960"/>
+			</Reward>
+		</class>
+		<class name="IronForest" Image="Loading_Common_Road_113" Title="철의 숲" Opened="false" Type="Special" Organization="Empty" Citizen="시민" Division="Area_Outside" TotalMissionClearCount="30" RequireLevel="5" Cost="2700" Desc_Prefix_Format="$Division$에 위치한 $AreaType$입니다." Desc_Format="철의 숲은 과거 세계 대전 당시 버려진 군용 기계들이 폐기되어 있으며, 또한 흉폭한 야수들의 서식지입니다." Desc_Postfix_Format="사건 경험이 많은 $Troubleshooter$를 선호하고 있습니다.">
+			<Bonus>
+				<property Type="Check"/>
+			</Bonus>
+			<Reward>
+				<property Vill="0"/>
+				<property Vill="120"/>
+				<property Vill="240"/>
+				<property Vill="360"/>
+				<property Vill="480"/>
+				<property Vill="600"/>
+				<property Vill="720"/>
+				<property Vill="840"/>
+				<property Vill="960"/>
+				<property Vill="1080"/>
+			</Reward>
+		</class>
+	</idspace>
+</idspaces>

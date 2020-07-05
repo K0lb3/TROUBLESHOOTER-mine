@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Tutorial_MetroStreet_OebAPV" Value="[!Dashboard:Counter]남은 전파 방해기 수"/>
+		<class name="Tutorial_MetroStreet_fXEYbK" Value="[!Dashboard:ObjectiveMarker]아이린이 해당 지역으로 이동하면 유선 전화를 이용할 수 있습니다."/>
+		<class name="Tutorial_MetroStreet_nYyCku" Value="[!Dashboard:ObjectiveMarker]아이린이 해당 지역으로 이동하면 유선 전화를 이용할 수 있습니다."/>
+		<class name="Tutorial_MetroStreet_9JHN6d" Value="[!Dashboard:ObjectiveMarker]아이린 혹은 알버스가 알리사 근처로 이동하면 대화 이벤트가 발생합니다."/>
+		<class name="Tutorial_MetroStreet_Pme6IW" Value="[!Dashboard:ObjectiveMarker]아이린 혹은 알버스가 알리사 근처로 이동하면 대화 이벤트가 발생합니다."/>
+		<class name="Tutorial_MetroStreet_6QcQGg" Value="[!Dashboard:TimeLimiter]동료들 도착까지 남은 시간"/>
+		<class name="Tutorial_MetroStreet_I3793w" Value="[!Dashboard:TimeLimiter]시온 도착까지 남은 시간"/>
+		<class name="Tutorial_MetroStreet_fJTXSJ" Value="[!Dashboard:TimeLimiter]동료들 도착까지 남은 시간"/>
+		<class name="Tutorial_MetroStreet_VXNnBf" Value="[!Dashboard:TimeLimiter]앤 도착까지 남은 시간"/>
+		<class name="Tutorial_MetroStreet_FtKBHz" Value="[!Dashboard:TimeLimiter]동료들 도착까지 남은 시간"/>
+		<class name="Tutorial_MetroStreet_CJput3" Value="[!Dashboard:TimeLimiter]헤이싱 도착까지 남은 시간"/>
+		<class name="Tutorial_MetroStreet_2x4WNx" Value="[!Dashboard:TimeLimiter]동료들 도착까지 남은 시간"/>
+		<class name="Tutorial_MetroStreet_l2PogR" Value="[!Dashboard:TimeLimiter]경찰 부대 도착까지 남은 시간"/>
+		<class name="Tutorial_MetroStreet_D0UZLe" Value="[!Dashboard:Counter]남은 적 수"/>
+		<class name="Tutorial_MetroStreet_EVg38h" Value="[!Objective]백호파 습격을 외부에 알리시오."/>
+		<class name="Tutorial_MetroStreet_tefwet" Value="[!Objective]- 선택 목표 1: 주차장의 유선 전화를 사용하여 구조 요청하시오."/>
+		<class name="Tutorial_MetroStreet_14pjeI" Value="[!Objective]- 선택 목표 2: 전파 방해기를 모두 파괴하시오."/>
+		<class name="Tutorial_MetroStreet_39Sjk0" Value="[!Objective]적을 모두 제압하시오."/>
+		<class name="Tutorial_MetroStreet_Wx24PH" Value="[!Objective]시민들을 구조하시오."/>
+		<class name="Tutorial_MetroStreet_LozAYG" Value="[!Objective]적을 모두 제압하시오."/>
+		<class name="Tutorial_MetroStreet_0nP0aQ" Value="[!Objective]시민들을 구조하시오."/>
+		<class name="Tutorial_MetroStreet_cRWKy8" Value="[!Title]사건 발생 1시간 전"/>
+		<class name="Tutorial_MetroStreet_eQAIW1" Value="[!Title]달빛거리"/>
+		<class name="Tutorial_MetroStreet_NPEXxR" Value="[!Subtitle][!speaker:EmptySubTitle_][colour=&apos;FFF3C993&apos;]린. 트러블슈터 회사에서 일한다며?"/>
+		<class name="Tutorial_MetroStreet_ZlAVFl" Value="[!Subtitle][!speaker:EmptySubTitle_][colour=&apos;FFF3C993&apos;]이제 히어로 활동은 접은 거니?"/>
+		<class name="Tutorial_MetroStreet_2NRFQz" Value="[!Subtitle][!speaker:EmptySubTitle_][colour=&apos;FF1EFF00&apos;]아이린 언니. 이제 히어로 아닌 거예요?"/>
+		<class name="Tutorial_MetroStreet_aqYM6Z" Value="[!Subtitle][!speaker:EmptySubTitle_][colour=&apos;FFFFFF88&apos;]이제 돈을 지급해야만 도움받겠구나."/>
+		<class name="Tutorial_MetroStreet_DqCbOd" Value="[!Subtitle][!speaker:EmptySubTitle_][colour=&apos;FF1EFFFF&apos;]린. 제대로 된 직장을 찾으렴. 네 언니처럼 말이야."/>
+		<class name="Tutorial_MetroStreet_9C8TSj" Value="[!Subtitle][!speaker:EmptySubTitle_][colour=&apos;FFFF6D25&apos;]보상을 바라고 일하는 트러블슈터가 어떻게 [colour=&apos;FFFFFFFF&apos;]히어로[colour=&apos;FFFF6D25&apos;]야?"/>
+		<class name="Tutorial_MetroStreet_ceoXcN" Value="[!Subtitle][!speaker:EmptySubTitle_][colour=&apos;FFF3C993&apos;]린. 히어로는 언제나 외로운 거란다."/>
+		<class name="Tutorial_MetroStreet_zieHGZ" Value="[!Subtitle][!speaker:EmptySubTitle_][colour=&apos;FFF3C993&apos;]힘들면 언니한테 오렴. 린."/>
+		<class name="Tutorial_MetroStreet_GeAbzq" Value="[!Title]사건 발생 30분 전"/>
+		<class name="Tutorial_MetroStreet_RkZSIL" Value="[!Title]달빛거리 버스 정류장"/>
+		<class name="Tutorial_MetroStreet_6z95Xo" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Joshua_Normal]전파 방해기 설치는 어떻게 되었는가?"/>
+		<class name="Tutorial_MetroStreet_mNIk2r" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Normal]다섯 군데 모두 설치 완료하였습니다."/>
+		<class name="Tutorial_MetroStreet_PVh2TL" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Joshua_]거주구 내 경찰들과 스푼교도들과 연관된 자들을 찾아내고"/>
+		<class name="Tutorial_MetroStreet_S5FDTv" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Joshua_]저항하는 자는 가차 없이 처분해라."/>
+		<class name="Tutorial_MetroStreet_SDygPg" Value="[!Dialog][!speaker:Gangster_WhiteTigerNormal_Normal]알겠습니다!"/>
+		<class name="Tutorial_MetroStreet_2NrRei" Value="[!Title]성난 호랑이"/>
+		<class name="Tutorial_MetroStreet_a29mIU" Value="[!Title]달빛거리 거주구"/>
+		<class name="Tutorial_MetroStreet_Q9E3qG" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Normal]네 녀석 삼촌!! 스푼교도랑 내통한 삼촌 데려와!!"/>
+		<class name="Tutorial_MetroStreet_LW1JLe" Value="[!BalloonChat][!speaker:DeadCivil]말도 안되는 트집을..."/>
+		<class name="Tutorial_MetroStreet_j8vMVU" Value="[!Dialog][!speaker:Civil_PurpleFat_Normal]전 삼촌이 없습니다.  잘못 아신 것 같습니다."/>
+		<class name="Tutorial_MetroStreet_uvOeUt" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Normal]야! 삼촌이 없다고 하네."/>
+		<class name="Tutorial_MetroStreet_FYVavB" Value="[!Dialog][!speaker:Gangster_WhiteTigerNormal_Normal]그렇군. 잘못 알았나 보군."/>
+		<class name="Tutorial_MetroStreet_0W9pVh" Value="[!BalloonChat][!speaker:DeadCivil]양아치 새끼들. 빨리 가 버려라."/>
+		<class name="Tutorial_MetroStreet_jVtERV" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Normal]아니 없어도 있다고 용서를 빌어야지. 미친 녀석."/>
+		<class name="Tutorial_MetroStreet_SwBnNp" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Normal]노인장. 한두 번도 아니잖아. 어떻게 해야 하는지 알지?"/>
+		<class name="Tutorial_MetroStreet_hFUQGS" Value="[!Dialog][!speaker:Civil_Oldman_Normal]살 만큼 살았다. 이 녀석들아! 네 녀석들은 천벌 받을 거다."/>
+		<class name="Tutorial_MetroStreet_QkKoYR" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Normal]살만큼 살아서 좋겠수? 그런데 왜 이리 벌벌 떠시나?"/>
+		<class name="Tutorial_MetroStreet_0R0FWF" Value="[!Dialog][!speaker:Gangster_WhiteTigerNormal_Normal]시간 낭비하지마."/>
+		<class name="Tutorial_MetroStreet_p1I5PR" Value="[!Dialog][!speaker:Irene_Surprise]방금 총격음?"/>
+		<class name="Tutorial_MetroStreet_aiAo4G" Value="[!Dialog][!speaker:Alisa_Serious]비비. 좋은 상황이 아니니 내 곁에 붙어있어."/>
+		<class name="Tutorial_MetroStreet_5iySty" Value="[!Dialog][!speaker:Bianca_Stare]이 숙소도 옮겨야겠어."/>
+		<class name="Tutorial_MetroStreet_MbBGfS" Value="[!Dialog][!speaker:Alisa_Smile]일단 이 상황을 벗어나면 어디든 상관없겠지."/>
+		<class name="Tutorial_MetroStreet_yHN3QN" Value="[!Dialog][!speaker:Irene_Surprise]도대체 무슨 일인 거지?"/>
+		<class name="Tutorial_MetroStreet_090iNi" Value="[!Dialog][!speaker:Irene_Surprise]저 녀석들은..."/>
+		<class name="Tutorial_MetroStreet_md3r0o" Value="[!Dialog]백호파의 시민 거주구 습격."/>
+		<class name="Tutorial_MetroStreet_K8PtLv" Value="[!Dialog]10년 전, 트러블슈터 &apos;실버라이닝&apos;을 해산시킬 때도 사용했던 악랄한 방법."/>
+		<class name="Tutorial_MetroStreet_Sj7IXo" Value="[!Dialog]백호파에게 저항하거나 경쟁하려는 자들이 존재하면..."/>
+		<class name="Tutorial_MetroStreet_qDGDSa" Value="[!Dialog]그들을 지지하는 시민들을 찾아 폭력을 행사한다."/>
+		<class name="Tutorial_MetroStreet_lxiJCN" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_]어딜 올려다봐! 아직 정신을 못 차렸구나! 이 녀석들!"/>
+		<class name="Tutorial_MetroStreet_3adUfe" Value="[!Dialog]시민들은 구원의 손길을 바라지만..."/>
+		<class name="Tutorial_MetroStreet_Q2UBZn" Value="[!Dialog]구원의 손길이 닿기도 전에 많은 죽음을 목격하게 되는 시민들은"/>
+		<class name="Tutorial_MetroStreet_3oAAA7" Value="[!Dialog]곧 자신이 그 순간까지 살아있지 못할 수 있다는 것을 깨닫는다."/>
+		<class name="Tutorial_MetroStreet_D1oWsy" Value="[!Dialog][!speaker:Civil_Fat2_]어르신!! 어르신!! 잠시만요!!"/>
+		<class name="Tutorial_MetroStreet_VjL2bn" Value="[!Dialog][!speaker:Civil_Fat2_]제가 아는 것 모두 말하겠습니다. 제발 제 가족만은 살려주세요!"/>
+		<class name="Tutorial_MetroStreet_9GD0qw" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Joshua_]그래? 그럼 목숨을 걸고 말해라."/>
+		<class name="Tutorial_MetroStreet_R2Fgmx" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Joshua_]쓸데없는 말이면 네 가족 역시 이 자리에서 바로 처분해 주마."/>
+		<class name="Tutorial_MetroStreet_77dmB6" Value="[!Dialog]시민들은 너무나도 폭력에 무력하기 때문에..."/>
+		<class name="Tutorial_MetroStreet_duBiZg" Value="[!Dialog][!speaker:Civil_Fat2_]102호 청년이 스푼교 집회에 나간다고 합니다."/>
+		<class name="Tutorial_MetroStreet_9fzr0e" Value="[!Dialog][!speaker:Civil_Fat2_]207호 아저씨는 아들이 경찰입니다. 그리고 304호 아가씨는..."/>
+		<class name="Tutorial_MetroStreet_mBswmC" Value="[!Dialog]자신의 소중한 것을 지키기 위해 타인을 팔아넘긴다."/>
+		<class name="Tutorial_MetroStreet_iw8C1z" Value="[!Dialog][!speaker:Irene_Fury]저런 사악한 녀석들..."/>
+		<class name="Tutorial_MetroStreet_RFhinm" Value="[!Dialog][!speaker:Irene_Fury]그리고 너무 많잖아. 나 혼자선 안 되겠어."/>
+		<class name="Tutorial_MetroStreet_QTm2BD" Value="[!Dialog][!speaker:Irene_Surprise]이 동네를 완전히 포위했군."/>
+		<class name="Tutorial_MetroStreet_kGP3cA" Value="[!Dialog][!speaker:Irene_Fury]저건 전파 방해기인가..."/>
+		<class name="Tutorial_MetroStreet_zCqVYA" Value="[!Dialog][!speaker:Irene_Serious]침착해. 아이린."/>
+		<class name="Tutorial_MetroStreet_u0DAVs" Value="[!Dialog][!speaker:Irene_Serious]......"/>
+		<class name="Tutorial_MetroStreet_5cZ4ME" Value="[!Dialog][!speaker:Irene_Surprise]그래. 주차장 쪽에 유선 전화가 있지!"/>
+		<class name="Tutorial_MetroStreet_ESi3a2" Value="[!Dialog][!speaker:Irene_Think]하지만 분명 백호파 녀석들이 많이 있을 텐데..."/>
+		<class name="Tutorial_MetroStreet_CL3rGc" Value="[!Dialog][!speaker:Irene_Fury]녀석들을 자극하면 시민들 안전도 위험해."/>
+		<class name="Tutorial_MetroStreet_pnyIzZ" Value="[!Dialog][!speaker:Irene_Fury]누가 잠시 주의를 끌 수 있다면 좋을 텐데..."/>
+		<class name="Tutorial_MetroStreet_SzMsY9" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_MetroStreet_46GwwC" Value="[!VictoryCondition]아이린 전투 불능"/>
+		<class name="Tutorial_MetroStreet_cgLwza" Value="[!VictoryCondition]백호파 습격을 외부에 알리시오."/>
+		<class name="Tutorial_MetroStreet_wRLHXl" Value="[!VictoryCondition]- 선택 목표 1: 주차장의 유선 전화를 사용하여 구조 요청하시오."/>
+		<class name="Tutorial_MetroStreet_omFvAf" Value="[!VictoryCondition]- 선택 목표 2: 전파 방해기를 모두 파괴하시오."/>
+		<class name="Tutorial_MetroStreet_Rx8C5r" Value="[!BalloonChat][!speaker:Alisa]비비. 내 주위에서 너무 멀어지지 마!"/>
+		<class name="Tutorial_MetroStreet_WcWjGL" Value="[!BalloonChat][!speaker:Bianca]알았어. 걱정 마."/>
+		<class name="Tutorial_MetroStreet_79JT8N" Value="[!Dialog][!speaker:Irene_Surprise]저 사람은..."/>
+		<class name="Tutorial_MetroStreet_BWu9pO" Value="[!Dialog][!speaker:Irene_Serious]분명히 람지플라자에서 봤던 사람이야."/>
+		<class name="Tutorial_MetroStreet_QOEC1A" Value="[!Dialog][!speaker:Irene_Surprise]어디서 봤던 것 같은...!?"/>
+		<class name="Tutorial_MetroStreet_fYAfmG" Value="[!Dialog][!speaker:Irene_Surprise]저 사람은..."/>
+		<class name="Tutorial_MetroStreet_kfLDEa" Value="[!Dialog][!speaker:Irene_Think]어디선가 봤는데..."/>
+		<class name="Tutorial_MetroStreet_MV4JGq" Value="[!Dialog][!speaker:Irene_Serious]람지플라자!"/>
+		<class name="Tutorial_MetroStreet_nstLqs" Value="[!BalloonChat][!speaker:Irene]잠깐!"/>
+		<class name="Tutorial_MetroStreet_I2l1C7" Value="[!BalloonChat][!speaker:Alisa]응??"/>
+		<class name="Tutorial_MetroStreet_aC0N2U" Value="[!Dialog][!speaker:Irene_Rage][colour=&apos;FFFFFF00&apos;]이 사람들이 돕는다면 가능할지도 몰라..."/>
+		<class name="Tutorial_MetroStreet_8kyPLP" Value="[!Choice]도와줘!"/>
+		<class name="Tutorial_MetroStreet_rB8whs" Value="[!Dialog][!speaker:Irene_Rage]시민들을 구할 수 있게 도와줘!"/>
+		<class name="Tutorial_MetroStreet_c7PbRI" Value="[!Dialog][!speaker:Alisa_Surprise]&apos;어디서 봤던 아이인데...&apos;"/>
+		<class name="Tutorial_MetroStreet_cZqgtJ" Value="[!Dialog][!speaker:Alisa_Serious]어떻게 도와달라는 거지?"/>
+		<class name="Tutorial_MetroStreet_jRtq9J" Value="[!Dialog][!speaker:Irene_Rage]주차장 옆에 공중전화기가 있어. 거기까지만 갈 수 있다면 외부에 구조 요청을 할 수 있어."/>
+		<class name="Tutorial_MetroStreet_HXEX2p" Value="[!Dialog][!speaker:Bianca_Surprise]알리사. 또 괜한 위험에 나서려는 거야?"/>
+		<class name="Tutorial_MetroStreet_kRDYuG" Value="[!Dialog][!speaker:Alisa_Smile]미안. 난 저 아이를 두고 그 일을 맡을 순 없을 것 같아."/>
+		<class name="Tutorial_MetroStreet_YFpD4M" Value="[!Dialog][!speaker:Irene_Rage]이 상황을 해결할 동료들이 있어!! 그들에게 연락할 거야!!"/>
+		<class name="Tutorial_MetroStreet_zz74Nw" Value="[!Dialog][!speaker:Alisa_Smile]비비!"/>
+		<class name="Tutorial_MetroStreet_DNwRA7" Value="[!Dialog][!speaker:Bianca_Stare]결국 또 귀찮은 일에 휘말리는 거야?"/>
+		<class name="Tutorial_MetroStreet_p8s9AR" Value="[!Dialog][!speaker:Alisa_Normal]이편이 널 지키는데 더 낫다고 봐."/>
+		<class name="Tutorial_MetroStreet_AJRYUz" Value="[!Dialog][!speaker:Alisa_Smile]이봐. 협력할 테니 잘 해내 봐!"/>
+		<class name="Tutorial_MetroStreet_DuSNpI" Value="[!Dialog][!speaker:Irene_Normal]물론이지!!"/>
+		<class name="Tutorial_MetroStreet_Ceg4G5" Value="[!BalloonChat][!speaker:Bianca]불렀니?"/>
+		<class name="Tutorial_MetroStreet_vBPZ05" Value="[!Dialog][!speaker:Irene_Rage]시민들을 구할 수 있게 도와줘!"/>
+		<class name="Tutorial_MetroStreet_wsQcxL" Value="[!Dialog][!speaker:Bianca_Surprise]뭐라는 거야?"/>
+		<class name="Tutorial_MetroStreet_4zSi0e" Value="[!Dialog][!speaker:Irene_Rage]부탁해. 시민들을 구하는 데 힘을 빌려줘."/>
+		<class name="Tutorial_MetroStreet_rZnC1j" Value="[!Dialog][!speaker:Bianca_Normal]......"/>
+		<class name="Tutorial_MetroStreet_NUHpvE" Value="[!Dialog][!speaker:Bianca_Normal]너 진심으로 곤란해하고 있구나."/>
+		<class name="Tutorial_MetroStreet_1RMns5" Value="[!Dialog][!speaker:Bianca_Normal]그렇게 시민들을 구하고 싶니?"/>
+		<class name="Tutorial_MetroStreet_p4Load" Value="[!Dialog][!speaker:Irene_Fury]&apos;뭐라는 거야. 이 사람. 당연한걸...&apos;"/>
+		<class name="Tutorial_MetroStreet_AtSVen" Value="[!Dialog][!speaker:Bianca_Happy]알리사. 나 이 아이 돕겠어."/>
+		<class name="Tutorial_MetroStreet_mBdZ9l" Value="[!Dialog][!speaker:Alisa_Smile]비비. 다 좋은데 무리하지는 마."/>
+		<class name="Tutorial_MetroStreet_395Mab" Value="[!Dialog][!speaker:Bianca_Happy]얘! 복잡한 건 네가 알아서 해. 네가 도와달라는 거니까!"/>
+		<class name="Tutorial_MetroStreet_WVkwkq" Value="[!Dialog][!speaker:Irene_Normal]물론이지!"/>
+		<class name="Tutorial_MetroStreet_kRGyRF" Value="[!Dialog][!speaker:Alisa_Think]&apos;이거 또 나만 열심히 뛰어야겠는걸...&apos;"/>
+		<class name="Tutorial_MetroStreet_bdpY4X" Value="[!Dialog][!speaker:Irene_Rage][colour=&apos;FFFFFF00&apos;]저 사람이 도와준다면 가능할 거야..."/>
+		<class name="Tutorial_MetroStreet_Ry04pg" Value="[!Dialog][!speaker:Irene_Rage]시민들을 구할 수 있게 도와줘!"/>
+		<class name="Tutorial_MetroStreet_hLTxgd" Value="[!Dialog][!speaker:Alisa_Normal]이쪽도 상황이 좋지 않아."/>
+		<class name="Tutorial_MetroStreet_TW56BS" Value="[!Dialog][!speaker:Irene_Rage]주차장 옆에 공중전화기가 있어!! 거기까지만 갈 수 있도록 도와줘!"/>
+		<class name="Tutorial_MetroStreet_ypUPk8" Value="[!Dialog][!speaker:Alisa_Think]......"/>
+		<class name="Tutorial_MetroStreet_97KkBM" Value="[!Dialog][!speaker:Alisa_Normal]알았다. 네 계획에 함께 하지."/>
+		<class name="Tutorial_MetroStreet_NZUoZO" Value="[!Dialog][!speaker:Irene_Normal]고마워! 맡겨만 줘!"/>
+		<class name="Tutorial_MetroStreet_uRnKv2" Value="[!Dialog][!speaker:Bianca_Surprise]비앙카가 위험해. 어떻게 해..."/>
+		<class name="Tutorial_MetroStreet_Roj7DW" Value="[!Dialog][!speaker:Bianca_Surprise]얘! 구급차 좀 불러줘!!"/>
+		<class name="Tutorial_MetroStreet_wp2CNo" Value="[!Dialog][!speaker:Irene_Surprise]지금 이 지역은 전파 방해로 외부와 연락을 할 수 없어!"/>
+		<class name="Tutorial_MetroStreet_r5Pb4v" Value="[!Dialog][!speaker:Bianca_Surprise]도저히 방법이 없는 거야!?"/>
+		<class name="Tutorial_MetroStreet_M6R7CZ" Value="[!Dialog][!speaker:Irene_Surprise]주차장 옆에 공중전화기가 있어. 거기까지만 갈 수 있다면 구조 요청을 할 수 있어!"/>
+		<class name="Tutorial_MetroStreet_n7FpIG" Value="[!BalloonChat][!speaker:Bianca]당장 그쪽으로 가자!!"/>
+		<class name="Tutorial_MetroStreet_NR8lLk" Value="[!BalloonChat][!speaker:Albus]알리사 씨!!"/>
+		<class name="Tutorial_MetroStreet_wYls9M" Value="[!BalloonChat][!speaker:Alisa]오! 알버스 군."/>
+		<class name="Tutorial_MetroStreet_PU5S91" Value="[!BalloonChat][!speaker:Albus]현장 상황이 다급합니다. 합류 부탁드립니다!!"/>
+		<class name="Tutorial_MetroStreet_TubGZN" Value="[!Dialog][!speaker:Alisa_Smile]언제나 이런 곳에서 만나는군."/>
+		<class name="Tutorial_MetroStreet_gfyMew" Value="[!Dialog][!speaker:Bianca_Surprise]또 저 사람이야?"/>
+		<class name="Tutorial_MetroStreet_045wbn" Value="[!Dialog][!speaker:Alisa_Normal]비비. 알버스 군과 합류하자!"/>
+		<class name="Tutorial_MetroStreet_3yZ8Yw" Value="[!Dialog][!speaker:Bianca_Stare]하아... 결국 또 귀찮은 일에 휘말리네."/>
+		<class name="Tutorial_MetroStreet_08LnUX" Value="[!Dialog][!speaker:Alisa_Smile]알버스 군. 우리 합류할게!"/>
+		<class name="Tutorial_MetroStreet_87dnHT" Value="[!Dialog][!speaker:Albus_Normal]감사합니다."/>
+		<class name="Tutorial_MetroStreet_zF8ksB" Value="[!BalloonChat][!speaker:Albus]비앙카 씨!!"/>
+		<class name="Tutorial_MetroStreet_QW4759" Value="[!BalloonChat][!speaker:Albus]비앙카 씨 현장 상황이 다급합니다. 합류 부탁드립니다!!"/>
+		<class name="Tutorial_MetroStreet_AerKJF" Value="[!Dialog][!speaker:Bianca_Surprise]저번의 트러블슈터?"/>
+		<class name="Tutorial_MetroStreet_S7qjpi" Value="[!Dialog][!speaker:Alisa_Normal]비비. 어떻게 할 거야?"/>
+		<class name="Tutorial_MetroStreet_Dh1GEY" Value="[!Dialog][!speaker:Bianca_Stare]부탁하는 태도가 마음에 들지 않아."/>
+		<class name="Tutorial_MetroStreet_NhlZyR" Value="[!Dialog][!speaker:Alisa_Normal]태도?"/>
+		<class name="Tutorial_MetroStreet_5TvPKa" Value="[!Dialog][!speaker:Alisa_Smile]비비. 괜한 투정 부리지 마. 생판 모르는 사람도 아니잖아."/>
+		<class name="Tutorial_MetroStreet_5rZn9M" Value="[!Dialog][!speaker:Bianca_Rage]알았어! 알았다고!"/>
+		<class name="Tutorial_MetroStreet_VmrFok" Value="[!Dialog][!speaker:Alisa_Smile]&apos;또 삐졌군...&apos;"/>
+		<class name="Tutorial_MetroStreet_giyUZV" Value="[!Dialog][!speaker:Alisa_Normal]알버스 군. 우리도 합류할게. 잘 부탁해."/>
+		<class name="Tutorial_MetroStreet_ZMFJB5" Value="[!BalloonChat][!speaker:Albus]알리사 씨!!"/>
+		<class name="Tutorial_MetroStreet_X3MTh3" Value="[!Dialog][!speaker:Alisa_Serious]알버스 군. 임무 중 미안한데 구급차 하나 빌릴게. 비비가 위험해."/>
+		<class name="Tutorial_MetroStreet_NMZBRW" Value="[!Dialog][!speaker:Albus_Surprise]알겠습니다..."/>
+		<class name="Tutorial_MetroStreet_ixruhZ" Value="[!Dialog][!speaker:Alisa_Sad]고마워. 알버스 군."/>
+		<class name="Tutorial_MetroStreet_2z1mao" Value="[!BalloonChat][!speaker:Albus]비앙카 씨!"/>
+		<class name="Tutorial_MetroStreet_w4hSBx" Value="[!Dialog][!speaker:Bianca_Surprise]너!!!"/>
+		<class name="Tutorial_MetroStreet_Ug5wnQ" Value="[!Dialog][!speaker:Bianca_Rage]트러블슈터가 왜 이렇게 현장에 늦게 온 거야!"/>
+		<class name="Tutorial_MetroStreet_2mom7g" Value="[!Dialog][!speaker:Bianca_Rage]비켜! 바쁘다고!"/>
+		<class name="Tutorial_MetroStreet_6MGr7P" Value="[!BalloonChat][!speaker:Albus]저기 혼절한 건 알리사 씨인 건가... "/>
+		<class name="Tutorial_MetroStreet_krskzt" Value="[!Dialog][!speaker:Alisa_Normal]비비. 이쪽으로!"/>
+		<class name="Tutorial_MetroStreet_tZZahv" Value="[!Dialog][!speaker:Bianca_Happy]응. 빨리 가자."/>
+		<class name="Tutorial_MetroStreet_6sm79q" Value="[!BalloonChat][!speaker:Bianca]알리사!!"/>
+		<class name="Tutorial_MetroStreet_R6LVnY" Value="[!BalloonChat][!speaker:Alisa]비비!!!"/>
+		<class name="Tutorial_MetroStreet_9Yc7eo" Value="[!Dialog][!speaker:Irene_Fury][colour=&apos;FFFFFF00&apos;]누구한테 전화하지..."/>
+		<class name="Tutorial_MetroStreet_arCTcY" Value="[!Choice]알버스"/>
+		<class name="Tutorial_MetroStreet_CAN5o1" Value="[!Choice]시온"/>
+		<class name="Tutorial_MetroStreet_ms9Mli" Value="[!Choice]앤"/>
+		<class name="Tutorial_MetroStreet_sCsBow" Value="[!Choice]사무실"/>
+		<class name="Tutorial_MetroStreet_5NzwH7" Value="[!Dialog][!speaker:Irene_Fury][colour=&apos;FFFFFF00&apos;]누구한테 전화하지..."/>
+		<class name="Tutorial_MetroStreet_DLnG4H" Value="[!Choice]알버스"/>
+		<class name="Tutorial_MetroStreet_zOaSnR" Value="[!Choice]시온"/>
+		<class name="Tutorial_MetroStreet_nCWn9d" Value="[!Choice]앤"/>
+		<class name="Tutorial_MetroStreet_R3EzPV" Value="[!Choice]사무실"/>
+		<class name="Tutorial_MetroStreet_vLHlQY" Value="[!Dialog][!speaker:Irene_Surprise]급한 일 없다고 했는데 혹시 다른 사건 출동 중은 아니겠지..."/>
+		<class name="Tutorial_MetroStreet_ikS7WM" Value="[!Dialog][!speaker:Irene_Fury]그럼 낭패인데..."/>
+		<class name="Tutorial_MetroStreet_XpE6PX" Value="[!Dialog][!speaker:Irene_Fury]알버스 군. 빨리 받아줘!"/>
+		<class name="Tutorial_MetroStreet_J66VHh" Value="[!Dialog][!speaker:Irene_Fury]설마...."/>
+		<class name="Tutorial_MetroStreet_L6q5TE" Value="[!Dialog][!speaker:Albus_Laugh][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone&apos;]아이린 씨. 무슨 일이세요? 몸은 괜찮으세요?"/>
+		<class name="Tutorial_MetroStreet_v3Lfjy" Value="[!Dialog][!speaker:Irene_Fury][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone&apos;]알버스 군!! 백호파 녀석들이 거주지 습격을 하고 있어!"/>
+		<class name="Tutorial_MetroStreet_aC8O4n" Value="[!Dialog][!speaker:Albus_Surprise][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone&apos;]네!? 아이린 씨 지금 어디세요!"/>
+		<class name="Tutorial_MetroStreet_lSr22e" Value="[!Dialog][!speaker:Irene_Rage][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone&apos;]달빛거리 거주구 A 섹터!"/>
+		<class name="Tutorial_MetroStreet_56flpP" Value="[!Dialog][!speaker:Albus_Fury][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone&apos;]알겠습니다! 바로 출동하겠습니다!"/>
+		<class name="Tutorial_MetroStreet_xLN5gr" Value="[!BalloonChat][!speaker:Irene]동료들이 올 때까지 버텨야 해..."/>
+		<class name="Tutorial_MetroStreet_euQfKS" Value="[!BalloonChat][!speaker:Irene]동료들이 올 때까지 버텨야 해..."/>
+		<class name="Tutorial_MetroStreet_opSe8H" Value="[!Dialog][!speaker:Irene_Serious]알버스 군은 혹시 출동해서 현장 지휘 중일 수 있으니..."/>
+		<class name="Tutorial_MetroStreet_HisHQu" Value="[!Dialog][!speaker:Sion_Laugh][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone&apos;]히어로. 웬일이야. 조퇴하니 회사 일이 궁금한 거야?"/>
+		<class name="Tutorial_MetroStreet_L2Bs8m" Value="[!Dialog][!speaker:Irene_Rage][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone&apos;]시온 군! 백호파의 거주지 습격이야!"/>
+		<class name="Tutorial_MetroStreet_CvqDUZ" Value="[!Dialog][!speaker:Sion_Surprise][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone&apos;]뭐라고!"/>
+		<class name="Tutorial_MetroStreet_LD3YGN" Value="[!Dialog][!speaker:Irene_Rage][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone&apos;]달빛거리 거주구 A 섹터야! 빨리 와 줘!"/>
+		<class name="Tutorial_MetroStreet_iRTctp" Value="[!Dialog][!speaker:Sion_Stare][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone&apos;]알았어! 당장 갈 테니 무리하지마. 아이린."/>
+		<class name="Tutorial_MetroStreet_CeJyB5" Value="[!Dialog][!speaker:Irene_Serious]알버스 군은 혹시 출동해서 현장 지휘 중일 수 있으니..."/>
+		<class name="Tutorial_MetroStreet_c9MMUK" Value="[!Dialog][!speaker:Anne_Smile][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone&apos;]언니? 몸은 괜찮아요?"/>
+		<class name="Tutorial_MetroStreet_j0eXPf" Value="[!Dialog][!speaker:Irene_Rage][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone&apos;]앤! 백호파의 거주지 습격이야! 빨리 알버스와 시온에게 알려줘. 여기 상황이 만만치 않아."/>
+		<class name="Tutorial_MetroStreet_wiUmIE" Value="[!Dialog][!speaker:Anne_Surprise][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone&apos;]......"/>
+		<class name="Tutorial_MetroStreet_KLCqQ5" Value="[!Dialog][!speaker:Anne_Strict][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone&apos;]알겠습니다! 언니!"/>
+		<class name="Tutorial_MetroStreet_iFpBg3" Value="[!Dialog][!speaker:Irene_Serious]사무실에 누구라도 있을 거야... 아직 퇴근하기 이른 시간이잖아..."/>
+		<class name="Tutorial_MetroStreet_ndQ4qK" Value="[!Dialog][!speaker:Irene_Fury]설마 오늘 같은 날 아무도 없는 거야..."/>
+		<class name="Tutorial_MetroStreet_CY8iKC" Value="[!Dialog][!speaker:Heissing_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone&apos;]$CompanyName$이다. 용건이 있다면 조금 있다 전화 부탁한다. 담당자가 잠시 외출 중이다."/>
+		<class name="Tutorial_MetroStreet_aQELkR" Value="[!Dialog][!speaker:Irene_Rage][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone&apos;]그럴 시간 없어! 달빛거리 거주구 A 섹터! 백호파의 습격이야!"/>
+		<class name="Tutorial_MetroStreet_L3fvq3" Value="[!Dialog][!speaker:Heissing_Smile][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone&apos;]그래서?"/>
+		<class name="Tutorial_MetroStreet_CTtVWo" Value="[!Dialog][!speaker:Irene_Rage][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone&apos;]알버스 군에게 이 사실을 알려줘!"/>
+		<class name="Tutorial_MetroStreet_3HZJYd" Value="[!Dialog][!speaker:Heissing_EyeClose][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone&apos;]......"/>
+		<class name="Tutorial_MetroStreet_ckl3L9" Value="[!Dialog][!speaker:Irene_Heroic][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone&apos;]답답하게 굴지 말고 당장 $CompanyName$ 동료들에게 연락해서 지원하러 와 달라고!!"/>
+		<class name="Tutorial_MetroStreet_baItnt" Value="[!Dialog][!speaker:Heissing_Smile][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone&apos;]알았다."/>
+		<class name="Tutorial_MetroStreet_0EwXPa" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_MetroStreet_lIslA0" Value="[!VictoryCondition]적을 모두 제압하시오."/>
+		<class name="Tutorial_MetroStreet_WOw248" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_MetroStreet_ebklyq" Value="[!VictoryCondition]시민 전원 구조 실패"/>
+		<class name="Tutorial_MetroStreet_pDpAYK" Value="[!VictoryCondition]시민들을 구조하시오."/>
+		<class name="Tutorial_MetroStreet_Pc3s43" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_MetroStreet_at4FtW" Value="[!VictoryCondition]적을 모두 제압하시오."/>
+		<class name="Tutorial_MetroStreet_dRol0y" Value="[!Dialog][!speaker:Sion_Stare]헤이싱 형! 좌측을 부탁해."/>
+		<class name="Tutorial_MetroStreet_d60ms1" Value="[!Dialog][!speaker:Heissing_Smile]어디든 상관없다."/>
+		<class name="Tutorial_MetroStreet_UMLiVl" Value="[!Dialog][!speaker:Sion_Stare]앤은 내 뒤를 따라와!"/>
+		<class name="Tutorial_MetroStreet_VBXBoS" Value="[!Dialog][!speaker:Anne_Strict]알겠습니다. 시온 오빠!"/>
+		<class name="Tutorial_MetroStreet_k5CUH4" Value="[!Dialog][!speaker:Sion_Stare]아이린... 내가 간다. 조금만 버텨라."/>
+		<class name="Tutorial_MetroStreet_UuPQ8X" Value="[!Dialog][!speaker:Heissing_Normal]자. 그럼 동료를 찾으러 가볼까."/>
+		<class name="Tutorial_MetroStreet_buKKgE" Value="[!Dialog][!speaker:Anne_Strict]네. 꼭 아이린 언니를 구해내요!"/>
+		<class name="Tutorial_MetroStreet_IS16sc" Value="[!Dialog][!speaker:Heissing_Smile]그럼. 즐거운 추억을 만들어 볼까."/>
+		<class name="Tutorial_MetroStreet_LhHH5q" Value="[!Dialog][!speaker:Sion_Stare]앤. 내 뒤로 꼭 붙어."/>
+		<class name="Tutorial_MetroStreet_TNXh0O" Value="[!Dialog][!speaker:Albus_Serious]급작스러운 출동 요청에 응해주셔서 감사합니다."/>
+		<class name="Tutorial_MetroStreet_LTq1tb" Value="[!Dialog][!speaker:VHPD_Jane_Angry]겉치례 인사는 필요 없네."/>
+		<class name="Tutorial_MetroStreet_GNwoem" Value="[!Dialog][!speaker:VHPD_Jane_Angry]자! 전원 $CompanyName$을 따라 돌입한다!"/>
+		<class name="Tutorial_MetroStreet_dQWDTu" Value="[!Dialog][!speaker:Albus_Serious]&apos;다들 조금만 더 버텨줘...&apos;"/>
+		<class name="Tutorial_MetroStreet_pmuti7" Value="[!Dialog][!speaker:Albus_Serious]&apos;아이린 씨. 조금만 더 버텨줘요.&apos;"/>
+		<class name="Tutorial_MetroStreet_zuf6zL" Value="[!Dialog][!speaker:Albus_Normal]무리한 부탁을 들어주셔서 감사합니다. 제인 경감님."/>
+		<class name="Tutorial_MetroStreet_6ZALrt" Value="[!Dialog][!speaker:VHPD_Jane_Smile]다음번에는 정식 절차를 통해 함께 임무를 진행하면 좋겠군."/>
+		<class name="Tutorial_MetroStreet_QzHsVr" Value="[!Dialog][!speaker:VHPD_Jane_Normal]트러블슈터 개인의 출동 요청에 매번 응할 만큼 발할라 경찰이 남아돌진 않으니까."/>
+		<class name="Tutorial_MetroStreet_1T2aTV" Value="[!Dialog][!speaker:Albus_Embarrassed]알겠습니다."/>
+		<class name="Tutorial_MetroStreet_GKxAk9" Value="[!Dialog][!speaker:VHPD_Jane_Smile]그럼 다음에 현장에서 만나도록 하지. $CompanyName$."/>
+		<class name="Tutorial_MetroStreet_qTXQlN" Value="[!Dialog][!speaker:Bianca_Surprise]둘이 같은 회사 동료였던 거야?"/>
+		<class name="Tutorial_MetroStreet_y7L2rF" Value="[!Dialog][!speaker:Alisa_Smile]이야~ 둘이 같은 회사였다니 놀라운데?"/>
+		<class name="Tutorial_MetroStreet_HuWJnp" Value="[!Dialog][!speaker:Albus_Laugh]아이린 씨를 도와주셔서 감사합니다. 알리사 씨. 비앙카씨."/>
+		<class name="Tutorial_MetroStreet_hHmFcX" Value="[!Dialog][!speaker:Irene_Smile]언젠가 꼭 이 빚은 갚겠다."/>
+		<class name="Tutorial_MetroStreet_NiCylP" Value="[!Dialog][!speaker:Bianca_Happy]굳이 갚겠다면 말리지 않을게~"/>
+		<class name="Tutorial_MetroStreet_GyOb2K" Value="[!Dialog][!speaker:Alisa_Normal]몇 달 안 지난 것 같은데 동료들도 생기고 엄청 실력도 늘고~"/>
+		<class name="Tutorial_MetroStreet_jJ83nZ" Value="[!Dialog][!speaker:Alisa_Smile]알버스 군 고생 많이 했겠어~"/>
+		<class name="Tutorial_MetroStreet_ThyKuX" Value="[!Dialog][!speaker:Albus_Embarrassed]아.. 아닙니다."/>
+		<class name="Tutorial_MetroStreet_FBR8Ft" Value="[!Dialog][!speaker:Bianca_Stare]얘. 너 얼굴 빨개졌어. "/>
+		<class name="Tutorial_MetroStreet_4iQQjh" Value="[!Dialog][!speaker:Irene_Surprise]알버스 군. 어디 아픈가? 괜찮은가?"/>
+		<class name="Tutorial_MetroStreet_8h2A2q" Value="[!Dialog][!speaker:Albus_Embarrassed]아... 아닙니다. 아이린 씨..."/>
+		<class name="Tutorial_MetroStreet_NqiCnm" Value="[!BalloonChat][!speaker:Alisa]재밌는 녀석이야."/>
+		<class name="Tutorial_MetroStreet_U1R8hs" Value="[!BalloonChat][!speaker:Bianca]알리사. 이제 가자."/>
+		<class name="Tutorial_MetroStreet_L9Gkwt" Value="[!Ignore][!Title]안하무인 조슈아"/>
+		<class name="Tutorial_MetroStreet_0dXvSI" Value="[!Ignore][!Title]백호파 행동대장"/>
+		<class name="Tutorial_MetroStreet_NpxEel" Value="[!Ignore][!BalloonChat][!speaker:Joshua]천상천하 유아독존!!"/>
+		<class name="Tutorial_MetroStreet_hNO8jZ" Value="[!Ignore][!FrontMessage]죠슈아가 광분 상태가 되었습니다."/>
+		<class name="Tutorial_MetroStreet_Nc4nI6" Value="[!Ignore][!BalloonChat][!speaker:Joshua]내 분노가 너희를 멸하리라!!"/>
+		<class name="Tutorial_MetroStreet_Mc5Ktj" Value="[!Ignore][!FrontMessage]조슈아가 광분 상태가 되었습니다."/>
+		<class name="Tutorial_MetroStreet_hQFBp5" Value="[!Ignore][!BalloonChat][!speaker:Joshua]찰나의 순간이 모든 것을 결정지으리라!"/>
+		<class name="Tutorial_MetroStreet_endxsl" Value="[!Ignore][!FrontMessage]조슈아가 가속 상태가 되었습니다."/>
+		<class name="Tutorial_MetroStreet_djvBQU" Value="[!Ignore][!FrontMessage]조슈아가 과충전 상태가 되었습니다."/>
+		<class name="Tutorial_MetroStreet_7e89We" Value="[!Dialog][!speaker:Albus_Disappoint]....."/>
+		<class name="Tutorial_MetroStreet_ziNpzR" Value="[!Dialog][!speaker:Albus_Disappoint]....."/>
+		<class name="Tutorial_MetroStreet_T59ZxE" Value="[!Dialog][!speaker:Irene_Smile2]알버스 군."/>
+		<class name="Tutorial_MetroStreet_01Yt2E" Value="[!Dialog][!speaker:Albus_SurpriseStare]......네?"/>
+		<class name="Tutorial_MetroStreet_5UlaZ4" Value="[!Dialog][!speaker:Irene_Smile2]괜히 내 기분에 맞춰 옆에 있어 줄 필요 없어."/>
+		<class name="Tutorial_MetroStreet_3ixID8" Value="[!Dialog][!speaker:Albus_Disappoint]아이린 씨..."/>
+		<class name="Tutorial_MetroStreet_ocoPuF" Value="[!Dialog][!speaker:Irene_Smile]오늘 달려와 줘서 고마워."/>
+		<class name="Tutorial_MetroStreet_7oboRT" Value="[!Dialog][!speaker:Irene_Smile2]나 혼자였다면 아무것도 할 수 없었을 거야."/>
+		<class name="Tutorial_MetroStreet_gHFoy6" Value="[!Dialog][!speaker:Albus_Normal]아이린 씨가 위험을 무릅쓰고 연락해주셨기 때문이에요."/>
+		<class name="Tutorial_MetroStreet_t1vD5s" Value="[!Dialog][!speaker:Albus_Normal]전 아이린 씨처럼 행동하지 못했을 거예요."/>
+		<class name="Tutorial_MetroStreet_dLPpL4" Value="[!Dialog][!speaker:Irene_Normal]알버스 군은 알버스 군 나름대로 잘 해결했을 거야."/>
+		<class name="Tutorial_MetroStreet_ZxLah4" Value="[!Subtitle][!speaker:EmptySubTitle_]백호파의 &apos;달빛지구&apos; 사건."/>
+		<class name="Tutorial_MetroStreet_uVQh4Y" Value="[!Subtitle][!speaker:EmptySubTitle_]민간인 사망자 8명, 부상자 30여 명..."/>
+		<class name="Tutorial_MetroStreet_FYxfJ9" Value="[!Subtitle][!speaker:EmptySubTitle_]대부분 희생자는 아이린이 정황을 파악하기도 전에 희생되었다."/>
+		<class name="Tutorial_MetroStreet_IcRf4o" Value="[!Subtitle][!speaker:EmptySubTitle_]필연적으로 발생하는 구조를 위한 시간."/>
+		<class name="Tutorial_MetroStreet_qDEZI9" Value="[!Subtitle][!speaker:EmptySubTitle_]그리고 그 간격을 파고드는 폭력."/>
+		<class name="Tutorial_MetroStreet_P62wlW" Value="[!Subtitle][!speaker:EmptySubTitle_]그 예리함이 $CompanyName$ 동료들의 가슴을 무겁게 짓누르는 날이었다."/>
+		<class name="Tutorial_MetroStreet_SsFcF2" Value="[!Dialog][!speaker:Sion_Laugh]히어로. 고생했어."/>
+		<class name="Tutorial_MetroStreet_L4StZh" Value="[!Dialog][!speaker:Sion_Happy]히어로 아이린!!"/>
+		<class name="Tutorial_MetroStreet_6bt3mO" Value="[!Dialog][!speaker:Irene_Lonesome]다 들린다. 시온 군."/>
+		<class name="Tutorial_MetroStreet_1SMuMq" Value="[!Dialog][!speaker:Sion_Smile]힘내! 히어로가 힘내야지. 누가 힘을 내!"/>
+		<class name="Tutorial_MetroStreet_1gATLt" Value="[!Dialog][!speaker:Irene_Smile2]그런가?"/>
+		<class name="Tutorial_MetroStreet_2qq9TF" Value="[!Dialog][!speaker:Sion_Smile]나도 오늘 희생된 시민들을 생각하면 마음이 아파."/>
+		<class name="Tutorial_MetroStreet_VOTUuD" Value="[!Dialog][!speaker:Sion_Normal]하지만 히어로 아이린이 구해낸 사람들이 더 많지."/>
+		<class name="Tutorial_MetroStreet_UrGy8O" Value="[!Dialog][!speaker:Irene_Smile]오늘 달려와 줘서 고맙다."/>
+		<class name="Tutorial_MetroStreet_yW023X" Value="[!Dialog][!speaker:Sion_Stare]고마워해야지. 히어로님이 무리하실까 봐 걱정돼서 힘들었다."/>
+		<class name="Tutorial_MetroStreet_ZszpY8" Value="[!Dialog][!speaker:Irene_Smile2]&apos;고마워. 시온.&apos;"/>
+		<class name="Tutorial_MetroStreet_b66vfZ" Value="[!Dialog][!speaker:Anne_Smile]아이린 언니."/>
+		<class name="Tutorial_MetroStreet_a4JraD" Value="[!Dialog][!speaker:Irene_Smile2]앤. 이제 끝난 거니?"/>
+		<class name="Tutorial_MetroStreet_JISPro" Value="[!Dialog][!speaker:Anne_Smile]네. 마지막 부상자까지 구급차에 다 실어 보냈어요."/>
+		<class name="Tutorial_MetroStreet_UizoFa" Value="[!Dialog][!speaker:Irene_Normal]고생했다."/>
+		<class name="Tutorial_MetroStreet_1ivrRN" Value="[!Dialog][!speaker:Irene_Smile2]많이 힘들었지?"/>
+		<class name="Tutorial_MetroStreet_zoTeBL" Value="[!Dialog][!speaker:Anne_Sorrow]......"/>
+		<class name="Tutorial_MetroStreet_7HOzuM" Value="[!Dialog][!speaker:Anne_Cry]......"/>
+		<class name="Tutorial_MetroStreet_n6RW8M" Value="[!Dialog][!speaker:Irene_Smile2]고통받는 사람 보는 게 쉽지 않을 텐데..."/>
+		<class name="Tutorial_MetroStreet_mmn3RJ" Value="[!Dialog][!speaker:Irene_Smile2]언제나 어린 너에게 많은 부담을 지게 하네."/>
+		<class name="Tutorial_MetroStreet_m93AaL" Value="[!Dialog][!speaker:Anne_Cry]언니. 언니에게 무슨 일 생기는 줄 알고 저... 정말..."/>
+		<class name="Tutorial_MetroStreet_EN5ncB" Value="[!Dialog][!speaker:Irene_Smile2]내가 앤에게 걱정을 끼쳤구나."/>
+		<class name="Tutorial_MetroStreet_NcLvsU" Value="[!Dialog][!speaker:Anne_Cry]아이린 언니!!"/>
+		<class name="Tutorial_MetroStreet_Z9Ih3S" Value="[!Dialog][!speaker:Irene_Smile2]미안해. 앤. 다음엔 이런 걱정 안 끼칠게."/>
+		<class name="Tutorial_MetroStreet_OWRkxi" Value="[!Dialog][!speaker:Anne_Sorrow]너무 무리하지 마세요..."/>
+		<class name="Tutorial_MetroStreet_ErD5cF" Value="[!Dialog][!speaker:Irene_Smile]맨날 무리하는 앤이 말하니 어색한걸~"/>
+		<class name="Tutorial_MetroStreet_QQ8M7w" Value="[!Dialog][!speaker:Anne_Sorrow]언니... "/>
+		<class name="Tutorial_MetroStreet_J5a3nS" Value="[!Dialog][!speaker:Irene_Normal]오늘 달려와 줘서 고마워. 덕분에 살았어."/>
+		<class name="Tutorial_MetroStreet_zUCtQw" Value="[!Dialog][!speaker:Irene_Smile]모두 다 앤 덕분이야. 앤한테 전화하길 정말 잘했어."/>
+		<class name="Tutorial_MetroStreet_JbK73h" Value="[!Dialog][!speaker:Irene_Smile2]자 그만 울고~ 내가 집까지 데려다줄게."/>
+		<class name="Tutorial_MetroStreet_Qo4C2F" Value="[!Dialog][!speaker:Irene_Smile]웃으라니까~. 앤 넌 웃는 얼굴이 정말 좋아."/>
+		<class name="Tutorial_MetroStreet_WYQFlK" Value="[!Dialog][!speaker:Anne_Smile]네~~"/>
+		<class name="Tutorial_MetroStreet_aUNUeC" Value="[!Dialog][!speaker:Heissing_Normal]왜 불렀나?"/>
+		<class name="Tutorial_MetroStreet_ncllAc" Value="[!Dialog][!speaker:Irene_Lonesome]......"/>
+		<class name="Tutorial_MetroStreet_1agRdo" Value="[!Dialog][!speaker:Heissing_Normal]불러놓고 말 못 할 이야기라면 그냥 마음에 담아둬."/>
+		<class name="Tutorial_MetroStreet_FmavXT" Value="[!Dialog][!speaker:Irene_Rage]아니!! 그런 건 아니야!"/>
+		<class name="Tutorial_MetroStreet_Ev5O44" Value="[!Dialog][!speaker:Heissing_Normal]말할 수 있을 때까지 기다려 달란 건가?"/>
+		<class name="Tutorial_MetroStreet_VSXKAd" Value="[!Dialog][!speaker:Irene_Fury]뭐야 왜 항상 그런 식인 거야..."/>
+		<class name="Tutorial_MetroStreet_z6A2qw" Value="[!Dialog][!speaker:Heissing_Smile]타인을 이해하는 건 누구나 어렵지."/>
+		<class name="Tutorial_MetroStreet_aZEJAV" Value="[!Dialog][!speaker:Irene_Fury]......"/>
+		<class name="Tutorial_MetroStreet_gsHmRE" Value="[!Dialog][!speaker:Irene_Lonesome]아까 화내서 미안하다."/>
+		<class name="Tutorial_MetroStreet_kENVg5" Value="[!Dialog][!speaker:Heissing_Smile]......"/>
+		<class name="Tutorial_MetroStreet_ESwzkC" Value="[!Dialog][!speaker:Heissing_Normal]그런 건 &apos;감사합니다&apos; 라고 말하면 된다."/>
+		<class name="Tutorial_MetroStreet_0QR7cr" Value="[!Dialog][!speaker:Irene_Rage]!!!"/>
+		<class name="Tutorial_MetroStreet_9MKen7" Value="[!Dialog][!speaker:Irene_Fury]&apos;정말 상체 노출 취향부터 성격까지...&apos;"/>
+		<class name="Tutorial_MetroStreet_gq1oeJ" Value="[!Dialog][!speaker:Heissing_Normal]다음번엔..."/>
+		<class name="Tutorial_MetroStreet_6oubky" Value="[!Dialog][!speaker:Irene_Surprise]다음번엔?"/>
+		<class name="Tutorial_MetroStreet_tD4Z52" Value="[!Dialog][!speaker:Heissing_Smile]더 빨리 와주마."/>
+	</idspace>
+</idspaces>

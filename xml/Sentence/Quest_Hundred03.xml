@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Quest_Hundred03_jHtTif" Value="[!Dashboard:Counter]남은 드론 수"/>
+		<class name="Quest_Hundred03_TN5fsW" Value="[!Dashboard:ObjectiveMarker]적이 해당 지역으로 진입하면 패배합니다."/>
+		<class name="Quest_Hundred03_1yrgFD" Value="[!Objective]폐기된 드론을 모두 파괴하시오."/>
+		<class name="Quest_Hundred03_xoHf42" Value="[!Title]잠들어 있는 불청객"/>
+		<class name="Quest_Hundred03_7lxemY" Value="[!Title]철의 숲 해체작업장"/>
+		<class name="Quest_Hundred03_1Hl7sd" Value="[!Dialog][!speaker:Sion_SurpriseStare]뭐가 이렇게 많아?"/>
+		<class name="Quest_Hundred03_OkxJa5" Value="[!Dialog][!speaker:Sion_Depressed]억만 형. 완전 거짓말쟁이..."/>
+		<class name="Quest_Hundred03_7pPZeT" Value="[!Dialog][!speaker:Albus_Laugh]어차피 맡은 의뢰니 힘내자. 시온."/>
+		<class name="Quest_Hundred03_3zgKvz" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Quest_Hundred03_5pgETu" Value="[!VictoryCondition]폐기된 드론을 모두 파괴하시오."/>
+		<class name="Quest_Hundred03_Xm0z9V" Value="[!Ignore][!Dialog][!speaker:Giselle_Satisfying]알버스. "/>
+		<class name="Quest_Hundred03_52a0wN" Value="[!Dialog][!speaker:Kylie_Normal]이 정도면 양반이지."/>
+		<class name="Quest_Hundred03_VYOGFA" Value="[!Dialog][!speaker:Irene_Surprise]그런데 왜 이렇게 다 모아둔 거지?"/>
+		<class name="Quest_Hundred03_WGg6gU" Value="[!Dialog][!speaker:Kylie_Smile]당장 필요한 것이 없으면 해체 작업도 비용이니 일단 모아두는 거야."/>
+		<class name="Quest_Hundred03_BdlzQp" Value="[!Dialog][!speaker:Albus_Serious]드론이 해체작업장 바깥으로 나가기 전에 파괴합니다!"/>
+		<class name="Quest_Hundred03_UzaK5o" Value="[!VictoryCondition]적 해체작업장 이탈"/>
+		<class name="Quest_Hundred03_jVO9Ar" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Quest_Hundred03_1fKbfC" Value="[!VictoryCondition]폐기된 드론을 모두 파괴하시오."/>
+		<class name="Quest_Hundred03_NDEqww" Value="[!BalloonChat]전투 가능 드론 발견!"/>
+		<class name="Quest_Hundred03_ZCYnj5" Value="[!BalloonChat]다들 조심하세요!"/>
+		<class name="Quest_Hundred03_3KtOWR" Value="[!BalloonChat]여기입니다!"/>
+		<class name="Quest_Hundred03_a9Hf6N" Value="[!BalloonChat]찾느라 고생했잖아!"/>
+		<class name="Quest_Hundred03_fXoKbp" Value="[!BalloonChat]빙고~☆"/>
+		<class name="Quest_Hundred03_lDRBRH" Value="[!BalloonChat]찾았다~☆"/>
+		<class name="Quest_Hundred03_b8nk6q" Value="[!BalloonChat]여기다!"/>
+		<class name="Quest_Hundred03_uhikUs" Value="[!BalloonChat]놓치지 않는다!"/>
+		<class name="Quest_Hundred03_G8jE5k" Value="[!BalloonChat]히어로 아이린. 당황하지 않는다!"/>
+		<class name="Quest_Hundred03_WPMe9p" Value="[!BalloonChat]여기에요!"/>
+		<class name="Quest_Hundred03_WKzYKI" Value="[!BalloonChat]찾았어요!"/>
+		<class name="Quest_Hundred03_Oi2FVp" Value="[!BalloonChat]봐주지 않을 거에요!"/>
+		<class name="Quest_Hundred03_XpLUEH" Value="[!BalloonChat]시시하군."/>
+		<class name="Quest_Hundred03_R9FnY4" Value="[!BalloonChat]지루하군."/>
+		<class name="Quest_Hundred03_eqcWCa" Value="[!BalloonChat]찾았다."/>
+		<class name="Quest_Hundred03_xTeUG6" Value="[!BalloonChat]여기야~  찾았어~☆"/>
+		<class name="Quest_Hundred03_1e2SxB" Value="[!BalloonChat]여기야~☆"/>
+		<class name="Quest_Hundred03_C2begJ" Value="[!BalloonChat]도망치지 못해!"/>
+		<class name="Quest_Hundred03_CutiaA" Value="[!BalloonChat]여기."/>
+		<class name="Quest_Hundred03_wFScwg" Value="[!BalloonChat]여기네."/>
+		<class name="Quest_Hundred03_E90f1q" Value="[!BalloonChat]이쪽이야."/>
+		<class name="Quest_Hundred03_6zmC9m" Value="[!BalloonChat]너무 뻔하잖아."/>
+		<class name="Quest_Hundred03_6TUImU" Value="[!BalloonChat]역시 여기였군."/>
+		<class name="Quest_Hundred03_nY5mhM" Value="[!BalloonChat]역시 여기군."/>
+		<class name="Quest_Hundred03_ZP2mvt" Value="[!BalloonChat]OK~☆"/>
+		<class name="Quest_Hundred03_ZAo1Mm" Value="[!BalloonChat]휘유~☆"/>
+		<class name="Quest_Hundred03_8b3cVk" Value="[!BalloonChat]빙고~☆"/>
+		<class name="Quest_Hundred03_L26iVF" Value="[!Ignore][!Dialog][!speaker:Kylie_Normal]이 정도면 양반이지."/>
+		<class name="Quest_Hundred03_Bam3rn" Value="[!BalloonChat]『 시스템 복구  : 휴면 해제 』"/>
+		<class name="Quest_Hundred03_vhuZI7" Value="[!Dialog][!speaker:Drone_Rifle_Rust_Normal][colour=&apos;FFFF5943&apos;]『 경고: 외부 위협 접근 』"/>
+		<class name="Quest_Hundred03_yILgCL" Value="[!Dialog][!speaker:Drone_Rifle_Rust_Normal][colour=&apos;FFFF5943&apos;]『 안전을 확보하기 위하여 현장 이탈 시작하겠습니다. 』"/>
+		<class name="Quest_Hundred03_nMP5iW" Value="[!BalloonChat]『 시스템 복구  : 휴면 해제 』"/>
+		<class name="Quest_Hundred03_XxdERB" Value="[!Dialog][!speaker:Drone_Flamethrower_Rust_Normal][colour=&apos;FFFF5943&apos;]『 경고: 외부 위협 접근 』"/>
+		<class name="Quest_Hundred03_yjAO5n" Value="[!Dialog][!speaker:Drone_Flamethrower_Rust_Normal][colour=&apos;FFFF5943&apos;]『 안전을 확보하기 위하여 현장 이탈 시작하겠습니다. 』"/>
+		<class name="Quest_Hundred03_rG08y9" Value="[!BalloonChat]『 시스템 복구  : 휴면 해제 』"/>
+		<class name="Quest_Hundred03_hHDcCh" Value="[!Dialog][!speaker:Drone_Sprinkler_Rust_Normal][colour=&apos;FFFF5943&apos;]『 경고: 외부 위협 접근 』"/>
+		<class name="Quest_Hundred03_dfVbte" Value="[!Dialog][!speaker:Drone_Sprinkler_Rust_Normal][colour=&apos;FFFF5943&apos;]『 안전을 확보하기 위하여 현장 이탈 시작하겠습니다. 』"/>
+	</idspace>
+</idspaces>

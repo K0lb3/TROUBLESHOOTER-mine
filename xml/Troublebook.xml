@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Troublebook">
+		<schema>
+			<rule property="Stage" type="table" default=""/>
+			<rule property="IsNew" type="bool" default="true"/>
+			<rule property="Noticed" type="bool" default="false"/>
+			<rule property="Opened" type="calculated" default="CalculatedProperty_TroublebookOpened"/>
+			<rule property="NextChapter" type="calculated" default="CalculatedProperty_TroublebookNextChapter"/>
+		</schema>
+		<class name="Trouble01" Title="제 1 장. 트러블슈터입니다." Order="1" Image="Icons/Trouble01" PushedImage="Icons/Trouble01_Pushed" HoverImage="Icons/Trouble01_Hover">
+			<Stage>
+				<property Stage="Tutorial_FireflyPark" Mission="Tutorial_FireflyPark_Roster" Title="내가 하고 싶은 것" Location="반딧불 공원" DescTitle="당황하는 알버스" Desc="일반인들에겐 통제되어 제공되지 않는 10년 전 대재해의 정보. 알버스는 트러블슈터가 되면 이러한 정보에 대해 알 수 있을 거란 막역한 희망을 가지고 살아왔다. 그리고 시간이 흘러 트러블슈터가 된 알버스는 여전히 아무것도 알 수 없는 처지에 있다는 것을 깨닫는다." Rank="C" Image="Loading_AccessDenied" ButtonImage="Troublebook/Tutorial_FireflyPark" ButtonDisabledImage="Troublebook/Tutorial_FireflyPark_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="1"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_Silverlining" Mission="Tutorial_Silverlining" Title="떠나는 날은 언제나..." Location="은빛 구름 거리 356" DescTitle="안녕. 세계수 지구" Desc="부모를 잃은 알버스는 발할라의 재해민 지원 정책에 따라 후견인으로 릴리가 지정된다. 그리고 거주지는 고향이 아닌 '세계수' 지구로 배정 받는다. 릴리 고모의 후원은 언제나 풍족했기에 부족함없이 지낼 수 있었지만 연고도 없는 곳에서 어린 나이에 모든 것을 혼자 해내야하는 것은 매우 힘든 일이었다. 그리고 알버스는 트러블슈터가 되자마자 고향으로 돌아가기를 결심한다." Rank="B" Image="Loading_Train_Albus" ButtonImage="Troublebook/Tutorial_Silverlining" ButtonDisabledImage="Troublebook/Tutorial_Silverlining_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="4"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_RamjiPlaza" Mission="Tutorial_RamjiPlaza" Title="미련이 남지 않도록..." Location="람지플라자" DescTitle="인연" Desc="람지플라자에서 갑자기 벌어진 『스푼교』의 테러 사건은 알버스 혼자 감당하기엔 매우 힘든 일이었다. 하지만 현장에 있었던 사람들의 도움으로 가까스로 스푼교도들을 제압하게 된다." Rank="A" Image="Loading_Ramjiplaza_Alley" ButtonImage="Troublebook/Tutorial_RamjiPlaza" ButtonDisabledImage="Troublebook/Tutorial_RamjiPlaza_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="4"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_PugoStreet" Mission="Tutorial_PugoStreet" Title="앞만 보고 걸어가기" Location="푸고 거리" DescTitle="배고픈 시온" Desc="사건 현장에 휘말린 시온의 활약을 본 알버스는 시온에게 자신의 회사에 입사하도록 권유한다. 오랜 아르바이트 생활로 생활고를 겪던 시온은 알버스의 매력적인 제안에 알버스의 회사에 입사하기로 결정한다." Rank="D" Image="Loading_Market" ButtonImage="Troublebook/Tutorial_PugoStreet" ButtonDisabledImage="Troublebook/Tutorial_PugoStreet_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="5"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_Construction_A" Mission="Tutorial_Construction_A" Title="언젠가 같이 걸어갈 날을 위해..." Location="영일 공사장" DescTitle="아이린 출동!" Desc="히어로 아이린은 바람장벽 지구의 유명 인사이다. 범죄가 있는 곳이라면 어디든지 달려가 악당들을 해치운다. 하지만 그녀의 이러한 행동은 어디까지나 발할라에서 허락되지 않은 '불법' 행위다." Rank="C" Image="Loading_Troublebook_Construction" ButtonImage="Troublebook/Tutorial_Construction_A" ButtonDisabledImage="Troublebook/Tutorial_Construction_A_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="5"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_Road_113" Mission="Tutorial_Road_113" Title="국경 외곽 도로" Location="113번 도로" DescTitle="야수 티마" Desc="티마는 철의 숲 최상위 포식자였으나 인간이 철의 숲에 도로를 내면서 오랜 분쟁이 시작되었다. 이 분쟁은 한때 인간이 승리하는 것처럼 보였으나 한 차례의 세계 대전과 발할라 건국 등으로 인해 철의 숲 개발이 인간들의 관심사에서 멀어지되자 그 틈을 타 티마 무리는 살아남아 다시금 거대한 군락을 이룬다." Rank="A" Image="Loading_Road113" ButtonImage="Troublebook/Tutorial_Road_113" ButtonDisabledImage="Troublebook/Tutorial_Road_113_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="5"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_CrowBillAfter" Mission="Tutorial_CrowBillAfter" Title="하염 없이 내리는 빗줄기" Location="까마귀부리 정류장" DescTitle="발할라의 빛이 되리라" Desc="현장의 사람들은 이 날만큼은 범죄자들을 제압하여 발할라의 치안을 지켜낸 것을 기뻐할 수 없었다. 아무리 발달한 의료 기술이라도 이미 생을 달리한 사람을 살릴 수 는 없기 때문이다." Rank="B" Image="Loading_CrowBillAfter" ButtonImage="Troublebook/Tutorial_CrowBillAfter" ButtonDisabledImage="Troublebook/Tutorial_CrowBillAfter_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="6"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_PugoShop" Mission="Tutorial_PugoShop" Title="조각 맞추기" Location="푸고 상점가" DescTitle="다시 만난 친구들" Desc="빈민가 '앨리' 출신의 카터, 레톤, 레이, 헤이싱. 네 명의 친구들은 서로의 강한 운명의 끈을 따라 다시금 모이게 된다." Rank="B" Image="Loading_Reunion" ButtonImage="Troublebook/Tutorial_PugoShop" ButtonDisabledImage="Troublebook/Tutorial_PugoShop_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="6"/>
+					</Date>
+				</property>
+			</Stage>
+		</class>
+		<class name="Trouble02" Title="제 2 장. 균열의 시작" Order="2" Image="Icons/Trouble02" PushedImage="Icons/Trouble02_Pushed" HoverImage="Icons/Trouble02_Hover">
+			<Stage>
+				<property Stage="Tutorial_PurpleBackStreet" Mission="Tutorial_PurpleBackStreet" Title="번져가는 자홍빛 불빛" Location="자홍거리 뒷골목" DescTitle="성난 황소 울음소리" Desc="10년 동안 바람장벽 지구에서 강력한 영향력을 행사해 온 범죄 조직 '성난 황소'가 작은 사건을 시작으로 궤멸하기 시작하자 보스인 스콧은 다급하게 조직원들을 모아 자홍 뒷거리에서 재기를 준비한다." Rank="A" Image="Loading_PurpleBackStreet_Bull" ButtonImage="Troublebook/Tutorial_PurpleBackStreet" ButtonDisabledImage="Troublebook/Tutorial_PurpleBackStreet_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="7"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_BlueFogStreet" Mission="Tutorial_BlueFogStreet" Title="저 높은 곳에..." Location="푸른안개 거리" DescTitle="고민하는 아이린" Desc="아이린은 오랜 시간 히어로가 되기 위해 노력했다. 하지만 사회적인 틀에 갇히기 싫었던 아이린은 언제나 혼자였고 사람들은 그녀를 인정하지 않았다. 그럼에도 불구하고 그녀는 히어로는 언제나 외로운 거라고 생각하며 꿋꿋이 버텨왔다. 하지만 자신의 활동이 누군가에게 방해가 되고 자신이 참가한 현장에서 좋지 않은 결과가 나올때마다 아이린의 마음은 무거워 질 수 밖에 없었다." Rank="C" Image="Loading_irene_Blue" ButtonImage="Troublebook/Tutorial_BlueFogStreet" ButtonDisabledImage="Troublebook/Tutorial_BlueFogStreet_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="7"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_SilverliningMarco" Mission="Tutorial_SilverliningMarco" Title="과거의 사슬" Location="바 실버라이닝" DescTitle="인연의 사슬" Desc="벤데타의 마르코가 동료인 크리스의 전언을 가지고 실버라이닝 바의 돈을 찾아 온다. 자신의 경쟁자이기도 한 크리스와 연관된 돈을 본 마르코는 장난기가 발동하지 않을 수 없었다." Rank="B" Image="Loading_Troublebook_Silverlining" ButtonImage="Troublebook/Tutorial_SilverliningMarco" ButtonDisabledImage="Troublebook/Tutorial_SilverliningMarco_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="7"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_PugoBackStreet" Mission="Tutorial_PugoBackStreet" Title="피리 부는 사나이" Location="푸고 뒷골목" DescTitle="한솥밥" Desc="보스 '스콧'의 명령 아래 스푼교도를 지원하던 성난 황소 파 조직원들은 오히려 스푼교도에게 도움을 받는 처지가 된다." Rank="C" Image="Loading_Sharky" ButtonImage="Troublebook/Tutorial_PugoBackStreet" ButtonDisabledImage="Troublebook/Tutorial_PugoBackStreet_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="8"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_Hansando" Mission="Tutorial_Hansando" Title="달 밝은 밤에" Location="한산도 하역장" DescTitle="추적의 실마리" Desc="계속 늘어나는 바람장벽 지구의 스푼교도들에 대한 실마리를 찾던 아이작 경감은 드디어 스푼교도들의 꼬리를 잡는다. 경찰 내부의 배신자가 있음을 인지한 아이작은 이 스푼교도들의 실마리를 잡기 위해 트러블슈터의 도움을 구하기로 결심한다." Rank="A" Image="Loading_Troublebook_Dock" ButtonImage="Troublebook/Tutorial_Hansando" ButtonDisabledImage="Troublebook/Tutorial_Hansando_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="8"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_GrayCemeteryPark" Mission="Tutorial_GrayCemeteryPark" Title="오늘도 함께" Location="잿빛 공원묘지" DescTitle="만남 그리고 이별" Desc="집에 가던 앤의 눈을 한순간에 사로잡은 루나. 세상 일에 흥미를 느끼지 못하는 루나를 보며 앤은 자신이 그녀의 친구가 되어 그녀가 미소 지을 수 있다면 좋겠다라는 생각을 하게 된다." Rank="A" Image="Loading_AnneLuna2" ButtonImage="Troublebook/Tutorial_GrayCemeteryPark" ButtonDisabledImage="Troublebook/Tutorial_GrayCemeteryPark_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="8"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_Lasa" Mission="Tutorial_Lasa" Title="칠전팔기" Location="잿빛 항구 A 선착장" DescTitle="새로운 도전" Desc="바람장벽 지구의 스푼교도들의 활동들이 공공연해지고 스푼교도들의 사건이 증가한다. 이런 스푼교도들의 활동은 료와 같은 청부 살인업자들을 불러들인다." Rank="A" Image="Loading_Lasa2" ButtonImage="Troublebook/Tutorial_Lasa" ButtonDisabledImage="Troublebook/Tutorial_Lasa_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="8"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_Orsay" Mission="Tutorial_Orsay" Title="어부지리" Location="철의 숲 간이역" DescTitle="배후의 그림자" Desc="철의 숲으로 숨어든 스푼교도들은 필연적으로 티마들과 활동 영역이 겹치면서 대립하게 된다. 이런한 대립은 때로는 스푼교도들을 검거하려는 발할라 경찰들과 트러블슈터들의 손을 덜어주는 상황도 발생한다." Rank="C" Image="Loading_Troublebook_Orsay" ButtonImage="Troublebook/Tutorial_Orsay" ButtonDisabledImage="Troublebook/Tutorial_Orsay_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="8"/>
+					</Date>
+				</property>
+			</Stage>
+		</class>
+		<class name="Trouble03" Title="제 3 장. 가려진 음모" Order="3" Image="Icons/Trouble03" PushedImage="Icons/Trouble03_Pushed" HoverImage="Icons/Trouble03_Hover">
+			<Stage>
+				<property Stage="Tutorial_LokoCabin" Mission="Tutorial_LokoCabin" Title="가면 속의 그림자" Location="철의 숲 물류 캠프" DescTitle="다가오는 그 날" Desc="샤키의 『첫술』들이 만들어낸 『좌표』는 발할라 전 지역으로 퍼져나갔고 그 『좌표』를 따라 많은 스푼교도들이 바람장벽 지구에 도착한다." Rank="A" Image="Loading_Truck" ButtonImage="Troublebook/Tutorial_LokoCabin" ButtonDisabledImage="Troublebook/Tutorial_LokoCabin_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="9"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_SkyBlue" Mission="Tutorial_SkyBlue" Title="혼자만의 시간" Location="하늘바람 상점가" DescTitle="불신" Desc="트러블슈터들의 사건 해결 과정에 반감이 높았던 죠엘 경위는 자신의 분대가 투입되는 임무마다 트러블슈터를 배제한 채 임무를 진행하였다." Rank="B" Image="Loading_Joel_1" ButtonImage="Troublebook/Tutorial_SkyBlue" ButtonDisabledImage="Troublebook/Tutorial_SkyBlue_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="9"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_PurpleStreet" Mission="Tutorial_PurpleStreet" Title="엉켜버린 실타래" Location="자홍거리" DescTitle="백호의 포효" Desc="바람장벽 지구에서 일어나는 스푼교의 사건에 휘말리지 않기 위해 최대한 조직 활동을 자제해온 백호파는 벤데타의 마르코의 존재로 인해 어쩔 수 없이 현 사태에 참가하게 된다." Rank="A" Image="Loading_WhiteTiger" ButtonImage="Troublebook/Tutorial_PurpleStreet" ButtonDisabledImage="Troublebook/Tutorial_PurpleStreet_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="9"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_PugoShopAfter" Mission="Tutorial_PugoShopAfter" Title="잠시 멈춰 돌아보기" Location="푸고 상점가" DescTitle="엇갈리는 마음" Desc="헤이싱이 돌아온 후 카터, 레톤, 레이, 헤이싱은 즐거운 시간을 보냈다. 하지만 그들이 걸어왔던 과거와 그들이 바라는 미래는 엇갈리고 그 엇갈림이 서로의 마음에 상처를 입힌다." Rank="S" Image="Loading_Alleyfight" ButtonImage="Troublebook/Tutorial_PugoShopAfter" ButtonDisabledImage="Troublebook/Tutorial_PugoShopAfter_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="9"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_HansolStreet" Mission="Tutorial_HansolStreet" Title="안녕. 친구여." Location="그늘 안개 거주구" DescTitle="안녕. 친구여." Desc="카터가 헤이싱을 불러냈을 때, 헤이싱은 먼저 입을 연다. '카터. 내가 갈게.'" Rank="B" Image="Loading_PastAlley_5" ButtonImage="Troublebook/Tutorial_HansolStreet" ButtonDisabledImage="Troublebook/Tutorial_HansolStreet_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="9"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_Road_112" Mission="Tutorial_Road_112" Title="침입자" Location="철의 숲 자원관리구역" DescTitle="끊임없는 침입자" Desc="다시금 철의 숲으로 진출하는 인간들이 많아지자 티마 무리의 일부는 인간들과의 전면전을 각오한다." Rank="A" Image="Loading_Road_112_Ramjist" ButtonImage="Troublebook/Tutorial_Road_112" ButtonDisabledImage="Troublebook/Tutorial_Road_112_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="10"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_MetroStreet" Mission="Tutorial_MetroStreet" Title="성난 호랑이" Location="달빛거리" DescTitle="법보다 주먹" Desc="백호파는 자신들의 공포를 시민들에게 심어주기 위해 가차없는 응징을 시작한다." Rank="A" Image="Loading_WhiteTiger_Angry" ButtonImage="Troublebook/Tutorial_MetroStreet" ButtonDisabledImage="Troublebook/Tutorial_MetroStreet_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="10"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_StarStreet" Mission="Tutorial_StarStreet" Title="힘겨루기" Location="별빛 거리" DescTitle="반격의 시작" Desc="백호파의 공세를 가까스로 버텨낸 알버스와 동료들은 제인 경감과 함께 별빛 지구 탈환을 도모한다." Rank="S" Image="Loading_WhiteTiger_Boss" ButtonImage="Troublebook/Tutorial_StarStreet" ButtonDisabledImage="Troublebook/Tutorial_StarStreet_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="10"/>
+					</Date>
+				</property>
+			</Stage>
+		</class>
+		<class name="Trouble04" Title="제 4 장. 결의" Order="4" Image="Icons/Trouble04" PushedImage="Icons/Trouble04_Pushed" HoverImage="Icons/Trouble04_Hover">
+			<Stage>
+				<property Stage="Tutorial_CrescentBridge" Mission="Tutorial_CrescentBridge" Title="진심을 담아..." Location="초승달 대교" DescTitle="가면 속의 분노" Desc="백호파의 무차별적인 스푼교 학살에 스푼교 역시 백호파를 향해 동지들의 복수를 가한다." Rank="B" Image="Loading_SpoonAttackWhiteTiger" ButtonImage="Troublebook/Tutorial_CrescentBridge" ButtonDisabledImage="Troublebook/Tutorial_CrescentBridge_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="10"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_GrayPortWareHouse" Mission="Tutorial_GrayPortWareHouse" Title="동상이몽" Location="잿빛 항구 물류 창고" DescTitle="빛바랜 추억" Desc="레이는 카터의 야망을 막기 위해 과거 같이 활동했던 친구들을 찾아간다." Rank="A" Image="Loading_DianeWithRay" ButtonImage="Troublebook/Tutorial_GrayPortWareHouse" ButtonDisabledImage="Troublebook/Tutorial_GrayPortWareHouse_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="10"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_DustWind" Mission="Tutorial_DustWind" Title="갈림길" Location="먼지바람 톨게이트" DescTitle="잃어버린 시간" Desc="어린 시절부터 함께 해 왔던 레이와 카터. 하지만 발할라의 2년은 서로에게 전혀 다른 시간이었다." Rank="B" Image="Loading_RayMeetCarterAgain" ButtonImage="Troublebook/Tutorial_DustWind" ButtonDisabledImage="Troublebook/Tutorial_DustWind_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="10"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_SkyWindPark" Mission="Tutorial_SkyWindPark" Title="과거의 잔향" Location="하늘바람 공원" DescTitle="겨울이 온다." Desc="사람들은 겨울이 오면 한 해의 일을 돌아본다. 그리고 다음을 준비한다.
+
+[colour='FFFFAA00']- 해당 미션은 진행하는 선택지마다 보상이 주어집니다." Rank="C" Image="Loading_SkyWindPark" ButtonImage="Troublebook/Tutorial_SkyWindPark" ButtonDisabledImage="Troublebook/Tutorial_SkyWindPark_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="11"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_TrainingRoom" Mission="Tutorial_TrainingRoom" Title="괄목상대" Location="바람장벽지구 경찰청 훈련장" DescTitle="수어지교" Desc="세계수 지구를 떠나 바람장벽지구로 범죄자들을 사냥하기 위해 온 지젤은 오랜 친구인 바람장벽지구 경찰청 기동대 경감인 제인을 찾아가 협조를 요청한다.
+
+
+[colour='FFFFAA00']- 해당 미션은 최초 팀 구성 선택지마다 보상이 주어집니다." Rank="A" Image="Loading_JaneAndGiselle" ButtonImage="Troublebook/Tutorial_TrainingRoom" ButtonDisabledImage="Troublebook/Tutorial_TrainingRoom_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="11"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_PugoBackStreetAfter" Mission="Tutorial_PugoBackStreetAfter" Title="뿌린 대로 거두리라" Location="푸고 뒷골목" DescTitle="패배자" Desc="조직을 일으키기 위해 스푼교에 의탁하였던 성난 황소파 잔당들은 백호파의 사냥을 피해 푸고 뒷골목으로 숨어 든다. 하지만 그들의 미래는 변하지 않았다." Rank="B" Image="Loading_ParkCross" ButtonImage="Troublebook/Tutorial_PugoBackStreetAfter" ButtonDisabledImage="Troublebook/Tutorial_PugoBackStreetAfter_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="11"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_GrayCemeteryParkAfter" Mission="Tutorial_GrayCemeteryParkAfter" Title="다시 함께" Location="잿빛 공원묘지" DescTitle="스승과 제자" Desc="갑자스러운 지젤의 방문으로 알버스는 오랜만에『 블랙펄 』시절의 향수에 젖는다." Rank="C" Image="Loading_Albus_Giselle_Pocha1" ButtonImage="Troublebook/Tutorial_GrayCemeteryParkAfter" ButtonDisabledImage="Troublebook/Tutorial_GrayCemeteryParkAfter_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="11"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_Road_111" Mission="Tutorial_Road_111" Title="설상가상" Location="철의 숲 자원개발구역" DescTitle="등고자비" Desc="알버스는 지젤의 충고에 따라 바람장벽지구 현장을 떠나 철의 숲의 문제들부터 해결해 나가기로 한다." Rank="B" Image="Loading_TimaConflict" ButtonImage="Troublebook/Tutorial_Road_111" ButtonDisabledImage="Troublebook/Tutorial_Road_111_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="12"/>
+					</Date>
+				</property>
+			</Stage>
+		</class>
+		<class name="Trouble05" Title="제 5 장. 변화의 시작" Order="5" Image="Icons/Trouble05" PushedImage="Icons/Trouble05_Pushed" HoverImage="Icons/Trouble05_Hover">
+			<Stage>
+				<property Stage="Tutorial_DustWindRestArea" Mission="Tutorial_DustWindRestArea" Title="같이 걸어가기" Location="먼지바람 고속도로 휴게소" DescTitle="비가 오는 날이면..." Desc="카터와 레톤이 바람장벽 지구로 넘어와 10개월. 레톤은 카터의 계획을 끝까지 따라가기로 한다." Rank="B" Image="Loading_CarterAndLeton" ButtonImage="Troublebook/Tutorial_DustWindRestArea" ButtonDisabledImage="Troublebook/Tutorial_DustWindRestArea_Disabled">
+					<Date>
+						<property name="Year" value="803"/>
+						<property name="Month" value="12"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_MarketStreet" Mission="Tutorial_MarketStreet" Title="한 걸음 물러나서..." Location="은빛 구름 시장 거리" DescTitle="원칙과 결과" Desc="지젤은 알버스에게 더 나은 결과를 위한 방법을 조언한다." Rank="A" Image="Loading_GiselleAndAlbus" ButtonImage="Troublebook/Tutorial_MarketStreet" ButtonDisabledImage="Troublebook/Tutorial_MarketStreet_Disabled">
+					<Date>
+						<property name="Year" value="804"/>
+						<property name="Month" value="1"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_Road_110" Mission="Tutorial_Road_110" Title="과거는 묻어두고..." Location="외곽 도로 정비소" DescTitle="멈추지 않는 시간" Desc="헤이싱은 자신에게 남은 시간이 얼마 없음을 느끼며 적극적으로 움직이기로 결정한다." Rank="B" Image="Loading_KylieLoadmeet1" ButtonImage="Troublebook/Tutorial_Road_110" ButtonDisabledImage="Troublebook/Tutorial_Road_110_Disabled">
+					<Date>
+						<property name="Year" value="804"/>
+						<property name="Month" value="1"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_PurpleStreetAfter" Mission="Tutorial_PurpleStreetAfter" Title="각자의 긍지" Location="자홍거리 상점가" DescTitle="후회하지 않는 선택" Desc="지나간 시간은 돌이킬 수 없고 각자가 걸어온 길은 돌아갈 수 없다." Rank="A" Image="Loading_DonFight" ButtonImage="Troublebook/Tutorial_PurpleStreetAfter" ButtonDisabledImage="Troublebook/Tutorial_PurpleStreetAfter_Disabled">
+					<Date>
+						<property name="Year" value="804"/>
+						<property name="Month" value="2"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_CrowRuins" Mission="Tutorial_CrowRuins" Title="늑대와 사냥꾼" Location="까마귀 폐허" DescTitle="늙은 자가 바라는 것" Desc="카터는 자신이 원하는 것을 이루기 위해 수단과 방법을 가리지 않을 것을 결심한다." Rank="B" Image="Loading_CarterMeet2" ButtonImage="Troublebook/Tutorial_CrowRuins" ButtonDisabledImage="Troublebook/Tutorial_CrowRuins_Disabled">
+					<Date>
+						<property name="Year" value="804"/>
+						<property name="Month" value="2"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_PugoStreetAfter" Mission="Tutorial_PugoStreetAfter" Title="만나고 헤어지고..." Location="푸고 번화가" DescTitle="되돌이킬 수 없는 선택" Desc="루나는 자신이 할 수 있는 일과 없는 일을 누구보다 잘 알고 있었다." Rank="B" Image="Loading_LunaMarco_3" ButtonImage="Troublebook/Tutorial_PugoStreetAfter" ButtonDisabledImage="Troublebook/Tutorial_PugoStreetAfter_Disabled">
+					<Date>
+						<property name="Year" value="804"/>
+						<property name="Month" value="2"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_WasteBuilding" Mission="Tutorial_WasteBuilding" Title="그림자 연극" Location="까마귀폐허 도깨비굴" DescTitle="무대의 뒷편" Desc="에드워드는 시장 칼을 설득하기 위해 집적 칼을 만난다. " Rank="A" Image="Loading_KarlEdward" ButtonImage="Troublebook/Tutorial_WasteBuilding" ButtonDisabledImage="Troublebook/Tutorial_WasteBuilding_Disabled">
+					<Date>
+						<property name="Year" value="804"/>
+						<property name="Month" value="3"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_GroundWaterSlum" Mission="Tutorial_GroundWaterSlum" Title="불과 얼음" Location="까마귀폐허 지하수로" DescTitle="스스로 선택하기" Desc="레톤은 자신의 인생을 스스로 선택해 나가는 것을 멈추지 않는다." Rank="B" Image="Loading_LetonLillyMeet" ButtonImage="Troublebook/Tutorial_GroundWaterSlum" ButtonDisabledImage="Troublebook/Tutorial_GroundWaterSlum_Disabled">
+					<Date>
+						<property name="Year" value="804"/>
+						<property name="Month" value="3"/>
+					</Date>
+				</property>
+			</Stage>
+		</class>
+		<class name="Trouble06" Title="제 6 장. 진심" Order="6" Image="Icons/Trouble06" PushedImage="Icons/Trouble06_Pushed" HoverImage="Icons/Trouble06_Hover">
+			<Stage>
+				<property Stage="Tutorial_CrowRuinsAfter" Mission="Tutorial_CrowRuinsAfter" Title="외톨이 늑대" Location="까마귀 폐허" DescTitle="배부름의 땅" Desc="카터는 자신의 야망을 위해 샤키의 대역이 되어 스푼교를 이끄는 리더가 된다." Rank="B" Image="Loading_HeissingSneak1" ButtonImage="Troublebook/Tutorial_CrowRuinsAfter" ButtonDisabledImage="Troublebook/Tutorial_CrowRuinsAfter_Disabled">
+					<Date>
+						<property name="Year" value="804"/>
+						<property name="Month" value="3"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_CrowRuinsAfter_Alley" Mission="Tutorial_CrowRuinsAfter_Alley" Title="비는 눈물 따라 흐르고..." Location="까마귀 폐허" DescTitle="애증" Desc="카터는 자신을 막아서는 헤이싱에게 하지 말아야 할 말을 하고 만다.
+
+[colour='FFFFAA00']- 해당 미션은 승리 시 고유 보상이 주어집니다." Rank="B" Image="Loading_Carter_Laydown" ButtonImage="Troublebook/Tutorial_CrowRuinsAfter_Alley" ButtonDisabledImage="Troublebook/Tutorial_CrowRuinsAfter_Alley_Disabled">
+					<Date>
+						<property name="Year" value="804"/>
+						<property name="Month" value="3"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_SkyBlueAfter" Mission="Tutorial_SkyBlueAfter" Title="각자의 역할" Location="하늘바람 상점가" DescTitle="무거운 짐을 내려놓기." Desc="아이작은 샤키로부터 받은 정보의 처분에 대한 고민 끝에 알버스를 만나기로 결정한다." Rank="B" Image="Loading_Memories_IsaacwithA2" ButtonImage="Troublebook/Tutorial_SkyBlueAfter" ButtonDisabledImage="Troublebook/Tutorial_SkyBlueAfter_Disabled">
+					<Date>
+						<property name="Year" value="804"/>
+						<property name="Month" value="3"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_PurpleStreet_Kylie" Mission="Tutorial_PurpleStreet_Kylie" Title="미워도 다시 한번..." Location="자홍거리 재건축지구" DescTitle="열정과 냉정 사이" Desc="카일리는 자신이 과거 앨리를 붕괴시킨 구룡회 사람이라는 사실을 알게 된 레이의 분노를 담담히 받아 들인다." Rank="B" Image="Loading_RayAndKylie" ButtonImage="Troublebook/Tutorial_PurpleStreet_Kylie" ButtonDisabledImage="Troublebook/Tutorial_PurpleStreet_Kylie_Disabled">
+					<Date>
+						<property name="Year" value="804"/>
+						<property name="Month" value="3"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_TrainingRoomAfter" Mission="Tutorial_TrainingRoomAfter" Title="서로를 위해..." Location="바람장벽지구 경찰청 훈련장" DescTitle="오랜 친구" Desc="제인은 지젤에게 경찰에 협조해 줄 것을 요청한다." Rank="A" Image="Loading_Giselle_Call_Jane02" ButtonImage="Troublebook/Tutorial_TrainingRoomAfter" ButtonDisabledImage="Troublebook/Tutorial_TrainingRoomAfter_Disabled">
+					<Date>
+						<property name="Year" value="804"/>
+						<property name="Month" value="3"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_SilverliningAfter" Mission="Tutorial_SilverliningAfter" Title="너를 위해.." Location="은빛 구름 뒷거리" DescTitle="지키지 못할 약속" Desc="앤은 루나에게 자신이 트러블슈터가 되어 체포하겠다고 말한다." Rank="A" Image="Loading_LunaAndAnne2" ButtonImage="Troublebook/Tutorial_SilverliningAfter" ButtonDisabledImage="Troublebook/Tutorial_SilverliningAfter_Disabled">
+					<Date>
+						<property name="Year" value="804"/>
+						<property name="Month" value="3"/>
+					</Date>
+				</property>
+				<property Stage="Tutorial_WhiteTigerBase" Mission="Tutorial_WhiteTigerBase" Title="나를 위해.." Location="자홍거리 뒷골목" DescTitle="모든 것은 끝난다." Desc="지난 10년, 바람장벽지구를 공포에 떨게 했던 백호파의 푸의 체포는 바람장벽지구 사람들에게 새로운 희망을 가져다준다." Rank="A" Image="Loading_WhiteTigerFinal" ButtonImage="Troublebook/Tutorial_WhiteTigerBase" ButtonDisabledImage="Troublebook/Tutorial_WhiteTigerBase_Disabled">
+					<Date>
+						<property name="Year" value="804"/>
+						<property name="Month" value="4"/>
+					</Date>
+				</property>
+			</Stage>
+		</class>
+	</idspace>
+</idspaces>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="ObjectCoverInfo">
+	<class name="Basic">
+		<CoverInfo/>
+	</class>
+	<class name="Car">
+		<CoverInfo>
+			<property X="0" Y="-2" Side="North" Cover="1"/>
+			<property X="0" Y="-2" Side="West" Cover="1"/>
+			<property X="0" Y="-1" Side="West" Cover="1"/>
+			<property X="0" Y="0" Side="West" Cover="1"/>
+			<property X="0" Y="0" Side="South" Cover="1"/>
+			<property X="1" Y="-2" Side="North" Cover="1"/>
+			<property X="1" Y="-2" Side="East" Cover="1"/>
+			<property X="1" Y="-1" Side="East" Cover="1"/>
+			<property X="1" Y="0" Side="East" Cover="1"/>
+			<property X="1" Y="0" Side="South" Cover="1"/>
+		</CoverInfo>
+	</class>
+	<class name="SimpleBlockOne">
+		<CoverInfo>
+			<property X="0" Y="0" Side="North" Cover="2"/>
+			<property X="0" Y="0" Side="East" Cover="2"/>
+			<property X="0" Y="0" Side="West" Cover="2"/>
+			<property X="0" Y="0" Side="South" Cover="2"/>
+		</CoverInfo>
+	</class>
+	<class name="HalfCoverBlockOne">
+		<CoverInfo>
+			<property X="0" Y="0" Side="North" Cover="1"/>
+			<property X="0" Y="0" Side="East" Cover="1"/>
+			<property X="0" Y="0" Side="West" Cover="1"/>
+			<property X="0" Y="0" Side="South" Cover="1"/>
+		</CoverInfo>
+	</class>
+</idspace>

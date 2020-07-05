@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Common_MetrodiumResidence_fxFYy0" Value="[!Dashboard:Counter]남은 적 수"/>
+		<class name="Common_MetrodiumResidence_IRCLmk" Value="[!Objective]백호파를 제압하시오."/>
+		<class name="Common_MetrodiumResidence_Eq6VCv" Value="[!Title]호랑이 사냥"/>
+		<class name="Common_MetrodiumResidence_MXPSc6" Value="[!Title]하늘 바람 거주구"/>
+		<class name="Common_MetrodiumResidence_P28E3I" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Normal]별빛 사거리는 계속 혼전이군."/>
+		<class name="Common_MetrodiumResidence_6iKm6u" Value="[!Dialog][!speaker:Gangster_WhiteTigerDagger_Normal]경찰 녀석들도 제법 하잖아. "/>
+		<class name="Common_MetrodiumResidence_Ejv2Jx" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Normal]경찰보다는 $CompanyName$. 그 녀석들이 문제야."/>
+		<class name="Common_MetrodiumResidence_CXkb6d" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Normal]뭐. 간부들과 그 밑에 있는 녀석들이 알아서 하겠지."/>
+		<class name="Common_MetrodiumResidence_lWbzX4" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Normal]우린 명령대로 경찰들이 이 곳을 통과하지 못하게 발목만 잡고 있으면 그만이야."/>
+		<class name="Common_MetrodiumResidence_7S1hw0" Value="[!Dialog][!speaker:Gangster_WhiteTigerDagger_Normal]우리가 숫자도 압도적인데 저 녀석들 밟아 버려도 되지 않나?"/>
+		<class name="Common_MetrodiumResidence_H5ja5X" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Normal]그러다가 경찰들이 이 곳으로 집중되면 긁어 부스럼이야."/>
+		<class name="Common_MetrodiumResidence_oM3BjA" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Normal]그냥 지금 상태가 서로에게 좋은 상황이겠지."/>
+		<class name="Common_MetrodiumResidence_WNNibS" Value="[!Dialog][!speaker:Gangster_WhiteTigerDagger_Normal]쳇. 이럴 줄 알았으면 별빛 사거리 쪽으로 지원했어야 했는데..."/>
+		<class name="Common_MetrodiumResidence_P4HlOv" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Normal]방심하지 마. 경찰이 방어선을 구축하고 있다. 언제든 경찰들이 돌입할 가능성이 있다라는 거지."/>
+		<class name="Common_MetrodiumResidence_tbotzE" Value="[!Dialog][!speaker:Gangster_WhiteTigerDagger_Normal]차라리 그랬으면 좋겠군. 가만히 있는 것도 지겨우니까."/>
+		<class name="Common_MetrodiumResidence_aMeAjS" Value="[!Ignore][!FrontMessage]방어선이 무너졌습니다."/>
+		<class name="Common_MetrodiumResidence_8dZhX6" Value="[!Ignore][!BalloonChat]지금이 기회다!!"/>
+		<class name="Common_MetrodiumResidence_3rnPGG" Value="[!Ignore][!FrontMessage]스푼교도가 진입로를 향해 탈출을 시작합니다."/>
+		<class name="Common_MetrodiumResidence_xBTzFP" Value="[!Dialog][!speaker:Albus_Serious]현재 현장 상황은 어떻습니까?"/>
+		<class name="Common_MetrodiumResidence_4JCMY7" Value="[!Dialog][!speaker:VHPD_Assault_Normal]적지 않은 백호파 조직원들이 쉼터 위주로 다수 배치되어 있습니다."/>
+		<class name="Common_MetrodiumResidence_DnvgeJ" Value="[!Dialog][!speaker:VHPD_Assault_Normal]또한 전방 건물에 다수의 저격수가 배치되어 있는 것을 확인하였습니다."/>
+		<class name="Common_MetrodiumResidence_ykvK5t" Value="[!Dialog][!speaker:Albus_Think]&apos;저격수까지... 섣불리 전진했다가는 위험하겠어...&apos;"/>
+		<class name="Common_MetrodiumResidence_zNNC6o" Value="[!Dialog][!speaker:Albus_Serious]알겠습니다. 현장 탈환은 저희 $CompanyName$ 인원으로 해결하겠습니다."/>
+		<class name="Common_MetrodiumResidence_YwRMBa" Value="[!Dialog][!speaker:Albus_Serious]경찰 분대는 방어선을 지켜주세요."/>
+		<class name="Common_MetrodiumResidence_1Bl05L" Value="[!Dialog][!speaker:VHPD_Assault_Normal]알겠습니다."/>
+		<class name="Common_MetrodiumResidence_quubpC" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Common_MetrodiumResidence_F8ibRF" Value="[!VictoryCondition]백호파를 제압하시오."/>
+	</idspace>
+</idspaces>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="SnipeType">
+		<schema>
+			<rule property="Order" type="number" default="0"/>
+			<rule property="Accuracy" type="number" default="0"/>
+			<rule property="HeadShotRatio" type="number" default="0"/>
+			<rule property="CriticalStrikeChance" type="number" default="0"/>
+			<rule property="EnemyBlock" type="number" default="0"/>
+			<rule property="ApplyAct" type="number" default="0"/>
+			<rule property="ApplyTargetBuffLv" type="number" default="0"/>
+			<rule property="ApplyTargetBuff" type="string" default="None"/>
+		</schema>
+		<class name="Head" Title="머리" TitleColor="Corn" Order="1" Image="HUD/Snipe_Head" Accuracy="0" CriticalStrikeChance="0" EnemyBlock="0" HeadShotRatio="10" ApplyAct="0" ApplyTargetBuff="None" ApplyTargetBuffLv="0"/>
+		<class name="Sensor" Title="센서" TitleColor="Corn" Order="2" Image="HUD/Snipe_Sensor" Accuracy="0" CriticalStrikeChance="0" EnemyBlock="0" HeadShotRatio="10" ApplyAct="0" ApplyTargetBuff="None" ApplyTargetBuffLv="0"/>
+		<class name="Chest" Title="가슴" TitleColor="Corn" Order="3" Image="HUD/Snipe_Chest" Accuracy="0" CriticalStrikeChance="10" EnemyBlock="0" HeadShotRatio="0" ApplyAct="0" ApplyTargetBuff="None" ApplyTargetBuffLv="0"/>
+		<class name="Body" Title="몸통" TitleColor="Corn" Order="4" Image="HUD/Snipe_Body" Accuracy="10" CriticalStrikeChance="0" EnemyBlock="0" HeadShotRatio="0" ApplyAct="0" ApplyTargetBuff="None" ApplyTargetBuffLv="0"/>
+		<class name="Weapon" Title="무기" TitleColor="Corn" Order="5" Image="HUD/Snipe_Weapon" Accuracy="0" CriticalStrikeChance="0" EnemyBlock="-5" HeadShotRatio="0" ApplyAct="0" ApplyTargetBuff="BreakWeapon" ApplyTargetBuffLv="1"/>
+		<class name="OutArmor" Title="외장" TitleColor="Corn" Order="6" Image="HUD/Snipe_OutArmor" Accuracy="0" CriticalStrikeChance="0" EnemyBlock="-5" HeadShotRatio="0" ApplyAct="0" ApplyTargetBuff="BreakArmor" ApplyTargetBuffLv="1"/>
+		<class name="Leg" Title="다리" TitleColor="Corn" Order="7" Image="HUD/Snipe_Leg" Accuracy="0" CriticalStrikeChance="0" EnemyBlock="0" HeadShotRatio="0" ApplyAct="20" ApplyTargetBuff="Slow" ApplyTargetBuffLv="1"/>
+		<class name="Wing" Title="날개" TitleColor="Corn" Order="8" Image="HUD/Snipe_Wing" Accuracy="0" CriticalStrikeChance="0" EnemyBlock="0" HeadShotRatio="0" ApplyAct="30" ApplyTargetBuff="Slow" ApplyTargetBuffLv="1"/>
+	</idspace>
+	<idspace id="Snipe">
+		<schema>
+			<rule property="TargetPosition" type="table" default=""/>
+		</schema>
+		<class name="Human">
+			<TargetPosition>
+				<property name="Head" AttachingType="Snipe_Head" BoneName="Head" HitMethod="Head"/>
+				<property name="Chest" AttachingType="Snipe_Chest" BoneName="Chest" HitMethod="Chest"/>
+				<property name="Body" AttachingType="Snipe_Body" BoneName="Body" HitMethod="Body"/>
+				<property name="Leg" AttachingType="Snipe_Leg" BoneName="BottomRight" HitMethod="BottomRight"/>
+				<property name="Weapon" AttachingType="Snipe_Weapon" BoneName="WeaponProp1" HitMethod="WeaponProp1"/>
+			</TargetPosition>
+		</class>
+		<class name="Tima">
+			<TargetPosition>
+				<property name="Head" AttachingType="Snipe_Head" BoneName="Head" HitMethod="Head"/>
+				<property name="Chest" AttachingType="Snipe_Chest" BoneName="Chest" HitMethod="Chest"/>
+				<property name="Leg" AttachingType="Snipe_Leg" BoneName="BottomRight" HitMethod="BottomRight"/>
+			</TargetPosition>
+		</class>
+		<class name="Dorori">
+			<TargetPosition>
+				<property name="Head" AttachingType="Snipe_Head" BoneName="Head" HitMethod="Head"/>
+				<property name="Chest" AttachingType="Snipe_Chest" BoneName="Chest" HitMethod="Chest"/>
+				<property name="Body" AttachingType="Snipe_Body" BoneName="Body" HitMethod="Body"/>
+				<property name="Wing" AttachingType="Snipe_Wing" BoneName="LeftForearm" HitMethod="LeftForearm"/>
+			</TargetPosition>
+		</class>
+		<class name="Yasha">
+			<TargetPosition>
+				<property name="Head" AttachingType="Snipe_Chest" BoneName="Head" HitMethod="Head"/>
+				<property name="OutArmor" AttachingType="Snipe_Top" BoneName="Top" HitMethod="Top"/>
+			</TargetPosition>
+		</class>
+		<class name="Neguri">
+			<TargetPosition>
+				<property name="Head" AttachingType="Snipe_Head" BoneName="Head" HitMethod="Head"/>
+				<property name="Chest" AttachingType="Snipe_Chest" BoneName="Chest" HitMethod="Chest"/>
+				<property name="Body" AttachingType="Snipe_Body" BoneName="Body" HitMethod="Body"/>
+				<property name="Leg" AttachingType="Snipe_Leg" BoneName="BottomRight" HitMethod="BottomRight"/>
+			</TargetPosition>
+		</class>
+		<class name="Draky">
+			<TargetPosition>
+				<property name="Head" AttachingType="Snipe_Head" BoneName="Head" HitMethod="Head"/>
+				<property name="Chest" AttachingType="Snipe_Chest" BoneName="Chest" HitMethod="Chest"/>
+				<property name="Body" AttachingType="Snipe_Body" BoneName="Body" HitMethod="Body"/>
+				<property name="Leg" AttachingType="Snipe_Leg" BoneName="BottomRight" HitMethod="BottomRight"/>
+				<property name="Wing" AttachingType="Snipe_Wing" BoneName="LeftForearm" HitMethod="LeftForearm"/>
+			</TargetPosition>
+		</class>
+		<class name="Bikron">
+			<TargetPosition>
+				<property name="Sensor" AttachingType="Snipe_Head" BoneName="Head" HitMethod="Head"/>
+				<property name="OutArmor" AttachingType="Snipe_Chest" BoneName="Center" HitMethod="Center"/>
+				<property name="Leg" AttachingType="Snipe_Leg2" BoneName="Bottom" HitMethod="Bottom"/>
+				<property name="Weapon" AttachingType="Snipe_Weapon2" BoneName="BottomRight" HitMethod="RightHand"/>
+			</TargetPosition>
+		</class>
+		<class name="Drone">
+			<TargetPosition>
+				<property name="Sensor" AttachingType="Snipe_Head" BoneName="Head" HitMethod="Head"/>
+				<property name="OutArmor" AttachingType="Snipe_Chest" BoneName="Center" HitMethod="Center"/>
+				<property name="Weapon" AttachingType="Snipe_Weapon" BoneName="Chest" HitMethod="Chest"/>
+			</TargetPosition>
+		</class>
+		<class name="Etc">
+			<TargetPosition>
+				<property name="Body" AttachingType="Snipe_Body" BoneName="Body" HitMethod="Body"/>
+			</TargetPosition>
+		</class>
+	</idspace>
+</idspaces>

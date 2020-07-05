@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Tile">
+		<schema>
+			<rule property="FieldEffect" type="table" subtype="link" target="FieldEffect" default=""/>
+		</schema>
+		<class name="Bush" Title="풀숲" Image="Icons/Tile_Bush" ToolMaterial="TileBaseBush" FieldEffect="Bush"/>
+		<class name="Concrete" Title="돌" Image="Icons/Tile_Concrete" ToolMaterial="TileBaseConcrete"/>
+		<class name="Dirt" Title="흙" Image="Icons/Tile_Dirt" ToolMaterial="TileBaseDirt"/>
+		<class name="Fabric" Title="천" Image="Icons/Tile_Fabric" ToolMaterial="TileBaseFabric"/>
+		<class name="Ice" Title="얼음" Image="Icons/Tile_Ice" ToolMaterial="TileBaseIce" FieldEffect="Ice"/>
+		<class name="Metal" Title="금속재" Image="Icons/Tile_Metal" ToolMaterial="TileBaseMetal"/>
+		<class name="Snow" Title="눈" Image="Icons/Tile_Snow" ToolMaterial="TileBaseSnow"/>
+		<class name="SnowBush" Title="눈/수풀" Image="Icons/Tile_SnowBush" ToolMaterial="TileBaseSnowBush" FieldEffect="SnowBush"/>
+		<class name="Splash" Title="물웅덩이" Image="Icons/Tile_Splash" ToolMaterial="TileBaseSplash"/>
+		<class name="Swamp" Title="늪" Image="Icons/Tile_Swamp" ToolMaterial="TileBaseSwamp" FieldEffect="Swamp"/>
+		<class name="SwampBush" Title="늪/수풀" Image="Icons/Tile_SwampBush" ToolMaterial="TileBaseSwampBush" FieldEffect="SwampBush"/>
+		<class name="Water" Title="물" Image="Icons/Tile_Water" ToolMaterial="TileBaseWater" FieldEffect="Water"/>
+		<class name="WaterBush" Title="물/수풀" Image="Icons/Tile_WaterBush" ToolMaterial="TileBaseWaterBush" FieldEffect="WaterBush"/>
+		<class name="ContaminatedWater" Title="오염수" Image="Icons/Tile_ContaminatedWater" ToolMaterial="TileBaseContaminatedWater" FieldEffect="ContaminatedWater"/>
+		<class name="ContaminatedWaterBush" Title="오염수/수풀" Image="Icons/Tile_ContaminatedWaterBush" ToolMaterial="TileBaseContaminatedWaterBush" FieldEffect="ContaminatedWaterBush"/>
+		<class name="Wood" Title="목재" Image="Icons/Tile_Wood" ToolMaterial="TileBaseWood"/>
+		<class name="Lava" Title="용암" Image="Icons/Tile_Lava" ToolMaterial="TileBaseLava" FieldEffect="Lava"/>
+	</idspace>
+</idspaces>

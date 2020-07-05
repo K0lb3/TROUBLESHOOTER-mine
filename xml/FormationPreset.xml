@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="FormationPreset">
+	<schema>
+		<rule property="Opened" type="bool" default="false"/>
+	</schema>
+	<class name="Preset" SlotName="" MaxCount="0" MaxSlot="12" SlotIndex="0">
+		<property type="string" value="None"/>
+		<property type="string" value="None"/>
+		<property type="string" value="None"/>
+		<property type="string" value="None"/>
+		<property type="string" value="None"/>
+		<property type="string" value="None"/>
+		<property type="string" value="None"/>
+		<property type="string" value="None"/>
+		<property type="string" value="None"/>
+		<property type="string" value="None"/>
+		<property type="string" value="None"/>
+		<property type="string" value="None"/>
+	</class>
+</idspace>

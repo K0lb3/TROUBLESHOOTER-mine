@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Common_Road_110_g1vriJ" Value="[!Dashboard:Counter]남은 밀수업자 수"/>
+		<class name="Common_Road_110_jiZPnC" Value="[!Dashboard:Counter]남은 스푼교도 수"/>
+		<class name="Common_Road_110_EDzHOT" Value="[!Objective]현장의 모든 적을 제압하시오."/>
+		<class name="Common_Road_110_I6yefM" Value="[!Objective]현장의 모든 적을 제압하시오."/>
+		<class name="Common_Road_110_oaKk5l" Value="[!Title]계약 파기"/>
+		<class name="Common_Road_110_XhBhUC" Value="[!Title]외곽 도로 정비소"/>
+		<class name="Common_Road_110_T6C6OG" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Julio_Normal]대금은 얼마든지 지불한다고 했을텐데?"/>
+		<class name="Common_Road_110_nHqPXu" Value="[!Dialog][!speaker:Gangster_SmugglerHelmet_Snake_Normal]물론. 잘 알고 있지."/>
+		<class name="Common_Road_110_IsvI5C" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Julio_Normal]잘 알면서도 계속 바이크론만 가져오는 의도가 뭐지?"/>
+		<class name="Common_Road_110_HjwwmK" Value="[!Dialog][!speaker:Gangster_SmugglerHelmet_Snake_Normal]이것 참 너무 쉽게 말하네."/>
+		<class name="Common_Road_110_7N0SWx" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Julio_Normal]계속 이런 식이면 우리는 자네들과 더는 거래하지 않겠네."/>
+		<class name="Common_Road_110_v8Cq86" Value="[!Dialog][!speaker:Gangster_SmugglerHelmet_Snake_Normal]이봐. 지금 장난하는 거야?"/>
+		<class name="Common_Road_110_u3B5sy" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Julio_Normal]제대로 된 물건을 가져와. 그러면 해결 돼."/>
+		<class name="Common_Road_110_vtOYge" Value="[!Dialog][!speaker:Gangster_SmugglerHelmet_Snake_Normal]이봐. 이봐. 어디까지난 난 운송업자야."/>
+		<class name="Common_Road_110_tCECYV" Value="[!Dialog][!speaker:Gangster_SmugglerHelmet_Snake_Normal]그런 건 대니에게 따져."/>
+		<class name="Common_Road_110_dx64Kd" Value="[!Dialog][!speaker:Gangster_SmugglerHelmet_Snake_Normal]일단 물건을 가져다 줬으니 대금을 지불하라고."/>
+		<class name="Common_Road_110_UEVZ17" Value="[!Dialog][!speaker:Albus_Serious]다들 밀수 현장을 바로 제압하겠습니다."/>
+		<class name="Common_Road_110_pASsMZ" Value="[!Dialog][!speaker:Albus_Serious]그리고 바이크론이 발견되면 EMP 수류탄 사용을 부탁드립니다."/>
+		<class name="Common_Road_110_j8Ut6s" Value="[!Dialog][!speaker:VHPD_Assault_Normal]알겠습니다."/>
+		<class name="Common_Road_110_uihnKJ" Value="[!Dialog][!speaker:Gangster_SmugglerHelmet_Snake_Normal]이런 귀찮게 됬군."/>
+		<class name="Common_Road_110_Wolzch" Value="[!Dialog][!speaker:Gangster_SmugglerHelmet_Snake_Normal] 어서 대금을 줘."/>
+		<class name="Common_Road_110_TmfAUK" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Julio_Normal]거절한다."/>
+		<class name="Common_Road_110_9Ppfr6" Value="[!Dialog][!speaker:Gangster_SmugglerHelmet_Snake_Normal]하... 이 녀석 정말 말 안통하는 녀석이네."/>
+		<class name="Common_Road_110_PKPlKt" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Julio_Normal]이번 거래는 여기까지네. 다음에 보기로 하지."/>
+		<class name="Common_Road_110_lctAOG" Value="[!Dialog][!speaker:Gangster_SmugglerHelmet_Snake_Normal]하... 미친 녀석. 상황이 이렇다고 순순히 돌아갈 줄 알아!!"/>
+		<class name="Common_Road_110_VJKo22" Value="[!Dialog][!speaker:Gangster_SmugglerHelmet_Snake_Normal]하아... 오늘 진짜 짜증 나는구먼."/>
+		<class name="Common_Road_110_II08n8" Value="[!Dialog][!speaker:Gangster_SmugglerHelmet_Snake_Normal]대금은 네 녀석하고 같이 온 녀석들한테서 뜯어 내주마."/>
+		<class name="Common_Road_110_35SqTG" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Common_Road_110_tifPRH" Value="[!VictoryCondition]현장의 적을 모두 제압하시오."/>
+		<class name="Common_Road_110_VQGsTm" Value="[!Ignore][!FrontMessage]Common_ShadowWallUnderWay_aMeAjS"/>
+		<class name="Common_Road_110_vHeuSE" Value="[!Ignore][!BalloonChat]Common_ShadowWallUnderWay_8dZhX6"/>
+		<class name="Common_Road_110_BMSPh2" Value="[!Ignore][!FrontMessage]Common_ShadowWallUnderWay_3rnPGG"/>
+		<class name="Common_Road_110_Q6dQAj" Value="[!Ignore][!Dialog][!speaker:Albus_Serious]Common_ShadowWallUnderWay_rKeCBP"/>
+		<class name="Common_Road_110_SXF4YP" Value="[!Ignore][!Dialog][!speaker:Albus_Serious]Common_ShadowWallUnderWay_HQGrVa"/>
+		<class name="Common_Road_110_LLny30" Value="[!Ignore][!Dialog][!speaker:VHPD_Assault_Normal]Common_ShadowWallUnderWay_1Bl05L"/>
+		<class name="Common_Road_110_RbOE2u" Value="[!Ignore][!VictoryCondition]Common_ShadowWallUnderWay_quubpC"/>
+		<class name="Common_Road_110_8qvJP3" Value="[!Ignore][!VictoryCondition]Common_ShadowWallUnderWay_vAe7wd"/>
+		<class name="Common_Road_110_DsE9G4" Value="[!BalloonChat][!speaker:Adventure_Dorori]@#$%!!!"/>
+		<class name="Common_Road_110_Pxx50Y" Value="[!BalloonChat][!speaker:Adventure_Dorori]♡♡♡"/>
+		<class name="Common_Road_110_KI4JSg" Value="[!BalloonChat][!speaker:Adventure_Dorori]!!!"/>
+		<class name="Common_Road_110_VS0qZF" Value="[!BalloonChat][!speaker:Adventure_Dorori]☆☆?"/>
+		<class name="Common_Road_110_UD7BQv" Value="[!BalloonChat][!speaker:Adventure_Dorori]☆☆☆??"/>
+		<class name="Common_Road_110_0TPW4s" Value="[!BalloonChat][!speaker:Adventure_Dorori]☆☆☆☆☆!!!!!!!"/>
+		<class name="Common_Road_110_VCdFsd" Value="[!BalloonChat][!speaker:Adventure_Dorori]♡"/>
+		<class name="Common_Road_110_gaixwB" Value="[!Dialog][!speaker:Giselle_Smile]좋아하는 아이를 때리면 미움 받는다."/>
+		<class name="Common_Road_110_n00KTM" Value="[!Dialog][!speaker:Beast_Bat_Wind_Challenger_Normal]!!!!"/>
+		<class name="Common_Road_110_whjvKL" Value="[!Dialog][!speaker:Beast_Bat_Wind_Challenger_Normal]크악! 크악!"/>
+		<class name="Common_Road_110_yALKxH" Value="[!Dialog][!speaker:Giselle_Rage]안돼. 그런 못된 짓을 하면 평생 그 아이를 못 보게 해줄 거야."/>
+		<class name="Common_Road_110_HDPQPe" Value="[!Dialog][!speaker:Beast_Bat_Wind_Challenger_Normal]끼아악! 끼아악!"/>
+		<class name="Common_Road_110_x6mMA0" Value="[!Dialog][!speaker:Giselle_Satisfying]그래. 그래. 그러니 잘해야 한다."/>
+	</idspace>
+</idspaces>

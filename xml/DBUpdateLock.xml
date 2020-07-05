@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="DBUpdateLock">
+	<schema>
+		<rule property="NoSaveColumns" type="table" subtype="string" default=""/>
+		<rule property="OnlyAddColumns" type="table" subtype="string" default=""/>
+	</schema>
+	<class name="Company" OnlyAddColumns="Vill"/>
+	<class name="Pc"/>
+	<class name="Npc"/>
+	<class name="Quest"/>
+</idspace>

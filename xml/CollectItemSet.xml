@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="CollectItemSet">
+	<schema>
+		<rule property="LinkedQuest" type="calculated" default="Calculated_GetInteractionSetLinkedQuest"/>
+	</schema>
+	<class name="CargoBox" Title="화물 상자" InteractionType="OpenCargo" BaseMonType="Object_CargoBox" ReplaceMonType="Object_CargoBox_Opened" MarkerIcon="Icons/Transport" CollectMessage="$Unit$[이] 화물을 회수하였습니다." MarkerMessage="해당 화물 근처에서 화물 회수를 하면 화물을 회수 할 수 있습니다."/>
+	<class name="ArtBox" Title="미술품 상자" InteractionType="OpenArtBox" BaseMonType="Object_ArtBox" ReplaceMonType="Object_ArtBox_Opened" MarkerIcon="Icons/Transport" CollectMessage="$Unit$[이] 미술품을 회수하였습니다." MarkerMessage="해당 화물 근처에서 미술품 회수를 하면 미술품을 회수 할 수 있습니다."/>
+	<class name="BrokenTransportDrone" Title="폐기된 수송 드론" InteractionType="OpenBrokenDrone" BaseMonType="Object_Drone_Transport_Rust" ReplaceMonType="Object_Drone_Transport_Rust_Dead" MarkerIcon="Icons/Collect" CollectMessage="$Unit$[이] 부품을 회수하였습니다." MarkerMessage="해당 드론 근처에서 부품 회수를 하면 부품을 회수 할 수 있습니다."/>
+	<class name="BrokenEnhancedDrone" Title="폐기된 강화 드론" InteractionType="OpenBrokenDrone" BaseMonType="Object_Drone_Enhanced_Rust" ReplaceMonType="Object_Drone_Enhanced_Rust_Dead" MarkerIcon="Icons/Collect" CollectMessage="$Unit$[이] 부품을 회수하였습니다." MarkerMessage="해당 드론 근처에서 부품 회수를 하면 부품을 회수 할 수 있습니다."/>
+</idspace>

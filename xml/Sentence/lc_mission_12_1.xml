@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="lc_mission_12_1_z3MuX8" Value="[!Dashboard:TimeLimiter]경비 중인 갱단을 처치하세요!"/>
+		<class name="lc_mission_12_1_6ml3iI" Value="[!Dashboard:TimeLimiter]경비 중인 갱단을 처치하세요!"/>
+		<class name="lc_mission_12_1_lEQ5Rd" Value="[!Dashboard:TimeLimiter]경비 중인 갱단을 처치하세요!"/>
+		<class name="lc_mission_12_1_5p1Kxq" Value="[!Dashboard:TimeLimiter]경비 중인 갱단을 처치하세요!"/>
+		<class name="lc_mission_12_1_wKsgE6" Value="[!Objective]마약 거래중인 갱단 보스를 체포하라"/>
+		<class name="lc_mission_12_1_KtnbiO" Value="[!Dialog][!speaker:VHPD_Jane_Normal]여기까지는 조용히 왔는데 앞으로가 문제네요.
+저희가 얻은 정보로는 불법 드론과 갱단원으로 철저히 경계 중이라고 하더군요."/>
+		<class name="lc_mission_12_1_84mJbk" Value="[!Dialog][!speaker:VHPD_Jane_Normal]특히 드론의 경보가 울리면 모든 갱단원에게 알려질 테니 드론과 정면으로 마주치지 않게 조심해주세요."/>
+		<class name="lc_mission_12_1_d2enCJ" Value="[!Dialog][!speaker:Gangster_BlackTigerFat_Normal]제길 어떤 놈들이 우리 거래에 깽판을 놓는 거야.
+뼈 마디마디 분리시켜 주마!"/>
+		<class name="lc_mission_12_1_bEcGiS" Value="[!Title]드론이 트러블슈터를 탐색했습니다."/>
+		<class name="lc_mission_12_1_OE8dtc" Value="[!Title]msg1"/>
+		<class name="lc_mission_12_1_NADqay" Value="[!Title] "/>
+		<class name="lc_mission_12_1_47GjRk" Value="[!Title]msg1"/>
+	</idspace>
+</idspaces>

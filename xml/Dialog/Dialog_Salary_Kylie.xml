@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Dialog">
+	<class name="Salary_Event_Begin_To_Talk_Kylie_1">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Start" Close="true" Message="[!speaker:Albus_Normal]오늘은 카일리씨 급여일이네." DialogType="Main" Slot="Right3" Effect="Appear"/>
+		</Scripts>
+	</class>
+	<class name="Salary_Event_Selection_Full_Kylie_1">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Start" Close="true" Message="[!speaker:Albus_Think](보너스를 챙겨줄 수 있기는 한데...)" DialogType="Main" Slot="Right3" Effect="Appear"/>
+		</Scripts>
+	</class>
+	<class name="Salary_Event_Selection_NoBonus_Kylie_1">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Start" Close="true" Message="[!speaker:Albus_Think](급여는 충분히 지급할 수 있겠어.)" DialogType="Main" Slot="Right3" Effect="Appear"/>
+		</Scripts>
+	</class>
+	<class name="Salary_Event_Selection_NoSalary_Kylie_1">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Disappointed" Mode="Start" Close="true" Message="[!speaker:Albus_Disappointed](이런, 급여를 지급할 여유가 없어..)" DialogType="Main" Slot="Right3" Effect="Appear"/>
+		</Scripts>
+	</class>
+	<class name="Salary_Event_Process_Normal_Kylie_1">
+		<Scripts>
+			<property Type="BattleDialog" C_SpeakerInfo="env.roster_name" SpeakerEmotion="Smile" Mode="Start" Close="true" Message="고마워." DialogType="Main" Slot="Left3" Effect="Appear"/>
+		</Scripts>
+	</class>
+	<class name="Salary_Event_Process_Bonus_Kylie_1">
+		<Scripts>
+			<property Type="BattleDialog" C_SpeakerInfo="env.roster_name" SpeakerEmotion="Satisfying" Mode="Start" Close="true" Message="잘 받을게. 그리고 받은 만큼 결과로 보답할게." DialogType="Main" Slot="Left3" Effect="Appear"/>
+		</Scripts>
+	</class>
+	<class name="Salary_Event_Process_Delay_Kylie_1">
+		<Scripts>
+			<property Type="Switch" C_TestTarget="env.cur_roster.SalaryCountDelayCont &lt; 3">
+				<property Case="true">
+					<property Type="BattleDialog" C_SpeakerInfo="env.roster_name" SpeakerEmotion="Smile" Mode="Start" Close="true" Message="알았어. 하지만 계속 이러는 건 사양이야." DialogType="Main" Slot="Left3" Effect="Appear"/>
+				</property>
+				<property Case="false">
+					<property Type="BattleDialog" C_SpeakerInfo="env.roster_name" SpeakerEmotion="Serious" Mode="Start" Close="false" Message="난 너하고 신뢰가 어긋나기 싫어." DialogType="Main" Slot="Left3" Effect="Appear"/>
+					<property Type="BattleDialog" C_SpeakerInfo="env.roster_name" SpeakerEmotion="Serious" Mode="Continue" Close="true" Message="그러니 왠만하면 급여는 확실하게 줬으면 해." DialogType="Main" Slot="Left3" Effect="Appear"/>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+</idspace>

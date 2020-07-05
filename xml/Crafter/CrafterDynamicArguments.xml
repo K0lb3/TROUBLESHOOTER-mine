@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="ArgumentForm">
+		<schema>
+			<rule property="Converter" type="function" default="StageMakerArgumentValueRedirecter"/>
+		</schema>
+		<!-- 실제 아규먼트의 Initializer는 ExchangeData의 값들을 리턴해야 하고 Converter는 ExchangeData의 값들을 인자로 받아서 다시 원본 데이터로 변환해야함.-->
+		<class name="FreeString" Layout="StageMakerFreeString" InitializerReturn="Value"/>
+		<class name="FreeStringField" Layout="DynamicArgumentFreeStringField" InitializerReturn="Value"/>
+		<class name="FreeStringFieldHalf" Layout="DynamicArgumentFreeStringFieldHalf" InitializerReturn="Value"/>
+		<class name="FreeStringFieldFull" Layout="DynamicArgumentFreeStringFieldFull" InitializerReturn="Value"/>
+		<class name="ScriptInputField" Layout="DynamicArgumentScriptHodler" InitializerReturn="Arguments, ScriptBody"/>
+		<class name="FreeNumber" Layout="StageMakerFreeString" InitializerReturn="Value" Converter="StageArgumentNumberConverter"/>
+		<class name="StringSelectorFree" Layout="StageMakerStringSelectorFree" InitializerReturn="Value, Candidate, DiscardNew"/>
+		<class name="StringSelectorFixed" Layout="StageMakerStringSelectorFixed" InitializerReturn="Value, Candidate"/>
+		<class name="OptionDroplist" Layout="OptionDroplist" InitializerReturn="Value, Candidate, Desc"/>
+		<class name="OptionDroplistLong" Layout="OptionDroplistLong" InitializerReturn="Value, Candidate, Desc"/>
+		<class name="StringSelectorFixedPair" Layout="DynamicArgumentStringSelectorFixedPair" InitializerReturn="FirstValue, SecondValue, FirstKey, SecondKey, PrimaryCandidate, SecondaryCandidate" Converter="DynamicArgumentStringSelectorPairConverter"/>
+		<class name="StringSelectorEditable" Layout="StageMakerStringSelectorEditable" InitializerReturn="Value, Candidate, OnEditFunc, EnableNewEntry"/>
+		<class name="StringSelectorCustomEditable" Layout="DynamicArgumentStringSelectorCustomEditable" InitializerReturn="Value, OnSelectFunc, OnEditFunc"/>
+		<class name="StringSelectorCustom" Layout="StageMakerStringSelectorCustom" InitializerReturn="Value, OnSelectFunc"/>
+		<class name="FormEditor" Layout="DynamicArgumentFormEditor" InitializerReturn="Value, OnSelectFunc, Transcriber"/>
+		<class name="AreaSelector" Layout="StageMakerAreaSelector" InitializerReturn="From, To" Converter="StageMakerArgumentAreaConverter"/>
+		<class name="FunctionFinder" Layout="StageMakerFunctionFinder" InitializerReturn="Value"/>
+		<class name="PropertyKeyValue" Layout="StageMakerPropertyKeyValue" InitializerReturn="Key, Value" Converter="StageMakerArgumentPropKeyValueConverter"/>
+		<class name="PositionSelector" Layout="StageMakerPositionSelector" InitializerReturn="Position" Converter="StageMakerArgumentPositionConverter"/>
+		<class name="DirectionSelector" Layout="StageMakerDirectionSelector" InitializerReturn="Position, GuideRange" Converter="StageMakerArgumentPositionConverter"/>
+		<class name="Tree" Layout="StageMakerTreeArgument" InitializerReturn="Value, Dialog, OnAddFilter, EntryConfirmer, EntryTranscriber"/>
+		<class name="List" Layout="StageMakerListArgument" InitializerReturn="ChildKey, DialogDataKey, Value, Dialog, EntryConfirmer, EntryTranscriber, DefaultEntry, DataPutter, DataPopper, DataChangeHook" Converter="StageMakerArgumentListConverter"/>
+		<class name="ListHalf" Layout="DynamicArgumentListHalf" InitializerReturn="ChildKey, DialogDataKey, Value, Dialog, EntryConfirmer, EntryTranscriber, DefaultEntry, DataPutter, DataPopper" Converter="StageMakerArgumentListConverter"/>
+		<class name="DirectList" Layout="DynamicArgumentListDirect" InitializerReturn="ChildKey, ListData, ArgumentSet"/>
+		<class name="CameraPositionDirection" Layout="StageMakerCameraPositionDirection" InitializerReturn="Position, Direction" Converter="StageMakerArgumentCamPosDirConverter"/>
+		<class name="ColourPicker" Layout="DynamicArgumentColourPicker" InitializerReturn="ColourKey"/>
+		<class name="NotImplemented" Layout="StageMakerArgNotImpl" InitializerReturn=""/>
+		<class name="SelectableArgumentHolder" Layout="DynamicArgumentSelectableHolder" InitializerReturn="Value, TyperKey, TyperIdspace, ArgumentsColumnName, TypeFilter, NotNull"/>
+		<class name="SelectableArgumentHolderPreview" Layout="DynamicArgumentSelectableHolderPreview" InitializerReturn="Value, TyperKey, PreviewBuilder, TyperIdspace, ArgumentsColumnName, TypeFilter, NotNull"/>
+		<class name="SelectableArgumentHolderCustomEditable" Layout="DynamicArgumentSelectableHolderCustomEditable" InitializerReturn="Value, TyperKey, Candidate, ArgumentGetter, OnEditFunc, EnableNewEntry"/>
+		<class name="ArgumentHolder" Layout="DynamicArgumentGeneralHolder" InitializerReturn="Value, ArgumentList"/>
+		<class name="PropertySheet" Layout="DynamicArgumentPropertySheet" InitializerReturn="ValueTable, KeyList"/>
+		<class name="ExpressionString" Layout="DynamicArgumentExpressionString" InitializerReturn="Value, ParamterSet"/>
+		<class name="OptionSlider" Layout="OptionSlider" InitializerReturn="Value, MinValue, MaxValue, StepCount, Desc"/>
+		<class name="OptionSliderLong" Layout="OptionSliderLong" InitializerReturn="Value, MinValue, MaxValue, StepCount, Desc"/>
+		<class name="OptionSliderText" Layout="OptionSliderText" InitializerReturn="Value, MinValue, MaxValue, StepCount, Desc"/>
+		<class name="Slider" Layout="DynamicArgumentSlider" InitializerReturn="Value, MinValue, MaxValue, StepCount"/>
+		<class name="OptionCheckbox" Layout="OptionCheckbox" InitializerReturn="Value, Desc"/>
+		<class name="OptionCheckboxLong" Layout="OptionCheckboxLong" InitializerReturn="Value, Desc"/>
+		<class name="Checkbox" Layout="DynamicArgumentCheckbox" InitializerReturn="Value" Converter="StageArgumentStringConvert"/>
+		<class name="OptionSpaceHolder" Layout="OptionSpaceHolder" InitializerReturn=""/>
+	</idspace>
+	<idspace id="StageMakerArgument">
+		<schema>
+			<rule property="Initializer" type="function" default="StageMakerArgumentBasicInitializer"/>
+			<rule property="Converter" type="function"/>
+			<rule property="Selection" type="table" subtype="string"/>
+			<rule property="Form" type="link" target="ArgumentForm"/>
+			<rule property="ArgList" type="table" subtype="string"/>
+			<rule property="Transcriber" type="function"/>
+			<rule property="NotNull" type="bool" default="false"/>
+			<rule property="KeyList" type="table" subtype="string"/>
+		</schema>
+		<class name="Ability" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="Ability"/>
+		<class name="AbilityType" Form="FreeString" Default=""/>
+		<class name="Action" Form="List" Initializer="StageMakerArgumentTriggerActionListInitializer" Converter="StageMakerArgumentValueRedirecter"/>
+		<class name="ActionList" Form="List" Initializer="StageMakerArgumentActionListInitializer"/>
+		<class name="ActionInstance" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="Action" ArgColumn="ArgumentList" Typer="ActionType" Default="{ActionType='None'}"/>
+		<class name="Active" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="true"/>
+		<class name="ActivityArea" Form="AreaSelector" Initializer="StageMakerArgumentAreaInitializer"/>
+		<class name="AI" Form="ArgumentHolder" Initializer="DACommonArgumentHolderInitializer" Idspace="StageMakerArgument" ArgList="AIType, ActivityArea, RallyPoint, RallyPower, RallyRange, RallyPoint2, RallyPower2, RallyRange2, NoPreemptiveAttack, AlwaysApplyRallyPoint, MinRallyProgress, AllowGrenadeOneTarget, TeamHate"/>
+		<class name="AIForm" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="AI" ArgColumn="MakerArguments" Typer="AIType" Default="{AIType='DoNothingAI'}"/>
+		<class name="AIType" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="AI"/>
+		<class name="AngerBuff" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="None" Selection="None, Anger, ConditionalAnger"/>
+		<class name="Animation" Form="StringSelectorFree" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="PlayableAnimation" Default="Astd"/>
+		<class name="AnyUnit" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="StageAnyUnitIndicator" ArgColumn="MakerArguments" Typer="Type" Default="{Type = 'Type'}"/>
+		<class name="AllUnit" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="StageAllUnitIndicator" ArgColumn="MakerArguments" Typer="Type" Default="{Type = 'Area'}"/>
+		<class name="ApplyBuff" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Use" Selection="Use, NotUsed"/>
+		<class name="Area" Form="AreaSelector" Initializer="StageMakerArgumentAreaInitializer"/>
+		<class name="ArgsExpression" Form="FreeString" Default=""/>
+		<class name="AttachModel" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="true"/>
+		<class name="AttackerState" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="NotUsed" Selection="Normal, Critical, NotUsed"/>
+		<class name="BackgroundImage" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="BackgroundImage" Default="None"/>
+		<class name="BalloonType" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="Balloon"/>
+		<class name="Base_Coverable" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="None" Selection="None, On, Off"/>
+		<class name="BaseMission" Form="StringSelectorFixed" Initializer="StageMakerArgumentMissionInitializer" Default="teststage"/>
+		<class name="BGMName" Form="StringSelectorCustom" Initializer="DynamicArgumentBGMInitializer" Default=""/>
+		<class name="StartBGM" Form="StringSelectorCustom" Initializer="DynamicArgumentBGMInitializer" Converter="StageMakerArgumentBGMClsConverter" Default=""/>
+		<class name="BattleBGM" Form="StringSelectorCustom" Initializer="DynamicArgumentBGMInitializer" Converter="StageMakerArgumentBGMClsConverter" Default=""/>
+		<class name="Blink" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="false"/>
+		<class name="BonePos" Form="FreeString" Default="_CENTER_"/>
+		<class name="BuffName" Form="FreeString" Default=""/>
+		<class name="CamDistance" Form="FreeNumber" Default="2000"/>
+		<class name="CamHideAssetDistance" Form="FreeNumber" Default="0"/>
+		<class name="CameraAfterRelease" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Converter="StageMakerArgumentBooleanConverter" Default="false"/>
+		<class name="CameraAnimSlope" Form="FreeNumber" Default="3"/>
+		<class name="CameraControlType" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Move" Selection="Move, Rotate, Zoom, UpDown, LookUp"/>
+		<class name="CameraDirectMove" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Converter="StageMakerArgumentBooleanConverter" Default="false"/>
+		<class name="CameraFOV" Form="FreeString" Default="0"/>
+		<class name="CameraKey" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="CamTargetKey"/>
+		<class name="CamPosDir" Form="CameraPositionDirection" Initializer="StageMakerArgumentCamPosDirInitializer"/>
+		<class name="CaseDefinition" Form="List" Initializer="DynamicArgumentDynArgCtrlrListInitializer" ChildKey="Case" Idspace="StageMakerArgument" ArgList="CaseValue, ActionList" Transcriber="DynamicArgumentCaseDefinitionTranscriber" Converter="StageMakerArgumentListConverter"/>
+		<class name="CaseValue" Form="FreeString" Default=""/>
+		<class name="ChangeTeamDirect" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Main" Selection="Main, Sub, None"/>
+		<class name="CheckEachOther" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="false"/>
+		<class name="ChestType" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="ChestType" Default="Chest"/>
+		<class name="CitizenType" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="Citizen" Default="Healthy"/>
+		<class name="CloseDialog" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="true"/>
+		<class name="CombatantAI" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="AI" ArgColumn="MakerArguments" Typer="AIType" Filter="ArgumentFilter_CombatantAI" Default="{AIType='Aggressive'}"/>
+		<class name="Command" Form="FreeString" Initializer="StageMakerArgumentCommandInitializer" Converter="StageMakerArgumentCommandConverter"/>
+		<class name="Referrer" Form="DirectList" Initializer="DynamicArgumentStageVariableDirectListInitializer" Converter="StageMakerArgumentListConverter"/>
+		<class name="Condition" Form="Tree" Initializer="StageMakerArgumentConditionInitializer" Default="{[1]={Type='And', Condition={}}}"/>
+		<class name="ConditionFilterBase" Form="FreeString" Default=""/>
+		<class name="ConditionOutputBase" Form="PropertySheet" Default="{{}}" Initializer="DACommonPropertySheetInitializer" KeyList=""/>
+		<class name="ConditionOutputCitizen" Form="PropertySheet" Default="{{}}" Initializer="DACommonPropertySheetInitializer" KeyList="Savior, Citizen"/>
+		<class name="ConditionOutputInteraction" Form="PropertySheet" Default="{{}}" Initializer="DACommonPropertySheetInitializer" KeyList="Interactor, Interactee"/>
+		<class name="ConditionOutputInteractionArea" Form="PropertySheet" Default="{{}}" Initializer="DACommonPropertySheetInitializer" KeyList="Interactor"/>
+		<class name="ConnectFrame" Form="FreeString" Default="0"/>
+		<class name="Count" Form="FreeString" Default="0"/>
+		<class name="CustomImage" Form="FreeString" Default=""/>
+		<class name="Damage" Form="FreeNumber" Default=""/>
+		<class name="DamageAdjust" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="NotUsed" Selection="NotUsed, Use"/>
+		<class name="DashboardIndicator" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="StageDashboardIndicator" ArgColumn="MakerArguments" Typer="Type" Default="{Type='Dashboard', DashboardKey='None'}"/>
+		<class name="DashboardKey" Form="StringSelectorFree" Initializer="StageMakerArgumentDashboardKeyInitializer"/>
+		<class name="DBKey" Form="FreeString" Default=""/>
+		<class name="DefeatCondition" Form="List" Initializer="DynamicArgumentDynArgCtrlrListInitializer" ChildKey="Entry" Idspace="StageMakerArgument" ArgList="Title, FontColor" Transcriber="DynamicArgumentVictoryConditionTranscriber" Converter="StageMakerArgumentListConverter"/>
+		<class name="DefenderState" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="NotUsed" Selection="Hit, Block, Dodge, NotUsed"/>
+		<class name="DialogChoice" Form="List" Initializer="DynamicArgumentDynArgCtrlrListInitializer" ChildKey="Choice" Idspace="StageMakerArgument" ArgList="DBKey, Message, Notice, Title, ActionList" Transcriber="DynamicArgumentDailogChoiceTranscriber" Converter="StageMakerArgumentListConverter"/>
+		<class name="DialogEffect" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="None" Selection="None, Appear, Disappear, Wait, Shake, Change, Fade"/>
+		<class name="DialogMode" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Start" Selection="Start, Continue, Change"/>
+		<class name="DialogType" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Main" Selection="Main, Sub, Center"/>
+		<class name="DifficultyType" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="GameDifficulty" Default="Easy"/>
+		<class name="Direct" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="false"/>
+		<class name="DirectClear" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="true"/>
+		<class name="Direction" Form="DirectionSelector" Initializer="StageMakerArgumentDirectionInitializer"/>
+		<class name="DirectType" Form="StringSelectorEditable" Initializer="StageMakerArgumentDirectTypeInitializer"/>
+		<class name="MissionDirectList" Form="List" Initializer="StageMakerArgumentMissionDirectListInitializer"/>
+		<class name="DisableHideAsset" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Converter="StageMakerArgumentBooleanConverter" Default="false"/>
+		<class name="DOFEnable" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="true"/>
+		<class name="DOFFixDist" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="false"/>
+		<class name="DOFFocusDist" Form="FreeNumber" Default="2500"/>
+		<class name="DOFInnerRange" Form="FreeNumber" Default="100000"/>
+		<class name="DOFOuterRange" Form="FreeNumber" Default="500"/>
+		<class name="EscortTargetType" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="EscortTarget" ArgColumn="Arguments" Typer="Type" Default="{Type='People'}"/>
+		<class name="EquipmentType" Form="FreeString" Default="Equipment"/>
+		<class name="ExitPos" Form="PositionSelector" Initializer="StageMakerArgumentPositionInitializer"/>
+		<class name="FadeIn" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="false"/>
+		<class name="FadeOut" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="false"/>
+		<class name="FadeTime" Form="FreeNumber"/>
+		<class name="FadeType" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="In" Selection="In, Out"/>
+		<class name="FailCondition" Form="Tree" Initializer="StageMakerArgumentConditionInitializer" Default="{[1]={Type='Or', Condition={}}}"/>
+		<class name="FailExpression" Form="FreeString" Default="false"/>
+		<class name="FakeObject" Form="StringSelectorCustom" Initializer="StageMakerArgumentMonsterInitializer" Default=""/>
+		<class name="FieldEffectName" Form="FreeString" Default=""/>
+		<class name="FieldEffectType" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="FieldEffect" Default="Fire"/>
+		<class name="FixedLineup" Form="DirectList" Initializer="DynamicArgumentCommonClassStringListDirectInitializer" Converter="DynamicArgumentCommonClassStringListDirectConverter" Default="" Idspace="Pc"/>
+		<class name="FogOfWarDisable" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="true"/>
+		<class name="Font" Form="StringSelectorFixed" Initializer="DynamicArgumentFontSelectionInitializer" Default=""/>
+		<class name="FontColor" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="Color"/>
+		<class name="FriendlyMessage" Form="FreeStringField" Default="" Initializer="DynamicArgumentSentenceInitializer" Converter="DynamicArgumentSentenceConverter"/>
+		<class name="GameObject" Form="StringSelectorCustom" Initializer="StageMakerArgumentObjectInitializer" Default="Luna"/>
+		<class name="Group" Form="FreeString" Default=""/>
+		<class name="Guide" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="true"/>
+		<class name="GuideType" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="MoveScreen" Selection="MoveScreen, RotateScreen, ZoomInOut, UpAndDownScreen"/>
+		<class name="HelpMessage" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="Help" Default="None"/>
+		<class name="HelpType" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="DialogSystemMessageBox" Selection="DialogSystemMessageBox, SystemMessage"/>
+		<class name="HoldTime" Form="FreeNumber" Default="1"/>
+		<class name="HostileMessage" Form="FreeStringField" Default="" Initializer="DynamicArgumentSentenceInitializer" Converter="DynamicArgumentSentenceConverter"/>
+		<class name="Image" Form="FreeString" Default=""/>
+		<class name="IncludeDead" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="false"/>
+		<class name="Interaction" Form="StringSelectorFixed" Initializer="StageMakerArgumentInteractionInitializer"/>
+		<class name="InteractionArea" Form="StringSelectorFixed" Initializer="StageMakerArgumentInteractionAreaInitializer"/>
+		<class name="InteractionUnit" Form="StringSelectorFixed" Initializer="StageMakerArgumentInteractionUnitInitializer"/>
+		<class name="InvestigationType" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="InvestigationTarget" ArgColumn="Arguments" Typer="Type" Default="{Type='Box'}"/>
+		<class name="IsExplosive" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Converter="StageMakerArgumentBooleanConverter" Default="true"/>
+		<class name="IsHeadDisplay" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="None" Selection="None, On, Off"/>
+		<class name="IsTurnDisplay" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="None" Selection="None, On, Off"/>
+		<class name="ItemCollection" Form="ListHalf" Initializer="DynamicArgumentDynArgCtrlrListInitializer" ChildKey="Slot" Idspace="StageMakerArgument" ArgList="Item, Priority" Transcriber="DynamicArgumentItemCollectionTranscriber" Converter="StageMakerArgumentListConverter"/>
+		<class name="ItemCollectionEasy" Form="ListHalf" Initializer="DynamicArgumentDynArgCtrlrListInitializer" ChildKey="Slot" Idspace="StageMakerArgument" ArgList="Item, Priority" Transcriber="DynamicArgumentItemCollectionTranscriber" Converter="StageMakerArgumentListConverter"/>
+		<class name="ItemCollectionNormal" Form="ListHalf" Initializer="DynamicArgumentDynArgCtrlrListInitializer" ChildKey="Slot" Idspace="StageMakerArgument" ArgList="Item, Priority" Transcriber="DynamicArgumentItemCollectionTranscriber" Converter="StageMakerArgumentListConverter"/>
+		<class name="ItemCollectionHard" Form="ListHalf" Initializer="DynamicArgumentDynArgCtrlrListInitializer" ChildKey="Slot" Idspace="StageMakerArgument" ArgList="Item, Priority" Transcriber="DynamicArgumentItemCollectionTranscriber" Converter="StageMakerArgumentListConverter"/>
+		<class name="ItemCollectionSet" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="ItemBox" Default="None"/>
+		<class name="ItemCollectionSetEasy" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="ItemBox" Default="None"/>
+		<class name="ItemCollectionSetNormal" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="ItemBox" Default="None"/>
+		<class name="ItemCollectionSetHard" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="ItemBox" Default="None"/>
+		<class name="Item" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="StageItemIndicator" ArgColumn="MakerArguments" Typer="Type" Default="{Type='Simple', ItemType='PsionicStone_FlameDust', Count=1}" NotNull="true"/>
+		<class name="ItemType" Form="StringSelectorFree" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="Item" Default="PsionicStone_FlameDust"/>
+		<class name="Jumpable" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="None" Selection="None, On, Off"/>
+		<class name="Key" Form="FreeString" Default=""/>
+		<class name="SubKey" Form="FreeString" Default=""/>
+		<class name="Level" Form="FreeNumber" Default="1"/>
+		<class name="LifeTime" Form="FreeNumber" Default="0"/>
+		<class name="LimitTime" Form="FreeNumber" Default="0"/>
+		<class name="Loop" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="false"/>
+		<class name="LoopAnimation" Form="StringSelectorFree" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="PlayableAnimation" Default="None"/>
+		<class name="Lv" Form="FreeString" Default="0"/>
+		<class name="MainObjective" Form="StringSelectorFixed" Initializer="StageMakerArgumentObjectiveInitializer"/>
+		<class name="MapComponentSelector" Form="FunctionFinder" Default="None"/>
+		<class name="Mastery" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="Mastery"/>
+		<class name="MaxCount" Form="FreeNumber" Default="99"/>
+		<class name="Message" Form="FreeStringField" Default="" Initializer="DynamicArgumentSentenceInitializer" Converter="DynamicArgumentSentenceConverter"/>
+		<class name="MessageColor" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="Color"/>
+		<class name="MessageVisible" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="On" Selection="On, Off"/>
+		<class name="MinCount" Form="FreeNumber" Default="0"/>
+		<class name="MinDistance" Form="FreeNumber" Default="2500"/>
+		<class name="MissionDirectScript" Form="Tree" Initializer="StageMakerArgumentMissionDirectScriptInitializer" Converter="StageMakerArgumentMissionDirectScriptConverter"/>
+		<class name="Name" Form="FreeString" Default=""/>
+		<class name="NegotiatingType" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="NegotiatingType" ArgColumn="Arguments" Typer="Type" Default="{Type='Friendly'}"/>
+		<class name="NoEvent" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Off" Selection="On, Off"/>
+		<class name="NoLook" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="false"/>
+		<class name="NonStatic" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="false"/>
+		<class name="Notice" Form="FreeString" Default="" Initializer="DynamicArgumentSentenceInitializer" Converter="DynamicArgumentSentenceConverter"/>
+		<class name="NotImplemented" Form="NotImplemented"/>
+		<class name="NotOccupy" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="None" Selection="None, On, Off"/>
+		<class name="NoCover" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Off" Selection="On, Off"/>
+		<class name="NoWait" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Off" Selection="On, Off"/>
+		<class name="NoZOC" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Off" Selection="On, Off"/>
+		<class name="Object" Form="StringSelectorCustom" Initializer="StageMakerArgumentMonsterInitializer" Default=""/>
+		<class name="Obstacle" Form="StringSelectorCustom" Initializer="StageMakerArgumentObstacleInitializer" Default=""/>
+		<class name="ObjectInfo" Form="StringSelectorFree" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="ObjectInfo" Default="Astd"/>
+		<class name="Objective1" Form="StringSelectorFixed" Initializer="StageMakerArgumentObjectiveInitializer"/>
+		<class name="Objective2" Form="StringSelectorFixed" Initializer="StageMakerArgumentObjectiveInitializer"/>
+		<class name="Objective3" Form="StringSelectorFixed" Initializer="StageMakerArgumentObjectiveInitializer"/>
+		<class name="Objective4" Form="StringSelectorFixed" Initializer="StageMakerArgumentObjectiveInitializer"/>
+		<class name="Objective5" Form="StringSelectorFixed" Initializer="StageMakerArgumentObjectiveInitializer"/>
+		<class name="Objective6" Form="StringSelectorFixed" Initializer="StageMakerArgumentObjectiveInitializer"/>
+		<class name="ObjectiveKey" Form="StringSelectorFixed" Initializer="StageMakerArgumentObjectiveInitializer"/>
+		<class name="ObjectKey" Form="StringSelectorFree" Initializer="StageMakerArgumentUnitInitializer"/>
+		<class name="BeastKey" Form="StringSelectorFree" Initializer="StageMakerArgumentUnitInitializer"/>
+		<class name="ObjectKeyList" Form="List" Initializer="DynamicArgumentDynArgCtrlrListInitializer" ChildKey="ObjectKey" Idspace="StageMakerArgument" ArgList="ObjectKey" Transcriber="DynamicArgumentObjectKeyListTranscriber" Converter="StageMakerArgumentListConverter"/>
+		<class name="ObjectTargetKey" Form="StringSelectorFree" Initializer="StageMakerArgumentUnitInitializer"/>
+		<class name="OffOn" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Off" Selection="On, Off"/>
+		<class name="OnFailActionList" Form="List" Initializer="StageMakerArgumentActionListInitializer"/>
+		<class name="OnOff" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="On" Selection="On, Off"/>
+		<class name="OnSuccessActionList" Form="List" Initializer="StageMakerArgumentActionListInitializer"/>
+		<class name="OpenChance" Form="FreeNumber" Default="50"/>
+		<class name="OpenReward_Chest" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="InvestigationReward" ArgColumn="Arguments" Typer="Type" Default="{Type='Information'}" Filter="ArgumentFilter_OpenReward_Chest"/>
+		<class name="OpenReward_Lock" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="InvestigationReward" ArgColumn="Arguments" Typer="Type" Default="{Type='Information'}" Filter="ArgumentFilter_OpenReward_Lock"/>
+		<class name="OpenReward_GiveItem" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="InvestigationReward" ArgColumn="Arguments" Typer="Type" Default="{Type='Information'}" Filter="ArgumentFilter_OpenReward_GiveItem"/>
+		<class name="Operation" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Equal" Selection="Equal, NotEqual, LessThan, GreaterThan"/>
+		<class name="Order" Form="FreeString" Default="0"/>
+		<class name="Organization" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="Organization" Default="VHPD"/>
+		<class name="Particle" Form="StringSelectorCustom" Initializer="StageMakerArgumentParticleInitializer"/>
+		<class name="ParticleKey" Form="FreeString" Default=""/>
+		<class name="ParticleLength" Form="FreeString" Default="1"/>
+		<class name="ParticlePos" Form="FreeString" Default="_CENTER_"/>
+		<class name="PatrolMethod" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Oscillate" Selection="Oscillate, Rotate, Random"/>
+		<class name="PatrolRepeat" Form="FreeNumber" Default="0"/>
+		<class name="PatrolRoute" Form="List" Initializer="DynamicArgumentDynArgCtrlrListInitializer" ChildKey="Route" Idspace="StageMakerArgument" ArgList="Position" Transcriber="DynamicArgumentPatrolRouteTranscriber" Converter="StageMakerArgumentListConverter"/>
+		<class name="PositionList" Form="DirectList" Initializer="DynamicArgumentCommonDirectListInitializer" ChildKey="PosElem" Idspace="StageMakerArgument" ArgList="PositionIndicator" Converter="StageMakerArgumentListConverter"/>
+		<class name="PosHolderGroup" Form="StringSelectorFixed" Initializer="StageMakerArgumentPositionHolderGroupInitializer" Default="None"/>
+		<class name="Position" Form="PositionSelector" Initializer="StageMakerArgumentPositionInitializer"/>
+		<class name="LookPosition" Form="PositionSelector" Initializer="StageMakerArgumentPositionInitializer"/>
+		<class name="SubPositionIndicator" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="StagePositionIndicator" ArgColumn="MakerArguments" Typer="Type" Default="{Type = 'Position'}"/>
+		<class name="PositionIndicator" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="StagePositionIndicator" ArgColumn="MakerArguments" Typer="Type" Default="{Type = 'Position'}"/>
+		<class name="PostEffectType" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="PostEffect" Default="None"/>
+		<class name="Priority" Form="FreeNumber" Default="50"/>
+		<class name="Prob" Form="FreeNumber" Default="100"/>
+		<class name="ProperDistance" Form="FreeNumber" Default="0"/>
+		<class name="PropKey" Form="FreeString" Default=""/>
+		<class name="PropKV" Form="PropertyKeyValue" Initializer="StageMakerArgumentPropertyKeyValueInitializer"/>
+		<class name="PsionicStoneGen" Form="List" Initializer="DynamicArgumentDynArgCtrlrListInitializer" ChildKey="Entry" Idspace="StageMakerArgument" ArgList="PsionicStoneType, Prob" Transcriber="DynamicArgumentPsionicStoneTranscriber" Converter="StageMakerArgumentListConverter"/>
+		<class name="PsionicStoneType" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="PsionicStone" Default="PsionicStone_Flame_A"/>
+		<class name="CollectItemSet" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="CollectItemSet" Default="CargoBox"/>
+		<class name="ArrestSet" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="ArrestSet" Default="Arrest"/>
+		<class name="Quest" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassTitleSelectionInitializer" Idspace="Quest" Default="None"/>
+		<class name="RallyPoint" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="StagePositionIndicator" ArgColumn="MakerArguments" Typer="Type" Default="{Type='Position'}"/>
+		<class name="RallyPoint2" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="StagePositionIndicator" ArgColumn="MakerArguments" Typer="Type" Default="{Type='Position'}"/>
+		<class name="RallyPower" Form="FreeNumber" Default="50"/>
+		<class name="RallyPower2" Form="FreeNumber" Default="50"/>
+		<class name="RallyRange" Form="FreeNumber" Default="4"/>
+		<class name="RallyRange2" Form="FreeNumber" Default="4"/>
+		<class name="Range" Form="FreeString" Default="0"/>
+		<class name="ReleaseAnimation" Form="StringSelectorFree" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="PlayableAnimation" Default="None"/>
+		<class name="Reference1" Form="FreeString" Default="" Initializer="DynamicArgumentSentenceInitializer" Converter="DynamicArgumentSentenceConverter"/>
+		<class name="Reference2" Form="FreeString" Default="" Initializer="DynamicArgumentSentenceInitializer" Converter="DynamicArgumentSentenceConverter"/>
+		<class name="Reference3" Form="FreeString" Default="" Initializer="DynamicArgumentSentenceInitializer" Converter="DynamicArgumentSentenceConverter"/>
+		<class name="Reference4" Form="FreeString" Default="" Initializer="DynamicArgumentSentenceInitializer" Converter="DynamicArgumentSentenceConverter"/>
+		<class name="ResultModifier" Form="ArgumentHolder" Initializer="DACommonArgumentHolderInitializer" Idspace="StageMakerArgument" ArgList="DamageAdjust, Damage, AttackerState, DefenderState, ApplyBuff"/>
+		<class name="RetreatPosition" Form="PositionSelector" Initializer="StageMakerArgumentPositionInitializer"/>
+		<class name="RetreatOrder" Form="FreeNumber" Default="999"/>
+		<class name="Script" Form="FunctionFinder" Initializer="StageMakerArgumentScriptInitializer"/>
+		<class name="ScriptName" Form="FreeString" Default=""/>
+		<class name="DirScript" Form="FunctionFinder" Initializer="StageMakerArgumentScriptInitializer" Default="DirectingScriptActionTest"/>
+		<class name="SearchUnit" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="StageUnitIndicator" ArgColumn="MakerArguments" Typer="Type" Default="{Type = 'Object'}"/>
+		<class name="SecretAgentType" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="SecretAgent" ArgColumn="Arguments" Typer="Type" Default="{Type='Friendly'}"/>
+		<class name="SecurityLevel" Form="FreeNumber" Default="50"/>
+		<class name="ServerType" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="ServerType" ArgColumn="Arguments" Typer="Type" Default="{Type='Ally'}"/>
+		<class name="Show" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="true"/>
+		<class name="ShowSlot" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Left" Selection="Left, Left2, Left3, Left4, Left5, Center, Right5, Right4, Right3, Right2, Right, Whole"/>
+		<class name="SoundGroup" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Voice" Selection="Voice, System, Effect, Environment"/>
+		<class name="SoundName" Form="StringSelectorCustom" Initializer="DynamicArgumentSoundInitializer" Default=""/>
+		<class name="Speaker" Form="StringSelectorFixedPair" Initializer="StageMakerArgumentSpeakerInitializer"/>
+		<class name="Friendship" Form="StringSelectorFixedPair" Initializer="StageMakerArgumentFriendshipInitializer"/>
+		<class name="StageDataBinding" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="StageValueIndicator" ArgColumn="MakerArguments" Typer="Type"/>
+		<class name="StageTextBinding" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="StageTextIndicator" ArgColumn="MakerArguments" Typer="Type" Default="{Type='Raw'}"/>
+		<class name="StageDataBindingInit" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="StageValueInitializer" ArgColumn="MakerArguments" Typer="Type"/>
+		<class name="StageKey" Form="StringSelectorFixed" Initializer="StageMakerArgumentStageKeyInitializer"/>
+		<class name="StartingBuff" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Stand" Selection="None, Patrol, Stand, Detecting, FixedPatrol, FixedStand"/>
+		<class name="StatusVisible" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="On" Selection="On, Off"/>
+		<class name="SuccessCondition" Form="Tree" Initializer="StageMakerArgumentConditionInitializer" Default="{[1]={Type='Or', Condition={}}}"/>
+		<class name="SuccessExpression" Form="FreeString" Default="false"/>
+		<class name="SwitchEnvironment" Form="DirectList" Initializer="DynamicArgumentCommonDirectListInitializer" ChildKey="Variable" Idspace="StageMakerArgument" ArgList="Name, StageDataBinding" Converter="StageMakerArgumentListConverter"/>
+		<class name="Env" Form="DirectList" Initializer="DynamicArgumentCommonDirectListInitializer" ChildKey="Variable" Idspace="StageMakerArgument" ArgList="Name, StageDataBinding" Converter="StageMakerArgumentListConverter"/>
+		<class name="MessageFormat" Form="DirectList" Initializer="DynamicArgumentCommonDirectListInitializer" ChildKey="Keyword" Idspace="StageMakerArgument" ArgList="Name, StageTextBinding" Converter="StageMakerArgumentListConverter"/>
+		<class name="SystemDirection" Form="DirectionSelector" Initializer="StageMakerSystemDirectionInitializer" Converter="StageMakerSystemDirectionConverter"/>
+		<class name="TargetUnit" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="StageUnitIndicator" ArgColumn="MakerArguments" Typer="Type" Default="{Type = 'Object'}"/>
+		<class name="Team" Form="StringSelectorFixed" Initializer="StageMakerArgumentTeamInitializer"/>
+		<class name="Team2" Form="StringSelectorFixed" Initializer="StageMakerArgumentTeamInitializer"/>
+		<class name="TestExpression" Form="FreeString" Default=""/>
+		<class name="UnitFilterExpr" Form="ExpressionString" Default="true" Initializer="DACommonExpressionStringInitializer" ParameterSet="self, target"/>
+		<class name="Time" Form="FreeString" Default=""/>
+		<class name="Title" Form="FreeStringFieldHalf" Default="" Initializer="DynamicArgumentSentenceInitializer" Converter="DynamicArgumentSentenceConverter"/>
+		<class name="TitleColor" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="Color"/>
+		<class name="TowerState" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Active" Selection="Active, Deactive, Destroyed"/>
+		<class name="Trigger" Form="StringSelectorFixed" Initializer="StageMakerArgumentTriggerInitializer"/>
+		<class name="TriggerGroup" Form="StringSelectorFixed" Initializer="StageMakerArgumentTriggerGroupInitializer"/>
+		<class name="Turn" Form="FreeString" Default="0"/>
+		<class name="TurnCount" Form="FreeNumber" Default="1"/>
+		<class name="TurnState" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="NotMoved" Selection="NotMoved, AfterMove"/>
+		<class name="TypingDelay" Form="FreeNumber" Default="0.1"/>
+		<class name="Unit" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="StageUnitIndicator" ArgColumn="MakerArguments" Typer="Type" Default="{Type = 'Object'}"/>
+		<class name="Unit2" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="StageUnitIndicator" ArgColumn="MakerArguments" Typer="Type" Default="{Type = 'Object'}"/>
+		<class name="Tamer" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="StageUnitIndicator" ArgColumn="MakerArguments" Typer="Type" Default="{Type = 'Object'}"/>
+		<class name="Giver" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="StageUnitIndicator" ArgColumn="MakerArguments" Typer="Type" Default="{Type = 'None'}"/>
+		<class name="Untargetable" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="None" Selection="None, On, Off"/>
+		<class name="UpdateDirection" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="MissionDirectUpdateSystemCamera" ArgColumn="MakerArguments" Typer="Type" Default="{Type='No'}"/>
+		<class name="Value" Form="FreeString" Default=""/>
+		<class name="Value2" Form="FreeString" Default=""/>
+		<class name="Variable" Form="StringSelectorFixed" Initializer="StageMakerArgumentVariableInitializer"/>
+		<class name="Variable2" Form="StringSelectorFixed" Initializer="StageMakerArgumentVariableInitializer"/>
+		<class name="VariableList" Form="List" Initializer="StageMakerArgumentVariableListInitializer"/>
+		<class name="VictoryCondition" Form="List" Initializer="DynamicArgumentDynArgCtrlrListInitializer" ChildKey="Entry" Idspace="StageMakerArgument" ArgList="Title, FontColor" Transcriber="DynamicArgumentVictoryConditionTranscriber" Converter="StageMakerArgumentListConverter"/>
+		<class name="Visible" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="true"/>
+		<class name="VisualArea" Form="StringSelectorFixed" Initializer="StageMakerArgumentVisualAreaInitializer"/>
+		<class name="Volume" Form="FreeNumber" Default="1.0"/>
+		<class name="Walk" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="false"/>
+		<class name="Run" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="false"/>
+		<class name="Rush" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="false"/>
+		<class name="Reverse" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="false"/>
+		<class name="AbilityGuideFlag" Form="ArgumentHolder" Initializer="DACommonArgumentHolderInitializer" Idspace="StageMakerArgument" ArgList="BasicGuide"/>
+		<class name="BasicGuide" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Off" Selection="On, Off"/>
+		<class name="NoCamera" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Off" Selection="On, Off"/>
+		<class name="NoTeamCheck" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Off" Selection="On, Off"/>
+		<class name="NoWiggle" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Off" Selection="On, Off"/>
+		<class name="SteamAchievement" Form="StringSelectorFree" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="SteamAchievement" Default="None"/>
+		<class name="SteamStat" Form="StringSelectorFree" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="SteamStat" Default="None"/>
+		<class name="InteractionAreaKey" Form="StringSelectorFixed" Initializer="StageMakerArgumentInteractionAreaKeyInitializer" Default="None"/>
+		<class name="Relation" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="All" Selection="All, Enemy, Ally"/>
+		<class name="TimerMode" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Normal" Selection="Normal, Escape, Search, Keep, Wave"/>
+		<class name="CheckKiller" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="false"/>
+		<class name="Sequential" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="true"/>
+		<class name="Slow" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="false"/>
+		<class name="Linked" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="false"/>
+		<class name="AreaIndicator" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="StageAreaIndicator" ArgColumn="MakerArguments" Typer="Type" Default="{Type = 'Area'}"/>
+		<class name="AreaIndicatorFrom" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="StageAreaIndicator" ArgColumn="MakerArguments" Typer="Type" Default="{Type = 'Area'}"/>
+		<class name="AreaIndicatorDiff" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="StageAreaIndicator" ArgColumn="MakerArguments" Typer="Type" Default="{Type = 'Area'}"/>
+		<class name="AreaIndicatorList" Form="ListHalf" Initializer="DynamicArgumentDynArgCtrlrListInitializer" ChildKey="Areas" Idspace="StageMakerArgument" ArgList="AreaIndicator" Transcriber="DynamicArgumentAreaIndicatorTranscriber" Converter="StageMakerArgumentListConverter"/>
+		<class name="BattleState" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="true"/>
+		<class name="LocatorCandidate" Form="List" Initializer="DynamicArgumentDynArgCtrlrListInitializer" ChildKey="Candidate" Idspace="StageMakerArgument" ArgList="Priority, UnitWithPosList" Transcriber="DynamicArgumentLocatorCandidateTranscriber" Converter="StageMakerArgumentListConverter"/>
+		<class name="UnitWithPosList" Form="DirectList" Initializer="DynamicArgumentCommonDirectListInitializer" ChildKey="Entry" Idspace="StageMakerArgument" ArgList="Unit, Position, LookPosition" Converter="StageMakerArgumentListConverter"/>
+		<class name="OnFieldOnly" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="false"/>
+		<class name="AutoPlayable" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Override" Selection="On, Off, Override"/>
+		<class name="RosterInfo" Form="ArgumentHolder" Initializer="DACommonArgumentHolderInitializer" Idspace="StageMakerArgument" ArgList="RosterKey, RosterMode"/>
+		<class name="RosterKey" Form="StringSelectorFree" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="Pc" Default="None"/>
+		<class name="RosterMode" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Copy" Selection="Copy, Replace"/>
+		<class name="BeginHide" Title="시작 시 가리기" Form="Checkbox" Initializer="OptionInitializerCheckbox" Default="true"/>
+		<class name="EndShow" Title="끝날 때 보이기" Form="Checkbox" Initializer="OptionInitializerCheckbox" Default="true"/>
+		<class name="Index" Title="인덱스" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="1" Selection="1, 2, 3"/>
+		<class name="NoPreemptiveAttack" Title="비선공AI" Form="Checkbox" Initializer="OptionInitializerCheckbox" Default="false"/>
+		<class name="TemporaryTrue" Title="임시" Form="Checkbox" Initializer="OptionInitializerCheckbox" Default="true"/>
+		<class name="DirectingObject" Title="연출용 오브젝트 여부" Form="Checkbox" Initializer="OptionInitializerCheckbox" Default="false"/>
+		<class name="UseFinalCheck" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Off" Selection="On, Off"/>
+		<class name="AutoBossEvent" Title="자동 보스 연출" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="false" Selection="false, true, MeetOnly, HPOnly"/>
+		<class name="GuideTrigger" Title="가이드 트리거" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="GuideTrigger" Default="" NotNull="true"/>
+		<class name="AlwaysApplyRallyPoint" Title="랠리 항상 적용" Form="Checkbox" Initializer="OptionInitializerCheckbox" Default="false"/>
+		<class name="MinRallyProgress" Title="최소 렐리 방향 진행거리" Form="FreeNumber" Default="0"/>
+		<class name="AllowGrenadeOneTarget" Title="수류탄AI 단일 대상 허용" Form="Checkbox" Initializer="OptionInitializerCheckbox" Default="false"/>
+		<class name="EvalEach" Title="각각 계산" Form="Checkbox" Initializer="OptionInitializerCheckbox" Default="false"/>
+		<class name="ForwardEvent" Title="전방 이벤트 처리" Form="Checkbox" Initializer="OptionInitializerCheckbox" Default="false"/>
+		<class name="RewardMode" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="On" Selection="On, Off, Mastery"/>
+		<class name="TeamHate" Title="팀 적대량" Form="DirectList" Initializer="DynamicArgumentCommonDirectListInitializer" ChildKey="Entry" Idspace="StageMakerArgument" ArgList="Team, Value" Converter="StageMakerArgumentListConverter"/>
+		<class name="StageVarExpr" Title="스테이지 변수 표현식" Form="FreeStringFieldHalf" Default=""/>
+		<class name="DisableGradeUp" Title="정예화 비활성화" Form="Checkbox" Initializer="OptionInitializerCheckbox" Default="false"/>
+		<class name="SearchUnitFilter" Form="ExpressionString" Initializer="DACommonExpressionStringInitializer" ParameterSet="unit" Default="true"/>
+		<class name="FindUnitFilter" Form="ExpressionString" Initializer="DACommonExpressionStringInitializer" ParameterSet="unit" Default="true"/>
+		<class name="FindUnitFilter2" Form="ExpressionString" Initializer="DACommonExpressionStringInitializer" ParameterSet="unit" Default="true"/>
+		<class name="MergeMethod" Title="조합방식" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="FirstCompany" Selection="FirstCompany"/>
+		<class name="UpdateLink" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Cancel" Selection="On, Off, Cancel"/>
+		<class name="UpdateVisible" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Cancel" Selection="On, Off, Cancel"/>
+		<class name="UpdateThrowing" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Cancel" Selection="On, Off, Cancel"/>
+		<class name="ShowUI" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="false"/>
+		<class name="GameMessage" Form="FormEditor" Initializer="StageMakerArgumentGameMessageFormInitializer" Default="{{Type='StateAdded'}}" Idspace="GameSystemMessage"/>
+		<class name="GameMessageForm" Form="SelectableArgumentHolderPreview" Initializer="StageMakerGameMessageFormInitializer" Default="{{Type='StateAdded'}}"/>
+		<class name="NoOutline" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="true"/>
+		<class name="Shuffle" Title="순서 섞기" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="true"/>
+		<class name="NamedAssetKey" Form="StringSelectorFixed" Initializer="StageMakerNamedAssetKeyInitializer" Default=""/>
+		<class name="YOffset" Form="FreeNumber" Default="0"/>
+		<class name="ActionBundle" Title="액션 뭉치" Form="SelectableArgumentHolderCustomEditable" Initializer="StageMakerActionBundleInitializer"/>
+		<class name="Parameters" Title="파라미터" Form="DirectList" Initializer="DynamicArgumentCommonDirectListInitializer" ChildKey="Parameter" Idspace="StageMakerArgument" ArgList="Name, DataType" Converter="StageMakerArgumentListConverter"/>
+		<class name="DataType" Title="데이터 형식" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassTitleSelectionInitializer" Idspace="StageValueIndicators"/>
+		<class name="MaxCost" Title="[!Ignore]기력 회복" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="true"/>
+		<class name="MaxHP" Title="[!Ignore]체력 회복" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="true"/>
+		<class name="ResetSP" Title="[!Ignore]SP 초기화" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="true"/>
+		<class name="Cooldown" Title="[!Ignore]재사용 대기시간" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="true"/>
+		<class name="UseCount" Title="[!Ignore]사용 횟수" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="true"/>
+		<class name="TurnEnd" Title="[!Ignore]턴 종료" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="true"/>
+		<class name="CreditType" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="Credit" Default="None"/>
+	</idspace>
+	<idspace id="AbilityDirecterArgument">
+		<schema>
+			<rule property="Initializer" type="function" default="StageMakerArgumentBasicInitializer"/>
+			<rule property="Converter" type="function"/>
+			<rule property="Selection" type="table" subtype="string"/>
+			<rule property="Form" type="link" target="ArgumentForm"/>
+			<rule property="ArgList" type="table" subtype="string"/>
+			<rule property="Transcriber" type="function"/>
+			<rule property="NotNull" type="bool" default="false"/>
+		</schema>
+		<class name="ActionType" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Normal" Selection="Normal, Special"/>
+		<class name="AlternativeShot" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="false"/>
+		<class name="AttachModel" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="true"/>
+		<class name="BlockStop_Self" Form="FreeNumber" Default="0"/>
+		<class name="BlockStop_Target" Form="FreeNumber" Default="0"/>
+		<class name="CameraMode" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Self" Selection="Self, Target, SelfToTarget, TargetToSelf, SelfToUsingPos"/>
+		<class name="CamTargetKey" Form="StringSelectorCustom" Initializer="AbilityDirecterArgumentCamTargetKeyInitializer"/>
+		<class name="ChainTrigger" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="false"/>
+		<class name="Color" Form="FreeString" Default="FFFFFFFF"/>
+		<class name="Damage" Form="FreeNumber"/>
+		<class name="DeadlyHitPower" Form="FreeNumber" Default="1000"/>
+		<class name="DeadMethod" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="DeadMethod" Default="Normal" NotNull="true"/>
+		<class name="DirectClear" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="true"/>
+		<class name="DirectMove" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="false"/>
+		<class name="EndEvent" Form="FreeString" Default=""/>
+		<class name="FadeTime" Form="FreeNumber"/>
+		<class name="FinishStop_Self" Form="FreeNumber" Default="0"/>
+		<class name="FinishStop_Target" Form="FreeNumber" Default="0"/>
+		<class name="Force" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="Force"/>
+		<class name="Frame" Form="FreeNumber"/>
+		<class name="FrameSeparation" Form="FreeNumber" Default="0"/>
+		<class name="Frequancy" Form="FreeNumber"/>
+		<class name="FromPos" Form="StringSelectorFixed" Initializer="DynamicArgumentBoneMapListInitializer" Default="Center"/>
+		<class name="HitMethod" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="HitMethod"/>
+		<class name="HitMode" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Auto" Selection="Auto, Hit, Finish"/>
+		<class name="HitStop_Self" Form="FreeNumber" Default="0"/>
+		<class name="HitStop_Target" Form="FreeNumber" Default="0"/>
+		<class name="HitType" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="HitEffectSound"/>
+		<class name="InRefID" Form="FreeNumber" Default="0"/>
+		<class name="KillStop_Self" Form="FreeNumber" Default="0"/>
+		<class name="KillStop_Target" Form="FreeNumber" Default="0"/>
+		<class name="Material" Form="FreeString"/>
+		<class name="Message" Form="FreeString" Default="DummyMessage"/>
+		<class name="MinDistance" Form="FreeNumber" Default="2500"/>
+		<class name="NoWait" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="On" Selection="On, Off"/>
+		<class name="NoWait2" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Off" Selection="On, Off"/>
+		<class name="OutRefID" Form="FreeNumber" Default="0"/>
+		<class name="Particle" Form="StringSelectorCustom" Initializer="StageMakerArgumentParticleInitializer"/>
+		<class name="ParticleLength" Form="FreeNumber"/>
+		<class name="ParticlePos" Form="StringSelectorFixed" Initializer="DynamicArgumentBoneMapListInitializer" Default="Center"/>
+		<class name="Power" Form="FreeNumber"/>
+		<class name="Range" Form="FreeNumber" Default="0"/>
+		<class name="RangeFilter" Form="DirectList" Initializer="DynamicArgumentCommonClassStringListDirectInitializer" Converter="DynamicArgumentCommonClassStringListDirectConverter" Default="All" Idspace="RangeFilter"/>
+		<class name="StateFilter" Form="DirectList" Initializer="DynamicArgumentCommonClassStringListDirectInitializer" Converter="DynamicArgumentCommonClassStringListDirectConverter" Default="All" Idspace="StateFilter"/>
+		<class name="RangeType" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="ApplyRange" Selection="ApplyRange, TargetRange, GuideRange, PickingRange, UsingPos, AverageApplyPos"/>
+		<class name="ReleaseAfter" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="true"/>
+		<class name="RollType" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="None" Selection="Left, None, Right"/>
+		<class name="RushPositionIndicator" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="AfterPosition" Selection="AfterPosition, UsingPos, BasePos"/>
+		<class name="ModelDirection" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="SelfToUsingPos" Selection="SelfToTarget, TargetToSelf, SelfToUsingPos"/>
+		<class name="ParticleDirection" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Default" Selection="Default, SelfToTarget, TargetToSelf, SelfToUsingPos"/>
+		<class name="SceneColor" Form="ColourPicker" Default="FF000000"/>
+		<class name="ShowFrame" Form="FreeNumber"/>
+		<class name="Sound" Form="StringSelectorCustom" Initializer="DynamicArgumentSoundInitializer" Default=""/>
+		<class name="Speed" Form="FreeNumber"/>
+		<class name="StartEvent" Form="FreeString" Default=""/>
+		<class name="Target" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="User" Selection="User, Target"/>
+		<class name="LookTarget" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="User" Selection="User, Target"/>
+		<class name="Time" Form="FreeNumber" Default="0"/>
+		<class name="ToPos" Form="StringSelectorFixed" Initializer="DynamicArgumentBoneMapListInitializer" Default="Center"/>
+		<class name="TrailKey" Form="FreeString"/>
+		<class name="Trigger" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="PC" Selection="PC, NPC"/>
+		<class name="Visible" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="true"/>
+		<class name="Volume" Form="FreeNumber" Default="1.0"/>
+		<class name="WiggleType" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Vertical" Selection="Vertical, Horizontal"/>
+		<class name="YOffset" Form="FreeNumber" Default="0"/>
+		<class name="AlternativeYOffset" Form="FreeNumber" Default="0"/>
+		<class name="ForwardOffset" Form="FreeNumber" Default="0"/>
+		<class name="ActionBase" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="AbilityDirectingActionType" ArgColumn="MakerArguments" Typer="Type" Default="{Type='Hit'}"/>
+		<class name="FrameList" Form="DirectList" Initializer="DynamicArgumentCommonDirectListInitializerForClass" ChildKey="Frame" Idspace="AbilityDirecterArgument" ArgList="Frame" Converter="StageMakerArgumentListConverterForClass"/>
+		<class name="ActionModifier" Form="ScriptInputField" Initializer="DynamicArgumentCommonScriptInputFieldInitializer" Arguments="action, index"/>
+		<class name="HealType" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="HP" Selection="HP, Cost, SP"/>
+		<class name="ParticleAttribute" Form="DirectList" Initializer="DynamicArgumentCommonDirectListInitializerForClass" ChildKey="Pair" Idspace="AbilityDirecterArgument" ArgList="Key, ParticleAttributeValue" Converter="StageMakerArgumentListConverterForClass"/>
+		<class name="Key" Form="FreeString" Default=""/>
+		<class name="Value" Form="FreeNumber" Default="0"/>
+		<class name="Value2" Form="FreeNumber" Default="0"/>
+		<class name="Value3" Form="FreeNumber" Default="0"/>
+		<class name="Value4" Form="FreeNumber" Default="0"/>
+		<class name="ParticleAttributeValue" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="ParticleAttributeValueForm" ArgColumn="MakerArguments" Typer="Type" Default="{Type = 'Float', Value = 0}"/>
+		<class name="Mesh" Form="FreeString" Default=""/>
+		<class name="Animation" Form="FreeString" Default=""/>
+		<class name="Skeleton" Form="FreeString" Default=""/>
+	</idspace>
+	<idspace id="TileGeneratorArgument">
+		<schema>
+			<rule property="Initializer" type="function" default="StageMakerArgumentBasicInitializer"/>
+			<rule property="Converter" type="function"/>
+			<rule property="Selection" type="table" subtype="string"/>
+			<rule property="Form" type="link" target="ArgumentForm"/>
+		</schema>
+		<class name="NoHide" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Yes" Selection="Yes, No, Cancel"/>
+		<class name="NoCollision" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Cancel" Selection="Yes, No, Cancel"/>
+		<class name="CastShadow" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Yes" Selection="Yes, No, Cancel"/>
+		<class name="HidePerEntity" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Cancel" Selection="Yes, No, Cancel"/>
+		<class name="HideOnly" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Cancel" Selection="Yes, No, Cancel"/>
+		<class name="PositionX" Title="[!Ignore]X 좌표" Form="FreeNumber" Default="0"/>
+		<class name="PositionY" Title="[!Ignore]Y 좌표" Form="FreeNumber" Default="0"/>
+		<class name="PositionZ" Title="[!Ignore]Z 좌표" Form="FreeNumber" Default="0"/>
+		<class name="Direction" Title="[!Ignore]방향" Form="FreeNumber" Default="0"/>
+	</idspace>
+	<idspace id="CharacterTesterArgument">
+		<schema>
+			<rule property="Initializer" type="function" default="StageMakerArgumentBasicInitializer"/>
+			<rule property="Converter" type="function"/>
+			<rule property="Selection" type="table" subtype="string"/>
+			<rule property="Form" type="link" target="ArgumentForm"/>
+			<rule property="ArgList" type="table" subtype="string"/>
+			<rule property="Transcriber" type="function"/>
+		</schema>
+		<class name="AnimationDefinitionEntry" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="AnimationDefinitionEntryType" ArgColumn="MakerArguments" Typer="Type"/>
+		<class name="Animation" Form="FreeString" Default=""/>
+		<class name="Frame" Form="FreeNumber" Default="0"/>
+		<class name="SoundName" Form="StringSelectorCustom" Initializer="DynamicArgumentSoundInitializer" Default=""/>
+		<class name="Volume" Form="FreeNumber" Default="1.0"/>
+		<class name="MinDistance" Form="FreeNumber" Default="2500.0"/>
+		<class name="MaxDistance" Form="FreeNumber" Default="5000.0"/>
+		<class name="ParticleName" Form="StringSelectorCustom" Initializer="StageMakerArgumentParticleInitializer"/>
+		<class name="ParticlePos" Form="StringSelectorFixed" Initializer="DynamicArgumentBoneMapListInitializer" Default="Center"/>
+		<class name="ParticleLength" Form="FreeNumber" Default="0"/>
+		<class name="AttachModel" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="true"/>
+		<class name="DirectClear" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="false"/>
+		<class name="Visible" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="false"/>
+		<class name="MaxCount" Form="FreeNumber" Default="1"/>
+	</idspace>
+	<idspace id="StageMakerSetting">
+		<schema>
+			<rule property="Initializer" type="function" default="StageMakerArgumentBasicInitializer"/>
+			<rule property="Converter" type="function"/>
+			<rule property="Selection" type="table" subtype="string"/>
+			<rule property="Form" type="link" target="ArgumentForm"/>
+			<rule property="ArgList" type="table" subtype="string"/>
+			<rule property="Transcriber" type="function"/>
+		</schema>
+		<class name="AutoBossEvent" Title="자동 보스 연출 활성화" Form="Checkbox" Initializer="OptionInitializerCheckbox" Default="false"/>
+	</idspace>
+	<idspace id="StageMakerNamedDirecting">
+		<schema>
+			<rule property="Initializer" type="function" default="StageMakerArgumentBasicInitializer"/>
+			<rule property="Converter" type="function"/>
+			<rule property="Selection" type="table" subtype="string"/>
+			<rule property="Form" type="link" target="ArgumentForm"/>
+			<rule property="ArgList" type="table" subtype="string"/>
+			<rule property="Transcriber" type="function"/>
+		</schema>
+		<class name="Title" Form="FreeStringFieldHalf" Default="" Initializer="DynamicArgumentSentenceInitializer" Converter="DynamicArgumentSentenceConverter"/>
+		<class name="Subtitle" Form="FreeStringFieldHalf" Default="" Initializer="DynamicArgumentSentenceInitializer" Converter="DynamicArgumentSentenceConverter"/>
+		<class name="MeetChat" Form="FreeStringFieldHalf" Default="" Initializer="DynamicArgumentSentenceInitializer" Converter="DynamicArgumentSentenceConverter"/>
+		<class name="MeetBalloon" Default="" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="Balloon"/>
+		<class name="MeetChat2" Form="FreeStringFieldHalf" Default="" Initializer="DynamicArgumentSentenceInitializer" Converter="DynamicArgumentSentenceConverter"/>
+		<class name="MeetBalloon2" Default="" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="Balloon"/>
+		<class name="DangerChat" Form="FreeStringFieldHalf" Default="" Initializer="DynamicArgumentSentenceInitializer" Converter="DynamicArgumentSentenceConverter"/>
+		<class name="DangerBalloon" Default="" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="Balloon"/>
+		<class name="DangerChat2" Form="FreeStringFieldHalf" Default="" Initializer="DynamicArgumentSentenceInitializer" Converter="DynamicArgumentSentenceConverter"/>
+		<class name="DangerBalloon2" Default="" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="Balloon"/>
+		<class name="MeetBuff" Form="FreeString" Default=""/>
+		<class name="MeetBuff2" Form="FreeString" Default=""/>
+		<class name="DangerBuff" Form="FreeString" Default=""/>
+		<class name="DangerBuff2" Form="FreeString" Default=""/>
+		<class name="MeetAnimation" Form="FreeString" Default=""/>
+		<class name="DangerAnimation" Form="FreeString" Default=""/>
+		<class name="MeetChatInterval" Form="FreeNumber" Default="2"/>
+		<class name="MeetChatInterval2" Form="FreeNumber" Default="2"/>
+		<class name="DangerChatInterval" Form="FreeNumber" Default="2"/>
+		<class name="DangerChatInterval2" Form="FreeNumber" Default="2"/>
+	</idspace>
+	<idspace id="DynamicArgumentCommonArguments">
+		<schema>
+			<rule property="Initializer" type="function" default="StageMakerArgumentBasicInitializer"/>
+			<rule property="Converter" type="function"/>
+			<rule property="Selection" type="table" subtype="string"/>
+			<rule property="Form" type="link" target="ArgumentForm"/>
+			<rule property="ArgList" type="table" subtype="string"/>
+			<rule property="Transcriber" type="function"/>
+			<rule property="NotNull" type="bool" default="false"/>
+			<rule property="KeyList" type="table" subtype="string"/>
+		</schema>
+		<class name="Text" Title="텍스트" Form="FreeStringFieldFull" Default=""/>
+	</idspace>
+	<idspace id="TranslationAcceptanceArguments">
+		<schema>
+			<rule property="Initializer" type="function" default="StageMakerArgumentBasicInitializer"/>
+			<rule property="Converter" type="function"/>
+			<rule property="Selection" type="table" subtype="string"/>
+			<rule property="Form" type="link" target="ArgumentForm"/>
+			<rule property="ArgList" type="table" subtype="string"/>
+			<rule property="Transcriber" type="function"/>
+			<rule property="NotNull" type="bool" default="false"/>
+			<rule property="KeyList" type="table" subtype="string"/>
+		</schema>
+		<class name="Contributor" Title="기여자" Form="StringSelectorFixed" Initializer="TranslationAcceptanceArgumentsContributorInitalizer" Default=""/>
+		<class name="IncludeCompeting" Title="경합중인 엔트리 포함" Form="Checkbox" Initializer="OptionInitializerCheckbox" Default="false"/>
+	</idspace>
+</idspaces>

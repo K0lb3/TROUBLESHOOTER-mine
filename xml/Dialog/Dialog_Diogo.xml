@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Dialog">
+	<class name="Diogo_Main">
+		<Scripts>
+			<property Type="Script" Script="ProgressPreDialogCheck_CommonNPC"/>
+		</Scripts>
+	</class>
+	<class name="Diogo_Selection">
+		<Scripts>
+			<property Type="Switch" C_DlgName="npc.Info.Title" C_TestTarget="company.Npc[npc.name].QP">
+				<property Case="0">
+					<property Type="Jump" JumpTo="Diogo_QP_0"/>
+				</property>
+				<property Case="1">
+					<property Type="Jump" JumpTo="Diogo_QP_1"/>
+				</property>
+				<property Case="2">
+					<property Type="Jump" JumpTo="Diogo_QP_2"/>
+				</property>
+				<property Case="3">
+					<property Type="Jump" JumpTo="Diogo_QP_3"/>
+				</property>
+				<property Case="4">
+					<property Type="Jump" JumpTo="Diogo_QP_4"/>
+				</property>
+				<property Case="5">
+					<property Type="Jump" JumpTo="Diogo_QP_5"/>
+				</property>
+				<property Case="6">
+					<property Type="Jump" JumpTo="Diogo_QP_6"/>
+				</property>
+				<property Case="7">
+					<property Type="Jump" JumpTo="Diogo_QP_7"/>
+				</property>
+				<property Case="8">
+					<property Type="Jump" JumpTo="Diogo_QP_8"/>
+				</property>
+				<property Case="9">
+					<property Type="Jump" JumpTo="Diogo_QP_9"/>
+				</property>
+				<property Case="10">
+					<property Type="Jump" JumpTo="Diogo_QP_10"/>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+	<class name="Diogo_QP_0">
+		<Scripts>
+			<property Type="Dialog" C_DlgName="npc.Info.Title">
+				<property Text="안녕하십니까. $CompanyName$" C_CompanyName="company.CompanyName"/>
+				<property Text="사수 거리의 물류 창고를 관리하고 있는 디오고입니다."/>
+				<property Text="여러분의 원활한 활동을 위하여 노력하겠습니다."/>
+			</property>
+			<property Type="Action" Command="UpdateCompanyProperty" PropertyType="Npc/Diogo/QP" C_PropertyValue="1"/>
+		</Scripts>
+	</class>
+	<class name="Diogo_QP_1">
+		<Scripts>
+			<property Type="Dialog" C_DlgName="npc.Info.Title">
+				<property Text="안녕하세요. $CompanyName$" C_CompanyName="company.CompanyName"/>
+			</property>
+			<property Type="Switch" C_DlgName="npc.Info.Title" C_TestTarget="math.random(1,2)">
+				<property Case="1">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="당장 매각하기 아쉬운 물건들은 창고에 보관해 두는 것이 나은 선택일 것 입니다."/>
+						<property Text="추가 비용을 지불하시면 더 많은 공간을 제공해 드리겠습니다."/>
+					</property>
+				</property>
+				<property Case="3">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="당장 사용할 곳이 없는 물건들은 상인에게 매각하는 것이 일반적입니다."/>
+						<property Text="다만 나중에라도 사용할 것 같은 물건들은 창고에 두시는 것이 낫다고 생각합니다."/>
+					</property>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+	<class name="Diogo_Unlock_WarehouseManager">
+		<Scripts>
+			<property Type="Jump" JumpTo="Diogo_Unlock_WarehouseManager_Shared"/>
+		</Scripts>
+	</class>
+	<class name="Diogo_Unlock_WarehouseManager2">
+		<Scripts>
+			<property Type="Jump" JumpTo="Diogo_Unlock_WarehouseManager_Shared"/>
+		</Scripts>
+	</class>
+	<class name="Diogo_Unlock_WarehouseManager_Shared">
+		<Scripts>
+			<property Type="Env" Key="firstTime" C_Value="company.Progress.Tutorial.WarehouseManagerLevel == 0"/>
+			<property Type="Env" Key="price" C_Value="10000"/>
+			<property Type="Switch" C_TestTarget="env.firstTime">
+				<property Case="true">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="개인 전용 창고를 개설하시겠습니까?"/>
+						<property Text="개인 전용 창고는 별도의 인벤토리 공간 100개를 제공합니다."/>
+					</property>
+				</property>
+				<property Case="false">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="개인 전용 창고를 확장하시겠습니까?"/>
+						<property Text="개인 전용 창고를 확장하면 해당 창고의 인벤토리 공간이 100개 추가됩니다."/>
+						<property Text="개인 당 최대 1000개의 공간까지 허용하고 있습니다."/>
+					</property>
+				</property>
+			</property>
+			<property Type="Selection" C_DlgName="npc.Info.Title" Content="비용은 $Price$ Vill 입니다." C_Price="env.price" Target="answer">
+				<property Text="진행한다." Notice="" Value="yes"/>
+				<property Text="나중에 한다." Notice="" Value="no"/>
+			</property>
+			<property Type="Switch" C_TestTarget="env.answer ~= &apos;yes&apos; or company.Vill &gt;= env.price">
+				<property Case="true">
+					<property Type="Switch" C_TestTarget="env.answer">
+						<property Case="yes">
+							<property Type="Switch" C_TestTarget="env.firstTime">
+								<property Case="true">
+									<property Type="Dialog" C_DlgName="npc.Info.Title">
+										<property Text="창고가 개설되었습니다."/>
+									</property>
+								</property>
+								<property Case="false">
+									<property Type="Dialog" C_DlgName="npc.Info.Title">
+										<property Text="창고가 확장되었습니다."/>
+									</property>
+								</property>
+							</property>
+							<property Type="Action" Command="AddCompanyProperty" Commit="false" PropertyType="Vill" C_PropertyValue="-1 * env.price"/>
+							<property Type="Action" Command="AddCompanyProperty" Commit="true" PropertyType="Progress/Tutorial/WarehouseManagerLevel" PropertyValue="1"/>
+						</property>
+						<property Case="no">
+							<property Type="Dialog" C_DlgName="npc.Info.Title">
+								<property Text="언제든지 다시 방문해 주십시오."/>
+							</property>
+						</property>
+					</property>
+				</property>
+				<property Case="false">
+					<property Type="Switch" C_TestTarget="env.firstTime">
+						<property Case="true">
+							<property Type="Dialog" C_DlgName="npc.Info.Title">
+								<property Text="보유 자금이 부족합니다."/>
+							</property>
+						</property>
+						<property Case="false">
+							<property Type="Dialog" C_DlgName="npc.Info.Title">
+								<property Text="보유 자금이 부족합니다."/>
+							</property>
+						</property>
+					</property>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+</idspace>

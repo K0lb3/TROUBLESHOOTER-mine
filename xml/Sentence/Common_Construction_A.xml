@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Common_Construction_A_frAQBc" Value="남은 범죄자 수"/>
+		<class name="Common_Construction_A_8Wsa1x" Value="아이린 도착까지 남은 시간"/>
+		<class name="Common_Construction_A_rgRYwT" Value="적을 모두 제압하시오."/>
+		<class name="Common_Construction_A_iizs2t" Value="알버스 전투 불능"/>
+		<class name="Common_Construction_A_rQF69A" Value="시온 전투 불능"/>
+		<class name="Common_Construction_A_zBlax3" Value="적을 모두 제압하시오."/>
+		<class name="Common_Construction_A_CF3EDN" Value="[!Ignore]상자는 다양한 아이템 혹은 미션 완료에 필요한 정보 등이 들어있습니다.
+상자를 열기 위해서는 근접하여 [image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Ability/InvestigateChest&apos;] [colour=&apos;FFFFFF00&apos;] 상자 열기[colour=&apos;FFFFFFFF&apos;] 어빌리티를 사용해야 합니다."/>
+		<class name="Common_Construction_A_hm3soL" Value="[!Ignore]상호작용 : 상자"/>
+		<class name="Common_Construction_A_BPh71Y" Value="[!Ignore]상자는 다양한 아이템 혹은 미션 완료에 필요한 정보 등이 들어있습니다.
+상자를 열기 위해서는 근접하여 [image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Ability/InvestigateChest&apos;] [colour=&apos;FFFFFF00&apos;] 상자 열기[colour=&apos;FFFFFFFF&apos;] 어빌리티를 사용해야 합니다."/>
+		<class name="Common_Construction_A_exuiea" Value="[!Ignore]상호작용 : 상자"/>
+		<class name="Common_Construction_A_oEiIgx" Value="[!Ignore]상자는 다양한 아이템 혹은 미션 완료에 필요한 정보 등이 들어있습니다.
+상자를 열기 위해서는 근접하여 [image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Ability/InvestigateChest&apos;] [colour=&apos;FFFFFF00&apos;] 상자 열기[colour=&apos;FFFFFFFF&apos;] 어빌리티를 사용해야 합니다."/>
+		<class name="Common_Construction_A_IX4a2d" Value="[!Ignore]상호작용 : 상자"/>
+		<class name="Common_Construction_A_REbbSq" Value="[!Ignore]상자는 다양한 아이템 혹은 미션 완료에 필요한 정보 등이 들어있습니다.
+상자를 열기 위해서는 근접하여 [image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Ability/InvestigateChest&apos;] [colour=&apos;FFFFFF00&apos;] 상자 열기[colour=&apos;FFFFFFFF&apos;] 어빌리티를 사용해야 합니다."/>
+		<class name="Common_Construction_A_Wy6yhK" Value="[!Ignore]상호작용 : 상자"/>
+		<class name="Common_Construction_A_IDCdJO" Value="[!Ignore][!BalloonChat]요즘 들어 사건이 잦아지네..."/>
+		<class name="Common_Construction_A_yapnxr" Value="[!Ignore][!BalloonChat]오늘 저녁은 뭐 먹지..."/>
+		<class name="Common_Construction_A_pMCARC" Value="[!Ignore]도대체 저 가면 쓴 녀석들하고 뭔 얘기를 하겠다고..."/>
+		<class name="Common_Construction_A_81tBDK" Value="[!Ignore]그 스푼교인가 뭔가 포교하는 거겠지."/>
+		<class name="Common_Construction_A_XC1O8Y" Value="[!Ignore]신경꺼. 어차피 우리한테는 고객님일 뿐..."/>
+		<class name="Common_Construction_A_RrJBdT" Value="[!Ignore]그래도 우리 애들 중에 몇몇이 저쪽으로 넘어가고 있다고요.."/>
+		<class name="Common_Construction_A_aMeAjS" Value="[!Ignore]아니 기껏 조직에 들어와 놓고 종교인으로 가겠다는 녀석들은 뭐야..."/>
+		<class name="Common_Construction_A_YFYZ5B" Value="[!Ignore]놔둬라. 어차피 조직을 나가면 배신자."/>
+		<class name="Common_Construction_A_8R6BEu" Value="[!Ignore]그런 녀석이 있다면 그때 처리하면 그만이야."/>
+		<class name="Common_Construction_A_I6NX8D" Value="또 도움을 받았군요. 아이린 씨."/>
+		<class name="Common_Construction_A_xSnqPT" Value="무슨 소리냐?"/>
+		<class name="Common_Construction_A_OYGxlS" Value="정의를 위해서는 당연한 것 아니냐?"/>
+		<class name="Common_Construction_A_oH8S4k" Value="트러블슈터 알버스 씨. 잠시만 이야기 드릴 게 있습니다."/>
+		<class name="Common_Construction_A_l1C00G" Value="네, 말씀하십시오."/>
+		<class name="Common_Construction_A_bAyfKU" Value="아! 기억났다! 너!"/>
+		<class name="Common_Construction_A_Rblsaq" Value="음? 나 히어로 아이린을 기억하는 건가?"/>
+		<class name="Common_Construction_A_NIsNrm" Value="햄버거 소녀!!"/>
+		<class name="Common_Construction_A_9t3tgj" Value="뭐..."/>
+		<class name="Common_Construction_A_auFkrF" Value="햄버거라니 갑자기 뭔 소리지..."/>
+		<class name="Common_Construction_A_Ov1QDI" Value="아 설마...! 횟집의???"/>
+		<class name="Common_Construction_A_95hFQr" Value="하하. 그때 진짜 도와주려고 그랬는데 갑자기 속이 안 좋아서..."/>
+		<class name="Common_Construction_A_yct4Aj" Value="화장실 다녀오니 상황이 끝나있더라고!"/>
+		<class name="Common_Construction_A_zRiKYp" Value="훗. 겁나서 도망친 걸 잘도 돌려 말하는군."/>
+		<class name="Common_Construction_A_lq8Azr" Value="겁나서 도망친 거 아니거든!"/>
+		<class name="Common_Construction_A_4RHyqy" Value="어쨌든 무사해서 다행이다."/>
+		<class name="Common_Construction_A_y61leD" Value="아이린 씨..."/>
+		<class name="Common_Construction_A_8K69rk" Value="무슨 일이냐? 트러블슈터."/>
+		<class name="Common_Construction_A_R2IZ2m" Value="&apos;어떻게 말씀드려야 하지...&apos;"/>
+		<class name="Common_Construction_A_t2nQfj" Value="빨리 말해라. 트러블슈터. 난 도망친 녀석을 추격해야 한다."/>
+		<class name="Common_Construction_A_yImciQ" Value="같이 경찰서로 가셔야 할 것 같습니다..."/>
+		<class name="Common_Construction_A_nJvUmH" Value="뭐!?"/>
+		<class name="Common_Construction_A_vHeuSE" Value="아이린 씨 앞으로 다년간의 공무 집행 방해 및 불법 주거 침입 등으로 고소가 되어 있습니다."/>
+		<class name="Common_Construction_A_Q6dQAj" Value="아이린 씨가 그럴 리 없으니 소명만 제대로 하시면 될 것 같습니다."/>
+		<class name="Common_Construction_A_SXF4YP" Value="......"/>
+		<class name="Common_Construction_A_LLny30" Value="트러블슈터가 되지 못한 난 히어로가 될 수 없는 것이냐?"/>
+		<class name="Common_Construction_A_RbOE2u" Value="트러블슈터 자네도 내가 고작 범죄자로 보이는 건가?"/>
+		<class name="Common_Construction_A_B6Uiu1" Value="그럴 리가요. 아이린 씨가 얼마나 정의를 위하는지 잘 알고 있어요."/>
+		<class name="Common_Construction_A_mWvn7M" Value="멋지군. 트러블슈터. 그럼 날 못 본 척해주게."/>
+		<class name="Common_Construction_A_TOX7NY" Value="......"/>
+		<class name="Common_Construction_A_ny1swO" Value="자. 그럼 이만."/>
+		<class name="Common_Construction_A_WRBLzZ" Value="히햐... 멋지네. 히어로라..."/>
+		<class name="Common_Construction_A_rlvBnd" Value="좋은 분이야."/>
+		<class name="Common_Construction_A_oaKk5l" Value="하지만 이런 식의 활동은 분명 한계가 있을 텐데 말야..."/>
+		<class name="Common_Construction_A_NWPgr8" Value="뭐가 문제야?"/>
+		<class name="Common_Construction_A_xEE4Fd" Value="일반인."/>
+		<class name="Common_Construction_A_Pyc98b" Value="아..."/>
+		<class name="Common_Construction_A_FtysL1" Value="알버스! 동료로 받아들이자! 나처럼 말야!"/>
+		<class name="Common_Construction_A_wD7kkq" Value="이미 소신껏 활동하는 분이라 생각을 못 했네..."/>
+		<class name="Common_Construction_A_EEfuTl" Value="아이린 씨만 원한다면 괜찮을지도..."/>
+		<class name="Common_Construction_A_YaPHWf" Value="뭘 고민해. 알버스. 빨리 큰 회사 만들거라며."/>
+		<class name="Common_Construction_A_Sj3iH7" Value="자, 내 후임을 만들어 달라고."/>
+		<class name="Common_Construction_A_H133Ty" Value="다음에 만나 뵙게 되면 제안해볼게."/>
+		<class name="Common_Construction_A_3sV0yk" Value="하지만 과연 아이린 씨가... 혼자 활동하시는 이유가 있는 것 같은데..."/>
+		<class name="Common_Construction_A_27KbNC" Value="뭐, 제안하는 것이 나쁜건 아니니까..."/>
+		<class name="Common_Construction_A_Cu6XFp" Value="자. 배고프다. 알버스. 밥사줘."/>
+		<class name="Common_Construction_A_v8ZdV6" Value="그래. 돌아가자."/>
+		<class name="Common_Construction_A_kWrpqi" Value="[!Ignore][!BalloonChat]!!!"/>
+		<class name="Common_Construction_A_wdo3Hr" Value="[!Ignore][!BalloonChat]목표 발견!"/>
+		<class name="Common_Construction_A_RpRVcw" Value="[!Ignore][!BalloonChat]도대체... 악당들은 줄어들질 않는군."/>
+		<class name="Common_Construction_A_o6HM8u" Value="[!Ignore][!BalloonChat]그런데 저길 어떻게 가지..."/>
+		<class name="Common_Construction_A_A8D9eE" Value="[!Ignore][!BalloonChat]!!!!"/>
+		<class name="Common_Construction_A_4ZADtm" Value="[!Ignore][!BalloonChat]이럴 수가!!!"/>
+		<class name="Common_Construction_A_vWvN20" Value="[!Ignore][!BalloonChat]이런 젠장. 입구가 어디야...."/>
+		<class name="Common_Construction_A_LBHSkD" Value="[!Ignore][!BalloonChat]에라 모르겠다..."/>
+		<class name="Common_Construction_A_6qr7J1" Value="[!Ignore][!BalloonChat]제길... 악당녀석들!!!"/>
+		<class name="Common_Construction_A_hAkTkU" Value="[!Ignore][!BalloonChat]도대체... 길이 어디야..."/>
+		<class name="Common_Construction_A_FvMA0O" Value="[!Ignore][!BalloonChat]이쪽?? 아냐... 여긴 내가 왔던길이잖아..."/>
+		<class name="Common_Construction_A_Sa91e9" Value="[!Ignore][!BalloonChat]으.... 도저히 모르겠다..."/>
+		<class name="Common_Construction_A_gqVNBe" Value="[!Ignore][!BalloonChat]그냥 담장을 부숴..."/>
+		<class name="Common_Construction_A_g10gAI" Value="[!Ignore][!BalloonChat]아냐 아냐... 난 히어로잖아..."/>
+		<class name="Common_Construction_A_4OMrxF" Value="[!Ignore][!BalloonChat]!!!!"/>
+		<class name="Common_Construction_A_2ltRPW" Value="[!Ignore][!BalloonChat]아! 저기 입구다!"/>
+		<class name="Common_Construction_A_acKwhz" Value="다른 동지들은?"/>
+		<class name="Common_Construction_A_xIFwOQ" Value="현재는 여기 인원이 전부입니다."/>
+		<class name="Common_Construction_A_quubpC" Value="많이 줄었군."/>
+		<class name="Common_Construction_A_VOgDko" Value="걱정하지 마십시오. 샤키 님. 지금은 단지 흩어져 있을 뿐입니다."/>
+		<class name="Common_Construction_A_apdvxl" Value="람지스트의 『예언의 땅』에서의 궐기는 성공적이었습니다."/>
+		<class name="Common_Construction_A_Cm3ORY" Value="많은 동지들이 이 지구로 향하고 있는 것은 분명한 사실이고 곧 많은 동지들과 함께할 것이 분명합니다."/>
+		<class name="Common_Construction_A_Ddw6Lc" Value="&apos;람지스트&apos;의 명성으로 인해 람지플라자의 사건은 불과 하루 만에 이례적으로 발할라 전역에 보도되었다."/>
+		<class name="Common_Construction_A_IOwWR2" Value="대부분의 사람들에겐 &apos;람지스트&apos;를 다시 한번 상기시키는 이야깃거리에 지나지 않았으나 뉴스 보도 뒷배경에서 흘러나오는 범인들의 외침에 조용히 귀를 귀울이는 자들도 있었다."/>
+		<class name="Common_Construction_A_B5yi9i" Value="[colour=&apos;FFFFFF00&apos;]&apos;우리는 모두 가슴에 숟가락 하나를 품고 있지!&apos;"/>
+		<class name="Common_Construction_A_jgnZSC" Value="많은 사람이 범인들을 정신 나간 녀석이라고 치부하는 한마디였지만 스푼교도들에겐 가슴이 벅차오르는 순간이었다."/>
+		<class name="Common_Construction_A_nppZqt" Value="그들이 믿는 『한술』의 교리에 예고된 『첫술』이었기 때문이었다."/>
+		<class name="Common_Construction_A_aAAZ7e" Value="하지만 다음『좌표』가 없다고!"/>
+		<class name="Common_Construction_A_ECM9T0" Value="이러다간 동지들이 다 뿔뿔이 흩어져 버릴 거야!"/>
+		<class name="Common_Construction_A_jHkpC9" Value="『흑수저 』샤키 님이 곧 『좌표』다! 다른 것이 뭐가 필요한가!"/>
+		<class name="Common_Construction_A_IMd3jK" Value="진정해. 우리가 그걸 부정하는 것은 아니다."/>
+		<class name="Common_Construction_A_ERoC0n" Value="여기는 모두 샤키 님의『흑수저』를 보고 모인 자들이다. 샤키 님이 있기에  우리『첫술』이 여기 있는 거다."/>
+		<class name="Common_Construction_A_9Mk6py" Value="하지만 동지들을 『배부름의 땅』으로 인도할 『좌표』들이 명확해져야 해."/>
+		<class name="Common_Construction_A_pASsMZ" Value="그게 우리『첫술』의 사명이지 않은가?"/>
+		<class name="Common_Construction_A_j8Ut6s" Value="샤키 님. 죄송하지만 빠른 시일 내 『좌표』를 이어가야 합니다."/>
+		<class name="Common_Construction_A_uihnKJ" Value="그대들의 걱정과 『첫술』로서의 사명감을 잘 들었네."/>
+		<class name="Common_Construction_A_Wolzch" Value="내일이라도 당장 이 곳을 뒤집어 놓아 『좌표』를 연결합시다!"/>
+		<class name="Common_Construction_A_TmfAUK" Value="[!BalloonChat]정신 차리게! 동지들!"/>
+		<class name="Common_Construction_A_9Ppfr6" Value="[!BalloonChat]그렇게  첫술에 배부름을 탐하지 말라 했거늘!!!"/>
+		<class name="Common_Construction_A_PKPlKt" Value="[!BalloonChat]......"/>
+		<class name="Common_Construction_A_GBlyLU" Value="[!BalloonChat]......"/>
+		<class name="Common_Construction_A_lctAOG" Value="[!BalloonChat]저희는 샤키 님만을 따라갈 것입니다."/>
+		<class name="Common_Construction_A_XldP7M" Value="[!BalloonChat]보잘것없는 제가 동지들을 위한 첫술이 되겠습니다."/>
+		<class name="Common_Construction_A_VJKo22" Value="[!BalloonChat]당연히 샤키 님이 결정하신다면 따르겠습니다."/>
+		<class name="Common_Construction_A_zHcL8A" Value="[!BalloonChat]가르침을 내려주십시오. 샤키 님."/>
+		<class name="Common_Construction_A_II08n8" Value="우리 『첫술』의 역할은 아니지만 분명『좌표』는 이어질걸세."/>
+		<class name="Common_Construction_A_nlNLYG" Value="그 날을 위해 우리가 해야 할 일은..."/>
+		<class name="Common_Construction_A_tifPRH" Value="[!Subtitle]분명 그 가면 쓴 녀석들인가요?"/>
+		<class name="Common_Construction_A_moGrgK" Value="[!Subtitle]네 익명의 제보에 따르면 가면 쓴 녀석들이 불량배들 속에 있었다고 합니다."/>
+		<class name="Common_Construction_A_q6MbYs" Value="[!Subtitle]알겠습니다. 일단 최대한 조심해서 임무 수행을 부탁드립니다."/>
+		<class name="Common_Construction_A_SXvy60" Value="[!Subtitle]그 폭발 현상이 걸리시는 거군요."/>
+		<class name="Common_Construction_A_MjweSb" Value="[!BalloonChat]이 트러블슈터가 경찰들 걱정한다는 별종인가..."/>
+		<class name="Common_Construction_A_K31tz1" Value="[!Subtitle]네. 현장에서 계속 경험해 보지만 자칫 잘못하면 순식간에 불상사가 생기니 조심해 주시길 바랍니다."/>
+		<class name="Common_Construction_A_4EbA1K" Value="[!BalloonChat]트러블슈터한테 조심하란 소리를 들을 줄이야..."/>
+		<class name="Common_Construction_A_G3aMSF" Value="[!Subtitle]시온. 너도 가면 쓴 자들을 만나면 조심해. 특히 붉은 빛이 있는 녀석들은 말이야..."/>
+		<class name="Common_Construction_A_gDmnfM" Value="[!Subtitle]문제없어. 맡겨주라고~☆"/>
+		<class name="Common_Construction_A_wafStM" Value="[!Ignore][!BalloonChat]이런 날에 미친 광신자들 호위라니 재수가 없으려니."/>
+		<class name="Common_Construction_A_qabztw" Value="[!Ignore][!BalloonChat]동지들이여! 살아남으시오!"/>
+		<class name="Common_Construction_A_5K1eD2" Value="[!Subtitle]분명 여기 람지플라자의 범인들이 있었어..."/>
+		<class name="Common_Construction_A_8Kin4m" Value="[!Subtitle]일단 경찰에 신고는 했지만 역시..."/>
+		<class name="Common_Construction_A_MxkcNZ" Value="[!Subtitle]히어로가 출동해야 해. 빨리 가자..."/>
+		<class name="Common_Construction_A_nWrc6h" Value="[!BalloonChat]그런데 저길 어떻게 가지??"/>
+		<class name="Common_Construction_A_IXQdcz" Value="[!BalloonChat]나무를 밟고 가야 하나..."/>
+		<class name="Common_Construction_A_X4fr0R" Value="[!BalloonChat]미안하다. 나무야!"/>
+		<class name="Common_Construction_A_MtivVl" Value="이쪽으로 내려가는 길이 없잖아..."/>
+		<class name="Common_Construction_A_WSxzzt" Value="안 되겠다... 저쪽으로 돌아가 보자..."/>
+		<class name="Common_Construction_A_dkVpeK" Value="[!Ignore]여기도 길이 없나..."/>
+		<class name="Common_Construction_A_1fJXE0" Value="[!Ignore]저 아래 길로 들어가면 될 것 같은데... "/>
+		<class name="Common_Construction_A_9QL2rK" Value="[!Ignore]뭐. 어떻게든 되겠지. 일단 내려가자."/>
+		<class name="Common_Construction_A_AVn3QL" Value="[!Ignore][!Subtitle]저 저.. 공사장. 밤늦게도 왜 이리 소란스러워서 살 수가 있나. 민원 넣어야겠어."/>
+		<class name="Common_Construction_A_NKb4LT" Value="[!Ignore][!Subtitle]아아아~~ 니!!!! 젊은 녀석아 거긴 길이 아냐!!"/>
+		<class name="Common_Construction_A_080gXW" Value="[!Ignore]훗. 악당 녀석들! 내가 온 줄은 꿈에도 모르겠지."/>
+		<class name="Common_Construction_A_qCQNwW" Value="[!Ignore]적이 당황하도록 바로 달려서 들어갈까..."/>
+		<class name="Common_Construction_A_ePtx5v" Value="[!Ignore]아니면 퇴로를 막기 위해 뒤로 천천히 들어갈까..."/>
+		<class name="Common_Construction_A_kp7iE8" Value="[!Ignore]흠... 돌진할 것인가... 아니면 도주로를 막을 것인가... 고민되네."/>
+		<class name="Common_Construction_A_sXVJpK" Value="[!Ignore]적을 당황하게 하기 위해 바로 돌진한다."/>
+		<class name="Common_Construction_A_N04X29" Value="[!Ignore]적의 도주로를 막기 위해 뒤로 접근한다."/>
+		<class name="Common_Construction_A_KFZdSK" Value="[!Ignore][!Subtitle]자. 이제 히어로 출동 시간이다."/>
+		<class name="Common_Construction_A_Qc5eTR" Value="[!Ignore][!BalloonChat]악당 녀석들! 나는 히어로 아이린이다!"/>
+		<class name="Common_Construction_A_ltKud5" Value="[!Ignore][!Subtitle]지금부터 너희들을 심판하겠다!"/>
+		<class name="Common_Construction_A_AgMVsv" Value="[!Ignore][!Subtitle]자. 이제 히어로 출동 시간이다."/>
+		<class name="Common_Construction_A_mUM03Y" Value="[!Ignore][!Subtitle]자. 한 명씩 제압해나가자."/>
+		<class name="Common_Construction_A_FpEFlj" Value="[!Ignore]알버스 전투 불능"/>
+		<class name="Common_Construction_A_gwsA1A" Value="[!Ignore]시온 전투 불능"/>
+		<class name="Common_Construction_A_nevjPJ" Value="[!Ignore]아이린 전투 불능"/>
+		<class name="Common_Construction_A_C0d543" Value="[!Ignore]적을 모두 제압하시오."/>
+		<class name="Common_Construction_A_tUYLjC" Value="[!Ignore]알버스로 아이린에게 다가가면 대화를 진행할 수 있습니다."/>
+		<class name="Common_Construction_A_0XVLuq" Value="[!Ignore]누군가 했더니 역시 그때 그 트러블슈터!!"/>
+		<class name="Common_Construction_A_xWkhVY" Value="[!Ignore]아이린 씨였군요."/>
+		<class name="Common_Construction_A_uCov1e" Value="[!Ignore]반가운 인사는 나중에 하지. 지금은 악당처리부터다!"/>
+		<class name="Common_Construction_A_RXXNsy" Value="[!Ignore]알겠습니다!"/>
+		<class name="Common_Construction_A_TZCBld" Value="[!Ignore][!BalloonChat]저 빨간 머리!!!"/>
+		<class name="Common_Construction_A_2k4XdH" Value="[!Ignore][!BalloonChat]우리를 계속 추적하던 녀석이다!!"/>
+		<class name="Common_Construction_A_SaITvg" Value="[!Ignore]악당 녀석들. 오늘은 도망치지 못한다!"/>
+		<class name="Common_Construction_A_pxcfBn" Value="[!Ignore][!BalloonChat]저.. 저 녀석입니다! 샤키 님!"/>
+		<class name="Common_Construction_A_ythRDU" Value="[!Ignore][!BalloonChat]람지플라자에서 동지들을 방해했던 녀석입니다!"/>
+		<class name="Common_Construction_A_kFeXVw" Value="[!Ignore][!BalloonChat]우리의 장소가 너무 쉽게 노출되는 것 같군..."/>
+		<class name="Common_Construction_A_2jb1ND" Value="[!Ignore][!BalloonChat]우연인가... 아니면 누군가의 의도인가..."/>
+		<class name="Common_Construction_A_0n39X6" Value="[!Ignore]다들 스푼교도들입니다. 조심하세요."/>
+		<class name="Common_Construction_A_Mf1it1" Value="[!Ignore][!BalloonChat]흐악!! 으아아아!!"/>
+		<class name="Common_Construction_A_m9WgMa" Value="[!Ignore][!BalloonChat]괴물!! 괴물이 왔다!!"/>
+		<class name="Common_Construction_A_TWd43O" Value="[!Ignore][!BalloonChat]진정해라!! 왜 그러느냐!!"/>
+		<class name="Common_Construction_A_C7WO95" Value="[!Ignore]저 가면들 저번의 그 녀석들이네..."/>
+		<class name="Common_Construction_A_B98kTD" Value="[!Ignore]시온을 발견한 스푼교도가 겁에 질려 공포 상태가 되었습니다."/>
+		<class name="Common_Construction_A_HqyzKX" Value="[!Ignore][!BalloonChat]가면 쓴 녀석들이라면 그때 그 녀석들인가..."/>
+		<class name="Common_Construction_A_oJMFch" Value="[!Ignore][!Subtitle]자네들은 참 강하군... 마치 이 발할라 같아..."/>
+		<class name="Common_Construction_A_I67ekr" Value="[!Ignore][!Subtitle]하지만 우린 버텨낼걸세."/>
+		<class name="Common_Construction_A_BUDZXX" Value="[!Ignore][!BalloonChat]동지들이여!! 살아남으시오!!"/>
+		<class name="Common_Construction_A_FyxfRW" Value="[!Ignore][!Subtitle]이런... 대장이 도망간다."/>
+		<class name="Common_Construction_A_akyvPm" Value="[!Ignore][!Subtitle]아니! 또 어딜 도망가는 거냐!"/>
+		<class name="Common_Construction_A_yp0qZb" Value="[!Ignore][!Subtitle]일단 현장 정리가 먼저입니다. 집중하세요."/>
+		<class name="Common_Construction_A_zWWpCm" Value="[!Ignore]샤키가 현장을 이탈하였습니다."/>
+		<class name="Common_Construction_A_fLf8hg" Value="[!Ignore]팀 전체 격앙 상태가 됩니다."/>
+		<class name="Common_Construction_A_McVOxm" Value="[!Ignore][!BalloonChat]샤키 님을 쫓지 못하게 해라!"/>
+		<class name="Common_Construction_A_Ua8m6x" Value="[!Ignore]누군가 했더니 역시 그때 그 트러블슈터!!"/>
+		<class name="Common_Construction_A_NaQPFK" Value="[!Ignore]람지플라자 현장에 계셨던 분?"/>
+		<class name="Common_Construction_A_hH2Wlc" Value="[!Ignore]난 히어로 아이린이라고 하지. 일단 지금은 악당처리부터다!"/>
+		<class name="Common_Construction_A_eQXggM" Value="[!Ignore]알겠습니다!"/>
+	</idspace>
+</idspaces>

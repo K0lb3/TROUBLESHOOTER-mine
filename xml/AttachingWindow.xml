@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="AttachType">
+		<schema>
+			<rule property="BoneName" type="string" default="_CENTER_"/>
+			<rule property="SceneOffset" type="table" default="x=0, y=0, z=0"/>
+			<rule property="UIOffset" type="table" default="Scale={x=0, y=0}, Offset={x=0, y=0}"/>
+			<rule property="ZFilter" type="bool" default="true"/>
+			<rule property="RotateToOriginalPos" type="bool" default="false"/>
+			<rule property="Alignment" type="table" default="Horizontal=Centre, Vertical=Centre"/>
+			<rule property="CustomScenePos" type="bool" default="false"/>
+			<rule property="CustomScenePosGetter" type="function" default="None"/>
+			<rule property="FocusToAssetKey" type="bool" default="false"/>
+		</schema>
+		<class name="Balloon" BoneName="_TOP_">
+			<SceneOffset x="0" y="40" z="0"/>
+			<UIOffset AspectMode="Shrink">
+				<Scale x="0" y="-0.03"/>
+				<Offset x="20" y="0"/>
+			</UIOffset>
+			<Alignment Horizontal="Left" Vertical="Bottom"/>
+		</class>
+		<class name="BalloonHead" BoneName="Head">
+			<SceneOffset x="0" y="40" z="0"/>
+			<UIOffset AspectMode="Shrink">
+				<Scale x="0" y="-0.03"/>
+				<Offset x="20" y="0"/>
+			</UIOffset>
+			<Alignment Horizontal="Left" Vertical="Bottom"/>
+		</class>
+		<class name="BalloonJumping" BoneName="Head">
+			<SceneOffset x="0" y="65" z="0"/>
+			<UIOffset AspectMode="Shrink">
+				<Scale x="0" y="-0.03"/>
+				<Offset x="20" y="0"/>
+			</UIOffset>
+			<Alignment Horizontal="Left" Vertical="Bottom"/>
+		</class>
+		<class name="BattleMessage" BoneName="_TOP_">
+			<SceneOffset x="0" y="30" z="0"/>
+			<UIOffset AspectMode="Shrink">
+				<Scale x="0" y="0"/>
+				<Offset x="10" y="0"/>
+			</UIOffset>
+			<Alignment Horizontal="Left" Vertical="Top"/>
+		</class>
+		<class name="Bottom" BoneName="_BOTTOM_"/>
+		<class name="Center" BoneName="_CENTER_"/>
+		<class name="Face" BoneName="Head"/>
+		<class name="InteractionAreaTarget" BoneName="Head" FocusToAssetKey="true"/>
+		<class name="NamePlate" BoneName="_TOP_">
+			<SceneOffset x="0" y="50" z="0"/>
+			<UIOffset AspectMode="Shrink">
+				<Scale x="0" y="0"/>
+				<Offset x="0" y="0"/>
+			</UIOffset>
+		</class>
+		<class name="NamePlateJumping" BoneName="Head">
+			<SceneOffset x="0" y="75" z="0"/>
+		</class>
+		<class name="ObjectMarker" BoneName="_TOP_" RotateToOriginalPos="true" ZFilter="false">
+			<SceneOffset x="0" y="0" z="0"/>
+			<UIOffset AspectMode="Shrink">
+				<Scale x="0" y="-0.05"/>
+				<Offset x="0" y="0"/>
+			</UIOffset>
+		</class>
+		<class name="ObjectMarkerAsset" BoneName="_TOP_" RotateToOriginalPos="true" ZFilter="false" FocusToAssetKey="true">
+			<SceneOffset x="0" y="0" z="0"/>
+			<UIOffset AspectMode="Shrink">
+				<Scale x="0" y="-0.05"/>
+				<Offset x="0" y="0"/>
+			</UIOffset>
+		</class>
+		<class name="Snipe_Body" BoneName="Body"/>
+		<class name="Snipe_Chest" BoneName="Chest"/>
+		<class name="Snipe_Hand" BoneName="Hand"/>
+		<class name="Snipe_Head" BoneName="Head"/>
+		<class name="Snipe_Leg" BoneName="BottomRight"/>
+		<class name="Snipe_Leg2" BoneName="RightFoot"/>
+		<class name="Snipe_Top" BoneName="Top"/>
+		<class name="Snipe_Weapon" BoneName="WeaponProp1"/>
+		<class name="Snipe_Weapon2" BoneName="BottomRight"/>
+		<class name="Snipe_Wing" BoneName="LeftForearm"/>
+		<class name="Status" BoneName="_TOP_">
+			<SceneOffset x="0" y="0" z="0"/>
+			<UIOffset AspectMode="Shrink">
+				<Scale x="0" y="0"/>
+				<Offset x="40" y="-90"/>
+			</UIOffset>
+			<Alignment Horizontal="Left" Vertical="Top"/>
+		</class>
+		<class name="StatusFace" BoneName="Head">
+			<SceneOffset x="0" y="0" z="0"/>
+			<UIOffset AspectMode="Shrink">
+				<Scale x="0" y="0"/>
+				<Offset x="70" y="-70"/>
+			</UIOffset>
+			<Alignment Horizontal="Left" Vertical="Bottom"/>
+		</class>
+		<class name="Top" BoneName="_TOP_">
+			<SceneOffset x="0" y="0" z="0"/>
+		</class>
+		<class name="TopSign" BoneName="_TOP_">
+			<SceneOffset x="0" y="0" z="0"/>
+		</class>
+	</idspace>
+	<idspace id="AttachingWindow">
+		<schema>
+			<rule property="IsSharedLayout" type="bool" default="false"/>
+			<rule property="ShowEvent" type="string" default="None"/>
+			<rule property="HideEvent" type="string" default="None"/>
+		</schema>
+		<class name="UserNamePlate" Key="UserNamePlate" Layout="NamePlate" AttachType="NamePlate"/>
+		<class name="NPCNamePlate" Key="NPCNamePlate" Layout="NamePlate" AttachType="NamePlate"/>
+		<class name="ObjectMarker" Key="ObjectMarker" Layout="ObjectiveMarker" AttachType="ObjectMarker" ShowEvent="StartShow"/>
+		<class name="Status" Key="Status" Layout="UnitInfo" AttachType="Status"/>
+		<class name="StatusEnemy" Key="Status" Layout="UnitInfo2" AttachType="Status"/>
+		<class name="StatusAlly" Key="Status" Layout="UnitInfo3" AttachType="Status"/>
+		<class name="StatusNeutral" Key="Status" Layout="UnitInfo4" AttachType="Status"/>
+		<class name="StatusCitizen" Key="Status" Layout="UnitInfoCitizen" AttachType="Status"/>
+		<class name="StatusThirdForce" Key="Status" Layout="UnitInfo5" AttachType="Status"/>
+		<class name="Test" Key="Test" Layout="Sign" AttachType="TopSign"/>
+		<class name="Balloon" Key="Balloon" Layout="Balloon" AttachType="Balloon"/>
+		<class name="Sign" Key="Sign" Layout="Sign" AttachType="TopSign"/>
+		<class name="BattleMessage" Key="BattleMessage" Layout="BattleMessage" AttachType="BattleMessage"/>
+		<class name="Interaction" Key="Interaction" Layout="Interaction" AttachType="Center"/>
+		<class name="TargetMark" Key="TargetMark" Layout="TargetMark" AttachType="Face"/>
+		<class name="StageMapComponent" Key="StageMapComponent" Layout="NamePlate" AttachType="Top"/>
+	</idspace>
+</idspaces>

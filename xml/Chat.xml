@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="ChatCategory">
+		<class name="Talk" Title="대화" Order="1"/>
+		<class name="System" Title="시스템" Order="2"/>
+		<class name="Battle" Title="전투" Order="3"/>
+	</idspace>
+	<idspace id="ChatSubCategory">
+		<schema>
+			<rule property="Category" type="link" target="ChatCategory"/>
+			<rule property="Color" type="link" target="Color" default="White"/>
+			<rule property="Message" type="string" default="\[$Title$\] $Message$"/>
+			<rule property="FormatTableMaker" type="function" default="FunctionProperty_ChatFormat_Default"/>
+			<rule property="UserEnabled" type="bool" default="false"/>
+			<rule property="NoHistory" type="bool" default="true"/>
+		</schema>
+		<class name="TalkGeneral" Title="일반 대화" Category="Talk" Order="1" Color="White" UserEnabled="true" Message="$From$: $Message$" FormatTableMaker="FunctionProperty_ChatFormat_TalkGeneral" NoHistory="false"/>
+		<class name="TalkParty" Title="파티 대화" Category="Talk" Order="2" Color="LightSkyBlue" UserEnabled="true" Message="\[$Title$\] $From$: $Message$" FormatTableMaker="FunctionProperty_ChatFormat_TalkGeneralParty" NoHistory="false"/>
+		<class name="TalkZone" Title="지역 대화" Category="Talk" Order="3" Color="BananaMania" UserEnabled="true" Message="\[$Title$\] $From$: $Message$" FormatTableMaker="FunctionProperty_ChatFormat_TalkGeneralZone" NoHistory="false"/>
+		<class name="TalkNPC" Title="NPC 대사" Category="Talk" Order="5" Color="Silver" Message="$Name$ : $Message$" FormatTableMaker="FunctionProperty_ChatFormat_TalkNPC"/>
+		<class name="Subtitle" Title="자막" Category="Talk" Order="6" Color="Silver" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_Subtitle"/>
+		<class name="TalkPrivateSend" Title="귓속말 전달" Category="Whisper" Order="1" Color="Mauve" UserEnabled="true" Message="$Me$: $Message$" FormatTableMaker="FunctionProperty_ChatFormat_TalkPrivateSend" NoHistory="false"/>
+		<class name="TalkPrivateReceive" Title="귓속말 받음" Category="Whisper" Order="1" Color="Mauve" UserEnabled="true" Message="$Target$: $Message$" FormatTableMaker="FunctionProperty_ChatFormat_TalkPrivateReceive" NoHistory="false"/>
+		<class name="TalkPrivateError" Title="오류" Category="Whisper" Order="2" Color="Tomato" FormatTableMaker="FunctionProperty_ChatFormat_SystemGuideMessage"/>
+		<class name="General" Title="일반" Category="System" Order="1" Color="Corn" FormatTableMaker="FunctionProperty_ChatFormat_SystemGuideMessage"/>
+		<class name="Error" Title="오류" Category="System" Order="2" Color="Tomato" FormatTableMaker="FunctionProperty_ChatFormat_SystemGuideMessage"/>
+		<class name="Notice" Title="알림" Category="System" Order="3" Color="Amber" FormatTableMaker="FunctionProperty_ChatFormat_System"/>
+		<class name="AddExp" Title="경험치 획득" Category="System" Order="4" Color="Yellow" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_AddExpMessage"/>
+		<class name="Roster" Title="캐릭터 상태" Category="System" Order="5" Color="Turquoise" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_RosterRestore"/>
+		<class name="LevelUp" Title="레벨업" Category="System" Order="6" Color="Yellow" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_LevelUpMessage"/>
+		<class name="GiveVill" Title="돈 획득" Category="System" Order="7" Color="ScreaminGreen" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_VillMessage"/>
+		<class name="TakeVill" Title="돈 소모" Category="System" Order="8" Color="Corn" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_VillMessage"/>
+		<class name="GiveResearchPoint" Title="연구 점수 획득" Category="System" Order="9" Color="ScreaminGreen" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_ResearchPointMessage"/>
+		<class name="TakeResearchPoint" Title="연구 점수 소모" Category="System" Order="10" Color="Corn" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_ResearchPointMessage"/>
+		<class name="GiveItem" Title="아이템 획득" Category="System" Order="11" Color="ScreaminGreen" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_ItemMessage"/>
+		<class name="TakeItem" Title="아이템 소모" Category="System" Order="12" Color="Corn" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_ItemMessage"/>
+		<class name="GiveRecipe" Title="제작법 획득" Category="System" Order="13" Color="ScreaminGreen" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_RecipeMessage"/>
+		<class name="ChangeCompanyMastery" Title="회사 특성 변경" Category="System" Order="14" Color="ScreaminGreen" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_ChangeCompanyMasteryMessage"/>
+		<class name="ChangeCharacterMastery" Title="개인 특성 변경" Category="System" Order="15" Color="ScreaminGreen" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_ChangeCharacterMasteryMessage"/>
+		<class name="UnlockTechnique" Title="특성 연구" Category="System" Order="16" Color="ScreaminGreen" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_UnlockTechniqueMessage"/>
+		<class name="UnlockRecipe" Title="제작 방법 획득" Category="System" Order="17" Color="ScreaminGreen" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_UnlockRecipeMessage"/>
+		<class name="GiveMastery" Title="특성 획득" Category="System" Order="18" Color="ScreaminGreen" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_MasteryMessage"/>
+		<class name="TakeMastery" Title="특성 소멸" Category="System" Order="19" Color="Corn" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_MasteryMessage"/>
+		<class name="GetQuest" Title="퀘스트 습득" Category="System" Order="20" Color="ScreaminGreen" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_QuestMessage"/>
+		<class name="CompleteQuest" Title="퀘스트 완료" Category="System" Order="21" Color="ScreaminGreen" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_QuestMessage"/>
+		<class name="CancelQuest" Title="퀘스트 취소" Category="System" Order="22" Color="Corn" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_QuestMessage"/>
+		<class name="AllowDivision" Title="관할 구역 확장" Category="System" Order="23" Color="ScreaminGreen" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_DivisionMessage"/>
+		<class name="TroublesumUpdated" Title="트러블섬 갱신 알림" Category="System" Order="24" Color="ScreaminGreen" Message="트러블섬 의뢰가 갱신되었습니다."/>
+		<class name="Etc" Title="기타 일반 메시지" Category="System" Order="25" Color="ScreaminGreen" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_Etc"/>
+		<class name="PlayerDead" Title="아군의 전투 불능" Category="Battle" Order="1" Color="HotPink" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_BattleDeadMessage"/>
+		<class name="PlayerAttack" Title="아군의 공격" Category="Battle" Order="2" Color="White" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_AbilityMessage"/>
+		<class name="PlayerAttackCritical" Title="아군의 치명타 공격" Category="Battle" Order="3" Color="OrangePeel" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_AbilityMessage"/>
+		<class name="PlayerHeal" Title="아군의 회복" Category="Battle" Order="4" Color="ScreaminGreen" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_AbilityMessage"/>
+		<class name="PlayerBlock" Title="아군의 공격 방어" Category="Battle" Order="5" Color="Turquoise" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_AbilityMessage"/>
+		<class name="PlayerDodge" Title="아군의 공격 회피" Category="Battle" Order="6" Color="WhiteBlue" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_AbilityMessage"/>
+		<class name="PlayerBuff" Title="아군의 상태 효과" Category="Battle" Order="7" Color="ScreaminGreen" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_BuffMessage"/>
+		<class name="PlayerDebuff" Title="아군의 상태 이상" Category="Battle" Order="8" Color="Tomato" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_BuffMessage"/>
+		<class name="PlayerBuffImmuned" Title="아군의 상태 효과 무효화" Category="Battle" Order="7" Color="Tomato" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_BuffMessage"/>
+		<class name="PlayerDebuffImmuned" Title="아군의 상태 이상 면역" Category="Battle" Order="8" Color="ScreaminGreen" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_BuffMessage"/>
+		<class name="PlayerMasteryEvent" Title="아군의 특성 발동" Category="Battle" Order="9" Color="ScreaminGreen" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_BattleMasteryMessage"/>
+		<class name="EnemyDead" Title="적군의 전투 불능" Category="Battle" Order="10" Color="Yellow" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_BattleDeadMessage"/>
+		<class name="EnemyAttack" Title="적군의 공격" Category="Battle" Order="11" Color="White" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_AbilityMessage"/>
+		<class name="EnemyAttackCritical" Title="적군의 치명타 공격" Category="Battle" Order="12" Color="OrangePeel" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_AbilityMessage"/>
+		<class name="EnemyHeal" Title="적군의 회복" Category="Battle" Order="13" Color="ScreaminGreen" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_AbilityMessage"/>
+		<class name="EnemyBlock" Title="적군의 공격 방어" Category="Battle" Order="14" Color="Turquoise" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_AbilityMessage"/>
+		<class name="EnemyDodge" Title="적군의 공격 회피" Category="Battle" Order="15" Color="WhiteBlue" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_AbilityMessage"/>
+		<class name="EnemyBuff" Title="적군의 상태 효과" Category="Battle" Order="16" Color="Corn" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_BuffMessage"/>
+		<class name="EnemyDebuff" Title="적군의 상태 이상" Category="Battle" Order="17" Color="Corn" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_BuffMessage"/>
+		<class name="EnemyBuffImmuned" Title="적군의 상태 효과 무효화" Category="Battle" Order="16" Color="Corn" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_BuffMessage"/>
+		<class name="EnemyDebuffImmuned" Title="적군의 상태 이상 면역" Category="Battle" Order="17" Color="Corn" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_BuffMessage"/>
+		<class name="EnemyMasteryEvent" Title="적군의 특성 발동" Category="Battle" Order="18" Color="Corn" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_BattleMasteryMessage"/>
+		<class name="OtherDead" Title="중립의 전투 불능" Category="Battle" Order="19" Color="Grey2" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_BattleDeadMessage"/>
+		<class name="OtherAttack" Title="중립의 공격" Category="Battle" Order="20" Color="Grey" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_AbilityMessage"/>
+		<class name="OtherAttackCritical" Title="중립의 치명타 공격" Category="Battle" Order="21" Color="Grey" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_AbilityMessage"/>
+		<class name="OtherHeal" Title="중립의 회복" Category="Battle" Order="22" Color="Grey" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_AbilityMessage"/>
+		<class name="OtherBlock" Title="중립의 공격 방어" Category="Battle" Order="23" Color="Grey" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_AbilityMessage"/>
+		<class name="OtherDodge" Title="중립의 공격 회피" Category="Battle" Order="24" Color="Grey" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_AbilityMessage"/>
+		<class name="OtherBuff" Title="중립의 상태 효과" Category="Battle" Order="25" Color="Grey" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_BuffMessage"/>
+		<class name="OtherDebuff" Title="중립의 상태 이상" Category="Battle" Order="26" Color="Grey" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_BuffMessage"/>
+		<class name="OtherBuffImmuned" Title="중립의 상태 효과 무효화" Category="Battle" Order="25" Color="Grey" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_BuffMessage"/>
+		<class name="OtherDebuffImmuned" Title="중립의 상태 이상 면역" Category="Battle" Order="26" Color="Grey" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_BuffMessage"/>
+		<class name="OtherMasteryEvent" Title="중립의 특성 발동" Category="Battle" Order="27" Color="Grey" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_BattleMasteryMessage"/>
+		<class name="Interaction" Title="상호 작용" Category="Battle" Order="28" Color="White" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_InteractionMessage"/>
+		<class name="BattleNotice" Title="전투 알림" Category="Battle" Order="29" Color="Corn" Message="$Message$" FormatTableMaker="FunctionProperty_ChatFormat_Subtitle"/>
+	</idspace>
+	<idspace id="ChatDefaultTab">
+		<schema>
+			<rule property="DefaultCategory" type="table" subtype="string" default=""/>
+			<rule property="DefaultSubCategory" type="table" subtype="string" default=""/>
+		</schema>
+		<class name="General" Title="일반" Order="1" DefaultCategory="System" DefaultSubCategory="TalkGeneral, TalkParty, TalkZone"/>
+		<class name="Battle" Title="전투" Order="2" DefaultCategory="Battle"/>
+		<class name="Subtitle" Title="대사" Order="3" DefaultSubCategory="TalkNPC, Subtitle"/>
+	</idspace>
+</idspaces>

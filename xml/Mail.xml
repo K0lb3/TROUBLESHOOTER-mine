@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="MailCategory">
+		<schema>
+			<rule property="MaxLimit" type="number" default="0"/>
+			<rule property="Visible" type="bool" default="true"/>
+		</schema>
+		<class name="General" Title="일반" Order="1" Image="Icons/Mail_GeneralTab" PushedImage="Icons/Mail_GeneralTab_Pushed"/>
+		<class name="System" Title="시스템" Order="2" Image="Icons/Mail_SystemTab" PushedImage="Icons/Mail_SystemTab_Pushed"/>
+		<class name="User" Title="유저" Order="3" Image="Icons/Mail_UserTab" PushedImage="Icons/Mail_UserTab_Pushed" MaxLimit="50"/>
+	</idspace>
+</idspaces>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="lc_mission_2_1_NWzVip" Value="[!Dashboard:Counter]습격한 갱단 처치"/>
+		<class name="lc_mission_2_1_ntaBaw" Value="[!Objective]적 전멸"/>
+		<class name="lc_mission_2_1_fSWL3T" Value="[!Dialog][!speaker:VHPDMale_Normal]협조 감사합니다.
+요즘 들어 갱단의 창고 습격이 많아져서 도움 요청드렸습니다."/>
+		<class name="lc_mission_2_1_tuQP2t" Value="[!Dialog][!speaker:VHPDMale_Normal]갱단 문제가 심해진 만큼 다른 범죄 조직들도 발할라 전체적으로 기승을 부리고 있어서 일손이 부족했는데
+트러블 슈터 분들이 의뢰를 맡아주셔서 다행입니다."/>
+		<class name="lc_mission_2_1_0APmhI" Value="[!Dialog][!speaker:VHPDMale_Normal]그나마 앨리쪽은 조용히 있어서 다행이긴한데..
+갱단 사태가 커지면 잠잠하던 앨리들도 들고 일어나겠지요."/>
+		<class name="lc_mission_2_1_0synip" Value="[!Dialog][!speaker:VHPDMale_Surprise]치안 확보에 하나 도움이 안 되는 앨리들을 왜 가만히 놔두는지..."/>
+		<class name="lc_mission_2_1_UKG3No" Value="[!Dialog][!speaker:VHPDMale_Normal]시민 안전을 위해 최전방에 서 있는 저희로서는 위협이 되는 모든 것을 경계하는 게 저희의 의무니까요."/>
+		<class name="lc_mission_2_1_PJ53xA" Value="[!Dialog][!speaker:VHPDMale2_Normal]팀장님 이제 순찰 교대할 시간입니다."/>
+		<class name="lc_mission_2_1_dfUxcP" Value="[!Dialog][!speaker:VHPDMale_Surprise]벌써 그렇게 됐나..
+어서 나가 보자고."/>
+		<class name="lc_mission_2_1_u6Q5IJ" Value="[!Dialog][!speaker:VHPDMale_Normal]저희는 외곽 순찰을 돌고 있을 테니.
+여러분은 이곳을 맡아주십시오."/>
+		<class name="lc_mission_2_1_B1U2zn" Value="[!Dialog][!speaker:Albus_Normal]이번엔 별일 없었으면 좋겠는데."/>
+		<class name="lc_mission_2_1_9kaY4m" Value="[!Dialog][!speaker:Albus_Normal]뭔가 일이 터졌나 본데?"/>
+		<class name="lc_mission_2_1_OsN03T" Value="[!Dialog][!speaker:Sion_Smile]휘유~
+정말 갱단 놈들이려나?"/>
+		<class name="lc_mission_2_1_3z4D5H" Value="[!Dialog][!speaker:Sion_Normal]휴~ 끝났다!
+주머니를 뒤져보면 어디 애들인지 알 수 있으려나?"/>
+		<class name="lc_mission_2_1_TaYd7t" Value="[!Dialog][!speaker:Sion_Normal]어? 이 녀석들 이상한 약도를 갖고있는데?"/>
+		<class name="lc_mission_2_1_FsR0Fv" Value="[!Dialog][!speaker:Sion_Smile]뭔가 재미있는 일이 있을것 같다.
+조용히 우리끼리만 가보자!"/>
+		<class name="lc_mission_2_1_WCDz06" Value="[!Dialog][!speaker:Albus_Normal]그래 뭔가 더 있을 것 같네.
+여긴 경찰들한테 넘기고 조용히 알아보자."/>
+		<class name="lc_mission_2_1_yo4opx" Value="[!Dialog][!speaker:CrowStreet_BlackTigerNormal_Normal]멍청한 경찰놈들은 매번 똑같단 말이야.
+학습이란게 없어!"/>
+		<class name="lc_mission_2_1_OK84ft" Value="[!Dialog][!speaker:CrowStreet_BlackTigerFat_Smile]뭐! 덕분에 우리는 편하잖아. 그럼 된 거지.
+자 빨리빨리 끝내자고 그래야 다음 단계로 넘어가자고."/>
+	</idspace>
+</idspaces>

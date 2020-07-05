@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Dialog">
+	<class name="AL_Main">
+		<Scripts>
+			<property Type="Script" Script="ProgressPreDialogCheck_CommonNPC"/>
+		</Scripts>
+	</class>
+	<class name="AL_Selection">
+		<Scripts>
+			<property Type="Switch" C_DlgName="npc.Info.Title" C_TestTarget="math.random(1,2)">
+				<property Case="1">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="필요한 물건이라면 바로 바로 가져옵니다!"/>
+					</property>
+				</property>
+				<property Case="2">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="좋은 물건을 가져다 놓았죠! 보고 가세요!"/>
+					</property>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+</idspace>

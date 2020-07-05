@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Tutorial_Road_112_9bgtUa" Value="[!Dashboard:Counter]남은 이능석 표본 개수"/>
+		<class name="Tutorial_Road_112_A4K3Z6" Value="[!Dashboard:Counter]에너지 추출 가능 횟수"/>
+		<class name="Tutorial_Road_112_YhSJcg" Value="[!Objective]서로 다른 이능석 표본 5개를 확보하시오."/>
+		<class name="Tutorial_Road_112_bixNNg" Value="[!Objective]&apos;불꽃&apos; 에너지 표본 추출하기"/>
+		<class name="Tutorial_Road_112_VGNTDB" Value="[!Objective]&apos;얼음&apos; 에너지 표본 추출하기"/>
+		<class name="Tutorial_Road_112_2hvzso" Value="[!Objective]&apos;번개&apos; 에너지 표본 추출하기"/>
+		<class name="Tutorial_Road_112_jL6BYO" Value="[!Objective]&apos;바람&apos; 에너지 표본 추출하기"/>
+		<class name="Tutorial_Road_112_XXsqwb" Value="[!Objective]&apos;대지&apos; 에너지 표본 추출하기"/>
+		<class name="Tutorial_Road_112_lyU7ah" Value="[!Objective]&apos;물&apos; 에너지 표본 추출하기"/>
+		<class name="Tutorial_Road_112_488aQa" Value="[!Dialog][!speaker:EmptySubTitle_]과거 선택받은 자만이 가질 수 있다고 생각되었던『이능력』"/>
+		<class name="Tutorial_Road_112_IdtYHA" Value="[!Dialog][!speaker:EmptySubTitle_]이러한 관념은 오래전부터 이어져 대제국 &apos;아테르&apos;의 사회 제도에도 반영되어 있었다."/>
+		<class name="Tutorial_Road_112_R1jxdV" Value="[!Dialog][!speaker:EmptySubTitle_]근대에 들어 &apos;『이능력』 = 『에너지』&apos; 라는 것이 증명된다."/>
+		<class name="Tutorial_Road_112_Awc1qH" Value="[!Dialog][!speaker:EmptySubTitle_]『이능력』은 발현 형태에 따라  화염,  얼음,  번개,  바람,  대지,  물 등 6가지 속성으로 분류되었고"/>
+		<class name="Tutorial_Road_112_HiiQGr" Value="[!Dialog][!speaker:EmptySubTitle_]생명체의 유전자 정보에 의한 발현으로 유전자 이식을 통해 타인에게 부여할 수 있음이 증명된다."/>
+		<class name="Tutorial_Road_112_cSvind" Value="[!Dialog][!speaker:EmptySubTitle_]『이능력』의 에너지 활용과 『이능력자』의 보편화"/>
+		<class name="Tutorial_Road_112_Y4wNqa" Value="[!Dialog][!speaker:EmptySubTitle_]학계는 두 가지 가능성을 바탕으로 인류의 고질적인 자원 고갈 문제를 해결하기 위해『이능력』의 자원화에 도전한다."/>
+		<class name="Tutorial_Road_112_UkEDDz" Value="[!Dialog][!speaker:EmptySubTitle_]세계의 각국은 이러한 시도에 열광하며 인류의 새로운 에너지 시대를 꿈꾸었다."/>
+		<class name="Tutorial_Road_112_F7smiA" Value="[!Dialog][!speaker:EmptySubTitle_]하지만 얼마 지나지 않아『이능력자』의 유전자 이식을 받은 사람들이 돌연사하는 심각한 부작용이 발견되었고"/>
+		<class name="Tutorial_Road_112_tSTo66" Value="[!Dialog][!speaker:EmptySubTitle_]부작용이 없다 하더라도 이능력을 자유롭게 사용하는 방법을 체득하는 과정이 예상보다 너무 오래 걸린다는 것을 알게 된다."/>
+		<class name="Tutorial_Road_112_jOQco3" Value="[!Dialog][!speaker:EmptySubTitle_]또한 생명체가 발현한 이능력의 에너지 전환 효율이 예상했던 기대치보다 현저히 낮다는 연구가 이어진다."/>
+		<class name="Tutorial_Road_112_4wzIw7" Value="[!Dialog][!speaker:EmptySubTitle_]결국 인류에게 희망처럼 다가왔던 이능력의 자원화는 근대 과학의 해프닝으로 기록된다."/>
+		<class name="Tutorial_Road_112_dySNu1" Value="[!Dialog][!speaker:EmptySubTitle_]그러나 한 번 열린 가능성은 오랜 시간 연구자들의 꾸준한 도전을 이끌어 낸다."/>
+		<class name="Tutorial_Road_112_0MOAV8" Value="[!Dialog][!speaker:EmptySubTitle_]현대 과학 기술은『이능력』으로 발생한 에너지가 특정 광물에 축적되는 현상을 발견하고 이러한 광석들을 『이능석』이라고 명명한다."/>
+		<class name="Tutorial_Road_112_SEWKon" Value="[!Dialog][!speaker:EmptySubTitle_]『이능석』의 발견은 부족한 자원 확보 경쟁으로 지친 세계에 새로운 대체 에너지로 주목받으며 『이능력의 자원화』 연구는 다시 한번 많은 지원을 받는다."/>
+		<class name="Tutorial_Road_112_wdUnEp" Value="[!Dialog][!speaker:EmptySubTitle_]얼마 지나지 않아 인류는 『이능석』으로부터 사용 가능한 에너지로 추출하는 데 성공하였고..."/>
+		<class name="Tutorial_Road_112_Q3P9pC" Value="[!Dialog][!speaker:EmptySubTitle_]에너지 추출 과정의 간편화와 추출 장비의 휴대성이 강화되면서..."/>
+		<class name="Tutorial_Road_112_t6Bb5r" Value="[!Dialog][!speaker:EmptySubTitle_]기존의 시설 기반의 자원 확보 경쟁에 혁명을 가져온다."/>
+		<class name="Tutorial_Road_112_xwZrpt" Value="[!Dialog][!speaker:EmptySubTitle_]1. 이능력을 축적할 수 있는 광물들이 밀집한 장소"/>
+		<class name="Tutorial_Road_112_ZHvojW" Value="[!Dialog][!speaker:EmptySubTitle_]2. 이능력 발현이 꾸준히 빈번하게 일어나는 장소"/>
+		<class name="Tutorial_Road_112_31BtvN" Value="[!Dialog][!speaker:EmptySubTitle_]두 조건이 성립하는 장소를『리치 베인』이라 부른다."/>
+		<class name="Tutorial_Road_112_y0zWbT" Value="[!Dialog][!speaker:EmptySubTitle_]『리치 베인』에서는 다수의 『이능석』이 꾸준히 출현한다."/>
+		<class name="Tutorial_Road_112_dea2vQ" Value="[!Dialog][!speaker:EmptySubTitle_]이러한『리치 베인』은 인간들의 거주구 근처에 형성된 경우는 보고된 적 없으며..."/>
+		<class name="Tutorial_Road_112_3v5G2O" Value="[!Dialog][!speaker:EmptySubTitle_]대부분 이능력을 보유한 동, 식물들이 다수 거주하는 자연 상태에서 발견된다."/>
+		<class name="Tutorial_Road_112_CVSQ9i" Value="[!Dialog][!speaker:EmptySubTitle_]이러한『리치 베인』은 발견하여도 방치할 경우 일정 시간이 지나면 사라지기 마련인데..."/>
+		<class name="Tutorial_Road_112_VZOXj6" Value="[!Dialog][!speaker:EmptySubTitle_]『힘의 공명』이라는 현상 때문이다."/>
+		<class name="Tutorial_Road_112_Ruv0Hc" Value="[!Dialog][!speaker:EmptySubTitle_]『힘의 공명』은 과도하게 사물에 축적된 에너지가 서로 공명하여 축적된 에너지가 증폭되는 현상으로"/>
+		<class name="Tutorial_Road_112_Y7bxX4" Value="[!Dialog][!speaker:EmptySubTitle_]해당 광물이 분포된 지역이 에너지를 수용할 수 있는 한계를 넘어설 때 일어나는 강력한 폭발을 말한다."/>
+		<class name="Tutorial_Road_112_FqTyDv" Value="[!Dialog][!speaker:EmptySubTitle_]이 폭발로 인해 해당 지역의 광물들 대부분은 화학적 변화로 인하여 더 이상 이능력을 축적할 수 없는 일반 광물이 된다."/>
+		<class name="Tutorial_Road_112_nmJIgW" Value="[!Dialog][!speaker:EmptySubTitle_]또한 해당 지역의 생명체들이 사망 혹은 이주함으로써 이능력 발현 조건을 상실하게 되기 때문이었다."/>
+		<class name="Tutorial_Road_112_3zS3mP" Value="[!Dialog][!speaker:EmptySubTitle_]따라서 『리치 베인』을 확보한 국가들은 『리치 베인』이 사라지지 않게 하기 위한 많은 노력을 기울인다."/>
+		<class name="Tutorial_Road_112_VSgoKE" Value="[!Title]침입자"/>
+		<class name="Tutorial_Road_112_GiQUNl" Value="[!Title]철의 숲 자원관리구역"/>
+		<class name="Tutorial_Road_112_CBZ37C" Value="[!Subtitle][!speaker:EmptySubTitle_]철의 숲 내 자원관리구역으로 지정된『리치 베인』"/>
+		<class name="Tutorial_Road_112_FjIy9z" Value="[!Subtitle][!speaker:EmptySubTitle_]바람장벽 경찰청 역시 이 지역이 『힘의 공명』으로 사라지지 않도록 관리하고 있다."/>
+		<class name="Tutorial_Road_112_bgPei2" Value="[!Subtitle][!speaker:EmptySubTitle_]주기적으로 엔지니어들을 파견하여 현재의 상태를 점검하고"/>
+		<class name="Tutorial_Road_112_yT7YIg" Value="[!Subtitle][!speaker:EmptySubTitle_]결과에 따라 이능석이 과도하게 밀집되면 광석의 에너지 추출을 늘리거나"/>
+		<class name="Tutorial_Road_112_UdOCxP" Value="[!Subtitle][!speaker:EmptySubTitle_]해당 지역에 서식하는 이능력 발현이 가능한 야수의 사냥을 허가하였다."/>
+		<class name="Tutorial_Road_112_H05yfr" Value="[!Subtitle][!speaker:EmptySubTitle_]이러한 관리는 오랜 시간 큰 문제 없이 유지되어 왔으나"/>
+		<class name="Tutorial_Road_112_CMvfoH" Value="[!Subtitle][!speaker:EmptySubTitle_]최근 철의 숲에서 다시 활동을 재개한 티마들이 이 곳까지 출몰하면서"/>
+		<class name="Tutorial_Road_112_grwVuB" Value="[!Subtitle][!speaker:EmptySubTitle_]꾸준히 관리구역의 축적된 에너지 수치가 증가하였다."/>
+		<class name="Tutorial_Road_112_Tu1VGy" Value="[!Subtitle][!speaker:EmptySubTitle_]결국 발할라 경찰청은 해당 일을 담당하고 있는 엔지니어 카일리를 통해 현재 상태를 다시 점검하기로 한다."/>
+		<class name="Tutorial_Road_112_tLfzsi" Value="[!Dialog][!speaker:Kylie_Normal]현재 이 지역의 에너지 축적 상태를 파악하려면 최소한 5개의 다른 타입의 이능석으로부터 추출된 에너지가 필요해."/>
+		<class name="Tutorial_Road_112_qL9rNV" Value="[!Dialog][!speaker:Irene_Surprise]이능석은 총 6타입이 아닌가?"/>
+		<class name="Tutorial_Road_112_huq3hE" Value="[!Dialog][!speaker:Heissing_Smile]한 지역 내의 에너지 수치는 각 속성별로 균형을 이루려고 하지."/>
+		<class name="Tutorial_Road_112_R97RAI" Value="[!Dialog][!speaker:Heissing_Smile]따라서 5가지 속성의 정보만 있으면 나머지 속성의 수치를 충분히 유추할 수 있지."/>
+		<class name="Tutorial_Road_112_jyxIzF" Value="[!Dialog][!speaker:Kylie_Smile]오. 제법인데!"/>
+		<class name="Tutorial_Road_112_fIpnL4" Value="[!Dialog][!speaker:Sion_Happy]우왓! 헤이싱 형!! 멋져!"/>
+		<class name="Tutorial_Road_112_nvriBq" Value="[!Dialog][!speaker:Anne_Smile]&apos;헤이싱 씨... 진짜 보기와 다르구나.&apos;"/>
+		<class name="Tutorial_Road_112_wpxbEM" Value="[!Dialog][!speaker:Irene_Think]&apos;도대체... 어떻게 아는 거지... 공부할 타입이 절대 아닌데...&apos;"/>
+		<class name="Tutorial_Road_112_UU4y2u" Value="[!Dialog][!speaker:Heissing_Smile]&apos;여기까지 와서 이런 일을 하게 될 줄이야.... 삶도 각박하군.&apos;"/>
+		<class name="Tutorial_Road_112_79J28P" Value="[!BalloonChat][!speaker:Heissing]달갑지 않은 일이군..."/>
+		<class name="Tutorial_Road_112_rqYI0j" Value="[!Dialog][!speaker:Kylie_Normal]현재 내가 가져온『에너지 추출기』는 총 4개야."/>
+		<class name="Tutorial_Road_112_34iPlC" Value="[!Dialog][!speaker:Kylie_Smile]『에너지 추출기』는 사용 횟수가 정해져 있으니 적절하게 사용해줘."/>
+		<class name="Tutorial_Road_112_b7OdAs" Value="[!Dialog][!speaker:Albus_SurpriseStare]아. 여분이 많지 않군요."/>
+		<class name="Tutorial_Road_112_2BUw5r" Value="[!Dialog][!speaker:Kylie_Normal]요즘 스푼교다 백호파다 온통 난리다 보니 제작할 재료 물량이 넉넉지 못해."/>
+		<class name="Tutorial_Road_112_vUR6NZ" Value="[!Dialog][!speaker:Albus_SurpriseStare]그렇군요..."/>
+		<class name="Tutorial_Road_112_uTyJ7x" Value="[!Dialog][!speaker:Kylie_Normal]그럼 하나는 내가 가져갈 테니 나머지 사람에게 나눠줘."/>
+		<class name="Tutorial_Road_112_H3VTRW" Value="[!Dialog][!speaker:Albus_Laugh]알겠습니다. 카일리 씨."/>
+		<class name="Tutorial_Road_112_FKboKm" Value="[!Dialog][!speaker:Albus_Think][colour=&apos;FFFFFF00&apos;]&apos;내가 하나 가져가고 나머지 두개는 누굴 줘야 할까...&apos;"/>
+		<class name="Tutorial_Road_112_OpdoFx" Value="[!Choice]시온"/>
+		<class name="Tutorial_Road_112_1mS40b" Value="시온에게 &apos;에너지 추출기&apos;를 줍니다. 하의 주머니에 착용한 기존 착용 장비는 사용할 수 없습니다."/>
+		<class name="Tutorial_Road_112_SsNjEM" Value="[!Choice]아이린"/>
+		<class name="Tutorial_Road_112_vYvpZb" Value="아이린에게 &apos;에너지 추출기&apos;를 줍니다. 하의 주머니에 착용한 기존 착용 장비는 사용할 수 없습니다."/>
+		<class name="Tutorial_Road_112_NhWVE9" Value="[!Choice]앤"/>
+		<class name="Tutorial_Road_112_IvrEFm" Value="앤에게 &apos;에너지 추출기&apos;를 줍니다. 하의 주머니에 착용한 기존 착용 장비는 사용할 수 없습니다."/>
+		<class name="Tutorial_Road_112_XnIwL4" Value="[!Choice]헤이싱"/>
+		<class name="Tutorial_Road_112_X2PaoV" Value="헤이싱에게 &apos;에너지 추출기&apos;를 줍니다. 하의 주머니에 착용한 기존 착용 장비는 사용할 수 없습니다."/>
+		<class name="Tutorial_Road_112_82bUah" Value="[!Dialog][!speaker:Albus_Normal]카일리 씨. 이제 임무 진행하겠습니다."/>
+		<class name="Tutorial_Road_112_i5JABG" Value="[!Dialog][!speaker:Kylie_Normal]알겠다. 잘 부탁한다. $CompanyName$."/>
+		<class name="Tutorial_Road_112_utBNrw" Value="[!VictoryCondition]이능석 표본 확보를 위한 에너지 추출기 부족 시"/>
+		<class name="Tutorial_Road_112_SLCOfJ" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_Road_112_mQyE1H" Value="[!VictoryCondition]서로 다른 이능석 표본 5개를 확보하시오."/>
+		<class name="Tutorial_Road_112_qv0T1j" Value="[!Dialog][!speaker:Albus_Think][colour=&apos;FFFFFF00&apos;]&apos;마지막 하나는 누구에게 맡기지...&apos;"/>
+		<class name="Tutorial_Road_112_iQZ7jC" Value="[!Choice]아이린"/>
+		<class name="Tutorial_Road_112_3VErkP" Value="[!Choice]앤"/>
+		<class name="Tutorial_Road_112_TqCTLk" Value="[!Choice]헤이싱"/>
+		<class name="Tutorial_Road_112_XK6GOk" Value="[!Dialog][!speaker:Albus_Normal]시온. 야수들은 최대한 피해서 에너지 추출에 집중하자."/>
+		<class name="Tutorial_Road_112_lOP0EC" Value="[!Dialog][!speaker:Sion_Normal]OK~☆ 맡겨만 줘! 사장님!"/>
+		<class name="Tutorial_Road_112_nJFy4J" Value="[!Dialog][!speaker:Albus_Normal]아이린 씨. 잘 부탁합니다. 이 에너지 추출기는 아이린 씨에게 맡길게요."/>
+		<class name="Tutorial_Road_112_GDL1dZ" Value="[!Dialog][!speaker:Irene_Smile]걱정 마라. 알버스 군."/>
+		<class name="Tutorial_Road_112_vv19I9" Value="[!Dialog][!speaker:Irene_Smile2]&apos;이 구역이면 야샤와 도로리인가...&apos;"/>
+		<class name="Tutorial_Road_112_2vuAIJ" Value="[!Dialog][!speaker:Albus_Laugh]앤 양. 잘 부탁해."/>
+		<class name="Tutorial_Road_112_yWKezv" Value="[!Dialog][!speaker:Anne_Normal]걱정 마세요. 알버스 오빠."/>
+		<class name="Tutorial_Road_112_1iztjj" Value="[!Dialog][!speaker:Anne_Smile]안전하게 뒤에서 따라가면서 놓치지 않고 잘 해낼게요."/>
+		<class name="Tutorial_Road_112_BPUjhJ" Value="[!Dialog][!speaker:Albus_Normal]잘 부탁드립니다. 헤이싱 씨."/>
+		<class name="Tutorial_Road_112_dCVmEM" Value="[!Dialog][!speaker:Heissing_Smile]자네. 보기보다 짓궂군."/>
+		<class name="Tutorial_Road_112_FJCU1L" Value="[!Dialog][!speaker:Albus_Laugh]역시... 이런 일은 불편하신 건가요?"/>
+		<class name="Tutorial_Road_112_eiuvtn" Value="[!Dialog][!speaker:Heissing_Smile]이런 일이 즐거울 리 없다만..."/>
+		<class name="Tutorial_Road_112_v494AJ" Value="[!Dialog][!speaker:Heissing_Normal]약속대로 도와주마."/>
+		<class name="Tutorial_Road_112_drrbMW" Value="[!Dialog][!speaker:Albus_Normal]네. 감사합니다. 헤이싱 씨."/>
+		<class name="Tutorial_Road_112_xhNNc0" Value="[!Dialog][!speaker:Albus_Think][colour=&apos;FFFFFF00&apos;]&apos;마지막 하나는 누구에게 맡기지...&apos;"/>
+		<class name="Tutorial_Road_112_PfVJ2w" Value="[!Choice]시온"/>
+		<class name="Tutorial_Road_112_rRRS9y" Value="[!Choice]앤"/>
+		<class name="Tutorial_Road_112_HW9aIL" Value="[!Choice]헤이싱"/>
+		<class name="Tutorial_Road_112_slRt1J" Value="[!Dialog][!speaker:Albus_Think][colour=&apos;FFFFFF00&apos;]&apos;마지막 하나는 누구에게 맡기지...&apos;"/>
+		<class name="Tutorial_Road_112_EhU7DT" Value="[!Choice]시온"/>
+		<class name="Tutorial_Road_112_q1qE6N" Value="[!Choice]아이린"/>
+		<class name="Tutorial_Road_112_DeRlMw" Value="[!Choice]헤이싱"/>
+		<class name="Tutorial_Road_112_RVcNlF" Value="[!Dialog][!speaker:Albus_Think][colour=&apos;FFFFFF00&apos;]&apos;마지막 하나는 누구에게 맡기지...&apos;"/>
+		<class name="Tutorial_Road_112_MHy0K9" Value="[!Choice]시온"/>
+		<class name="Tutorial_Road_112_O439Cs" Value="[!Choice]아이린"/>
+		<class name="Tutorial_Road_112_3Fahmw" Value="[!Choice]앤"/>
+		<class name="Tutorial_Road_112_jkS8ta" Value="[!BalloonChat][!speaker:Anne]저기! 이능석이에요!"/>
+		<class name="Tutorial_Road_112_jZFZpa" Value="[!BalloonChat][!speaker:Irene]기다려라! 이능석!"/>
+		<class name="Tutorial_Road_112_y84iKV" Value="[!BalloonChat][!speaker:Sion]하나 발견~☆"/>
+		<class name="Tutorial_Road_112_3YsJwR" Value="[!BalloonChat][!speaker:Heissing]보기만 해도 질리는군..."/>
+		<class name="Tutorial_Road_112_47OZi9" Value="[!Ignore][!Title]하얀 왕도로리"/>
+		<class name="Tutorial_Road_112_wBBJYK" Value="[!Ignore][!Title]심술쟁이 도로리"/>
+		<class name="Tutorial_Road_112_vBJ2LT" Value="[!Ignore][!Title]얼음 야샤"/>
+		<class name="Tutorial_Road_112_PnEBt9" Value="[!Ignore][!Title]탐욕스러운 야샤"/>
+		<class name="Tutorial_Road_112_6ihUPE" Value="[!Ignore][!BalloonChat][!speaker:Dorori_Boss]키에엑! 키에엑!"/>
+		<class name="Tutorial_Road_112_YYFiiH" Value="[!Ignore][!FrontMessage]하얀 왕도로리가 분노 상태가 되었습니다."/>
+		<class name="Tutorial_Road_112_S6HDN1" Value="[!Ignore][!FrontMessage]하얀 왕도로리가 과충전 상태가 되었습니다."/>
+		<class name="Tutorial_Road_112_kvhys8" Value="[!Ignore][!BalloonChat][!speaker:Yasha_Boss]키리릭~ 키리릭~"/>
+		<class name="Tutorial_Road_112_yv2BTi" Value="[!Ignore][!FrontMessage]얼음 야샤가 분노 상태가 되었습니다."/>
+		<class name="Tutorial_Road_112_xWgo5e" Value="[!Ignore][!FrontMessage]얼음 야샤가 과충전 상태가 되었습니다."/>
+		<class name="Tutorial_Road_112_2nLZkD" Value="[!Dialog][!speaker:Kylie_Rage]하아... 어느새 이 지경인 거야..."/>
+		<class name="Tutorial_Road_112_ka9JEi" Value="[!Dialog][!speaker:Albus_SurpriseStare]안 좋은 상황인가요?"/>
+		<class name="Tutorial_Road_112_3fzlVg" Value="[!Dialog][!speaker:Kylie_Rage]별로 좋지 않아. 분명 지난주에는 이 정도까지는 아니었는데..."/>
+		<class name="Tutorial_Road_112_WqqG2A" Value="[!Dialog][!speaker:Irene_Surprise]에너지 추출량을 늘리면 되지 않는가?"/>
+		<class name="Tutorial_Road_112_5FQGHZ" Value="[!Dialog][!speaker:Kylie_Rage]그게. 말이 쉽지. 저 야수들 사이로 일반인들이 추출 작업을 하는 것은 무리야."/>
+		<class name="Tutorial_Road_112_lxAZ5f" Value="[!Dialog][!speaker:Irene_Think]음... "/>
+		<class name="Tutorial_Road_112_X6JSDe" Value="[!Dialog][!speaker:Albus_SurpriseStare]갑자기 이렇게 된 원인을 알 수 있을까요?"/>
+		<class name="Tutorial_Road_112_aCGquG" Value="[!Dialog][!speaker:Kylie_Normal]야간에 이능력을 가진 야수들이 증가했다고 봐야지."/>
+		<class name="Tutorial_Road_112_1NhG7x" Value="[!Dialog][!speaker:Kylie_Normal]그렇지 않고서야 이렇게 빨리 증가할 리가 없어."/>
+		<class name="Tutorial_Road_112_QC4v7w" Value="[!Dialog][!speaker:Albus_SurpriseStare]야간이라고 특정할 수 있는 뭔가 있는 건가요?"/>
+		<class name="Tutorial_Road_112_xf9X0t" Value="[!Dialog][!speaker:Kylie_Normal]방금 같이 돌아다녔으니 하는 말이야. 그 정도 개체 수로 이렇게 증가할 리가 없어."/>
+		<class name="Tutorial_Road_112_WxAjPP" Value="[!Dialog][!speaker:Kylie_Normal]이 구역은 낮과 밤의 출몰하는 개체가 다른 편이야. 현재 개체 수에 비해 높은 축적량이 보인다면 당연히 밤인 거지."/>
+		<class name="Tutorial_Road_112_fEh4Cw" Value="[!Dialog][!speaker:Kylie_Smile]일단 고생했어. 관리구역 일은 내 보고서를 보고 경찰청에서 결정하겠지."/>
+		<class name="Tutorial_Road_112_ezMgXD" Value="[!Dialog][!speaker:Albus_Normal]네. 저희도 여유가 나면 이쪽 일도 돕도록 하겠습니다."/>
+		<class name="Tutorial_Road_112_FBs3jh" Value="[!Subtitle][!speaker:EmptySubTitle_]카일리의 보고서를 받은 경찰청은"/>
+		<class name="Tutorial_Road_112_47r674" Value="[!Subtitle][!speaker:EmptySubTitle_]철의 숲 자원관리구역의 자유로운 야수 사냥을 허가한다."/>
+		<class name="Tutorial_Road_112_oWGzOk" Value="[!Subtitle][!speaker:EmptySubTitle_]또한 증가하고 있는 범죄로 지쳐 버린 트러블슈터를 위해..."/>
+		<class name="Tutorial_Road_112_Nd7ZOj" Value="[!Subtitle][!speaker:EmptySubTitle_]해당 구역에서의 야수 사냥 시 얻은 자원들과 재료들을"/>
+		<class name="Tutorial_Road_112_dPZ1pJ" Value="[!Subtitle][!speaker:EmptySubTitle_]트러블슈터 회사들의 &apos;전리품&apos;으로 인정해주기로 한다."/>
+		<class name="Tutorial_Road_112_dkPZXd" Value="[!Subtitle][!speaker:EmptySubTitle_]이런 경찰청의 파격적인 결정으로 인하여"/>
+		<class name="Tutorial_Road_112_phPRP5" Value="[!Subtitle][!speaker:EmptySubTitle_]적지 않은 트러블슈터 회사들이 야수 사냥에 참여한다."/>
+		<class name="Tutorial_Road_112_Ylz86b" Value="[!Subtitle][!speaker:EmptySubTitle_]현재 바람장벽 지구의 대부분의 트러블슈터들은 백호파와 마찰을 빚는 것을 원치 않았기 때문이었다."/>
+		<class name="Tutorial_Road_112_6q2uQl" Value="[!BalloonChat][!speaker:Heissing]......"/>
+	</idspace>
+</idspaces>

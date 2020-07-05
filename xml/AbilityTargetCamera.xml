@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="AbilityTargetCamera">
+	<class name="Normal" Mode="Normal" CamTargetKey="_SYSTEM_"/>
+	<class name="Normal_Target" Mode="Normal" CamTargetKey="_SYSTEM_TARGET_"/>
+	<class name="ESPShoot" Mode="Normal" CamTargetKey="TargetingESP"/>
+	<class name="Melee" Mode="Normal" CamTargetKey="TargetingMelee"/>
+	<class name="None" Mode="Normal" CamTargetKey="None"/>
+	<class name="Shoot" Mode="HeightDistance" CamTargetKey="TargetingShoot">
+		<property name="VeryHigh" Near="TargetingShoot_1_TopView1" Far="TargetingShoot_1_TopView3"/>
+		<property name="High" Near="TargetingShoot_1_TopView1_Near" Far="TargetingShoot_1_TopView3"/>
+		<property name="Mid" Near="TargetingShoot_$Index$" Far="TargetingShoot_$Index$"/>
+		<property name="Low" Near="TargetingShoot_1_TopView2" Far="TargetingShoot_$Index$"/>
+		<property name="VeryLow" Near="TargetingShoot_1_TopView2" Far="TargetingShoot_$Index$"/>
+	</class>
+</idspace>

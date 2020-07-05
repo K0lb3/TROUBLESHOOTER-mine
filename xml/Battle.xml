@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="BattleDamageDirect">
+		<schema>
+			<rule property="Info" type="table"/>
+		</schema>
+		<class name="Player">
+			<Info>
+				<property name="Hit" AnimationEventKey="StartShow">
+					<AttackerState>
+						<property name="Normal" Hit="HemiHead-24" FirstHit="HemiHead-28" FinalHit="HemiHead-36" UniqueHit="HemiHead-32" AnimationEventKey="NormalHit"/>
+						<property name="Critical" Hit="HemiHead-28" FirstHit="HemiHead-32" FinalHit="HemiHead-40" UniqueHit="HemiHead-36" AnimationEventKey="CriticalHit"/>
+					</AttackerState>
+				</property>
+				<property name="Dodge" AnimationEventKey="StartShowDodge">
+					<AttackerState>
+						<property name="Normal" Hit="NotoSansBlack-18_Auto" FirstHit="NotoSansBlack-22" FinalHit="NotoSansBlack-28" UniqueHit="NotoSansBlack-22" AnimationEventKey="StartShowDodge"/>
+						<property name="Critical" Hit="NotoSansBlack-18_Auto" FirstHit="NotoSansBlack-22" FinalHit="NotoSansBlack-28" UniqueHit="NotoSansBlack-22" AnimationEventKey="StartShowDodge"/>
+					</AttackerState>
+				</property>
+				<property name="Block" AnimationEventKey="StartShowBlock">
+					<AttackerState>
+						<property name="Normal" Hit="HemiHead-18" FirstHit="HemiHead-20" FinalHit="HemiHead-24" UniqueHit="HemiHead-22" AnimationEventKey="NormalBlock"/>
+						<property name="Critical" Hit="HemiHead-20" FirstHit="HemiHead-22" FinalHit="HemiHead-26" UniqueHit="HemiHead-24" AnimationEventKey="CriticalBlock"/>
+					</AttackerState>
+				</property>
+				<property name="Heal" AnimationEventKey="StartShowHeal">
+					<AttackerState>
+						<property name="Normal" Hit="HemiHead-20" FirstHit="HemiHead-24" FinalHit="HemiHead-32" UniqueHit="HemiHead-28" AnimationEventKey="StartShowHeal"/>
+						<property name="Critical" Hit="HemiHead-24" FirstHit="HemiHead-28" FinalHit="HemiHead-36" UniqueHit="HemiHead-32" AnimationEventKey="StartShowHeal"/>
+					</AttackerState>
+				</property>
+			</Info>
+		</class>
+		<class name="Enemy">
+			<Info>
+				<property name="Hit" AnimationEventKey="StartShow">
+					<AttackerState>
+						<property name="Normal" Hit="HemiHead-24" FirstHit="HemiHead-28" FinalHit="HemiHead-36" UniqueHit="HemiHead-32" AnimationEventKey="NormalHit"/>
+						<property name="Critical" Hit="HemiHead-28" FirstHit="HemiHead-32" FinalHit="HemiHead-40" UniqueHit="HemiHead-36" AnimationEventKey="CriticalHit"/>
+					</AttackerState>
+				</property>
+				<property name="Dodge" AnimationEventKey="StartShowDodge">
+					<AttackerState>
+						<property name="Normal" Hit="NotoSansBlack-18_Auto" FirstHit="NotoSansBlack-22" FinalHit="NotoSansBlack-28" UniqueHit="NotoSansBlack-22" AnimationEventKey="StartShowDodge"/>
+						<property name="Critical" Hit="NotoSansBlack-18_Auto" FirstHit="NotoSansBlack-22" FinalHit="NotoSansBlack-28" UniqueHit="NotoSansBlack-22" AnimationEventKey="StartShowDodge"/>
+					</AttackerState>
+				</property>
+				<property name="Block" AnimationEventKey="StartShowBlock">
+					<AttackerState>
+						<property name="Normal" Hit="HemiHead-18" FirstHit="HemiHead-20" FinalHit="HemiHead-24" UniqueHit="HemiHead-22" AnimationEventKey="NormalBlock"/>
+						<property name="Critical" Hit="HemiHead-20" FirstHit="HemiHead-22" FinalHit="HemiHead-26" UniqueHit="HemiHead-24" AnimationEventKey="CriticalBlock"/>
+					</AttackerState>
+				</property>
+				<property name="Heal" AnimationEventKey="StartShowHeal">
+					<AttackerState>
+						<property name="Normal" Hit="HemiHead-20" FirstHit="HemiHead-24" FinalHit="HemiHead-32" UniqueHit="HemiHead-28" AnimationEventKey="StartShowHeal"/>
+						<property name="Critical" Hit="HemiHead-24" FirstHit="HemiHead-28" FinalHit="HemiHead-36" UniqueHit="HemiHead-32" AnimationEventKey="StartShowHeal"/>
+					</AttackerState>
+				</property>
+			</Info>
+		</class>
+	</idspace>
+</idspaces>

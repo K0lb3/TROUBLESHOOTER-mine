@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="lc_mission_1_3_XBT3A6" Value="[!Dashboard:Counter]감시망 접속 필요 패스워드시"/>
+		<class name="lc_mission_1_3_JtYwxC" Value="[!Dashboard:Counter]전산망 접속 필요 패스워드 "/>
+		<class name="lc_mission_1_3_h3iHa1" Value="[!Objective]소음 발생"/>
+		<class name="lc_mission_1_3_QFt7Ee" Value="[!Objective]감지기에 포착1"/>
+		<class name="lc_mission_1_3_Mp9cdb" Value="[!Objective]감지기에 포착2"/>
+		<class name="lc_mission_1_3_hY3sPW" Value="[!Objective]경비에 발각1"/>
+		<class name="lc_mission_1_3_bgPei2" Value="[!Objective]정보 획득 완료"/>
+		<class name="lc_mission_1_3_Rv4zNE" Value="[!Dialog][!speaker:Sion_Smile]이제 정보만 갖고가면 끝!끝!"/>
+		<class name="lc_mission_1_3_aZDFtv" Value="[!Dialog][!speaker:Albus_Serious]우선 내부 감시망을 속여야하는데 다음 방에 단말기가 있을 거야.
+조금만 시끄러워져도 경비가 뛰어오니.
+아무 데나 올라가지 말고! 은밀하게!
+다음 방으로 가자."/>
+		<class name="lc_mission_1_3_sXZw23" Value="[!BalloonChat][!speaker:Albus]단말기는 확보했고
+방안에 숨겨진 패스워드를 찾아서 감시망에 바이러스를 심자."/>
+		<class name="lc_mission_1_3_4XoJil" Value="[!BalloonChat][!speaker:Albus] 빨리 주변을 찾아봐!
+서류나 포스터도 확인해보고!"/>
+		<class name="lc_mission_1_3_2JPwKF" Value="[!SMMessage]D"/>
+		<class name="lc_mission_1_3_B81iFP" Value="[!SMTitle]패스워드 확보"/>
+		<class name="lc_mission_1_3_t8VwYU" Value="[!SMMessage]A"/>
+		<class name="lc_mission_1_3_9KSTc7" Value="[!SMTitle]패스워드 확보"/>
+		<class name="lc_mission_1_3_TxJS5f" Value="[!SMMessage]M"/>
+		<class name="lc_mission_1_3_gjZIwW" Value="[!SMTitle]패스워드 확보"/>
+		<class name="lc_mission_1_3_sOrkBP" Value="[!SMMessage]P"/>
+		<class name="lc_mission_1_3_g1kIAE" Value="[!SMTitle]패스워드 확보"/>
+		<class name="lc_mission_1_3_XDdao2" Value="[!SMMessage]I"/>
+		<class name="lc_mission_1_3_rPY9Tm" Value="[!SMTitle]패스워드 확보"/>
+		<class name="lc_mission_1_3_tf4IA5" Value="[!SMTitle]패스워드 확보"/>
+		<class name="lc_mission_1_3_WaZ8aw" Value="[!SMTitle]패스워드 확보"/>
+		<class name="lc_mission_1_3_IzaTgy" Value="[!SMTitle]패스워드 확보"/>
+		<class name="lc_mission_1_3_KnutVL" Value="[!SMTitle]패스워드 확보"/>
+		<class name="lc_mission_1_3_7pdQQG" Value="[!SMMessage]R"/>
+		<class name="lc_mission_1_3_nJwoIY" Value="[!SMTitle]패스워드 확보"/>
+		<class name="lc_mission_1_3_VL27pe" Value="[!SMMessage]감시망에 접속해 감지기를 정지시켰습니다."/>
+		<class name="lc_mission_1_3_BxMDmj" Value="[!SMTitle]감시망 접속 패스워드 확보 완료"/>
+		<class name="lc_mission_1_3_oTD3Ro" Value="[!Dialog][!speaker:Albus_Serious]옆방에 상주하는 경비가 있다니까.
+더 조용히 전산망에 접속할 패스워드를 찾아야 해!"/>
+		<class name="lc_mission_1_3_e9tUhz" Value="[!Dialog][!speaker:Sion_Smile]네. 네.
+뭐. 그래 볼게!"/>
+		<class name="lc_mission_1_3_NCjFkh" Value="[!Dialog][!speaker:Sion_Smile]감지기 패스워드는 다 찾은 거 같은데?
+이제 감지기를 끄면 되는 거지?"/>
+		<class name="lc_mission_1_3_MJ9N1X" Value="[!SMMessage]R"/>
+		<class name="lc_mission_1_3_XwN9r6" Value="[!SMTitle]패스워드 확보"/>
+		<class name="lc_mission_1_3_Mjb526" Value="[!SMMessage]G"/>
+		<class name="lc_mission_1_3_TR5xSc" Value="[!SMTitle]패스워드 확보"/>
+		<class name="lc_mission_1_3_J1D4Vj" Value="[!SMMessage]H"/>
+		<class name="lc_mission_1_3_frfwmO" Value="[!SMTitle]패스워드 확보"/>
+		<class name="lc_mission_1_3_ZGylOW" Value="[!SMMessage]K"/>
+		<class name="lc_mission_1_3_SPdkIC" Value="[!SMTitle]패스워드 확보"/>
+		<class name="lc_mission_1_3_uBVbdX" Value="[!SMMessage]P"/>
+		<class name="lc_mission_1_3_ROc6po" Value="[!SMTitle]패스워드 확보"/>
+		<class name="lc_mission_1_3_yfsRaU" Value="[!SMMessage]C"/>
+		<class name="lc_mission_1_3_wIQjMD" Value="[!SMTitle]패스워드 확보"/>
+		<class name="lc_mission_1_3_tCJjXw" Value="[!Dialog][!speaker:Sion_Smile]패스워드 다 모았으니 빨리 정보찾아서 가자고! 
+나 배고파!"/>
+		<class name="lc_mission_1_3_y5PcXL" Value="[!Dialog][!speaker:Sion_Smile]이번에는 너무 조용했어.
+이런 건 나랑 너무 안 맞다고!"/>
+		<class name="lc_mission_1_3_icsSIw" Value="[!Dialog][!speaker:Albus_Serious]혼잣말 그만하고 그만 돌아가자!"/>
+		<class name="lc_mission_1_3_EoxWna" Value="[!Dialog][!speaker:Sion_Smile]소리가 너무 컷나?"/>
+		<class name="lc_mission_1_3_BnWeMK" Value="[!Dialog][!speaker:Sion_Normal]어라? 누가 오는데..
+망했다."/>
+		<class name="lc_mission_1_3_ufCXt5" Value="[!Dialog][!speaker:Albus_Serious]쳇! 일단 후퇴!"/>
+		<class name="lc_mission_1_3_uNItWI" Value="[!Dialog][!speaker:Sion_Depressed]어라라..
+감지기가 안 꺼졌네.."/>
+	</idspace>
+</idspaces>

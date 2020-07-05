@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Credit">
+	<class name="Credit01">
+		<List>
+			<property Type="Job" Text="DIRECTOR &amp; DESIGNER" Align="Center" Margin="40"/>
+			<property Type="Name" Text="TaeHyeung Kim" Align="Center"/>
+		</List>
+	</class>
+	<class name="Credit02">
+		<List>
+			<property Type="Job" Text="MAIN PROGRAMERS" Align="Center" Margin="40"/>
+			<property Type="Name" Text="YongHyuk Jung" Align="Center"/>
+			<property Type="Name" Text="HeeMyung Noh" Align="Center"/>
+		</List>
+	</class>
+	<class name="Credit03">
+		<List>
+			<property Type="Job" Text="ART DIRECTOR &amp; IMAGE ILLUSTRTATION" Align="Center" Margin="40"/>
+			<property Type="Name" Text="HyunJoo Nam" Align="Center"/>
+		</List>
+	</class>
+	<class name="Credit04">
+		<List>
+			<property Type="Job" Text="TECHNICAL ARTIST &amp; BACKGROUND GRAPHIC DESIGNER" Align="Center" Margin="40"/>
+			<property Type="Name" Text="SangHo Jeong" Align="Center"/>
+		</List>
+	</class>
+	<class name="Credit05">
+		<List>
+			<property Type="Job" Text="SYSTEM ENGINEER &amp; QA MANAGER" Align="Center" Margin="40"/>
+			<property Type="Name" Text="KiHoon Lee" Align="Center"/>
+		</List>
+	</class>
+	<class name="Credit06">
+		<List>
+			<property Type="Job" Text="&lt;OUTSIDE CONTRIBUTORS&gt;" Align="Center" Margin="40"/>
+		</List>
+	</class>
+	<class name="Credit07">
+		<List>
+			<property Type="Job" Text="3D CHARACTER" Align="Center" Margin="40"/>
+			<property Type="Name" Text="SunYoung Park" Align="Center"/>
+			<property Type="Name" Text="WonMo Seong" Align="Center"/>
+			<property Type="Name" Text="DongHun Min" Align="Center"/>
+		</List>
+	</class>
+	<class name="Credit08">
+		<List>
+			<property Type="Job" Text="3D ANIMATION" Align="Center" Margin="40"/>
+			<property Type="Name" Text="Dreamer" Align="Center"/>
+			<property Type="Name" Text="Kooa" Align="Center"/>
+			<property Type="Name" Text="OkJu Park " Align="Center"/>
+		</List>
+	</class>
+	<class name="Credit09">
+		<List>
+			<property Type="Job" Text="MUSIC" Align="Center" Margin="40"/>
+			<property Type="Name" Text="Jeffrey Ethan" Align="Center"/>
+		</List>
+	</class>
+	<class name="Credit09_2">
+		<List>
+			<property Type="Job" Text="MUSIC" Align="Center" Margin="40"/>
+			<property Type="Name" Text="KevinM" Align="Center"/>
+			<property Type="Name" Text="Drogo" Align="Center"/>
+			<property Type="Name" Text="Lee Ki Hyun" Align="Center"/>
+			<property Type="Name" Text="UrbanMonster" Align="Center"/>
+			<property Type="Name" Text="Korea Copyright Commission Share in the yard" Align="Center"/>
+		</List>
+	</class>
+	<class name="Credit10">
+		<List>
+			<property Type="Job" Text="SOUND ENGINEER" Align="Center" Margin="40"/>
+			<property Type="Name" Text="MixMonster" Align="Center" Margin="70"/>
+			<property Type="Job" Text="VFX" Align="Center" Margin="40"/>
+			<property Type="Name" Text="Persistant Studios" Align="Center"/>
+		</List>
+	</class>
+	<class name="Credit11">
+		<List>
+			<property Type="Job" Text="CAST" Align="Center" Margin="40"/>
+			<property Type="Name2" Text="[colour='FFFFE959']Albus &amp; Heixing &amp; Leton" Text2="Jaeheon Jeong" Align="Center"/>
+			<property Type="Name2" Text="[colour='FFFFE959']Sion &amp; Carter" Text2="Kyuchang Lee" Align="Center"/>
+			<property Type="Name2" Text="[colour='FFFFE959']Irene &amp; Alisa" Text2="Yul Kim" Align="Center"/>
+		</List>
+	</class>
+	<class name="Credit11_2">
+		<List>
+			<property Type="Job" Text="CAST" Align="Center" Margin="40"/>
+			<property Type="Name2" Text="[colour='FFFFE959']Anne &amp; Kylie" Text2="Heywon Jeong" Align="Center"/>
+			<property Type="Name2" Text="[colour='FFFFE959']Ray &amp; Giselle" Text2="Syhun Kang" Align="Center"/>
+			<property Type="Name2" Text="[colour='FFFFE959']Bianca" Text2="Yeonoo Kim" Align="Center"/>
+		</List>
+	</class>
+	<class name="Credit12">
+		<List>
+			<property Type="Job" Text="&lt;TRANSLATION&gt;" Align="Center" Margin="40"/>
+			<property Type="JobName" Text="ENGLISH TRANSLATOR" Text2="Wonseok Lee" Align="Center"/>
+			<property Type="Name2" Text2="Namsu Kim" Align="Center"/>
+			<property Type="JobName" Text="CHINESE TRANSLATOR" Text2="Seokmin Kong" Align="Center"/>
+			<property Type="JobName" Text="JAPANESE TRANSLATOR" Text2="Jinju Kang" Align="Center"/>
+		</List>
+	</class>
+	<class name="Credit13">
+		<List>
+			<property Type="Job" Text="ENGLISH TRANSLATION SUPPORTER" Align="Center" Margin="40"/>
+			<property Type="Name" Text2="Albeoris" Align="Center"/>
+			<property Type="Name" Text2="Delayed Hopkick" Align="Center"/>
+			<property Type="Name" Text2="Dj Jazzy Fresherson" Align="Center"/>
+			<property Type="Name" Text2="Null Winter" Align="Center"/>
+			<property Type="Name" Text2="RainbowRain" Align="Center"/>
+			<property Type="Name" Text2="x_equals_speed" Align="Center"/>
+		</List>
+	</class>
+	<class name="Credit13_2">
+		<List>
+			<property Type="Job" Text="CHINESE TRANSLATION SUPPORTER" Align="Center" Margin="40"/>
+			<property Type="Name" Align="Center" Text2="B.G."/>
+			<property Type="Name" Align="Center" Text2="白虎乱风"/>
+			<property Type="Name" Align="Center" Text2="林小鹿"/>
+			<property Type="Job" Text="JAPANESE TRANSLATION SUPPORTER" Align="Center"/>
+			<property Type="Name" Align="Center" Text2="Meat Man"/>
+			<property Type="Name" Align="Center" Text2="Tarao"/>
+		</List>
+	</class>
+	<class name="Credit14">
+		<List>
+			<property Type="Job" Text="SPECIAL SUPPORTER" Align="Center" Margin="40"/>
+			<property Type="Name2" Text="Adam" Text2="Altaira" Align="Center"/>
+			<property Type="Name2" Text="bakuk4311" Text2="Becirevic Namik" Align="Center"/>
+			<property Type="Name2" Text="Buzzi" Text2="Bloodwest" Align="Center"/>
+			<property Type="Name2" Text="Christophe Ollivier(Krikroune)" Text2="chiyo1982" Align="Center"/>
+			<property Type="Name2" Text="ClearJin" Text2="Darkblue" Align="Center"/>
+			<property Type="Name2" Text="Delayed Hopkick" Text2="Daraster" Align="Center"/>
+			<property Type="Name2" Text="Echo" Text2="Fbin" Align="Center"/>
+		</List>
+	</class>
+	<class name="Credit14_2">
+		<List>
+			<property Type="Job" Text="SPECIAL SUPPORTER" Align="Center" Margin="40"/>
+			<property Type="Name2" Text="Folrand" Text2="Gollvieg" Align="Center"/>
+			<property Type="Name2" Text="HarpyEagle" Text2="Hear me roar！" Align="Center"/>
+			<property Type="Name2" Text="Hwang" Text2="Hyonii" Align="Center"/>
+			<property Type="Name2" Text="jofu" Text2="Kindra" Align="Center"/>
+			<property Type="Name2" Text="kms_2012" Text2="lividman" Align="Center"/>
+			<property Type="Name2" Text="Misslemike" Text2="Orange91" Align="Center"/>
+		</List>
+	</class>
+	<class name="Credit15">
+		<List>
+			<property Type="Job" Text="SPECIAL SUPPORTER" Align="Center" Margin="40"/>
+			<property Type="Name2" Text="Ordering" Text2="Professor Rappy" Align="Center"/>
+			<property Type="Name2" Text="Purple Sonic" Text2="rainheart" Align="Center"/>
+			<property Type="Name2" Text="Rohan Rose" Text2="RexEviL" Align="Center"/>
+			<property Type="Name2" Text="SegaSega2" Text2="S2SKY" Align="Center"/>
+			<property Type="Name2" Text="[!Ignore]Shusussut(슈슈슛)" Text2="SnowMaker" Align="Center"/>
+			<property Type="Name2" Text="Solution Train" Text2="Steyr12345" Align="Center"/>
+			<property Type="Name2" Text="some_where" Text2="Xaxil Nightsun" Align="Center"/>
+		</List>
+	</class>
+	<class name="Credit15_2">
+		<List>
+			<property Type="Job" Text="SPECIAL SUPPORTER" Align="Center" Margin="40"/>
+			<property Type="Name2" Text="TargetPractice" Text2="[!Ignore]泠堂雨" Align="Center"/>
+			<property Type="Name2" Text="[!Ignore]流云" Text2="[!Ignore]너굴맨" Align="Center"/>
+			<property Type="Name2" Text="[!Ignore]녹차백만잔" Text2="[!Ignore]라이커스" Align="Center"/>
+			<property Type="Name2" Text="[!Ignore]바보멍청이(Luvily)" Text2="[!Ignore]봄마요" Align="Center"/>
+			<property Type="Name2" Text="[!Ignore]영세시민" Text2="[!Ignore]유칼리" Align="Center"/>
+			<property Type="Name2" Text="[!Ignore]은 귤" Text2="[!Ignore]체리글라세" Align="Center"/>
+		</List>
+	</class>
+	<class name="Credit16">
+		<List>
+			<property Type="Job" Text="SPECIAL SUPPORTER" Align="Center" Margin="40"/>
+			<property Type="Name" Text="https://freesound.org/" Align="Center"/>
+			<property Type="Name" Text="https://game-icons.net/ " Align="Center"/>
+			<property Type="Name" Text="[!Ignore]Facebook 스팀 한국사용자 모임" Align="Center"/>
+		</List>
+	</class>
+	<class name="Credit17">
+		<List>
+			<property Type="Job" Text="&lt;SPECIAL THANKS&gt;" Align="Center" Margin="40"/>
+			<property Type="Name" Text="CheongSu Lee" Align="Center"/>
+		</List>
+	</class>
+	<class name="Credit17_2">
+		<List>
+			<property Type="Name" Text="...and ALL FANS OF TROUBLESHOOTER" Align="Center"/>
+		</List>
+	</class>
+	<class name="Credit17_3">
+		<List>
+			<property Type="Name" Text="...and $CompanyName$" Align="Center"/>
+		</List>
+	</class>
+</idspace>

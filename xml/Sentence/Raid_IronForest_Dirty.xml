@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Raid_IronForest_Dirty_lzwuxh" Value="[!Dashboard:Counter]남은 네구리 우두머리 수"/>
+		<class name="Raid_IronForest_Dirty_oqgzAO" Value="[!Dashboard:Counter]남은 야수 수"/>
+		<class name="Raid_IronForest_Dirty_EvgIsU" Value="[!Dashboard:TimeLimiter]귀환까지 남은 시간"/>
+		<class name="Raid_IronForest_Dirty_OJyN5v" Value="[!Objective]네구리 우두머리를 제압하시오."/>
+		<class name="Raid_IronForest_Dirty_NHUR86" Value="[!Title]괴수와 사냥꾼"/>
+		<class name="Raid_IronForest_Dirty_0ewMrJ" Value="[!Title]철의 숲 오염지"/>
+		<class name="Raid_IronForest_Dirty_NutdD2" Value="[!Dialog][!speaker:Beast_Frog_White_Normal][colour=&apos;FFFFFF55&apos;]이번 겨울은 이 곳에서 보냅니다."/>
+		<class name="Raid_IronForest_Dirty_qDuEgR" Value="[!Dialog][!speaker:Beast_Frog_Fire3_Normal][colour=&apos;FFFFAA00&apos;]공주. 여기는 위험해. 생각보다 인간들과 티마들이 가까워."/>
+		<class name="Raid_IronForest_Dirty_Y5SCk8" Value="[!Dialog][!speaker:Beast_Frog_White_Normal][colour=&apos;FFFFFF55&apos;]어쩔 수 없습니다. 이 지역이 아니면 다 얼어 죽을 거에요."/>
+		<class name="Raid_IronForest_Dirty_9eK8Fi" Value="[!Dialog][!speaker:Beast_Frog_Normal3_Normal][colour=&apos;FF32CD32&apos;]이게 다 티마들 때문이야."/>
+		<class name="Raid_IronForest_Dirty_r1cM7Y" Value="[!Dialog][!speaker:Beast_Frog_Normal3_Normal][colour=&apos;FF32CD32&apos;]그녀석들이 계속 인간들과 엮이니까 이 지경아냐."/>
+		<class name="Raid_IronForest_Dirty_fQwvsL" Value="[!Dialog][!speaker:Beast_Frog_Black3_Normal][colour=&apos;FFFFFFAA&apos;]그 은색 녀석이 나타나고 귀찮아진게 너무 많아."/>
+		<class name="Raid_IronForest_Dirty_BAenfg" Value="[!Dialog][!speaker:Beast_Frog_Normal3_Normal][colour=&apos;FF32CD32&apos;]그래! 그녀석이 온 뒤로 정말 귀찮아졌어!"/>
+		<class name="Raid_IronForest_Dirty_1W4rae" Value="[!Dialog][!speaker:Beast_Frog_Fire3_Normal][colour=&apos;FFFFAA00&apos;]이 녀석들아 티마 이야기로 왜 빠져!"/>
+		<class name="Raid_IronForest_Dirty_gYixyE" Value="[!Dialog][!speaker:Beast_Frog_Fire3_Normal][colour=&apos;FFFFAA00&apos;]공주. 지금 여기서 겨울을 나면 인간들이랑 충돌한다고!"/>
+		<class name="Raid_IronForest_Dirty_4lGWRv" Value="[!Dialog][!speaker:Beast_Frog_Poison3_Normal][colour=&apos;FFCC55EE&apos;]도로리들에게 철의 숲 심부에 안전한 지역을 찾아 보라고 하자."/>
+		<class name="Raid_IronForest_Dirty_QfHser" Value="[!Dialog][!speaker:Beast_Frog_Lightning3_Normal][colour=&apos;FF00AAFF&apos;]도로리들이 심부에 잘도 가겠다."/>
+		<class name="Raid_IronForest_Dirty_W89th3" Value="[!Dialog][!speaker:Beast_Frog_Poison3_Normal][colour=&apos;FFCC55EE&apos;]그건 걱정마. 최근 만난 도로리 중에 인간들 군락에도 들어가 당당히 여행하고 돌아온 녀석을 만났지."/>
+		<class name="Raid_IronForest_Dirty_y3aV52" Value="[!Dialog][!speaker:Beast_Frog_Poison3_Normal][colour=&apos;FFCC55EE&apos;]모험을 좋아하는 녀석이라 충분한 사례를 한다면 우리의 부탁을 거절하지 않을 거야."/>
+		<class name="Raid_IronForest_Dirty_BSuzJe" Value="[!Dialog][!speaker:Beast_Frog_Lightning3_Normal][colour=&apos;FF00AAFF&apos;]흥. 그건 못 믿겠다."/>
+		<class name="Raid_IronForest_Dirty_V3YsJw" Value="[!Dialog][!speaker:Beast_Frog_White_Normal][colour=&apos;FFFFFF55&apos;]그만들 하세요!"/>
+		<class name="Raid_IronForest_Dirty_T1ffk7" Value="[!Dialog][!speaker:Beast_Frog_White_Normal][colour=&apos;FFFFFF55&apos;]이 곳이 위험한 곳이라는 곳은 저도 잘 알아요. 하지만 겨울이 온 이상 일족을 이끌고 도박을 할 수는 없어요."/>
+		<class name="Raid_IronForest_Dirty_3jCxU9" Value="[!Dialog][!speaker:Beast_Frog_White_Normal][colour=&apos;FFFFFF55&apos;]다른 안전한 얼어 붙지 않은 지역을 발견하면, 그 때 다시 이야기 하기로 해요."/>
+		<class name="Raid_IronForest_Dirty_7X5frP" Value="[!Dialog][!speaker:Beast_Frog_Fire3_Normal][colour=&apos;FFFFAA00&apos;]공주. "/>
+		<class name="Raid_IronForest_Dirty_MBNK1i" Value="[!Dialog][!speaker:Beast_Frog_White_Normal][colour=&apos;FFFFFF55&apos;]네?"/>
+		<class name="Raid_IronForest_Dirty_0kLIXr" Value="[!Dialog][!speaker:Beast_Frog_Fire3_Normal][colour=&apos;FFFFAA00&apos;]그렇다면 내 밑의 젊은 녀석들 몇명하고 얼어 붙지 않은 물줄기를 타고 내려가 티마들 서식지를 습격해 먹을 것을 가져 올게."/>
+		<class name="Raid_IronForest_Dirty_7dAjhf" Value="[!Dialog][!speaker:Beast_Frog_Fire3_Normal][colour=&apos;FFFFAA00&apos;]우리들이야 그래도 추위를 어느 정도 버티니까 가능할거야."/>
+		<class name="Raid_IronForest_Dirty_Z8jdX2" Value="[!Dialog][!speaker:Beast_Frog_White_Normal][colour=&apos;FFFFFF55&apos;]알겠습니다. 하지만 너무 몰아붙이지 마세요."/>
+		<class name="Raid_IronForest_Dirty_OvphPD" Value="[!Dialog]겨울이 되자 평년보다 자주 네구리들이 자주 철의 숲 외곽에까지 출현한다."/>
+		<class name="Raid_IronForest_Dirty_AAX1it" Value="[!Dialog]발할라 경찰청은 해당 위협을 제거하기 위해 트러블슈터에게 사건을 할당하였지만..."/>
+		<class name="Raid_IronForest_Dirty_RyNutb" Value="[!Dialog]자원 관리 구역과 같이 관리되는 지역이 아닌 철의 숲 지역에서 사냥을 하려면 &apos;사냥허가증&apos;이 필요했다."/>
+		<class name="Raid_IronForest_Dirty_hCwHLe" Value="[!Dialog]하지만 철의 숲 내부로 들어갈 일 없는 바람장벽 지구 내 트러블슈터 회사는 당연히 &apos;사냥허가증&apos;을 보유한 회사가 없었다."/>
+		<class name="Raid_IronForest_Dirty_OhZgKZ" Value="[!Dialog][!speaker:Giselle_Smile][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]나 없었으면 어쩌려고?"/>
+		<class name="Raid_IronForest_Dirty_iCvUX1" Value="[!Dialog][!speaker:VHPD_Jane_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]몇몇 우두머리들만 제압해 겁주는 것만으로 충분하니까 빨리 해결하고 복귀해."/>
+		<class name="Raid_IronForest_Dirty_eVZOXj" Value="[!Dialog][!speaker:Giselle_Smile][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]너무 당연한 듯 말하네~"/>
+		<class name="Raid_IronForest_Dirty_clWhC9" Value="[!Dialog][!speaker:VHPD_Jane_Smile][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]네 실력이라면 내가 제일 잘 알아. 그러니 믿고 맡기는 거야."/>
+		<class name="Raid_IronForest_Dirty_CtcI90" Value="[!Dialog][!speaker:Giselle_Satisfying][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]그런 거 였어?"/>
+		<class name="Raid_IronForest_Dirty_9Ehyr5" Value="[!BalloonChat][!speaker:Giselle]자. 그럼 사냥을 시작해 볼까?"/>
+		<class name="Raid_IronForest_Dirty_OTjaAD" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Raid_IronForest_Dirty_vE5hxc" Value="[!VictoryCondition]네구리 우두머리를 제압하시오."/>
+		<class name="Raid_IronForest_Dirty_QKHQNT" Value="[!Dialog]네구리 우두머리를 제압하였습니다. 계속 임무를 진행하시겠습니까?"/>
+		<class name="Raid_IronForest_Dirty_kRuv0H" Value="[!Choice]사냥을 계속한다."/>
+		<class name="Raid_IronForest_Dirty_4xfkPr" Value="[!Choice]귀환한다."/>
+		<class name="Raid_IronForest_Dirty_6mNV3a" Value="[!Objective]남은 귀환 시간까지 살아남으시오"/>
+		<class name="Raid_IronForest_Dirty_34XoJi" Value="[!Ignore][!Dialog][!speaker:EmptySubTitle_]Raid_Road_112_0AwRZ4"/>
+		<class name="Raid_IronForest_Dirty_FB81iF" Value="[!Ignore][!Choice]Raid_Road_112_cLlzzX"/>
+		<class name="Raid_IronForest_Dirty_7TxJS5" Value="[!Ignore][!Choice]Raid_Road_112_qH42Km"/>
+		<class name="Raid_IronForest_Dirty_Pg1kIA" Value="[!Ignore][!BalloonChat][!speaker:Dorori_Wind_01]Raid_Road_112_5xl7KB"/>
+		<class name="Raid_IronForest_Dirty_EXDdao" Value="[!Ignore][!FrontMessage]Raid_Road_112_6Us0wf"/>
+		<class name="Raid_IronForest_Dirty_2rPY9T" Value="[!Ignore][!Title]Raid_Road_112_jYxDE2"/>
+		<class name="Raid_IronForest_Dirty_mtf4IA" Value="[!Ignore][!Title]Raid_Road_112_KQKoZv"/>
+		<class name="Raid_IronForest_Dirty_5WaZ8a" Value="[!Ignore][!BalloonChat][!speaker:Dorori_Fire_Boss]Raid_Road_112_8q3IMO"/>
+		<class name="Raid_IronForest_Dirty_L7pdQQ" Value="[!Ignore][!FrontMessage]Raid_Road_112_ecvOeg"/>
+		<class name="Raid_IronForest_Dirty_Y54dGi" Value="[!Ignore][!BalloonChat]Raid_Road_112_1MRVOg"/>
+		<class name="Raid_IronForest_Dirty_6BxMDm" Value="[!Ignore][!Dialog][!speaker:Heissing_Normal]Raid_Road_112_akyvPm"/>
+		<class name="Raid_IronForest_Dirty_oe9tUh" Value="[!Ignore][!Dialog][!speaker:Heissing_EyeClose]Raid_Road_112_yp0qZb"/>
+		<class name="Raid_IronForest_Dirty_hMJ9N1" Value="[!Ignore][!FrontMessage]Raid_Road_112_zWWpCm"/>
+		<class name="Raid_IronForest_Dirty_XXwN9r" Value="[!Ignore][!FrontMessage]Raid_Road_112_fLf8hg"/>
+		<class name="Raid_IronForest_Dirty_GKI9bg" Value="[!Dialog]네구리 우두머리를 모두 제압하였습니다. 남은 야수들까지 사냥하시겠습니까?"/>
+		<class name="Raid_IronForest_Dirty_7Fizho" Value="[!Objective]남은 야수를 모두 제압하시오."/>
+		<class name="Raid_IronForest_Dirty_zNtCpF" Value="[!Objective]남은 귀환 시간까지 살아남으시오"/>
+		<class name="Raid_IronForest_Dirty_tj9W9W" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Raid_IronForest_Dirty_pZj075" Value="[!VictoryCondition]남은 귀환 시간까지 생존하시오."/>
+		<class name="Raid_IronForest_Dirty_BhEo6w" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Raid_IronForest_Dirty_Ciskeh" Value="[!VictoryCondition]남은 야수를 모두 제압하시오."/>
+		<class name="Raid_IronForest_Dirty_jHSGvY" Value="[!BalloonChat][!speaker:Dot]네구르르!!!"/>
+		<class name="Raid_IronForest_Dirty_134iPl" Value="[!Dialog][!speaker:Beast_Frog_Dot_Normal][colour=&apos;FFFF5500&apos;]구루구루. 네구르!"/>
+	</idspace>
+</idspaces>

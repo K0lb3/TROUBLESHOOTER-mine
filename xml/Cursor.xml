@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Cursor">
+	<class name="Default" ImageName="TaharezLook/MouseArrow" CursorName="Basic.cur"/>
+	<class name="TextBar" ImageName="TaharezLook/MouseTextBar" CursorName="TextBar.cur"/>
+	<class name="NpcTalk" ImageName="TaharezLook/NpcTalk" CursorName="NpcTalk.cur"/>
+	<class name="CancelLineup" ImageName="TaharezLook/CancelLineup" CursorName="CancelLineup.cur"/>
+	<class name="EWCursor" ImageName="TaharezLook/MouseEsWeCursor" CursorName="MouseEsWeCursor.cur"/>
+	<class name="NSCursor" ImageName="TaharezLook/MouseNoSoCursor" CursorName="MouseNoSoCursor.cur"/>
+	<class name="NWSECursor" ImageName="TaharezLook/MouseNwSeCursor" CursorName="MouseNwSeCursor.cur"/>
+	<class name="NESWCursor" ImageName="TaharezLook/MouseNeSwCursor" CursorName="MouseNeSwCursor.cur"/>
+	<class name="Magnifier" ImageName="TaharezLook/MouseMagnifier" CursorName="Magnifier.cur"/>
+</idspace>

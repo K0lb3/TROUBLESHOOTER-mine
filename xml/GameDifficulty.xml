@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="GameDifficulty">
+	<schema>
+		<rule property="Opened" type="bool" default="false"/>
+		<rule property="UseBossLvFix" type="bool" default="false"/>
+		<rule property="BossFixLv" type="number" default="0"/>
+		<rule property="Desc" type="calculated" default="CalculatedProperty_TextFormater_GameDifficulty"/>
+	</schema>
+	<class name="Safty" Title="안전" Image="Loading_DailyAnne_Robin" TutorialSet="Optional" UseBossLvFix="false" BossFixLv="0">
+		<Desc_Base>
+			<property CaseColor="LimeGold" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="턴제 전략 게임을 처음 진행하시는 분들을 위한 난이도입니다."/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="적의 전략적 판단" CaseLineBreak="true" LineBreak="true" Text="자신의 안전을 우선하며 공격합니다."/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="보스 유닛" CaseLineBreak="true" LineBreak="true" Text="모든 미션에서 해당 보스의 고정 레벨로 등장합니다."/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="정예 유닛" CaseLineBreak="true" LineBreak="true" Text="정예 유닛이 등장하지 않습니다."/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="적 유닛 수" CaseLineBreak="true" LineBreak="true" Text="각 미션당 등장하는 적 수가 대폭 감소합니다."/>
+		</Desc_Base>
+	</class>
+	<class name="Easy" Title="쉬움" Image="Loading_Ramjiplaza_Alley" TutorialSet="Optional" UseBossLvFix="false" BossFixLv="0">
+		<Desc_Base>
+			<property CaseColor="LimeGold" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="심리적 부담없이 게임 진행을 하고 싶은 분들을 위한 난이도입니다."/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="적의 전략적 판단" CaseLineBreak="true" LineBreak="true" Text="자신의 안전을 우선하며 공격합니다."/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="보스 유닛" CaseLineBreak="true" LineBreak="true" Text="모든 미션에서 해당 보스의 고정 레벨로 등장합니다."/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="정예 유닛" CaseLineBreak="true" LineBreak="true" Text="소수의 정예 유닛이 등장합니다."/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="적 유닛 수" CaseLineBreak="true" LineBreak="true" Text="각 미션당 등장하는 적 수가 대폭 감소합니다."/>
+		</Desc_Base>
+	</class>
+	<class name="Normal" Title="일반" Image="Loading_AlbusResearching" TutorialSet="Optional" UseBossLvFix="false" BossFixLv="10">
+		<Desc_Base>
+			<property CaseColor="LimeGold" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="턴제 전략 RPG 게임에 익숙하신 분들을 위한 난이도입니다."/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="적의 전략적 판단" CaseLineBreak="true" LineBreak="true" Text="자신의 안전과 적의 제압을 상황에 따라 적절하게 선택합니다."/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="보스 유닛" CaseLineBreak="true" LineBreak="true" Text="해당 미션의 권장 레벨보다 $BossFixLv$레벨 낮은 보스는 미션 권장 레벨의 $BossFixLv$레벨 이하까지 레벨이 상승합니다."/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="정예 유닛" CaseLineBreak="true" LineBreak="true" Text="등장하는 정예 유닛의 수가 소폭 증가합니다."/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="적 유닛 수" CaseLineBreak="true" LineBreak="true" Text="각 미션당 등장하는 적 수가 소폭 증가합니다."/>
+		</Desc_Base>
+	</class>
+	<class name="Hard" Title="어려움" Image="Loading_DailyIrene" TutorialSet="Optional" UseBossLvFix="false" BossFixLv="5">
+		<Desc_Base>
+			<property CaseColor="LimeGold" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="강력한 적과 전투를 즐기기 위한 난이도입니다."/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="적의 전략적 판단" CaseLineBreak="true" LineBreak="true" Text="자신의 안전과 적의 제압을 상황에 따라 적절하게 선택합니다."/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="보스 유닛" CaseLineBreak="true" LineBreak="true" Text="해당 미션의 권장 레벨보다 $BossFixLv$레벨 낮은 보스는 미션 권장 레벨의 $BossFixLv$레벨 이하까지 레벨이 상승합니다."/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="정예 유닛" CaseLineBreak="true" LineBreak="true" Text="등장하는 정예 유닛의 수가 대폭 증가합니다."/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="적 유닛 수" CaseLineBreak="true" LineBreak="true" Text="각 미션당 등장하는 적 수가 대폭 증가합니다."/>
+			<property CaseColor="Orange" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="플레이어 팀이 강력하지 않으면 미션 진행 시간이 길어질 수 있습니다."/>
+		</Desc_Base>
+	</class>
+	<class name="Merciless" Title="가혹한" Image="Loading_Albus_Office" TutorialSet="Skipped" UseBossLvFix="true" BossFixLv="0">
+		<Desc_Base>
+			<property CaseColor="LimeGold" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="도전적인 전투를 즐기기 위한 난이도입니다."/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="적의 전략적 판단" CaseLineBreak="true" LineBreak="true" Text="적의 제압을 우선합니다."/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="보스 유닛" CaseLineBreak="true" LineBreak="true" Text="해당 미션의 권장 레벨보다 낮은 보스는 미션 권장 레벨까지 레벨이 상승합니다."/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="정예 유닛" CaseLineBreak="true" LineBreak="true" Text="일반 적들은 모두 정예 유닛으로 등장합니다."/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="적 유닛 수" CaseLineBreak="true" LineBreak="true" Text="각 미션당 등장하는 적 수가 대폭 증가합니다."/>
+			<property CaseColor="Orange" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="해당 난이도를 사용하려면 사건 일지가 필요합니다. 사건 일지는 시나리오 진행을 통하여 활성화 가능합니다."/>
+		</Desc_Base>
+	</class>
+	<class name="Impossible" Title="불가능한" Image="Loading_LunarKill3" TutorialSet="Skipped" UseBossLvFix="true" BossFixLv="0">
+		<Desc_Base>
+			<property CaseColor="LimeGold" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="불가능한 상황을 이겨내고 싶은 분들을 위한 난이도입니다."/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="적의 전략적 판단" CaseLineBreak="true" LineBreak="true" Text="적의 제압을 우선합니다."/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="보스 유닛" CaseLineBreak="true" LineBreak="true" Text="해당 미션의 권장 레벨보다 낮은 보스는 미션 권장 레벨까지 레벨이 상승합니다."/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="정예 유닛" CaseLineBreak="true" LineBreak="true" Text="일반 적들은 모두 정예 유닛으로 등장합니다."/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="적 유닛 수" CaseLineBreak="true" LineBreak="true" Text="각 미션당 등장하는 적 수가 대폭 증가합니다."/>
+		</Desc_Base>
+	</class>
+</idspace>

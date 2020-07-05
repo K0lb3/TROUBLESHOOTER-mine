@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Dialog">
+	<class name="LobbyEvent_Common">
+		<Scripts>
+			<property Type="SceneFade" Direct="true" FadeType="Out"/>
+			<property Type="ChangeLobbyMap" C_LobbyDef="env.lobby_map"/>
+			<property Type="ChangeCameraMode" C_CameraMode="env.camera_mode" Direct="true"/>
+			<property Type="Switch" C_TestTarget="env._auto_fade_in">
+				<property Case="true">
+					<property Type="SceneFade" Direct="false" FadeType="In"/>
+				</property>
+			</property>
+			<property Type="Jump" C_JumpTo="env.event_type"/>
+			<property Type="Switch" C_TestTarget="env._last_fade_type">
+				<property Case="In">
+					<property Type="SceneFade" Direct="false" FadeType="Out"/>
+				</property>
+			</property>
+			<property Type="ChangeLobbyMap" LobbyDef="Office"/>
+			<property Type="ChangeCameraMode" CameraMode="Base" Direct="true"/>
+			<property Type="SceneFade" Direct="true" FadeType="In"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office_Albus1">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_Albus_MenuTutorial"/>
+			<property Type="Env" Key="selection_bit" C_Value="0"/>
+			<property Type="Loop" LoopCount="4">
+				<property Type="BattleSelection" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Start" Close="true" Message="[!speaker:Albus_Think]뭐부터 정리할까..." DialogType="Main" Slot="Center" Effect="Appear" SelectType="List" Target="method_type">
+					<property Text="찬장 정리하기" Value="Inventory" Condition="not hasbit(env.selection_bit, bit(1))"/>
+					<property Text="짐 정리하기" Value="Company" Condition="not hasbit(env.selection_bit, bit(2))"/>
+					<property Text="탁자 정리하기" Value="Quest" Condition="not hasbit(env.selection_bit, bit(3))"/>
+					<property Text="책장 정리하기" Value="MasteryInventory" Condition="not hasbit(env.selection_bit, bit(4))"/>
+				</property>
+				<property Type="Switch" C_TestTarget="env.method_type">
+					<property Case="Inventory">
+						<property Type="Env" Key="selection_bit" C_Value="env.selection_bit + bit(1)"/>
+						<property Type="Jump" JumpTo="Office_Albus_MenuTutorial_Inventory"/>
+						<property Type="SetNamedAssetVisible" Key="Objects01" Visible="false"/>
+						<property Type="SetNamedAssetVisible" Key="Objects02" Visible="false"/>
+						<property Type="SetNamedAssetVisible" Key="Objects03" Visible="false"/>
+					</property>
+					<property Case="Company">
+						<property Type="Env" Key="selection_bit" C_Value="env.selection_bit + bit(2)"/>
+						<property Type="Jump" JumpTo="Office_Albus_MenuTutorial_Company"/>
+						<property Type="SetNamedAssetVisible" Key="Box1" Visible="false"/>
+						<property Type="SetNamedAssetVisible" Key="Box2" Visible="false"/>
+						<property Type="SetNamedAssetVisible" Key="Box3" Visible="false"/>
+						<property Type="SetNamedAssetVisible" Key="Box4" Visible="false"/>
+					</property>
+					<property Case="Quest">
+						<property Type="Env" Key="selection_bit" C_Value="env.selection_bit + bit(3)"/>
+						<property Type="Jump" JumpTo="Office_Albus_MenuTutorial_Quest"/>
+						<property Type="SetNamedAssetVisible" Key="Desk" Visible="false"/>
+					</property>
+					<property Case="MasteryInventory">
+						<property Type="Env" Key="selection_bit" C_Value="env.selection_bit + bit(4)"/>
+						<property Type="Jump" JumpTo="Office_Albus_MenuTutorial_MasteryInventory"/>
+						<property Type="SetNamedAssetVisible" Key="Books01" Visible="false"/>
+						<property Type="SetNamedAssetVisible" Key="Books02" Visible="false"/>
+						<property Type="SetNamedAssetVisible" Key="Books03" Visible="false"/>
+					</property>
+				</property>
+			</property>
+			<property Type="BattleSelection" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Start" Close="true" Message="[!speaker:Albus_Think]뭐부터 정리할까..." DialogType="Main" Slot="Center" Effect="Appear" SelectType="List" Target="method_type">
+				<property Text="파일 정리하기" Value="Roster"/>
+			</property>
+			<property Type="Jump" JumpTo="Office_Albus_MenuTutorial_Roster"/>
+			<property Type="Jump" JumpTo="Office_Albus_MenuTutorial_RosterTutorial1"/>
+			<property Type="Jump" JumpTo="Office_Albus_MenuTutorial_RosterTutorial2"/>
+			<property Type="Jump" JumpTo="Office_Albus_MenuTutorial_RosterTutorial3"/>
+			<property Type="Jump" JumpTo="Office_Albus_MenuTutorial_RosterTutorial4"/>
+			<property Type="Jump" JumpTo="Office_Albus_MenuTutorial_RosterTutorial5"/>
+			<property Type="Jump" JumpTo="Office_Albus_MenuTutorial_RosterTutorial6"/>
+			<property Type="Jump" JumpTo="Office_Albus_MenuTutorial_MailTutorial"/>
+			<property Type="BattleSelection" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Start" Close="true" Message="[!speaker:Albus_Think]빨리 마무리해야지..." DialogType="Main" Slot="Center" Effect="Appear" SelectType="List" Target="method_type">
+				<property Text="이메일 확인하기" Value="MailBox"/>
+			</property>
+			<property Type="Jump" JumpTo="Office_Albus_MenuTutorial_MailBox"/>
+			<property Type="Jump" JumpTo="Office_Albus_MenuTutorial_MailTutorial2"/>
+			<property Type="Jump" JumpTo="Office_Albus_MenuTutorial_MailTutorial3"/>
+			<property Type="SetNamedAssetVisible" Key="Computer01" Visible="false"/>
+			<property Type="SetNamedAssetVisible" Key="Computer02" Visible="false"/>
+			<property Type="BattleSelection" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Start" Close="true" Message="[!speaker:Albus_Normal]...... 이제 가자." DialogType="Main" Slot="Center" Effect="Appear" SelectType="List" Target="method_type">
+				<property Text="떠나기" Value="End"/>
+			</property>
+			<property Type="Jump" JumpTo="Office_Albus_MenuTutorial_End"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office1">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_Tutorial_OfficeMoveIn01"/>
+			<property Type="ChangeCameraMode" CameraMode="Office"/>
+			<property Type="Env" Key="selection_bit" C_Value="0"/>
+			<property Type="Loop" LoopCount="4">
+				<property Type="BattleSelection" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Start" Close="true" Message="[!speaker:Albus_Think]..." DialogType="Main" Slot="Center" Effect="Appear" SelectType="List" Target="method_type">
+					<property Text="소형 책상 설치하기" Value="ActivityReport" Condition="not hasbit(env.selection_bit, bit(1))"/>
+					<property Text="책장 설치하기" Value="Troublemaker" Condition="not hasbit(env.selection_bit, bit(2))"/>
+					<property Text="책상 설치하기" Value="Technique" Condition="not hasbit(env.selection_bit, bit(3))"/>
+					<property Text="작은 책장 설치하기" Value="Statistics" Condition="not hasbit(env.selection_bit, bit(4))"/>
+				</property>
+				<property Type="Switch" C_TestTarget="env.method_type">
+					<property Case="ActivityReport">
+						<property Type="Env" Key="selection_bit" C_Value="env.selection_bit + bit(1)"/>
+						<property Type="Jump" JumpTo="Office_Tutorial_ActivityReport"/>
+						<property Type="Jump" JumpTo="Office_Tutorial_ActivityReport2"/>
+					</property>
+					<property Case="Troublemaker">
+						<property Type="Env" Key="selection_bit" C_Value="env.selection_bit + bit(2)"/>
+						<property Type="Jump" JumpTo="Office_Tutorial_TroublemakerList"/>
+						<property Type="Jump" JumpTo="Office_Tutorial_TroublemakerList2"/>
+					</property>
+					<property Case="Technique">
+						<property Type="Env" Key="selection_bit" C_Value="env.selection_bit + bit(3)"/>
+						<property Type="Jump" JumpTo="Office_Tutorial_Technique"/>
+						<property Type="Jump" JumpTo="Office_Tutorial_Technique2"/>
+					</property>
+					<property Case="Statistics">
+						<property Type="Env" Key="selection_bit" C_Value="env.selection_bit + bit(4)"/>
+						<property Type="Jump" JumpTo="Office_Tutorial_Statistics"/>
+						<property Type="Jump" JumpTo="Office_Tutorial_Statistics2"/>
+					</property>
+				</property>
+			</property>
+			<property Type="Jump" JumpTo="Office_Tutorial_OfficeMoveIn06"/>
+			<property Type="ChangeCameraMode" CameraMode="Base"/>
+			<property Type="Jump" JumpTo="Office_Tutorial_OfficeMoveIn07"/>
+			<property Type="ChangeCameraMode" CameraMode="Workshop"/>
+			<property Type="Jump" JumpTo="Office_Tutorial_Workshop_GetInit"/>
+			<property Type="BattleSelection" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Start" Close="true" Message="[!speaker:Albus_Think]..." DialogType="Main" Slot="Center" Effect="Appear" SelectType="List" Target="method_type">
+				<property Text="상황판 가져가기" Value="Get"/>
+			</property>
+			<property Type="Jump" JumpTo="Office_Tutorial_Workshop_Get"/>
+			<property Type="ChangeCameraMode" CameraMode="Office"/>
+			<property Type="BattleSelection" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Start" Close="true" Message="[!speaker:Albus_Think]..." DialogType="Main" Slot="Center" Effect="Appear" SelectType="List" Target="method_type">
+				<property Text="상황판 설치하기" Value="WorldMap"/>
+			</property>
+			<property Type="Jump" JumpTo="Office_Tutorial_WorldMap"/>
+			<property Type="ChangeCameraMode" CameraMode="Base"/>
+			<property Type="Jump" JumpTo="Office_Tutorial_OfficeMoveIn10"/>
+			<property Type="ChangeCameraMode" CameraMode="Office"/>
+			<property Type="Jump" JumpTo="Office_Tutorial_OfficeMoveIn11"/>
+			<property Type="ChangeCameraMode" CameraMode="Base"/>
+			<property Type="Jump" JumpTo="Office_Tutorial_OfficeMoveIn12"/>
+			<property Type="BattleSelection" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Start" Close="true" Message="[!speaker:Albus_Think]..." DialogType="Main" Slot="Center" Effect="Appear" SelectType="List" Target="method_type">
+				<property Text="외출하기" Value="Leave"/>
+			</property>
+			<property Type="Jump" JumpTo="Office_PlayRamjiPlaza"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office2">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_TutorialOffice_RamjiPlaza_Win13"/>
+			<property Type="ChangeCameraMode" CameraMode="Office"/>
+			<property Type="Jump" JumpTo="Office_Tutorial_OfficeMoveIn20"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office3">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_TutorialOffice_PugoStreet_Win21"/>
+			<property Type="ChangeCameraMode" CameraMode="Office"/>
+			<property Type="Jump" JumpTo="Office_Tutorial_OfficeMoveIn30"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office4">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_Tutorial_OfficeMoveIn31"/>
+			<property Type="ChangeCameraMode" CameraMode="Base"/>
+			<property Type="Jump" JumpTo="Office_Tutorial_OfficeMoveIn32"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office5">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_Tutorial_PlayPugoShop"/>
+			<property Type="Jump" JumpTo="Office_PlayPugoShop"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office6">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_TroublebookOpenEvent"/>
+			<property Type="BattleSelection" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Start" Close="true" Message="[!speaker:Albus_Think]..." DialogType="Main" Slot="Center" Effect="Appear" SelectType="List" Target="method_type">
+				<property Text="책장 정리하기" Value="Troublebook"/>
+			</property>
+			<property Type="Jump" JumpTo="Office_Tutorial_TroubleBook"/>
+			<property Type="Jump" JumpTo="Office_Tutorial_TroubleBook2"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office7">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_Tutorial_PlayBlueFogStreet_02"/>
+			<property Type="CloseDialog" DialogType="BattleDialog"/>
+			<property Type="Jump" JumpTo="Office_PlayBlueFogStreet"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office8">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_IreneGreeting"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office_Night1">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_Tutorial_ItemUpgrade"/>
+			<property Type="ChangeCameraMode" CameraMode="Workshop"/>
+			<property Type="Jump" JumpTo="Office_Tutorial_ItemUpgrade2"/>
+			<property Type="ChangeLobbyMap" LobbyDef="Office"/>
+			<property Type="ChangeCameraMode" CameraMode="Base" Direct="true"/>
+			<property Type="SetNamedAssetVisibleAll" Visible="false"/>
+			<property Type="SceneFade" Direct="false" FadeType="In"/>
+			<property Type="Jump" JumpTo="Office_Tutorial_ItemUpgrade3"/>
+			<property Type="ChangeCameraMode" CameraMode="Workshop"/>
+			<property Type="BattleSelection" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Start" Close="true" Message="[!speaker:Albus_Think]..." DialogType="Main" Slot="Center" Effect="Appear" SelectType="List" Target="method_type">
+				<property Text="작업대 설치하기" Value="Upgrade"/>
+			</property>
+			<property Type="SetNamedAssetVisible" Key="Upgrade" Visible="true"/>
+			<property Type="SetNamedAssetVisible" Key="Upgrade2" Visible="true"/>
+			<property Type="Jump" JumpTo="Office_Tutorial_Workshop_Upgrade"/>
+			<property Type="Jump" JumpTo="Office_Tutorial_Workshop_Upgrade2"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office9">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_Marco_Don_01" Npc="Don"/>
+			<property Type="Switch" C_TestTarget="env.method_type">
+				<property Case="BreakCup">
+					<property Type="Jump" JumpTo="LobbyEvent_Office9_BattleLoop" Npc="Don"/>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office9_BattleLoop">
+		<Scripts>
+			<property Type="BattleSelection" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Start" Close="true" Message="플레이를 원하시는 캐릭터를 선택하세요." DialogType="Main" Slot="Center" Effect="Appear" Target="play_type">
+				<property Text="마르코" Value="Marco"/>
+				<property Text="돈" Value="Don"/>
+			</property>
+			<property Type="BattleSelection" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Start" Close="true" Message="결과를 선택하세요." DialogType="Main" Slot="Center" Effect="Appear" Target="result_type">
+				<property Text="승리" Value="Win"/>
+				<property Text="패배" Value="Lose"/>
+			</property>
+			<property Type="SceneFade" Direct="false" FadeType="In"/>
+			<property Type="Switch" C_TestTarget="env.result_type">
+				<property Case="Win">
+					<property Type="Switch" C_TestTarget="env.play_type">
+						<property Case="Marco">
+							<property Type="Jump" JumpTo="Office_Marco_Don_Win01" Npc="Don"/>
+						</property>
+						<property Case="Don">
+							<property Type="Jump" JumpTo="Office_Marco_Don_Win02" Npc="Don"/>
+						</property>
+					</property>
+				</property>
+				<property Case="Lose">
+					<property Type="Switch" C_TestTarget="env.play_type">
+						<property Case="Marco">
+							<property Type="Jump" JumpTo="Office_Marco_Don_Lose01" Npc="Don"/>
+						</property>
+						<property Case="Don">
+							<property Type="Jump" JumpTo="Office_Marco_Don_Lose02" Npc="Don"/>
+						</property>
+					</property>
+					<property Type="Switch" C_TestTarget="env.method_type">
+						<property Case="Retry">
+							<property Type="Jump" JumpTo="LobbyEvent_Office9_BattleLoop" Npc="Don"/>
+						</property>
+					</property>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office10">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_IssacSuggetion"/>
+			<property Type="ChangeCameraMode" CameraMode="Office"/>
+			<property Type="Jump" JumpTo="Office_IssacSuggetion2"/>
+			<property Type="Jump" JumpTo="Office_PlayHansando"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office11">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_AlbusSuggetion"/>
+			<property Type="Jump" JumpTo="Office_PlayGrayCemeteryPark"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office12">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_AnneJoin"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office_Night2">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_Tutorial_PugoShopAfter_Sion_1"/>
+			<property Type="Jump" JumpTo="Office_PlayPugoShopAfter"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office13">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_PugoShopAfterWin"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office14">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_HeissingSuggetion"/>
+			<property Type="Jump" JumpTo="Office_RecruitHeissing"/>
+			<property Type="Switch" C_TestTarget="env.method_type">
+				<property Case="Accept">
+					<property Type="SceneFade" Direct="false" FadeType="Out"/>
+					<property Type="SceneFade" Direct="false" FadeType="In"/>
+					<property Type="Jump" JumpTo="Office_RecruitHeissing_Complete"/>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office15">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_IreneRequestStart"/>
+			<property Type="Jump" JumpTo="Office_IreneRequest"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office_Night3">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_Tutorial_HeissingAnne"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office_Night4">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_Tutorial_HeissingAlbus"/>
+			<property Type="SceneFade" Direct="false" FadeType="Out"/>
+			<property Type="ChangeLobbyMap" LobbyDef="Office"/>
+			<property Type="ChangeCameraMode" CameraMode="Base" Direct="true"/>
+			<property Type="SceneFade" Direct="false" FadeType="In"/>
+			<property Type="ChangeCameraMode" CameraMode="Office"/>
+			<property Type="Jump" JumpTo="Office_RayStart"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office16">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_JaneRequestStart"/>
+			<property Type="Jump" JumpTo="Office_JaneRequest"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office17">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_Albus_Hospital"/>
+			<property Type="ChangeCameraMode" CameraMode="Office"/>
+			<property Type="Jump" JumpTo="Office_Albus_ReturnOffice"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office18">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_Giselle_Visit01"/>
+			<!-- 지젤 NPC 대화 연출 어떻게 함??? -->
+			<property Type="Jump" JumpTo="Giselle_Main_Albus4"/>
+			<property Type="Jump" JumpTo="Office_GiselleRequest"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office19">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_Giselle_Visit02"/>
+			<property Type="ChangeCameraMode" CameraMode="Office"/>
+			<property Type="Jump" JumpTo="Office_Giselle_Visit03"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Hunter1">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_GiselleHunterEvent_1"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Hunter2">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_GiselleHunterEvent_2"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office_Night5">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_Tutorial_AlbusGiselle"/>
+			<property Type="ChangeCameraMode" CameraMode="Office"/>
+			<property Type="Jump" JumpTo="Office_Tutorial_AlbusGiselle2"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office20">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_HeissingRequestStart"/>
+			<property Type="Jump" JumpTo="Office_HeissingRequest"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office21">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_Kylie_Visit01"/>
+			<property Type="ChangeCameraMode" CameraMode="Office"/>
+			<property Type="Jump" JumpTo="Office_Kylie_Visit02"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office22">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_MachineCraft_1"/>
+			<property Type="ChangeCameraMode" CameraMode="Workshop"/>
+			<property Type="Jump" JumpTo="Office_MachineCraft_2"/>
+			<property Type="BattleSelection" SpeakerInfo="Kylie" SpeakerEmotion="Normal" Mode="Start" Close="true" Message="[!speaker:Kylie_Normal]......" DialogType="Sub" Slot="Center" Effect="Appear" SelectType="List" Target="method_type">
+				<property Text="기계 제작대 설치하기" Value="MachineCraft"/>
+			</property>
+			<property Type="Jump" JumpTo="Office_Tutorial_Workshop_Machine"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Machine">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_Tutorial_Workshop_Machine_2"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Module">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_Tutorial_Workshop_Module1"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office_Night6">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_Tutorial_RayHeissing"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office_Night7">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_Tutorial_AlbusDon"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office_Night8">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_Tutorial_LetonVisit"/>
+			<property Type="SceneFade" Direct="false" FadeType="Out"/>
+			<property Type="ChangeLobbyMap" LobbyDef="Office"/>
+			<property Type="ChangeCameraMode" CameraMode="Base" Direct="true"/>
+			<property Type="SceneFade" Direct="false" FadeType="In"/>
+			<property Type="Jump" JumpTo="Office_RecuitLeton_Init"/>
+			<property Type="Jump" JumpTo="Office_RecruitLeton"/>
+			<property Type="Switch" C_TestTarget="env.method_type">
+				<property Case="Accept">
+					<property Type="SceneFade" Direct="false" FadeType="Out"/>
+					<property Type="SceneFade" Direct="false" FadeType="In"/>
+					<property Type="Jump" JumpTo="Office_RecruitLeton_Complete"/>
+					<property Type="ChangeCameraMode" CameraMode="Office"/>
+					<property Type="Jump" JumpTo="Office_RecruitLeton_Complete2"/>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office_Night9">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_Tutorial_HeissingAbsent"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office23">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_ReturnHeissing"/>
+			<property Type="ChangeCameraMode" CameraMode="Office"/>
+			<property Type="Jump" JumpTo="Office_ReturnHeissing_Office"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office24">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_IssacCallAlbus"/>
+			<property Type="Jump" JumpTo="Office_IssacRequest2"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office_Night10">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_Tutorial_KylieAbsent"/>
+			<property Type="SceneFade" Direct="false" FadeType="Out"/>
+			<property Type="ChangeLobbyMap" LobbyDef="Office"/>
+			<property Type="ChangeCameraMode" CameraMode="Base" Direct="true"/>
+			<property Type="SceneFade" Direct="false" FadeType="In"/>
+			<property Type="ChangeCameraMode" CameraMode="Office"/>
+			<property Type="Jump" JumpTo="Office_KylieRequestStart"/>
+			<property Type="Jump" JumpTo="Office_KylieRequest"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office25">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_RayVisitDiane"/>
+			<property Type="Jump" JumpTo="Office_JaneRequest2"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office_Night11">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_DonReminiscence"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Office26">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_Karl"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_Credit">
+		<Scripts>
+			<property Type="Jump" JumpTo="Credit_Episode01_Master"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_ItemBook">
+		<Scripts>
+			<property Type="Jump" JumpTo="Office_ItemBookOpenEventStart"/>
+			<property Type="ChangeCameraMode" CameraMode="Office"/>
+			<property Type="Jump" JumpTo="Office_ItemBookOpenEvent"/>
+			<property Type="SceneFade" Direct="false" FadeType="Out"/>
+			<property Type="ChangeLobbyMap" LobbyDef="Office"/>
+			<property Type="ChangeCameraMode" CameraMode="Base" Direct="true"/>
+			<property Type="SceneFade" Direct="false" FadeType="In"/>
+			<property Type="ChangeCameraMode" CameraMode="Office"/>
+			<property Type="Jump" JumpTo="Office_ItemBookOpenEvent_Tutorial"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_JukeBox">
+		<Scripts>
+			<property Type="Jump" JumpTo="Don_JukeBox"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_LostShop">
+		<Scripts>
+			<property Type="Jump" JumpTo="Pierto_Tutorial_LostShop"/>
+		</Scripts>
+	</class>
+	<class name="LobbyEvent_ZoneMove">
+		<Scripts>
+			<property Type="Jump" JumpTo="Pierto_Tutorial_ZoneMove"/>
+		</Scripts>
+	</class>
+</idspace>

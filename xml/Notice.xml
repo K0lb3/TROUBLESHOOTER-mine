@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Notice">
+	<schema>
+		<rule property="Version" type="number" default="0"/>
+		<rule property="CheckFunc" type="string" default="Disabled"/>
+		<rule property="CheckFuncLogin" type="string" default="Disabled"/>
+		<rule property="Message" type="string" default=""/>
+		<rule property="Links" type="table" default=""/>
+	</schema>
+	<class name="EndContentsNotice" Version="20200411" CheckFunc="CheckNotice_EndContentsNotice" Message="[!Ignore]현재 개발된 시나리오 컨텐츠는 여기까지입니다.
+
+다음 시나리오 업데이트 날짜는 스팀 상점 페이지$Link$를 통해 공지하겠습니다.">
+		<Links>
+			<property Key="Link" Text="[colour=&apos;FF0000FF&apos;](링크)[colour=&apos;FFFFFFFF&apos;]" LinkURL="http://store.steampowered.com/app/470310/Troubleshooter/"/>
+		</Links>
+	</class>
+	<class name="UpdateNotice" CheckFuncLogin="None" Version="20200422" NextUpdate="0" ThisUpdate="20200422" ChnUpdate="0" JpnUpdate="0">
+		<property name="Message" value="안녕하세요 트러블슈터 개발팀입니다.
+
+$NoticeContent$
+
+감사합니다."/>
+		<property name="NoticeContent" type="calculated" value="UpdateNotice_NoticeContent"/>
+		<property name="UpdateDateText" type="calculated" value="UpdateNotice_UpdateDateText"/>
+		<property name="UpdateDateText_Day" value="다음 업데이트 예정 날짜는 $DayText$ 입니다."/>
+		<property name="UpdateDateText_NoDay" value="다음 업데이트 예정 날짜는 미정입니다. 다음 업데이트 날짜가 정해지는 대로 스팀 상점 페이지$Link$를 통해 알려드리도록 하겠습니다."/>
+		<property name="Base_LangDelayMessage" value="
+
+$LangText$ 사용자분들에게 알려드립니다.[colour='FFFFFFFF']
+
+[colour='FFFFFF00']현재 [colour='FFFFFFFF']$LangText$[colour='FFFFFF00']의 번역은 [colour='FFFFFFFF']$ThisUpdateDay$[colour='FFFFFF00'] 업데이트 내용까지 적용되어 있습니다. 남은  [colour='FFFFFFFF']$LangTextDetail$[colour='FFFFFF00'] 번역은  [colour='FFFFFFFF']$LangUpdateDay$[colour='FFFFFF00'] 추가 업데이트를 통해 완료될 예정입니다.
+
+[colour='FFFFAA00']번역이 완료되지 않은 부분은 영어로 표시됩니다.
+
+아울러 더 좋은 번역 제안 및 잘못된 번역의 수정 제안 등은 스팀의 커뮤니티를 통하여 알려주시면 적극 반영하겠습니다."/>
+		<property name="LangDelayMessage" type="calculated" value="UpdateNotice_LangDelayMessage"/>
+		<property name="ChnLang" value="중국어"/>
+		<property name="ChnLangDetail" value="중문간체"/>
+		<property name="JpnLang" value="일본어"/>
+		<property name="JpnLangDetail" value="일본어"/>
+		<Links>
+			<property Key="Link" Text="[colour=&apos;FF0000FF&apos;](링크)[colour=&apos;FFFFFFFF&apos;]" LinkURL="http://store.steampowered.com/app/470310/Troubleshooter/"/>
+		</Links>
+		<property name="ChnServerNotice" type="calculated" value="UpdateNotice_ChnServerNotice"/>
+		<property name="Base_ChnServerNotice" value="
+
+정식 중국 서버가 추가되었습니다. 중국 내륙 에서 게임을 하는 분들은 중국 서버를 이용하는 것을 권합니다.
+
+중국 서버는 2019년 12월 26일까지의 아시아 서버의 데이터를 사용하므로 이전에 아시아 서버를 사용했던 분들은 사용하던 데이터 그대로 중국 서버에서 게임을 이어서 할 수 있습니다.
+
+그러나 2019년 12월 26일 이후부터는 아시아 서버와 중국 서버는 데이터가 공유되지 않으므로 이 점 주의하시기 바랍니다."/>
+	</class>
+</idspace>

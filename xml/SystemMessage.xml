@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="SystemMessage">
+	<class name="AvailableOnMyTurn" Message="[!Ignore]턴이 활성화 된 상태에서만 가능합니다"/>
+	<class name="GeneralTroubleshooterGuide" Message="
+	
+문제 상황이 지속되는 경우 개발팀 공식 메일 (system@dandylion.co.kr)을 통해서 알려주시거나
+
+$SteamDiscussionLink$에 문의해 주시면 바로 문제 해결에 도움을 드리겠습니다. 
+
+불편을 드려 대단히 죄송합니다."/>
+	<class name="FailedToConnectMissionServer" Message="미션 서버에 접속하지 못했습니다."/>
+	<class name="FailedToConnectMissionServer_Single" Message="미션에 진입하지 못했습니다."/>
+	<class name="FailedToConnectLobbyServer" Message="로비 서버에 접속하지 못했습니다."/>
+	<class name="FailedToConnectLobbyServer_Single" Message="로비로 진입하지 못했습니다."/>
+	<class name="ConnectionRequestExpired" Message="접속 요청이 만료되었습니다"/>
+	<class name="ConnectionRequestExpired_Single" Message="요청이 만료되었습니다"/>
+	<class name="InvalidItemSetting" Message="아이템 오브젝트가 이상합니다."/>
+	<class name="FailedToOpenMission" Message="미션 열기에 실패했습니다"/>
+	<class name="FailedToLogin" Message="계정 인증에 실패했습니다."/>
+	<class name="AccountBlock_Hacking" Message="안녕하세요. 트러블슈터 개발팀입니다.
+
+제작사에서 허용하지 않은 부정행위와 관련된 활동이 당신의 계정에 속한 회사중에서 발견되었습니다.
+
+이에 우리는 당신의 온라인 게임 접속을 일시적으로 %s 까지 제한하였습니다. 
+
+저희는 부정행위의 진위 여부를 조사중이며 부정행위로 판명될 경우 해당 과정에서 취득한 일체의 재화는 모두 회수됩니다.
+
+당신은 언제든지 개발팀에게 접속차단에 대해서 이의를 제기할 수 있습니다. 
+
+$SendMail$ (system@dandylion.co.kr)"/>
+	<class name="FailedToRequestEncryptAppTicket" Message="EncryptedAppTicket 요청 실패!"/>
+	<class name="GatewayServerIsClosed" Message="게이트웨이 서버가 닫혀있습니다.&#xA;&#xA;점검 중이거나 서버에 장애가 발생했을 수 있습니다.&#xA;&#xA;서버 상태에 관한 자세한 사항은 $NewsLink$ 에서 확인하세요."/>
+	<class name="ServerMaintenanceMessage_Regular" Message="현재 정기점검으로 인한 서버 점검중입니다. 점검시간은 아래와 같습니다.&#xA;&#xA;%s ~ %s"/>
+	<class name="ServerMaintenanceMessage_Emergency" Message="현재 임시점검으로 인한 서버 점검중입니다. 점검시간은 아래와 같습니다.&#xA;&#xA;%s ~ %s"/>
+	<class name="SteamNewsLinkText" Message="스팀 페이지"/>
+	<class name="SteamDiscussionLinkText" Message="스팀 포럼 페이지"/>
+	<class name="FailedToInitializeSteam" Message="스팀 이니셜라이즈에 실패했습니다"/>
+	<class name="UnknownConnectionError" Message="알 수 없는 연결문제가 발생했습니다."/>
+	<class name="NeedSteamLogin" Message="스팀 로그인이 필요합니다"/>
+	<class name="InvalidTarget" Message="올바르지 않은 타겟입니다"/>
+	<class name="CanOnlyQuitSingleUserMission" Message="싱글 미션만 임의로 그만둘 수 있습니다."/>
+	<class name="BlockedByDoubleLogin" Message="중복 로그인을 허용하지 않습니다."/>
+	<class name="BlockedByServerFull" Message="서버가 혼잡하여 접속할 수 없습니다."/>
+	<class name="NowPlayingMission" Message="진행중인 미션이 있습니다. 계속 하시겠습니까? (로비로 진행하는 경우 미션을 종료합니다)"/>
+	<class name="NotExistMission" Message="미션 인스턴스가 존재하지 않습니다"/>
+	<class name="PersonalTrade" Message="개인거래"/>
+	<class name="PersonalTradeRequestedMessage" Message="%s
+개인거래 요청이 도착했습니다."/>
+	<class name="PersonalTradeRejected" Message="개인거래 요청이 거절되었습니다"/>
+	<class name="PersonalTradeBusyOpponent" Message="상대방이 개인거래를 수락할 수 없는 상황입니다."/>
+	<class name="PersonalTradeSucceeded" Message="개인거래를 성공적으로 마쳤습니다"/>
+	<class name="PersonalTradeCanceled" Message="개인거래가 취소되었습니다"/>
+	<class name="PersonalTradeHasSent" Message="상대방이 개인거래 요청을 수락하기를 기다리는 중입니다."/>
+	<class name="PersonalTradeQuitByTimeout" Message="시간 제한에 의하여 개인거래 세션이 종료됩니다"/>
+	<class name="PersonalTradeQuitByError" Message="DB에러로 인해 취소되었습니다"/>
+	<class name="PersonalTradeLockReleasedByOpponent" Message="상대방이 잠금을 해제하여 수락 상태가 초기화 됩니다."/>
+	<class name="CannotTradeByInventoryFull" Message="\[%s\]님의 인벤토리가 가득차서 거래가 불가능합니다."/>
+	<class name="ConnectionLost" Message="서버와의 연결이 끊어졌습니다."/>
+	<class name="ConnectionLost_Single" Message="게임 진행 중 에러가 발생했습니다."/>
+	<class name="NotMatchVersion" Message="서버와 버젼이 맞지 않습니다.&#xA;&#xA;종료 후 업데이트를 받고 다시 실행해주세요."/>
+	<class name="NotMatchVersionSteam" Message="서버와 버젼이 맞지 않습니다.&#xA;&#xA;종료 후 업데이트를 받고 다시 실행해주세요. 자동 업데이트가 안 될 시에는 무결성 검사를 실행해주세요."/>
+	<class name="EmptyTradeIsNotAllowed" Message="거래품목이 없습니다."/>
+	<class name="FriendlyFire" Message="경고: 아군 피해 발생"/>
+	<class name="FriendlyFireMsg" Message="이 행동은 아군에게 피해를 줄 수 있습니다.!&#xA;이 행동을 계속 하시겠습니까?"/>
+	<class name="RestoreMission_FailedToLoadStage" Message="버전 업데이트로 인하여 진행중인 미션 데이터를 불러올 수 없습니다.&#xA;ErrorCode: 0023"/>
+	<class name="RestoreMission_VersionMissmatch" Message="버전 업데이트로 인하여 진행중인 미션 데이터를 불러올 수 없습니다.&#xA;ErrorCode: 0024"/>
+	<class name="RestoreMission_NotExistMission" Message="버전 업데이트로 인하여 진행중인 미션 데이터를 불러올 수 없습니다.&#xA;ErrorCode: 0025"/>
+	<class name="RestoreMission_SaveDataCracked" Message="버전 업데이트로 인하여 진행중인 미션 데이터를 불러올 수 없습니다.&#xA;ErrorCode: 0026"/>
+	<class name="ChildInFireSite" Message="사용 불가: 아이 피해 발생"/>
+	<class name="ChildInFireSiteMsg" Message="아이가 공격 범위내에 포함됩니다.&#xA;사용할 수 없습니다."/>
+	<class name="HostileHealing" Message="경고: 적군 회복 가능"/>
+	<class name="HostileHealingMsg" Message="이 행동은 적대 대상에게 피해를 줄 수 있습니다!&#xA;이 행동을 계속 하시겠습니까?"/>
+	<class name="EmptyHeal" Message="경고: 회복 대상 없음"/>
+	<class name="EmptyHealMsg" Message="이 행동으로 아무도 체력이 회복되지 않습니다!&#xA;이 행동을 계속 하시겠습니까?"/>
+	<class name="NoTarget" Message="경고: 적용 대상 없음"/>
+	<class name="NoTargetMsg" Message="이 행동으로 영향 받는 대상이 없습니다!&#xA;이 행동을 계속 하시겠습니까?"/>
+	<class name="DeleteCompanyFailed" Message="회사정보 초기화에 실패했습니다."/>
+	<class name="GraphicSettingResult" Message="그래픽 설정이 \[%s\]으로 적용되었습니다."/>
+	<class name="NowDetectingGraphicOption" Message="최적의 그래픽 옵션을 찾고 있습니다."/>
+	<class name="AutoPlayDisabled" Message="행동 위임 기능이 비활성화되었습니다."/>
+	<class name="FailedToDownloadCompanyData" Message="게임 세션 내려받기에 실패하였습니다. 스팀 커뮤니티나 system@dandylion.co.kr로 문의를 해주시면 문제 해결에 적극적인 도움을 드리겠습니다. 불편을 겪게 해드려 죄송합니다."/>
+	<class name="DownloadCompanyDataSucceeded" Message="게임 세션을 내려받았습니다. 싱글플레이 모드에서 진행하실 수 있습니다."/>
+	<class name="UnableToDownloadCompany_FullSlot" Message="로컬 세이브 파일의 회사 슬롯이 가득 찼습니다."/>
+	<class name="FileDataError" Message="파일 오류로 클라이언트가 종료됩니다.
+재실행 후 스팀 클라이언트에서 업데이트를 받아 파일 무결성 검사를 수행해주세요.
+이용에 불편을 드려 죄송합니다.
+해당 사항이 지속적으로 해결되시지 않으시면 system@dandylion.co.kr로 문의 부탁드립니다"/>
+	<class name="NotAvailableToConnectLocalProcess" Message="오프라인 모드를 시작하지 못했습니다. 문제가 지속될 경우 system@dandylion.co.kr로 문의 부탁드립니다"/>
+	<class name="AddFriendRequested" Message="%s님에게 친구 요청을 보냈습니다."/>
+	<class name="NoAvailableInfoRange" Message="추가 범위 정보 없음"/>
+	<class name="TargetServerNotValid" Message="접속 대상 서버가 올바르지 않습니다."/>
+	<class name="Inventory_ItemNotFound" Message="아이템을 보유하고 있지 않습니다."/>
+	<class name="Inventory_ItemNotExist" Message="존재하지 않는 아이템입니다."/>
+	<class name="Inventory_ItemIsNotStackable" Message="개수를 변경할 수 없는 아이템 입니다."/>
+	<class name="Inventory_ItemStackOverflow" Message="아이템의 개수가 최대치를 넘어갑니다. ($Count$ / $MaxCount$)"/>
+	<class name="Inventory_InventoryIsFull" Message="보관 가능한 최대 아이템 슬롯을 초과했습니다. ($Count$ / $MaxCount$)"/>
+	<class name="Inventory_ItemNotEnough" Message="아이템을 충분히 보유하고 있지 않습니다. ($NeedCount$ / $Count$)"/>
+	<class name="Inventory_UnknownDBError" Message="데이터베이스 오류입니다. ($Code$)"/>
+	<class name="TranslationValidity_UnknownArgs" Message="원문에 없는 포맷 인자가 추가되었습니다. \[$Args$\]"/>
+	<class name="TranslationValidity_UnorderedArgs" Message="원문과 번역문의 포맷인자 순서가 맞지 않습니다. \[처음 어긋난 인자: $Args$\]"/>
+	<class name="TranslationValidity_OmitedArgs" Message="원문에 들어있는 포맷인자가 빠졌습니다. \[$Args$\]"/>
+	<class name="TranslationValidity_KoreanCharacterFounded" Message="번역문에 한국어가 포함되어 있습니다. \[$Kor$\]"/>
+	<class name="TranslationValidity_InvalidArgs" Message="유효하지 않은 포맷 태그가 포함되었습니다. \[$Tag$\]"/>
+	<class name="LogTransporterCompleted" Message="로그 전송이 완료되었습니다."/>
+</idspace>

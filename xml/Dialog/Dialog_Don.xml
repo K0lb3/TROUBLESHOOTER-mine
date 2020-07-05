@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Dialog">
+	<class name="Don_Main">
+		<Scripts>
+			<property Type="Script" Script="ProgressPreDialogCheck_CommonNPC"/>
+		</Scripts>
+	</class>
+	<class name="Don_Selection">
+		<Scripts>
+			<property Type="Switch" C_TestTarget="company.Progress.Tutorial.Opening">
+				<property Case="WorldMap">
+					<property Type="Jump" JumpTo="Don_Tutorial_WorldMap"/>
+				</property>
+				<property Case="TroubleBook">
+					<property Type="Jump" JumpTo="Don_Tutorial_TroubleBook"/>
+				</property>
+				<property Case="TroubleBookEnd">
+					<property Type="Jump" JumpTo="Don_Tutorial_TroubleBookEnd"/>
+				</property>
+				<property Case="Clear">
+					<property Type="Jump" JumpTo="Don_Normal"/>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+	<class name="Don_JukeBox">
+		<Scripts>
+			<property Type="SceneFade" Direct="true" FadeType="Out"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="SceneFade" Direct="false" FadeType="In"/>
+			<property Type="BattleDialog" SpeakerInfo="Don" SpeakerEmotion="Normal" Mode="Start" Close="false" Message="[!speaker:Don_Normal]여전히 바쁜가 보군." DialogType="Main" Slot="Right3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Albus_Normal]네. 정신 없네요." DialogType="Main" Slot="Left3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Don" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Don_Normal]......" DialogType="Main" Slot="Right3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Don" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Don_Normal]알버스 군. 주문은 잠시만 있어 보게나." DialogType="Main" Slot="Right3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="SurpriseStare" Mode="Continue" Close="true" Message="[!speaker:Albus_SurpriseStare]......" DialogType="Main" Slot="Left3" Effect="Appear"/>
+			<property Type="SceneFade" Direct="false" FadeType="Out"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="ShowBackgroundImage" DialogType="Main" DialogEffect="Appear" BackgroundImage="Jukebox" Slow="true"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="BattleDialog" SpeakerInfo="Don" SpeakerEmotion="Normal" Mode="Start" Close="false" Message="[!speaker:Don_Normal]좋아하는 곡이 있나?" DialogType="Sub" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="SurpriseStare" Mode="Continue" Close="false" Message="[!speaker:Albus_SurpriseStare]네?" DialogType="Sub" Slot="Left3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="매일 같이 같은 곡만 흘러나오던 돈의 바." DialogType="Sub" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="알버스는 그 곡이 돈의 취향이라 생각하고 다른 곡을 신청할 생각을 해 본 적이 없었다." DialogType="Sub" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="SurpriseStare" Mode="Continue" Close="false" Message="[!speaker:Albus_SurpriseStare]제가 딱히 찾아듣는 음악이 없어서..." DialogType="Sub" Slot="Left3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Don" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Don_Normal]그럼 오늘 곡은 내가 선정하지." DialogType="Sub" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="SurpriseStare" Mode="Continue" Close="false" Message="[!speaker:Albus_SurpriseStare]&apos;평소와 다르신데...&apos;" DialogType="Sub" Slot="Left3" Effect="Appear"/>
+			<property Type="PlayBGM" BGMName="Tristesse" FadeTime="1" Volume="1"/>
+			<property Type="BattleDialog" SpeakerInfo="Don" SpeakerEmotion="Smile" Mode="Continue" Close="true" Message="[!speaker:Don_Smile]듣고 싶은 곡이 있으면 언제든지 편하게 이용하게나." DialogType="Sub" Slot="Center" Effect="Appear"/>
+			<property Type="HideBackgroundImage" DialogType="Main" Slow="true"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="SceneFade" Direct="true" FadeType="In"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="SurpriseStare" Mode="Start" Close="false" Message="[!speaker:Albus_SurpriseStare]좋은 곡이네요." DialogType="Main" Slot="Left3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Don" SpeakerEmotion="Smile" Mode="Continue" Close="false" Message="[!speaker:Don_Smile]......" DialogType="Main" Slot="Right3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Don" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Don_Normal]아무리 바쁜 일상이라도 좋은 음악과 차 한 잔." DialogType="Main" Slot="Right3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Don" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Don_Normal]이 정도 여유는 챙겨가며 일하게나." DialogType="Main" Slot="Right3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Albus_Normal]네. 신경 써주셔서 감사합니다. 브루스 씨." DialogType="Main" Slot="Left3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Laugh" Mode="Continue" Close="false" Message="[!speaker:Albus_Laugh]그럼 이제 주문해도 될까요?" DialogType="Main" Slot="Left3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Don" SpeakerEmotion="Smile" Mode="Continue" Close="true" Message="[!speaker:Don_Smile]그래. 무엇을 만들어 줄까?" DialogType="Main" Slot="Right3" Effect="Appear"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="BarMenu/JukeBox/Opened" PropertyValue="true"/>
+		</Scripts>
+	</class>
+	<class name="Don_Tutorial_WorldMap">
+		<Scripts>
+			<property Type="Switch" C_DlgName="npc.Info.Title" C_TestTarget="math.random(1,3)">
+				<property Case="1">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="너희들이 온 지가 벌써 2달이 지났군"/>
+						<property Text="아직은 이 동네가 익숙하진 않겠지만 나름 심심하지 않은 동네지."/>
+						<property Text="그리고 월세는 밀리지 않도록 부탁한다."/>
+						<property Text="불편한 점이 있으면 부담가지지 말고 말해 주길 바란다."/>
+						<property Text="가능한 건 도와주마."/>
+					</property>
+				</property>
+				<property Case="2">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="트러블슈터라는 직업은 참 매력적이지."/>
+						<property Text="사람들을 돕는 직업이지 않으냐."/>
+					</property>
+				</property>
+				<property Case="3">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="트러블슈터들이 가끔 잊는 것이 있지."/>
+						<property Text="범죄자도 엄연한 시민이야."/>
+						<property Text="그들을 불쌍히 여기라는 게 아니야. 시민이 범죄자가 될 수 있다는 말이지."/>
+					</property>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+	<class name="Don_Tutorial_TroubleBook">
+		<Scripts>
+			<property Type="Switch" C_DlgName="npc.Info.Title" C_TestTarget="math.random(1,4)">
+				<property Case="1">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="사건 일지의 열람 사건들을 늘려가면 조금 더 네가 원하는 정보을 취합할 수 있겠지."/>
+					</property>
+				</property>
+				<property Case="2">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="범죄자들의 사정을 다 알고 나면 과연 그들을 단죄할 수 있을까?"/>
+						<property Text="물론 천하의 망나니들은 있기 마련이니 불필요한 말인 것 같군."/>
+					</property>
+				</property>
+				<property Case="3">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="사건 일지를 통해 사건을 100% 이해하게 되면 새로운 시각이 생길 수 있지."/>
+						<property Text="하지만 그것이 과연 트러블슈터에게 필요한 것일까?"/>
+					</property>
+				</property>
+				<property Case="4">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="너희들 트러블슈터와 달리 이 동네에 진짜 히어로가 등장한다는 소문이 돌더군."/>
+						<property Text="흉폭한 야수가 그려진 티를 입고 다니며 높은 곳을 좋아하는 히어로라고 하더군."/>
+					</property>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+	<class name="Don_Tutorial_TroubleBookEnd">
+		<Scripts>
+			<property Type="Switch" C_DlgName="npc.Info.Title" C_TestTarget="math.random(1,4)">
+				<property Case="1">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="아직 부족하지만 분명 꾸준히 노력한 결과에 대한 보상을 받을 수 있을 거다."/>
+					</property>
+				</property>
+				<property Case="2">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="누구나 꿈을 향해 도전하지."/>
+						<property Text="하지만 누구나 이루어내는 것은 아니야."/>
+					</property>
+				</property>
+				<property Case="3">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="언제나 말없이 응원하는 사람들을 생각하는 게 좋지 않겠니?"/>
+						<property Text="그들이 너희를 응원한다는 것이 쉬운 일은 아니란다."/>
+					</property>
+				</property>
+				<property Case="4">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="트러블슈터?"/>
+						<property Text="일을 잘하면 사람들이 환호하고, 못하면 무시당하는 직업이지."/>
+					</property>
+				</property>
+			</property>
+			<property Type="Jump" JumpTo="Don_Test"/>
+		</Scripts>
+	</class>
+	<class name="Don_Test">
+		<Scripts>
+			<property Type="Selection" C_DlgName="npc.Info.Title" Content="진행을 원하시는 미션을 선택하세요" Target="property_type">
+				<property Text="철의 숲 113번 외곽 도로 " Value="DBProperty/Selection_1_1" C_Count="npc.DBProperty.Selection_1_1"/>
+				<property Text="잿빛 항구 주유소 강도" Value="DBProperty/Selection_1_2" C_Count="npc.DBProperty.Selection_1_2"/>
+				<property Text="강남 주차장 폭력배" Value="DBProperty/Selection_1_3" C_Count="npc.DBProperty.Selection_1_3"/>
+				<property Text="영일 공사장 불법 점거" Value="DBProperty/Selection_1_4" C_Count="npc.DBProperty.Selection_1_4"/>
+				<property Text="나가기"/>
+			</property>
+			<property Type="Switch" C_TestTarget="env._last_selection">
+				<property Case="1">
+					<property Type="Action" Command="AddNPCProperty" C_PropertyType="env.property_type" C_PropertyValue="1"/>
+					<property Type="DirectMission" Mission="Tutorial_Road_113" Lineup=""/>
+				</property>
+				<property Case="2">
+					<property Type="Action" Command="AddNPCProperty" C_PropertyType="env.property_type" C_PropertyValue="1"/>
+					<property Type="DirectMission" Mission="Tutorial_GasStation_Port" Lineup=""/>
+				</property>
+				<property Case="3">
+					<property Type="Action" Command="AddNPCProperty" C_PropertyType="env.property_type" C_PropertyValue="1"/>
+					<property Type="DirectMission" Mission="Tutorial_GangNamParkPlace" Lineup=""/>
+				</property>
+				<property Case="4">
+					<property Type="Action" Command="AddNPCProperty" C_PropertyType="env.property_type" C_PropertyValue="1"/>
+					<property Type="DirectMission" Mission="Tutorial_Construction_A" Lineup=""/>
+				</property>
+				<property Case="5">
+					<property Type="Finish"/>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+	<class name="Don_Normal">
+		<Scripts>
+			<property Type="Switch" C_DlgName="npc.Info.Title" C_TestTarget="company.Npc[npc.name].QP">
+				<property Case="0">
+					<property Type="Jump" JumpTo="Don_Normal_QP_0"/>
+				</property>
+				<property Case="1">
+					<property Type="Jump" JumpTo="Don_Normal_QP_1"/>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+	<class name="Don_Normal_QP_0">
+		<Scripts>
+			<property Type="Dialog" C_DlgName="npc.Info.Title">
+				<property Text="너희들이 온 지가 벌써 2달이 지났군"/>
+				<property Text="아직은 이 동네가 익숙하진 않겠지만 나름 심심하지 않은 동네지."/>
+				<property Text="그리고 월세는 밀리지 않도록 부탁한다."/>
+				<property Text="불편한 점이 있으면 부담가지지 말해 주길 바란다."/>
+				<property Text="가능한 건 도와주마."/>
+			</property>
+		</Scripts>
+	</class>
+	<class name="Don_Normal_QP_1">
+		<Scripts>
+			<property Type="Dialog" C_DlgName="npc.Info.Title">
+				<property Text="너희들이 온 지가 벌써 2달이 지났군"/>
+				<property Text="아직은 이 동네가 익숙하진 않겠지만 나름 심심하지 않은 동네지."/>
+			</property>
+			<property Type="ChangeCameraNPC" TargetType="NPCFacing_Close"/>
+			<property Type="Dialog" C_DlgName="npc.Info.Title">
+				<property Text="그리고 월세는 밀리지 않도록 부탁한다."/>
+			</property>
+			<property Type="ChangeCameraNPC" TargetType="NPCFacing"/>
+			<property Type="Dialog" C_DlgName="npc.Info.Title">
+				<property Text="불편한 점이 있으면 부담가지지 말해 주길 바란다."/>
+				<property Text="가능한 건 도와주마."/>
+			</property>
+		</Scripts>
+	</class>
+	<class name="Don_Unlock_Workshop">
+		<Scripts>
+			<property Type="Dialog" C_DlgName="npc.Info.Title">
+				<property Text="작업실을 쓰고 싶다고?"/>
+				<property Text="비용을 지급하면 못 내줄 것도 없지"/>
+				<property Text="계약금으로 $Price$ Vill이면 빌려주지." C_Price="company.UnlockPrice.Workshop"/>
+			</property>
+			<property Type="Selection" C_DlgName="npc.Info.Title" Content="자. 어떻게 할 건가?" Target="answer">
+				<property Text="네 사용하겠습니다." Notice="" Value="yes"/>
+				<property Text="아니요. 다음에 결정하겠습니다." Notice="" Value="no"/>
+			</property>
+			<property Type="Switch" C_TestTarget="env.answer">
+				<property Case="yes">
+					<property Type="Script" Script="ProgressUnlockWorkshop" Return="unlockResult"/>
+					<property Type="Switch" C_TestTarget="env.unlockResult">
+						<property C_Case="true">
+							<property Type="Dialog" C_DlgName="npc.Info.Title">
+								<property Text="편하게 이용하거라"/>
+							</property>
+						</property>
+						<property C_Case="false">
+							<property Type="Dialog" C_DlgName="npc.Info.Title">
+								<property Text="안돼. 거래는 정확히 해야지."/>
+							</property>
+						</property>
+					</property>
+				</property>
+				<property Case="no">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="관심 있으면 언제든지 다시 얘기하렴"/>
+					</property>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+	<class name="Don_Unlock_Warehouse">
+		<Scripts>
+			<property Type="Env" Key="remain_rent_vill" C_Value="math.round(company.OfficeRentVill * math.min(company.OfficeRentCounter / company.OfficeRentDuration, 1))"/>
+			<property Type="Dialog" C_DlgName="npc.Info.Title">
+				<property Text="창고와 임대료를 나눠 받으면 귀찮으니 일단 현재까지 임대료를 정산하고 계약하도록 하지"/>
+			</property>
+			<property Type="Switch" C_TestTarget="company.Vill &gt;= env.remain_rent_vill">
+				<property Case="true">
+					<property Type="Selection" C_DlgName="npc.Info.Title" Content="현재까지 임대료는 $Price$ Vill 이라네" C_Price="env.remain_rent_vill" Target="answer">
+						<property Text="계약을 진행한다." Notice="" Value="yes"/>
+						<property Text="나중에 한다." Notice="" Value="no"/>
+					</property>
+					<property Type="Switch" C_TestTarget="env.answer">
+						<property Case="yes">
+							<property Type="CloseDialog" DialogType="BattleSelDialog"/>
+							<property Type="Env" Key="office_name" Value="Office_Silverlining_Workshop"/>
+							<property Type="Jump" JumpTo="Initial_OfficeContract"/>
+							<property Type="Switch" C_TestTarget="env._last_action_success">
+								<property Case="true">
+									<property Type="Action" Command="AddCompanyProperty" Commit="false" PropertyType="Vill" C_PropertyValue="-1 * env.remain_rent_vill"/>
+									<property Type="Action" Command="UpdateCompanyProperty" Commit="false" PropertyType="WorkshopMenu/Opened" PropertyValue="true"/>
+									<property Type="Action" Command="AddCompanyProperty" Commit="true" PropertyType="Progress/Tutorial/Office" PropertyValue="1"/>
+								</property>
+							</property>
+						</property>
+						<property Case="no">
+							<property Type="Dialog" C_DlgName="npc.Info.Title">
+								<property Text="관심 있으면 언제든지 다시 얘기하렴"/>
+							</property>
+						</property>
+					</property>
+				</property>
+				<property Case="false">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="현재까지 임대료는 $Price$ Vill 이라네" C_Price="env.remain_rent_vill"/>
+					</property>
+					<property Type="CloseDialog" DialogType="BattleSelDialog"/>
+					<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Start" Close="true" Message="[!speaker:Albus_Normal]죄송합니다. 당장 임대료를 생각 못 했네요. 여유가 날 때 계약하겠습니다." DialogType="Main" Slot="Left3" Effect="Appear"/>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+	<class name="Don_Unlock_Warehouse2">
+		<Scripts>
+			<property Type="Env" Key="remain_rent_vill" C_Value="math.round(company.OfficeRentVill * math.min(company.OfficeRentCounter / company.OfficeRentDuration, 1))"/>
+			<property Type="Dialog" C_DlgName="npc.Info.Title">
+				<property Text="창고와 임대료를 나눠 받으면 귀찮으니 일단 현재까지 임대료를 정산하고 계약하도록 하지"/>
+			</property>
+			<property Type="Switch" C_TestTarget="company.Vill &gt;= env.remain_rent_vill">
+				<property Case="true">
+					<property Type="Selection" C_DlgName="npc.Info.Title" Content="현재까지 임대료는 $Price$ Vill 이라네" C_Price="env.remain_rent_vill" Target="answer">
+						<property Text="계약을 진행한다." Notice="" Value="yes"/>
+						<property Text="나중에 한다." Notice="" Value="no"/>
+					</property>
+					<property Type="Switch" C_TestTarget="env.answer">
+						<property Case="yes">
+							<property Type="CloseDialog" DialogType="BattleSelDialog"/>
+							<property Type="Env" Key="office_name" Value="Office_Silverlining_Workshop2"/>
+							<property Type="Jump" JumpTo="Initial_OfficeContract"/>
+							<property Type="Switch" C_TestTarget="env._last_action_success">
+								<property Case="true">
+									<property Type="Action" Command="AddCompanyProperty" Commit="false" PropertyType="Vill" C_PropertyValue="-1 * env.remain_rent_vill"/>
+									<property Type="Action" Command="AddCompanyProperty" Commit="true" PropertyType="Progress/Tutorial/Office" PropertyValue="1"/>
+								</property>
+							</property>
+						</property>
+						<property Case="no">
+							<property Type="Dialog" C_DlgName="npc.Info.Title">
+								<property Text="관심 있으면 언제든지 다시 얘기하렴"/>
+							</property>
+						</property>
+					</property>
+				</property>
+				<property Case="false">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="현재까지 임대료는 $Price$ Vill 이라네" C_Price="env.remain_rent_vill"/>
+					</property>
+					<property Type="CloseDialog" DialogType="BattleSelDialog"/>
+					<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Start" Close="true" Message="[!speaker:Albus_Normal]죄송합니다. 당장 임대료를 생각 못 했네요. 여유가 날 때 계약하겠습니다." DialogType="Main" Slot="Left3" Effect="Appear"/>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+</idspace>

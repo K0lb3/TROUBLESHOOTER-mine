@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="MissionDirectType">
+		<schema>
+			<rule property="MakerArguments" type="table" subtype="link" target="StageMakerArgument" Default=""/>
+		</schema>
+		<class name="Animation" MakerArguments="Unit, Animation, Loop, NoWait"/>
+		<class name="BalloonChat" MakerArguments="Unit, Message, LifeTime, Time, BalloonType, Font, IncludeDead"/>
+		<class name="Camera" MakerArguments="Unit, CameraKey, CameraDirectMove, CameraAfterRelease, Time, CameraAnimSlope, DisableHideAsset"/>
+		<class name="CameraFree" MakerArguments=""/>
+		<class name="CameraPosition" MakerArguments="PositionIndicator, CameraDirectMove, Time, CameraAnimSlope, CameraFOV, UpdateDirection, IncludeDead"/>
+		<class name="CameraPositionDirection" MakerArguments="CamPosDir, CameraDirectMove, Time, CameraAnimSlope, CameraFOV, DOFEnable, DOFFixDist, DOFFocusDist, DOFInnerRange, DOFOuterRange, FogOfWarDisable, CamHideAssetDistance"/>
+		<class name="CameraTargeting" MakerArguments="Unit, Unit2, CameraKey, CameraDirectMove, CameraAfterRelease, Time, CameraAnimSlope"/>
+		<class name="ClearDyingObjects" MakerArguments=""/>
+		<class name="CleanupSight" MakerArguments=""/>
+		<class name="DashBoardVisible" MakerArguments="Visible"/>
+		<class name="Dialog" MakerArguments="Unit, Message, DialogMode, CloseDialog"/>
+		<class name="DialogBattle" MakerArguments="Speaker, ShowSlot, DialogEffect, Message, DialogMode, DialogType, CloseDialog, Title, MessageFormat"/>
+		<class name="DialogSystemMessageBox" MakerArguments="Title, Message, Image"/>
+		<class name="FogOfWar" MakerArguments="Visible"/>
+		<class name="GuideAbility" MakerArguments="Unit, AbilityType, PositionIndicator, SubPositionIndicator, CamDistance, HoldTime, SoundName, Particle, ResultModifier, Guide, NoLook, NoCamera, NoWiggle, NoTeamCheck, MessageVisible, StatusVisible, NoEvent, NoOutline, UseFinalCheck, AbilityGuideFlag, HelpMessage"/>
+		<class name="GuideControl" MakerArguments="GuideType"/>
+		<class name="HelpMessage" MakerArguments="HelpType, HelpMessage, ShowUI"/>
+		<class name="KillObject" MakerArguments="Unit"/>
+		<class name="LockCamera" MakerArguments="OnOff, CameraControlType"/>
+		<class name="Look" MakerArguments="Unit, PositionIndicator, Blink, Reverse, NoCover"/>
+		<class name="MissionVisualArea" MakerArguments="ParticleKey, Particle, PositionIndicator, OnOff"/>
+		<class name="Move" MakerArguments="Unit, Position, Blink, Walk, Run, Rush, NoEvent, NoCover, NoWait, NoZOC"/>
+		<class name="MoveEx" MakerArguments="Unit, PositionIndicator, Blink, Walk, Run, Rush, NoEvent, NoCover, NoWait, NoZOC"/>
+		<class name="MoveToUnit" MakerArguments="Unit, Unit2, Range, Blink, Walk, Run, Rush, NoEvent, NoCover, NoWait, NoZOC"/>
+		<class name="MoveAllToArea" MakerArguments="AllUnit, AreaIndicator, Blink, Walk, Run, Rush, NoEvent, NoCover, NoWait, NoZOC"/>
+		<class name="Opening" MakerArguments="Message, Font, FontColor, TypingDelay, HoldTime"/>
+		<class name="Particle" MakerArguments="Unit, Particle, ParticlePos, DirectClear, ParticleLength, AttachModel"/>
+		<class name="ParticlePosition" MakerArguments="Particle, ParticleLength, DirectClear, PositionIndicator"/>
+		<class name="PlayBGM" MakerArguments="BGMName, FadeTime, Volume"/>
+		<class name="PlayPose" MakerArguments="Unit, Animation, LoopAnimation, FadeIn"/>
+		<class name="PlaySound" MakerArguments="SoundName, SoundGroup, Volume, NoWait"/>
+		<class name="PlaySound3D" MakerArguments="SoundName, Unit, BonePos, MinDistance, SoundGroup, Volume, NoWait"/>
+		<class name="PlaySound3DPosition" MakerArguments="SoundName, PositionIndicator, MinDistance, SoundGroup, Volume, NoWait"/>
+		<class name="PlayLoopSound" MakerArguments="Name, SoundName, SoundGroup, Volume, NoWait"/>
+		<class name="ReleasePose" MakerArguments="Unit, ReleaseAnimation, FadeIn, FadeOut"/>
+		<class name="SceneFade" MakerArguments="FadeType, Image, Direct"/>
+		<class name="SelDialog" MakerArguments="DBKey, Message, DialogChoice, CloseDialog"/>
+		<class name="SelDialogBattle" MakerArguments="Speaker, ShowSlot, DialogEffect, Message, DialogMode, DialogType, DBKey, DialogChoice, CloseDialog"/>
+		<class name="SightOff" MakerArguments="Name"/>
+		<class name="SightOn" MakerArguments="Name, PositionIndicator, Range, Team"/>
+		<class name="SightTarget" MakerArguments="Unit, Range, OnOff"/>
+		<class name="Sleep" MakerArguments="Time"/>
+		<class name="StatusVisible" MakerArguments="Visible"/>
+		<class name="StopBGM" MakerArguments="Direct, FadeTime"/>
+		<class name="StopLoopSound" MakerArguments="Name"/>
+		<class name="SubInterfaceVisible" MakerArguments="Visible"/>
+		<class name="Switch" MakerArguments="SwitchEnvironment, TestExpression, CaseDefinition"/>
+		<class name="SystemMessage" MakerArguments="Title, Message"/>
+		<class name="TitleMessage" MakerArguments="Title, TitleColor, Message, MessageColor, Image"/>
+		<class name="TurnBack" MakerArguments="Unit"/>
+		<class name="VictoryCondition" MakerArguments="VictoryCondition, DefeatCondition"/>
+		<class name="SpawnObject" MakerArguments="Unit, Position, Direction, NoEvent, ForwardEvent"/>
+		<class name="SkipPointOn" MakerArguments=""/>
+		<class name="SkipPointOff" MakerArguments=""/>
+		<class name="Subtitle" MakerArguments="LifeTime, Speaker, ShowSlot, DialogEffect, Message, DialogMode, DialogType"/>
+		<class name="ShowBackgroundImage" MakerArguments="BackgroundImage, DialogEffect, DialogType, Slow"/>
+		<class name="HideBackgroundImage" MakerArguments="Slow"/>
+		<class name="EnableBlackoutEffect" MakerArguments="Name, Area"/>
+		<class name="DisableBlackoutEffect" MakerArguments="Name"/>
+		<class name="ShowFrontmessage" MakerArguments="Message, MessageColor"/>
+		<class name="ShowFrontmessageFormat" MakerArguments="GameMessageForm, MessageColor"/>
+		<class name="SyncPoint" MakerArguments=""/>
+		<class name="NamedAssetVisible" MakerArguments="Name, Visible"/>
+		<class name="LayerAssetVisible" MakerArguments="Name, Visible"/>
+		<class name="ChangeEquipmentType" MakerArguments="Unit, EquipmentType"/>
+		<class name="EnablePostEffect" MakerArguments="PostEffectType, OnOff"/>
+		<class name="ChangeBattleBGM" MakerArguments="StartBGM, BattleBGM, Direct, FadeTime"/>
+		<class name="EnableIf" MakerArguments="ScriptName, Env, ArgsExpression"/>
+		<class name="ShowCredit" MakerArguments="CreditType, Slow"/>
+		<class name="ShowSplashCustom" MakerArguments=""/>
+	</idspace>
+	<idspace id="MissionDirectUpdateSystemCamera">
+		<schema>
+			<rule property="MakerArguments" type="table" subtype="link" target="StageMakerArgument" Default=""/>
+		</schema>
+		<class name="No" MakerArguments=""/>
+		<class name="Yes" MakerArguments="SystemDirection"/>
+	</idspace>
+</idspaces>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Common_PugoPark_frAQBc" Value="남은 무장 강도 수"/>
+		<class name="Common_PugoPark_8Wsa1x" Value="알버스로 시온 근처로 이동하여 대화를 하세요."/>
+		<class name="Common_PugoPark_VPfvJc" Value="무장 강도를 소탕하시오."/>
+		<class name="Common_PugoPark_rgRYwT" Value="알버스가 직접 시온과 대화하시오."/>
+		<class name="Common_PugoPark_iizs2t" Value="알버스 전투 불능"/>
+		<class name="Common_PugoPark_rQF69A" Value="시온 전투 불능"/>
+		<class name="Common_PugoPark_zBlax3" Value="적을 모두 제압하시오."/>
+		<class name="Common_PugoPark_CF3EDN" Value="알버스가 직접 시온과 대화하시오."/>
+		<class name="Common_PugoPark_hm3soL" Value="알버스로 시온에게 다가가 직접 대화하시오."/>
+		<class name="Common_PugoPark_BPh71Y" Value="[!Ignore][!BalloonChat]저기! 일단 이자리를 피하세요!"/>
+		<class name="Common_PugoPark_exuiea" Value="[!Ignore][!BalloonChat]싫어! 내 저녁밥의 원수를 갚아줄 거야!"/>
+		<class name="Common_PugoPark_oEiIgx" Value="[!Ignore][!BalloonChat]......"/>
+		<class name="Common_PugoPark_IX4a2d" Value="[!Ignore][!BalloonChat]한 번에 기세를 잡아야 해."/>
+		<class name="Common_PugoPark_REbbSq" Value="[!Ignore][!BalloonChat]멋진 번개다..."/>
+		<class name="Common_PugoPark_Wy6yhK" Value="[!Ignore][!BalloonChat]저 사람은 왜 끼어든거지..."/>
+		<class name="Common_PugoPark_IDCdJO" Value="[!Ignore][!BalloonChat]제대로 한몫 챙기겠는걸!"/>
+		<class name="Common_PugoPark_yapnxr" Value="[!Ignore][!BalloonChat]후후후... 이젠 우리 세상이다!"/>
+		<class name="Common_PugoPark_pMCARC" Value="[!Ignore][!BalloonChat]그런데 바깥에서 기다리는 녀석들은 어디있지?"/>
+		<class name="Common_PugoPark_r4zdGc" Value="오늘 저녁도 엉망이군..."/>
+		<class name="Common_PugoPark_sMlaZT" Value="시온 씨!"/>
+		<class name="Common_PugoPark_FOGKjx" Value="협력해주셔서 감사합니다."/>
+		<class name="Common_PugoPark_3hVOfo" Value="아냐. 나도 덕분에 그 녀석들을 혼내 줄 수 있었어."/>
+		<class name="Common_PugoPark_WfchoZ" Value="시온 씨 혹시 트러블슈터에 관심 있으세요?"/>
+		<class name="Common_PugoPark_6kzMCk" Value="......"/>
+		<class name="Common_PugoPark_ZMrF6c" Value="잠깐이면 됩니다."/>
+		<class name="Common_PugoPark_YdD3oj" Value="......"/>
+		<class name="Common_PugoPark_GfRyil" Value="정말 트러블슈터 관한 일이냐?"/>
+		<class name="Common_PugoPark_XPtLJb" Value="네??"/>
+		<class name="Common_PugoPark_wIgTxS" Value="요즘 하도 &apos;관심 있으세요?&apos; 하고 다가와서는 결국 종교 권유였던 경험이 있어서 말야..."/>
+		<class name="Common_PugoPark_OzOLMr" Value="나 지금 저녁을 망치고 뛰기까지 해서 매우 짜증 나 있으니 불필요한 이야기로 시간 뺏지 않았으면 해."/>
+		<class name="Common_PugoPark_UTsGCo" Value="&apos;배고프셨구나. 이거 기회다.&apos;"/>
+		<class name="Common_PugoPark_v6Updv" Value="시온 씨! 괜찮다면 이렇게 서서 이야기 말고 밥이나 먹으면서 이야기합시다."/>
+		<class name="Common_PugoPark_wUlN5u" Value="뭐! 뭐라고 했어?"/>
+		<class name="Common_PugoPark_2tusZB" Value="저녁 망치셨다면서요. 제가 한턱내겠습니다!"/>
+		<class name="Common_PugoPark_CJCmZF" Value="뭐! 진짜!"/>
+		<class name="Common_PugoPark_IXJNZI" Value="네. 시온 씨가 거절하지 않으신다면요."/>
+		<class name="Common_PugoPark_77BIEl" Value="하하. 사양하지 않을게."/>
+		<class name="Common_PugoPark_6PKnZp" Value="[!BalloonChat]트러블슈터 수입이 그렇게 좋단 말야!"/>
+		<class name="Common_PugoPark_zRiKYp" Value="[!Subtitle]『어머니. 시온입니다.』"/>
+		<class name="Common_PugoPark_lq8Azr" Value="[!BalloonChat]꾸준히 사건을 해결해 나갈 자신만 있다면 충분한 고수익을 보장합니다."/>
+		<class name="Common_PugoPark_HqDoGL" Value="[!Subtitle]『최근 젊고 능력 있는 사장님을 만났습니다. 』"/>
+		<class name="Common_PugoPark_X3g5Ay" Value="[!BalloonChat]흐음..."/>
+		<class name="Common_PugoPark_y61leD" Value="[!BalloonChat]시온 씨가 저희 회사 견습 트러블슈터로 입사하시면..."/>
+		<class name="Common_PugoPark_YT3CEW" Value="[!Subtitle]『그리고 그분에게 스카웃 제의를 받았습니다. 』"/>
+		<class name="Common_PugoPark_lPGtfU" Value="[!BalloonChat]지금 생활할 돈도 없는데 1년 견습 생활을 어떻게 버텨..."/>
+		<class name="Common_PugoPark_R2IZ2m" Value="[!BalloonChat]식비, 활동비 등을 전액 제공하고 임무 성과에 따라 인센티브를 드리겠습니다."/>
+		<class name="Common_PugoPark_B1S7NL" Value="[!Subtitle]『저를 높게 평가하시기에 한동안 같이 일해보기로 하였습니다. 』"/>
+		<class name="Common_PugoPark_3SL3XB" Value="[!BalloonChat]뭐!! 식비 전액? 하루 3 끼? 간식 포함?"/>
+		<class name="Common_PugoPark_yImciQ" Value="[!BalloonChat]물론입니다. 시온 씨가 무리 없이 일하도록 지원하겠습니다."/>
+		<class name="Common_PugoPark_TqVaAU" Value="[!Subtitle]『아르바이트 생활보다 안정적인 직업이니 마음 놓으시기 바랍니다.』"/>
+		<class name="Common_PugoPark_VQGsTm" Value="[!BalloonChat]알버스 씨. 이거 사기 아니죠?"/>
+		<class name="Common_PugoPark_vHeuSE" Value="[!BalloonChat]사기라뇨! 다 시온 씨 능력을 보고, 제가 투자하는 겁니다."/>
+		<class name="Common_PugoPark_BMSPh2" Value="[!Subtitle]『자리 잡히면 곧 연락드리겠습니다.』"/>
+		<class name="Common_PugoPark_y4Kjsf" Value="[!BalloonChat]시온 씨. 오늘처럼 같이 일해봐요."/>
+		<class name="Common_PugoPark_SXF4YP" Value="[!BalloonChat]좋습니다. 계약하죠!"/>
+		<class name="Common_PugoPark_8arF3S" Value="[!Subtitle]『듬직한 막내 아들 시온 올림』"/>
+		<class name="Common_PugoPark_KKziHt" Value="[!Subtitle]자~ 사장님. 잘 부탁드립니다!"/>
+		<class name="Common_PugoPark_8qvJP3" Value="[!Subtitle]아니. 그렇게 부르실 필요 없어요. 편하게 알버스라고 불러주세요."/>
+		<class name="Common_PugoPark_gJ03Oh" Value="[!Subtitle]OK~☆ 열심히 할게. 알버스!"/>
+		<class name="Common_PugoPark_Ir9oDU" Value="[!Subtitle]이날 시온은 1년간 아르바이트 생활의 종지부를 찍고  [colour=&apos;FFFFFF00&apos;]$CompanyName$[colour=&apos;FFFFFFFF&apos;]의 입사를 결정한다."/>
+		<class name="Common_PugoPark_EkZgzU" Value="[!Ignore][!BalloonChat]아... 오늘 저녁 어쩌지..."/>
+		<class name="Common_PugoPark_ny1swO" Value="[!Ignore][!BalloonChat]아니 이 녀석이!"/>
+		<class name="Common_PugoPark_bdYSEv" Value="[!Ignore][!BalloonChat]자 내 차례다!"/>
+		<class name="Common_PugoPark_WRBLzZ" Value="[!Ignore]시온의 섬광랑은 연쇄 공격 타입입니다. 연쇄공격은 최초 피격 대상의 주위 반경으로 퍼져나갑니다."/>
+		<class name="Common_PugoPark_02h67Y" Value="[!Ignore]연쇄 공격"/>
+		<class name="Common_PugoPark_rlvBnd" Value="[!Subtitle][colour=&apos;FFF3C993&apos;]&apos;시온... 일어나! 학교 가야지.&apos;"/>
+		<class name="Common_PugoPark_n4cXPa" Value="[!Subtitle][colour=&apos;FFF3C993&apos;]&apos;형! 형! 나 형들이랑 같이 살 수 있어!&apos;"/>
+		<class name="Common_PugoPark_oaKk5l" Value="[!Subtitle][colour=&apos;FFF3C993&apos;]&apos;리온. 시온은 아직 어리잖니. 형인 네가 양보해주겠니?&apos;"/>
+		<class name="Common_PugoPark_Qn33hf" Value="[!Subtitle][colour=&apos;FFF3C993&apos;]&apos;비샤형! 나 이제 오이도 잘 먹어&apos;"/>
+		<class name="Common_PugoPark_NWPgr8" Value="[!Subtitle][colour=&apos;FFF3C993&apos;]&apos;리온. 시온을 잘 부탁한다.&apos;"/>
+		<class name="Common_PugoPark_81nP7V" Value="[!Subtitle][colour=&apos;FFF3C993&apos;]&apos;형! 이번 일 끝나면 같이 집에 가는 거다~☆&apos;"/>
+		<class name="Common_PugoPark_Pyc98b" Value="[!Subtitle][colour=&apos;FFFFD74E&apos;]&quot;시온. 이삿짐은 다 쌌니? 전화는 왜 안 받는 거니...&quot;"/>
+		<class name="Common_PugoPark_wD7kkq" Value="[!Subtitle][colour=&apos;FFFF6D25&apos;]&apos;시온. 네가 이제부터 차기 당주다.&apos;"/>
+		<class name="Common_PugoPark_YaPHWf" Value="[!Subtitle][colour=&apos;FFFFD74E&apos;]&quot;시온. 아빠가 많이 화나셨어. 어떻게 된 거니?&quot;"/>
+		<class name="Common_PugoPark_JTRsbY" Value="[!Subtitle][colour=&apos;FFFF6D25&apos;]&apos;졸업하면 바로 돌아와라.&apos;"/>
+		<class name="Common_PugoPark_WLIB4G" Value="[!Subtitle][colour=&apos;FFFFD74E&apos;]&quot;시온. 엄마야. 건강하지?&quot;"/>
+		<class name="Common_PugoPark_CytJR8" Value="[!Subtitle][colour=&apos;FFDB00D3&apos;]&apos;비샤형! 비샤형!!! 일어나란 말야!!&apos;"/>
+		<class name="Common_PugoPark_0GXAPZ" Value="[!Subtitle][colour=&apos;FFDB00D3&apos;]&apos;시온. 넌 엄마 곁에 있어 주렴.&apos;"/>
+		<class name="Common_PugoPark_dt6z3l" Value="[!Subtitle][colour=&apos;FFFF6D25&apos;]&apos;시온! 당장 돌아오지 못해!!&apos;"/>
+		<class name="Common_PugoPark_A8D9eE" Value="[!Subtitle][colour=&apos;FFFFD74E&apos;]&quot;시온. 엄마는 언제나 네 편이란다.&quot;"/>
+		<class name="Common_PugoPark_6qr7J1" Value="[!Subtitle]『내 이름은 시온』"/>
+		<class name="Common_PugoPark_gqVNBe" Value="[!Subtitle]『오늘부터 독립이다. 시온 독립 만세』"/>
+		<class name="Common_PugoPark_acKwhz" Value="사장님!! 번개돌이 시온! 배달 완료했습니다!!"/>
+		<class name="Common_PugoPark_xIFwOQ" Value="이 녀석아! 배달이 잘못 갔잖아!  오늘 벌써 몇 번째야!!"/>
+		<class name="Common_PugoPark_quubpC" Value="하하하하! 잘못 갔군요!"/>
+		<class name="Common_PugoPark_VOgDko" Value="이 녀석이... 남의 장사 말아먹고... 웃어?!"/>
+		<class name="Common_PugoPark_apdvxl" Value="이 멍청한 녀석!! 넌 해고야!! 해고!"/>
+		<class name="Common_PugoPark_Cm3ORY" Value="......"/>
+		<class name="Common_PugoPark_Ddw6Lc" Value="귀족 집안의 유학생으로 편하게 지냈던 시온의 홀로서기는 쉽지 않았다."/>
+		<class name="Common_PugoPark_IOwWR2" Value="[!BalloonChat]아 배고파..."/>
+		<class name="Common_PugoPark_uaAtZV" Value="[!BalloonChat]리온 형은 잘 지내고 있을까?"/>
+		<class name="Common_PugoPark_B5yi9i" Value="[!BalloonChat]......음 뭐지?"/>
+		<class name="Common_PugoPark_jSAjBQ" Value="그리고 1년이 흘렀다."/>
+		<class name="Common_PugoPark_e8nPQH" Value="싸장님! 이거 진짜 맛있는데요!!"/>
+		<class name="Common_PugoPark_456uNh" Value="제가 많이 먹을 테니 싸게 좀 주세요!"/>
+		<class name="Common_PugoPark_JqXZMw" Value="이 녀석! 너한테 줄건 없다!"/>
+		<class name="Common_PugoPark_ci76Ro" Value="견습 트러블슈터"/>
+		<class name="Common_PugoPark_jHkpC9" Value="3개월 전, 푸고 거리"/>
+		<class name="Common_PugoPark_9IR3Ws" Value="[!Subtitle]『어머니. 시온입니다.』"/>
+		<class name="Common_PugoPark_IMd3jK" Value="[!BalloonChat]이런 젠장! 오늘 장사 끝이군.."/>
+		<class name="Common_PugoPark_E0pAli" Value="[!Subtitle]『잘 지내고 계시죠? 전 잘 지내고 있습니다.』 "/>
+		<class name="Common_PugoPark_9Mk6py" Value="[!BalloonChat]이것만 먹고 피해야지..."/>
+		<class name="Common_PugoPark_ZdABIG" Value="[!Subtitle]『죄송하지만 형들과 함께한 이곳에 잠시 머물려고 합니다.』 "/>
+		<class name="Common_PugoPark_pASsMZ" Value="[!Subtitle]『남은 미련 다 풀고 돌아가겠습니다.』 "/>
+		<class name="Common_PugoPark_6uUeHJ" Value="[!BalloonChat]!!"/>
+		<class name="Common_PugoPark_j8Ut6s" Value="[!BalloonChat]하아... 이 나쁜 녀석들!"/>
+		<class name="Common_PugoPark_SUOT0o" Value="[!Subtitle]『사랑하는 어머니의 아들 시온 올림』 "/>
+		<class name="Common_PugoPark_Wolzch" Value="전 현장담당자 트러블슈터 알버스입니다."/>
+		<class name="Common_PugoPark_TmfAUK" Value="뭐? 트러블슈터?"/>
+		<class name="Common_PugoPark_9Ppfr6" Value="잘 됐다. 난 시온이라고 해."/>
+		<class name="Common_PugoPark_PKPlKt" Value="자, 저 녀석들을 같이 혼내주자. 나도 저들을 용서할 수 없거든!"/>
+		<class name="Common_PugoPark_lctAOG" Value="죄송합니다만 여기는 위험하니 대피하시기 바랍니다."/>
+		<class name="Common_PugoPark_VJKo22" Value="싫은데...? 난 저 녀석들을 용서할 수가 없어."/>
+		<class name="Common_PugoPark_II08n8" Value="도대체 무슨 원한이..."/>
+		<class name="Common_PugoPark_nlNLYG" Value="내 소중한 저녁 식사를 망친 녀석들이야. 용서할 수가 없지."/>
+		<class name="Common_PugoPark_tifPRH" Value="아니... 고작 그런 이유로..."/>
+		<class name="Common_PugoPark_q6MbYs" Value="이봐 너에겐 고작일지 몰라도 나한테는 전 재산이야."/>
+		<class name="Common_PugoPark_MjweSb" Value="&apos;도망치지 않는 걸로봐서 일반인은 아닌 것 같은데...&apos;"/>
+		<class name="Common_PugoPark_4EbA1K" Value="&apos;하긴 람지플라자 사건 때도 나보다 강한 분들이 많았지...&apos;"/>
+		<class name="Common_PugoPark_gDmnfM" Value="이봐. 결정 못 하겠으면 비켜. 내가 전부 처리해줄 테니."/>
+		<class name="Common_PugoPark_icLMPC" Value="어떻게 해야 하지..."/>
+		<class name="Common_PugoPark_qabztw" Value="합류하여 임무를 진행한다."/>
+		<class name="Common_PugoPark_MxkcNZ" Value="경찰들을 시켜 돌려보낸다."/>
+		<class name="Common_PugoPark_vkI3S1" Value="[!BalloonChat]전방 적 다수 확인됩니다. 다들 준비하세요."/>
+		<class name="Common_PugoPark_hFYqGE" Value="[!BalloonChat]왔네. 왔어~~!!"/>
+		<class name="Common_PugoPark_gHaJ5P" Value="[!BalloonChat]흐아~ 몸 좀 풀어볼까!"/>
+		<class name="Common_PugoPark_YMq1we" Value="저기 경찰. 나도 돕겠어!"/>
+		<class name="Common_PugoPark_Es8yKD" Value="[!BalloonChat]음... 민간인 아닌가???"/>
+		<class name="Common_PugoPark_AVn3QL" Value="[!BalloonChat]대피하십시오. 여긴 위험합니다!!"/>
+		<class name="Common_PugoPark_JwWy0v" Value="[!BalloonChat]안돼! 이대로 그냥 갈 수 없어!!"/>
+		<class name="Common_PugoPark_fLMMLq" Value="[!BalloonChat]내 저녁밥에게 사과해!"/>
+		<class name="Common_PugoPark_080gXW" Value="[!BalloonChat]번개 능력자!"/>
+		<class name="Common_PugoPark_aErAnG" Value="알겠습니다. 그럼 일단 현장 상황의 지휘를 따라주십시오."/>
+		<class name="Common_PugoPark_3gYKbB" Value="시온 씨에게 문제가 생기면 모두 제 책임이니까요."/>
+		<class name="Common_PugoPark_TLmAZu" Value="OK~☆ 실망시키지 않을게!"/>
+		<class name="Common_PugoPark_N04X29" Value="아군 전원 신뢰 상태가 되었습니다."/>
+		<class name="Common_PugoPark_KFZdSK" Value="아무리 그러셔도 안 됩니다. 대피해주세요."/>
+		<class name="Common_PugoPark_uvykKP" Value="......"/>
+		<class name="Common_PugoPark_EUWDut" Value="&apos;말로는 안 되겠군. 경찰들에게 부탁해 일단 강제로 대피시켜야겠어&apos;"/>
+		<class name="Common_PugoPark_mUM03Y" Value="지금 이러고 있을 상황이야?"/>
+		<class name="Common_PugoPark_FpEFlj" Value="제가 할 말입니다. 당신에게 여기는 위험합니다."/>
+		<class name="Common_PugoPark_nevjPJ" Value="뭐 하는 짓입니까!"/>
+		<class name="Common_PugoPark_tUYLjC" Value="피했네? 너 제법이구나."/>
+		<class name="Common_PugoPark_9CaGJh" Value="아무튼 나 이 정도는 해. 트러블슈터 정도면 알아보겠지?"/>
+		<class name="Common_PugoPark_O3dJfB" Value="나랑 이러고 있을 시간이 없잖아. 빨리 협력하자. 트러블슈터."/>
+		<class name="Common_PugoPark_ETvOmd" Value="도대체... 이 동네는 정상이 아니야..."/>
+		<class name="Common_PugoPark_E4NHRk" Value="이봐. 걱정 마. 네 통제에 잘 따를 테니까."/>
+		<class name="Common_PugoPark_IkbSUz" Value="막무가내 시군요."/>
+		<class name="Common_PugoPark_9VxSff" Value="알겠습니다. 그럼 일단 현장 상황의 지휘를 따라주십시오."/>
+		<class name="Common_PugoPark_EsjieO" Value="만약 통제를 따르지 않으시면 시온 씨에게 어떤 문제가 생겨도 전 책임지지 않겠습니다."/>
+		<class name="Common_PugoPark_4tzYAB" Value="OK~☆"/>
+		<class name="Common_PugoPark_VQZaOA" Value="아군 전원 분노 상태가 되었습니다."/>
+		<class name="Common_PugoPark_2jb1ND" Value="[!BalloonChat]알버스 씨... 나중에 문제 생기면 곤란하실 텐데..."/>
+		<class name="Common_PugoPark_CX3vP2" Value="[!BalloonChat]현장 보고서 복잡해지는군...."/>
+		<class name="Common_PugoPark_0n39X6" Value="[!BalloonChat]안돼애애애!!!!!"/>
+		<class name="Common_PugoPark_hhgnz4" Value="[!BalloonChat]제법인데... 걱정 안 해도 되겠어."/>
+		<class name="Common_PugoPark_Mf1it1" Value="경찰 녀석들 요즘 따라 부지런하군."/>
+		<class name="Common_PugoPark_m9WgMa" Value="다 부질없는 짓... 모든 것은 순리대로 흐를 뿐이지."/>
+		<class name="Common_PugoPark_TWd43O" Value="이렇게 쫓기는 것도 순리인가?"/>
+		<class name="Common_PugoPark_C7WO95" Value="모든 일은 정해져 있네. 의심할 필요가 없지."/>
+		<class name="Common_PugoPark_B98kTD" Value="자네들이 바라는 것이 이루어지면 좋겠군."/>
+		<class name="Common_PugoPark_oJMFch" Value="그럼 난 이만. 뒷일은 자네들에게 맡기지. 몸조심하길."/>
+		<class name="Common_PugoPark_I67ekr" Value="걱정 말게. 나 역시 자리를 피할 것이니..."/>
+		<class name="Common_PugoPark_BUDZXX" Value="뭐야. 대장이 도망가는 건가?"/>
+		<class name="Common_PugoPark_Iz9RwJ" Value="각자에게 주어진 일이 있을 뿐."/>
+		<class name="Common_PugoPark_MoLBCR" Value="저들은 여기서 자네와 날 위해 시간을 버는 것이 사명이지."/>
+		<class name="Common_PugoPark_XHjtan" Value="훗. 이해할 수 없군. 이래서 종교는 사절이야."/>
+		<class name="Common_PugoPark_fLf8hg" Value="대니와 샤키가 현장을 이탈하였습니다."/>
+	</idspace>
+</idspaces>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Dismantle">
+		<schema>
+			<rule property="Opened" type="bool" default="false"/>
+			<rule property="Lv" type="number" default="1"/>
+			<rule property="Exp" type="number" default="0"/>
+		</schema>
+		<class name="All" Title="전체" Image="Icons/AllTab2" HoverImage="Icons/AllTab2_Hover" PushedImage="Icons/AllTab2_Pushed" Color="Combine_Yellow_Flat" Order="0"/>
+		<class name="Weapon" Title="무기" Image="Icons/WeaponTab" HoverImage="Icons/WeaponTab_Hover" PushedImage="Icons/WeaponTab_Pushed" Color="Combine_Red" Order="1"/>
+		<class name="Armor" Title="방어구" Image="Icons/ArmorTab" HoverImage="Icons/ArmorTab_Hover" PushedImage="Icons/ArmorTab_Pushed" Color="Combine_Blue" Order="2"/>
+		<class name="Accessory" Title="악세사리" Image="Icons/AccessoryTab" HoverImage="Icons/AccessoryTab_Hover" PushedImage="Icons/AccessoryTab_Pushed" Color="Combine_Yellow" Order="3"/>
+	</idspace>
+</idspaces>

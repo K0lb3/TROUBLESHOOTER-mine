@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Interaction">
+		<schema>
+			<rule property="Repeat" type="bool" default="false"/>
+			<rule property="Ability" type="link" target="Ability" default="None"/>
+			<rule property="AutoAbility" type="bool" default="true"/>
+			<rule property="Target" type="string" default="Any"/>
+			<rule property="Particle" type="string" default="Particles/Dandylion/Selection_Interaction"/>
+			<rule property="RangeNoticeParticle" type="string" default="None"/>
+			<rule property="ActionText" type="string" default=""/>
+			<rule property="AlwaysVisible" type="bool" default="false"/>
+			<rule property="FrontOnly" type="bool" default="false"/>
+			<rule property="HasAbilityOnly" type="bool" default="false"/>
+		</schema>
+		<class name="Activate" Title="전원 장치" Ability="Activate" ApplyScript="Interaction_Activate" Repeat="true"/>
+		<class name="Deactivate" Title="전원 장치" Ability="Deactivate" ApplyScript="Interaction_Deactivate" Repeat="true"/>
+		<class name="Arrest" Title="체포 대상" Ability="Arrest" ApplyScript="Interaction_Arrest" Repeat="true" RangeNoticeParticle="Particles/Dandylion/RangeNotice_Arrest"/>
+		<class name="Call" Title="전화" Ability="Call" ApplyScript="Interaction_Call"/>
+		<class name="Comfort" Title="불안한 시민" Ability="Comfort" ApplyScript="Interaction_Comfort" Particle="None" Repeat="true" RangeNoticeParticle="Particles/Dandylion/HelpSign"/>
+		<class name="Cure" Title="치료 대상" Ability="Cure" AutoAbility="false" ApplyScript="Interaction_Cure" Particle="None" RangeNoticeParticle="Particles/Dandylion/HelpSign"/>
+		<class name="HackOff" Title="기계" Ability="HackOff" ApplyScript="Interaction_HackOff" Target="Enemy" Repeat="true" RangeNoticeParticle="Particles/Dandylion/HackingSign" FrontOnly="true"/>
+		<class name="InvestigateChest" Title="상자" Ability="InvestigateChest" ApplyScript="Interaction_Investigate" RangeNoticeParticle="Particles/Dandylion/Investigate"/>
+		<class name="InvestigateComputer" Title="기계" Ability="InvestigateComputer" AutoAbility="false" ApplyScript="Interaction_Investigate" RangeNoticeParticle="Particles/Dandylion/Investigate" FrontOnly="true"/>
+		<class name="InvestigateLock" Title="금고" Ability="InvestigateLock" ApplyScript="Interaction_Investigate" RangeNoticeParticle="Particles/Dandylion/Investigate"/>
+		<class name="InvestigatePsionicStone" Title="이능석" Ability="InvestigatePsionicStone" ApplyScript="Interaction_InvestigatePsionicStone" RangeNoticeParticle="Particles/Dandylion/Investigate" AutoAbility="false" AlwaysVisible="true"/>
+		<class name="InvestigateCargo" Title="화물" Ability="InvestigateCargo" ApplyScript="Interaction_Investigate" RangeNoticeParticle="Particles/Dandylion/Investigate" FrontOnly="true"/>
+		<class name="OpenCargo" Title="화물" Ability="OpenCargo" ApplyScript="Interaction_OpenCargo" RangeNoticeParticle="Particles/Dandylion/Investigate"/>
+		<class name="OpenArtBox" Title="미술품" Ability="OpenArtBox" ApplyScript="Interaction_OpenCargo" RangeNoticeParticle="Particles/Dandylion/Investigate"/>
+		<class name="OpenBrokenDrone" Title="부서진 드론" Ability="OpenBrokenDrone" ApplyScript="Interaction_OpenCargo" RangeNoticeParticle="Particles/Dandylion/Investigate"/>
+		<class name="Release" Title="불안한 시민" Ability="Release" ApplyScript="Interaction_Release" RangeNoticeParticle="Particles/Dandylion/HelpSign"/>
+		<class name="Repair" Title="수리 대상" Ability="Repair" AutoAbility="false" ApplyScript="Interaction_Repair" RangeNoticeParticle="Particles/Dandylion/RepairSign"/>
+		<class name="Rescue" Title="구조 대상" Ability="Rescue" ApplyScript="Interaction_Rescue" Particle="None" RangeNoticeParticle="Particles/Dandylion/HelpSign"/>
+		<class name="Fueling" Title="주유 장치" Ability="Fueling" AutoAbility="false" ApplyScript="Interaction_Fueling" RangeNoticeParticle="Particles/Dandylion/RepairSign" HasAbilityOnly="true"/>
+	</idspace>
+	<idspace id="InteractionArea">
+		<schema>
+			<rule property="Ability" type="link" target="Ability" default="None"/>
+			<rule property="AutoAbility" type="bool" default="true"/>
+			<rule property="Particle" type="string" default="Particles/Dandylion/Selection_Interaction"/>
+			<rule property="RangeNoticeParticle" type="string" default="None"/>
+			<rule property="ActionText" type="string" default=""/>
+		</schema>
+		<class name="Activate_Light" Title="전원 장치" Ability="Activate_Light" ActionText="불켜기" ApplyScript="Interaction_Activate_Light" AutoAbility="true"/>
+		<class name="Deactivate_Light" Title="전원 장치" Ability="Deactivate_Light" ActionText="불끄기" ApplyScript="Interaction_Deactivate_Light" AutoAbility="true"/>
+		<class name="Repair_Area" Title="수리 대상" Ability="Repair_Area" ActionText="수리" ApplyScript="Interaction_Repair_Area" AutoAbility="false"/>
+		<class name="Call_Area" Title="전화" Ability="Call_Area" ActionText="전화" ApplyScript="Interaction_Call_Area" AutoAbility="false"/>
+		<class name="Investigate_Area" Title="조사 지역" Ability="Investigate_Area" ActionText="조사" ApplyScript="Interaction_Investigate" AutoAbility="true"/>
+	</idspace>
+</idspaces>

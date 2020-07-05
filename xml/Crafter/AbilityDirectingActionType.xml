@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="AbilityDirectingActionType">
+		<schema>
+			<rule property="MakerArguments" type="table" subtype="link" target="AbilityDirecterArgument" Default=""/>
+		</schema>
+		<class name="Camera" MakerArguments="ActionType, Trigger, CamTargetKey, DirectMove, CameraMode, ReleaseAfter, FrameSeparation"/>
+		<class name="WiggleCamera" MakerArguments="Power, Time"/>
+		<class name="Hit" MakerArguments="HitType, HitMethod, Damage, DeadMethod, DeadlyHitPower, RollType, RangeFilter, HitStop_Self, HitStop_Target, FinishStop_Self, FinishStop_Target, BlockStop_Self, BlockStop_Target, KillStop_Self, KillStop_Target, FrameSeparation, HitMode"/>
+		<class name="ForceHit" MakerArguments="Force, FromPos, HitMethod, Damage, DeadMethod, DeadlyHitPower, RollType, RangeFilter, HitStop_Self, HitStop_Target, FinishStop_Self, FinishStop_Target, BlockStop_Self, BlockStop_Target, KillStop_Self, KillStop_Target, FrameSeparation, AlternativeShot, AlternativeYOffset, HitMode, ParticleAttribute"/>
+		<class name="Force" MakerArguments="Force, FromPos, ToPos, RangeFilter, FrameSeparation, AlternativeShot, ParticleAttribute"/>
+		<class name="ChainForceHit" MakerArguments="Force, FromPos, HitMethod, Damage, DeadMethod, DeadlyHitPower, RollType, HitStop_Self, HitStop_Target, FinishStop_Self, FinishStop_Target, BlockStop_Self, BlockStop_Target, KillStop_Self, KillStop_Target, ParticleAttribute"/>
+		<class name="ForceRange" MakerArguments="Force, FromPos, RangeType, YOffset, RangeFilter, ParticleAttribute"/>
+		<class name="Heal" MakerArguments="HitMethod, HealType, Damage, RangeFilter"/>
+		<class name="Sound" MakerArguments="Target, Sound, FromPos, MinDistance, Volume, NoWait, FrameSeparation"/>
+		<class name="Particle" MakerArguments="Particle, ParticlePos, ParticleLength, Target, AttachModel, DirectClear, FrameSeparation, RangeFilter, NoWait2, ParticleAttribute"/>
+		<class name="ParticleRange" MakerArguments="Particle, RangeType, ParticleDirection, ParticleLength, NoWait2, ParticleAttribute"/>
+		<class name="Speed" MakerArguments="ActionType, Trigger, Speed"/>
+		<class name="Trail" MakerArguments="TrailKey, ShowFrame, FadeTime, Time, Material, Color"/>
+		<class name="Rush" MakerArguments="Target, LookTarget, ForwardOffset, ShowFrame, RushPositionIndicator, Speed, YOffset"/>
+		<class name="SpecialScene" MakerArguments="SceneColor, ShowFrame"/>
+		<class name="Visible" MakerArguments="Target, Visible"/>
+		<class name="BalloonChat" MakerArguments="Target, Message, FrameSeparation"/>
+		<class name="SightOn" MakerArguments="Range, ShowFrame, FrameSeparation"/>
+		<class name="Event" MakerArguments="RangeFilter"/>
+		<class name="MultiActionDefiner" MakerArguments="FrameList, ActionBase, ActionModifier"/>
+		<class name="ModelEffect" MakerArguments="Mesh, Skeleton, RangeType, Animation, ShowFrame, NoWait, ModelDirection"/>
+		<class name="PlayAni" MakerArguments="Target, Animation"/>
+		<class name="Spawn" MakerArguments="Target, RangeType, ModelDirection"/>
+	</idspace>
+	<idspace id="ParticleAttributeValueForm">
+		<schema>
+			<rule property="MakerArguments" type="table" subtype="link" target="AbilityDirecterArgument" Default=""/>
+		</schema>
+		<class name="Float" MakerArguments="Value"/>
+		<class name="Float2" MakerArguments="Value, Value2"/>
+		<class name="Float3" MakerArguments="Value, Value2, Value3"/>
+		<class name="Float4" MakerArguments="Value, Value2, Value3, Value4"/>
+	</idspace>
+</idspaces>

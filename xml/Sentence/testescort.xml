@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="testescort_3rnPGG" Value="[!Dashboard:EscortCounter]남은 호위대상 수"/>
+		<class name="testescort_KZPb8j" Value="[!Objective]호위대상을 탈출시켜라!"/>
+	</idspace>
+</idspaces>

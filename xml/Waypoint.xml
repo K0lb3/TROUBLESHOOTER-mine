@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Waypoint">
+	<schema>
+		<rule property="Opened" type="bool" default="false"/>
+		<rule property="IsNew" type="bool" default="true"/>
+	</schema>
+	<class name="ShooterStreet" Title="사수 거리" Opened="true" Image="LobbyLocation/ShooterStreet" Desc="사수 거리는 발할라 바람장벽 지구의 상점 거리입니다.">
+		<Waypoints>
+			<property Type="Office"/>
+			<property Type="Office2"/>
+		</Waypoints>
+	</class>
+	<class name="Office" Title="실버라이닝" Opened="true" Image="LobbyLocation/Office" Desc="실버라이닝은 현재 사무실이 있는 곳입니다. 각종 회사의 정보와 장비의 정비 등을 할 수 있는 공간입니다.">
+		<Waypoints>
+			<property Type="ShooterStreet"/>
+		</Waypoints>
+	</class>
+	<class name="Office2" Title="실버라이닝" Opened="false" Image="LobbyLocation/Office2" Desc="실버라이닝은 현재 사무실이 있는 곳입니다. 각종 회사의 정보와 장비의 정비 등을 할 수 있는 공간입니다.">
+		<Waypoints>
+			<property Type="ShooterStreet"/>
+		</Waypoints>
+	</class>
+	<class name="Office_Night" Title="실버라이닝"/>
+	<class name="Office_Albus" Title="알버스의 방" Desc="알버스의 방은 알버스가 10년 동안 지냈던 방입니다.">
+		<Waypoints/>
+	</class>
+	<class name="LandOfStart" Title="시작의 땅"/>
+</idspace>

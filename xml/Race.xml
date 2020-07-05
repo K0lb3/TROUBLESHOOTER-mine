@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Race">
+	<schema>
+		<rule property="RunIntoBattleMoveRange" type="number" default="4"/>
+		<rule property="Edible" type="bool" default="true"/>
+		<rule property="Life" type="bool" default="true"/>
+		<rule property="MasterySlot1" type="link" target="MasteryCategory" default="None"/>
+		<rule property="MasterySlot2" type="link" target="MasteryCategory" default="None"/>
+		<rule property="MasterySlot3" type="link" target="MasteryCategory" default="None"/>
+		<rule property="MasterySlot4" type="link" target="MasteryCategory" default="None"/>
+		<rule property="MasterySlot5" type="link" target="MasteryCategory" default="None"/>
+	</schema>
+	<class name="Human" Title="인간" BasicMastery="Vigor" MasteryType="Normal" Image="Mastery/Human" Life="true" Edible="true" MasterySlot1="Normal" MasterySlot2="Sub" MasterySlot3="Attack" MasterySlot4="Defence" MasterySlot5="Ability"/>
+	<class name="Machine" Title="기계" BasicMastery="Fuel" MasteryType="Machine" Image="Mastery/Machine" Life="false" Edible="false" MasterySlot1="FrameModule" MasterySlot2="SupportModule" MasterySlot3="ComplementaryModule" MasterySlot4="SaftyModule" MasterySlot5="AIModule"/>
+	<class name="Beast" Title="야수" BasicMastery="WildNature" MasteryType="Normal" Image="Mastery/Beast" Life="true" Edible="true" MasterySlot1="Normal" MasterySlot2="Sub" MasterySlot3="Attack" MasterySlot4="Defence" MasterySlot5="Ability" RunIntoBattleMoveRange="8"/>
+	<class name="Object" Title="오브젝트" BasicMastery="None" MasteryType="Normal" Image="Mastery/Object" Life="false" Edible="false" MasterySlot1="None" MasterySlot2="None" MasterySlot3="None" MasterySlot4="None" MasterySlot5="None"/>
+</idspace>

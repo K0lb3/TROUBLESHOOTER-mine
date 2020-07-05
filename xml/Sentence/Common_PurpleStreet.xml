@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Common_PurpleStreet_kGOmVh" Value="[!Dashboard:Counter]남은 적 수"/>
+		<class name="Common_PurpleStreet_tQaShZ" Value="[!Dashboard:Counter]남은 방어선 병력 수"/>
+		<class name="Common_PurpleStreet_GStocm" Value="[!Dashboard:ObjectiveMarker]적이 해당 지역으로 진입했을 때, 해당 방어선의 경찰 병력이 모두 전투 불능이면 패배합니다."/>
+		<class name="Common_PurpleStreet_ihM9Bi" Value="[!Objective]적을 모두 제압하시오."/>
+		<class name="Common_PurpleStreet_0nECxw" Value="[!Title]용서하지 않으리..."/>
+		<class name="Common_PurpleStreet_2C7oY4" Value="[!Title]자홍거리 4번가"/>
+		<class name="Common_PurpleStreet_lMa0gm" Value="[!Dialog][!speaker:Gangster_WhiteTigerNormal_Normal]네 녀석들을 도와준 녀석들이 누구지? 빨리 말해봐~"/>
+		<class name="Common_PurpleStreet_pOMrK5" Value="[!Dialog][!speaker:Gangster_SpoonDestroyer_Normal]동지들. 내가 먼저 달려들 테니 상황을 봐 도망치시오."/>
+		<class name="Common_PurpleStreet_otsPAp" Value="[!Dialog][!speaker:Gangster_WhiteTigerNormal_Normal]정말 우리를 우습게 보는군."/>
+		<class name="Common_PurpleStreet_dTIc5z" Value="[!BalloonChat][!speaker:Spoon02]네 녀석들 용서하지 않겠다!!"/>
+		<class name="Common_PurpleStreet_0jEWfm" Value="[!BalloonChat][!speaker:Spoon01]이 녀석들!!"/>
+		<class name="Common_PurpleStreet_4CdlD5" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Normal]다 처리했군."/>
+		<class name="Common_PurpleStreet_6ikraN" Value="[!Dialog][!speaker:Gangster_WhiteTigerNormal_Normal]죽은 녀석들 가면 다 벗겨서 신원 파악해."/>
+		<class name="Common_PurpleStreet_vj21ML" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Normal]귀찮게 왜?"/>
+		<class name="Common_PurpleStreet_lSSykh" Value="[!Dialog][!speaker:Gangster_WhiteTigerNormal_Normal]분명 종교쟁이들 중에 이 동네 녀석들도 있을 거야."/>
+		<class name="Common_PurpleStreet_zuBD4y" Value="[!Dialog][!speaker:Gangster_WhiteTigerNormal_Normal]그 녀석들 가족, 친구들을 찾아가야지."/>
+		<class name="Common_PurpleStreet_sD4KU5" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Normal]호오~ 간부들이 좋아하겠군."/>
+		<class name="Common_PurpleStreet_cAZCy4" Value="[!Dialog][!speaker:VHPD_Defender_Normal]백호파 녀석들. 조용히 지낸다고 했더니..."/>
+		<class name="Common_PurpleStreet_fVSZQ2" Value="[!Dialog][!speaker:VHPD_Assault_Normal]더 이상 방어선을 버티기 힘듭니다."/>
+		<class name="Common_PurpleStreet_NC779e" Value="[!Dialog][!speaker:VHPD_Defender_Normal]트러블슈터 $CompanyName$. 그들이 이번 임무를 수락했다. 버텨보는 거다."/>
+		<class name="Common_PurpleStreet_nBJJd5" Value="[!Dialog][!speaker:VHPD_Assault_Normal]......알겠습니다."/>
+		<class name="Common_PurpleStreet_DDrhub" Value="[!Dialog][!speaker:Albus_Serious]북쪽 방어선이 고립되어 위험한 상태입니다."/>
+		<class name="Common_PurpleStreet_e4lQ5S" Value="[!Dialog][!speaker:Albus_Serious]다들 최대한 교전을 피하며 북쪽 방어선으로 바로 전진하겠습니다."/>
+		<class name="Common_PurpleStreet_EzaxKX" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Common_PurpleStreet_f9KRdg" Value="[!VictoryCondition]적 방어선 돌파"/>
+		<class name="Common_PurpleStreet_9fTKGs" Value="[!VictoryCondition]적을 모두 제압하시오."/>
+		<class name="Common_PurpleStreet_jpiRxP" Value="[!BalloonChat]바보 같은 녀석들!!"/>
+		<class name="Common_PurpleStreet_kQxRsf" Value="[!BalloonChat]흩어져서 각개 격파당하지 말고 북쪽으로 간다!!"/>
+	</idspace>
+</idspaces>

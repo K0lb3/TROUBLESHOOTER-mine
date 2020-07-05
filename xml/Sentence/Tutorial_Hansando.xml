@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Tutorial_Hansando_Sj3iH7" Value="[!Dashboard:TimeLimiter]적 데이터 삭제 완료"/>
+		<class name="Tutorial_Hansando_JTRsbY" Value="[!Dashboard:Counter]남은 적 수"/>
+		<class name="Tutorial_Hansando_kfrjRZ" Value="[!Dashboard:Counter]남은 정보 획득 수"/>
+		<class name="Tutorial_Hansando_dx64Kd" Value="[!Dashboard:ObjectiveMarker]카일리 근처로 알버스가 다가가면 대화를 진행하실 수 있습니다."/>
+		<class name="Tutorial_Hansando_htS2fz" Value="[!Dashboard:ObjectiveMarker]카일리가 해당 오브젝트에 다가가 해킹을 시도하면 정보를 획득할 수 있습니다."/>
+		<class name="Tutorial_Hansando_qtgque" Value="[!Dashboard:ObjectiveMarker]카일리가 해당 오브젝트에 다가가 해킹을 시도하면 정보를 획득할 수 있습니다."/>
+		<class name="Tutorial_Hansando_yVzMdV" Value="[!Dashboard:ObjectiveMarker]카일리가 해당 오브젝트에 다가가 해킹을 시도하면 정보를 획득할 수 있습니다."/>
+		<class name="Tutorial_Hansando_hByXpO" Value="[!Dashboard:ObjectiveMarker]카일리가 해당 오브젝트에 다가가 해킹을 시도하면 정보를 획득할 수 있습니다."/>
+		<class name="Tutorial_Hansando_lmoeyZ" Value="[!Dashboard:ObjectiveMarker]카일리가 해당 오브젝트에 다가가 해킹을 시도하면 정보를 획득할 수 있습니다."/>
+		<class name="Tutorial_Hansando_K8traZ" Value="[!Dashboard:ObjectiveMarker]카일리가 해당 오브젝트에 다가가 해킹을 시도하면 정보를 획득할 수 있습니다."/>
+		<class name="Tutorial_Hansando_tf673J" Value="[!Dashboard:ObjectiveMarker]카일리가 해당 오브젝트에 다가가 해킹을 시도하면 정보를 획득할 수 있습니다."/>
+		<class name="Tutorial_Hansando_Ddw6Lc" Value="[!Objective]스푼교의 정보를 입수하시오."/>
+		<class name="Tutorial_Hansando_BaLz8R" Value="[!Objective]엔지니어를 합류시키시오"/>
+		<class name="Tutorial_Hansando_VD5x00" Value="[!Objective]내부망에 접속해 정보를 입수하시오."/>
+		<class name="Tutorial_Hansando_gDYOoX" Value="[!Objective]적을 모두 제압하시오."/>
+		<class name="Tutorial_Hansando_pX33e1" Value="[!Dialog][!speaker:EmptySubTitle_]트러블슈터 $CompanyName$ 은 아이작의 의뢰를 수행하기 위해 경찰 정보원들의 도움을 받아 바람장벽지구 재의 강 하류의 &apos;한산도&apos;에 도착한다."/>
+		<class name="Tutorial_Hansando_uaAtZV" Value="[!Title]달 밝은 밤에"/>
+		<class name="Tutorial_Hansando_B5yi9i" Value="[!Title]한산도 물류 하역장"/>
+		<class name="Tutorial_Hansando_e8nPQH" Value="[!Dialog][!speaker:Irene_Serious]알버스 군. 시온 군. 고맙다."/>
+		<class name="Tutorial_Hansando_456uNh" Value="[!Dialog][!speaker:Sion_SurpriseStare]으잉? 히어로! 갑자기 감상에 빠진 거야?"/>
+		<class name="Tutorial_Hansando_JqXZMw" Value="[!Dialog][!speaker:Irene_Surprise]그렇게 보이나?"/>
+		<class name="Tutorial_Hansando_ci76Ro" Value="[!Dialog][!speaker:Sion_Normal]뭐. 조금은?"/>
+		<class name="Tutorial_Hansando_9IR3Ws" Value="[!Dialog][!speaker:Irene_Smile2]훗. 언젠가 말해주고 싶었던 말이다."/>
+		<class name="Tutorial_Hansando_uWwPsw" Value="[!Dialog][!speaker:Irene_Normal]다시 한번 고맙다. 시온 군. 알버스 군."/>
+		<class name="Tutorial_Hansando_E0pAli" Value="[!Dialog][!speaker:Sion_Smile]다시 밝아져서 보기 좋다. 히어로."/>
+		<class name="Tutorial_Hansando_ZdABIG" Value="[!Dialog][!speaker:Albus_Laugh]아이린 씨 $CompanyName$에 들어와 주셔서 감사해요."/>
+		<class name="Tutorial_Hansando_6uUeHJ" Value="[!Dialog][!speaker:Albus_Normal]저도 한 번 더 말해주고 싶었습니다."/>
+		<class name="Tutorial_Hansando_SUOT0o" Value="[!Dialog][!speaker:Sion_SurpriseStare]갑자기 다들 왜 이래~"/>
+		<class name="Tutorial_Hansando_GjkvaP" Value="[!Dialog][!speaker:Irene_Smile2]훗. 너희들이 아니었다면 난 꿈을 버렸을 것이다."/>
+		<class name="Tutorial_Hansando_USmJqh" Value="[!Dialog][!speaker:Albus_SurpriseStare]어떤 꿈이요?"/>
+		<class name="Tutorial_Hansando_YckdKB" Value="[!Dialog][!speaker:Sion_Smile]히어로."/>
+		<class name="Tutorial_Hansando_SkbeR8" Value="[!Dialog][!speaker:Irene_Smile]그래. 히어로."/>
+		<class name="Tutorial_Hansando_x6d96D" Value="[!BalloonChat][!speaker:Kylie]검정, 빨강, 노랑..."/>
+		<class name="Tutorial_Hansando_OcEKP8" Value="[!BalloonChat][!speaker:Kylie]트러블슈터인가 보군..."/>
+		<class name="Tutorial_Hansando_TG1ZsA" Value="[!Dialog][!speaker:Kylie_Normal]트러블슈터 $CompanyName$?"/>
+		<class name="Tutorial_Hansando_qo8Qpl" Value="[!Dialog][!speaker:Albus_Normal]넵. 트러블슈터 $CompanyName$의 알버스입니다."/>
+		<class name="Tutorial_Hansando_OF73At" Value="[!Dialog][!speaker:Kylie_Normal]난 카일리. 이번 임무의 엔지니어 담당이야."/>
+		<class name="Tutorial_Hansando_TXIxNi" Value="[!Dialog][!speaker:Kylie_Normal]내가 작업하는 동안 잘 지켜줘야 한다."/>
+		<class name="Tutorial_Hansando_DUUjnC" Value="[!Dialog][!speaker:Albus_Normal]알겠습니다. 최선을 다하겠습니다."/>
+		<class name="Tutorial_Hansando_Cok05S" Value="[!Dialog][!speaker:Kylie_Normal]좋아. 그럼 현재 상황을 전달할게."/>
+		<class name="Tutorial_Hansando_fpohlI" Value="[!Dialog][!speaker:Kylie_Normal]현재 하역장에는 총 7개의 내부 접속망이 있어."/>
+		<class name="Tutorial_Hansando_wnuRkv" Value="[!Dialog][!speaker:Kylie_Normal]해당 접속망 중 어느 곳에 진짜 자료가 있는지 파악하려면 시간이 걸릴 거야."/>
+		<class name="Tutorial_Hansando_DK4ra5" Value="[!Dialog][!speaker:Kylie_Normal]그리고 저쪽에서도 우리 존재를 알면 그 즉시 데이터를 삭제하려고 시도할 게 뻔해."/>
+		<class name="Tutorial_Hansando_LaqC9V" Value="[!Dialog][!speaker:Kylie_Normal]그때부터는 시간 싸움이야."/>
+		<class name="Tutorial_Hansando_agmD4U" Value="[!Dialog][!speaker:Kylie_Normal]가능하다면 최대한 안 들키게 진행할 수 있다면 정말 좋겠어."/>
+		<class name="Tutorial_Hansando_xNCNM5" Value="[!VictoryCondition]아군 전투 불능"/>
+		<class name="Tutorial_Hansando_C4gNo9" Value="[!VictoryCondition]카일리 전투 불능"/>
+		<class name="Tutorial_Hansando_LtxEO6" Value="[!VictoryCondition]내부망에 접속해 정보를 입수하시오."/>
+		<class name="Tutorial_Hansando_FqsGEr" Value="[!BalloonChat][!speaker:Kylie]내부망의 데이터가 삭제되기 시작했다!"/>
+		<class name="Tutorial_Hansando_4uis42" Value="[!BalloonChat][!speaker:Kylie]빨리 다음 내부망 접속 가능한 곳으로 이동!"/>
+		<class name="Tutorial_Hansando_ocCub5" Value="[!VictoryCondition]적 데이터 삭제 완료."/>
+		<class name="Tutorial_Hansando_aYJGlJ" Value="[!BalloonChat][!speaker:Kylie]좋았어. 원하는 정보는 모두 확보했다."/>
+		<class name="Tutorial_Hansando_JQ50k8" Value="[!BalloonChat][!speaker:Kylie]이제는 트러블슈터 너희들 마음대로 해."/>
+		<class name="Tutorial_Hansando_EU05Di" Value="[!VictoryCondition]적을 모두 제압하시오."/>
+		<class name="Tutorial_Hansando_x1SpTo" Value="[!Subtitle][!speaker:Kylie_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]아이작. 원하는 정보는 모두 확보했다."/>
+		<class name="Tutorial_Hansando_xqfaMe" Value="[!Subtitle][!speaker:VHPD_Issac_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]그렇군. 그럼 나머진 우리가 맡겠네."/>
+		<class name="Tutorial_Hansando_u3B5sy" Value="[!Subtitle][!speaker:Kylie_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]뭐. 너희가 할 일은 없을 것 같아."/>
+		<class name="Tutorial_Hansando_bEhceR" Value="[!Subtitle][!speaker:VHPD_Issac_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]그렇군. 그럼 이쪽은 마중 준비를 하겠네."/>
+		<class name="Tutorial_Hansando_awHjmy" Value="[!Subtitle][!speaker:Kylie_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]약속한 보수나 준비해."/>
+		<class name="Tutorial_Hansando_tCECYV" Value="[!Dialog][!speaker:Sion_Normal]임무 완료~☆"/>
+		<class name="Tutorial_Hansando_8m19vm" Value="[!Dialog][!speaker:Kylie_Normal]$CompanyName$ 제법인데~"/>
+		<class name="Tutorial_Hansando_UEVZ17" Value="[!Dialog][!speaker:Kylie_Normal]젊은 트러블슈터들을 붙여준다고 해서 걱정했었지. 하지만 기우였군."/>
+		<class name="Tutorial_Hansando_uujLnk" Value="[!Dialog][!speaker:Irene_Smile2]걱정하게 만들어서 미안하군."/>
+		<class name="Tutorial_Hansando_kx9SSS" Value="[!Dialog][!speaker:Albus_Normal]이 정보로 스푼교도들의 테러도 줄어들었으면 하네요."/>
+		<class name="Tutorial_Hansando_9kUeri" Value="[!Dialog][!speaker:Kylie_Normal]뭐. 경찰들이 알아서 하겠지."/>
+		<class name="Tutorial_Hansando_uiWmW8" Value="[!Dialog][!speaker:Sion_Stare]그렇게 쉽게 풀리지 않을 거야... 종교 단체는 끈질기거든..."/>
+		<class name="Tutorial_Hansando_rC0jfA" Value="[!Dialog][!speaker:Irene_Serious]믿음은 고난을 이겨내게 하니까..."/>
+		<class name="Tutorial_Hansando_uRiZ8u" Value="[!Dialog][!speaker:Albus_Disappoint]하긴... 그렇게 검거해도 계속 불어나니..."/>
+		<class name="Tutorial_Hansando_PvrQoD" Value="[!Dialog][!speaker:Kylie_Normal]$CompanyName$ 제군들. 쓸데없이 심각해지지 말고 나중에 내 의뢰나 부탁해."/>
+		<class name="Tutorial_Hansando_e3vSx7" Value="[!Dialog][!speaker:Albus_SurpriseStare]의뢰요?"/>
+		<class name="Tutorial_Hansando_dMz5FG" Value="[!Dialog][!speaker:Kylie_Normal]내 작업장에는 트러블슈터들에게 의뢰할 만한 일들은 언제나 산더미야."/>
+		<class name="Tutorial_Hansando_dtVjhn" Value="[!Dialog][!speaker:Kylie_Normal]단순한 재료 구하기부터 이능석 채취 그런 일들이지."/>
+		<class name="Tutorial_Hansando_NL6GVD" Value="[!Dialog][!speaker:Albus_Normal]알겠습니다. 카일리 씨."/>
+		<class name="Tutorial_Hansando_MsX0ld" Value="[!Dialog][!speaker:Sion_Normal]오옷~☆ 일이다! 일!"/>
+		<class name="Tutorial_Hansando_qthl2B" Value="[!Dialog][!speaker:Irene_Smile]걱정 마! 맡겨줘!"/>
+		<class name="Tutorial_Hansando_KpUoLV" Value="[!Dialog][!speaker:Kylie_Normal]역시 재밌군. 아이작이 자네들을 좋아하는 이유를 알겠어."/>
+		<class name="Tutorial_Hansando_LXW00D" Value="[!Dialog][!speaker:Sion_Normal]훗~☆ 수집 의뢰는 걱정 마세요! 우리 사장님은 일벌레니까!"/>
+		<class name="Tutorial_Hansando_5n3fWT" Value="[!Dialog][!speaker:Albus_Embarrassed]시온!!!"/>
+		<class name="Tutorial_Hansando_p1F3l0" Value="[!Dialog][!speaker:Kylie_Normal]보수는 납득할 만큼 줄 테니 찾아오기만 해."/>
+		<class name="Tutorial_Hansando_0MaPr0" Value="[!Dialog][!speaker:Irene_Normal]음. 꼭 찾아가마!"/>
+		<class name="Tutorial_Hansando_GBlyLU" Value="[!Dialog][!speaker:Irene_Smile]우습게 들릴지 모르지만 어릴 적부터 꿈이었다. 다른 이유는 없지."/>
+		<class name="Tutorial_Hansando_XldP7M" Value="[!Dialog][!speaker:Irene_Smile2]포기하지 않고 계속 꿈을 꾸게 해줘서 고맙다."/>
+		<class name="Tutorial_Hansando_zHcL8A" Value="[!Dialog][!speaker:Albus_Laugh]아이린 씨는 정말 좋은 히어로가 될 거에요."/>
+		<class name="Tutorial_Hansando_YXDzJF" Value="[!Dialog][!speaker:Sion_Smile]아이린. 넌 네가 하고 싶은 대로 달려."/>
+		<class name="Tutorial_Hansando_35SqTG" Value="[!Dialog][!speaker:Sion_Normal]내가 히어로 아이린의 동료로 널 지켜봐 줄 테니까."/>
+		<class name="Tutorial_Hansando_MJ9N1X" Value="[!Dialog][!speaker:Irene_Smile2]고맙다. 시온 군."/>
+		<class name="Tutorial_Hansando_SXvy60" Value="[!Dialog][!speaker:Sion_Normal]자. 그럼 이제 시작해야지."/>
+		<class name="Tutorial_Hansando_K31tz1" Value="[!Dialog][!speaker:Irene_Smile]물론이다."/>
+		<class name="Tutorial_Hansando_G3aMSF" Value="[!Dialog][!speaker:Albus_Normal]그럼. 시작하겠습니다!"/>
+		<class name="Tutorial_Hansando_frfwmO" Value="[!Dialog][!speaker:Albus_Normal]아이작 경감님이 말씀하신 엔지니어분이 먼저 도착해 있다고 했으니 빨리 찾아 합류하자."/>
+		<class name="Tutorial_Hansando_SPdkIC" Value="[!Dialog][!speaker:Sion_Normal]OK~☆"/>
+		<class name="Tutorial_Hansando_ROc6po" Value="[!Dialog][!speaker:Irene_Heroic]자. 출동이다!!"/>
+		<class name="Tutorial_Hansando_y5PcXL" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_Hansando_icsSIw" Value="[!VictoryCondition]엔지니어를 합류시키시오."/>
+	</idspace>
+</idspaces>

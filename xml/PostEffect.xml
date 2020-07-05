@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="PostEffect">
+	<class name="BnW" PostEffect="B&W"/>
+	<class name="Glass" PostEffect="Glass"/>
+	<class name="OldTV" PostEffect="Old TV"/>
+	<class name="Embossed" PostEffect="Embossed"/>
+	<class name="SharpenEdges" PostEffect="Sharpen Edges"/>
+	<class name="Invert" PostEffect="Invert"/>
+	<class name="Posterize" PostEffect="Posterize"/>
+	<class name="Laplace" PostEffect="Laplace"/>
+	<class name="Tiling" PostEffect="Tiling"/>
+	<class name="OldMovie" PostEffect="Old Movie"/>
+	<class name="GaussianBlur" PostEffect="Gaussian Blur"/>
+	<class name="RadialBlur" PostEffect="Radial Blur"/>
+	<class name="ASCII" PostEffect="ASCII"/>
+	<class name="NightVision" PostEffect="Night Vision"/>
+</idspace>

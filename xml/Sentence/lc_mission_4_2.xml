@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="lc_mission_4_2_47Qxlf" Value="[!Objective]마약거래 갱단 간부 체포"/>
+		<class name="lc_mission_4_2_31F1lG" Value="[!Dialog][!speaker:VHPD_Jane_Normal]곧 작전이 개시될 겁니다.
+한 번에 들이쳐야 하니 서두르지요."/>
+		<class name="lc_mission_4_2_fXRpG3" Value="[!Dialog][!speaker:VHPD_Jane_Normal]아직 작전 개시 시간이 아닌데 총소리가..
+뭔가 일이 틀어진 것 같습니다.
+우선 상황을 확인해보지요."/>
+		<class name="lc_mission_4_2_lDDfNB" Value="[!Dialog][!speaker:Gangster_BullThin_Smile]멍청한 놈들 우리가 그렇게 쉽게 보였나?
+단속반 것들도 다 쓸어버렸으니 다들 철수한다."/>
+		<class name="lc_mission_4_2_0tZLyB" Value="[!Dialog][!speaker:VHPD_Jane_Rage]이런.. 작전이 어그러진 것 같습니다.
+본부에서도 상황을 확인하면 곧 예비조를 투입할 건데..
+이대로 두면 그 전에 도망가 버리겠군요."/>
+		<class name="lc_mission_4_2_t6qCwy" Value="[!Dialog][!speaker:VHPD_Jane_Rage]여기서 저놈들이 철수하면 동료들의 죽음이 개죽음이 돼버립니다.
+위험하지만 다 철수하기 전에 간부라도 잡아야합니다.
+아이린 씨 도와주시겠어요?"/>
+		<class name="lc_mission_4_2_Z1JuWo" Value="[!Dialog][!speaker:Irene_Heroic]이것도 다 히어로의 책임!
+빨리 서둘러요."/>
+		<class name="lc_mission_4_2_IzwW8G" Value="[!Dialog][!speaker:VHPD_Jane_Rage]정면 돌파는 힘들어 보이니 저곳을 통해 옥상으로 침투하지요."/>
+		<class name="lc_mission_4_2_9Qgfts" Value="[!Dialog][!speaker:Gangster_BlackTigerThin_Smile]여기 단속반이 더 있는데.
+쓸어버리고 빨리 철수하자!"/>
+		<class name="lc_mission_4_2_rqYI0j" Value="[!Dialog][!speaker:Irene_Think](일이 심하게 꼬였는데..)"/>
+		<class name="lc_mission_4_2_34iPlC" Value="[!Dialog][!speaker:Irene_Heroic]히어로는 고난을 피하지 않지.
+다 덤벼!"/>
+		<class name="lc_mission_4_2_jSE1Ft" Value="[!Dialog][!speaker:Gangster_BlackTigerFat_Rage]제길 예비대까지 도착했나..
+어쩔 수 없지 다들 튀어!"/>
+		<class name="lc_mission_4_2_oZncwB" Value="[!Dialog][!speaker:VHPD_Jane_Normal]마침 예비조가 투입됐군요.
+아이린 씨 덕분에 작전이 성공했네요.
+희생당한 동료들도 아이린 씨에게 고마워할 겁니다."/>
+		<class name="lc_mission_4_2_NDG5Oq" Value="[!Dialog][!speaker:Gangster_BullFat_Rage]제길..
+조무라기에게 잡히다니."/>
+		<class name="lc_mission_4_2_75ImAu" Value="[!Dialog][!speaker:Gangster_BullFat_Normal]하지만 니들이 얻을 수 있는 건 없을 거다."/>
+		<class name="lc_mission_4_2_uTyJ7x" Value="[!Dialog][!speaker:Irene_Heroic]흥!
+히어로는 승리한다!"/>
+		<class name="lc_mission_4_2_AO8kk8" Value="[!Dialog][!speaker:VHPD_Jane_Normal]저놈 말대로 정보를 얻는 건 쉽지 않을 겁니다.
+하지만 정보를 얻는 데로 아이린 씨의 도움을 청하겠습니다.
+감사드립니다."/>
+	</idspace>
+</idspaces>

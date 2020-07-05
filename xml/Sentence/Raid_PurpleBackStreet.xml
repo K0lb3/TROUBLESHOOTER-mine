@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Raid_PurpleBackStreet_H0XzaQ" Value="[!Dashboard:Counter]남은 적 수"/>
+		<class name="Raid_PurpleBackStreet_nBsn70" Value="[!Dashboard:TimeLimiter]귀환 준비까지 남은 시간"/>
+		<class name="Raid_PurpleBackStreet_7uuJB9" Value="[!Dashboard:Counter]남은 보스 수"/>
+		<class name="Raid_PurpleBackStreet_rcYXCh" Value="[!Objective]자홍 뒷골목의 치안을 확보하시오."/>
+		<class name="Raid_PurpleBackStreet_WqTKqa" Value="[!Objective]자홍 뒷골목의 치안을 확보하시오."/>
+		<class name="Raid_PurpleBackStreet_9GNNAx" Value="[!Objective]남은 귀환 시간까지 생존하시오."/>
+		<class name="Raid_PurpleBackStreet_wqorBD" Value="[!Dialog][!speaker:EmptySubTitle_]토벌전 이후 한 달 반..."/>
+		<class name="Raid_PurpleBackStreet_8HEKXf" Value="[!Dialog][!speaker:EmptySubTitle_]급격히 늘어난 스푼교도들은 경찰들의 눈을 피해 다시금 자홍거리로 몰려든다."/>
+		<class name="Raid_PurpleBackStreet_gqVuFJ" Value="[!Dialog][!speaker:EmptySubTitle_]지속적인 토벌대를 보낼 여력이 없는 바람장벽 지구 경찰청은 자홍거리 치안 유지를 트러블슈터들에게 일임한다."/>
+		<class name="Raid_PurpleBackStreet_t8jh3W" Value="[!Dialog][!speaker:Gangster_SpoonFighter_ZhoHong_Normal]다들 정신 차려라! 불과 얼마 전 여기서 우리가 어떤 수모를 겪었는지 잊은 거냐!"/>
+		<class name="Raid_PurpleBackStreet_gUHfCR" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Hasan_Normal]&apos;한술&apos;의 뜻을 따르는 자들이 계속 늘어날 것이다. 그들을 위한 자리를 마련해!"/>
+		<class name="Raid_PurpleBackStreet_qAhizf" Value="[!Dialog][!speaker:Gangster_SpoonThin_Nevil_Normal]경찰 녀석들이 이 곳을 쉽게 돌아다니게 하지 마!"/>
+		<class name="Raid_PurpleBackStreet_zIyhSN" Value="[!Dialog][!speaker:Gangster_Oliver_Normal]뭐야. 이 동네!  수상한 녀석들이 많아졌어!!"/>
+		<class name="Raid_PurpleBackStreet_egqCVM" Value="[!Dialog][!speaker:Gangster_PinkHorn_Normal]시끄럽군..."/>
+		<class name="Raid_PurpleBackStreet_rr31Sk" Value="[!Dialog][!speaker:Gangster_Jason_Normal]제기랄!"/>
+		<class name="Raid_PurpleBackStreet_LcJbay" Value="[!Dialog][!speaker:VHPD_Assault_Normal]트러블슈터 알버스 님!"/>
+		<class name="Raid_PurpleBackStreet_ly7p3o" Value="[!Dialog][!speaker:VHPD_Assault_Normal]현재 진입로를 지킬 병력을 제외하고 임무에 돌입할 병력을 편성해주십시오."/>
+		<class name="Raid_PurpleBackStreet_AhhEip" Value="[!Dialog][!speaker:VHPD_Assault_Normal]그리고 현재 병력으로는 이전 토벌전처럼 병력을 나눌 만큼 충분하지 않습니다."/>
+		<class name="Raid_PurpleBackStreet_VvVFyP" Value="[!Dialog][!speaker:VHPD_Assault_Normal]따라서 남쪽 진입로와 북쪽 진입로 중 진입 경로를 선택하셔야 할 것 같습니다."/>
+		<class name="Raid_PurpleBackStreet_7zBizo" Value="[!Dialog][!speaker:Albus_Normal]알겠습니다! 빠르게 분대를 편성하여 임무를 진행하도록 하겠습니다."/>
+		<class name="Raid_PurpleBackStreet_2dNmaL" Value="[!Dialog][!speaker:Albus_Think][colour=&apos;FFFFFF00&apos;]병력 편성은 어떻게 할까?"/>
+		<class name="Raid_PurpleBackStreet_VsK5K8" Value="[!Choice]기동대원 4, 진압대원 2"/>
+		<class name="Raid_PurpleBackStreet_sHXNXc" Value="[!Choice]기동대원 3, 진압대원 3"/>
+		<class name="Raid_PurpleBackStreet_Jv0Rfq" Value="[!Choice]기동대원 2, 진압대원 4"/>
+		<class name="Raid_PurpleBackStreet_DgPOoR" Value="[!Choice]기동대원 1, 진압대원 5"/>
+		<class name="Raid_PurpleBackStreet_F2q7rp" Value="[!Dialog][!speaker:Albus_Think][colour=&apos;FFFFFF00&apos;]병력 진입 경로는 어떻게 할까..."/>
+		<class name="Raid_PurpleBackStreet_SbY1ik" Value="[!Choice]남쪽 진입로"/>
+		<class name="Raid_PurpleBackStreet_OT4gCB" Value="[!Choice]북쪽 진입로"/>
+		<class name="Raid_PurpleBackStreet_4X1I3O" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Raid_PurpleBackStreet_7yO4A0" Value="[!VictoryCondition]자홍 뒷골목의 치안을 확보하시오."/>
+		<class name="Raid_PurpleBackStreet_5UBx2W" Value="[!Dialog][!speaker:EmptySubTitle_]적 보스를 제압하였습니다. 계속 임무를 진행하시겠습니까?"/>
+		<class name="Raid_PurpleBackStreet_rAjozt" Value="[!Choice]임무를 계속한다."/>
+		<class name="Raid_PurpleBackStreet_fZaQKg" Value="[!Choice]귀환한다."/>
+		<class name="Raid_PurpleBackStreet_1tfx6J" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Raid_PurpleBackStreet_1iappQ" Value="[!VictoryCondition]남은 귀환 시간까지 생존하시오."/>
+		<class name="Raid_PurpleBackStreet_MOk2IE" Value="[!Dialog][!speaker:EmptySubTitle_]적 보스를 모두 제압하였습니다. 남은 잔당들을 처리하시겠습니까?"/>
+		<class name="Raid_PurpleBackStreet_LYYSaw" Value="[!Objective]적을 모두 제압하시오."/>
+		<class name="Raid_PurpleBackStreet_LNberJ" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Raid_PurpleBackStreet_4xghyp" Value="[!VictoryCondition]적을 모두 제압하시오."/>
+		<class name="Raid_PurpleBackStreet_Kt7SyM" Value="[!Title]탐욕스러운 올리버"/>
+		<class name="Raid_PurpleBackStreet_ncJsgf" Value="[!Title]현상 수배범"/>
+		<class name="Raid_PurpleBackStreet_Jz7NJU" Value="[!BalloonChat][!speaker:Oliver]어허??"/>
+		<class name="Raid_PurpleBackStreet_ptzYyp" Value="[!BalloonChat][!speaker:Oliver]나랑 놀아줄 꺼지?"/>
+		<class name="Raid_PurpleBackStreet_s3YICi" Value="[!Title]도깨비 핑크혼"/>
+		<class name="Raid_PurpleBackStreet_9yWrnl" Value="[!Title]현상 수배범"/>
+		<class name="Raid_PurpleBackStreet_HWkhqU" Value="[!Title]증오하는 하산"/>
+		<class name="Raid_PurpleBackStreet_ahApta" Value="[!Title]전 황소파 간부"/>
+		<class name="Raid_PurpleBackStreet_3FXjDM" Value="[!BalloonChat][!speaker:Hasan]지독한 녀석들. 여기까지 추적해오다니..."/>
+		<class name="Raid_PurpleBackStreet_62XS3V" Value="[!BalloonChat][!speaker:Hasan]날 찾은 수고에 걸맞은 고통을 선물해주겠네."/>
+		<class name="Raid_PurpleBackStreet_RK3Y9w" Value="[!Title]사나이 조홍"/>
+		<class name="Raid_PurpleBackStreet_UOYWHa" Value="[!Title]전 황소파 간부"/>
+		<class name="Raid_PurpleBackStreet_yhIjhr" Value="[!BalloonChat][!speaker:ZhoHong]햐~ 여기까지 찾아왔단 말이냐!"/>
+		<class name="Raid_PurpleBackStreet_FDa9IH" Value="[!BalloonChat][!speaker:ZhoHong]너희들에게 좌절감이 무엇인지 알려주마!"/>
+		<class name="Raid_PurpleBackStreet_vk3njJ" Value="[!Title]거침없는 네빌"/>
+		<class name="Raid_PurpleBackStreet_0OUOGS" Value="[!Title]특수부대 출신"/>
+		<class name="Raid_PurpleBackStreet_wlOeB3" Value="[!BalloonChat][!speaker:Nevil]목표는 저 녀석이다."/>
+		<class name="Raid_PurpleBackStreet_WFIGUa" Value="[!Title]바람돌이 제이슨"/>
+		<class name="Raid_PurpleBackStreet_UTriHp" Value="[!Title]뒷세계 정보원"/>
+		<class name="Raid_PurpleBackStreet_GZmlp9" Value="[!BalloonChat][!speaker:Jason]아씨!!!!!!!!"/>
+		<class name="Raid_PurpleBackStreet_iqdXq8" Value="[!BalloonChat][!speaker:Jason]그만 좀 쫓아와! 이 자식들아!"/>
+		<class name="Raid_PurpleBackStreet_Mjpi6L" Value="[!BalloonChat][!speaker:Oliver]도대체 나한테 왜 이러는 거야!"/>
+		<class name="Raid_PurpleBackStreet_5rEGAx" Value="[!BalloonChat][!speaker:PinkHorn]도깨비 핑크!!!!!"/>
+		<class name="Raid_PurpleBackStreet_wVXAFp" Value="[!BalloonChat][!speaker:Hasan]보스의 원한을 갚아주마!!"/>
+		<class name="Raid_PurpleBackStreet_Cuxhhb" Value="[!BalloonChat][!speaker:Nevil]오늘 운세는 강운."/>
+		<class name="Raid_PurpleBackStreet_e5DhKF" Value="[!BalloonChat][!speaker:ZhoHong]제기랄!! 네 녀석들 때문에!!!"/>
+		<class name="Raid_PurpleBackStreet_fECCCy" Value="[!BalloonChat][!speaker:Jason]너희들!! 도대체 나한테 왜 이래!!!"/>
+	</idspace>
+</idspaces>

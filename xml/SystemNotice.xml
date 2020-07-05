@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="SystemNoticeSpecialArg">
+		<class name="ToTime" Type="ToTime"/>
+		<class name="OffsetTime" Type="OffsetTime"/>
+		<class name="ZoneName" Type="ZoneName"/>
+		<class name="SafetyFeverHour" Type="Raw"/>
+		<class name="LeftMissionCount" Type="Raw"/>
+	</idspace>
+	<idspace id="SystemNotice">
+		<schema>
+			<rule property="FormatArg" type="table" subtype="string" default=""/>
+			<rule property="SplashMessage" type="string" default=""/>
+			<rule property="FixedMessage" type="string" default=""/>
+			<rule property="NoticeGroup" type="string" default="General"/>
+			<rule property="KeepOn" type="bool" default="false"/>
+		</schema>
+		<class name="Maintenance" SplashMessage="잠시 후에 정기점검이 있을 예정입니다.&#xA;현재 접속중인 유저분들은 점검 시간을 고려하여 미션을 안전하게 종료해 주시기 바랍니다. &#xA;서버 종료까지 남은시간: $ToTime$" FixedMessage="잠시 후에 정기점검이 있을 예정입니다.&#xA;현재 접속중인 유저분들은 점검 시간을 고려하여 미션을 안전하게 종료해 주시기 바랍니다. &#xA;서버 종료까지 남은시간: $ToTime$" FormatArg="ToTime" NoticeGroup="Update" KeepOn="true"/>
+		<class name="Emergency" SplashMessage="잠시 후에 임시점검이 있을 예정입니다.&#xA;현재 접속중인 유저분들은 점검 시간을 고려하여 미션을 안전하게 종료해 주시기 바랍니다. &#xA;서버 종료까지 남은시간: $ToTime$" FixedMessage="잠시 후에 임시점검이 있을 예정입니다.&#xA;현재 접속중인 유저분들은 점검 시간을 고려하여 미션을 안전하게 종료해 주시기 바랍니다. &#xA;서버 종료까지 남은시간: $ToTime$" FormatArg="ToTime" NoticeGroup="Update" KeepOn="true"/>
+		<class name="ClearUpdate" NoticeGroup="Update" KeepOn="true"/>
+		<class name="SafetyFeverStart" SplashMessage="$ZoneName$의 치안도가 100% 달성되었습니다.&#xA;지금부터 $SafetyFeverHour$ 시간 동안 아이템, 특성 획득 확률이 100% 증가합니다." FixedMessage="$ZoneName$의 치안도가 100% 달성되었습니다.&#xA;아이템, 특성 획득 확률이 100% 증가합니다.&#xA;남은시간: $OffsetTime$" NoticeGroup="SafetyFever" FormatArg="ZoneName, OffsetTime, SafetyFeverHour"/>
+		<class name="SafetyFeverStart_Single" SplashMessage="$ZoneName$의 치안도가 100% 달성되었습니다.&#xA; 지금부터 다음 보고서 수령할 때까지 아이템과 특성 획득 확률이 100% 증가합니다. " FixedMessage="$ZoneName$의 치안도가 100% 달성되었습니다.&#xA;아이템, 특성 획득 확률이 100% 증가합니다.&#xA;남은 미션 성공 횟수: $LeftMissionCount$" NoticeGroup="SafetyFever" FormatArg="ZoneName, LeftMissionCount"/>
+		<class name="SafetyFeverNow" FixedMessage="$ZoneName$의 치안도가 100% 달성되었습니다.&#xA;아이템, 특성 획득 확률이 증가합니다.&#xA;남은시간: $OffsetTime$" NoticeGroup="SafetyFever" FormatArg="ZoneName, OffsetTime"/>
+		<class name="SafetyFeverNow_Single" FixedMessage="$ZoneName$의 치안도가 100% 달성되었습니다.&#xA;아이템, 특성 획득 확률이 100% 증가합니다.&#xA;남은 미션 성공 횟수: $LeftMissionCount$" NoticeGroup="SafetyFever" FormatArg="ZoneName, LeftMissionCount"/>
+		<class name="SafetyFeverEnd" SplashMessage="$ZoneName$의 치안도 100% 효과가 종료되었습니다." FormatArg="ZoneName" NoticeGroup="SafetyFever"/>
+		<class name="ClientUpdated" SplashMessage="중요한 클라이언트 변경사항이 업데이트 되었습니다. 스팀을 통하여 게임 클라이언트를 업데이트 받으신 후 다시 게임을 이용해 주십시오." FixedMessage="중요한 클라이언트 변경사항이 업데이트 되었습니다. 스팀을 통하여 게임 클라이언트를 업데이트 받으신 후 다시 게임을 이용해 주십시오." NoticeGroup="General"/>
+	</idspace>
+</idspaces>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="lc_mission_2_3_EMyEWq" Value="[!Dashboard:Checklist]적의 시선을 최대한 피해서 침투"/>
+		<class name="lc_mission_2_3_1n8pIK" Value="[!Dashboard:Checklist]보스를 공격해 기폭장치를 탈취하라!"/>
+		<class name="lc_mission_2_3_3y8Peb" Value="[!Objective]기폭장치 탈취 성공"/>
+		<class name="lc_mission_2_3_TkARVZ" Value="[!Dialog][!speaker:Sion_Surprise]오랜만이지만 역시 커!"/>
+		<class name="lc_mission_2_3_R0DshP" Value="[!Dialog][!speaker:Albus_Normal]안과 밖을 나누는 거지..
+아군과 적군인가?"/>
+		<class name="lc_mission_2_3_vYlRID" Value="[!Dialog][!speaker:Albus_Normal]지도에 표시된 데는 더 안쪽으로 들어가야겠군.
+이번에는 덜 소란스럽게 가보자고."/>
+		<class name="lc_mission_2_3_NgIaW8" Value="[!Dialog][!speaker:Sion_Smile]에헤.
+그게 잘 될까?"/>
+		<class name="lc_mission_2_3_hqeueI" Value="[!Dialog][!speaker:CrowStreet_BlackTigerThin_Sorrow]네놈들은 우릴 막을 수 없다!
+끝은 모두 공평하지."/>
+		<class name="lc_mission_2_3_FFc8Ah" Value="[!Dialog][!speaker:Carter_Sorrow]쓰레기들.."/>
+		<class name="lc_mission_2_3_5QrfAP" Value="[!Dialog][!speaker:Sion_Normal]우린 거기서 빼달라고!
+우리가 아닐 거야. 그런거지?"/>
+		<class name="lc_mission_2_3_nUt1fm" Value="[!Dialog][!speaker:Carter_Normal]저놈을 막아!
+폭탄이 터지면 끝이다."/>
+		<class name="lc_mission_2_3_1jomYq" Value="[!Dialog][!speaker:Carter_Normal]다행이다..
+덕분에 일이 커지기 전에 막았군."/>
+		<class name="lc_mission_2_3_LMlfqg" Value="[!Dialog][!speaker:Sion_Normal]일단 때려잡긴 했는데
+무슨 일인데 여기까지 행차하신 거야?"/>
+		<class name="lc_mission_2_3_101S7H" Value="[!Dialog][!speaker:Carter_Normal]다 같이 죽는 건 막아야 하니 나설 수밖에.."/>
+		<class name="lc_mission_2_3_PjM8oT" Value="[!Dialog][!speaker:Carter_Normal]너희는 모르겠지만 장벽 밖에는 많은 우리 앨리들이 고통받고 있다.
+과격파 놈들은 장벽을 부숴서 모든 앨리들을 자신들을 중심으로 뭉치길 원하지."/>
+		<class name="lc_mission_2_3_PRr0e6" Value="[!Dialog][!speaker:Carter_Surprise]고통을 피해 장벽을 넘어온 사람들은 우두머리를 따르는 늑대가 되서 이전보다 더 잔인한 테러에 이용되고, 장벽 밖에는 더 큰 폭력이 퍼부어지겠지.
+그 악순환 끝에 우리가 살아남을 수 있을까?"/>
+		<class name="lc_mission_2_3_FAzwzA" Value="[!Dialog][!speaker:Albus_Normal]그건 우리도 바라지 않는 길이군요.
+적의 적은 한시적인 동반자가 될 수 있으니 앞으로도 앨리 과격파에 대해서는 서로 협조하지요."/>
+		<class name="lc_mission_2_3_ENDGJV" Value="[!Dialog][!speaker:Carter_Smile]그래 우린 적의 적이지.
+과격파 놈들을 상대할 때 협조하도록 하지.
+이제 이놈들은 경찰에 넘기라고. 나는 이만 사라져 주지."/>
+		<class name="lc_mission_2_3_m9kFyd" Value="[!Dialog][!speaker:Sion_Smile]이제 상황 끝난 건가?
+뭐.. 저 아저씨도 나쁜 짓만 하는 건 아닌가 봐.
+얼결에 얻어걸렸지만 큰 건을 해결했네."/>
+		<class name="lc_mission_2_3_OVVq0p" Value="[!Dialog][!speaker:Sion_Smile]이거..
+조용히 들어가는 건 이미 늦은 것 같은데?
+이제 다 때려눕히고 가보자고!"/>
+		<class name="lc_mission_2_3_UZ63bM" Value="[!Dialog][!speaker:Albus_Surprise]어쩔 수 없지.
+강행돌파다!"/>
+	</idspace>
+</idspaces>

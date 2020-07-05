@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Tutorial_SilverliningMarco_iizs2t" Value="[!Objective]돈을 제압하시오."/>
+		<class name="Tutorial_SilverliningMarco_xNCNM5" Value="[!Objective]돈을 제압하시오"/>
+		<class name="Tutorial_SilverliningMarco_C4gNo9" Value="[!Objective]마르코를 제압하시오"/>
+		<class name="Tutorial_SilverliningMarco_LtxEO6" Value="[!Dialog][!speaker:Don_Smile]내가 이긴다면 아까 부순 잔들이랑 이 전투에서 부서진 모든 수리비는 자네가 해결해줄 거라 믿네."/>
+		<class name="Tutorial_SilverliningMarco_4uis42" Value="[!Dialog][!speaker:Don_Serious]그 정도는 해줘야 하지 않나? 명색이 &apos;벤데타&apos; 조직이잖아?"/>
+		<class name="Tutorial_SilverliningMarco_rdYJlq" Value="[!Dialog][!speaker:Marco_Normal]아휴. 놀아주겠다는데 이기면 상을 줘야지~"/>
+		<class name="Tutorial_SilverliningMarco_D6Z6bj" Value="[!Dialog][!speaker:Marco_Smile]최선을 다해봐~"/>
+		<class name="Tutorial_SilverliningMarco_ZrSFT8" Value="[!Dialog]플레이를 원하시는 캐릭터를 선택하세요."/>
+		<class name="Tutorial_SilverliningMarco_3WXNgk" Value="[!Choice]마르코"/>
+		<class name="Tutorial_SilverliningMarco_UVBucW" Value="[!Choice]돈"/>
+		<class name="Tutorial_SilverliningMarco_VCESml" Value="[!VictoryCondition]마르코 전투 불능"/>
+		<class name="Tutorial_SilverliningMarco_51o0Aa" Value="[!VictoryCondition]돈 전투 불능"/>
+		<class name="Tutorial_SilverliningMarco_jmxEHy" Value="[!VictoryCondition]돈 전투 불능"/>
+		<class name="Tutorial_SilverliningMarco_m4baYX" Value="[!VictoryCondition]마르코 전투 불능"/>
+		<class name="Tutorial_SilverliningMarco_1owHmN" Value="[!Ignore][!Dialog][!speaker:Marco_Smile]어이 어이. 벌써 끝난거야?"/>
+		<class name="Tutorial_SilverliningMarco_dK4jDX" Value="[!Ignore][!Dialog]재도전 하시겠습니까?"/>
+		<class name="Tutorial_SilverliningMarco_fKtepC" Value="[!Ignore][!Choice]재도전한다."/>
+		<class name="Tutorial_SilverliningMarco_bKnYyC" Value="[!Ignore][!Choice]포기한다."/>
+	</idspace>
+</idspaces>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+<idspace id="MissionInstance">
+	<class name="mission" Result="None" Rank="None" Weather="None" IllegalObjectReward="0" CheckPointReloadCount="0">
+		<Autofill Dummy="dumdum"/>
+		<CheckPoint>
+			<P1 type="bool" value="false"/>
+			<P2 type="bool" value="false"/>
+			<P3 type="bool" value="false"/>
+			<P4 type="bool" value="false"/>
+			<P5 type="bool" value="false"/>
+			<P6 type="bool" value="false"/>
+			<P7 type="bool" value="false"/>
+			<P8 type="bool" value="false"/>
+			<P9 type="bool" value="false"/>
+			<P10 type="bool" value="false"/>
+		</CheckPoint>
+		<Obstacle type="linktable" target="Obstacle" value=""/>
+		<AIState RecitalPlayCount="0"/>
+	</class>
+</idspace>
+<idspace id="CompanyMissionProperty">
+	<schema>
+		<rule property="EventBattlePassed" type="bool" default="false"/>
+		<rule property="ClearCount" type="number" default="0"/>
+		<rule property="CheckPoint1" type="bool" default="false"/>
+		<rule property="CheckPoint2" type="bool" default="false"/>
+		<rule property="StageVariable" type="lua_value" default="{}"/>
+	</schema>
+	<class name="base"/>
+</idspace>
+</idspaces>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Dialog">
+	<class name="Giselle_Main">
+		<Scripts>
+			<property Type="Switch" C_DlgName="npc.Info.Title" C_TestTarget="company.Progress.Character.Albus">
+				<property Case="4">
+					<property Type="Jump" JumpTo="Giselle_Main_Albus4"/>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+	<class name="Giselle_Main_Albus4">
+		<Scripts>
+			<property Type="Sleep" Time="3"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Surprise" Mode="Start" Close="false" Message="[!speaker:Albus_Surprise]지젤씨??" DialogType="Main" Slot="Left4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Giselle" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Giselle_Normal]늦어. 알버스." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="SurpriseStare" Mode="Continue" Close="false" Message="[!speaker:Albus_SurpriseStare]여기까지 무슨 일이세요?" DialogType="Main" Slot="Left4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Giselle" SpeakerEmotion="Smile2" Mode="Continue" Close="false" Message="[!speaker:Giselle_Smile2]이제 머리통은 괜찮나?" DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Laugh" Mode="Continue" Close="false" Message="[!speaker:Albus_Laugh]네." DialogType="Main" Slot="Left4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Disappoint" Mode="Continue" Close="false" Message="[!speaker:Albus_Disappoint]그런데 여기까지 찾아오신 이유가..." DialogType="Main" Slot="Left4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Giselle" SpeakerEmotion="Annoying" Mode="Continue" Close="false" Message="[!speaker:Giselle_Annoying]넌 나한테 무슨 죄졌니?" DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Giselle" SpeakerEmotion="Smile2" Mode="Continue" Close="false" Message="[!speaker:Giselle_Smile2]내가 널 괴롭히기라도 하니?" DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="EyeAversion" Mode="Continue" Close="false" Message="[!speaker:Albus_EyeAversion]&apos;바로 대답안하면 또 혼나겠지...&apos;" DialogType="Main" Slot="Left4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Laugh" Mode="Continue" Close="false" Message="[!speaker:Albus_Laugh]그럴 리가요." DialogType="Main" Slot="Left4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Giselle" SpeakerEmotion="Satisfying" Mode="Continue" Close="false" Message="[!speaker:Giselle_Satisfying]많이 능청스러워졌구나." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Giselle" SpeakerEmotion="Smile" Mode="Continue" Close="false" Message="[!speaker:Giselle_Smile]일 마무리하고 나오렴. 저녁이나 같이 하자." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="SurpriseStare" Mode="Continue" Close="false" Message="[!speaker:Albus_SurpriseStare]네??" DialogType="Main" Slot="Left4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Giselle" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Giselle_Normal]나 기다리게 할거니?" DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="EyeAversion" Mode="Continue" Close="false" Message="[!speaker:Albus_EyeAversion]&apos;도대체 무슨 일이지...&apos;" DialogType="Main" Slot="Left4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Giselle" SpeakerEmotion="Annoying" Mode="Continue" Close="false" Message="[!speaker:Giselle_Annoying]알버스?" DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Disappoint" Mode="Continue" Close="false" Message="[!speaker:Albus_Disappoint]알겠습니다. 바로 마무리하고 나올게요." DialogType="Main" Slot="Left4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Giselle" SpeakerEmotion="Satisfying" Mode="Continue" Close="true" Message="[!speaker:Giselle_Satisfying]그래. 바깥에서 기다리마." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="Progress/Character/Albus" PropertyValue="5"/>
+		</Scripts>
+	</class>
+</idspace>

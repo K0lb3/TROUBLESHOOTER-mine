@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Dialog">
+	<class name="Office_Albus_Main">
+		<Scripts>
+			<property Type="SceneFade" Direct="true" FadeType="Out"/>
+			<property Type="SceneFade" Direct="false" FadeType="In"/>
+			<property Type="Switch" C_TestTarget="company.Progress.Tutorial.Opening">
+				<property Case="Office_Albus">
+					<property Type="Jump" JumpTo="Office_Albus_MenuTutorial"/>
+				</property>
+				<property Case="Silverlining_Lose">
+					<property Type="Jump" JumpTo="Office_Albus_Silverlining_Lose"/>
+				</property>
+				<property Case="TutorialGameMenu">
+					<property Type="Jump" JumpTo="Office_Albus_MenuTutorial2"/>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+	<class name="Office_Albus_MenuTutorial">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Start" Close="false" Message="현장 실습을 마치고 3개월 만에 집에 돌아온 알버스." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Surprise" Mode="Continue" Close="false" Message="[!speaker:Albus_Surprise]이런... 이렇게 엉망으로 하고 나갔었구나." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Albus_Normal]이렇게 엉망으로 사는 걸 릴리 고모가 알면 죄송한데..." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="이 오피스텔은 릴리가 10년 전 어린 알버스에게 지원해준 공간이었다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Smile" Mode="Continue" Close="false" Message="[!speaker:Albus_Smile]이제 여기도 작별이구나..." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Albus_Normal]진심으로 감사합니다. 릴리 고모." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="정식 트러블슈터가 된 알버스는 릴리로부터 독립을 결정한다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="릴리는 굳이 그럴 필요 없다고 말했지만, 알버스는 당연히 이젠 스스로 살아가야 한다고 생각했다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Continue" Close="true" Message="[!speaker:Albus_Normal]자, 이제 이삿짐 정리를 해볼까." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="Progress/Tutorial/Opening" PropertyValue="TutorialGameMenu"/>
+		</Scripts>
+	</class>
+	<class name="Office_Albus_MenuTutorial2">
+		<Scripts>
+			<property Type="Switch" C_TestTarget="company.Progress.Tutorial.Roster">
+				<property Case="0">
+					<property Type="Jump" JumpTo="Office_Albus_MenuTutorial2_1"/>
+				</property>
+				<property Case="1">
+					<property Type="Jump" JumpTo="Office_Albus_MenuTutorial2_1"/>
+				</property>
+				<property Case="2">
+					<property Type="Jump" JumpTo="Office_Albus_MenuTutorial2_1"/>
+				</property>
+				<property Case="3">
+					<property Type="Jump" JumpTo="Office_Albus_MenuTutorial2_1"/>
+				</property>
+				<property Case="4">
+					<property Type="Jump" JumpTo="Office_Albus_MenuTutorial2_1"/>
+				</property>
+				<property Case="5">
+					<property Type="Jump" JumpTo="Office_Albus_MenuTutorial2_1"/>
+				</property>
+				<property Case="6">
+					<property Type="Jump" JumpTo="Office_Albus_MenuTutorial_MailTutorial"/>
+				</property>
+				<property Case="7">
+					<property Type="Jump" JumpTo="Office_Albus_MenuTutorial2_2"/>
+				</property>
+				<property Case="8">
+					<property Type="Jump" JumpTo="Office_Albus_MenuTutorial2_3"/>
+				</property>
+				<property Case="9">
+					<property Type="Jump" JumpTo="Office_Albus_MenuTutorial2_3"/>
+				</property>
+				<property Case="10">
+					<property Type="Jump" JumpTo="Office_Albus_MenuTutorial2_4"/>
+				</property>
+				<property Case="11">
+					<property Type="Jump" JumpTo="Office_Albus_MenuTutorial2_4"/>
+				</property>
+				<property Case="12">
+					<property Type="Jump" JumpTo="Office_Albus_MenuTutorial2_4"/>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+	<class name="Office_Albus_MenuTutorial2_1">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Start" Close="true" Message="[!speaker:Albus_Think]뭐부터 정리할까..." DialogType="Main" Slot="Right4" Effect="Appear"/>
+		</Scripts>
+	</class>
+	<class name="Office_Albus_MenuTutorial2_2">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Start" Close="true" Message="[!speaker:Albus_Think]빨리 마무리해야지..." DialogType="Main" Slot="Right4" Effect="Appear"/>
+		</Scripts>
+	</class>
+	<class name="Office_Albus_MenuTutorial2_3">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Start" Close="true" Message="아직 확인하지 않은 메일이 남아있다." DialogType="Main" Slot="Right4" Effect="Appear"/>
+		</Scripts>
+	</class>
+	<class name="Office_Albus_MenuTutorial2_4">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Start" Close="true" Message="[!speaker:Albus_Normal]...... 이제 가자." DialogType="Main" Slot="Right4" Effect="Appear"/>
+		</Scripts>
+	</class>
+	<class name="Office_Albus_MenuTutorial_Company">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Start" Close="false" Message="[!speaker:Albus_Normal]자, 이것은 이렇게 정리하고... 앗!" DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="짐 정리를 하던 알버스의 상의에서 디지털 패널이 떨어졌다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Surprise" Mode="Continue" Close="false" Message="[!speaker:Albus_Surprise]이런..." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="떨어진 패널은 트러블슈터 정식 자격증이었다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="트러블슈터 정식 자격증에는 현재 해당 회사의 정보가 실시간으로 업데이트된다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Smile" Mode="Continue" Close="false" Message="[!speaker:Albus_Smile]정신없구나. 잘 챙겨야지." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Continue" Close="true" Message="[!speaker:Albus_Normal]자, 이제 이삿짐 정리를 해볼까." DialogType="Main" Slot="Right4" Effect="Appear" Sync="true"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="false" PropertyType="Progress/Tutorial/GameMenuType" PropertyValue="GameMenu_Company"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="LobbyMenu/Company/Opened" PropertyValue="true"/>
+		</Scripts>
+	</class>
+	<class name="Office_Albus_MenuTutorial_Roster">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Start" Close="false" Message="파일을 정리하던 알버스는 자신이 무언가 잊고 있다는 것을 깨달았다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Surprise" Mode="Continue" Close="false" Message="[!speaker:Albus_Surprise]아 맞다. 회사 트러블슈터 명단 등록을 까먹고 있었네... 바로 해야겠어." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="발할라 경찰청은 트러블슈터 회사에 소속된 트러블슈터들을 모두 전산 등록하여 관리하는 것을 의무화하고 있다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="사건 해결의 책임 여부와 원활한 해결을 위한 정보망 구축을 위한 것이라고 한다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Smile" Mode="Continue" Close="false" Message="[!speaker:Albus_Smile]단 한 명뿐인 회사라... 막막하구나" DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Continue" Close="true" Message="[!speaker:Albus_Normal]뭐. 이제 시작이니까." DialogType="Main" Slot="Right4" Effect="Appear" Sync="true"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="false" PropertyType="Progress/Tutorial/GameMenuType" PropertyValue="GameMenu_Roster"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="LobbyMenu/Roster/Opened" PropertyValue="true"/>
+		</Scripts>
+	</class>
+	<class name="Office_Albus_MenuTutorial_RosterTutorial1">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Start" Close="false" Message="짐 정리를 하던 알버스의 시선이 멈추었다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Continue" Close="false" Message="[!speaker:Albus_Think]분명 잘 활용하면 좋은 시너지가 날 것 같은데 말야..." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="true" Message="[padding=&apos;l:0 t:0 r:0 b:$Pad$&apos;][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Icons/Vitality&apos;][padding=&apos;l:0 t:0 r:0 b:0&apos;] [colour=&apos;FFFFE959&apos;]오른쪽 하단의 사원 정보 메뉴를 클릭하세요" DialogType="Sub" Slot="Right4" Effect="Appear" Sync="true"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="Progress/Tutorial/Roster" PropertyValue="1"/>
+		</Scripts>
+	</class>
+	<class name="Office_Albus_MenuTutorial_RosterTutorial2">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Start" Close="false" Message="[padding=&apos;l:0 t:0 r:0 b:$Pad$&apos;][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Icons/Vitality&apos;][padding=&apos;l:0 t:0 r:0 b:0&apos;] [colour=&apos;FFFFE959&apos;]사원 정보에서는 회사에 합류한 트러블슈터들을 관리하실 수 있습니다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="true" Message="[padding=&apos;l:0 t:0 r:0 b:$Pad$&apos;][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Icons/Vitality&apos;][padding=&apos;l:0 t:0 r:0 b:0&apos;] [colour=&apos;FFFFE959&apos;]트러블슈터 목록에서 알버스를 클릭하여 상세 정보를 확인하세요." DialogType="Sub" Slot="Right4" Effect="Appear" Sync="true"/>
+			<property Type="SystemMail" MailKey="Jean01"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="Progress/Tutorial/Roster" PropertyValue="2"/>
+		</Scripts>
+	</class>
+	<class name="Office_Albus_MenuTutorial_RosterTutorial3">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Start" Close="false" Message="[!speaker:Albus_Think]일단 비상시에 무슨 일이 일어날지 모르니 유용한 장비는 소지하고 다니자." DialogType="Sub" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="캐릭터 상세 정보창에서는 캐릭터의 정보 확인 및 아이템 장착이 가능합니다." DialogType="Sub" Slot="Left4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="true" Message="[padding=&apos;l:0 t:0 r:0 b:$Pad$&apos;][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Icons/Vitality&apos;][padding=&apos;l:0 t:0 r:0 b:0&apos;] [colour=&apos;FFFFE959&apos;]오른쪽 하단 장비창의 상의 주머니와 하의 주머니에 각각 [colour=&apos;FFFFFFFF&apos;]섬광탄[colour=&apos;FFFFE959&apos;]과 [colour=&apos;FFFFFFFF&apos;]회복약[colour=&apos;FFFFE959&apos;]을 장착하십시오." DialogType="Sub" Slot="Left4" Effect="Appear" Sync="true"/>
+			<property Type="SystemMail" MailKey="VHPD01"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="Progress/Tutorial/Roster" PropertyValue="3"/>
+		</Scripts>
+	</class>
+	<class name="Office_Albus_MenuTutorial_RosterTutorial4">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Start" Close="false" Message="[padding=&apos;l:0 t:0 r:0 b:$Pad$&apos;][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Icons/Vitality&apos;][padding=&apos;l:0 t:0 r:0 b:0&apos;] [colour=&apos;FFFFE959&apos;]착용한 장비는 [padding=&apos;l:0 t:0 r:0 b:$Pad$&apos;][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;TaharezLook/MouseRightButton&apos;] 마우스 오른쪽 버튼[colour=&apos;FFFFE959&apos;]으로 해제하실 수 있습니다." DialogType="Sub" Slot="Left4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Continue" Close="false" Message="[!speaker:Albus_Think]이왕 이렇게 된 거 아까 봤던 훈련서 내용도 다시 한번 연습해봐야겠어..." DialogType="Sub" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="캐릭터 상세 정보창에서는 캐릭터의 특성 습득과 해제를 할 수 있는 특성판 메뉴로 들어가 실수 있습니다." DialogType="Sub" Slot="Left4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="true" Message="[padding=&apos;l:0 t:0 r:0 b:$Pad$&apos;][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Icons/Vitality&apos;][padding=&apos;l:0 t:0 r:0 b:0&apos;][colour=&apos;FFFFE959&apos;]특성판 버튼을 클릭하세요." DialogType="Sub" Slot="Left4" Effect="Appear" Sync="true"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="Progress/Tutorial/Roster" PropertyValue="4"/>
+		</Scripts>
+	</class>
+	<class name="Office_Albus_MenuTutorial_RosterTutorial5">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Start" Close="false" Message="[!speaker:Albus_Think]집중해야 좋을까 균형을 가져야 할까..." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[padding=&apos;l:0 t:0 r:0 b:$Pad$&apos;][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Icons/Vitality&apos;][padding=&apos;l:0 t:0 r:0 b:0&apos;] [colour=&apos;FFFFE959&apos;]현재 보여지는 판을 [colour=&apos;FFFFFFFF&apos;]특성판[colour=&apos;FFFFE959&apos;]이라고 합니다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[padding=&apos;l:0 t:0 r:0 b:$Pad$&apos;][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Icons/Vitality&apos;][padding=&apos;l:0 t:0 r:0 b:0&apos;] [colour=&apos;FFFFFFFF&apos;]특성판[colour=&apos;FFFFE959&apos;]은 한 캐릭터가 [colour=&apos;FFFFFFFF&apos;]현재 배운 특성[colour=&apos;FFFFE959&apos;]들과  [colour=&apos;FFFFFFFF&apos;]습득 가능한 특성[colour=&apos;FFFFE959&apos;]들을 한눈에 볼 수 있는 곳입니다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[padding=&apos;l:0 t:0 r:0 b:$Pad$&apos;][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Icons/Vitality&apos;][padding=&apos;l:0 t:0 r:0 b:0&apos;] [colour=&apos;FFFFFFFF&apos;]특성판[colour=&apos;FFFFE959&apos;]은 [padding=&apos;l:0 t:0 r:0 b:$Pad$&apos;][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Icons/Main_Pushed&apos;][padding=&apos;l:0 t:0 r:0 b:0&apos;] 기본, [padding=&apos;l:0 t:0 r:0 b:$Pad$&apos;][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Icons/Sub_Pushed&apos;][padding=&apos;l:0 t:0 r:0 b:0&apos;] 보조, [padding=&apos;l:0 t:0 r:0 b:$Pad$&apos;][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Icons/WeaponTab_Pushed&apos;][padding=&apos;l:0 t:0 r:0 b:0&apos;] 공격, [padding=&apos;l:0 t:0 r:0 b:$Pad$&apos;][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Icons/ArmorTab_Pushed&apos;][padding=&apos;l:0 t:0 r:0 b:0&apos;] 방어, [padding=&apos;l:0 t:0 r:0 b:$Pad$&apos;][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Icons/Ability_Pushed&apos;][padding=&apos;l:0 t:0 r:0 b:0&apos;] 어빌리티 등 총 5개의 영역으로 구성되어 있습니다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[padding=&apos;l:0 t:0 r:0 b:$Pad$&apos;][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Icons/Vitality&apos;][padding=&apos;l:0 t:0 r:0 b:0&apos;] [colour=&apos;FFFFE959&apos;]각 특성 영역의 [colour=&apos;FFFFFFFF&apos;]특성 슬롯 개수[colour=&apos;FFFFE959&apos;]는 캐릭터마다 다르며 캐릭터의 레벨 성장에 따라 특성 슬롯이 자동 개방됩니다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Continue" Close="false" Message="[!speaker:Albus_Think]흠... 내 전투 스타일을 고려하면..." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[padding=&apos;l:0 t:0 r:0 b:$Pad$&apos;][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Icons/Vitality&apos;][padding=&apos;l:0 t:0 r:0 b:0&apos;] [colour=&apos;FFFFE959&apos;]캐릭터가 보유한 훈련 점수 내에서 캐릭터가 장착 가능한 특성들을 자유롭게 구성하실 수 있습니다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[padding=&apos;l:0 t:0 r:0 b:$Pad$&apos;][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Icons/Vitality&apos;][padding=&apos;l:0 t:0 r:0 b:0&apos;] [colour=&apos;FFFFE959&apos;]일부 특성은 습득 시 캐릭터의 종족, 직업, 성별, 캐릭터 등의 제약이 존재합니다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Continue" Close="false" Message="[!speaker:Albus_Think]관장님의 &apos;연격&apos;은 여러 가지 훈련 조합이었는데..." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[padding=&apos;l:0 t:0 r:0 b:$Pad$&apos;][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Icons/Vitality&apos;][padding=&apos;l:0 t:0 r:0 b:0&apos;] [colour=&apos;FFFFE959&apos;]습득한 특성들의 조합에 따라 숨겨진 [colour=&apos;FFFFFFFF&apos;]추가 특성 효과 [colour=&apos;FFFFE959&apos;]가 부여될 수 있습니다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Continue" Close="false" Message="[!speaker:Albus_Think]진작 알아둘걸..." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="true" Message="[colour=&apos;FFFFE959&apos;]특성 목록에서 원하시는 특성을 알버스에게 부여하십시오." DialogType="Sub" Slot="Right4" Effect="Appear" Sync="true"/>
+			<property Type="SystemMail" MailKey="Javier01"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="Progress/Tutorial/Roster" PropertyValue="5"/>
+		</Scripts>
+	</class>
+	<class name="Office_Albus_MenuTutorial_RosterTutorial6">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Start" Close="false" Message="[!speaker:Albus_Think]하나하나 비교해보고 싶은데... 실전 경험이 너무 부족해..." DialogType="Main" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[padding=&apos;l:0 t:0 r:0 b:$Pad$&apos;][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Icons/Vitality&apos;][padding=&apos;l:0 t:0 r:0 b:0&apos;] [colour=&apos;FFFFE959&apos;]한번 습득한 특성은 [colour=&apos;FFFFFFFF&apos;]훈련서[colour=&apos;FFFFE959&apos;]를 소모하여 다시 해제할 수 있습니다." DialogType="Sub" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Continue" Close="false" Message="[!speaker:Albus_Think]다양한 특성을 활용하고 싶은데... 방법이 없을까..." DialogType="Main" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[padding=&apos;l:0 t:0 r:0 b:$Pad$&apos;][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Icons/Vitality&apos;][padding=&apos;l:0 t:0 r:0 b:0&apos;] [colour=&apos;FFFFE959&apos;]임무 수행 중 적을 전투 불능 시키면 적이 보유한 특성 중 일부를 확률적으로 획득할 수 있습니다." DialogType="Sub" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Continue" Close="false" Message="[!speaker:Albus_Think]일단 성장을 위해 배우고 후에 밸런스를 맞추는 것도 나쁘지 않을 텐데..." DialogType="Main" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Surprise" Mode="Continue" Close="false" Message="[!speaker:Albus_Surprise]헛. 벌써 시간이 이렇게..." DialogType="Main" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Albus_Normal]자, 어서 마무리해야지." DialogType="Main" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="true" Message="[padding=&apos;l:0 t:0 r:0 b:$Pad$&apos;][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Icons/Vitality&apos;][padding=&apos;l:0 t:0 r:0 b:0&apos;] [colour=&apos;FFFFE959&apos;]짐 정리 메뉴로 돌아가십시오." DialogType="Sub" Slot="Center" Effect="Appear" Sync="true"/>
+		</Scripts>
+	</class>
+	<class name="Office_Albus_MenuTutorial_RosterTutorial6_Pre">
+		<Scripts>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="false" PropertyType="LobbyMenu/Roster/Tutorial" PropertyValue="false"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="Progress/Tutorial/Roster" PropertyValue="6"/>
+			<property Type="SystemMail" MailKey="News01"/>
+		</Scripts>
+	</class>
+	<class name="Office_Albus_MenuTutorial_Quest">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Start" Close="false" Message="짐 정리하던 알버스는 탁자 위의 아직 비닐에 쌓인 플래너를 발견했다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Surprise" Mode="Continue" Close="false" Message="[!speaker:Albus_Surprise]아! 이거..." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="릴리가 작년 고등학교 졸업 선물로 보낸 것이었다." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Continue" Close="false" Message="[!speaker:Albus_Think]흠 이걸 어디에 쓸까..." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Surprise" Mode="Continue" Close="false" Message="[!speaker:Albus_Surprise]아 참... 장 아저씨가 소개해 준 그분을 찾아가야지." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="알버스는 품속을 뒤적이더니 작은 명함 하나를 꺼내 들었다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Continue" Close="false" Message="[!speaker:Albus_Think]로베르토씨라... 장 아저씨 같은 분은 아니겠지..." DialogType="Main" Slot="Right4" Effect="Appear" Sync="true"/>
+			<property Type="Action" Command="UpdateQuestStage" QuestType="EP1_Quest01" Stage="InProgress" ShowMessage="true"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Continue" Close="true" Message="[!speaker:Albus_Normal]자, 이제 이삿짐 정리를 해볼까." DialogType="Main" Slot="Right4" Effect="Appear" Sync="true"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="false" PropertyType="Progress/Tutorial/GameMenuType" PropertyValue="GameMenu_Quest"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="LobbyMenu/Quest/Opened" PropertyValue="true"/>
+		</Scripts>
+	</class>
+	<class name="Office_Albus_MenuTutorial_Inventory">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Start" Close="false" Message="집에서 요리를 잘 하지 않았던 알버스의 찬장은 개인 창고 대용이었다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="찬장을 열자마자 잡다한 물건들이 가득 보였다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Albus_Normal]자, 하나씩 챙겨볼까." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Albus_Normal]일단 이것부터." DialogType="Main" Slot="Right4" Effect="Appear" Sync="true"/>
+			<property Type="Action" Command="RefillItem" ItemName="Potion_HP" ItemCount="10" ShowMessage="true"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Surprise" Mode="Continue" Close="false" Message="[!speaker:Albus_Surprise]아, 이거 여기다 뒀구나." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="정리를 하던 알버스는 천장 아래에서 아직 뜯지도 않은 운동화 상자를 발견한다." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="견습 트러블슈터 과정을 마치고 &apos;블랙펄&apos;을 떠날 때 받았던 선물이었다. 현장 실습 나간다고 정신없이 지내다 보니 잊고 있었다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Smile" Mode="Continue" Close="false" Message="[!speaker:Albus_Smile]&apos;블랙펄&apos; 사람들은 잘 지내고 있을까..." DialogType="Main" Slot="Right4" Effect="Appear" Sync="true"/>
+			<property Type="Action" Command="RefillItem" ItemName="Sneakers_Sports2" ItemCount="1" ShowMessage="true"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="알버스는 짐을 하나하나 정리하며 물건들을 기록했다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="릴리가 보내준 돈은 넉넉했지만 낭비할 수 없었던 알버스에게 생긴 자연스러운 습관이었다." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Surprise" Mode="Continue" Close="false" Message="[!speaker:Albus_Surprise]참, 창고에 둔 것도 있네. 잊을 뻔했어." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="현장 실습 끝나고 장 아저씨로부터 &apos;아르월&apos;의 남는 여분의 물품을 지원받았었다." DialogType="Main" Slot="Right4" Effect="Appear" Sync="true"/>
+			<property Type="Action" Command="RefillItem" ItemName="Grenade_FlashBang" ItemCount="5" ShowMessage="true"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Continue" Close="false" Message="[!speaker:Albus_Think]이런 소모품은 나중에 직접 만들어야겠다. 구입하기는 너무 아까워." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Smile" Mode="Continue" Close="false" Message="[!speaker:Albus_Smile]그리고 이게 마지막..." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="알버스는 훈련을 위해 모아 놓았던 훈련서 뭉치를 짐 상자에 넣었다." DialogType="Main" Slot="Right4" Effect="Appear" Sync="true"/>
+			<property Type="Action" Command="RefillItem" ItemName="Statement_Mastery" ItemCount="300" ShowMessage="true"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Continue" Close="true" Message="[!speaker:Albus_Normal]자, 이제 어떤 걸 정리해 볼까." DialogType="Main" Slot="Right4" Effect="Appear" Sync="true"/>
+			<property Type="ShowFrontmessageFormat" MessageColor="Corn">
+				<GameMessageForm Type="EtcMessage237" WhiteItem="Costume_Albus01"/>
+			</property>
+			<property Type="Sleep" Time="1"/>
+			<property Type="ShowFrontmessageFormat" MessageColor="Corn">
+				<GameMessageForm Type="EtcMessage237" WhiteItem="Costume_Albus02"/>
+			</property>
+			<property Type="Sleep" Time="1"/>
+			<property Type="Action" Command="GiveItem" Commit="false" ItemName="Costume_Albus01" ItemCount="1" ShowMessage="false" Alternative="true"/>
+			<property Type="Action" Command="GiveItem" Commit="false" ItemName="Costume_Albus02" ItemCount="1" ShowMessage="false" Alternative="true"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="false" PropertyType="Progress/Tutorial/GameMenuType" PropertyValue="GameMenu_Inventory"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="LobbyMenu/Inventory/Opened" PropertyValue="true"/>
+		</Scripts>
+	</class>
+	<class name="Office_Albus_MenuTutorial_MasteryInventory">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Start" Close="false" Message="알버스는 어릴 적부터 트러블슈터가 되기 위해 위험한 상황에 대한 지식도 꾸준히 쌓고 있었다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="특히 검술 교본의 끝은 유달리 손때가 가득 묻어 있었다." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Albus_Normal]저것들도 다 정리해서 가져가야겠지..." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="서재를 정리하던 알버스는 어느새 짐 정리는 뒷전으로 하고 채 다 보지 못했던 훈련서들을 훑어보고 있었다." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Continue" Close="false" Message="[!speaker:Albus_Think]당연히 체력 단련은 기본 중의 기본이고..." DialogType="Main" Slot="Right4" Effect="Appear" Sync="true"/>
+			<property Type="Action" Command="RefillMastery" MasteryName="BodyTraining" MasteryCount="1"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Continue" Close="false" Message="[!speaker:Albus_Think]힘을 원활하게 끌어내는 방법이..." DialogType="Main" Slot="Right4" Effect="Appear" Sync="true"/>
+			<property Type="Action" Command="RefillMastery" MasteryName="FairWind" MasteryCount="1"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Continue" Close="false" Message="[!speaker:Albus_Think]근접전을 생각하면 역시 검술이..." DialogType="Main" Slot="Right4" Effect="Appear" Sync="true"/>
+			<property Type="Action" Command="RefillMastery" MasteryName="Swordmaster" MasteryCount="1"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="EyeAversion" Mode="Continue" Close="false" Message="[!speaker:Albus_EyeAversion]아니야.. 역시 상황 역전을 바란다면..." DialogType="Main" Slot="Right4" Effect="Appear" Sync="true"/>
+			<property Type="Action" Command="RefillMastery" MasteryName="CounterAttack" MasteryCount="1"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Continue" Close="false" Message="[!speaker:Albus_Think]아니야.. 적의 움직임보다 먼저 반응해야 해..." DialogType="Main" Slot="Right4" Effect="Appear" Sync="true"/>
+			<property Type="Action" Command="RefillMastery" MasteryName="Forestallment" MasteryCount="1"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Smile" Mode="Continue" Close="false" Message="[!speaker:Albus_Smile]하아.. 나도 언젠가 이 사람들처럼 강해지려나..." DialogType="Main" Slot="Right4" Effect="Appear" Sync="true"/>
+			<property Type="Action" Command="RefillMastery" MasteryName="Yearning" MasteryCount="1"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Continue" Close="false" Message="[!speaker:Albus_Think]흠... 나중에 시간 나면 다 익혀야겠다." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Surprise" Mode="Continue" Close="false" Message="[!speaker:Albus_Surprise]헛. 벌써 시간이 이렇게..." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Continue" Close="true" Message="[!speaker:Albus_Normal]자, 이제 이삿짐 정리를 해볼까." DialogType="Main" Slot="Right4" Effect="Appear" Sync="true"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="false" PropertyType="Progress/Tutorial/GameMenuType" PropertyValue="GameMenu_MasteryInventory"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="LobbyMenu/MasteryInventory/Opened" PropertyValue="true"/>
+		</Scripts>
+	</class>
+	<class name="Office_Albus_MenuTutorial_MailTutorial">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Start" Close="false" Message="[!speaker:Albus_Normal]이제 짐은 대충 정리된 건가..." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="알버스의 시선에 노트북 화면에 점멸하는 아이콘이 들어왔다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="메일이 도착했다는 알림이었다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Surprise" Mode="Continue" Close="true" Message="[!speaker:Albus_Surprise]아까부터 울리는 알림이 이거였구나..." DialogType="Main" Slot="Right4" Effect="Appear" Sync="true"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="Progress/Tutorial/Roster" PropertyValue="7"/>
+		</Scripts>
+	</class>
+	<class name="Office_Albus_MenuTutorial_MailBox">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Surprise" Mode="Start" Close="false" Message="[!speaker:Albus_Surprise]릴리 고모 메일이다." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="알버스가 직접 릴리에게 전화를 거는 경우를 제외하면 대부분 이메일로 연락을 주고받았다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="EyeAversion" Mode="Continue" Close="false" Message="[!speaker:Albus_EyeAversion]많이 속상하셨을까..." DialogType="Main" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="정식 트러블슈터가 되던 날, 알버스는 향후 계획과 생각을 정리하여 릴리 고모에게 메일을 보냈다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="알버스는 릴리의 메일을 열어 천천히 읽어내려갔다." DialogType="Sub" Slot="Right4" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="true" Message="[padding=&apos;l:0 t:0 r:0 b:$Pad$&apos;][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Icons/Vitality&apos;][padding=&apos;l:0 t:0 r:0 b:0&apos;] [colour=&apos;FFFFE959&apos;]우편함의 메일을 확인하세요." DialogType="Sub" Slot="Right4" Effect="Appear" Sync="true"/>
+			<property Type="SystemMail" MailKey="Lily01"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="false" PropertyType="Progress/Tutorial/Roster" PropertyValue="8"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="false" PropertyType="Progress/Tutorial/GameMenuType" PropertyValue="GameMenu_MailBox"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="LobbyMenu/MailBox/Opened" PropertyValue="true"/>
+		</Scripts>
+	</class>
+	<class name="Office_Albus_MenuTutorial_MailTutorial2">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Start" Close="true" Message="메일에는 아이템이 첨부될 수 있습니다. 정확하게 확인하시고 수령하시길 바랍니다." DialogType="Sub" Slot="Right4" Effect="Appear" Sync="true"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="Progress/Tutorial/Roster" PropertyValue="9"/>
+		</Scripts>
+	</class>
+	<class name="Office_Albus_MenuTutorial_MailTutorial3">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Start" Close="true" Message="[!speaker:Albus_Normal]빠진 것은 없겠지? 이제 떠날 시간인가..." DialogType="Sub" Slot="Right4" Effect="Appear" Sync="true"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="Progress/Tutorial/Roster" PropertyValue="10"/>
+		</Scripts>
+	</class>
+	<class name="Office_Albus_MenuTutorial_MailTutorial4">
+		<Scripts>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="Progress/Tutorial/Roster" PropertyValue="11"/>
+		</Scripts>
+	</class>
+	<class name="Office_Albus_MenuTutorial_MailTutorial_Wait">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Start" Close="true" Message="[!speaker:Albus_Normal]아 우편물에 첨부된 물품이 있었지..." DialogType="Sub" Slot="Right4" Effect="Surprise"/>
+		</Scripts>
+	</class>
+	<class name="Office_Albus_MenuTutorial_MailTutorial_WaitRead">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Start" Close="true" Message="[!speaker:Albus_Normal]아 읽지 않은 메일이 있었지..." DialogType="Sub" Slot="Right4" Effect="Surprise"/>
+		</Scripts>
+	</class>
+	<class name="Office_Albus_MenuTutorial_End">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Start" Close="false" Message="[!speaker:Albus_Normal]자. 이제 작별이다." DialogType="Main" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Smile" Mode="Continue" Close="false" Message="[!speaker:Albus_Smile]릴리 고모. 감사합니다." DialogType="Main" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Albus_Normal]관장님, 동네 분들 다 인사드리며 가야겠군." DialogType="Main" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="알버스는 오피스텔을 정리하고 바람장벽 지구로 향했다." DialogType="Sub" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="바람장벽 지구는 10년 전 알버스가 재해로 부모를 잃기 전까지 그가 살았던 곳이다." DialogType="Sub" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Continue" Close="true" Message="[!speaker:Albus_Think]많이 변했으려나..." DialogType="Main" Slot="Center" Effect="Appear" Sync="true"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="false" PropertyType="Progress/Tutorial/Roster" PropertyValue="12"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="false" PropertyType="Progress/Tutorial/GameMenuType" PropertyValue="Clear"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="Progress/Tutorial/Opening" PropertyValue="Silverlining"/>
+			<property Type="UpdateSteamAchievement" Achievement="StoryOfficeAlbus" Achieved="true"/>
+			<property Type="SceneFade" Direct="false" FadeType="Out"/>
+			<property Type="DirectMission" Mission="Tutorial_Silverlining" Lineup="" Grade="Bronze" Site="SilverCloud_Reconstruction" RewardRatio="100" Lv="1"/>
+		</Scripts>
+	</class>
+	<class name="Office_Albus_Silverlining_Lose">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Scene" SpeakerEmotion="Albus_Sleep" Mode="Start" Close="false" Message="[!speaker:Scene_Albus_Sleep]곤히 잠들어 있는 알버스..." DialogType="Sub" Slot="Whole" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Scene" SpeakerEmotion="Albus_Sleep" Mode="Continue" Close="false" Message="[!speaker:Scene_Albus_Sleep]짐 정리를 하던 알버스는 자신도 모르게 잠이 들어 있었다." DialogType="Sub" Slot="Whole" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Surprise" Mode="Continue" Close="false" Message="[!speaker:Albus_Surprise]이런..." DialogType="Main" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Surprise" Mode="Continue" Close="false" Message="[!speaker:Albus_Surprise]언제 잠든 거지..." DialogType="Main" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="EyeAversion" Mode="Continue" Close="true" Message="[!speaker:Albus_EyeAversion]뭔가 악몽을 꾼 것 같은데..." DialogType="Main" Slot="Center" Effect="Appear" Sync="true"/>
+			<property Type="Script" Script="ProgressRestAction" RestActionType="Sleep"/>
+			<property Type="Script" Script="Dialog_Office_Silverlining_Resetter"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="Progress/Tutorial/Opening" PropertyValue="Office_Albus"/>
+		</Scripts>
+	</class>
+	<class name="BattleSelectionDummy">
+		<Scripts>
+			<property Type="BattleSelection" SpeakerInfo="Scene" SpeakerEmotion="Albus_Sleep" Mode="Start" Close="false" Message="[!speaker:Scene_Albus_Sleep]좀 더 잘까?" DialogType="Sub" Slot="Whole" Effect="Appear" Target="next">
+				<property Text="그래 좀 더 자자.." Notice="" Value="yes"/>
+				<property Text="아니야 일어나야지!" Notice="" Value="no"/>
+			</property>
+		</Scripts>
+	</class>
+</idspace>

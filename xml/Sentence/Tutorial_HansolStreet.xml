@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Tutorial_HansolStreet_uJ2Pod" Value="[!Dashboard:Counter]남은 적 수"/>
+		<class name="Tutorial_HansolStreet_seOSsL" Value="[!Objective]적을 모두 제압하시오."/>
+		<class name="Tutorial_HansolStreet_vGrDC6" Value="[!Objective]카터를 제압하시오."/>
+		<class name="Tutorial_HansolStreet_gOvAe7" Value="[!Objective]헤이싱을 제압하시오."/>
+		<class name="Tutorial_HansolStreet_PacSZP" Value="[!Objective]적을 모두 제압하시오"/>
+		<class name="Tutorial_HansolStreet_KHQNTk" Value="[!Dialog][!speaker:EmptySubTitle_]세계 대전 당시 전쟁 난민들이 모여들어 탄생한 빈민가『앨리』"/>
+		<class name="Tutorial_HansolStreet_lWhC9N" Value="[!Dialog][!speaker:EmptySubTitle_]『앨리』가 슬럼가로 악명을 떨치기 시작한 것은"/>
+		<class name="Tutorial_HansolStreet_5CHN3G" Value="[!Dialog][!speaker:EmptySubTitle_]카라스연방과 동방연합 그리고 발할라가 난민의 수용에 대한 부담을 서로 미루면서 이 지역의 관리를 포기하면서이다."/>
+		<class name="Tutorial_HansolStreet_CLwxsz" Value="[!Title]아이들의 천국"/>
+		<class name="Tutorial_HansolStreet_3zS3mP" Value="[!Title]15년 전 빈민가 앨리"/>
+		<class name="Tutorial_HansolStreet_FqTyDv" Value="[!Dialog][!speaker:Gangster_SpoonBottle_Naam_Normal_Boy]카터 형..."/>
+		<class name="Tutorial_HansolStreet_CBZ37C" Value="[!Dialog][!speaker:Gangster_SpoonBottle_Naam_Normal_Boy]엄마가 안 와..."/>
+		<class name="Tutorial_HansolStreet_r6T6C6" Value="[!Dialog][!speaker:EmptySubTitle_]『앨리』의 부모들은 매일 같이 카라스연방 국경 근처로 일을 찾아 나선다."/>
+		<class name="Tutorial_HansolStreet_RBnHqP" Value="[!Dialog][!speaker:EmptySubTitle_]대부분 국경 근처의 공사 현장이나 상인들에게 자신의 노동력을 팔아 생계를 유지하였다."/>
+		<class name="Tutorial_HansolStreet_HN1OWo" Value="[!Dialog][!speaker:EmptySubTitle_]하지만 대부분 일자리는 모자랐으며 마땅한 일이 없으면 앨리의 부모들은 일거리를 찾아 국경을 넘는 일도 마다하지 않았다."/>
+		<class name="Tutorial_HansolStreet_XPIsvI" Value="[!Dialog][!speaker:EmptySubTitle_]하지만 국경을 넘어 일거리를 찾아도..."/>
+		<class name="Tutorial_HansolStreet_izQah4" Value="[!Dialog][!speaker:EmptySubTitle_]불법체류자가 되었기에 이를 악용하는 고용주로부터 혹사당하며 제대로 된 몫을 받지 못하기 일쑤였다."/>
+		<class name="Tutorial_HansolStreet_xnHjww" Value="[!Dialog][!speaker:EmptySubTitle_]심지어 국경을 넘는 과정에서 국경 경비대에 걸리면 모든 것을 몰수당하였고..."/>
+		<class name="Tutorial_HansolStreet_QYWelA" Value="[!Dialog][!speaker:EmptySubTitle_]이에 반항할 경우 사살당하였다."/>
+		<class name="Tutorial_HansolStreet_Hgv8Cq" Value="[!Dialog][!speaker:EmptySubTitle_]국경 경비대의 정기 순찰을 피하고자... 혹은 밀린 임금을 고용주로부터 받아내기 위해..."/>
+		<class name="Tutorial_HansolStreet_OHPYx7" Value="[!Dialog][!speaker:EmptySubTitle_]앨리의 부모들은 상황에 따라 짧게는 일주일, 길게는 한 달 이상 집으로 돌아오지 못하는 경우가 허다하였다."/>
+		<class name="Tutorial_HansolStreet_VSgoKE" Value="[!Dialog][!speaker:Carter_Normal_Boy]걱정 마. 나암. 당분간 나랑 지내자."/>
+		<class name="Tutorial_HansolStreet_GiQUNl" Value="[!Dialog][!speaker:Ray_Normal_Girl]나암. 걱정 마. 돌아 오실 거야."/>
+		<class name="Tutorial_HansolStreet_w2UFYw" Value="[!Dialog][!speaker:EmptySubTitle_]하지만 아이들의 바람과 무관하게 연락이 끊긴 부모들은 돌아오지 않는 경우가 허다하였다."/>
+		<class name="Tutorial_HansolStreet_ostTH6" Value="[!Dialog][!speaker:EmptySubTitle_]국경 경비대에 의해 사살당한 것인지..."/>
+		<class name="Tutorial_HansolStreet_dGPaj2" Value="[!Dialog][!speaker:EmptySubTitle_]악독한 고용주에게 잡혀 감금된 채 혹사당하는지..."/>
+		<class name="Tutorial_HansolStreet_ytLlYu" Value="[!Dialog][!speaker:EmptySubTitle_]새로운 삶을 위해 모든 걸 버리고 도망갔는지..."/>
+		<class name="Tutorial_HansolStreet_PaDaxz" Value="[!Dialog][!speaker:EmptySubTitle_]아이들은 영문도 모른 채 자연스럽게 앨리의 거리에 방치되곤 하였다."/>
+		<class name="Tutorial_HansolStreet_bgPei2" Value="[!Dialog][!speaker:Gangster_SpoonBottle_Naam_Normal_Boy]카터 형. 나 배고파..."/>
+		<class name="Tutorial_HansolStreet_aZDFtv" Value="[!Dialog][!speaker:Carter_Normal_Boy]나암 좀 참아. 내가 감자 좀 구해올게."/>
+		<class name="Tutorial_HansolStreet_MYAy5u" Value="[!Dialog][!speaker:Ray_Surprise_Girl]카터! 레톤 꺼도 구해와!"/>
+		<class name="Tutorial_HansolStreet_B81iFP" Value="[!Dialog][!speaker:Karen_Normal]&apos;저 녀석들... 또 뭘 훔치려고...&apos;"/>
+		<class name="Tutorial_HansolStreet_HjyJdC" Value="[!Dialog][!speaker:EmptySubTitle_]부모가 남겨둔 먹을 것이 떨어지고 배고픔이 시작되면 아이들은 굶주림을 면하기 위해 거리를 배회한다."/>
+		<class name="Tutorial_HansolStreet_zpGMiW" Value="[!Dialog][!speaker:EmptySubTitle_]구걸하거나... 쓰레기를 뒤지거나... 다른 사람의 것을 훔치거나..."/>
+		<class name="Tutorial_HansolStreet_CFo5lN" Value="[!Dialog][!speaker:EmptySubTitle_]같은 처지의 아이들은 자연스럽게 삼삼오오 무리를 짓게 되었고..."/>
+		<class name="Tutorial_HansolStreet_c3jpIJ" Value="[!Dialog][!speaker:EmptySubTitle_]개 중에는 부모 혹은 어른들의 부재 속에서 다른 아이들의 것을 빼앗는 것도 서슴지 않는 일도 자주 일어났다."/>
+		<class name="Tutorial_HansolStreet_rPY9Tm" Value="[!Dialog][!speaker:Heissing_Pain_Boy]아.. 하.. 하지 마..."/>
+		<class name="Tutorial_HansolStreet_ddxR2Y" Value="[!Dialog][!speaker:EmptySubTitle_]생존에 대한 불안감... 미래에 대한 암울함..."/>
+		<class name="Tutorial_HansolStreet_oAFZ5e" Value="[!Dialog][!speaker:EmptySubTitle_]감당할 수 없는 스트레스에 노출되는 아이들은 자신의 무리가 아닌 그리고 더 약한 아이들을 찾아낸다."/>
+		<class name="Tutorial_HansolStreet_TqqjUW" Value="[!Dialog][!speaker:EmptySubTitle_]그리고 그들에게 모욕과 폭력을 행사하며 자신들을 둘러싼 스트레스를 해소한다."/>
+		<class name="Tutorial_HansolStreet_0rd3G6" Value="[!Dialog][!speaker:Alley_Boy01_Normal]더러운 잡종 녀석!! 어딜 쳐다보는 거야!"/>
+		<class name="Tutorial_HansolStreet_84UOAG" Value="[!Dialog][!speaker:Alley_Boy02_Normal]이 하얀 머리카락 오늘 다 뽑히고 싶니? 아니면 태워줄까?"/>
+		<class name="Tutorial_HansolStreet_IidNDc" Value="[!Dialog][!speaker:Alley_Boy01_Normal]이 낡은 책은 뭐냐? 네 주제에 뭔 책이냐?"/>
+		<class name="Tutorial_HansolStreet_lNhtxr" Value="[!Dialog][!speaker:Alley_Boy02_Normal]재수 없는 녀석. 잡종이면 잡종답게 놀아!"/>
+		<class name="Tutorial_HansolStreet_bTam9R" Value="[!Dialog][!speaker:Carter_Normal2_Young]......"/>
+		<class name="Tutorial_HansolStreet_Nb57Vs" Value="[!Dialog][!speaker:EmptySubTitle_]빈민가의 사창가에서 태어난 아이."/>
+		<class name="Tutorial_HansolStreet_nJwoIY" Value="[!Dialog][!speaker:EmptySubTitle_]부분적이긴 하지만 선천적 백화증을 가지는 특이한 외모."/>
+		<class name="Tutorial_HansolStreet_BR3UEJ" Value="[!Dialog][!speaker:EmptySubTitle_]거리 아이들과 다르게 책을 손에서 놓지 않는 특이한 취미."/>
+		<class name="Tutorial_HansolStreet_1WVAkh" Value="[!Dialog][!speaker:EmptySubTitle_]거리 아이들에게는 자신들과 다른 헤이싱은 좋은 스트레스 해소 대상이었다."/>
+		<class name="Tutorial_HansolStreet_MJ9N1X" Value="[!Dialog][!speaker:Leton_Normal_Boy]이쪽~!"/>
+		<class name="Tutorial_HansolStreet_uojQxu" Value="[!Dialog][!speaker:Ray_Surprise_Girl]카터! 여기야!!"/>
+		<class name="Tutorial_HansolStreet_J1D4Vj" Value="[!Dialog][!speaker:Carter_Rage_Boy]다들 그만두지 못해!!"/>
+		<class name="Tutorial_HansolStreet_ZGylOW" Value="[!Dialog][!speaker:Alley_Boy01_Normal]야! 도망가! 카터야! 카터!"/>
+		<class name="Tutorial_HansolStreet_uBVbdX" Value="[!Dialog][!speaker:Alley_Boy02_Normal]아. 저 괴물 새끼. 왜 꼭 참견질이야..."/>
+		<class name="Tutorial_HansolStreet_yfsRaU" Value="[!Title]앨리원더러"/>
+		<class name="Tutorial_HansolStreet_wIQjMD" Value="[!Title]10년 전 빈민가 앨리"/>
+		<class name="Tutorial_HansolStreet_ufCXt5" Value="[!Dialog][!speaker:Carter_Normal_Boy]헤이싱. 우리 팀에 들어와라."/>
+		<class name="Tutorial_HansolStreet_apF1mI" Value="[!Dialog][!speaker:EmptySubTitle_]어른들의 부재 속에서 다툼이 끊이지 않던 『앨리』의 아이들."/>
+		<class name="Tutorial_HansolStreet_o8NPHg" Value="[!Dialog][!speaker:EmptySubTitle_]아이들은 자연스럽게 팀을 조직하고 규율을 만들어 자신들의 이권을 보호하기 위해 노력한다."/>
+		<class name="Tutorial_HansolStreet_1ffk7D" Value="[!Dialog][!speaker:EmptySubTitle_]그 과정에서 동갑내기 친구 &apos;레이, &apos;레톤&apos;, &apos;카터&apos; 역시 자신들만의 팀『앨리원더러』를 만들게 된다."/>
+		<class name="Tutorial_HansolStreet_PJ53xA" Value="[!Dialog][!speaker:Heissing_Normal_Boy]......"/>
+		<class name="Tutorial_HansolStreet_u6Q5IJ" Value="[!Dialog][!speaker:Heissing_Normal_Boy]나 싸움 못 해..."/>
+		<class name="Tutorial_HansolStreet_3WT16I" Value="[!Dialog][!speaker:Heissing_Smile_Boy]아무런 도움이 되지 못할 거야..."/>
+		<class name="Tutorial_HansolStreet_apoIls" Value="[!Dialog][!speaker:Carter_Normal_Boy]걱정 마. 우리가 널 지킨다."/>
+		<class name="Tutorial_HansolStreet_O3W9xb" Value="[!Dialog][!speaker:EmptySubTitle_]카터는 다른 팀들과 달리 헤이싱과 같은 약자들을 자신의 팀으로 받아들였다."/>
+		<class name="Tutorial_HansolStreet_iKqSb4" Value="[!Dialog][!speaker:EmptySubTitle_]그리고 저항하는 팀들은 철저한 응징으로..."/>
+		<class name="Tutorial_HansolStreet_YGyhzJ" Value="[!Dialog][!speaker:EmptySubTitle_]도움을 청하는 팀들은 따뜻한 배려로..."/>
+		<class name="Tutorial_HansolStreet_kJyELt" Value="[!Dialog][!speaker:EmptySubTitle_]『앨리』의 아이들을 통합해 나간다."/>
+		<class name="Tutorial_HansolStreet_AGDPDP" Value="[!Dialog][!speaker:EmptySubTitle_]각자 상황이 다른 아이들이 하나의 팀으로 통합되는 과정에서 많은 잡음이 생겼다."/>
+		<class name="Tutorial_HansolStreet_6WgiA1" Value="[!Dialog][!speaker:EmptySubTitle_]하지만 헤이싱과 같은 약자를 차별하지 않고 모두 받아들이고 책임지는 『앨리원더러』의 팀 가치는..."/>
+		<class name="Tutorial_HansolStreet_sflwYQ" Value="[!Dialog][!speaker:EmptySubTitle_]의지할 곳이 없는 아이들로부터 많은 신뢰를 이끌어내었고..."/>
+		<class name="Tutorial_HansolStreet_sbKhp4" Value="[!Dialog][!speaker:EmptySubTitle_]얼마 지나지 않아 대부분의 아이들은 『앨리원더러』의 일원이 된다."/>
+		<class name="Tutorial_HansolStreet_3z4D5H" Value="[!Title]팀 스틸헤드"/>
+		<class name="Tutorial_HansolStreet_8EVCmq" Value="[!Title]6년 전 빈민가 앨리"/>
+		<class name="Tutorial_HansolStreet_wwnjZT" Value="[!Dialog][!speaker:Ray_Smile_Young]아주머니 이거 받으세요."/>
+		<class name="Tutorial_HansolStreet_UmarcT" Value="[!Dialog][!speaker:Tana_Normal]이렇게 많이 주다니. 언제나 고맙구나."/>
+		<class name="Tutorial_HansolStreet_NZVmmL" Value="[!Dialog][!speaker:Alley_Girl01_Normal]이거 다 먹어도 돼요?"/>
+		<class name="Tutorial_HansolStreet_odenDW" Value="[!Dialog][!speaker:Gangster_SpoonBottle_Naam_Normal_Young]다들 내려오세요~!"/>
+		<class name="Tutorial_HansolStreet_LdphPn" Value="[!Dialog][!speaker:EmptySubTitle_]카터는 『앨리원더러』의 일원 중 일정 나이 이상의 건장한 동료들을 모아 다시 팀 『스틸헤드』를 구성한다."/>
+		<class name="Tutorial_HansolStreet_3jJqwR" Value="[!Dialog][!speaker:EmptySubTitle_]『스틸헤드』는 카라스연방과 동방연합 간의 무역을 하는 상인들에게 고용되어 호송 업무를 맡거나..."/>
+		<class name="Tutorial_HansolStreet_oGydI4" Value="[!Dialog][!speaker:EmptySubTitle_]상인들의 요청에 따라 직접 중개 무역에 참여하면서 안정적인 수입을 올리기 시작한다."/>
+		<class name="Tutorial_HansolStreet_32SQt6" Value="[!Dialog][!speaker:EmptySubTitle_]카터는 그렇게 획득한 부를 아낌없이 앨리의 사람들과 함께 나눴다."/>
+		<class name="Tutorial_HansolStreet_7iMXuK" Value="[!Dialog][!speaker:Gangster_SpoonBat_Turk_Normal_Young]&apos;역시 카터 형님은 대단해... 이 동네가 이렇게 바뀌다니...&apos;"/>
+		<class name="Tutorial_HansolStreet_R4oZnd" Value="[!Dialog][!speaker:Heissing_Smile_Young]&apos;언제나 도움만 받고 사는구나... 나도 뭔가 제대로 돕고 싶은데...&apos;"/>
+		<class name="Tutorial_HansolStreet_ufdkpg" Value="[!Dialog][!speaker:EmptySubTitle_]카터는 아이들과 어른들 모두에게 『영웅』이었다."/>
+		<class name="Tutorial_HansolStreet_veMk3X" Value="[!Title]선택의 기로"/>
+		<class name="Tutorial_HansolStreet_VP6FIp" Value="[!Title]4년 전 빈민가 앨리 외곽"/>
+		<class name="Tutorial_HansolStreet_T8SbJU" Value="[!Dialog][!speaker:Taesoo_Normal]정말 탐스럽게 익었어. 어린 녀석들이 제법이야."/>
+		<class name="Tutorial_HansolStreet_6G9Whr" Value="[!Dialog][!speaker:EmptySubTitle_]이 지역을 관할하는 구룡회의 간부 &apos;타이수&apos;"/>
+		<class name="Tutorial_HansolStreet_60WCp2" Value="[!Dialog][!speaker:EmptySubTitle_]이미 오래전부터 앨리지역민으로부터 보호세 명목으로 꾸준한 갈취를 하고 있었다."/>
+		<class name="Tutorial_HansolStreet_M2PSDQ" Value="[!Dialog][!speaker:EmptySubTitle_]그는 오래전부터 카터의 『앨리원더러』를 유심하게 지켜 보고 있었으며..."/>
+		<class name="Tutorial_HansolStreet_qmAcap" Value="[!Dialog][!speaker:EmptySubTitle_]『스틸 헤드』의 수완 역시 매력적으로 느끼고 있었다."/>
+		<class name="Tutorial_HansolStreet_V9lJ6m" Value="[!Dialog][!speaker:Taesoo_Normal]더 놔두면 버릇이 없어질 테고... 어쩔 수 없군."/>
+		<class name="Tutorial_HansolStreet_bOOxPV" Value="[!Dialog][!speaker:Taesoo_Smile]황랑을 불러라~"/>
+		<class name="Tutorial_HansolStreet_wyjvMJ" Value="[!Dialog][!speaker:Taesoo_Smile]호오. 이 녀석 봐라. 눈을 베어도 꼼짝을 안 하네. 지독한 녀석."/>
+		<class name="Tutorial_HansolStreet_9UEbP7" Value="[!Dialog][!speaker:Hwangrang_Normal]타이수 대장. 너무 그러지 말라고. 그 녀석 분해 미칠 지경이잖아. 크크"/>
+		<class name="Tutorial_HansolStreet_opLepp" Value="[!Dialog][!speaker:EmptySubTitle_]구룡회의 간부 &apos;타이수&apos; 갑작스러운 습격."/>
+		<class name="Tutorial_HansolStreet_SC7qpW" Value="[!Dialog][!speaker:EmptySubTitle_]빈민가의 가난에서 벗어나 희망찬 미래를 꿈꿨던 앨리의 사람들의 마음은 산산히 부서져 버렸다."/>
+		<class name="Tutorial_HansolStreet_phSwOC" Value="[!Dialog][!speaker:EmptySubTitle_]건물은 불타고 가진 것은 모두 약탈당했으며 저항하는 자는 쓰러져 나갔다."/>
+		<class name="Tutorial_HansolStreet_2djKHy" Value="[!Dialog][!speaker:Taesoo_Smile]빈민들을 이끌고 여기까지 오다니 멋진 녀석."/>
+		<class name="Tutorial_HansolStreet_rrSEcA" Value="[!Dialog][!speaker:Taesoo_Normal]너라면 충분히 여길 다시 일으켜 세우겠지."/>
+		<class name="Tutorial_HansolStreet_lqSjab" Value="[!Dialog][!speaker:Taesoo_Smile]매월 상납금은 기존의 4배. 그리고 너희들이 하는 무역 이득의 80%는 우리에게 넘겨라."/>
+		<class name="Tutorial_HansolStreet_MxkcNZ" Value="[!Dialog][!speaker:Taesoo_Smile]그리고 내일까지 『고난의 성채』에 갈 녀석을 정해라."/>
+		<class name="Tutorial_HansolStreet_4wzIw7" Value="[!Dialog][!speaker:Carter_Normal_Young]!!!"/>
+		<class name="Tutorial_HansolStreet_Un4JOb" Value="[!Dialog][!speaker:Taesoo_Smile]여자건 아이건 남자건 상관없다. 단 한 명. 단 한 명을 정해서 와라."/>
+		<class name="Tutorial_HansolStreet_6ArzLZ" Value="[!Dialog][!speaker:Taesoo_Smile]당연한 이야기지만 정하지 못한다면 네 녀석이 가는 것이다."/>
+		<class name="Tutorial_HansolStreet_0ZnlkW" Value="[!Dialog][!speaker:EmptySubTitle_]앨리를 실질적으로 이끌던 리더 &apos;카터&apos;에게 굳이 팔아넘길 사람을 정하라는 요구."/>
+		<class name="Tutorial_HansolStreet_lgp6I4" Value="[!Dialog][!speaker:EmptySubTitle_]무리의 결속력을 와해시키기 위한 악랄한 수법."/>
+		<class name="Tutorial_HansolStreet_04cFNG" Value="[!Dialog][!speaker:Karen_Normal]차라리 계속 가난했으면 더 나았을 텐데..."/>
+		<class name="Tutorial_HansolStreet_f4EnUx" Value="[!Dialog][!speaker:Tana_Sorrow]분수에 맞게 살아야 해..."/>
+		<class name="Tutorial_HansolStreet_kwtA9T" Value="[!Dialog][!speaker:EmptySubTitle_]카터의 변화가 가져다주는 달콤함에 젖었던 앨리 주민들은 순식간에 차갑게 식어버렸다."/>
+		<class name="Tutorial_HansolStreet_FXHuib" Value="[!Dialog][!speaker:EmptySubTitle_]모든 것은 카터와 그를 따르던 아이들이 가져온 불행이었다."/>
+		<class name="Tutorial_HansolStreet_PqQ5PN" Value="[!Title]안녕. 친구여."/>
+		<class name="Tutorial_HansolStreet_3wStIA" Value="[!Title]4년 전 마지막 날."/>
+		<class name="Tutorial_HansolStreet_9hwp5r" Value="[!Dialog][!speaker:Heissing_Smile2_Young]네 결정 충분히 이해해. 카터."/>
+		<class name="Tutorial_HansolStreet_S6HVFp" Value="[!Dialog][!speaker:Carter_Normal2_Young]원망하지 않는가..."/>
+		<class name="Tutorial_HansolStreet_BW8B9E" Value="[!Dialog][!speaker:Heissing_Smile_Young]언제나 빚지고 사는 것 같았는데 후련하네."/>
+		<class name="Tutorial_HansolStreet_Lr3N4d" Value="[!Dialog][!speaker:Carter_Normal2_Young]빚인가..."/>
+		<class name="Tutorial_HansolStreet_ZMkytG" Value="[!Dialog][!speaker:Heissing_EyeClose_Young]아직 다 갚았다는 생각이 들지 않아."/>
+		<class name="Tutorial_HansolStreet_YtwPrN" Value="[!Dialog][!speaker:Heissing_Normal_Young]너하고 레이 그리고 레톤이 없었다면..."/>
+		<class name="Tutorial_HansolStreet_0rNljM" Value="[!Dialog][!speaker:Heissing_Smile2_Young]난 이 거리에서 분명 살아가지 못했을 거야."/>
+		<class name="Tutorial_HansolStreet_GIWhSQ" Value="[!Dialog][!speaker:Carter_Rage_Young]....."/>
+		<class name="Tutorial_HansolStreet_evMKwf" Value="[!Dialog][!speaker:Heissing_Smile_Young]『앨리원더러』"/>
+		<class name="Tutorial_HansolStreet_xVMMkT" Value="[!Dialog][!speaker:Heissing_Smile_Young]다른 아이들처럼『스틸헤드』에 참여하지는 못했지만..."/>
+		<class name="Tutorial_HansolStreet_CqzT0P" Value="[!Dialog][!speaker:Heissing_Smile_Young]지금 이 순간도 나는 내가 『앨리원더러』의 일원이라는데 자부심을 가져."/>
+		<class name="Tutorial_HansolStreet_paaiWP" Value="[!Dialog][!speaker:Heissing_Smile2_Young]너희들에게 은혜를 갚을 기회를 줘서 고마워."/>
+		<class name="Tutorial_HansolStreet_Zw3YzT" Value="[!Dialog][!speaker:Carter_Rage_Young]헤이싱."/>
+		<class name="Tutorial_HansolStreet_Sk6eXu" Value="[!Dialog][!speaker:Carter_Rage_Young]헤이싱 앨리."/>
+		<class name="Tutorial_HansolStreet_ZfM15K" Value="[!Dialog][!speaker:Heissing_Smile_Young]앨리?"/>
+		<class name="Tutorial_HansolStreet_PkfrYQ" Value="[!Dialog][!speaker:Carter_Rage_Young]그래. 헤이싱 앨리."/>
+		<class name="Tutorial_HansolStreet_IWI7qF" Value="[!Dialog][!speaker:Carter_Rage_Young]그리고 나는 카터 앨리."/>
+		<class name="Tutorial_HansolStreet_t18J7N" Value="[!Dialog][!speaker:Carter_Rage_Young]그것이 이제부터 우리의 성이고 너는 내 가족이다."/>
+		<class name="Tutorial_HansolStreet_JFxR6N" Value="[!Dialog][!speaker:Heissing_Smile2_Young]뭐야. 가족이 생기자마자 이별하는 건가."/>
+		<class name="Tutorial_HansolStreet_VgHCis" Value="[!Dialog][!speaker:Carter_Rage_Young]나는 형제를 판 나쁜 녀석이다."/>
+		<class name="Tutorial_HansolStreet_IpxKMc" Value="[!Dialog][!speaker:Carter_Rage_Young]이 고통 끝까지 잊지 않으마. 헤이싱."/>
+		<class name="Tutorial_HansolStreet_hGiU3Q" Value="[!Dialog][!speaker:Heissing_Smile2_Young]카터. 너무 자신을 몰아붙이지 마."/>
+		<class name="Tutorial_HansolStreet_jpV00j" Value="[!Dialog][!speaker:Heissing_Smile_Young]너희들 덕분에 즐거운 시간이었어."/>
+		<class name="Tutorial_HansolStreet_OyFyOI" Value="[!Dialog][!speaker:EmptySubTitle_]그렇게 헤이싱은 앨리를 떠나 『고난의 성채』로 팔려간다."/>
+		<class name="Tutorial_HansolStreet_CV0AgL" Value="[!Dialog][!speaker:EmptySubTitle_]이것이 앨리에서의 나의 마지막 추억이다."/>
+		<class name="Tutorial_HansolStreet_XD22rq" Value="[!Dialog][!speaker:Heissing_Normal]아무리 생각해도 널 멈출 방법이 생각나지 않는군."/>
+		<class name="Tutorial_HansolStreet_Sa91e9" Value="[!Dialog][!speaker:Carter_Normal]죽음은 모든 것을 정지시키지."/>
+		<class name="Tutorial_HansolStreet_XjkOCj" Value="[!Dialog][!speaker:Heissing_Smile]잔인하군..."/>
+		<class name="Tutorial_HansolStreet_4OMrxF" Value="[!Dialog][!speaker:Heissing_Smile]가족을 만들고 이별시키더니..."/>
+		<class name="Tutorial_HansolStreet_acKwhz" Value="[!Dialog][!speaker:Heissing_Smile]다시 찾으니 영원히 이별하라는 거냐?"/>
+		<class name="Tutorial_HansolStreet_fIpnL4" Value="[!Dialog][!speaker:Carter_Normal]모두 스스로 선택할 뿐이다."/>
+		<class name="Tutorial_HansolStreet_fxFYy0" Value="[!Dialog][!speaker:Heissing_Smile]많이 변했군."/>
+		<class name="Tutorial_HansolStreet_zI71MR" Value="[!Dialog][!speaker:Carter_Normal]아이가 어른이 된 것이지."/>
+		<class name="Tutorial_HansolStreet_8fnPYl" Value="[!Dialog][!speaker:Heissing_Normal]못된 아이가 되었군."/>
+		<class name="Tutorial_HansolStreet_hDkLQj" Value="[!Dialog][!speaker:Heissing_Normal]포기해라. 카터."/>
+		<class name="Tutorial_HansolStreet_28FoUs" Value="[!Dialog][!speaker:Carter_Normal]헤이싱 너 역시 많이 변했구나."/>
+		<class name="Tutorial_HansolStreet_BXx9qE" Value="[!Dialog][!speaker:Heissing_Smile]아이가 어른이 된 거지."/>
+		<class name="Tutorial_HansolStreet_ZVmaxA" Value="[!Dialog][!speaker:Carter_Normal]너야말로 못된 아이군."/>
+		<class name="Tutorial_HansolStreet_1GGVHD" Value="[!Dialog][!speaker:Heissing_Smile]그럼 이건 애들 싸움이겠군."/>
+		<class name="Tutorial_HansolStreet_CvvrOG" Value="[!Dialog][!speaker:EmptySubTitle_]플레이를 원하시는 캐릭터를 선택하세요."/>
+		<class name="Tutorial_HansolStreet_1kPOQR" Value="[!Choice]카터"/>
+		<class name="Tutorial_HansolStreet_u4XnIw" Value="카터로 플레이합니다. 쉬운 난이도입니다."/>
+		<class name="Tutorial_HansolStreet_2pF4Pz" Value="[!Choice]헤이싱"/>
+		<class name="Tutorial_HansolStreet_EM82bU" Value="헤이싱으로 플레이합니다. 매우 어려운 난이도입니다."/>
+		<class name="Tutorial_HansolStreet_lmoeyZ" Value="[!Dialog][!speaker:Carter_Normal]강해졌구나. 헤이싱."/>
+		<class name="Tutorial_HansolStreet_tf673J" Value="[!Dialog][!speaker:Heissing_Smile]파괴된 조직의 순간 복원 능력..."/>
+		<class name="Tutorial_HansolStreet_KrYYfl" Value="[!Dialog][!speaker:Heissing_Smile]여전하군..."/>
+		<class name="Tutorial_HansolStreet_LHr1pd" Value="[!Dialog][!speaker:Carter_Normal]어차피 한계가 있는 보잘것없는 능력이지."/>
+		<class name="Tutorial_HansolStreet_l7SZM8" Value="[!Dialog][!speaker:Carter_Normal]네가 원하는 것이 날 막는 것이라면 지금 그 총구를 당겨라."/>
+		<class name="Tutorial_HansolStreet_8ZwKjQ" Value="[!Dialog][!speaker:Heissing_EyeClose]......"/>
+		<class name="Tutorial_HansolStreet_2GaB8F" Value="[!Dialog][!speaker:Heissing_Smile]&apos;잔인한 녀석...&apos;"/>
+		<class name="Tutorial_HansolStreet_haLtwr" Value="[!Dialog][!speaker:Heissing_Smile]&apos;마지막 그 날과 다를게 없군.&apos;"/>
+		<class name="Tutorial_HansolStreet_eUjCAU" Value="[!Dialog][!speaker:Heissing_Normal]카터."/>
+		<class name="Tutorial_HansolStreet_bVXB9I" Value="[!Dialog][!speaker:Heissing_Normal]넌 너의 길을 계속 가라."/>
+		<class name="Tutorial_HansolStreet_YivQvw" Value="[!Dialog][!speaker:Heissing_Normal]난 나만의 해결 방법을 찾겠다."/>
+		<class name="Tutorial_HansolStreet_6L3ZzX" Value="[!Dialog][!speaker:Carter_Normal]......"/>
+		<class name="Tutorial_HansolStreet_Lk9Txt" Value="[!Dialog][!speaker:Heissing_Normal]카터를 잘 부탁한다."/>
+		<class name="Tutorial_HansolStreet_OkTjtZ" Value="[!Dialog][!speaker:Leton_Smile]그래."/>
+		<class name="Tutorial_HansolStreet_ECjuRH" Value="[!Dialog][!speaker:Leton_Serious]헤이싱!"/>
+		<class name="Tutorial_HansolStreet_TQE7SJ" Value="[!Dialog][!speaker:Heissing_Normal]?"/>
+		<class name="Tutorial_HansolStreet_J8OuWO" Value="[!Dialog][!speaker:Leton_Smile]힘내라."/>
+		<class name="Tutorial_HansolStreet_mWGDL1" Value="[!Dialog][!speaker:Heissing_Smile]......"/>
+		<class name="Tutorial_HansolStreet_ABKvb1" Value="[!Dialog][!speaker:Leton_Smile]이제 미련은 없겠네?"/>
+		<class name="Tutorial_HansolStreet_2V7vGP" Value="[!Dialog][!speaker:Carter_Normal]......"/>
+		<class name="Tutorial_HansolStreet_j2HQGr" Value="[!Dialog][!speaker:Leton_Surprise]카터."/>
+		<class name="Tutorial_HansolStreet_OwtEm7" Value="[!Dialog][!speaker:Leton_Serious]난 널 따라간다. 그러니 확실히 해."/>
+		<class name="Tutorial_HansolStreet_rzml6R" Value="[!Dialog][!speaker:Carter_Normal]걱정 마라. 레톤"/>
+		<class name="Tutorial_HansolStreet_0sYHCl" Value="[!Dialog][!speaker:Carter_Normal]예정된 계획은?"/>
+		<class name="Tutorial_HansolStreet_vANzHA" Value="[!Dialog][!speaker:Leton_Serious]다 준비됐어. 어디부터 연락할까?"/>
+		<class name="Tutorial_HansolStreet_8nnwcf" Value="[!Dialog][!speaker:Carter_Normal]헤이싱... 이 곳을 떠나라."/>
+		<class name="Tutorial_HansolStreet_iY9i4q" Value="[!Dialog][!speaker:Carter_Normal]이곳은 너에게 상처만 가져다줄 뿐이다."/>
+		<class name="Tutorial_HansolStreet_RUkilm" Value="[!BalloonChat][!speaker:Ray]헤이싱!"/>
+		<class name="Tutorial_HansolStreet_6MDpul" Value="[!BalloonChat][!speaker:Ray]헤이싱!!!"/>
+		<class name="Tutorial_HansolStreet_iE1525" Value="[!Dialog][!speaker:Leton_Surprise]레이. 헤이싱에게 더 이상의 상처를 주지 마."/>
+		<class name="Tutorial_HansolStreet_gBzYVL" Value="[!Dialog][!speaker:Leton_Surprise]너라면 헤이싱을 멈출 수 있어."/>
+		<class name="Tutorial_HansolStreet_nSfabz" Value="[!BalloonChat][!speaker:Ray]레톤. 너야말로 비겁해!"/>
+		<class name="Tutorial_HansolStreet_NEGwMq" Value="[!Dialog][!speaker:Leton_Smile]이제 알았어?"/>
+		<class name="Tutorial_HansolStreet_dVyQnc" Value="[!Dialog][!speaker:Carter_Normal]헤이싱은...?"/>
+		<class name="Tutorial_HansolStreet_y5hGcO" Value="[!Dialog][!speaker:Leton_Normal]레이가 데려갔어."/>
+		<class name="Tutorial_HansolStreet_ZdyLDb" Value="[!Dialog][!speaker:Leton_Smile]이제 속이 시원해?"/>
+		<class name="Tutorial_HansolStreet_1Igbgi" Value="[!Dialog][!speaker:Carter_Normal]......"/>
+		<class name="Tutorial_HansolStreet_Oc7dsm" Value="[!Dialog][!speaker:Leton_Surprise]정신 똑바로 차려. 카터."/>
+		<class name="Tutorial_HansolStreet_6scuZI" Value="[!Dialog][!speaker:Leton_Serious]난 널 따라간다. 그러니 확실히 해."/>
+		<class name="Tutorial_HansolStreet_iIiume" Value="[!Dialog][!speaker:Carter_Normal]걱정 마라. 레톤"/>
+		<class name="Tutorial_HansolStreet_DLHCZd" Value="[!Dialog][!speaker:Carter_Normal]예정된 계획은?"/>
+		<class name="Tutorial_HansolStreet_fvx7OU" Value="[!Dialog][!speaker:Leton_Serious]다 준비됐어. 어디부터 연락할까?"/>
+		<class name="Tutorial_HansolStreet_ryf4iz" Value="[!Dialog][!speaker:Carter_Normal][colour=&apos;FFFFFF00&apos;]굳이 먼저 연락한다면..."/>
+		<class name="Tutorial_HansolStreet_3EFeeY" Value="[!Choice]백호파"/>
+		<class name="Tutorial_HansolStreet_8qqS73" Value="백호파가 현장에 먼저 도착합니다."/>
+		<class name="Tutorial_HansolStreet_ODZj9B" Value="[!Choice]발할라 경찰청"/>
+		<class name="Tutorial_HansolStreet_ZYymEX" Value="트러블슈터 팀이 먼저 현장에 도착합니다."/>
+		<class name="Tutorial_HansolStreet_p4cEfQ" Value="[!Dialog][!speaker:Carter_Normal]발할라 경찰청."/>
+		<class name="Tutorial_HansolStreet_RrVIcI" Value="[!Dialog][!speaker:Carter_Normal]지금은 경찰과 트러블슈터를 지치게 만드는 게 먼저겠지."/>
+		<class name="Tutorial_HansolStreet_3JaU4w" Value="[!Dialog][!speaker:Leton_Normal]OK~☆"/>
+		<class name="Tutorial_HansolStreet_PR02ep" Value="[!Dialog][!speaker:VHPD_Assault_Normal]알버스 님. 제보된 트레일러를 확보하였습니다."/>
+		<class name="Tutorial_HansolStreet_bH6Zyd" Value="[!Dialog][!speaker:VHPD_Assault_Normal]트레일러의 물품은 스푼교도들이 사용하는 무기들과 물자들로 보입니다."/>
+		<class name="Tutorial_HansolStreet_EQT5Qw" Value="[!Dialog][!speaker:Albus_Normal]역시 제보대로군요. 수고하셨습니다."/>
+		<class name="Tutorial_HansolStreet_A64jb1" Value="[!Dialog][!speaker:Sion_Normal]오늘은 별일 없이 이렇게 끝나는구나~☆"/>
+		<class name="Tutorial_HansolStreet_RE8Nyu" Value="[!Dialog][!speaker:Irene_Think]&apos;악당들이 이렇게 쉽게 자신들 물건을 내줄리가 없는데...&apos;"/>
+		<class name="Tutorial_HansolStreet_7F1lyx" Value="[!Dialog][!speaker:Anne_Normal]아이린 언니~!"/>
+		<class name="Tutorial_HansolStreet_d53OVF" Value="[!Dialog][!speaker:Irene_Surprise]응? 앤? 왜 그래?"/>
+		<class name="Tutorial_HansolStreet_1MNaVf" Value="[!Dialog][!speaker:Anne_Smile]무얼 그렇게 골똘히 생각하고 계세요?"/>
+		<class name="Tutorial_HansolStreet_JAw8ap" Value="[!Dialog][!speaker:Irene_Smile2]음..."/>
+		<class name="Tutorial_HansolStreet_xq4hCc" Value="[!Dialog][!speaker:Irene_Smile]왠지 이 타이밍이라면 악당들이 몰려나와야 할 것 같은데..."/>
+		<class name="Tutorial_HansolStreet_lmBCVs" Value="[!Dialog][!speaker:Sion_Angry]안돼. 아이린. 그런 부정적인 생각은!"/>
+		<class name="Tutorial_HansolStreet_kf9POt" Value="[!Dialog][!speaker:Sion_Normal]살다 보면 편한 날도 있는 거지! 긍정적으로 생각하라고!"/>
+		<class name="Tutorial_HansolStreet_VgF1En" Value="[!BalloonChat][!speaker:Enemy01_01]다들  조심해! 경찰들이 있어!"/>
+		<class name="Tutorial_HansolStreet_NbP85q" Value="[!BalloonChat][!speaker:Enemy01_02]스푼교도 녀석들은 어딨는 거야!"/>
+		<class name="Tutorial_HansolStreet_Q9rS55" Value="[!BalloonChat][!speaker:Enemy01_03]상관없다. 일단 경찰들부터 밟아!"/>
+		<class name="Tutorial_HansolStreet_LkF2Ff" Value="[!BalloonChat][!speaker:VHPD03]적 발견!!!"/>
+		<class name="Tutorial_HansolStreet_D0k0M3" Value="[!BalloonChat][!speaker:VHPD03]전방 백호파입니다!!"/>
+		<class name="Tutorial_HansolStreet_gzdzov" Value="[!BalloonChat][!speaker:Sion]뭐!!"/>
+		<class name="Tutorial_HansolStreet_uyslpi" Value="[!BalloonChat][!speaker:Anne]알버스 오빠! 백호파에욧!!"/>
+		<class name="Tutorial_HansolStreet_E1VmuT" Value="[!BalloonChat][!speaker:Irene]역시... 악랄한 악당 녀석들..."/>
+		<class name="Tutorial_HansolStreet_v8s0G9" Value="[!BalloonChat][!speaker:Enemy04_01]종교쟁이들이 아니고 경찰들이잖아!"/>
+		<class name="Tutorial_HansolStreet_s83W4B" Value="[!BalloonChat][!speaker:Enemy04_03]뭔 상관이야! 일단 포위해!!"/>
+		<class name="Tutorial_HansolStreet_U69qdo" Value="[!BalloonChat][!speaker:Albus]이런... 함정이었나..."/>
+		<class name="Tutorial_HansolStreet_xKqPfJ" Value="[!BalloonChat][!speaker:Albus]다들 전투 준비! 당황하지 말고 확인된 목표부터 제압합니다!"/>
+		<class name="Tutorial_HansolStreet_IPblgy" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_HansolStreet_Ed9inM" Value="[!VictoryCondition]적을 모두 제압하시오."/>
+		<class name="Tutorial_HansolStreet_SwDeRl" Value="[!Dialog][!speaker:Carter_Normal]백호파."/>
+		<class name="Tutorial_HansolStreet_BORVcN" Value="[!Dialog][!speaker:Leton_Smile]......"/>
+		<class name="Tutorial_HansolStreet_prMHy0" Value="[!Dialog][!speaker:Leton_Smile]&apos;카터 녀석... 여전히 범죄 조직들을 증오하는군...&apos;"/>
+		<class name="Tutorial_HansolStreet_Cs81ad" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Normal]스푼교도들은 어디 있는 거야!"/>
+		<class name="Tutorial_HansolStreet_mweLAr" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Normal]분명 이 트레일러 내용물은 스푼교도들 보급품이 맞아."/>
+		<class name="Tutorial_HansolStreet_Q7Qeh2" Value="[!Dialog][!speaker:Gangster_WhiteTigerNormal_Normal]뭔가 찜찜한데... 이 정보 처음 준 녀석이 누구지?"/>
+		<class name="Tutorial_HansolStreet_YAO0z2" Value="[!Dialog][!speaker:VHPD_Assault_Normal]알버스 님. 제보된 트레일러 주변으로 백호파입니다!"/>
+		<class name="Tutorial_HansolStreet_54Ymv4" Value="[!BalloonChat][!speaker:Albus]백호파가 왜 여기에 ..."/>
+		<class name="Tutorial_HansolStreet_lWsuZ3" Value="[!BalloonChat][!speaker:Anne]정신 똑바로 차려야겠다..."/>
+		<class name="Tutorial_HansolStreet_E86XMX" Value="[!BalloonChat][!speaker:Irene]백호파..."/>
+		<class name="Tutorial_HansolStreet_FBothI" Value="[!Dialog][!speaker:Albus_Serious]작전 변경합니다! 현재 확인되는 백호파부터 제압하겠습니다!"/>
+		<class name="Tutorial_HansolStreet_RCCfLS" Value="[!BalloonChat][!speaker:Albus]다들 전투 준비!"/>
+		<class name="Tutorial_HansolStreet_QvdOKs" Value="[!Dialog][!speaker:Albus_Normal]&apos;가벼운 임무로 부담 덜려고 했는데...&apos;"/>
+		<class name="Tutorial_HansolStreet_LodasT" Value="[!Dialog][!speaker:Albus_Smile]&apos;시온 말대로 빨리 새로운 동료를 영입하지 않으면... 많이 힘들겠어.&apos;"/>
+		<class name="Tutorial_HansolStreet_tIJLQZ" Value="[!BalloonChat][!speaker:Sion]사장님!"/>
+		<class name="Tutorial_HansolStreet_uRiZ8u" Value="[!Dialog][!speaker:Sion_Normal]뭘 그렇게 생각해."/>
+		<class name="Tutorial_HansolStreet_PvrQoD" Value="[!Dialog][!speaker:Albus_Normal]$CompanyName$의 새로운 동료."/>
+		<class name="Tutorial_HansolStreet_e3vSx7" Value="[!Dialog][!speaker:Sion_Happy]오! 누가 지원한 거야!"/>
+		<class name="Tutorial_HansolStreet_dMz5FG" Value="[!Dialog][!speaker:Albus_Laugh]아니... 공고는 냈는데..."/>
+		<class name="Tutorial_HansolStreet_dtVjhn" Value="[!Dialog][!speaker:Sion_Happy]??"/>
+		<class name="Tutorial_HansolStreet_NL6GVD" Value="[!Dialog][!speaker:Albus_Laugh]아무도 지원을 안 하네..."/>
+		<class name="Tutorial_HansolStreet_MsX0ld" Value="[!Dialog][!speaker:Sion_SurpriseStare]......"/>
+		<class name="Tutorial_HansolStreet_G2ELkw" Value="[!Dialog][!speaker:Albus_Normal]미안해. 생각만큼 빨리 안 구해지네. 노력해 볼게."/>
+		<class name="Tutorial_HansolStreet_TI2sBp" Value="[!Dialog][!speaker:Sion_Laugh]막 창업한 회사가 다 그렇지 뭐."/>
+		<class name="Tutorial_HansolStreet_x6d96D" Value="[!Dialog][!speaker:Sion_Normal]다들 안정된 회사만 원하니..."/>
+		<class name="Tutorial_HansolStreet_TG1ZsA" Value="[!Dialog][!speaker:Sion_Laugh]너무 부담가지지 마. 알버스 사장님."/>
+		<class name="Tutorial_HansolStreet_qo8Qpl" Value="[!Dialog][!speaker:Albus_Normal]고마워. 시온."/>
+		<class name="Tutorial_HansolStreet_90Kghc" Value="[!Subtitle][!speaker:EmptySubTitle_]$CompanyName$"/>
+		<class name="Tutorial_HansolStreet_3lIYMM" Value="[!Subtitle][!speaker:EmptySubTitle_]유능한 트러블슈터 회사로 이름이 알려지기 시작했으나..."/>
+		<class name="Tutorial_HansolStreet_5Fz2dY" Value="[!Subtitle][!speaker:EmptySubTitle_]알버스가 낸 직원 모집 공고에는 아무도 지원하지 않는다."/>
+		<class name="Tutorial_HansolStreet_yaNbFq" Value="[!Subtitle][!speaker:Albus_Normal]역시... 직접 발로 뛰어서 스카웃해야 되나..."/>
+	</idspace>
+</idspaces>

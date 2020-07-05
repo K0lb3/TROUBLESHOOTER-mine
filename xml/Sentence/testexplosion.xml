@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="testexplosion_W3AjSo" Value="[!Objective]전멸"/>
+		<class name="testexplosion_pOsKbs" Value="[!Ignore][!Dialog][!speaker:Sion_Smile]내가 먼저 도착했지롱~☆"/>
+		<class name="testexplosion_8S223O" Value="[!Ignore][!Dialog][!speaker:Albus_Serious]네가 먼저 출발했다."/>
+		<class name="testexplosion_Uf0gZ8" Value="[!Ignore][!Dialog][!speaker:Sion_Smile]어쨌든~ 내가 이긴 거지~☆"/>
+		<class name="testexplosion_AfQj0T" Value="[!Ignore][!Dialog][!speaker:Albus_Rage]또 촐랑댄다. 임무 중엔 정신차리고 해."/>
+		<class name="testexplosion_wl9zsk" Value="[!Ignore][!Dialog][!speaker:Sion_Normal]OK~☆"/>
+		<class name="testexplosion_xIpST9" Value="[!Ignore][!Dialog][!speaker:Albus_Serious]그럼 바로 간다!"/>
+		<class name="testexplosion_sP7Gcr" Value="[!Dialog][!speaker:Irene_Normal]히어로 등장이다!"/>
+		<class name="testexplosion_beozz1" Value="[!Dialog][!speaker:Anne_Normal]앤 등장입니다!"/>
+		<class name="testexplosion_zslAJ4" Value="[!Dialog][!speaker:Irene_Rage]야! 다들 어디 보고 있는 거야!"/>
+		<class name="testexplosion_ZPlcTE" Value="[!Dialog][!speaker:Anne_Sorrow]흑... 언니. 나쁜 사람들이 많아요."/>
+		<class name="testexplosion_MQlri8" Value="[!Dialog][!speaker:Sion_Normal]하하. 내가 있잖아."/>
+		<class name="testexplosion_yBIc1F" Value="[!Dialog][!speaker:Albus_Normal]그래 걱정 마. 우리가 해결할게."/>
+		<class name="testexplosion_YiGJaP" Value="[!Ignore][!BalloonChat]음 내가 움직인건가?"/>
+		<class name="testexplosion_Tzf9z1" Value="[!Ignore][!DialogSystemMessageBox]하하하하하하하하하"/>
+		<class name="testexplosion_524zuT" Value="[!Ignore]하하하하하"/>
+		<class name="testexplosion_OSnLRI" Value="[!VictoryCondition]지지마"/>
+		<class name="testexplosion_NwrIG1" Value="[!VictoryCondition]지지마"/>
+		<class name="testexplosion_9BML66" Value="[!VictoryCondition]뭐이러냐"/>
+		<class name="testexplosion_TY6TJb" Value="[!VictoryCondition]다시한번"/>
+		<class name="testexplosion_f6v0yE" Value="[!VictoryCondition]ㅁㅁㅁㅁ"/>
+		<class name="testexplosion_K9Ij5z" Value="[!BalloonChat][!speaker:aaaaa]우아아어아웅"/>
+	</idspace>
+</idspaces>

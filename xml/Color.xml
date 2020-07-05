@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Color">
+		<class name="AbilityTargetOutline" ARGB="FFED1C24" ColorRect="tl:FFED1C24 tr:FFED1C24 bl:FFED1C24 br:FFED1C24" ColorRectGradationAlpha="tl:FFED1C24 tr:00ED1C24 bl:FFED1C24 br:00ED1C24"/>
+		<class name="Amber" ARGB="FFFFC100" ColorRect="tl:FFFFC100 tr:FFFFC100 bl:FFFFC100 br:FFFFC100" ColorRectGradationAlpha="tl:FFFFC100 tr:FFFFC100 bl:FFFFC100 br:FFFFC100"/>
+		<class name="AshBlue" ARGB="FF7F99B1" ColorRect="tl:FF7F99B1 tr:FF7F99B1 bl:FF7F99B1 br:FF7F99B1" ColorRectGradationAlpha="tl:FF7F99B1 tr:007F99B1 bl:FF7F99B1 br:007F99B1"/>
+		<class name="BahamaBlue" ARGB="FF175283" ColorRect="tl:FF175283 tr:FF175283 bl:FF175283 br:FF175283" ColorRectGradationAlpha="tl:FF175283 tr:00175283 bl:FF175283 br:00175283"/>
+		<class name="BananaMania" ARGB="FFFFEBA7" ColorRect="tl:FFFFEBA7 tr:FFFFEBA7 bl:FFFFEBA7 br:FFFFEBA7" ColorRectGradationAlpha="tl:FFFFEBA7 tr:00ED1C24 bl:FFFFEBA7 br:00ED1C24"/>
+		<class name="Black" ARGB="FF000000" ColorRect="tl:FF000000 tr:FF000000 bl:FF000000 br:FF000000" ColorRectGradationAlpha="tl:FF000000 tr:00000000 bl:FF000000 br:00000000"/>
+		<class name="Blue" ARGB="FF0000FF" ColorRect="tl:FF0000FF tr:FF0000FF bl:FF0000FF br:FF0000FF" ColorRectGradationAlpha="tl:FF0000FF tr:00000000 bl:FF0000FF br:00000000"/>
+		<class name="Blue_OFF" ARGB="FF101033" ColorRect="tl:FF101033 tr:FF101033 bl:FF101033 br:FF101033" ColorRectGradationAlpha="tl:FF101033 tr:00101033 bl:FF101033 br:00101033"/>
+		<class name="Blue_ON" ARGB="FF00C8FF" ColorRect="tl:FF00C8FF tr:FF00C8FF bl:FF00C8FF br:FF00C8FF" ColorRectGradation="tl:FF00C8FF tr:FF00C8FF bl:FF0096C8 br:FF0096C8" ColorRectGradationAlpha="tl:FF00C8FF tr:0000C8FF bl:FF00C8FF br:0000C8FF"/>
+		<class name="Blue_ON_Hover" ARGB="FF81E4FF" ColorRect="tl:FF81E4FF tr:FF81E4FF bl:FF81E4FF br:FF81E4FF" ColorRectGradationAlpha="tl:FF81E4FF tr:0081E4FF bl:FF81E4FF br:0081E4FF"/>
+		<class name="Blue_Place" ARGB="FF6699CC" ColorRect="tl:FF6699CC tr:FF6699CC bl:FF6699CC br:FF6699CC" ColorRectGradationAlpha="tl:FF6699CC tr:006699CC bl:FF6699CC br:006699CC"/>
+		<class name="Blue_Place_Alpha" ARGB="6400C8FF" ColorRect="tl:6400C8FF tr:6400C8FF bl:6400C8FF br:6400C8FF" ColorRectGradationAlpha="tl:6400C8FF tr:6400C8FF bl:6400C8FF br:6400C8FF"/>
+		<class name="BlueGreen" ARGB="FF13FF88" ColorRect="tl:FF13FF88 tr:FF13FF88 bl:FF13FF88 br:FF13FF88" ColorRectGradation="tl:FF13FF88 tr:FF13FF88 bl:FF00DC78 br:FF00DC78" ColorRectGradationAlpha="tl:FF13FF88 tr:0013FF88 bl:FF13FF88 br:0013FF88"/>
+		<class name="BlueViolet" ARGB="FFA335EE" ColorRect="tl:FFA335EE tr:FFA335EE bl:FFA335EE br:FFA335EE" ColorRectGradationAlpha="tl:FFA335EE tr:00A335EE bl:FFA335EE br:00A335EE"/>
+		<class name="BrightGreen" ARGB="FF1EFF00" ColorRect="tl:FF1EFF00 tr:FF1EFF00 bl:FF1EFF00 br:FF1EFF00" ColorRectGradation="tl:FF1EFF00 tr:FF1EFF00 bl:FF00DC00 br:FF00DC00" ColorRectGradationAlpha="tl:FF1EFF00 tr:001EFF00 bl:FF1EFF00 br:001EFF00"/>
+		<class name="BrightRed" ARGB="FFEE6625" ColorRect="tl:FFEE6625 tr:FFEE6625 bl:FFEE6625 br:FFEE6625" ColorRectGradation="tl:FFEE6625 tr:FFEE6625 bl:FFC8500A br:FFC8500A" ColorRectGradationAlpha="tl:FFEE6625 tr:00EE6625 bl:FFEE6625 br:00EE6625"/>
+		<class name="BrightSkyBlue" ARGB="FF00AAFF" ColorRect="tl:FF00AAFF tr:FF00AAFF bl:FF00AAFF br:FF00AAFF" ColorRectGradation="tl:FF00AAFF tr:FF00AAFF bl:FF0078C8 br:FF0078C8" ColorRectGradationAlpha="tl:FF00AAFF tr:0000AAFF bl:FF00AAFF br:0000AAFF"/>
+		<class name="Bronze" ARGB="FFCD7F32" ColorRect="tl:FFCD7F32 tr:FFCD7F32 bl:FFCD7F32 br:FFCD7F32" ColorRectGradationAlpha="tl:FFCD7F32 tr:00CD7F32 bl:FFCD7F32 br:00CD7F32"/>
+		<class name="Chamois" ARGB="FFEDD296" ColorRect="tl:FFEDD296 tr:FFEDD296 bl:FFEDD296 br:FFEDD296" ColorRectGradation="tl:FFEDD296 tr:FFEDD296 bl:FFC07832 br:FFC07832" ColorRectGradationAlpha="tl:FFEDD296 tr:00EDD296 bl:FFEDD296 br:00EDD296"/>
+		<class name="Cinnabar" ARGB="FFF03B20" ColorRect="tl:FFF03B20 tr:FFF03B20 bl:FFF03B20 br:FFF03B20" ColorRectGradationAlpha="tl:FFF03B20 tr:FFF03B20 bl:FFF03B20 br:FFF03B20"/>
+		<class name="Combine_Blue_Flat" ARGB="FF3264FF" ColorRect="tl:FF3264FF tr:FF3264FF bl:FF3264FF br:FF3264FF" ColorRectGradation="tl:FF3264FF tr:FF32FFFF bl:FF3264C8 br:FFFFFFFF" ColorRectGradationAlpha="tl:FF3264FF tr:0032FFFF bl:FF3264C8 br:00FFFFFF"/>
+		<class name="Combine_Green_Flat" ARGB="FF64FF32" ColorRect="tl:FF64FF32 tr:FF64FF32 bl:FF64FF32 br:FF64FF32" ColorRectGradation="tl:FF64FF32 tr:FFFFFF32 bl:FF64C832 br:FFFFFFFF" ColorRectGradationAlpha="tl:FF64FF32 tr:FFFFFF32 bl:FF64C832 br:FFFFFFFF"/>
+		<class name="Combine_Grey_Flat" ARGB="FFC8C8C8" ColorRect="tl:FFC8C8C8 tr:FFC8C8C8 bl:FFC8C8C8 br:FFC8C8C8" ColorRectGradation="tl:FFC8C8C8 tr:FFE1E1E1 bl:FFC8C8C8 br:FFFFFFFF" ColorRectGradationAlpha="tl:FFC8C8C8 tr:00E1E1E1 bl:FFC8C8C8 br:00FFFFFF"/>
+		<class name="Combine_Red_Flat" ARGB="FFFF3232" ColorRect="tl:FFFF3232 tr:FFFF3232 bl:FFFF3232 br:FFFF3232" ColorRectGradation="tl:FFFF3232 tr:FFFFFF64 bl:FFC80000 br:FFC8C832" ColorRectGradationAlpha="tl:FFFF3232 tr:00FFFF64 bl:FFC80000 br:00C8C832"/>
+		<class name="Combine_Yellow_Flat" ARGB="FFFFFF00" ColorRect="tl:FFFFFF00 tr:FFFFFF00 bl:FFFFFF00 br:FFFFFF00" ColorRectGradation="tl:FFFFFF00 tr:FFFFFF64 bl:FFFFE600 br:FFFFFFC8" ColorRectGradationAlpha="tl:FFFFFF00 tr:00FFFF64 bl:FFFFE600 br:00FFFFC8"/>
+		<class name="Combine_Magenta_Flat" ARGB="FFDC00FF" ColorRect="tl:FFDC00FF tr:FFDC00FF bl:FFDC00FF br:FFDC00FF" ColorRectGradation="tl:FFDC00FF tr:FFDC64FF bl:FFA500C8 br:FFFFFFFF" ColorRectGradationAlpha="tl:FFDC00FF tr:FFDC00FF bl:FFDC00FF br:FFDC00FF"/>
+		<class name="Combine_Blue" ARGB="FF3264FF" ColorRect="tl:FF3264FF tr:FF32FFFF bl:FF3264C8 br:FFFFFFFF" ColorRectGradationAlpha="tl:FF3264FF tr:0032FFFF bl:FF3264C8 br:00FFFFFF"/>
+		<class name="Combine_Green" ARGB="FF64FF32" ColorRect="tl:FF64FF32 tr:FFFFFF32 bl:FF64C832 br:FFFFFFFF" ColorRectGradationAlpha="tl:FF64FF32 tr:FFFFFF32 bl:FF64C832 br:FFFFFFFF"/>
+		<class name="Combine_Grey" ARGB="FFC8C8C8" ColorRect="tl:FFC8C8C8 tr:FFE1E1E1 bl:FFC8C8C8 br:FFFFFFFF" ColorRectGradationAlpha="tl:FFC8C8C8 tr:00E1E1E1 bl:FFC8C8C8 br:00FFFFFF"/>
+		<class name="Combine_Red" ARGB="FFFF3232" ColorRect="tl:FFFF3232 tr:FFFFFF64 bl:FFC80000 br:FFC8C832" ColorRectGradationAlpha="tl:FFFF3232 tr:00FFFF64 bl:FFC80000 br:00C8C832"/>
+		<class name="Combine_Yellow" ARGB="FFFFFF00" ColorRect="tl:FFFFFF00 tr:FFFFFF64 bl:FFFFE600 br:FFFFFFC8" ColorRectGradationAlpha="tl:FFFFFF00 tr:00FFFF64 bl:FFFFE600 br:00FFFFC8"/>
+		<class name="Combine_Magenta" ARGB="FFDC00FF" ColorRect="tl:FFDC00FF tr:FFDC64FF bl:FFA500C8 br:FFFFFFFF" ColorRectGradationAlpha="tl:FFDC00FF tr:FFDC64FF bl:FFA500C8 br:FFFFFFFF"/>
+		<class name="Combine_Blue_BackBarProgress" ARGB="643264FF" ColorRect="tl:643264FF tr:6432FFFF bl:643264C8 br:64FFFFFF" ColorRectGradationAlpha="tl:643264FF tr:6432FFFF bl:643264C8 br:64FFFFFF"/>
+		<class name="Combine_Green_BackBarProgress" ARGB="6464FF32" ColorRect="tl:6464FF32 tr:64FFFF32 bl:6464C832 br:64FFFFFF" ColorRectGradationAlpha="tl:6464FF32 tr:64FFFF32 bl:6464C832 br:64FFFFFF"/>
+		<class name="Combine_Grey_BackBarProgress" ARGB="64C8C8C8" ColorRect="tl:64C8C8C8 tr:64E1E1E1 bl:64C8C8C8 br:64FFFFFF" ColorRectGradationAlpha="tl:64C8C8C8 tr:64E1E1E1 bl:64C8C8C8 br:64FFFFFF"/>
+		<class name="Combine_Red_BackBarProgress" ARGB="64FF3232" ColorRect="tl:64FF3232 tr:64FFFF64 bl:64C80000 br:64C8C832" ColorRectGradationAlpha="tl:64FF3232 tr:64FFFF64 bl:64C80000 br:64C8C832"/>
+		<class name="Combine_Yellow_BackBarProgress" ARGB="64FFFF00" ColorRect="tl:64FFFF00 tr:64FFFF64 bl:64FFE600 br:64FFFFC8" ColorRectGradationAlpha="tl:64FFFF00 tr:64FFFF64 bl:64FFE600 br:64FFFFC8"/>
+		<class name="Combine_Magenta_BackBarProgress" ARGB="64DC00FF" ColorRect="tl:64DC00FF tr:64DC64FF bl:64A500C8 br:64FFFFFF" ColorRectGradationAlpha="tl:64DC00FF tr:64DC64FF bl:64A500C8 br:64FFFFFF"/>
+		<class name="Combine_Blue_BackBarFrame" ARGB="FF000A5A" ColorRect="tl:FF000A5A tr:FF005A5A bl:FF000A3C br:FF5A5A5A" ColorRectGradationAlpha="tl:FF000A5A tr:FF005A5A bl:FF000A3C br:FF5A5A5A"/>
+		<class name="Combine_Green_BackBarFrame" ARGB="FF003C00" ColorRect="tl:FF003C00 tr:FF3C3C00 bl:FF000000 br:FF3C3C3C" ColorRectGradationAlpha="tl:FF003C00 tr:FF3C3C00 bl:FF000000 br:FF3C3C3C"/>
+		<class name="Combine_Grey_BackBarFrame" ARGB="FF282828" ColorRect="tl:FF282828 tr:FF3C3C3C bl:FF282828 br:FF646464" ColorRectGradationAlpha="tl:FF282828 tr:FF3C3C3C bl:FF282828 br:FF646464"/>
+		<class name="Combine_Red_BackBarFrame" ARGB="FF3C0000" ColorRect="tl:FF3C0000 tr:FF3C3C00 bl:FF000000 br:FF3C3C00" ColorRectGradationAlpha="tl:FF3C0000 tr:FF3C3C00 bl:FF000000 br:FF3C3C00"/>
+		<class name="Combine_Yellow_BackBarFrame" ARGB="FF3C3C00" ColorRect="tl:FF3C3C00 tr:FF3C3C00 bl:FF000000 br:FF3C3C3C" ColorRectGradationAlpha="tl:FF3C3C00 tr:FF3C3C00 bl:FF000000 br:FF3C3C3C"/>
+		<class name="Combine_Magenta_BackBarFrame" ARGB="FF19003C" ColorRect="tl:FF19003C tr:FF19643C bl:FF000005 br:FF3C3C3C" ColorRectGradationAlpha="tl:FF19003C tr:FF19643C bl:FF000005 br:FF3C3C3C"/>
+		<class name="Corn" ARGB="FFFFE959" ColorRect="tl:FFFFE959 tr:FFFFE959 bl:FFFFE959 br:FFFFE959" ColorRectGradationAlpha="tl:FFFFE959 tr:FFFFE959 bl:FFFFE959 br:FFFFE959"/>
+		<class name="DarkBlueGreen" ARGB="FF00DD55" ColorRect="tl:FF00DD55 tr:FF00DD55 bl:FF00DD55 br:FF00DD55" ColorRectGradationAlpha="tl:FF00DD55 tr:0000DD55 bl:FF00DD55 br:0000DD55"/>
+		<class name="DarkGrey" ARGB="FF111111" ColorRect="tl:FF111111 tr:FF111111 bl:FF111111 br:FF111111" ColorRectGradation="tl:FF111111 tr:FF111111 bl:FF111111 br:FF111111" ColorRectGradationAlpha="tl:FF111111 tr:00111111 bl:FF111111 br:00111111"/>
+		<class name="DarkLimeGreen" ARGB="FF28A428" ColorRect="tl:FF28A428 tr:FF28A428 bl:FF28A428 br:FF28A428" ColorRectGradation="tl:FF28A428 tr:FF28A428 bl:FF28A428 br:FF28A428" ColorRectGradationAlpha="tl:FF28A428 tr:0028A428 bl:FF28A428 br:0028A428"/>
+		<class name="DarkPink" ARGB="FFDB00D3" ColorRect="tl:FFDB00D3 tr:FFDB00D3 bl:FFDB00D3 br:FFDB00D3" ColorRectGradation="tl:FFF01EE6 tr:FFF01EE6 bl:FFA000A0 br:FFA000A0" ColorRectGradationAlpha="tl:FFDB00D3 tr:00DB00D3 bl:FFDB00D3 br:00DB00D3"/>
+		<class name="DarkTangerine" ARGB="FFFFAD17" ColorRect="tl:FFFFAD17 tr:FFFFAD17 bl:FFFFAD17 br:FFFFAD17" ColorRectGradationAlpha="tl:FFFFAD17 tr:00FFFFFF bl:FFFFAD17 br:00FFFFFF"/>
+		<class name="DarkWhiteYellow" ARGB="FFDCE696" ColorRect="tl:FFDCE696 tr:FFDCE696 bl:FFDCE696 br:FFDCE696" ColorRectGradationAlpha="tl:FFDCE696 tr:00DCE696 bl:FFDCE696 br:00DCE696"/>
+		<class name="DodgerBlue" ARGB="FF0070FF" ColorRect="tl:FF0070FF tr:FF0070FF bl:FF0070FF br:FF0070FF" ColorRectGradation="tl:FF0070FF tr:FF0070FF bl:FF0070FF br:FF0070FF" ColorRectGradationAlpha="tl:FF0070FF tr:000070FF bl:FF0070FF br:000070FF"/>
+		<class name="Cobalt" ARGB="FF0060AA" ColorRect="tl:FF0060AA tr:FF0060AA bl:FF0060AA br:FF0060AA" ColorRectGradation="tl:FF0060AA tr:FF0060AA bl:FF0060AA br:FF0060AA" ColorRectGradationAlpha="tl:FF0060AA tr:FF0060AA bl:FF0060AA br:FF0060AA"/>
+		<class name="Drover" ARGB="FFFFEDA0" ColorRect="tl:FFFFEDA0 tr:FFFFEDA0 bl:FFFFEDA0 br:FFFFEDA0" ColorRectGradationAlpha="tl:FFFFEDA0 tr:FFFFEDA0 bl:FFFFEDA0 br:FFFFEDA0"/>
+		<class name="Empty" ARGB="00000000" ColorRect="tl:00000000 tr:00000000 bl:00000000 br:00000000" ColorRectGradationAlpha="tl:00000000 tr:00000000 bl:00000000 br:00000000"/>
+		<class name="FireEngineRed" ARGB="FFE11415" ColorRect="tl:FFE11415 tr:FFE11415 bl:FFE11415 br:FFE11415" ColorRectGradationAlpha="tl:FFE11415 tr:00FFFFFF bl:FFE11415 br:00FFFFFF"/>
+		<class name="Frame_Buff" ARGB="FF91BFE1" ColorRect="tl:FF91BFE1 tr:FF91BFE1 bl:FF91BFE1 br:FF91BFE1" ColorRectGradationAlpha="tl:FFC8C8C8 tr:00E1E1E1 bl:FFC8C8C8 br:00FFFFFF"/>
+		<class name="Frame_Debuff" ARGB="FFF9C3B9" ColorRect="tl:FFF9C3B9 tr:FFF9C3B9 bl:FFF9C3B9 br:FFF9C3B9" ColorRectGradationAlpha="tl:FFC8C8C8 tr:00E1E1E1 bl:FFC8C8C8 br:00FFFFFF"/>
+		<class name="Frame_State" ARGB="FFD6C4AE" ColorRect="tl:FFD6C4AE tr:FFD6C4AE bl:FFD6C4AE br:FFD6C4AE" ColorRectGradationAlpha="tl:FFC8C8C8 tr:00E1E1E1 bl:FFC8C8C8 br:00FFFFFF"/>
+		<class name="FreeSpeechRed" ARGB="FFD00202" ColorRect="tl:FFD00202 tr:FFD00202 bl:FFD00202 br:FFD00202" ColorRectGradation="tl:FFC00000 tr:FFC00000 bl:FFC00000 br:FFC00000" ColorRectGradationAlpha="tl:FFD00202 tr:00D00202 bl:FFD00202 br:00D00202"/>
+		<class name="Gold" ARGB="FFFFD700" ColorRect="tl:FFFFD700 tr:FFFFD700 bl:FFFFD700 br:FFFFD700" ColorRectGradationAlpha="tl:FFFFD700 tr:00FFD700 bl:FFFFD700 br:00FFD700"/>
+		<class name="Grey" ARGB="FF9D9D9D" ColorRect="tl:FF9D9D9D tr:FF9D9D9D bl:FF9D9D9D br:FF9D9D9D" ColorRectGradation="tl:FF9D9D9D tr:FF9D9D9D bl:FF555555 br:FF555555" ColorRectGradationAlpha="tl:FF9D9D9D tr:009D9D9D bl:FF9D9D9D br:009D9D9D"/>
+		<class name="Grey2" ARGB="FF6A6A6A" ColorRect="tl:FF6A6A6A tr:FF6A6A6A bl:FF6A6A6A br:FF6A6A6A" ColorRectGradation="tl:FF6A6A6A tr:FF6A6A6A bl:FF6A6A6A br:FF6A6A6A" ColorRectGradationAlpha="tl:FF6A6A6A tr:006A6A6A bl:FF6A6A6A br:006A6A6A"/>
+		<class name="Grey3" ARGB="FF7D7D7D" ColorRect="tl:FF7D7D7D tr:FF7D7D7D bl:FF7D7D7D br:FF7D7D7D" ColorRectGradation="tl:FF7D7D7D tr:FF7D7D7D bl:FF555555 br:FF555555" ColorRectGradationAlpha="tl:FF7D7D7D tr:007D7D7D bl:FF7D7D7D br:007D7D7D"/>
+		<class name="Grey4" ARGB="DC4B4B4B" ColorRect="tl:DC4B4B4B tr:DC4B4B4B bl:DC4B4B4B br:DC4B4B4B" ColorRectGradation="tl:DC4B4B4B tr:DC4B4B4B bl:DC4B4B4B br:DC4B4B4B" ColorRectGradationAlpha="tl:DC4B4B4B tr:DC4B4B4B bl:DC4B4B4B br:DC4B4B4B"/>
+		<class name="Highball" ARGB="FF969632" ColorRect="tl:FF969632 tr:FF969632 bl:FF969632 br:FF969632" ColorRectGradationAlpha="tl:FF969632 tr:FF969632 bl:FF969632 br:FF969632"/>
+		<class name="HotPink" ARGB="FFFF186F" ColorRect="tl:FFFF186F tr:FFFF186F bl:FFFF186F br:FFFF186F" ColorRectGradation="tl:FFFF186F tr:FFFF186F bl:FFC81932 br:FFC81932" ColorRectGradationAlpha="tl:FFFF186F tr:00FF186F bl:FFFF186F br:00FF186F"/>
+		<class name="KellyGreen" ARGB="FF28D001" ColorRect="tl:FF28D001 tr:FF28D001 bl:FF28D001 br:FF28D001" ColorRectGradationAlpha="tl:FF28D001 tr:28D00100 bl:FF28D001 br:28D00100"/>
+		<class name="Koromiko" ARGB="FFFEB24C" ColorRect="tl:FFFEB24C tr:FFFEB24C bl:FFFEB24C br:FFFEB24C" ColorRectGradationAlpha="tl:FFFEB24C tr:FFFEB24C bl:FFFEB24C br:FFFEB24C"/>
+		<class name="LightGrey" ARGB="FFD0D0D0" ColorRect="tl:FFD0D0D0 tr:FFD0D0D0 bl:FFD0D0D0 br:FFD0D0D0" ColorRectGradation="tl:FFD0D0D0 tr:FFD0D0D0 bl:FF6B6B6B br:FF6B6B6B" ColorRectGradationAlpha="tl:FFD0D0D0 tr:00D0D0D0 bl:FFD0D0D0 br:00D0D0D0"/>
+		<class name="LightSkyBlue" ARGB="FF93CEFF" ColorRect="tl:FF93CEFF tr:FF93CEFF bl:FF93CEFF br:FF93CEFF" ColorRectGradationAlpha="tl:FF93CEFF tr:FF93CEFF bl:FF93CEFF br:FF93CEFF"/>
+		<class name="LightYellow" ARGB="FFFFFFDC" ColorRect="tl:FFFFFFDC tr:FFFFFFDC bl:FFFFFFDC br:FFFFFFDC" ColorRectGradation="tl:FFFFFFDC tr:FFFFFFDC bl:FFDCDCAA br:FFDCDCAA" ColorRectGradationAlpha="tl:FFFFFFDC tr:00FFFFDC bl:FFFFFFDC br:00FFFFDC"/>
+		<class name="LimeGreen" ARGB="FF32CD32" ColorRect="tl:FF32CD32 tr:FF32CD32 bl:FF32CD32 br:FF32CD32" ColorRectGradation="tl:FF32CD32 tr:FF32CD32 bl:FF32CD32 br:FF32CD32" ColorRectGradationAlpha="tl:FF32CD32 tr:0032CD32 bl:FF32CD32 br:0032CD32"/>
+		<class name="LimeGold" ARGB="FFE6CC80" ColorRect="tl:FFE6CC80 tr:FFE6CC80 bl:FFE6CC80 br:FFE6CC80" ColorRectGradation="tl:FFE6CC80 tr:FFE6CC80 bl:FFE6CC80 br:FFE6CC80" ColorRectGradationAlpha="tl:FFE6CC80 tr:00E6CC80 bl:FFE6CC80 br:00E6CC80"/>
+		<class name="Lipstick" ARGB="FF972555" ColorRect="tl:FF972555 tr:FF972555 bl:FF972555 br:FF972555" ColorRectGradationAlpha="tl:FF972555 tr:00972555 bl:FF972555 br:00972555"/>
+		<class name="LuckyPoint" ARGB="FF1F2B51" ColorRect="tl:FF1F2B51 tr:FF1F2B51 bl:FF1F2B51 br:FF1F2B51" ColorRectGradationAlpha="tl:FF1F2B51 tr:00FFFFFF bl:FF1F2B51 br:00FFFFFF"/>
+		<class name="Mastered" ARGB="FFC00000" ColorRect="tl:FFC00000 tr:FF0080FF bl:FFC00000 br:FF0080FF" ColorRectGradation="tl:FFC00000 tr:FFC00000 bl:FFC00000 br:FFC00000" ColorRectGradationAlpha="tl:FFC00000 tr:000080FF bl:FFC00000 br:000080FF"/>
+		<class name="Mauve" ARGB="FFE29DFF" ColorRect="tl:FFE29DFF tr:FFE29DFF bl:FFE29DFF br:FFE29DFF" ColorRectGradationAlpha="tl:FFE29DFF tr:FFE29DFF bl:FFE29DFF br:FFE29DFF"/>
+		<class name="NavyBlue" ARGB="FF0071E4" ColorRect="tl:FF0071E4 tr:FF0071E4 bl:FF0071E4 br:FF0071E4" ColorRectGradationAlpha="tl:FF0071E4 tr:000071E4 bl:FF0071E4 br:000071E4"/>
+		<class name="Nepal" ARGB="FF87ADC0" ColorRect="tl:FF87ADC0 tr:FF87ADC0 bl:FF87ADC0 br:FF87ADC0" ColorRectGradationAlpha="tl:FF87ADC0 tr:FF87ADC0 bl:FF87ADC0 br:FF87ADC0"/>
+		<class name="OccludedAlly" ARGB="3F00AAFF" ColorRect="tl:FFED1C24 tr:FFED1C24 bl:FFED1C24 br:FFED1C24" ColorRectGradationAlpha="tl:FFED1C24 tr:00ED1C24 bl:FFED1C24 br:00ED1C24"/>
+		<class name="OccludedEnemy" ARGB="3FE11415" ColorRect="tl:FFED1C24 tr:FFED1C24 bl:FFED1C24 br:FFED1C24" ColorRectGradationAlpha="tl:FFED1C24 tr:00ED1C24 bl:FFED1C24 br:00ED1C24"/>
+		<class name="OccludedNeutral" ARGB="3F4EE064" ColorRect="tl:FFED1C24 tr:FFED1C24 bl:FFED1C24 br:FFED1C24" ColorRectGradationAlpha="tl:FFED1C24 tr:00ED1C24 bl:FFED1C24 br:00ED1C24"/>
+		<class name="Orange" ARGB="FFFF8000" ColorRect="tl:FFFF8000 tr:FFFF8000 bl:FFFF8000 br:FFFF8000" ColorRectGradation="tl:FFFF8000 tr:FFFF8000 bl:FFC86400 br:FFC86400" ColorRectGradationAlpha="tl:FFFF8000 tr:00FF8000 bl:FFFF8000 br:00FF8000"/>
+		<class name="Orange_Alpha" ARGB="64FF8000" ColorRect="tl:64FF8000 tr:64FF8000 bl:64FF8000 br:64FF8000" ColorRectGradationAlpha="tl:64FF8000 tr:64FF8000 bl:64FF8000 br:64FF8000"/>
+		<class name="OrangePeel" ARGB="FFFF9800" ColorRect="tl:FFFF9800 tr:FFFF9800 bl:FFFF9800 br:FFFF9800" ColorRectGradationAlpha="tl:FFFF9800 tr:FFFF9800 bl:FFFF9800 br:FFFF9800"/>
+		<class name="OrangeRed" ARGB="FFF43804" ColorRect="tl:FFF43804 tr:FFF43804 bl:FFF43804 br:FFF43804" ColorRectGradation="tl:FFF43804 tr:FFFF5500 bl:FFF43804 br:FFFF5500" ColorRectGradationAlpha="tl:FFF43804 tr:00FF5500 bl:FFF43804 br:00FF5500"/>
+		<class name="PaleTurquoise" ARGB="FFB9FFFD" ColorRect="tl:FFB9FFFD tr:FFB9FFFD bl:FFB9FFFD br:FFB9FFFD" ColorRectGradationAlpha="tl:FFB9FFFD tr:FFB9FFFD bl:FFB9FFFD br:FFB9FFFD"/>
+		<class name="Pavlova" ARGB="FFC0A987" ColorRect="tl:FFC0A987 tr:FFC0A987 bl:FFC0A987 br:FFC0A987" ColorRectGradationAlpha="tl:FFC0A987 tr:FFC0A987 bl:FFC0A987 br:FFC0A987"/>
+		<class name="Pelorous" ARGB="FF2690B1" ColorRect="tl:FF2690B1 tr:FF2690B1 bl:FF2690B1 br:FF2690B1" ColorRectGradationAlpha="tl:FF2690B1 tr:00FFFFFF bl:FF2690B1 br:00FFFFFF"/>
+		<class name="Perano" ARGB="FFF3B0A8" ColorRect="tl:FFF3B0A8 tr:FFF3B0A8 bl:FFF3B0A8 br:FFF3B0A8" ColorRectGradation="tl:FFF3B0A8 tr:FFF3B0A8 bl:FF7A5753 br:FF7A5753" ColorRectGradationAlpha="tl:FFF3B0A8 tr:00F3B0A8 bl:FFF3B0A8 br:00F3B0A8"/>
+		<class name="Red" ARGB="FFFF0000" ColorRect="tl:FFFF0000 tr:FFFF0000 bl:FFFF0000 br:FFFF0000" ColorRectGradation="tl:FFFF0000 tr:FFFF0000 bl:FF960000 br:FF960000" ColorRectGradationAlpha="tl:FFFF0000 tr:00FF0000 bl:FFFF0000 br:00FF0000"/>
+		<class name="RumSwizzle" ARGB="FFEDEACF" ColorRect="tl:FFEDEACF tr:FFEDEACF bl:FFEDEACF br:FFEDEACF" ColorRectGradation="tl:FFEDEACF tr:FFEDEACF bl:FFC09263 br:FFC09263" ColorRectGradationAlpha="tl:FFEDEACF tr:00EDEACF bl:FFEDEACF br:00EDEACF"/>
+		<class name="ScreaminGreen" ARGB="FF59FF79" ColorRect="tl:FF59FF79 tr:FF59FF79 bl:FF59FF79 br:FF59FF79" ColorRectGradationAlpha="tl:FF59FF79 tr:FF59FF79 bl:FF59FF79 br:FF59FF79"/>
+		<class name="Shalimar" ARGB="FFFFFFAA" ColorRect="tl:FFFFFFAA tr:FFFFFFAA bl:FFFFFFAA br:FFFFFFAA" ColorRectGradation="tl:FFFFFFAA tr:FFFFFFAA bl:FFDCDC78 br:FFDCDC78" ColorRectGradationAlpha="tl:FFFFFFAA tr:00FFFFAA bl:FFFFFFAA br:00FFFFAA"/>
+		<class name="Silver" ARGB="FFC0C0C0" ColorRect="tl:FFC0C0C0 tr:FFC0C0C0 bl:FFC0C0C0 br:FFC0C0C0" ColorRectGradationAlpha="tl:FFC0C0C0 tr:00C0C0C0 bl:FFC0C0C0 br:00C0C0C0"/>
+		<class name="Siren" ARGB="FF65263D" ColorRect="tl:FF65263D tr:FF65263D bl:FF65263D br:FF65263D" ColorRectGradationAlpha="tl:FF65263D tr:00FFFFFF bl:FF65263D br:00FFFFFF"/>
+		<class name="Sirocco" ARGB="FF636564" ColorRect="tl:FF636564 tr:FF636564 bl:FF636564 br:FF636564" ColorRectGradationAlpha="tl:FF636564 tr:00636564 bl:FF636564 br:00636564"/>
+		<class name="SunsetOranage" ARGB="FFF34C43" ColorRect="tl:FFF34C43 tr:FFF34C43 bl:FFF34C43 br:FFF34C43" ColorRectGradation="tl:FFF34C43 tr:FFF34C43 bl:FF7A2521 br:FF7A2521" ColorRectGradationAlpha="tl:FFF34C43 tr:00F34C43 bl:FFF34C43 br:00F34C43"/>
+		<class name="TallPoppy" ARGB="FF883030" ColorRect="tl:FF883030 tr:FF883030 bl:FF883030 br:FF883030" ColorRectGradationAlpha="tl:FF883030 tr:88303000 bl:FF883030 br:88303000"/>
+		<class name="TeamAllyColor" ARGB="FF3264FF" ColorRect="tl:FF64FF32 tr:FFFFFF32 bl:FF64C832 br:FFFFFFFF" ColorRectGradationAlpha="tl:FF64FF32 tr:FFFFFF32 bl:FF64C832 br:FFFFFFFF"/>
+		<class name="TeamEnemyColor" ARGB="FFFF3232" ColorRect="tl:FFFF3232 tr:FFFFFF64 bl:FFC80000 br:FFC8C832" ColorRectGradationAlpha="tl:FFFF3232 tr:FFFFFF64 bl:FFC80000 br:FFC8C832"/>
+		<class name="TeamNeutralColor" ARGB="FFFFFF00" ColorRect="tl:FFFFFF00 tr:FFFFFF64 bl:FFC8C800 br:FFFFFFFF" ColorRectGradationAlpha="tl:FFFFFF00 tr:FFFFFF64 bl:FFC8C800 br:FFFFFFFF"/>
+		<class name="TeamThirdForceColor" ARGB="FFDC00FF" ColorRect="tl:FFDC00FF tr:FFDC64FF bl:FFA500C8 br:FFFFFFFF" ColorRectGradationAlpha="tl:FFDC00FF tr:FFDC64FF bl:FFA500C8 br:FFFFFFFF"/>
+		<class name="Tomato" ARGB="FFFF5943" ColorRect="tl:FFFF5943 tr:FFFF5943 bl:FFFF5943 br:FFFF5943" ColorRectGradation="tl:FFFF5943 tr:FFFF5943 bl:FFFF5943 br:FFFF5943" ColorRectGradationAlpha="tl:FFFF5943 tr:FFFF5943 bl:FFFF5943 br:FFFF5943"/>
+		<class name="Turquoise" ARGB="FF2CF3D5" ColorRect="tl:FF2CF3D5 tr:FF2CF3D5 bl:FF2CF3D5 br:FF2CF3D5" ColorRectGradationAlpha="tl:FF2CF3D5 tr:FF2CF3D5 bl:FF2CF3D5 br:FF2CF3D5"/>
+		<class name="White" ARGB="FFFFFFFF" ColorRect="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" ColorRectGradation="tl:FFFFFFFF tr:FFFFFFFF bl:FFC8C8C8 br:FFC8C8C8" ColorRectGradationAlpha="tl:FFFFFFFF tr:00FFFFFF bl:FFFFFFFF br:00FFFFFF"/>
+		<class name="WhiteBlue" ARGB="FF00FFFF" ColorRect="tl:FF00FFFF tr:FF00FFFF bl:FF00FFFF br:FF00FFFF" ColorRectGradation="tl:FF00FFFF tr:FF00FFFF bl:FF00AADC br:FF00AADC" ColorRectGradationAlpha="tl:FF00FFFF tr:0000FFFF bl:FF00FFFF br:0000FFFF"/>
+		<class name="WhiteBlue_Alpha" ARGB="6400FFFF" ColorRect="tl:6400FFFF tr:6400FFFF bl:6400FFFF br:6400FFFF" ColorRectGradationAlpha="tl:6400FFFF tr:6400FFFF bl:6400FFFF br:6400FFFF"/>
+		<class name="WhiteGray_Alpha" ARGB="AAAAAAAA" ColorRect="tl:AAAAAAAA tr:AAAAAAAA bl:AAAAAAAA br:AAAAAAAA" ColorRectGradationAlpha="tl:AAAAAAAA tr:AAAAAAAA bl:AAAAAAAA br:AAAAAAAA"/>
+		<class name="WhiteGrey" ARGB="FFDDDDDD" ColorRect="tl:FFDDDDDD tr:FFDDDDDD bl:FFDDDDDD br:FFDDDDDD" ColorRectGradation="tl:FFDDDDDD tr:FFDDDDDD bl:FFB4B4B4 br:FFB4B4B4" ColorRectGradationAlpha="tl:FFDDDDDD tr:00DDDDDD bl:FFDDDDDD br:00DDDDDD"/>
+		<class name="WhiteYellow" ARGB="FFFFFF55" ColorRect="tl:FFFFFF55 tr:FFFFFF55 bl:FFFFFF55 br:FFFFFF55" ColorRectGradation="tl:FFFFFF55 tr:FFFFFF55 bl:FFE6E632 br:FFE6E632" ColorRectGradationAlpha="tl:FFFFFF55 tr:00FFFF55 bl:FFFFFF55 br:00FFFF55"/>
+		<class name="Yellow" ARGB="FFFFFF00" ColorRect="tl:FFFFFF00 tr:FFFFFF00 bl:FFFFFF00 br:FFFFFF00" ColorRectGradation="tl:FFFFFF00 tr:FFFFFF00 bl:FFC8C800 br:FFC8C800" ColorRectGradationAlpha="tl:FFFFFF00 tr:00FFFF00 bl:FFFFFF00 br:00FFFF00"/>
+		<class name="Yellow_Alpha" ARGB="64FFFF00" ColorRect="tl:64FFFF00 tr:64FFFF00 bl:64FFFF00 br:64FFFF00" ColorRectGradationAlpha="tl:64FFFF00 tr:64FFFF00 bl:64FFFF00 br:64FFFF00"/>
+		<class name="Gamboge" ARGB="FFDD9900" ColorRect="tl:FFDD9900 tr:FFDD9900 bl:FFDD9900 br:FFDD9900" ColorRectGradation="tl:FFDD9900 tr:FFDD9900 bl:FFDD9900 br:FFDD9900" ColorRectGradationAlpha="tl:FFDD9900 tr:00FFAA00 bl:FFDD9900 br:00FFAA00"/>
+		<class name="YellowOrange" ARGB="FFFFAA00" ColorRect="tl:FFFFAA00 tr:FFFFAA00 bl:FFFFAA00 br:FFFFAA00" ColorRectGradation="tl:FFFFAA00 tr:FFFFAA00 bl:FFFFAA00 br:FFFFAA00" ColorRectGradationAlpha="tl:FFFFAA00 tr:00FFAA00 bl:FFFFAA00 br:00FFAA00"/>
+		<class name="Cream" ARGB="FFFFFFC8" ColorRect="tl:FFFFFFC8 tr:FFFFFFC8 bl:FFFFFFC8 br:FFFFFFC8" ColorRectGradation="tl:FFFFFFC8 tr:FFFFFFC8 bl:FFFFFFC8 br:FFFFFFC8" ColorRectGradationAlpha="tl:FFFFFFC8 tr:00FFAA00 bl:FFFFFFC8 br:00FFAA00"/>
+		<class name="CreditJob" ARGB="FF46C9FF" ColorRect="tl:FF46C9FF tr:FF46C9FF bl:FF46C9FF br:FF46C9FF" ColorRectGradation="tl:FF46C9FF tr:FF46C9FF bl:FF46C9FF br:FF46C9FF" ColorRectGradationAlpha="tl:FF46C9FF tr:0046C9FF bl:FF46C9FF br:0046C9FF"/>
+	</idspace>
+	<idspace id="ColorPalette">
+		<!-- scheme source http://colorbrewer2.org -->
+		<schema>
+			<rule property="Palette" type="table" subtype="string" default=""/>
+		</schema>
+		<class name="SequentialBuGn5" Palette="edf8fb, b2e2e2, 66c2a4, 2ca25f, 006d2c"/>
+		<class name="SequentialYlGn5" Palette="ffffcc, c2e699, 78c679, 31a354, 006837"/>
+		<class name="QualitativeAccent5" Palette="7fc97f, beaed4, fdc086, ffff99, 386cb0"/>
+	</idspace>
+</idspaces>

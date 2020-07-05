@@ -1,0 +1,1774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="LobbyIdleMessage">
+	<class name="Albus">
+		<Events>
+			<property name="Office_Albus">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]벌써 이곳에서 10년이나 지냈구나." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]어릴 적엔 이곳이 답답하기만 느껴졌었는데..." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]동네 분들에게 다들 인사드려야겠어..." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]바람장벽 지구라... 10년만인가.." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]릴리 고모가 없었다면 어떻게 되었을까?" Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]다시 여기로 돌아올 일이 있을까..." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]릴리 고모는 어떻게 생겼을까..." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]뭔가 빠뜨린게 없을까?" Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]두고 가는 것 없이 보이지 않는 곳도 구석구석 살펴봐야지..." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]이제 시작일 뿐이야." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]아직 부족하지만 열심히 해야지." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]정말 트러블슈터가 되었네..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="OfficeMoveIn">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]일단 큰것부터 정리할까.." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]생각보다 넓어 보이네." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]일단 보이는 것부터 정리해보자." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]어차피 다 정리해야 되니까 고민하지 말자." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="LeaveOfficeMoveIn">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]이 동네는 얼마나 변했을까..." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]데이터 다운로드까지는 시간이 많이 걸리겠네." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]주변 지리부터 익숙해져 볼까..." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]혼자 지내기엔 역시 너무 넓은가..." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]일단 잠시 지내다가 다시 옮겨야겠지?" Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_RamjiPlaza">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]역시 사원 모집을 해볼까..." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]너무 섣불리 큰 방을 빌렸나..." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]일단 이 지역 경찰들과 협력을 해야겠어." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]아직은 너무 휑하네." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]이러다가 아무도 안 오는 것은 아니겠지..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PugoStreet">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]시온. 생각보다 잘하잖아..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]별로 지고 싶지 않은데..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]괜히 하자고 했나..." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]이런 의도였나..." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]생각 보다 쉽지 않네." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Construction_A">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]월세하고 시온 월급하고 챙길 것이 많아지네..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]사실 시온 나보다 더 강한 것 아닐까..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]조금만 더하면 이길 것 같은데..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]이번 판은 이겨야지..." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]이렇게 하면 어떨까?" Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Road_113">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]이번엔 지지 않아." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]시온. 네 차례야." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]시온. 월급을 올려줘야 하나..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]시온 덕분에 일이 많이 편해졌네." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]나름 충분히 강해졌다고 생각했는데..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]헤이싱 씨... 뒷조사를 해봐야겠어." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]이렇게 하면 어떨까?" Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_CrowBillAfter">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]시온. 오늘 쉬더라도 이 판은 제대로 두고 가야지." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]최근 일이 많긴 했지..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]역시 오늘 하루는 쉬어야 하나..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]시온. 퇴근 하고 싶구나..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]시온은 보내고 나 혼자 일하지 뭐..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]조금만 더 기다려 보자." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]두 번 다시 현장에서 바로 사망자가 나오지 않도록 하려면 치유를 담당할 사람이 필요해." Time="4"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]아이린 씨... 계속 그렇게 혼자 활동하시는 건가..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PugoShop">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]시온. 설마 봐주는 건 아니겠지?" Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]잠시만 기다려 봐. 이번 판은 지지 않아." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]아직도 전체의 흐름이 보이질 않아..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]스푼교... 생각보다 사람들이 많아." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]스푼교... 도대체 원하는 게 무엇일까..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]범죄 조직과 스푼교가 같이 있다니..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]성난 황소파라..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PurpleBackStreet">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]경찰청의 정보 제공을 받으면 시간이 많이 줄어들거야." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]아이린 씨의 활동 범위가 생각보다 넓어 보이네." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]아이린 씨. 합류해주시려나..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]시온은 아이린 씨 일에 적극적이네..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]이전 사건도 아이작 경감님이 아니었다면 힘들었겠지..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]바람 장벽지구는 변두리라 큰 사건은 없는 줄 알았는데..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]구인공고를 내볼까..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_BlueFogStreet">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]시온. 이번엔 지지 않아." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]이제는 이런 수에 넘어가지 않아." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]아이린 씨와 호흡도 맞출 겸 일단 가벼운 임무부터 돌아볼까..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]역시 또래 여성들에게는 무슨 말을 해야할지 잘 모르겠다..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]이렇게 시온이랑 계속 게임을 하고 있어도 되는 건가..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]아이린 씨에게 무슨 말이라도 걸어야 하나..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]임무하는 것이 더 편할 것 같아..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_SilverliningMarco">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]시온. 여전히 강하구나..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]시온. 실력이 계속 느는 것 같아." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]아이린 씨가 전위를 맡아줄 수 있을까..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]역시 시온은 후위가 낫겠지..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]아이린 씨 환영회 해야 할텐데..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PugoBackStreet">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]아이작 경감님이 직접 부탁한 임무니 준비하자." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]아이린 씨 경범죄는 다 합의보고 배상했어." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]비밀 임무라..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]경찰 내부에 스파이라니... 영화 같아..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]아이작 경감님의 제안인데 거절할 수 없겠지..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]이 동네 트러블슈터들은 왜 이리 소극적일까..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]아이린 씨가 합류하니 확실히 선택 폭이 넓구나..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Hansando">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]정말 10년 걸렸네..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]드디어 뵙는 건가..." Time="4"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]그렇게 찾아도 찾을 수 없었는데..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]아이작 경감님에게 감사드려야겠어." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]결국 여기 계셨구나." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_GrayCemeteryPark">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]정말 한 번도 못 이기는 건가..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]경찰청 후방 지원 팀은 앤이 빠지면 많이 힘들겠어..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]14살인데... 벌써 현장 경험 2년 차라..." Time="2"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]앤 부모님은 용케도 이런 일을 허락하시는구나." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]나는 앤 나이 때 뭘 했지..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]역시 그 때 현장의 일은 앤에게 말하지 않 는게 좋겠지..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Lasa">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]시민들 협조를 얻어낼 수 있을까..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]임무 수행이 원활하려면 좋은 장비를 제공해야 할텐데..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]창고에 남는 공간은 어떻게 사용하는 것이 나을까..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]범죄자들이 사무실로 직접 쳐들어오지 않는 건.... 역시 브루스씨 덕분인가..." Time="6"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Orsay">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]티마의 영역을 침범한 것은 인간이겠지..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]스푼교는 도대체 언제 만들어진 집단일까..." Time="5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]종교가 사회 불만을 해결할 수 있을까..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_LokoCabin">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]시온. 이제 정비는 작업대에서 해." Time="3"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]시온. 필요한 것 있으면 말해. 가능한 지원할게." Time="3.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]아이작 경감님 괜찮으실까..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]반 정부 세력이라..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]아테르의 블러드워커 가문이라..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_SkyBlue">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]시온... 봐주는 건 아니겠지..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]한 달... 금방 가겠지..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]아이작 경감님의 공백은 어떻게 되려나..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PurpleStreet">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]백호파, 성난 황소파, 흑호 파는 카르텔이었을텐데..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]조용하던 백호파가 왜 이제서야 움직인거지..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PugoShopAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]나도 모르게 동료들에게 너무 많은 일을 강요한건가..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]모집 공고를 내도 아무도 지원을 하지 않는구나..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_HansolStreet">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]특사라는 권한의 범위는 어디까지일까..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]헤이싱 씨와의 거래 괜찮으려나..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Road_112">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]이능석이 생각보다 비싸네..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]차라리 지금 시기에 이능석을 확보해 둘까..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_MetroStreet">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]알리사 씨와 비앙카 씨는 어떤 사람들일까..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]분명히 카라스 연방의 특수부대 전용의 대검이었어..." Time="4"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]제인 경감님이 아니었다면 아이린 씨가 위험할 뻔 했어..." Time="4"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]시민들을 무차별적으로 살해하다니..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_StarStreet">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]아이작 경감님... 무슨 생각이실까..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]시가전에는 역시 기동성이 필요해..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]저격수를 대비하려면 역시 연막탄이겠지." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]제인 경감님하고 연계가 필요해..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_CrescentBridge">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]앤을 보조할 사람을 구해야겠어..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]후방 지원해 줄 사람이 없을까..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_GrayPortWareHouse">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]군용 바이크론이라니..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]중장비 기계들은 상대하기 까다롭네..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_DustWind">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]레이 씨. 여전하시네..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]헤이싱 씨와 레이 씨는 이 일이 끝나면 떠나시는 걸까..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_SkyWindPark">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]지젤 씨가 이 곳에 오시다니... 놀랐어..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]스컬이 궤멸되었구나..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]지금 생각해보면 지젤 씨는 정말..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]지젤 씨 성격은 여전하시네..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_TrainingRoom">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]경찰 훈련장 시설 꽤 괜찮던데..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]나중에 빌릴 수 있을까..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PugoBackStreetAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]조금만 더 늦었다면 정말 힘들었겠지..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]우리 회사도 이제 폭력 조직의 공공연한 목표 대상이 되고 있는 걸까..." Time="3.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_GrayCemeteryParkAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]지젤 씨가 나보다 더 많은 자료를 가지고 있다니... 뭔가 씁쓸한데..." Time="4"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]지젤 씨가 합류하다니... 정말 상상도 못했네..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]언제까지 도와주시려나..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Road_111">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]출동을 대비해 핫팩을 더 구비해둘까..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]카일리 씨 같은 분이 회사에 합류해주면 좋을 텐데..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_DustWindRestArea">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]톨게이트 사건 이후 검문이 강화됬을텐데..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]얼마나 많은 바이크론이 있는 거지..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_MarketStreet">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]루나라는 여자 아이... 그 뒤로 본적이 없어..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]이 지구 사건을 끝내면 회사 등급을 확실히 올릴 수 있을까..." Time="4"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]카일리 씨 설득은 어렵네..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]보안 등급 미스릴이라... 대재해와 같은 등급이잖아..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]아이작 경감님이 흑호 코퍼레이션과 손을 잡다니..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Road_110">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]헤이싱 씨와 카일리 씨가 친한 사이였다니..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]카일리 씨가 트러블슈터라니..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PurpleStreetAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]백호파를 완전 제압하려면 역시 리더를 체포해야..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]최근 스푼교가 잠잠하네..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_CrowRuins">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]역시 헤이싱 씨의 친구 분들은 이 지구에 벌어지는 일과 깊은 연관이 있어..." Time="5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]다음에 마주치면 체포해야 되나..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PugoStreetAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]백호파 제압도 얼마 남지 않았어... 힘내자..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]방심하지 말자..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_WasteBuilding">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]흑수저 샤키..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]매번 혼전 속에서 제압한 자를 놓치다니... 이상해..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_GroundWaterSlum">
+				<Chat>
+					<property Checker="RecruitLetonComplete">
+						<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]레톤 씨의 범죄 기록이 하나도 없다니..." Time="3"/>
+						<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]생각보다 통제되는 정보가 너무 많아..." Time="3"/>
+					</property>
+				</Chat>
+			</property>
+			<property name="Tutorial_CrowRuinsAfter_Alley">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]헤이싱 씨 근무가 얼마 안 남았구나..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]시온은 트러블슈터 자격증에 관심이 있으려나..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]창업이 생각만큼 쉽지 않구나..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_SkyBlueAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]역시 그 현장은 보고되지 않았어..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]괜한 걸 받은 건가..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PurpleStreet_Kylie">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]결과적으로 나는 야근을 강요하는 건가..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_SilverliningAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]지젤 씨는 정말 강하구나..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Albus]이제 곧 백호파와 전면전인가..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="All">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="999" Text="[!speaker:Albus]일단 급한 것부터 정리할까.." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="999" Text="[!speaker:Albus]생각보다 이 수는 어렵잖아..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="999" Text="[!speaker:Albus]일단 보이는 것부터 정리해보자." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="16" MaxGrade="999" Text="[!speaker:Albus]생각보다 복잡하네..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="20" MaxGrade="999" Text="[!speaker:Albus]전리품 중에 쓸만한 것들은 파는 게 좋을까... " Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="22" MaxGrade="999" Text="[!speaker:Albus]회사 운영은 이제 안정권인가..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="22" MaxGrade="999" Text="[!speaker:Albus]시온. 설마 나 봐주고 있는 건가..." Time="2.5"/>
+				</Chat>
+			</property>
+		</Events>
+	</class>
+	<class name="Sion">
+		<Events>
+			<property name="Tutorial_PugoStreet">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]그냥 이겨버리면 안 되겠지..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]아... 따분해." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]애는 많은 것 중에 이런 걸 하자고 그러냐..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]역시 회사에서는 사장님이라고 불러야겠지..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]그냥 져 줄까..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]아직 초보잖아..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]나 이 회사 선택 잘 한걸까..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]왜 이렇게 진지한거야..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]졸린다." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]정신차리자." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Construction_A">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]사장님. 빨리 두세요." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]사장님. 이번에 지면 저녁 사셔야 합니다." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]아이린. 제법 괜찮은 녀석이잖아." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]역시 내가 편하려면 회사에 사람들이 많아져야 해." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]생각보다 트러블슈터 일이 쉽진 않네." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]한동안 이렇게 지내는 것도 나쁘진 않겠어." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]리온 형은 잘 지내려나..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]정말 이녀석은 왜 이렇게 진지한거야..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Road_113">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]사장님도 회사 일만 생각하지 말고 맛집이나 취미 하나 정도는 하는 게 어때?" Time="4"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]사장님. 배고파~" Time="4"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]사장님. 뭐라도 시켜 먹자." Time="4"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]역시 알버스는 노력파구나." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]임무가 없으면 몸은 편한데 지루하구나..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]이 정도라면 문제 없어." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_CrowBillAfter">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]사장님. 제가 이기면 오늘 쉬는 건 어때요?" Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]사장님. 오늘 쉬고 내일부터 달려요." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]오늘도 늦게 퇴근하면 또 못 먹을 것 같은데..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]우직한 건지... 꽉 막힌 건지..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]오늘 같은 날은 역시..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]알버스를 보면 비샤 형이 생각난단 말이지..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]아이린 걱정되는데..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]치유 능력자... 앤이라고 했던가..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]빨리 퇴근하고 싶다." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PugoShop">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]사장님. 쉰다고 하고 혼자 일하는 건 반칙이야." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]사장님. 그러다가 또 져요." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]혼자 일할 거면 차라리 휴가를 보내지 말지..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]헤이싱 형. 친구들 만났다고 그냥 그렇게 가버리다니..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]만두 가게 조금 더 늦게까지 열면 좋을텐데..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]역시 지루하면 배고프다..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]배고파..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PurpleBackStreet">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]히어로가 합류하면 더 많은 사건을 조금 더 편하게 해결할 수 있을 거야." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]사장님. 일단 나가보는 건 어때?" Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]늦지 않으면 좋겠는데..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]조금 더 빨리 말할 걸 그랬어." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]알버스는 너무 눈 앞에 닥친 일에만 집중하는 경향이 심하네..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]히어로가 합류해야 나도 편할텐데..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_BlueFogStreet">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]사장님. 실력이 늘었네." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]이제 다음 동료는 그 아이겠지..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]회사를 위하는 길이 내가 편해지는 길이다. 화이팅." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]알버스... 언제쯤 실력이 늘까..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]히어로가 있으니 이제 임무 중에 후위로 가야겠다." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]퇴근할 때 히어로 입사 축하로 회식하자고 해야겠다..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_SilverliningMarco">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]사장님. 회식 안 하나요?" Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]사장님. 내가 간식 사 올까?" Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]바람장벽 지구는 동방연합 음식이 많아서 좋아." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PugoBackStreet">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]사장님. 출동하기 전에 간단하게 요기라도 하고 가는 게 어때요?" Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]사장님. 찹쌀로 만든 꿀호떡. 먹고 싶지 않아?" Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]사장님. 간식은 책임지기로 했잖아." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]시원한 냉모밀 국수는 어때?" Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]야근하게 되면 치킨시켜 먹자." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Hansando">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]이 정도로는 어림없습니다. 사장님." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]사장님. 오늘도 잘 부탁해." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]맛없는 것을 많이 먹고 싶진 않아." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]아이린이 많이 안정되서 다행이야..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]나중에 카일리 씨 공방에 놀러 가야겠다." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]장비 정비도 해야할 텐데..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_GrayCemeteryPark">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]앤. 임무 중에는 최대한 내 곁에 붙어 있어." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]역시 오늘도 환영회 해야죠? 사장님?" Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]앤을 어떻게 데려올까 고민했는데..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]이제 기본적인 팀 구성은 완료네." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]이제 화력 지원이 필요한가..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Lasa">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]앤. 오빠가 있으니 너무 무리하지 마." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]이번 달 월급이 벌써... " Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]오늘 들어가서는 빨래해야겠다." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]카일리 씨한테 가서 장비 수선 재료나 얻어 볼까..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Orsay">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]이 동네에도 리온은 없는 것 같네..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]리온은 도대체 어디서 뭐하면서 살고 있는 걸까..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]출동 횟수가 늘면 간식 먹는 횟수도 늘어야 하는 것 아닌가..." Time="4"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_LokoCabin">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]사장님. 작업대 고마워~☆" Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]사장님. 작업대 설치 기념으로 회식 어때?" Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_SkyBlue">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]너무 걱정하지 마. 금방 돌아오실 거야." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]한 달이면 금방 가잖아." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PurpleStreet">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]사장님. 조금만 여유를 가져요." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]알버스... 이런 단점이 있구나..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PugoShopAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]사람이 갑자기 변하기는 어렵겠지..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]서로 신뢰란 쌓기가 어렵구나..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_HansolStreet">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]사장님. 헤이싱 형이 왔으니 당연히 오늘은 회식?" Time="4"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]헤이싱 형도 맛집 좋아하지?" Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Road_112">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]리온은 발할라에 있는 걸까..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]아버지... 화 많이 나셨겠지..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_MetroStreet">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]백호파 때문에 가게들이 빨리 닫아 짜증나..." Time="4"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]앤 덕분에 현장 부담이 확실히 줄었어..." Time="4"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_StarStreet">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]계속 이런 식이면 앤한테 너무 무리가 가는데..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]앤의 부담을 줄여 줄 수 없으려나..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]역시 아직도 인원이 부족해..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_CrescentBridge">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]앤. 오늘 저녁 내가 사줄게~ 히어로도 같이~☆" Time="4"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]알버스는 비샤 형과 많이 닮았어..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_GrayPortWareHouse">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]오랜만에 헤이싱 형하고 김 씨 아저씨 가게에 가 볼까..." Time="4"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]앤을 제외하면 다들 혼자 사는 구나..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]다들 주말에 뭐하고 지낼까..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_DustWind">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]헤이싱 형 친구들은 뭘 하려는 거지..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]레이 누나도 맛집을 좋아할까..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]레이 누나가 있으니 앤도 부담을 덜겠네..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_SkyWindPark">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]배고파..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]이젠 겨울 음식들 알아봐야겠어..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_TrainingRoom">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]그래도 맛집 탐방은 헤이싱 형이 제일 편해..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]헤이싱 형의 본심을 모르겠어..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]레이 누나랑 헤이싱 형은 어디까지나 이 회사는 도구인걸까..." Time="3.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PugoBackStreetAfter">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]사장님. 무리하지 마세요." Time="3"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]사장님의 단점은 무리하는 거에요." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]말해봐야 변하질 않으니..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_GrayCemeteryParkAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]분명... 비샤 형의..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]날 알아보지 못한 건가..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Road_111">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]지젤 누나... 모르는 것 같긴 해..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]카일리 누나가 뭘 주려나..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]나중에 간식 사 들고 카일리 누나 공방에 가봐야겠다..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_DustWindRestArea">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]이 놈의 동네는 하루가 멀다하고 새로운 사건이 터지네..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]바이크론은 정말 싫다..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_MarketStreet">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]어제 앤... 무슨 일이 있었던 거지..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]아이작 경감님... 뭘 하시려는 거지..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]다들 비밀 하나 정도는 있는 건가..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Road_110">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]트러블슈터와 마이스터... 난 못해..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]카일리 누나까지 있으면 후방은 정말 든든하네..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PurpleStreetAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]벌써 1년이 다 되어 가네..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]리온 형은 잘 지낼까..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_CrowRuins">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]아이작 경감님... 헤이싱 형 친구 분들을 쫓는 거였어..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]생각보다 간단한 문제가 아니었나 보네..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PugoStreetAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]이제야 날이 좀 풀리네..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]집에 가면 라면이라도 끓여 먹어야 겠다..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_WasteBuilding">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]가끔 어머니 요리가 생각나네..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]흠... 요리를 배워 볼까..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_GroundWaterSlum">
+				<Chat>
+					<property Checker="RecruitLetonComplete">
+						<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]헤이싱 형 도대체 무슨 생각이지..." Time="3"/>
+						<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]별로 달갑지 않은 신입 사원이야..." Time="3"/>
+					</property>
+				</Chat>
+			</property>
+			<property name="Tutorial_CrowRuinsAfter_Alley">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]하아... 나 지금 뭐하고 있는 걸까..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]헤이싱 형... 혼자 갈 줄은 몰랐어..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]리온 형은 뭐하고 있으려나..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_SkyBlueAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]지젤 누나는 역시 강해..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]벌써 여기 근무한 지 일 년이 다 되어가는구나..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PurpleStreet_Kylie">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]하아... 요즘은 다들 따로 노는 것 같네..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]예전엔 같이 잘 모여 다녔던 것 같은데..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_SilverliningAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]지젤 누나는 리온 형의 소식을 알고 있는 걸까..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Sion]어머니께 연락도 드려야 할텐데..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="All">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="7" MaxGrade="999" Text="[!speaker:Sion]하늘바람 포장마차거리에 가면 우동 하나 끝내주는 집이 하나 있어. 꼭 가봐." Time="5"/>
+					<property Type="Normal_Civil" MinGrade="7" MaxGrade="999" Text="[!speaker:Sion]푸고 상점가에는 진짜 맛있는 만두 포장마차가 있어. 강력 추천이야." Time="5"/>
+					<property Type="Normal_Civil" MinGrade="12" MaxGrade="999" Text="[!speaker:Sion]은빛구름 상점가에 가면 꽤 괜찮은 비빔밥 집이 있어." Time="4"/>
+					<property Type="Normal_Civil" MinGrade="12" MaxGrade="999" Text="[!speaker:Sion]사장님. 생전만두라고 먹어 봤어?  바닥은 노랗게 바삭바삭! 입에 넣으면 구수한 국물이 입안에 쫙 퍼지는 게 일품이야~♡" Time="8"/>
+					<property Type="Think_Civil" MinGrade="14" MaxGrade="999" Text="[!speaker:Sion]다음 맛집은 어디로 갈까..." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="15" MaxGrade="999" Text="[!speaker:Sion]오늘 저녁은 파에야 어때? 해산물을 듬뿍 사용한 파에야 데 마리스코~♡" Time="5"/>
+					<property Type="Normal_Civil" MinGrade="16" MaxGrade="999" Text="[!speaker:Sion]우리 간식 사 먹을까? 바삭바삭~ 노릇노릇~ 달콤새콤한 애플파이~☆" Time="5"/>
+					<property Type="Normal_Civil" MinGrade="17" MaxGrade="999" Text="[!speaker:Sion]매콤달콤한 떡볶이 먹고 싶지 않아? 내가 사 올게~☆" Time="5"/>
+					<property Type="Normal_Civil" MinGrade="18" MaxGrade="999" Text="[!speaker:Sion]비 오는 날에는 파전과 막걸리야. 설마 모르는 것은 아니겠지?" Time="5"/>
+					<property Type="Normal_Civil" MinGrade="19" MaxGrade="999" Text="[!speaker:Sion]콘치즈라고 알아? 빵이나 또띠야가 빠진 피자? 퀘사디아? 하지만 엄청 맛있다고~♡" Time="6"/>
+					<property Type="Normal_Civil" MinGrade="20" MaxGrade="999" Text="[!speaker:Sion]식후의 따뜻한 전통차 한 잔~♡ 정말 행복하지 않아?" Time="3.5"/>
+					<property Type="Normal_Civil" MinGrade="21" MaxGrade="999" Text="[!speaker:Sion]먹는 것만 이야기 한다고? 그게 잘못인가?" Time="3"/>
+					<property Type="Normal_Civil" MinGrade="22" MaxGrade="999" Text="[!speaker:Sion]오늘 간식은 타코야키 어때? 내가 번개처럼 뛰어 갔다 올게." Time="5"/>
+					<property Type="Normal_Civil" MinGrade="23" MaxGrade="999" Text="[!speaker:Sion]출근길에 지하철역 앞을 지나오는 데 델리만쥬 냄새가 너무 맛난 거야... 지각할 뻔했어..." Time="6"/>
+					<property Type="Normal_Civil" MinGrade="24" MaxGrade="999" Text="[!speaker:Sion]가게 앞에 전기구이 통닭 트럭이 있던데? 당연히 먹을 거지?" Time="5"/>
+					<property Type="Normal_Civil" MinGrade="25" MaxGrade="999" Text="[!speaker:Sion]대박! 나 푸고 상점가에서 탕후루 파는 가게를 봤어~☆ 진짜 달고 맛있어서 간식으로 최고야~☆" Time="6"/>
+					<property Type="Normal_Civil" MinGrade="26" MaxGrade="999" Text="[!speaker:Sion]평범한 사람은 속이 든든하지 않으면 예민해지지." Time="5"/>
+					<property Type="Normal_Civil" MinGrade="27" MaxGrade="999" Text="[!speaker:Sion]계란이 토핑된 피데 어때?" Time="3"/>
+					<property Type="Normal_Civil" MinGrade="28" MaxGrade="999" Text="[!speaker:Sion]지난주 하늘 바람 포장마차 거리에 철판 오징어 가게가 들어왔는데 꽤 괜찮았어.~☆" Time="5"/>
+					<property Type="Normal_Civil" MinGrade="29" MaxGrade="38" Text="[!speaker:Sion]날씨도 쌀쌀한데 오늘 간식은 오뎅 어때?" Time="4"/>
+					<property Type="Normal_Civil" MinGrade="30" MaxGrade="38" Text="[!speaker:Sion]오다 보니 군고구마 팔던데? 다들 OK?" Time="4"/>
+					<property Type="Normal_Civil" MinGrade="31" MaxGrade="38" Text="[!speaker:Sion]마침 앞 골목에 옥수수 찐 것 팔더라. 날이 추우니 맛있어 보였어~♡" Time="5"/>
+					<property Type="Normal_Civil" MinGrade="32" MaxGrade="38" Text="[!speaker:Sion]이 동네에는 달콤한 호떡집이 없어. 겨울에는 최고 맛난 음식인데..." Time="5"/>
+					<property Type="Normal_Civil" MinGrade="33" MaxGrade="38" Text="[!speaker:Sion]조금 있다 호빵 사러 갈 거야. 야채인지 팥인지 선호도가 있으면 말해줘~☆" Time="5"/>
+					<property Type="Normal_Civil" MinGrade="34" MaxGrade="38" Text="[!speaker:Sion]아... 오늘 같은 날은 뜨뜻한 설렁탕 한 그릇이 최곤데..." Time="5"/>
+					<property Type="Normal_Civil" MinGrade="35" MaxGrade="38" Text="[!speaker:Sion]요즘처럼 임무가 힘들 때는 매콤한 마라탕 어때? 푸고 상점가에 괜찮은 집이 있어~☆" Time="5"/>
+					<property Type="Normal_Civil" MinGrade="36" MaxGrade="38" Text="[!speaker:Sion]정신 없을 땐 인스턴트 라면이 최고지~☆" Time="5"/>
+				</Chat>
+			</property>
+		</Events>
+	</class>
+	<class name="Irene">
+		<Events>
+			<property name="Tutorial_BlueFogStreet">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]이 녀석. 이래서 강했구나..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]이 자료 누가 정리한 걸까?" Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]내가 그때 실수한 걸까..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]바로 출동 안 하나..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]내가 다른 사람들과 함께 잘 해낼 수 있을까?" Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_SilverliningMarco">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]알버스 군과 시온 군은 정말 날 필요로 하는 걸까..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]도움이 되야 할 텐데..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PugoBackStreet">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]난 준비 완료야." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]언제든지 출동할 수 있어." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]팀 동료들을 위해서라도 혼자 돌아다니는 것은 자제해야지..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]괜한 걱정이었어..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]스파이라니... 악당들은 정말 비겁해." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]아직도 아이작 경감만 보면 가슴이 덜컹하네..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]도대체 악당들은 줄어들지를 않네..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Hansando">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]역시 이런 이유였어." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]이 나쁜 녀석들..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]팔찌가 좋을까... 전투 장갑이 나을까..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]나중에 정식 트러블슈터 시험을 쳐 볼까..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]월급 받으면 뭘 할까..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]이번 달 월세는 문제 없겠지..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]주말에 좀 더 악당들의 사악한 수법에 대해 공부해야겠어." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_GrayCemeteryPark">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]악당들의 범죄를 미리 막을 방법은 없을까?" Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]악당 얼굴들은 다 똑같아 보여..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]역시 이럴 줄 알았어." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]히어로는 같은 실수를 두 번 하지 않아." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]앤이랑 집에 가는 길이 같은 방향이던데... 같이 가자고 해야겠다." Time="4"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Lasa">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]무지막지하게 강한 녀석이었어." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]강한 사람이 악당 짓을 하는 것은 용서할 수 없지." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]다음에 만나면 어떻게 해야 됄까... 이길 가능성이 안 보여." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]집에 들어가서 택배 찾아야 하는데..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]현상 수배범이었구나..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Orsay">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]퇴근하면 가벼운 운동할 겸 집까지 뛰어갈까..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]시온 군 덕분에 요즘 살이... 관리해야겠어..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]세계 대전 이전까지 철의 숲의 티마는 굳이 인간을 공격 안 했는데..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]결국 서로 살아가는 영역이 겹쳐지면서 어쩔 수 없나..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]역시 악당을 대하는 마음가짐은 자비가 없어야 해." Time="4"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_LokoCabin">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]티마는 악당인가..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]불만을 폭력으로 해결하는 것은 역시 악당이야..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_SkyBlue">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]조금만 더 근력 트레이닝을 늘릴까..." Time="3.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]집에 돌아가면 스푼교에 대해 조금 더 알아봐야겠다." Time="3.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]예전의 나라면 경찰들과 연계는 절대 생각 못 했었을 텐데..." Time="3.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PurpleStreet">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]기동성을 늘릴 방법이 없을까..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]역시 하체가 튼튼해야..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PugoShopAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]앤... 왜 그렇게 서럽게 울었을까..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]굳이 말하지 않는 부분을 물어볼 수는 없겠지..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_HansolStreet">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]정상적인 사람이라면 상반신 노출을 한 채 코트를 입지 않을텐데..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]신경 쓰지 말자..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]내가 안 보면 그만이지..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Road_112">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]파괴력를 늘리기 위해서는 살을 찌워야 하나..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]일요일 아침마다 철의 숲 등산을 가 볼까..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_MetroStreet">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]그 사람들한테 빚을 졌군." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]동료가 있어 다행이야..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]더 강해져야 해..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]방 문 잠그고 나왔었나..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_StarStreet">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]이번 달에는 꽤 괜찮은 신상 전투 장갑이 나올텐데..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]악당 녀석들... 전쟁을 치를 셈인가..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_CrescentBridge">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]전용 장비를 구해볼까..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]앤의 부담을 줄여주려면 다치지 않아야 해." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_GrayPortWareHouse">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]이번 주말에는 어디를 돌아 볼까..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]퇴근길에 시온이 야식 먹자는 것 피해야겠어..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_DustWind">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]레이 씨... 분명... 람지 플라자에서..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]레이 씨 집도 같은 방향이니 앤이랑 셋이 퇴근하면 되겠다..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_SkyWindPark">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]......" Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]그 아이 분명 앤이 루나라고 부르던 아이야..." Time="4"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]난 아직도 수행이 부족해..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]앤은 그 아이와 무슨 관계지..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_TrainingRoom">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]경찰들은 고급 훈련장이 있으면서도 왜 그렇게 약한 거지..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]경찰 내부의 스파이는 누구일까..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]제인 경감님하고 한 번 대련하고 싶다..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PugoBackStreetAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]다음 번에는 알버스 군 대신 내가 남는 게 좋겠어..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]알버스 군도 히어로에 가까운 걸까..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_GrayCemeteryParkAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]알버스 군의 스승이라..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]15살이나 많다니..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Road_111">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]어릴 때는 눈 오는 날이 참 좋았는데..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]나이 들면 추운게 싫다더니..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_DustWindRestArea">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]기계는 악당인가..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]이번 주말에는 레이 씨와 앤과 함께 카일리 공방에 가 볼까..." Time="4"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_MarketStreet">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]시온 군의 동료들에 대한 배려는 배울만한 점이야..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]요즘 들어 알버스 군과는 이야기 할 시간이 없네..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Road_110">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]카일리 공방 멀어서 가기 힘들었는데 잘 됐네..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]이 장비면 충분하겠지..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PurpleStreetAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]히어로라면 물러서지 않아야 해..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]백호파를 제압할 수 있다고 생각하니 속이 다 시원하네..." Time="4"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_CrowRuins">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]남은 것은 스푼교인가..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]역시 장비는 전투 장갑이 나을까... 팔찌가 나을까..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PugoStreetAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]가면 갈수록 회사 내에서 내 역할이 줄어드는 것 같네..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]내가 회사에 도움이 될 방법은 없을까..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_WasteBuilding">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]스푼교도들은 무얼 하고 싶은 걸까..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]좁고 복잡한 길은 도대체 왜 만드는 거야..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_GroundWaterSlum">
+				<Chat>
+					<property Checker="RecruitLetonComplete">
+						<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]내 역할이 모호해..." Time="3"/>
+						<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]조금 더 내가 회사에 도움이 될 수 있는 방법은 없을까?" Time="3"/>
+					</property>
+				</Chat>
+			</property>
+			<property name="Tutorial_CrowRuinsAfter_Alley">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]역시 회사에서는 다들 자신의 사정을 솔직히 말하기는 어렵겠지..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]최근 거리에 범죄가 줄어든 것 같아..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]정식 트러블슈터 시험 도전해 볼까..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_SkyBlueAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]다음 필기 시험이 언제였더라..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]벌써 봄이구나..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PurpleStreet_Kylie">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]견습 기간 빨리 끝나면 좋겠다..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]세 달만 더 근무하면 일년이구나..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_SilverliningAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]정식 트러블슈터... 떨어지지는 않겠지..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]필기 시험 왜 이렇게 어렵냐..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Irene]설마 알버스 공부 잘하는 타입?" Time="3"/>
+				</Chat>
+			</property>
+			<property name="All">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="11" MaxGrade="12" Text="[!speaker:Irene]우와... 사건 기록이 이렇게 많아..." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="11" MaxGrade="12" Text="[!speaker:Irene]트러블슈터는 이렇게 자세한 정보를 받는 구나..." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="11" MaxGrade="12" Text="[!speaker:Irene]악당 녀석들... 정말 많구나." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="11" MaxGrade="12" Text="[!speaker:Irene]흠... 이런 사건이었구나..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="11" MaxGrade="12" Text="[!speaker:Irene]어차피 다 정리해야 되니까 고민하지 말자." Time="3"/>
+					<property Type="Think_Civil" MinGrade="15" MaxGrade="999" Text="[!speaker:Irene]선택의 순간에 유연하게 결정할 수 있겠어." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="16" MaxGrade="999" Text="[!speaker:Irene]조금 더 흉폭한 레서의 특징을 살려 볼 수 없을까?" Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="16" MaxGrade="999" Text="[!speaker:Irene]최근 악당들이 더 많아진 것 같네." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="16" MaxGrade="999" Text="[!speaker:Irene]조금 더 노력해야지." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="17" MaxGrade="999" Text="[!speaker:Irene]악당들의 공통적인 약점은 역시 분노와 자만이야." Time="4"/>
+					<property Type="Think_Civil" MinGrade="18" MaxGrade="999" Text="[!speaker:Irene]정의를 행하는 악행만큼 위선적인 것은 없어..." Time="4"/>
+					<property Type="Think_Civil" MinGrade="19" MaxGrade="999" Text="[!speaker:Irene]악당이란 무엇인가..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="20" MaxGrade="999" Text="[!speaker:Irene]악이 사회가 만든 그림자라면... 사회 자체가 악인 것인가..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="21" MaxGrade="999" Text="[!speaker:Irene]히어로는 악당도 구해야 하는 걸까..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="22" MaxGrade="999" Text="[!speaker:Irene]히어로 혼자 모든 것을 할 수 없지만... 히어로 혼자 해내야 할 순간이 있어." Time="5"/>
+					<property Type="Think_Civil" MinGrade="23" MaxGrade="999" Text="[!speaker:Irene]히어로는 결단을 위해 미리 모든 것을 생각해둬야 해. 그래야 결정의 순간 주저하지 않으니까..." Time="6"/>
+					<property Type="Think_Civil" MinGrade="24" MaxGrade="999" Text="[!speaker:Irene]내년까지는 제대로 결정해야 되나..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="25" MaxGrade="999" Text="[!speaker:Irene]언제나 선택의 순간을 대비해야 해." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="26" MaxGrade="999" Text="[!speaker:Irene]시민들은 왜 악당들에게 협력하는 걸까..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="27" MaxGrade="999" Text="[!speaker:Irene]공포는 악당들의 비겁한 수단이지." Time="3.5"/>
+					<property Type="Think_Civil" MinGrade="28" MaxGrade="999" Text="[!speaker:Irene]한 번 악당은 영원한 악당인가..." Time="3.5"/>
+					<property Type="Think_Civil" MinGrade="29" MaxGrade="999" Text="[!speaker:Irene]정의를 위해서 히어로에게 허락된 것은 무엇일까..." Time="3.5"/>
+					<property Type="Think_Civil" MinGrade="30" MaxGrade="999" Text="[!speaker:Irene]악당들로부터 물러서지 않는 의지를 가진 자는 다 히어로가 아닐까..." Time="4"/>
+					<property Type="Think_Civil" MinGrade="31" MaxGrade="999" Text="[!speaker:Irene]사회에서 버림 받은 자들이 사회에 불만을 품으면 악당일까..." Time="3.5"/>
+					<property Type="Think_Civil" MinGrade="32" MaxGrade="999" Text="[!speaker:Irene]악당의 기준은 누가 정하는 것일까..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="33" MaxGrade="999" Text="[!speaker:Irene]히어로는 선을 위해 악을 행하는 자인가..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="34" MaxGrade="999" Text="[!speaker:Irene]목적이 숭고하다면... 악행도 정당화 되는 걸까..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="35" MaxGrade="999" Text="[!speaker:Irene]신념을 가진 자는 중요한 순간의 결정은 명확하지." Time="3"/>
+					<property Type="Think_Civil" MinGrade="36" MaxGrade="999" Text="[!speaker:Irene]부족한 것은 나의 노력이야..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="37" MaxGrade="999" Text="[!speaker:Irene]시간이 나면 경찰청 데이터 베이스를 더 보고 싶은데..." Time="3.5"/>
+					<property Type="Think_Civil" MinGrade="38" MaxGrade="999" Text="[!speaker:Irene]트러블슈터. 돈을 받고 활동하는 쓰레기라고 생각했었지..." Time="3.5"/>
+					<property Type="Think_Civil" MinGrade="39" MaxGrade="999" Text="[!speaker:Irene]올해는 정식 트러블슈터 시험을 신청해 볼까..." Time="3.5"/>
+				</Chat>
+			</property>
+		</Events>
+	</class>
+	<class name="Anne">
+		<Events>
+			<property name="Tutorial_GrayCemeteryPark">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]재밌게 보고 있어요." Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]부모님은 제 의견을 존중해주세요." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]나는 강해질 거야..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]드디어 현장에 출동할 수 있어." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]그 날 일을 묻는 건 실례겠지..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]루나... 이번엔 내가 도와줄게." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Lasa">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]학교 아이들은 뭐 하고 있을까..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]확실히 경찰 후방 지원과 느낌이 달라..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]알버스 오빠... 또 지고 있어..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Orsay">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]실버...엄청 커졌어..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]실버... 티마 무리에 들어갔구나..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]야생에서 자란 티마들도 사람들을 피하면 좋을텐데..." Time="4"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_LokoCabin">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]아직도 현장에서는 가슴이 떨려..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]나... 현장에서 잘 하고 있는 걸까..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]못된 사람들도 반성하고 착해질 수 있을려나..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_SkyBlue">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]아이작 경감님... 금방 돌아오시겠죠?" Time="2.5"/>
+					<property Type="Normal_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]아이작 경감님이 저 후방 지원 할때부터 많이 챙겨 주셨어요." Time="4"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PurpleStreet">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]현장에서 실수하는 것은 없는 걸까..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]시온 오빠는 왜 알버스 오빠한테 꼬박 꼬박 사장님이라고 할까..." Time="4"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PugoShopAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]루나..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]루나가 아직 이 곳에 있어..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]루나랑 만나 이야기 하고 싶어..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]루나 내가 꼭..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]퇴근 길에 아이린 언니가 같이 가줘서 정말 다행이야..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_HansolStreet">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]아저씨라 불러야 하나..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]오빠라고 불러야 하나..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]첫 인상만 보고 사람을 판단하면 안 되는 건데..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]시온 오빠가 괜찮은 사람이라고 하셨으니...괜찮겠지..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Road_112">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]이능석 합성을 연습하면 회사에 도움이 되겠지?" Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]언제나 언니 오빠들에게 도움을 받고 있어..." Time="3.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]밀린 숙제는 언제 하지..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_MetroStreet">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]거주구 습격이라니 너무해..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]왜 모든 것을 폭력으로 해결하려고 할까..." Time="4"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]나쁜 사람들은 혼나야 해." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_StarStreet">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]너무 많은 사람들이 다치니 조금 지친다..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]나만 정신 차리면 조금 더 많은 사람을 구할 수 있어... 힘내자." Time="4.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_CrescentBridge">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]다른 사람들이 임무에 집중할 수 있도록 힘내자." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]걱정해주시는 것을 잘 알지만..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]역시 난 팀에 부담을 주는 걸까..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_GrayPortWareHouse">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]알버스 오빠는 매번 시온 오빠한테 지시면서도 꾸준히 도전하시네..." Time="5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]아이린 언니는 진심으로 히어로를 동경하시는구나..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]시온 오빠는 정말 대단해... 시온 오빠가 추천한 집은 진짜 다 맛있어..." Time="5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]헤이싱 오빠는 무엇을 좋아하실려나..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]헤이싱 오빠... 의외였어." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]헤이싱 오빠... 다정한 사람인 것 같아..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_DustWind">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]누군가 날 지원해준다니 낯설어..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]레이 언니는 다 큰 어른 같아..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]레이 언니는 헤이싱 오빠랑 친할까..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_SkyWindPark">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]계속 쳐다보던 시선은 그 도로리였던 건가..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]람지플라자는 루나랑 가기로 했는데..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_TrainingRoom">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]나 조금은 의지해도 될까..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]헤이싱 오빠한테 감사 표시를 하고 싶은데..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]나 너무 혼자 힘들어한 걸까..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PugoBackStreetAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]알버스 오빠가 크게 다치지 않아서 다행이야..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]알버스 오빠가 쓰러져 있었을 땐 순간 가슴이 철렁했어..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_GrayCemeteryParkAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]TV에서만 보던 강력사건전담 9과라니..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]엄청 대단한 분이 들어 오셨어..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]지젤 언니. 멋지셔..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Road_111">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]카일리 언니의 공방에 한 번 가보고 싶다..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]언니 오빠들을 의지하니 마음이 조금 편해졌어..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_DustWindRestArea">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]이제 조금 체력이 붙은 것 같아..." Time="4"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]비 오는 날 출동하면 옷이 다 젖어서..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_MarketStreet">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]루나... 내가 지킬게..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]루나는 범죄자야... 하지만..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Road_110">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]카일리 언니한테 고맙다고 말해야지..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]아... 헤이싱 오빠 선물... 어떻게 해야 하지..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PurpleStreetAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]나 더 강해질 방법이 없을까..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]도움이 필요한 사람들에게 더 가까이 가고 싶어..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_CrowRuins">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]나도 검술을 배우면 알버스 오빠처럼 강해지려나..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]나 해낼 거야..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PugoStreetAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]루나... 아직 이 도시에 있을거야..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]루나... 나 계속 강해질거야" Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_WasteBuilding">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]왜 키가 안 크지.." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_GroundWaterSlum">
+				<Chat>
+					<property Checker="RecruitLetonComplete">
+						<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]헤이싱 오빠는 머리는 염색하신 걸까..." Time="3"/>
+						<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]앨리라는 곳은 어떤 곳일까..." Time="3"/>
+					</property>
+				</Chat>
+			</property>
+			<property name="Tutorial_CrowRuinsAfter_Alley">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]언니, 오빠들은 왜 트러블슈터 회사에 들어온 걸까..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]나 스스로 지킬 수 있도록 강해져야 해..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]언제까지 남에게 보호받고 있을 순 없어..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_SilverliningAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]루나. 내가 꼭 방법을 찾아 낼거야." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]루나를 위한 내 마음은 나쁜 걸까..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Anne]난 착한 아이는 아닌가 봐..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="All">
+				<Chat>
+					<property Type="Normal_Civil" MinGrade="16" MaxGrade="17" Text="[!speaker:Anne]현장 실습 신청하면 최소 수업 일수만 채워도 졸업이 돼요." Time="5"/>
+					<property Type="Normal_Civil" MinGrade="16" MaxGrade="17" Text="[!speaker:Anne]학업과 병행은 경찰청 후방 지원할 때부터 계속해온 걸요." Time="5"/>
+					<property Type="Normal_Civil" MinGrade="16" MaxGrade="17" Text="[!speaker:Anne]개학하면 부 활동 대신 현장 실습 신청할 거에요." Time="5"/>
+					<property Type="Think_Civil" MinGrade="16" MaxGrade="17" Text="[!speaker:Anne]다들 방학 때 뭐하고 지냈을까..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="16" MaxGrade="17" Text="[!speaker:Anne]제시한테 수업 노트 받아야 하는데..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="16" MaxGrade="17" Text="[!speaker:Anne]다음 주가 개학이네..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="16" MaxGrade="17" Text="[!speaker:Anne]방학이 얼마 남지 않았구나..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="17" MaxGrade="21" Text="[!speaker:Anne]제시하고 같은 반이 되서 다행이야..." Time="4"/>
+					<property Type="Think_Civil" MinGrade="18" MaxGrade="21" Text="[!speaker:Anne]난 언제쯤 키가 크려나... 크긴 클까..." Time="4"/>
+					<property Type="Normal_Civil" MinGrade="19" MaxGrade="21" Text="[!speaker:Anne]학교 수업은 수업대로 재밌어요." Time="3"/>
+					<property Type="Normal_Civil" MinGrade="20" MaxGrade="21" Text="[!speaker:Anne]수영 수업이 제일 힘들어요. 저 수영 못하거든요." Time="4"/>
+					<property Type="Think_Civil" MinGrade="21" MaxGrade="999" Text="[!speaker:Anne]치유 능력자는 왜 소수일까... 많으면 참 좋을텐데..." Time="3.5"/>
+					<property Type="Think_Civil" MinGrade="22" MaxGrade="999" Text="[!speaker:Anne]주말에는 집안일 도와 드려야지." Time="5"/>
+					<property Type="Think_Civil" MinGrade="23" MaxGrade="30" Text="[!speaker:Anne]수학은 쉬운데... 국어는 너무 어려워..." Time="6"/>
+					<property Type="Think_Civil" MinGrade="24" MaxGrade="30" Text="[!speaker:Anne]과학은 재밌지만... 이능력의 원리는... 어려워..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="25" MaxGrade="30" Text="[!speaker:Anne]역사 수업은 왜 이렇게 졸릴까... 재밌어하는 친구들 보면 신기해..." Time="5"/>
+					<property Type="Think_Civil" MinGrade="26" MaxGrade="27" Text="[!speaker:Anne]중간고사가 얼마 안 남았네... 집에 가면 시험공부 해야 겠다." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="27" MaxGrade="999" Text="[!speaker:Anne]이번 급여도 저축해야지." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="28" MaxGrade="35" Text="[!speaker:Anne]수학이 쉽다는 것 착각이었어..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="29" MaxGrade="35" Text="[!speaker:Anne]요즘 누군가 날 계속 따라 다니는 것 같아..." Time="3.5"/>
+					<property Type="Think_Civil" MinGrade="30" MaxGrade="35" Text="[!speaker:Anne]학교 수업이 따라가기 힘들다..." Time="4"/>
+					<property Type="Think_Civil" MinGrade="31" MaxGrade="35" Text="[!speaker:Anne]기말 고사가 벌써..." Time="3.5"/>
+					<property Type="Think_Civil" MinGrade="32" MaxGrade="35" Text="[!speaker:Anne]의료 기술을 배우면 현장에서 더 도움이 되려나..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="33" MaxGrade="35" Text="[!speaker:Anne]겨울 방학이 얼마 안 남았네... 시간 참 빠르다." Time="3.5"/>
+					<property Type="Think_Civil" MinGrade="34" MaxGrade="37" Text="[!speaker:Anne]겨울 방학 동안은 학교 안 가니 편하긴 하다..." Time="3.5"/>
+					<property Type="Think_Civil" MinGrade="38" MaxGrade="999" Text="[!speaker:Anne]나도 검술을 배우면 알버스 오빠처럼 강해지려나..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="38" MaxGrade="999" Text="[!speaker:Anne]헤이싱 오빠처럼 총기를 다뤄볼까..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="39" MaxGrade="999" Text="[!speaker:Anne]아이린 언니랑 같이 운동을 해 볼까..." Time="3"/>
+				</Chat>
+			</property>
+		</Events>
+	</class>
+	<class name="Heissing">
+		<Events>
+			<property name="Tutorial_HansolStreet">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]월급도 받을 걸 그랬나..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]이제 반년 남았군..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]돌아가기 전까지 조금 더 즐거운 추억을 만들면 좋을텐데..." Time="4"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Road_112">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]이능석이라... 진절머리 나는군..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]성채 녀석들은 잘 지내고 있을려나..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]하쿠야 녀석..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_MetroStreet">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]제법 재밌는 추억이야..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]다음 임무는 시시하지 않았으면 좋겠군." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_StarStreet">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]끌려 다니는 것인가..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]일단 지켜보기로 하지..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]어차피 서둘러야 달라질 것이 없겠지." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_CrescentBridge">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]팀 밸런스인가..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]도와 줘야 할까..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]레이 녀석을 데려올까..." Time="2.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_GrayPortWareHouse">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]레이 녀석. 조급해하는군..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]제법 재밌는 동네야..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]그 녀석은..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]구룡회를 나온 것인가..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_DustWind">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]일단 레이 혼자 날뛰는 건 없어지겠군..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]카터 녀석... 멈추기가 쉽지 않겠군." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]레톤이 곁에 있으니..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_SkyWindPark">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]잉어인가..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]구룡회라..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]지나고 나니 다 부질없는 일 같군..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_TrainingRoom">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]이제 어느 정도 팀이 완성된 것인가..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]솔직히 가족 말고는 모두 타인이지..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]조금만 더 기다려라..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PugoBackStreetAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]이제 마주칠 날이 멀지 않았군..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]언제까지 끌려다니려나..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_GrayCemeteryParkAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]귀찮은 사람이 들어왔군..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]예상 밖의 전력인데..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]변하는 건 없지..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Road_111">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]공주님답지 않은 삶이군..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]질긴 인연이야..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_DustWindRestArea">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]드디어 도착한건가..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]이제 얼마 남지 않았군..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_MarketStreet">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]생각보다 시간이 오래 걸리는 군..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]그 녀석이 연락하다니..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]운명의 굴레인가..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Road_110">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]3개월 남았군..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]늦어진다면... 하쿠야를 볼 면목이 없군..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PurpleStreetAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]남은 기간을 의식하니... 나마저 조급해지는군..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]하쿠야에게... 아니야..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_CrowRuins">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]조금 더 즐거운 추억이 가득하면 좋을텐데..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]앨리... 우리는 가족인가..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PugoStreetAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]이제 끝내야겠지..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]널 멈추는 방법은 결국..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_WasteBuilding">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]마지막 무대인가..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]땅 속 공기는 여전히 진절머리가 나는 군..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_GroundWaterSlum">
+				<Chat>
+					<property Checker="RecruitLetonComplete">
+						<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]재밌게 됐군...." Time="3"/>
+						<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]이미 늦었나..." Time="3"/>
+					</property>
+				</Chat>
+			</property>
+			<property name="Tutorial_CrowRuinsAfter_Alley">
+				<Chat>
+					<property Checker="Tutorial_CrowRuinsAfter_Alley_Win">
+						<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]카터..." Time="3"/>
+						<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]이제 두 달도 안 남았나..." Time="3"/>
+						<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]이 거리 뒷골목이라..." Time="3"/>
+						<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]그 장소에 누군가 더 있었다는 건가..." Time="3"/>
+					</property>
+					<property Checker="Tutorial_CrowRuinsAfter_Alley_Lose">
+						<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]그 때... 분명..." Time="3"/>
+						<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]이 거리 뒷골목이라..." Time="3"/>
+						<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]그 장소에 누군가 더 있었다는 건가..." Time="3"/>
+					</property>
+				</Chat>
+			</property>
+			<property name="Tutorial_SkyBlueAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]이제 휴가도 막바지인가..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PurpleStreet_Kylie">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]돌아가기 전까지 조금 더 추억을 쌓아볼까..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_SilverliningAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Heissing]앤이 준 책이 있었지..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="All">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="22" MaxGrade="999" Text="[!speaker:Heissing]...." Time="3"/>
+					<property Type="Think_Civil" MinGrade="22" MaxGrade="999" Text="[!speaker:Heissing]기다리는 것은 여전히 지겹군..." Time="3"/>
+				</Chat>
+			</property>
+		</Events>
+	</class>
+	<class name="Ray">
+		<Events>
+			<property name="Tutorial_DustWind">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]얘네들이랑 친해질 수 있을까..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]나 혼자 카터를 막을 순 없어..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]일단 헤이싱을 믿자..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]헤이싱은 정말 많이 달라졌어..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_SkyWindPark">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]아이작 경감... 카터에 대해 알고 있었어..." Time="3.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]아이작 경감은 왜 카터를 막으려는 거지..." Time="3.5"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]카터... 도대체 네가 원하는 것은 뭐야..." Time="3.5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_TrainingRoom">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]여기 애들 다 귀여워~☆" Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]시온 군은 회사 동료들에게 애착이 많구나..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]이 아이들하고 카터를 막을 수 있을까..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]우리도 앨리 출신이 아니라면 이 아이들처럼 즐겁게 지낼 수 있을까..." Time="5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PugoBackStreetAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]알버스 군... 확실히 람지플라자 때랑은 달라졌네~☆" Time="4"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]얼마 되지 않는 시간인데도 좋은 동료를 많이 만들었구나..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_GrayCemeteryParkAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]다른 지구 사람이 카오스 브러시를 알다니..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]역시... 대기업을 다닌 사람이라..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]한 성격하게 생겼는데..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Road_111">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]앨리의 겨울은 배고픈 게 가장 문제였지..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]레톤과 카터는 뭘 하고 있을까..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_DustWindRestArea">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]카터... 미안해..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]더는 타인에게 피해를 주지마. 카터..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_MarketStreet">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]헤이싱... 믿고 있으면 될까..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]나... 이렇게 있는 것이 큰 실수인 것은 아닌 걸까..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Road_110">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]이 팀은 계속 성장하는구나..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]앨리 원더러도 한때는 이런 분위기였는데..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PurpleStreetAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]욕심을 부리지 않았다면... 이 팀처럼 우리도 웃을 수 있었을까..." Time="4"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]만약... 필요하다면 내가 해야 해..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_CrowRuins">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]카터, 레톤.... 기다려. 내가 가..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]우리는 가족이잖아..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PugoStreetAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]조금만 더... " Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]거의 다 왔는데..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_WasteBuilding">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]우리는 다시 뭉칠 수 있을까..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]타인의 이야기는 듣고 싶지 않은 걸까..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_GroundWaterSlum">
+				<Chat>
+					<property Checker="RecruitLetonComplete">
+						<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]이제와 레톤이 합류하다니... 뭔가 수상해." Time="3"/>
+						<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]카터... 잘못된 선택은 하지 마..." Time="3"/>
+					</property>
+				</Chat>
+			</property>
+			<property name="Tutorial_CrowRuinsAfter_Alley">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]카터는 이제 돌이킬 수 없는 건가..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]더는 도망치지 말자..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]헤이싱에게 무슨 일이 생겼다면 난..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_SkyBlueAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]당분간 카터는 잊자..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]이왕 다니는 회사 조금 더 열심히 다녀볼까..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PurpleStreet_Kylie">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]카일리한테 뭐라 할 게 아니었는데..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]서먹서먹하네..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]아... 그냥 가서 사과할까..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_SilverliningAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]친구도 가족도 모두 소중한거야..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Ray]다이앤, 안젤라, 클레어..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="All">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="28" MaxGrade="999" Text="[!speaker:Ray]흠... 어디... 좋은 디자인은 없나..." Time="6"/>
+					<property Type="Think_Civil" MinGrade="28" MaxGrade="999" Text="[!speaker:Ray]이 디자인 정말 잘 만들었네..." Time="6"/>
+					<property Type="Think_Civil" MinGrade="28" MaxGrade="999" Text="[!speaker:Ray]이 작품 애들하고 그렸던 거네..." Time="6"/>
+					<property Type="Think_Civil" MinGrade="28" MaxGrade="999" Text="[!speaker:Ray]카터는 다른 사람들에게 피해를 주면서까지 무엇을 하려는 걸까..." Time="6"/>
+					<property Type="Think_Civil" MinGrade="29" MaxGrade="999" Text="[!speaker:Ray]발할라는 위선적인 도시야..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="30" MaxGrade="999" Text="[!speaker:Ray]앨리를 떠나지 말았어야 했나..." Time="3.5"/>
+					<property Type="Think_Civil" MinGrade="31" MaxGrade="999" Text="[!speaker:Ray]헤이싱은 어떻게 고난의 성채를 빠져 나왔을까..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="32" MaxGrade="999" Text="[!speaker:Ray]레톤은 카터를 말릴 생각이 없는 건가..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="33" MaxGrade="999" Text="[!speaker:Ray]타인에게 상처를 주면 결국 다치는 것은 자신일텐데..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="34" MaxGrade="999" Text="[!speaker:Ray]나는 언제나 지켜봐야만 하는 걸까..." Time="2.5"/>
+				</Chat>
+			</property>
+		</Events>
+	</class>
+	<class name="Giselle">
+		<Events>
+			<property name="Tutorial_GrayCemeteryParkAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]생각보다 이 동네 상황 말이 아니네..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]일단 잡다한 사건들부터 빨리 해결해 버려야겠군..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]이것도 늙은이들의 꿍꿍이들인가..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]뒤에서 조종하는 녀석을 끌어내야 할 텐데..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]이 회사 재밌는 녀석들이 많아..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Road_111">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]시온은 비샤의 막내 동생인가..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]다음 의뢰는 이것이 나을려나..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]카일리 녀석을 데려오면 좋을텐데..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]다른 트러블슈터의 도움은 생각할 수도 없겠군..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_DustWindRestArea">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]누군가의 프로젝트인건가..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]사건의 화제성에 가려진 정보들이 많아..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]피해자는 반 정부 인물이군..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_MarketStreet">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]이 팀으로 잔머리 굴리긴 힘들겠어." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]겨울이 끝나기 전에 마무리 해둘 것들이 많군." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]카일리가 합류해주면 편할텐데... 직접 나서야 되나..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_Road_110">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]카일리 합류가 늦지 않아 다행이군." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]구룡회의 아이만 아니라면 참 괜찮은 녀석인데..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PurpleStreetAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]이제 백호파도 끝이군..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]결국 자멸하겠지..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_CrowRuins">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]이 계획은 대체 누가 세운거지..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]결국 그 녀석들의 각본대로인가..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PugoStreetAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]진실이 가려져 있어..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]793년의 악몽의 배후인가..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_WasteBuilding">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]역시... 프로젝트인가..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]언제까지 이런 방식이 통할 것이라고 생각하는 거지..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_GroundWaterSlum">
+				<Chat>
+					<property Checker="RecruitLetonComplete">
+						<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]별별 녀석을 참 많이도 심어 놓았군..." Time="3"/>
+						<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]꽤 귀찮은 녀석을 붙였어..." Time="3"/>
+					</property>
+				</Chat>
+			</property>
+			<property name="Tutorial_CrowRuinsAfter_Alley">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]이제 스푼교도들은 대부분 이 지구에서 사라진 건가..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]백호파 정도는 완벽하게 궤멸시켜야 치안이 안정화되려나..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]이제 큰 사건도 정리되가니 숨어있는 녀석들 하나씩 잡아들여야겠군." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_SkyBlueAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]갑자기 고용된 용병들이 사건 현장에 많아졌어..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]누가 사주하는 거지..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PurpleStreet_Kylie">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]일단 백호파는 궤멸시켜야겠어." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]남은 위험 요소는 벤데타 녀석들인가..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_SilverliningAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]하아... 이거 끝나면 제인이랑 제대로 놀아야지." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Giselle]생각보다 오래 걸렸어..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="All">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="32" MaxGrade="33" Text="[!speaker:Giselle]어디부터 시작해야 될까..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="32" MaxGrade="33" Text="[!speaker:Giselle]미끼는 누구로 하지..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="32" MaxGrade="33" Text="[!speaker:Giselle]역시 제인 이야... 고지식해..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="32" MaxGrade="999" Text="[!speaker:Giselle]주말에 제인하고 쇼핑이나 갈까..." Time="2.5"/>
+				</Chat>
+			</property>
+		</Events>
+	</class>
+	<class name="Kylie">
+		<Events>
+			<property name="Tutorial_Road_110">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Kylie]저 여자만 없으면 다 괜찮은데..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Kylie]저 여자의 웃음은 정말 보기 싫네..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Kylie]브루스 녀석 여전해..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Kylie]이 가게 진짜 오랜만이네..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Kylie]이 동네 처음 왔을 때 저 사무실 내가 사용했는데... 참 세월 빠르다..." Time="5"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PurpleStreetAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Kylie]폭력 조직의 끝은 뻔하지..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Kylie]푸 녀석... 거드름 피우더니 이젠 끝이군..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_CrowRuins">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Kylie]도대체 누가 이렇게 많은 기계들을 공급하는 거지..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Kylie]앨리의 버려진 아이들이라..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PugoStreetAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Kylie]승천을 노리는 잉어들이 움직이는 건가..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Kylie]나로 인해 회사 동료들이 휘말리는 일은 없도록 해야 해..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_WasteBuilding">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Kylie]지하 벙커에 수로가 있었는데..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Kylie]헤이싱이 맡긴 일 생각보다 귀찮은데..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_GroundWaterSlum">
+				<Chat>
+					<property Checker="RecruitLetonComplete">
+						<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Kylie]헤이싱의 친구라..." Time="3"/>
+						<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Kylie]상상했던 것과는 많이 다르군..." Time="3"/>
+					</property>
+				</Chat>
+			</property>
+			<property name="Tutorial_CrowRuinsAfter_Alley">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Kylie]나도 이제 슬 준비해야 하나..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Kylie]승룡전은 언제까지 이어지려나..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Kylie]롱췐도 보고 싶군." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Kylie]어머니는 잘 계시려나..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_SkyBlueAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Kylie]갑자기 고용된 용병들이 사건 현장에 많아졌어..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Kylie]누가 사주하는 거지..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PurpleStreet_Kylie">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Kylie]레이에게 너무 심하게 말했나..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Kylie]어차피 한 번은 겪어야 했던 일이니까..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Kylie]료 녀석 정신차려야 할텐데..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_SilverliningAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Kylie]롱췐 녀석..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Kylie]롱췐 마지막은 제대로 해 줘야겠지..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="All">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="36" MaxGrade="999" Text="[!speaker:Kylie]정찰용 드론의 기동성을 확보하려면 역시 경량화인가..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="36" MaxGrade="999" Text="[!speaker:Kylie]전방으로 적의 공격을 받아낼려면 조금 더 강력한 외장이 필요해..." Time="4"/>
+					<property Type="Think_Civil" MinGrade="36" MaxGrade="999" Text="[!speaker:Kylie]출력 중심인가... 하중 중심인가..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="36" MaxGrade="999" Text="[!speaker:Kylie]재료는 알버스에게 요청해야 하나..." Time="2.5"/>
+				</Chat>
+			</property>
+		</Events>
+	</class>
+	<class name="Leton">
+		<Events>
+			<property name="Tutorial_GroundWaterSlum">
+				<Chat>
+					<property Checker="RecruitLetonComplete">
+						<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Leton]하아... 만사가 다 귀찮군." Time="2.5"/>
+						<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Leton]이제 한동안은 따뜻한 방에서 잠 잘 수 있겠네..." Time="2.5"/>
+					</property>
+				</Chat>
+			</property>
+			<property name="Tutorial_CrowRuinsAfter_Alley">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Leton]부럽다. 헤이싱." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Leton]언제까지 여기에 있어야 될까..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Leton]카터. 힘내라." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_SkyBlueAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Leton]카터는 결국 스푼교도를 버리지 못하겠지." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Leton]다들 너무 복잡하게 산다..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_PurpleStreet_Kylie">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Leton]헤이싱 녀석 따라가지 말 걸 그랬어..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Leton]퇴근하고 헤이싱 녀석 불러서 레이 달래주러 가야겠다." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Leton]솔직히 과거가 무슨 상관이야..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="Tutorial_SilverliningAfter">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Leton]마지막까지 귀찮은 일 가득이야..." Time="3"/>
+					<property Type="Think_Civil" MinGrade="0" MaxGrade="0" Text="[!speaker:Leton]차라리 카터를 따라갔어야 했나..." Time="3"/>
+				</Chat>
+			</property>
+			<property name="All">
+				<Chat>
+					<property Type="Think_Civil" MinGrade="40" MaxGrade="999" Text="[!speaker:Leton]뭐... 이것도 나쁘지 않아..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="40" MaxGrade="999" Text="[!speaker:Leton]알버스 번스타인이라..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="40" MaxGrade="999" Text="[!speaker:Leton]그 때 그냥 내가 갔었어야 했는데..." Time="2.5"/>
+					<property Type="Think_Civil" MinGrade="40" MaxGrade="999" Text="[!speaker:Leton]다음엔 어떤 선택이 강요되려나..." Time="2.5"/>
+				</Chat>
+			</property>
+		</Events>
+	</class>
+</idspace>

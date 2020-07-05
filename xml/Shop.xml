@@ -1,0 +1,1789 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="CurrencyType">
+		<class name="Vill" Title="[!재화]Vill" Source="Property" Target="Vill" Image="Icons/Vill"/>
+		<class name="ValkyrieCoin" Title="[!돈]발키리 코인" Source="Item" Target="Valkyrie_Troublemaker" Image="Icons/ValCoin"/>
+	</idspace>
+	<idspace id="Shop">
+		<schema>
+			<rule property="ItemList" type="table" default=""/>
+			<rule property="Dialog" type="table" default=""/>
+			<rule property="Title" type="string" default=""/>
+			<rule property="SelectIdleTime" type="evaluated" default="3 * 60"/>
+			<rule property="Currency" type="link" target="CurrencyType" default="Vill"/>
+			<rule property="InventoryMode" type="string" default="Shop"/>
+			<rule property="SellEnable" type="bool" default="true"/>
+			<rule property="RefreshList" type="bool" default="true"/>
+			<rule property="NoneNPCShop" type="bool" default="false"/>
+			<rule property="IsNew" type="bool"/>
+			<rule property="Opened" type="bool" default="false"/>
+		</schema>
+		<class name="AccessoryShop" Title="악세서리 상점" Image="" Opened="false">
+			<Dialog>
+				<property name="Visit">
+					<Texts>
+						<property Text="천천히 골라보세요."/>
+						<property Text="이번 입고된 상품은 꽤 괜찮은 물건이에요."/>
+					</Texts>
+				</property>
+				<property name="Thanks">
+					<Texts>
+						<property Text="언제나 찾아주셔서 감사합니다."/>
+						<property Text="좋은 시간이 되셨길 바랍니다."/>
+					</Texts>
+				</property>
+				<property name="Select">
+					<Texts>
+						<property Text="지금 당장 원하는 상품이 없다면 무리하게 고르지 마세요."/>
+						<property Text="저라면 지금 보시는 것을 고를 거에요."/>
+					</Texts>
+				</property>
+			</Dialog>
+			<ItemList>
+				<property Item="Ring_Mage" Category="Accessory" Type="Ring" Slot="1" Rate="50" Friendship="None" Price="250" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Ring_Mage_Rare" Category="Accessory" Type="Ring" Slot="1" Rate="50" Friendship="None" Price="375" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Ring_Mage_Rare" Category="Accessory" Type="Ring" Slot="2" Rate="50" Friendship="None" Price="375" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Ring_Archamge" Category="Accessory" Type="Ring" Slot="2" Rate="50" Friendship="None" Price="500" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Ring_Archamge_Rare" Category="Accessory" Type="Ring" Slot="2" Rate="50" Friendship="None" Price="750" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Ring_Archamge_Rare" Category="Accessory" Type="Ring" Slot="3" Rate="50" Friendship="None" Price="750" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Ring_Guard" Category="Accessory" Type="Ring" Slot="3" Rate="50" Friendship="None" Price="1125" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Ring_Guard_Rare" Category="Accessory" Type="Ring" Slot="3" Rate="50" Friendship="None" Price="1500" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Ring_Guard_Rare" Category="Accessory" Type="Ring" Slot="4" Rate="50" Friendship="None" Price="1500" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Ring_Sage" Category="Accessory" Type="Ring" Slot="4" Rate="50" Friendship="None" Price="1750" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Ring_Sage_Rare" Category="Accessory" Type="Ring" Slot="4" Rate="50" Friendship="None" Price="2625" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Ring_Sage_Rare" Category="Accessory" Type="Ring" Slot="5" Rate="50" Friendship="None" Price="2625" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Ring_Sky" Category="Accessory" Type="Ring" Slot="5" Rate="50" Friendship="None" Price="2750" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Ring_Sky_Rare" Category="Accessory" Type="Ring" Slot="5" Rate="50" Friendship="None" Price="3175" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Ring_Sky_Rare" Category="Accessory" Type="Ring" Slot="6" Rate="50" Friendship="None" Price="3175" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Ring_Bonaparte" Category="Accessory" Type="Ring" Slot="6" Rate="50" Friendship="None" Price="3000" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Ring_Bonaparte_Rare" Category="Accessory" Type="Ring" Slot="6" Rate="50" Friendship="None" Price="4125" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Ring_Bonaparte_Rare" Category="Accessory" Type="Ring" Slot="7" Rate="50" Friendship="None" Price="4125" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Ring_BlackIron" Category="Accessory" Type="Ring" Slot="7" Rate="50" Friendship="None" Price="3375" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Ring_BlackIron_Rare" Category="Accessory" Type="Ring" Slot="7" Rate="50" Friendship="None" Price="5625" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Ring_BlackIron_Rare" Category="Accessory" Type="Ring" Slot="8" Rate="50" Friendship="None" Price="5625" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Ring_Draky" Category="Accessory" Type="Ring" Slot="8" Rate="50" Friendship="None" Price="4500" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Ring_Draky_Rare" Category="Accessory" Type="Ring" Slot="8" Rate="50" Friendship="None" Price="7500" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Ring_Draky_Rare" Category="Accessory" Type="Ring" Slot="9" Rate="50" Friendship="None" Price="7500" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Ring_BlackIronEnhanced" Category="Accessory" Type="Ring" Slot="9" Rate="50" Friendship="None" Price="6400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Ring_BlackIronEnhanced_Rare" Category="Accessory" Type="Ring" Slot="9" Rate="50" Friendship="None" Price="9800" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Ring_BlackIronEnhanced_Rare" Category="Accessory" Type="Ring" Slot="10" Rate="100" Friendship="None" Price="9800" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bracelet_Silver" Category="Accessory" Type="Bracelet" Slot="11" Rate="50" Friendship="None" Price="250" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bracelet_Silver_Rare" Category="Accessory" Type="Bracelet" Slot="11" Rate="50" Friendship="None" Price="375" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bracelet_Silver_Rare" Category="Accessory" Type="Bracelet" Slot="12" Rate="50" Friendship="None" Price="375" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bracelet_Gold" Category="Accessory" Type="Bracelet" Slot="12" Rate="50" Friendship="None" Price="500" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bracelet_Gold_Rare" Category="Accessory" Type="Bracelet" Slot="12" Rate="50" Friendship="None" Price="750" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bracelet_Gold_Rare" Category="Accessory" Type="Bracelet" Slot="13" Rate="50" Friendship="None" Price="750" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bracelet_Platinum" Category="Accessory" Type="Bracelet" Slot="13" Rate="50" Friendship="None" Price="1125" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bracelet_Platinum_Rare" Category="Accessory" Type="Bracelet" Slot="13" Rate="50" Friendship="None" Price="1500" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bracelet_Platinum_Rare" Category="Accessory" Type="Bracelet" Slot="14" Rate="50" Friendship="None" Price="1500" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bracelet_Mithril" Category="Accessory" Type="Bracelet" Slot="14" Rate="50" Friendship="None" Price="1750" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bracelet_Mithril_Rare" Category="Accessory" Type="Bracelet" Slot="14" Rate="50" Friendship="None" Price="2625" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bracelet_Mithril_Rare" Category="Accessory" Type="Bracelet" Slot="15" Rate="50" Friendship="None" Price="2625" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bracelet_Arch" Category="Accessory" Type="Bracelet" Slot="15" Rate="50" Friendship="None" Price="2750" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bracelet_Arch_Rare" Category="Accessory" Type="Bracelet" Slot="15" Rate="50" Friendship="None" Price="3175" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bracelet_Arch_Rare" Category="Accessory" Type="Bracelet" Slot="16" Rate="50" Friendship="None" Price="3175" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bracelet_BonaparteGold" Category="Accessory" Type="Bracelet" Slot="16" Rate="50" Friendship="None" Price="3000" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bracelet_BonaparteGold_Rare" Category="Accessory" Type="Bracelet" Slot="16" Rate="50" Friendship="None" Price="4125" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bracelet_BonaparteGold_Rare" Category="Accessory" Type="Bracelet" Slot="17" Rate="50" Friendship="None" Price="4125" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bracelet_BlackIron" Category="Accessory" Type="Bracelet" Slot="17" Rate="50" Friendship="None" Price="3375" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bracelet_BlackIron_Rare" Category="Accessory" Type="Bracelet" Slot="17" Rate="50" Friendship="None" Price="5625" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bracelet_BlackIron_Rare" Category="Accessory" Type="Bracelet" Slot="18" Rate="50" Friendship="None" Price="5625" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bracelet_Draky" Category="Accessory" Type="Bracelet" Slot="18" Rate="50" Friendship="None" Price="4500" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bracelet_Draky_Rare" Category="Accessory" Type="Bracelet" Slot="18" Rate="50" Friendship="None" Price="7500" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bracelet_Draky_Rare" Category="Accessory" Type="Bracelet" Slot="19" Rate="50" Friendship="None" Price="7500" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bracelet_BlackIronEnhanced" Category="Accessory" Type="Bracelet" Slot="19" Rate="50" Friendship="None" Price="6400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bracelet_BlackIronEnhanced_Rare" Category="Accessory" Type="Bracelet" Slot="19" Rate="50" Friendship="None" Price="9800" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bracelet_BlackIronEnhanced_Rare" Category="Accessory" Type="Bracelet" Slot="20" Rate="100" Friendship="None" Price="9800" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Jewel_White" Category="Material" Type="PsionicStone" Slot="21" Rate="100" Friendship="None" Price="550" RandomPriceScript="RandomPrice_Material"/>
+				<property Item="Jewel_White_Perfect" Category="Material" Type="PsionicStone" Slot="22" Rate="100" Friendship="Friendly" Price="2150" RandomPriceScript="RandomPrice_Material"/>
+				<property Item="Jewel_White_Shine" Category="Material" Type="PsionicStone" Slot="23" Rate="100" Friendship="Honored" Price="8950" RandomPriceScript="RandomPrice_Material"/>
+				<property Item="Jewel_Black" Category="Material" Type="PsionicStone" Slot="24" Rate="100" Friendship="None" Price="550" RandomPriceScript="RandomPrice_Material"/>
+				<property Item="Jewel_Black_Perfect" Category="Material" Type="PsionicStone" Slot="25" Rate="100" Friendship="Friendly" Price="2150" RandomPriceScript="RandomPrice_Material"/>
+				<property Item="Jewel_Black_Shine" Category="Material" Type="PsionicStone" Slot="26" Rate="100" Friendship="Honored" Price="8950" RandomPriceScript="RandomPrice_Material"/>
+				<property Item="Jewel_Red" Category="Material" Type="PsionicStone" Slot="27" Rate="100" Friendship="None" Price="550" RandomPriceScript="RandomPrice_Material"/>
+				<property Item="Jewel_Red_Perfect" Category="Material" Type="PsionicStone" Slot="28" Rate="100" Friendship="Friendly" Price="2150" RandomPriceScript="RandomPrice_Material"/>
+				<property Item="Jewel_Red_Shine" Category="Material" Type="PsionicStone" Slot="29" Rate="100" Friendship="Honored" Price="8950" RandomPriceScript="RandomPrice_Material"/>
+				<property Item="Jewel_Yellow" Category="Material" Type="PsionicStone" Slot="30" Rate="100" Friendship="None" Price="550" RandomPriceScript="RandomPrice_Material"/>
+				<property Item="Jewel_Yellow_Perfect" Category="Material" Type="PsionicStone" Slot="31" Rate="100" Friendship="Friendly" Price="2150" RandomPriceScript="RandomPrice_Material"/>
+				<property Item="Jewel_Yellow_Shine" Category="Material" Type="PsionicStone" Slot="32" Rate="100" Friendship="Honored" Price="8950" RandomPriceScript="RandomPrice_Material"/>
+				<property Item="Jewel_FiveColor" Category="Material" Type="PsionicStone" Slot="33" Rate="100" Friendship="None" Price="700" RandomPriceScript="RandomPrice_Material"/>
+				<property Item="Jewel_FiveColor_Perfect" Category="Material" Type="PsionicStone" Slot="34" Rate="100" Friendship="Friendly" Price="2600" RandomPriceScript="RandomPrice_Material"/>
+				<property Item="Jewel_FiveColor_Shine" Category="Material" Type="PsionicStone" Slot="35" Rate="100" Friendship="Honored" Price="10300" RandomPriceScript="RandomPrice_Material"/>
+				<property Item="Jewel_DrakyHeart_Broken" Category="Material" Type="PsionicStone" Slot="36" Rate="100" Friendship="None" Price="700" RandomPriceScript="RandomPrice_Material"/>
+				<property Item="Jewel_DrakyHeart" Category="Material" Type="PsionicStone" Slot="37" Rate="100" Friendship="Friendly" Price="2600" RandomPriceScript="RandomPrice_Material"/>
+				<property Item="Jewel_DrakyHeart_Perfect" Category="Material" Type="PsionicStone" Slot="38" Rate="100" Friendship="Honored" Price="10300" RandomPriceScript="RandomPrice_Material"/>
+				<property Item="Jewel_DrakyHeart_Shine" Category="Material" Type="PsionicStone" Slot="39" Rate="100" Friendship="Revered" Price="43400" RandomPriceScript="RandomPrice_Material"/>
+			</ItemList>
+			<ValkyrieShop>
+				<property GoodsType="Recipe" Recipe="Bangle_JewelCollector_Set" Category="Weapon" Type="Recipe" Friendship="None" Price="1" Quest="EP1_Quest_Sabana04"/>
+				<property GoodsType="Recipe" Recipe="Ring_JewelCollector_Set" Category="Accessory" Type="Recipe" Friendship="None" Price="1" Quest="EP1_Quest_Sabana05"/>
+				<property GoodsType="Recipe" Recipe="Amulet_JewelCollector_Set" Category="Tool" Type="Recipe" Friendship="None" Price="1" Quest="EP1_Quest_Sabana06"/>
+			</ValkyrieShop>
+		</class>
+		<class name="PsistoneShop" Title="이능석 상점" Image="" Opened="false">
+			<Dialog>
+				<property name="Visit">
+					<Texts>
+						<property Text="이능석은 발할라 정부의 공시가를 기준으로 저희 중개인을 통해 자유롭게 거래되고 있습니다."/>
+						<property Text="이능석은 가치만큼이나 저같은 전문 중개인이 있을 정도로 수요도 엄청난 물건입니다."/>
+					</Texts>
+				</property>
+				<property name="Thanks">
+					<Texts>
+						<property Text="여러분의 선택으로 행복한 하루가 되시길 바라겠습니다."/>
+						<property Text="찾아주셔서 감사합니다."/>
+					</Texts>
+				</property>
+				<property name="Select">
+					<Texts>
+						<property Text="더 좋은 등급의 물건을 찾으시는 거라면 일정 이상의 거래를 하셔야 해요."/>
+						<property Text="상급의 이능석의 거래는 단골 고객에게만 제공하고 있습니다."/>
+					</Texts>
+				</property>
+			</Dialog>
+			<ItemList>
+				<property Item="PsionicStone_FlameFragment" Category="Material" Type="PsionicStone" Slot="1" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="100"/>
+				<property Item="PsionicStone_FlameElement" Category="Material" Type="PsionicStone" Slot="2" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="500"/>
+				<property Item="PsionicStone_FlameCrystal" Category="Material" Type="PsionicStone" Slot="3" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="2500"/>
+				<property Item="PsionicStone_FlameCore" Category="Material" Type="PsionicStone" Slot="4" Rate="100" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="12500"/>
+				<property Item="PsionicStone_FlashFragment" Category="Material" Type="PsionicStone" Slot="5" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="100"/>
+				<property Item="PsionicStone_FlashElement" Category="Material" Type="PsionicStone" Slot="6" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="500"/>
+				<property Item="PsionicStone_FlashCrystal" Category="Material" Type="PsionicStone" Slot="7" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="2500"/>
+				<property Item="PsionicStone_FlashCore" Category="Material" Type="PsionicStone" Slot="8" Rate="100" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="12500"/>
+				<property Item="PsionicStone_FrostFragment" Category="Material" Type="PsionicStone" Slot="9" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="100"/>
+				<property Item="PsionicStone_FrostElement" Category="Material" Type="PsionicStone" Slot="10" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="500"/>
+				<property Item="PsionicStone_FrostCrystal" Category="Material" Type="PsionicStone" Slot="11" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="2500"/>
+				<property Item="PsionicStone_FrostCore" Category="Material" Type="PsionicStone" Slot="12" Rate="100" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="12500"/>
+				<property Item="PsionicStone_MistFragment" Category="Material" Type="PsionicStone" Slot="13" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="100"/>
+				<property Item="PsionicStone_MistElement" Category="Material" Type="PsionicStone" Slot="14" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="500"/>
+				<property Item="PsionicStone_MistCrystal" Category="Material" Type="PsionicStone" Slot="15" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="2500"/>
+				<property Item="PsionicStone_MistCore" Category="Material" Type="PsionicStone" Slot="16" Rate="100" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="12500"/>
+				<property Item="PsionicStone_StormFragment" Category="Material" Type="PsionicStone" Slot="17" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="100"/>
+				<property Item="PsionicStone_StormElement" Category="Material" Type="PsionicStone" Slot="18" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="500"/>
+				<property Item="PsionicStone_StormCrystal" Category="Material" Type="PsionicStone" Slot="19" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="2500"/>
+				<property Item="PsionicStone_StormCore" Category="Material" Type="PsionicStone" Slot="20" Rate="100" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="12500"/>
+				<property Item="PsionicStone_VerdureFragment" Category="Material" Type="PsionicStone" Slot="21" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="100"/>
+				<property Item="PsionicStone_VerdureElement" Category="Material" Type="PsionicStone" Slot="22" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="500"/>
+				<property Item="PsionicStone_VerdureCrystal" Category="Material" Type="PsionicStone" Slot="23" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="2500"/>
+				<property Item="PsionicStone_VerdureCore" Category="Material" Type="PsionicStone" Slot="24" Rate="100" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="12500"/>
+				<property Item="Extractor" Category="Tool" Type="Extractor" Slot="25" Rate="100" Friendship="None" RandomPriceScript="None" Price="250"/>
+				<property Item="Extractor_Uncommon" Category="Tool" Type="Extractor" Slot="26" Rate="100" Friendship="None" RandomPriceScript="None" Price="500"/>
+				<property Item="Extractor_Rare" Category="Tool" Type="Extractor" Slot="27" Rate="100" Friendship="Friendly" RandomPriceScript="None" Price="1000"/>
+				<property Item="Extractor_Epic" Category="Tool" Type="Extractor" Slot="28" Rate="100" Friendship="Honored" RandomPriceScript="None" Price="2500"/>
+				<property Item="Extractor_Legend" Category="Tool" Type="Extractor" Slot="29" Rate="100" Friendship="Revered" RandomPriceScript="None" Price="12500"/>
+			</ItemList>
+			<ValkyrieShop>
+				<property GoodsType="Recipe" Recipe="Jacket_Extractor_Set" Category="Armor" Type="Recipe" Friendship="None" Price="1" Quest="EP1_Quest_Camila08"/>
+				<property GoodsType="Recipe" Recipe="Wrist_Extractor_Set" Category="Armor" Type="Recipe" Friendship="None" Price="1" Quest="EP1_Quest_Camila09"/>
+				<property GoodsType="Recipe" Recipe="Sneakers_Extractor_Set" Category="Armor" Type="Recipe" Friendship="None" Price="1" Quest="EP1_Quest_Camila10"/>
+				<property GoodsType="Recipe" Recipe="Coat_Extractor_Set" Category="Armor" Type="Recipe" Friendship="None" Price="1" Quest="EP1_Quest_Camila11"/>
+				<property GoodsType="Recipe" Recipe="Ring_Extractor_Set" Category="Accessory" Type="Recipe" Friendship="None" Price="1" Quest="EP1_Quest_Camila12"/>
+				<property GoodsType="Recipe" Recipe="Boots_Extractor_Set" Category="Armor" Type="Recipe" Friendship="None" Price="1" Quest="EP1_Quest_Camila13"/>
+			</ValkyrieShop>
+		</class>
+		<class name="AlchemyShop" Title="연금 상점" Image="" Opened="false">
+			<Dialog>
+				<property name="Visit">
+					<Texts>
+						<property Text="내 물건은 네가 필요한 것들이지."/>
+						<property Text="가치 없는 물건이란 없지."/>
+					</Texts>
+				</property>
+				<property name="Thanks">
+					<Texts>
+						<property Text="가치는 정당하게 지불되었어. 고마워."/>
+						<property Text="다음에도 또 찾아와. 네가 원하는 것을 팔아주지."/>
+					</Texts>
+				</property>
+				<property name="Select">
+					<Texts>
+						<property Text="가치 판단이 어렵다고 충동 구매는 하지마. 후회한다."/>
+						<property Text="지금보다 더 싼 가격에 팔 수도 있지. 하지만 반대도 가능해."/>
+					</Texts>
+				</property>
+			</Dialog>
+			<ItemList>
+				<property Item="Potion_HP_Uncommon" Category="Consume" Type="Potion" Slot="1" Rate="100" Friendship="None" RandomPriceScript="None" Price="60"/>
+				<property Item="Potion_HP_Rare" Category="Consume" Type="Potion" Slot="2" Rate="100" Friendship="None" RandomPriceScript="None" Price="180"/>
+				<property Item="Potion_HP_Epic" Category="Consume" Type="Potion" Slot="3" Rate="100" Friendship="Friendly" RandomPriceScript="None" Price="540"/>
+				<property Item="Potion_HP_Legend" Category="Consume" Type="Potion" Slot="4" Rate="100" Friendship="Honored" RandomPriceScript="None" Price="1620"/>
+				<property Item="Potion_Cost_Uncommon" Category="Consume" Type="Potion" Slot="5" Rate="100" Friendship="None" RandomPriceScript="None" Price="120"/>
+				<property Item="Potion_Cost_Rare" Category="Consume" Type="Potion" Slot="6" Rate="100" Friendship="Friendly" RandomPriceScript="None" Price="360"/>
+				<property Item="Potion_Cost_Epic" Category="Consume" Type="Potion" Slot="7" Rate="100" Friendship="Honored" RandomPriceScript="None" Price="1080"/>
+				<property Item="Potion_Cost_Legend" Category="Consume" Type="Potion" Slot="8" Rate="100" Friendship="Revered" RandomPriceScript="None" Price="3240"/>
+				<property Item="Potion_Brave" Category="Consume" Type="Potion" Slot="9" Rate="100" Friendship="None" RandomPriceScript="None" Price="200"/>
+				<property Item="Potion_Faith" Category="Consume" Type="Potion" Slot="10" Rate="100" Friendship="None" RandomPriceScript="None" Price="200"/>
+				<property Item="Potion_Perseverance" Category="Consume" Type="Potion" Slot="11" Rate="100" Friendship="None" RandomPriceScript="None" Price="600"/>
+				<property Item="Potion_Concentration" Category="Consume" Type="Potion" Slot="12" Rate="100" Friendship="None" RandomPriceScript="None" Price="600"/>
+				<property Item="Potion_Reinforcement" Category="Consume" Type="Potion" Slot="13" Rate="100" Friendship="Friendly" RandomPriceScript="None" Price="800"/>
+				<property Item="Potion_Discipline" Category="Consume" Type="Potion" Slot="14" Rate="100" Friendship="Friendly" RandomPriceScript="None" Price="800"/>
+				<property Item="Bone_Beast" Category="Material" Type="Bone" Slot="15" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="80"/>
+				<property Item="Bone_SavageBeast" Category="Material" Type="Bone" Slot="16" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="210"/>
+				<property Item="Bone_Monster" Category="Material" Type="Bone" Slot="17" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="660"/>
+				<property Item="Bone_EvilMonster" Category="Material" Type="Bone" Slot="18" Rate="100" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="2390"/>
+				<property Item="Bone_Draky" Category="Material" Type="Bone" Slot="19" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="80"/>
+				<property Item="Bone_Draky_Rare" Category="Material" Type="Bone" Slot="20" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="210"/>
+				<property Item="Bone_Draky_Epic" Category="Material" Type="Bone" Slot="21" Rate="100" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="660"/>
+				<property Item="Bone_Draky_Legend" Category="Material" Type="Bone" Slot="22" Rate="100" Friendship="Revered" RandomPriceScript="RandomPrice_Material" Price="2390"/>
+				<property Item="Claw_Beast" Category="Material" Type="Claw" Slot="23" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="80"/>
+				<property Item="Claw_SavageBeast" Category="Material" Type="Claw" Slot="24" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="210"/>
+				<property Item="Claw_Monster" Category="Material" Type="Claw" Slot="25" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="660"/>
+				<property Item="Claw_EvilMonster" Category="Material" Type="Claw" Slot="26" Rate="100" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="2390"/>
+				<property Item="Fang_Beast" Category="Material" Type="Fang" Slot="27" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="80"/>
+				<property Item="Fang_SavageBeast" Category="Material" Type="Fang" Slot="28" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="210"/>
+				<property Item="Fang_Monster" Category="Material" Type="Fang" Slot="29" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="660"/>
+				<property Item="Fang_EvilMonster" Category="Material" Type="Fang" Slot="30" Rate="100" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="2390"/>
+				<property Item="Pocket_Poison_Small" Category="Material" Type="Pocket" Slot="31" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="60"/>
+				<property Item="Pocket_Poison" Category="Material" Type="Pocket" Slot="32" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="160"/>
+				<property Item="Pocket_Poison_Big" Category="Material" Type="Pocket" Slot="33" Rate="100" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="1660"/>
+				<property Item="Pocket_Poison2_Small" Category="Material" Type="Pocket" Slot="34" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="260"/>
+				<property Item="Pocket_Poison2" Category="Material" Type="Pocket" Slot="35" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="720"/>
+				<property Item="Pocket_Poison2_Big" Category="Material" Type="Pocket" Slot="36" Rate="100" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="3880"/>
+				<property Item="Pocket_Oil" Category="Material" Type="Pocket" Slot="37" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="12"/>
+				<property Item="Pocket_Oil_Uncommon" Category="Material" Type="Pocket" Slot="38" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="120"/>
+				<property Item="Pocket_Oil_Rare" Category="Material" Type="Pocket" Slot="39" Rate="100" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="1200"/>
+				<property Item="Pocket_Oil_Epic" Category="Material" Type="Pocket" Slot="40" Rate="100" Friendship="Revered" RandomPriceScript="RandomPrice_Material" Price="12000"/>
+			</ItemList>
+			<ValkyrieShop>
+				<property GoodsType="Recipe" Recipe="Amulet_Collector_Set" Category="Tool" Type="Recipe" Friendship="None" Price="1" Quest="EP1_Quest_Sam07"/>
+				<property GoodsType="Recipe" Recipe="Bracelet_Collector_Set" Category="Accessory" Type="Recipe" Friendship="None" Price="1" Quest="EP1_Quest_Sam08"/>
+				<property GoodsType="Recipe" Recipe="Coat_Collector_Set" Category="Armor" Type="Recipe" Friendship="None" Price="1" Quest="EP1_Quest_Sam09"/>
+			</ValkyrieShop>
+		</class>
+		<class name="MaterialShop" Title="잡화 상점" Image="" Opened="false">
+			<Dialog>
+				<property name="Visit">
+					<Texts>
+						<property Text="자 필요한 물건이라면 바로바로 가져가세요!"/>
+						<property Text="고민할 필요 없습니다. 선생님이 원한 물건입니다!"/>
+					</Texts>
+				</property>
+				<property name="Thanks">
+					<Texts>
+						<property Text="오늘도 감사합니다. 선생님."/>
+						<property Text="정말 감사합니다! 다음에도 또 찾아와 주세요!"/>
+					</Texts>
+				</property>
+				<property name="Select">
+					<Texts>
+						<property Text="보기만 하고 그냥 가시면 제가 속상합니다."/>
+						<property Text="오늘 안 사면 내일 후회합니다."/>
+					</Texts>
+				</property>
+			</Dialog>
+			<ItemList>
+				<property Item="FiberReinforced" Category="Material" Type="Fiber" Slot="2" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="20"/>
+				<property Item="FiberReinforced_Uncomon" Category="Material" Type="Fiber" Slot="2" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="70"/>
+				<property Item="FiberReinforced_Rare" Category="Material" Type="Fiber" Slot="3" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="310"/>
+				<property Item="FiberReinforced_Epic" Category="Material" Type="Fiber" Slot="3" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="1430"/>
+				<property Item="FiberBlackIron" Category="Material" Type="Fiber" Slot="4" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="90"/>
+				<property Item="FiberBlackIron_Uncomon" Category="Material" Type="Fiber" Slot="4" Rate="50" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="370"/>
+				<property Item="FiberBlackIron_Rare" Category="Material" Type="Fiber" Slot="5" Rate="50" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="1610"/>
+				<property Item="FiberBlackIron_Epic" Category="Material" Type="Fiber" Slot="5" Rate="50" Friendship="Revered" RandomPriceScript="RandomPrice_Material" Price="7330"/>
+				<property Item="FiberYasha" Category="Material" Type="Fiber" Slot="1" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="70"/>
+				<property Item="Skin_Beast" Category="Material" Type="Skin" Slot="6" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="75"/>
+				<property Item="Skin_SavageBeast" Category="Material" Type="Skin" Slot="6" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="245"/>
+				<property Item="Skin_Monster" Category="Material" Type="Skin" Slot="7" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="835"/>
+				<property Item="Skin_EvilMonster" Category="Material" Type="Skin" Slot="7" Rate="50" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="3005"/>
+				<property Item="Skin_Yasha" Category="Material" Type="Skin" Slot="8" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="70"/>
+				<property Item="Skin_Yasha_Uncommon" Category="Material" Type="Skin" Slot="9" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="310"/>
+				<property Item="Skin_Yasha_Rare" Category="Material" Type="Skin" Slot="9" Rate="50" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="1030"/>
+				<property Item="Skin_Neguri" Category="Material" Type="Skin" Slot="10" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="125"/>
+				<property Item="Skin_Neguri_Uncommon" Category="Material" Type="Skin" Slot="11" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="875"/>
+				<property Item="Skin_Neguri_Rare" Category="Material" Type="Skin" Slot="11" Rate="50" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="5125"/>
+				<property Item="Skin_Dorori" Category="Material" Type="Skin" Slot="12" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="150"/>
+				<property Item="Skin_KingDorori" Category="Material" Type="Skin" Slot="12" Rate="50" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="950"/>
+				<property Item="Skin_Draky" Category="Material" Type="Skin" Slot="13" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="480"/>
+				<property Item="Skin_Draky_Rare" Category="Material" Type="Skin" Slot="14" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="1940"/>
+				<property Item="Skin_Draky_Epic" Category="Material" Type="Skin" Slot="14" Rate="50" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="8320"/>
+				<property Item="Scale_Draky" Category="Material" Type="Skin" Slot="15" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="270"/>
+				<property Item="Scale_Draky_Rare" Category="Material" Type="Skin" Slot="15" Rate="50" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="1310"/>
+				<property Item="Scale_Draky_Epic" Category="Material" Type="Skin" Slot="16" Rate="50" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="6430"/>
+				<property Item="Scale_Draky_Legend" Category="Material" Type="Skin" Slot="16" Rate="100" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="31790"/>
+				<property Item="Skin_Ice" Category="Material" Type="Skin" Slot="17" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="980"/>
+				<property Item="Skin_Lava" Category="Material" Type="Skin" Slot="17" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="980"/>
+				<property Item="Skin_Lightning" Category="Material" Type="Skin" Slot="17" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="980"/>
+				<property Item="Skin_Ice_Epic" Category="Material" Type="Skin" Slot="18" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="2600"/>
+				<property Item="Skin_Lava_Epic" Category="Material" Type="Skin" Slot="18" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="2600"/>
+				<property Item="Skin_Lightning_Epic" Category="Material" Type="Skin" Slot="18" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="2600"/>
+			</ItemList>
+			<ValkyrieShop>
+				<property GoodsType="Recipe" Recipe="Wrist_Tanner_Set" Category="Armor" Type="Recipe" Friendship="None" Price="1" Quest="EP1_Quest_AL05"/>
+				<property GoodsType="Recipe" Recipe="Sneakers_Tanner_Set" Category="Armor" Type="Recipe" Friendship="None" Price="1" Quest="EP1_Quest_AL06"/>
+				<property GoodsType="Recipe" Recipe="Amulet_Tanner_Set" Category="Tool" Type="Recipe" Friendship="None" Price="1" Quest="EP1_Quest_AL07"/>
+			</ValkyrieShop>
+		</class>
+		<class name="WeaponShop" Title="무기 상점" Image="" Opened="false">
+			<Dialog>
+				<property name="Visit">
+					<Texts>
+						<property Text="우리 가게 물건은 정말 좋은 물건 뿐이지."/>
+						<property Text="왠만한 물건은 다 있어. 천천히 둘러봐."/>
+					</Texts>
+				</property>
+				<property name="Thanks">
+					<Texts>
+						<property Text="고마워. 필요한 것이 있으면 또 찾아와."/>
+						<property Text="다음에는 더 좋은 물건을 가져다 놓도록 할게."/>
+					</Texts>
+				</property>
+				<property name="Select">
+					<Texts>
+						<property Text="신뢰가 쌓이면 조금 더 좋은 물건을 보여줄게."/>
+						<property Text="내가 차라리 골라줄까?"/>
+					</Texts>
+				</property>
+			</Dialog>
+			<ItemList>
+				<property Item="Sword_AscaBlade_Black" Category="Weapon" Type="Sword" Slot="1" Rate="50" Friendship="None" Price="200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_CarbonBlade_Black_Rare" Category="Weapon" Type="Sword" Slot="1" Rate="50" Friendship="None" Price="300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_CarbonBlade_Black_Rare" Category="Weapon" Type="Sword" Slot="2" Rate="50" Friendship="None" Price="300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_TitanBlade" Category="Weapon" Type="Sword" Slot="2" Rate="50" Friendship="None" Price="400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_TitanBlade_Rare" Category="Weapon" Type="Sword" Slot="2" Rate="50" Friendship="None" Price="600" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_TitanBlade_Rare" Category="Weapon" Type="Sword" Slot="3" Rate="50" Friendship="None" Price="600" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_AscaBlade_Red" Category="Weapon" Type="Sword" Slot="3" Rate="50" Friendship="None" Price="900" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_AscaBlade_Red_Rare" Category="Weapon" Type="Sword" Slot="3" Rate="50" Friendship="None" Price="1200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_AscaBlade_Red_Rare" Category="Weapon" Type="Sword" Slot="4" Rate="50" Friendship="None" Price="1200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_SharpBlade" Category="Weapon" Type="Sword" Slot="4" Rate="50" Friendship="None" Price="1400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_SharpBlade_Rare" Category="Weapon" Type="Sword" Slot="4" Rate="50" Friendship="None" Price="2100" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_SharpBlade_Rare" Category="Weapon" Type="Sword" Slot="5" Rate="50" Friendship="None" Price="2100" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_Pulse" Category="Weapon" Type="Sword" Slot="5" Rate="50" Friendship="None" Price="2200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_Pulse_Rare" Category="Weapon" Type="Sword" Slot="5" Rate="50" Friendship="None" Price="2800" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_Pulse_Rare" Category="Weapon" Type="Sword" Slot="6" Rate="50" Friendship="None" Price="2800" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_Cyrus" Category="Weapon" Type="Sword" Slot="6" Rate="50" Friendship="None" Price="2500" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_Cyruse_Rare" Category="Weapon" Type="Sword" Slot="6" Rate="50" Friendship="None" Price="3300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_Cyruse_Rare" Category="Weapon" Type="Sword" Slot="7" Rate="50" Friendship="None" Price="3300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_BlackIron" Category="Weapon" Type="Sword" Slot="7" Rate="50" Friendship="None" Price="3000" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_BlackIron_Rare" Category="Weapon" Type="Sword" Slot="7" Rate="50" Friendship="None" Price="4500" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_BlackIron_Rare" Category="Weapon" Type="Sword" Slot="8" Rate="50" Friendship="None" Price="4500" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_Sever" Category="Weapon" Type="Sword" Slot="8" Rate="50" Friendship="None" Price="4250" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_Sever_Rare" Category="Weapon" Type="Sword" Slot="8" Rate="50" Friendship="None" Price="6000" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_Sever_Rare" Category="Weapon" Type="Sword" Slot="9" Rate="50" Friendship="None" Price="6000" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_Unicorn" Category="Weapon" Type="Sword" Slot="9" Rate="50" Friendship="None" Price="5200" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_Unicorn_Rare" Category="Weapon" Type="Sword" Slot="9" Rate="50" Friendship="None" Price="9200" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_Unicorn_Rare" Category="Weapon" Type="Sword" Slot="10" Rate="100" Friendship="None" Price="9200" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Carbon" Category="Weapon" Type="Bangle" Slot="11" Rate="50" Friendship="None" Price="200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Carbon_Rare" Category="Weapon" Type="Bangle" Slot="11" Rate="50" Friendship="None" Price="300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Carbon_Rare" Category="Weapon" Type="Bangle" Slot="12" Rate="50" Friendship="None" Price="300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Carbon_Blue" Category="Weapon" Type="Bangle" Slot="12" Rate="50" Friendship="None" Price="400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Carbon_Blue_Rare2" Category="Weapon" Type="Bangle" Slot="12" Rate="50" Friendship="None" Price="600" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Carbon_Blue_Rare2" Category="Weapon" Type="Bangle" Slot="13" Rate="50" Friendship="None" Price="600" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_EastAlliance" Category="Weapon" Type="Bangle" Slot="13" Rate="50" Friendship="None" Price="900" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_EastAlliance_Rare" Category="Weapon" Type="Bangle" Slot="13" Rate="50" Friendship="None" Price="1200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_EastAlliance_Rare" Category="Weapon" Type="Bangle" Slot="14" Rate="50" Friendship="None" Price="1200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Etros_New" Category="Weapon" Type="Bangle" Slot="14" Rate="50" Friendship="None" Price="1400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Etros_New_Rare" Category="Weapon" Type="Bangle" Slot="14" Rate="50" Friendship="None" Price="2100" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Etros_New_Rare" Category="Weapon" Type="Bangle" Slot="15" Rate="50" Friendship="None" Price="2100" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Karas" Category="Weapon" Type="Bangle" Slot="15" Rate="50" Friendship="None" Price="2200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Karas_Rare" Category="Weapon" Type="Bangle" Slot="15" Rate="50" Friendship="None" Price="3300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Karas_Rare" Category="Weapon" Type="Bangle" Slot="16" Rate="50" Friendship="None" Price="3300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Cyrus" Category="Weapon" Type="Bangle" Slot="16" Rate="50" Friendship="None" Price="2400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Cyrus_Rare" Category="Weapon" Type="Bangle" Slot="16" Rate="50" Friendship="None" Price="3300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Cyrus_Rare" Category="Weapon" Type="Bangle" Slot="17" Rate="50" Friendship="None" Price="3300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_BlackIron" Category="Weapon" Type="Bangle" Slot="17" Rate="50" Friendship="None" Price="2700" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_BlackIron_Rare" Category="Weapon" Type="Bangle" Slot="17" Rate="50" Friendship="None" Price="4500" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_BlackIron_Rare" Category="Weapon" Type="Bangle" Slot="18" Rate="50" Friendship="None" Price="4500" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Etros_Special" Category="Weapon" Type="Bangle" Slot="18" Rate="50" Friendship="None" Price="4250" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Etros_Special_Rare" Category="Weapon" Type="Bangle" Slot="18" Rate="50" Friendship="None" Price="6000" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Etros_Special_Rare" Category="Weapon" Type="Bangle" Slot="19" Rate="50" Friendship="None" Price="6000" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Thorn" Category="Weapon" Type="Bangle" Slot="19" Rate="50" Friendship="None" Price="5200" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Thorn_Rare" Category="Weapon" Type="Bangle" Slot="19" Rate="50" Friendship="None" Price="9200" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Thorn_Rare" Category="Weapon" Type="Bangle" Slot="20" Rate="100" Friendship="None" Price="9200" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="BattleGlove_IronSpike" Category="Weapon" Type="BattleGlove" Slot="21" Rate="50" Friendship="None" Price="200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="BattleGlove_IronSpike_Rare" Category="Weapon" Type="BattleGlove" Slot="21" Rate="50" Friendship="None" Price="300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="BattleGlove_IronSpike_Rare" Category="Weapon" Type="BattleGlove" Slot="22" Rate="50" Friendship="None" Price="300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="BattleGlove_CarbonFist" Category="Weapon" Type="BattleGlove" Slot="22" Rate="50" Friendship="None" Price="400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="BattleGlove_CarbonFist_Rare" Category="Weapon" Type="BattleGlove" Slot="22" Rate="50" Friendship="None" Price="600" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="BattleGlove_CarbonFist_Rare" Category="Weapon" Type="BattleGlove" Slot="23" Rate="50" Friendship="None" Price="600" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="BattleGlove_TitanFist" Category="Weapon" Type="BattleGlove" Slot="23" Rate="50" Friendship="None" Price="900" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="BattleGlove_TitanFist_Rare" Category="Weapon" Type="BattleGlove" Slot="23" Rate="50" Friendship="None" Price="1200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="BattleGlove_TitanFist_Rare" Category="Weapon" Type="BattleGlove" Slot="24" Rate="50" Friendship="None" Price="1200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="BattleGlove_OgreFist" Category="Weapon" Type="BattleGlove" Slot="24" Rate="50" Friendship="None" Price="1400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="BattleGlove_OgreFist_Rare" Category="Weapon" Type="BattleGlove" Slot="24" Rate="50" Friendship="None" Price="2100" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="BattleGlove_OgreFist_Rare" Category="Weapon" Type="BattleGlove" Slot="25" Rate="50" Friendship="None" Price="2100" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="BattleGlove_TrolleFist" Category="Weapon" Type="BattleGlove" Slot="25" Rate="50" Friendship="None" Price="2200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="BattleGlove_TrolleFist_Rare" Category="Weapon" Type="BattleGlove" Slot="25" Rate="50" Friendship="None" Price="2700" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="BattleGlove_TrolleFist_Rare" Category="Weapon" Type="BattleGlove" Slot="26" Rate="50" Friendship="None" Price="2700" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="BattleGlove_GiantFist" Category="Weapon" Type="BattleGlove" Slot="26" Rate="50" Friendship="None" Price="2400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="BattleGlove_GiantFist_Rare" Category="Weapon" Type="BattleGlove" Slot="26" Rate="50" Friendship="None" Price="3300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="BattleGlove_GiantFist_Rare" Category="Weapon" Type="BattleGlove" Slot="27" Rate="50" Friendship="None" Price="3300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="BattleGlove_BlackIronFist" Category="Weapon" Type="BattleGlove" Slot="27" Rate="50" Friendship="None" Price="2700" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="BattleGlove_BlackIronFist_Rare" Category="Weapon" Type="BattleGlove" Slot="27" Rate="50" Friendship="None" Price="4500" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="BattleGlove_BlackIronFist_Rare" Category="Weapon" Type="BattleGlove" Slot="28" Rate="50" Friendship="None" Price="4500" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="BattleGlove_BlackIronFist2" Category="Weapon" Type="BattleGlove" Slot="28" Rate="50" Friendship="None" Price="4250" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="BattleGlove_BlackIronFist_Rare2" Category="Weapon" Type="BattleGlove" Slot="28" Rate="50" Friendship="None" Price="6000" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="BattleGlove_BlackIronFist_Rare2" Category="Weapon" Type="BattleGlove" Slot="29" Rate="50" Friendship="None" Price="6000" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="BattleGlove_YellowIronFist" Category="Weapon" Type="BattleGlove" Slot="29" Rate="50" Friendship="None" Price="5200" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="BattleGlove_YellowIronFist_Rare" Category="Weapon" Type="BattleGlove" Slot="29" Rate="50" Friendship="None" Price="9200" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="BattleGlove_YellowIronFist_Rare" Category="Weapon" Type="BattleGlove" Slot="30" Rate="100" Friendship="None" Price="9200" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="MachinePistol_DrakeA_Uncommon" Category="Weapon" Type="MachinePistol" Slot="31" Rate="50" Friendship="None" Price="900" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="MachinePistol_DrakeA_Rare" Category="Weapon" Type="MachinePistol" Slot="31" Rate="50" Friendship="None" Price="1200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="MachinePistol_DrakeA_Rare" Category="Weapon" Type="MachinePistol" Slot="32" Rate="50" Friendship="None" Price="1200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="MachinePistol_DrakeB_Uncommon" Category="Weapon" Type="MachinePistol" Slot="32" Rate="50" Friendship="None" Price="1400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="MachinePistol_DrakeB_Rare" Category="Weapon" Type="MachinePistol" Slot="32" Rate="50" Friendship="None" Price="2100" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="MachinePistol_DrakeB_Rare" Category="Weapon" Type="MachinePistol" Slot="33" Rate="50" Friendship="None" Price="2100" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="MachinePistol_DrakeC_Uncommon" Category="Weapon" Type="MachinePistol" Slot="33" Rate="50" Friendship="None" Price="2200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="MachinePistol_DrakeC_Rare" Category="Weapon" Type="MachinePistol" Slot="33" Rate="50" Friendship="None" Price="3300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="MachinePistol_DrakeC_Rare" Category="Weapon" Type="MachinePistol" Slot="34" Rate="50" Friendship="None" Price="3300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="MachinePistol_DynamesMPC_Uncommon" Category="Weapon" Type="MachinePistol" Slot="34" Rate="50" Friendship="None" Price="2700" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="MachinePistol_DynamesMPR_Rare" Category="Weapon" Type="MachinePistol" Slot="34" Rate="50" Friendship="None" Price="4500" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="MachinePistol_DynamesMPR_Rare" Category="Weapon" Type="MachinePistol" Slot="35" Rate="50" Friendship="None" Price="4500" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="MachinePistol_RMS233_Uncommon" Category="Weapon" Type="MachinePistol" Slot="35" Rate="50" Friendship="None" Price="4250" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="MachinePistol_RMS233_Rare" Category="Weapon" Type="MachinePistol" Slot="35" Rate="50" Friendship="None" Price="6000" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="MachinePistol_RMS233_Rare" Category="Weapon" Type="MachinePistol" Slot="36" Rate="50" Friendship="None" Price="6000" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="MachinePistol_DynamesMPIBC_Uncommon" Category="Weapon" Type="MachinePistol" Slot="36" Rate="50" Friendship="None" Price="5200" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="MachinePistol_DynamesMPIBR_Rare" Category="Weapon" Type="MachinePistol" Slot="36" Rate="50" Friendship="None" Price="9200" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="MachinePistol_DynamesMPIBR_Rare" Category="Weapon" Type="MachinePistol" Slot="37" Rate="100" Friendship="None" Price="9200" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="SniperRifle_RangeMaster358_Uncommon" Category="Weapon" Type="MachinePistol" Slot="38" Rate="50" Friendship="None" Price="1400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="SniperRifle_RangeMaster358_Rare" Category="Weapon" Type="MachinePistol" Slot="38" Rate="50" Friendship="None" Price="2100" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="SniperRifle_RangeMaster358_Rare" Category="Weapon" Type="MachinePistol" Slot="39" Rate="50" Friendship="None" Price="2100" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="SniperRifle_Cyrus_Uncommon" Category="Weapon" Type="MachinePistol" Slot="39" Rate="50" Friendship="None" Price="2200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="SniperRifle_Cyrus_Rare" Category="Weapon" Type="MachinePistol" Slot="39" Rate="50" Friendship="None" Price="3300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="SniperRifle_Cyrus_Rare" Category="Weapon" Type="MachinePistol" Slot="40" Rate="50" Friendship="None" Price="3300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="SniperRifle_Dynames_Uncommon" Category="Weapon" Type="MachinePistol" Slot="40" Rate="50" Friendship="None" Price="2700" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="SniperRifle_Dynames_Rare" Category="Weapon" Type="MachinePistol" Slot="40" Rate="50" Friendship="None" Price="4500" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="SniperRifle_Dynames_Rare" Category="Weapon" Type="MachinePistol" Slot="41" Rate="50" Friendship="None" Price="4500" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="SniperRifle_RMS233_Uncommon" Category="Weapon" Type="MachinePistol" Slot="41" Rate="50" Friendship="None" Price="4250" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="SniperRifle_RMS233_Rare" Category="Weapon" Type="MachinePistol" Slot="41" Rate="50" Friendship="None" Price="6000" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="SniperRifle_RMS233_Rare" Category="Weapon" Type="MachinePistol" Slot="42" Rate="50" Friendship="None" Price="6000" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="SniperRifle_DynamesIB_Uncommon" Category="Weapon" Type="MachinePistol" Slot="42" Rate="50" Friendship="None" Price="5200" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="SniperRifle_DynamesIBA_Rare" Category="Weapon" Type="MachinePistol" Slot="42" Rate="50" Friendship="None" Price="9200" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="SniperRifle_DynamesIBA_Rare" Category="Weapon" Type="MachinePistol" Slot="43" Rate="100" Friendship="None" Price="9200" RandomPriceScript="Friendly" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_Boom_WD_Uncommon" Category="Weapon" Type="Spray" Slot="44" Rate="50" Friendship="None" Price="400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_Boom_WD_Rare" Category="Weapon" Type="Spray" Slot="44" Rate="50" Friendship="None" Price="600" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_Red_WD_Uncommon" Category="Weapon" Type="Spray" Slot="45" Rate="50" Friendship="None" Price="400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_Red_WD_Rare" Category="Weapon" Type="Spray" Slot="45" Rate="50" Friendship="None" Price="600" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_Boom_CW_Uncommon" Category="Weapon" Type="Spray" Slot="46" Rate="50" Friendship="None" Price="900" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_Boom_CW_Rare" Category="Weapon" Type="Spray" Slot="46" Rate="50" Friendship="None" Price="1200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_White_CW_Uncommon" Category="Weapon" Type="Spray" Slot="47" Rate="50" Friendship="None" Price="900" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_White_CW_Rare" Category="Weapon" Type="Spray" Slot="47" Rate="50" Friendship="None" Price="1200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_Boom_HD_Uncommon" Category="Weapon" Type="Spray" Slot="48" Rate="50" Friendship="None" Price="1400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_Boom_HD_Rare" Category="Weapon" Type="Spray" Slot="48" Rate="50" Friendship="None" Price="2100" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_Green_HD_Uncommon" Category="Weapon" Type="Spray" Slot="49" Rate="50" Friendship="None" Price="1400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_Green_HD_Rare" Category="Weapon" Type="Spray" Slot="49" Rate="50" Friendship="None" Price="2100" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_Boom_KS_Uncommon" Category="Weapon" Type="Spray" Slot="50" Rate="50" Friendship="None" Price="2200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_Boom_KS_Rare" Category="Weapon" Type="Spray" Slot="50" Rate="50" Friendship="None" Price="3300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_White_KS_Uncommon" Category="Weapon" Type="Spray" Slot="51" Rate="50" Friendship="None" Price="2200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_White_KS_Rare" Category="Weapon" Type="Spray" Slot="51" Rate="50" Friendship="None" Price="3300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_Red_KS_Uncommon" Category="Weapon" Type="Spray" Slot="52" Rate="50" Friendship="None" Price="2200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_Red_KS_Rare" Category="Weapon" Type="Spray" Slot="52" Rate="50" Friendship="None" Price="3300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_Boom_SM_Uncommon" Category="Weapon" Type="Spray" Slot="53" Rate="50" Friendship="None" Price="2700" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_Boom_SM_Rare" Category="Weapon" Type="Spray" Slot="53" Rate="50" Friendship="None" Price="4500" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_White_SM_Uncommon" Category="Weapon" Type="Spray" Slot="54" Rate="50" Friendship="Friendly" Price="2700" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_White_SM_Rare" Category="Weapon" Type="Spray" Slot="54" Rate="50" Friendship="Friendly" Price="4500" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_Boom_FHD_Uncommon" Category="Weapon" Type="Spray" Slot="55" Rate="50" Friendship="None" Price="4250" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_Boom_FHD_Rare" Category="Weapon" Type="Spray" Slot="55" Rate="50" Friendship="None" Price="6000" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_Red_FHD_Uncommon" Category="Weapon" Type="Spray" Slot="56" Rate="50" Friendship="Friendly" Price="4250" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_Red_FHD_Rare" Category="Weapon" Type="Spray" Slot="56" Rate="50" Friendship="Friendly" Price="6000" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_White_FHD_Uncommon" Category="Weapon" Type="Spray" Slot="57" Rate="50" Friendship="Friendly" Price="4250" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_White_FHD_Rare" Category="Weapon" Type="Spray" Slot="57" Rate="50" Friendship="Friendly" Price="6000" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_Boom_QHD_Uncommon" Category="Weapon" Type="Spray" Slot="58" Rate="50" Friendship="Friendly" Price="5200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_Boom_QHD_Rare" Category="Weapon" Type="Spray" Slot="58" Rate="50" Friendship="Friendly" Price="9200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_Green_QHD_Uncommon" Category="Weapon" Type="Spray" Slot="59" Rate="50" Friendship="Friendly" Price="5200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Brush_Green_QHD_Rare" Category="Weapon" Type="Spray" Slot="59" Rate="50" Friendship="Friendly" Price="9200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Grenade_Smoke_Uncommon" Category="Tool" Type="Grenade" Slot="60" Rate="100" Friendship="None" Price="100" RandomPriceScript="None"/>
+				<property Item="Grenade_Frag_Uncommon" Category="Tool" Type="Grenade" Slot="61" Rate="100" Friendship="None" Price="250" RandomPriceScript="None"/>
+				<property Item="Grenade_Gas_Uncommon" Category="Tool" Type="Grenade" Slot="62" Rate="100" Friendship="None" Price="250" RandomPriceScript="None"/>
+				<property Item="Grenade_Incendiary_Uncommon" Category="Tool" Type="Grenade" Slot="63" Rate="100" Friendship="None" Price="250" RandomPriceScript="None"/>
+				<property Item="Grenade_Freezing_Uncommon" Category="Tool" Type="Grenade" Slot="64" Rate="100" Friendship="None" Price="150" RandomPriceScript="None"/>
+				<property Item="Grenade_WindPressure_Uncommon" Category="Tool" Type="Grenade" Slot="65" Rate="100" Friendship="None" Price="250" RandomPriceScript="None"/>
+			</ItemList>
+		</class>
+		<class name="WeaponShop2" Title="무기 상점" Image="Icons/WeaponTab" Opened="true">
+			<Dialog>
+				<property name="Visit">
+					<Texts>
+						<property Text="내 물건은 정말 좋은 물건 뿐이지."/>
+						<property Text="어떤 물건도 다 성능이 좋다고"/>
+					</Texts>
+				</property>
+				<property name="Thanks">
+					<Texts>
+						<property Text="굳이 자네들에게 감사하려고 온 건 아냐."/>
+					</Texts>
+				</property>
+				<property name="Select">
+					<Texts>
+						<property Text="뭘 그렇게 고민하나."/>
+						<property Text="내가 차라리 골라줄까?"/>
+					</Texts>
+				</property>
+			</Dialog>
+			<ItemList>
+				<property Item="Sword_AscaBlade_Black" Category="Weapon" Type="Sword" Slot="1" Rate="50" Friendship="None" Price="200" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_CarbonBlade_Black_Rare" Category="Weapon" Type="Sword" Slot="1" Rate="50" Friendship="None" Price="300" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_CarbonBlade_Black_Rare" Category="Weapon" Type="Sword" Slot="2" Rate="50" Friendship="None" Price="300" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_TitanBlade" Category="Weapon" Type="Sword" Slot="2" Rate="50" Friendship="None" Price="400" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_TitanBlade_Rare" Category="Weapon" Type="Sword" Slot="2" Rate="50" Friendship="None" Price="600" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_TitanBlade_Rare" Category="Weapon" Type="Sword" Slot="3" Rate="50" Friendship="None" Price="600" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_AscaBlade_Red" Category="Weapon" Type="Sword" Slot="3" Rate="50" Friendship="None" Price="900" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_AscaBlade_Red_Rare" Category="Weapon" Type="Sword" Slot="3" Rate="50" Friendship="None" Price="1200" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_AscaBlade_Red_Rare" Category="Weapon" Type="Sword" Slot="4" Rate="50" Friendship="None" Price="1200" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_SharpBlade" Category="Weapon" Type="Sword" Slot="4" Rate="50" Friendship="None" Price="1400" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_SharpBlade_Rare" Category="Weapon" Type="Sword" Slot="4" Rate="50" Friendship="None" Price="2100" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_SharpBlade_Rare" Category="Weapon" Type="Sword" Slot="5" Rate="50" Friendship="None" Price="2100" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_Pulse" Category="Weapon" Type="Sword" Slot="5" Rate="50" Friendship="None" Price="2200" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_Pulse_Rare" Category="Weapon" Type="Sword" Slot="5" Rate="50" Friendship="None" Price="3300" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_Pulse_Rare" Category="Weapon" Type="Sword" Slot="6" Rate="50" Friendship="None" Price="3300" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_Cyrus" Category="Weapon" Type="Sword" Slot="6" Rate="50" Friendship="None" Price="2400" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_Cyruse_Rare" Category="Weapon" Type="Sword" Slot="6" Rate="50" Friendship="None" Price="3300" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_Cyruse_Rare" Category="Weapon" Type="Sword" Slot="7" Rate="50" Friendship="None" Price="3300" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_BlackIron" Category="Weapon" Type="Sword" Slot="7" Rate="50" Friendship="None" Price="2700" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_BlackIron_Rare" Category="Weapon" Type="Sword" Slot="7" Rate="50" Friendship="None" Price="4500" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sword_BlackIron_Rare" Category="Weapon" Type="Sword" Slot="8" Rate="100" Friendship="Friendly" Price="4500" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Carbon" Category="Weapon" Type="Bangle" Slot="9" Rate="50" Friendship="None" Price="200" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Carbon_Rare" Category="Weapon" Type="Bangle" Slot="9" Rate="50" Friendship="None" Price="300" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Carbon_Rare" Category="Weapon" Type="Bangle" Slot="10" Rate="50" Friendship="None" Price="300" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Carbon_Blue" Category="Weapon" Type="Bangle" Slot="10" Rate="50" Friendship="None" Price="400" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Carbon_Blue_Rare2" Category="Weapon" Type="Bangle" Slot="10" Rate="50" Friendship="None" Price="600" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Carbon_Blue_Rare2" Category="Weapon" Type="Bangle" Slot="11" Rate="50" Friendship="None" Price="600" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_EastAlliance" Category="Weapon" Type="Bangle" Slot="11" Rate="50" Friendship="None" Price="900" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_EastAlliance_Rare" Category="Weapon" Type="Bangle" Slot="11" Rate="50" Friendship="None" Price="1200" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_EastAlliance_Rare" Category="Weapon" Type="Bangle" Slot="12" Rate="50" Friendship="None" Price="1200" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Etros_New" Category="Weapon" Type="Bangle" Slot="12" Rate="50" Friendship="None" Price="1400" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Etros_New_Rare" Category="Weapon" Type="Bangle" Slot="12" Rate="50" Friendship="None" Price="2100" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Etros_New_Rare" Category="Weapon" Type="Bangle" Slot="13" Rate="50" Friendship="None" Price="2100" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Karas" Category="Weapon" Type="Bangle" Slot="13" Rate="50" Friendship="None" Price="2200" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Karas_Rare" Category="Weapon" Type="Bangle" Slot="13" Rate="50" Friendship="None" Price="3300" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Karas_Rare" Category="Weapon" Type="Bangle" Slot="14" Rate="50" Friendship="None" Price="3300" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Cyrus" Category="Weapon" Type="Bangle" Slot="14" Rate="50" Friendship="None" Price="2400" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Cyrus_Rare" Category="Weapon" Type="Bangle" Slot="14" Rate="50" Friendship="None" Price="3300" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_Cyrus_Rare" Category="Weapon" Type="Bangle" Slot="15" Rate="50" Friendship="None" Price="3300" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_BlackIron" Category="Weapon" Type="Bangle" Slot="15" Rate="50" Friendship="None" Price="2700" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_BlackIron_Rare" Category="Weapon" Type="Bangle" Slot="15" Rate="50" Friendship="None" Price="4500" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Bangle_BlackIron_Rare" Category="Weapon" Type="Bangle" Slot="16" Rate="100" Friendship="Friendly" Price="4500" RandomPriceScript="None" RandomOption="true">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Grenade_FlashBang" Category="Tool" Type="Grenade" Slot="22" Rate="100" Friendship="None" Price="30" RandomPriceScript="None"/>
+				<property Item="Grenade_Smoke" Category="Tool" Type="Grenade" Slot="23" Rate="100" Friendship="None" Price="30" RandomPriceScript="None"/>
+				<property Item="Grenade_Freezing" Category="Tool" Type="Grenade" Slot="24" Rate="100" Friendship="None" Price="60" RandomPriceScript="None"/>
+				<property Item="Grenade_WindPressure" Category="Tool" Type="Grenade" Slot="25" Rate="100" Friendship="None" Price="90" RandomPriceScript="None"/>
+				<property Item="Potion_HP" Category="Consume" Type="Potion" Slot="26" Rate="100" Friendship="None" Price="20" RandomPriceScript="None"/>
+				<property Item="Potion_HP_Uncommon" Category="Consume" Type="Potion" Slot="27" Rate="100" Friendship="None" Price="60" RandomPriceScript="None"/>
+				<property Item="Potion_HP_Rare" Category="Consume" Type="Potion" Slot="28" Rate="100" Friendship="None" Price="180" RandomPriceScript="None"/>
+				<property Item="Extractor" Category="Tool" Type="Extractor" Slot="29" Rate="100" Friendship="None" Price="250" RandomPriceScript="None"/>
+				<property Item="Extractor_Uncommon" Category="Tool" Type="Extractor" Slot="30" Rate="100" Friendship="None" Price="500" RandomPriceScript="None"/>
+				<property Item="Extractor_Rare" Category="Tool" Type="Extractor" Slot="31" Rate="100" Friendship="None" Price="1000" RandomPriceScript="None"/>
+				<property Item="Statement_Mastery" Category="Tool" Type="Material" Slot="32" Rate="100" Friendship="None" Price="300" RandomPriceScript="None"/>
+				<property Item="Statement_Module" Category="Tool" Type="Material" Slot="33" Rate="100" Friendship="None" Price="300" RandomPriceScript="None"/>
+			</ItemList>
+		</class>
+		<class name="ArmorShop" Title="방어구 상점" Image="" Opened="false">
+			<Dialog>
+				<property name="Visit">
+					<Texts>
+						<property Text="무기보다 더 필요한 것이 방어구지. 자신의 생명을 사는 거야."/>
+						<property Text="자. 다양한 방어구가 있으니 천천히 둘러봐."/>
+					</Texts>
+				</property>
+				<property name="Thanks">
+					<Texts>
+						<property Text="강력한 방어구는 모든 것을 쉽게 만들지."/>
+						<property Text="더 좋은 물건을 갖다 놓도록 할게."/>
+					</Texts>
+				</property>
+				<property name="Select">
+					<Texts>
+						<property Text="무기보다 더 필요한 것이 방어구지. 자신의 생명을 사는 거야."/>
+						<property Text="자신에게 맞는 방어구를 선택해"/>
+					</Texts>
+				</property>
+			</Dialog>
+			<ItemList>
+				<property Item="Jacket_Battle" Category="Armor" Type="Jacket" Slot="1" Rate="50" Friendship="None" Price="200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Jacket_Troubleshooter_Rare" Category="Armor" Type="Jacket" Slot="1" Rate="50" Friendship="None" Price="300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Jacket_Troubleshooter_Rare" Category="Armor" Type="Jacket" Slot="2" Rate="50" Friendship="None" Price="300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Jacket_Hunter" Category="Armor" Type="Jacket" Slot="2" Rate="50" Friendship="None" Price="400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Jacket_Hunter_Rare" Category="Armor" Type="Jacket" Slot="2" Rate="50" Friendship="None" Price="600" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Jacket_Hunter_Rare" Category="Armor" Type="Jacket" Slot="3" Rate="50" Friendship="None" Price="600" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Jacket_EastAlliance" Category="Armor" Type="Jacket" Slot="3" Rate="50" Friendship="None" Price="900" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Jacket_EastAlliance_Rare" Category="Armor" Type="Jacket" Slot="3" Rate="50" Friendship="None" Price="1200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Jacket_EastAlliance_Rare" Category="Armor" Type="Jacket" Slot="4" Rate="50" Friendship="None" Price="1200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Jacket_Guard" Category="Armor" Type="Jacket" Slot="4" Rate="50" Friendship="None" Price="1400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Jacket_Guard_Rare" Category="Armor" Type="Jacket" Slot="4" Rate="50" Friendship="None" Price="2100" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Jacket_Guard_Rare" Category="Armor" Type="Jacket" Slot="5" Rate="50" Friendship="None" Price="2100" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Jacket_Sentinel" Category="Armor" Type="Jacket" Slot="5" Rate="50" Friendship="None" Price="2200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Jacket_Sentinel_Rare" Category="Armor" Type="Jacket" Slot="5" Rate="50" Friendship="None" Price="3300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Jacket_Sentinel_Rare" Category="Armor" Type="Jacket" Slot="6" Rate="50" Friendship="None" Price="3300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Jacket_Cyrus" Category="Armor" Type="Jacket" Slot="6" Rate="50" Friendship="None" Price="2400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Jacket_Cyrus_Rare" Category="Armor" Type="Jacket" Slot="6" Rate="50" Friendship="None" Price="3800" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Jacket_Cyrus_Rare" Category="Armor" Type="Jacket" Slot="7" Rate="50" Friendship="None" Price="3800" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Jacket_BlackIron" Category="Armor" Type="Jacket" Slot="7" Rate="50" Friendship="None" Price="2700" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Jacket_BlackIron_Rare" Category="Armor" Type="Jacket" Slot="7" Rate="50" Friendship="None" Price="4500" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Jacket_BlackIron_Rare" Category="Armor" Type="Jacket" Slot="8" Rate="50" Friendship="Friendly" Price="4500" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Jacket_Draky" Category="Armor" Type="Jacket" Slot="8" Rate="50" Friendship="Friendly" Price="3300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Jacket_Draky_Rare" Category="Armor" Type="Jacket" Slot="8" Rate="50" Friendship="Friendly" Price="5300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Jacket_Draky_Rare" Category="Armor" Type="Jacket" Slot="9" Rate="50" Friendship="Friendly" Price="5300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Jacket_BlackIronEnhanced" Category="Armor" Type="Jacket" Slot="9" Rate="50" Friendship="Friendly" Price="4200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Jacket_BlackIronEnhanced_Rare" Category="Armor" Type="Jacket" Slot="9" Rate="50" Friendship="Friendly" Price="7800" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Jacket_BlackIronEnhanced_Rare" Category="Armor" Type="Jacket" Slot="10" Rate="100" Friendship="Friendly" Price="7800" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Tracksuit_Lee" Category="Armor" Type="Tracksuit" Slot="11" Rate="50" Friendship="None" Price="400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Tracksuit_Lee_Rare" Category="Armor" Type="Tracksuit" Slot="11" Rate="50" Friendship="None" Price="600" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Tracksuit_Lee_Rare" Category="Armor" Type="Tracksuit" Slot="12" Rate="50" Friendship="None" Price="600" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Tracksuit_Chaser" Category="Armor" Type="Tracksuit" Slot="12" Rate="50" Friendship="None" Price="900" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Tracksuit_Chaser_Rare" Category="Armor" Type="Tracksuit" Slot="12" Rate="50" Friendship="None" Price="1200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Tracksuit_Chaser_Rare" Category="Armor" Type="Tracksuit" Slot="13" Rate="50" Friendship="None" Price="1200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Tracksuit_Assassin" Category="Armor" Type="Tracksuit" Slot="13" Rate="50" Friendship="None" Price="1400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Tracksuit_Assassin_Rare" Category="Armor" Type="Tracksuit" Slot="13" Rate="50" Friendship="None" Price="2100" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Tracksuit_Assassin_Rare" Category="Armor" Type="Tracksuit" Slot="14" Rate="50" Friendship="None" Price="2100" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Tracksuit_Yasha" Category="Armor" Type="Tracksuit" Slot="14" Rate="50" Friendship="None" Price="2200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Tracksuit_Yasha_Rare" Category="Armor" Type="Tracksuit" Slot="14" Rate="50" Friendship="None" Price="3300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Tracksuit_Yasha_Rare" Category="Armor" Type="Tracksuit" Slot="15" Rate="50" Friendship="None" Price="3300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Tracksuit_Cyrus" Category="Armor" Type="Tracksuit" Slot="15" Rate="50" Friendship="None" Price="2400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Tracksuit_Cyrus_Rare" Category="Armor" Type="Tracksuit" Slot="15" Rate="50" Friendship="None" Price="3800" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Tracksuit_Cyrus_Rare" Category="Armor" Type="Tracksuit" Slot="16" Rate="50" Friendship="None" Price="3800" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Tracksuit_BlackIron" Category="Armor" Type="Tracksuit" Slot="16" Rate="50" Friendship="None" Price="2700" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Tracksuit_BlackIron_Rare" Category="Armor" Type="Tracksuit" Slot="16" Rate="50" Friendship="None" Price="4500" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Tracksuit_BlackIron_Rare" Category="Armor" Type="Tracksuit" Slot="17" Rate="50" Friendship="Friendly" Price="4500" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Tracksuit_Draky" Category="Armor" Type="Jacket" Slot="17" Rate="50" Friendship="Friendly" Price="3300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Tracksuit_Draky_Rare" Category="Armor" Type="Jacket" Slot="17" Rate="50" Friendship="Friendly" Price="5300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Tracksuit_Draky_Rare" Category="Armor" Type="Jacket" Slot="18" Rate="50" Friendship="Friendly" Price="5300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Tracksuit_BlackIronEnhanced" Category="Armor" Type="Jacket" Slot="18" Rate="50" Friendship="Friendly" Price="4200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Tracksuit_BlackIronEnhanced_Rare" Category="Armor" Type="Jacket" Slot="18" Rate="50" Friendship="Friendly" Price="7800" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Tracksuit_BlackIronEnhanced_Rare" Category="Armor" Type="Jacket" Slot="19" Rate="100" Friendship="Friendly" Price="7800" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Coat_Elimentalist" Category="Armor" Type="Coat" Slot="20" Rate="50" Friendship="None" Price="200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Coat_Elimentalist_Rare" Category="Armor" Type="Coat" Slot="20" Rate="50" Friendship="None" Price="300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Coat_Elimentalist_Rare" Category="Armor" Type="Coat" Slot="21" Rate="50" Friendship="None" Price="300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Coat_Hunter" Category="Armor" Type="Coat" Slot="21" Rate="50" Friendship="None" Price="400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Coat_Hunter_Rare" Category="Armor" Type="Coat" Slot="21" Rate="50" Friendship="None" Price="600" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Coat_Hunter_Rare" Category="Armor" Type="Coat" Slot="22" Rate="50" Friendship="None" Price="600" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Coat_Chaser" Category="Armor" Type="Coat" Slot="22" Rate="50" Friendship="None" Price="900" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Coat_Chaser_Rare" Category="Armor" Type="Coat" Slot="22" Rate="50" Friendship="None" Price="1200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Coat_Chaser_Rare" Category="Armor" Type="Coat" Slot="23" Rate="50" Friendship="None" Price="1200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Coat_Guard" Category="Armor" Type="Coat" Slot="23" Rate="50" Friendship="None" Price="1400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Coat_Guard_Rare" Category="Armor" Type="Coat" Slot="23" Rate="50" Friendship="None" Price="2100" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Coat_Guard_Rare" Category="Armor" Type="Coat" Slot="24" Rate="50" Friendship="None" Price="2100" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Coat_Yasha" Category="Armor" Type="Coat" Slot="24" Rate="50" Friendship="None" Price="2200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Coat_Yasha_Rare" Category="Armor" Type="Coat" Slot="24" Rate="50" Friendship="None" Price="3300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Coat_Yasha_Rare" Category="Armor" Type="Coat" Slot="25" Rate="50" Friendship="None" Price="3300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Coat_Cyrus" Category="Armor" Type="Coat" Slot="25" Rate="50" Friendship="None" Price="2400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Coat_Cyrus_Rare" Category="Armor" Type="Coat" Slot="25" Rate="50" Friendship="None" Price="3800" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Coat_Cyrus_Rare" Category="Armor" Type="Coat" Slot="26" Rate="50" Friendship="None" Price="3800" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Coat_BlackIron" Category="Armor" Type="Coat" Slot="26" Rate="50" Friendship="None" Price="2700" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Coat_BlackIron_Rare" Category="Armor" Type="Coat" Slot="26" Rate="50" Friendship="None" Price="4500" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Coat_BlackIron_Rare" Category="Armor" Type="Coat" Slot="27" Rate="50" Friendship="Friendly" Price="4500" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Coat_Draky" Category="Armor" Type="Jacket" Slot="27" Rate="50" Friendship="Friendly" Price="3300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Coat_Draky_Rare" Category="Armor" Type="Jacket" Slot="27" Rate="50" Friendship="Friendly" Price="5300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Coat_Draky_Rare" Category="Armor" Type="Jacket" Slot="28" Rate="50" Friendship="Friendly" Price="5300" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Coat_BlackIronEnhanced" Category="Armor" Type="Jacket" Slot="28" Rate="50" Friendship="Friendly" Price="4200" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Coat_BlackIronEnhanced_Rare" Category="Armor" Type="Jacket" Slot="28" Rate="50" Friendship="Friendly" Price="7800" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Coat_BlackIronEnhanced_Rare" Category="Armor" Type="Jacket" Slot="29" Rate="100" Friendship="Friendly" Price="7800" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Boots_Carbon" Category="Armor" Type="Boots" Slot="30" Rate="50" Friendship="None" Price="160" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Boots_Carbon_Rare" Category="Armor" Type="Boots" Slot="30" Rate="50" Friendship="None" Price="240" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Boots_Carbon_Rare" Category="Armor" Type="Boots" Slot="31" Rate="50" Friendship="None" Price="240" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Boots_Guide" Category="Armor" Type="Boots" Slot="31" Rate="50" Friendship="None" Price="320" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Boots_Guide_Rare" Category="Armor" Type="Boots" Slot="31" Rate="50" Friendship="None" Price="480" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Boots_Guide_Rare" Category="Armor" Type="Boots" Slot="32" Rate="50" Friendship="None" Price="480" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Boots_Adventure" Category="Armor" Type="Boots" Slot="32" Rate="50" Friendship="None" Price="720" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Boots_Explore" Category="Armor" Type="Boots" Slot="32" Rate="50" Friendship="None" Price="960" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Boots_Explore" Category="Armor" Type="Boots" Slot="33" Rate="50" Friendship="None" Price="960" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Boots_Yasha" Category="Armor" Type="Boots" Slot="33" Rate="50" Friendship="None" Price="1120" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Boots_Yasha_Rare" Category="Armor" Type="Boots" Slot="33" Rate="50" Friendship="None" Price="1680" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Boots_Yasha_Rare" Category="Armor" Type="Boots" Slot="34" Rate="50" Friendship="None" Price="1680" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Boots_Dorori" Category="Armor" Type="Boots" Slot="34" Rate="50" Friendship="None" Price="1760" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Boots_Dorori_Rare" Category="Armor" Type="Boots" Slot="34" Rate="50" Friendship="None" Price="2640" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Boots_Dorori_Rare" Category="Armor" Type="Boots" Slot="35" Rate="50" Friendship="None" Price="2640" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Boots_Cyrus" Category="Armor" Type="Boots" Slot="35" Rate="50" Friendship="None" Price="1920" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Boots_Cyrus_Rare" Category="Armor" Type="Boots" Slot="35" Rate="50" Friendship="None" Price="2960" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Boots_Cyrus_Rare" Category="Armor" Type="Boots" Slot="36" Rate="50" Friendship="None" Price="2960" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Boots_BlackIron" Category="Armor" Type="Boots" Slot="36" Rate="50" Friendship="None" Price="2160" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Boots_BlackIron_Rare" Category="Armor" Type="Boots" Slot="36" Rate="50" Friendship="None" Price="3600" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Boots_BlackIron_Rare" Category="Armor" Type="Boots" Slot="37" Rate="50" Friendship="Friendly" Price="3600" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Boots_Draky" Category="Armor" Type="Boots" Slot="37" Rate="50" Friendship="Friendly" Price="2700" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Boots_Draky_Rare" Category="Armor" Type="Boots" Slot="37" Rate="50" Friendship="Friendly" Price="2700" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Boots_Draky_Rare" Category="Armor" Type="Boots" Slot="38" Rate="50" Friendship="Friendly" Price="4500" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Boots_BlackIronEnhanced" Category="Armor" Type="Boots" Slot="38" Rate="50" Friendship="Friendly" Price="3800" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Boots_BlackIronEnhanced_Rare" Category="Armor" Type="Boots" Slot="38" Rate="50" Friendship="Friendly" Price="6400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Boots_BlackIronEnhanced_Rare" Category="Armor" Type="Boots" Slot="39" Rate="100" Friendship="Friendly" Price="6400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sneakers_Battle" Category="Armor" Type="Sneakers" Slot="40" Rate="50" Friendship="None" Price="160" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sneakers_Battle_Rare" Category="Armor" Type="Sneakers" Slot="40" Rate="50" Friendship="None" Price="240" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sneakers_Battle_Rare" Category="Armor" Type="Sneakers" Slot="41" Rate="50" Friendship="None" Price="240" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sneakers_Hunter" Category="Armor" Type="Sneakers" Slot="41" Rate="50" Friendship="None" Price="320" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sneakers_Hunter_Rare" Category="Armor" Type="Sneakers" Slot="41" Rate="50" Friendship="None" Price="480" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sneakers_Hunter_Rare" Category="Armor" Type="Sneakers" Slot="42" Rate="50" Friendship="None" Price="480" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sneakers_Chaser" Category="Armor" Type="Sneakers" Slot="42" Rate="50" Friendship="None" Price="720" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sneakers_Chaser_Rare" Category="Armor" Type="Sneakers" Slot="42" Rate="50" Friendship="None" Price="960" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sneakers_Chaser_Rare" Category="Armor" Type="Sneakers" Slot="43" Rate="50" Friendship="None" Price="960" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sneakers_Assassin" Category="Armor" Type="Sneakers" Slot="43" Rate="50" Friendship="None" Price="1120" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sneakers_Assassin_Rare" Category="Armor" Type="Sneakers" Slot="43" Rate="50" Friendship="None" Price="1680" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sneakers_Assassin_Rare" Category="Armor" Type="Sneakers" Slot="44" Rate="50" Friendship="None" Price="1680" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sneakers_Yasha" Category="Armor" Type="Sneakers" Slot="44" Rate="50" Friendship="None" Price="1760" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sneakers_Yasha_Rare" Category="Armor" Type="Sneakers" Slot="44" Rate="50" Friendship="None" Price="2640" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sneakers_Yasha_Rare" Category="Armor" Type="Sneakers" Slot="45" Rate="50" Friendship="None" Price="2640" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sneakers_Cyrus" Category="Armor" Type="Sneakers" Slot="45" Rate="50" Friendship="None" Price="1920" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sneakers_Cyrus_Rare" Category="Armor" Type="Sneakers" Slot="45" Rate="50" Friendship="None" Price="2960" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sneakers_Cyrus_Rare" Category="Armor" Type="Sneakers" Slot="46" Rate="50" Friendship="None" Price="2960" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sneakers_BlackIron" Category="Armor" Type="Sneakers" Slot="46" Rate="50" Friendship="None" Price="2160" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sneakers_BlackIron_Rare" Category="Armor" Type="Sneakers" Slot="46" Rate="50" Friendship="None" Price="3600" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sneakers_BlackIron_Rare" Category="Armor" Type="Sneakers" Slot="47" Rate="50" Friendship="Friendly" Price="3600" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sneakers_Draky" Category="Armor" Type="Boots" Slot="47" Rate="50" Friendship="Friendly" Price="2700" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sneakers_Draky_Rare" Category="Armor" Type="Boots" Slot="47" Rate="50" Friendship="Friendly" Price="2700" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sneakers_Draky_Rare" Category="Armor" Type="Boots" Slot="48" Rate="50" Friendship="Friendly" Price="4500" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sneakers_BlackIronEnhanced" Category="Armor" Type="Boots" Slot="48" Rate="50" Friendship="Friendly" Price="3800" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sneakers_BlackIronEnhanced_Rare" Category="Armor" Type="Boots" Slot="48" Rate="50" Friendship="Friendly" Price="6400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Sneakers_BlackIronEnhanced_Rare" Category="Armor" Type="Boots" Slot="49" Rate="100" Friendship="Friendly" Price="6400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="DressShoes_Tima" Category="Armor" Type="DressShoes" Slot="50" Rate="50" Friendship="None" Price="720" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="DressShoes_Tima_Rare" Category="Armor" Type="DressShoes" Slot="50" Rate="50" Friendship="None" Price="960" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="DressShoes_Tima_Rare" Category="Armor" Type="DressShoes" Slot="51" Rate="50" Friendship="None" Price="960" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="DressShoes_Yasha" Category="Armor" Type="DressShoes" Slot="51" Rate="50" Friendship="None" Price="1120" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="DressShoes_Yasha_Rare" Category="Armor" Type="DressShoes" Slot="51" Rate="50" Friendship="None" Price="1680" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="DressShoes_Yasha_Rare" Category="Armor" Type="DressShoes" Slot="52" Rate="50" Friendship="None" Price="1680" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="DressShoes_Dorori" Category="Armor" Type="DressShoes" Slot="52" Rate="50" Friendship="None" Price="1760" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="DressShoes_Dorori_Rare" Category="Armor" Type="DressShoes" Slot="52" Rate="50" Friendship="None" Price="2640" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="DressShoes_Dorori_Rare" Category="Armor" Type="DressShoes" Slot="53" Rate="50" Friendship="None" Price="2640" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="DressShoes_Bonaparte" Category="Armor" Type="DressShoes" Slot="53" Rate="50" Friendship="None" Price="1920" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="DressShoes_Bonaparte_Rare" Category="Armor" Type="DressShoes" Slot="53" Rate="50" Friendship="None" Price="2960" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="DressShoes_Bonaparte_Rare" Category="Armor" Type="DressShoes" Slot="54" Rate="50" Friendship="None" Price="2960" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="DressShoes_BlackIron" Category="Armor" Type="DressShoes" Slot="54" Rate="50" Friendship="None" Price="2160" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="DressShoes_BlackIron_Rare" Category="Armor" Type="DressShoes" Slot="54" Rate="50" Friendship="None" Price="3600" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="DressShoes_BlackIron_Rare" Category="Armor" Type="DressShoes" Slot="55" Rate="50" Friendship="Friendly" Price="3600" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="DressShoes_Draky" Category="Armor" Type="DressShoes" Slot="55" Rate="50" Friendship="Friendly" Price="2700" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="DressShoes_Draky_Rare" Category="Armor" Type="DressShoes" Slot="55" Rate="50" Friendship="Friendly" Price="2700" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="DressShoes_Draky_Rare" Category="Armor" Type="DressShoes" Slot="56" Rate="100" Friendship="Friendly" Price="4500" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="DressShoes_BlackIronEnhanced" Category="Armor" Type="DressShoes" Slot="56" Rate="100" Friendship="Friendly" Price="3800" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="DressShoes_BlackIronEnhanced_Rare" Category="Armor" Type="DressShoes" Slot="56" Rate="100" Friendship="Friendly" Price="6400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="DressShoes_BlackIronEnhanced_Rare" Category="Armor" Type="DressShoes" Slot="57" Rate="100" Friendship="Friendly" Price="6400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Wrist_CarbonBlack" Category="Armor" Type="Wrist" Slot="58" Rate="50" Friendship="None" Price="160" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Wrist_CarbonBlack_Rare" Category="Armor" Type="Wrist" Slot="58" Rate="50" Friendship="None" Price="240" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Wrist_CarbonBlack_Rare" Category="Armor" Type="Wrist" Slot="59" Rate="50" Friendship="None" Price="240" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Wrist_Titan" Category="Armor" Type="Wrist" Slot="59" Rate="50" Friendship="None" Price="320" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Wrist_Titan_Rare" Category="Armor" Type="Wrist" Slot="59" Rate="50" Friendship="None" Price="480" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Wrist_Titan_Rare" Category="Armor" Type="Wrist" Slot="60" Rate="50" Friendship="None" Price="480" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Wrist_Ogre" Category="Armor" Type="Wrist" Slot="60" Rate="50" Friendship="None" Price="720" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Wrist_Ogre_Rare" Category="Armor" Type="Wrist" Slot="60" Rate="50" Friendship="None" Price="960" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Wrist_Ogre_Rare" Category="Armor" Type="Wrist" Slot="61" Rate="50" Friendship="None" Price="960" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Wrist_Titan_Black" Category="Armor" Type="Wrist" Slot="61" Rate="50" Friendship="None" Price="1120" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Wrist_Titan_Blacke_Rare" Category="Armor" Type="Wrist" Slot="61" Rate="50" Friendship="None" Price="1680" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Wrist_Titan_Blacke_Rare" Category="Armor" Type="Wrist" Slot="62" Rate="50" Friendship="None" Price="1680" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Wrist_Yasha" Category="Armor" Type="Wrist" Slot="62" Rate="50" Friendship="None" Price="1760" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Wrist_Yasha_Rare" Category="Armor" Type="Wrist" Slot="62" Rate="50" Friendship="None" Price="2640" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Wrist_Yasha_Rare" Category="Armor" Type="Wrist" Slot="63" Rate="50" Friendship="None" Price="2640" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Wrist_Cyrus" Category="Armor" Type="Wrist" Slot="63" Rate="50" Friendship="None" Price="1920" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Wrist_Cyrus_Rare" Category="Armor" Type="Wrist" Slot="63" Rate="50" Friendship="None" Price="2960" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Wrist_Cyrus_Rare" Category="Armor" Type="Wrist" Slot="64" Rate="50" Friendship="None" Price="2960" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Wrist_BlackIron" Category="Armor" Type="Wrist" Slot="64" Rate="50" Friendship="None" Price="2160" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Wrist_BlackIron_Rare" Category="Armor" Type="Wrist" Slot="64" Rate="50" Friendship="None" Price="3600" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Wrist_BlackIron_Rare" Category="Armor" Type="Wrist" Slot="65" Rate="50" Friendship="Friendly" Price="3600" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Wrist_Draky" Category="Armor" Type="Wrist" Slot="65" Rate="50" Friendship="Friendly" Price="2700" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Wrist_Draky_Rare" Category="Armor" Type="Wrist" Slot="65" Rate="50" Friendship="Friendly" Price="4500" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Wrist_Draky_Rare" Category="Armor" Type="Wrist" Slot="66" Rate="100" Friendship="Friendly" Price="4500" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Wrist_BlackIronEnhanced" Category="Armor" Type="Wrist" Slot="66" Rate="100" Friendship="Friendly" Price="3800" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Wrist_BlackIronEnhanced_Rare" Category="Armor" Type="Wrist" Slot="66" Rate="100" Friendship="Friendly" Price="6400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="Wrist_BlackIronEnhanced_Rare" Category="Armor" Type="Wrist" Slot="67" Rate="100" Friendship="Friendly" Price="6400" RandomPriceScript="None" RandomOption="true" Checker="CheckShopItemEnableEquip">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+			</ItemList>
+		</class>
+		<class name="CurioShop" Title="골동품 상점" Image="" Opened="false">
+			<Dialog>
+				<property name="Visit">
+					<Texts>
+						<property Text="내 물건은 정말 좋은 물건 뿐이지."/>
+						<property Text="어떤 물건도 다 성능이 좋다고"/>
+					</Texts>
+				</property>
+				<property name="Thanks">
+					<Texts>
+						<property Text="고맙네. 아직 더 살게 남아 있지 않은가?"/>
+						<property Text="어떤 물건도 다 성능이 좋다고"/>
+					</Texts>
+				</property>
+				<property name="Select">
+					<Texts>
+						<property Text="뭘 그렇게 고민하나."/>
+						<property Text="내가 차라리 골라줄까?"/>
+					</Texts>
+				</property>
+			</Dialog>
+		</class>
+		<class name="JunkShop" Title="고물 상점" Image="" Opened="false">
+			<Dialog>
+				<property name="Visit">
+					<Texts>
+						<property Text="세상에 가치없는 물건은 없지."/>
+						<property Text="나는 가치를 잃은 상품을 새로운 주인에게 연결하는 사람이지."/>
+					</Texts>
+				</property>
+				<property name="Thanks">
+					<Texts>
+						<property Text="다음에도 꼭 와라."/>
+						<property Text="좋은 물건이 생기면 연락하마."/>
+					</Texts>
+				</property>
+				<property name="Select">
+					<Texts>
+						<property Text="네가 지금 보고 있는 것 꽤 괜찮은 물건이지."/>
+						<property Text="그 물건에 관심있나?"/>
+					</Texts>
+				</property>
+			</Dialog>
+			<ItemList>
+				<property Item="MetalPart" Category="Material" Type="Parts" Slot="1" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="15"/>
+				<property Item="MetalPart_Uncomon" Category="Material" Type="Parts" Slot="1" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="55"/>
+				<property Item="MetalPart_Rare" Category="Material" Type="Parts" Slot="2" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="265"/>
+				<property Item="MetalPart_Epic" Category="Material" Type="Parts" Slot="2" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="1295"/>
+				<property Item="Ore_BlackIronFragment" Category="Material" Type="Parts" Slot="3" Rate="50" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="50"/>
+				<property Item="Ore_BlackIron" Category="Material" Type="Parts" Slot="3" Rate="50" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="160"/>
+				<property Item="MetalBlackIronPart" Category="Material" Type="Parts" Slot="4" Rate="50" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="85"/>
+				<property Item="MetalBlackIronPart_Uncomon" Category="Material" Type="Parts" Slot="4" Rate="50" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="355"/>
+				<property Item="MetalBlackIronPart_Rare" Category="Material" Type="Parts" Slot="5" Rate="50" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="1565"/>
+				<property Item="MetalBlackIronPart_Epic" Category="Material" Type="Parts" Slot="5" Rate="50" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="7195"/>
+				<property Item="Cable_Insulated" Category="Material" Type="Parts" Slot="6" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="65"/>
+				<property Item="Cable_Coaxial" Category="Material" Type="Parts" Slot="7" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="225"/>
+				<property Item="Cable_Fiberoptic" Category="Material" Type="Parts" Slot="7" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="875"/>
+				<property Item="Conductor_Semi" Category="Material" Type="Parts" Slot="8" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="115"/>
+				<property Item="Conductor_Super" Category="Material" Type="Parts" Slot="9" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="555"/>
+				<property Item="Conductor_Perfect" Category="Material" Type="Parts" Slot="9" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="2765"/>
+				<property Item="Crystal_Spirit_01" Category="Material" Type="Crystal" Slot="10" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="50"/>
+				<property Item="Crystal_Fire_01" Category="Material" Type="Crystal" Slot="11" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="50"/>
+				<property Item="Crystal_Ice_01" Category="Material" Type="Crystal" Slot="12" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="50"/>
+				<property Item="Crystal_Lightning_01" Category="Material" Type="Crystal" Slot="13" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="50"/>
+				<property Item="Crystal_Wind_01" Category="Material" Type="Crystal" Slot="14" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="50"/>
+				<property Item="Crystal_Earth_01" Category="Material" Type="Crystal" Slot="16" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="50"/>
+				<property Item="Crystal_Water_01" Category="Material" Type="Crystal" Slot="17" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="50"/>
+				<property Item="Crystal_Spirit_02" Category="Material" Type="Crystal" Slot="18" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="250"/>
+				<property Item="Crystal_Fire_02" Category="Material" Type="Crystal" Slot="19" Rate="50" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="250"/>
+				<property Item="Crystal_Ice_02" Category="Material" Type="Crystal" Slot="19" Rate="50" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="250"/>
+				<property Item="Crystal_Lightning_02" Category="Material" Type="Crystal" Slot="20" Rate="50" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="250"/>
+				<property Item="Crystal_Wind_02" Category="Material" Type="Crystal" Slot="20" Rate="50" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="250"/>
+				<property Item="Crystal_Earth_02" Category="Material" Type="Crystal" Slot="21" Rate="50" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="250"/>
+				<property Item="Crystal_Water_02" Category="Material" Type="Crystal" Slot="21" Rate="50" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="250"/>
+				<property Item="Crystal_Spirit_03" Category="Material" Type="Crystal" Slot="22" Rate="100" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="1250"/>
+				<property Item="Crystal_Fire_03" Category="Material" Type="Crystal" Slot="23" Rate="50" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="1250"/>
+				<property Item="Crystal_Ice_03" Category="Material" Type="Crystal" Slot="23" Rate="50" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="1250"/>
+				<property Item="Crystal_Lightning_03" Category="Material" Type="Crystal" Slot="24" Rate="50" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="1250"/>
+				<property Item="Crystal_Wind_03" Category="Material" Type="Crystal" Slot="24" Rate="50" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="1250"/>
+				<property Item="Crystal_Earth_03" Category="Material" Type="Crystal" Slot="25" Rate="50" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="1250"/>
+				<property Item="Crystal_Water_03" Category="Material" Type="Crystal" Slot="25" Rate="50" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="1250"/>
+				<property Item="Crystal_Spirit_04" Category="Material" Type="Crystal" Slot="26" Rate="100" Friendship="Exalted" RandomPriceScript="RandomPrice_Material" Price="6250"/>
+				<property Item="Crystal_Fire_04" Category="Material" Type="Crystal" Slot="27" Rate="50" Friendship="Exalted" RandomPriceScript="RandomPrice_Material" Price="6250"/>
+				<property Item="Crystal_Ice_04" Category="Material" Type="Crystal" Slot="27" Rate="50" Friendship="Exalted" RandomPriceScript="RandomPrice_Material" Price="6250"/>
+				<property Item="Crystal_Lightning_04" Category="Material" Type="Crystal" Slot="28" Rate="50" Friendship="Exalted" RandomPriceScript="RandomPrice_Material" Price="6250"/>
+				<property Item="Crystal_Wind_04" Category="Material" Type="Crystal" Slot="28" Rate="50" Friendship="Exalted" RandomPriceScript="RandomPrice_Material" Price="6250"/>
+				<property Item="Crystal_Earth_04" Category="Material" Type="Crystal" Slot="29" Rate="50" Friendship="Exalted" RandomPriceScript="RandomPrice_Material" Price="6250"/>
+				<property Item="Crystal_Water_04" Category="Material" Type="Crystal" Slot="29" Rate="50" Friendship="Exalted" RandomPriceScript="RandomPrice_Material" Price="6250"/>
+				<property Item="Crystal_Spirit_05" Category="Material" Type="Crystal" Slot="30" Rate="100" Friendship="Revered" RandomPriceScript="RandomPrice_Material" Price="31250"/>
+				<property Item="Crystal_Fire_05" Category="Material" Type="Crystal" Slot="31" Rate="50" Friendship="Revered" RandomPriceScript="RandomPrice_Material" Price="31250"/>
+				<property Item="Crystal_Ice_05" Category="Material" Type="Crystal" Slot="31" Rate="50" Friendship="Revered" RandomPriceScript="RandomPrice_Material" Price="31250"/>
+				<property Item="Crystal_Lightning_05" Category="Material" Type="Crystal" Slot="32" Rate="50" Friendship="Revered" RandomPriceScript="RandomPrice_Material" Price="31250"/>
+				<property Item="Crystal_Wind_05" Category="Material" Type="Crystal" Slot="32" Rate="50" Friendship="Revered" RandomPriceScript="RandomPrice_Material" Price="31250"/>
+				<property Item="Crystal_Earth_05" Category="Material" Type="Crystal" Slot="33" Rate="50" Friendship="Revered" RandomPriceScript="RandomPrice_Material" Price="31250"/>
+				<property Item="Crystal_Water_05" Category="Material" Type="Crystal" Slot="33" Rate="50" Friendship="Revered" RandomPriceScript="RandomPrice_Material" Price="31250"/>
+			</ItemList>
+			<ValkyrieShop>
+				<property GoodsType="Recipe" Recipe="Sneakers_Wrecking_Set" Category="Armor" Type="Recipe" Friendship="None" Price="1" Quest="EP1_Quest_Hundred05"/>
+				<property GoodsType="Recipe" Recipe="Wrist_Wrecking_Set" Category="Armor" Type="Recipe" Friendship="None" Price="1" Quest="EP1_Quest_Hundred06"/>
+				<property GoodsType="Recipe" Recipe="Tracksuit_Wrecking_Set" Category="Armor" Type="Recipe" Friendship="None" Price="1" Quest="EP1_Quest_Hundred07"/>
+			</ValkyrieShop>
+		</class>
+		<class name="ValkyrieShop" Title="발키리 상점" Image="" Opened="false" Currency="ValkyrieCoin" InventoryMode="ValkyrieShop" SellEnable="false" RefreshList="false" NoneNPCShop="true">
+			<ItemList>
+				<property GoodsType="Recipe" Recipe="Crystal_Spirit_05" Category="PsionicStone" Type="Recipe" Slot="1" Rate="100" Friendship="None" Price="2" RandomPriceScript="None" RandomOption="false"/>
+			</ItemList>
+		</class>
+		<class name="LostShop" Title="[!Ignore]잃어버린 아이템 상점" Image="" Opened="false" ActiveSlot="0" IsNew="false">
+			<ItemList>
+				<property Item="None" Price="0" Stock="0">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="None" Price="0" Stock="0">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="None" Price="0" Stock="0">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="None" Price="0" Stock="0">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="None" Price="0" Stock="0">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="None" Price="0" Stock="0">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="None" Price="0" Stock="0">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="None" Price="0" Stock="0">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="None" Price="0" Stock="0">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="None" Price="0" Stock="0">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="None" Price="0" Stock="0">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="None" Price="0" Stock="0">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="None" Price="0" Stock="0">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="None" Price="0" Stock="0">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="None" Price="0" Stock="0">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="None" Price="0" Stock="0">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="None" Price="0" Stock="0">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="None" Price="0" Stock="0">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="None" Price="0" Stock="0">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+				<property Item="None" Price="0" Stock="0">
+					<Option type="link" target="ItemOption" value="Normal"/>
+				</property>
+			</ItemList>
+		</class>
+	</idspace>
+</idspaces>

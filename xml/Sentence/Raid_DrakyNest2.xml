@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Raid_DrakyNest2_yLKl9e" Value="[!Dashboard:Counter]남은 드라키 우두머리 수"/>
+		<class name="Raid_DrakyNest2_ku4NVE" Value="[!Dashboard:Counter]남은 드라키 수"/>
+		<class name="Raid_DrakyNest2_1P0DMS" Value="[!Dashboard:TimeLimiter]귀환까지 남은 시간"/>
+		<class name="Raid_DrakyNest2_H3becM" Value="[!Objective]드라키 우두머리를 제압하시오."/>
+		<class name="Raid_DrakyNest2_BwQNY2" Value="[!Title]일족의 지배자"/>
+		<class name="Raid_DrakyNest2_u3jycE" Value="[!Title]드라키 둥지 보물 창고"/>
+		<class name="Raid_DrakyNest2_HRHaSe" Value="[!Dialog][!speaker:Beast_Dragon_Black3_Ground_Normal]도대체 진화를 시킨 보람이 없는 녀석이군."/>
+		<class name="Raid_DrakyNest2_7Q9FSL" Value="[!Dialog][!speaker:Beast_Dragon_Frost3_Normal]죄송합니다."/>
+		<class name="Raid_DrakyNest2_DVJwcL" Value="[!Dialog][!speaker:Beast_Dragon_Frost3_Ground_Normal]죄송합니다. 대왕님."/>
+		<class name="Raid_DrakyNest2_C7iL07" Value="[!Dialog][!speaker:Beast_Dragon_Black3_Ground_Normal]당장 각 파벌들은 경계 태세를 유지해!"/>
+		<class name="Raid_DrakyNest2_kXhNrK" Value="[!Dialog][!speaker:Beast_Dragon_Black3_Ground_Normal]그리고 부화장의 아이들의 안전을 최우선으로 한다!"/>
+		<class name="Raid_DrakyNest2_udDdZg" Value="[!Dialog][!speaker:Beast_Dragon_Black2_Ground_Normal]알겠습니다!"/>
+		<class name="Raid_DrakyNest2_ilQNNd" Value="[!Title]일족의 어머니"/>
+		<class name="Raid_DrakyNest2_D01tYL" Value="[!Title]드라키 둥지 부화장"/>
+		<class name="Raid_DrakyNest2_9aczgU" Value="[!Dialog][!speaker:Beast_Dragon_White3_Normal]어머니. 칩입자가 올 수 있다니 조심하세요."/>
+		<class name="Raid_DrakyNest2_JZqYhS" Value="[!Dialog][!speaker:Beast_Dragon_Black3_Normal]걱정마. 어머니는 내가 지킨다."/>
+		<class name="Raid_DrakyNest2_MI1lKc" Value="[!Dialog][!speaker:Beast_Dragon_White3_Ground_Normal]고맙구나. 둘 다."/>
+		<class name="Raid_DrakyNest2_7rGAdf" Value="[!Dialog][!speaker:Beast_Dragon_White3_Ground_Normal]하지만 정말 위험이 닥치면 어떻게 해야 되는 지 알지?"/>
+		<class name="Raid_DrakyNest2_s9paQs" Value="[!Dialog][!speaker:Beast_Dragon_Black3_Normal]네. 걱정 마세요!"/>
+		<class name="Raid_DrakyNest2_nfk2KJ" Value="[!Dialog][!speaker:Beast_Dragon_Black3_Normal]동생들은 저희가 꼭 지켜낼 거에요."/>
+		<class name="Raid_DrakyNest2_7BQd6R" Value="[!Title]환상의 드라키"/>
+		<class name="Raid_DrakyNest2_IUm1yH" Value="[!Title]드라키 둥지 순찰로"/>
+		<class name="Raid_DrakyNest2_SA14N1" Value="[!Dialog][!speaker:Beast_Dragon_Water3_Normal]이번 순찰조는 너희들인가?"/>
+		<class name="Raid_DrakyNest2_toMhP1" Value="[!Dialog][!speaker:Beast_Dragon_Black2_Ground_Normal]네. 맹독 남작님."/>
+		<class name="Raid_DrakyNest2_gkZReg" Value="[!Dialog][!speaker:Beast_Dragon_Black2_Ground_Normal]저를 포함해 이 아이들이 이번 순찰조입니다."/>
+		<class name="Raid_DrakyNest2_e4um1H" Value="[!Dialog][!speaker:Beast_Dragon_Water3_Normal]그래. 부화장을 지나 지상으로 나가는 동굴 입구까지 부탁한다."/>
+		<class name="Raid_DrakyNest2_e5xXIk" Value="[!Dialog][!speaker:Beast_Dragon_Water3_Ground_Normal]부화장을 지나갈 때는 아이들이 깨지 않도록 조용히 지나가렴."/>
+		<class name="Raid_DrakyNest2_MyB7nM" Value="[!Title]광란의 드라키"/>
+		<class name="Raid_DrakyNest2_3j9OJi" Value="[!Title]드라키 둥지 용광로"/>
+		<class name="Raid_DrakyNest2_1ncAaE" Value="[!Dialog][!speaker:Beast_Dragon_Flame3_Ground_Normal]현재 용광로의 온도는?"/>
+		<class name="Raid_DrakyNest2_DI4bMd" Value="[!Dialog][!speaker:Beast_Dragon_Flame3_Normal]한 숨결에 기본 비늘 1000개를 태울 화력입니다."/>
+		<class name="Raid_DrakyNest2_aT0is0" Value="[!Dialog][!speaker:Beast_Dragon_Flame3_Ground_Normal]조금 부족하군. 권속들에게 불꽃을 조금 더 뽑아내라고 해라!"/>
+		<class name="Raid_DrakyNest2_Jv9K3P" Value="[!Dialog][!speaker:Beast_Dragon_Flame3_Normal]군주님. 휴식 없이 12시간째 숨결을 뽑아내고 있습니다."/>
+		<class name="Raid_DrakyNest2_cXQJWc" Value="[!Dialog][!speaker:Beast_Dragon_Flame3_Normal]이대로는 권속들의 건강에 문제가 생길 수 있습니다."/>
+		<class name="Raid_DrakyNest2_7UIN9W" Value="[!Dialog][!speaker:Beast_Dragon_Flame3_Ground_Normal]상관없다."/>
+		<class name="Raid_DrakyNest2_oDMRAj" Value="[!Dialog][!speaker:Beast_Dragon_Flame3_Ground_Normal]이 둥지를 위해 어머니가 우리 권속을 제일 많이 품으셨다."/>
+		<class name="Raid_DrakyNest2_F7Vrol" Value="[!Dialog][!speaker:Beast_Dragon_Flame3_Ground_Normal]가장 많은 사랑을 받은 우리 파벌이 어머니와 동생들을 춥게 만들어서야 면목이 서겠는가!"/>
+		<class name="Raid_DrakyNest2_5ZFY0N" Value="[!Dialog][!speaker:Beast_Dragon_Flame3_Normal]군주님의 뜻 받들겠습니다!"/>
+		<class name="Raid_DrakyNest2_ybWV2l" Value="[!Title]신속의 드라키"/>
+		<class name="Raid_DrakyNest2_sGdpTS" Value="[!Title]드라키 둥지 쉼터"/>
+		<class name="Raid_DrakyNest2_0nphq1" Value="[!Dialog][!speaker:Beast_Dragon_Lightning3_Normal]다들 깨진 비늘은 서로 확인하여 걷어 내고, 부상자는 빨리 치료를 받아라!"/>
+		<class name="Raid_DrakyNest2_zadVZn" Value="[!Dialog][!speaker:Beast_Dragon_Lightning3_Ground_Normal]남작. 다시 재정비하는 시간은 얼마나 걸리겠나?"/>
+		<class name="Raid_DrakyNest2_wkKCa8" Value="[!Dialog][!speaker:Beast_Dragon_Lightning3_Normal]일단 깨진 비늘을 걷어 내고 발톱이나 이빨을 다시 가는 정도라면 열 숨결 내 끝날 것 같습니다."/>
+		<class name="Raid_DrakyNest2_zgWl4p" Value="[!Dialog][!speaker:Beast_Dragon_Lightning3_Ground_Normal]열 숨결이라..."/>
+		<class name="Raid_DrakyNest2_6C8w8w" Value="[!Dialog][!speaker:Beast_Dragon_Lightning3_Ground_Normal]권속들에게 미안하지만 두 숨결 정도는 빨리 끝내도록 독촉해 주게."/>
+		<class name="Raid_DrakyNest2_5Dqy61" Value="[!Dialog][!speaker:Beast_Dragon_Lightning3_Ground_Normal]우리 일족의 둥지를 침입한 자들을 마음대로 활보하게 둘 수는 없지."/>
+		<class name="Raid_DrakyNest2_Tu1ULT" Value="[!Dialog][!speaker:Beast_Dragon_Lightning3_Normal]최대한 독촉하여 바로 전열을 정비하도록 하겠습니다."/>
+		<class name="Raid_DrakyNest2_tAsqms" Value="[!Dialog][!speaker:Beast_Dragon_Lightning3_Ground_Normal]그래. 잘 부탁한다."/>
+		<class name="Raid_DrakyNest2_7fMOO1" Value="[!Title]불굴의 드라키"/>
+		<class name="Raid_DrakyNest2_dGpluD" Value="[!Title]드라키 둥지 초소"/>
+		<class name="Raid_DrakyNest2_1ITZeG" Value="[!Dialog][!speaker:Beast_Dragon_Earth3_Ground_Normal]칩입자는 강하다."/>
+		<class name="Raid_DrakyNest2_5jMAEl" Value="[!Dialog][!speaker:Beast_Dragon_Earth3_Ground_Normal]절대 인간이라고 얕보지 마라."/>
+		<class name="Raid_DrakyNest2_JVOaVM" Value="[!Dialog][!speaker:Beast_Dragon_Earth3_Normal]넵! 알겠습니다!"/>
+		<class name="Raid_DrakyNest2_bcTFWN" Value="[!Dialog][!speaker:Beast_Dragon_Earth3_Ground_Normal]그리고 언제나 우리의 최우선 순위는 부화장의 어머니이다!"/>
+		<class name="Raid_DrakyNest2_WGH0Hh" Value="[!Dialog][!speaker:Beast_Dragon_Earth3_Ground_Normal]자신이 어머니의 일부에 지나지 않음을 자각하고 자신의 모든 것을 던져라!"/>
+		<class name="Raid_DrakyNest2_Wvwfiv" Value="[!Dialog]철의 숲 버려진 동굴에서 찾아낸 드라키의 둥지로 이어지는 통로."/>
+		<class name="Raid_DrakyNest2_qXijZy" Value="[!Dialog]사무실로 복귀한 지젤은 동굴의 지도를 찾아 드라키 둥지를 유추해낸다."/>
+		<class name="Raid_DrakyNest2_GT7zsg" Value="[!Dialog][!speaker:VHPD_Jane_Normal]돌연변이 드라키 둥지라니... 기가 차는 군."/>
+		<class name="Raid_DrakyNest2_zOePPl" Value="[!Dialog][!speaker:Giselle_Normal]자원 관리 구역에만 몰두하는데 알 리가 있나."/>
+		<class name="Raid_DrakyNest2_0ISxLn" Value="[!Dialog][!speaker:VHPD_Jane_Normal]네 보고서를 받은 정부에서는 철의 숲의 드라키를 1급 생태계 교란종으로 지정했어."/>
+		<class name="Raid_DrakyNest2_lTbYKj" Value="[!Dialog][!speaker:Giselle_Smile2]많이 급하네~"/>
+		<class name="Raid_DrakyNest2_cP0nLL" Value="[!Dialog][!speaker:VHPD_Jane_Normal]왕과 여왕에게는 포상금까지 걸었어."/>
+		<class name="Raid_DrakyNest2_RW6pqy" Value="[!Dialog][!speaker:Giselle_Smile]그래. 이 녀석들 한번 시작하면 모든 걸 먹어 치우지."/>
+		<class name="Raid_DrakyNest2_Embfew" Value="[!Dialog][!speaker:Giselle_Smile]만약 이 녀석들이 자원 관리 구역의 존재를 알고 사냥터로 삼으면 상대적으로 약한 티마, 도로리, 야샤들은 순식간에 절멸할 거야."/>
+		<class name="Raid_DrakyNest2_rl44WQ" Value="[!Dialog][!speaker:Giselle_Satisfying]그러면 순식간에 리치 베인은 사라지는 거지."/>
+		<class name="Raid_DrakyNest2_6i648F" Value="[!Dialog][!speaker:VHPD_Jane_Normal]듣기만 해도 어처구니 없는 말이군."/>
+		<class name="Raid_DrakyNest2_Zg32aq" Value="[!Dialog][!speaker:VHPD_Jane_Normal]자원 관리 구역의 생태계를 유지하기위해 우리 경찰 병력이 얼마나 많은 신경을 써 왔는데..."/>
+		<class name="Raid_DrakyNest2_6AoL7m" Value="[!Dialog][!speaker:Giselle_Satisfying]원래 생태계라는 것이 그런 것이야."/>
+		<class name="Raid_DrakyNest2_DGRH9e" Value="[!Dialog][!speaker:VHPD_Jane_Normal]미안하다. 지젤."/>
+		<class name="Raid_DrakyNest2_1yDCq3" Value="[!Dialog][!speaker:VHPD_Jane_Normal]가능하다면 빨리 위험을 제거해 줬으면 해."/>
+		<class name="Raid_DrakyNest2_fdgwnp" Value="[!Dialog][!speaker:VHPD_Jane_Normal]리치 베인이 사라지면 지구 전체가 흔들린다."/>
+		<class name="Raid_DrakyNest2_tH1LmK" Value="[!Dialog][!speaker:Giselle_Smile]그래. 즐거운 일은 언제나 환영이야."/>
+		<class name="Raid_DrakyNest2_FMNcBP" Value="[!Title]생태계 파괴자"/>
+		<class name="Raid_DrakyNest2_LlcM0f" Value="[!Title]드라키 둥지"/>
+		<class name="Raid_DrakyNest2_vwKRjz" Value="[!Dialog][!speaker:Giselle_Smile2]둥지가 제법 크네. 시간 좀 걸리겠어~"/>
+		<class name="Raid_DrakyNest2_rtArfG" Value="[!Dialog][!speaker:Giselle_Smile]&apos;각인 전의 아이를 만날 수 있으려나...&apos;"/>
+		<class name="Raid_DrakyNest2_rDUf8c" Value="[!Dialog][!speaker:Giselle_Satisfying]&apos;이 녀석들은 정말 내 취향인데 말야...&apos;"/>
+		<class name="Raid_DrakyNest2_HEjxnY" Value="[!BalloonChat][!speaker:Giselle]사냥 시작입니다."/>
+		<class name="Raid_DrakyNest2_3TCuZP" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Raid_DrakyNest2_AtAqd8" Value="[!VictoryCondition]드라키 우두머리를 제압하시오."/>
+		<class name="Raid_DrakyNest2_Us1Cq5" Value="[!Dialog]드라키 우두머리를 제압하였습니다. 계속 임무를 진행하시겠습니까?"/>
+		<class name="Raid_DrakyNest2_OxU6I5" Value="[!Choice]사냥을 계속한다."/>
+		<class name="Raid_DrakyNest2_nqiEdx" Value="[!Choice]귀환한다."/>
+		<class name="Raid_DrakyNest2_Vv2bUq" Value="[!Objective]남은 귀환 시간까지 살아남으시오"/>
+		<class name="Raid_DrakyNest2_yt7RF5" Value="[!Ignore][!Dialog][!speaker:EmptySubTitle_]Raid_DrakyNest_uqmCyg"/>
+		<class name="Raid_DrakyNest2_POKa3N" Value="[!Ignore][!Choice]Raid_DrakyNest_QJOVOp"/>
+		<class name="Raid_DrakyNest2_Ild4Xm" Value="[!Ignore][!Choice]Raid_DrakyNest_g1ZxS0"/>
+		<class name="Raid_DrakyNest2_lNqbwx" Value="[!Ignore][!BalloonChat][!speaker:Dorori_Wind_01]Raid_DrakyNest_zGnvwA"/>
+		<class name="Raid_DrakyNest2_dKlzsK" Value="[!Ignore][!FrontMessage]Raid_DrakyNest_60YgUo"/>
+		<class name="Raid_DrakyNest2_ifwPF2" Value="[!Ignore][!Title]Raid_DrakyNest_j75Lrn"/>
+		<class name="Raid_DrakyNest2_6Wpe3T" Value="[!Ignore][!Title]Raid_DrakyNest_8Ak38O"/>
+		<class name="Raid_DrakyNest2_zKjhhi" Value="[!Ignore][!BalloonChat][!speaker:Dorori_Fire_Boss]Raid_DrakyNest_2OMJPd"/>
+		<class name="Raid_DrakyNest2_LJn7hc" Value="[!Ignore][!FrontMessage]Raid_DrakyNest_aoT7Dk"/>
+		<class name="Raid_DrakyNest2_AhglIO" Value="[!Ignore][!BalloonChat]Raid_DrakyNest_JJbSvv"/>
+		<class name="Raid_DrakyNest2_aZOGq3" Value="[!Ignore][!Dialog][!speaker:Heissing_Normal]Raid_DrakyNest_p9aTfO"/>
+		<class name="Raid_DrakyNest2_1hhGET" Value="[!Ignore][!Dialog][!speaker:Heissing_EyeClose]Raid_DrakyNest_SM82QH"/>
+		<class name="Raid_DrakyNest2_2vpIhV" Value="[!Ignore][!FrontMessage]Raid_DrakyNest_qqTht1"/>
+		<class name="Raid_DrakyNest2_MjXCM7" Value="[!Ignore][!FrontMessage]Raid_DrakyNest_dDqCP0"/>
+		<class name="Raid_DrakyNest2_9n2Y2s" Value="[!Dialog]드라키 우두머리를 모두 제압하였습니다. 남은 야수들까지 사냥하시겠습니까?"/>
+		<class name="Raid_DrakyNest2_nOhxaG" Value="[!Choice]사냥을 계속한다."/>
+		<class name="Raid_DrakyNest2_nCacOq" Value="[!VictoryCondition]남은 야수를 모두 제압하시오."/>
+		<class name="Raid_DrakyNest2_NjmqCh" Value="[!Choice]귀환한다."/>
+		<class name="Raid_DrakyNest2_GVSEYl" Value="[!Objective]남은 귀환 시간까지 살아남으시오"/>
+		<class name="Raid_DrakyNest2_OmHspy" Value="[!VictoryCondition]남은 귀환 시간까지 생존하시오."/>
+		<class name="Raid_DrakyNest2_u7cmxA" Value="[!Ignore][!BalloonChat][!speaker:Dot]Raid_DrakyNest_qizV0r"/>
+		<class name="Raid_DrakyNest2_aOnYM4" Value="[!Ignore][!Dialog][!speaker:Beast_Frog_Dot_Normal]Raid_DrakyNest_1cM7YV"/>
+		<class name="Raid_DrakyNest2_u24TXG" Value="[!Dialog][!speaker:Albus_Surprise]드라키의 알??"/>
+		<class name="Raid_DrakyNest2_MWJLGD" Value="[!Dialog][!speaker:Albus_Serious]&apos;더 큰 일이 되기 전에 안타깝지만 모두 처리해야겠어.&apos;"/>
+		<class name="Raid_DrakyNest2_blL9Sj" Value="[!Dialog][!speaker:Sion_Happy]와!!"/>
+		<class name="Raid_DrakyNest2_4Him0V" Value="[!Dialog][!speaker:Sion_Happy]드라키의 알이잖아!!"/>
+		<class name="Raid_DrakyNest2_6nkBJN" Value="[!Dialog][!speaker:Sion_Normal]&apos;드라키도 퇴화된 용족이라지만 꽤 괜찮은 맛일텐데...&apos;"/>
+		<class name="Raid_DrakyNest2_UCXoN2" Value="[!Dialog][!speaker:Irene_Rage]드라키 알이라니!"/>
+		<class name="Raid_DrakyNest2_XUka6g" Value="[!Dialog][!speaker:Irene_Rage]도대체 왜 이렇게 많은 거야!"/>
+		<class name="Raid_DrakyNest2_oqlP7U" Value="[!Dialog][!speaker:Irene_Fury]&apos;어차피 처리할거라면... 차라리 알 상태가 나은 건가...&apos;"/>
+		<class name="Raid_DrakyNest2_QEY4E2" Value="[!Dialog][!speaker:Anne_Sorrow]드라키 알이네..."/>
+		<class name="Raid_DrakyNest2_IFethy" Value="[!Dialog][!speaker:Anne_Sorrow]미안하지만 너희들이 태어나게 둘 수는 없어."/>
+		<class name="Raid_DrakyNest2_FwTCnO" Value="[!Dialog][!speaker:Anne_Sorrow]정말 미안해."/>
+		<class name="Raid_DrakyNest2_qXXIYO" Value="[!Dialog][!speaker:Heissing_Normal]......"/>
+		<class name="Raid_DrakyNest2_D94QTo" Value="[!Dialog][!speaker:Heissing_Normal]&apos;흥미롭군...&apos;"/>
+		<class name="Raid_DrakyNest2_ZMrEEx" Value="[!Dialog][!speaker:Ray_Smile]발견~☆"/>
+		<class name="Raid_DrakyNest2_tWxy5l" Value="[!Dialog][!speaker:Ray_Smile]&apos;지젤 씨가 길들이려면 막 깨어난 미성숙체여야 한다고 했는데...&apos;"/>
+		<class name="Raid_DrakyNest2_NpPRY7" Value="[!Dialog][!speaker:Ray_Smile]&apos;이 아이들을 어떻게 부화시키나...&apos;"/>
+		<class name="Raid_DrakyNest2_gegQVK" Value="[!Dialog][!speaker:Giselle_Satisfying]참 많이도 낳았구나."/>
+		<class name="Raid_DrakyNest2_PHzNLZ" Value="[!Dialog][!speaker:Giselle_Smile]곧 네 어미를 찾아 깨어나게 해 줄게."/>
+		<class name="Raid_DrakyNest2_477mvY" Value="[!Dialog][!speaker:Giselle_Smile]&apos;미성숙체가 있으려나...&apos;"/>
+		<class name="Raid_DrakyNest2_1yyJWS" Value="[!Dialog][!speaker:Kylie_Satisfying]오! 드라키 알이 이렇게 많아?"/>
+		<class name="Raid_DrakyNest2_fV45Hn" Value="[!Dialog][!speaker:Kylie_Satisfying]여기 올 때는 꼭 이능석 추출기를 가져와야겠어."/>
+		<class name="Raid_DrakyNest2_x6yR9t" Value="[!Dialog][!speaker:Kylie_Serious]&apos;그런데 이거 이렇게 둥지를 틀고 유지하면 성채랑 다를 바가 없잖아..&apos;"/>
+		<class name="Raid_DrakyNest2_e2ejIk" Value="[!Dialog][!speaker:Kylie_Serious]&apos;설마 인위적인 것은 아니겠지...&apos;"/>
+		<class name="Raid_DrakyNest2_ztRH3r" Value="[!Dialog][!speaker:Leton_Smile]이젠 제법 둥지가 잘 돌아 가네~☆"/>
+		<class name="Raid_DrakyNest2_dIxDcL" Value="[!Dialog][!speaker:Leton_Laugh]&apos;겨울 내내 전자망을 망가뜨린 보람이 있는데~&apos;"/>
+		<class name="Raid_DrakyNest2_Zq9pXQ" Value="[!Dialog][!speaker:Heissing_Smile]성채의 드라키와 비교하면 아직 어리군..."/>
+		<class name="Raid_DrakyNest2_nzbGW1" Value="[!Dialog][!speaker:Heissing_Normal]&apos;인위적으로 무리를 꾸리게 된 것인가...&apos;"/>
+		<class name="Raid_DrakyNest2_mWj3e3" Value="[!Dialog][!speaker:Giselle_Stare]너. 야생의 녀석이 아니구나."/>
+		<class name="Raid_DrakyNest2_hhAgS5" Value="[!Dialog][!speaker:Giselle_Annoying]&apos;이렇게 어린 녀석이 무리의 우두머리라니 김이 빠지는군...&apos;"/>
+		<class name="Raid_DrakyNest2_UpNmT6" Value="[!Dialog][!speaker:Giselle_Smile]&apos;하지만 꽤 구린 냄새가 나네...&apos;"/>
+		<class name="Raid_DrakyNest2_KtCuMf" Value="[!Dialog][!speaker:Leton_Smile]널 다시 보게 될 줄 몰랐네."/>
+		<class name="Raid_DrakyNest2_PP7C0I" Value="[!Dialog][!speaker:Leton_Laugh]넌 그동안 충분히 잘해줬어. 이렇게 무리를 다 이루고 둥지를 틀 줄 이야."/>
+		<class name="Raid_DrakyNest2_43vmPM" Value="[!Dialog][!speaker:Leton_Laugh]덕분에 한동안 나도 부족함없이 항동결 수액을 만들 수 있어서 편했다."/>
+		<class name="Raid_DrakyNest2_09qsdg" Value="[!Dialog][!speaker:Leton_Stare]......"/>
+		<class name="Raid_DrakyNest2_jSxQAZ" Value="[!Dialog][!speaker:Leton_Stare]하지만 이젠 작별의 시간이야~☆"/>
+	</idspace>
+</idspaces>

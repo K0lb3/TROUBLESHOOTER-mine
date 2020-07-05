@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Alignment">
+	<schema>
+		<rule property="Desc" type="calculated" default="CalculatedProperty_TextFormater_Common"/>
+		<rule property="OverPointPenalty" type="table" default=""/>
+	</schema>
+	<class name="LawfulGood" Title="[!Ignore]질서 선" Desc_Format="" Image="Icons/Alignment_LawfulGood">
+		<OverPointPenalty>
+			<property name="LawfulEvil" type="number" value="-1"/>
+			<property name="NeutralEvil" type="number" value="-1"/>
+			<property name="ChaoticEvil" type="number" value="-2"/>
+			<property name="ChaoticGood" type="number" value="-1"/>
+			<property name="ChaoticNeutral" type="number" value="-1"/>
+		</OverPointPenalty>
+	</class>
+	<class name="NeutralGood" Title="[!Ignore]중립 선" Desc_Format="" Image="Icons/Alignment_NeutralGood">
+		<OverPointPenalty>
+			<property name="LawfulEvil" type="number" value="-1"/>
+			<property name="NeutralEvil" type="number" value="-1"/>
+			<property name="ChaoticEvil" type="number" value="-1"/>
+		</OverPointPenalty>
+	</class>
+	<class name="ChaoticGood" Title="[!Ignore]혼돈 선" Desc_Format="" Image="Icons/Alignment_ChaoticGood">
+		<OverPointPenalty>
+			<property name="LawfulGood" type="number" value="-1"/>
+			<property name="LawfulNeutral" type="number" value="-1"/>
+			<property name="LawfulEvil" type="number" value="-2"/>
+			<property name="NeutralEvil" type="number" value="-1"/>
+			<property name="ChaoticEvil" type="number" value="-1"/>
+		</OverPointPenalty>
+	</class>
+	<class name="LawfulNeutral" Title="[!Ignore]질서 중립" Desc_Format="" Image="Icons/Alignment_LawfulNeutral">
+		<OverPointPenalty>
+			<property name="ChaoticGood" type="number" value="-1"/>
+			<property name="ChaoticNeutral" type="number" value="-1"/>
+			<property name="ChaoticEvil" type="number" value="-1"/>
+		</OverPointPenalty>
+	</class>
+	<class name="Neutral" Title="[!Ignore]중립" Desc_Format="" Image="Icons/Alignment_Neutral"/>
+	<class name="ChaoticNeutral" Title="[!Ignore]혼돈 중립" Desc_Format="" Image="Icons/Alignment_ChaoticNeutral">
+		<OverPointPenalty>
+			<property name="LawfulGood" type="number" value="-1"/>
+			<property name="LawfulNeutral" type="number" value="-1"/>
+			<property name="LawfulEvil" type="number" value="-1"/>
+		</OverPointPenalty>
+	</class>
+	<class name="LawfulEvil" Title="[!Ignore]질서 악" Desc_Format="" Image="Icons/Alignment_LawfulEvil">
+		<OverPointPenalty>
+			<property name="LawfulGood" type="number" value="-1"/>
+			<property name="NeutralGood" type="number" value="-1"/>
+			<property name="ChaoticGood" type="number" value="-2"/>
+			<property name="ChaoticNeutral" type="number" value="-1"/>
+			<property name="ChaoticEvil" type="number" value="-1"/>
+		</OverPointPenalty>
+	</class>
+	<class name="NeutralEvil" Title="[!Ignore]중립 악" Desc_Format="" Image="Icons/Alignment_NeutralEvil">
+		<OverPointPenalty>
+			<property name="LawfulGood" type="number" value="-1"/>
+			<property name="NeutralGood" type="number" value="-1"/>
+			<property name="ChaoticGood" type="number" value="-1"/>
+		</OverPointPenalty>
+	</class>
+	<class name="ChaoticEvil" Title="[!Ignore]혼돈 악" Desc_Format="" Image="Icons/Alignment_ChaoticEvil">
+		<OverPointPenalty>
+			<property name="NeutralGood" type="number" value="-1"/>
+			<property name="ChaoticGood" type="number" value="-1"/>
+			<property name="LawfulGood" type="number" value="-2"/>
+			<property name="LawfulNeutral" type="number" value="-1"/>
+			<property name="LawfulEvil" type="number" value="-1"/>
+		</OverPointPenalty>
+	</class>
+</idspace>

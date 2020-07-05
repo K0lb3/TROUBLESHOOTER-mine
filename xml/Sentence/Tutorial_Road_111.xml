@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Tutorial_Road_111_BATZTQ" Value="[!Dashboard:Counter]수리 가능한 전자망 수"/>
+		<class name="Tutorial_Road_111_ODEAvo" Value="[!Dashboard:ObjectiveMarker]해당 지역으로 가면 수리 분대와 합류할 수 있습니다."/>
+		<class name="Tutorial_Road_111_Bq8ZmQ" Value="[!Dashboard:ObjectiveMarker]해당 지역으로 가면 수리 분대와 합류할 수 있습니다."/>
+		<class name="Tutorial_Road_111_FjBpII" Value="[!Dashboard:ObjectiveMarker]해당 지역으로 가면 수리 분대와 합류할 수 있습니다."/>
+		<class name="Tutorial_Road_111_744QR4" Value="[!Dashboard:ObjectiveMarker]해당 전자망에 인접한 지역으로 카일리를 이동시키면 카일리가 전자망을 수리할 수 있습니다.
+
+[colour=&apos;FFFFFF00&apos;]주의: 해당 전자망이 파괴되면 패배합니다."/>
+		<class name="Tutorial_Road_111_AvI9Ch" Value="[!Dashboard:ObjectiveMarker]해당 전자망에 인접한 지역으로 카일리를 이동시키면 카일리가 전자망을 수리할 수 있습니다.
+
+[colour=&apos;FFFFFF00&apos;]주의: 해당 전자망이 파괴되면 패배합니다."/>
+		<class name="Tutorial_Road_111_cm8l6z" Value="[!Dashboard:ObjectiveMarker]해당 전자망에 인접한 지역으로 카일리를 이동시키면 카일리가 전자망을 수리할 수 있습니다.
+
+[colour=&apos;FFFFFF00&apos;]주의: 해당 전자망이 파괴되면 패배합니다."/>
+		<class name="Tutorial_Road_111_X03wyF" Value="[!Dashboard:ObjectiveMarker]해당 전자망에 인접한 지역으로 카일리를 이동시키면 카일리가 전자망을 수리할 수 있습니다.
+
+[colour=&apos;FFFFFF00&apos;]주의: 해당 전자망이 파괴되면 패배합니다."/>
+		<class name="Tutorial_Road_111_IoSebm" Value="[!Dashboard:ObjectiveMarker]해당 전자망에 인접한 지역으로 카일리를 이동시키면 카일리가 전자망을 수리할 수 있습니다.
+
+[colour=&apos;FFFFFF00&apos;]주의: 해당 전자망이 파괴되면 패배합니다."/>
+		<class name="Tutorial_Road_111_44qzr7" Value="[!Dashboard:ObjectiveMarker]해당 전자망에 인접한 지역으로 카일리를 이동시키면 카일리가 전자망을 수리할 수 있습니다.
+
+[colour=&apos;FFFFFF00&apos;]주의: 해당 전자망이 파괴되면 패배합니다."/>
+		<class name="Tutorial_Road_111_ZckjSU" Value="[!Dashboard:ObjectiveMarker]카일리가 해당 지역으로 이동하면 탈출할 수 있습니다."/>
+		<class name="Tutorial_Road_111_1js44A" Value="[!Objective]수리 분대를 찾아 합류하시오."/>
+		<class name="Tutorial_Road_111_CqZfbL" Value="[!Objective]북동쪽 전자망을 복구하시오."/>
+		<class name="Tutorial_Road_111_jepF3B" Value="[!Objective]북쪽 전자망을 복구하시오."/>
+		<class name="Tutorial_Road_111_AE7kaS" Value="[!Objective]북서쪽 전자망을 복구하시오."/>
+		<class name="Tutorial_Road_111_5FM1pX" Value="[!Title]설상가상"/>
+		<class name="Tutorial_Road_111_FqzX19" Value="[!Title]철의 숲 개발 구역"/>
+		<class name="Tutorial_Road_111_3GiF6x" Value="[!Subtitle][!speaker:EmptySubTitle_]철의 숲 자원 관리 구역의 야수 사냥이 시작된 지 2달."/>
+		<class name="Tutorial_Road_111_0Yqnf0" Value="[!Subtitle][!speaker:EmptySubTitle_]우려했던 『 힘의 공명 』이 일어날 가능성은 줄어들었지만..."/>
+		<class name="Tutorial_Road_111_78LqN9" Value="[!Subtitle][!speaker:EmptySubTitle_]야수 움직임을 통제하기 위해 설치된 전자망의 단선이 자주 일어나기 시작한다."/>
+		<class name="Tutorial_Road_111_LnEKUK" Value="[!Subtitle][!speaker:EmptySubTitle_]발할라 경찰청은 바람장벽 지구 내 기술자들에게 해당 수리를 꾸준히 요청하지만..."/>
+		<class name="Tutorial_Road_111_hKjVQP" Value="[!Subtitle][!speaker:EmptySubTitle_]정작 야수 사냥에 열중한 트러블슈터 회사들은 기술자를 호위하여 전자망 수리를 돕는 임무를 기피한다."/>
+		<class name="Tutorial_Road_111_EzSV4q" Value="[!Subtitle][!speaker:EmptySubTitle_]결국 발할라 경찰청은 기술자들과 경찰 병력만으로 수리 임무를 진행하게 되었다."/>
+		<class name="Tutorial_Road_111_kxSTZE" Value="[!Dialog][!speaker:Kylie_Rage]젠장! 또 얼어 붙은 거야!"/>
+		<class name="Tutorial_Road_111_fKZD9R" Value="[!Dialog][!speaker:VHPD_Assault_Normal]분대장님. 이미 전자망 안으로 야수들의 칩입 흔적이 보입니다!"/>
+		<class name="Tutorial_Road_111_6FqF57" Value="[!Dialog][!speaker:VHPD_Assault_Leader_Normal]카일리 씨. 수리 가능하시겠습니까?"/>
+		<class name="Tutorial_Road_111_qBPW1c" Value="[!Dialog][!speaker:Kylie_Serious]당연하지. 하지만 수리하는 데 시간이 조금 걸릴 거야."/>
+		<class name="Tutorial_Road_111_h8WwMC" Value="[!BalloonChat][!speaker:VHPD02]분대장님! 티마 무리가 다수 보입니다!"/>
+		<class name="Tutorial_Road_111_vkq0bo" Value="[!Dialog][!speaker:VHPD_Assault_Leader_Normal]카일리 씨. 5분 안에 수리 가능하시겠습니까?"/>
+		<class name="Tutorial_Road_111_ZNnmqM" Value="[!Dialog][!speaker:Kylie_Rage]농담도 적당히 해!"/>
+		<class name="Tutorial_Road_111_lQfxKv" Value="[!Dialog][!speaker:VHPD_Assault_Leader_Normal]알겠습니다. 카일리 씨. 지원 분대를 요청하겠습니다."/>
+		<class name="Tutorial_Road_111_dvcrxr" Value="[!Dialog][!speaker:VHPD_Assault_Leader_Normal]이 곳은 위험하니 일단 뒤로 물러나 지원 분대를 기다리도록 합시다."/>
+		<class name="Tutorial_Road_111_sVBejl" Value="[!Dialog][!speaker:VHPD_Assault_Normal]알버스 님. 수리 분대와 연락이 10분 전부터 끊겼습니다."/>
+		<class name="Tutorial_Road_111_Q8wi1y" Value="[!BalloonChat][!speaker:Heissing]수리 분대라면... 그녀인가..."/>
+		<class name="Tutorial_Road_111_SgFU0S" Value="[!Dialog][!speaker:Albus_Serious]혹시 수리 분대의 위치를 특정 지을 수 있습니까?"/>
+		<class name="Tutorial_Road_111_8Wijwm" Value="[!BalloonChat][!speaker:Sion]춥다... 추워..."/>
+		<class name="Tutorial_Road_111_uYsI16" Value="[!Dialog][!speaker:Anne_Surprise]......"/>
+		<class name="Tutorial_Road_111_6cXaPv" Value="[!Dialog][!speaker:VHPD_Assault_Normal]죄송합니다. 지원 요청에 다급해서..."/>
+		<class name="Tutorial_Road_111_5Aafsr" Value="[!BalloonChat][!speaker:Giselle]엉망이군..."/>
+		<class name="Tutorial_Road_111_dyKVxv" Value="[!Dialog][!speaker:Albus_Serious]알겠습니다."/>
+		<class name="Tutorial_Road_111_5B76pX" Value="[!Dialog][!speaker:Giselle_Normal]수리 분대가 퇴각하지 않고 지원 요청했다면, 전자망 근처에서 많이 물러나지 않았을 거야."/>
+		<class name="Tutorial_Road_111_oY59Ho" Value="[!Dialog][!speaker:Irene_Normal]그러면 전자망 방향으로 전진하면 금방 만나겠군."/>
+		<class name="Tutorial_Road_111_3efCdZ" Value="[!Dialog][!speaker:Giselle_Smile]안타깝지만 그렇게 쉽진 않을 거야."/>
+		<class name="Tutorial_Road_111_YWKL47" Value="[!Dialog][!speaker:Albus_Normal]이 곳의 전자망은 3개로 나뉘어져 있습니다. 아이린 씨."/>
+		<class name="Tutorial_Road_111_woGkJ7" Value="[!Dialog][!speaker:Irene_Surprise]3개나?"/>
+		<class name="Tutorial_Road_111_SQABSu" Value="[!Dialog][!speaker:Giselle_Smile]발이 빠른 알버스와 헤이싱 씨가 최대한 수리 분대를 수색에 집중하는 것이 낫겠지."/>
+		<class name="Tutorial_Road_111_aBj8ET" Value="[!Dialog][!speaker:Giselle_Satisfying]조금 소란스럽겠지만, 야수들과의 싸움에 자신이 있다면 예상 위치에 섬광탄을 쏘는 것도 나쁘지 않을 거야."/>
+		<class name="Tutorial_Road_111_yEr8jJ" Value="[!BalloonChat][!speaker:Anne]지젤 씨. 오빠들 특징을 벌써 다 알고 있어..."/>
+		<class name="Tutorial_Road_111_vHm0M8" Value="[!Dialog][!speaker:Giselle_Smile]그리고 어차피 수리 분대가 야수와 교전 중이면 금방 위치가 파악될 거야"/>
+		<class name="Tutorial_Road_111_2bIsFD" Value="[!BalloonChat][!speaker:Ray]자신감 가득하네..."/>
+		<class name="Tutorial_Road_111_nTnBrO" Value="[!Dialog][!speaker:Albus_Normal]알겠습니다."/>
+		<class name="Tutorial_Road_111_srWywa" Value="[!Dialog][!speaker:Albus_Normal]그럼 저와 헤이싱 씨가 한 방향씩 수색하겠습니다. 나머지 분들은 지젤 씨와 함께 남은 방향으로 진행해주세요."/>
+		<class name="Tutorial_Road_111_JSaD5o" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_Road_111_PDIpOK" Value="[!VictoryCondition]카일리 전투 불능"/>
+		<class name="Tutorial_Road_111_abEtzL" Value="[!VictoryCondition]수리 분대를 찾아 합류하시오."/>
+		<class name="Tutorial_Road_111_GZF1jY" Value="[!BalloonChat][!speaker:Albus]다들 괜찮으십니까!"/>
+		<class name="Tutorial_Road_111_DdGZd9" Value="[!BalloonChat][!speaker:Kylie]오! 너희구나!"/>
+		<class name="Tutorial_Road_111_hZY53V" Value="[!BalloonChat][!speaker:VHPD02]알버스 님!"/>
+		<class name="Tutorial_Road_111_CzOFQj" Value="[!BalloonChat][!speaker:VHPD01]다행이야. 살았어..."/>
+		<class name="Tutorial_Road_111_Skj9Br" Value="[!Dialog][!speaker:Albus_Normal]카일리 씨. 전자망 수리까지 가능하시겠어요?"/>
+		<class name="Tutorial_Road_111_36TFHj" Value="[!Dialog][!speaker:Kylie_Normal]당연한 소리. 작업할 여유만 주면 문제 없어."/>
+		<class name="Tutorial_Road_111_rWswFu" Value="[!Dialog][!speaker:Kylie_Serious]하지만 전자망 제어기가 파괴되면 불가능해."/>
+		<class name="Tutorial_Road_111_mdypbZ" Value="[!Dialog][!speaker:Albus_Serious]시간이 없군요."/>
+		<class name="Tutorial_Road_111_8LjwIT" Value="[!Dialog][!speaker:Kylie_Normal]무리라고 생각하면 이대로 물러나도 좋아."/>
+		<class name="Tutorial_Road_111_X1IOZQ" Value="[!Dialog][!speaker:Kylie_Normal]하지만 전자망을 복구할 거라면 빨리 움직여야 할 거야."/>
+		<class name="Tutorial_Road_111_3wVjkE" Value="[!BalloonChat][!speaker:Sion]카일리 누나!"/>
+		<class name="Tutorial_Road_111_ML66TY" Value="[!BalloonChat][!speaker:Kylie]오! 시온!"/>
+		<class name="Tutorial_Road_111_Pk31Vx" Value="[!BalloonChat][!speaker:VHPD02]시온 씨!"/>
+		<class name="Tutorial_Road_111_sd0kLE" Value="[!Dialog][!speaker:Sion_Normal]카일리 누나. 힘들겠지만 이대로 전자망 수리까지 가능하겠어?"/>
+		<class name="Tutorial_Road_111_vKxrZm" Value="[!Dialog][!speaker:Kylie_Smile]당연한 소리."/>
+		<class name="Tutorial_Road_111_qziW8y" Value="[!Dialog][!speaker:Kylie_Satisfying]네 녀석이야말로 내가 수리하는 동안 제대로 지켜낼 수 있겠어?"/>
+		<class name="Tutorial_Road_111_km22Kg" Value="[!Dialog][!speaker:Sion_Smile]물론이지~☆"/>
+		<class name="Tutorial_Road_111_0TSBts" Value="[!Dialog][!speaker:Kylie_Normal]그럼 바로 출발하자."/>
+		<class name="Tutorial_Road_111_GEPJ6x" Value="[!Dialog][!speaker:Sion_Surprise]다른 사람들 곧 올 텐데... 안 기다리고?"/>
+		<class name="Tutorial_Road_111_CHl05v" Value="[!Dialog][!speaker:Kylie_Normal]전자망을 복구하려면 바로 움직여야 해. 파괴될 수도 있어."/>
+		<class name="Tutorial_Road_111_i96c7S" Value="[!Dialog][!speaker:Sion_SurpriseStare]파괴? 그러면 수리할 수 없나?"/>
+		<class name="Tutorial_Road_111_0FqpNi" Value="[!Dialog][!speaker:Kylie_Smile]공방으로 돌아가면 수리할 수 있겠지. 하지만 현재 장비로는 불가능 해."/>
+		<class name="Tutorial_Road_111_IBtzUu" Value="[!BalloonChat][!speaker:Irene]다들 괜찮나!!"/>
+		<class name="Tutorial_Road_111_YNXg8H" Value="[!BalloonChat][!speaker:Kylie]아이린! 여기야!"/>
+		<class name="Tutorial_Road_111_N2NTHK" Value="[!BalloonChat][!speaker:VHPD02]히어로 아이린 씨!"/>
+		<class name="Tutorial_Road_111_kHnk4f" Value="[!BalloonChat][!speaker:VHPD01]히어로 아이린..."/>
+		<class name="Tutorial_Road_111_tsG8gq" Value="[!BalloonChat][!speaker:VHPD01]요즘은 좀처럼 늦지 않는군..."/>
+		<class name="Tutorial_Road_111_ZqI9tS" Value="[!Dialog][!speaker:Irene_Smile2]카일리 씨. 무사하니 다행이다."/>
+		<class name="Tutorial_Road_111_YNO1Ak" Value="[!Dialog][!speaker:Kylie_Smile]$CompanyName$ 역시 여전하구나. 다들 기피하는 임무에 출동하고."/>
+		<class name="Tutorial_Road_111_aSYWdR" Value="[!Dialog][!speaker:Irene_Normal]히어로와 $CompanyName$[은] 어려운 사람을 지나치지 않아."/>
+		<class name="Tutorial_Road_111_wlRWrZ" Value="[!Dialog][!speaker:Kylie_Satisfying]......"/>
+		<class name="Tutorial_Road_111_JYetrj" Value="[!Dialog][!speaker:Kylie_Smile]이제 어떻게 할 건가? 이대로 퇴각하나? 아니면 전자망 수리를 진행하는 건가?"/>
+		<class name="Tutorial_Road_111_UR4BpU" Value="[!Dialog][!speaker:Irene_Surprise]그건 알버스 군이 정해야 할 것 같은데..."/>
+		<class name="Tutorial_Road_111_nZTwce" Value="[!Dialog][!speaker:Kylie_Serious]얼어붙은 전자망 제어기가 야수들에게 부서져 버리면 수리할 수 없어."/>
+		<class name="Tutorial_Road_111_vGOmyI" Value="[!Dialog][!speaker:Kylie_Serious]수리할거면 바로 움직여야 해."/>
+		<class name="Tutorial_Road_111_Be3wMt" Value="[!BalloonChat][!speaker:Anne]카일리 언니! 저 왔어요!"/>
+		<class name="Tutorial_Road_111_18cNXl" Value="[!BalloonChat][!speaker:Kylie]앤!"/>
+		<class name="Tutorial_Road_111_vHwgM3" Value="[!BalloonChat][!speaker:VHPD02]앤 메이시 양! 조심하렴!"/>
+		<class name="Tutorial_Road_111_CUBQam" Value="[!BalloonChat][!speaker:VHPD01]앤 양 와줘서 고맙다."/>
+		<class name="Tutorial_Road_111_QSgYQx" Value="[!BalloonChat][!speaker:VHPD01]하지만 여긴 위험하니 카일리 씨와 함께 잠시 뒤로 물러나 있으렴."/>
+		<class name="Tutorial_Road_111_K2Vu9O" Value="[!Dialog][!speaker:Anne_Smile]다행이에요. 카일리 언니."/>
+		<class name="Tutorial_Road_111_M1o4Ok" Value="[!Dialog][!speaker:Kylie_Smile]열심히 뛰어왔구나."/>
+		<class name="Tutorial_Road_111_XMm6sW" Value="[!Dialog][!speaker:Anne_Normal]금방 다른 분들도 오실 거에요."/>
+		<class name="Tutorial_Road_111_W0Q1ML" Value="[!Dialog][!speaker:Kylie_Satisfying]고맙다. 앤."/>
+		<class name="Tutorial_Road_111_KMAx1C" Value="[!Title]날지 못하는 새"/>
+		<class name="Tutorial_Road_111_ynEa5m" Value="[!Title]4년 전, 백룡회"/>
+		<class name="Tutorial_Road_111_nMl8wx" Value="[!Dialog][!speaker:Kylie_Serious_Young]내일이구나..."/>
+		<class name="Tutorial_Road_111_zm3vqU" Value="[!Dialog][!speaker:Heissing_Rage_Young2]왜 나에게 호의를 베푼거지?"/>
+		<class name="Tutorial_Road_111_V2aNQy" Value="[!Dialog][!speaker:Kylie_Normal_Young]호의?"/>
+		<class name="Tutorial_Road_111_mdAV60" Value="[!Dialog][!speaker:Kylie_Smile_Young]뭐. 네가 그렇게 생각한다면 그렇겠지. "/>
+		<class name="Tutorial_Road_111_vmKapW" Value="[!Dialog][!speaker:Heissing_Rage_Young2]값싼 동정인가?"/>
+		<class name="Tutorial_Road_111_x7Ul1H" Value="[!Dialog][!speaker:Kylie_Smile_Young]무슨 상관인가? 어차피 우리의 인연은 여기까지다."/>
+		<class name="Tutorial_Road_111_4ZhQS5" Value="[!Dialog][!speaker:Kylie_Satisfying_Young]네가 운명을 바꿀 수 있다면..."/>
+		<class name="Tutorial_Road_111_H5cSjL" Value="[!Dialog][!speaker:Kylie_Satisfying_Young]그 때는 이런 사이가 아니었으면 좋겠군."/>
+		<class name="Tutorial_Road_111_ZkAgGN" Value="[!Dialog][!speaker:Heissing_Rage_Young2]불가능한 일이야."/>
+		<class name="Tutorial_Road_111_5m0dsz" Value="[!Dialog][!speaker:Kylie_Normal]우리 생각보다 질긴 인연이군..."/>
+		<class name="Tutorial_Road_111_KoQpuN" Value="[!Dialog][!speaker:Kylie_Smile]전자망을 수리하려면 바로 움직여야 해."/>
+		<class name="Tutorial_Road_111_3XtxNe" Value="[!Dialog][!speaker:Kylie_Satisfying]수리를 마칠 때까지 날 지켜줄 수 있겠나?"/>
+		<class name="Tutorial_Road_111_V2Nyy3" Value="[!Dialog][!speaker:Heissing_Smile]그다지 즐거운 일은 아니군."/>
+		<class name="Tutorial_Road_111_QeoYlj" Value="[!Dialog][!speaker:Kylie_Smile]무리는 하지 마."/>
+		<class name="Tutorial_Road_111_ta5BoN" Value="[!Dialog][!speaker:Kylie_Satisfying]지금 힘들다면 다음에 다시 와서 수리해도 돼."/>
+		<class name="Tutorial_Road_111_cOX9Jg" Value="[!Dialog][!speaker:Heissing_Smile]배려인가..."/>
+		<class name="Tutorial_Road_111_fOFPQB" Value="[!Dialog][!speaker:Kylie_Smile]네가 그렇게 생각한다면 그렇겠지. "/>
+		<class name="Tutorial_Road_111_UDho8w" Value="[!BalloonChat][!speaker:Ray]내가 가장 먼저 도착했네... 뭐라고 말해야 되나..."/>
+		<class name="Tutorial_Road_111_9cTi2u" Value="[!BalloonChat][!speaker:Kylie]응 저 아이는..."/>
+		<class name="Tutorial_Road_111_0mRQ0K" Value="[!Dialog][!speaker:Ray_Normal]트러블슈터 $CompanyName$의 레이입니다."/>
+		<class name="Tutorial_Road_111_hKCAQQ" Value="[!Dialog][!speaker:Ray_Normal_Smile]동료들이 도착할 때까지 힘이 닿는 대로 지원하겠습니다."/>
+		<class name="Tutorial_Road_111_uHIvuF" Value="[!Dialog][!speaker:Kylie_Smile]&apos;이 아이가 헤이싱의...&apos;"/>
+		<class name="Tutorial_Road_111_fP4Cfy" Value="[!Dialog][!speaker:EmptySubTitleWithPotrait_]카일리는 4년 전, 헤이싱으로 부터 들었던 이야기를 다시금 상기시켰다."/>
+		<class name="Tutorial_Road_111_dsGbuk" Value="[!Dialog][!speaker:Kylie_Satisfying]&apos;인연의 끈은 참으로 질기구나...&apos;"/>
+		<class name="Tutorial_Road_111_MMW7cS" Value="[!Dialog][!speaker:Kylie_Normal]난 카일리. 이번 임무의 엔지니어야."/>
+		<class name="Tutorial_Road_111_1zZ09H" Value="[!Dialog][!speaker:Kylie_Smile]지금 바로 전자망 수리를 위해 움직일 수 있을까?"/>
+		<class name="Tutorial_Road_111_uTcmUa" Value="[!Dialog][!speaker:Ray_Surprise_Smile]네?"/>
+		<class name="Tutorial_Road_111_z5z5ha" Value="[!Dialog][!speaker:Kylie_Normal]얼어붙은 전자망 제어기가 야수들에게 부서져 버리면 수리할 수 없어."/>
+		<class name="Tutorial_Road_111_k0Z3nj" Value="[!Dialog][!speaker:Ray_Surprise]......"/>
+		<class name="Tutorial_Road_111_JnmXBB" Value="[!Dialog][!speaker:Kylie_Smile]수리할 거면 바로 움직여야 해. 아니면 이대로 안전한 곳까지 부탁해."/>
+		<class name="Tutorial_Road_111_kRTzOO" Value="[!BalloonChat][!speaker:Giselle]역시 저 아이였군..."/>
+		<class name="Tutorial_Road_111_cIX1Hq" Value="[!BalloonChat][!speaker:Kylie]!!!!"/>
+		<class name="Tutorial_Road_111_WsGpRC" Value="[!BalloonChat][!speaker:VHPD02]지젤 님!"/>
+		<class name="Tutorial_Road_111_cQ7PIY" Value="[!BalloonChat][!speaker:VHPD01]이 사람이... 『 블랙펄 』의 9과 과장..."/>
+		<class name="Tutorial_Road_111_Vlij08" Value="[!Dialog][!speaker:Giselle_Normal]오랜만이야. 3년 만인가?"/>
+		<class name="Tutorial_Road_111_KZjfHv" Value="[!Dialog][!speaker:Kylie_Serious]당신이 어떻게 여길?"/>
+		<class name="Tutorial_Road_111_ozSzCW" Value="[!Dialog][!speaker:Giselle_Smile]내가 어딜 가든 내 마음이지."/>
+		<class name="Tutorial_Road_111_hnTBgJ" Value="[!Dialog][!speaker:Kylie_Serious]......"/>
+		<class name="Tutorial_Road_111_EFZqQw" Value="[!Dialog][!speaker:Giselle_Smile]엔지니어가 된 것을 보니 대학은 무사히 졸업했구나."/>
+		<class name="Tutorial_Road_111_9JM5SB" Value="[!Dialog][!speaker:Kylie_Normal]난 나에게 주어진 시간에 충실할 뿐이야."/>
+		<class name="Tutorial_Road_111_0IsqfI" Value="[!Dialog][!speaker:Giselle_Satisfying]......"/>
+		<class name="Tutorial_Road_111_22YDri" Value="[!Dialog][!speaker:Giselle_Smile]그래. 각자 자신의 역할에 충실해 볼까?"/>
+		<class name="Tutorial_Road_111_PORLHu" Value="[!Dialog][!speaker:Kylie_Serious]당연한 소리."/>
+		<class name="Tutorial_Road_111_uo00K3" Value="[!BalloonChat][!speaker:Kylie]여기서 쓰러지면 진짜 죽는 거야!"/>
+		<class name="Tutorial_Road_111_d6wDko" Value="[!BalloonChat][!speaker:Kylie]그러니 정신잡고 조금만 더 버텨!"/>
+		<class name="Tutorial_Road_111_C47bZ9" Value="[!Objective]전자망을 복구하시오."/>
+		<class name="Tutorial_Road_111_lUQ3VC" Value="[!Objective]카일리를 안전하게 퇴각시키시오."/>
+		<class name="Tutorial_Road_111_EWZlFA" Value="[!Dialog][!speaker:Albus_Think][colour=&apos;FFFFFF00&apos;]&apos;현재 상태에서 전자망 복구가 가능할까....&apos;"/>
+		<class name="Tutorial_Road_111_YRE66P" Value="[!Choice]전자망을 복구한다."/>
+		<class name="Tutorial_Road_111_G5eISC" Value="미션 목표가 3 개의 전자망을 복구하는 임무로 변경됩니다."/>
+		<class name="Tutorial_Road_111_chgscb" Value="[!Choice]퇴각한다."/>
+		<class name="Tutorial_Road_111_73W0Ag" Value="미션 목표가 출발 지점으로 카일리를 안전하게 퇴각시키는 임무로 변경됩니다."/>
+		<class name="Tutorial_Road_111_9yjads" Value="[!Dialog][!speaker:Sion_Think][colour=&apos;FFFFFF00&apos;]&apos;이럴 줄 알았으면 조금 천천히 올 걸...&apos; "/>
+		<class name="Tutorial_Road_111_5Xqg89" Value="[!Dialog][!speaker:Irene_Think][colour=&apos;FFFFFF00&apos;]&apos;히어로는 물러서지 않는 법인데...&apos;"/>
+		<class name="Tutorial_Road_111_x7BvdP" Value="[!Choice]전자망을 복구해야만 해."/>
+		<class name="Tutorial_Road_111_oq0Lwl" Value="[!Choice]전자망은 정말 중요해."/>
+		<class name="Tutorial_Road_111_Bff3wR" Value="[!Choice]역시 전자망부터지..."/>
+		<class name="Tutorial_Road_111_RarDGD" Value="[!Dialog][!speaker:Kylie_Serious][colour=&apos;FFFFFF00&apos;]&apos;전자망을 수리하려면 지금 바로 움직여야 할 것 같은데...&apos;"/>
+		<class name="Tutorial_Road_111_Y4Tt3D" Value="[!Dialog][!speaker:Heissing_EyeClose][colour=&apos;FFFFFF00&apos;]....."/>
+		<class name="Tutorial_Road_111_7dR9J9" Value="[!Dialog][!speaker:Ray_Normal][colour=&apos;FFFFFF00&apos;]&apos;내가 이런 결정을 해도 되는 걸까....&apos;"/>
+		<class name="Tutorial_Road_111_H6STGE" Value="[!Dialog][!speaker:Giselle_Satisfying][colour=&apos;FFFFFF00&apos;]&apos;이 아이 실력 좀 볼까....&apos;"/>
+		<class name="Tutorial_Road_111_YTU1rS" Value="[!Dialog][!speaker:Albus_Normal]카일리 씨. 전자망을 수리하겠습니다. 잘 부탁드립니다."/>
+		<class name="Tutorial_Road_111_k6Qd2r" Value="[!Dialog][!speaker:Kylie_Smile]나야말로 잘 부탁한다. $CompanyName$"/>
+		<class name="Tutorial_Road_111_8Hoq0F" Value="[!Dialog][!speaker:Albus_Serious]현재 상황으로 수리는 불가능 할 것 같습니다. 이대로 퇴각하겠습니다."/>
+		<class name="Tutorial_Road_111_1QqSGf" Value="[!Dialog][!speaker:Kylie_Normal]알았어. 그럼 마지막까지 잘 부탁해."/>
+		<class name="Tutorial_Road_111_Qxyfci" Value="[!Dialog][!speaker:Sion_Normal]&apos;이왕 이렇게 된 거 제대로 해야겠지...&apos;"/>
+		<class name="Tutorial_Road_111_lkMQBo" Value="[!Dialog][!speaker:Sion_Angry]카일리 누나. 준비됐어?"/>
+		<class name="Tutorial_Road_111_BC9xhK" Value="[!Dialog][!speaker:Kylie_Satisfying]언제나 출발 가능해."/>
+		<class name="Tutorial_Road_111_IphzNJ" Value="[!Dialog][!speaker:Sion_Normal]OK~☆ 그럼 바로 출발 하자!"/>
+		<class name="Tutorial_Road_111_q7kArn" Value="[!Dialog][!speaker:Sion_Stare]&apos;괜한 고생할 필요 없겠지...&apos;"/>
+		<class name="Tutorial_Road_111_dsxtNN" Value="[!Dialog][!speaker:Sion_Depressed]카일리 누나. 아무리 생각해도 우리만으로 출발하는 것은 무리야."/>
+		<class name="Tutorial_Road_111_3nttJ1" Value="[!Dialog][!speaker:Kylie_Satisfying]알았다. 시온."/>
+		<class name="Tutorial_Road_111_DwnJYp" Value="[!Dialog][!speaker:Sion_Depressed]고마워. 카일리 누나."/>
+		<class name="Tutorial_Road_111_dJgcXn" Value="[!Dialog][!speaker:Irene_Normal]결정했어."/>
+		<class name="Tutorial_Road_111_gM0ZOY" Value="[!Dialog][!speaker:Irene_Heroic]야수들은 나 히어로 아이린이 모두 맡겠어!"/>
+		<class name="Tutorial_Road_111_iTGAOm" Value="[!Dialog][!speaker:Irene_Smile2]카일리 씨는 날 믿고 수리에만 집중해 줘!"/>
+		<class name="Tutorial_Road_111_oonJcZ" Value="[!Dialog][!speaker:Kylie_Smile]알았다. 그럼 바로 이동하자. 시간이 지체되면 좋아질게 없어."/>
+		<class name="Tutorial_Road_111_nu7ssj" Value="[!Dialog][!speaker:Kylie_Normal]앤. 미안하지만 지금 더 지체되면 현장에서 수리가 불가능 해."/>
+		<class name="Tutorial_Road_111_J03l0x" Value="[!Dialog][!speaker:Anne_Surprise]그렇게 급한 상황인가요..."/>
+		<class name="Tutorial_Road_111_2zqkRD" Value="[!Dialog][!speaker:Kylie_Normal]응. 도와줄 수 있겠니?"/>
+		<class name="Tutorial_Road_111_SoA98G" Value="[!Dialog][!speaker:Anne_Strict]당연하죠! 제가 카일리 언니를 지켜내겠어요!"/>
+		<class name="Tutorial_Road_111_QU8Goy" Value="[!Dialog][!speaker:Kylie_Normal]앤. 미안하지만 더는 현장에 머물 수는 없을 것 같아."/>
+		<class name="Tutorial_Road_111_TTu4Mx" Value="[!Dialog][!speaker:Anne_Surprise]수리는 포기하는 건가요?"/>
+		<class name="Tutorial_Road_111_ChY7tj" Value="[!Dialog][!speaker:Kylie_Smile]응. 다음에 다시 오자."/>
+		<class name="Tutorial_Road_111_LTzzDL" Value="[!Dialog][!speaker:Anne_Strict]알겠습니다! 마지막까지 카일리 언니를 무사히 돌아가실 수 있게 최선을 다할게요!"/>
+		<class name="Tutorial_Road_111_dZhgI9" Value="[!Dialog][!speaker:Heissing_EyeClose]......"/>
+		<class name="Tutorial_Road_111_kqVhTM" Value="[!Dialog][!speaker:Heissing_Smile]뒤는 내게 맡기고 수리에 집중해라."/>
+		<class name="Tutorial_Road_111_7e6vum" Value="[!Dialog][!speaker:Kylie_Smile]알았다. 헤이싱."/>
+		<class name="Tutorial_Road_111_w6YZ7V" Value="[!Dialog][!speaker:Heissing_EyeClose]......"/>
+		<class name="Tutorial_Road_111_1kTQPh" Value="[!Dialog][!speaker:Heissing_Normal]수리는 다음에 하면 된다."/>
+		<class name="Tutorial_Road_111_XJr4eC" Value="[!Dialog][!speaker:Heissing_Normal]지금은 무리하지 말고 복귀한다."/>
+		<class name="Tutorial_Road_111_PtqoVV" Value="[!Dialog][!speaker:Kylie_Normal]그것이 네 선택이라면 어쩔 수 없지."/>
+		<class name="Tutorial_Road_111_p0aXYS" Value="[!Dialog][!speaker:Ray_Normal]&apos;나는 이런 일 결정 하나에도 당황하면서...&apos;"/>
+		<class name="Tutorial_Road_111_aMHfgd" Value="[!Dialog][!speaker:Ray_Normal]&apos;마음 강하게 먹자...&apos;"/>
+		<class name="Tutorial_Road_111_DPWzrI" Value="[!Dialog][!speaker:Ray_Serious]카일리 씨. 바로 전자망 수리하러 이동해요."/>
+		<class name="Tutorial_Road_111_K2IxPQ" Value="[!Dialog][!speaker:Kylie_Normal]알았다. 잘 부탁한다."/>
+		<class name="Tutorial_Road_111_jcQz94" Value="[!Dialog][!speaker:Ray_Surprise_Smile]&apos;무리하게 위험을 감수할 수는 없어...&apos;"/>
+		<class name="Tutorial_Road_111_ej4Rae" Value="[!Dialog][!speaker:Ray_Normal_Smile]죄송해요. 카일리 씨."/>
+		<class name="Tutorial_Road_111_UEUxIV" Value="[!Dialog][!speaker:Ray_Normal]지금은 모두의 안전을 생각해서 안전하게 이 지역을 이탈하겠습니다."/>
+		<class name="Tutorial_Road_111_fY2ru8" Value="[!Dialog][!speaker:Kylie_Normal]알았다. 잘 부탁한다."/>
+		<class name="Tutorial_Road_111_OGGHU6" Value="[!Dialog][!speaker:Giselle_Satisfying]자. 그럼 가 볼까?"/>
+		<class name="Tutorial_Road_111_MNH0uu" Value="[!Dialog][!speaker:Kylie_Normal]......"/>
+		<class name="Tutorial_Road_111_n1Ciit" Value="[!Dialog][!speaker:Giselle_Satisfying]아쉽지만 오늘은 물러나는 것이 좋겠어."/>
+		<class name="Tutorial_Road_111_DN9TSV" Value="[!Dialog][!speaker:Kylie_Normal]......"/>
+		<class name="Tutorial_Road_111_bLh8tt" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_Road_111_QFdWXD" Value="[!VictoryCondition]카일리 전투 불능"/>
+		<class name="Tutorial_Road_111_ZbNnpA" Value="[!VictoryCondition]전자망 제어기 파괴"/>
+		<class name="Tutorial_Road_111_q8VMZA" Value="[!VictoryCondition]전자망을 복구하시오."/>
+		<class name="Tutorial_Road_111_mOMXuS" Value="[!VictoryCondition]- 북쪽 전자망을 복구하시오."/>
+		<class name="Tutorial_Road_111_RUky4h" Value="[!VictoryCondition]- 북동쪽 전자망을 복구하시오."/>
+		<class name="Tutorial_Road_111_kdhuxM" Value="[!VictoryCondition]- 북서쪽 전자망을 복구하시오."/>
+		<class name="Tutorial_Road_111_sTI3km" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_Road_111_0vasRy" Value="[!VictoryCondition]카일리 전투 불능"/>
+		<class name="Tutorial_Road_111_SxnddC" Value="[!VictoryCondition]카일리를 안전하게 퇴각시키시오."/>
+		<class name="Tutorial_Road_111_12fVEX" Value="[!Title]북동쪽 전자망"/>
+		<class name="Tutorial_Road_111_CDCIRK" Value="[!Title]자원 개발 구역"/>
+		<class name="Tutorial_Road_111_R9YoRr" Value="[!BalloonChat][!speaker:Neguri_Fire_Boss]네구르르!!"/>
+		<class name="Tutorial_Road_111_Ruhe9K" Value="[!Title]북쪽 전자망"/>
+		<class name="Tutorial_Road_111_KsU2Dg" Value="[!Title]북서쪽 전자망"/>
+		<class name="Tutorial_Road_111_e1Selb" Value="[!Dialog][!speaker:Albus_SurpriseStare]네구리가 여기까지 진출하다니..."/>
+		<class name="Tutorial_Road_111_m75O9I" Value="[!Dialog][!speaker:Sion_Stare]이거 너무 하잖아..."/>
+		<class name="Tutorial_Road_111_T9j11B" Value="[!Dialog][!speaker:Irene_Fury]이 사악한 괴수들..."/>
+		<class name="Tutorial_Road_111_pGbT2c" Value="[!Dialog][!speaker:Irene_Heroic]히어로 아이린은 절대 물러나지 않는다!"/>
+		<class name="Tutorial_Road_111_zrhucC" Value="[!Dialog][!speaker:Anne_Smile_Surprise]네구리 실물은 처음 봤어...."/>
+		<class name="Tutorial_Road_111_fiQCcK" Value="[!Dialog][!speaker:Heissing_Smile]마냥 지겨운 임무는 아니군."/>
+		<class name="Tutorial_Road_111_N4SFMh" Value="[!Dialog][!speaker:Ray_Surprise]뭐야. 진짜 네구리야??"/>
+		<class name="Tutorial_Road_111_pXKRPa" Value="[!Dialog][!speaker:Giselle_Satisfying]날 즐겁게 해주겠다는 거냐?"/>
+		<class name="Tutorial_Road_111_gz1VrY" Value="[!Dialog][!speaker:Kylie_Rage]귀찮은 녀석들. 눈치 없이 방해하겠다는 거냐?"/>
+		<class name="Tutorial_Road_111_0ok1J2" Value="[!BalloonChat]전방 네구리 무리입니다!!"/>
+		<class name="Tutorial_Road_111_ZTsVUR" Value="[!Dialog][!speaker:Albus_Stare]&apos;상황이 좋지 않아...&apos;"/>
+		<class name="Tutorial_Road_111_2xOu6r" Value="[!Dialog][!speaker:Sion_SurpriseStare]너희들이 거기서 왜 나와..."/>
+		<class name="Tutorial_Road_111_RUKLhi" Value="[!Dialog][!speaker:Irene_Fury]이런 함정인가..."/>
+		<class name="Tutorial_Road_111_RAJFxX" Value="[!Dialog][!speaker:Anne_Surprise]&apos;이 티마들 너무 흥분해 있어...&apos;"/>
+		<class name="Tutorial_Road_111_IOTtqk" Value="[!Dialog][!speaker:Heissing_EyeClose]지겨운 녀석들이군..."/>
+		<class name="Tutorial_Road_111_mWeeIC" Value="[!Dialog][!speaker:Ray_Serious]내 앞길을 막아선 건 너희들 실수야."/>
+		<class name="Tutorial_Road_111_9VQZpy" Value="[!Dialog][!speaker:Giselle_Normal]다수의 무리를 짓는 티마라..."/>
+		<class name="Tutorial_Road_111_LKFdu4" Value="[!Dialog][!speaker:Giselle_Smile]근처에 우두머리가 있겠군..."/>
+		<class name="Tutorial_Road_111_REKFVM" Value="[!Dialog][!speaker:Kylie_Rage]네녀석들 그만들 하지. 어차피 너희들이 손해보는 일이야."/>
+		<class name="Tutorial_Road_111_AIjr9X" Value="[!BalloonChat]전방 티마 무리입니다!"/>
+		<class name="Tutorial_Road_111_7FxhmO" Value="[!Dialog][!speaker:Albus_SurpriseStare]&apos;예상보다 너무 빠른데...&apos;"/>
+		<class name="Tutorial_Road_111_lNVdq6" Value="[!Dialog][!speaker:Sion_SurpriseStare]&apos;왜 굳이 이 순간에...&apos;"/>
+		<class name="Tutorial_Road_111_kGcZsJ" Value="[!Dialog][!speaker:Irene_Heroic]너희들이 마음껏 활개치도록 두지 않겠어!"/>
+		<class name="Tutorial_Road_111_zwHe3w" Value="[!Dialog][!speaker:Anne_Smile]... 그냥 돌아가 주면 안 될까?"/>
+		<class name="Tutorial_Road_111_P3Ha0d" Value="[!Dialog][!speaker:Heissing_Smile]무료한 시간을 달래라는 건가..."/>
+		<class name="Tutorial_Road_111_ODEFce" Value="[!Dialog][!speaker:Ray_Normal]안타깝지만 더는 안으로 들어가게 두지 않을 거야."/>
+		<class name="Tutorial_Road_111_BIhK27" Value="[!Dialog][!speaker:Giselle_Smile]인간을 무서워하지 않는 야생 동물이라..."/>
+		<class name="Tutorial_Road_111_Q1S3mK" Value="[!Dialog][!speaker:Giselle_Satisfying]그것이 얼마나 큰 실수인지 알려줘야겠네~"/>
+		<class name="Tutorial_Road_111_28WjCK" Value="[!Dialog][!speaker:Kylie_Serious]날 건드리면 손해 보는 것은 너희들이야."/>
+		<class name="Tutorial_Road_111_IzbLZi" Value="[!BalloonChat]전방 티마 무리입니다!!"/>
+		<class name="Tutorial_Road_111_njIUWo" Value="[!Dialog][!speaker:Kylie_Normal]다들 물러나. 전자망을 복구한다."/>
+		<class name="Tutorial_Road_111_fLFy53" Value="[!Dialog][!speaker:Kylie_Normal]다들 물러나. 전자망을 복구한다."/>
+		<class name="Tutorial_Road_111_Igo5yC" Value="[!Dialog][!speaker:Kylie_Normal]다들 물러나. 전자망을 복구한다."/>
+		<class name="Tutorial_Road_111_agsJLs" Value="[!Title]섬광 왕네구리"/>
+		<class name="Tutorial_Road_111_mzplvG" Value="[!Title]우렁찬 네구리"/>
+		<class name="Tutorial_Road_111_Zq4ydZ" Value="[!BalloonChat][!speaker:Neguri_Lighting_Boss]네구르?"/>
+		<class name="Tutorial_Road_111_C8oyqg" Value="[!Dialog][!speaker:Albus_Normal]괜찮으십니까? 카일리 씨."/>
+		<class name="Tutorial_Road_111_83Ik9M" Value="[!Dialog][!speaker:Kylie_Normal]덕분에 별 탈 없이 귀환했어."/>
+		<class name="Tutorial_Road_111_oNbMpr" Value="[!Dialog][!speaker:Kylie_Normal]이걸로 한동안 이곳도 조용하겠어. 두 번 일 안하게 해줘서 고마워."/>
+		<class name="Tutorial_Road_111_yk3glQ" Value="[!Dialog][!speaker:Albus_Laugh]늦지 않아서 다행입니다."/>
+		<class name="Tutorial_Road_111_VStggM" Value="[!Dialog][!speaker:Kylie_Serious]당신과 다시 만나게 될 줄이야..."/>
+		<class name="Tutorial_Road_111_dbpNsv" Value="[!Dialog][!speaker:Giselle_Smile]그렇게 경계하지 마. 어차피 다 지난 일이잖아."/>
+		<class name="Tutorial_Road_111_TfOi0I" Value="[!BalloonChat][!speaker:Albus]지젤 씨. 카일리 씨를 알고 계신 건가..."/>
+		<class name="Tutorial_Road_111_aGrk8i" Value="[!Dialog][!speaker:Sion_Laugh]자~ 우리 춥고 배고프니 빨리 돌아갑시다~☆"/>
+		<class name="Tutorial_Road_111_ZVjX0F" Value="[!Dialog][!speaker:Kylie_Serious]......"/>
+		<class name="Tutorial_Road_111_LfA1cP" Value="[!Dialog][!speaker:Giselle_Satisfying]&apos;저 녀석 넉살은 여전하군...&apos;"/>
+		<class name="Tutorial_Road_111_F2wAzo" Value="[!Subtitle][!speaker:EmptySubTitle_]카일리와 $CompanyName$의 노력에도 불구하고 철의 숲 전자망은 꾸준히 단선된다."/>
+		<class name="Tutorial_Road_111_Hude0D" Value="[!Subtitle][!speaker:EmptySubTitle_]대부분 원인은 전자망 제어기의 동파였다."/>
+		<class name="Tutorial_Road_111_32nOgu" Value="[!Subtitle][!speaker:EmptySubTitle_]백호파와 관련된 사건으로 정신이 없었던 발할라 경철청은 이 사건들을 단순히 한파로 인한 재해로 처리하였다."/>
+		<class name="Tutorial_Road_111_Dt46jE" Value="[!Subtitle][!speaker:EmptySubTitle_]하지만 정작 수리를 진행했던 카일리는 다르게 생각한다."/>
+		<class name="Tutorial_Road_111_kquS7M" Value="[!Subtitle][!speaker:Kylie_Rage]분명 누군가 의도적으로 얼려 버린 거야..."/>
+		<class name="Tutorial_Road_111_lVy1d1" Value="[!Dialog][!speaker:Albus_Normal]괜찮으십니까? 카일리 씨."/>
+		<class name="Tutorial_Road_111_lotm7W" Value="[!Dialog][!speaker:Kylie_Normal]덕분에 별 탈 없이 귀환했어."/>
+		<class name="Tutorial_Road_111_hRJXm2" Value="[!Dialog][!speaker:Kylie_Serious]당신과 다시 만나게 될 줄이야..."/>
+		<class name="Tutorial_Road_111_ERtK0Z" Value="[!Dialog][!speaker:Giselle_Smile]그렇게 경계하지 마. 어차피 다 지난 일이잖아."/>
+		<class name="Tutorial_Road_111_lQZWnn" Value="[!BalloonChat][!speaker:Albus]지젤 씨. 카일리 씨를 알고 계신 건가..."/>
+		<class name="Tutorial_Road_111_2FMg0a" Value="[!Dialog][!speaker:Sion_Laugh]그럼 우리 춥고 배고프니 빨리 돌아갑시다~☆"/>
+		<class name="Tutorial_Road_111_0MNPkR" Value="[!Dialog][!speaker:Kylie_Serious]......"/>
+		<class name="Tutorial_Road_111_o2sGSq" Value="[!Dialog][!speaker:Giselle_Satisfying]&apos;저 녀석 넉살은 여전하군...&apos;"/>
+		<class name="Tutorial_Road_111_Y7EL2L" Value="[!Subtitle][!speaker:EmptySubTitle_]이후에도 철의 숲 전자망은 꾸준히 단선된다."/>
+		<class name="Tutorial_Road_111_QLKOgL" Value="[!Subtitle][!speaker:EmptySubTitle_]대부분 원인은 전자망 제어기의 동파였다."/>
+		<class name="Tutorial_Road_111_ZylC7v" Value="[!Subtitle][!speaker:EmptySubTitle_]백호파와 관련된 사건으로 정신이 없었던 발할라 경철청은 이 사건들을 단순히 한파로 인한 재해로 처리하였다."/>
+		<class name="Tutorial_Road_111_E5pChL" Value="[!Subtitle][!speaker:EmptySubTitle_]하지만 정작 수리를 진행했던 카일리는 다르게 생각한다."/>
+		<class name="Tutorial_Road_111_mGwysy" Value="[!Subtitle][!speaker:Kylie_Rage]분명 누군가 의도적으로 얼려 버린 거야..."/>
+		<class name="Tutorial_Road_111_DSzjK1" Value="[!Dialog][!speaker:Kylie_Normal]시온. 너도 고생했다."/>
+		<class name="Tutorial_Road_111_PnYvRj" Value="[!Dialog][!speaker:Sion_Laugh]카일리 누나 일인데 당연하지~☆"/>
+		<class name="Tutorial_Road_111_9pUDS9" Value="[!Dialog][!speaker:Kylie_Normal]아이린, 나중에 시간나면 공방으로 찾아와."/>
+		<class name="Tutorial_Road_111_U4HbxN" Value="[!Dialog][!speaker:Irene_Surprise]??"/>
+		<class name="Tutorial_Road_111_gdy6cx" Value="[!Dialog][!speaker:Kylie_Normal]네가 찾는 물건 구해놨어."/>
+		<class name="Tutorial_Road_111_QBxYt6" Value="[!Dialog][!speaker:Irene_Surprise]오, 벌써 들어왔나?"/>
+		<class name="Tutorial_Road_111_T6oiIS" Value="[!Dialog][!speaker:Kylie_Smile]네가 찾는 물건인데 구해 놔야지."/>
+		<class name="Tutorial_Road_111_jjcjOB" Value="[!Dialog][!speaker:Irene_Normal]응. 조만간 찾으러 갈게."/>
+		<class name="Tutorial_Road_111_U0Tbzn" Value="[!Dialog][!speaker:Kylie_Smile]앤. 고맙다."/>
+		<class name="Tutorial_Road_111_fhBmwD" Value="[!Dialog][!speaker:Anne_Smile]카일리 언니가 무사하셔서 다행이에요."/>
+		<class name="Tutorial_Road_111_k6Tm8i" Value="[!Dialog][!speaker:Kylie_Satisfying]네가 제때 오지 않았으면 많이 힘들었을 거야."/>
+		<class name="Tutorial_Road_111_07XhWJ" Value="[!Dialog][!speaker:Anne_Think]아니에요. 다른 분들이 각자 역할을 잘 해주셔서..."/>
+		<class name="Tutorial_Road_111_5Br6r3" Value="[!Dialog][!speaker:Kylie_Satisfying]그래. 정말 좋은 동료들이 생겼구나."/>
+		<class name="Tutorial_Road_111_HiyZqk" Value="[!Dialog][!speaker:Anne_Smile]네~"/>
+		<class name="Tutorial_Road_111_X5Ld4H" Value="[!Dialog][!speaker:Kylie_Smile]고맙다."/>
+		<class name="Tutorial_Road_111_khO0td" Value="[!Dialog][!speaker:Heissing_Smile]......"/>
+		<class name="Tutorial_Road_111_f3Mfni" Value="[!Dialog][!speaker:Kylie_Smile]레이. 시간나면 내 공방에 찾아와."/>
+		<class name="Tutorial_Road_111_C5OkPl" Value="[!Dialog][!speaker:Ray_Surprise_Smile]?"/>
+		<class name="Tutorial_Road_111_7EOgu6" Value="[!Dialog][!speaker:Kylie_Satisfying]조금 더 유용한 기어를 만들어 줄게."/>
+		<class name="Tutorial_Road_111_76esXz" Value="[!Dialog][!speaker:Ray_Surprise]정말?"/>
+		<class name="Tutorial_Road_111_484R0W" Value="[!Dialog][!speaker:Kylie_Smile]그래."/>
+		<class name="Tutorial_Road_111_8Vv5tV" Value="[!Ignore][!Dialog][!speaker:Kylie_Smile]레이. 시간나면 내 공방에 찾아와."/>
+		<class name="Tutorial_Road_111_srBcww" Value="[!Ignore][!Dialog][!speaker:Ray_Surprise_Smile]?"/>
+		<class name="Tutorial_Road_111_8FKtPz" Value="[!Ignore][!Dialog][!speaker:Kylie_Satisfying]조금 더 유용한 기어를 만들어 줄게."/>
+		<class name="Tutorial_Road_111_C8sbhT" Value="[!Ignore][!Dialog][!speaker:Ray_Surprise]정말?"/>
+		<class name="Tutorial_Road_111_zvG5wU" Value="[!Ignore][!Dialog][!speaker:Kylie_Smile]그래."/>
+		<class name="Tutorial_Road_111_nh5w6u" Value="[!Dialog][!speaker:Kylie_Rage]&apos;...현재 날씨로 이렇게 양쪽 다 얼어붙는 건 말이 안돼...&apos;"/>
+		<class name="Tutorial_Road_111_4KXqLX" Value="[!Dialog][colour=&apos;FFFFFF00&apos;]양쪽에 배치된 전자망 제어기를 모두 수리하셔야 전자망이 활성화 됩니다."/>
+		<class name="Tutorial_Road_111_PTzf9z" Value="[!Ignore][!Dialog][!speaker:Kylie_Rage]...... 누군가 의도적이야."/>
+	</idspace>
+</idspaces>

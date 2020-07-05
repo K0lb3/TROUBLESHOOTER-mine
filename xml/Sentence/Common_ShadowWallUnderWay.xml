@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Common_ShadowWallUnderWay_341Bxs" Value="[!Dashboard:Counter]남은 스푼교도 수"/>
+		<class name="Common_ShadowWallUnderWay_0fHkKT" Value="[!Objective]스푼교도를 제압하시오."/>
+		<class name="Common_ShadowWallUnderWay_HM0A3q" Value="[!Dialog][!speaker:VHPD_Assault_Normal]알버스 님! 도주하는 스푼교도들 다수가 장벽의 지하 수로로 진입한 것 같습니다."/>
+		<class name="Common_ShadowWallUnderWay_tpjIIf" Value="[!Dialog][!speaker:Albus_Surprise]!!"/>
+		<class name="Common_ShadowWallUnderWay_k5oUli" Value="[!Dialog][!speaker:Albus_SurpriseStare]&apos;역시 근거지는 철의 숲인가...&apos;"/>
+		<class name="Common_ShadowWallUnderWay_Llt8uE" Value="[!Title]꼬리 자르기"/>
+		<class name="Common_ShadowWallUnderWay_ym7y2M" Value="[!Title]그림자 장벽 지하수로"/>
+		<class name="Common_ShadowWallUnderWay_2PWwxP" Value="[!Dialog][!speaker:Gangster_SpoonFat_Black_Normal]뭘 꾸물거려! 빨리 가자."/>
+		<class name="Common_ShadowWallUnderWay_GnOGs4" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Flame_Normal]이것이 과연 옳은 판단인가..."/>
+		<class name="Common_ShadowWallUnderWay_IsV5kM" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Lightning2_Normal]『 성난 황소 』출신의 동지들은 이제 포기해."/>
+		<class name="Common_ShadowWallUnderWay_3GJV5o" Value="[!Dialog][!speaker:Gangster_SpoonFat_Black_Normal]그래. 그 녀석들은 자신들의 조직을 재건하기 위해 『 한술 』을 이용하려고 한 녀석들일 뿐이야."/>
+		<class name="Common_ShadowWallUnderWay_wP7ZUu" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Wind2_Normal]하지만 우리 역시 그들의 도움을 받았던 것은 부정할 수 없는 사실이다."/>
+		<class name="Common_ShadowWallUnderWay_hOPh27" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Lightning2_Normal]그래서 어쩌라고? 그래서 경찰들한테 잡히자고?"/>
+		<class name="Common_ShadowWallUnderWay_act3Bm" Value="[!Dialog][!speaker:Gangster_SpoonFat_Black_Normal]그 녀석들이 자기들 마음대로 푸고 뒷골목으로 돌아가 버렸기에 이 사태가 벌어진 것 아냐!"/>
+		<class name="Common_ShadowWallUnderWay_w7N1uE" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Flame_Normal]......"/>
+		<class name="Common_ShadowWallUnderWay_A3GBPL" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Lightning2_Normal]......"/>
+		<class name="Common_ShadowWallUnderWay_HPDF8Z" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Wind2_Normal]말은 바로 해."/>
+		<class name="Common_ShadowWallUnderWay_I2c5m1" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Wind2_Normal]그들이 그 곳에 있지 않았다면 더 많은 동지들이 백호파 녀석들에게 사냥당했겠지."/>
+		<class name="Common_ShadowWallUnderWay_TuoWc2" Value="[!Dialog][!speaker:Gangster_SpoonFat_Black_Normal]다 함께 뭉쳤다면 충분히 백호 파도 눌러버렸을 거야! "/>
+		<class name="Common_ShadowWallUnderWay_pxeww8" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Flame_Normal]진정해. "/>
+		<class name="Common_ShadowWallUnderWay_nIYjAz" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Flame_Normal]생을 달리한 동지들에게 무례를 범하지 마."/>
+		<class name="Common_ShadowWallUnderWay_O9N1eN" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Flame_Normal]최소한 그들은 끝까지 가면을 벗지 않고 수저를 몸에 지니고 있었다."/>
+		<class name="Common_ShadowWallUnderWay_AhuHsH" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Wind2_Normal]......"/>
+		<class name="Common_ShadowWallUnderWay_fGgwpp" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Wind2_Normal]다들 먼저 가라."/>
+		<class name="Common_ShadowWallUnderWay_AEFgHh" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Lightning2_Normal]무슨 소리야?"/>
+		<class name="Common_ShadowWallUnderWay_tOZsGd" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Wind2_Normal]여기서 도망치다 자칫하면 동지들의 은신처까지 경찰들을 끌어들이게 된다."/>
+		<class name="Common_ShadowWallUnderWay_8M4zqj" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Wind2_Normal]쓰다 남은 드론들도 있으니 내가 여기 남아서 시간을 끌어 보겠어."/>
+		<class name="Common_ShadowWallUnderWay_LS7nsZ" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Lightning2_Normal]무리다."/>
+		<class name="Common_ShadowWallUnderWay_KiuMAf" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Wind2_Normal]다 『 한술 』의 뜻이겠지."/>
+		<class name="Common_ShadowWallUnderWay_z4XO1m" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Flame_Normal]그럼 나도 남지. 금세 뚫려 버리면 네 결정도 황소파 동지들의 의지도 다 의미 없어지니까..."/>
+		<class name="Common_ShadowWallUnderWay_FS8G4r" Value="[!Dialog][!speaker:Gangster_SpoonFat_Black_Normal]기껏 여기까지 와 놓고 포기하다니 무슨 바보 같은 짓이야!"/>
+		<class name="Common_ShadowWallUnderWay_2tCUG2" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Lightning2_Normal]정말 남을 건가?"/>
+		<class name="Common_ShadowWallUnderWay_JLa733" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Wind2_Normal]그래 우리는 『 첫술 』이니까."/>
+		<class name="Common_ShadowWallUnderWay_IFmwzf" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Lightning2_Normal]멍청한 녀석..."/>
+		<class name="Common_ShadowWallUnderWay_qgSaTE" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Lightning2_Normal]그럼 나도 남겠네."/>
+		<class name="Common_ShadowWallUnderWay_E7SJBM" Value="[!Dialog][!speaker:Gangster_SpoonFat_Black_Normal]......"/>
+		<class name="Common_ShadowWallUnderWay_OuWOY3" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Wind2_Normal]그럼 결정이군."/>
+		<class name="Common_ShadowWallUnderWay_1G7sAB" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Flame_Normal]그럼 난 같은 생각인 동지들을 모아 오겠어."/>
+		<class name="Common_ShadowWallUnderWay_aMeAjS" Value="[!Ignore][!FrontMessage]방어선이 무너졌습니다."/>
+		<class name="Common_ShadowWallUnderWay_8dZhX6" Value="[!Ignore][!BalloonChat]지금이 기회다!!"/>
+		<class name="Common_ShadowWallUnderWay_3rnPGG" Value="[!Ignore][!FrontMessage]스푼교도가 진입로를 향해 탈출을 시작합니다."/>
+		<class name="Common_ShadowWallUnderWay_rKeCBP" Value="[!Dialog][!speaker:Albus_Serious]다들 좁고 복잡하니 이동에 주의해 주세요."/>
+		<class name="Common_ShadowWallUnderWay_HQGrVa" Value="[!Dialog][!speaker:Albus_Serious]그럼 바로 스푼교도들을 추적하겠습니다!"/>
+		<class name="Common_ShadowWallUnderWay_1Bl05L" Value="[!Dialog][!speaker:VHPD_Assault_Normal]알겠습니다."/>
+		<class name="Common_ShadowWallUnderWay_quubpC" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Common_ShadowWallUnderWay_vAe7wd" Value="[!VictoryCondition]스푼교도를 제압하시오."/>
+	</idspace>
+</idspaces>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Raid_Road_112_YrpgBw" Value="[!Dashboard:Counter]초과 축적된 에너지 량"/>
+		<class name="Raid_Road_112_VqtWl7" Value="[!Dashboard:Counter]남은 보스 수"/>
+		<class name="Raid_Road_112_D2v5K4" Value="[!Dashboard:TimeLimiter]귀환 준비까지 남은 시간"/>
+		<class name="Raid_Road_112_MY20H0" Value="[!Dashboard:Counter]남은 도로리 수"/>
+		<class name="Raid_Road_112_8Xwi0a" Value="[!Dashboard:Counter]남은 티마 수"/>
+		<class name="Raid_Road_112_t2jVEr" Value="[!Dashboard:Counter]남은 야샤 수"/>
+		<class name="Raid_Road_112_xEtPnC" Value="[!Objective]구역 내 초과된 에너지를 해제하시오."/>
+		<class name="Raid_Road_112_Q9MB9C" Value="[!Objective]남은 귀환 시간까지 생존하시오."/>
+		<class name="Raid_Road_112_qY4u7k" Value="[!Objective]야수 우두머리를 제압하시오."/>
+		<class name="Raid_Road_112_1wgFlo" Value="[!Title]전사의 최후"/>
+		<class name="Raid_Road_112_g9EP4t" Value="[!Title]철의 숲 자원관리구역"/>
+		<class name="Raid_Road_112_tpeIrz" Value="[!Subtitle][!speaker:EmptySubTitle_]자유 사냥이 허락된 후 "/>
+		<class name="Raid_Road_112_IuIVzh" Value="[!Subtitle][!speaker:EmptySubTitle_]자원관리구역 내 인간들의 야수 사냥이 활발해진다."/>
+		<class name="Raid_Road_112_0bBdGD" Value="[!Subtitle][!speaker:EmptySubTitle_]철의 숲의 티마 무리는 무리의 우두머리 실버의 명에 따라"/>
+		<class name="Raid_Road_112_tFyqgk" Value="[!Subtitle][!speaker:EmptySubTitle_]최대한 인간들과의 충돌을 피하려고 노력한다."/>
+		<class name="Raid_Road_112_GFeuRi" Value="[!Subtitle][!speaker:EmptySubTitle_]하지만 이러한 우두머리 실버의 행동에 불만을 가지는 무리가 나타나기 시작한다."/>
+		<class name="Raid_Road_112_qIRUIk" Value="[!Dialog][!speaker:Beast_Tima_Black_Ash_Normal][colour=&apos;FFFF5500&apos;]실버. 내 무리는 더 이상 널 따르지 않을 거야."/>
+		<class name="Raid_Road_112_DzRR34" Value="[!Dialog][!speaker:Beast_Tima_Stone_Normal][colour=&apos;FFFFAA55&apos;]결국 이렇게 되었군. 애쉬."/>
+		<class name="Raid_Road_112_X2tVFZ" Value="[!Dialog][!speaker:Beast_Tima_Black_Ash_Normal][colour=&apos;FFFF5500&apos;]심각하게 받아들일 것 없다. 실버. 너는 충분히 잘 하고 있다."/>
+		<class name="Raid_Road_112_0xGIXk" Value="[!Dialog][!speaker:Beast_Tima_Black_Ash_Normal][colour=&apos;FFFF5500&apos;]네가 없었다면 우리 티마 종족은 이미 이 철의 숲에서 자취를 감추었겠지..."/>
+		<class name="Raid_Road_112_RiIRZ9" Value="[!Dialog][!speaker:Beast_Tima_Stone_Normal][colour=&apos;FFFFAA55&apos;]조금만 참고 견뎌라. 애쉬."/>
+		<class name="Raid_Road_112_DNFk3y" Value="[!Dialog][!speaker:Beast_Tima_Stone_Normal][colour=&apos;FFFFAA55&apos;]우리의 아이들이 자라나고 있다. 적어도 그들이 당당한 전사가 되는 날까지 기다릴 수 없는가?"/>
+		<class name="Raid_Road_112_3Fu47w" Value="[!Dialog][!speaker:Beast_Tima_Black_Ash_Normal][colour=&apos;FFFF5500&apos;]실버. 자네의 큰 그림에 동의하네."/>
+		<class name="Raid_Road_112_kTcVHk" Value="[!Dialog][!speaker:Beast_Tima_Black_Ash_Normal][colour=&apos;FFFF5500&apos;]하지만 무리 중엔 야생이 아닌 인간으로부터 자라난 자네를 의심하는 자들이 있네."/>
+		<class name="Raid_Road_112_vq77Jw" Value="[!Dialog][!speaker:Beast_Tima_Black_Ash_Normal][colour=&apos;FFFF5500&apos;]더욱이 최근 자네가 일부러 인간들을 살려 보내줬다는 소문이 있네."/>
+		<class name="Raid_Road_112_r8ygN7" Value="[!Dialog][!speaker:Beast_Tima_Stone_Normal][colour=&apos;FFFFAA55&apos;]그건..."/>
+		<class name="Raid_Road_112_P4pQSH" Value="[!Dialog][!speaker:Beast_Tima_Black_Ash_Normal][colour=&apos;FFFF5500&apos;]난 자네를 의심하지 않네. 자네가 그 불구덩이에서 날 구했네."/>
+		<class name="Raid_Road_112_REbbSq" Value="[!Dialog][!speaker:Beast_Tima_Black_Ash_Normal][colour=&apos;FFFF5500&apos;]하지만 자네의 행동은 경솔했어."/>
+		<class name="Raid_Road_112_3khMO2" Value="[!Dialog][!speaker:Beast_Tima_Stone_Normal][colour=&apos;FFFFAA55&apos;]......"/>
+		<class name="Raid_Road_112_JRD5M2" Value="[!Dialog][!speaker:Beast_Tima_Black_Ash_Normal][colour=&apos;FFFF5500&apos;]현재 티마의 무리는 대부분 부모를 인간에 의해 잃은 세대들일세."/>
+		<class name="Raid_Road_112_pMCARC" Value="[!Dialog][!speaker:Beast_Tima_Black_Ash_Normal][colour=&apos;FFFF5500&apos;]그리고 지금 역시 인간들에 의해 동료들이 죽어 나가고 있지."/>
+		<class name="Raid_Road_112_81tBDK" Value="[!Dialog][!speaker:Beast_Tima_Black_Ash_Normal][colour=&apos;FFFF5500&apos;]그런 그들은 자네의 행동을 주시하고 있다네."/>
+		<class name="Raid_Road_112_XC1O8Y" Value="[!Dialog][!speaker:Beast_Tima_Stone_Normal][colour=&apos;FFFFAA55&apos;]언젠가 그들도 이해할 거야."/>
+		<class name="Raid_Road_112_RrJBdT" Value="[!Dialog][!speaker:Beast_Tima_Black_Ash_Normal][colour=&apos;FFFF5500&apos;]한번 어긋난 마음은 다시 붙이기 어렵지. 무리의 대부분이 날 등지고 자네를 따른 것처럼..."/>
+		<class name="Raid_Road_112_aMeAjS" Value="[!Dialog][!speaker:Beast_Tima_Black_Ash_Normal][colour=&apos;FFFF5500&apos;]이대로는 무리는 분열될 것이네. 그리고 예전처럼 인간들에게 하나하나 사냥당하겠지."/>
+		<class name="Raid_Road_112_YFYZ5B" Value="[!Dialog][!speaker:Beast_Tima_Stone_Normal][colour=&apos;FFFFAA55&apos;]내가 그렇게 되지 않도록 할 걸세."/>
+		<class name="Raid_Road_112_8R6BEu" Value="[!Dialog][!speaker:Beast_Tima_Black_Ash_Normal][colour=&apos;FFFF5500&apos;]무리가 분열하기 전에 싹이 될만한 자들을 모아 내가 나가겠네."/>
+		<class name="Raid_Road_112_I6NX8D" Value="[!Dialog][!speaker:Beast_Tima_Black_Ash_Normal][colour=&apos;FFFF5500&apos;]적어도 전 우두머리가 나가는 것이니 당연한 수순이라고 보네."/>
+		<class name="Raid_Road_112_0FmQTq" Value="[!Dialog][!speaker:Beast_Tima_Stone_Normal][colour=&apos;FFFFAA55&apos;]애쉬..."/>
+		<class name="Raid_Road_112_GfRyil" Value="[!Dialog][!speaker:Beast_Tima_Black_Ash_Normal][colour=&apos;FFFF5500&apos;]진작에 무리를 나갔어야 했는데..."/>
+		<class name="Raid_Road_112_PSIylz" Value="[!Dialog][!speaker:Beast_Tima_Black_Ash_Normal][colour=&apos;FFFF5500&apos;]우리의 수명은 고작 20 ~ 25년... 난 이미 24년을 살고 있네."/>
+		<class name="Raid_Road_112_p47bOL" Value="[!Dialog][!speaker:Beast_Tima_Black_Ash_Normal][colour=&apos;FFFF5500&apos;]나에게 명예롭게 눈을 감을 기회를 줬다고 생각하게나."/>
+		<class name="Raid_Road_112_PTVT4i" Value="[!Dialog][!speaker:Beast_Tima_Black_Ash_Normal][colour=&apos;FFFF5500&apos;]실버. 다시 한번 이 숲의 티마 무리를 부탁하네."/>
+		<class name="Raid_Road_112_NaV1oG" Value="[!Dialog][!speaker:VHPD_Assault_Normal]구역 내 축적된 에너지 수치를 낮추려면 이능력을 사용하는 야수들을 전투 불능 시키거나 이능석의 에너지를 추출해야 합니다."/>
+		<class name="Raid_Road_112_5OFPZ7" Value="[!Dialog][!speaker:VHPD_Assault_Normal]경찰청에서는 적어도 자원관리구역 내의 축적된 에너지 수치를 정상화한 후 자유 사냥을 하라는 지시입니다."/>
+		<class name="Raid_Road_112_T0m0tw" Value="[!Dialog][!speaker:Albus_Normal]알겠습니다. 일단 축적된 에너지를 정상화 하도록 노력하겠습니다."/>
+		<class name="Raid_Road_112_WEWzVa" Value="[!VictoryCondition]전원 전투 불능"/>
+		<class name="Raid_Road_112_UmROxS" Value="[!VictoryCondition]관리구역 내 초과된 에너지를 해제하시오."/>
+		<class name="Raid_Road_112_0AwRZ4" Value="[!Dialog][!speaker:EmptySubTitle_]축적된 에너지를 모두 해제하였습니다. 계속 사냥을 계속 진행하시겠습니까?&quot;"/>
+		<class name="Raid_Road_112_cLlzzX" Value="[!Choice]사냥을 계속한다."/>
+		<class name="Raid_Road_112_qH42Km" Value="[!Choice]귀환한다."/>
+		<class name="Raid_Road_112_K39IYp" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Raid_Road_112_ROYCUP" Value="[!VictoryCondition]야수 우두머리를 제압하시오."/>
+		<class name="Raid_Road_112_lZM8wg" Value="[!VictoryCondition]남은 귀환 시간까지 생존하시오."/>
+		<class name="Raid_Road_112_7p5iee" Value="[!Dialog][!speaker:EmptySubTitle_]야수 우두머리를 제압하였습니다. 계속 사냥을 계속 진행하시겠습니까?"/>
+		<class name="Raid_Road_112_cRjrXk" Value="[!Choice]귀환한다"/>
+		<class name="Raid_Road_112_DahXnZ" Value="[!Dialog][!speaker:EmptySubTitle_]야수 우두머리를 제압하였습니다. 남은 야수들을 처리하시겠습니까?"/>
+		<class name="Raid_Road_112_fIpnL4" Value="[!Choice]구역 내 야수를 모두 제압하시오."/>
+		<class name="Raid_Road_112_Wcp6k8" Value="[!Objective]구역 내 야수를 모두 제압하시오."/>
+		<class name="Raid_Road_112_HSGvY1" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Raid_Road_112_34iPlC" Value="[!VictoryCondition]구역 내 야수를 모두 제압하시오."/>
+		<class name="Raid_Road_112_5xl7KB" Value="[!BalloonChat][!speaker:Dorori_Wind_01]끼아악..."/>
+		<class name="Raid_Road_112_jYxDE2" Value="[!Title]오색 왕도로리"/>
+		<class name="Raid_Road_112_KQKoZv" Value="[!Title]미치광이 도로리"/>
+		<class name="Raid_Road_112_8q3IMO" Value="[!BalloonChat][!speaker:Dorori_Fire_Boss]끼아악! 끼아악!"/>
+		<class name="Raid_Road_112_1MRVOg" Value="[!BalloonChat]!!!"/>
+		<class name="Raid_Road_112_akyvPm" Value="[!Dialog][!speaker:Heissing_Normal]훗..."/>
+		<class name="Raid_Road_112_yp0qZb" Value="[!Dialog][!speaker:Heissing_EyeClose]죽기 딱 좋은 날이로군."/>
+	</idspace>
+</idspaces>

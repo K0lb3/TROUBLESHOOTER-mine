@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="ChainEvent">
+	<schema>
+		<rule property="ApplyBuff" type="link" target="Buff" default="None"/>
+	</schema>
+	<class name="KnockbackStunOccured" Title="충돌" ApplyBuff="Stun"/>
+	<class name="BlackoutFlashed" Title="눈부심" ApplyBuff="Confusion"/>
+	<class name="BuffGroup" Title="연환"/>
+	<class name="Faint" Title="혼절" ApplyBuff="Stun"/>
+	<class name="Mud" Title="진흙범벅" ApplyBuff="Slow"/>
+	<class name="Slip" Title="미끄러짐" ApplyBuff="Slow"/>
+	<class name="Engaging" Title="휘말림" ApplyBuff="Confusion"/>
+	<class name="Fracture" Title="균열" ApplyBuff="Stun"/>
+</idspace>

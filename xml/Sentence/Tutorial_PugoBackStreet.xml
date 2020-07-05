@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Tutorial_PugoBackStreet_pMCARC" Value="[!Dashboard:Counter]남은 적 수"/>
+		<class name="Tutorial_PugoBackStreet_2797Kp" Value="[!Dashboard:Counter]남은 적 수"/>
+		<class name="Tutorial_PugoBackStreet_r4zdGc" Value="[!Objective]적을 모두 제압하시오."/>
+		<class name="Tutorial_PugoBackStreet_TWd43O" Value="[!Subtitle][!speaker:Gangster_BullNormal_Normal]여기로! 여기로 도망쳐!"/>
+		<class name="Tutorial_PugoBackStreet_flAQso" Value="[!Subtitle][!speaker:Gangster_BullFat_Normal]건물 안으로 숨어!"/>
+		<class name="Tutorial_PugoBackStreet_C7WO95" Value="[!Subtitle][!speaker:Gangster_DannyLaw_Normal]가관이군."/>
+		<class name="Tutorial_PugoBackStreet_ny1swO" Value="[!Subtitle][!speaker:Gangster_DannyLaw_Normal]모든 것이 자네가 원하는 대로군."/>
+		<class name="Tutorial_PugoBackStreet_efK2h3" Value="[!Subtitle][!speaker:Gangster_Sharky_Normal]모든 것은 &apos;한술&apos;의 뜻일세."/>
+		<class name="Tutorial_PugoBackStreet_B98kTD" Value="[!Title]피리 부는 사나이"/>
+		<class name="Tutorial_PugoBackStreet_zTp0KV" Value="[!Title]푸고 뒷골목"/>
+		<class name="Tutorial_PugoBackStreet_jR1wTY" Value="[!Subtitle][!speaker:EmptySubTitle_]성난 황소파의 자홍거리 토벌전 이후 한 달..."/>
+		<class name="Tutorial_PugoBackStreet_I67ekr" Value="[!Subtitle][!speaker:EmptySubTitle_]황소파 조직원들은 매일 같이 사이렌 소리를 피해 이 거리 저 거리를 돌아다녀야 했다."/>
+		<class name="Tutorial_PugoBackStreet_UydLRJ" Value="[!Subtitle][!speaker:EmptySubTitle_]하지만 각 거리의 조직들은 자신들의 안위를 위해 &apos;황소파&apos;를 받아들여 주지 않았고..."/>
+		<class name="Tutorial_PugoBackStreet_BUDZXX" Value="[!Subtitle][!speaker:EmptySubTitle_]결국 황소파 조직원들은 과거 자신들의 근거지였던 푸고거리의 뒷골목으로 모여들기 시작했다."/>
+		<class name="Tutorial_PugoBackStreet_FyxfRW" Value="[!BalloonChat][!speaker:Direct_RoofTop01]당연히 보스의 복수를 해야지!!"/>
+		<class name="Tutorial_PugoBackStreet_akyvPm" Value="[!BalloonChat][!speaker:Direct_RoofTop02]조직이 무너졌는데 뭘 한단 말이야..."/>
+		<class name="Tutorial_PugoBackStreet_yp0qZb" Value="[!Subtitle][!speaker:EmptySubTitle_]자홍거리 이후,  보스 &apos;스콧&apos;에 대한 소식이 없자 온갖 추측이 난무하였다."/>
+		<class name="Tutorial_PugoBackStreet_XHjtan" Value="[!Subtitle][!speaker:EmptySubTitle_]경찰에 의해 검거되어 선대처럼 중앙지구로 이송되었다던가..."/>
+		<class name="Tutorial_PugoBackStreet_CD92Bx" Value="[!Subtitle][!speaker:EmptySubTitle_]남은 조직원들과 함께 장렬히 싸우다 전사하였다던가..."/>
+		<class name="Tutorial_PugoBackStreet_fLf8hg" Value="[!Subtitle][!speaker:EmptySubTitle_]혹은 조직의 자산을 가지고 국경을 넘어 &apos;동방연합&apos;으로 도주했다던가..."/>
+		<class name="Tutorial_PugoBackStreet_McVOxm" Value="[!Subtitle][!speaker:EmptySubTitle_]어떤 말이 진실이고 거짓이든 간에..."/>
+		<class name="Tutorial_PugoBackStreet_ch5N00" Value="[!Subtitle][!speaker:EmptySubTitle_]조직원들은 더 이상 조직과 함께할 수 없음을 느끼고 있었다."/>
+		<class name="Tutorial_PugoBackStreet_ZEPdi8" Value="[!Dialog][!speaker:Gangster_Jason_Normal]일단 보스의 맹우였던 &apos;백호&apos;의 푸 님이나 &apos;흑호&apos;의 트레이 님을 찾아가자."/>
+		<class name="Tutorial_PugoBackStreet_6xmldT" Value="[!BalloonChat][!speaker:Direct_RoofTop05]제이슨!! 그게 뭘 뜻하는지 알고 말하는 거냐!"/>
+		<class name="Tutorial_PugoBackStreet_Z93mGp" Value="[!Dialog][!speaker:Gangster_BullThin_Normal]그건 나도 반대다. 소문에 의하면 그 녀석들 우릴 버렸어."/>
+		<class name="Tutorial_PugoBackStreet_gtUaYh" Value="[!Dialog][!speaker:Gangster_BullThin_Normal]현장에 있었던 네 녀석이 제일 잘 알 거 아니냐!"/>
+		<class name="Tutorial_PugoBackStreet_Ee4d3m" Value="[!BalloonChat][!speaker:Direct_RoofTop03]!!!!"/>
+		<class name="Tutorial_PugoBackStreet_iGOft3" Value="[!Dialog][!speaker:Gangster_BullThin_Normal]네 녀석. 설마 보스를 팔아넘긴 거냐!"/>
+		<class name="Tutorial_PugoBackStreet_ijwndi" Value="[!BalloonChat][!speaker:Direct_Jason]무슨 소리냐! 이 바보 녀석들!"/>
+		<class name="Tutorial_PugoBackStreet_t6Bb5r" Value="[!BalloonChat][!speaker:Direct_Jason]말 같잖은 소리 하지 말라고!!"/>
+		<class name="Tutorial_PugoBackStreet_W1ssFw" Value="[!BalloonChat][!speaker:Direct_RoofTop04]제이슨. 너. 현장 상황을 말해줘야겠어!"/>
+		<class name="Tutorial_PugoBackStreet_nzsTGl" Value="[!BalloonChat][!speaker:Direct_Jason]바보 같은 녀석들..."/>
+		<class name="Tutorial_PugoBackStreet_ZHvojW" Value="[!Subtitle][!speaker:EmptySubTitle_]일반 사회로부터 도망쳐 강력한 범죄 조직이라는 심리적 버팀목에 기대어 살아왔던 대부분의 조직원은..."/>
+		<class name="Tutorial_PugoBackStreet_NZSlQi" Value="[!Subtitle][!speaker:EmptySubTitle_]조직의 부재, 보스의 부재를 견딜 수가 없었다."/>
+		<class name="Tutorial_PugoBackStreet_FqDMeb" Value="[!BalloonChat][!speaker:Direct_RoofTop08]언제까지 이렇게 대책 없이 살아야 하는 거지..."/>
+		<class name="Tutorial_PugoBackStreet_XpX83b" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Lightning_Normal]당분간 지낼 물자와 무기는 우리 형제들이 최선을 다해 공급하겠네."/>
+		<class name="Tutorial_PugoBackStreet_Icciyu" Value="[!Dialog][!speaker:Gangster_BullNormal_Normal]고맙네. 상황이 뒤바뀌었군."/>
+		<class name="Tutorial_PugoBackStreet_aKworU" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Lightning_Normal]어쩔 수 없는 일이겠지."/>
+		<class name="Tutorial_PugoBackStreet_Zi3jJh" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Normal]자네들이 우리를 도왔으니 이번엔 우리가 자네들을 도울 차례네."/>
+		<class name="Tutorial_PugoBackStreet_jkSeBu" Value="[!Dialog][!speaker:Gangster_BullNormal_Normal]조직원 중에는 자네들을 원망하는 자들이 적지 않네. 조심하게."/>
+		<class name="Tutorial_PugoBackStreet_05VYvZ" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Lightning_Normal]다 &apos;한술&apos;의 뜻이겠지."/>
+		<class name="Tutorial_PugoBackStreet_qeWgLY" Value="[!BalloonChat][!speaker:Direct_Jason]이게 다 저 &apos;스푼교&apos; 녀석들. 저 녀석들 때문이다!"/>
+		<class name="Tutorial_PugoBackStreet_kY43jS" Value="[!BalloonChat][!speaker:Direct_Jason]대장을 팔아넘긴 건 저 녀석들이 분명해!"/>
+		<class name="Tutorial_PugoBackStreet_fb36bi" Value="[!Dialog][!speaker:EmptySubTitle_]쌓여가던 불안감과 불만감이 제이슨의 외침으로 폭발하였다!"/>
+		<class name="Tutorial_PugoBackStreet_dcotsT" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Lightning_Normal]역시 이런 선택을 하는군요."/>
+		<class name="Tutorial_PugoBackStreet_leZDZf" Value="[!Dialog][!speaker:Gangster_Sharky_Normal]어차피 겪어야 할 희생이라면 최소한으로 하도록..."/>
+		<class name="Tutorial_PugoBackStreet_rRiZJo" Value="[!Dialog][!speaker:Gangster_Sharky_Normal]그리고 새로운 동지들을 맞이할 준비를 하게나."/>
+		<class name="Tutorial_PugoBackStreet_5qklwx" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Normal]알겠습니다."/>
+		<class name="Tutorial_PugoBackStreet_v8ZdV6" Value="[!Dialog][colour=&apos;FFFFE959&apos;]해당 전투는 시나리오에 등장하는 [colour=&apos;FFFFFFFF&apos;]NPC[colour=&apos;FFFFE959&apos;]로 진행하는 전투입니다."/>
+		<class name="Tutorial_PugoBackStreet_HAD2vQ" Value="[!Dialog][colour=&apos;FFFFE959&apos;]전투 불능된 적으로부터 특성 획득은 가능하나 경험치와 아이템 획득은 불가능합니다."/>
+		<class name="Tutorial_PugoBackStreet_wdo3Hr" Value="[!Dialog][colour=&apos;FFFFFFFF&apos;]사건 일지[colour=&apos;FFFFE959&apos;]로 미션 반복 플레이 시 생략이 가능합니다."/>
+		<class name="Tutorial_PugoBackStreet_MJvtml" Value="[!VictoryCondition]스푼교 전원 전투 불능"/>
+		<class name="Tutorial_PugoBackStreet_0slfQe" Value="[!VictoryCondition]적 전투 불능"/>
+		<class name="Tutorial_PugoBackStreet_4Menop" Value="[!BalloonChat][!speaker:Direct2_Lightning]샤키 님. 황소파의 대표가 찾아왔습니다."/>
+		<class name="Tutorial_PugoBackStreet_odViBT" Value="[!BalloonChat][!speaker:Direct2_Sharky]알았네."/>
+		<class name="Tutorial_PugoBackStreet_hAkTkU" Value="[!Dialog]스푼교 교리 &apos;한술&apos; 에 따르면..."/>
+		<class name="Tutorial_PugoBackStreet_cesuqO" Value="[!Dialog]같은 밥을 먹은 자는 친구가 된다고 한다."/>
+		<class name="Tutorial_PugoBackStreet_5XGQuA" Value="[!Dialog][!speaker:Gangster_Sharky_Normal]고맙네. 자네들의 도움으로 무사할 수 있었네."/>
+		<class name="Tutorial_PugoBackStreet_6dT07f" Value="[!Dialog][!speaker:Gangster_BullFat_Normal]보스의 손님이었던 자네들을 제대로 보호하지 못한 채 보스의 얼굴을 볼 면목이 없기 때문이었네."/>
+		<class name="Tutorial_PugoBackStreet_CxLRME" Value="[!Dialog][!speaker:Gangster_Sharky_Normal]자네들의 뜻은 충분히 이해하네."/>
+		<class name="Tutorial_PugoBackStreet_jzeKCd" Value="[!Dialog][!speaker:Gangster_Sharky_Normal]하지만 &apos;성난 황소&apos;로서는 경찰들이나 다른 조직으로부터 행동이 자유롭지 못하겠지..."/>
+		<class name="Tutorial_PugoBackStreet_qYUPgk" Value="[!Dialog][!speaker:Gangster_BullFat_Normal]그건 우리가 해결할 문제네. 자네들이 신경 쓸 것 없네."/>
+		<class name="Tutorial_PugoBackStreet_1kpVix" Value="[!Dialog][!speaker:Gangster_BullFat_Normal]우릴 우습게 보는 건가!! 이 상황에서 종교 권유 따위가 무슨 소용이냐!"/>
+		<class name="Tutorial_PugoBackStreet_p9R70J" Value="[!Dialog][!speaker:Gangster_Sharky_Normal]자네들의 한을 이 가면 뒤에 숨기게."/>
+		<class name="Tutorial_PugoBackStreet_wKdC9e" Value="[!Dialog][!speaker:Gangster_Sharky_Normal]&apos;한술&apos;은 종교인 동시에 공동체네. 서로를 돕는 공동체."/>
+		<class name="Tutorial_PugoBackStreet_cZzGX4" Value="[!Dialog][!speaker:Gangster_Sharky_Normal]이 가면과 숟가락이 많은 자의 도움을 이끌어 낼 걸세."/>
+		<class name="Tutorial_PugoBackStreet_WELKKo" Value="[!Dialog][!speaker:Gangster_Sharky_Normal]한을 풀어야 하지 않겠나?"/>
+		<class name="Tutorial_PugoBackStreet_JSgWpa" Value="[!Dialog][!speaker:Gangster_BullFat_Normal]......"/>
+		<class name="Tutorial_PugoBackStreet_hm9b4r" Value="[!Dialog][!speaker:Gangster_Sharky_Normal]받아만 주게나. 친구의 선물일세."/>
+		<class name="Tutorial_PugoBackStreet_rime72" Value="[!Dialog][!speaker:EmptySubTitle_]자홍거리 사건 이후 한 달 보름..."/>
+		<class name="Tutorial_PugoBackStreet_1bo01O" Value="[!Dialog][!speaker:EmptySubTitle_]바람장벽 지구에 스푼교도들이 늘어나기 시작한다."/>
+		<class name="Tutorial_PugoBackStreet_CBnMco" Value="[!Dialog][!speaker:Gangster_WhiteHelmet_Normal]제이슨 녀석. 드디어 사고를 쳤군."/>
+		<class name="Tutorial_PugoBackStreet_l8G3cM" Value="[!Dialog][!speaker:Gangster_BullFat_Normal]그 녀석. &apos;백호&apos;나 &apos;흑호&apos;에 붙을 생각이야. 분명해."/>
+		<class name="Tutorial_PugoBackStreet_p0jKEG" Value="[!Dialog][!speaker:Gangster_WhiteHelmet_Normal]보스를 버리고 혼자 도망쳐 온 죄부터 받아야지."/>
+		<class name="Tutorial_PugoBackStreet_F3NmX5" Value="[!Dialog][!speaker:Gangster_BullNormal_Normal]&apos;스푼교&apos;. 달갑진 않아도 보스의 손님들이다."/>
+		<class name="Tutorial_PugoBackStreet_9UGWDR" Value="[!Dialog][!speaker:Gangster_BullNormal_Normal]저들의 처분은 보스가 결정하실 것이지 제이슨이 결정할 일이 아니다."/>
+		<class name="Tutorial_PugoBackStreet_LCfaCy" Value="[!Dialog][!speaker:VHPD_Assault_Normal]푸고 뒷골목에서 스푼교도 다수와 황소파 잔당들이 확인되었습니다."/>
+		<class name="Tutorial_PugoBackStreet_UMN9Lr" Value="[!Dialog][!speaker:Albus_Serious]차량 진입은 역시 불가능한가요?"/>
+		<class name="Tutorial_PugoBackStreet_CZ1Ni1" Value="[!Dialog][!speaker:VHPD_Assault_Normal]네. 차량 진입하기에 골목이 좁고 변수가 많아 자칫하다간 먼저 노출될 확률이 높습니다."/>
+		<class name="Tutorial_PugoBackStreet_wCTStK" Value="[!Dialog][!speaker:Albus_Serious]알겠습니다. 잠시만 대기 부탁드립니다."/>
+		<class name="Tutorial_PugoBackStreet_StlsZR" Value="[!Dialog][!speaker:Albus_Normal]역시 이번 사건은 다수 진입은 불가능하겠어."/>
+		<class name="Tutorial_PugoBackStreet_9C6r60" Value="[!Dialog][!speaker:Sion_SurpriseStare]흐음... 설마 우리만 가는 건 아니겠지?"/>
+		<class name="Tutorial_PugoBackStreet_8mmaV7" Value="[!Dialog][!speaker:Albus_Laugh]설마..."/>
+		<class name="Tutorial_PugoBackStreet_XbWJrI" Value="[!Dialog][!speaker:Albus_Normal]하지만 최소 인원으로 구성하려고 해."/>
+		<class name="Tutorial_PugoBackStreet_vwMdNG" Value="[!Dialog][!speaker:Irene_Smile2]동시에 많은 인원이 움직이기 힘들다면 내가 배후로 돌아서 기습하는 건 어떠냐?"/>
+		<class name="Tutorial_PugoBackStreet_d40VCo" Value="[!Dialog][!speaker:Sion_Angry]히어로! 또 그런다! 이젠 팀플레이라니까!"/>
+		<class name="Tutorial_PugoBackStreet_hz3S8E" Value="[!Dialog][!speaker:Albus_Normal]그래요. 아이린 씨. 복잡한 이 골목에서 무리하게 기습하는 것보다는 같이 움직이는 게 더 나을 거에요."/>
+		<class name="Tutorial_PugoBackStreet_SfRE7c" Value="[!Dialog][!speaker:Irene_Surprise]음. 그런가."/>
+		<class name="Tutorial_PugoBackStreet_9q48LB" Value="[!Dialog][!speaker:Sion_Laugh]히어로~ 일단 전략 같은 건 사장님한테 맡기라고~☆ 명색이 정.식. 트러블슈터잖아~"/>
+		<class name="Tutorial_PugoBackStreet_WDBb7X" Value="[!Dialog][!speaker:Irene_Smile2]그렇군. 알버스 군. 잘 부탁하네."/>
+		<class name="Tutorial_PugoBackStreet_JJ9hr2" Value="[!Dialog][!speaker:Albus_Laugh]알겠습니다."/>
+		<class name="Tutorial_PugoBackStreet_qToUd5" Value="[!Dialog][!speaker:Albus_Think][colour=&apos;FFFFFF00&apos;]동행할 경찰 병력을 어떻게 나눌까..."/>
+		<class name="Tutorial_PugoBackStreet_NLlfnF" Value="[!Choice]기동대원 2, 진압대원 2"/>
+		<class name="Tutorial_PugoBackStreet_4yZqAj" Value="[!Choice]기동대원 3, 진압대원 1"/>
+		<class name="Tutorial_PugoBackStreet_IjYPqp" Value="[!Choice]기동대원 1, 진압대원 3"/>
+		<class name="Tutorial_PugoBackStreet_pMSsvH" Value="[!Choice]경찰 병력을 편성하지 않는다."/>
+		<class name="Tutorial_PugoBackStreet_xnX3M4" Value="[!Dialog][!speaker:Albus_Serious]자. 오늘도 잘 부탁합니다."/>
+		<class name="Tutorial_PugoBackStreet_X4rBOF" Value="[!Dialog][!speaker:Irene_Smile2]나야말로 잘 부탁한다! 꼭 도움이 되마!"/>
+		<class name="Tutorial_PugoBackStreet_dSGrKu" Value="[!Dialog][!speaker:Sion_Happy]자!! 화이팅!!"/>
+		<class name="Tutorial_PugoBackStreet_3PvTcz" Value="[!Dialog][!speaker:Albus_Serious]진입로가 좁으니 서로의 위치를 잘 확인하며 임무 진행합니다."/>
+		<class name="Tutorial_PugoBackStreet_0PSHgF" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_PugoBackStreet_S60xXS" Value="[!VictoryCondition]적을 모두 제압하시오."/>
+		<class name="Tutorial_PugoBackStreet_BEyRVk" Value="[!Dialog][!speaker:Sion_Surprise]뭐!! 우리만!!"/>
+		<class name="Tutorial_PugoBackStreet_U7OMjX" Value="[!Dialog][!speaker:Irene_Surprise]그래도 되는 것이냐?"/>
+		<class name="Tutorial_PugoBackStreet_dDh8l2" Value="[!Dialog][!speaker:Albus_Laugh]다수가 들어가면 오히려 행동이 불편할 테니 이게 최선이라고 생각해."/>
+		<class name="Tutorial_PugoBackStreet_lxB2av" Value="[!Dialog][!speaker:Irene_Smile2]알았네. 최선을 다해 기대에 부응하도록 하지."/>
+		<class name="Tutorial_PugoBackStreet_YSVMgl" Value="[!Dialog][!speaker:Sion_Cry]이건 아냐... 왜 편한 길을 두고..."/>
+		<class name="Tutorial_PugoBackStreet_eEV8Ue" Value="[!Dialog][!speaker:Albus_Normal]자. 한 무리씩 천천히 제압하며 가자."/>
+		<class name="Tutorial_PugoBackStreet_DyRbOe" Value="[!BalloonChat][!speaker:Sion]히햐... 진짜 저 둘 잘 뛰네..."/>
+		<class name="Tutorial_PugoBackStreet_50Ziij" Value="[!BalloonChat][!speaker:Sion]그럼... 이제 그 치유사 소녀인가~☆"/>
+		<class name="Tutorial_PugoBackStreet_dTaWY0" Value="[!Subtitle][!speaker:Gangster_BullNormal_Normal]트러블슈터다. 도망쳐!"/>
+		<class name="Tutorial_PugoBackStreet_Bx4til" Value="[!Subtitle][!speaker:Gangster_WhiteHelmet_Normal]젠장! 너무 끈질기잖아!!!"/>
+		<class name="Tutorial_PugoBackStreet_POTk7N" Value="[!Subtitle][!speaker:Gangster_BullFat_Normal]정 안되면 가면을 쓰고 수저를 들어라!"/>
+		<class name="Tutorial_PugoBackStreet_0s23QF" Value="[!Subtitle][!speaker:Gangster_WhiteNormal_Normal]그런 꼴사나운 짓을 할 것 같냐!"/>
+		<class name="Tutorial_PugoBackStreet_Utgc7e" Value="[!Subtitle][!speaker:Albus_Serious]다들 전투 준비!"/>
+		<class name="Tutorial_PugoBackStreet_9eZSIg" Value="[!Subtitle][!speaker:Irene_Heroic]내가 모두 용서하지 않겠다!!"/>
+		<class name="Tutorial_PugoBackStreet_pWI3Di" Value="[!Subtitle][!speaker:Sion_Normal]오늘 잘 풀리는데~"/>
+		<class name="Tutorial_PugoBackStreet_GjkvaP" Value="[!Dialog][!speaker:EmptySubTitle_]이벤트 전투를 생략하시겠습니까?"/>
+		<class name="Tutorial_PugoBackStreet_Wolzch" Value="[!Choice]생략한다"/>
+		<class name="Tutorial_PugoBackStreet_YckdKB" Value="[!Choice]그대로 진행한다"/>
+	</idspace>
+</idspaces>

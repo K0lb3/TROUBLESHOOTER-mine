@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Tutorial_Road_110_jugyHB" Value="[!VictoryCondition]적을 모두 제압하시오."/>
+		<class name="Tutorial_Road_110_cUMsa0" Value="[!Dialog][!speaker:EmptySubTitle_]세계 대전 이전부터 현재 동방 연합의 정·재계에까지 강력한 영향력을 떨치고 있는 범죄 조직『구룡회』"/>
+		<class name="Tutorial_Road_110_zMbmEq" Value="[!Dialog][!speaker:EmptySubTitle_]『구룡회』는 보호비, 사채, 도박장의 경영, 밀수 등을 주 사업으로 하지만 매춘, 절도, 유괴, 사기 등은 금지하고 있다."/>
+		<class name="Tutorial_Road_110_D4h02w" Value="[!Dialog][!speaker:EmptySubTitle_]이러한 『구룡회』의 운영 방식은 조직 말단에서 일어나는 마찰을 줄이고..."/>
+		<class name="Tutorial_Road_110_GZrSBW" Value="[!Dialog][!speaker:EmptySubTitle_]편법적인 수익을 바라는 정·재계의 유력 인사들과 우호적인 관계를 유지하는 근간이 되었다."/>
+		<class name="Tutorial_Road_110_Z0qZ2L" Value="[!Dialog][!speaker:EmptySubTitle_]하지만 이를 유지하기 위해서는 말단에서 일어나는 다른 범죄 조직과의 마찰을 해결해야 했으며..."/>
+		<class name="Tutorial_Road_110_Kl8QWA" Value="[!Dialog][!speaker:EmptySubTitle_]양지의 부패한 관료, 정치인들과 꾸준히 관계를 유지할 문무 겸비의 강력한 지도자의 존재가 필수적이었다."/>
+		<class name="Tutorial_Road_110_wFfmvP" Value="[!Title]시간은 멈추지 않는다"/>
+		<class name="Tutorial_Road_110_JQ50k8" Value="[!Title]현재, 철의 숲 간선도로"/>
+		<class name="Tutorial_Road_110_1Szv4c" Value="[!Dialog][!speaker:Heissing_Smile]&apos;3개월 남았나...&apos;"/>
+		<class name="Tutorial_Road_110_9kVPVd" Value="[!Dialog]어린 시절 같이 했던 동료들을 찾아 『 고난의 성채 』를 떠난 지 9 개월..."/>
+		<class name="Tutorial_Road_110_GHqyya" Value="[!Dialog]레이의 부탁으로 카터를 막기 위해 현재의 $CompanyName$ 팀으로 합류한지 4개월..."/>
+		<class name="Tutorial_Road_110_o6yWvd" Value="[!Dialog][!speaker:Heissing_Smile]......"/>
+		<class name="Tutorial_Road_110_KOkCGd" Value="[!Dialog][!speaker:Heissing_Smile]어쩔 수 없군."/>
+		<class name="Tutorial_Road_110_GbnJ40" Value="[!Dialog][!speaker:Kylie_Normal]뭘 그렇게 멍하니 생각하고 있는 거냐?"/>
+		<class name="Tutorial_Road_110_ld62G2" Value="[!Dialog][!speaker:Heissing_Normal]......"/>
+		<class name="Tutorial_Road_110_31dpRz" Value="[!Dialog][!speaker:Kylie_Smile]그 자동차는 산 거냐?"/>
+		<class name="Tutorial_Road_110_p2DJY7" Value="[!Dialog][!speaker:Heissing_Smile]빌려온 것이다."/>
+		<class name="Tutorial_Road_110_nAgeFM" Value="[!Dialog][!speaker:Kylie_Smile]뭐야. 훔친 거 아냐?"/>
+		<class name="Tutorial_Road_110_FxiaQD" Value="[!Dialog][!speaker:Heissing_Smile]생각의 근본은 변하지 않는가 보군."/>
+		<class name="Tutorial_Road_110_DGuwR8" Value="[!Dialog][!speaker:Kylie_Satisfying]그래. 변하지 않는 것도 있겠지."/>
+		<class name="Tutorial_Road_110_WYV9Ki" Value="[!Dialog][!speaker:Kylie_Satisfying]하지만 네 녀석은 많이 변했다."/>
+		<class name="Tutorial_Road_110_rl3KXS" Value="[!Dialog][!speaker:Heissing_Smile]그렇게 보일 뿐이다."/>
+		<class name="Tutorial_Road_110_gixXp6" Value="[!Title]스쳐 지나가는 인연"/>
+		<class name="Tutorial_Road_110_XKCy4L" Value="[!Title]4년 전, 백룡회"/>
+		<class name="Tutorial_Road_110_dUTjM1" Value="[!Dialog][!speaker:Longchuan_Normal]......"/>
+		<class name="Tutorial_Road_110_Ddi5Uv" Value="[!Dialog][!speaker:Kylie_Serious_Young]내일이구나..."/>
+		<class name="Tutorial_Road_110_IaKIUK" Value="[!Dialog][!speaker:Heissing_Rage_Young2]왜 나에게 호의를 베푼거지?"/>
+		<class name="Tutorial_Road_110_VeLI4b" Value="[!Dialog][!speaker:Kylie_Normal_Young]호의?"/>
+		<class name="Tutorial_Road_110_H6Py8g" Value="[!Dialog][!speaker:Kylie_Smile_Young]뭐. 네가 그렇게 생각한다면 그렇겠지. "/>
+		<class name="Tutorial_Road_110_iuDKxs" Value="[!Dialog][!speaker:Heissing_Rage_Young2]값싼 동정인가?"/>
+		<class name="Tutorial_Road_110_NPoKec" Value="[!Dialog][!speaker:Kylie_Smile_Young]무슨 상관인가? 어차피 우리의 인연은 여기까지다."/>
+		<class name="Tutorial_Road_110_ENnVth" Value="[!Dialog][!speaker:Kylie_Satisfying_Young]네가 운명을 바꿀 수 있다면..."/>
+		<class name="Tutorial_Road_110_YHkkCo" Value="[!Dialog][!speaker:Kylie_Satisfying_Young]그 때는 이런 사이가 아니었으면 좋겠군."/>
+		<class name="Tutorial_Road_110_6VSGvg" Value="[!Dialog][!speaker:Heissing_Rage_Young2]불가능한 일이야."/>
+		<class name="Tutorial_Road_110_5J17Ty" Value="[!Dialog][!speaker:Kylie_Serious_Young]......"/>
+		<class name="Tutorial_Road_110_TZLaiG" Value="[!Dialog][!speaker:Kylie_Smile_Young]역시 운명은 바꿀 수 없는 건가..."/>
+		<class name="Tutorial_Road_110_Pxq28J" Value="[!Dialog][!speaker:Heissing_Rage_Young2]운명을 믿지 않아."/>
+		<class name="Tutorial_Road_110_tHamCK" Value="[!Dialog][!speaker:Heissing_EyeClose_Young_Rage]바꿀 순 없는 건 너희를 향한 내 증오일 뿐이야."/>
+		<class name="Tutorial_Road_110_JHh1zr" Value="[!Dialog][!speaker:Heissing_Rage_Young2]너희들을 절대 용서하지 않을 거야."/>
+		<class name="Tutorial_Road_110_L2xXx0" Value="[!Dialog][!speaker:Kylie_Smile_Young]타인을 저주 하는 것으로 증오를 해소 할 수 있다면 그것도 나쁘지 않겠지."/>
+		<class name="Tutorial_Road_110_XytgKB" Value="[!Dialog][!speaker:Kylie_Satisfying_Young]하지만 다 부질없는 짓이야."/>
+		<class name="Tutorial_Road_110_pvtDam" Value="[!Title]피할 수 없는 순간"/>
+		<class name="Tutorial_Road_110_S8sLiz" Value="[!Title]현재, 철의 숲 외곽 자동차 정비소"/>
+		<class name="Tutorial_Road_110_X5frPq" Value="[!Dialog][!speaker:Kylie_Normal]잠시만 기다려. 이것만 마무리하면 돼."/>
+		<class name="Tutorial_Road_110_BNK1iX" Value="[!Dialog][!speaker:Heissing_Normal]드디어 시작인가..."/>
+		<class name="Tutorial_Road_110_MnHNx9" Value="[!Dialog][!speaker:Kylie_Normal_Girl3]그래..."/>
+		<class name="Tutorial_Road_110_Mtp2Vz" Value="[!Dialog][!speaker:Kylie_Normal]아마 오늘부터 선언된다고 하더군."/>
+		<class name="Tutorial_Road_110_H0r1Hy" Value="[!Dialog][!speaker:Heissing_Normal]......."/>
+		<class name="Tutorial_Road_110_wAsoIZ" Value="[!Dialog][!speaker:Kylie_Smile]혹시나 해서 부른 거니까 너무 신경 쓰지 마."/>
+		<class name="Tutorial_Road_110_5l40Sp" Value="[!Dialog][!speaker:Kylie_Normal]내 사정을 아는 녀석이 이 동네에는 너 뿐이라..."/>
+		<class name="Tutorial_Road_110_4nbmMc" Value="[!Dialog][!speaker:Heissing_Smile]그런가?"/>
+		<class name="Tutorial_Road_110_hBX4rR" Value="[!Dialog][!speaker:Kylie_Serious]아니... 몇 명 더 있긴한데 다들 자기 사정이 있으니..."/>
+		<class name="Tutorial_Road_110_jZ9kEq" Value="[!Dialog][!speaker:Heissing_Smile]난 한가해 보였나 보군."/>
+		<class name="Tutorial_Road_110_EaJt43" Value="[!Dialog][!speaker:Kylie_Normal]너라면 와 줄거라 생각했지."/>
+		<class name="Tutorial_Road_110_0rNZxO" Value="[!Dialog][!speaker:Kylie_Smile]넌 빚지고 못사는 성격이니까."/>
+		<class name="Tutorial_Road_110_JHIB5c" Value="[!Dialog][!speaker:Kylie_Normal]걱정 마. 내가 결정한 인생이야."/>
+		<class name="Tutorial_Road_110_xX3J03" Value="[!Dialog][!speaker:Kylie_Satisfying]후회는 없어."/>
+		<class name="Tutorial_Road_110_sDvUDu" Value="[!Title]원치 않는 이별"/>
+		<class name="Tutorial_Road_110_PT36Lg" Value="[!Title]카일리 10세, 백룡회"/>
+		<class name="Tutorial_Road_110_nAmZzs" Value="[!Dialog][!speaker:Kylie_Serious_Girl]나도 같이 가고 싶어!"/>
+		<class name="Tutorial_Road_110_Nt5J83" Value="[!Dialog][!speaker:Xiaoming_Normal]......"/>
+		<class name="Tutorial_Road_110_9tPNqv" Value="[!Dialog][!speaker:Aska_Normal]안돼. 카일리. 넌 이곳에 남아야 해."/>
+		<class name="Tutorial_Road_110_1e3Dfl" Value="[!Dialog][!speaker:Kylie_Rage_Girl]싫어! 나도 갈 거야!"/>
+		<class name="Tutorial_Road_110_OH26BK" Value="[!Dialog][!speaker:Aska_Normal]몇 번을 말했니. 안 되는 건 안 돼."/>
+		<class name="Tutorial_Road_110_NVGwPy" Value="[!Dialog][!speaker:Longchuan_Normal_Young]카일리 아가씨. 오늘부터 아가씨를 모실 롱췐입니다."/>
+		<class name="Tutorial_Road_110_KBRAuD" Value="[!Dialog][!speaker:Longchuan_Normal_Young]어르신이 돌아오시는 날까지 제가 아가씨를 보필하겠습니다."/>
+		<class name="Tutorial_Road_110_KkH4P5" Value="[!Dialog][!speaker:Kylie_Serious_Girl]언제 돌아오는데? "/>
+		<class name="Tutorial_Road_110_5wrram" Value="[!Dialog][!speaker:Gangster_ButcherRyo_Normal_Boy]......"/>
+		<class name="Tutorial_Road_110_zZvXi2" Value="[!Dialog][!speaker:Showtaro_Normal_Boy]......"/>
+		<class name="Tutorial_Road_110_waDBna" Value="[!Dialog][!speaker:Aska_Normal]네가 이 구룡회의 보스가 되면."/>
+		<class name="Tutorial_Road_110_IqhpWX" Value="[!Dialog][!speaker:Kylie_Rage_Girl]난 그런 일 하고 싶지 않아."/>
+		<class name="Tutorial_Road_110_6pEc8R" Value="[!Dialog][!speaker:Aska_Normal]그럼 우리는 평생 다시 못 봐."/>
+		<class name="Tutorial_Road_110_WsF4nQ" Value="[!Dialog][!speaker:Xiaoming_Normal]그만해. 아스카. 카일리가 힘들어 보이는 군."/>
+		<class name="Tutorial_Road_110_eQFc4t" Value="[!Dialog][!speaker:Xiaoming_Normal]며칠 더 있다 가도록 하지."/>
+		<class name="Tutorial_Road_110_VqpUbo" Value="[!Dialog][!speaker:Aska_Normal]아뇨. 오늘 떠나요. 카일리도 자신의 역할을 받아들여야 해요."/>
+		<class name="Tutorial_Road_110_xnvOcb" Value="[!Dialog][!speaker:Kylie_Serious_Girl]......"/>
+		<class name="Tutorial_Road_110_Q517Qg" Value="[!Dialog][!speaker:Kylie_Serious_Girl]내가 보스가 되면 돌아오는 거야?"/>
+		<class name="Tutorial_Road_110_d4k3MT" Value="[!Dialog][!speaker:Aska_Normal]그래. 보스가 되면."/>
+		<class name="Tutorial_Road_110_zGkI1B" Value="[!Dialog][!speaker:Kylie_Rage_Girl]롱췐! 이거 내 실수야! 물려줘!"/>
+		<class name="Tutorial_Road_110_lDqadB" Value="[!Dialog][!speaker:Longchuan_Normal_Young2]안됩니다."/>
+		<class name="Tutorial_Road_110_OHcaOJ" Value="[!Title]어른과 아이"/>
+		<class name="Tutorial_Road_110_xMViz5" Value="[!Title]카일리 11세, 백룡회 대청마루"/>
+		<class name="Tutorial_Road_110_9T4tno" Value="[!Dialog][!speaker:Kylie_Serious_Girl]이거 물려줘! 그리고 계속해!"/>
+		<class name="Tutorial_Road_110_BkrvO0" Value="[!Dialog][!speaker:Kylie_Rage_Girl]실수로 손이 미끄러진거라고!"/>
+		<class name="Tutorial_Road_110_wXpOlD" Value="[!Dialog][!speaker:Longchuan_Normal_Young2]선택에 실수라는 것은 존재하지 않습니다."/>
+		<class name="Tutorial_Road_110_ELrYDL" Value="[!Dialog][!speaker:Longchuan_Normal_Young2]그 선택이 현재 아가씨의 실력입니다."/>
+		<class name="Tutorial_Road_110_BRnbl4" Value="[!Dialog][!speaker:Kylie_Serious_Girl]그냥 한 수 물러주면 되잖아!"/>
+		<class name="Tutorial_Road_110_7cYIYp" Value="[!Dialog][!speaker:Longchuan_Normal_Young2]아가씨는 장차 조직을 이끌 후계자 후보."/>
+		<class name="Tutorial_Road_110_NmRAIR" Value="[!Dialog][!speaker:Longchuan_Normal_Young2]선택의 무게를 아셔야 합니다."/>
+		<class name="Tutorial_Road_110_GRas4g" Value="[!Dialog][!speaker:Kylie_Rage_Girl]안다고! 알아!"/>
+		<class name="Tutorial_Road_110_Vk8UoS" Value="[!Dialog][!speaker:Kylie_Rage_Girl]......"/>
+		<class name="Tutorial_Road_110_XYKGGv" Value="[!Dialog][!speaker:Kylie_Normal_Girl]그럼 다시 둬!"/>
+		<class name="Tutorial_Road_110_dbwcWk" Value="[!Dialog][!speaker:Longchuan_Normal_Young2]안됩니다. 오늘은 이 판으로 끝입니다."/>
+		<class name="Tutorial_Road_110_1htxkg" Value="[!Title]그리움과 익숙함"/>
+		<class name="Tutorial_Road_110_B4IAf3" Value="[!Title]카일리 14세, 백룡회 대청마루"/>
+		<class name="Tutorial_Road_110_9y8tBf" Value="[!Dialog][!speaker:Kylie_Normal_Girl2]롱췐."/>
+		<class name="Tutorial_Road_110_GAGCM0" Value="[!Dialog][!speaker:Longchuan_Normal_Young3]네. 말씀하세요. 아가씨."/>
+		<class name="Tutorial_Road_110_BeqrUa" Value="[!Dialog][!speaker:Kylie_Normal_Girl2]엄마는 날 버린 걸까?"/>
+		<class name="Tutorial_Road_110_4BB9AN" Value="[!Dialog][!speaker:Longchuan_Normal_Young3]쓸데 없는 생각이십니다."/>
+		<class name="Tutorial_Road_110_xrgnt4" Value="[!Dialog][!speaker:Longchuan_Normal_Young3]아스카 님은 아가씨를 진심으로 사랑하십니다."/>
+		<class name="Tutorial_Road_110_rcmsbA" Value="[!Dialog][!speaker:Kylie_Sad_Girl2]이제 얼굴도 잘 기억이 안나..."/>
+		<class name="Tutorial_Road_110_1WBTNO" Value="[!Dialog][!speaker:Longchuan_Normal_Young3]매주 전화 주시고 계십니다. 손수 편지도 보내주시고요."/>
+		<class name="Tutorial_Road_110_kLDZ8A" Value="[!Dialog][!speaker:Longchuan_Normal_Young3]그리고 아스카 님 사진이라면 아가씨 책상 서랍 속에 있지 않습니까."/>
+		<class name="Tutorial_Road_110_NxHxKx" Value="[!Dialog][!speaker:Kylie_Rage_Girl2]너 내 소지품도 검사하니...?"/>
+		<class name="Tutorial_Road_110_LaTsYX" Value="[!Dialog][!speaker:Longchuan_Normal_Young3]그럴 리가요. 아가씨가 힘들 때마다 꺼내 보시길래 알고 있을 뿐입니다."/>
+		<class name="Tutorial_Road_110_0d5VG2" Value="[!Dialog][!speaker:Kylie_Normal_Girl2]너 정말 재수 없는 거 알아?"/>
+		<class name="Tutorial_Road_110_H0ikuO" Value="[!Dialog][!speaker:Kylie_Normal_Girl2]조직에 유능한 인물들도 많을 텐데 왜 너 같은 게 날 가르치지?"/>
+		<class name="Tutorial_Road_110_BqJWQ0" Value="[!Dialog][!speaker:Longchuan_Normal_Young3]유능하기 때문입니다."/>
+		<class name="Tutorial_Road_110_N8pR1x" Value="[!Dialog][!speaker:Kylie_Rage_Girl2]하아... 개그한 거지?"/>
+		<class name="Tutorial_Road_110_9lt6YE" Value="[!Dialog][!speaker:Longchuan_Normal_Young3]그저 사실을 말했을 뿐입니다."/>
+		<class name="Tutorial_Road_110_9gUyYp" Value="[!Dialog][!speaker:Kylie_Normal_Girl2]재미도 없고... 잔소리에... 사람 마음도 못 읽고..."/>
+		<class name="Tutorial_Road_110_uH2CjY" Value="[!Dialog][!speaker:Longchuan_Normal_Young3]이번 판은 제가 졌습니다."/>
+		<class name="Tutorial_Road_110_0dXEIx" Value="[!Dialog][!speaker:Longchuan_Normal_Young3]아가씨. 실력이 많이 느셨습니다."/>
+		<class name="Tutorial_Road_110_EpaaOk" Value="[!Dialog][!speaker:Kylie_Embarrasing_Girl2]......당연하잖아."/>
+		<class name="Tutorial_Road_110_YWnirT" Value="[!Title]모든 일에 끝은 온다"/>
+		<class name="Tutorial_Road_110_5RjCDI" Value="[!Title]카일리 18세, 백룡회 대청마루"/>
+		<class name="Tutorial_Road_110_jzuK3T" Value="[!Dialog][!speaker:Longchuan_Normal_Young4]발할라 국립대학 수석합격 축하드립니다."/>
+		<class name="Tutorial_Road_110_m0b0Bg" Value="[!Dialog][!speaker:Kylie_Normal_Girl3]다 네 덕분이지."/>
+		<class name="Tutorial_Road_110_mGMQAE" Value="[!Dialog][!speaker:Longchuan_Normal_Young4]많이 경험하고 많이 즐기고 돌아오십시오."/>
+		<class name="Tutorial_Road_110_aDLVLd" Value="[!Dialog][!speaker:Kylie_Normal_Girl3]내 고집 들어줘서 고맙다."/>
+		<class name="Tutorial_Road_110_GGdu4C" Value="[!Dialog][!speaker:Longchuan_Normal_Young4]제 역할은 아가씨가 조직의 후계자 후보로서 자질을 갖추게 하는 것이었습니다."/>
+		<class name="Tutorial_Road_110_axT0Ok" Value="[!Dialog][!speaker:Longchuan_Normal_Young4]그리고 전 더는 아가씨에게 가르쳐 드릴 것이 없습니다."/>
+		<class name="Tutorial_Road_110_sLnJdG" Value="[!Dialog][!speaker:Longchuan_Normal_Young4]그러니 오늘부로 아가씨의 교육 담당은 그만두겠습니다."/>
+		<class name="Tutorial_Road_110_EzUTgV" Value="[!Dialog][!speaker:Longchuan_Normal_Young4]이제는 아스카 님과 아가씨를 대신하여 지부 관리에 전념하겠습니다."/>
+		<class name="Tutorial_Road_110_qqTht1" Value="[!Dialog][!speaker:Kylie_Normal_Girl3]그래. 잘 부탁한다."/>
+		<class name="Tutorial_Road_110_SPejCI" Value="[!Dialog][!speaker:Longchuan_Normal_Young4]고생하셨습니다. 아가씨."/>
+		<class name="Tutorial_Road_110_uqTxVx" Value="[!Dialog][!speaker:Kylie_Normal_Girl3]그래. 너도 고생했다."/>
+		<class name="Tutorial_Road_110_vRRgCb" Value="[!Dialog][!speaker:Heissing_Normal]......"/>
+		<class name="Tutorial_Road_110_beebzy" Value="[!Dialog][!speaker:Heissing_Normal]왜 사서 고생이지?"/>
+		<class name="Tutorial_Road_110_4Nllw9" Value="[!Dialog][!speaker:Kylie_Normal]......"/>
+		<class name="Tutorial_Road_110_84sfQZ" Value="[!Dialog][!speaker:Kylie_Satisfying]그러게. 왜 그랬을까?"/>
+		<class name="Tutorial_Road_110_mXb6RB" Value="[!Dialog][!speaker:Heissing_Normal]하고 싶은 일이 있는 거냐?"/>
+		<class name="Tutorial_Road_110_uqdJwc" Value="[!Dialog][!speaker:Kylie_Normal]지금에 와서는 딱히 없는 것 같네."/>
+		<class name="Tutorial_Road_110_JME2e8" Value="[!Dialog][!speaker:Heissing_Normal]......"/>
+		<class name="Tutorial_Road_110_4A24lN" Value="[!Dialog][!speaker:Kylie_Smile]넌 옛날부터 하고 싶은 일이 많은 것 같아."/>
+		<class name="Tutorial_Road_110_fk69yr" Value="[!Dialog][!speaker:Heissing_Normal]그래. 모든 순간은 소중하니까."/>
+		<class name="Tutorial_Road_110_5wnoWb" Value="[!Dialog][!speaker:Kylie_Satisfying]너 답네."/>
+		<class name="Tutorial_Road_110_Z9TtX7" Value="[!Title]결단을 내리다"/>
+		<class name="Tutorial_Road_110_PyMqZ4" Value="[!Title]4년 전, 헤이싱 떠난 한 달 뒤"/>
+		<class name="Tutorial_Road_110_deO42P" Value="[!Dialog][!speaker:Longchuan_Normal]제가 잘못 들은 것은 아니겠지요?"/>
+		<class name="Tutorial_Road_110_n0Jvc7" Value="[!Dialog][!speaker:Kylie_Serious_Young]두 번 말하게 하지 마. 내 결정은 변하지 않아."/>
+		<class name="Tutorial_Road_110_1Ls1re" Value="[!Dialog][!speaker:Longchuan_Normal]아가씨는 조직의 직계입니다."/>
+		<class name="Tutorial_Road_110_QyZpoh" Value="[!Dialog][!speaker:Longchuan_Normal]그 무게는 아가씨의 미래를 짓누를 것입니다."/>
+		<class name="Tutorial_Road_110_zuYVlO" Value="[!Dialog][!speaker:Kylie_Normal_Young]이미 잘 알고 있다."/>
+		<class name="Tutorial_Road_110_AyNGjQ" Value="[!Dialog][!speaker:Kylie_Satisfying_Young]......"/>
+		<class name="Tutorial_Road_110_zuW9Oi" Value="[!Dialog][!speaker:Kylie_Smile_Young]무의미한 저항일지라도 내 뜻은 이 곳을 떠나는 것이다."/>
+		<class name="Tutorial_Road_110_ViR4n2" Value="[!Dialog][!speaker:Gangster_ButcherRyo_Normal_Young]......"/>
+		<class name="Tutorial_Road_110_NakOWz" Value="[!Dialog][!speaker:Kylie_Smile_Young]지부의 일은 너에게 모두 맡길테니 잘 부탁한다."/>
+		<class name="Tutorial_Road_110_WvhpE9" Value="[!Dialog][!speaker:ResearchAssistant_Science_Normal]알겠습니다."/>
+		<class name="Tutorial_Road_110_qAxIBM" Value="[!Title]잉어, 꿈을 꾸다"/>
+		<class name="Tutorial_Road_110_fpohlI" Value="[!Title]3년 반 전, 발할라 국립대학"/>
+		<class name="Tutorial_Road_110_ELFsUD" Value="[!Dialog][!speaker:Student_Science01_Normal]까약!! 카일리 선배잖아~♡"/>
+		<class name="Tutorial_Road_110_Zi57oh" Value="[!Dialog][!speaker:Student_Science02_Normal]그런데 선배. 저번 학기를 마지막으로 학교 그만둔다고 하지 않았나?"/>
+		<class name="Tutorial_Road_110_51yOdk" Value="[!Dialog]다가오는『 구룡회 』후계자들끼리의 생사를 건 경쟁을 대비하기 위해 대학을 휴학하고 본가로 돌아갔던 카일리였다."/>
+		<class name="Tutorial_Road_110_x1SpTo" Value="[!Dialog]하지만 본가에서 만난『 앨리 』출신의 한 소년과의 만남은 카일리에게 변화를 가져왔다."/>
+		<class name="Tutorial_Road_110_3dRHvr" Value="[!Dialog]『구룡회』라는 커다란 짐을 던져버리고 학교로 복귀한 카일리."/>
+		<class name="Tutorial_Road_110_ZhnJDn" Value="[!Dialog]그녀는 더 이상 자신의 인생의 선택에서 주저하지 않았다."/>
+		<class name="Tutorial_Road_110_cigJ0G" Value="[!Dialog][!speaker:Professor_Science_Normal]저 학생이 카일리군요."/>
+		<class name="Tutorial_Road_110_b1T93l" Value="[!Dialog][!speaker:ResearchAssistant_Science_Normal]네. 이미 국가 마이스터 자격증을 취득한 상태입니다."/>
+		<class name="Tutorial_Road_110_UyNzLM" Value="[!Dialog][!speaker:Professor_Science_Normal]우리 연구에 꼭 필요한 인재군요."/>
+		<class name="Tutorial_Road_110_nlQy54" Value="[!Dialog][!speaker:Professor_Science_Normal]다음 우리 프로젝트에 합류하라고 권유해 보세요."/>
+		<class name="Tutorial_Road_110_KkkHd5" Value="[!Dialog][!speaker:Kylie_Normal_Young2]다음은 세계 마이스터 대회인가... 아니면..."/>
+		<class name="Tutorial_Road_110_tJTpun" Value="[!Dialog][!speaker:Kylie_Normal_Young2]응?"/>
+		<class name="Tutorial_Road_110_UH3LIw" Value="[!Dialog]어머니 이외에 달리 연락이 없는 카일리에게 들어온 낯익은 이름의 메일 한 통."/>
+		<class name="Tutorial_Road_110_RzEbyc" Value="[!Dialog][!speaker:EmptySubTitle_]아가씨. 료 입니다."/>
+		<class name="Tutorial_Road_110_kQUzLh" Value="[!Dialog][!speaker:EmptySubTitle_]오늘 저에게 잉어 자수 자켓이 전달되었습니다."/>
+		<class name="Tutorial_Road_110_fcoaEn" Value="[!Dialog][!speaker:EmptySubTitle_]아가씨의 은혜에 조직을 떠나 새로운 삶을 살 기회를 얻었음에도 불구하고..."/>
+		<class name="Tutorial_Road_110_mmxk6j" Value="[!Dialog][!speaker:EmptySubTitle_]결국 이런 결과를 초래하여 사죄드립니다."/>
+		<class name="Tutorial_Road_110_uJacrs" Value="[!Dialog][!speaker:EmptySubTitle_]하지만 저 료 류자키는 언제나 아가씨를 모실 뿐입니다."/>
+		<class name="Tutorial_Road_110_A23TT4" Value="[!Dialog][!speaker:Kylie_Rage_Young2]노친네들... 지독하군..."/>
+		<class name="Tutorial_Road_110_scU6u5" Value="[!Dialog]직계인『 잉어 』를 견제하고 경쟁시키기 위한『 잉어 』"/>
+		<class name="Tutorial_Road_110_LCepT0" Value="[!Dialog]그 자리에는 오랫동안 직계를 보필하였던 자가 선택되었다."/>
+		<class name="Tutorial_Road_110_2RpE4N" Value="[!Dialog]이를 모를리 없던 카일리는 조직을 떠남과 동시에 료를 파문하여 오랜 시간 자신을 보필한 료에게 부담을 주지 않으려고 했다."/>
+		<class name="Tutorial_Road_110_mIuGJl" Value="[!Dialog][!speaker:Kylie_Rage_Young2]정말 짜증나는군..."/>
+		<class name="Tutorial_Road_110_hcHGs8" Value="[!Dialog][!speaker:EmptySubTitle_]추신: 이번에 쇼타로와 함께 스시집을 개업하게 되었습니다."/>
+		<class name="Tutorial_Road_110_8oo75Z" Value="[!Dialog][!speaker:EmptySubTitle_]언젠가 세계수 지구에 오실 일이 있다면 꼭 들려주시길 바랍니다."/>
+		<class name="Tutorial_Road_110_5zMRYL" Value="[!Dialog][!speaker:EmptySubTitle_]아가씨의 충실한 시종 료."/>
+		<class name="Tutorial_Road_110_5V15JD" Value="[!Title]잉어, 뛰어오르다."/>
+		<class name="Tutorial_Road_110_J6IzKX" Value="[!Title]3년 전, 료의 스시집."/>
+		<class name="Tutorial_Road_110_3D7jof" Value="[!Dialog][!speaker:Kate_Smile]규베 선배. 오늘 정말 멋지셨어요!"/>
+		<class name="Tutorial_Road_110_7OU4R2" Value="[!Dialog][!speaker:Gyube_Normal]다 과장님 덕분이지."/>
+		<class name="Tutorial_Road_110_junubv" Value="[!Dialog][!speaker:Kate_Smile]과장님도 규베 선배를 신뢰하시니까 맡기셨겠죠!"/>
+		<class name="Tutorial_Road_110_RblZOi" Value="[!Dialog][!speaker:Gyube_Embarrassed]흠... 그런가... 더 열심히 해야겠군."/>
+		<class name="Tutorial_Road_110_4xVOI2" Value="[!Dialog][!speaker:Gyube_Normal]자! 기분이다! 쇼타로! 여기 사케 한병 더!"/>
+		<class name="Tutorial_Road_110_ugTlCW" Value="[!Dialog][!speaker:Showtaro_Normal]네! . 규베 씨. 잠시만 기다리세요!"/>
+		<class name="Tutorial_Road_110_dTRIYx" Value="[!Dialog][!speaker:Kylie_Normal_Young2]장사가 잘 되네."/>
+		<class name="Tutorial_Road_110_rMTFtO" Value="[!Dialog][!speaker:Gangster_ButcherRyo_Normal_Young]오늘따라 소란스러워 죄송합니다."/>
+		<class name="Tutorial_Road_110_3MUfLs" Value="[!Dialog][!speaker:Kylie_Smile2_Young2]아냐. 장사하는 가게가 다 그렇지."/>
+		<class name="Tutorial_Road_110_YS2BsT" Value="[!Dialog][!speaker:Kylie_Smile2_Young2]자리 잡은 것 같아 보기 좋아."/>
+		<class name="Tutorial_Road_110_gUl5Dn" Value="[!Dialog][!speaker:Gangster_ButcherRyo_Normal_Young]감사합니다."/>
+		<class name="Tutorial_Road_110_owRkdr" Value="[!Dialog][!speaker:Kylie_Normal_Young2]저 옷을 가게 인테리어에 활용하다니..."/>
+		<class name="Tutorial_Road_110_gpbGcU" Value="[!Dialog][!speaker:Kylie_Smile2_Young2]늙은이들이 알면 다들 쓰러지겠군..."/>
+		<class name="Tutorial_Road_110_wjBxYy" Value="[!Dialog][!speaker:Gangster_ButcherRyo_Normal_Young]어차피 사용할 일 없는 옷입니다."/>
+		<class name="Tutorial_Road_110_FDJsvc" Value="[!Dialog][!speaker:Gangster_ButcherRyo_Normal_Young]옷장 안에서 먼지 쌓이는 것보다는 이렇게라도 사용하는 것이 낫지 않겠습니까."/>
+		<class name="Tutorial_Road_110_NSHKEi" Value="[!Dialog][!speaker:Kylie_Smile2_Young2]너도 조금 변했구나."/>
+		<class name="Tutorial_Road_110_TeEmqK" Value="[!Dialog][!speaker:Kylie_Smile_Young2]좋은 쪽으로 말이다."/>
+		<class name="Tutorial_Road_110_sFepJG" Value="[!Dialog][!speaker:Gangster_ButcherRyo_Normal_Young]여기 아가씨가 좋아하시는 참다랑어 대뱃살입니다."/>
+		<class name="Tutorial_Road_110_yE8PV5" Value="[!Dialog][!speaker:Kylie_Normal_Young2]......"/>
+		<class name="Tutorial_Road_110_JEyeag" Value="[!Dialog][!speaker:Gangster_ButcherRyo_Normal_Young]대학 졸업 축하드립니다. 아가씨."/>
+		<class name="Tutorial_Road_110_2vKjbq" Value="[!Dialog][!speaker:Kylie_Smile_Young2]......"/>
+		<class name="Tutorial_Road_110_nQCjpo" Value="[!Dialog][!speaker:Kylie_Satisfying_Young2]그래. 너도 개업 축하한다."/>
+		<class name="Tutorial_Road_110_rML5yv" Value="[!Dialog][!speaker:Kylie_Smile2_Young2]열심히 살아 보자."/>
+		<class name="Tutorial_Road_110_4wr457" Value="[!Dialog][!speaker:Heissing_Normal]하루 종일 여기 있을 건가?"/>
+		<class name="Tutorial_Road_110_Xm4YbD" Value="[!Dialog][!speaker:Kylie_Normal]여기 일 끝나려면 시간이 좀 더 걸릴 듯해. "/>
+		<class name="Tutorial_Road_110_01gIJN" Value="[!Dialog][!speaker:Kylie_Smile]주유소 편의점도 개방되어 있으니 그쪽에 가 있어."/>
+		<class name="Tutorial_Road_110_NSBG2g" Value="[!Dialog][!speaker:Kylie_Satisfying]난 일 끝내면 갈게."/>
+		<class name="Tutorial_Road_110_EzSFKo" Value="[!Dialog][!speaker:Gangster_Shandian_Normal]카일리 아가씨!"/>
+		<class name="Tutorial_Road_110_EkC4Lo" Value="[!Dialog][!speaker:Gangster_Shandian_Normal]그동안 잘 지내셨습니까?"/>
+		<class name="Tutorial_Road_110_u4FutO" Value="[!Dialog][!speaker:Heissing_Normal]......"/>
+		<class name="Tutorial_Road_110_YclmqT" Value="[!Dialog][!speaker:Gangster_Shandian_Normal]카일리 아가씨 동료 분이신가요? 잠시 자리를 비켜 주시겠습니까?"/>
+		<class name="Tutorial_Road_110_3OLRRm" Value="[!Dialog][!speaker:Kylie_Serious]이 녀석은 괜찮아."/>
+		<class name="Tutorial_Road_110_bQAoKK" Value="[!Dialog][!speaker:Gangster_Shandian_Normal]곤란한데요. 아가씨."/>
+		<class name="Tutorial_Road_110_r0CtC1" Value="[!Dialog][!speaker:Heissing_Normal]......"/>
+		<class name="Tutorial_Road_110_ptkCAI" Value="[!Dialog][!speaker:Kylie_Normal]샨디엔 얕은 수 부리지 마."/>
+		<class name="Tutorial_Road_110_efEXRN" Value="[!Dialog][!speaker:Kylie_Normal]네가 할 일만 해."/>
+		<class name="Tutorial_Road_110_N2EqEk" Value="[!Dialog][!speaker:Gangster_Shandian_Normal]......"/>
+		<class name="Tutorial_Road_110_nQQoO0" Value="[!Dialog][!speaker:Gangster_Shandian_Normal]알겠습니다. 그럼 먼저『 승룡전 』의 규칙을 알려드리겠습니다."/>
+		<class name="Tutorial_Road_110_XEdWFC" Value="[!Dialog]단 한명의 후계자 후보를 남기기 위한 생사 경쟁.『 승룡전 』"/>
+		<class name="Tutorial_Road_110_Brms5n" Value="[!Dialog]조직원들간의 반목을 금지하는 『구룡회』이지만 이 기간만큼은 모든 수단과 방법을 허용한다."/>
+		<class name="Tutorial_Road_110_03XV3h" Value="[!Dialog][!speaker:Gangster_Shandian_Normal]지난 주, 10번째『잉어』가 탄생함에 따라 오늘부터『승룡전』이 시작되었음을 알려 드립니다."/>
+		<class name="Tutorial_Road_110_JPUp2g" Value="[!Dialog][!speaker:Kylie_Serious]알았다."/>
+		<class name="Tutorial_Road_110_LVoE6C" Value="[!Dialog][!speaker:Heissing_Normal]......"/>
+		<class name="Tutorial_Road_110_q0OGhg" Value="[!Dialog][!speaker:Gangster_Shandian_Normal]그리고 이건 아스카 님이 전해드리라고 한 물건입니다."/>
+		<class name="Tutorial_Road_110_4PPwrV" Value="[!Dialog][!speaker:Kylie_Normal]어머니가..."/>
+		<class name="Tutorial_Road_110_EEy5bg" Value="[!Dialog][!speaker:Gangster_Shandian_Normal]그동안 고생하셨습니다."/>
+		<class name="Tutorial_Road_110_iKLEvn" Value="[!Dialog][!speaker:Kylie_Serious]!!"/>
+		<class name="Tutorial_Road_110_DwXlHc" Value="[!BalloonChat][!speaker:Heissing]카일리!!"/>
+		<class name="Tutorial_Road_110_Qhspvy" Value="[!Dialog][!speaker:Kylie_Normal]걱정 마. 헤이싱."/>
+		<class name="Tutorial_Road_110_m6Spbz" Value="[!Dialog][!speaker:Gangster_Shandian_Normal]역시 아가씨네요."/>
+		<class name="Tutorial_Road_110_51SxI4" Value="[!Dialog][!speaker:Gangster_Shandian_Normal]나름 방심한 순간 노리려고 한 건데 말입니다."/>
+		<class name="Tutorial_Road_110_dkbkHW" Value="[!Dialog][!speaker:Kylie_Normal]샨띠엔... 암살자인 네가 전언을 전하러 오는 것부터 이상해."/>
+		<class name="Tutorial_Road_110_51qw4o" Value="[!Dialog][!speaker:Gangster_Shandian_Normal]뭐. 다 들켰으니 서로 미안할 것도 없겠죠."/>
+		<class name="Tutorial_Road_110_w9XS0j" Value="[!Dialog][!speaker:Gangster_Shandian_Normal]아가씨에게는 조직의 보스는 어울리지 않아요. 죽어 주시죠."/>
+		<class name="Tutorial_Road_110_R7V6IU" Value="[!Dialog][!speaker:Kylie_Satisfying]할 수 있다면 해 봐."/>
+		<class name="Tutorial_Road_110_PgJ6Fv" Value="[!Dialog][!speaker:Gangster_Shandian_Normal]빠오쯔!"/>
+		<class name="Tutorial_Road_110_QYxnmO" Value="[!Dialog][!speaker:Kylie_Normal]헤이싱. 저 녀석은 너한테 맡긴다."/>
+		<class name="Tutorial_Road_110_DNu4LG" Value="[!Dialog][!speaker:Heissing_Smile]둘 다 맡겨도 돼."/>
+		<class name="Tutorial_Road_110_K7SMME" Value="[!VictoryCondition]제한 시간 초과"/>
+		<class name="Tutorial_Road_110_1JwhxV" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_Road_110_SfO8Ln" Value="[!Dialog][!speaker:Gangster_Shandian_Normal]역시 아가씨는 만만치 않군요."/>
+		<class name="Tutorial_Road_110_ba6Pls" Value="[!Dialog][!speaker:Gangster_Shandian_Normal]졌습니다. 아가씨 마음대로 하십시오."/>
+		<class name="Tutorial_Road_110_zYXppp" Value="[!Dialog][!speaker:Kylie_Serious]어차피 통과 의례."/>
+		<class name="Tutorial_Road_110_5d7nv8" Value="[!Dialog][!speaker:Kylie_Normal]돌아가."/>
+		<class name="Tutorial_Road_110_t8qKsp" Value="[!Dialog][!speaker:Gangster_Shandian_Normal]역시! 아가씨. 호탕하십니다!"/>
+		<class name="Tutorial_Road_110_svgG3I" Value="[!Dialog][!speaker:Gangster_Shandian_Normal]그럼 다음에 뵙겠습니다."/>
+		<class name="Tutorial_Road_110_1sUNO2" Value="[!Dialog][!speaker:Gangster_Shandian_Normal]무탈하시고 꼭 승천 하시길 기대하겠습니다."/>
+		<class name="Tutorial_Road_110_hc8dwT" Value="[!Dialog][!speaker:Heissing_Smile]진심으로 죽이려고 한 자를 쉽게도 보내주는군."/>
+		<class name="Tutorial_Road_110_Gun4rE" Value="[!Dialog][!speaker:Kylie_Smile]조직의 명령에 움직이는 녀석들에게 분풀이 한다고 달라질 것은 없겠지."/>
+		<class name="Tutorial_Road_110_NaL6FB" Value="[!Dialog][!speaker:Kylie_Normal]저 녀석들이 아니더라도 다른 누군가가 역할을 대신할 뿐이다."/>
+		<class name="Tutorial_Road_110_L3L3eR" Value="[!Dialog][!speaker:Heissing_Normal]매일 같이 이런 일이 생기나?"/>
+		<class name="Tutorial_Road_110_NItWIW" Value="[!Dialog][!speaker:Kylie_Satisfying]그럴리가..."/>
+		<class name="Tutorial_Road_110_UCsOWi" Value="[!Dialog][!speaker:Kylie_Smile]어디까지나 이건 차기 지도자를 뽑는 과정이야."/>
+		<class name="Tutorial_Road_110_yKZESA" Value="[!Dialog][!speaker:Kylie_Normal]남은 후보들이 단 한 명의 후보를 인정하면 그만인 게임이지."/>
+		<class name="Tutorial_Road_110_jvRK31" Value="[!Dialog][!speaker:Heissing_EyeClose]남은 후보들이라..."/>
+		<class name="Tutorial_Road_110_wNQySz" Value="[!Dialog][!speaker:Heissing_Normal]네가 최후의 한 명이면 보스가 되는건가?"/>
+		<class name="Tutorial_Road_110_Cs0sKd" Value="[!Dialog][!speaker:Kylie_Smile]그래."/>
+		<class name="Tutorial_Road_110_otCMWJ" Value="[!Dialog][!speaker:Kylie_Satisfying]하지만 그럴 생각이었다면 본가에 머물면서 세력을 키우고 있었겠지."/>
+		<class name="Tutorial_Road_110_ClUOh7" Value="[!Dialog][!speaker:Kylie_Satisfying]오늘 와줘서 고맙다."/>
+		<class name="Tutorial_Road_110_kCAbjs" Value="[!Dialog][!speaker:Heissing_Smile]....."/>
+		<class name="Tutorial_Road_110_v06zdo" Value="[!Dialog][!speaker:Heissing_Normal]$CompanyName$. 생각해 본 적 있나?"/>
+		<class name="Tutorial_Road_110_WAl0kC" Value="[!Dialog][!speaker:Kylie_Satisfying]......"/>
+		<class name="Tutorial_Road_110_cvy7su" Value="[!Dialog][!speaker:Kylie_Smile]좋은 팀이지. 재밌어 보여."/>
+		<class name="Tutorial_Road_110_FREEjA" Value="[!Dialog][!speaker:Heissing_Normal]오지 않겠나? 사장은 내가 설득하지."/>
+		<class name="Tutorial_Road_110_AWrAMT" Value="[!Dialog][!speaker:Kylie_Normal]......"/>
+		<class name="Tutorial_Road_110_5rvMYV" Value="[!Dialog][!speaker:Kylie_Normal]너 많이 급하구나."/>
+		<class name="Tutorial_Road_110_vfQqiZ" Value="[!Dialog][!speaker:Heissing_Normal]부정하지 않겠다."/>
+		<class name="Tutorial_Road_110_R7mUHm" Value="[!Dialog][!speaker:Heissing_Smile]해야할 일들이 있는데 시간이 부족하다."/>
+		<class name="Tutorial_Road_110_8J5vh9" Value="[!Dialog][!speaker:Kylie_Normal]오늘 봤듯이 내가 합류하면 폐를 끼치게 될거야."/>
+		<class name="Tutorial_Road_110_2CUeuB" Value="[!Dialog][!speaker:Heissing_Smile]상관 없다. 난 내 할 일을 완료하고 싶을 뿐이다."/>
+		<class name="Tutorial_Road_110_CrZ2lA" Value="[!Dialog][!speaker:Kylie_Normal]......"/>
+		<class name="Tutorial_Road_110_31F1lG" Value="[!Dialog][!speaker:Kylie_Smile]너는 네 운명을 개척한 줄 알았는데 의외군."/>
+		<class name="Tutorial_Road_110_AUklJx" Value="[!Dialog][!speaker:Heissing_Smile]네 착각이다..."/>
+		<class name="Tutorial_Road_110_d6MIdG" Value="[!Dialog][!speaker:Kylie_Smile]오늘 날 위해 온 게 아니라 이것 때문에 온 것인가?"/>
+		<class name="Tutorial_Road_110_dOBDDq" Value="[!Dialog][!speaker:Kylie_Satisfying]내가 거절한다면?"/>
+		<class name="Tutorial_Road_110_jgOun6" Value="[!Dialog][!speaker:Kylie_Smile]그리고 이미 알버스 군이 몇 번 이야기 한 것 거절했어."/>
+		<class name="Tutorial_Road_110_4P7jL3" Value="[!Dialog][!speaker:Heissing_Smile]기회가 되어 권유할 뿐이다."/>
+		<class name="Tutorial_Road_110_T2dSKN" Value="[!Dialog][!speaker:Kylie_Satisfying]......"/>
+		<class name="Tutorial_Road_110_CHqYnF" Value="[!Subtitle][!speaker:Albus_Surprise][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]헤이싱 씨?"/>
+		<class name="Tutorial_Road_110_zuzU8v" Value="[!Subtitle][!speaker:Heissing_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]사장. 전에 말했던 엔지니어 구했나?"/>
+		<class name="Tutorial_Road_110_AMtHCD" Value="[!Subtitle][!speaker:Albus_Laugh][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]아뇨. 아는 엔지니어 분이 카일리 씨 뿐인데... 거절하셔서..."/>
+		<class name="Tutorial_Road_110_v2xLz5" Value="[!Subtitle][!speaker:Heissing_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]그녀를 내가 데려 가겠네."/>
+		<class name="Tutorial_Road_110_Ws9U1Y" Value="[!Subtitle][!speaker:Albus_SurpriseStare][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]네?"/>
+		<class name="Tutorial_Road_110_vKdPy5" Value="[!Subtitle][!speaker:Kylie_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]아. 알버스 군. 미안해."/>
+		<class name="Tutorial_Road_110_gt9iEv" Value="[!Subtitle][!speaker:Albus_Surprise][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]카일리 씨?"/>
+		<class name="Tutorial_Road_110_9PGxvw" Value="[!Subtitle][!speaker:Kylie_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]전에 말한 제안 아직도 유효한가?"/>
+		<class name="Tutorial_Road_110_Z1JuWo" Value="[!Subtitle][!speaker:Albus_SurpriseStare][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]....."/>
+		<class name="Tutorial_Road_110_M9X4NZ" Value="[!Subtitle][!speaker:Kylie_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]충분한 보수만 준다면 합류하도록 할게."/>
+		<class name="Tutorial_Road_110_wRsjAo" Value="[!Subtitle][!speaker:Albus_SurpriseStare][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]네... 당연히 저희야 환영하죠."/>
+		<class name="Tutorial_Road_110_3pZGYZ" Value="[!Subtitle][!speaker:Kylie_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]그래. 그러면 잘 부탁한다."/>
+		<class name="Tutorial_Road_110_ssYLhv" Value="[!Subtitle][!speaker:Albus_SurpriseStare][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]네..."/>
+		<class name="Tutorial_Road_110_deWn4v" Value="[!Ignore][!Dialog][!speaker:Heissing_Smile]알았다."/>
+		<class name="Tutorial_Road_110_TLX3xz" Value="[!Ignore][!Dialog][!speaker:Marco_Normal]야야... 무슨 요즘 시대 자판기가 카드가 안돼... "/>
+		<class name="Tutorial_Road_110_BwNzz3" Value="[!Ignore][!Dialog][!speaker:Marco_Normal]거기 형씨."/>
+		<class name="Tutorial_Road_110_gyBcUX" Value="[!Ignore][!Dialog][!speaker:Heissing_Normal]....."/>
+		<class name="Tutorial_Road_110_TKFXlk" Value="[!Ignore][!Dialog][!speaker:Marco_Smile]동전 좀 빌려 주겠어?"/>
+		<class name="Tutorial_Road_110_d40VCo" Value="[!Ignore][!Dialog][!speaker:Marco_Normal]동전 빌려 달라고 했다고 너무 째려보네."/>
+		<class name="Tutorial_Road_110_hz3S8E" Value="[!Ignore][!Dialog][!speaker:Marco_Smile]없음 없다고 하면 돼지. 인상은 왜 그렇게 쓰고 그래."/>
+	</idspace>
+</idspaces>

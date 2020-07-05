@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Dialog">
+	<class name="ShooterStreet_Main">
+		<Scripts>
+			<property Type="Switch" C_TestTarget="company.Progress.ZoneEnter.FadeInOut">
+				<property Case="true">
+					<property Type="SceneFade" Direct="true" FadeType="Out"/>
+					<property Type="SceneFade" Direct="false" FadeType="In"/>
+				</property>
+			</property>
+			<property Type="Script" Script="ProgressPreDialogCheck_ShooterStreet_Main"/>
+		</Scripts>
+	</class>
+	<class name="ShooterStreet_Main_Progress_Tutorial_Opening">
+		<Scripts>
+			<property Type="Switch" C_TestTarget="company.Progress.Tutorial.ShooterStreet">
+				<property Case="false">
+					<property Type="Script" Script="IsSingleplayMode" Return="offline"/>
+					<property Type="Switch" C_TestTarget="env.offline">
+						<property Case="true">
+							<property Type="Jump" JumpTo="ShooterStreet_Tutorial_Offline"/>
+						</property>
+						<property Case="false">
+							<property Type="Jump" JumpTo="ShooterStreet_Tutorial"/>
+						</property>
+					</property>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+	<class name="ShooterStreet_Tutorial">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Start" Close="false" Message="사수 거리는 다양한 상인 NPC들과 실제 게임을 하는 플레이어들을 만날 수 있는 공간입니다." DialogType="Main" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="NPC를 통해 개인 의뢰를 수령할 수 있으며 개인 의뢰 완료 시, 해당 NPC의 우호도가 증가합니다." DialogType="Main" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="NPC의 우호도가 증가하면 NPC의 판매 목록이 증가하며 판매되는 상품을 할인된 가격으로 구입하실 수 있습니다." DialogType="Main" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="또한 플레이어와의 대화 및 아이템 거래도 가능합니다." DialogType="Main" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="true" Message="우하단의 미니맵을 이용하시면 해당 지역의 NPC 위치와 의뢰 발생 여부를 쉽게 확인하실 수 있습니다." DialogType="Main" Slot="Center" Effect="Appear"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="Progress/Tutorial/ShooterStreet" PropertyValue="true"/>
+		</Scripts>
+	</class>
+	<class name="ShooterStreet_Tutorial_Offline">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Start" Close="false" Message="사수 거리는 다양한 상인 NPC들이 있는 공간입니다." DialogType="Main" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="NPC를 통해 개인 의뢰를 수령할 수 있으며 개인 의뢰 완료 시, 해당 NPC의 우호도가 증가합니다." DialogType="Main" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="NPC의 우호도가 증가하면 NPC의 판매 목록이 증가하며 판매되는 상품을 할인된 가격으로 구입하실 수 있습니다." DialogType="Main" Slot="Center" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Mode="Continue" Close="true" Message="우하단의 미니맵을 이용하시면 해당 지역의 NPC 위치와 의뢰 발생 여부를 쉽게 확인하실 수 있습니다." DialogType="Main" Slot="Center" Effect="Appear"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="Progress/Tutorial/ShooterStreet" PropertyValue="true"/>
+		</Scripts>
+	</class>
+</idspace>

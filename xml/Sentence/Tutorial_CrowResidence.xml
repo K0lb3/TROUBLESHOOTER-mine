@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Tutorial_CrowResidence_q49lIi" Value="[!Dialog][!speaker:EmptySubTitle_]3년 전, 발할라는 빈민가『앨리』를 강제 합병한다."/>
+		<class name="Tutorial_CrowResidence_wUzmwi" Value="[!Dialog][!speaker:EmptySubTitle_]강제 합병에 따라『앨리』의 주민들은 발할라로 이주할 기회가 주어졌고..."/>
+		<class name="Tutorial_CrowResidence_tnrmok" Value="[!Dialog][!speaker:EmptySubTitle_]가난과 폭력에 지친 『앨리』의 주민들은 새로운 삶에 도전하게 된다."/>
+		<class name="Tutorial_CrowResidence_1Szv4c" Value="[!Title]홀로서기"/>
+		<class name="Tutorial_CrowResidence_1caB2f" Value="[!Title]3년 전 국경 검문소"/>
+		<class name="Tutorial_CrowResidence_TdjD5i" Value="[!Dialog][!speaker:VHPD_Issac_Normal]다들 힘들겠지만, 경계 상태를 유지해주게."/>
+		<class name="Tutorial_CrowResidence_R27KIC" Value="[!Dialog][!speaker:VHPDMale2_Normal]알겠습니다."/>
+		<class name="Tutorial_CrowResidence_kWDuCN" Value="[!Dialog]발할라는 강제 이주에 따른『앨리』의 주민들의 집단적인 행동의 위험성을 줄이기 위해..."/>
+		<class name="Tutorial_CrowResidence_tVcV3U" Value="[!Dialog]『앨리』와 인접한 발할라 지구로 이주민을 분산시켜 수용하기로 결정한다."/>
+		<class name="Tutorial_CrowResidence_KIIzih" Value="[!Dialog][!speaker:Officer_Pepe_Normal]꼼꼼하게 작성해."/>
+		<class name="Tutorial_CrowResidence_4zhKrq" Value="[!Dialog]늘어지는 심사 행렬에 짜증이 난 입국 심사관의 고압적인 말투."/>
+		<class name="Tutorial_CrowResidence_wKMrJn" Value="[!Dialog][!speaker:Officer_Pepe_Normal]이 문서가 너의 발할라 생활의 시작이야."/>
+		<class name="Tutorial_CrowResidence_aPcC1A" Value="[!Dialog][!speaker:Officer_Pepe_Normal]그러니 솔직히 모든 것을 다 적으라고!"/>
+		<class name="Tutorial_CrowResidence_Slcxpi" Value="[!Dialog]레이는 심사관의 말에 따라 성명란에 자신의 이름을 써 넣는다."/>
+		<class name="Tutorial_CrowResidence_x0HYIQ" Value="[!Dialog][!speaker:Officer_Pepe_Normal]뭐야! 이쪽이 비었잖아."/>
+		<class name="Tutorial_CrowResidence_n1SHDL" Value="[!Dialog][!speaker:Ray_Normal]그런 거 없는데..."/>
+		<class name="Tutorial_CrowResidence_myoXz4" Value="[!Dialog][!speaker:Officer_Pepe_Normal]나 참, 성이 없다고? 부모가 안 가르쳐 줘?"/>
+		<class name="Tutorial_CrowResidence_x2rezt" Value="[!Dialog][!speaker:Officer_Pepe_Normal]그럼 부모 이름이라도 적어야지."/>
+		<class name="Tutorial_CrowResidence_Gdw448" Value="[!Dialog][!speaker:Ray_Serious]......"/>
+		<class name="Tutorial_CrowResidence_SrqDE1" Value="[!Dialog]『앨리』의 아이들에게 부모란 어느새 사라지고 없는 존재."/>
+		<class name="Tutorial_CrowResidence_xBPeKI" Value="[!Dialog]그런 부모의 이름을 기억하기엔 『앨리』의 생활은 거칠고 가혹했다."/>
+		<class name="Tutorial_CrowResidence_BYau9p" Value="[!Dialog][!speaker:Officer_Pepe_Normal]뭐해. 빨리 적지 않고!"/>
+		<class name="Tutorial_CrowResidence_BXNb7z" Value="[!Dialog]레이는 심사관의 재촉에 펜을 들고 마지막 남은 성란을 채워나갔다."/>
+		<class name="Tutorial_CrowResidence_GTObJF" Value="[!Dialog][!speaker:Officer_Pepe_Normal]성이 이게 뭐야? 이거 장난인가?"/>
+		<class name="Tutorial_CrowResidence_58OUej" Value="[!Dialog][!speaker:Ray_Serious]아니."/>
+		<class name="Tutorial_CrowResidence_aF0gH3" Value="[!Dialog][!speaker:Officer_Pepe_Normal]하. 고놈 참 당돌하네."/>
+		<class name="Tutorial_CrowResidence_JUY0rH" Value="[!Dialog][!speaker:Ray_Serious]서류 다 작성했으니 이제 지나가도 될까?"/>
+		<class name="Tutorial_CrowResidence_s4AmNM" Value="[!Dialog]심사관 앞에서 일어나려는 레이. 심사관은 그런 레이를 보고 들으라듯이 한마디 한다."/>
+		<class name="Tutorial_CrowResidence_i0XxQ4" Value="[!Dialog][!speaker:Officer_Pepe_Normal]네 녀석처럼 반항적인 녀석들은 발할라서 못 살아간다."/>
+		<class name="Tutorial_CrowResidence_GRb33u" Value="[!Dialog][!speaker:Ray_Smile]걱정마. 『앨리』보다 더 한 곳은 없어."/>
+		<class name="Tutorial_CrowResidence_fLf8hg" Value="[!Dialog]발할라로 이주한 레이는 발할라에서 지급한 정착 지원금이 떨어지기 전에 새로운 삶을 꾸려나갈 직장을 찾는다."/>
+		<class name="Tutorial_CrowResidence_pgbOuB" Value="[!Title]홀로 남아..."/>
+		<class name="Tutorial_CrowResidence_wehS7u" Value="[!Title]발할라 이주 3개월..."/>
+		<class name="Tutorial_CrowResidence_5QZShX" Value="[!Dialog][!speaker:Interviewer_RestaurantManager_Normal]미안합니다."/>
+		<class name="Tutorial_CrowResidence_hOOUIF" Value="[!Dialog][!speaker:Interviewers_MarketManager_Normal]우리는 발할라 출신만 고용합니다."/>
+		<class name="Tutorial_CrowResidence_zw32RF" Value="[!Dialog][!speaker:Interviewers_FastFoodManager_Normal]솔직하게 말해서 앨리 출신은 손님들이 싫어해."/>
+		<class name="Tutorial_CrowResidence_hH2Wlc" Value="[!Dialog][!speaker:Interviewer_EmploymentAgency_]일하겠다고?"/>
+		<class name="Tutorial_CrowResidence_eQXggM" Value="[!Dialog][!speaker:Interviewer_EmploymentAgency_]임금은 통상 임금의 50%네. 왜 그런지는 자네도 알지?"/>
+		<class name="Tutorial_CrowResidence_VJRrz1" Value="[!Dialog]발할라 시민들에겐 『앨리』는 가득이나 불안한 치안을 더 엉망으로 만들 존재였으며..."/>
+		<class name="Tutorial_CrowResidence_RvC4iU" Value="[!Dialog]자신들의 노력에 무임승차하는 존재에 지나지 않았다."/>
+		<class name="Tutorial_CrowResidence_1TiZMq" Value="[!Dialog][!speaker:Civil_Woman_Complain_Normal]또 그녀석들이야?"/>
+		<class name="Tutorial_CrowResidence_QRFfZ8" Value="[!Dialog][!speaker:Civil_Man_Boss_Bare_Normal]이럴 줄 알았어. 할 줄 아는 게 훔치는 것 뿐이지."/>
+		<class name="Tutorial_CrowResidence_nb6hFm" Value="[!Dialog][!speaker:Civil_PurpleFat_Normal]근본이 틀려먹은 녀석들이야. 발할라에 맞지 않아."/>
+		<class name="Tutorial_CrowResidence_7RJCXT" Value="[!Dialog]이주 초반 적지 않은 수의 『앨리』출신의 빈민들이 발할라에 적응하지 못하고 사건을 일으켰다."/>
+		<class name="Tutorial_CrowResidence_Fnpl83" Value="[!Dialog]그 사건 수는 발할라에서 일어나는 사건 수에 비하면 매우 적은 수였지만..."/>
+		<class name="Tutorial_CrowResidence_TTOrAd" Value="[!Dialog]언론에서는 정부의 무능을 대표하는 사례로 연일 보도되었다."/>
+		<class name="Tutorial_CrowResidence_Ttydgg" Value="[!Dialog][!speaker:Civil_Girl_Normal]『앨리』사람들은 배고프면 정말 사람을 잡아 먹나요?"/>
+		<class name="Tutorial_CrowResidence_TVeLZx" Value="[!Dialog][!speaker:Civil_Oldman_Normal]하하! 그렇지. 우리 손녀 말 안들으면 『앨리』녀석들이 와서 잡아먹을거야."/>
+		<class name="Tutorial_CrowResidence_VD5x00" Value="[!Dialog]어디에나 부유한 자와 가난한 자, 배운 자와 배우지 못한 자, 착한 자와 나쁜 자가 있다."/>
+		<class name="Tutorial_CrowResidence_ON60tm" Value="[!Dialog]하지만 분명한 건『앨리』이주민들은 발할라 시민들에겐 약자였고..."/>
+		<class name="Tutorial_CrowResidence_Z8KXPY" Value="[!Dialog]『앨리』이주민들을 시민들에 의해 가난하며 배우지 못한 나쁜 자가 되어야 했다."/>
+		<class name="Tutorial_CrowResidence_3aKWTS" Value="[!Dialog][!speaker:NewsCaster_]어제 새벽,『앨리』출신의 이주민들이 무단으로 지구 이탈을 시도하다 검거되었습니다."/>
+		<class name="Tutorial_CrowResidence_Pcw4Uf" Value="[!Dialog]강제 이주하면서 모두 뿔뿔히 흩어진『앨리』의 친구들."/>
+		<class name="Tutorial_CrowResidence_KDMCDN" Value="[!Dialog]이젠 그들은 레이의 곁에 없었다."/>
+		<class name="Tutorial_CrowResidence_eoAFEj" Value="[!Dialog][!speaker:Ray_CryPositive]정말 못해먹겠네..."/>
+		<class name="Tutorial_CrowResidence_SPZ10C" Value="[!Title]지금부터..."/>
+		<class name="Tutorial_CrowResidence_HTbCT7" Value="[!Title]발할라 이주 6개월"/>
+		<class name="Tutorial_CrowResidence_iEa8uj" Value="[!Dialog][!speaker:Interviewer_EmploymentAgency_]남자들도 힘든 이런 일을 왜 계속 하려고 해?"/>
+		<class name="Tutorial_CrowResidence_Zu5ziM" Value="[!Dialog][!speaker:Ray_Smile]아시잖아요. 일을 주는 곳이 여기 뿐이네요."/>
+		<class name="Tutorial_CrowResidence_xwITNx" Value="[!Dialog][!speaker:Interviewer_EmploymentAgency_]넌 얼굴도 반반한데..."/>
+		<class name="Tutorial_CrowResidence_YKLXdQ" Value="[!Dialog][!speaker:Interviewer_EmploymentAgency_]차라리 내가 잘 가는 가게 하나 소개해줄까?"/>
+		<class name="Tutorial_CrowResidence_XUV4HH" Value="[!Dialog][!speaker:Interviewer_EmploymentAgency_]그 쪽 사람들은『앨리』출신이라도 상관없을거야."/>
+		<class name="Tutorial_CrowResidence_xTLIs0" Value="[!Dialog][!speaker:Interviewer_EmploymentAgency_]그리고 너 정도면 내가 매일 찾아가줄게."/>
+		<class name="Tutorial_CrowResidence_yGeJ4V" Value="[!Dialog][!speaker:Ray_Serious]더러운 자식."/>
+		<class name="Tutorial_CrowResidence_j3Kepf" Value="[!Dialog][!speaker:Interviewer_EmploymentAgency_]뭐!? 이 녀석이 불쌍해서 기껏 걱정해주니까..."/>
+		<class name="Tutorial_CrowResidence_vyQmHM" Value="[!Dialog][!speaker:Ray_Surprise_Smile]걱정?"/>
+		<class name="Tutorial_CrowResidence_tHEtTW" Value="[!Dialog][!speaker:Ray_Normal]네 딸 녀석한테나 그런 소리 해보지? 변태 자식!"/>
+		<class name="Tutorial_CrowResidence_nopK0o" Value="[!Dialog][!speaker:Interviewer_EmploymentAgency_]이게 오냐 오냐 하니까!"/>
+		<class name="Tutorial_CrowResidence_wnYMwZ" Value="[!Dialog][!speaker:Interviewer_EmploymentAgency_]너! 내일부터 일 없으니까 나오지마!"/>
+		<class name="Tutorial_CrowResidence_C4gNo9" Value="[!Dialog]그 날 마침 레이의 가방에는..."/>
+		<class name="Tutorial_CrowResidence_FqsGEr" Value="[!Dialog]낮에 일했던 도색 작업 과정에서 남은 래커가 있었고..."/>
+		<class name="Tutorial_CrowResidence_nxhWgR" Value="[!Dialog]옆에는 짜쯩나도록 빨간 벽돌 벽이 있었을 뿐이었다."/>
+		<class name="Tutorial_CrowResidence_ojd0Xi" Value="[!Dialog][!speaker:Ray_Serious]으아아아!!!!!!"/>
+		<class name="Tutorial_CrowResidence_3WXNgk" Value="[!Dialog]발할라로 이주하면서 많은 삶을 생각해보았다."/>
+		<class name="Tutorial_CrowResidence_xa0ee2" Value="[!Dialog]배우 레이, 디자이너 레이, 선생님 레이, 간호사 레이..."/>
+		<class name="Tutorial_CrowResidence_bP9EVg" Value="[!Dialog]그 수많은 설레임 중에 지금과 같은 상황은 상상할 수도 없었다."/>
+		<class name="Tutorial_CrowResidence_BAVvq9" Value="[!Dialog][!speaker:Ray_Serious]하아..."/>
+		<class name="Tutorial_CrowResidence_lQ1F33" Value="[!Dialog][!speaker:ChaosBrush_GreenBrush_Normal_Unmasked]분은 풀렸어?"/>
+		<class name="Tutorial_CrowResidence_rhvdbC" Value="[!Dialog][!speaker:Ray_Surprise]!?"/>
+		<class name="Tutorial_CrowResidence_uACxYL" Value="[!Dialog][!speaker:ChaosBrush_RedBrush_Normal_Unmasked]와~ 멋진 걸 그렸네. 이걸로 그린 건가?"/>
+		<class name="Tutorial_CrowResidence_RHuAcX" Value="[!Dialog][!speaker:ChaosBrush_GreenBrush_Normal_Unmasked]난 안젤라. 넌?"/>
+		<class name="Tutorial_CrowResidence_0obfBc" Value="[!Dialog][!speaker:Ray_Serious]레이..."/>
+		<class name="Tutorial_CrowResidence_cC62Rz" Value="[!Dialog][!speaker:ChaosBrush_RedBrush_Normal_Unmasked]레이. 난 클레어! 그런데 이 그림 멋지다!"/>
+		<class name="Tutorial_CrowResidence_8qvJP3" Value="[!Dialog][!speaker:ChaosBrush_RedBrush_Normal_Unmasked]이렇게 칠하는 건가?"/>
+		<class name="Tutorial_CrowResidence_7qjyYf" Value="[!Dialog][!speaker:ChaosBrush_WhiteBrush_Normal_Unmasked]그렇게 경계하지 않아도 돼."/>
+		<class name="Tutorial_CrowResidence_r5CHk6" Value="[!Dialog][!speaker:Ray_Serious]생판 모르는 너희들을 내가 어떻게 믿지?"/>
+		<class name="Tutorial_CrowResidence_r31BRp" Value="[!Dialog][!speaker:ChaosBrush_WhiteBrush_Normal_Unmasked]그럼 지금부터 알아가면 되겠네."/>
+		<class name="Tutorial_CrowResidence_gEznEh" Value="[!Dialog][!speaker:ChaosBrush_WhiteBrush_Normal_Unmasked]난 다이앤. 잘 부탁해."/>
+		<class name="Tutorial_CrowResidence_LHr1pd" Value="[!Title]새로운 보금자리"/>
+		<class name="Tutorial_CrowResidence_DOSxsA" Value="[!Title]발할라 이주 1년"/>
+		<class name="Tutorial_CrowResidence_nnsQPf" Value="[!Dialog][!speaker:ChaosBrush_WhiteBrush_Normal_Unmasked]그래. 팀 이름은 정했어?"/>
+		<class name="Tutorial_CrowResidence_4WDgZt" Value="[!Dialog][!speaker:Ray_Surprise_Smile]응. "/>
+		<class name="Tutorial_CrowResidence_47fRM2" Value="[!Dialog][!speaker:ChaosBrush_RedBrush_Normal_Unmasked]뭐야? 레이? 궁금해!"/>
+		<class name="Tutorial_CrowResidence_02h67Y" Value="[!Dialog][!speaker:ChaosBrush_WhiteBrush_Normal_Unmasked] 당연히 과격하고 파격적이겠지?"/>
+		<class name="Tutorial_CrowResidence_n4cXPa" Value="[!Dialog][!speaker:Ray_Smile]어머. 내가 그런 이미지야?"/>
+		<class name="Tutorial_CrowResidence_Qn33hf" Value="[!Dialog]처음 울분을 토해낸 래커칠은 감정을 뿜어낸 낙서에 지나지 않았다."/>
+		<class name="Tutorial_CrowResidence_wD7kkq" Value="[!Dialog]레이의 낙서를 재밌게 본 세 친구들은 레이와 래커를 들고 밤 거리를 돌아다녔다."/>
+		<class name="Tutorial_CrowResidence_81nP7V" Value="[!Dialog][!speaker:ChaosBrush_RedBrush_Normal_Unmasked]요즘 같이 하려고 하는 아이들이 많아지네..."/>
+		<class name="Tutorial_CrowResidence_gcL9fO" Value="[!Dialog][!speaker:ChaosBrush_RedBrush_Normal_Unmasked]안젤라도 진짜 열심이고~"/>
+		<class name="Tutorial_CrowResidence_I89qTP" Value="[!Dialog][!speaker:ChaosBrush_WhiteBrush_Normal_Unmasked]우리 레이가 정말 변했지."/>
+		<class name="Tutorial_CrowResidence_Q4GTOP" Value="[!Dialog][!speaker:Ray_Smile2]무슨 소리야. 난 변한 것 없어~☆"/>
+		<class name="Tutorial_CrowResidence_YivQvw" Value="[!Dialog][!speaker:ChaosBrush_RedBrush_Normal_Unmasked]그래서 우리 팀 이름은?"/>
+		<class name="Tutorial_CrowResidence_6L3ZzX" Value="[!Dialog][!speaker:Ray_Surprise_Smile]『카오스 브러시』"/>
+		<class name="Tutorial_CrowResidence_d0wEoN" Value="[!Title]함께 하고 싶은 시간"/>
+		<class name="Tutorial_CrowResidence_ch5N00" Value="[!Title]발할라 이주 1년 6개월"/>
+		<class name="Tutorial_CrowResidence_WeujLw" Value="[!Dialog]대부분의 그래피티 라이터들은 발할라의 예술가답게 그래피티의 예술화를 통한 금전적 이득을 목표로 하거나..."/>
+		<class name="Tutorial_CrowResidence_pNpLPn" Value="[!Dialog]또는 자신들이 가지는 저항 정신을 사람들에게 알리기 위해 정부 기관이나 주인이 있는 건물에 무단으로 자신들의 작품을 남기곤 했다."/>
+		<class name="Tutorial_CrowResidence_W0M25Q" Value="[!Dialog]하지만 『카오스 브러시』는 달랐다."/>
+		<class name="Tutorial_CrowResidence_iFwB4s" Value="[!Dialog]각자가 느끼는 사회의 부조리함으로 인해 쌓였던 답답함을 털어내는 곳."/>
+		<class name="Tutorial_CrowResidence_Y4CP51" Value="[!Dialog]레이와 친구들은 그저 자신들의 감정을 표출할 수 있으면 좋았고..."/>
+		<class name="Tutorial_CrowResidence_6KVaDX" Value="[!Dialog]그 과정을 친구들과 같이 할 수 있는 것이 좋았다."/>
+		<class name="Tutorial_CrowResidence_LXYpYf" Value="[!Dialog]그렇기 때문에 타인과 충돌을 피해 자연히 뒷거리의 버려진 장벽, 집, 건물들에 작업을 하게 되었고..."/>
+		<class name="Tutorial_CrowResidence_M6KWvI" Value="[!Dialog]세월이 지나도 지워지거나 덧칠되는 경우가 적었다."/>
+		<class name="Tutorial_CrowResidence_O4Lb4b" Value="[!Dialog]그렇게 카오스 브러시의 작품은 거리 곳곳에 보이게 되었고..."/>
+		<class name="Tutorial_CrowResidence_0QpZG9" Value="[!Dialog]함께한 아이들은 자신들의 공동 작업을 보면서 또 하루를 힘내 살아갈 힘을 얻었다."/>
+		<class name="Tutorial_CrowResidence_ijwndi" Value="[!Dialog][!speaker:ChaosBrush_GreenBrush_Normal_Unmasked]레이. 여기 작업 끝나면 이제 더 작업할만한 곳이 없어."/>
+		<class name="Tutorial_CrowResidence_3rnPGG" Value="[!Dialog][!speaker:Ray_Smile]예전에 그렸던 것 마음에 들지 않는 것 위에 다시 그릴까?"/>
+		<class name="Tutorial_CrowResidence_pgBfQt" Value="[!Dialog][!speaker:ChaosBrush_RedBrush_Normal_Unmasked]오! 그러면 또 한참 그리겠네. 나 전에 그린 도깨비 더 멋지게 그릴거야!"/>
+		<class name="Tutorial_CrowResidence_Gc2dwP" Value="[!Dialog][!speaker:ChaosBrush_WhiteBrush_Normal_Unmasked]정말... 다른 사람들은 자기 작품 어떻게든 남기려고 난리인데..."/>
+		<class name="Tutorial_CrowResidence_8Xwi0a" Value="[!Dialog][!speaker:Ray_Surprise_Smile]난 너희들과 함께하는 이 순간이 좋아."/>
+		<class name="Tutorial_CrowResidence_6ihUPE" Value="[!Dialog][!speaker:Ray_Surprise_Smile]괜한 시빗거리로 이 순간을 망가뜨리고 싶지 않아."/>
+		<class name="Tutorial_CrowResidence_S6HDN1" Value="[!Dialog][!speaker:ChaosBrush_WhiteBrush_Normal_Unmasked]그래. 알았어. 네가 그렇게 원한다면 당연히 그래야지."/>
+		<class name="Tutorial_CrowResidence_4hgxaW" Value="[!Dialog]레이의 발할라 생활 2년."/>
+		<class name="Tutorial_CrowResidence_ACh0XX" Value="[!Dialog]여전히 『앨리』에 대한 차별은 존재했다."/>
+		<class name="Tutorial_CrowResidence_fNw0Kk" Value="[!Dialog]하지만 『카오스 브러시』와 세 친구와 함께하는 시간이 있었기에..."/>
+		<class name="Tutorial_CrowResidence_3v5G2O" Value="[!Dialog]레이는 더 이상 발할라로 이주한 선택을 후회하지 않았다."/>
+		<class name="Tutorial_CrowResidence_fpohlI" Value="[!Title]방문자"/>
+		<class name="Tutorial_CrowResidence_7WVYfj" Value="[!Title]발할라 이주 2년"/>
+		<class name="Tutorial_CrowResidence_DK4ra5" Value="[!Dialog][!speaker:Ray_Surprise]......"/>
+		<class name="Tutorial_CrowResidence_MXmakY" Value="[!Dialog][!speaker:Ray_Surprise]카터...?"/>
+		<class name="Tutorial_CrowResidence_FafEur" Value="[!Dialog][!speaker:Carter_Normal]레이. 오랜만이다."/>
+		<class name="Tutorial_CrowResidence_LFEPhJ" Value="[!Dialog][!speaker:Ray_Surprise]어떻게..."/>
+		<class name="Tutorial_CrowResidence_Cygq74" Value="[!Dialog][!speaker:Carter_Normal]지나가는 길에 들렀다."/>
+		<class name="Tutorial_CrowResidence_oU7kds" Value="[!Dialog][!speaker:Ray_Serious]그 말이 아니잖아! 어떻게 여길 온 거야!"/>
+		<class name="Tutorial_CrowResidence_1yCebD" Value="[!Dialog][!speaker:Carter_Smile]......"/>
+		<class name="Tutorial_CrowResidence_4ePKTK" Value="[!Dialog][!speaker:Ray_Surprise]너 무단으로??"/>
+		<class name="Tutorial_CrowResidence_ErGsRi" Value="[!Dialog]카터는 쓴웃음을 지을 뿐 아무런 대답도 하지 않았다."/>
+		<class name="Tutorial_CrowResidence_SqsKTl" Value="[!Dialog][!speaker:Carter_Normal]잘 지내는 거 봤으니 됐다."/>
+		<class name="Tutorial_CrowResidence_DzPdSI" Value="[!Dialog][!speaker:Ray_Surprise]너 도대체 무슨 생각이야??"/>
+		<class name="Tutorial_CrowResidence_XVZsOb" Value="[!Dialog][!speaker:Carter_Normal]걱정마. 레이."/>
+		<class name="Tutorial_CrowResidence_fJ2aHg" Value="[!Dialog][!speaker:Carter_Smile]모든 것은 다 잘 될거야."/>
+		<class name="Tutorial_CrowResidence_zzNjT9" Value="[!Ignore][!Dialog][!speaker:Heissing_Normal]Tutorial_HansolStreet_hDkLQj"/>
+		<class name="Tutorial_CrowResidence_EmNN7J" Value="[!Ignore][!Dialog][!speaker:Carter_Normal]Tutorial_HansolStreet_28FoUs"/>
+		<class name="Tutorial_CrowResidence_EWZdQg" Value="[!Ignore][!Dialog][!speaker:Heissing_Smile]Tutorial_HansolStreet_BXx9qE"/>
+		<class name="Tutorial_CrowResidence_whyPAr" Value="[!Ignore][!Dialog][!speaker:Carter_Normal]Tutorial_HansolStreet_ZVmaxA"/>
+		<class name="Tutorial_CrowResidence_ihxOqj" Value="[!Ignore][!Dialog][!speaker:Heissing_Smile]Tutorial_HansolStreet_1GGVHD"/>
+		<class name="Tutorial_CrowResidence_1jmw8Z" Value="[!Ignore][!Dialog][!speaker:EmptySubTitle_]Tutorial_HansolStreet_CvvrOG"/>
+		<class name="Tutorial_CrowResidence_OaV1wB" Value="[!Ignore][!Choice]Tutorial_HansolStreet_1kPOQR"/>
+		<class name="Tutorial_CrowResidence_hBsytt" Value="[!Ignore]Tutorial_HansolStreet_u4XnIw"/>
+		<class name="Tutorial_CrowResidence_voqj0X" Value="[!Ignore][!Choice]Tutorial_HansolStreet_2pF4Pz"/>
+		<class name="Tutorial_CrowResidence_f4pBPs" Value="[!Ignore]Tutorial_HansolStreet_EM82bU"/>
+		<class name="Tutorial_CrowResidence_sIC5Ri" Value="[!Ignore][!FrontMessage]Tutorial_HansolStreet_WeujLw"/>
+		<class name="Tutorial_CrowResidence_8P0USK" Value="[!Ignore][!Dialog][!speaker:Carter_Normal]Tutorial_HansolStreet_lmoeyZ"/>
+		<class name="Tutorial_CrowResidence_sfeGOa" Value="[!Ignore][!Dialog][!speaker:Heissing_Smile]Tutorial_HansolStreet_tf673J"/>
+		<class name="Tutorial_CrowResidence_MSckqj" Value="[!Ignore][!Dialog][!speaker:Heissing_Smile]Tutorial_HansolStreet_KrYYfl"/>
+		<class name="Tutorial_CrowResidence_hVK1Wp" Value="[!Ignore][!Dialog][!speaker:Carter_Normal]Tutorial_HansolStreet_LHr1pd"/>
+		<class name="Tutorial_CrowResidence_j23g0t" Value="[!Ignore][!Dialog][!speaker:Carter_Normal]Tutorial_HansolStreet_l7SZM8"/>
+		<class name="Tutorial_CrowResidence_0cJvly" Value="[!Ignore][!Dialog][!speaker:Heissing_EyeClose]Tutorial_HansolStreet_8ZwKjQ"/>
+		<class name="Tutorial_CrowResidence_8AZeQE" Value="[!Ignore][!Dialog][!speaker:Heissing_Smile]Tutorial_HansolStreet_2GaB8F"/>
+		<class name="Tutorial_CrowResidence_u1oud7" Value="[!Ignore][!Dialog][!speaker:Heissing_Smile]Tutorial_HansolStreet_haLtwr"/>
+		<class name="Tutorial_CrowResidence_31W8DE" Value="[!Ignore][!Dialog][!speaker:Heissing_Normal]Tutorial_HansolStreet_eUjCAU"/>
+		<class name="Tutorial_CrowResidence_kSBKSI" Value="[!Ignore][!Dialog][!speaker:Heissing_Normal]Tutorial_HansolStreet_bVXB9I"/>
+		<class name="Tutorial_CrowResidence_3HmMN0" Value="[!Ignore][!Dialog][!speaker:Heissing_Normal]Tutorial_HansolStreet_YivQvw"/>
+		<class name="Tutorial_CrowResidence_oZmqDl" Value="[!Ignore][!Dialog][!speaker:Carter_Normal]Tutorial_HansolStreet_6L3ZzX"/>
+		<class name="Tutorial_CrowResidence_d2SuKa" Value="[!Ignore][!Dialog][!speaker:Heissing_Normal]Tutorial_HansolStreet_Lk9Txt"/>
+		<class name="Tutorial_CrowResidence_pWclJI" Value="[!Ignore][!Dialog][!speaker:Leton_Smile]Tutorial_HansolStreet_OkTjtZ"/>
+		<class name="Tutorial_CrowResidence_TmBuSB" Value="[!Ignore][!Dialog][!speaker:Leton_Serious]Tutorial_HansolStreet_ECjuRH"/>
+		<class name="Tutorial_CrowResidence_nuUABW" Value="[!Ignore][!Dialog][!speaker:Heissing_Normal]Tutorial_HansolStreet_TQE7SJ"/>
+		<class name="Tutorial_CrowResidence_tPsr6h" Value="[!Ignore][!Dialog][!speaker:Leton_Smile]Tutorial_HansolStreet_J8OuWO"/>
+		<class name="Tutorial_CrowResidence_BqApcG" Value="[!Ignore][!Dialog][!speaker:Heissing_Smile]Tutorial_HansolStreet_mWGDL1"/>
+		<class name="Tutorial_CrowResidence_6n0sGx" Value="[!Ignore][!FrontMessage]Tutorial_HansolStreet_ALuOHi"/>
+		<class name="Tutorial_CrowResidence_Ekl8o8" Value="[!Ignore][!Dialog][!speaker:Leton_Smile]Tutorial_HansolStreet_ABKvb1"/>
+		<class name="Tutorial_CrowResidence_S0RvYY" Value="[!Ignore][!Dialog][!speaker:Carter_Normal]Tutorial_HansolStreet_2V7vGP"/>
+		<class name="Tutorial_CrowResidence_ETxOCz" Value="[!Ignore][!Dialog][!speaker:Leton_Surprise]Tutorial_HansolStreet_j2HQGr"/>
+		<class name="Tutorial_CrowResidence_W2Jl5z" Value="[!Ignore][!Dialog][!speaker:Leton_Serious]Tutorial_HansolStreet_OwtEm7"/>
+		<class name="Tutorial_CrowResidence_H2gclZ" Value="[!Ignore][!Dialog][!speaker:Carter_Normal]Tutorial_HansolStreet_rzml6R"/>
+		<class name="Tutorial_CrowResidence_aNy8qy" Value="[!Ignore][!Dialog][!speaker:Carter_Normal]Tutorial_HansolStreet_0sYHCl"/>
+		<class name="Tutorial_CrowResidence_OClLSK" Value="[!Ignore][!Dialog][!speaker:Leton_Serious]Tutorial_HansolStreet_vANzHA"/>
+		<class name="Tutorial_CrowResidence_YG8g8T" Value="[!Ignore][!Dialog][!speaker:Carter_Normal]Tutorial_HansolStreet_6L3ZzX"/>
+		<class name="Tutorial_CrowResidence_3UQfAy" Value="[!Ignore][!Dialog][!speaker:Carter_Normal]Tutorial_HansolStreet_8nnwcf"/>
+		<class name="Tutorial_CrowResidence_DQAenV" Value="[!Ignore][!Dialog][!speaker:Carter_Normal]Tutorial_HansolStreet_iY9i4q"/>
+		<class name="Tutorial_CrowResidence_EJfIID" Value="[!Ignore][!FrontMessage]Tutorial_HansolStreet_zo8X96"/>
+		<class name="Tutorial_CrowResidence_daypWh" Value="[!Ignore][!BalloonChat][!speaker:Ray]Tutorial_HansolStreet_RUkilm"/>
+		<class name="Tutorial_CrowResidence_1Vf5sQ" Value="[!Ignore][!BalloonChat][!speaker:Ray]Tutorial_HansolStreet_6MDpul"/>
+		<class name="Tutorial_CrowResidence_StMOuo" Value="[!Ignore][!Dialog][!speaker:Leton_Surprise]Tutorial_HansolStreet_iE1525"/>
+		<class name="Tutorial_CrowResidence_zAAYX7" Value="[!Ignore][!Dialog][!speaker:Leton_Surprise]Tutorial_HansolStreet_gBzYVL"/>
+		<class name="Tutorial_CrowResidence_eCyD3T" Value="[!Ignore][!BalloonChat][!speaker:Ray]Tutorial_HansolStreet_nSfabz"/>
+		<class name="Tutorial_CrowResidence_GxAJwK" Value="[!Ignore][!Dialog][!speaker:Leton_Smile]Tutorial_HansolStreet_NEGwMq"/>
+		<class name="Tutorial_CrowResidence_YS8dOV" Value="[!Ignore][!Dialog][!speaker:Carter_Normal]Tutorial_HansolStreet_dVyQnc"/>
+		<class name="Tutorial_CrowResidence_ys49eI" Value="[!Ignore][!Dialog][!speaker:Leton_Normal]Tutorial_HansolStreet_y5hGcO"/>
+		<class name="Tutorial_CrowResidence_5TdnPO" Value="[!Ignore][!Dialog][!speaker:Carter_Normal]Tutorial_HansolStreet_6L3ZzX"/>
+		<class name="Tutorial_CrowResidence_AS0PGG" Value="[!Ignore][!Dialog][!speaker:Leton_Smile]Tutorial_HansolStreet_ZdyLDb"/>
+		<class name="Tutorial_CrowResidence_pgFgQk" Value="[!Ignore][!Dialog][!speaker:Carter_Normal]Tutorial_HansolStreet_1Igbgi"/>
+		<class name="Tutorial_CrowResidence_G2XiPr" Value="[!Ignore][!Dialog][!speaker:Leton_Surprise]Tutorial_HansolStreet_Oc7dsm"/>
+		<class name="Tutorial_CrowResidence_BwjJsx" Value="[!Ignore][!Dialog][!speaker:Leton_Serious]Tutorial_HansolStreet_6scuZI"/>
+		<class name="Tutorial_CrowResidence_v9E8l2" Value="[!Ignore][!Dialog][!speaker:Carter_Normal]Tutorial_HansolStreet_iIiume"/>
+		<class name="Tutorial_CrowResidence_hVL5d4" Value="[!Ignore][!Dialog][!speaker:Carter_Normal]Tutorial_HansolStreet_DLHCZd"/>
+		<class name="Tutorial_CrowResidence_PeLNpu" Value="[!Ignore][!Dialog][!speaker:Leton_Serious]Tutorial_HansolStreet_fvx7OU"/>
+		<class name="Tutorial_CrowResidence_uuUnyO" Value="[!Ignore][!Dialog][!speaker:Carter_Normal]Tutorial_HansolStreet_ryf4iz"/>
+		<class name="Tutorial_CrowResidence_UtRnKS" Value="[!Ignore][!Choice]Tutorial_HansolStreet_3EFeeY"/>
+		<class name="Tutorial_CrowResidence_GLy8Wx" Value="[!Ignore]Tutorial_HansolStreet_8qqS73"/>
+		<class name="Tutorial_CrowResidence_N8Krz5" Value="[!Ignore][!Choice]Tutorial_HansolStreet_ODZj9B"/>
+		<class name="Tutorial_CrowResidence_sAAUbV" Value="[!Ignore]Tutorial_HansolStreet_ZYymEX"/>
+		<class name="Tutorial_CrowResidence_P29tOU" Value="[!Ignore][!Dialog][!speaker:Carter_Normal]Tutorial_HansolStreet_p4cEfQ"/>
+		<class name="Tutorial_CrowResidence_bwU5Ta" Value="[!Ignore][!Dialog][!speaker:Carter_Normal]Tutorial_HansolStreet_RrVIcI"/>
+		<class name="Tutorial_CrowResidence_mrpJ0R" Value="[!Ignore][!Dialog][!speaker:Leton_Normal]Tutorial_HansolStreet_3JaU4w"/>
+		<class name="Tutorial_CrowResidence_qGgWY5" Value="[!Ignore][!Dialog][!speaker:VHPD_Assault_Normal]Tutorial_HansolStreet_PR02ep"/>
+		<class name="Tutorial_CrowResidence_TxpDdx" Value="[!Ignore][!Dialog][!speaker:VHPD_Assault_Normal]Tutorial_HansolStreet_bH6Zyd"/>
+		<class name="Tutorial_CrowResidence_mtdtzA" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]Tutorial_HansolStreet_EQT5Qw"/>
+		<class name="Tutorial_CrowResidence_fNrU2Y" Value="[!Ignore][!Dialog][!speaker:Sion_Normal]Tutorial_HansolStreet_A64jb1"/>
+		<class name="Tutorial_CrowResidence_18sHvW" Value="[!Ignore][!Dialog][!speaker:Irene_Think]Tutorial_HansolStreet_RE8Nyu"/>
+		<class name="Tutorial_CrowResidence_nXCcHQ" Value="[!Ignore][!Dialog][!speaker:Anne_Normal]Tutorial_HansolStreet_7F1lyx"/>
+		<class name="Tutorial_CrowResidence_fACoY3" Value="[!Ignore][!Dialog][!speaker:Irene_Surprise]Tutorial_HansolStreet_d53OVF"/>
+		<class name="Tutorial_CrowResidence_wS4fHi" Value="[!Ignore][!Dialog][!speaker:Anne_Smile]Tutorial_HansolStreet_1MNaVf"/>
+		<class name="Tutorial_CrowResidence_m0AeV4" Value="[!Ignore][!Dialog][!speaker:Irene_Smile2]Tutorial_HansolStreet_JAw8ap"/>
+		<class name="Tutorial_CrowResidence_jPBI7p" Value="[!Ignore][!Dialog][!speaker:Irene_Smile]Tutorial_HansolStreet_xq4hCc"/>
+		<class name="Tutorial_CrowResidence_8QNY4i" Value="[!Ignore][!Dialog][!speaker:Sion_Angry]Tutorial_HansolStreet_lmBCVs"/>
+		<class name="Tutorial_CrowResidence_0Lsx6C" Value="[!Ignore][!Dialog][!speaker:Sion_Normal]Tutorial_HansolStreet_kf9POt"/>
+		<class name="Tutorial_CrowResidence_o5dbHE" Value="[!Ignore][!BalloonChat][!speaker:Enemy01_01]Tutorial_HansolStreet_VgF1En"/>
+		<class name="Tutorial_CrowResidence_ksLxBO" Value="[!Ignore][!BalloonChat][!speaker:Enemy01_02]Tutorial_HansolStreet_NbP85q"/>
+		<class name="Tutorial_CrowResidence_nR9XKM" Value="[!Ignore][!BalloonChat][!speaker:Enemy01_03]Tutorial_HansolStreet_Q9rS55"/>
+		<class name="Tutorial_CrowResidence_X42wgy" Value="[!Ignore][!BalloonChat][!speaker:VHPD03]Tutorial_HansolStreet_LkF2Ff"/>
+		<class name="Tutorial_CrowResidence_WVIMDZ" Value="[!Ignore][!BalloonChat][!speaker:VHPD03]Tutorial_HansolStreet_D0k0M3"/>
+		<class name="Tutorial_CrowResidence_Huoeo5" Value="[!Ignore][!BalloonChat][!speaker:Sion]Tutorial_HansolStreet_gzdzov"/>
+		<class name="Tutorial_CrowResidence_eIVeJE" Value="[!Ignore][!BalloonChat][!speaker:Anne]Tutorial_HansolStreet_uyslpi"/>
+		<class name="Tutorial_CrowResidence_agvKJe" Value="[!Ignore][!BalloonChat][!speaker:Irene]Tutorial_HansolStreet_E1VmuT"/>
+		<class name="Tutorial_CrowResidence_LPdgDj" Value="[!Ignore][!BalloonChat][!speaker:Enemy04_01]Tutorial_HansolStreet_v8s0G9"/>
+		<class name="Tutorial_CrowResidence_g5B7Pz" Value="[!Ignore][!BalloonChat][!speaker:Enemy04_03]Tutorial_HansolStreet_s83W4B"/>
+		<class name="Tutorial_CrowResidence_aZ6MCR" Value="[!Ignore][!BalloonChat][!speaker:Albus]Tutorial_HansolStreet_U69qdo"/>
+		<class name="Tutorial_CrowResidence_gHGBI1" Value="[!Ignore][!BalloonChat][!speaker:Albus]Tutorial_HansolStreet_xKqPfJ"/>
+		<class name="Tutorial_CrowResidence_kIGVFz" Value="[!Ignore][!VictoryCondition]Tutorial_HansolStreet_IPblgy"/>
+		<class name="Tutorial_CrowResidence_Mpvlyy" Value="[!Ignore][!VictoryCondition]Tutorial_HansolStreet_Ed9inM"/>
+		<class name="Tutorial_CrowResidence_Bp8eU3" Value="[!Ignore][!Dialog][!speaker:Carter_Normal]Tutorial_HansolStreet_SwDeRl"/>
+		<class name="Tutorial_CrowResidence_rt5LqS" Value="[!Ignore][!Dialog][!speaker:Leton_Smile]Tutorial_HansolStreet_BORVcN"/>
+		<class name="Tutorial_CrowResidence_CKmKpd" Value="[!Ignore][!Dialog][!speaker:Leton_Smile]Tutorial_HansolStreet_prMHy0"/>
+		<class name="Tutorial_CrowResidence_cJwfZF" Value="[!Ignore][!Dialog][!speaker:Leton_Normal]Tutorial_HansolStreet_3JaU4w"/>
+		<class name="Tutorial_CrowResidence_gLZR1f" Value="[!Ignore][!Dialog][!speaker:Gangster_WhiteTigerFat_Normal]Tutorial_HansolStreet_Cs81ad"/>
+		<class name="Tutorial_CrowResidence_FjZyXr" Value="[!Ignore][!Dialog][!speaker:Gangster_WhiteTigerThin_Normal]Tutorial_HansolStreet_mweLAr"/>
+		<class name="Tutorial_CrowResidence_CE0xH5" Value="[!Ignore][!Dialog][!speaker:Gangster_WhiteTigerNormal_Normal]Tutorial_HansolStreet_Q7Qeh2"/>
+		<class name="Tutorial_CrowResidence_u21t1u" Value="[!Ignore][!Dialog][!speaker:VHPD_Assault_Normal]Tutorial_HansolStreet_YAO0z2"/>
+		<class name="Tutorial_CrowResidence_erVMtP" Value="[!Ignore][!BalloonChat][!speaker:Sion]Tutorial_HansolStreet_gzdzov"/>
+		<class name="Tutorial_CrowResidence_iNiSca" Value="[!Ignore][!BalloonChat][!speaker:Albus]Tutorial_HansolStreet_54Ymv4"/>
+		<class name="Tutorial_CrowResidence_ievFci" Value="[!Ignore][!BalloonChat][!speaker:Anne]Tutorial_HansolStreet_lWsuZ3"/>
+		<class name="Tutorial_CrowResidence_bkjmjv" Value="[!Ignore][!BalloonChat][!speaker:Irene]Tutorial_HansolStreet_E86XMX"/>
+		<class name="Tutorial_CrowResidence_Ez0rcM" Value="[!Ignore][!Dialog][!speaker:Albus_Serious]Tutorial_HansolStreet_FBothI"/>
+		<class name="Tutorial_CrowResidence_bUlyUY" Value="[!Ignore][!BalloonChat][!speaker:Albus]Tutorial_HansolStreet_RCCfLS"/>
+		<class name="Tutorial_CrowResidence_BgjUeZ" Value="[!Ignore][!VictoryCondition]Tutorial_HansolStreet_IPblgy"/>
+		<class name="Tutorial_CrowResidence_F2hl9o" Value="[!Ignore][!VictoryCondition]Tutorial_HansolStreet_Ed9inM"/>
+		<class name="Tutorial_CrowResidence_QnhkeN" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]Tutorial_HansolStreet_QvdOKs"/>
+		<class name="Tutorial_CrowResidence_q1uA72" Value="[!Ignore][!Dialog][!speaker:Albus_Smile]Tutorial_HansolStreet_LodasT"/>
+		<class name="Tutorial_CrowResidence_juaJ46" Value="[!Ignore][!BalloonChat][!speaker:Sion]Tutorial_HansolStreet_tIJLQZ"/>
+		<class name="Tutorial_CrowResidence_iwKP8G" Value="[!Ignore][!Dialog][!speaker:Sion_Normal]Tutorial_HansolStreet_uRiZ8u"/>
+		<class name="Tutorial_CrowResidence_r6k7Si" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]Tutorial_HansolStreet_PvrQoD"/>
+		<class name="Tutorial_CrowResidence_vH9O15" Value="[!Ignore][!Dialog][!speaker:Sion_Happy]Tutorial_HansolStreet_e3vSx7"/>
+		<class name="Tutorial_CrowResidence_1xPilk" Value="[!Ignore][!Dialog][!speaker:Albus_Laugh]Tutorial_HansolStreet_dMz5FG"/>
+		<class name="Tutorial_CrowResidence_beSByy" Value="[!Ignore][!Dialog][!speaker:Sion_Happy]Tutorial_HansolStreet_dtVjhn"/>
+		<class name="Tutorial_CrowResidence_g8xhXw" Value="[!Ignore][!Dialog][!speaker:Albus_Laugh]Tutorial_HansolStreet_NL6GVD"/>
+		<class name="Tutorial_CrowResidence_hMOMGE" Value="[!Ignore][!Dialog][!speaker:Sion_SurpriseStare]Tutorial_HansolStreet_MsX0ld"/>
+		<class name="Tutorial_CrowResidence_s79PxE" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]Tutorial_HansolStreet_G2ELkw"/>
+		<class name="Tutorial_CrowResidence_y5unXu" Value="[!Ignore][!Dialog][!speaker:Sion_Laugh]Tutorial_HansolStreet_TI2sBp"/>
+		<class name="Tutorial_CrowResidence_y9lP2U" Value="[!Ignore][!Dialog][!speaker:Sion_Normal]Tutorial_HansolStreet_x6d96D"/>
+		<class name="Tutorial_CrowResidence_R18FFJ" Value="[!Ignore][!Dialog][!speaker:Sion_Laugh]Tutorial_HansolStreet_TG1ZsA"/>
+		<class name="Tutorial_CrowResidence_fP4GPR" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]Tutorial_HansolStreet_qo8Qpl"/>
+		<class name="Tutorial_CrowResidence_iSrexv" Value="[!Ignore][!Subtitle][!speaker:EmptySubTitle_]Tutorial_HansolStreet_90Kghc"/>
+		<class name="Tutorial_CrowResidence_t2RVdn" Value="[!Ignore][!Subtitle][!speaker:EmptySubTitle_]Tutorial_HansolStreet_3lIYMM"/>
+		<class name="Tutorial_CrowResidence_W7vjYb" Value="[!Ignore][!Subtitle][!speaker:EmptySubTitle_]Tutorial_HansolStreet_5Fz2dY"/>
+		<class name="Tutorial_CrowResidence_N9jBEi" Value="[!Ignore][!Subtitle][!speaker:Albus_Normal]Tutorial_HansolStreet_yaNbFq"/>
+		<class name="Tutorial_CrowResidence_Z0YNK4" Value="[!Ignore][!Dialog][!speaker:Carter_Normal]Tutorial_HansolStreet_lmoeyZ"/>
+		<class name="Tutorial_CrowResidence_ctXjkV" Value="[!Ignore][!Dialog][!speaker:Heissing_Smile]Tutorial_HansolStreet_tf673J"/>
+		<class name="Tutorial_CrowResidence_MqTCZM" Value="[!Ignore][!Dialog][!speaker:Heissing_Smile]Tutorial_HansolStreet_KrYYfl"/>
+		<class name="Tutorial_CrowResidence_npf6Kg" Value="[!Ignore][!Dialog][!speaker:Carter_Normal]Tutorial_HansolStreet_LHr1pd"/>
+		<class name="Tutorial_CrowResidence_jah6aV" Value="[!Ignore][!Dialog][!speaker:Carter_Normal]Tutorial_HansolStreet_l7SZM8"/>
+		<class name="Tutorial_CrowResidence_JeMhKy" Value="[!Ignore][!Dialog][!speaker:Heissing_EyeClose]Tutorial_HansolStreet_8ZwKjQ"/>
+		<class name="Tutorial_CrowResidence_863v4O" Value="[!Ignore][!Dialog][!speaker:Heissing_Smile]Tutorial_HansolStreet_2GaB8F"/>
+		<class name="Tutorial_CrowResidence_kLTKNh" Value="[!Ignore][!Dialog][!speaker:Heissing_Smile]Tutorial_HansolStreet_haLtwr"/>
+		<class name="Tutorial_CrowResidence_l3boea" Value="[!Ignore][!Dialog][!speaker:Heissing_Normal]Tutorial_HansolStreet_eUjCAU"/>
+		<class name="Tutorial_CrowResidence_nLLPt8" Value="[!Ignore][!Dialog][!speaker:Heissing_Normal]Tutorial_HansolStreet_bVXB9I"/>
+		<class name="Tutorial_CrowResidence_AIDLjy" Value="[!Ignore][!Dialog][!speaker:Heissing_Normal]Tutorial_HansolStreet_YivQvw"/>
+		<class name="Tutorial_CrowResidence_Mud3gD" Value="[!Ignore][!Dialog][!speaker:Carter_Normal]Tutorial_HansolStreet_6L3ZzX"/>
+		<class name="Tutorial_CrowResidence_hbuKlN" Value="[!Ignore][!Dialog][!speaker:Heissing_Normal]Tutorial_HansolStreet_Lk9Txt"/>
+		<class name="Tutorial_CrowResidence_LRVPla" Value="[!Ignore][!Dialog][!speaker:Leton_Smile]Tutorial_HansolStreet_OkTjtZ"/>
+		<class name="Tutorial_CrowResidence_Hehr6J" Value="[!Ignore][!Dialog][!speaker:Leton_Serious]Tutorial_HansolStreet_ECjuRH"/>
+		<class name="Tutorial_CrowResidence_RQ4jTf" Value="[!Ignore][!Dialog][!speaker:Heissing_Normal]Tutorial_HansolStreet_TQE7SJ"/>
+		<class name="Tutorial_CrowResidence_cKDM1q" Value="[!Ignore][!Dialog][!speaker:Leton_Smile]Tutorial_HansolStreet_J8OuWO"/>
+		<class name="Tutorial_CrowResidence_arIUWa" Value="[!Ignore][!Dialog][!speaker:Heissing_Smile]Tutorial_HansolStreet_mWGDL1"/>
+		<class name="Tutorial_CrowResidence_Vzoj9o" Value="[!Ignore][!FrontMessage]Tutorial_HansolStreet_ALuOHi"/>
+		<class name="Tutorial_CrowResidence_Pt4YsV" Value="[!Ignore][!Dialog][!speaker:Leton_Smile]Tutorial_HansolStreet_ABKvb1"/>
+		<class name="Tutorial_CrowResidence_b9wIKH" Value="[!Ignore][!Dialog][!speaker:Carter_Normal]Tutorial_HansolStreet_2V7vGP"/>
+		<class name="Tutorial_CrowResidence_SUqaAY" Value="[!Ignore][!Dialog][!speaker:Leton_Surprise]Tutorial_HansolStreet_j2HQGr"/>
+		<class name="Tutorial_CrowResidence_BMCF4I" Value="[!Ignore][!Dialog][!speaker:Leton_Serious]Tutorial_HansolStreet_OwtEm7"/>
+		<class name="Tutorial_CrowResidence_IaTrH3" Value="[!Ignore][!Dialog][!speaker:Carter_Normal]Tutorial_HansolStreet_rzml6R"/>
+		<class name="Tutorial_CrowResidence_rjP8Mz" Value="[!Ignore][!Dialog][!speaker:Carter_Normal]Tutorial_HansolStreet_0sYHCl"/>
+		<class name="Tutorial_CrowResidence_unaHIV" Value="[!Ignore][!Dialog][!speaker:Leton_Serious]Tutorial_HansolStreet_vANzHA"/>
+	</idspace>
+</idspaces>

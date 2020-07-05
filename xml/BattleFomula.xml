@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="BattleFormulaFormatArgument">
+		<schema>
+			<rule property="TextGetter" type="function" default="BattleFormulaFormatArgument_Idspace"/>
+		</schema>
+		<class name="Ability" Idspace="Ability"/>
+		<class name="Temperature" Idspace="MissionTemperature"/>
+		<class name="Weather" Idspace="MissionWeather"/>
+		<class name="MissionTime" Idspace="MissionTime"/>
+		<class name="Job" Idspace="Job"/>
+		<class name="Mastery" Idspace="Mastery"/>
+		<class name="DetailText" TextGetter="BattleFormulaFormatArgument_Text"/>
+		<class name="SnipeType" Idspace="SnipeType"/>
+		<class name="HackingProtocol" Idspace="HackingProtocol"/>
+		<class name="ESP" Idspace="ESP"/>
+		<class name="Status" Idspace="Status"/>
+	</idspace>
+	<idspace id="BattleFormulaSharedCondition">
+		<class name="Temperature" Title="온도: $Temperature$"/>
+		<class name="Weather" Title="날씨: $Weather$"/>
+		<class name="MissionTime" Title="$MissionTime$"/>
+		<class name="TMGrade" Title="알려진 적"/>
+		<class name="Job" Title="클래스: $Job$"/>
+		<class name="DetailedSnipe" Title="정밀한 저격: ($SnipeType$)"/>
+		<class name="HackingProtocol" Title="프로토콜: ($HackingProtocol$)"/>
+		<class name="ESP" Title="$ESP$ SP"/>
+		<class name="EnemyESP" Title="적 $ESP$ SP"/>
+		<class name="Cover" Title="엄폐"/>
+		<class name="Status" Title="$Status$"/>
+	</idspace>
+	<idspace id="SPCondition">
+		<class name="Overcharge" Title="과충전"/>
+	</idspace>
+	<idspace id="CoverCondition">
+		<class name="Full" Title="완전 엄폐" Image="TaharezLook/Cover_Full" Desc="엄폐 방향의 적의 공격에 대하여 회피율이 [colour='FFFFFF00']40%[colour='FFFFFFFF'] 증가합니다." Color="Yellow"/>
+		<class name="Full_Opened" Title="엄폐 노출" Image="TaharezLook/Cover_Full_Opened" Desc="측면 혹은 후방에 적이 존재합니다. 해당 적으로부터의 공격은 엄폐 효과가 적용되지 않으며 치명타 적중률이 [colour='FFFFFF00']50%[colour='FFFFFFFF'] 증가합니다." Color="Tomato"/>
+		<class name="Half" Title="부분 엄폐" Image="TaharezLook/Cover_Half" Desc="엄폐 방향의 적의 공격에 대하여 회피율이 [colour='FFFFFF00']20%[colour='FFFFFFFF'] 증가합니다." Color="WhiteYellow"/>
+		<class name="Half_Opened" Title="엄폐 노출" Image="TaharezLook/Cover_Half_Opened" Desc="측면 혹은 후방에 적이 존재합니다. 해당 적으로부터의 공격은 엄폐 효과가 적용되지 않으며 치명타 적중률이 [colour='FFFFFF00']50%[colour='FFFFFFFF'] 증가합니다." Color="OrangePeel"/>
+		<class name="Exposed" Title="무방비 노출" Image="" Desc="적으로부터의 공격은 치명타 적중률이 [colour='FFFFFF00']50%[colour='FFFFFFFF'] 증가합니다." Color="White"/>
+	</idspace>
+	<idspace id="HitRateCondition">
+		<class name="Aim" Title="기본 명중률"/>
+		<class name="FamiliarTarget" Title="익숙한 대상"/>
+		<class name="TargetMarking" Title="표식"/>
+		<class name="StableAttack" Title="안정된 자세"/>
+		<class name="Conceal" Title="잠복"/>
+		<class name="SmokeScreen" Title="연막"/>
+		<class name="Distance" Title="목표 거리"/>
+		<class name="CoverState_Full" Title="엄폐"/>
+		<class name="CoverState_Half" Title="부분 엄폐"/>
+		<class name="Height" Title="높은 위치"/>
+		<class name="Height2" Title="낮은 위치"/>
+		<class name="Dodge" Title="적 회피"/>
+		<class name="AbilityBase" Title="어빌리티 명중률"/>
+		<class name="HPDiff" Title="적 체력 상태"/>
+		<class name="LevelDiff" Title="레벨차"/>
+		<class name="GradeDiff" Title="등급차"/>
+		<class name="DefenderHPFix" Title="적 체력 보정"/>
+		<class name="Inevitable" Title="회피불가"/>
+		<class name="TileType_Bush" Title="지형효과: 수풀"/>
+	</idspace>
+	<idspace id="CriticalStrikeChanceCondition">
+		<class name="CriticalStrikeChance" Title="기본 적중률"/>
+		<class name="FamiliarTarget" Title="익숙한 대상"/>
+		<class name="Block" Title="적 방어율"/>
+		<class name="Distance" Title="목표 거리"/>
+		<class name="CoverState_None" Title="측면 목표"/>
+	</idspace>
+	<idspace id="CriticalStrikeDealCondition">
+		<class name="CriticalStrikeDeal" Title="기본 피해량"/>
+		<class name="FamiliarTarget" Title="익숙한 대상"/>
+		<class name="Block" Title="적 방어율"/>
+		<class name="CoverState_None" Title="측면 목표"/>
+	</idspace>
+	<idspace id="DamageCondition">
+		<class name="Damage" Title="기본 피해량"/>
+		<class name="Heal" Title="기본 회복량"/>
+		<class name="FamiliarTarget" Title="익숙한 대상"/>
+		<class name="MinDamage" Title="최소 피해량"/>
+		<class name="Defence" Title="적 방어"/>
+		<class name="AttackPower" Title="공격력 추가 피해량"/>
+		<class name="ESPPower" Title="초능력 추가 피해량"/>
+		<class name="Armor" Title="방어력 추가 피해량"/>
+		<class name="Resistance" Title="저항력 추가 피해량"/>
+		<class name="TileType_Water" Title="지형효과: 물"/>
+		<class name="TileType_ContaminatedWater" Title="지형효과: 오염수"/>
+		<class name="Ability_Distance" Title="$Ability$(거리)"/>
+		<class name="Ability_NoCover" Title="$Ability$(무방비 노출)"/>
+		<class name="Ability_CostBurn" Title="$Ability$(기력 태우기)"/>
+	</idspace>
+	<idspace id="BlockCondition">
+		<class name="Block" Title="기본 방어율"/>
+	</idspace>
+	<idspace id="ArmorCondition">
+		<class name="IncreaseEquipment_Armor" Title="방어구 파괴"/>
+	</idspace>
+	<idspace id="ResistanceCondition">
+		<class name="IncreaseEquipment_Resistance" Title="방어구 파괴"/>
+	</idspace>
+	<idspace id="AttackPowerCondition">
+		<class name="IncreaseEquipment_AttackPower" Title="무기 파괴"/>
+	</idspace>
+	<idspace id="ESPPowerCondition">
+		<class name="IncreaseEquipment_ESPPower" Title="무기 파괴"/>
+	</idspace>
+	<idspace id="TamingTimeCondition">
+		<class name="TamingTime" Title="기본 시간"/>
+		<class name="DefenderHPFix" Title="적 체력 보정"/>
+		<class name="LevelDiff" Title="레벨차"/>
+	</idspace>
+	<idspace id="RepairTimeCondition">
+		<class name="BasicTime" Title="기본 대기 시간"/>
+	</idspace>
+	<idspace id="BattleStateCondition">
+		<class name="Peace" Title="비전투"/>
+		<class name="Stand" Title="대기"/>
+		<class name="Patrol" Title="순찰"/>
+		<class name="Detecting" Title="감시"/>
+	</idspace>
+	<idspace id="KillCondition">
+		<class name="OverKill" Title="오버킬"/>
+		<class name="PerfectKill" Title="일격필살"/>
+	</idspace>
+</idspaces>

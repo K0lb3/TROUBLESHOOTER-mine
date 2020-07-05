@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Tutorial_MarketStreet_37022w" Value="[!Dashboard:Counter]남은 백호파 수"/>
+		<class name="Tutorial_MarketStreet_e1qo05" Value="[!Dashboard:Counter]남은 스푼교도 수"/>
+		<class name="Tutorial_MarketStreet_HJZYaM" Value="[!Dashboard:Counter]남은 바이크론 수"/>
+		<class name="Tutorial_MarketStreet_Vjd1pi" Value="[!Objective]현장의 모든 적을 제압하시오."/>
+		<class name="Tutorial_MarketStreet_BtD9qK" Value="[!Title]무너진 균형"/>
+		<class name="Tutorial_MarketStreet_tdI0QM" Value="[!Title]은빛 구름 시장 거리"/>
+		<class name="Tutorial_MarketStreet_SaTybm" Value="[!Dialog][!speaker:Sion_Stare]......"/>
+		<class name="Tutorial_MarketStreet_9kaY4m" Value="[!Dialog][!speaker:Gangster_WhiteTigerNormal_Andrei_Normal]역시 오는군..."/>
+		<class name="Tutorial_MarketStreet_Z5eApB" Value="[!Dialog][!speaker:Gangster_WhiteTigerNormal_Andrei_Normal]다들 긴장 늦추지 마라."/>
+		<class name="Tutorial_MarketStreet_j1beZj" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]저녀석들...정말 오랜만이군."/>
+		<class name="Tutorial_MarketStreet_yG0WbR" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Joshua_Normal]어디까지나 조직의 위엄을 세우려는 것이겠죠."/>
+		<class name="Tutorial_MarketStreet_Nqzemo" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]그래. 조직이란 그런 것이었지."/>
+		<class name="Tutorial_MarketStreet_xzKAiz" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Normal]보스가 오셨습니다!"/>
+		<class name="Tutorial_MarketStreet_KGnR4Z" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]내가 내려가마."/>
+		<class name="Tutorial_MarketStreet_MGSqqi" Value="[!Dialog][!speaker:Gangster_Foo_Normal]그럴 필요 없다."/>
+		<class name="Tutorial_MarketStreet_2BUw5r" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]보스. 오셨습니까."/>
+		<class name="Tutorial_MarketStreet_vUR6NZ" Value="[!Dialog][!speaker:Gangster_Foo_Normal]후성. 간부들 다 불러와."/>
+		<class name="Tutorial_MarketStreet_RUjFe9" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]알겠습니다."/>
+		<class name="Tutorial_MarketStreet_fi1zg5" Value="[!Dialog][!speaker:Gangster_Foo_Normal]그리고 케빈 와인 한 병 가져와."/>
+		<class name="Tutorial_MarketStreet_nKy5tE" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]보스. 한 잔 따르겠습니다."/>
+		<class name="Tutorial_MarketStreet_dxe2Sc" Value="[!Dialog][!speaker:Gangster_Foo_Normal]됐다. 따지 말고 이리 줘."/>
+		<class name="Tutorial_MarketStreet_z0STGR" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]....?"/>
+		<class name="Tutorial_MarketStreet_H0r1Hy" Value="[!Dialog][!speaker:Gangster_Foo_Normal]좋은 건데 아깝게 됐군."/>
+		<class name="Tutorial_MarketStreet_HRPoZN" Value="[!Dialog][!speaker:Gangster_Foo_Normal]머트의 어머니는?"/>
+		<class name="Tutorial_MarketStreet_PZWlUA" Value="[!Dialog][!speaker:Gangster_WhiteTigerNormal_Andrei_Normal]신원 세탁 중입니다."/>
+		<class name="Tutorial_MarketStreet_O2oPVZ" Value="[!Dialog][!speaker:Gangster_Foo_Normal]그래 머트가 막내라 어머니의 연세가 많다."/>
+		<class name="Tutorial_MarketStreet_iqAJ9I" Value="[!Dialog][!speaker:Gangster_Foo_Normal]남은 여생 불편함없이 보내도록 잘 해드려라."/>
+		<class name="Tutorial_MarketStreet_vhLaHp" Value="[!Dialog][!speaker:Gangster_WhiteTigerNormal_Andrei_Normal]알겠습니다."/>
+		<class name="Tutorial_MarketStreet_REtuGa" Value="[!Dialog][!speaker:Gangster_Foo_Normal]그리고 후성."/>
+		<class name="Tutorial_MarketStreet_NU2ccB" Value="[!Dialog][!speaker:Gangster_WhiteTigerDagger_HouCheng_Normal]네. 보스."/>
+		<class name="Tutorial_MarketStreet_VDZHS1" Value="[!Dialog][!speaker:Gangster_Foo_Normal]누군지 기필코 찾아내라."/>
+		<class name="Tutorial_MarketStreet_X4vY8Z" Value="[!Dialog][!speaker:Gangster_WhiteTigerDagger_HouCheng_Normal]알겠습니다."/>
+		<class name="Tutorial_MarketStreet_0rNZxO" Value="[!Dialog][!speaker:Gangster_Foo_Normal]그리고 당분간 머트 밑의 녀석들은..."/>
+		<class name="Tutorial_MarketStreet_E5hxc9" Value="[!Dialog][!speaker:Gangster_Foo_Normal]베르케 아저씨가 맡아주세요."/>
+		<class name="Tutorial_MarketStreet_Fo3AUS" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]알았소. 보스."/>
+		<class name="Tutorial_MarketStreet_ov6t0N" Value="[!Dialog][!speaker:Gangster_Foo_Normal]케빈..."/>
+		<class name="Tutorial_MarketStreet_mEkBk1" Value="[!Dialog][!speaker:Gangster_Foo_Normal]지난 4개월은 고생했다."/>
+		<class name="Tutorial_MarketStreet_dF2tLY" Value="[!Dialog][!speaker:Gangster_Foo_Normal]하지만 더는 너에게 맡길 수 없겠구나."/>
+		<class name="Tutorial_MarketStreet_M0opV1" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]면목 없습니다. 보스."/>
+		<class name="Tutorial_MarketStreet_6eIZDz" Value="[!Dialog][!speaker:Gangster_Foo_Normal]......"/>
+		<class name="Tutorial_MarketStreet_djAQEZ" Value="[!Title]서로를 위하여"/>
+		<class name="Tutorial_MarketStreet_rsRY45" Value="[!Title]10년 전, 자홍 뒷거리"/>
+		<class name="Tutorial_MarketStreet_59c4vI" Value="[!Dialog][!speaker:Gangster_BullNormal_Scott_Normal_Young]야! 푸! 빨리 올라와! 버티기 힘들어!"/>
+		<class name="Tutorial_MarketStreet_XNP3YD" Value="[!Dialog][!speaker:Gangster_Trey_Normal_Young]스콧! 푸 녀석 안 오면 버려!"/>
+		<class name="Tutorial_MarketStreet_v8OyS8" Value="[!Dialog][!speaker:Gangster_Trey_Normal_Young]어디까지나 서로를 위한 동맹이다. 저런 멍청한 녀석을 위해 다 망칠 순 없어!"/>
+		<class name="Tutorial_MarketStreet_sScv8v" Value="[!Dialog][!speaker:Gangster_BullNormal_Scott_Normal_Young]트레이. 난 이 상황을 극복하고 재기할 생각이다."/>
+		<class name="Tutorial_MarketStreet_ZFRfRu" Value="[!Dialog][!speaker:Gangster_BullNormal_Scott_Normal_Young]그럴려면 저 녀석의 백호파는 선택이 아닌 필수다."/>
+		<class name="Tutorial_MarketStreet_1gYjkS" Value="[!Dialog][!speaker:Gangster_Trey_Normal_Young]스콧. 네 녀석 이 상황에서.... 과대망상이냐..."/>
+		<class name="Tutorial_MarketStreet_VDiZ90" Value="[!Dialog][!speaker:Gangster_BullNormal_Scott_Normal_Young]내가 여기를 맡겠다. 트레이 넌 빨리 가서 저녀석을 끌고 올라와!"/>
+		<class name="Tutorial_MarketStreet_p4vOTc" Value="[!Dialog][!speaker:Gangster_Trey_Normal_Young]제길..."/>
+		<class name="Tutorial_MarketStreet_MZlNWS" Value="[!Dialog][!speaker:Gangster_Trey_Normal_Young]야이! 푸!!! 빨리 안 올라와!!!"/>
+		<class name="Tutorial_MarketStreet_Whett4" Value="[!Dialog][!speaker:Gangster_Foo_Normal_Young]트레이 녀석..."/>
+		<class name="Tutorial_MarketStreet_OGN78L" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Joshua_Normal_Young]보스. 올라 가십시오. 여기는 제가 맡겠습니다."/>
+		<class name="Tutorial_MarketStreet_Jxxbar" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal_Young]보스. 베르케 형님과 성난 황소파의 조홍, 하산이 탈출로를 확보하고 있습니다."/>
+		<class name="Tutorial_MarketStreet_IgBn23" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal_Young]하지만 어디까지나 지금 한 순간일뿐... 탈출하시려면 지금 올라가셔야 합니다."/>
+		<class name="Tutorial_MarketStreet_1dXVQ7" Value="[!Dialog][!speaker:Gangster_Foo_Normal_Young]이 곳에서 더 버티면 조금이라도 많은 녀석들이 탈출하겠군."/>
+		<class name="Tutorial_MarketStreet_zFCCwJ" Value="[!Dialog][!speaker:Gangster_WhiteTigerSniper_Mert_Normal_Young]......"/>
+		<class name="Tutorial_MarketStreet_beeS5v" Value="[!Dialog][!speaker:Gangster_Foo_Normal_Young]우리 『 백호 』는 이 곳을 사수한다."/>
+		<class name="Tutorial_MarketStreet_MmldqG" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal_Young]....."/>
+		<class name="Tutorial_MarketStreet_RVc3pv" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal_Young]조슈아. 보스를 데리고 올라가."/>
+		<class name="Tutorial_MarketStreet_ZQjx7R" Value="[!Dialog][!speaker:Anne_Surprise]!?"/>
+		<class name="Tutorial_MarketStreet_HiiQGr" Value="[!Dialog][!speaker:Gangster_Foo_Normal_Young]케빈. 네 녀석은 이제 보스의 명령조차 무시하는 건가?"/>
+		<class name="Tutorial_MarketStreet_cSvind" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal_Young]보스만 있다면 『 백호 』는 언제든지 재기합니다."/>
+		<class name="Tutorial_MarketStreet_Y4wNqa" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal_Young]하지만 보스가 없는 조직은 『 백호 』가 아닙니다."/>
+		<class name="Tutorial_MarketStreet_qihLDb" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal_Young]보스."/>
+		<class name="Tutorial_MarketStreet_6AvUxA" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal_Young]당신의 『 백호 』는 고작 여기까지입니까?"/>
+		<class name="Tutorial_MarketStreet_UDJfn6" Value="[!Dialog][!speaker:Gangster_Foo_Normal_Young]....."/>
+		<class name="Tutorial_MarketStreet_6ITrhq" Value="[!Dialog][!speaker:Gangster_Foo_Normal_Young]네 녀석... 지금 같은 상황에서도 『 백호 』가 다시 포효할 수 있다고 말하는 거냐?"/>
+		<class name="Tutorial_MarketStreet_YGL2uj" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal_Young]네. 보스만 있다면 가능합니다."/>
+		<class name="Tutorial_MarketStreet_wxZnBR" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal_Young]이 케빈 모든 것을 걸고 『 백호 』의 위엄을 돌려 놓겠습니다."/>
+		<class name="Tutorial_MarketStreet_onKFPT" Value="[!Dialog][!speaker:Gangster_Foo_Normal_Young]조슈아. 날 호위해라. 올라간다."/>
+		<class name="Tutorial_MarketStreet_n8Mpb4" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Joshua_Normal_Young]네! 보스!"/>
+		<class name="Tutorial_MarketStreet_pJEA2l" Value="[!Dialog][!speaker:Chris_Normal_Young]돈. 잡졸은 버려. 보스만 잡는다."/>
+		<class name="Tutorial_MarketStreet_um6h2h" Value="[!Dialog][!speaker:Don_Serious_Young]저도 압니다! 알아!"/>
+		<class name="Tutorial_MarketStreet_7hLnlS" Value="[!Dialog][!speaker:Ventus_Normal]크리스. 너무 쫓지마. 경찰과 연계해."/>
+		<class name="Tutorial_MarketStreet_XQ5992" Value="[!Dialog][!speaker:Chris_Normal_Young]경찰과 연계? 그게 더 힘들 것 같은데?"/>
+		<class name="Tutorial_MarketStreet_m0qP9J" Value="[!Dialog][!speaker:Chris_Normal_Young]차라리 저 돈 녀석을 앞 세우고 들어가자고."/>
+		<class name="Tutorial_MarketStreet_365zga" Value="[!Dialog][!speaker:Don_Serious_Young]제가 무슨 총알 받이입니까!"/>
+		<class name="Tutorial_MarketStreet_EQVTyT" Value="[!Dialog][!speaker:Chris_Normal_Young]네 역할을 잘 아는구나. 딱 네 녀석의 천직이지."/>
+		<class name="Tutorial_MarketStreet_QgK83O" Value="[!Dialog][!speaker:Ventus_Normal]크리스. 진정해. 경찰 병력 역시 우리가 무너지면 와해된다."/>
+		<class name="Tutorial_MarketStreet_kj0GFz" Value="[!Dialog][!speaker:Chris_Normal_Young]그건 벤 형이 알아서 해. 난 돈 녀석하고 돌격하겠소."/>
+		<class name="Tutorial_MarketStreet_u4dyO6" Value="[!Dialog][!speaker:Chris_Normal_Young]돈! 저 큰 녀석부터 잡아!"/>
+		<class name="Tutorial_MarketStreet_zbsg8I" Value="[!Dialog][!speaker:Ventus_Normal]크리스. 이번 기회가 아니더라도 다음 기회에 잡으면 돼."/>
+		<class name="Tutorial_MarketStreet_LMiwma" Value="[!Dialog][!speaker:Ventus_Normal]그러니. 일단 정비해!"/>
+		<class name="Tutorial_MarketStreet_b9PBkw" Value="[!Dialog][!speaker:Gangster_Foo_Normal]......."/>
+		<class name="Tutorial_MarketStreet_yBbzOq" Value="[!Dialog][!speaker:Gangster_Foo_Normal]케빈. 조직은 상벌이 명확해야 해."/>
+		<class name="Tutorial_MarketStreet_w9Fuh2" Value="[!Dialog][!speaker:Gangster_Foo_Normal]그렇지 않으면 순식간에 조직원들의 불만이 조직을 좀 먹을테니까."/>
+		<class name="Tutorial_MarketStreet_59gmfG" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]당연한 말씀이십니다."/>
+		<class name="Tutorial_MarketStreet_YopZpq" Value="[!Dialog][!speaker:Gangster_Foo_Normal]네 산하 조직의 이권은 모두 후성과 다리우스에게 넘겨라."/>
+		<class name="Tutorial_MarketStreet_2BVQIH" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]알겠습니다."/>
+		<class name="Tutorial_MarketStreet_rPY9Tm" Value="[!Dialog][!speaker:Gangster_Foo_Normal]그리고..."/>
+		<class name="Tutorial_MarketStreet_WaZ8aw" Value="[!Dialog][!speaker:Gangster_Foo_Normal]당분간 조직을 떠나 여행이나 다녀와라."/>
+		<class name="Tutorial_MarketStreet_uGjSrM" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]보스??"/>
+		<class name="Tutorial_MarketStreet_pzjcQj" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]지금 같은 시기에 여행이라니요??"/>
+		<class name="Tutorial_MarketStreet_G7idFi" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]보스!! 차라리 밑바닥부터... 처음부터... 다시 시작하겠습니다."/>
+		<class name="Tutorial_MarketStreet_PBD7wX" Value="[!Dialog][!speaker:Gangster_Foo_Normal]케빈. 지난 10년간 우리는 &apos;백호&apos;를 위해 수많은 피를 흘렸다."/>
+		<class name="Tutorial_MarketStreet_ArCc8A" Value="[!Dialog][!speaker:Gangster_Foo_Normal]그 피를 보고 충성을 바쳐온 자들이 네 과오를 보고 원하는 것이 무엇인지 정녕 모르는 것이냐?"/>
+		<class name="Tutorial_MarketStreet_KFZOf0" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]보스. 차라리 백호의 기강을 위해 절..."/>
+		<class name="Tutorial_MarketStreet_R7ZrCe" Value="[!Dialog][!speaker:Gangster_Foo_Normal]그만 해라. 케빈."/>
+		<class name="Tutorial_MarketStreet_Kyw1G6" Value="[!Dialog][!speaker:Gangster_Foo_Normal]결정 사항이다."/>
+		<class name="Tutorial_MarketStreet_a5c2DU" Value="[!Dialog][!speaker:Gangster_WhiteTigerNormal_Andrei_Normal]보스. 이대로는 건너편 녀석들과 충돌이 생길 것 같습니다."/>
+		<class name="Tutorial_MarketStreet_ARWGap" Value="[!Dialog][!speaker:Gangster_Trey_Normal]오. 푸. 또 무슨 일인가?"/>
+		<class name="Tutorial_MarketStreet_e9CHBn" Value="[!Dialog][!speaker:Gangster_Foo_Normal]트레이. 물러나."/>
+		<class name="Tutorial_MarketStreet_jRFp6N" Value="[!Dialog][!speaker:Gangster_Trey_Normal]물러나라니? 엄연히 여긴 내 구역이야."/>
+		<class name="Tutorial_MarketStreet_06SiqR" Value="[!Dialog][!speaker:Gangster_Foo_Normal]언제부터 중립지가 네 구역이 되었는지 모르겠군."/>
+		<class name="Tutorial_MarketStreet_TDB2hv" Value="[!Dialog][!speaker:Gangster_Trey_Normal]네가 열심히 시민들에게 공포를 심어줄 때지. "/>
+		<class name="Tutorial_MarketStreet_BYOXXs" Value="[!Dialog][!speaker:Gangster_Trey_Normal]시민들은 공포를 피할 수 있는 안식처를 선택하니까."/>
+		<class name="Tutorial_MarketStreet_XtS53I" Value="[!Dialog][!speaker:Gangster_Foo_Normal]안식처라..."/>
+		<class name="Tutorial_MarketStreet_gqoUe3" Value="[!Dialog][!speaker:Gangster_Foo_Normal]그 망상에서 벗어나게 하려면 지금 여기서 네 목을 따면 그만이겠군."/>
+		<class name="Tutorial_MarketStreet_Y7DLgj" Value="[!Dialog][!speaker:Gangster_Trey_Normal]푸. 넌 주위에 적을 너무 많이 만들어."/>
+		<class name="Tutorial_MarketStreet_wbI5P3" Value="[!Dialog][!speaker:Gangster_Foo_Normal]어차피 하나씩 철저하게 짓밟으면 그만이야."/>
+		<class name="Tutorial_MarketStreet_YxZ41J" Value="[!Dialog][!speaker:Gangster_Trey_Normal]푸. 결국 너도 부러질거다."/>
+		<class name="Tutorial_MarketStreet_lOJjOp" Value="[!BalloonChat][!speaker:Enemy01_02]구 철로에 정체 불명의 기차 차량 진입!!"/>
+		<class name="Tutorial_MarketStreet_5b76we" Value="[!Subtitle][!speaker:NewsCaster_Normal]오늘 낮, 10년간 운행이 정지된 구 철로에 노후된 열차가 갑자기 출몰하여 시민들을 공포에 떨게 하였습니다."/>
+		<class name="Tutorial_MarketStreet_I8tYWm" Value="[!Subtitle][!speaker:NewsCaster_Normal]해당 열차는 철의 숲 간이역으로부터 이어지는 버려진 노선으로부터 시내 노선으로 진입하였으며..."/>
+		<class name="Tutorial_MarketStreet_cRjrXk" Value="[!Subtitle][!speaker:NewsCaster_Normal]진입 후 15분간 맹렬한 속도로 달려 은빛 구름 시장 거리에 이르러야 정차하였습니다."/>
+		<class name="Tutorial_MarketStreet_XFe9OH" Value="[!Subtitle][!speaker:NewsCaster_Normal]발할라 경찰청은 해당 열차가 스푼교도에 의해 운행된 테러용 열차였으며 현재는 제압하여 위험이 사라졌다고 발표하였습니다."/>
+		<class name="Tutorial_MarketStreet_l0XjDq" Value="[!Subtitle][!speaker:NewsCaster_Normal]하지만 전문가들은 이번 사고를 총체적인 국경 관리 부실과 범죄불감증이 가져온 위험으로 이와 같은 사고가 재발할 수 있다고 경고하고 있습니다."/>
+		<class name="Tutorial_MarketStreet_Pxx50Y" Value="[!Dialog][!speaker:VHPD_Assault_Normal]알버스 님. 본부에서 바이크론에 대한 내용은 정보 보안을 요청하였습니다."/>
+		<class name="Tutorial_MarketStreet_VS0qZF" Value="[!Dialog][!speaker:Sion_SurpriseStare]정보 보안?"/>
+		<class name="Tutorial_MarketStreet_0TPW4s" Value="[!Dialog][!speaker:Anne_Smile]특정 시기나 특정 조건이 만족하기 전까지는 해당 정보를 타인에게 제공하지 말라는 규칙이에요."/>
+		<class name="Tutorial_MarketStreet_9dyCCs" Value="[!Dialog][!speaker:Albus_Serious]정보 보안 등급은 어떻게 되나요?"/>
+		<class name="Tutorial_MarketStreet_ZMvbco" Value="[!Dialog][!speaker:VHPD_Assault_Normal]그게..."/>
+		<class name="Tutorial_MarketStreet_4au1o6" Value="[!Dialog][!speaker:VHPD_Assault_Normal]상위 3 급『 미스릴 』입니다."/>
+		<class name="Tutorial_MarketStreet_3WfdXC" Value="[!Dialog][!speaker:Albus_Surprise]!!"/>
+		<class name="Tutorial_MarketStreet_x6mMA0" Value="[!Dialog][!speaker:Irene_Fury]뭐야. 그렇게 위험한 거야!?"/>
+		<class name="Tutorial_MarketStreet_7Ai4Z9" Value="[!Dialog][!speaker:VHPD_Assault_Normal]네. 저도 처음 겪는 등급입니다. 기껏해야『 실버 』정도였는데..."/>
+		<class name="Tutorial_MarketStreet_EPp1ZN" Value="[!Dialog][!speaker:Irene_Serious]&apos;『 미스릴 』이면 영구 금지 수준이잖아...&apos;"/>
+		<class name="Tutorial_MarketStreet_1QMD6W" Value="[!Dialog][!speaker:Albus_Serious]네. 일단 알겠습니다."/>
+		<class name="Tutorial_MarketStreet_98VVWn" Value="[!Dialog][!speaker:Albus_Serious]해당 정보의 보안에 신경쓰도록 하겠습니다."/>
+		<class name="Tutorial_MarketStreet_UKG3No" Value="[!Dialog][!speaker:Giselle_Satisfying]&apos;외교 분쟁은 어떻게든 막자는 건가...&apos;"/>
+		<class name="Tutorial_MarketStreet_0AwRZ4" Value="[!Subtitle][!speaker:NewsCaster_Normal]방금 들어온 속보입니다."/>
+		<class name="Tutorial_MarketStreet_cLlzzX" Value="[!Subtitle][!speaker:NewsCaster_Normal]바람장벽지구의 유통업체『 흑호 코퍼레이션 』이 업종을 보안 전문 회사로 변경한 후 정식 트러블슈터 회사로 전환 신청을 요청하였습니다."/>
+		<class name="Tutorial_MarketStreet_VBepdJ" Value="[!Subtitle][!speaker:NewsCaster_Normal]해당 업체는 조직폭력배 『 흑호 』조직과 유관 관계 회사로 의심받으며 수차례 발할라 경찰청의 수사를 받았던 업체이기에 트러블슈터 업계에 큰 파장을 불러일으키고 있습니다."/>
+		<class name="Tutorial_MarketStreet_Htja2T" Value="[!Subtitle][!speaker:NewsCaster_Normal]이러한 파장을 의식한 발할라 경찰청은 해당 업체의 트러블슈터 회사로의 전환이 가능한 여부를 판단하기 위해..."/>
+		<class name="Tutorial_MarketStreet_K39IYp" Value="[!Subtitle][!speaker:NewsCaster_Normal] 해당 업체의 거래 내역과 활동 내역의 전수조사를 실시할 것이라고 발표하였습니다."/>
+		<class name="Tutorial_MarketStreet_stIJSc" Value="[!Subtitle][!speaker:NewsCaster_Normal]대부분의 범죄전문가들은 『 흑호 코퍼레이션 』의 트러블슈터 전환 가능성을 부정적으로 보고 있으며, 사회 치안 시스템에 대한 조롱이라고 격분하고 있습니다."/>
+		<class name="Tutorial_MarketStreet_zFM95l" Value="[!Subtitle][!speaker:NewsCaster_Normal]여기서 많은 논란에 쌓여 있는『 흑호 코퍼레이션 』의 신임 대표 아이작 고든 씨의 인터뷰 현장을 연결해보겠습니다."/>
+		<class name="Tutorial_MarketStreet_tvDbbT" Value="[!Subtitle][!speaker:Issac_Normal]여러분! 과거는 중요하지 않습니다."/>
+		<class name="Tutorial_MarketStreet_PR6J6t" Value="[!Subtitle][!speaker:Issac_Normal]지금 중요한 것은 여러분의 소중한 가족과 친구를 지킬 힘입니다."/>
+		<class name="Tutorial_MarketStreet_ntU04v" Value="[!Subtitle][!speaker:Issac_Smile]더 이상 잃고 싶지 않습니다. 더는 잃은 슬픔을 가슴 속에 묻어두고 싶지 않습니다."/>
+		<class name="Tutorial_MarketStreet_iuV9Nd" Value="[!Subtitle][!speaker:Issac_Normal]그 바램. 『 흑호 코퍼레이션 』이 지켜내겠습니다."/>
+		<class name="Tutorial_MarketStreet_kQvhbz" Value="[!BalloonChat][!speaker:Enemy02_02]비상! 다들 경계 태세!!"/>
+		<class name="Tutorial_MarketStreet_7iPgWc" Value="[!Dialog][!speaker:Gangster_Foo_Normal]어이가 없군. 트레이 네 짓이냐?"/>
+		<class name="Tutorial_MarketStreet_xoiruL" Value="[!Dialog][!speaker:Gangster_Trey_Normal]설마... 이런 연출은 내 성격에 맞지 않아."/>
+		<class name="Tutorial_MarketStreet_KHqlvP" Value="[!Dialog][!speaker:Gangster_Trey_Normal]난 그저 자네 정보를 자네를 찾는 자들에게 흘렸을 뿐이야."/>
+		<class name="Tutorial_MarketStreet_l70S4Q" Value="[!Dialog][!speaker:Gangster_Foo_Normal]날 붙잡아 두려고 낯짝을 들이민 거군."/>
+		<class name="Tutorial_MarketStreet_0bbRpz" Value="[!Dialog][!speaker:Gangster_Trey_Normal]단지 구경 왔을 뿐이야. 너무 예민해 하지마."/>
+		<class name="Tutorial_MarketStreet_yvHe80" Value="[!Dialog][!speaker:Gangster_Foo_Normal]트레이..."/>
+		<class name="Tutorial_MarketStreet_W5y5Z4" Value="[!Dialog][!speaker:Gangster_SpoonBat_Turk_Normal]백호의 우두머리를 쳐 단숨에 기세를 역전시킨다."/>
+		<class name="Tutorial_MarketStreet_Ok5Ua7" Value="[!Dialog][!speaker:Gangster_SpoonBottle_Naam_Normal]『 한술 』의 가호가 함께 하기를!"/>
+		<class name="Tutorial_MarketStreet_zFsP1j" Value="[!Dialog][!speaker:Gangster_WhiteTigerNormal_Andrei_Normal]보스. 일단 자리를 피하십시오."/>
+		<class name="Tutorial_MarketStreet_08IES8" Value="[!Dialog][!speaker:Gangster_WhiteTigerDagger_HouCheng_Normal]보스. 가시지요."/>
+		<class name="Tutorial_MarketStreet_itHrkK" Value="[!Dialog][!speaker:Gangster_Foo_Normal]......"/>
+		<class name="Tutorial_MarketStreet_4xTft0" Value="[!Dialog][!speaker:Gangster_Foo_Normal]다리우스. 이 곳은 너에게 맡기마."/>
+		<class name="Tutorial_MarketStreet_WAv7vO" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]알겠습니다."/>
+		<class name="Tutorial_MarketStreet_a85uR8" Value="[!Title]한 걸음 물러나서..."/>
+		<class name="Tutorial_MarketStreet_ymUZ3u" Value="[!Title]은빛 구름 시장 거리"/>
+		<class name="Tutorial_MarketStreet_ZuN0B5" Value="[!Dialog][!speaker:VHPD_Assault_Normal]지구 내로 불법 진입한 열차 차량에서 스푼교도와 다수의 바이크론이 나타나 현장에 있던 백호파와 충돌하였습니다."/>
+		<class name="Tutorial_MarketStreet_iHcZis" Value="[!Dialog][!speaker:VHPD_Assault_Normal]하지만 현재 위치에서는 열차로 인하여 건너편 상황 파악이 어려운 상태입니다."/>
+		<class name="Tutorial_MarketStreet_VLzgDo" Value="[!Dialog][!speaker:Albus_Serious]알겠습니다."/>
+		<class name="Tutorial_MarketStreet_xIJwqk" Value="[!Dialog][!speaker:Sion_Stare]날이 풀리니... 또 이 상황이군..."/>
+		<class name="Tutorial_MarketStreet_FJdmcY" Value="[!Dialog][!speaker:Irene_Fury]알버스 군. 빨리 진입하자."/>
+		<class name="Tutorial_MarketStreet_QRFfZ8" Value="[!Dialog][!speaker:Giselle_Smile]알버스. 잠시만~!"/>
+		<class name="Tutorial_MarketStreet_o9omhF" Value="[!Dialog][!speaker:Albus_SurpriseStare]네?"/>
+		<class name="Tutorial_MarketStreet_EehjTF" Value="[!Dialog][!speaker:Giselle_Smile]잠시 상황을 지켜보고 진입하자."/>
+		<class name="Tutorial_MarketStreet_dmlH9f" Value="[!Dialog][!speaker:Albus_Surprise]?"/>
+		<class name="Tutorial_MarketStreet_z6vZVD" Value="[!Dialog][!speaker:Giselle_Normal]지금 돌입하면 혼전으로 번진다."/>
+		<class name="Tutorial_MarketStreet_B0ZRax" Value="[!Dialog][!speaker:Giselle_Smile]그러면 최악의 경우, 온전한 두 세력을 상대하게 될테고 그러면 팀 전력 소모가 너무 많아."/>
+		<class name="Tutorial_MarketStreet_aoYLHG" Value="[!Dialog][!speaker:Giselle_Satisfying]반면 기다리면 두 세력이 한풀 꺾일 테니 제압은 훨씬 수월해 질 거야."/>
+		<class name="Tutorial_MarketStreet_K7lIhD" Value="[!Dialog][!speaker:Albus_SurpriseStare]......"/>
+		<class name="Tutorial_MarketStreet_svVr0w" Value="[!Dialog][!speaker:Albus_Disappoint]무슨 말씀인지 알겠습니다."/>
+		<class name="Tutorial_MarketStreet_MHz26Y" Value="[!Dialog][!speaker:Giselle_Smile]그리고 팀 전력은 비상시를 위해서라도 아낄 수 있을 때 최대한 아껴야 해."/>
+		<class name="Tutorial_MarketStreet_guJgNa" Value="[!Dialog][!speaker:Albus_Disappoint]하지만 지체된 시간만큼 현장의 피해가 증가할 겁니다."/>
+		<class name="Tutorial_MarketStreet_jjPzw3" Value="[!Dialog][!speaker:Giselle_Smile2]신경 쓰이니?"/>
+		<class name="Tutorial_MarketStreet_wfbIT5" Value="[!Dialog][!speaker:Albus_Disappoint]당연히 신경 쓰이죠."/>
+		<class name="Tutorial_MarketStreet_TPuTuF" Value="[!Dialog][!speaker:Giselle_Satisfying]그럼 증가할 피해와 팀 전력 소모를 저울질 해봐."/>
+		<class name="Tutorial_MarketStreet_kxga7Z" Value="[!Dialog][!speaker:Albus_SurpriseStare]그건..."/>
+		<class name="Tutorial_MarketStreet_9exXT5" Value="[!Dialog][!speaker:Giselle_Smile2]한 번도 고려한 적 없다는 표정이군..."/>
+		<class name="Tutorial_MarketStreet_1n8pIK" Value="[!Dialog][!speaker:Giselle_Satisfying]알버스. 지금과 같은 고려가 축적될수록 너의 답답함이 해결될 거야."/>
+		<class name="Tutorial_MarketStreet_Wxg4CD" Value="[!Dialog][!speaker:Albus_Disappoint]......"/>
+		<class name="Tutorial_MarketStreet_HjjxhQ" Value="[!Dialog][!speaker:Giselle_Normal]선택은 네가 해."/>
+		<class name="Tutorial_MarketStreet_HSF3sI" Value="[!Dialog][!speaker:Giselle_Smile]하지만 선택의 순간마다 계속 고민하고 더 나은 방법을 찾아라. 알버스."/>
+		<class name="Tutorial_MarketStreet_l26MTG" Value="[!Dialog][!speaker:Giselle_Satisfying]그것이 리더의 역할이야."/>
+		<class name="Tutorial_MarketStreet_mcR2CC" Value="[!Dialog][!speaker:Albus_Think][colour=&apos;FFFFFF00&apos;]지금 상황이라면..."/>
+		<class name="Tutorial_MarketStreet_iEa8uj" Value="[!Choice]돌입한다."/>
+		<class name="Tutorial_MarketStreet_4ePKTK" Value="스푼교와 백호파의 혼전 상태에서 전투가 시작됩니다.
+
+[colour=&apos;FFFFE959&apos;]해당 선택지에 따라 이벤트 보상이 달라집니다. 
+경험하지 못한 이벤트는 [colour=&apos;FFFFFFFF&apos;]사건일지[colour=&apos;FFFFE959&apos;]를 통하여 진행하실 수 있습니다."/>
+		<class name="Tutorial_MarketStreet_N0Ctn0" Value="[!Choice]상황을 지켜본다."/>
+		<class name="Tutorial_MarketStreet_xwITNx" Value="스푼교와 백호파의 교전 상태가 진전된 이후 전투가 시작됩니다.
+
+[colour=&apos;FFFFE959&apos;]해당 선택지에 따라 이벤트 보상이 달라집니다. 
+경험하지 못한 이벤트는 [colour=&apos;FFFFFFFF&apos;]사건일지[colour=&apos;FFFFE959&apos;]를 통하여 진행하실 수 있습니다."/>
+		<class name="Tutorial_MarketStreet_pCAwc1" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_MarketStreet_qHrQFk" Value="[!VictoryCondition]현장의 적을 모두 제압하시오."/>
+		<class name="Tutorial_MarketStreet_UZKwz7" Value="[!Dialog][!speaker:Albus_Serious]현장의 혼란을 줄이기 위해서 바로 돌입하겠습니다."/>
+		<class name="Tutorial_MarketStreet_G4DncX" Value="[!Dialog][!speaker:Albus_Serious]위험성이 높은 바이크론이 나타나면 최대한 화력을 집중해서 접근하기 전에 파괴합니다."/>
+		<class name="Tutorial_MarketStreet_NtCpFt" Value="[!Dialog][!speaker:Albus_Serious]그리고 길이 좁고 복잡하니 이동 경로 확보에 신중을 기해주세요."/>
+		<class name="Tutorial_MarketStreet_2nLZkD" Value="[!Dialog][!speaker:Giselle_Satisfying]&apos;뭐. 이것도 다 경험이겠지...&apos;"/>
+		<class name="Tutorial_MarketStreet_W7PUKT" Value="[!Dialog][!speaker:Albus_Serious]잠시 대기하고 현장 상황이 파악될 때까지 현재 위치를 사수합니다."/>
+		<class name="Tutorial_MarketStreet_M8yHaK" Value="[!Dialog][!speaker:Irene_Surprise]!?"/>
+		<class name="Tutorial_MarketStreet_pBy3OA" Value="[!Dialog][!speaker:Anne_Surprise]!?"/>
+		<class name="Tutorial_MarketStreet_7lFvDl" Value="[!Dialog][!speaker:Sion_Surprise]&apos;지젤 누나의 영향인가...&apos;"/>
+		<class name="Tutorial_MarketStreet_CohUic" Value="[!Dialog][!speaker:Heissing_Smile]사장 답지 않은 선택이군."/>
+		<class name="Tutorial_MarketStreet_S30Hij" Value="[!Dialog][!speaker:Ray_Serious]......"/>
+		<class name="Tutorial_MarketStreet_joHafu" Value="[!Dialog][!speaker:Giselle_Satisfying]......"/>
+		<class name="Tutorial_MarketStreet_NDj6l4" Value="[!Dialog]평상시의 알버스와 다른 선택..."/>
+		<class name="Tutorial_MarketStreet_6JtYwx" Value="[!Dialog]현장으로 돌입하려던 동료들의 시선은 일제히 알버스를 향하였다."/>
+		<class name="Tutorial_MarketStreet_Y7tmts" Value="[!Dialog]그리고 알버스는 $CompanyName$ 동료들의 따가운 시선을 외면할 수 없었다."/>
+		<class name="Tutorial_MarketStreet_2QOJ8s" Value="[!Dialog][!speaker:Albus_SurpriseStare]&apos;아... 뭐라고 설명해야 되지...&apos;"/>
+		<class name="Tutorial_MarketStreet_zp5UI4" Value="[!Dialog]알버스 역시 동료들의 성향을 알고 있기에 피해가 증가할 것을 뻔히 알면서 팀의 전력을 아끼려고 사건 현장을 방치하겠다는 말을 차마 할 수가 없었다."/>
+		<class name="Tutorial_MarketStreet_FKPRzY" Value="[!Dialog][!speaker:Albus_Embarrassed]그러니까..."/>
+		<class name="Tutorial_MarketStreet_YAkelx" Value="[!Dialog][!speaker:Albus_Serious]현장은 좁은 시장 거리라 이동 경로 확보도 쉽지 않고 철로의 열차로 인하여 시야마저 제한적입니다."/>
+		<class name="Tutorial_MarketStreet_f4jP04" Value="[!Dialog][!speaker:Albus_Serious]건너편 현장 상황을 모른 체 돌입했다가 긴급 상황이 발생하면 대처하기 어렵습니다."/>
+		<class name="Tutorial_MarketStreet_Oc886r" Value="[!Dialog][!speaker:Irene_Think]흐음..."/>
+		<class name="Tutorial_MarketStreet_9noUrC" Value="[!Dialog][!speaker:Ray_Serious]그건 현장 파악을 위해 대기한다고 해결될 것 같지 않은데?"/>
+		<class name="Tutorial_MarketStreet_bT7b7F" Value="[!Dialog][!speaker:Ray_Normal]그럴 바에 차라리 지젤 씨가 조명탄을 사용해서 건너편 정보를 확보하는 게 낫지 않아?"/>
+		<class name="Tutorial_MarketStreet_45GzFu" Value="[!Dialog][!speaker:Irene_Normal]그래. 정 안되면 내가 전방에서 버티면서 천천히 진입해도 되지 않아?"/>
+		<class name="Tutorial_MarketStreet_WIN8es" Value="[!Dialog][!speaker:Anne_Smile]네. 저도 불필요하게 지체할 이유는 없다고 생각해요..."/>
+		<class name="Tutorial_MarketStreet_fv4KOo" Value="[!Dialog][!speaker:Albus_SurpriseStare]그렇긴 한데..."/>
+		<class name="Tutorial_MarketStreet_433Nd0" Value="[!Dialog][!speaker:Sion_Smile]&apos;알버스... 고생하겠네...&apos;"/>
+		<class name="Tutorial_MarketStreet_eVxBy5" Value="[!Dialog][!speaker:Heissing_Smile]......"/>
+		<class name="Tutorial_MarketStreet_gb7dee" Value="[!Dialog][!speaker:Irene_Normal]알버스 군. 걱정 너무 하지 마. 나 히어로라고!"/>
+		<class name="Tutorial_MarketStreet_5UCVPw" Value="[!Dialog][!speaker:Anne_Strict]네. 저도 최선을 다할 거에요."/>
+		<class name="Tutorial_MarketStreet_BwHrt7" Value="[!Dialog][!speaker:Ray_Normal]그래. 평소대로 해."/>
+		<class name="Tutorial_MarketStreet_pSSooD" Value="[!Dialog][!speaker:Heissing_Smile]......."/>
+		<class name="Tutorial_MarketStreet_YaKUGH" Value="[!Dialog][!speaker:Albus_Embarrassed]다들 마음은 충분히 고마운데..."/>
+		<class name="Tutorial_MarketStreet_7ujvkJ" Value="[!Dialog][!speaker:Albus_Laugh]그러니까 내가 현장 정보를 파악하기 위해 정찰을 가 볼게. 그러고나서 돌입하면..."/>
+		<class name="Tutorial_MarketStreet_jsY7Z5" Value="[!Dialog][!speaker:Anne_Sorrow]알버스 오빠."/>
+		<class name="Tutorial_MarketStreet_2pLYbQ" Value="[!Dialog][!speaker:Albus_SurpriseStare]......"/>
+		<class name="Tutorial_MarketStreet_Gtr3OY" Value="[!Dialog][!speaker:Anne_Cry]맨날 혼자 짐 다 짊어지지 말고 저희와 같이 들어요!"/>
+		<class name="Tutorial_MarketStreet_4Menop" Value="[!Dialog][!speaker:Albus_Embarrassed]......"/>
+		<class name="Tutorial_MarketStreet_TYde8i" Value="[!Dialog][!speaker:Sion_Laugh]&apos;알버스의 패배~☆ 새로운 시도는 실패~☆&apos;"/>
+		<class name="Tutorial_MarketStreet_v5eikC" Value="[!Dialog][!speaker:Sion_Think]&apos;이럴게 아냐... 나도 거들까...&apos;"/>
+		<class name="Tutorial_MarketStreet_Je11OJ" Value="[!Dialog][!speaker:Sion_Angry]사장님!!"/>
+		<class name="Tutorial_MarketStreet_EBg6nD" Value="[!Dialog][!speaker:Sion_Happy]더 지체되면 이도 저도 아니게 됩니다!! 빨리 돌입하죠!!"/>
+		<class name="Tutorial_MarketStreet_xWGWcY" Value="[!Dialog][!speaker:Albus_EyeAversion]&apos;아...이런 거 진짜 힘들다...&apos;"/>
+		<class name="Tutorial_MarketStreet_XKChWf" Value="[!Dialog][!speaker:Giselle_Satisfying]......"/>
+		<class name="Tutorial_MarketStreet_f6XQnN" Value="[!Dialog][!speaker:Giselle_Smile2]알버스 군."/>
+		<class name="Tutorial_MarketStreet_27xCyv" Value="[!Dialog][!speaker:Albus_EyeAversion]&apos;지젤 씨... 답답하셨구나...&apos;"/>
+		<class name="Tutorial_MarketStreet_G5IiiF" Value="[!Dialog][!speaker:Albus_Laugh]네. 지젤 씨."/>
+		<class name="Tutorial_MarketStreet_ZYLn8i" Value="[!Dialog][!speaker:Giselle_Smile]조금 더 넓게 보렴."/>
+		<class name="Tutorial_MarketStreet_d38IDw" Value="[!Dialog][!speaker:Albus_Surprise]네?"/>
+		<class name="Tutorial_MarketStreet_dkVlvf" Value="[!Dialog][!speaker:Giselle_Satisfying]지금도 선택의 순간이야."/>
+		<class name="Tutorial_MarketStreet_NDZw1d" Value="[!Dialog][!speaker:Albus_SurpriseStare]아..."/>
+		<class name="Tutorial_MarketStreet_jX0ei0" Value="[!Dialog][!speaker:Albus_Normal]죄송합니다! 바로 돌입하겠습니다."/>
+		<class name="Tutorial_MarketStreet_ujh1FT" Value="[!Dialog][!speaker:Albus_Laugh]위험성이 높은 바이크론이 나타나면 최대한 화력을 집중해 공격 전에 파괴합니다!"/>
+		<class name="Tutorial_MarketStreet_FkcZXG" Value="[!Dialog][!speaker:Albus_Serious]만약 파괴되지 않는다면 아이린 씨 잘 부탁드립니다!"/>
+		<class name="Tutorial_MarketStreet_TMwXt1" Value="[!Dialog][!speaker:Irene_Normal]물론이지. 나 히어로 아이린이라고!"/>
+		<class name="Tutorial_MarketStreet_xz1TAZ" Value="[!Dialog][!speaker:Albus_Normal]앤 양, 레이 씨. 전방의 저와 아이린을 잘 부탁합니다!"/>
+		<class name="Tutorial_MarketStreet_LUe9uI" Value="[!Dialog][!speaker:Anne_Smile]걱정 마세요."/>
+		<class name="Tutorial_MarketStreet_9kvzAq" Value="[!Dialog][!speaker:Ray_Smile]당연한 말씀을~☆"/>
+		<class name="Tutorial_MarketStreet_KjBtTV" Value="[!Dialog][!speaker:Albus_Normal]그럼 현장으로 돌입하겠습니다!"/>
+		<class name="Tutorial_MarketStreet_g2GsWn" Value="[!Dialog][!speaker:Gangster_Trey_Normal]아직은 자네를 완벽하게 신뢰하지 못하니 이해해주게."/>
+		<class name="Tutorial_MarketStreet_i4Kb5s" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Normal]신뢰하는 것이 우습겠지."/>
+		<class name="Tutorial_MarketStreet_evMKwf" Value="[!Dialog][!speaker:Gangster_Trey_Normal]자! 돌아간다!"/>
+		<class name="Tutorial_MarketStreet_baIP7U" Value="[!Dialog][!speaker:Albus_Surprise]아이작 경감님!!"/>
+		<class name="Tutorial_MarketStreet_iTQ6Eo" Value="[!Dialog][!speaker:Sion_Surprise]아이작 경감님?"/>
+		<class name="Tutorial_MarketStreet_phRXnk" Value="[!Dialog][!speaker:Irene_Surprise]아이작 경감..."/>
+		<class name="Tutorial_MarketStreet_sbKhp4" Value="[!Dialog][!speaker:Anne_Surprise]아이작 경감님..."/>
+		<class name="Tutorial_MarketStreet_ekasCO" Value="[!Dialog][!speaker:Ray_Surprise_Smile]아이작 경감?"/>
+		<class name="Tutorial_MarketStreet_PyMqZ4" Value="[!Dialog][!speaker:Gangster_Trey_Normal]자네가 아끼는 $CompanyName$ 녀석이군."/>
+		<class name="Tutorial_MarketStreet_3jJqwR" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Normal]난 돌아가겠네."/>
+		<class name="Tutorial_MarketStreet_ZfM15K" Value="[!Dialog][!speaker:Gangster_Trey_Normal]제국의 귀족 녀석이군."/>
+		<class name="Tutorial_MarketStreet_PkfrYQ" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Normal]시온?"/>
+		<class name="Tutorial_MarketStreet_IWI7qF" Value="[!Dialog][!speaker:Gangster_Trey_Normal]웬만하면 저 녀석하고는 엮이지 마."/>
+		<class name="Tutorial_MarketStreet_t18J7N" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Smile]자네가 그런 말을 하다니..."/>
+		<class name="Tutorial_MarketStreet_JFxR6N" Value="[!Dialog][!speaker:Gangster_Trey_Normal]모르는 게 약이야."/>
+		<class name="Tutorial_MarketStreet_VgHCis" Value="[!Dialog][!speaker:Gangster_Trey_Normal]히어로 꼬맹이잖아?"/>
+		<class name="Tutorial_MarketStreet_jIlYnF" Value="[!Dialog][!speaker:Gangster_Trey_Normal]저 아이가 트러블슈터 회사에 들어가다니..."/>
+		<class name="Tutorial_MarketStreet_1VBLAl" Value="[!Dialog][!speaker:Gangster_Trey_Normal]진작에 경찰 유치장에 들어가도 남을 아이를 저렇게 만든 건 아이작 자네 책임이야."/>
+		<class name="Tutorial_MarketStreet_6Gx2xD" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Normal]난 법대로 처리했을 뿐이네."/>
+		<class name="Tutorial_MarketStreet_b5anh2" Value="[!Dialog][!speaker:Gangster_Trey_Normal]지금 자네 입에서 법 이야기가 나오다니 우습군."/>
+		<class name="Tutorial_MarketStreet_JTrPEv" Value="[!Dialog][!speaker:Gangster_Trey_Normal]이런... 바람장벽지구의 축복이 오셨군."/>
+		<class name="Tutorial_MarketStreet_jZQnWI" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Normal]저 아이는 건드리지 마. 아직 어린 아이다."/>
+		<class name="Tutorial_MarketStreet_C0Y82G" Value="[!Dialog][!speaker:Gangster_Trey_Normal]물론이야. 그런 취향따위 없어."/>
+		<class name="Tutorial_MarketStreet_pHG8vm" Value="[!Dialog][!speaker:Gangster_Trey_Normal]좀 더 커야지. 너무 어려."/>
+		<class name="Tutorial_MarketStreet_1a83XI" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Normal]저급한 말장난 치지 마."/>
+		<class name="Tutorial_MarketStreet_qvxWr1" Value="[!Dialog][!speaker:Gangster_Trey_Normal]이런 아이작... 화가 난 건가?"/>
+		<class name="Tutorial_MarketStreet_owD8t4" Value="[!Dialog][!speaker:Gangster_Trey_Normal]저 녀석이 그 『 특사 』인가?"/>
+		<class name="Tutorial_MarketStreet_mUbEzv" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Normal]그래. 고난의 성채의『 특사 』일세."/>
+		<class name="Tutorial_MarketStreet_HdcVy3" Value="[!Dialog][!speaker:Gangster_Trey_Normal]어린 나이에 참 대단하군. 나중에 소개해 주게나."/>
+		<class name="Tutorial_MarketStreet_5crtyb" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Normal]나 역시 친한 사이가 아니네."/>
+		<class name="Tutorial_MarketStreet_rFTqQf" Value="[!Dialog][!speaker:Gangster_Trey_Normal]정신 사납게 벽에 낙서하던 녀석들의 리더 녀석이군."/>
+		<class name="Tutorial_MarketStreet_quguZl" Value="[!Dialog][!speaker:Gangster_Trey_Normal]자네가 하도 훈방해버려서 진짜 짜증 났었지."/>
+		<class name="Tutorial_MarketStreet_GqKDZG" Value="[!Dialog][!speaker:Gangster_Trey_Normal]덕분에 그 녀석들 버릇 고친다고 우리 아이들만 고생했어."/>
+		<class name="Tutorial_MarketStreet_7z2jqh" Value="[!Dialog][!speaker:Gangster_Trey_Normal]저 여자 내 타입인데? 자네 저 여자 알고 있나?"/>
+		<class name="Tutorial_MarketStreet_n0Hiqf" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Normal]지젤 발렌슈타인."/>
+		<class name="Tutorial_MarketStreet_kBMlNG" Value="[!Dialog][!speaker:Gangster_Trey_Normal]으음~ 지젤~ 좋은 이름이군."/>
+		<class name="Tutorial_MarketStreet_D2STB2" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Normal]『 블랙펄 』의 트러블슈터 『 지젤 발렌슈타인 』."/>
+		<class name="Tutorial_MarketStreet_quxpxf" Value="[!Dialog][!speaker:Gangster_Trey_Normal]...이런 『 스컬 』을 망가뜨린 녀석인가... "/>
+		<class name="Tutorial_MarketStreet_As36iL" Value="[!Dialog][!speaker:Gangster_Trey_Normal]정말 매력적이군!!"/>
+		<class name="Tutorial_MarketStreet_k30k0r" Value="[!Dialog][!speaker:Albus_Surprise]화기??"/>
+		<class name="Tutorial_MarketStreet_ZAr6Xe" Value="[!Dialog][!speaker:Albus_Surprise]일반 산업형 로봇이 아니야..."/>
+		<class name="Tutorial_MarketStreet_vge3DA" Value="[!BalloonChat][!speaker:Albus]다들 바이크론을 조심하세요!!"/>
+		<class name="Tutorial_MarketStreet_pNpLPn" Value="[!Dialog][!speaker:Sion_Surprise]뭐야? 전에 봤던 녀석이 아니잖아..."/>
+		<class name="Tutorial_MarketStreet_8AWyfd" Value="[!Dialog][!speaker:Sion_Stare]정말 짜증 나게 하는군."/>
+		<class name="Tutorial_MarketStreet_Y4CP51" Value="[!Dialog][!speaker:Irene_Surprise]뭐지 저 바이크론은??"/>
+		<class name="Tutorial_MarketStreet_6KVaDX" Value="[!Dialog][!speaker:Irene_Surprise]설마..."/>
+		<class name="Tutorial_MarketStreet_LXYpYf" Value="[!BalloonChat][!speaker:Irene]다들 이 곳으로 오지마! 위험해!"/>
+		<class name="Tutorial_MarketStreet_M6KWvI" Value="[!Dialog][!speaker:Anne_Surprise]무장된 바이크론...."/>
+		<class name="Tutorial_MarketStreet_O4Lb4b" Value="[!Dialog][!speaker:Anne_Sorrow]정말 왜 저런 것까지 사용하는 거야..."/>
+		<class name="Tutorial_MarketStreet_0QpZG9" Value="[!Dialog][!speaker:Anne_Cry]정말 너무하잖아!"/>
+		<class name="Tutorial_MarketStreet_8dZhX6" Value="[!Dialog][!speaker:Heissing_Smile]재밌는 장난감이군..."/>
+		<class name="Tutorial_MarketStreet_pgBfQt" Value="[!Dialog][!speaker:Ray_Serious]도대체 이런 깡통들로 뭘 하겠다는 거야."/>
+		<class name="Tutorial_MarketStreet_MY20H0" Value="[!Dialog][!speaker:Giselle_Smile2]난 기계 사냥은 질색인데 말야..."/>
+		<class name="Tutorial_MarketStreet_t2jVEr" Value="[!Dialog][!speaker:Giselle_Annoying]계속 이런 식이면 알버스에게 엔지니어 하나 들이라고 해야겠어."/>
+		<class name="Tutorial_MarketStreet_S6HDN1" Value="[!Dialog][!speaker:VHPD_Assault_Normal]화기를 장착한 개조된 바이크론입니다!"/>
+		<class name="Tutorial_MarketStreet_tKOUi5" Value="[!Dialog][!speaker:Gangster_SpoonBottle_Naam_Normal]역시 저 녀석은 레이."/>
+		<class name="Tutorial_MarketStreet_PtKMhy" Value="[!Dialog][!speaker:Gangster_SpoonBottle_Naam_Normal]레이가 있다는 건 터크 말대로 카터 형님도..."/>
+		<class name="Tutorial_MarketStreet_WY5wrs" Value="[!Dialog][!speaker:Gangster_SpoonBottle_Naam_Normal]아니.. 지금은 단지 적인가..."/>
+		<class name="Tutorial_MarketStreet_GTF7c8" Value="[!Dialog][!speaker:Gangster_SpoonBottle_Naam_Normal]머리색은 많이 변했지만..."/>
+		<class name="Tutorial_MarketStreet_yiPvmG" Value="[!Dialog][!speaker:Gangster_SpoonBottle_Naam_Normal]그 녀석이 맞아..."/>
+		<class name="Tutorial_MarketStreet_zI5Xgz" Value="[!Dialog][!speaker:Gangster_SpoonBottle_Naam_Normal]하지만 어떻게... 『 고난의 성채 』로부터 돌아올 수 있는 거지..."/>
+		<class name="Tutorial_MarketStreet_K5DVDL" Value="[!Dialog][!speaker:Gangster_SpoonBat_Turk_Normal]&apos;역시 레이였어. 제법 이뻐졌잖아...&apos;"/>
+		<class name="Tutorial_MarketStreet_g9lB7f" Value="[!Dialog][!speaker:Gangster_SpoonBat_Turk_Normal]......"/>
+		<class name="Tutorial_MarketStreet_uIYC43" Value="[!Dialog][!speaker:Gangster_SpoonBat_Turk_Normal]&apos;다 『 한술 』의 뜻인가...&apos;"/>
+		<class name="Tutorial_MarketStreet_q36tNh" Value="[!Dialog][!speaker:Gangster_SpoonBat_Turk_Normal]저 모습 분명 어디선가 봤는데..."/>
+		<class name="Tutorial_MarketStreet_5j1gJo" Value="[!Dialog][!speaker:Gangster_SpoonBat_Turk_Normal]&apos;설마 그녀석인가...&apos;"/>
+		<class name="Tutorial_MarketStreet_kedkpq" Value="[!Dialog][!speaker:Gangster_SpoonBat_Turk_Normal]아니... 그 누구도 그 곳에서는 살아 돌아올 수 없어..."/>
+	</idspace>
+</idspaces>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Quest_Al01_O3zX5p" Value="[!Dashboard:Counter]남은 화물 수"/>
+		<class name="Quest_Al01_GYR7OW" Value="[!Dashboard:Counter]남은 야샤 수"/>
+		<class name="Quest_Al01_m6lbbG" Value="[!Dashboard:ObjectiveMarker]해당 화물을 열어 조사할 수 있습니다. 일정 확률로 야샤가 튀어 나올 수 있으니 조심하세요."/>
+		<class name="Quest_Al01_xfkPrC" Value="[!Dashboard:ObjectiveMarker]적이 해당 지역으로 진입하면 패배합니다."/>
+		<class name="Quest_Al01_tcI90G" Value="[!Dashboard:ObjectiveMarker]적이 해당 지역으로 진입하면 패배합니다."/>
+		<class name="Quest_Al01_d4juqZ" Value="[!VictoryCondition]모든 화물을 조사하시오."/>
+		<class name="Quest_Al01_d5tiOS" Value="[!Objective]야샤를 모두 제압하시오."/>
+		<class name="Quest_Al01_0kRczP" Value="[!Title]화물 속의 불청객"/>
+		<class name="Quest_Al01_LXW00D" Value="[!Title]푸른안개 거리"/>
+		<class name="Quest_Al01_pt3LZ5" Value="[!Dialog][!speaker:Civil_Oldman_Bebo_Normal]이 밤중에 이렇게 출동해 주다니 고맙네."/>
+		<class name="Quest_Al01_gnsqN6" Value="[!Dialog][!speaker:Albus_Normal]아닙니다. 당연히 시민들이 불편을 겪는데 출동해야죠."/>
+		<class name="Quest_Al01_4ktSer" Value="[!Dialog][!speaker:Civil_Oldman_Bebo_Normal]다른 트러블슈터들이 자네들 같이 생각한다면 참 좋을 텐데..."/>
+		<class name="Quest_Al01_D0488a" Value="[!Dialog][!speaker:Civil_Oldman_Bebo_Normal]요즘 트러블슈터들은 다 개인 사업이야. 돈 밖에 모른다고..."/>
+		<class name="Quest_Al01_AaIdtY" Value="[!Dialog][!speaker:Albus_Laugh]아닙니다. 다들 바쁜 사정이 있으실 거에요."/>
+		<class name="Quest_Al01_t1EpYU" Value="[!Dialog][!speaker:Civil_Oldman_Bebo_Normal]그래. 그러면 좋겠다만..."/>
+		<class name="Quest_Al01_jzR1jx" Value="[!Dialog][!speaker:Civil_Oldman_Bebo_Normal]그리고 아이린. 달려와 줘서 고맙다."/>
+		<class name="Quest_Al01_kdZVt0" Value="[!Dialog][!speaker:Irene_Smile]이 동네 일인데 당연히 와야지."/>
+		<class name="Quest_Al01_UZKwz7" Value="[!Dialog][!speaker:Civil_Oldman_Bebo_Normal]최근 이 곳에 자주 안오는 걸 보니 잘 지내고 있구나."/>
+		<class name="Quest_Al01_G4DncX" Value="[!Dialog][!speaker:Irene_Normal]응. 잘 지내고 있어."/>
+		<class name="Quest_Al01_cmdq3c" Value="[!Dialog][!speaker:Civil_Oldman_Bebo_Normal]그래. 꽤 좋아 보이는 구나."/>
+		<class name="Quest_Al01_ZA7gZ7" Value="[!Dialog][!speaker:Civil_Oldman_Bebo_Normal]하지만 마을 사람들은 네 녀석이 옥상을 뛰어다니지 않으니 오히려 다들 그리워 하고 있어."/>
+		<class name="Quest_Al01_12OIpP" Value="[!Dialog][!speaker:Civil_Oldman_Bebo_Normal]네가 오면 아이들도 좋아하니까."/>
+		<class name="Quest_Al01_QWdWoX" Value="[!Dialog][!speaker:Irene_Surprise]정말? 싫어했던 것 아냐?"/>
+		<class name="Quest_Al01_NK74tL" Value="[!Dialog][!speaker:Civil_Oldman_Bebo_Normal]싫어했으면 마을 사람도 아닌 널 진작 쫓아냈겠지."/>
+		<class name="Quest_Al01_wtbHjH" Value="[!Dialog][!speaker:Irene_Think]&apos;진짜... 싫어했던 것 같은데...&apos;"/>
+		<class name="Quest_Al01_cPm2m9" Value="[!Dialog][!speaker:Civil_Oldman_Bebo_Normal]그러니 이 녀석아. 고민이 없더라도 가끔 놀러 오거라."/>
+		<class name="Quest_Al01_LrZBqp" Value="[!Dialog][!speaker:Irene_Normal]응. 고마워."/>
+		<class name="Quest_Al01_9rN4lr" Value="[!Dialog][!speaker:Sion_Smile]......"/>
+		<class name="Quest_Al01_b7uqH1" Value="[!Dialog][!speaker:Sion_Normal]할아버지. 그런데 이 곳 상황은 어떻게 된 거야?"/>
+		<class name="Quest_Al01_PN9gIK" Value="[!Dialog][!speaker:Civil_Oldman_Bebo_Normal]아. 그래 지금 벌어지는 일 말이지..."/>
+		<class name="Quest_Al01_vN6tIS" Value="[!Dialog][!speaker:Albus_Normal]네.부탁드립니다."/>
+		<class name="Quest_Al01_j3goEY" Value="[!Dialog][!speaker:Civil_Oldman_Bebo_Normal]보다시피 우리 마을은 근처 물류업체로부터 상품을 받아 포장하는 일을 주업으로 하고 있다네."/>
+		<class name="Quest_Al01_zlqeLT" Value="[!Dialog][!speaker:Civil_Oldman_Bebo_Normal]그러다보니 가끔은 철의 숲에서 유실된 화물들이 트러블슈터들에 의해 회수되어 바로 이곳으로 오기도 한다네."/>
+		<class name="Quest_Al01_NoDfIC" Value="[!Dialog][!speaker:Civil_Oldman_Bebo_Normal]아마도 그 화물 중에 야샤가 딸려 온 것 같아."/>
+		<class name="Quest_Al01_M40tjg" Value="[!Dialog][!speaker:Irene_Fury]수거한 녀석들이 제대로 확인했어야지."/>
+		<class name="Quest_Al01_1cLLTC" Value="[!Dialog][!speaker:Civil_Oldman_Bebo_Normal]그러게 말이다."/>
+		<class name="Quest_Al01_O8Q3P9" Value="[!Dialog][!speaker:Albus_Normal]낮에는 발견되지 않는다고 들었습니다."/>
+		<class name="Quest_Al01_U0l885" Value="[!Dialog][!speaker:Civil_Oldman_Bebo_Normal]그 말 대로네. 낮에는 경찰들이 다녀갔지만, 도대체 찾을 수가 없었네."/>
+		<class name="Quest_Al01_UbtMAh" Value="[!Dialog][!speaker:Civil_Oldman_Bebo_Normal]그리고 야간에는 경찰들은 강력 사건을 해결하는 데 바빠 이런 확인되지 않은 일은 상황이 심각해지기 전에는 출동조차 하려고 하지도 않네."/>
+		<class name="Quest_Al01_kJ9Cmx" Value="[!Dialog][!speaker:Civil_Oldman_Bebo_Normal]결국 상황을 해결하지 못하고 이렇게 방치하고 있다네."/>
+		<class name="Quest_Al01_FOtIqk" Value="[!Dialog][!speaker:Albus_Think]&apos;밤에만 나타난다라...&apos;"/>
+		<class name="Quest_Al01_bQy3Pj" Value="[!Dialog][!speaker:Civil_Oldman_Bebo_Normal]주민들이 목격한 야샤는 아직 새끼였지만 언제 성체가 될 지 몰라 주민들이 밤마다 철책을 세우고 난리도 아니라네."/>
+		<class name="Quest_Al01_mD5KzX" Value="[!Dialog][!speaker:Irene_Smile]맡겨줘. 우리가 해결할게."/>
+		<class name="Quest_Al01_WXnAjK" Value="[!Dialog][!speaker:Civil_Oldman_Bebo_Normal]네가 그렇게 말하니 안심이 되는군."/>
+		<class name="Quest_Al01_abTVnl" Value="[!Dialog][!speaker:Civil_Oldman_Bebo_Normal]의심이 가는 화물이 9개가 있어. 다들 밤에는 무서워서 근처에도 가지 않아."/>
+		<class name="Quest_Al01_wPwRz3" Value="[!Dialog][!speaker:Albus_Normal]알겠습니다. 저희가 해결하겠습니다."/>
+		<class name="Quest_Al01_LISUjN" Value="[!Dialog][!speaker:Civil_Oldman_Bebo_Normal]그래. 잘 부탁하네."/>
+		<class name="Quest_Al01_CAjcKJ" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Quest_Al01_BzPlDN" Value="[!VictoryCondition]모든 화물을 조사하시오."/>
+		<class name="Quest_Al01_Ohw8tF" Value="[!Dialog][!speaker:Giselle_Smile]암흑 야샤의 특징이야."/>
+		<class name="Quest_Al01_yuvSKh" Value="[!Dialog][!speaker:Giselle_Satisfying]화물 상자를 둥지로 삼고 낮에는 멀리 나가서 숨어있다가 밤에 돌아오는 거야."/>
+		<class name="Quest_Al01_vx7iVE" Value="[!Dialog][!speaker:Giselle_Satisfying]적으로부터 둥지를 안전하게 보호하려는 습성이지."/>
+		<class name="Quest_Al01_35d4Wj" Value="[!Dialog][!speaker:Albus_SurpriseStare]그렇군요..."/>
+		<class name="Quest_Al01_M1tLBr" Value="[!Dialog][!speaker:Anne_Normal2]&apos;이 마을 사람들은 아이린 언니를 정말 좋아하는 구나...&apos;"/>
+		<class name="Quest_Al01_XYKBZn" Value="[!Dialog][!speaker:Ray_Smile]&apos;보기 좋은 모습이네...&apos;"/>
+		<class name="Quest_Al01_YAkelx" Value="[!Ignore][!Dialog][!speaker:Sion_Smile]&apos;히어로. 사랑 많이 받는 구나.&apos;"/>
+		<class name="Quest_Al01_x43b58" Value="[!Dialog][!speaker:Kylie_Satisfying]그 녀석들 의뢰금 수령에 바빠서 신경도 안 쓸거야."/>
+		<class name="Quest_Al01_Oc886r" Value="[!Dialog][!speaker:Kylie_Normal]뭐. 원래 의뢰가 화물 회수였다고 오히려 당당할 걸?"/>
+		<class name="Quest_Al01_6kEGI0" Value="[!Dialog][!speaker:Heissing_Smile]......"/>
+		<class name="Quest_Al01_erpCAF" Value="[!Dialog][!speaker:Leton_Laugh]그럼 이제 시작인가~☆"/>
+		<class name="Quest_Al01_QdnrS6" Value="[!Dialog][!speaker:Leton_Smile]나한테 맡겨줘. 한 사람 몫 확실히 해낼 테니까~☆"/>
+		<class name="Quest_Al01_uaAtZV" Value="[!BalloonChat]히이익~~ 히이익~~"/>
+		<class name="Quest_Al01_IXQdcz" Value="[!Dialog][!speaker:Albus_Serious]다들 야샤들이 마을 밖으로 나가지 못하도록 해 주세요."/>
+		<class name="Quest_Al01_4ZADtm" Value="[!VictoryCondition]야샤가 마을 밖으로 탈출"/>
+		<class name="Quest_Al01_MtivVl" Value="[!BalloonChat]야샤입니다! 다들 조심하세요!"/>
+		<class name="Quest_Al01_vkI3S1" Value="[!BalloonChat]야샤입니다!"/>
+		<class name="Quest_Al01_WSxzzt" Value="[!BalloonChat]다들 조심하세요!"/>
+		<class name="Quest_Al01_PqQ5PN" Value="[!BalloonChat]야샤다! 다들 조심해!"/>
+		<class name="Quest_Al01_EEfuTl" Value="[!BalloonChat]찾았다!"/>
+		<class name="Quest_Al01_CH9WpI" Value="[!BalloonChat]여기 숨어 있었구나!"/>
+		<class name="Quest_Al01_YaPHWf" Value="[!BalloonChat]이 녀석들! 도망가지 마라!"/>
+		<class name="Quest_Al01_UTjlTO" Value="[!BalloonChat]숨어 있어 봤자 소용없다!"/>
+		<class name="Quest_Al01_Sj3iH7" Value="[!BalloonChat]여기 있었구나!"/>
+		<class name="Quest_Al01_JTRsbY" Value="[!BalloonChat]여기 있어요!"/>
+		<class name="Quest_Al01_H133Ty" Value="[!BalloonChat]여기에요!"/>
+		<class name="Quest_Al01_WLIB4G" Value="[!BalloonChat]야샤 찾았어요!"/>
+		<class name="Quest_Al01_77BIEl" Value="[!BalloonChat]여기다."/>
+		<class name="Quest_Al01_yct4Aj" Value="[!BalloonChat]이쪽이다."/>
+		<class name="Quest_Al01_6PKnZp" Value="[!BalloonChat]찾았다."/>
+		<class name="Quest_Al01_zRiKYp" Value="[!BalloonChat]여기야!"/>
+		<class name="Quest_Al01_ZgnSOK" Value="[!BalloonChat]여기 있어!"/>
+		<class name="Quest_Al01_lq8Azr" Value="[!BalloonChat]이 녀석. 도망치지 마!"/>
+		<class name="Quest_Al01_HqDoGL" Value="[!BalloonChat]어딜 도망가니~"/>
+		<class name="Quest_Al01_4RHyqy" Value="[!BalloonChat]여긴 너희들이 있을 곳이 아니란다~"/>
+		<class name="Quest_Al01_X3g5Ay" Value="[!BalloonChat]여기 있었구나~"/>
+		<class name="Quest_Al01_y61leD" Value="[!BalloonChat]역시 여기 있었어."/>
+		<class name="Quest_Al01_YT3CEW" Value="[!BalloonChat]너무 뻔한 곳에 숨어 있잖아."/>
+		<class name="Quest_Al01_8K69rk" Value="[!BalloonChat]야샤! 발견!"/>
+		<class name="Quest_Al01_lPGtfU" Value="[!BalloonChat]발견~☆"/>
+		<class name="Quest_Al01_R2IZ2m" Value="[!BalloonChat]이쪽입니다~☆"/>
+		<class name="Quest_Al01_B1S7NL" Value="[!BalloonChat]빙고~☆"/>
+	</idspace>
+</idspaces>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Tutorial_Road_113_C6hg6n" Value="[!Dashboard:ObjectiveMarker]해당 지역으로 가면 수송 분대와 합류할 수 있습니다."/>
+		<class name="Tutorial_Road_113_Xuk2DR" Value="[!Dashboard:ObjectiveMarker]해당 지역으로 가면 수송 분대와 합류할 수 있습니다."/>
+		<class name="Tutorial_Road_113_WiTThD" Value="[!Objective]시민들을 구출하시오."/>
+		<class name="Tutorial_Road_113_yn36cl" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_Road_113_AHMPRC" Value="[!VictoryCondition]시민들을 전원 구출하시오."/>
+		<class name="Tutorial_Road_113_sLWyYz" Value="[!Ignore][!BalloonChat][!speaker:Sion]우왓 이 녀석 뭐야!"/>
+		<class name="Tutorial_Road_113_iEs3cX" Value="[!Ignore][!DialogSystemMessageBox]티마는 철의 숲에서 서식하는 야수입니다.
+
+[colour=&apos;FFFFFF00&apos;]티마는 자신의 영역에 들어온 인간들을 모두 적으로 간주하여 공격적으로 대응합니다."/>
+		<class name="Tutorial_Road_113_UhCMlG" Value="[!Ignore]야수 티마"/>
+		<class name="Tutorial_Road_113_f0rHuU" Value="[!Ignore][!BalloonChat]전방 티마입니다! 조심하세요!"/>
+		<class name="Tutorial_Road_113_Wk3Reg" Value="[!Ignore][!BalloonChat][!speaker:Albus]이런 티마다. 다들 조심해요!"/>
+		<class name="Tutorial_Road_113_kaOg4G" Value="[!Ignore][!DialogSystemMessageBox]티마는 철의 숲에서 서식하는 야수입니다.
+
+[colour=&apos;FFFFFF00&apos;]티마는 자신의 영역에 들어온 인간들을 모두 적으로 간주하여 공격적으로 대응합니다."/>
+		<class name="Tutorial_Road_113_2Ootvk" Value="[!Ignore][!BalloonChat][!speaker:Civil01]오. 살았다. 여기야 여기!"/>
+		<class name="Tutorial_Road_113_xgisRO" Value="[!Ignore][!BalloonChat][!speaker:Driver_02]어이! 이쪽이야! 이쪽!"/>
+		<class name="Tutorial_Road_113_J0CYcU" Value="[!Ignore][!Dialog][!speaker:VHPDMale2_Normal]상황 종료되었습니다. 시민들도 모두 안전하게 구출되었습니다."/>
+		<class name="Tutorial_Road_113_2clFib" Value="[!Ignore][!Dialog][!speaker:Sion_Normal]이야. 끝났다~☆ 개운하네!"/>
+		<class name="Tutorial_Road_113_SAL2Z3" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]모두 고생하셨습니다. 일단 수습하고 복귀합니다."/>
+		<class name="Tutorial_Road_113_dEmbQj" Value="[!Ignore][!Dialog][!speaker:VHPDMale2_Normal]알겠습니다."/>
+		<class name="Tutorial_Road_113_6mYybO" Value="[!Ignore][!Dialog][!speaker:VHPDMale2_Normal]상황 종료되었습니다. 안타깝지만 일부 시민들이 중상을 입었습니다."/>
+		<class name="Tutorial_Road_113_vxCJl2" Value="[!Ignore][!Dialog][!speaker:Sion_Depressed]아... 내가 좀 더 잘했으면 이렇게 되지 않았을 텐데..."/>
+		<class name="Tutorial_Road_113_1bGsjY" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]아니야. 내가 부족했어. 일단 모두 고생하셨습니다."/>
+		<class name="Tutorial_Road_113_E9oL97" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]일단 티마들이 더 몰려 오기 전에 수습하고 복귀합시다."/>
+		<class name="Tutorial_Road_113_lmASZ0" Value="[!Ignore][!Dialog][!speaker:VHPDMale2_Normal]상황 종료되었습니다. 안타깝지만 시민들은 이미..."/>
+		<class name="Tutorial_Road_113_8dbvTO" Value="[!Dialog][!speaker:Albus_Think]......"/>
+		<class name="Tutorial_Road_113_EXvtXb" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]티마들이 몰려들기 전에 일단 복귀합니다.  "/>
+		<class name="Tutorial_Road_113_yXxZnR" Value="[!Ignore][!Dialog][!speaker:Hakuya_Normal]그럼 여기까지다. 헤이싱."/>
+		<class name="Tutorial_Road_113_sa05l9" Value="[!Ignore][!Dialog][!speaker:Hakuya_Normal]다음번에 볼 때는 원래의 자리에서 보도록 하자."/>
+		<class name="Tutorial_Road_113_I12BhG" Value="[!Ignore][!Dialog][!speaker:Heissing_Normal]하쿠야. 기회를 줘서 고맙다."/>
+		<class name="Tutorial_Road_113_zrUPKx" Value="[!Ignore][!Dialog][!speaker:Hakuya_Normal]이런 이런, 너한테 고맙다는 소리를 다 듣고..."/>
+		<class name="Tutorial_Road_113_3RAfN3" Value="[!Ignore][!Dialog][!speaker:Hakuya_Normal]좋은 추억이나 가득 챙겨와라."/>
+		<class name="Tutorial_Road_113_AmGGN5" Value="[!Ignore][!Dialog][!speaker:Heissing_Normal]물론이다. 하쿠야."/>
+		<class name="Tutorial_Road_113_10yRBK" Value="[!Ignore][!BalloonChat]시민 한 명 더 발견!"/>
+		<class name="Tutorial_Road_113_nKY0JJ" Value="[!Ignore][!BalloonChat][!speaker:Driver_04]살려주시오! 살려줘!"/>
+		<class name="Tutorial_Road_113_NHa3p5" Value="[!Ignore][!BalloonChat]티마들이 난입하고 있습니다. 다들 조심하십시오!"/>
+		<class name="Tutorial_Road_113_Qzin0H" Value="[!Ignore][!BalloonChat][!speaker:Sion]이 녀석들아! 저리 비켜!"/>
+		<class name="Tutorial_Road_113_QwBzfS" Value="[!Ignore][!BalloonChat][!speaker:Albus]지체하다간 티마들이 엄청 몰려오겠군..."/>
+		<class name="Tutorial_Road_113_Ppxz5p" Value="[!Ignore][!BalloonChat]이런 벌써 티마가 왔다! 다들 경계해!"/>
+		<class name="Tutorial_Road_113_zsLKlZ" Value="[!Ignore][!DialogSystemMessageBox]수풀 지형은 회피가 10 상승합니다. 해당 효과가 적용되면 왼쪽 하단에  [image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Icons/Bush&apos;] 마크가 표시 됩니다."/>
+		<class name="Tutorial_Road_113_Ooab4h" Value="[!Ignore]지형 효과: 수풀"/>
+		<class name="Tutorial_Road_113_OwApWp" Value="[!Ignore][!DialogSystemMessageBox]늪 지형은  회피가 10, 이동력이 3 감소합니다.  해당 효과가 적용되면 왼쪽 하단에  [image-size=&amp;apos;w:$ImgSize$ h:$ImgSize$&amp;apos;][image=&amp;apos;Icons/Swamp&amp;apos;] 마크가 표시 됩니다."/>
+		<class name="Tutorial_Road_113_UBqBZp" Value="[!Ignore]지형 효과: 늪"/>
+		<class name="Tutorial_Road_113_3NoEem" Value="[!Title]포식자의 거리"/>
+		<class name="Tutorial_Road_113_afS9Bf" Value="[!Title]철의 숲  113번  외곽 도로 "/>
+		<class name="Tutorial_Road_113_tb8NpA" Value="[!Subtitle][!speaker:EmptySubTitle_]철의 숲을 통과하여 동방연합과 발할라를 잇는 113번 도로."/>
+		<class name="Tutorial_Road_113_QAliL4" Value="[!Subtitle][!speaker:EmptySubTitle_]이 도로는 동방연합과 발할라를 잇는 가장 짧은 직선 육로로 많은 화물 트럭들이 끊이질 않는 도로다."/>
+		<class name="Tutorial_Road_113_x5bgS1" Value="[!Subtitle][!speaker:EmptySubTitle_]하지만 이 도로에서는 언제나 사고가 끊이질 않는데..."/>
+		<class name="Tutorial_Road_113_2vqdKr" Value="[!Subtitle][!speaker:EmptySubTitle_]바로 철의 숲에 서식하는 야수 &apos;티마&apos; 때문이다."/>
+		<class name="Tutorial_Road_113_TG8LYZ" Value="[!Subtitle][!speaker:EmptySubTitle_]티마는 사회성을 가지고 무리를 이뤄 사냥하는 철의 숲 최상위 포식자였으나"/>
+		<class name="Tutorial_Road_113_cTqP4a" Value="[!Subtitle][!speaker:EmptySubTitle_]인간이 철의 숲에 도로를 내면서 &apos;티마&apos;와의 분쟁이 시작되었다."/>
+		<class name="Tutorial_Road_113_ATLjXR" Value="[!Subtitle][!speaker:EmptySubTitle_]그 분쟁은 한때 인간이 압도적으로 유리하였고"/>
+		<class name="Tutorial_Road_113_hVuC02" Value="[!Subtitle][!speaker:EmptySubTitle_]티마 무리는 숲 깊숙히 숨어들어 인간을 피해 다녀야 했다."/>
+		<class name="Tutorial_Road_113_woFAdO" Value="[!Subtitle][!speaker:EmptySubTitle_]하지만 한 차례의 세계 대전과 발할라 건국 등으로 인해 철의 숲 개발이 인간들의 관심사에서 멀어지게 된다."/>
+		<class name="Tutorial_Road_113_3lyYZf" Value="[!Subtitle][!speaker:EmptySubTitle_]그리고 인간의 관심이 멀어진 틈을 타 티마들은 살아남아 다시금 거대한 군락을 이룬다."/>
+		<class name="Tutorial_Road_113_t8orpm" Value="[!Subtitle][!speaker:EmptySubTitle_]많은 이권이 걸린 도로이다 보니 상인들은 쉽사리 이 도로를 포기하지 못하고 있는 동안..."/>
+		<class name="Tutorial_Road_113_l9g4MO" Value="[!Subtitle][!speaker:EmptySubTitle_]티마 무리와 인간의 전쟁은 계속된다."/>
+		<class name="Tutorial_Road_113_kc9Dd4" Value="[!Subtitle][!speaker:EmptySubTitle_]과거와 달리 티마 무리는 후퇴와 습격을 반복하며 인간들을 지치게 만든다."/>
+		<class name="Tutorial_Road_113_kg6Ljm" Value="[!Subtitle][!speaker:EmptySubTitle_]그 결과 동방연합은 자국민의 113번 도로의 사용을 금지하고 해당 도로에서의 치안에 관련된 일에서 손을 뗀다."/>
+		<class name="Tutorial_Road_113_XkMfSo" Value="[!Subtitle][!speaker:EmptySubTitle_]결국 산발적인 사건들은 해당 도로로 이득을 취하는 발할라의 몫이 되었다."/>
+		<class name="Tutorial_Road_113_gQs14Q" Value="[!BalloonChat][!speaker:Albus]트러블슈터. 알버스입니다."/>
+		<class name="Tutorial_Road_113_3WmU1j" Value="[!BalloonChat][!speaker:VHPD_Neutral9]아. 도착하셨군요. 알버스 씨."/>
+		<class name="Tutorial_Road_113_dxrpcv" Value="[!Dialog][!speaker:Albus_Serious]현재 상황은 어떻습니까?"/>
+		<class name="Tutorial_Road_113_lucbiB" Value="[!Dialog][!speaker:VHPDMale2_Normal]처음 습격은 일단 저지하였습니다만 대부분 티마는 살아남아 수풀 사이로 흩어졌습니다."/>
+		<class name="Tutorial_Road_113_vlgmwU" Value="[!Dialog][!speaker:VHPDMale2_Normal]또한 수송하던 호위 분대와 시민들이 각각 50m, 100m 전방에 고립되어 있습니다."/>
+		<class name="Tutorial_Road_113_DNsYVR" Value="[!Title]전방 50M 수송 분대"/>
+		<class name="Tutorial_Road_113_R7QfSw" Value="[!BalloonChat][!speaker:VHPD_Neutral1]제길... 이 녀석들 어디로 숨어든 거야."/>
+		<class name="Tutorial_Road_113_isa05l" Value="[!BalloonChat][!speaker:VHPD_Neutral2]조심해. 방심하면 한순간이다."/>
+		<class name="Tutorial_Road_113_OZXCAb" Value="[!Title]전방 100M 수송 분대"/>
+		<class name="Tutorial_Road_113_90dy5s" Value="[!BalloonChat][!speaker:VHPD_Neutral3]곧 구조대가 도착할 것입니다."/>
+		<class name="Tutorial_Road_113_RzKldn" Value="[!BalloonChat][!speaker:VHPD_Neutral4]시간에 맞춰 구조대가 와야 할 텐데..."/>
+		<class name="Tutorial_Road_113_GYvLAM" Value="[!Dialog][!speaker:Albus_Stare]상황이 좋지 않군요..."/>
+		<class name="Tutorial_Road_113_QoVBcv" Value="[!Dialog][!speaker:Sion_Happy]야수들이 흩어졌다면 지금 빨리 데리러 가자!"/>
+		<class name="Tutorial_Road_113_Hu7bNL" Value="[!Dialog][!speaker:Albus_Disappoint]그게 말처럼 쉽지 않아 시온."/>
+		<class name="Tutorial_Road_113_EVDYyT" Value="[!Dialog][!speaker:Albus_Disappoint]수풀 사이로 도망갔다는 건..."/>
+		<class name="Tutorial_Road_113_tpjnPN" Value="[!Dialog][!speaker:VHPDMale2_Normal]분명 노리고 있다는 것이겠지요. 제 동료들도 그 녀석들의 더러운 수법에..."/>
+		<class name="Tutorial_Road_113_HP7hP4" Value="[!Dialog][!speaker:Sion_SurpriseStare]노리고 있다니?"/>
+		<class name="Tutorial_Road_113_fWCREN" Value="[!Dialog][!speaker:Albus_Stare]아마도 시민들과 같이 움직이는 타이밍을 노리고 있는 걸 거야."/>
+		<class name="Tutorial_Road_113_nGiksj" Value="[!Dialog][!speaker:Albus_Stare]적어도 최근 티마들의 습격 사건을 돌아보면 확실해."/>
+		<class name="Tutorial_Road_113_nMmZst" Value="[!Dialog][!speaker:Sion_Surprise]뭐야 티마란 건 그런 것도 하는 거야..."/>
+		<class name="Tutorial_Road_113_gZPhQr" Value="[!Dialog][!speaker:VHPDMale2_Normal]구조 분대 편성은 어떻게 하시겠습니까?"/>
+		<class name="Tutorial_Road_113_EwnrvR" Value="[!Dialog][!speaker:Sion_Laugh]나와 알버스 둘이면 충분하지 않을까?"/>
+		<class name="Tutorial_Road_113_XXtGhQ" Value="[!Dialog][!speaker:Sion_Normal]아니다. 이 틈에 전원 돌격해서 전원 데리고 무사히 귀환하면 되는 거 아니겠어?"/>
+		<class name="Tutorial_Road_113_oVQS1O" Value="[!Dialog][!speaker:VHPDMale2_Normal]그게 말처럼 쉽지 않습니다."/>
+		<class name="Tutorial_Road_113_suo5oB" Value="[!Dialog][!speaker:VHPDMale2_Normal]저희가 현 방어선을 이탈하자마자 이 곳으로 티마들이 몰려들 확률이 높습니다."/>
+		<class name="Tutorial_Road_113_uSpIkj" Value="[!Dialog][!speaker:VHPDMale2_Normal]아마도 그렇게 되면 구조하고 복귀하는 길에 한꺼번에 다수의 티마들과 상대할 확률이 높습니다."/>
+		<class name="Tutorial_Road_113_9O0J06" Value="[!Dialog][!speaker:Sion_Angry]그럼 우리 둘이 가란 말인가?"/>
+		<class name="Tutorial_Road_113_O0ZQdi" Value="[!Dialog][!speaker:VHPDMale2_Normal]아닙니다. 그만큼 현 상황이 시시각각 변화하고 있다는 말입니다."/>
+		<class name="Tutorial_Road_113_64HOzr" Value="[!Dialog][!speaker:VHPDMale2_Normal]적어도 제가 보아온 티마 무리는 충분히 저희의 상황을 이해하고 움직이고 있습니다."/>
+		<class name="Tutorial_Road_113_2O08Ih" Value="[!Dialog][!speaker:Sion_Stare]귀찮은 녀석들이네..."/>
+		<class name="Tutorial_Road_113_t896Hp" Value="[!Dialog][!speaker:VHPDMale2_Normal]최소 2명은 방어선을 지켜야 한다고 생각합니다."/>
+		<class name="Tutorial_Road_113_QPbyrL" Value="[!Dialog][!speaker:Albus_Normal]상황은 잘 알겠습니다. 바로 구조 분대 편성을 시작합시다."/>
+		<class name="Tutorial_Road_113_wPQpF1" Value="[!Dialog][!speaker:VHPDMale2_Normal]알겠습니다. 이 시각부터 저희 분대는 현장 지휘권은 트러블슈터 알버스 님께 넘기고 $CompanyName$ 소속으로 합류하겠습니다."/>
+		<class name="Tutorial_Road_113_xusBLH" Value="[!Ignore][!Dialog][!speaker:VHPDMale2_Normal]일단 저희 분대의 현장 지휘권은 알버스 씨에게 넘기도록 하겠습니다."/>
+		<class name="Tutorial_Road_113_O61pNb" Value="[!Ignore][!Dialog][!speaker:VHPDMale2_Normal]잘 부탁드립니다."/>
+		<class name="Tutorial_Road_113_IfrTbg" Value="[!Ignore][!Dialog][!speaker:Albus_Serious]알겠습니다."/>
+		<class name="Tutorial_Road_113_yaO1QK" Value="[!BalloonChat][!speaker:Heissing]이봐 난 어떡할까? 그냥 가도 되나?"/>
+		<class name="Tutorial_Road_113_15acZw" Value="[!BalloonChat][!speaker:VHPD_Neutral7]이 수상한 녀석. 어딜가!"/>
+		<class name="Tutorial_Road_113_QHeEGu" Value="[!BalloonChat][!speaker:Albus]아까부터 궁금했는데... 누구지?"/>
+		<class name="Tutorial_Road_113_AdeUlY" Value="[!BalloonChat][!speaker:Heissing]그냥은 안 보내주는 건가?"/>
+		<class name="Tutorial_Road_113_Hu81Kl" Value="[!Dialog][!speaker:Albus_Normal]저분은 누구십니까?"/>
+		<class name="Tutorial_Road_113_fsoHKx" Value="[!Dialog][!speaker:VHPD_Assault_Normal]어느 순간부터 이미 방어선으로 들어와 있던 분입니다. 티마와 혼전 중이었기에 어떻게 들어오셨는지 파악이 되지 않습니다."/>
+		<class name="Tutorial_Road_113_bQmvqW" Value="[!Dialog][!speaker:VHPD_Assault_Normal]다만 신분을 밝히지 않아서 어쩔 수 없이 현장이 끝나면 동행할 예정입니다."/>
+		<class name="Tutorial_Road_113_R1XNzI" Value="[!BalloonChat][!speaker:VHPD_Neutral7]딱 봐도 이상한 옷차림에 염색꼬라지를 보니 밀입국자지..."/>
+		<class name="Tutorial_Road_113_SHbpOX" Value="[!Dialog][!speaker:Heissing_Smile]어이 거기 지휘관. 나와 거래를 하자."/>
+		<class name="Tutorial_Road_113_muFq3h" Value="[!Dialog][!speaker:Albus_SurpriseStare]거래? 이 상황에서?"/>
+		<class name="Tutorial_Road_113_d8pUL0" Value="[!Dialog][!speaker:Heissing_Normal]뭐, 별거 아냐. 심심하니 그쪽 일을 도와주마."/>
+		<class name="Tutorial_Road_113_xnP8XS" Value="[!Dialog][!speaker:Heissing_Normal]대신 의심병 걸린 이 경찰들로부터 날 자유롭게 해줘."/>
+		<class name="Tutorial_Road_113_uByLG8" Value="[!Dialog][!speaker:Heissing_Normal]현장 지휘관이라면 그 정도는 해 줄 수 있겠지?"/>
+		<class name="Tutorial_Road_113_se5CZr" Value="[!BalloonChat][!speaker:VHPD_Neutral10]설마 이런 수상한 녀석도 받아들이나?"/>
+		<class name="Tutorial_Road_113_7TGN6X" Value="[!Dialog][!speaker:Sion_Smile]&apos;딱 봐도 강해 보이네...&apos;"/>
+		<class name="Tutorial_Road_113_IDfV4E" Value="[!Dialog][!speaker:Sion_Normal]알버스. 난 한 명이라도 더 돕는다면 좋다고 생각해."/>
+		<class name="Tutorial_Road_113_ir425A" Value="[!Dialog][!speaker:VHPD_Assault_Normal]현장 지휘권은 알버스 씨에게 있습니다. 저분이 아직 범죄자인 것도 아니고 알버스 씨가 선택하시면 될 듯합니다."/>
+		<class name="Tutorial_Road_113_5PfDzs" Value="[!Dialog][!speaker:Albus_Think][colour=&apos;FFFFFF00&apos;]저분을 전력으로 삼아야 하나..."/>
+		<class name="Tutorial_Road_113_gvtNcC" Value="[!Choice]구조 분대에 편입시킨다."/>
+		<class name="Tutorial_Road_113_qvxNHG" Value="[!Choice]제안을 거절한다."/>
+		<class name="Tutorial_Road_113_GZN2lM" Value="[!BalloonChat][!speaker:Heissing]뭘 그렇게 고민하나?"/>
+		<class name="Tutorial_Road_113_Y3j3Eq" Value="[!Dialog][!speaker:Albus_Normal]아닙니다. 구조 분대에 합류해 주시길 바랍니다."/>
+		<class name="Tutorial_Road_113_x8ZamT" Value="[!Dialog][!speaker:Albus_Laugh]다만 최대한 지휘와 통제에 따라주시길 바랍니다."/>
+		<class name="Tutorial_Road_113_pm0L8f" Value="[!Dialog][!speaker:Heissing_Smile]확실히 여기 경찰들보단 말이 통하는 친구군."/>
+		<class name="Tutorial_Road_113_8lnc9K" Value="[!Dialog][!speaker:Albus_Normal]전 트러블슈터 알버스라고 합니다."/>
+		<class name="Tutorial_Road_113_QHEcbY" Value="[!Dialog][!speaker:Sion_Normal]난 견습 트러블슈터 시온이야."/>
+		<class name="Tutorial_Road_113_BClaoZ" Value="[!Dialog][!speaker:Heissing_Smile]난 굳이 이름을 밝힐 생각이 없다만..."/>
+		<class name="Tutorial_Road_113_SKGNLG" Value="[!BalloonChat][!speaker:VHPD_Neutral7]이 녀석!!"/>
+		<class name="Tutorial_Road_113_6E4SOt" Value="[!BalloonChat][!speaker:VHPD_Neutral7]이런 녀석은 받아들이면 안 됩니다."/>
+		<class name="Tutorial_Road_113_OOaI4k" Value="[!Dialog][!speaker:Sion_Laugh]괜찮아. 나보다 나이 많은 것 같으니 &apos;형&apos;이라고 부를게."/>
+		<class name="Tutorial_Road_113_c61Air" Value="[!Dialog][!speaker:Sion_Angry]적어도 이번 임무 동안은 &apos;형&apos; 이라는 호칭으론 충분할 것 같은데?"/>
+		<class name="Tutorial_Road_113_09gXie" Value="[!Dialog][!speaker:Sion_Angry]알버스, 어때?"/>
+		<class name="Tutorial_Road_113_GBz5gS" Value="[!Dialog][!speaker:Heissing_Smile]훗. 재밌는 녀석이군."/>
+		<class name="Tutorial_Road_113_sg4yHC" Value="[!Dialog][!speaker:Albus_Normal]이미 구조 분대 협조를 결정한 시점에서 상관없다고 봅니다."/>
+		<class name="Tutorial_Road_113_yPdg4b" Value="[!Dialog][!speaker:Albus_Normal]시온 씨 말대로 임무 중 호칭은 &apos;형&apos;으로 하는 건 어떠신가요?"/>
+		<class name="Tutorial_Road_113_vvVqkf" Value="[!Dialog][!speaker:Albus_Embarrassed]......"/>
+		<class name="Tutorial_Road_113_Io99fa" Value="[!Dialog][!speaker:Heissing_Rage]헤이싱이다."/>
+		<class name="Tutorial_Road_113_Pet8DZ" Value="[!Dialog][!speaker:Heissing_Normal]오글거리는 &apos;형&apos;따위보단 차라리 이름으로 불러라."/>
+		<class name="Tutorial_Road_113_fle42c" Value="[!Dialog][!speaker:Albus_Normal]알겠습니다. 헤이싱 씨."/>
+		<class name="Tutorial_Road_113_u63rbr" Value="[!Dialog][!speaker:Sion_Smile]잘 부탁해. 헤이싱 형~☆"/>
+		<class name="Tutorial_Road_113_TYdGiq" Value="[!Dialog][!speaker:Heissing_Smile]이 녀석..."/>
+		<class name="Tutorial_Road_113_utfIRw" Value="[!BalloonChat][!speaker:VHPD_Neutral9]보고서 복잡해지는군..."/>
+		<class name="Tutorial_Road_113_mghTiO" Value="[!BalloonChat][!speaker:VHPD_Neutral9]임무가 끝나면 알버스 씨랑 상의해봐야겠어..."/>
+		<class name="Tutorial_Road_113_GXqHdH" Value="[!BalloonChat][!speaker:Heissing]뭘 그렇게 고민하나?"/>
+		<class name="Tutorial_Road_113_cKLftZ" Value="[!Dialog][!speaker:Albus_Normal]죄송합니다. 제안은 감사합니다만 이 일은 저희가 해결하겠습니다."/>
+		<class name="Tutorial_Road_113_J5Dmmr" Value="[!Dialog][!speaker:Albus_Laugh]죄송하지만 현 방어선 내에서 상황이 끝날 때까지 대기해주시길 바랍니다."/>
+		<class name="Tutorial_Road_113_rhHGhT" Value="[!Dialog][!speaker:Heissing_Rage]꽉 막힌 친구군."/>
+		<class name="Tutorial_Road_113_S8P9QS" Value="[!Dialog][!speaker:Albus_Normal]죄송합니다."/>
+		<class name="Tutorial_Road_113_tPM4B7" Value="[!Dialog][!speaker:Sion_Normal]심심하지 않게 후딱 끝내고 올 테니 기다려."/>
+		<class name="Tutorial_Road_113_ooUXOb" Value="[!Dialog][!speaker:Heissing_Smile]훗..."/>
+		<class name="Tutorial_Road_113_75UfeO" Value="[!Dialog][!speaker:Heissing_Normal]거기 지휘관? 여기가 위험해지면 자기방어 행위는 해도 되나?"/>
+		<class name="Tutorial_Road_113_hrIgiw" Value="[!Dialog][!speaker:Heissing_Normal]귀찮은 일 만들기 싫으니 미리 양해를 구하겠네."/>
+		<class name="Tutorial_Road_113_7uL8Dl" Value="[!Dialog][!speaker:Heissing_Rage]여기 날 의심하는 자가 가득해서 말이지."/>
+		<class name="Tutorial_Road_113_gD0yWk" Value="[!BalloonChat][!speaker:VHPD_Neutral7]이 녀석!!"/>
+		<class name="Tutorial_Road_113_W4gzAG" Value="[!BalloonChat][!speaker:VHPD_Neutral7]이 녀석 분명히 범죄자거나 밀입국자입니다!"/>
+		<class name="Tutorial_Road_113_zU9FG2" Value="[!Dialog][!speaker:Sion_Laugh]그건 너무 하네. 신원을 안 밝힌 거지 범죄자가 아니잖아?"/>
+		<class name="Tutorial_Road_113_zCqY8X" Value="[!Dialog][!speaker:Sion_Angry]적어도 이번 임무가 끝나기 전까지는 그런 언행은 별로인 것 같아."/>
+		<class name="Tutorial_Road_113_VpIW4w" Value="[!Dialog][!speaker:Sion_Angry]알버스, 맞지?"/>
+		<class name="Tutorial_Road_113_2cLODM" Value="[!Dialog][!speaker:Heissing_Smile]훗. 재밌는 녀석이군."/>
+		<class name="Tutorial_Road_113_8ogLtu" Value="[!Dialog][!speaker:Albus_Normal]네. 경찰분들도 어디까지나 일반인으로 이분을 대해 주시길 바랍니다."/>
+		<class name="Tutorial_Road_113_ixUmws" Value="[!Dialog][!speaker:Albus_Normal]그리고 말씀하신 자기방어 행위가 적절하다면 당연히 아무 문제 될 것 없다고 생각합니다."/>
+		<class name="Tutorial_Road_113_qNQ50A" Value="[!Dialog][!speaker:Heissing_EyeClose]......"/>
+		<class name="Tutorial_Road_113_xzN8gD" Value="[!Dialog][!speaker:Heissing_Normal]이쪽에서 먼저 성의를 보일 테니 일이 끝나면 보내줬으면 하네."/>
+		<class name="Tutorial_Road_113_Su3w57" Value="[!Dialog][!speaker:Albus_SurpriseStare]네?"/>
+		<class name="Tutorial_Road_113_s2RPkK" Value="[!Dialog][!speaker:Sion_Smile]&apos;여기서 내가 제대로 한몫할 테니 일 끝나면 날 보내줘&apos; 정도의 이야기인 것 같다. 알버스."/>
+		<class name="Tutorial_Road_113_cYqykX" Value="[!Dialog][!speaker:Sion_Normal]그걸 떠나서 이 형 딱 봐도 강해. 방어선은 걱정 안 해도 될 것 같다."/>
+		<class name="Tutorial_Road_113_KN2O0z" Value="[!BalloonChat][!speaker:VHPD_Neutral7]다들 미쳤군..."/>
+		<class name="Tutorial_Road_113_E71l7g" Value="[!BalloonChat][!speaker:VHPD_Neutral7]혼란한 틈을 타 도망쳐온 녀석을 보고 뭘 믿는다는 거야..."/>
+		<class name="Tutorial_Road_113_OJeOIj" Value="[!Dialog][!speaker:VHPDMale2_Normal]알버스 씨. 구조 분대에 추가 인원을 배치하시겠습니까?"/>
+		<class name="Tutorial_Road_113_DSHgbZ" Value="[!Dialog][!speaker:VHPDMale2_Normal]배치한 인원만큼 방어선의 인원이 줄어드니 고려해주십시오."/>
+		<class name="Tutorial_Road_113_WW4FcU" Value="[!Dialog][!speaker:Albus_Think][colour=&apos;FFFFFF00&apos;]구조 분대와 방어 분대 비율을 어떻게 해야 될까..."/>
+		<class name="Tutorial_Road_113_sI2ZMX" Value="[!Choice]경찰 4명 전원 구조 분대 편성."/>
+		<class name="Tutorial_Road_113_ATHWsy" Value="[!Choice]구조 분대 2명 합류. 나머지는 2명은 방어선 방어."/>
+		<class name="Tutorial_Road_113_98d6b8" Value="[!Choice]경찰 4명 전원 방어선 배치"/>
+		<class name="Tutorial_Road_113_ZOTg03" Value="[!BalloonChat][!speaker:VHPD_Neutral1]저희도 구조 분대에 합류하겠습니다."/>
+		<class name="Tutorial_Road_113_JvAJCz" Value="[!BalloonChat][!speaker:VHPD_Neutral2]시민이 불안에 떨고 있습니다. 안정돼야 이동할 수 있을 것 같습니다."/>
+		<class name="Tutorial_Road_113_dvHQD3" Value="[!BalloonChat][!speaker:Civil01]난 아무 데도 안 갈 거야..."/>
+		<class name="Tutorial_Road_113_ivQzvb" Value="[!BalloonChat][!speaker:VHPD_Neutral3]적절한 때 잘 오셨습니다."/>
+		<class name="Tutorial_Road_113_x38AGu" Value="[!BalloonChat][!speaker:VHPD_Neutral4]저희도 귀환하겠습니다."/>
+		<class name="Tutorial_Road_113_HFq6zC" Value="[!BalloonChat][!speaker:Civil03]어딜 간다는 거야..."/>
+		<class name="Tutorial_Road_113_9aSHCF" Value="[!BalloonChat][!speaker:Civil02]로베르토 녀석... 이럴 땐 왜 없는 거냐..."/>
+		<class name="Tutorial_Road_113_lNuAIs" Value="[!BalloonChat][!speaker:Heissing]가만히 있으라 하고 다들 나가버리다니..."/>
+		<class name="Tutorial_Road_113_sf07bm" Value="[!BalloonChat][!speaker:Heissing]그냥 가면 되겠군."/>
+		<class name="Tutorial_Road_113_S0JMKE" Value="[!BalloonChat]티마가 옵니다!!"/>
+		<class name="Tutorial_Road_113_vZCMEn" Value="[!BalloonChat]제길! 티마다!"/>
+		<class name="Tutorial_Road_113_RbtECd" Value="[!BalloonChat]티마가 있다! 조심해!"/>
+		<class name="Tutorial_Road_113_S89nxw" Value="[!BalloonChat][!speaker:Heissing]흠. 고약한 강아지들이군..."/>
+		<class name="Tutorial_Road_113_JGSvK5" Value="[!Dialog][!speaker:VHPD_Assault_Normal]시민들은 모두 차량에 탑승하였습니다."/>
+		<class name="Tutorial_Road_113_KWk7KX" Value="[!Dialog][!speaker:Albus_Normal]네. 시민들 차량부터 출발해주시고 저희는 제일 마지막에 분대 차량으로 이동하겠습니다."/>
+		<class name="Tutorial_Road_113_rj04tQ" Value="[!Dialog][!speaker:VHPD_Assault_Normal]아까 그분은 어떻게 하실 겁니까?"/>
+		<class name="Tutorial_Road_113_SL2xXx" Value="[!Dialog][!speaker:Albus_Normal]시민들을 안전하게 구하는데 협력하신 분입니다."/>
+		<class name="Tutorial_Road_113_6XytgK" Value="[!Dialog][!speaker:Albus_Laugh]딱히 현재 범행이 없다면 굳이 의심만으로 연행하기엔..."/>
+		<class name="Tutorial_Road_113_WDoQe9" Value="[!Dialog][!speaker:VHPD_Assault_Normal]알겠습니다. 그렇다면 차라리 보고서에서 삭제해도 되려나요?"/>
+		<class name="Tutorial_Road_113_gJehM7" Value="[!Dialog][!speaker:Albus_Surprise]네??"/>
+		<class name="Tutorial_Road_113_1oNrtu" Value="[!Dialog][!speaker:VHPD_Assault_Normal]보고서에서 삭제하면 굳이 해명하지 않아도 되니까요."/>
+		<class name="Tutorial_Road_113_eHHpzq" Value="[!Dialog][!speaker:Albus_SurpriseStare]네..."/>
+		<class name="Tutorial_Road_113_3GdxuF" Value="[!Dialog][!speaker:VHPD_Assault_Normal]그렇게 알고 저희는 먼저 복귀하겠습니다. 고생하셨습니다. 알버스 씨."/>
+		<class name="Tutorial_Road_113_RdjEXJ" Value="[!Dialog][!speaker:Albus_Laugh]&apos;이거 잘한 짓일까...&apos;"/>
+		<class name="Tutorial_Road_113_e48U5U" Value="[!Dialog][!speaker:Albus_Normal]아냐 약속은 약속이니까..."/>
+		<class name="Tutorial_Road_113_70topC" Value="[!Dialog][!speaker:Sion_Smile]같이 가자는 말 단칼에 거절하시던데?"/>
+		<class name="Tutorial_Road_113_IUX0vm" Value="[!Dialog][!speaker:Albus_Laugh]어느 정도 예상은 했지만 역시 그렇구나..."/>
+		<class name="Tutorial_Road_113_FJLKMe" Value="[!Dialog][!speaker:Sion_Normal]영 내키지 않으면 그냥 경찰서로 동행하자고 해."/>
+		<class name="Tutorial_Road_113_DiPIYr" Value="[!Dialog][!speaker:Albus_Normal]아니야. 약속은 지켜야지."/>
+		<class name="Tutorial_Road_113_5n4fze" Value="[!Dialog][!speaker:Albus_Laugh]그리고 우리가 감당할 레벨도 아니야."/>
+		<class name="Tutorial_Road_113_2XmHMe" Value="[!Dialog][!speaker:Sion_Smile]&apos;알버스도 충분히 느끼고 있구나...&apos;"/>
+		<class name="Tutorial_Road_113_EJ7HWJ" Value="[!Dialog][!speaker:Albus_Normal]그래서 지금 어디 계셔?"/>
+		<class name="Tutorial_Road_113_HT5pQQ" Value="[!BalloonChat][!speaker:Sion]응?"/>
+		<class name="Tutorial_Road_113_YqNZB3" Value="[!Dialog][!speaker:Sion_Surprise]옆에 계셨는데?"/>
+		<class name="Tutorial_Road_113_vVHMPT" Value="[!Dialog][!speaker:Albus_Laugh]헤이싱 씨. 잠시만요."/>
+		<class name="Tutorial_Road_113_qcZlsS" Value="[!Dialog][!speaker:Heissing_]같이 갈 생각 없다고 분명 전했는데..."/>
+		<class name="Tutorial_Road_113_jr88E9" Value="[!Dialog][!speaker:Heissing_]지휘관님은 이제 와 마음이 바뀌신 건가?"/>
+		<class name="Tutorial_Road_113_EOj8Yr" Value="[!Dialog][!speaker:Albus_Laugh]아니에요. 헤이싱 씨."/>
+		<class name="Tutorial_Road_113_nTMMn8" Value="[!Dialog][!speaker:Sion_Laugh]마중 나왔어. 헤이싱 형."/>
+		<class name="Tutorial_Road_113_cNZ3oK" Value="[!Dialog][!speaker:Heissing_]거참. 좋은 넉살이군."/>
+		<class name="Tutorial_Road_113_CHUxeD" Value="[!Dialog][!speaker:Sion_Laugh]헤이싱 형!"/>
+		<class name="Tutorial_Road_113_FZmcZF" Value="[!Dialog][!speaker:Heissing_Smile]무슨 할 말이라도 남았나?"/>
+		<class name="Tutorial_Road_113_iGF7XM" Value="[!Dialog][!speaker:Sion_Laugh]헤이싱 형. 그거 형 차야?"/>
+		<class name="Tutorial_Road_113_DVfn99" Value="[!Dialog][!speaker:Heissing_Normal]....."/>
+		<class name="Tutorial_Road_113_60NmsB" Value="[!Dialog][!speaker:Heissing_Smile]아니 지금부터 내 차다."/>
+		<class name="Tutorial_Road_113_azaLFj" Value="[!Dialog][!speaker:Albus_Disappoint]그 차량으로 발할라 진입하시면 도난 차량 처리됩니다."/>
+		<class name="Tutorial_Road_113_6UrLpL" Value="[!Dialog][!speaker:Heissing_Rage]그래서 막을 건가?"/>
+		<class name="Tutorial_Road_113_EYskQl" Value="[!Dialog][!speaker:Albus_Stare]제가 좀 더 강했다면 막아섰을 겁니다."/>
+		<class name="Tutorial_Road_113_x8JSaa" Value="[!Dialog][!speaker:Sion_Surprise]알버스..."/>
+		<class name="Tutorial_Road_113_8sDBqY" Value="[!Dialog][!speaker:Heissing_Smile]좀 더 강했다면?"/>
+		<class name="Tutorial_Road_113_2CG6Wa" Value="[!Dialog][!speaker:Heissing_Smile]그런 순간은 오지 않아."/>
+		<class name="Tutorial_Road_113_oR69cL" Value="[!Dialog][!speaker:Albus_Normal]그럴지도 모르죠. 하지만 헤이싱 씨. 눈을 감아주는 건 오늘만입니다."/>
+		<class name="Tutorial_Road_113_VFn3fT" Value="[!Dialog][!speaker:Albus_Laugh]다른 위법 행위로 만나게 된다면 꼭 경찰서로 같이 가주셔야겠습니다."/>
+		<class name="Tutorial_Road_113_q0SAFK" Value="[!Dialog][!speaker:Heissing_Normal]좋은 추억이 되겠군. 기대하고 있겠네."/>
+		<class name="Tutorial_Road_113_fNjSuy" Value="[!Subtitle][!speaker:Heissing_]&apos;역시 바깥세상은 심심치 않아서 좋군&apos;"/>
+		<class name="Tutorial_Road_113_c8tFFR" Value="[!Subtitle][!speaker:Heissing_Smile]그럼 다음에 보자."/>
+		<class name="Tutorial_Road_113_opXUhw" Value="[!Dialog][!speaker:Sion_Normal]알버스~ 우리도 이제 돌아가자~☆"/>
+		<class name="Tutorial_Road_113_kvwv8C" Value="[!Dialog][!speaker:Albus_Laugh]우리 둘이 덤볐으면 제압할 수 있었을까?"/>
+		<class name="Tutorial_Road_113_4TUn5j" Value="[!Dialog][!speaker:Sion_Stare]불가능."/>
+		<class name="Tutorial_Road_113_PLxy6U" Value="[!Dialog][!speaker:Albus_Disappoint]분하네."/>
+		<class name="Tutorial_Road_113_H45dvr" Value="[!Dialog][!speaker:Sion_Smile]아까 네 행동 충분히 옳은 판단이라고 봐."/>
+		<class name="Tutorial_Road_113_ZdlmUk" Value="[!Dialog][!speaker:Sion_Normal]덤비자고 했으면 내가 너 기절시키고 죄송하다고 빌었을지도..."/>
+		<class name="Tutorial_Road_113_zRPaDd" Value="[!Dialog][!speaker:Albus_Embarrassed]뭐!! 너 그렇게까지..."/>
+		<class name="Tutorial_Road_113_8OtVsG" Value="[!Dialog][!speaker:Sion_Angry]왜? 난 우리 좋은 사장님 잃고 싶지 않다고."/>
+		<class name="Tutorial_Road_113_KMS5zD" Value="[!Dialog][!speaker:Albus_Laugh]쓸데없는 소리 그만하고 돌아가자."/>
+		<class name="Tutorial_Road_113_2D7yOz" Value="[!Dialog]이날 두 청년은 자신들이 얼마나 미약한지 새삼 깨닫는다."/>
+		<class name="Tutorial_Road_113_2rpONU" Value="[!Dialog][!speaker:Albus_Normal]&apos;다음엔 이렇게 보내지 않겠습니다. 헤이싱 씨&apos;"/>
+		<class name="Tutorial_Road_113_pNLdkP" Value="[!Dialog][!speaker:Sion_Smile]&apos;헤이싱 형. 두고 보자고&apos;"/>
+		<class name="Tutorial_Road_113_auxEVv" Value="[!Dialog][!speaker:VHPD_Assault_Normal]도망친 그 녀석은 어떻게 처리할까요?"/>
+		<class name="Tutorial_Road_113_pDqxJc" Value="[!Dialog][!speaker:VHPD_Assault_Normal]현상 수배를 내릴까요?"/>
+		<class name="Tutorial_Road_113_DZ3iON" Value="[!Dialog][!speaker:Albus_Normal]딱히 현재 범행이 없는데 굳이 현상수배까진..."/>
+		<class name="Tutorial_Road_113_3dHFrQ" Value="[!Dialog][!speaker:VHPD_Assault_Normal]적어도 공무 집행 관련 비협조 건으로 조사는 할 수 있을 겁니다."/>
+		<class name="Tutorial_Road_113_0fJFah" Value="[!Dialog][!speaker:Albus_Laugh]일단 알아서 보고해주십시오."/>
+		<class name="Tutorial_Road_113_y7v5sD" Value="[!Dialog][!speaker:VHPD_Assault_Normal]알겠습니다. 그럼 저희는 먼저 복귀하겠습니다. 고생하셨습니다. 알버스 씨."/>
+		<class name="Tutorial_Road_113_bJJmFN" Value="[!Dialog][!speaker:Sion_Smile]언제나 일 끝나면 바쁘구나."/>
+		<class name="Tutorial_Road_113_4PZq8t" Value="[!Dialog][!speaker:Albus_Laugh]뭐 언제나 똑같지."/>
+		<class name="Tutorial_Road_113_3MeH2z" Value="[!Dialog][!speaker:Sion_Normal]이제 우리도 가야지."/>
+		<class name="Tutorial_Road_113_CxJl94" Value="[!Dialog][!speaker:Albus_Laugh]그래. 고생했어. 시온."/>
+		<class name="Tutorial_Road_113_p1HpWG" Value="[!Subtitle][!speaker:Heissing_Normal]흠... 이제 다 돌아간 건가."/>
+		<class name="Tutorial_Road_113_MW6laJ" Value="[!Subtitle][!speaker:Heissing_Normal]그럼 가볼까."/>
+		<class name="Tutorial_Road_113_ENLb5v" Value="[!Subtitle][!speaker:Albus_Normal]저 차량은 뭐지... 이 도로는 통제되었을 텐데..."/>
+		<class name="Tutorial_Road_113_c4nGik" Value="[!Subtitle][!speaker:Sion_Normal]알버스 뭐해? 빨리 돌아가자고~☆"/>
+		<class name="Tutorial_Road_113_qvpDUs" Value="[!BalloonChat][!speaker:Civil02]아이구 이 무기들 아까워서 어째..."/>
+		<class name="Tutorial_Road_113_eb6fu4" Value="[!BalloonChat][!speaker:Albus]쉬지 않고 달려야 하나..."/>
+		<class name="Tutorial_Road_113_gThOoj" Value="[!BalloonChat][!speaker:VHPD_Neutral1]기회를 봐서 섬광탄으로 티마의 공격을 봉인하겠습니다."/>
+		<class name="Tutorial_Road_113_Rk05Or" Value="[!BalloonChat][!speaker:VHPD_Neutral4]명령 내리신다면 빙결탄으로 티마의 발을 묶겠습니다."/>
+	</idspace>
+</idspaces>

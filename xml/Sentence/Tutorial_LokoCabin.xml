@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Tutorial_LokoCabin_nTZSg0" Value="[!Dashboard:Counter]남은 적 수"/>
+		<class name="Tutorial_LokoCabin_4pEgsb" Value="[!Objective]적을 모두 제압하시오."/>
+		<class name="Tutorial_LokoCabin_gdRpIX" Value="[!Dialog][!speaker:EmptySubTitle_]스푼교 교리 &apos;한술&apos;에 이르길..."/>
+		<class name="Tutorial_LokoCabin_K8XzZb" Value="[!Dialog][!speaker:EmptySubTitle_]열 사람이 한 술씩 보태면 새로운 밥 한 그릇을 만들 수 있다고 한다."/>
+		<class name="Tutorial_LokoCabin_DQSYwv" Value="[!Title]가면 속의 그림자"/>
+		<class name="Tutorial_LokoCabin_8OlHwt" Value="[!Title]철의 숲 물류 캠프"/>
+		<class name="Tutorial_LokoCabin_zjpAzk" Value="[!Subtitle][!speaker:EmptySubTitle_]세계 대전 이전 철의 숲 개발이 한창인 당시..."/>
+		<class name="Tutorial_LokoCabin_y1D66h" Value="[!Subtitle][!speaker:EmptySubTitle_]철의 숲 중턱에는 많은 소규모 물류 캠프들이 들어섰다."/>
+		<class name="Tutorial_LokoCabin_hVNrqG" Value="[!Subtitle][!speaker:EmptySubTitle_]하지만 티마의 습격으로 피해가 커지자..."/>
+		<class name="Tutorial_LokoCabin_nna85u" Value="[!Subtitle][!speaker:EmptySubTitle_]대부분의 캠프들은 버려지게 되었다."/>
+		<class name="Tutorial_LokoCabin_R8ymUZ" Value="[!Subtitle][!speaker:EmptySubTitle_]발할라 정부는 이 지역의 접근을 금지하였고..."/>
+		<class name="Tutorial_LokoCabin_3urrVV" Value="[!Subtitle][!speaker:EmptySubTitle_]발할라 경찰은 더 이상 이 곳의 치안을 신경 쓰지 않게 되었다."/>
+		<class name="Tutorial_LokoCabin_nN8vd8" Value="[!Dialog][!speaker:EmptySubTitle_]한산도 하역장에서 확보한 정보를 토대로 엄청난 수의 물류 기록들을 다시 확인한 아이작 경감은..."/>
+		<class name="Tutorial_LokoCabin_0Cwl0w" Value="[!Dialog][!speaker:EmptySubTitle_]이곳으로 향하는 다수의 물류 기록들을 파악하게 된다."/>
+		<class name="Tutorial_LokoCabin_6Hlt2r" Value="[!Dialog][!speaker:VHPD_Issac_Normal]이 엄청난 수... 분명 스푼교 녀석들이다."/>
+		<class name="Tutorial_LokoCabin_zMdVhB" Value="[!Dialog][!speaker:EmptySubTitle_]스푼교도들의 심상치 않은 움직임을 파악한 아이작은 이들 세력을 제압하기 위해 여러 가지 대책을 강구한다."/>
+		<class name="Tutorial_LokoCabin_oeyZK8" Value="[!Dialog][!speaker:VHPD_Issac_Smile]경찰 병력의 대대적인 동원은 무리야... "/>
+		<class name="Tutorial_LokoCabin_673JBa" Value="[!Dialog][!speaker:EmptySubTitle_]아이작은 경찰 내부의 드러나지 않은 배신자들의 존재를 고려하지 않을 수 없었다."/>
+		<class name="Tutorial_LokoCabin_YYflqR" Value="[!Dialog][!speaker:VHPD_Issac_Normal]정말 무력하군."/>
+		<class name="Tutorial_LokoCabin_r1pdgn" Value="[!Dialog][!speaker:EmptySubTitle_]아이작은 철의 숲 곳곳에 흩어진 물류 캠프들을 바라보며 비밀리에 협조 가능한 트러블슈터의 수를 가늠해보았다."/>
+		<class name="Tutorial_LokoCabin_SZM8XD" Value="[!Dialog][!speaker:VHPD_Issac_Normal]어쩔 수 없군. $CompanyName$도 참여시켜야겠지..."/>
+		<class name="Tutorial_LokoCabin_DwzE2b" Value="[!Subtitle][!speaker:EmptySubTitle_]아이작 경감의 예상대로... "/>
+		<class name="Tutorial_LokoCabin_s7qtdv" Value="[!Subtitle][!speaker:EmptySubTitle_]철의 숲 버려진 캠프 중 한 곳에서 발할라 정부를 피해 도착한 한 지구의 무리가 샤키를 만나게 된다."/>
+		<class name="Tutorial_LokoCabin_wKjQJn" Value="[!BalloonChat][!speaker:Direct_John]샤키 님..."/>
+		<class name="Tutorial_LokoCabin_vTOx2G" Value="[!BalloonChat][!speaker:Direct_Sharky]존. 드디어 도착했구나."/>
+		<class name="Tutorial_LokoCabin_aB8FYy" Value="[!BalloonChat][!speaker:Direct_Ralph]저분이 존 님이 말한 샤키 님...?"/>
+		<class name="Tutorial_LokoCabin_i7gvha" Value="[!BalloonChat][!speaker:Direct_Chang]저자가 &apos;좌표&apos;를 날린 자인가..."/>
+		<class name="Tutorial_LokoCabin_LtwrK4" Value="[!BalloonChat][!speaker:Direct_Kaze]흑수저 샤키... 첫술의 리더인가..."/>
+		<class name="Tutorial_LokoCabin_8ORYeU" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]샤키 님. 면목이 없습니다."/>
+		<class name="Tutorial_LokoCabin_MNhobV" Value="[!Dialog][!speaker:Gangster_Sharky_Normal]무슨 말인가. 이만큼의 동지들을 이끌고 &apos;좌표&apos;를 따라 여기까지 오느라 고생했네."/>
+		<class name="Tutorial_LokoCabin_aGN5Yi" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]아닙니다. 저의 실책으로 세계수 지구를 떠난 동지들의 반을 잃었습니다."/>
+		<class name="Tutorial_LokoCabin_5ZaA6L" Value="[!Dialog][!speaker:Gangster_SpoonDestroyer_Chang_Normal]그건 존 님의 잘못이 아니잖소!"/>
+		<class name="Tutorial_LokoCabin_mtUEd0" Value="[!Dialog][!speaker:Gangster_SpoonSword_Ralph_Normal]료 류자키 그 녀석만 아니었다면..."/>
+		<class name="Tutorial_LokoCabin_0yLDt6" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Kaze_Normal]존 님이 아니었다면 우리는 이곳에 도착하지 못했지. 당연하지 않은가!"/>
+		<class name="Tutorial_LokoCabin_KPlIsv" Value="[!Dialog][!speaker:Gangster_SpoonDestroyer_Normal]존 님이 날 한술로 받아주셨소!"/>
+		<class name="Tutorial_LokoCabin_YDc3Hs" Value="[!Dialog][!speaker:Gangster_SpoonAssualt_Normal]존 님 덕분에 좌표를 잃어버리지 않고 도착할 수 있었지!"/>
+		<class name="Tutorial_LokoCabin_49koLa" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Wind_Normal]존 님은 그 어려운 여정에서도 하루도 쉬지 않고 &apos;한술&apos;의 교리를 우리에게 전달해 주셨습니다!"/>
+		<class name="Tutorial_LokoCabin_tef8TA" Value="[!Dialog][!speaker:Gangster_Sharky_Normal]동지들이 자네가 일어서길 바라네."/>
+		<class name="Tutorial_LokoCabin_xUhTXh" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]면목 없습니다. 샤키 님."/>
+		<class name="Tutorial_LokoCabin_bSFNOF" Value="[!Dialog][!speaker:Gangster_Sharky_Normal]일어서게. 존. 이제부터 자네가 해야 할 일이 산더미라네."/>
+		<class name="Tutorial_LokoCabin_NljM2z" Value="[!Dialog][!speaker:VHPD_Scout_Normal]트러블슈터 알버스 님. 아이작 경감님의 연락입니다."/>
+		<class name="Tutorial_LokoCabin_WhSQHa" Value="[!Dialog][!speaker:Albus_Normal]알겠습니다. 연결 돌려주십시오."/>
+		<class name="Tutorial_LokoCabin_MKwfbx" Value="[!Dialog][!speaker:VHPD_Issac_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]잘 가고 있나?"/>
+		<class name="Tutorial_LokoCabin_MMkTRm" Value="[!Dialog][!speaker:Albus_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFFF59&apos;]네. 별 다른 문제 없습니다."/>
+		<class name="Tutorial_LokoCabin_pV4UCo" Value="[!Dialog][!speaker:VHPD_Issac_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]현재 지구 내 트러블슈터 회사들 다수가 동시에 진행하는 작전일세."/>
+		<class name="Tutorial_LokoCabin_s58hfp" Value="[!Dialog][!speaker:VHPD_Issac_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]많은 병력을 지원할 수 없음을 양해하게나."/>
+		<class name="Tutorial_LokoCabin_VYfjwn" Value="[!Dialog][!speaker:Albus_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFFF59&apos;]네. 잘 알고 있습니다."/>
+		<class name="Tutorial_LokoCabin_HcIbDK" Value="[!Dialog][!speaker:VHPD_Issac_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]도착하면 협조해 준 운송업자는 자네의 판단 아래 최소한의 병력을 붙여 안전하게 귀가시켜주길 바라네."/>
+		<class name="Tutorial_LokoCabin_1paYLa" Value="[!Dialog][!speaker:VHPD_Issac_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]민간인이 협조하는 것은 어디까지나 자신의 안전이 보장받을 수 있다는 믿음 때문이네. 그 신뢰를 지켜주게."/>
+		<class name="Tutorial_LokoCabin_iruLrw" Value="[!Dialog][!speaker:Albus_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFFF59&apos;]알겠습니다."/>
+		<class name="Tutorial_LokoCabin_mD4UZh" Value="[!Dialog][!speaker:VHPD_Issac_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]아 그리고 이건 개인적인 우려이네만..."/>
+		<class name="Tutorial_LokoCabin_NtE1ci" Value="[!Dialog][!speaker:VHPD_Issac_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]앤 메이시 양... 자네 회사에 입사한 소식 들었네."/>
+		<class name="Tutorial_LokoCabin_dZyBb1" Value="[!Dialog][!speaker:Albus_Disappoint][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFFF59&apos;]네. 들으셨군요."/>
+		<class name="Tutorial_LokoCabin_W5DrUy" Value="[!Dialog][!speaker:VHPD_Issac_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]앤 메이시 양이 오랫동안 현장의 일선에 가길 원한다는 걸 알고 있었지만, 그녀는 겨우 14살이네."/>
+		<class name="Tutorial_LokoCabin_rxgSnl" Value="[!Dialog][!speaker:VHPD_Issac_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]법이 허락하고 본인이 원한다고 하여도 자네의 배려가 필요할 나이일세."/>
+		<class name="Tutorial_LokoCabin_R5VZFh" Value="[!Dialog][!speaker:Albus_Laugh][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFFF59&apos;]무슨 말씀인지 잘 알고 있습니다."/>
+		<class name="Tutorial_LokoCabin_ROW00g" Value="[!Dialog][!speaker:VHPD_Issac_Think][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]웬만하면 자네들 나이가 될 때까지는 후방 지원에 있어 줬으면 했는데..."/>
+		<class name="Tutorial_LokoCabin_OPXtq5" Value="[!Dialog][!speaker:Albus_Serious][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFFF59&apos;]최대한 그녀가 안전할 수 있도록 노력하겠습니다."/>
+		<class name="Tutorial_LokoCabin_gsyMXI" Value="[!Dialog][!speaker:VHPD_Issac_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]알겠네. 그럼 이번 임무 잘 부탁하네."/>
+		<class name="Tutorial_LokoCabin_IzKXuw" Value="[!Dialog][!speaker:Sion_Angry]상황판에 요청된 임무를 수행하러 오니 갑자기 비밀 임무라니 아이작 경감님도 너무하는군."/>
+		<class name="Tutorial_LokoCabin_XlKXXu" Value="[!Dialog][!speaker:Irene_Surprise]그나저나 이 트레일러가 멈추면 바로 임무 시작이라는 건가?"/>
+		<class name="Tutorial_LokoCabin_MxYyMB" Value="[!Dialog][!speaker:Albus_Normal]응. 목적지는 철의 숲 물류 캠프. 지금은 스푼교도들의 전진기지로 파악되는 곳이야."/>
+		<class name="Tutorial_LokoCabin_BGKjQZ" Value="[!Dialog][!speaker:Anne_Surprise]&apos;나 잘 할 수 있겠지...&apos;"/>
+		<class name="Tutorial_LokoCabin_uocV1o" Value="[!Dialog][!speaker:Albus_Normal]시온은 언제나처럼 다수의 적이 몰려오는 쪽을 맡아주고"/>
+		<class name="Tutorial_LokoCabin_jwCnJo" Value="[!Dialog][!speaker:Sion_Laugh]당연하지~☆"/>
+		<class name="Tutorial_LokoCabin_c32Qu4" Value="[!Dialog][!speaker:Albus_Normal]적의 리더는 아이린 씨가 전담 마크해줬으면 해."/>
+		<class name="Tutorial_LokoCabin_sGn8j9" Value="[!Dialog][!speaker:Irene_Normal]물론이다. 알버스 군. 적의 리더는 내가 맡도록 하지."/>
+		<class name="Tutorial_LokoCabin_HHetaP" Value="[!Dialog][!speaker:Anne_Surprise]저는요? 저는 무엇을 할까요? 저도 웬만한 건 다 할 수 있어요!"/>
+		<class name="Tutorial_LokoCabin_BFVtQp" Value="[!Dialog][!speaker:Sion_Normal]앤은 내 옆에 딱 붙어있어. 내가 지켜줄 테니."/>
+		<class name="Tutorial_LokoCabin_eFJKF5" Value="[!Dialog][!speaker:Anne_Normal]고마워요. 시온 오빠. 하지만 저도 견습 트러블슈터잖아요? 역할을 주시면 해내겠습니다!"/>
+		<class name="Tutorial_LokoCabin_xHgjpO" Value="[!Dialog][!speaker:Albus_Laugh]앤 양. 마음은 충분히 알아. 하지만 앤 양이 조금 더 현장에 익숙해질 때까지는 경찰분들과 시온 곁에서 있었으면 해."/>
+		<class name="Tutorial_LokoCabin_EcOVh1" Value="[!Dialog][!speaker:Anne_Sorrow]제가 방해되는 건가요??"/>
+		<class name="Tutorial_LokoCabin_9YdZPd" Value="[!Dialog][!speaker:Irene_Surprise]방해라니?"/>
+		<class name="Tutorial_LokoCabin_BYU7R4" Value="[!Dialog][!speaker:Sion_Happy]무슨 소리야. 앤. 네가 있기에 아이린이나 알버스가 적 리더를 향해 마음껏 돌진할 수 있는 거야."/>
+		<class name="Tutorial_LokoCabin_7dl5Dj" Value="[!Dialog][!speaker:Albus_Normal]앤 양. 너무 조바심내지 마. 충분히 지금 제 역할을 다하고 있으니까."/>
+		<class name="Tutorial_LokoCabin_jjgTPx" Value="[!Dialog][!speaker:Civil_Man_Lee_Normal]경찰분들과 트러블슈터분들 이제 철의 숲으로 진입합니다."/>
+		<class name="Tutorial_LokoCabin_uZAVTv" Value="[!Dialog][!speaker:Civil_Man_Lee_Normal]노파심에 말씀드리지만 전 처자식이 있습니다. 이 일로 큰일 안 생기게 부탁드립니다."/>
+		<class name="Tutorial_LokoCabin_hwKdcf" Value="[!Dialog][!speaker:Albus_Laugh]알겠습니다. 어르신. 걱정 마세요."/>
+		<class name="Tutorial_LokoCabin_DOMj8k" Value="[!Dialog][!speaker:Albus_Think][colour=&apos;FFFFFF00&apos;]현재 병력은 6명... 호위를 제외한 분대는 어떻게 편성할까..."/>
+		<class name="Tutorial_LokoCabin_XCvEUU" Value="[!Choice]기동대원 3, 진압대원 1"/>
+		<class name="Tutorial_LokoCabin_ZhKGGh" Value="[!Choice]기동대원 2, 진압대원 2"/>
+		<class name="Tutorial_LokoCabin_u8UUDG" Value="[!Choice]기동대원 1, 진압대원 3"/>
+		<class name="Tutorial_LokoCabin_cOP3WY" Value="[!Choice]경찰 병력 전원 내려보낸다."/>
+		<class name="Tutorial_LokoCabin_V9Ki3w" Value="경찰 병력 없이 전투를 진행합니다."/>
+		<class name="Tutorial_LokoCabin_b2j4xT" Value="[!BalloonChat][!speaker:Direct_D2]아함... 교대 시간은 멀었나..."/>
+		<class name="Tutorial_LokoCabin_n66Kax" Value="[!BalloonChat][!speaker:Direct_D1]왜 안 들어가고?"/>
+		<class name="Tutorial_LokoCabin_vQqDOa" Value="[!BalloonChat][!speaker:Direct_Lee]막 들어오는데 타이어가 터져버렸어."/>
+		<class name="Tutorial_LokoCabin_6gNrTu" Value="[!BalloonChat][!speaker:Direct_D1]그래? 잠깐만 기다려. 사람을 불러오지."/>
+		<class name="Tutorial_LokoCabin_3IH1Ov" Value="[!BalloonChat][!speaker:Direct_Lee]지금이다. 빨리 도망가자."/>
+		<class name="Tutorial_LokoCabin_TWXyI2" Value="[!Dialog][!speaker:Albus_Serious]자. 아까 결정한 대로 리 씨를 호위할 병력은 바로 지금부터 이탈합니다."/>
+		<class name="Tutorial_LokoCabin_yjLtfd" Value="[!Dialog][!speaker:Albus_Serious]나머지 현장에 남는 인원은 바로 적을 제압하도록 하겠습니다."/>
+		<class name="Tutorial_LokoCabin_nqnxsQ" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_LokoCabin_vDUSfy" Value="[!VictoryCondition]적을 모두 제압하시오."/>
+		<class name="Tutorial_LokoCabin_zT0P5A" Value="[!Ignore][!Dialog][!speaker:VHPD_Issac_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]그 곳 외에도 의심되는 곳에도 비밀리에 섭외한 트러블슈터들이 동시다발적으로 "/>
+		<class name="Tutorial_LokoCabin_p6qkRN" Value="[!Ignore][!Title]휘몰아치는 카제"/>
+		<class name="Tutorial_LokoCabin_WpVOH6" Value="[!Ignore][!Title]스푼교 간부"/>
+		<class name="Tutorial_LokoCabin_lW1LIs" Value="[!Ignore][!BalloonChat][!speaker:Spoon_Kaze]불어라. 바람이여!"/>
+		<class name="Tutorial_LokoCabin_jODIks" Value="[!Ignore][!BalloonChat][!speaker:Spoon_Kaze]휘몰아쳐라! 폭풍이여!"/>
+		<class name="Tutorial_LokoCabin_rUmOlZ" Value="[!BalloonChat][!speaker:Spoon03_2]존 님을 위해!"/>
+		<class name="Tutorial_LokoCabin_EAuftr" Value="[!BalloonChat][!speaker:Spoon04_2]내가 스푼교도다!!"/>
+		<class name="Tutorial_LokoCabin_64QSSe" Value="[!Ignore][!BalloonChat][!speaker:Spoon_Kaze]나의 고통의 외침이여! 내 상처의 몸부림이여!!"/>
+		<class name="Tutorial_LokoCabin_EP5Vmi" Value="[!Ignore][!FrontMessage]카제가 격앙 상태가 되었습니다."/>
+		<class name="Tutorial_LokoCabin_PSKaDY" Value="[!Subtitle][!speaker:Albus_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFFF59&apos;]아이작 경감님. 임무 완료하였습니다."/>
+		<class name="Tutorial_LokoCabin_CLx9qz" Value="[!Subtitle][!speaker:VHPD_Issac_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFFF59&apos;]역시 $CompanyName$이군. 곧 해가 질 테니 빠르게 철수하게나."/>
+		<class name="Tutorial_LokoCabin_FM1Zfs" Value="[!Subtitle][!speaker:VHPD_Issac_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFFF59&apos;]지체되면 티마 무리가 몰려들걸세."/>
+		<class name="Tutorial_LokoCabin_moggor" Value="[!Subtitle][!speaker:Albus_Serious][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFFF59&apos;]네. 알겠습니다. 복귀 후 다시 연락드리겠습니다."/>
+		<class name="Tutorial_LokoCabin_mUM5tJ" Value="[!Subtitle][!speaker:EmptySubTitle_]바람장벽 지구 장벽의 트러블슈터와 연계하여 펼쳐진 아이작 경감의 기습 작전은..."/>
+		<class name="Tutorial_LokoCabin_DREdio" Value="[!Subtitle][!speaker:EmptySubTitle_]$CompanyName$을 제외하고는 스푼교의 거센 저항 때문에 큰 성과를 거두지 못한다."/>
+		<class name="Tutorial_LokoCabin_UrXMBg" Value="[!Subtitle][!speaker:EmptySubTitle_]심지어 협력한 민간인들의 피해가 알려지면서..."/>
+		<class name="Tutorial_LokoCabin_iYHxmo" Value="[!Subtitle][!speaker:EmptySubTitle_]상부에 보고하지 않고 진행한 임무의 책임을 물어 아이작 경감은 1개월 정직 처리된다."/>
+		<class name="Tutorial_LokoCabin_RyNEVy" Value="[!Subtitle][!speaker:EmptySubTitle_]하지만 이 사건은 발할라 정부의 경각심을 깨우게 되었고..."/>
+		<class name="Tutorial_LokoCabin_wC7WlK" Value="[!Subtitle][!speaker:EmptySubTitle_]공식적으로 스푼교를 &apos;반정부 세력&apos;으로 규정하여 발할라 전 지역에서의 토벌을 공식화한다."/>
+	</idspace>
+</idspaces>

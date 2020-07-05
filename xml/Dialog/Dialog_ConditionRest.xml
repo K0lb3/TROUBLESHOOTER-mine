@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Dialog">
+	<class name="Office_ConditionRest">
+		<Scripts>
+			<property Type="Env" Key="loop_index" Value="1"/>
+			<property Type="Jump" JumpTo="Office_ConditionRest_Loop"/>
+			<property Type="BattleSelection" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Continue" Close="true" Message="[!speaker:Albus_Think]이 상황으로 업무를 진행하는 것이 힘들 테니 하루 쉴까?" DialogType="Main" Slot="Center" Effect="Appear" Target="method_type">
+				<property Text="하루 쉰다." Value="Rest"/>
+				<property Text="나중으로 미룬다." Value="NoRest"/>
+			</property>
+			<property Type="Switch" C_TestTarget="env.method_type">
+				<property Case="Rest">
+					<property Type="Jump" JumpTo="Office_ConditionRest_Rest"/>
+				</property>
+				<property Case="NoRest">
+					<property Type="Jump" JumpTo="Office_ConditionRest_NoRest"/>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+	<class name="Office_ConditionRest_Loop">
+		<Scripts>
+			<property Type="GetRoster" C_RosterName="env.rest_list[env.loop_index]" RosterTarget="cur_roster"/>
+			<property Type="Switch" C_TestTarget="env.loop_index == 1">
+				<property Case="true">
+					<property Type="Switch" C_TestTarget="env.cur_roster.name == &apos;Albus&apos;">
+						<property Case="true">
+							<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Start" Close="false" DialogType="Main" Slot="Center" Effect="Appear">
+								<Message Text="내가 무기력 상태에 빠져버리다니." C_Name="env.cur_roster.Info.Title"/>
+							</property>
+						</property>
+						<property Case="false">
+							<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Start" Close="false" DialogType="Main" Slot="Center" Effect="Appear">
+								<Message Text="$Name$[이] 무기력 상태에 빠졌군." C_Name="env.cur_roster.CallTitle"/>
+							</property>
+						</property>
+					</property>
+				</property>
+				<property Case="false">
+					<property Type="Switch" C_TestTarget="env.cur_roster.name == &apos;Albus&apos;">
+						<property Case="true">
+							<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Continue" Close="false" DialogType="Main" Slot="Center" Effect="Appear">
+								<Message Text="나도 마찬가지고." C_Name="env.cur_roster.Info.Title"/>
+							</property>
+						</property>
+						<property Case="false">
+							<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Continue" Close="false" DialogType="Main" Slot="Center" Effect="Appear">
+								<Message Text="$Name$도 마찬가지고." C_Name="env.cur_roster.CallTitle"/>
+							</property>
+						</property>
+					</property>
+				</property>
+			</property>
+			<property Type="Env" Key="loop_index" C_Value="env.loop_index + 1"/>
+			<property Type="Switch" C_TestTarget="env.loop_index &lt;= #env.rest_list">
+				<property Case="true">
+					<property Type="Jump" JumpTo="Office_ConditionRest_Loop"/>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+	<class name="Office_ConditionRest_Rest">
+		<Scripts>
+			<property Type="SceneFade" Direct="false" FadeType="Out"/>
+			<property Type="ShowFrontmessageFormat" MessageColor="Corn">
+				<GameMessageForm Type="EtcMessage14"/>
+			</property>
+			<property Type="Sleep" Time="0.75"/>
+			<property Type="SceneFade" Direct="false" FadeType="In"/>
+			<property Type="ShowFrontmessageFormat" MessageColor="Corn">
+				<GameMessageForm Type="EtcMessage15"/>
+			</property>
+			<property Type="Sleep" Time="0.75"/>
+			<property Type="Script" Script="ProgressRestAction" RestActionType="DayOff"/>
+			<property Type="Script" Script="PostSuggestionConditonRest"/>
+		</Scripts>
+	</class>
+	<class name="Office_ConditionRest_NoRest">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Start" Close="true" Message="[!speaker:Albus_Normal]오늘은 일단 근무하고... 다음에 쉬자." DialogType="Main" Slot="Center" Effect="Appear"/>
+		</Scripts>
+	</class>
+</idspace>

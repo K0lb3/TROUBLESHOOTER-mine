@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Gender">
+		<class name="Male" Title="남성" Image="Mastery/Male"/>
+		<class name="Female" Title="여성" Image="Mastery/Female"/>
+	</idspace>
+</idspaces>

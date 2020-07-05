@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="WorldScaleInfo">
+		<schema>
+			<rule property="UpScale" type="link" target="WorldScaleInfo"/>
+			<rule property="DownScale" type="calculated" default="Calculated_GetDownScaleCls"/>
+		</schema>
+		<class name="Zone" LayoutPrefix="Zone" Title="[!지역표기]존" UpScale="Sector"/>
+		<class name="Sector" LayoutPrefix="Sector" Title="[!지역표기]섹터" UpScale="Nation"/>
+		<class name="Nation" LayoutPrefix="Nation" Title="[!지역표기]국가" UpScale="World"/>
+		<class name="World" LayoutPrefix="World" Title="[!ignore][!지역표기]월드" UpScale="None"/>
+	</idspace>
+	<idspace id="Division">
+		<schema>
+			<rule property="Type" type="link" target="ReputationDivisionType"/>
+		</schema>
+		<class name="Area_North" Type="Area_North" Title="북부 지구"/>
+		<class name="Area_South" Type="Area_South" Title="남부 지구"/>
+		<class name="Area_Center" Type="Area_Center" Title="중앙 지구"/>
+		<class name="Area_Wall" Type="Area_Wall" Title="장벽 지구"/>
+		<class name="Area_Outside" Type="Area_Outside" Title="외곽 지구"/>
+	</idspace>
+	<idspace id="Site">
+		<schema>
+			<rule property="Icon" type="link" target="SiteIcon"/>
+			<rule property="Opened" type="bool" default="false"/>
+		</schema>
+		<class name="DryFirewood_Street" Title="마른 장작 거리" State="None" Zone="WorldTreeTown" Division="None" Section="None" PX="0.43" PY="0.37" Opened="false"/>
+		<class name="Silverlining" Title="실버라이닝" State="None" Zone="WindWallTown" Division="Area_North" Section="GoldHand" PX="0.43" PY="0.37" SiteKey="Office" Opened="true"/>
+		<class name="ShooterStreet" Title="사수거리" State="None" Zone="WindWallTown" Division="Area_North" Section="GrayPort" PX="0.43" PY="0.37" SiteKey="ShooterStreet"/>
+		<class name="MetrodiumStation" Title="메트로디움 역" State="None" Zone="WindWallTown" Division="Area_Center" Section="Metrodium" PX="0.53" PY="0.37" SiteKey="Metrodium"/>
+		<class name="GoldHand_Street" Title="황금손 거리" State="None" Zone="WindWallTown" Division="Area_North" Section="GoldHand" PX="0.6" PY="0.15"/>
+		<class name="GoldHand_BackStreet" Title="황금손 뒷거리" State="None" Zone="WindWallTown" Division="Area_North" Section="GoldHand" PX="0.7" PY="0.15"/>
+		<class name="GoldHand_Residence" Title="황금손 거주구" State="None" Zone="WindWallTown" Division="Area_North" Section="GoldHand" PX="0.65" PY="0.28"/>
+		<class name="GoldHand_Reconstruction" Title="황금손 재건축지구" State="None" Zone="WindWallTown" Division="Area_North" Section="GoldHand" PX="0.75" PY="0.28"/>
+		<class name="RageaWineBarrel_Street" Title="화난 술통 거리" State="None" Zone="WindWallTown" Division="Area_North" Section="RageaWineBarrel" PX="0.49" PY="0.32"/>
+		<class name="RageaWineBarrel_BackStreet" Title="화난 술통 뒷거리" State="None" Zone="WindWallTown" Division="Area_North" Section="RageaWineBarrel" PX="0.49" PY="0.28"/>
+		<class name="RageaWineBarrel_MainStreet" Title="화난 술통 중심가" State="None" Zone="WindWallTown" Division="Area_North" Section="RageaWineBarrel" PX="0.545" PY="0.15"/>
+		<class name="RageaWineBarrel_Shop" Title="화난 술통 상점가" State="None" Zone="WindWallTown" Division="Area_North" Section="RageaWineBarrel" PX="0.485" PY="0.22"/>
+		<class name="RageaWineBarrel_Bridge" Title="초승달 대교" State="None" Zone="WindWallTown" Division="Area_North" Section="RageaWineBarrel" PX="0.41" PY="0.09"/>
+		<class name="YellowEar_Street" Title="노란귀 거리" State="None" Zone="WindWallTown" Division="Area_North" Section="YellowEar" PX="0.15" PY="0.3"/>
+		<class name="YellowEar_BackStreet" Title="노란귀 뒷거리" State="None" Zone="WindWallTown" Division="Area_North" Section="YellowEar" PX="0.27" PY="0.19"/>
+		<class name="YellowEar_PowerPlant" Title="노란귀 발전소" State="None" Zone="WindWallTown" Division="Area_North" Section="YellowEar" PX="0.2" PY="0.2"/>
+		<class name="YellowEar_BeastGene" Title="야수 연구소 거리" State="None" Zone="WindWallTown" Division="Area_North" Section="YellowEar" PX="0.2" PY="0.15"/>
+		<class name="YellowEar_Dock" Title="노란귀 선착장" State="None" Zone="WindWallTown" Division="Area_North" Section="YellowEar" PX="0.24" PY="0.3"/>
+		<class name="SilverCloud_Street" Title="은빛 구름 거리" State="None" Zone="WindWallTown" Division="Area_South" Section="SilverCloud" PX="0.46" PY="0.6"/>
+		<class name="SilverCloud_MarketStreet" Title="은빛 구름 시장 거리" State="None" Zone="WindWallTown" Division="Area_South" Section="SilverCloud" PX="0.5" PY="0.62"/>
+		<class name="SilverCloud_BackStreet" Title="은빛 구름 뒷거리" State="None" Zone="WindWallTown" Division="Area_South" Section="SilverCloud" PX="0.45" PY="0.85"/>
+		<class name="SilverCloud_Junkyard" Title="은빛 구름 고물 처리장" State="None" Zone="WindWallTown" Division="Area_South" Section="SilverCloud" PX="0.52" PY="0.88"/>
+		<class name="SilverCloud_Residence" Title="은빛 구름 거주구" State="None" Zone="WindWallTown" Division="Area_South" Section="SilverCloud" PX="0.53" PY="0.7"/>
+		<class name="SilverCloud_Reconstruction" Title="은빛 구름 재건축지구" State="None" Zone="WindWallTown" Division="Area_South" Section="SilverCloud" PX="0.6" PY="0.76"/>
+		<class name="SilverCloud_Parking" Title="은빛 구름 지하주차장" State="None" Zone="WindWallTown" Division="Area_South" Section="SilverCloud" PX="0.56" PY="0.8"/>
+		<class name="PugoStreet_Street" Title="푸고 거리" State="None" Zone="WindWallTown" Division="Area_South" Section="PugoStreet" PX="0.5" PY="0.63"/>
+		<class name="PugoStreet_BackStreet" Title="푸고 뒷거리" State="None" Zone="WindWallTown" Division="Area_South" Section="PugoStreet" PX="0.475" PY="0.7"/>
+		<class name="PugoStreet_MainStreet" Title="푸고 중심가" State="None" Zone="WindWallTown" Division="Area_South" Section="PugoStreet" PX="0.549" PY="0.515"/>
+		<class name="PugoStreet_Shop" Title="푸고 상점가" State="None" Zone="WindWallTown" Division="Area_South" Section="PugoStreet" PX="0.57" PY="0.57"/>
+		<class name="BlueFog_Street" Title="푸른 안개 거리" State="None" Zone="WindWallTown" Division="Area_South" Section="BlueFog" PX="0.24" PY="0.85"/>
+		<class name="BlueFog_Residence" Title="푸른 안개 거주구" State="None" Zone="WindWallTown" Division="Area_South" Section="BlueFog" PX="0.28" PY="0.76"/>
+		<class name="BlueFog_Shop" Title="푸른 안개 상점가" State="None" Zone="WindWallTown" Division="Area_South" Section="BlueFog" PX="0.28" PY="0.71"/>
+		<class name="BlueFog_Industry" Title="푸른 안개 산업단지" State="None" Zone="WindWallTown" Division="Area_South" Section="BlueFog" PX="0.35" PY="0.7"/>
+		<class name="BlueFog_DistributionCenter" Title="푸른 안개 G 물류센터" State="None" Zone="WindWallTown" Division="Area_South" Section="BlueFog" PX="0.335" PY="0.655"/>
+		<class name="DustWind_Tollgate" Title="먼지바람 톨게이트" State="None" Zone="WindWallTown" Division="Area_South" Section="DustWind" PX="0.46" PY="0.46"/>
+		<class name="DustWind_RestArea" Title="먼지바람 고속도로 휴게소" State="None" Zone="WindWallTown" Division="Area_South" Section="DustWind" PX="0.355" PY="0.695"/>
+		<class name="DustWind_Road_South" Title="먼지바람 고속도로 남단" State="None" Zone="WindWallTown" Division="Area_South" Section="DustWind" PX="0.165" PY="0.85"/>
+		<class name="DustWind_Road_North" Title="먼지바람 고속도로 북단" State="None" Zone="WindWallTown" Division="Area_South" Section="DustWind" PX="0.355" PY="0.695"/>
+		<class name="SkyWind_Street" Title="하늘바람 거리" State="None" Zone="WindWallTown" Division="Area_Center" Section="SkyWind" PX="0.697" PY="0.395"/>
+		<class name="SkyWind_Shop" Title="하늘바람 상점가" State="None" Zone="WindWallTown" Division="Area_Center" Section="SkyWind" PX="0.757" PY="0.3"/>
+		<class name="SkyWind_Residence" Title="하늘바람 거주구" State="None" Zone="WindWallTown" Division="Area_Center" Section="SkyWind" PX="0.625" PY="0.285"/>
+		<class name="Metrodium_Street" Title="메트로디움 거리" State="None" Zone="WindWallTown" Division="Area_Center" Section="Metrodium" PX="0.62" PY="0.42"/>
+		<class name="Metrodium_Residence" Title="메트로디움 거주구" State="None" Zone="WindWallTown" Division="Area_Center" Section="Metrodium" PX="0.65" PY="0.31"/>
+		<class name="Metrodium_MainStreet" Title="메트로디움 중심가" State="None" Zone="WindWallTown" Division="Area_Center" Section="Metrodium" PX="0.53" PY="0.37"/>
+		<class name="Metrodium_Shop" Title="메트로디움 상점가" State="None" Zone="WindWallTown" Division="Area_Center" Section="Metrodium" PX="0.5" PY="0.46"/>
+		<class name="Metrodium_Police" Title="바람장벽지구 경찰청 본부" State="None" Zone="WindWallTown" Division="Area_Center" Section="Metrodium" PX="0.5" PY="0.46"/>
+		<class name="GrayPort_Street" Title="잿빛 항구 거리" State="None" Zone="WindWallTown" Division="Area_Center" Section="GrayPort" PX="0.43" PY="0.42"/>
+		<class name="GrayPort_Dock" Title="잿빛 항구 하역장" State="None" Zone="WindWallTown" Division="Area_Center" Section="GrayPort" PX="0.375" PY="0.45"/>
+		<class name="GrayPort_Dock2" Title="잿빛 항구 선착장" State="None" Zone="WindWallTown" Division="Area_Center" Section="GrayPort" PX="0.425" PY="0.31"/>
+		<class name="GrayPort_WareHouse" Title="잿빛 항구 물류창고" State="None" Zone="WindWallTown" Division="Area_Center" Section="GrayPort" PX="0.295" PY="0.59"/>
+		<class name="GrayPort_DistributionCenter" Title="잿빛 항구 물류센터" State="None" Zone="WindWallTown" Division="Area_Center" Section="GrayPort" PX="0.3" PY="0.6"/>
+		<class name="GrayPort_GasStation" Title="잿빛 항구 외곽 주유소" State="None" Zone="WindWallTown" Division="Area_Center" Section="GrayPort" PX="0.395" PY="0.475"/>
+		<class name="AshStream_ThornPrison" Title="가시나무 수용소" State="None" Zone="WindWallTown" Division="Area_Center" Section="AshStream" PX="0.36" PY="0.255"/>
+		<class name="AshStream_Top" Title="재의 강 상류" State="None" Zone="WindWallTown" Division="Area_Center" Section="AshStream" PX="0.25" PY="0.5"/>
+		<class name="AshStream_Bottom" Title="재의 강 하류" State="None" Zone="WindWallTown" Division="Area_Center" Section="AshStream" PX="0.2" PY="0.6"/>
+		<class name="AshStream_Dock" Title="재의 강 민간 하역장" State="None" Zone="WindWallTown" Division="Area_Center" Section="AshStream" PX="0.36" PY="0.25"/>
+		<class name="ShadeFog_Street" Title="그늘 안개 거리" State="None" Zone="WindWallTown" Division="Area_Wall" Section="ShadeFog" PX="0.86" PY="0.5"/>
+		<class name="ShadeFog_StreetOutside" Title="그늘 안개 거리 외곽" State="None" Zone="WindWallTown" Division="Area_Wall" Section="ShadeFog" PX="0.86" PY="0.6"/>
+		<class name="ShadeFog_Residence" Title="그늘 안개 거주구" State="None" Zone="WindWallTown" Division="Area_Wall" Section="ShadeFog" PX="0.86" PY="0.6"/>
+		<class name="ShadeFog_Slum" Title="그늘 안개 슬럼가" State="None" Zone="WindWallTown" Division="Area_Wall" Section="ShadeFog" PX="0.86" PY="0.38"/>
+		<class name="ShadeFog_BackStreet" Title="그늘 안개 상점가" State="None" Zone="WindWallTown" Division="Area_Wall" Section="ShadeFog" PX="0.785" PY="0.52"/>
+		<class name="PurpleStreet_Street" Title="자홍거리" State="None" Zone="WindWallTown" Division="Area_Wall" Section="PurlpleStreet" PX="0.655" PY="0.55"/>
+		<class name="PurpleStreet_BackStreet" Title="자홍 뒷거리" State="None" Zone="WindWallTown" Division="Area_Wall" Section="PurlpleStreet" PX="0.6" PY="0.62"/>
+		<class name="PurpleStreet_BackStreet2" Title="자홍 뒷거리" State="None" Zone="WindWallTown" Division="Area_Wall" Section="PurlpleStreet" PX="0.62" PY="0.58"/>
+		<class name="PurpleStreet_MainStreet" Title="자홍거리 상점가" State="None" Zone="WindWallTown" Division="Area_Wall" Section="PurlpleStreet" PX="0.705" PY="0.49"/>
+		<class name="PurpleStreet_Reconstruction" Title="자홍거리 재건축지구" State="None" Zone="WindWallTown" Division="Area_Wall" Section="PurlpleStreet" PX="0.6" PY="0.62"/>
+		<class name="ShadowWall_CheckPoint" Title="그림자 장벽 검문소" State="None" Zone="WindWallTown" Division="Area_Wall" Section="ShadowWall" PX="0.715" PY="0.58"/>
+		<class name="ShadowWall_North" Title="그림자 장벽 북단" State="None" Zone="WindWallTown" Division="Area_Wall" Section="ShadowWall" PX="0.81" PY="0.3"/>
+		<class name="ShadowWall_South" Title="그림자 장벽 남단" State="None" Zone="WindWallTown" Division="Area_Wall" Section="ShadowWall" PX="0.61" PY="0.88"/>
+		<class name="CrowStreet_Street" Title="까마귀골목" State="None" Zone="WindWallTown" Division="Area_Outside" Section="CrowStreet" PX="0.83" PY="0.3"/>
+		<class name="CrowStreet_BackStreet" Title="까마귀골목 뒷거리" State="None" Zone="WindWallTown" Division="Area_Outside" Section="CrowStreet" PX="0.86" PY="0.2"/>
+		<class name="CrowStreet_Residence" Title="까마귀골목 거주구" State="None" Zone="WindWallTown" Division="Area_Outside" Section="CrowStreet" PX="0.86" PY="0.35"/>
+		<class name="CrowStreet_Reconstruction" Title="까마귀골목 재건축지구" State="None" Zone="WindWallTown" Division="Area_Outside" Section="CrowStreet" PX="0.84" PY="0.4"/>
+		<class name="CrowStreet_GoblinTunnel" Title="까마귀폐허 도깨비굴" State="None" Zone="WindWallTown" Division="Area_Outside" Section="CrowStreet" PX="0.965" PY="0.67"/>
+		<class name="CrowStreet_Ruins" Title="까마귀 폐허" State="None" Zone="WindWallTown" Division="Area_Outside" Section="CrowStreet" PX="0.9" PY="0.67"/>
+		<class name="IronForest_CheckPoint" Title="철의 숲 검문소" State="None" Zone="WindWallTown" Division="Area_Outside" Section="IronForest" PX="0.8" PY="0.73"/>
+		<class name="IronForest_Street" Title="철의 숲 외곽도로" State="None" Zone="WindWallTown" Division="Area_Outside" Section="IronForest" PX="0.8" PY="0.84"/>
+		<class name="IronForest_Street2" Title="철의 숲 간선도로" State="None" Zone="WindWallTown" Division="Area_Outside" Section="IronForest" PX="0.847" PY="0.81"/>
+		<class name="IronForest_Street3" Title="철의 숲 자원관리구역" State="None" Zone="WindWallTown" Division="Area_Outside" Section="IronForest" PX="0.798" PY="0.73"/>
+		<class name="IronForest_Street4" Title="철의 숲 자원개발구역" State="None" Zone="WindWallTown" Division="Area_Outside" Section="IronForest" PX="0.935" PY="0.83"/>
+		<class name="IronForest_Street5" Title="철의 숲 간선도로" State="None" Zone="WindWallTown" Division="Area_Outside" Section="IronForest" PX="0.82" PY="0.68"/>
+		<class name="IronForest_Destroy" Title="철의 숲 해체작업장" State="None" Zone="WindWallTown" Division="Area_Outside" Section="CrowStreet" PX="0.849" PY="0.69"/>
+		<class name="IronForest_Swamp" Title="철의 숲 마라 늪" State="None" Zone="WindWallTown" Division="Area_Outside" Section="IronForest" PX="0.68" PY="0.84"/>
+		<class name="IronForest_FogCliff" Title="철의 숲 안개 절벽" State="None" Zone="WindWallTown" Division="Area_Outside" Section="IronForest" PX="0.9" PY="0.77"/>
+		<class name="IronForest_Dirty" Title="철의 숲 오염지" State="None" Zone="WindWallTown" Division="Area_Outside" Section="IronForest" PX="0.8" PY="0.92"/>
+		<class name="IronForest_TrainStation" Title="철의 숲 간이역" State="None" Zone="WindWallTown" Division="Area_Outside" Section="IronForest" PX="0.8" PY="0.71"/>
+		<class name="IronForest_Cabin" Title="철의 숲 중턱" State="None" Zone="WindWallTown" Division="Area_Outside" Section="IronForest" PX="0.7" PY="0.95"/>
+		<class name="IronForestOffice" Title="철의 숲 관리소" State="None" Zone="WindWallTown" Division="Area_Outside" Section="IronForest" PX="0.798" PY="0.73"/>
+		<class name="IronForest_Tima" Title="철의 숲 티마 둥지" State="None" Zone="WindWallTown" Division="Area_Outside" Section="IronForest" PX="0.86" PY="0.85"/>
+		<class name="IronForest_DrakyNest" Title="철의 숲 버려진 동굴" State="None" Zone="WindWallTown" Division="Area_Outside" Section="IronForest" PX="0.9" PY="0.88"/>
+		<class name="IronForest_DrakyNest2" Title="철의 숲 드라키 둥지" State="None" Zone="WindWallTown" Division="Area_Outside" Section="IronForest" PX="0.93" PY="0.945"/>
+	</idspace>
+	<idspace id="Zone">
+		<schema>
+			<rule property="ScaleInfo" type="calculated" default="Calculated_GetAreaScaleInfo"/>
+			<rule property="Siblings" type="calculated" default="Calculated_GetSiblingArea"/>
+			<rule property="Childs" type="calculated" default="Calculated_GetChildArea"/>
+			<rule property="Parent" type="calculated" default="Calculated_GetParentArea"/>
+			<rule property="MapWidth" type="string" default="{1, 0}"/>
+			<rule property="MapHeight" type="string" default="{1, 0}"/>
+			<rule property="LinkedQuest" type="calculated" default="Calculated_GetZoneLinkedQuest"/>
+			<rule property="Opened" type="bool" default="false"/>
+			<rule property="Safty" type="number" default="0"/>
+			<rule property="MaxSafty" type="calculated" default="Calculated_GetMaxSafty"/>
+			<rule property="SafetyFever" type="bool" default="false"/>
+			<rule property="FeverTime" type="number" default="0"/>
+			<rule property="Risk" type="number" default="30"/>
+		</schema>
+		<class name="WindWallTown" Title="바람장벽" Desc="바람장벽은 발할라의 13번째 에어리어로 발할라의 동남쪽 국경 지대에 위치하며 바다로 나가는 길목에 위치하고 있습니다.&#xA;국경 지대에는 거대한 장벽이 위치하고 있으며 해당 주변으로 잦은 분쟁이 일어나고 있습니다." Opened="true" MapWidth="{0, 2880}" MapHeight="{0, 1620}" ParentKey="Valhalla" WorldMapImage="WorldMap_WindWallTown" MakerImage="World/BlueMarker">
+			<Division>
+				<property Type="Area_North">
+					<Reward>
+						<property Type="None" Value="0"/>
+						<property Type="Item" Value="Sword_Breaking"/>
+						<property Type="Mastery" Value="Learning"/>
+					</Reward>
+					<Section>
+						<property Type="GoldHand"/>
+						<property Type="RageaWineBarrel"/>
+						<property Type="YellowEar"/>
+					</Section>
+				</property>
+				<property Type="Area_South">
+					<Reward>
+						<property Type="None" Value="0"/>
+					</Reward>
+					<Section>
+						<property Type="SilverCloud"/>
+						<property Type="PugoStreet"/>
+						<property Type="BlueFog"/>
+						<property Type="DustWind"/>
+					</Section>
+				</property>
+				<property Type="Area_Center">
+					<Reward>
+						<property Type="None" Value="0"/>
+					</Reward>
+					<Section>
+						<property Type="SkyWind"/>
+						<property Type="Metrodium"/>
+						<property Type="GrayPort"/>
+						<property Type="AshStream"/>
+					</Section>
+				</property>
+				<property Type="Area_Wall">
+					<Reward>
+						<property Type="None" Value="0"/>
+					</Reward>
+					<Section>
+						<property Type="ShadeFog"/>
+						<property Type="PurlpleStreet"/>
+						<property Type="ShadowWall"/>
+					</Section>
+				</property>
+				<property Type="Area_Outside">
+					<Reward>
+						<property Type="None" Value="0"/>
+					</Reward>
+					<Section>
+						<property Type="CrowStreet"/>
+						<property Type="IronForest"/>
+					</Section>
+				</property>
+			</Division>
+			<Site>
+				<property Type="DryFirewood_Street"/>
+				<property Type="Silverlining"/>
+				<property Type="ShooterStreet"/>
+				<property Type="MetrodiumStation"/>
+				<property Type="GoldHand_Street"/>
+				<property Type="GoldHand_BackStreet"/>
+				<property Type="GoldHand_Residence"/>
+				<property Type="GoldHand_Reconstruction"/>
+				<property Type="RageaWineBarrel_Street"/>
+				<property Type="RageaWineBarrel_BackStreet"/>
+				<property Type="RageaWineBarrel_MainStreet"/>
+				<property Type="RageaWineBarrel_Shop"/>
+				<property Type="RageaWineBarrel_Bridge"/>
+				<property Type="YellowEar_Street"/>
+				<property Type="YellowEar_BackStreet"/>
+				<property Type="YellowEar_PowerPlant"/>
+				<property Type="YellowEar_BeastGene"/>
+				<property Type="YellowEar_Dock"/>
+				<property Type="SilverCloud_Street"/>
+				<property Type="SilverCloud_MarketStreet"/>
+				<property Type="SilverCloud_BackStreet"/>
+				<property Type="SilverCloud_Residence"/>
+				<property Type="SilverCloud_Reconstruction"/>
+				<property Type="SilverCloud_Junkyard"/>
+				<property Type="PugoStreet_Street"/>
+				<property Type="PugoStreet_BackStreet"/>
+				<property Type="PugoStreet_MainStreet"/>
+				<property Type="PugoStreet_Shop"/>
+				<property Type="BlueFog_Street"/>
+				<property Type="SilverCloud_Residence"/>
+				<property Type="BlueFog_Shop"/>
+				<property Type="BlueFog_Industry"/>
+				<property Type="BlueFog_DistributionCenter"/>
+				<property Type="DustWind_Tollgate"/>
+				<property Type="DustWind_RestArea"/>
+				<property Type="DustWind_Road_South"/>
+				<property Type="DustWind_Road_North"/>
+				<property Type="SkyWind_Street"/>
+				<property Type="SkyWind_Residence"/>
+				<property Type="Metrodium_Street"/>
+				<property Type="Metrodium_Residence"/>
+				<property Type="Metrodium_MainStreet"/>
+				<property Type="Metrodium_Shop"/>
+				<property Type="Metrodium_Police"/>
+				<property Type="GrayPort_Street"/>
+				<property Type="GrayPort_Dock"/>
+				<property Type="GrayPort_WareHouse"/>
+				<property Type="GrayPort_DistributionCenter"/>
+				<property Type="AshStream_ThornPrison"/>
+				<property Type="AshStream_Top"/>
+				<property Type="AshStream_Bottom"/>
+				<property Type="ShadeFog_Street"/>
+				<property Type="ShadeFog_StreetOutside"/>
+				<property Type="ShadeFog_BackStreet"/>
+				<property Type="ShadeFog_Residence"/>
+				<property Type="ShadeFog_Slum"/>
+				<property Type="PurpleStreet_Street"/>
+				<property Type="PurpleStreet_BackStreet"/>
+				<property Type="PurpleStreet_MainStreet"/>
+				<property Type="ShadowWall_CheckPoint"/>
+				<property Type="ShadowWall_North"/>
+				<property Type="ShadowWall_South"/>
+				<property Type="CrowStreet_Street"/>
+				<property Type="CrowStreet_BackStreet"/>
+				<property Type="CrowStreet_Residence"/>
+				<property Type="CrowStreet_Reconstruction"/>
+				<property Type="CrowStreet_GoblinTunnel"/>
+				<property Type="CrowStreet_Ruins"/>
+				<property Type="IronForest_CheckPoint"/>
+				<property Type="IronForest_Street"/>
+				<property Type="IronForest_Street2"/>
+				<property Type="IronForest_Street3"/>
+				<property Type="IronForest_Street4"/>
+				<property Type="IronForest_Street5"/>
+				<property Type="IronForest_Swamp"/>
+				<property Type="IronForest_FogCliff"/>
+				<property Type="IronForest_Dirty"/>
+				<property Type="IronForest_TrainStation"/>
+				<property Type="IronForest_Cabin"/>
+				<property Type="IronForestOffice"/>
+				<property Type="IronForest_Tima"/>
+				<property Type="IronForest_DrakyNest"/>
+				<property Type="IronForest_DrakyNest2"/>
+			</Site>
+		</class>
+		<class name="WorldTreeTown" Title="세계수 지구" Desc="세계수 지구는 발할라의 명물인 '세계의 나무'가 랜드 마크로 있는 지구이다. 발할라 내륙에 위치하여 치안이 안전한 편이며 발할라의 중산층들이 많이 살고 있다." Opened="false" MapWidth="{0, 2880}" MapHeight="{0, 1620}" ParentKey="Valhalla" WorldMapImage="Location1" MakerImage="World/BlueMarker"/>
+		<class name="RedMountainTown" Title="붉은산 지구" Desc="" Opened="false" MapWidth="{0, 2880}" MapHeight="{0, 1620}" ParentKey="Valhalla" WorldMapImage="Location1" MakerImage="World/BlueMarker"/>
+	</idspace>
+	<idspace id="Sector">
+		<schema>
+			<rule property="ScaleInfo" type="calculated" default="Calculated_GetAreaScaleInfo"/>
+			<rule property="Siblings" type="calculated" default="Calculated_GetSiblingArea"/>
+			<rule property="Childs" type="calculated" default="Calculated_GetChildArea"/>
+			<rule property="Parent" type="calculated" default="Calculated_GetParentArea"/>
+			<rule property="MapWidth" type="string" default="{0, 2560}"/>
+			<rule property="MapHeight" type="string" default="{0, 1440}"/>
+			<rule property="Desc" type="calculated" default="CalculatedProperty_Sector_Desc"/>
+		</schema>
+		<class name="Valhalla" Title="발할라" ParentKey="EastContinent" WorldMapImage="Location1" MakerImage="World/BlueMarker">
+			<Content>
+				<property Title="역사" Text="원래 이 지역은 3대 열강의 국경이 접하는 지역으로 세계 대전 이전까지는 아테르 제국이 실효 지배를 하고 있었으며 고난의 성채와 가까운 위치로 무력 충돌이 빈번한 지역이었다. 세계 대전 발발 후 강대국이 차례로 해당 지역을 점거하는 혼전의 상태를 겪었다. 
+
+종전 후, 세계 대전으로 급랭한 세계 경제를 빠르게 회복하기 위해 3국의 수뇌부들은 자국의 정치 상황에 휘둘리지 않는 중립적인 경제적 완충 지역을 원했다. 그 결과 AE 782년, 세계 3대 열강인 아테르 제국, 카라스 연방, 동방 연합의 발할라 조약의 승인으로 자유 무역 도시국가 발할라가 탄생한다.">
+					<SubText/>
+				</property>
+				<property Title="인구" Text="발할라의 인구의 구성은 발할라 건국과 함께 전세계에서 이주해 온 이주민이 90%를 차지하는 다민족 국가이다.">
+					<SubText/>
+				</property>
+				<property Title="행정 구역" Text="권력 기관이 위치한 오딘 지구를 포함하여 총 13개의 지구로 구성되어 있다. 일반 시민들의 지구 이동이 법으로 금지되어 있다.">
+					<SubText/>
+				</property>
+				<property Title="정치" Text="삼권 분립을 기초로 한다.">
+					<SubText>
+						<property Title="행정부" Text="행정부의 수반인 시장은 직접 투표를 통해 선출되며, 임기는 5년이며, 중임제이다. 현재 시장은 칼 레인이다."/>
+						<property Title="입법부" Text="의회는 상원과 하원으로 구성되어 있으며, 상원은 최고평의회라고 불리며 발할라 건국에 참여한 대귀족 가문들의 대표, 3대 열강의 특무관으로 구성되어 있다. 하원은 13개 지구에서 직접 투표에 의해 선출된 의원들로 구성되어 있다. 하원의 경우, 최대 49명을 기준으로 인구 수와 경제력에 따라 매 선거마다 선출 인원 수가 변경된다. "/>
+						<property Title="사법부" Text="사법부는 최고 법원인 대법원을 비롯해 각 지구의 고등법원이 존재하며 법관의 선출은 매년 사법고시를 통해 선출하고 있다."/>
+					</SubText>
+				</property>
+				<property Title="경제" Text="3대 열강과의 교역, 생산, 투자 등의 경제 활동에 대해 무관세 등 각종 무역 특례로 많은 투자 기업과 수출 기업들이 진출해 있다. 일인당 GDP는 가장 부유한 아테르 제국보다 1.5배 높지만 지구 별로 극심한 빈익부 현상으로 실제 시민들의 생활은 차이가 매우 많이 나는 편이다. 대다수의 시민들이 2차 생산과 무역업에 종사한다.">
+					<SubText/>
+				</property>
+				<property Title="군사" Text="강대국의 조약으로 탄생한 국가로 군대를 보유할 수 없다.">
+					<SubText/>
+				</property>
+				<property Title="사회 및 문화" Text="민족 구성이 다양함에도 불구하고 건국 20년 동안 고속 발전을 통해 발할라 건국 초기 이주해 온 사람들과 그 후손들을 중심으로 발할라를 세운 주역은 자신이라는 공통적인 정체성을 가진다. 이러한 정체성이 계속 강화되어 최근에는 합병된 타 지역민들에 대한 반감이 매우 높다.">
+					<SubText/>
+				</property>
+				<property Title="종교" Text="종교의 자유가 보장된다.">
+					<SubText/>
+				</property>
+			</Content>
+			<Anchor>
+				<property Key="WindWallTown" PX="0.4091" PY="0.6416"/>
+				<property Key="BlackMineTown" PX="0.4091" PY="0.4666"/>
+			</Anchor>
+		</class>
+		<class name="Ater" Title="아테르 제국" ParentKey="EastContinent" WorldMapImage="Location1" MakerImage="World/BlueMarker">
+			<Content>
+				<property Title="역사" Text="세계 대전이전까지 가장 넓은 영토와 국력을 자랑하던 세계 최고의 강대국이었다. 세계 대전으로 큰 타격을 입었음에도 불구하고 종전 후 빠른 전후 복구에 힘입어 여전히 세계 3대 강국의 위치를 유지하고 있다. 현재 실존하는 국가 중 가장 오래된 역사를 지니고 있는 AE 5년에 건국한 국가이다.">
+					<SubText/>
+				</property>
+				<property Title="인구" Text="아테르 제국의 인구의 구성은 오랜 정복 역사와 함께 상당한 다민족으로 구성되어 있다.">
+					<SubText/>
+				</property>
+				<property Title="행정 구역" Text="황제의 봉토 하사를 통한 장원 중심으로 행정 구역이 형성된다.">
+					<SubText/>
+				</property>
+				<property Title="정치" Text="황제를 권력 수장으로 한 전제 군주제이다. 아테르 제국 건국 이후 아테르 황가가 계속 황권을 유지하고 있다.">
+					<SubText>
+						<property Title="행정부와 입법부" Text="행정부와 입법부의 수장은 황제가 임명한 재상이 담당하며 국가 중대사를 제외한 대부분의 업무를 황제의 권한을 대리하여 수행한다."/>
+						<property Title="사법부" Text="국가 중대사는 황제가 직접 담당하며, 직접 통치하는 수도 '테르'의 업무는 재상에게 위임된다. 그 외 업무는 각 장원의 영주들이 황제의 권한을 대리하여 수행한다."/>
+					</SubText>
+				</property>
+				<property Title="경제" Text="넓은 영토를 바탕으로 풍부한 자원과 부유한 곡창 지대를 가진 세계 1차 산업의 지배권을 쥐고 있는 강대국이다. 세계 대전 당시에도 실제 이러한 1차 산업의 기반의 지역의 피해는 미비하였기에 종전 후에도 강대국의 위치를 여전히 유지하고 있다.">
+					<SubText/>
+				</property>
+				<property Title="군사" Text="황실 직속 기사단을 중심으로 각 영주들의 기사단으로 구성되어 있다. 기사단원 모두 이능력 사용자이며 이능력 병기를 이용한 마법사단을 운용하고 있다.
+
+세계 대전 이전까지 이 기사단을 중심으로 세계의 다른 국가들이 감히 넘볼 수 없는 국력을 보유하였으나 세계 대전으로 많은 기사단원을 잃은 현재 국력이 예전같지 않은 상황이다.">
+					<SubText/>
+				</property>
+				<property Title="사회 및 문화" Text="이능력의 사용 여부에 기반을 둔 귀족과 일반인으로 나뉘는 이원 계급 사회이다. 귀족 계급은 이능력의 사용자 수와 능력의 크기에 따라 기사, 남작, 자작, 백작, 후작의 5 계층으로 분류된다.
+
+귀족 계급과 일반인 계급의 특권은 절대적이지만 계층간의 이동은 활발한 편이다. 귀족 계급의 경우, 3대에 걸쳐 이능력 사용자가 없을 경우 계급의 위치에 상관없이 일반인 계급으로 강등당한다. 일반인 계급의 경우, 일정 이상의 이능력 사용이 가능하면 기사단 혹은 그에 준하는 황실 직속 기관의 수습생으로 발탁이 가능하며, 해당 기관의 수습생을 거쳐 정식 임용 시, 귀족의 작위를 받을 수 있다. 이런 이능력 특권을 부여받는 귀족들은 전체 인구 중 10%에 달한다.">
+					<SubText/>
+				</property>
+				<property Title="종교" Text="국교는 없지만 황제를 초월하는 존재를 인정하는 종교 활동을 허락하지 않는다. 현실적으로 황제에 적대적이지 않는 한 다양한 종교 활동이 가능하다.">
+					<SubText/>
+				</property>
+			</Content>
+		</class>
+		<class name="Caras" Title="카라스연방" ParentKey="EastContinent" WorldMapImage="Location1" MakerImage="World/BlueMarker">
+			<Content>
+				<property Title="역사" Text="3대 열강 중 가장 역사가 짧은 국가로 AE 650년, 대륙 북부의 소국들을 무력으로 통합한 군사 대국이며 연방국가이다. 중심이 되는 국가는 카라스 공화국으로 16개의 연방 국가들의 연합체이다. 실제로 소국이었던 카라스 공화국은 연방 국가를 형성 후, 내부적으로 발생하는 정치적 잡음을 외부로 돌려 국가적 단합을 추구하기 위해 많은 이권을 쥐고 있던 아테르 제국에 선전 포고를 하여 세계 대전을 일으킨 국가이다.">
+					<SubText/>
+				</property>
+				<property Title="인구" Text="카라스 공화국이 짧은 기간 연방 국가의 구성이 가능했던 이유는 연방 국가의 대다수가 뿌리가 같은 북방계 민족으로 구성되어 있었기 때문이다. 카라스 연방 국가의 북방계 민족 비율은 80%에 이른다.">
+					<SubText/>
+				</property>
+				<property Title="행정 구역" Text="16개의 연방 국가로 이루어져 있으며 각 국가는 모두 독립된 행정 구역 체제를 보유하고 있다.">
+					<SubText/>
+				</property>
+				<property Title="정치" Text="16개의 주가 각자 헌법·정부·재판소를 두는 연방 국가로서, 국가 원수는 대통령 그리고 행정부의 수반은 총리이다. 대통령은 명목상의 국가 원수로 5년 임기의 간접선거로 선출되며 총리는 연방 의회의 과반수를 얻은 자로서, 임기는 4년이다.">
+					<SubText>
+						<property Title="행정부" Text="행정부의 수반은 총리이다. 연방 의회의 직접 투표를 통해 선출되며 임기는 4년이다."/>
+						<property Title="입법부" Text="의회는 각 국가의 연방 지원금 부담액에 비례하여 각 국가 자체적으로 임명된 대표로 구성된다."/>
+						<property Title="사법부" Text="연방 헌법 재판소를 최상위 기관으로 두나 연방 헌법 재판소는 각 국의 분쟁에만 개입한다. 연방 헌법 재판 소장은 각 국의 사법부 최고위원들의 투표로 선출된다."/>
+					</SubText>
+				</property>
+				<property Title="경제" Text="세계에서 가장 높은 기술 기반의 경제를 구축하고 있다. 특히 공업기술, 의학/약학 그리고 첨단 산업 분야에서 세계 최고 수준의 경쟁력을 갖추고 있다. 대졸자 초봉이 발할라 다음으로 가장 높으며, 경제의 안정성이 매우 높은 편이다. 전체 경제에 대한 기여의 정도에 따른 보상이 공평하게 이루어지고 있으며 사회보장제도가 잘 되어 있다.">
+					<SubText/>
+				</property>
+				<property Title="군사" Text="통합적인 연방군 중심을 중심으로 대부분이 기계화 부대이며 최근 들어 안드로이드 부대 중심으로 재편 중이다. 자국의 군사 기술력을 기반으로 대 이능력 진압 능력이 세계에서 가장 강력한 군대이며 이 명성은 세계 대전에서 증명되었다.">
+					<SubText/>
+				</property>
+				<property Title="사회 및 문화" Text="세계 대전 이전에는 각 국마다 다양한 문화 성향을 지니고 있었지만 세계 대전 이후 기술자와 군인들에 대한 우대가 강한 나라이다. 이 부분은 연방 국가 이전 소국 시절부터 강대국인 아테르 제국, 동방 연합에 의한 불합리한 요구들이 오랜 세월 쌓여 있었으나 기술 기반의 군대 재편 이후 세계 대전에서 협의 종전이지만 실질적으로 승전국이 된 자부심에 근거한다.">
+					<SubText/>
+				</property>
+				<property Title="종교" Text="연방 국가 이전 같은 민족임에도 불구하고 소국끼리 종교 전쟁을 벌여 통합된 힘을 발휘하지 못한 역사로 인해 종교 금지 국가이다.">
+					<SubText/>
+				</property>
+			</Content>
+		</class>
+		<class name="EastAlliance" Title="동방 연합" ParentKey="EastContinent" WorldMapImage="Location1" MakerImage="World/BlueMarker">
+			<Content>
+				<property Title="역사" Text="BE 212년, 강력한 통일 국가가 성립하였나 이후 꾸준한 분열과 통합의 시기를 거쳐 AE 400년경, 현재의 연합국가 형태가 되었다. 현재 동방 연합의 구성국은 29개이며 현재도 주변 소국의 합류와 기존 참여국의 이탈이 이루어지고 있다.">
+					<SubText/>
+				</property>
+				<property Title="인구" Text="인구는 다수의 남방계 민족과 북방계 민족이 고루 분포되어 있다.">
+					<SubText/>
+				</property>
+				<property Title="행정 구역" Text="각 국가는 모두 독립된 행정 구역 체제를 보유하고 있다.">
+					<SubText/>
+				</property>
+				<property Title="정치" Text="각 국가는 모두 독자적인 주권을 행사하나 연합 전체의 사안과 연합국과의 분쟁에 관해서는 연합 회의를 통해 결정한다. 연합 회의는 각 국가마다 9명의 의원을 보낼 수 있다.">
+					<SubText/>
+				</property>
+				<property Title="경제" Text="높은 인구수를 기반으로 값싼 노동력으로 2차 제조업이 발달한 동시에 세계 최대의 소비 시장을 가지고 있다. 다만 아테르 제국과 카라스 연방에 비해 천연자원 양이 부족하여 많은 부분 수입에 의존하고 있다.">
+					<SubText/>
+				</property>
+				<property Title="군사" Text="세계 대전 이전부터 세계 최고의 군용 자율형 로봇 중심의 강력화 AI부대를 보유하고 있다. 하지만 이 강력한 부대의 최대 약점은 이 부대를 운용할 자원의 부족이며, 실제로 세계 대전 당시 자원 확보에 실패한 동방 연합의 많은 바이크론들이 전쟁터에 버려졌다. ">
+					<SubText/>
+				</property>
+				<property Title="사회 및 문화" Text="연합 국가 전반에 걸쳐 사회 전반에 퍼진 부정부패로 뒷 세계의 힘이 가장 강력하다. 연합 국가의 정치, 경제, 사회 전반에 걸쳐 범죄 조직 구룡회와 연결되지 않은 사람을 찾아 보기 힘들 정도이다. 연합 국가 내에서는 실질적으로 연합의 의지는 구룡회의 의지라고 말해질 정도이다.">
+					<SubText/>
+				</property>
+				<property Title="종교" Text="종교에 대한 자유가 허락되어 있다.">
+					<SubText/>
+				</property>
+			</Content>
+		</class>
+		<class name="FortressOfTribulation" Title="고난의 성채" ParentKey="EastContinent" WorldMapImage="Location1" MakerImage="World/BlueMarker">
+			<Content>
+				<property Title="역사" Text="AE 700년, 다국적 자원 탐사대에 의해 해당 지역의 지하에 다수의 리치 베인이 존재하는 것을 발견한다. 탐사대는 해당 위치에 탐사 기지를 세우고 지하로 해당 자원의 탐사를 시작한다. 이후 탐사대는 이 곳의 이능석 매장량이 전 세계의 70%에 해당하며 지하 내부 생태계와 구조로 인해 이 리치 베인이 반영구적으로 존재한다는 발표를 한다. 세계는 새로운 성장 동력의 발견으로 고무되었고 탐사 기지는 강력한 후원 아래 꾸준히 확장되었다. 
+
+하지만 안타깝게도 세계 공유 자원화를 원했던 다수의 국가들의 의지와 상관없이 세계 최대의 이능석 채굴장은 3대 열강의 국경 지대에 위치하였기에 강대국의 분쟁 원인으로 전락하고 심지어 세계 대전의 원인이 된다.
+
+현재는 3국 협의 하에 무정부 지역이며 채굴장의 최고 권력 '성주'를 중심으로 국가와 같은 독립적인 주권을 행사하고 있다.">
+					<SubText/>
+				</property>
+				<property Title="인구" Text="채굴 인력으로 동원된 자들은 범죄자, 일반인, 정치범 등 점령국에 따라 다양한 사람들이 이 곳으로 수용되었다. 지금까지 50만명이 넘는 사람들이 동원 되었고 현재 생존하여 이 곳에 살아가는 자는 최소 만 명 정도에 달할 것이라 본다. 나머지는 대부분 사망한 것으로 추정된다.">
+					<SubText/>
+				</property>
+				<property Title="행정 구역" Text="탐사 기지가 장기적인 연구를 위해 지하 깊이에 따라 반 영구 거주 시설을 포함하여 개발되었고 해당 7개의 거주 지구를 기반으로 7개의 채굴장이 존재한다. 최상층 거주 지구는 외부로 나가는 유일한 통로인 동시에 각 지하 거주 지구의 반영구 거주 시설의 기능을 통제할 수 있는 통제실이 존재한다.">
+					<SubText/>
+				</property>
+				<property Title="정치" Text="다양한 사람들이 유입되었기에 각자의 소속과 가치관에 따라 수십개의 세력으로 나뉘어져 각 거주 지구에 대한 직접적인 통제는 불가능 상태이다. 다만 통제실의 권한을 소유한 세력의 리더를 '성주'라고 말하며 채굴장의 대외적인 입장과 거래를 인정하는 분위기이다.">
+					<SubText/>
+				</property>
+				<property Title="경제" Text="하층 지구는 상층 지구에 이능석을 제공하고 생존에 필요한 자원을 나눠 받는다. 최종적으로 최상층 지구는 채굴량을 강대국과 발할라에 판매하여 채굴장의 필요 물품고 자원을 확보하여 하층 거주 지구로 배분하고 있다.">
+					<SubText/>
+				</property>
+				<property Title="군사" Text="오랜 기간 지하로 내려간 인원과 무기, 병력 그리고 각 채굴장의 지하 생태계에 대한 정보는 과장되거나 숨겨져 있어 현재 상태를 확인하기 어렵다.">
+					<SubText/>
+				</property>
+				<property Title="사회 및 문화" Text="거주 지구를 점령한 세력이 해당 지구의 채굴장의 채굴량을 독점하는 구조로 인하여 거주구 점령 세력이 다른 타 세력 채굴자를 착취하는 구조이다. 따라서 각 지구 별로 분쟁이 자주 일어난다.">
+					<SubText/>
+				</property>
+				<property Title="종교" Text="희망이 없는 채굴자들이 '성주'를 경외시 하는 경향이 있다.">
+					<SubText/>
+				</property>
+			</Content>
+		</class>
+		<class name="Aelly" Title="앨리" ParentKey="EastContinent" WorldMapImage="Location1" MakerImage="World/BlueMarker">
+			<Content>
+				<property Title="역사" Text="세계 대전 이후 카라스 연방과 동방 연합의 국경 사이의 전쟁 난민들이 모여들어 생성된 빈민가였다. AE 800년, 발할라에 통합되어 현재는 대대적인 재개발이 진행 중이다.">
+					<SubText/>
+				</property>
+				<property Title="인구" Text="세계 대전 종전 후 난민들이 모여들어 수천 명이 거주하던 시절이 있었으나 극심한 빈곤으로 인한 아사자와 부족한 의료 시설로 인한 병사자들이 급증하였고 그 결과 발할라에 병합 직전에는 천여 명정도였다. 현재는 전원 발할라로 강제 이주 당하였다.">
+					<SubText/>
+				</property>
+			</Content>
+		</class>
+	</idspace>
+	<idspace id="Nation">
+		<schema>
+			<rule property="ScaleInfo" type="calculated" default="Calculated_GetAreaScaleInfo"/>
+			<rule property="Siblings" type="calculated" default="Calculated_GetSiblingArea"/>
+			<rule property="Childs" type="calculated" default="Calculated_GetChildArea"/>
+			<rule property="Parent" type="calculated" default="Calculated_GetParentArea"/>
+			<rule property="MapWidth" type="string" default="{0, 2560}"/>
+			<rule property="MapHeight" type="string" default="{0, 1440}"/>
+		</schema>
+		<class name="EastContinent" Title="동방 대륙" ParentKey="TheWorld" WorldMapImage="Location1" MakerImage="World/BlueMarker">
+			<Anchor>
+				<property Key="KantoRegion" PX="0.5" PY="0.5"/>
+			</Anchor>
+		</class>
+		<class name="WestContinent" Title="서방 대륙" ParentKey="TheWorld" WorldMapImage="Location1" MakerImage="World/BlueMarker"/>
+		<class name="NorthContinent" Title="북부 대륙" ParentKey="TheWorld" WorldMapImage="Location1" MakerImage="World/BlueMarker"/>
+	</idspace>
+	<idspace id="World">
+		<schema>
+			<rule property="ScaleInfo" type="calculated" default="Calculated_GetAreaScaleInfo"/>
+			<rule property="Siblings" type="calculated" default="Calculated_GetSiblingArea"/>
+			<rule property="Childs" type="calculated" default="Calculated_GetChildArea"/>
+			<rule property="Parent" type="calculated" default="Calculated_GetParentArea"/>
+			<rule property="MapWidth" type="string" default="{0, 2560}"/>
+			<rule property="MapHeight" type="string" default="{0, 1440}"/>
+		</schema>
+		<class name="TheWorld" Title="세계지도" ParentKey="None" WorldMapImage="Location1" MakerImage="World/BlueMarker">
+			<Anchor>
+				<property Key="Valhalla" PX="0.5" PY="0.5"/>
+			</Anchor>
+		</class>
+	</idspace>
+</idspaces>

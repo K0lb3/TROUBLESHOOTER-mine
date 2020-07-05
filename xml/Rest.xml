@@ -1,0 +1,2112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="RestAction">
+		<schema>
+			<rule property="AddMinCP" type="number" default="0"/>
+			<rule property="AddMaxCP" type="number" default="0"/>
+			<rule property="AddCount" type="number" default="0"/>
+		</schema>
+		<class name="Sleep" Title="수면" Type="Sleep" Vill="0" AddMinCP="800" AddMaxCP="1000" AddCount="0"/>
+		<class name="Talk" Title="대화" Type="Relation" Vill="0" AddMinCP="50" AddMaxCP="100" AddCount="0"/>
+		<class name="Sermon" Title="훈계" Type="Relation" Vill="0" AddMinCP="-50" AddMaxCP="-20" AddCount="0"/>
+		<class name="FreeAction" Title="자유 행동" Type="Free" Vill="10" AddMinCP="0" AddMaxCP="300" AddCount="0"/>
+		<class name="Drinking_Hot" Title="따뜻한 음료" Type="Refresh" Vill="4" AddMinCP="40" AddMaxCP="100" AddCount="1"/>
+		<class name="Drinking_Cool" Title="시원한 음료" Type="Refresh" Vill="6" AddMinCP="0" AddMaxCP="160" AddCount="1"/>
+		<class name="Eat_Light" Title="가벼운 한끼" Type="Satiety" Vill="3" AddMinCP="60" AddMaxCP="80" AddCount="10"/>
+		<class name="Eat_Heavy" Title="든든한 한끼" Type="Satiety" Vill="3" AddMinCP="60" AddMaxCP="80" AddCount="10"/>
+		<class name="Salary" Title="급여" Type="Salary" Vill="0" AddMinCP="200" AddMaxCP="400" AddCount="0"/>
+		<class name="Salary_Bonus" Title="보너스 급여" Type="Salary" Vill="0" AddMinCP="300" AddMaxCP="600" AddCount="0"/>
+		<class name="Salary_Delay" Title="급여 연체" Type="Salary" Vill="0" AddMinCP="-300" AddMaxCP="-50" AddCount="0"/>
+		<class name="OfficeRent_Delay" Title="임대료 연체" Type="OfficeRent" Vill="0" AddMinCP="-200" AddMaxCP="-100" AddCount="0"/>
+		<class name="OfficeRent_UseBody" Title="바 아르바이트" Type="OfficeRent" Vill="0" AddMinCP="-500" AddMaxCP="-20" AddCount="0"/>
+		<class name="DayOff" Title="휴일" Type="Full" Vill="0" AddMinCP="1000" AddMaxCP="1000" AddCount="0"/>
+	</idspace>
+	<idspace id="Rest">
+		<schema>
+			<rule property="OfficeRentRatio" type="number" default="100"/>
+			<rule property="FullRatio" type="number" default="100"/>
+		</schema>
+		<class name="Leton" SalaryRatio="100" SleepRatio="150" SatietyRatio="90" FreeRatio="150" RefreshRatio="100" CalmRatio="100" RelationRatio="100">
+			<Reaction>
+				<property name="Sleep">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="역시, 잠자리가 편해야 한다니까."/>
+								<property Type="Think" Message="몸이 무거울때는 역시 잠이 최고지."/>
+								<property Type="Think" Message="멋진 공연이 기대되는걸!"/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="잠자리가 영 좋지 않았어..."/>
+								<property Type="Think" Message="아이고 관절이야..."/>
+								<property Type="Think" Message="그다지 유쾌하지 않은 꿈이로군..."/>
+								<property Type="Think" Message="피로가 없어지질 않는군..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Talk">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="짧고 요점만 있는 대화. 그거 좋지."/>
+								<property Type="Normal" Message="생각지 못한 부분이었어. 알려줘서 고마워."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Normal" Message="영 의미 없는 시간이구만..."/>
+								<property Type="Think" Message="차라리 스트레칭을 할 걸..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="FreeAction">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="수액 보충 완료~"/>
+								<property Type="Think" Message="음악도 춤도, 모두 좋았다."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="수액 만드는 것도 가끔은 지겹군."/>
+								<property Type="Think" Message="최악의 공연이었어..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Drinking_Hot">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="나한테 딱 맞는 음료로군."/>
+								<property Type="Think" Message="따뜻하다~"/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="미지근하군..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Drinking_Cool">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="이런 시원함도 좋군."/>
+								<property Type="Think" Message="얼려놓고 먹어야겠어!"/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="굳이 차가운 것을 마실 필요가..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Eat_Light">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="예상외였어, 잘 먹었다."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="이런건 먹지 말아야 해."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Eat_Heavy">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="배부르다~"/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="이젠..물리는군..."/>
+								<property Type="Think" Message="으으...속이.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="사장, 땡큐~!"/>
+								<property Type="Normal" Message="계속 잘 해 보자고, 알버스!"/>
+								<property Type="Normal" Message="이대로 쭈욱~ 가자!"/>
+								<property Type="Think" Message="좀 올려받아도 되려나?"/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary_Bonus">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="어얼~☆ 사장님 멋있는데?"/>
+								<property Type="Shout" Message="보너스를 받아서 그런건 아니지만..열심히 해보겠어."/>
+								<property Type="Normal" Message="멋진 공연으로 보답해주겠어."/>
+								<property Type="Think" Message="호오, 생각보다 통이 큰데?"/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary_Delay">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Normal" Message="돈 없는 사장님은 실망이야."/>
+								<property Type="Normal" Message="인간 관계의 기본은 기브 앤 테이크라고."/>
+								<property Type="Think" Message="레이한테 돈이라도 꿔야 하나."/>
+								<property Type="Think" Message="사장님도 좀 열심히 버셔야 할 것 같네."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="OfficeRent_Delay">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="이봐! 내가 많은 걸 바란 것도 아니잖아!"/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="OfficeRent_UseBody">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="아...이게 대체 무슨 경우야..."/>
+								<property Type="Think" Message="사장님...좀 다시 봐야겠어..."/>
+								<property Type="Think" Message="차라리 지금이라도 연구소에 돌아가야 하나.."/>
+								<property Type="Think" Message="얼음을 팔아...볼까...?"/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Sermon">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="이거 뭐...안하무인이로군."/>
+								<property Type="Think" Message="상대를 먼저 존중 하는 법을 모르는군."/>
+								<property Type="Think" Message="다음부터는 그냥 피하자."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="DayOff">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="공연 준비 OK!"/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+			</Reaction>
+		</class>
+		<class name="Kylie" SalaryRatio="100" SleepRatio="100" SatietyRatio="50" FreeRatio="200" RefreshRatio="100" CalmRatio="50" RelationRatio="100">
+			<Reaction>
+				<property name="Sleep">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="좋은 아침이야."/>
+								<property Type="Think" Message="역시 잠만큼 좋은 건 없어."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="엉망이군."/>
+								<property Type="Think" Message="잠자리가 불편해."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Talk">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="즐거운 시간이었어."/>
+								<property Type="Normal" Message="다음에 또 이야기하자."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Normal" Message="시간 낭비했군."/>
+								<property Type="Think" Message="귀찮은 녀석이야..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="FreeAction">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="그럼 도서관이나 가볼까?"/>
+								<property Type="Normal" Message="그럼 공방이나 가볼까?"/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="다 귀찮아..."/>
+								<property Type="Think" Message="그냥 잠이나 잘까..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Drinking_Hot">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="좋은 따뜻함이군."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="온도가 2도쯤 낮았으면 좋겠는데..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Drinking_Cool">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="좋은 상쾌함이야."/>
+								<property Type="Think" Message="상쾌하군."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="따듯한것을 마실걸 그랬나..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Eat_Light">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="역시 내 선택은 틀리지 않았어."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Normal" Message="이번 선택은 최악이군."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Eat_Heavy">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="역시 내 선택은 틀리지 않았어."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="왜 이런걸 만드는거야..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="잘해보자."/>
+								<property Type="Normal" Message="도움이 더 필요하면 말해. 도와줄게."/>
+								<property Type="Normal" Message="이번 달도 고마워."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary_Bonus">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="사양하지 않고 받을게. 고마워."/>
+								<property Type="Normal" Message="고마워. 알버스."/>
+								<property Type="Normal" Message="언제든지 환영이야."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary_Delay">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Normal" Message="당장은 문제 없으니 나중에 줘."/>
+								<property Type="Normal" Message="뭐. 어쩔 수 없지."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="OfficeRent_Delay">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="아이고 피곤해."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="OfficeRent_UseBody">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="옷이 엉망이 되었어."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Sermon">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="하아..."/>
+								<property Type="Think" Message="......"/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="DayOff">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="나가볼까."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+			</Reaction>
+		</class>
+		<class name="Giselle" SalaryRatio="50" SleepRatio="100" SatietyRatio="100" FreeRatio="100" RefreshRatio="100" CalmRatio="150" RelationRatio="50">
+			<Reaction>
+				<property name="Sleep">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="좋은 아침이야."/>
+								<property Type="Think" Message="역시 잠만큼 좋은 건 없어."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="엉망이군."/>
+								<property Type="Think" Message="잠자리가 불편해."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Talk">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="즐거운 시간이었어."/>
+								<property Type="Normal" Message="다음에 또 이야기하자."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Normal" Message="시간 낭비했군."/>
+								<property Type="Think" Message="귀찮은 녀석이야..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="FreeAction">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="그럼 쇼핑이나 가볼까?"/>
+								<property Type="Normal" Message="그럼 사냥이나 가볼까?"/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="다 귀찮아..."/>
+								<property Type="Think" Message="그냥 잠이나 잘까..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Drinking_Hot">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="나름 괜찮은데~"/>
+								<property Type="Normal" Message="나름 괜찮네."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="차라리 물을 마실걸..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Drinking_Cool">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="잠이 달아났어."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="차라리 물을 마실걸..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Eat_Light">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="나름 괜찮네."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="엉망이군."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Eat_Heavy">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="나름 괜찮은데~"/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="너무 별로인데..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="알버스. 보너스 줘야하는 거 아냐?"/>
+								<property Type="Normal" Message="너라면 내 원래 월급이 얼만지 알지?"/>
+								<property Type="Normal" Message="다음 번엔 월급 올려주는 건 어때?"/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary_Bonus">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="너도 이제 도리를 아는구나."/>
+								<property Type="Normal" Message="고마워. 알버스."/>
+								<property Type="Normal" Message="제법 이제 사장 티가 나는군."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary_Delay">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Normal" Message="알버스. 제대로 해."/>
+								<property Type="Normal" Message="......"/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="OfficeRent_Delay">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="아이고 피곤해."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="OfficeRent_UseBody">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="옷이 엉망이 되었어."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Sermon">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="하아..."/>
+								<property Type="Think" Message="......"/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="DayOff">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="나가볼까."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+			</Reaction>
+		</class>
+		<class name="Albus" SalaryRatio="0" SleepRatio="80" SatietyRatio="90" FreeRatio="60" RefreshRatio="100" CalmRatio="100" RelationRatio="80">
+			<Reaction>
+				<property name="Sleep">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="개운한걸."/>
+								<property Type="Think" Message="잘 잤다."/>
+								<property Type="Think" Message="좋았어..."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="헉! 꿈이었구나.."/>
+								<property Type="Think" Message="또 그 꿈이었군..."/>
+								<property Type="Think" Message="뒤숭숭한 잠자리였어..."/>
+								<property Type="Think" Message="몸이 뻐근한데."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Talk">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="좋은 대화였어..."/>
+								<property Type="Normal" Message="아직도 배울게 많구나"/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Normal" Message="별로 공감이 가지 않아"/>
+								<property Type="Think" Message="차라리 훈련을 할 걸..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="FreeAction">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="훈련서나 읽자..."/>
+								<property Type="Think" Message="사건 분석이나 할까.."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="뭘 하지.."/>
+								<property Type="Think" Message="일이나 할까.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Drinking_Hot">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="좋군. 이런거."/>
+								<property Type="Think" Message="마음이 차분해지는군."/>
+								<property Type="Think" Message="좋은 향이다."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Shout" Message="데일뻔 했다..."/>
+								<property Type="Normal" Message="너무 많이 마셨다."/>
+								<property Type="Think" Message="차라리 시원한걸 먹을 걸..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Drinking_Cool">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="하아~ 속이 다 시원한 걸."/>
+								<property Type="Normal" Message="기분 좋은 시원함이다."/>
+								<property Type="Think" Message="정말 좋다."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="머리가 아플정도야..."/>
+								<property Type="Think" Message="차라리 뜨거운걸 마실 걸..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Eat_Light">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="정말 맛있다!"/>
+								<property Type="Shout" Message="조금 더 먹고 싶을 정도야."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="이런... 배가 아픈데..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Eat_Heavy">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="정말 맛있다!"/>
+								<property Type="Think" Message="든든히 먹었다."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="속이 불편한걸.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="OfficeRent_Delay">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="동료들에게 면목이 없군.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="OfficeRent_UseBody">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="하아... 어쩌다보니 이런 일까지..."/>
+								<property Type="Think" Message="다음에는 꼭 임대료 내고 만다."/>
+								<property Type="Think" Message="사실 그냥 종업원이 더 나은 거 아닐까..."/>
+								<property Type="Think" Message="힘들다..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Sermon">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="누가 세상 일을 모르나..."/>
+								<property Type="Think" Message="나도 알만한 건 다 아는데..."/>
+								<property Type="Think" Message="이런 상황은 피하고 싶다..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="DayOff">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="개운한걸."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+			</Reaction>
+		</class>
+		<class name="Sion" SalaryRatio="120" SleepRatio="90" SatietyRatio="130" FreeRatio="100" RefreshRatio="60" CalmRatio="60" RelationRatio="80">
+			<Reaction>
+				<property name="Sleep">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="몸이 가벼운걸!"/>
+								<property Type="Think" Message="흐아아아아~ 잘 잤다."/>
+								<property Type="Think" Message="나가볼까."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="으아악...."/>
+								<property Type="Think" Message="또 그 꿈이군..."/>
+								<property Type="Think" Message="날 두고가지마..."/>
+								<property Type="Think" Message="그만둬... 날 건드리지마!"/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Talk">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="즐거웠다. 아하하하!"/>
+								<property Type="Normal" Message="그게 또 그렇게 되는구나."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Normal" Message="무슨 소리를 한건지..."/>
+								<property Type="Think" Message="배만 더 고파졌네."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="FreeAction">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="전기나 다뤄볼까."/>
+								<property Type="Think" Message="몸상태 양호!"/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="잠이나 잘걸.."/>
+								<property Type="Think" Message="배만 고파졌어.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Drinking_Hot">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="흐아~ 녹아든다."/>
+								<property Type="Think" Message="잘 넘어간다!"/>
+								<property Type="Think" Message="맛있는 향이다~!"/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Shout" Message="으엑! 뜨거워!"/>
+								<property Type="Normal" Message="화장실 가고 싶다.."/>
+								<property Type="Think" Message="차라리 시원한걸 주지.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Drinking_Cool">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="크아 좋다!"/>
+								<property Type="Normal" Message="여기다 과일까지 넣으면 정말 최고겠어."/>
+								<property Type="Think" Message="정신이 번쩍 나는걸!"/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="차갑기만 하고 별 맛이.."/>
+								<property Type="Think" Message="좋다 말았네.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Eat_Light">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="이거 끝내주잖아!"/>
+								<property Type="Shout" Message="여기 한판 더 주세요!"/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="더 이상은...으윽..."/>
+								<property Type="Think" Message="아..무리했나 봐.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Eat_Heavy">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="여기 한판 더 주세요!"/>
+								<property Type="Think" Message="배불리 먹자!"/>
+								<property Type="Shout" Message="후아~ 후아~"/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="아..무리했나 봐.."/>
+								<property Type="Think" Message="대체 뭘 넣었길래.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="잘 쓸게. 알버스!"/>
+								<property Type="Normal" Message="계속 잘 부탁해. 알버스!"/>
+								<property Type="Normal" Message="계속 잘해보자!"/>
+								<property Type="Think" Message="언제쯤 급여 올려달라고 해볼까..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary_Bonus">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="이얏호~☆ 사장님 최고!!"/>
+								<property Type="Shout" Message="알버스!! 나 진짜 열심히 할게!"/>
+								<property Type="Normal" Message="계속 잘 부탁해. 알버스!"/>
+								<property Type="Think" Message="와... 알버스 괜찮을까?"/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary_Delay">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Normal" Message="다음엔 꼭 부탁해."/>
+								<property Type="Normal" Message="열심히 할게..."/>
+								<property Type="Think" Message="하아... 당분간 힘들겠구나..."/>
+								<property Type="Think" Message="적어도 월급은 제대로 챙겨줘야지..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="OfficeRent_Delay">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="알버스, 좀..추워.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="OfficeRent_UseBody">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="아... 왜 나까지 이런 일을 하는 거야"/>
+								<property Type="Think" Message="사장님이 무능력해..."/>
+								<property Type="Think" Message="아.. 차라리 아르바이트를 다시 할까?"/>
+								<property Type="Think" Message="아 배고파... 너무 힘드네..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Sermon">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="정말 귀찮군..."/>
+								<property Type="Think" Message="사람을 존중할 줄 모르는군."/>
+								<property Type="Think" Message="다음엔 별로 이야기하고 싶지 않아..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="DayOff">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="몸이 가벼운걸!"/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+			</Reaction>
+		</class>
+		<class name="Irene" SalaryRatio="75" SleepRatio="100" SatietyRatio="80" FreeRatio="120" RefreshRatio="80" CalmRatio="80" RelationRatio="80">
+			<Reaction>
+				<property name="Sleep">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="하아..포근했어."/>
+								<property Type="Think" Message="정신이 또렷해졌어."/>
+								<property Type="Think" Message="몸이 가벼운걸."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="벌레들한테 물렸어.."/>
+								<property Type="Think" Message="꿈이 영 좋지 않아.."/>
+								<property Type="Think" Message="히어로는..패배 하지 않...는.."/>
+								<property Type="Think" Message="아악! 그만둬!!"/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Talk">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="좋은 사람이네."/>
+								<property Type="Normal" Message="히어로의 좋은 친구다."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Normal" Message="차라리 악당이나 찾아볼걸."/>
+								<property Type="Think" Message="대체 뭐라는 거야.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="FreeAction">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="수련을 하자."/>
+								<property Type="Think" Message="새로운 필살기를.."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="뭐 하지.."/>
+								<property Type="Think" Message="일이나 할까.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Drinking_Hot">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="음? 좋아!"/>
+								<property Type="Think" Message="훌륭해!"/>
+								<property Type="Think" Message="좋은 향이다."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Shout" Message="데일뻔 했잖아!"/>
+								<property Type="Normal" Message="뜨겁기만 하고!"/>
+								<property Type="Think" Message="역시 시원한게 낫네.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Drinking_Cool">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="속이 다 시원하네!"/>
+								<property Type="Normal" Message="뭐든 잘 어울리겠는데?"/>
+								<property Type="Think" Message="캬아! 좋아!!"/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="너무 차가워!"/>
+								<property Type="Think" Message="나랑은 안 맞는군."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Eat_Light">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="뭐야 이거? 맛 있잖아!"/>
+								<property Type="Think" Message="한판 더 먹을까?"/>
+								<property Type="Think" Message="와구와구!"/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="더 이상은 무리야.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Eat_Heavy">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="한판 더 먹을까?"/>
+								<property Type="Think" Message="이 정도 쯤이야!"/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="더 이상은 무리야.."/>
+								<property Type="Think" Message="몸이 무거워..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="고맙게 받겠어!"/>
+								<property Type="Normal" Message="계속 잘 해 보자구!"/>
+								<property Type="Normal" Message="히어로의 친구, 알버스!"/>
+								<property Type="Think" Message="열심히 하면 더 주려나."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary_Bonus">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="보너스? 당신...최고잖아!"/>
+								<property Type="Shout" Message="오늘도 히어로는 출격 준비 완료!"/>
+								<property Type="Normal" Message="당신은 진정한 히어로의 후원자다."/>
+								<property Type="Think" Message="생각보다 통이 크네."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary_Delay">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Normal" Message="뭐...그래..한 번쯤은..."/>
+								<property Type="Normal" Message="악당이 되어버리면 용서하지 않겠어!"/>
+								<property Type="Think" Message="사료는 어떻게 한담.."/>
+								<property Type="Think" Message="히어로도 사람이라고!"/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="OfficeRent_Delay">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="피곤해..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="OfficeRent_UseBody">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="난 히어로인데...어째서!"/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Sermon">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="뭐라는 건지 하나도 모르겠다."/>
+								<property Type="Think" Message="졸린다..."/>
+								<property Type="Think" Message="머리 아파..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="DayOff">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="몸이 가벼운걸."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+			</Reaction>
+		</class>
+		<class name="Anne" SalaryRatio="100" SleepRatio="80" SatietyRatio="70" FreeRatio="120" RefreshRatio="120" CalmRatio="120" RelationRatio="150">
+			<Reaction>
+				<property name="Sleep">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="하아, 잘 잤습니다!"/>
+								<property Type="Think" Message="몸이 가벼워요."/>
+								<property Type="Think" Message="날아갈것 같아요!"/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="꺄악! 버..벌레!"/>
+								<property Type="Think" Message="나쁜 사람이 쫓아왔어요.."/>
+								<property Type="Think" Message="나쁜 꿈을 꿨어요.."/>
+								<property Type="Think" Message="잠을 잘못 잤나 봐요."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Talk">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="좋은 분이시다."/>
+								<property Type="Normal" Message="앤 열심히 공부하겠습니다."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Normal" Message="무슨 말인지 하나도 모르겠어요."/>
+								<property Type="Think" Message="흐응...이상해..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="FreeAction">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="화단에 물 주러 가야지."/>
+								<property Type="Think" Message="책을 읽어야지."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="움직이기 싫어요."/>
+								<property Type="Think" Message="자유시간이라도...딱히.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Drinking_Hot">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="와아~ 정말 좋아요."/>
+								<property Type="Think" Message="푸근해지는 느낌이야."/>
+								<property Type="Think" Message="향까지 좋으니 더 좋다."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Shout" Message="으아앙! 뜨거워요!"/>
+								<property Type="Normal" Message="입이 데인것 같아..."/>
+								<property Type="Think" Message="시원한 물 마시고 싶어.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Drinking_Cool">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="앗! 시원해요!"/>
+								<property Type="Normal" Message="지금 마시기 딱이네요."/>
+								<property Type="Think" Message="시원하다."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="이가 시려요.."/>
+								<property Type="Think" Message="차가운건 조심해야 겠어.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Eat_Light">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="와아..최고에요!"/>
+								<property Type="Think" Message="꼭꼭 씹어야지."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="이제는 무리야.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Eat_Heavy">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="앤! 하나 더 먹을 수 있습니다!"/>
+								<property Type="Think" Message="꼭꼭 씹어야지."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="소화제를 먹어야겠다."/>
+								<property Type="Think" Message="우유를 마시고 싶어.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="감사합니다. 알버스 오빠."/>
+								<property Type="Normal" Message="잘 쓸게요. 오빠."/>
+								<property Type="Normal" Message="앞으로도 잘 부탁드립니다."/>
+								<property Type="Think" Message="갖고 싶은걸 사기에는.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary_Bonus">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="저...정말인가요??!!"/>
+								<property Type="Shout" Message="오빠, 저 정말 열심히 할게요!"/>
+								<property Type="Normal" Message="정말 감사합니다!"/>
+								<property Type="Think" Message="나한테 이렇게 줘도 괜찮은걸까..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary_Delay">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Normal" Message="많이 힘드신 거군요.."/>
+								<property Type="Normal" Message="그래도 힘내볼게요."/>
+								<property Type="Think" Message="맛있는 거 먹고 싶어.."/>
+								<property Type="Think" Message="모든 일에는 대가가 따른다고 했어요.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="OfficeRent_Delay">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="기운이 하나도 없어요.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="OfficeRent_UseBody">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="돈 벌기는..쉽지 않네요.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Sermon">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="죄송합니다..."/>
+								<property Type="Think" Message="내가 그렇게 잘못했나..."/>
+								<property Type="Think" Message="속상하네요..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="DayOff">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="몸이 가벼워요."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+			</Reaction>
+		</class>
+		<class name="Ray" SalaryRatio="150" SleepRatio="70" SatietyRatio="110" FreeRatio="100" RefreshRatio="80" CalmRatio="80" RelationRatio="120">
+			<Reaction>
+				<property name="Sleep">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="아아, 좋은데."/>
+								<property Type="Think" Message="오랜만이야. 이런 기분."/>
+								<property Type="Think" Message="나가볼까."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="기분 나쁜 꿈이었어."/>
+								<property Type="Think" Message="꿈이지만...기분 나빠."/>
+								<property Type="Think" Message="왜 하필 그런 꿈을.."/>
+								<property Type="Think" Message="괜히 잤군.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Talk">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="생각보다 괜찮네."/>
+								<property Type="Normal" Message="세상은 넓군."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Normal" Message="왜 저리 부정적이래.."/>
+								<property Type="Think" Message="잠이나 잘걸."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="FreeAction">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="스프레이 점검이나 해볼까."/>
+								<property Type="Think" Message="오랜만에 낙서나 해야지."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="아무것도 하기 싫어."/>
+								<property Type="Think" Message="차라리 일이 낫겠어."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Drinking_Hot">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="몸에 온기가 돈다."/>
+								<property Type="Think" Message="따뜻하니 좋네."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Shout" Message="뭐야 이거! 너무 뜨겁잖아!"/>
+								<property Type="Normal" Message="좀 질리네."/>
+								<property Type="Think" Message="캔 음료가 훨씬 낫겠어."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Drinking_Cool">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="캬하! 좋잖아!"/>
+								<property Type="Think" Message="속 시원하네."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="아야야야..이가 다 시리네."/>
+								<property Type="Think" Message="돈 주고 사먹기엔..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Eat_Light">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="으음, 좋은데?"/>
+								<property Type="Shout" Message="이거...맛있어!"/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="돈 주고 사먹기엔..."/>
+								<property Type="Think" Message="느끼해..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Eat_Heavy">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="뭔가 곁들이면 더 좋을것 같아."/>
+								<property Type="Shout" Message="이거...맛있어!"/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="돈 주고 사먹기엔..."/>
+								<property Type="Think" Message="속이 다 부글부글거리네."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="고마워, 고용주."/>
+								<property Type="Normal" Message="철저한걸? 고용주 오빠."/>
+								<property Type="Normal" Message="계속 같이 할만 한걸."/>
+								<property Type="Think" Message="새로 나온 스프레이가 좀 비싸던데..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary_Bonus">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="어머~ 오빠 멋쟁이!"/>
+								<property Type="Shout" Message="최선을 다 하겠어. 고마워."/>
+								<property Type="Normal" Message="사람을 다룰 줄 아는데?"/>
+								<property Type="Think" Message="고맙긴한데..괜찮으려나."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary_Delay">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Normal" Message="이봐, 좀 실망인데?"/>
+								<property Type="Normal" Message="일이야 하겠지만..."/>
+								<property Type="Think" Message="아이들과의 약속이.."/>
+								<property Type="Think" Message="최소한의 고용주 노릇은 해야 할 거 아니야.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="OfficeRent_Delay">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="아이고 피곤해."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="OfficeRent_UseBody">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="옷이 엉망이 되었어."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Sermon">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="하아... 바람쐬러 가야겠다."/>
+								<property Type="Think" Message="이건 이해할 수 없어..."/>
+								<property Type="Think" Message="너나 잘하세요."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="DayOff">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="나가볼까."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+			</Reaction>
+		</class>
+		<class name="Heissing" SalaryRatio="60" SleepRatio="60" SatietyRatio="120" FreeRatio="70" RefreshRatio="100" CalmRatio="100" RelationRatio="50">
+			<Reaction>
+				<property name="Sleep">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="잘잤군."/>
+								<property Type="Think" Message="개운해."/>
+								<property Type="Think" Message="움직여 볼까."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="헉!...제길..."/>
+								<property Type="Think" Message="왜 하필 그 일이..."/>
+								<property Type="Think" Message="악몽이었어..젠장."/>
+								<property Type="Think" Message="괜히 잤군."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Talk">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="유익한 대화였다."/>
+								<property Type="Normal" Message="말 솜씨가 제법이군."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Normal" Message="무의미한 시간이었다."/>
+								<property Type="Think" Message="총알 소리가 더 의미 있겠군."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="FreeAction">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="사격장이나 가볼까."/>
+								<property Type="Think" Message="총기 손질을 해야겠군."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="무료하군."/>
+								<property Type="Think" Message="무의미한 시간이었다."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Drinking_Hot">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="마음에 들어."/>
+								<property Type="Think" Message="제법...괜찮군."/>
+								<property Type="Think" Message="가끔 마실만해."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="차라리 물이 낫겠어."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Drinking_Cool">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="이거 시원하군!"/>
+								<property Type="Normal" Message="그럭저럭 괜찮군."/>
+								<property Type="Think" Message="시원하긴하네."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="그저 차기만 한 건가."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Eat_Light">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="그럭저럭 괜찮군."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="머리가 아프군."/>
+								<property Type="Think" Message="내 취향은 아니로군."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Eat_Heavy">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="괜찮은 맛이었어."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="깡패 녀석들한테 주고 싶군."/>
+								<property Type="Think" Message="먹으라고 내놓은 건가.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="잘 쓰도록 하지."/>
+								<property Type="Normal" Message="계산 정확하군. 맘에 들어."/>
+								<property Type="Normal" Message="앞으로도 이렇게 주면 된다."/>
+								<property Type="Think" Message="너무 싸게 일해주는 건가."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary_Bonus">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="거절하지 않겠다."/>
+								<property Type="Shout" Message="호오, 보기보단 통이 크군?"/>
+								<property Type="Normal" Message="계속 일해주겠다."/>
+								<property Type="Think" Message="알아서 잘 조절하겠지."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary_Delay">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Normal" Message="신뢰가 떨어지는군."/>
+								<property Type="Normal" Message="좋지 않은 선택이야."/>
+								<property Type="Think" Message="다른 회사를 가야 하나."/>
+								<property Type="Think" Message="어디든 여기보단 낫겠어."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="OfficeRent_Delay">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="이번 한 번만이다."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="OfficeRent_UseBody">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="다음엔 참지 않아."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Sermon">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Normal" Message="별로 달갑지 않은 소리군."/>
+								<property Type="Normal" Message="세상 일은 그렇게 쉽지 않아."/>
+								<property Type="Think" Message="그 막힌 머리 뚫어주고 싶군."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="DayOff">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="개운해."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+			</Reaction>
+		</class>
+		<class name="Bianca" SalaryRatio="90" SleepRatio="80" SatietyRatio="60" FreeRatio="150" RefreshRatio="120" CalmRatio="120" RelationRatio="100">
+			<Reaction>
+				<property name="Sleep">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="뭐, 괜찮은 잠자리였어."/>
+								<property Type="Think" Message="조금 더 자도 좋겠지만."/>
+								<property Type="Think" Message="일어나볼까."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="역시...침대는 좋은걸 써야 해."/>
+								<property Type="Think" Message="자기에 좋은 환경은 아니네."/>
+								<property Type="Think" Message="피로가 풀리지 않잖아."/>
+								<property Type="Think" Message="제대로 자지 못했어."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Talk">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="배울점도 있었어."/>
+								<property Type="Normal" Message="이런 세계도 있었군."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Normal" Message="입만 아프군."/>
+								<property Type="Think" Message="지루해."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="FreeAction">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="몸좀 풀어볼까."/>
+								<property Type="Think" Message="계획을 세워보자."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="다 귀찮아."/>
+								<property Type="Think" Message="집으로 돌아가야 하나.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Drinking_Hot">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="훌륭한 맛인걸?"/>
+								<property Type="Think" Message="좀 진정되는군."/>
+								<property Type="Think" Message="자주 마시고 싶은걸."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Shout" Message="이걸 지금 마시라고?"/>
+								<property Type="Normal" Message="애매한 맛이군."/>
+								<property Type="Think" Message="돈주고 왜 이걸..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Drinking_Cool">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="아아! 좋아 이거."/>
+								<property Type="Normal" Message="값어치를 하는걸."/>
+								<property Type="Think" Message="가끔 마실만 하겠어."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="머리가 다 아프잖아.."/>
+								<property Type="Think" Message="이 시려워..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Dumpling">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="오호라? 이 맛은?"/>
+								<property Type="Shout" Message="마침 배고팠는데."/>
+								<property Type="Think" Message="든든히 먹자"/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="더 이상은 무리야."/>
+								<property Type="Think" Message="양보단 질인데."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Dumpling2">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="으음? 신기한 맛이네."/>
+								<property Type="Shout" Message="후우~ 후우~"/>
+								<property Type="Think" Message="괜찮은 한끼였다."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Shout" Message="맵기만 할뿐이군."/>
+								<property Type="Think" Message="속이 뒤집어진것 같아."/>
+								<property Type="Think" Message="이걸 돈 주고 왜.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="깔끔한걸. 고마워."/>
+								<property Type="Normal" Message="당분간은 계속하자고."/>
+								<property Type="Normal" Message="앞으로도 협업 해주겠어."/>
+								<property Type="Think" Message="조금 더 쓰라고 해볼까."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary_Bonus">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="맘에 들어!"/>
+								<property Type="Shout" Message="제법 벌이가 잘 되나 봐? 잘 쓸게."/>
+								<property Type="Normal" Message="이런거라면 언제든 환영이야."/>
+								<property Type="Think" Message="이 정도라면, 무리도 아니겠지."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary_Delay">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Normal" Message="숙녀에게 할 부탁은 아닌거 같군."/>
+								<property Type="Normal" Message="필요하다면 일해주겠지만.."/>
+								<property Type="Think" Message="같이 갈 회사는 아닌 건가.."/>
+								<property Type="Think" Message="본가의 힘을 빌려야 하는 건가.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="OfficeRent_Delay">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="어째서 이런 대접을 받아야 하는 거야!"/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="OfficeRent_UseBody">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="사서 고생이람! 흥!"/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Sermon">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Normal" Message="정말 답답하군."/>
+								<property Type="Think" Message="자기는 잘하고 있는 건가?"/>
+								<property Type="Think" Message="할아범과 같은 인간이네."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="DayOff">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="조금 더 자도 좋겠지만."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+			</Reaction>
+		</class>
+		<class name="Alisa" SalaryRatio="130" SleepRatio="70" SatietyRatio="80" FreeRatio="80" RefreshRatio="120" CalmRatio="120" RelationRatio="60">
+			<Reaction>
+				<property name="Sleep">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="하아, 잘잤다."/>
+								<property Type="Think" Message="통증이 사라졌어."/>
+								<property Type="Think" Message="잠이 보약이야."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="잠을 잘못잤나."/>
+								<property Type="Think" Message="어깨가 뻐근해."/>
+								<property Type="Think" Message="좋지 않은 꿈을.."/>
+								<property Type="Think" Message="잔것 같지도 않아."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Talk">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="의외로 생각이 깊네."/>
+								<property Type="Normal" Message="옛날 생각 나는군."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Normal" Message="동문서답한 기분이야."/>
+								<property Type="Think" Message="검이나 손질해야겠어."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="FreeAction">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="검이나 손볼까."/>
+								<property Type="Think" Message="여유라. 좋군."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="지루할뿐이야."/>
+								<property Type="Think" Message="지겨워."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Drinking_Hot">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="역시 따뜻한게 좋아."/>
+								<property Type="Think" Message="노곤노곤해지는군."/>
+								<property Type="Think" Message="향도 좋아."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Shout" Message="뜨겁잖아! 엉터리 바텐더!"/>
+								<property Type="Normal" Message="뭐든지 적당히 마셔야 해."/>
+								<property Type="Think" Message="마시는 건 이제 별로야."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Drinking_Cool">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="훌륭한데 바텐더 아저씨!"/>
+								<property Type="Normal" Message="속이 다 시원하네."/>
+								<property Type="Think" Message="잘 마셨다."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="얼음물이 낫겠어."/>
+								<property Type="Think" Message="그저 그렇군."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Dumpling">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="끝내주는걸, 이 만두!"/>
+								<property Type="Shout" Message="조금 더 줄 수 있어?"/>
+								<property Type="Think" Message="맛있게 먹자."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="이젠 좀 다른걸.."/>
+								<property Type="Think" Message="너무 기름지다.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Dumpling2">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="불맛이 좋은걸!"/>
+								<property Type="Shout" Message="이 정도쯤이야!"/>
+								<property Type="Think" Message="매콤하니 먹을만해."/>
+							</Dialog>
+						</property>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Shout" Message="사람이 먹을 수 있는 건가?"/>
+								<property Type="Think" Message="뭐든 적정선이 있는 거라고."/>
+								<property Type="Think" Message="차라리 고추를 먹겠어."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Normal" Message="고마워, 사장 양반."/>
+								<property Type="Normal" Message="벌써 그날인가."/>
+								<property Type="Normal" Message="잘 해보자."/>
+								<property Type="Think" Message="좀 더 여유가 있으려나..."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary_Bonus">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Shout" Message="호오? 고마워. 사장님."/>
+								<property Type="Shout" Message="신뢰가 가는 행동인걸?"/>
+								<property Type="Normal" Message="좀 더 힘을 내보도록 하지."/>
+								<property Type="Think" Message="이 정도는 여유 있다는 건가."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Salary_Delay">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Normal" Message="이봐, 사장 양반. 두번은 안돼."/>
+								<property Type="Normal" Message="부탁이니 남아는 있겠지만..."/>
+								<property Type="Think" Message="좀 더 허리띠를 졸라야 하나.."/>
+								<property Type="Think" Message="기본적인 급여를 지급 못하다니.."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="OfficeRent_Delay">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="검 손질도 못하겠군."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="OfficeRent_UseBody">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Think" Message="나와는 영...맞지 않아."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="Sermon">
+					<ActionType>
+						<property name="Bad">
+							<Dialog>
+								<property Type="Normal" Message="별로 달갑지 않은 소리군..."/>
+								<property Type="Normal" Message="별 의미 없는 이야기네..."/>
+								<property Type="Normal" Message="답답한 소리군."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+				<property name="DayOff">
+					<ActionType>
+						<property name="Good">
+							<Dialog>
+								<property Type="Think" Message="통증이 사라졌어."/>
+							</Dialog>
+						</property>
+					</ActionType>
+				</property>
+			</Reaction>
+		</class>
+	</idspace>
+</idspaces>

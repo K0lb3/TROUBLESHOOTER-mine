@@ -1,0 +1,2430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="ItemIdentifyType">
+		<class name="Bracelet" Title="손목 고리" Desc="[!Ignore]초능력 방어용" Parent="Accessory">
+			<Options>
+				<property name="FlameGuardian"/>
+				<property name="FrostGuardian"/>
+				<property name="FlashGuardian"/>
+				<property name="MistGuardian"/>
+				<property name="StormGuardian"/>
+				<property name="VerdureGuardian"/>
+				<property name="Abyss"/>
+				<property name="Sequent"/>
+				<property name="SpiritGuardian"/>
+				<property name="FlameSentinel"/>
+				<property name="FrostSentinel"/>
+				<property name="FlashSentinel"/>
+				<property name="StormSentinel"/>
+				<property name="VerdureSentinel"/>
+				<property name="MistSentinel"/>
+				<property name="FlameScout"/>
+				<property name="FrostScout"/>
+				<property name="FlashScout"/>
+				<property name="StormScout"/>
+				<property name="VerdureScout"/>
+				<property name="MistScout"/>
+				<property name="Ascetic"/>
+				<property name="Destiny"/>
+				<property name="Fortress"/>
+				<property name="FlameWall"/>
+				<property name="FrostWall"/>
+				<property name="FlashWall"/>
+				<property name="StormWall"/>
+				<property name="VerdureWall"/>
+				<property name="MistWall"/>
+				<property name="FlameShield"/>
+				<property name="FrostShield"/>
+				<property name="FlashShield"/>
+				<property name="StormShield"/>
+				<property name="VerdureShield"/>
+				<property name="MistShield"/>
+				<property name="IronWall"/>
+				<property name="Hippopotamus"/>
+				<property name="Crocodile"/>
+			</Options>
+		</class>
+		<class name="Ring" Title="반지" Desc="[!Ignore]초능력 공격용" Parent="Accessory">
+			<Options>
+				<property name="FlameRuler"/>
+				<property name="FrostRuler"/>
+				<property name="FlashRuler"/>
+				<property name="StormRuler"/>
+				<property name="VerdureRuler"/>
+				<property name="MistRuler"/>
+				<property name="FlameDestroyer"/>
+				<property name="FrostDestroyer"/>
+				<property name="FlashDestroyer"/>
+				<property name="StormDestroyer"/>
+				<property name="VerdureDestroyer"/>
+				<property name="MistDestroyer"/>
+				<property name="Messiah"/>
+				<property name="FlameMage"/>
+				<property name="FrostMage"/>
+				<property name="FlashMage"/>
+				<property name="StormMage"/>
+				<property name="VerdureMage"/>
+				<property name="MistMage"/>
+				<property name="FlameFanatic"/>
+				<property name="FrostFanatic"/>
+				<property name="FlashFanatic"/>
+				<property name="StormFanatic"/>
+				<property name="VerdureFanatic"/>
+				<property name="MistFanatic"/>
+				<property name="Prophet"/>
+				<property name="FlameBlade"/>
+				<property name="FrostBlade"/>
+				<property name="FlashBlade"/>
+				<property name="StormBlade"/>
+				<property name="VerdureBlade"/>
+				<property name="MistBlade"/>
+				<property name="FlameArrow"/>
+				<property name="FrostArrow"/>
+				<property name="FlashArrow"/>
+				<property name="StormArrow"/>
+				<property name="VerdureArrow"/>
+				<property name="MistArrow"/>
+				<property name="Victory"/>
+				<property name="Mirage"/>
+				<property name="Ettin"/>
+				<property name="Archisage"/>
+				<property name="Superman"/>
+				<property name="Luck"/>
+				<property name="Miracle"/>
+				<property name="Fox"/>
+				<property name="Monkey"/>
+				<property name="Gorilla"/>
+			</Options>
+		</class>
+		<class name="Wrist" Title="손목 보호대" Desc="[!Ignore]물리 방어용" Parent="Armor">
+			<Options>
+				<property name="MoonGuardian"/>
+				<property name="StarGuardian"/>
+				<property name="MeteorGuardian"/>
+				<property name="SoulGuardian"/>
+				<property name="MoonSentinel"/>
+				<property name="StarSentinel"/>
+				<property name="MeteorSentinel"/>
+				<property name="MoonScout"/>
+				<property name="StarScout"/>
+				<property name="MeteorScout"/>
+				<property name="Ascetic"/>
+				<property name="Luck"/>
+				<property name="Miracle"/>
+				<property name="Elephant"/>
+				<property name="Turtle"/>
+				<property name="IronWall"/>
+			</Options>
+		</class>
+		<class name="Sneakers" Title="운동화" Desc="[!Ignore]속도 회피용" Parent="Armor">
+			<Options>
+				<property name="SoulChaser"/>
+				<property name="TwilightChaser"/>
+				<property name="DarkChaser"/>
+				<property name="Chaser"/>
+				<property name="FlameSoldier"/>
+				<property name="FrostSoldier"/>
+				<property name="FlashSoldier"/>
+				<property name="StormSoldier"/>
+				<property name="VerdureSoldier"/>
+				<property name="MistSoldier"/>
+				<property name="Traveler"/>
+				<property name="Adventurer"/>
+				<property name="Explorer"/>
+				<property name="Lupin"/>
+				<property name="Luck"/>
+				<property name="Giant"/>
+				<property name="Thief"/>
+				<property name="Knight"/>
+			</Options>
+		</class>
+		<class name="DressShoes" Title="구두" Desc="[!Ignore] 명중률용" Parent="Armor">
+			<Options>
+				<property name="SoulGuide"/>
+				<property name="TwilightGuide"/>
+				<property name="DarkGuide"/>
+				<property name="Guide"/>
+				<property name="FlameSoldier"/>
+				<property name="FrostSoldier"/>
+				<property name="FlashSoldier"/>
+				<property name="StormSoldier"/>
+				<property name="VerdureSoldier"/>
+				<property name="MistSoldier"/>
+				<property name="Pioneer"/>
+				<property name="MoonShield"/>
+				<property name="StarShield"/>
+				<property name="MeteorShield"/>
+				<property name="Luck"/>
+				<property name="Giant"/>
+				<property name="Thief"/>
+				<property name="Turtle"/>
+			</Options>
+		</class>
+		<class name="Boots" Title="부츠" Desc="[!Ignore]방어용" Parent="Armor">
+			<Options>
+				<property name="SoulCollector"/>
+				<property name="TwilightCollector"/>
+				<property name="DarkCollector"/>
+				<property name="Collector"/>
+				<property name="FlameSoldier"/>
+				<property name="FrostSoldier"/>
+				<property name="FlashSoldier"/>
+				<property name="StormSoldier"/>
+				<property name="VerdureSoldier"/>
+				<property name="MistSoldier"/>
+				<property name="MoonWall"/>
+				<property name="StarWall"/>
+				<property name="MeteorWall"/>
+				<property name="Settler"/>
+				<property name="Luck"/>
+				<property name="Giant"/>
+				<property name="Thief"/>
+				<property name="Elephant"/>
+			</Options>
+		</class>
+		<class name="BodyArmor" Title="방탄복" Desc="방탄복" Parent="Armor">
+			<Options>
+				<property name="MoonSentinel"/>
+				<property name="StarSentinel"/>
+				<property name="MeteorSentinel"/>
+				<property name="MoonScout"/>
+				<property name="StarScout"/>
+				<property name="MeteorScout"/>
+				<property name="FlameSentinel"/>
+				<property name="FrostSentinel"/>
+				<property name="FlashSentinel"/>
+				<property name="StormSentinel"/>
+				<property name="VerdureSentinel"/>
+				<property name="MistSentinel"/>
+				<property name="FlameScout"/>
+				<property name="FrostScout"/>
+				<property name="FlashScout"/>
+				<property name="StormScout"/>
+				<property name="VerdureScout"/>
+				<property name="MistScout"/>
+				<property name="Fortress"/>
+				<property name="Sentinel"/>
+				<property name="Scout"/>
+				<property name="FlameWall"/>
+				<property name="FrostWall"/>
+				<property name="FlashWall"/>
+				<property name="StormWall"/>
+				<property name="VerdureWall"/>
+				<property name="MistWall"/>
+				<property name="MoonWall"/>
+				<property name="StarWall"/>
+				<property name="MeteorWall"/>
+				<property name="MoonShield"/>
+				<property name="StarShield"/>
+				<property name="MeteorShield"/>
+				<property name="IronWall"/>
+				<property name="Clown"/>
+				<property name="Elephant"/>
+				<property name="Turtle"/>
+				<property name="Hippopotamus"/>
+				<property name="Crocodile"/>
+				<property name="Knight"/>
+			</Options>
+		</class>
+		<class name="Coat" Title="코트" Desc="코트" Parent="Armor">
+			<Options>
+				<property name="MoonGuardian"/>
+				<property name="StarGuardian"/>
+				<property name="MeteorGuardian"/>
+				<property name="FlameGuardian"/>
+				<property name="FrostGuardian"/>
+				<property name="FlashGuardian"/>
+				<property name="MistGuardian"/>
+				<property name="StormGuardian"/>
+				<property name="VerdureGuardian"/>
+				<property name="SoulGuardian"/>
+				<property name="SpiritGuardian"/>
+				<property name="MoonSentinel"/>
+				<property name="StarSentinel"/>
+				<property name="MeteorSentinel"/>
+				<property name="MoonScout"/>
+				<property name="StarScout"/>
+				<property name="MeteorScout"/>
+				<property name="FlameSentinel"/>
+				<property name="FrostSentinel"/>
+				<property name="FlashSentinel"/>
+				<property name="StormSentinel"/>
+				<property name="VerdureSentinel"/>
+				<property name="MistSentinel"/>
+				<property name="FlameScout"/>
+				<property name="FrostScout"/>
+				<property name="FlashScout"/>
+				<property name="StormScout"/>
+				<property name="VerdureScout"/>
+				<property name="MistScout"/>
+				<property name="Ascetic"/>
+				<property name="Fortress"/>
+				<property name="Sentinel"/>
+				<property name="Scout"/>
+				<property name="FlameWall"/>
+				<property name="FrostWall"/>
+				<property name="FlashWall"/>
+				<property name="StormWall"/>
+				<property name="VerdureWall"/>
+				<property name="MistWall"/>
+				<property name="MoonWall"/>
+				<property name="StarWall"/>
+				<property name="MeteorWall"/>
+				<property name="MoonShield"/>
+				<property name="StarShield"/>
+				<property name="MeteorShield"/>
+				<property name="IronWall"/>
+				<property name="Clown"/>
+				<property name="Elephant"/>
+				<property name="Turtle"/>
+				<property name="Hippopotamus"/>
+				<property name="Crocodile"/>
+				<property name="Knight"/>
+			</Options>
+		</class>
+		<class name="Jacket" Title="자켓" Desc="자켓" Parent="Armor">
+			<Options>
+				<property name="MoonGuardian"/>
+				<property name="StarGuardian"/>
+				<property name="MeteorGuardian"/>
+				<property name="FlameGuardian"/>
+				<property name="FrostGuardian"/>
+				<property name="FlashGuardian"/>
+				<property name="MistGuardian"/>
+				<property name="StormGuardian"/>
+				<property name="VerdureGuardian"/>
+				<property name="SoulCollector"/>
+				<property name="TwilightCollector"/>
+				<property name="DarkCollector"/>
+				<property name="MoonSentinel"/>
+				<property name="StarSentinel"/>
+				<property name="MeteorSentinel"/>
+				<property name="MoonScout"/>
+				<property name="StarScout"/>
+				<property name="MeteorScout"/>
+				<property name="FlameSentinel"/>
+				<property name="FrostSentinel"/>
+				<property name="FlashSentinel"/>
+				<property name="StormSentinel"/>
+				<property name="VerdureSentinel"/>
+				<property name="MistSentinel"/>
+				<property name="FlameScout"/>
+				<property name="FrostScout"/>
+				<property name="FlashScout"/>
+				<property name="StormScout"/>
+				<property name="VerdureScout"/>
+				<property name="MistScout"/>
+				<property name="Collector"/>
+				<property name="Fortress"/>
+				<property name="Sentinel"/>
+				<property name="Scout"/>
+				<property name="FlameWall"/>
+				<property name="FrostWall"/>
+				<property name="FlashWall"/>
+				<property name="StormWall"/>
+				<property name="VerdureWall"/>
+				<property name="MistWall"/>
+				<property name="MoonWall"/>
+				<property name="StarWall"/>
+				<property name="MeteorWall"/>
+				<property name="MoonShield"/>
+				<property name="StarShield"/>
+				<property name="MeteorShield"/>
+				<property name="IronWall"/>
+				<property name="Clown"/>
+				<property name="Elephant"/>
+				<property name="Turtle"/>
+				<property name="Hippopotamus"/>
+				<property name="Crocodile"/>
+				<property name="Knight"/>
+			</Options>
+		</class>
+		<class name="Suit" Title="정장" Desc="정장" Parent="Armor">
+			<Options>
+				<property name="MoonGuardian"/>
+				<property name="StarGuardian"/>
+				<property name="MeteorGuardian"/>
+				<property name="FlameGuardian"/>
+				<property name="FrostGuardian"/>
+				<property name="FlashGuardian"/>
+				<property name="MistGuardian"/>
+				<property name="StormGuardian"/>
+				<property name="VerdureGuardian"/>
+				<property name="SoulGuide"/>
+				<property name="TwilightGuide"/>
+				<property name="DarkGuide"/>
+				<property name="MoonSentinel"/>
+				<property name="StarSentinel"/>
+				<property name="MeteorSentinel"/>
+				<property name="MoonScout"/>
+				<property name="StarScout"/>
+				<property name="MeteorScout"/>
+				<property name="FlameSentinel"/>
+				<property name="FrostSentinel"/>
+				<property name="FlashSentinel"/>
+				<property name="StormSentinel"/>
+				<property name="VerdureSentinel"/>
+				<property name="MistSentinel"/>
+				<property name="FlameScout"/>
+				<property name="FrostScout"/>
+				<property name="FlashScout"/>
+				<property name="StormScout"/>
+				<property name="VerdureScout"/>
+				<property name="MistScout"/>
+				<property name="Guide"/>
+				<property name="Fortress"/>
+				<property name="Sentinel"/>
+				<property name="Scout"/>
+				<property name="FlameWall"/>
+				<property name="FrostWall"/>
+				<property name="FlashWall"/>
+				<property name="StormWall"/>
+				<property name="VerdureWall"/>
+				<property name="MistWall"/>
+				<property name="MoonWall"/>
+				<property name="StarWall"/>
+				<property name="MeteorWall"/>
+				<property name="MoonShield"/>
+				<property name="StarShield"/>
+				<property name="MeteorShield"/>
+				<property name="IronWall"/>
+				<property name="Clown"/>
+				<property name="Elephant"/>
+				<property name="Turtle"/>
+				<property name="Hippopotamus"/>
+				<property name="Crocodile"/>
+				<property name="Knight"/>
+			</Options>
+		</class>
+		<class name="Tracksuit" Title="트레이닝복" Desc="트레이닝복" Parent="Armor">
+			<Options>
+				<property name="MoonGuardian"/>
+				<property name="StarGuardian"/>
+				<property name="MeteorGuardian"/>
+				<property name="FlameGuardian"/>
+				<property name="FrostGuardian"/>
+				<property name="FlashGuardian"/>
+				<property name="MistGuardian"/>
+				<property name="StormGuardian"/>
+				<property name="VerdureGuardian"/>
+				<property name="SoulChaser"/>
+				<property name="TwilightChaser"/>
+				<property name="DarkChaser"/>
+				<property name="MoonSentinel"/>
+				<property name="StarSentinel"/>
+				<property name="MeteorSentinel"/>
+				<property name="MoonScout"/>
+				<property name="StarScout"/>
+				<property name="MeteorScout"/>
+				<property name="FlameSentinel"/>
+				<property name="FrostSentinel"/>
+				<property name="FlashSentinel"/>
+				<property name="StormSentinel"/>
+				<property name="VerdureSentinel"/>
+				<property name="MistSentinel"/>
+				<property name="FlameScout"/>
+				<property name="FrostScout"/>
+				<property name="FlashScout"/>
+				<property name="StormScout"/>
+				<property name="VerdureScout"/>
+				<property name="MistScout"/>
+				<property name="Chaser"/>
+				<property name="Fortress"/>
+				<property name="Sentinel"/>
+				<property name="Scout"/>
+				<property name="FlameWall"/>
+				<property name="FrostWall"/>
+				<property name="FlashWall"/>
+				<property name="StormWall"/>
+				<property name="VerdureWall"/>
+				<property name="MistWall"/>
+				<property name="MoonWall"/>
+				<property name="StarWall"/>
+				<property name="MeteorWall"/>
+				<property name="MoonShield"/>
+				<property name="StarShield"/>
+				<property name="MeteorShield"/>
+				<property name="IronWall"/>
+				<property name="Clown"/>
+				<property name="Elephant"/>
+				<property name="Turtle"/>
+				<property name="Hippopotamus"/>
+				<property name="Crocodile"/>
+				<property name="Knight"/>
+			</Options>
+		</class>
+		<class name="Axe" Title="도끼" Desc="도끼" Parent="Weapon">
+			<Options>
+				<property name="Extreme"/>
+				<property name="HighSpeed"/>
+				<property name="Slaughterer"/>
+				<property name="Swordmaster"/>
+				<property name="Assassin"/>
+				<property name="Emperor"/>
+				<property name="Overload"/>
+				<property name="Swordman"/>
+				<property name="Butcher"/>
+				<property name="King"/>
+				<property name="Conqueror"/>
+				<property name="Infallibility"/>
+				<property name="Deathblow"/>
+				<property name="Cyclopes"/>
+				<property name="Looter"/>
+				<property name="Hero"/>
+				<property name="Victory"/>
+				<property name="Superman"/>
+				<property name="Luck"/>
+				<property name="Miracle"/>
+				<property name="Lion"/>
+				<property name="Wolf"/>
+				<property name="Bear"/>
+			</Options>
+		</class>
+		<class name="TwoHandSpear" Title="장창" Desc="장창" Parent="Weapon">
+			<Options>
+				<property name="Zenith"/>
+				<property name="Extreme"/>
+				<property name="HighSpeed"/>
+				<property name="Slaughterer"/>
+				<property name="Swordmaster"/>
+				<property name="Assassin"/>
+				<property name="Emperor"/>
+				<property name="Overload"/>
+				<property name="Swordman"/>
+				<property name="Butcher"/>
+				<property name="King"/>
+				<property name="Conqueror"/>
+				<property name="Infallibility"/>
+				<property name="Deathblow"/>
+				<property name="Cyclopes"/>
+				<property name="Looter"/>
+				<property name="Hero"/>
+				<property name="Victory"/>
+				<property name="Superman"/>
+				<property name="Luck"/>
+				<property name="Miracle"/>
+				<property name="Lion"/>
+				<property name="Wolf"/>
+				<property name="Bear"/>
+			</Options>
+		</class>
+		<class name="TwoHandSword" Title="양손 대검" Desc="양손 대검" Parent="Weapon">
+			<Options>
+				<property name="Zenith"/>
+				<property name="Extreme"/>
+				<property name="HighSpeed"/>
+				<property name="Slaughterer"/>
+				<property name="Swordmaster"/>
+				<property name="Assassin"/>
+				<property name="Emperor"/>
+				<property name="Overload"/>
+				<property name="Swordman"/>
+				<property name="Butcher"/>
+				<property name="King"/>
+				<property name="Conqueror"/>
+				<property name="Infallibility"/>
+				<property name="Deathblow"/>
+				<property name="Cyclopes"/>
+				<property name="Looter"/>
+				<property name="Hero"/>
+				<property name="Victory"/>
+				<property name="Superman"/>
+				<property name="Luck"/>
+				<property name="Miracle"/>
+				<property name="Lion"/>
+				<property name="Wolf"/>
+				<property name="Bear"/>
+			</Options>
+		</class>
+		<class name="Chainsaw" Title="절단기" Desc="절단기" Parent="Weapon">
+			<Options>
+				<property name="Zenith"/>
+				<property name="Extreme"/>
+				<property name="HighSpeed"/>
+				<property name="Slaughterer"/>
+				<property name="Swordmaster"/>
+				<property name="Assassin"/>
+				<property name="Emperor"/>
+				<property name="Overload"/>
+				<property name="Swordman"/>
+				<property name="Butcher"/>
+				<property name="King"/>
+				<property name="Conqueror"/>
+				<property name="Infallibility"/>
+				<property name="Deathblow"/>
+				<property name="Cyclopes"/>
+				<property name="Looter"/>
+				<property name="Hero"/>
+				<property name="Victory"/>
+				<property name="Superman"/>
+				<property name="Luck"/>
+				<property name="Miracle"/>
+				<property name="Lion"/>
+				<property name="Wolf"/>
+				<property name="Bear"/>
+			</Options>
+		</class>
+		<class name="Dagger" Title="단검" Desc="단검" Parent="Weapon">
+			<Options>
+				<property name="Zenith"/>
+				<property name="Extreme"/>
+				<property name="HighSpeed"/>
+				<property name="Slaughterer"/>
+				<property name="Swordmaster"/>
+				<property name="Assassin"/>
+				<property name="Emperor"/>
+				<property name="Overload"/>
+				<property name="Swordman"/>
+				<property name="Butcher"/>
+				<property name="King"/>
+				<property name="Conqueror"/>
+				<property name="Infallibility"/>
+				<property name="Deathblow"/>
+				<property name="Cyclopes"/>
+				<property name="Looter"/>
+				<property name="Hero"/>
+				<property name="Victory"/>
+				<property name="Superman"/>
+				<property name="Luck"/>
+				<property name="Miracle"/>
+				<property name="Lion"/>
+				<property name="Wolf"/>
+				<property name="Bear"/>
+			</Options>
+		</class>
+		<class name="LongSword" Title="검" Desc="검" Parent="Weapon">
+			<Options>
+				<property name="Zenith"/>
+				<property name="Extreme"/>
+				<property name="HighSpeed"/>
+				<property name="Slaughterer"/>
+				<property name="Swordmaster"/>
+				<property name="Assassin"/>
+				<property name="Emperor"/>
+				<property name="Overload"/>
+				<property name="Swordman"/>
+				<property name="Butcher"/>
+				<property name="King"/>
+				<property name="Conqueror"/>
+				<property name="Infallibility"/>
+				<property name="Deathblow"/>
+				<property name="Cyclopes"/>
+				<property name="Looter"/>
+				<property name="Hero"/>
+				<property name="Victory"/>
+				<property name="Superman"/>
+				<property name="Luck"/>
+				<property name="Miracle"/>
+				<property name="Lion"/>
+				<property name="Wolf"/>
+				<property name="Bear"/>
+			</Options>
+		</class>
+		<class name="Bottle" Title="병" Desc="병" Parent="Weapon">
+			<Options>
+				<property name="Zenith"/>
+				<property name="Extreme"/>
+				<property name="HighSpeed"/>
+				<property name="Messiah"/>
+				<property name="Emperor"/>
+				<property name="Overload"/>
+				<property name="Sequent"/>
+				<property name="King"/>
+				<property name="Prophet"/>
+				<property name="Conqueror"/>
+				<property name="Destiny"/>
+				<property name="Infallibility"/>
+				<property name="Deathblow"/>
+				<property name="Cyclopes"/>
+				<property name="Looter"/>
+				<property name="Hero"/>
+				<property name="Victory"/>
+				<property name="Superman"/>
+				<property name="Luck"/>
+				<property name="Miracle"/>
+				<property name="Lion"/>
+				<property name="Wolf"/>
+				<property name="Bear"/>
+			</Options>
+		</class>
+		<class name="Spray" Title="스프레이" Desc="스프레이" Parent="Weapon">
+			<Options>
+				<property name="Zenith"/>
+				<property name="Extreme"/>
+				<property name="HighSpeed"/>
+				<property name="Messiah"/>
+				<property name="Emperor"/>
+				<property name="Overload"/>
+				<property name="Sequent"/>
+				<property name="King"/>
+				<property name="Prophet"/>
+				<property name="Conqueror"/>
+				<property name="Destiny"/>
+				<property name="Infallibility"/>
+				<property name="Deathblow"/>
+				<property name="Cyclopes"/>
+				<property name="Looter"/>
+				<property name="Hero"/>
+				<property name="Victory"/>
+				<property name="Superman"/>
+				<property name="Luck"/>
+				<property name="Miracle"/>
+				<property name="Lion"/>
+				<property name="Wolf"/>
+				<property name="Bear"/>
+			</Options>
+		</class>
+		<class name="BattleGlove" Title="전투 장갑" Desc="전투 장갑" Parent="Weapon">
+			<Options>
+				<property name="Zenith"/>
+				<property name="Extreme"/>
+				<property name="HighSpeed"/>
+				<property name="MartialArtist"/>
+				<property name="Warrior"/>
+				<property name="Berserker"/>
+				<property name="Fighter"/>
+				<property name="Barbarian"/>
+				<property name="King"/>
+				<property name="Conqueror"/>
+				<property name="Infallibility"/>
+				<property name="Deathblow"/>
+				<property name="Cyclopes"/>
+				<property name="Looter"/>
+				<property name="Hero"/>
+				<property name="Victory"/>
+				<property name="Superman"/>
+				<property name="Luck"/>
+				<property name="Miracle"/>
+				<property name="Lion"/>
+				<property name="Wolf"/>
+				<property name="Bear"/>
+			</Options>
+		</class>
+		<class name="Club" Title="한손 둔기" Desc="한손 둔기" Parent="Weapon">
+			<Options>
+				<property name="Zenith"/>
+				<property name="Extreme"/>
+				<property name="HighSpeed"/>
+				<property name="MartialArtist"/>
+				<property name="Warrior"/>
+				<property name="Berserker"/>
+				<property name="Fighter"/>
+				<property name="Barbarian"/>
+				<property name="King"/>
+				<property name="Conqueror"/>
+				<property name="Infallibility"/>
+				<property name="Deathblow"/>
+				<property name="Cyclopes"/>
+				<property name="Looter"/>
+				<property name="Hero"/>
+				<property name="Victory"/>
+				<property name="Superman"/>
+				<property name="Luck"/>
+				<property name="Miracle"/>
+				<property name="Lion"/>
+				<property name="Wolf"/>
+				<property name="Bear"/>
+			</Options>
+		</class>
+		<class name="TwoHandClub" Title="양손 둔기" Desc="양손 둔기" Parent="Weapon">
+			<Options>
+				<property name="Zenith"/>
+				<property name="Extreme"/>
+				<property name="HighSpeed"/>
+				<property name="MartialArtist"/>
+				<property name="Warrior"/>
+				<property name="Berserker"/>
+				<property name="Fighter"/>
+				<property name="Barbarian"/>
+				<property name="King"/>
+				<property name="Conqueror"/>
+				<property name="Infallibility"/>
+				<property name="Deathblow"/>
+				<property name="Cyclopes"/>
+				<property name="Looter"/>
+				<property name="Hero"/>
+				<property name="Victory"/>
+				<property name="Superman"/>
+				<property name="Luck"/>
+				<property name="Miracle"/>
+				<property name="Lion"/>
+				<property name="Wolf"/>
+				<property name="Bear"/>
+			</Options>
+		</class>
+		<class name="Baton" Title="단봉" Desc="단봉" Parent="Weapon">
+			<Options>
+				<property name="Zenith"/>
+				<property name="Extreme"/>
+				<property name="HighSpeed"/>
+				<property name="MartialArtist"/>
+				<property name="Warrior"/>
+				<property name="Berserker"/>
+				<property name="Fighter"/>
+				<property name="Barbarian"/>
+				<property name="King"/>
+				<property name="Conqueror"/>
+				<property name="Infallibility"/>
+				<property name="Deathblow"/>
+				<property name="Cyclopes"/>
+				<property name="Looter"/>
+				<property name="Hero"/>
+				<property name="Victory"/>
+				<property name="Superman"/>
+				<property name="Luck"/>
+				<property name="Miracle"/>
+				<property name="Lion"/>
+				<property name="Wolf"/>
+				<property name="Bear"/>
+			</Options>
+		</class>
+		<class name="MultipurposeSupportDevice" Title="드론" Desc="드론" Parent="Weapon">
+			<Options>
+				<property name="Zenith"/>
+				<property name="Archisage"/>
+				<property name="Bear"/>
+				<property name="Conqueror"/>
+				<property name="Cyclopes"/>
+				<property name="Deathblow"/>
+				<property name="Emperor"/>
+				<property name="Ettin"/>
+				<property name="Extreme"/>
+				<property name="FlameArrow"/>
+				<property name="FlameBlade"/>
+				<property name="FlameDestroyer"/>
+				<property name="FlameFanatic"/>
+				<property name="FlameMage"/>
+				<property name="FlameOverload"/>
+				<property name="FlameRuler"/>
+				<property name="FlashArrow"/>
+				<property name="FlashBlade"/>
+				<property name="FlashDestroyer"/>
+				<property name="FlashFanatic"/>
+				<property name="FlashMage"/>
+				<property name="FlashOverload"/>
+				<property name="FlashRuler"/>
+				<property name="Fox"/>
+				<property name="FrostArrow"/>
+				<property name="FrostBlade"/>
+				<property name="FrostDestroyer"/>
+				<property name="FrostFanatic"/>
+				<property name="FrostMage"/>
+				<property name="FrostOverload"/>
+				<property name="FrostRuler"/>
+				<property name="Gorilla"/>
+				<property name="Hero"/>
+				<property name="HighSpeed"/>
+				<property name="Infallibility"/>
+				<property name="King"/>
+				<property name="Lion"/>
+				<property name="Looter"/>
+				<property name="Luck"/>
+				<property name="Messiah"/>
+				<property name="Miracle"/>
+				<property name="Monkey"/>
+				<property name="Overload"/>
+				<property name="Prophet"/>
+				<property name="Resource"/>
+				<property name="Soul"/>
+				<property name="Spirit"/>
+				<property name="Superman"/>
+				<property name="Transcendence"/>
+				<property name="Awakening"/>
+				<property name="Victory"/>
+			</Options>
+		</class>
+		<class name="SniperRifle" Title="저격총" Desc="저격총" Parent="Weapon">
+			<Options>
+				<property name="Zenith"/>
+				<property name="Extreme"/>
+				<property name="HighSpeed"/>
+				<property name="Sweeper"/>
+				<property name="Sharpshooter"/>
+				<property name="Sniper"/>
+				<property name="Gunman"/>
+				<property name="Hunter"/>
+				<property name="Conqueror"/>
+				<property name="Infallibility"/>
+				<property name="Deathblow"/>
+				<property name="Cyclopes"/>
+				<property name="Looter"/>
+				<property name="Victory"/>
+				<property name="Luck"/>
+				<property name="Miracle"/>
+				<property name="Lion"/>
+				<property name="Wolf"/>
+				<property name="Bear"/>
+			</Options>
+		</class>
+		<class name="Pistol" Title="권총" Desc="권총" Parent="Weapon">
+			<Options>
+				<property name="Zenith"/>
+				<property name="Extreme"/>
+				<property name="HighSpeed"/>
+				<property name="Sweeper"/>
+				<property name="Sharpshooter"/>
+				<property name="Sniper"/>
+				<property name="Gunman"/>
+				<property name="Hunter"/>
+				<property name="Conqueror"/>
+				<property name="Infallibility"/>
+				<property name="Deathblow"/>
+				<property name="Cyclopes"/>
+				<property name="Looter"/>
+				<property name="Victory"/>
+				<property name="Luck"/>
+				<property name="Miracle"/>
+				<property name="Lion"/>
+				<property name="Wolf"/>
+				<property name="Bear"/>
+			</Options>
+		</class>
+		<class name="HeavyMachineGun" Title="중화기" Desc="중화기" Parent="Weapon">
+			<Options>
+				<property name="Zenith"/>
+				<property name="Extreme"/>
+				<property name="Sweeper"/>
+				<property name="Sharpshooter"/>
+				<property name="Sniper"/>
+				<property name="Gunman"/>
+				<property name="Hunter"/>
+				<property name="Conqueror"/>
+				<property name="Infallibility"/>
+				<property name="Deathblow"/>
+				<property name="Cyclopes"/>
+				<property name="Looter"/>
+				<property name="Victory"/>
+				<property name="Luck"/>
+				<property name="Miracle"/>
+				<property name="Lion"/>
+				<property name="Wolf"/>
+				<property name="Bear"/>
+			</Options>
+		</class>
+		<class name="MachinePistol" Title="기관권총" Desc="기관권총" Parent="Weapon">
+			<Options>
+				<property name="Zenith"/>
+				<property name="Extreme"/>
+				<property name="HighSpeed"/>
+				<property name="Sweeper"/>
+				<property name="Sharpshooter"/>
+				<property name="Sniper"/>
+				<property name="Gunman"/>
+				<property name="Hunter"/>
+				<property name="Conqueror"/>
+				<property name="Infallibility"/>
+				<property name="Deathblow"/>
+				<property name="Cyclopes"/>
+				<property name="Looter"/>
+				<property name="Victory"/>
+				<property name="Luck"/>
+				<property name="Miracle"/>
+				<property name="Lion"/>
+				<property name="Wolf"/>
+				<property name="Bear"/>
+			</Options>
+		</class>
+		<class name="AssaultRifle" Title="돌격소총" Desc="돌격소총" Parent="Weapon">
+			<Options>
+				<property name="Zenith"/>
+				<property name="Extreme"/>
+				<property name="HighSpeed"/>
+				<property name="Sweeper"/>
+				<property name="Sharpshooter"/>
+				<property name="Sniper"/>
+				<property name="Gunman"/>
+				<property name="Hunter"/>
+				<property name="Conqueror"/>
+				<property name="Infallibility"/>
+				<property name="Deathblow"/>
+				<property name="Cyclopes"/>
+				<property name="Looter"/>
+				<property name="Victory"/>
+				<property name="Luck"/>
+				<property name="Miracle"/>
+				<property name="Lion"/>
+				<property name="Wolf"/>
+				<property name="Bear"/>
+			</Options>
+		</class>
+		<class name="Bangle" Title="팔찌" Desc="팔찌" Parent="Weapon">
+			<Options>
+				<property name="Resource"/>
+				<property name="Awakening"/>
+				<property name="Transcendence"/>
+				<property name="HighSpeed"/>
+				<property name="FlameOverload"/>
+				<property name="FrostOverload"/>
+				<property name="FlashOverload"/>
+				<property name="StormOverload"/>
+				<property name="VerdureOverload"/>
+				<property name="MistOverload"/>
+				<property name="FlameRuler"/>
+				<property name="FrostRuler"/>
+				<property name="FlashRuler"/>
+				<property name="StormRuler"/>
+				<property name="VerdureRuler"/>
+				<property name="MistRuler"/>
+				<property name="FlameDestroyer"/>
+				<property name="FrostDestroyer"/>
+				<property name="FlashDestroyer"/>
+				<property name="StormDestroyer"/>
+				<property name="VerdureDestroyer"/>
+				<property name="MistDestroyer"/>
+				<property name="FlameMage"/>
+				<property name="FrostMage"/>
+				<property name="FlashMage"/>
+				<property name="StormMage"/>
+				<property name="VerdureMage"/>
+				<property name="MistMage"/>
+				<property name="FlameFanatic"/>
+				<property name="FrostFanatic"/>
+				<property name="FlashFanatic"/>
+				<property name="StormFanatic"/>
+				<property name="VerdureFanatic"/>
+				<property name="MistFanatic"/>
+				<property name="Prophet"/>
+				<property name="Messiah"/>
+				<property name="Spirit"/>
+				<property name="Soul"/>
+				<property name="Ettin"/>
+				<property name="Archisage"/>
+				<property name="FlameBlade"/>
+				<property name="FrostBlade"/>
+				<property name="FlashBlade"/>
+				<property name="StormBlade"/>
+				<property name="VerdureBlade"/>
+				<property name="MistBlade"/>
+				<property name="FlameArrow"/>
+				<property name="FrostArrow"/>
+				<property name="FlashArrow"/>
+				<property name="StormArrow"/>
+				<property name="VerdureArrow"/>
+				<property name="MistArrow"/>
+				<property name="Superman"/>
+				<property name="Luck"/>
+				<property name="Miracle"/>
+				<property name="Fox"/>
+				<property name="Monkey"/>
+				<property name="Gorilla"/>
+			</Options>
+		</class>
+	</idspace>
+	<idspace id="Identify">
+		<schema>
+			<rule property="Opened" type="bool" default="false"/>
+			<rule property="Lv" type="number" default="1"/>
+			<rule property="Exp" type="number" default="0"/>
+		</schema>
+		<class name="Weapon" Title="무기" Image="Icons/WeaponTab" HoverImage="Icons/WeaponTab_Hover" PushedImage="Icons/WeaponTab_Pushed" Color="Combine_Red" Order="1"/>
+		<class name="Armor" Title="방어구" Image="Icons/ArmorTab" HoverImage="Icons/ArmorTab_Hover" PushedImage="Icons/ArmorTab_Pushed" Color="Combine_Blue" Order="2"/>
+		<class name="Accessory" Title="악세사리" Image="Icons/AccessoryTab" HoverImage="Icons/AccessoryTab_Hover" PushedImage="Icons/AccessoryTab_Pushed" Color="Combine_Yellow" Order="3"/>
+	</idspace>
+	<idspace id="ItemIdentify">
+		<class name="Zenith" Title="절정의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="MaxAddSP" Min="25" Max="50"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Extreme" Title="극한의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="OverchargeDuration" Min="1" Max="1"/>
+			</IdentifyOptions>
+		</class>
+		<class name="HighSpeed" Title="쾌속의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="Speed" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Swordmaster" Title="검성의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="IncreaseHitRate_Slashing" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Sharpshooter" Title="명사수의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="IncreaseHitRate_Piercing" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Warrior" Title="전사의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="IncreaseHitRate_Blunt" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Assassin" Title="암살자의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="IncreaseCriticalStrikeChance_Slashing" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Sniper" Title="저격수의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="IncreaseCriticalStrikeChance_Piercing" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Berserker" Title="광전사의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="IncreaseCriticalStrikeChance_Blunt" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Slaughterer" Title="학살자의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="IncreaseCriticalStrikeDeal_Slashing" Min="10" Max="30"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Sweeper" Title="청소부의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="IncreaseCriticalStrikeDeal_Piercing" Min="10" Max="30"/>
+			</IdentifyOptions>
+		</class>
+		<class name="MartialArtist" Title="무도가의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="IncreaseCriticalStrikeDeal_Blunt" Min="10" Max="30"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Awakening" Title="각성의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="MaxAddSP" Min="25" Max="50"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Transcendence" Title="초월의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="OverchargeDuration" Min="1" Max="1"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Resource" Title="근원의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="MaxVigor" Min="10" Max="20"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FlameRuler" Title="불꽃 지배자의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="IncreaseHitRate_Fire" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FrostRuler" Title="서리 지배자의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="IncreaseHitRate_Ice" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FlashRuler" Title="섬광 지배자의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="IncreaseHitRate_Lightning" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="StormRuler" Title="폭풍 지배자의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="IncreaseHitRate_Wind" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="VerdureRuler" Title="신록 지배자의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="IncreaseHitRate_Earth" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="MistRuler" Title="안개 지배자의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="IncreaseHitRate_Water" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FlameDestroyer" Title="불꽃 파괴자의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="IncreaseCriticalStrikeChance_Fire" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FrostDestroyer" Title="서리 파괴자의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="IncreaseCriticalStrikeChance_Ice" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FlashDestroyer" Title="섬광 파괴자의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="IncreaseCriticalStrikeChance_Lightning" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="StormDestroyer" Title="폭풍 파괴자의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="IncreaseCriticalStrikeChance_Wind" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="VerdureDestroyer" Title="신록 파괴자의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="IncreaseCriticalStrikeChance_Earth" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="MistDestroyer" Title="안개 파괴자의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="IncreaseCriticalStrikeChance_Water" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FlameOverload" Title="불꽃 초월자의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="IncreaseCriticalStrikeDeal_Fire" Min="10" Max="30"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FrostOverload" Title="서리 초월자의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="IncreaseCriticalStrikeDeal_Ice" Min="10" Max="30"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FlashOverload" Title="섬광 초월자의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="IncreaseCriticalStrikeDeal_Lightning" Min="10" Max="30"/>
+			</IdentifyOptions>
+		</class>
+		<class name="StormOverload" Title="폭풍 초월자의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="IncreaseCriticalStrikeDeal_Wind" Min="10" Max="30"/>
+			</IdentifyOptions>
+		</class>
+		<class name="VerdureOverload" Title="신록 초월자의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="IncreaseCriticalStrikeDeal_Earth" Min="10" Max="30"/>
+			</IdentifyOptions>
+		</class>
+		<class name="MistOverload" Title="안개 초월자의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+				<property Type="IncreaseCriticalStrikeDeal_Water" Min="10" Max="30"/>
+			</IdentifyOptions>
+		</class>
+		<class name="MoonGuardian" Title="달빛 수호자의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="25" Max="100"/>
+				<property Type="Dodge" Min="2" Max="10"/>
+				<property Type="Block" Min="2" Max="10"/>
+				<property Type="SlashingResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="StarGuardian" Title="별빛 수호자의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="25" Max="100"/>
+				<property Type="Dodge" Min="2" Max="10"/>
+				<property Type="Block" Min="2" Max="10"/>
+				<property Type="PiercingResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="MeteorGuardian" Title="유성 수호자의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="25" Max="100"/>
+				<property Type="Dodge" Min="2" Max="10"/>
+				<property Type="Block" Min="2" Max="10"/>
+				<property Type="BluntResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FlameGuardian" Title="불꽃 수호자의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="25" Max="100"/>
+				<property Type="Dodge" Min="2" Max="10"/>
+				<property Type="Block" Min="2" Max="10"/>
+				<property Type="FireResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FrostGuardian" Title="서리 수호자의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="25" Max="100"/>
+				<property Type="Dodge" Min="2" Max="10"/>
+				<property Type="Block" Min="2" Max="10"/>
+				<property Type="IceResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FlashGuardian" Title="섬광 수호자의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="25" Max="100"/>
+				<property Type="Dodge" Min="2" Max="10"/>
+				<property Type="Block" Min="2" Max="10"/>
+				<property Type="LightningResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="MistGuardian" Title="안개 수호자의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="25" Max="100"/>
+				<property Type="Dodge" Min="2" Max="10"/>
+				<property Type="Block" Min="2" Max="10"/>
+				<property Type="WaterResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="StormGuardian" Title="폭풍 수호자의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="25" Max="100"/>
+				<property Type="Dodge" Min="2" Max="10"/>
+				<property Type="Block" Min="2" Max="10"/>
+				<property Type="WindResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="VerdureGuardian" Title="신록 수호자의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="25" Max="100"/>
+				<property Type="Dodge" Min="2" Max="10"/>
+				<property Type="Block" Min="2" Max="10"/>
+				<property Type="EarthResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Messiah" Title="구세주의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="50"/>
+				<property Type="ESPPower" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="50" Max="150"/>
+				<property Type="MaxVigor" Min="1" Max="10"/>
+				<property Type="RegenVigor" Min="1" Max="3"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Emperor" Title="황제의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="50"/>
+				<property Type="ESPPower" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="50" Max="150"/>
+				<property Type="Speed" Min="2" Max="10"/>
+				<property Type="MoveDist" Min="1" Max="1"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Overload" Title="초월자의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="50"/>
+				<property Type="ESPPower" Min="10" Max="50"/>
+				<property Type="Speed" Min="2" Max="10"/>
+				<property Type="SightRange" Min="1" Max="1"/>
+				<property Type="MoveDist" Min="1" Max="1"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Abyss" Title="심연의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="20" Max="100"/>
+				<property Type="Speed" Min="2" Max="10"/>
+				<property Type="SightRange" Min="1" Max="1"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Sequent" Title="필연의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="Block" Min="2" Max="10"/>
+				<property Type="Dodge" Min="2" Max="10"/>
+				<property Type="Speed" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="SoulGuardian" Title="영혼 수호자의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="20" Max="100"/>
+				<property Type="Dodge" Min="2" Max="10"/>
+				<property Type="Block" Min="2" Max="10"/>
+				<property Type="MaxVigor" Min="1" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="SpiritGuardian" Title="정령 수호자의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="20" Max="100"/>
+				<property Type="Dodge" Min="2" Max="10"/>
+				<property Type="Block" Min="2" Max="10"/>
+				<property Type="MaxVigor" Min="1" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="SoulChaser" Title="영혼 추적자의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="Dodge" Min="2" Max="10"/>
+				<property Type="MaxVigor" Min="1" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="TwilightChaser" Title="황혼 추적자의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="Dodge" Min="2" Max="10"/>
+				<property Type="Speed" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="DarkChaser" Title="어둠 추적자의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="Dodge" Min="2" Max="10"/>
+				<property Type="MoveDist" Min="1" Max="1"/>
+			</IdentifyOptions>
+		</class>
+		<class name="SoulGuide" Title="영혼 인도자의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="Block" Min="2" Max="10"/>
+				<property Type="MaxVigor" Min="1" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="TwilightGuide" Title="황혼 인도자의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="Block" Min="2" Max="10"/>
+				<property Type="Speed" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="DarkGuide" Title="어둠 인도자의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="Block" Min="2" Max="10"/>
+				<property Type="MoveDist" Min="1" Max="1"/>
+			</IdentifyOptions>
+		</class>
+		<class name="SoulCollector" Title="영혼 수집가의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="20" Max="100"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="MaxVigor" Min="1" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="TwilightCollector" Title="황혼 수집가의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="20" Max="100"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="Speed" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="DarkCollector" Title="어둠 수집가의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="20" Max="100"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="MoveDist" Min="1" Max="1"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Swordman" Title="칼잡이의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="3" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="3" Max="10"/>
+				<property Type="IncreaseHitRate_Slashing" Min="3" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Gunman" Title="총잡이의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="3" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="3" Max="10"/>
+				<property Type="IncreaseHitRate_Piercing" Min="3" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Fighter" Title="싸움꾼의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="3" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="3" Max="10"/>
+				<property Type="IncreaseHitRate_Blunt" Min="3" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Butcher" Title="도살자의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="30"/>
+				<property Type="CriticalStrikeChance" Min="3" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="15" Max="30"/>
+				<property Type="IncreaseCriticalStrikeChance_Slashing" Min="3" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Hunter" Title="사냥꾼의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="30"/>
+				<property Type="CriticalStrikeChance" Min="3" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="15" Max="30"/>
+				<property Type="IncreaseCriticalStrikeChance_Piercing" Min="3" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Barbarian" Title="야만인의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="30"/>
+				<property Type="CriticalStrikeChance" Min="3" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="15" Max="30"/>
+				<property Type="IncreaseCriticalStrikeChance_Blunt" Min="3" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FlameMage" Title="불꽃 술사의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="3" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="3" Max="10"/>
+				<property Type="IncreaseHitRate_Fire" Min="3" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FrostMage" Title="서리 술사의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="3" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="3" Max="10"/>
+				<property Type="IncreaseHitRate_Ice" Min="3" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FlashMage" Title="섬광 술사의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="3" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="3" Max="10"/>
+				<property Type="IncreaseHitRate_Lightning" Min="3" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="StormMage" Title="폭풍 술사의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="3" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="3" Max="10"/>
+				<property Type="IncreaseHitRate_Wind" Min="3" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="VerdureMage" Title="신록 술사의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="3" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="3" Max="10"/>
+				<property Type="IncreaseHitRate_Earth" Min="3" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="MistMage" Title="안개 술사의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="3" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="3" Max="10"/>
+				<property Type="IncreaseHitRate_Water" Min="3" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FlameFanatic" Title="불꽃 광신도의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="CriticalStrikeChance" Min="3" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="15" Max="30"/>
+				<property Type="IncreaseCriticalStrikeChance_Fire" Min="3" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FrostFanatic" Title="서리 광신도의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="CriticalStrikeChance" Min="3" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="15" Max="30"/>
+				<property Type="IncreaseCriticalStrikeChance_Ice" Min="3" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FlashFanatic" Title="섬광 광신도의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="CriticalStrikeChance" Min="3" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="15" Max="30"/>
+				<property Type="IncreaseCriticalStrikeChance_Lightning" Min="3" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="StormFanatic" Title="폭풍 광신도의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="CriticalStrikeChance" Min="3" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="15" Max="30"/>
+				<property Type="IncreaseCriticalStrikeChance_Wind" Min="3" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="VerdureFanatic" Title="신록 광신도의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="CriticalStrikeChance" Min="3" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="15" Max="30"/>
+				<property Type="IncreaseCriticalStrikeChance_Earth" Min="3" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="MistFanatic" Title="안개 광신도의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="CriticalStrikeChance" Min="3" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="15" Max="30"/>
+				<property Type="IncreaseCriticalStrikeChance_Water" Min="3" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="MoonSentinel" Title="달빛 감시병의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="40" Max="100"/>
+				<property Type="Block" Min="3" Max="10"/>
+				<property Type="SlashingResistance" Min="30" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="StarSentinel" Title="별빛 감시병의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="40" Max="100"/>
+				<property Type="Block" Min="3" Max="10"/>
+				<property Type="PiercingResistance" Min="30" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="MeteorSentinel" Title="유성 감시병의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="40" Max="100"/>
+				<property Type="Block" Min="3" Max="10"/>
+				<property Type="BluntResistance" Min="30" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="MoonScout" Title="달빛 정찰병의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="40" Max="100"/>
+				<property Type="Dodge" Min="3" Max="10"/>
+				<property Type="SlashingResistance" Min="30" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="StarScout" Title="별빛 정찰병의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="40" Max="100"/>
+				<property Type="Dodge" Min="3" Max="10"/>
+				<property Type="PiercingResistance" Min="30" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="MeteorScout" Title="유성 정찰병의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="40" Max="100"/>
+				<property Type="Dodge" Min="3" Max="10"/>
+				<property Type="BluntResistance" Min="30" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FlameSentinel" Title="불꽃 감시병의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="40" Max="100"/>
+				<property Type="Block" Min="3" Max="10"/>
+				<property Type="FireResistance" Min="30" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FrostSentinel" Title="서리 감시병의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="40" Max="100"/>
+				<property Type="Block" Min="3" Max="10"/>
+				<property Type="IceResistance" Min="30" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FlashSentinel" Title="섬광 감시병의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="40" Max="100"/>
+				<property Type="Block" Min="3" Max="10"/>
+				<property Type="LightningResistance" Min="30" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="StormSentinel" Title="폭풍 감시병의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="40" Max="100"/>
+				<property Type="Block" Min="3" Max="10"/>
+				<property Type="WindResistance" Min="30" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="VerdureSentinel" Title="신록 감시병의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="40" Max="100"/>
+				<property Type="Block" Min="3" Max="10"/>
+				<property Type="EarthResistance" Min="30" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="MistSentinel" Title="안개 감시병의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="40" Max="100"/>
+				<property Type="Block" Min="3" Max="10"/>
+				<property Type="WaterResistance" Min="30" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FlameScout" Title="불꽃 정찰병의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="40" Max="100"/>
+				<property Type="Dodge" Min="3" Max="10"/>
+				<property Type="FireResistance" Min="30" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FrostScout" Title="서리 정찰병의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="40" Max="100"/>
+				<property Type="Dodge" Min="3" Max="10"/>
+				<property Type="IceResistance" Min="30" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FlashScout" Title="섬광 정찰병의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="40" Max="100"/>
+				<property Type="Dodge" Min="3" Max="10"/>
+				<property Type="LightningResistance" Min="30" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="StormScout" Title="폭풍 정찰병의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="40" Max="100"/>
+				<property Type="Dodge" Min="3" Max="10"/>
+				<property Type="WaterResistance" Min="30" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="VerdureScout" Title="신록 정찰병의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="40" Max="100"/>
+				<property Type="Dodge" Min="3" Max="10"/>
+				<property Type="WindResistance" Min="30" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="MistScout" Title="안개 정찰병의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="40" Max="100"/>
+				<property Type="Dodge" Min="4" Max="10"/>
+				<property Type="EarthResistance" Min="30" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="King" Title="왕의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="50"/>
+				<property Type="ESPPower" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="30" Max="150"/>
+				<property Type="MoveDist" Min="1" Max="1"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Prophet" Title="예언자의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="SightRange" Min="1" Max="1"/>
+				<property Type="MaxVigor" Min="1" Max="10"/>
+				<property Type="RegenVigor" Min="1" Max="3"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Conqueror" Title="정복자의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="30"/>
+				<property Type="SightRange" Min="1" Max="1"/>
+				<property Type="Speed" Min="2" Max="10"/>
+				<property Type="MoveDist" Min="1" Max="1"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Ascetic" Title="수행자의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="20" Max="100"/>
+				<property Type="Speed" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Destiny" Title="운명의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="Block" Min="2" Max="10"/>
+				<property Type="Dodge" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Chaser" Title="추적자의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="Dodge" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Guide" Title="인도자의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="Block" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Collector" Title="수집가의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="20" Max="100"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FlameSoldier" Title="불꽃 병사의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="FireResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FrostSoldier" Title="서리 병사의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="IceResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FlashSoldier" Title="섬광 병사의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="LightningResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="StormSoldier" Title="폭풍 병사의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="WindResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="VerdureSoldier" Title="신록 병사의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="EarthResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="MistSoldier" Title="안개 병사의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="WaterResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Infallibility" Title="백발 백중의 %s" Prob="20">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="4" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Deathblow" Title="일격 필살의 %s" Prob="20">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="30"/>
+				<property Type="CriticalStrikeChance" Min="4" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Spirit" Title="정령의 %s" Prob="20">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="4" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Soul" Title="영혼의 %s" Prob="20">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="CriticalStrikeChance" Min="4" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Sentinel" Title="감시병의 %s" Prob="20">
+			<IdentifyOptions>
+				<property Type="Armor" Min="20" Max="50"/>
+				<property Type="MaxHP" Min="20" Max="100"/>
+				<property Type="Block" Min="4" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Scout" Title="정찰병의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Armor" Min="20" Max="50"/>
+				<property Type="MaxHP" Min="20" Max="100"/>
+				<property Type="Dodge" Min="4" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Cyclopes" Title="외눈거인의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="30"/>
+				<property Type="MaxHP" Min="50" Max="150"/>
+				<property Type="MoveDist" Min="1" Max="1"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Ettin" Title="쌍두거인의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="MaxHP" Min="50" Max="150"/>
+				<property Type="MoveDist" Min="1" Max="1"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Archisage" Title="대현자의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="MaxVigor" Min="1" Max="10"/>
+				<property Type="RegenVigor" Min="1" Max="3"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Looter" Title="약탈자의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="30"/>
+				<property Type="Speed" Min="2" Max="10"/>
+				<property Type="MoveDist" Min="1" Max="1"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Lupin" Title="대도적의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="Speed" Min="2" Max="10"/>
+				<property Type="MoveDist" Min="1" Max="1"/>
+				<property Type="SightRange" Min="1" Max="1"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Hero" Title="영웅의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="30"/>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="MaxHP" Min="30" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Victory" Title="승리의 %s" Prob="10">
+			<IdentifyOptions>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Fortress" Title="요새의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Mirage" Title="신기루의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="Speed" Min="2" Max="10"/>
+				<property Type="Block" Min="2" Max="10"/>
+				<property Type="Dodge" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Indomitability" Title="불굴의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="Block" Min="2" Max="10"/>
+				<property Type="Dodge" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FlameWall" Title="불꽃 장벽의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="20" Max="100"/>
+				<property Type="FireResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FrostWall" Title="서리 장벽의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="20" Max="100"/>
+				<property Type="IceResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FlashWall" Title="섬광 장벽의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="20" Max="100"/>
+				<property Type="LightningResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="StormWall" Title="폭풍 장벽의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="20" Max="100"/>
+				<property Type="WindResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="VerdureWall" Title="신록 장벽의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="20" Max="100"/>
+				<property Type="EarthResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="MistWall" Title="안개 장벽의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="20" Max="100"/>
+				<property Type="WaterResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FlameShield" Title="불꽃 방패의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="Block" Min="2" Max="10"/>
+				<property Type="FireResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FrostShield" Title="서리 방패의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="Block" Min="2" Max="10"/>
+				<property Type="IceResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FlashShield" Title="섬광 방패의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="Block" Min="2" Max="10"/>
+				<property Type="LightningResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="StormShield" Title="폭풍 방패의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="Block" Min="2" Max="10"/>
+				<property Type="WindResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="VerdureShield" Title="신록 방패의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="Block" Min="2" Max="10"/>
+				<property Type="EarthResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="MistShield" Title="안개 방패의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="Block" Min="2" Max="10"/>
+				<property Type="WaterResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FlameBlade" Title="불꽃 칼날의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="IncreaseHitRate_Fire" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FrostBlade" Title="서리 칼날의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="IncreaseHitRate_Ice" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FlashBlade" Title="섬광 칼날의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="IncreaseHitRate_Lightning" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="StormBlade" Title="폭풍 칼날의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="IncreaseHitRate_Wind" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="VerdureBlade" Title="신록 칼날의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="IncreaseHitRate_Earth" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="MistBlade" Title="안개 칼날의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="IncreaseHitRate_Water" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FlameArrow" Title="불꽃 화살의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="IncreaseCriticalStrikeChance_Fire" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FrostArrow" Title="서리 화살의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="IncreaseCriticalStrikeChance_Ice" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="FlashArrow" Title="섬광 화살의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="IncreaseCriticalStrikeChance_Lightning" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="StormArrow" Title="폭풍 화살의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="IncreaseCriticalStrikeChance_Wind" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="VerdureArrow" Title="신록 화살의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="IncreaseCriticalStrikeChance_Earth" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="MistArrow" Title="안개 화살의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="IncreaseCriticalStrikeChance_Water" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="MoonWall" Title="달빛 장벽의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="20" Max="100"/>
+				<property Type="SlashingResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="StarWall" Title="별빛 장벽의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="20" Max="100"/>
+				<property Type="PiercingResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="MeteorWall" Title="유성 장벽의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="20" Max="100"/>
+				<property Type="BluntResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="MoonShield" Title="달빛 방패의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="Block" Min="2" Max="10"/>
+				<property Type="SlashingResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="StarShield" Title="별빛 방패의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="Block" Min="2" Max="10"/>
+				<property Type="PiercingResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="MeteorShield" Title="유성 방패의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="Block" Min="2" Max="10"/>
+				<property Type="BluntResistance" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Traveler" Title="나그네의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="Dodge" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Adventurer" Title="모험가의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="Speed" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Explorer" Title="탐험가의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="MoveDist" Min="1" Max="1"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Pioneer" Title="개척자의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="Block" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Settler" Title="정착민의 %s" Prob="15">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="20" Max="100"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Giant" Title="거인의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="MaxHP" Min="50" Max="150"/>
+				<property Type="MoveDist" Min="1" Max="1"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Sage" Title="현자의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="MaxVigor" Min="1" Max="10"/>
+				<property Type="RegenVigor" Min="1" Max="3"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Thief" Title="도적의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="Speed" Min="2" Max="10"/>
+				<property Type="MoveDist" Min="1" Max="1"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Superman" Title="초인의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="30"/>
+				<property Type="ESPPower" Min="10" Max="30"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Luck" Title="행운의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="Accuracy" Min="2" Max="10"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Miracle" Title="기적의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+				<property Type="CriticalStrikeDeal" Min="10" Max="30"/>
+			</IdentifyOptions>
+		</class>
+		<class name="IronWall" Title="철벽의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="Resistance" Min="10" Max="50"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Clown" Title="광대의 %s" Prob="5">
+			<IdentifyOptions>
+				<property Type="Block" Min="2" Max="10"/>
+				<property Type="Dodge" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Lion" Title="사자의 %s" Prob="20">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Wolf" Title="늑대의 %s" Prob="20">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="30"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Bear" Title="곰의 %s" Prob="20">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="10" Max="30"/>
+				<property Type="CriticalStrikeDeal" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Fox" Title="여우의 %s" Prob="20">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="Accuracy" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Monkey" Title="원숭이의 %s" Prob="20">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="CriticalStrikeChance" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Gorilla" Title="고릴라의 %s" Prob="20">
+			<IdentifyOptions>
+				<property Type="ESPPower" Min="10" Max="30"/>
+				<property Type="CriticalStrikeDeal" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Elephant" Title="코끼리의 %s" Prob="20">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="50" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Turtle" Title="거북이의 %s" Prob="20">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="Block" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Hippopotamus" Title="하마의 %s" Prob="20">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="MaxHP" Min="20" Max="100"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Crocodile" Title="악어의 %s" Prob="20">
+			<IdentifyOptions>
+				<property Type="Resistance" Min="10" Max="50"/>
+				<property Type="Block" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Knight" Title="기사의 %s" Prob="20">
+			<IdentifyOptions>
+				<property Type="Armor" Min="10" Max="50"/>
+				<property Type="Block" Min="2" Max="10"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Old" Title="오래된 %s" Prob="20">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="1" Max="1"/>
+				<property Type="ESPPower" Min="1" Max="1"/>
+			</IdentifyOptions>
+		</class>
+		<class name="Enhanced" Title="강화된 %s" Prob="20">
+			<IdentifyOptions>
+				<property Type="AttackPower" Min="1" Max="5"/>
+				<property Type="IncreaseHitRate_Slash" Min="2" Max="3"/>
+			</IdentifyOptions>
+		</class>
+	</idspace>
+</idspaces>

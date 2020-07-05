@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="lc_mission_10_1_YFYZ5B" Value="[!Dashboard:TimeLimiter]창고를 갱단으로 부터 보호!"/>
+		<class name="lc_mission_10_1_8Wsa1x" Value="[!Objective]지원 도착 전까지 적 최대한 처치"/>
+		<class name="lc_mission_10_1_8R6BEu" Value="[!BalloonChat][!speaker:pc1]경찰에서 다짜고짜 창고 경비를 의뢰해서 받기는 했는데.."/>
+		<class name="lc_mission_10_1_ZMrF6c" Value="[!BalloonChat][!speaker:pc1]이번에도 쉬운 의뢰는 아니겠지?"/>
+		<class name="lc_mission_10_1_AO8kk8" Value="[!BalloonChat][!speaker:pc2]lc_mission_10_1_I6NX8D"/>
+		<class name="lc_mission_10_1_zBlax3" Value="[!SMMessage]새로운 침입자가 있습니다!"/>
+		<class name="lc_mission_10_1_CF3EDN" Value="[!SMTitle]적출현"/>
+	</idspace>
+</idspaces>

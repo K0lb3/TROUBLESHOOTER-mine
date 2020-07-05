@@ -1,0 +1,45 @@
+<idspace id="FilteringWord">
+	<class name="CompanyName">
+		<property value="아르월"/>
+		<property value="무장해제"/>
+		<property value="댄디라이언"/>
+		<property value="트러블슈터"/>
+		<property value="벤데타"/>
+		<property value="VHPD"/>
+		<property value="발할라"/>
+		<property value="발할라 조달청"/>
+		<property value="발할라 경찰청"/>
+		<property value="동방정공"/>
+		<property value="스틸헤드"/>
+		<property value="어나미머스"/>
+		<property value="크로우"/>
+		<property value="벤데타"/>
+		<property value="거리 불량배"/>
+		<property value="성난 황소"/>
+		<property value="스노우"/>
+		<property value="카오스브러시"/>
+		<property value="스틸헤드"/>
+		<property value="백호"/>
+		<property value="흑호"/>
+		<property value="적룡"/>
+		<property value="백룡"/>
+		<property value="전갈"/>
+		<property value="스컬"/>
+		<property value="지명수배자"/>
+		<property value="실버라이닝"/>
+		<property value="앨리원더러"/>
+		<property value="요르문간드"/>
+		<property value="카라스연방"/>
+		<property value="카라스"/>
+		<property value="아테르"/>
+		<property value="아테르제국"/>
+		<property value="동방연합"/>
+	</class>
+	<class name="SystemToken">
+		<property value="["/>
+		<property value="]"/>
+		<property value="<"/>
+		<property value=">"/>
+		<property value="$"/>
+	</class>
+</idspace>

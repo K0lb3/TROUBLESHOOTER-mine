@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Tutorial_Lasa_CTFHWk" Value="[!Dashboard:TimeLimiter]자비의 시간"/>
+		<class name="Tutorial_Lasa_m5r3lD" Value="[!Dashboard:TimeLimiter]지원 병력 도착까지 남은 시간"/>
+		<class name="Tutorial_Lasa_OGKRJE" Value="[!Dashboard:ObjectiveMarker]적이 해당 지역으로 진입했을 때, 해당 방어선의 경찰 병력이 모두 전투 불능이면 패배합니다. 또는 제이슨이 해당 지역에 도착하면 패배합니다."/>
+		<class name="Tutorial_Lasa_sdBDvh" Value="[!Dashboard:ObjectiveMarker]적이 해당 지역으로 진입했을 때, 해당 방어선의 경찰 병력이 모두 전투 불능이면 패배합니다. 또는 제이슨이 해당 지역에 도착하면 패배합니다."/>
+		<class name="Tutorial_Lasa_rj8M4z" Value="[!Objective]제한 시간 동안 방어선을 지켜내시오"/>
+		<class name="Tutorial_Lasa_qjxS7K" Value="[!Objective]제한 시간 동안 살아남으시오"/>
+		<class name="Tutorial_Lasa_46LS7n" Value="[!Objective]제한 시간 동안 방어선을 지켜내시오"/>
+		<class name="Tutorial_Lasa_e0IVr0" Value="[!Subtitle][!speaker:EmptySubTitle_]&apos;재의 강&apos; 하류에 위치한 &apos;잿빛 항구&apos;는 "/>
+		<class name="Tutorial_Lasa_WZgdcV" Value="[!Subtitle][!speaker:EmptySubTitle_]발할라와 동방연합을 연결하는 물류의 중심지였다."/>
+		<class name="Tutorial_Lasa_pEshVN" Value="[!Subtitle][!speaker:EmptySubTitle_]발할라의 상품들은 잿빛항구에서 113번 도로를 거쳐 동방연합으로 향하였고..."/>
+		<class name="Tutorial_Lasa_nfMxnz" Value="[!Subtitle][!speaker:EmptySubTitle_]동방연합의 상품들은 113번 도로를 타고 이곳으로 모여들어 발할라 혹은 다른 국가들로 퍼져나갔다."/>
+		<class name="Tutorial_Lasa_60a8Na" Value="[!Subtitle][!speaker:EmptySubTitle_]그 당시 쏟아지는 물류를 소화하기 위해 증설된 하역장 &apos;라자&apos;"/>
+		<class name="Tutorial_Lasa_1Czu2z" Value="[!Subtitle][!speaker:EmptySubTitle_]이곳에 설치된 거대한 크레인의 웅장함은 그 시절의 화려함을 상상하게 해준다."/>
+		<class name="Tutorial_Lasa_zye6Ox" Value="[!Subtitle][!speaker:EmptySubTitle_]하지만..."/>
+		<class name="Tutorial_Lasa_341Bxs" Value="[!Subtitle][!speaker:EmptySubTitle_]동방연합의 113번 도로의 통행금지 결정."/>
+		<class name="Tutorial_Lasa_0fHkKT" Value="[!Subtitle][!speaker:EmptySubTitle_]바람장벽 지구 경제는 급랭했고..."/>
+		<class name="Tutorial_Lasa_KPGNKt" Value="[!Subtitle][!speaker:EmptySubTitle_]해당 결정이 장기화 조짐을 보이자..."/>
+		<class name="Tutorial_Lasa_LHKqlV" Value="[!Subtitle][!speaker:EmptySubTitle_]많은 유지비가 드는 거대 크레인을 해체하자는 시민들의 소리가 끊이질 않았다."/>
+		<class name="Tutorial_Lasa_FDXb7L" Value="[!Subtitle][!speaker:EmptySubTitle_]하지만 항구 지분의 30%를 소유한 대귀족 &apos;르블랑&apos; 가문은"/>
+		<class name="Tutorial_Lasa_9oTrdl" Value="[!Subtitle][!speaker:EmptySubTitle_]동방연합의 통행금지가 영구적일 수 없다며 시민들을 설득하고..."/>
+		<class name="Tutorial_Lasa_AriOnu" Value="[!Subtitle][!speaker:EmptySubTitle_]아무리 대귀족이라지만 감당하기 어려운 대부분의 유지 비용을 부담하게 된다."/>
+		<class name="Tutorial_Lasa_1PtXKv" Value="[!Subtitle][!speaker:EmptySubTitle_]사람들은 대귀족의 미련한 고집이라 말하며 시대를 따라가지 못하는 귀족들의 어리석음을 조롱했다."/>
+		<class name="Tutorial_Lasa_xboLNZ" Value="[!Subtitle][!speaker:EmptySubTitle_]그것이 3년 전 일이다."/>
+		<class name="Tutorial_Lasa_frAQBc" Value="[!Title]칠전팔기"/>
+		<class name="Tutorial_Lasa_8Wsa1x" Value="[!Title]잿빛 항구 하역장"/>
+		<class name="Tutorial_Lasa_fTDntx" Value="[!Dialog][!speaker:Bianca_Stare]사실 생각해보면 어리석은 짓 맞았지."/>
+		<class name="Tutorial_Lasa_yhRAk2" Value="[!Dialog][!speaker:Alisa_Smile]비비. 누구나 추억은 소중한 거야."/>
+		<class name="Tutorial_Lasa_RAzFbg" Value="[!Dialog][!speaker:Bianca_Stare]그래도 손녀가 떼쓴다고 이걸 이렇게 두다니..."/>
+		<class name="Tutorial_Lasa_nbKHBg" Value="[!Dialog][!speaker:Bianca_Stare]도대체 그 할아범은..."/>
+		<class name="Tutorial_Lasa_ubDIag" Value="[!Dialog][!speaker:Alisa_Normal]사랑하는 자식을 잃고 손녀만 남았는데 뭘 못하시겠어."/>
+		<class name="Tutorial_Lasa_osBSsH" Value="[!Dialog][!speaker:Bianca_Stare]난 단지 아버지가 소중히 여기는 그림의 장소가 없어지는 게 싫었을 뿐이야."/>
+		<class name="Tutorial_Lasa_WgBF8b" Value="[!Dialog][!speaker:Alisa_Smile]네 할아버지는 손녀가 원하는 것을 들어주고 싶었을 뿐일 거야."/>
+		<class name="Tutorial_Lasa_KAhVhj" Value="[!Dialog][!speaker:Bianca_Sad]......"/>
+		<class name="Tutorial_Lasa_mvk9Vj" Value="[!Dialog][!speaker:Bianca_Sad]난 그래도 아버지, 어머니가 부러워."/>
+		<class name="Tutorial_Lasa_Qh0BmW" Value="[!Dialog][!speaker:Bianca_Sad]적어도 그분들은 자유롭게 살다 가셨잖아..."/>
+		<class name="Tutorial_Lasa_C4qZpw" Value="[!Dialog][!speaker:Alisa_Normal]적어도 너도 지금 구속되어 있지 않아."/>
+		<class name="Tutorial_Lasa_JSx3rA" Value="[!Dialog][!speaker:Bianca_Normal]아냐. 난 아직도 내 신분을 버리지 못해..."/>
+		<class name="Tutorial_Lasa_gyK5QQ" Value="[!Dialog][!speaker:Bianca_Normal]아무리 할아버지가 아버지를 비난하고 욕하지만..."/>
+		<class name="Tutorial_Lasa_da1xUz" Value="[!Dialog][!speaker:Bianca_Happy]아버지는 자신의 인생의 길을 가기 위해 모든 걸 버릴 수 있는 남자였어."/>
+		<class name="Tutorial_Lasa_BtD9qK" Value="[!Dialog][!speaker:Bianca_Sad]하지만 난... "/>
+		<class name="Tutorial_Lasa_VCmu1i" Value="[!Dialog][!speaker:Alisa_Smile]자유를 위해 현재를 포기하면 안 돼."/>
+		<class name="Tutorial_Lasa_T27Erb" Value="[!Dialog][!speaker:Alisa_Serious]그 순간 네가 원했던 건 모두 끝이야."/>
+		<class name="Tutorial_Lasa_DwNoVx" Value="[!Dialog][!speaker:Alisa_Normal]적어도 내가 겪은 세상은 포기하지 않고 달려드는 자에게만 자유를 허락해."/>
+		<class name="Tutorial_Lasa_AKZnfF" Value="[!Dialog][!speaker:Alisa_Smile]가능하다면 포기하지 마. 도와줄게."/>
+		<class name="Tutorial_Lasa_6M8xfL" Value="[!Dialog][!speaker:Bianca_Sad]&apos;알리사. 알리사를 만나지 않았다면 난 어떻게 지내고 있었을까...&apos;"/>
+		<class name="Tutorial_Lasa_4fBatC" Value="[!Dialog][!speaker:Alisa_Surprise]으음? 못 미더운 거야?"/>
+		<class name="Tutorial_Lasa_rcJoUf" Value="[!Dialog][!speaker:Bianca_Happy]아냐. 고마워. 덕분에 힘이 나는걸!"/>
+		<class name="Tutorial_Lasa_MnOWmG" Value="[!Dialog][!speaker:Gangster_Jason_Normal]난 포기를 모르는 남자. 제이슨."/>
+		<class name="Tutorial_Lasa_4A85GE" Value="[!Dialog][!speaker:Gangster_Jason_Normal]여태껏 이 세계에서 수없이 실패했지만 재기해왔다."/>
+		<class name="Tutorial_Lasa_c18LIA" Value="[!Dialog][!speaker:Gangster_Jason_Normal]이번에도 이대로 포기할 순 없지."/>
+		<class name="Tutorial_Lasa_H6Gu2V" Value="[!Dialog][!speaker:Gangster_Jason_Normal]동방연합으로 간다."/>
+		<class name="Tutorial_Lasa_fQOpyZ" Value="[!Dialog][!speaker:Gangster_WhiteFat_Normal]무슨 소리야? 백호파나 흑호파에 가는 것 아니었나?"/>
+		<class name="Tutorial_Lasa_J3mj1u" Value="[!Dialog][!speaker:Gangster_WhiteNormal_Normal]제이슨. 너 우리마저 속인 거냐?"/>
+		<class name="Tutorial_Lasa_edXmgY" Value="[!Dialog][!speaker:Gangster_Jason_Normal]&apos;멍청한 녀석들...빈손인 우리를 받아줄 리가 없잖아.&apos;"/>
+		<class name="Tutorial_Lasa_NscHxr" Value="[!Dialog][!speaker:Gangster_WhiteThin_Normal]제이슨. 너 도대체 무슨 생각인지 똑바로 말해."/>
+		<class name="Tutorial_Lasa_gu8hsd" Value="[!Dialog][!speaker:Gangster_Jason_Normal]다들 &apos;까마귀&apos;의 대니 기억나나?"/>
+		<class name="Tutorial_Lasa_7PMmWy" Value="[!Dialog][!speaker:Gangster_WhiteFat_Normal]그 녀석을 모를 리가! 10년 전에 쫓겨난 녀석이잖아!"/>
+		<class name="Tutorial_Lasa_3IB30d" Value="[!Dialog][!speaker:Gangster_Jason_Normal]그 녀석이 지금은 동방연합의 무기상 밑에서 한자리한다고 하더군."/>
+		<class name="Tutorial_Lasa_zzzsjH" Value="[!Dialog][!speaker:Gangster_WhiteNormal_Normal]그게 우리랑 무슨 상관이지?"/>
+		<class name="Tutorial_Lasa_kAgJCa" Value="[!Dialog][!speaker:Gangster_Jason_Normal]그 녀석이 하는 걸 우리가 하지 못할 리가 없지."/>
+		<class name="Tutorial_Lasa_m9fb3q" Value="[!Dialog][!speaker:Gangster_WhiteThin_Normal]보장이 없는 일이라면 난 빠지겠어."/>
+		<class name="Tutorial_Lasa_DtLMsC" Value="[!Dialog][!speaker:Gangster_Jason_Normal]이봐. 이제 손을 뺀다고 조직원들이 받아줄 것 같아?"/>
+		<class name="Tutorial_Lasa_eBgtHY" Value="[!Dialog][!speaker:Gangster_Jason_Normal]아니. 이미 범죄자가 된 우리가 조직들로부터 버려진 채 얼마나 오랫동안 목숨을 부지할 수 있을 것 같아? 조만간 숙청이 올 것이라고!"/>
+		<class name="Tutorial_Lasa_rPr7Pt" Value="[!Dialog][!speaker:Gangster_WhiteFat_Normal]제길! 도대체 몇 개월 사이에 모든 것이 엉망진창이 되어버렸어!"/>
+		<class name="Tutorial_Lasa_JTGCEx" Value="[!BalloonChat][!speaker:Jason]젠장..."/>
+		<class name="Tutorial_Lasa_eEV8Ue" Value="[!BalloonChat][!speaker:Bull03]찾았다. 이 배신자!!"/>
+		<class name="Tutorial_Lasa_BjJcL0" Value="[!Dialog][!speaker:Gangster_ButcherRyo_Normal]오호..."/>
+		<class name="Tutorial_Lasa_IbKfvt" Value="[!Dialog][!speaker:Gangster_ButcherRyo_Normal]그 녀석도 가버렸으니..."/>
+		<class name="Tutorial_Lasa_EzSFKo" Value="[!Dialog][!speaker:Gangster_ButcherRyo_Normal]그럼 가볼까."/>
+		<class name="Tutorial_Lasa_EkC4Lo" Value="[!BalloonChat][!speaker:Bull05]뒤에 수상한 녀석이다!"/>
+		<class name="Tutorial_Lasa_V3lwla" Value="[!BalloonChat][!speaker:Ryo]20Vill!"/>
+		<class name="Tutorial_Lasa_u4FutO" Value="[!BalloonChat][!speaker:Bull03]다들 조심해!"/>
+		<class name="Tutorial_Lasa_ZxEJwJ" Value="[!Dialog][!speaker:Gangster_ButcherRyo_Normal]너는 상관마. 난 가면들에게 볼일이 있는 거니까."/>
+		<class name="Tutorial_Lasa_Pse0Jq" Value="[!Dialog][!speaker:Gangster_Jason_Normal]기회다! 저 녀석을 도와 이곳을 빠져나가자."/>
+		<class name="Tutorial_Lasa_Q9D1ZC" Value="[!BalloonChat][!speaker:Bull03]이런 도망쳐!!"/>
+		<class name="Tutorial_Lasa_bQAoKK" Value="[!BalloonChat][!speaker:Jason_Guard01]하하하하! 생각보다 약한 녀석들이잖아!"/>
+		<class name="Tutorial_Lasa_r0CtC1" Value="[!BalloonChat][!speaker:Ryo]사냥 중에 끼어들지 마!!!"/>
+		<class name="Tutorial_Lasa_ptkCAI" Value="[!BalloonChat][!speaker:Jason_Guard02]으아아아!!"/>
+		<class name="Tutorial_Lasa_cgEYiF" Value="[!BalloonChat][!speaker:Ryo]일할 땐 조용히 해줘야지. 예의 없는 것들..."/>
+		<class name="Tutorial_Lasa_W6ycMH" Value="[!Dialog][!speaker:Gangster_ButcherRyo_Normal]기다리면 또 가면들이 오는 건가?"/>
+		<class name="Tutorial_Lasa_5BxUGF" Value="[!Dialog][!speaker:Gangster_Jason_Normal]&apos;엄청난 패도를 걷는 녀석이다...&apos;"/>
+		<class name="Tutorial_Lasa_4sRjbc" Value="[!Dialog][!speaker:EmptySubTitle_][colour=&apos;FFFFFF00&apos;]&apos;자. 제이슨. 재기를 위한 선택의 시간이다.&apos;"/>
+		<class name="Tutorial_Lasa_XEdWFC" Value="[!Choice]도망간다."/>
+		<class name="Tutorial_Lasa_TUhDlz" Value="[!Choice]살려달라고 한다."/>
+		<class name="Tutorial_Lasa_JPUp2g" Value="[!Choice]도와드린다고 한다."/>
+		<class name="Tutorial_Lasa_Z2NVK0" Value="[!Choice]싸운다."/>
+		<class name="Tutorial_Lasa_4PPwrV" Value="[!BalloonChat][!speaker:Jason]작전상 후퇴. 내가 가장 잘하는 것!"/>
+		<class name="Tutorial_Lasa_EEy5bg" Value="[!BalloonChat][!speaker:Ryo]도망가다니... 나한테 잘못한 게 있는 녀석이군..."/>
+		<class name="Tutorial_Lasa_eHkauo" Value="[!BalloonChat][!speaker:Jason]이봐! 난 아냐!!"/>
+		<class name="Tutorial_Lasa_1wKL1C" Value="[!BalloonChat][!speaker:Ryo]어이 거기 서!"/>
+		<class name="Tutorial_Lasa_ct72yk" Value="[!Dialog][!speaker:Gangster_ButcherRyo_Normal]그럼 가면 녀석들이 더 오나 지켜봐야겠군."/>
+		<class name="Tutorial_Lasa_ahEYOl" Value="[!Dialog][!speaker:Gangster_Jason_Normal]&apos;내일을 위해 무릎을 꿇는 거다. 제이슨&apos;"/>
+		<class name="Tutorial_Lasa_LCfaCy" Value="[!BalloonChat][!speaker:Jason]항복하겠습니다! 살려만 주십시오!!"/>
+		<class name="Tutorial_Lasa_UMN9Lr" Value="[!BalloonChat][!speaker:Ryo]하... 시끄럽다 정말."/>
+		<class name="Tutorial_Lasa_CZ1Ni1" Value="[!Dialog][!speaker:Gangster_ButcherRyo_Normal]그럼 가면 녀석들이 더 오나 지켜봐야겠군."/>
+		<class name="Tutorial_Lasa_wCTStK" Value="[!Dialog][!speaker:Gangster_Jason_Normal]&apos;그래. 저 녀석을 이용해 재기하는 거다.&apos;"/>
+		<class name="Tutorial_Lasa_StlsZR" Value="[!BalloonChat][!speaker:Jason]정보가 필요하십니까!! 도와드리겠습니다!"/>
+		<class name="Tutorial_Lasa_9C6r60" Value="[!BalloonChat][!speaker:Ryo]도와줘? 약한 녀석은 관심 없어."/>
+		<class name="Tutorial_Lasa_8mmaV7" Value="[!Dialog][!speaker:Gangster_ButcherRyo_Normal]그럼 가면 녀석들이 더 오나 지켜봐야겠군."/>
+		<class name="Tutorial_Lasa_XbWJrI" Value="[!Dialog][!speaker:Gangster_Jason_Normal]&apos;어차피 이러나저러나 다 통하지 않을 거다&apos;"/>
+		<class name="Tutorial_Lasa_vwMdNG" Value="[!VictoryCondition]제이슨 패배"/>
+		<class name="Tutorial_Lasa_HYgEQQ" Value="[!VictoryCondition]제한 시간 동안 살아남으시오."/>
+		<class name="Tutorial_Lasa_p3XK6G" Value="[!Dialog][!speaker:VHPD_Assault_Normal]$CompanyName$의 알버스 님. 현재 양쪽 입구 모두 봉쇄하였습니다."/>
+		<class name="Tutorial_Lasa_moGrgK" Value="[!Title]라자 하역장 입구"/>
+		<class name="Tutorial_Lasa_q6MbYs" Value="[!BalloonChat][!speaker:VHPD_A_01]다들 지원 병력이 올 때까지 현 위치를 사수한다."/>
+		<class name="Tutorial_Lasa_DHnZw3" Value="[!BalloonChat][!speaker:VHPD_A_04]아 하필이면 트러블슈터가 저쪽으로... 이쪽으로 오지..."/>
+		<class name="Tutorial_Lasa_G3aMSF" Value="[!Title]라자 하역장 출구"/>
+		<class name="Tutorial_Lasa_XIlOP0" Value="[!BalloonChat][!speaker:VHPD_B_01]그리고 본부에서는 추가 지원 병력을 보냈다고 합니다."/>
+		<class name="Tutorial_Lasa_7CKHYj" Value="[!Dialog][!speaker:Albus_Serious]알겠습니다. 경찰 병력은 모두 지원 병력이 올 때까지 입구를 봉쇄하는데 전력을 다해주세요."/>
+		<class name="Tutorial_Lasa_4JeBFD" Value="[!Dialog][!speaker:Sion_Surprise]알버스 설마..."/>
+		<class name="Tutorial_Lasa_dZpff8" Value="[!Dialog][!speaker:Sion_Stare]입구 막고 지원 병력 기다리자..."/>
+		<class name="Tutorial_Lasa_I9NTLU" Value="[!Dialog][!speaker:Sion_Smile]앤도 아직 현장 적응 단계인데 배려 좀 하자."/>
+		<class name="Tutorial_Lasa_rO2vuA" Value="[!Dialog][!speaker:Anne_Smile]전... 괜찮아요."/>
+		<class name="Tutorial_Lasa_wiyWKe" Value="[!Dialog][!speaker:Anne_Think]&apos;아직 가슴이 떨리는 건 어쩔 수 없지만…. 힘내야겠지?&apos;"/>
+		<class name="Tutorial_Lasa_211izt" Value="[!Dialog][!speaker:Albus_Laugh]시온. 네 걱정 충분히 이해해."/>
+		<class name="Tutorial_Lasa_vPZ6Qu" Value="[!Dialog][!speaker:Albus_Normal]일단 내부 상황 파악을 목표로 돌입하고 무리다 싶으면 봉쇄한 라인까지 후퇴해 지원 병력을 기다리자."/>
+		<class name="Tutorial_Lasa_hJZeIp" Value="[!Dialog][!speaker:Irene_Smile2]난 알버스 군의 결정에 따르겠네."/>
+		<class name="Tutorial_Lasa_EMaSy7" Value="[!Dialog][!speaker:Irene_Normal]만약 돌입하는 결정이라도 내가 앤 양을 꼭 지켜내겠네."/>
+		<class name="Tutorial_Lasa_1LoBTV" Value="[!Dialog][!speaker:Anne_Normal]감사합니다. 아이린 언니."/>
+		<class name="Tutorial_Lasa_tnfQ6J" Value="[!Dialog][!speaker:Sion_Depressed]&apos;하... 이 인간들 세상 너무 힘들게 살어...&apos;"/>
+		<class name="Tutorial_Lasa_AJgplM" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_Lasa_lIdrrb" Value="[!VictoryCondition]적 방어선 돌파"/>
+		<class name="Tutorial_Lasa_0c7jsf" Value="[!VictoryCondition]제한 시간 동안 방어선을 지켜내시오."/>
+		<class name="Tutorial_Lasa_8uxhNN" Value="[!Dialog][!speaker:Gangster_ButcherRyo_Normal]이 동네 녀석들 약골이구만."/>
+		<class name="Tutorial_Lasa_GjPfVJ" Value="[!Dialog][!speaker:Gangster_ButcherRyo_Normal]아니 그래도 온 김에 딱 천명만 채우고 가자. 그래야 스컬 녀석한테 제대로 뜯어내지."/>
+		<class name="Tutorial_Lasa_iSrRRS" Value="[!Dialog][!speaker:Gangster_Jason_Normal]이 녀석 가면에 집착하던데... 혹시..."/>
+		<class name="Tutorial_Lasa_GBHW9a" Value="[!Dialog][!speaker:Gangster_Jason_Normal]내가 저 스푼교, 아니 가면들이 어디 있는지 알려줄 수 있다!"/>
+		<class name="Tutorial_Lasa_7LslRt" Value="[!Dialog][!speaker:Gangster_ButcherRyo_Normal]호오? 너도 가면이냐?"/>
+		<class name="Tutorial_Lasa_xEEhU7" Value="[!Dialog][!speaker:Gangster_Jason_Normal]아니다! 그들에게 원한이 있는 자지. 어떠냐. 거래는 성립되는가?"/>
+		<class name="Tutorial_Lasa_Mdq1qE" Value="[!Dialog][!speaker:Gangster_ButcherRyo_Normal]약자가 무슨 거래? 죽기 싫으면 빨리 불어."/>
+		<class name="Tutorial_Lasa_SwDeRl" Value="[!Dialog][!speaker:Gangster_Jason_Normal]지금은 모른다. 다만 분명한 건 알려줄 수 있다는 것이다."/>
+		<class name="Tutorial_Lasa_BORVcN" Value="[!Dialog][!speaker:Gangster_ButcherRyo_Normal]쩝. 그럼 그냥 죽어."/>
+		<class name="Tutorial_Lasa_prMHy0" Value="[!BalloonChat][!speaker:Jason]잠.. 잠시만!!!"/>
+		<class name="Tutorial_Lasa_RmO439" Value="[!Dialog][!speaker:Gangster_Jason_Normal]많은 지인이 스푼교도가 되었다. 그들 중에는 불만이 있는 녀석들도 분명히 있다."/>
+		<class name="Tutorial_Lasa_oq3Fah" Value="[!Dialog][!speaker:Gangster_Jason_Normal]그들을 통해 너에게 정보를 제공하마!"/>
+		<class name="Tutorial_Lasa_BU6vIx" Value="[!Dialog][!speaker:Gangster_ButcherRyo_Normal]흠... 너의 이름은?"/>
+		<class name="Tutorial_Lasa_PE2C18" Value="[!Dialog][!speaker:Gangster_Jason_Normal]패배를 모르는 남자. 제이슨이다!"/>
+		<class name="Tutorial_Lasa_iVx1NV" Value="[!BalloonChat][!speaker:Ryo]......"/>
+		<class name="Tutorial_Lasa_eE6qQq" Value="[!BalloonChat][!speaker:Ryo]그냥 베어버릴까..."/>
+		<class name="Tutorial_Lasa_ZcJecW" Value="[!BalloonChat][!speaker:Albus]음???"/>
+		<class name="Tutorial_Lasa_jgOun6" Value="[!Dialog][!speaker:Albus_SurpriseStare]저 사람은 설마..."/>
+		<class name="Tutorial_Lasa_4P7jL3" Value="[!Dialog][!speaker:Albus_Surprise]료 류자키!!"/>
+		<class name="Tutorial_Lasa_T2dSKN" Value="[!Dialog][!speaker:Albus_Surprise]세계수 지구의 현상 수배범이 이 지역에는 왜..."/>
+		<class name="Tutorial_Lasa_AgMVsv" Value="[!Dialog][!speaker:Albus_Surprise]이거 위험해..."/>
+		<class name="Tutorial_Lasa_AMtHCD" Value="[!BalloonChat][!speaker:Albus]최대한 접전을 피하고 지원 병력이 오길 기다리자..."/>
+		<class name="Tutorial_Lasa_v2xLz5" Value="[!BalloonChat][!speaker:Sion]!!!!"/>
+		<class name="Tutorial_Lasa_Ws9U1Y" Value="[!BalloonChat][!speaker:Sion]잉어 자켓은..."/>
+		<class name="Tutorial_Lasa_vKdPy5" Value="[!Dialog][!speaker:Sion_Surprise]설마 진짜 구룡회 살수인 거야??? 도대체??? 왜??"/>
+		<class name="Tutorial_Lasa_3JrfXK" Value="[!BalloonChat][!speaker:Sion]다른 사람들에게 접근하지 말라고 말해야 해."/>
+		<class name="Tutorial_Lasa_wRsjAo" Value="[!Dialog][!speaker:Anne_Think]&apos;딱 봐도 엄청 무서운 아저씨다. 조심해야겠어.&apos;"/>
+		<class name="Tutorial_Lasa_ssYLhv" Value="[!BalloonChat][!speaker:Irene]!!!"/>
+		<class name="Tutorial_Lasa_ILVG8u" Value="[!Dialog][!speaker:Irene_Think]현장에서 검 흉기를 들고 다니는 녀석은..."/>
+		<class name="Tutorial_Lasa_1EUv8z" Value="[!Dialog][!speaker:Irene_Serious]100% 악당이지."/>
+		<class name="Tutorial_Lasa_jvvUMm" Value="[!Dialog][!speaker:Irene_Think]아니... 알버스 군은 악당이 아니었는데..."/>
+		<class name="Tutorial_Lasa_gKvF37" Value="[!Dialog][!speaker:Irene_Serious]......"/>
+		<class name="Tutorial_Lasa_UbLtas" Value="[!BalloonChat][!speaker:Ryo]거참 귀찮게 하는 녀석들일세!"/>
+		<class name="Tutorial_Lasa_fyhWpv" Value="[!Dialog][!speaker:VHPD_Scout_Normal]라자 하역장 출구를 봉쇄하였습니다. 제인 경감님."/>
+		<class name="Tutorial_Lasa_a93dC1" Value="[!Dialog][!speaker:VHPD_Jane_Normal]알았다. 그대로 방어선을 유지하면서 현장팀과 합류한다."/>
+		<class name="Tutorial_Lasa_EUWDut" Value="[!Dialog][!speaker:Gangster_ButcherRyo_Normal]그러고 보니 이 녀석들이 돈을 주는 것도 아닌데 힘 뺄 필요 없잖아."/>
+		<class name="Tutorial_Lasa_mUM03Y" Value="[!Dialog][!speaker:Gangster_ButcherRyo_Normal]쳇. 너무 몰두해서 쓸데없는 짓을 했군."/>
+		<class name="Tutorial_Lasa_s2uoDr" Value="[!BalloonChat][!speaker:Jason]난 포기를 모르는 남자다!"/>
+		<class name="Tutorial_Lasa_eGjxoX" Value="[!Title]사건 발생 1시간 전"/>
+		<class name="Tutorial_Lasa_jAGxtI" Value="[!Title]잿빛 항구 &apos;라자&apos; 하역장"/>
+		<class name="Tutorial_Lasa_8m19vm" Value="[!BalloonChat][!speaker:Ryo]음!??"/>
+		<class name="Tutorial_Lasa_1H1JyH" Value="[!BalloonChat][!speaker:Ryo]오딘의 백사자!!"/>
+		<class name="Tutorial_Lasa_aoYLHG" Value="[!BalloonChat][!speaker:Ryo]제길... 날 잡으러 온 건가..."/>
+		<class name="Tutorial_Lasa_Nfzs4h" Value="[!BalloonChat][!speaker:Ryo]아냐... 눈치채지 못했어."/>
+		<class name="Tutorial_Lasa_iV6eYB" Value="[!BalloonChat][!speaker:Ryo]그리고 그녀가 이런 시골에 있을 리가..."/>
+		<class name="Tutorial_Lasa_QFaJ81" Value="[!BalloonChat][!speaker:Ryo]하지만 조심해서 나쁠 건 없으니..."/>
+		<class name="Tutorial_Lasa_eyTn3i" Value="[!BalloonChat][!speaker:Ryo]자리를 피하자."/>
+		<class name="Tutorial_Lasa_SAM5r4" Value="[!BalloonChat][!speaker:Alisa]이제야 갔군..."/>
+		<class name="Tutorial_Lasa_R3MBFj" Value="[!Dialog][!speaker:Alisa_Normal]비앙카. 이제 돌아가자. 여기 너무 벌레들이 많아."/>
+		<class name="Tutorial_Lasa_xLAOy9" Value="[!Dialog][!speaker:Bianca_Happy]알리사 바다 반딧불이 좋아하는 거 아니었어?"/>
+		<class name="Tutorial_Lasa_bbbvHY" Value="[!Dialog][!speaker:Alisa_Smile]반딧불이야 좋아하지. 하지만 부패한 시체의 벌레는 싫잖아?"/>
+		<class name="Tutorial_Lasa_1n8pIK" Value="[!Dialog][!speaker:Bianca_Surprise]시체?"/>
+		<class name="Tutorial_Lasa_TkARVZ" Value="[!Dialog][!speaker:Alisa_Serious]방금 도살자 녀석이 지나쳤거든... 일단 위험하니 돌아가자."/>
+		<class name="Tutorial_Lasa_vYlRID" Value="[!Dialog][!speaker:Bianca_Surprise]어... 알았어."/>
+		<class name="Tutorial_Lasa_KXOcAH" Value="[!BalloonChat]이쪽이다!!"/>
+		<class name="Tutorial_Lasa_tXPDFx" Value="[!BalloonChat][!speaker:Ryo]시시하군... 좀 더 놀아볼까..."/>
+		<class name="Tutorial_Lasa_EljMQY" Value="[!BalloonChat][!speaker:Jason]날 여기까지 오게 두다니 실수한 거야!"/>
+		<class name="Tutorial_Lasa_Sj8CA9" Value="[!BalloonChat][!speaker:Jason]날 여기까지 오게 두다니 실수한 거야!"/>
+		<class name="Tutorial_Lasa_bTMyjL" Value="[!BalloonChat]동지들! 빠져나가자!"/>
+		<class name="Tutorial_Lasa_9le1kI" Value="[!BalloonChat][!speaker:Ryo]지겹군. 이런 경찰들 진짜 세금 낭비야..."/>
+		<class name="Tutorial_Lasa_OfSbUv" Value="[!BalloonChat][!speaker:Ryo]지겹군. 이런 경찰들 진짜 세금 낭비야..."/>
+		<class name="Tutorial_Lasa_wOCWaq" Value="[!BalloonChat]저 녀석이다!! 다들 긴장해!"/>
+		<class name="Tutorial_Lasa_58Tp9d" Value="[!BalloonChat][!speaker:Ryo]좋아! 일할 시간이다."/>
+		<class name="Tutorial_Lasa_bR4bVr" Value="[!BalloonChat]전방에 적 발견."/>
+		<class name="Tutorial_Lasa_A4K3Z6" Value="[!BalloonChat][!speaker:Ryo]경찰들이라... 돈도 안 되는 녀석들..."/>
+	</idspace>
+</idspaces>

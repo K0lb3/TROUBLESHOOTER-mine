@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="WorldEventArg">
+	<schema>
+		<rule property="ArgList" type="table" subtype="string" default=""/>
+		<rule property="AllowInvalidPosition" type="bool" default="false"/>
+	</schema>
+	<!-- 구체적으로 채워질 정보을 나열해 놓은 테이블입니다. 실제 값들은 시스템에서 채워집니다.
+		Argument들의 타입은 다음과 같습니다.
+		Unit,Target,Receiver,Giver,Killer,User				link{target:Object}
+		Position, EndPosition								map{x:number, y:number, z:number}
+		Damage, BuffLevel, StepIndex, StepCount, DamageBase	number
+		Ability											link{target:Ability}
+		Item, PrevItem										link{target:Item}
+		Path, StraightPath, PositionList					list{Position}
+		ApplyPositions									list{Position}
+		Key, BuffName, Winner								string
+		Value											general param (Nondeterministic)
+		UserInfo											link(target:AbilityUserInfo)
+		PrimaryTargetInfos, SecondaryTargetInfos			list{link{target:AbilityTargetInfo}}
+		AbilityTargetInfos									list{link{target:AbilityTargetInfo}}
+		FieldEffectType									string
+		AttackerState, DefenderState, DamageType			string
+		AbilityBuff, IsDash, MovingForAbility, IsFreeAction	bool
+		ActionID										number
+		ResultModifier, DetailInfo						table
+		MoveIdentifier									number
+		SystemCall										bool
+	-->
+	<class name="UnitTurnStart" ArgList="Unit"/>
+	<class name="UnitTurnStart_Self" ArgList="Unit"/>
+	<class name="UnitTurnAcquired" ArgList="Unit"/>
+	<class name="UnitTurnAcquired_Self" ArgList="Unit"/>
+	<class name="UnitTurnEnd" ArgList="Unit, SystemCall"/>
+	<class name="UnitTurnEnd_Self" ArgList="Unit, SystemCall"/>
+	<class name="AbilityUsed" ArgList="Unit, Ability, PositionList, UserInfo, PrimaryTargetInfos, SecondaryTargetInfos, ApplyPositions, DirectingConfig, ResultModifier, ActionID, IsFreeAction, SubAction, DetailInfo"/>
+	<class name="AbilityUsed_Self" ArgList="Unit, Ability, PositionList, UserInfo, PrimaryTargetInfos, SecondaryTargetInfos, ApplyPositions, DirectingConfig, ResultModifier, ActionID, IsFreeAction, SubAction, DetailInfo"/>
+	<class name="AbilityAffected" ArgList="Target, User, Ability, AbilityTargetInfos, SubAction"/>
+	<class name="PreAbilityUsing" ArgList="Unit, Ability, PositionList, DirectingConfig, ResultModifier"/>
+	<class name="PreAbilityUsing_Self" ArgList="Unit, Ability, PositionList, DirectingConfig, ResultModifier"/>
+	<class name="UnitMoveStarted" ArgList="Unit, BeginPosition, Position, Path, StraightPath, MoveID, IsDash, MovingForAbility, Invoker, MovingForDirect, MoveIdentifier"/>
+	<class name="UnitMoveStarted_Self" ArgList="Unit, BeginPosition, Position, Path, StraightPath, MoveID, IsDash, MovingForAbility, Invoker, MovingForDirect, MoveIdentifier"/>
+	<class name="UnitMoved" ArgList="Unit, BeginPosition, Position, Path, StraightPath, MoveID, IsDash, MovingForAbility, Invoker, MovingForDirect, MoveIdentifier"/>
+	<class name="UnitMoved_Self" ArgList="Unit, BeginPosition, Position, Path, StraightPath, MoveID, IsDash, MovingForAbility, Invoker, MovingForDirect, MoveIdentifier"/>
+	<class name="UnitMovedSingleStep" ArgList="Unit, Position, EndPosition, StepIndex, StepCount, MoveID, IsDash, MovingForAbility, Invoker, MovingForDirect, MoveIdentifier"/>
+	<class name="UnitMovedSingleStep_Self" ArgList="Unit, Position, EndPosition, StepIndex, StepCount, MoveID, IsDash, MovingForAbility, Invoker, MovingForDirect, MoveIdentifier"/>
+	<class name="UnitTakeDamage" ArgList="Receiver, Giver, Damage, AttackerState, DefenderState, DamageInfo, SubAction, DamageBase, ActionID"/>
+	<class name="UnitTakeDamage_Self" ArgList="Receiver, Giver, Damage, AttackerState, DefenderState, DamageInfo, SubAction, DamageBase, ActionID"/>
+	<class name="UnitGiveDamage" ArgList="Giver, Receiver, Damage, AttackerState, DefenderState, DamageInfo, SubAction, DamageBase, ActionID"/>
+	<class name="UnitGiveDamage_Self" ArgList="Giver, Receiver, Damage, AttackerState, DefenderState, DamageInfo, SubAction, DamageBase, ActionID"/>
+	<class name="TimeElapsed" ArgList="ElapsedTime, NextTurnPlayTeam"/>
+	<class name="MissionPrepare" AllowInvalidPosition="true"/>
+	<class name="MissionBegin"/>
+	<class name="MissionEnd" ArgList="Winner"/>
+	<class name="UnitCreated" ArgList="Unit, Position"/>
+	<class name="UnitCreated_Self" ArgList="Unit, Position"/>
+	<class name="UnitDead" ArgList="Unit, Killer, DamageInfo, TargetInfo"/>
+	<class name="UnitDead_Self" ArgList="Unit, Killer, DamageInfo, TargetInfo"/>
+	<class name="UnitKilled_Self" ArgList="Killer, Unit, DamageInfo, TargetInfo"/>
+	<class name="UnitResurrect" ArgList="Unit, ResurrectInfo"/>
+	<class name="UnitResurrect_Self" ArgList="Unit, ResurrectInfo"/>
+	<class name="BuffAdded" ArgList="Unit, BuffName, BuffLevel, Buff, AbilityBuff, Invoker"/>
+	<class name="BuffAdded_Self" ArgList="Unit, BuffName, BuffLevel, Buff, AbilityBuff, Invoker"/>
+	<class name="BuffRemoved" ArgList="Unit, BuffName, Buff"/>
+	<class name="BuffRemoved_Self" ArgList="Unit, BuffName, Buff"/>
+	<class name="BuffImmuned" ArgList="Unit, BuffName, AbilityBuff, Reason, Invoker"/>
+	<class name="BuffImmuned_Self" ArgList="Unit, BuffName, AbilityBuff, Reason, Invoker"/>
+	<class name="BuffPropertyUpdated" ArgList="Unit, Buff, PropertyName, Value"/>
+	<class name="BuffPropertyUpdated_Self" ArgList="Unit, Buff, PropertyName, Value"/>
+	<class name="DashboardUpdated" ArgList="Key"/>
+	<class name="UnitInteractObject" ArgList="Interaction, Unit, Target"/>
+	<class name="UnitInteractObject_Self" ArgList="Interaction, Unit, Target"/>
+	<class name="UnitInteractArea" ArgList="Interaction, Unit, Key, Position"/>
+	<class name="UnitInteractArea_Self" ArgList="Interaction, Unit, Key, Position"/>
+	<class name="StageVariableUpdated" ArgList="Key, Value, Method"/>
+	<class name="FieldEffectInitialized" ArgList="FieldEffectType, PositionList"/>
+	<class name="FieldEffectAdded" ArgList="FieldEffectType, PositionList, RefID, Giver, ActionInfo"/>
+	<class name="FieldEffectRemoved" ArgList="FieldEffectType, PositionList, RefID, Giver, ActionInfo"/>
+	<class name="FieldEffectTimeElapsed" ArgList=""/>
+	<class name="UnitPropertyUpdated" ArgList="Unit, PropertyName, Value"/>
+	<class name="UnitPropertyUpdated_Self" ArgList="Unit, PropertyName, Value"/>
+	<class name="ActionDelimiter" ArgList=""/>
+	<class name="UnitTeamChanged" ArgList="Unit, Team, PrevTeam, Temporary"/>
+	<class name="UnitPositionChanged" ArgList="Unit, BeginPosition, Position, Blink, NoEvent, Invoker, MovingForDirect, MoveIdentifier"/>
+	<class name="UnitPositionChanged_Self" ArgList="Unit, BeginPosition, Position, Blink, NoEvent, Invoker, MovingForDirect, MoveIdentifier" AllowInvalidPosition="true"/>
+	<class name="UnitItemEquipped" ArgList="Unit, Item, PrevItem"/>
+	<class name="UnitItemUnequipped" ArgList="Unit, Item"/>
+	<class name="UnitItemAcquired" ArgList="Unit, Item, GiveItemInfo"/>
+	<class name="UnitItemAcquired_Self" ArgList="Unit, Item, GiveItemInfo"/>
+	<class name="UnitExpAdded" ArgList="Unit, Exp, JobExp, ExpBase, JobExpBase"/>
+	<class name="UnitExpAdded_Self" ArgList="Unit, Exp, JobExp, ExpBase, JobExpBase"/>
+	<class name="UnitLvAdded" ArgList="Unit, PrevLv, NextLv"/>
+	<class name="UnitLvAdded_Self" ArgList="Unit, PrevLv, NextLv"/>
+	<!-- not implemented -->
+</idspace>

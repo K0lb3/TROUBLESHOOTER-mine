@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Raid_ShadeFogBackStreet_Kmcbok" Value="[!Dashboard:Counter]남은 백호파 수"/>
+		<class name="Raid_ShadeFogBackStreet_F4qX3r" Value="[!Dashboard:Counter]남은 적 지휘관 수"/>
+		<class name="Raid_ShadeFogBackStreet_QgUIqm" Value="[!Dashboard:Counter]남은 용병 수"/>
+		<class name="Raid_ShadeFogBackStreet_HhasqG" Value="[!Dashboard:TimeLimiter]귀환 준비까지 남은 시간"/>
+		<class name="Raid_ShadeFogBackStreet_GF9uxl" Value="[!Objective]현장의 치안을 회복하시오."/>
+		<class name="Raid_ShadeFogBackStreet_Rjx5E7" Value="[!Objective]적을 모두 제압하시오"/>
+		<class name="Raid_ShadeFogBackStreet_ZIFMgw" Value="[!Title]호랑이 사냥꾼"/>
+		<class name="Raid_ShadeFogBackStreet_AFUhGF" Value="[!Title]자홍 거리 상점가"/>
+		<class name="Raid_ShadeFogBackStreet_6lq6bP" Value="[!Subtitle]겨울이 끝나자 백호파의 무력 항쟁은 다시 시작되었다."/>
+		<class name="Raid_ShadeFogBackStreet_pLRAl9" Value="[!Subtitle]하지만 조직의 주축이었던 젊은 간부들을 잃은 백호파의 위세는 예전 같지 않았다."/>
+		<class name="Raid_ShadeFogBackStreet_9BRcLT" Value="[!Subtitle]올해 환갑을 바라보는 베르케가 선대의 은혜에 보답하기 위해 보스인 푸를 보조하여 조직을 추스렸지만..."/>
+		<class name="Raid_ShadeFogBackStreet_d8GXbn" Value="[!Subtitle]압도적인 폭력 아래 쌓아올린 조직의 응집력은 패배의 횟수가 늘어날수록 빠르게 와해되었다."/>
+		<class name="Raid_ShadeFogBackStreet_QSliiR" Value="[!Title]사기꾼 타이론"/>
+		<class name="Raid_ShadeFogBackStreet_4dxNWr" Value="[!Title]자홍시장 앞 유흥가"/>
+		<class name="Raid_ShadeFogBackStreet_hZKpI4" Value="[!Dialog][!speaker:Gangster_Tyron_Normal]스네이크. 1,000,000 Vill 벌고 싶지 않아?"/>
+		<class name="Raid_ShadeFogBackStreet_3JcWgm" Value="[!Dialog][!speaker:Gangster_SmugglerHelmet_Snake_Normal]무슨 소리야?"/>
+		<class name="Raid_ShadeFogBackStreet_YCi4Sa" Value="[!Dialog][!speaker:Gangster_Tyron_Normal]대니 녀석이 푸 녀석의 수급을 가져오는 비용으로 1,000,000 Vill 을 제시했어."/>
+		<class name="Raid_ShadeFogBackStreet_hRjr5W" Value="[!Dialog][!speaker:Gangster_SmugglerHelmet_Snake_Normal]대니 형님 구룡회 가더니 완전 급이 달라졌군."/>
+		<class name="Raid_ShadeFogBackStreet_fzHhs3" Value="[!Dialog][!speaker:Gangster_SmugglerHelmet_Snake_Normal]하지만 아무리 큰 돈이라도 우리끼리 푸 가까이 가는 것도 힘들텐데?"/>
+		<class name="Raid_ShadeFogBackStreet_W8TzI5" Value="[!Dialog][!speaker:Gangster_Tyron_Normal]우리 만이 아냐. 구룡회 녀석들부터 말도 안되는 녀석들이 이 사냥에 참가하고 있어."/>
+		<class name="Raid_ShadeFogBackStreet_PAo7t9" Value="[!Dialog][!speaker:Gangster_SmugglerHelmet_Snake_Normal]그럼 우리가 가능할 리 가 없잖아!"/>
+		<class name="Raid_ShadeFogBackStreet_NaMusG" Value="[!Dialog][!speaker:Gangster_Tyron_Normal]아냐. 이럴수록 더 기회가 있어."/>
+		<class name="Raid_ShadeFogBackStreet_ZEMae7" Value="[!Dialog][!speaker:Gangster_SmugglerHelmet_Snake_Normal]말도 안 되는 소리 하지 마! 나한테도 사기 치려는 거냐?"/>
+		<class name="Raid_ShadeFogBackStreet_2WweUv" Value="[!Dialog][!speaker:Gangster_Tyron_Normal]이 녀석이 속고만 살았나? 진짜 큰 돈이잖아! 딱 벌어서 반띵하지니까!"/>
+		<class name="Raid_ShadeFogBackStreet_fdKniB" Value="[!Title]스컬 잔당"/>
+		<class name="Raid_ShadeFogBackStreet_7DwGIM" Value="[!Title]자홍거리 먹자 골목"/>
+		<class name="Raid_ShadeFogBackStreet_xku8qK" Value="[!Dialog][!speaker:Gangster_SkullHelmet_Normal]네가 우리를 찾던 녀석인가?"/>
+		<class name="Raid_ShadeFogBackStreet_zMDFGS" Value="[!Dialog][!speaker:Gangster_CheChe_Normal]네~☆ 제가 바로 스컬님들을 찾은 광대 체체입니다!"/>
+		<class name="Raid_ShadeFogBackStreet_1JfGk6" Value="[!Dialog][!speaker:Gangster_SkullHelmet_Normal]우리가 이 곳에 있는 것을 어떻게 안 거지?"/>
+		<class name="Raid_ShadeFogBackStreet_Xzc8ta" Value="[!Dialog][!speaker:Gangster_CheChe_Normal]아쉽게도 저도 조직 스컬분들이 바람장벽지구에 계실 줄은 꿈에도 몰랐습니다."/>
+		<class name="Raid_ShadeFogBackStreet_YwhS69" Value="[!Dialog][!speaker:Gangster_CheChe_Normal]저는 그저 심부름꾼일뿐입니다."/>
+		<class name="Raid_ShadeFogBackStreet_Y3dmpe" Value="[!Dialog][!speaker:Gangster_SkullNormal_Normal]슬래셔. 꼬리가 길면 그 암여우 녀석한테 들킨다."/>
+		<class name="Raid_ShadeFogBackStreet_zqbmE3" Value="[!Dialog][!speaker:Gangster_SkullFat_Normal]만나면 복수해야지!"/>
+		<class name="Raid_ShadeFogBackStreet_8d0woq" Value="[!Dialog][!speaker:Gangster_SkullThin_Normal]일단 우릴 불러낸 이유부터 듣고 결정하자."/>
+		<class name="Raid_ShadeFogBackStreet_VPm73J" Value="[!Dialog][!speaker:Gangster_SkullThin_Normal]이 녀석을 죽일지 말야."/>
+		<class name="Raid_ShadeFogBackStreet_9TtP6A" Value="[!Dialog][!speaker:Gangster_CheChe_Normal]하하... 자비를 베풀어 주세요."/>
+		<class name="Raid_ShadeFogBackStreet_MUeBTO" Value="[!Title]불패의 푸"/>
+		<class name="Raid_ShadeFogBackStreet_OlTpuJ" Value="[!Title]자홍거리 고급 식당가"/>
+		<class name="Raid_ShadeFogBackStreet_3z5ERr" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]보스. 주변 일대가 포위 당했습니다."/>
+		<class name="Raid_ShadeFogBackStreet_3Fj58D" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]저와 다리우스가 주변 시선을 끌겠습니다. 보스는 이 곳을 일단 피하십시오."/>
+		<class name="Raid_ShadeFogBackStreet_NS6gRX" Value="[!Dialog][!speaker:Gangster_Foo_Normal]여기마저 물러나면 어쩌겠다는 거냐!"/>
+		<class name="Raid_ShadeFogBackStreet_mhx7Um" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]보스는 이미 한 번 무너진 조직을 다시 일으켜 세우셨습니다."/>
+		<class name="Raid_ShadeFogBackStreet_493PkA" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]오늘의 위험만 피하신다면 분명 내일의 조직은 그 어느 때보다 더 강력한 백호가 될 것 입니다."/>
+		<class name="Raid_ShadeFogBackStreet_jfxYG3" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]보스. 베르케 님. 적어도 지금은 상황을 보는 것이 나을 것 같습니다."/>
+		<class name="Raid_ShadeFogBackStreet_XqzTxo" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]아마도 저들의 목표가 보스라면 섵불리 밀고 들어와 혼전이 되는 것은 원치 않을 것입니다."/>
+		<class name="Raid_ShadeFogBackStreet_8HpRoG" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]그렇다고 기다려봐야 외부와 고립된 우리의 병력이 고갈되는 것은 시간 문제일세."/>
+		<class name="Raid_ShadeFogBackStreet_BSrZOB" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]아닙니다. 곧 혼전이 발생할 수 밖에 없습니다."/>
+		<class name="Raid_ShadeFogBackStreet_B3dG4o" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]그러니 그 때 전력을 집중하여 퇴로를 여는 것이 나을 것입니다."/>
+		<class name="Raid_ShadeFogBackStreet_i10ypU" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]적이 전력을 갈아먹으면서 올 것이라고 말하면서 혼전이 생긴다는 것은 무슨 근거인가?"/>
+		<class name="Raid_ShadeFogBackStreet_h0WZW3" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]이 정도 공공연한 사건이라면 경찰청에 이미 보고가 되었을 것 입니다. 그렇다면 곧 $CompanyName$이 출동할 것입니다."/>
+		<class name="Raid_ShadeFogBackStreet_4U3xSX" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]당연히 외부의 용병들과 마찰이 발생할 것입니다."/>
+		<class name="Raid_ShadeFogBackStreet_YlnoGz" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]자네 제 정신인가? 범죄 조직이... 트러블슈터를 기다리라니..."/>
+		<class name="Raid_ShadeFogBackStreet_PCWQgA" Value="[!Dialog][!speaker:VHPD_Jane_Angry]알버스 군. 어디까지나 우리의 목표는 현장의 치안 회복이다."/>
+		<class name="Raid_ShadeFogBackStreet_uv58da" Value="[!Dialog][!speaker:VHPD_Jane_Normal]무리하지 않았으면 해."/>
+		<class name="Raid_ShadeFogBackStreet_ZMnzKt" Value="[!Dialog][!speaker:Albus_SurpriseStare]그 말씀은..."/>
+		<class name="Raid_ShadeFogBackStreet_pebslJ" Value="[!Dialog][!speaker:VHPD_Jane_Angry]현재 바람장벽지구 경찰청은 자네들의 역량에 많이 의존하고 있어."/>
+		<class name="Raid_ShadeFogBackStreet_ogsFT8" Value="[!Dialog][!speaker:VHPD_Jane_Angry]너희들의 전력이 곧 이 지구의 치안을 유지하는 주축이 되어버린 거야."/>
+		<class name="Raid_ShadeFogBackStreet_7jTNVr" Value="[!Dialog][!speaker:Albus_SurpriseStare]네..."/>
+		<class name="Raid_ShadeFogBackStreet_pV2KLM" Value="[!Dialog][!speaker:VHPD_Jane_Normal]부끄러운 말이지만 부정할 수 없는 사실이야."/>
+		<class name="Raid_ShadeFogBackStreet_2OXgRo" Value="[!Dialog][!speaker:Albus_Serious]무슨 말인지 잘 알겠습니다."/>
+		<class name="Raid_ShadeFogBackStreet_cwZxIy" Value="[!Dialog][!speaker:VHPD_Jane_Normal]그리고 상점가 내부는 좁은 골목이 많으니 잘 고려해 주길 바래."/>
+		<class name="Raid_ShadeFogBackStreet_KGry1C" Value="[!Dialog][!speaker:Albus_Serious]네. 최대한 안정적으로 진입하겠습니다."/>
+		<class name="Raid_ShadeFogBackStreet_dFeAfX" Value="[!Dialog][!speaker:VHPD_Jane_Normal]그래. 잘 부탁해. $CompanyName$."/>
+		<class name="Raid_ShadeFogBackStreet_y1btFa" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Raid_ShadeFogBackStreet_k1qqC0" Value="[!VictoryCondition]현장의 치안을 회복하시오."/>
+		<class name="Raid_ShadeFogBackStreet_pAXdKC" Value="[!Title]냉정한 륭"/>
+		<class name="Raid_ShadeFogBackStreet_Aps4It" Value="[!Title]자홍거리 외곽 선술집"/>
+		<class name="Raid_ShadeFogBackStreet_rskYns" Value="[!Dialog][!speaker:Gangster_YukyunHyang_Normal]부탁을 들어줘서 고맙네."/>
+		<class name="Raid_ShadeFogBackStreet_xghFAp" Value="[!Dialog][!speaker:Gangster_RyungLi_Normal]보수가 확실하니까."/>
+		<class name="Raid_ShadeFogBackStreet_kL0ZSQ" Value="[!Dialog][!speaker:Gangster_YukyunHyang_Normal]그래. 백호파의 보스의 수급을 가져오면 5,000,000 Vill 이네. "/>
+		<class name="Raid_ShadeFogBackStreet_DvOAy4" Value="[!Dialog][!speaker:Gangster_RyungLi_Normal]고작 한 인간의 목숨에 그렇게 높은 가치가 매겨지다니 어이가 없군."/>
+		<class name="Raid_ShadeFogBackStreet_Tuh8oV" Value="[!Dialog][!speaker:Gangster_YukyunHyang_Normal]그만큼 확실하게 처리하라는 것이겠지."/>
+		<class name="Raid_ShadeFogBackStreet_ge6pRS" Value="[!Dialog][!speaker:Gangster_RyungLi_Normal]내 몫은 반인가?"/>
+		<class name="Raid_ShadeFogBackStreet_8NKepZ" Value="[!Dialog][!speaker:Gangster_YukyunHyang_Normal]그래. 그 정도 돈이면 자네 소원대로 가족들과 작은 건물 하나 사서 편하게 여생을 보낼 수 있을 거야."/>
+		<class name="Raid_ShadeFogBackStreet_qdEKBM" Value="[!Title]변절자 지옥불"/>
+		<class name="Raid_ShadeFogBackStreet_9jdNxs" Value="[!Title]자홍거리 상점가 외곽도로"/>
+		<class name="Raid_ShadeFogBackStreet_Lcm3ir" Value="[!Dialog][!speaker:Gangster_HellFire_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;] 도착했다."/>
+		<class name="Raid_ShadeFogBackStreet_hFEmoF" Value="[!Dialog][!speaker:Gangster_DannyLaw_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;] 그래. 그럼 잘 부탁하지."/>
+		<class name="Raid_ShadeFogBackStreet_V1hCT0" Value="[!Dialog][!speaker:Gangster_HellFire_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;] 일을 완료하면 연락하지."/>
+		<class name="Raid_ShadeFogBackStreet_YEsgdS" Value="[!Dialog][!speaker:VHPD_Jane_Normal]현장에는 백호파 뿐이 아니라 다수의 용병들이 목격되었어."/>
+		<class name="Raid_ShadeFogBackStreet_HBpwFC" Value="[!Dialog][!speaker:VHPD_Jane_Normal]그리고 서로 간의 격렬한 유혈 사태가 있은 후 현재는 잠시 소강 상태지."/>
+		<class name="Raid_ShadeFogBackStreet_xEeOAd" Value="[!Dialog][!speaker:VHPD_Jane_Normal]아마도 우리가 진입하면 다시 혼전인 상태로 변할 게 분명해."/>
+		<class name="Raid_ShadeFogBackStreet_TjAYH6" Value="[!Dialog][!speaker:Albus_Serious]네. 고려하도록 하겠습니다."/>
+		<class name="Raid_ShadeFogBackStreet_oa7S6U" Value="[!Dialog][!speaker:VHPD_Jane_Normal]그럼 현재까지 보고된 현장 상황을 간략히 설명할게."/>
+		<class name="Raid_ShadeFogBackStreet_nQLlsg" Value="[!Dialog][!speaker:Albus_Serious]네. 부탁드립니다."/>
+		<class name="Raid_ShadeFogBackStreet_bWRUHB" Value="[!Title]동쪽 진입로"/>
+		<class name="Raid_ShadeFogBackStreet_gFt716" Value="[!Title]자홍거리 상점가"/>
+		<class name="Raid_ShadeFogBackStreet_8eEvAe" Value="[!Dialog][!speaker:VHPD_Jane_Normal]동쪽 진입로는 현재 용병의 포위망이 가장 약한 지역이야."/>
+		<class name="Raid_ShadeFogBackStreet_GMs8Tb" Value="[!Dialog][!speaker:VHPD_Jane_Normal]적을 자극하지 않고 중앙부로 쉽게 진출할 수 있겠지."/>
+		<class name="Raid_ShadeFogBackStreet_eLdkFi" Value="[!Title]서쪽 진입로"/>
+		<class name="Raid_ShadeFogBackStreet_wTFcpz" Value="[!Title]자홍거리 상점가"/>
+		<class name="Raid_ShadeFogBackStreet_AtyZgL" Value="[!Dialog][!speaker:VHPD_Jane_Normal]서쪽 진입로는 개활지가 많고 높은 건물이 없어."/>
+		<class name="Raid_ShadeFogBackStreet_XvgcWW" Value="[!Dialog][!speaker:VHPD_Jane_Normal]초반 진입에 방해가 될 저격수의 위험이 가장 적은 지역이지."/>
+		<class name="Raid_ShadeFogBackStreet_hHYHaB" Value="[!Title]남쪽 진입로"/>
+		<class name="Raid_ShadeFogBackStreet_1WbN8e" Value="[!Title]자홍거리 상점가"/>
+		<class name="Raid_ShadeFogBackStreet_7iXLS6" Value="[!Dialog][!speaker:VHPD_Jane_Normal]남쪽 진입로는 백호파가 주둔하고 있는 고급 식당가와 가장 가까운 진입로야."/>
+		<class name="Raid_ShadeFogBackStreet_RCLoZt" Value="[!Dialog][!speaker:VHPD_Jane_Normal]혼전을 피하고 전력이 약한 백호파부터 제압할 수 있겠지만 제압이 늦어지면 용병들에게 오히려 포위될 수가 있어."/>
+		<class name="Raid_ShadeFogBackStreet_zk4jsk" Value="[!Title]북쪽 진입로"/>
+		<class name="Raid_ShadeFogBackStreet_ob8HwL" Value="[!Title]자홍거리 상점가"/>
+		<class name="Raid_ShadeFogBackStreet_nrUgsV" Value="[!Dialog][!speaker:VHPD_Jane_Normal]북쪽 진입로는 용병들 주력이 모여 있어."/>
+		<class name="Raid_ShadeFogBackStreet_Yiw18j" Value="[!Dialog][!speaker:VHPD_Jane_Normal]몇몇 건물에서는 저격수들도 목격되었어."/>
+		<class name="Raid_ShadeFogBackStreet_WQk2St" Value="[!Dialog][!speaker:VHPD_Jane_Normal]이쪽 진입로로 진입하는 것은 쉽지 않을 거야."/>
+		<class name="Raid_ShadeFogBackStreet_ldm3Li" Value="[!Dialog][!speaker:Albus_Think][Colour=&apos;FFFFFF00&apos;]&apos;현재 아군 전력과 현장 상황을 고려하면...&apos;"/>
+		<class name="Raid_ShadeFogBackStreet_No11vI" Value="[!Choice]동쪽 진입로"/>
+		<class name="Raid_ShadeFogBackStreet_NuqmYF" Value="[!Choice]서쪽 진입로"/>
+		<class name="Raid_ShadeFogBackStreet_xn7KXy" Value="[!Choice]남쪽 진입로"/>
+		<class name="Raid_ShadeFogBackStreet_Yls7wO" Value="[!Choice]북쪽 진입로"/>
+		<class name="Raid_ShadeFogBackStreet_B7gdLU" Value="[!Dialog]적 보스를 모두 제압하였습니다. 남은 잔당들을 처리하시겠습니까?"/>
+		<class name="Raid_ShadeFogBackStreet_6oOwvz" Value="[!Choice]임무를 계속한다"/>
+		<class name="Raid_ShadeFogBackStreet_4kZ5Uv" Value="[!Choice]귀환한다."/>
+		<class name="Raid_ShadeFogBackStreet_PTPFSY" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Raid_ShadeFogBackStreet_Rag0dP" Value="[!VictoryCondition]적을 모두 제압하시오."/>
+		<class name="Raid_ShadeFogBackStreet_Ttqooa" Value="[!Dialog][!speaker:Gangster_CheChe_Normal]방해하는 녀석은 모두 처리해!"/>
+		<class name="Raid_ShadeFogBackStreet_ZHSGC1" Value="[!Dialog][!speaker:Gangster_SmugglerHelmet_Snake_Normal]자! 큰 돈을 벌어보러 가 볼까!"/>
+		<class name="Raid_ShadeFogBackStreet_b7WNIV" Value="[!Dialog][!speaker:Gangster_YukyunHyang_Normal]일할 시간이군."/>
+		<class name="Raid_ShadeFogBackStreet_Gell6E" Value="[!Dialog][!speaker:Gangster_RyungLi_Normal]할 일을 하러 다녀오겠다."/>
+		<class name="Raid_ShadeFogBackStreet_aCmDr5" Value="[!Dialog][!speaker:Gangster_Tyron_Normal]그럼 어디 일확 천금을 노려볼까!"/>
+		<class name="Raid_ShadeFogBackStreet_hosjeG" Value="[!Dialog][!speaker:Gangster_HellFire_Normal]이제 끝낼 시간이군."/>
+		<class name="Raid_ShadeFogBackStreet_nX5f0h" Value="[!Dialog][!speaker:Gangster_SkullHelmet_Normal]죽음을 기억하라."/>
+		<class name="Raid_ShadeFogBackStreet_jaj1AY" Value="[!Dialog][!speaker:Giselle_Normal]스컬 이터 아냐?"/>
+		<class name="Raid_ShadeFogBackStreet_NC3pkQ" Value="[!Dialog][!speaker:Giselle_Normal]찾는 수고를 덜었네."/>
+		<class name="Raid_ShadeFogBackStreet_TMm49O" Value="[!Dialog][!speaker:Gangster_SkullThin_Normal]암여우 녀석. 네 오만한 웃음도 오늘까지다!"/>
+		<class name="Raid_ShadeFogBackStreet_q0kQEO" Value="[!Dialog][!speaker:Giselle_Normal]설마 스컬 크래셔?"/>
+		<class name="Raid_ShadeFogBackStreet_HZ81UE" Value="[!Dialog][!speaker:Giselle_Normal]너네 정말 잘 숨어 있었어. 칭찬해 줄게."/>
+		<class name="Raid_ShadeFogBackStreet_K2uOfE" Value="[!Dialog][!speaker:Gangster_SkullFat_Normal]블팩펄이 없으면 네 까짓것 식은 죽 먹기지!"/>
+		<class name="Raid_ShadeFogBackStreet_VfCr6j" Value="[!Dialog][!speaker:Giselle_Smile]너희들 쫓아 여기까지 온 거야."/>
+		<class name="Raid_ShadeFogBackStreet_ZNar9Q" Value="[!Dialog][!speaker:Giselle_Satisfying]그러니 조금이라도 즐겁게 해주렴~"/>
+		<class name="Raid_ShadeFogBackStreet_1yifxK" Value="[!Dialog][!speaker:Gangster_SkullNormal_Normal]&apos;저 악마 같은 년... &apos;"/>
+		<class name="Raid_ShadeFogBackStreet_jE9vJb" Value="[!Dialog][!speaker:Giselle_Smile]스컬 슬래셔~"/>
+		<class name="Raid_ShadeFogBackStreet_HKTJ14" Value="[!Dialog][!speaker:Giselle_Satisfying]너. 실수한 거야."/>
+		<class name="Raid_ShadeFogBackStreet_Kc9TcH" Value="[!Dialog][!speaker:Gangster_SkullHelmet_Normal]이 지긋지긋한 녀석. 네 녀석과의 악연도 오늘까지다!"/>
+		<class name="Raid_ShadeFogBackStreet_61DjtX" Value="[!Dialog][!speaker:EmptySubTitle_]적 보스를 제압하였습니다. 계속 임무를 진행하시겠습니까?"/>
+		<class name="Raid_ShadeFogBackStreet_TmpNvN" Value="[!Choice]임무를 계속한다."/>
+		<class name="Raid_ShadeFogBackStreet_3K1KXD" Value="[!Objective]남은 귀환 시간까지 생존하시오."/>
+		<class name="Raid_ShadeFogBackStreet_Is6Yfa" Value="[!VictoryCondition]남은 귀환 시간까지 생존하시오."/>
+	</idspace>
+</idspaces>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="lc_mission_5_2_68lJGo" Value="[!Objective]납치범을 처리하고 란의 아버지 생사확인"/>
+		<class name="lc_mission_5_2_Tp68tO" Value="[!Dialog][!speaker:Anne_Normal]여기서 더 가면 숲 밖인데..
+우리가 늦은 걸까요?"/>
+		<class name="lc_mission_5_2_E6RnVG" Value="[!Dialog][!speaker:Albus_Normal]큰일은 없으실 거야.
+조금 더 서두르자!"/>
+		<class name="lc_mission_5_2_By9TWl" Value="[!Dialog][!speaker:Sion_Smile]맞아!
+위험한 순간에 내가 짠! 하고 나타나서 해결할게.
+걱정하지마~"/>
+		<class name="lc_mission_5_2_clTg7T" Value="[!Dialog][!speaker:Anne_Normal]어? 여기 티마가 한 방향을 보고 쓰러져있어요.
+란네 아빠를 잡아간 사람들하고 싸운 거겠지요?"/>
+		<class name="lc_mission_5_2_ZjF5sD" Value="[!Dialog][!speaker:Anne_Normal]티마 가족이 왔나 봐요.
+우리가 한 게 아닌데...
+제들하고 대화로 풀 수는 없겠지요?"/>
+		<class name="lc_mission_5_2_vHuGE2" Value="[!Dialog][!speaker:Anne_Normal]휴...
+다 오해인데. 위험했어요."/>
+		<class name="lc_mission_5_2_F4kqXW" Value="[!Dialog][!speaker:Anne_Normal]앗!
+저기 불빛이 보여요!"/>
+		<class name="lc_mission_5_2_RhVkr9" Value="[!Dialog][!speaker:CrowStreet_BlackTigerFat_Normal]아... 저 뚱보놈 때문에 일이 꼬이네.
+산속에 묻어버릴 수도 없고...
+저거 빨리 본부에 넘겨서 처리하고 물건 찾아와야겠다."/>
+		<class name="lc_mission_5_2_pqeOTK" Value="[!Dialog][!speaker:CrowStreet_BlackTigerFat_Rage]아.. 저것들이 또 달려드네.
+
+처리해!"/>
+		<class name="lc_mission_5_2_Y72kyB" Value="[!Dialog][!speaker:Anne_Normal]휴...
+아저씨 란이 우릴 안 찾아봤으면 큰일 날 뻔 하셨어요.
+"/>
+		<class name="lc_mission_5_2_HwRQLm" Value="[!Dialog][!speaker:Civil_OchreFat_]끌려가서 다시는 우리 란이를 못 볼 줄 알았어.
+정말 고마워.
+"/>
+		<class name="lc_mission_5_2_7IMpHz" Value="[!Dialog][!speaker:Civil_OchreFat_]그저 바스락 소리가 들려서 티마인지 확인하려다가 이렇게 됐네.
+내가 본 건 삽질하는 것밖에 없었는데 말이지..."/>
+		<class name="lc_mission_5_2_5cNX8S" Value="[!Dialog][!speaker:Sion_Angry]이놈들 우리가 자주 봤던 것들 같은데...
+한동안 잠잠하더니 과격파 놈들 다시 움직이나 본데?"/>
+		<class name="lc_mission_5_2_4NGSZ2" Value="[!Dialog][!speaker:Albus_Normal]그러네! 이거 과격파 놈들인데.
+이놈들이 숨겨둔 거라면 필히 좋은 물건은 아닐 테니 빨리 가서 확인해보자."/>
+	</idspace>
+</idspaces>

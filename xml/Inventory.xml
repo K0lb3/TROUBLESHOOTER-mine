@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Inventory">
+		<schema>
+			<rule property="FilterTradable" type="bool" default="false"/>
+			<rule property="FilterProtected" type="bool" default="false"/>
+			<rule property="FilterSellable" type="bool" default="false"/>
+			<rule property="NormalInventory" type="bool" default="true"/>
+			<rule property="Currency" type="link" target="CurrencyType" default="Vill"/>
+			<rule property="EquipmentTest" type="bool" default="false"/>
+		</schema>
+		<class name="Normal" Layout="Inventory" ItemLayout="InventoryItem">
+			<Aligns>
+				<property Type="HorizontalAlignment" Value="Centre"/>
+				<property Type="VerticalAlignment" Value="Top"/>
+				<property Type="Area" Value="{{0, 0}, {0.12963, 0}, {0.28125, 0}, {0.87963, 0}}"/>
+			</Aligns>
+			<Tabs>
+				<property Type="ItemCategory" Value="Weapon"/>
+				<property Type="ItemCategory" Value="Armor"/>
+				<property Type="ItemCategory" Value="Accessory"/>
+				<property Type="ItemCategory" Value="Consume"/>
+				<property Type="ItemCategory" Value="Material"/>
+				<property Type="ItemCategory" Value="Tool"/>
+				<property Type="ItemCategory" Value="Machine"/>
+				<property Type="ItemCategory" Value="Etc"/>
+			</Tabs>
+		</class>
+		<class name="Mail" Layout="Inventory" ItemLayout="ShopItem" NormalInventory="false">
+			<Aligns>
+				<property Type="HorizontalAlignment" Value="Centre"/>
+				<property Type="VerticalAlignment" Value="Top"/>
+				<property Type="Area" Value="{{0, 0}, {0.12963, 0}, {0.28125, 0}, {0.87963, 0}}"/>
+			</Aligns>
+			<Tabs>
+				<property Type="ItemCategory" Value="Weapon"/>
+				<property Type="ItemCategory" Value="Armor"/>
+				<property Type="ItemCategory" Value="Accessory"/>
+				<property Type="ItemCategory" Value="Consume"/>
+				<property Type="ItemCategory" Value="Material"/>
+				<property Type="ItemCategory" Value="Tool"/>
+				<property Type="ItemCategory" Value="Machine"/>
+				<property Type="ItemCategory" Value="Etc"/>
+			</Tabs>
+		</class>
+		<class name="Shop" Layout="Inventory" ItemLayout="ShopItem" FilterProtected="true" FilterSellable="true">
+			<Aligns>
+				<property Type="HorizontalAlignment" Value="Right"/>
+				<property Type="VerticalAlignment" Value="Top"/>
+				<property Type="Area" Value="{{-0.0729167, 0}, {0.12963, 0}, {0.208333, 0}, {0.87963, 0}}"/>
+			</Aligns>
+			<Tabs>
+				<property Type="ItemCategory" Value="Weapon"/>
+				<property Type="ItemCategory" Value="Armor"/>
+				<property Type="ItemCategory" Value="Accessory"/>
+				<property Type="ItemCategory" Value="Consume"/>
+				<property Type="ItemCategory" Value="Material"/>
+				<property Type="ItemCategory" Value="Tool"/>
+				<property Type="ItemCategory" Value="Machine"/>
+				<property Type="ItemCategory" Value="Etc"/>
+			</Tabs>
+		</class>
+		<class name="ValkyrieShop" Layout="Inventory" ItemLayout="ShopItem" Currency="ValkyrieCoin">
+			<Aligns>
+				<property Type="HorizontalAlignment" Value="Right"/>
+				<property Type="VerticalAlignment" Value="Top"/>
+				<property Type="Area" Value="{{-0.0729167, 0}, {0.12963, 0}, {0.208333, 0}, {0.87963, 0}}"/>
+			</Aligns>
+			<Tabs>
+			</Tabs>
+		</class>
+		<class name="ChangeEquipment_Weapon" Layout="Inventory_Equipment" ItemLayout="RosterButton_EquipmentItem" NormalInventory="false" EquipmentTest="true">
+			<Aligns>
+				<property Type="HorizontalAlignment" Value="Centre"/>
+				<property Type="VerticalAlignment" Value="Top"/>
+				<property Type="Area" Value="{{0, 0}, {0.12963, 0}, {0.28125, 0}, {0.87963, 0}}"/>
+			</Aligns>
+			<Tabs>
+				<property Type="ItemEquipmentPosition" Value="Weapon"/>
+			</Tabs>
+		</class>
+		<class name="ChangeEquipment_Weapon2" Layout="Inventory_Equipment" ItemLayout="RosterButton_EquipmentItem" NormalInventory="false" EquipmentTest="true">
+			<Aligns>
+				<property Type="HorizontalAlignment" Value="Centre"/>
+				<property Type="VerticalAlignment" Value="Top"/>
+				<property Type="Area" Value="{{0, 0}, {0.12963, 0}, {0.28125, 0}, {0.87963, 0}}"/>
+			</Aligns>
+			<Tabs>
+				<property Type="ItemEquipmentPosition" Value="Weapon2"/>
+			</Tabs>
+		</class>
+		<class name="ChangeEquipment_Body" Layout="Inventory_Equipment" ItemLayout="RosterButton_EquipmentItem" NormalInventory="false" EquipmentTest="true">
+			<Aligns>
+				<property Type="HorizontalAlignment" Value="Centre"/>
+				<property Type="VerticalAlignment" Value="Top"/>
+				<property Type="Area" Value="{{0, 0}, {0.12963, 0}, {0.28125, 0}, {0.87963, 0}}"/>
+			</Aligns>
+			<Tabs>
+				<property Type="ItemEquipmentPosition" Value="Body"/>
+			</Tabs>
+		</class>
+		<class name="ChangeEquipment_Hand" Layout="Inventory_Equipment" ItemLayout="RosterButton_EquipmentItem" NormalInventory="false" EquipmentTest="true">
+			<Aligns>
+				<property Type="HorizontalAlignment" Value="Centre"/>
+				<property Type="VerticalAlignment" Value="Top"/>
+				<property Type="Area" Value="{{0, 0}, {0.12963, 0}, {0.28125, 0}, {0.87963, 0}}"/>
+			</Aligns>
+			<Tabs>
+				<property Type="ItemEquipmentPosition" Value="Hand"/>
+			</Tabs>
+		</class>
+		<class name="ChangeEquipment_Leg" Layout="Inventory_Equipment" ItemLayout="RosterButton_EquipmentItem" NormalInventory="false" EquipmentTest="true">
+			<Aligns>
+				<property Type="HorizontalAlignment" Value="Centre"/>
+				<property Type="VerticalAlignment" Value="Top"/>
+				<property Type="Area" Value="{{0, 0}, {0.12963, 0}, {0.28125, 0}, {0.87963, 0}}"/>
+			</Aligns>
+			<Tabs>
+				<property Type="ItemEquipmentPosition" Value="Leg"/>
+			</Tabs>
+		</class>
+		<class name="ChangeEquipment_Inventory1" Layout="Inventory_Equipment" ItemLayout="RosterButton_EquipmentItem" NormalInventory="false" EquipmentTest="true">
+			<Aligns>
+				<property Type="HorizontalAlignment" Value="Centre"/>
+				<property Type="VerticalAlignment" Value="Top"/>
+				<property Type="Area" Value="{{0, 0}, {0.12963, 0}, {0.28125, 0}, {0.87963, 0}}"/>
+			</Aligns>
+			<Tabs>
+				<property Type="ItemEquipmentPosition" Value="Inventory1"/>
+			</Tabs>
+		</class>
+		<class name="ChangeEquipment_Inventory2" Layout="Inventory_Equipment" ItemLayout="RosterButton_EquipmentItem" NormalInventory="false" EquipmentTest="true">
+			<Aligns>
+				<property Type="HorizontalAlignment" Value="Centre"/>
+				<property Type="VerticalAlignment" Value="Top"/>
+				<property Type="Area" Value="{{0, 0}, {0.12963, 0}, {0.28125, 0}, {0.87963, 0}}"/>
+			</Aligns>
+			<Tabs>
+				<property Type="ItemEquipmentPosition" Value="Inventory2"/>
+			</Tabs>
+		</class>
+		<class name="ChangeEquipment_AlchemyBag" Layout="Inventory_Equipment" ItemLayout="RosterButton_EquipmentItem" NormalInventory="false" EquipmentTest="true">
+			<Aligns>
+				<property Type="HorizontalAlignment" Value="Centre"/>
+				<property Type="VerticalAlignment" Value="Top"/>
+				<property Type="Area" Value="{{0, 0}, {0.12963, 0}, {0.28125, 0}, {0.87963, 0}}"/>
+			</Aligns>
+			<Tabs>
+				<property Type="ItemEquipmentPosition" Value="AlchemyBag"/>
+			</Tabs>
+		</class>
+		<class name="ChangeEquipment_GrenadeBag" Layout="Inventory_Equipment" ItemLayout="RosterButton_EquipmentItem" NormalInventory="false" EquipmentTest="true">
+			<Aligns>
+				<property Type="HorizontalAlignment" Value="Centre"/>
+				<property Type="VerticalAlignment" Value="Top"/>
+				<property Type="Area" Value="{{0, 0}, {0.12963, 0}, {0.28125, 0}, {0.87963, 0}}"/>
+			</Aligns>
+			<Tabs>
+				<property Type="ItemEquipmentPosition" Value="GrenadeBag"/>
+			</Tabs>
+		</class>
+		<class name="ChangeEquipment_DoubleGear" Layout="Inventory_Equipment" ItemLayout="RosterButton_EquipmentItem" NormalInventory="false" EquipmentTest="true">
+			<Aligns>
+				<property Type="HorizontalAlignment" Value="Centre"/>
+				<property Type="VerticalAlignment" Value="Top"/>
+				<property Type="Area" Value="{{0, 0}, {0.12963, 0}, {0.28125, 0}, {0.87963, 0}}"/>
+			</Aligns>
+			<Tabs>
+				<property Type="ItemEquipmentPosition" Value="DoubleGear"/>
+			</Tabs>
+		</class>
+		<class name="ChangeEquipment_Module_AuxiliaryWeapon" Layout="Inventory_Equipment" ItemLayout="RosterButton_EquipmentItem" NormalInventory="false" EquipmentTest="true">
+			<Aligns>
+				<property Type="HorizontalAlignment" Value="Centre"/>
+				<property Type="VerticalAlignment" Value="Top"/>
+				<property Type="Area" Value="{{0, 0}, {0.12963, 0}, {0.28125, 0}, {0.87963, 0}}"/>
+			</Aligns>
+			<Tabs>
+				<property Type="ItemEquipmentPosition" Value="Module_AuxiliaryWeapon"/>
+			</Tabs>
+		</class>
+		<class name="ChangeEquipment_Module_AssistEquipment" Layout="Inventory_Equipment" ItemLayout="RosterButton_EquipmentItem" NormalInventory="false" EquipmentTest="true">
+			<Aligns>
+				<property Type="HorizontalAlignment" Value="Centre"/>
+				<property Type="VerticalAlignment" Value="Top"/>
+				<property Type="Area" Value="{{0, 0}, {0.12963, 0}, {0.28125, 0}, {0.87963, 0}}"/>
+			</Aligns>
+			<Tabs>
+				<property Type="ItemEquipmentPosition" Value="Module_AssistEquipment"/>
+			</Tabs>
+		</class>
+		<class name="ChangeEquipment_Costume" Layout="Inventory_Equipment" ItemLayout="RosterButton_EquipmentItem" NormalInventory="false" EquipmentTest="true">
+			<Aligns>
+				<property Type="HorizontalAlignment" Value="Centre"/>
+				<property Type="VerticalAlignment" Value="Top"/>
+				<property Type="Area" Value="{{0, 0}, {0.12963, 0}, {0.28125, 0}, {0.87963, 0}}"/>
+			</Aligns>
+			<Tabs>
+				<property Type="ItemEquipmentPosition" Value="Costume"/>
+			</Tabs>
+		</class>
+		<class name="MachineCraftEquipment_Weapon" Layout="Inventory_Equipment" ItemLayout="MachineCraft_EquipmentItem" NormalInventory="false" EquipmentTest="true">
+			<Aligns>
+				<property Type="HorizontalAlignment" Value="Centre"/>
+				<property Type="VerticalAlignment" Value="Top"/>
+				<property Type="Area" Value="{{-0.3125, 0}, {0.12963, 0}, {-0.03125, 0}, {0.87963, 0}}"/>
+			</Aligns>
+			<Tabs>
+				<property Type="ItemEquipmentPosition" Value="Weapon"/>
+			</Tabs>
+		</class>
+		<class name="MachineCraftEquipment_Body" Layout="Inventory_Equipment" ItemLayout="MachineCraft_EquipmentItem" NormalInventory="false" EquipmentTest="true">
+			<Aligns>
+				<property Type="HorizontalAlignment" Value="Centre"/>
+				<property Type="VerticalAlignment" Value="Top"/>
+				<property Type="Area" Value="{{-0.3125, 0}, {0.12963, 0}, {-0.03125, 0}, {0.87963, 0}}"/>
+			</Aligns>
+			<Tabs>
+				<property Type="ItemEquipmentPosition" Value="Body"/>
+			</Tabs>
+		</class>
+		<class name="MachineCraftEquipment_Hand" Layout="Inventory_Equipment" ItemLayout="MachineCraft_EquipmentItem" NormalInventory="false" EquipmentTest="true">
+			<Aligns>
+				<property Type="HorizontalAlignment" Value="Centre"/>
+				<property Type="VerticalAlignment" Value="Top"/>
+				<property Type="Area" Value="{{-0.3125, 0}, {0.12963, 0}, {-0.03125, 0}, {0.87963, 0}}"/>
+			</Aligns>
+			<Tabs>
+				<property Type="ItemEquipmentPosition" Value="Hand"/>
+			</Tabs>
+		</class>
+		<class name="MachineCraftEquipment_Leg" Layout="Inventory_Equipment" ItemLayout="MachineCraft_EquipmentItem" NormalInventory="false" EquipmentTest="true">
+			<Aligns>
+				<property Type="HorizontalAlignment" Value="Centre"/>
+				<property Type="VerticalAlignment" Value="Top"/>
+				<property Type="Area" Value="{{-0.3125, 0}, {0.12963, 0}, {-0.03125, 0}, {0.87963, 0}}"/>
+			</Aligns>
+			<Tabs>
+				<property Type="ItemEquipmentPosition" Value="Leg"/>
+			</Tabs>
+		</class>
+		<class name="MachineCraftEquipment_Inventory1" Layout="Inventory_Equipment" ItemLayout="MachineCraft_EquipmentItem" NormalInventory="false" EquipmentTest="true">
+			<Aligns>
+				<property Type="HorizontalAlignment" Value="Centre"/>
+				<property Type="VerticalAlignment" Value="Top"/>
+				<property Type="Area" Value="{{-0.3125, 0}, {0.12963, 0}, {-0.03125, 0}, {0.87963, 0}}"/>
+			</Aligns>
+			<Tabs>
+				<property Type="ItemEquipmentPosition" Value="Inventory1"/>
+			</Tabs>
+		</class>
+		<class name="MachineCraftEquipment_Inventory2" Layout="Inventory_Equipment" ItemLayout="MachineCraft_EquipmentItem" NormalInventory="false" EquipmentTest="true">
+			<Aligns>
+				<property Type="HorizontalAlignment" Value="Centre"/>
+				<property Type="VerticalAlignment" Value="Top"/>
+				<property Type="Area" Value="{{-0.3125, 0}, {0.12963, 0}, {-0.03125, 0}, {0.87963, 0}}"/>
+			</Aligns>
+			<Tabs>
+				<property Type="ItemEquipmentPosition" Value="Inventory2"/>
+			</Tabs>
+		</class>
+		<class name="MachineCraftEquipment_Module_AuxiliaryWeapon" Layout="Inventory_Equipment" ItemLayout="MachineCraft_EquipmentItem" NormalInventory="false" EquipmentTest="true">
+			<Aligns>
+				<property Type="HorizontalAlignment" Value="Centre"/>
+				<property Type="VerticalAlignment" Value="Top"/>
+				<property Type="Area" Value="{{-0.3125, 0}, {0.12963, 0}, {-0.03125, 0}, {0.87963, 0}}"/>
+			</Aligns>
+			<Tabs>
+				<property Type="ItemEquipmentPosition" Value="Module_AuxiliaryWeapon"/>
+			</Tabs>
+		</class>
+		<class name="MachineCraftEquipment_Module_AssistEquipment" Layout="Inventory_Equipment" ItemLayout="MachineCraft_EquipmentItem" NormalInventory="false" EquipmentTest="true">
+			<Aligns>
+				<property Type="HorizontalAlignment" Value="Centre"/>
+				<property Type="VerticalAlignment" Value="Top"/>
+				<property Type="Area" Value="{{-0.3125, 0}, {0.12963, 0}, {-0.03125, 0}, {0.87963, 0}}"/>
+			</Aligns>
+			<Tabs>
+				<property Type="ItemEquipmentPosition" Value="Module_AssistEquipment"/>
+			</Tabs>
+		</class>
+		<class name="MailAttachment" Layout="Inventory" ItemLayout="CommonItemButton" FilterTradable="true" FilterProtected="true" NormalInventory="false">
+			<Aligns>
+				<property Type="HorizontalAlignment" Value="Centre"/>
+				<property Type="VerticalAlignment" Value="Top"/>
+				<property Type="Area" Value="{{0, 0}, {0.12963, 0}, {0.28125, 0}, {0.87963, 0}}"/>
+			</Aligns>
+			<Tabs>
+				<property Type="ItemCategory" Value="Weapon"/>
+				<property Type="ItemCategory" Value="Armor"/>
+				<property Type="ItemCategory" Value="Accessory"/>
+				<property Type="ItemCategory" Value="Consume"/>
+				<property Type="ItemCategory" Value="Material"/>
+				<property Type="ItemCategory" Value="Tool"/>
+				<property Type="ItemCategory" Value="Machine"/>
+				<property Type="ItemCategory" Value="Etc"/>
+			</Tabs>
+		</class>
+		<class name="PersonalTrade" Layout="Inventory" ItemLayout="CommonItemButton" FilterTradable="true" FilterProtected="true" NormalInventory="false">
+			<Aligns>
+				<property Type="HorizontalAlignment" Value="Right"/>
+				<property Type="VerticalAlignment" Value="Centre"/>
+				<property Type="Area" Value="{{-0.0520833, 0}, {0, 0}, {0.229167, 0}, {0.75, 0}}"/>
+			</Aligns>
+			<Tabs>
+				<property Type="ItemCategory" Value="Weapon"/>
+				<property Type="ItemCategory" Value="Armor"/>
+				<property Type="ItemCategory" Value="Accessory"/>
+				<property Type="ItemCategory" Value="Consume"/>
+				<property Type="ItemCategory" Value="Material"/>
+				<property Type="ItemCategory" Value="Tool"/>
+				<property Type="ItemCategory" Value="Machine"/>
+				<property Type="ItemCategory" Value="Etc"/>
+			</Tabs>
+		</class>
+		<class name="WarehouseInventory" Layout="Inventory" ItemLayout="WarehouseInvItem">
+			<Aligns>
+				<property Type="HorizontalAlignment" Value="Right"/>
+				<property Type="VerticalAlignment" Value="Top"/>
+				<property Type="Area" Value="{{-0.0729167, 0}, {0.12963, 0}, {0.208333, 0}, {0.87963, 0}}"/>
+			</Aligns>
+			<Tabs>
+				<property Type="ItemCategory" Value="Weapon"/>
+				<property Type="ItemCategory" Value="Armor"/>
+				<property Type="ItemCategory" Value="Accessory"/>
+				<property Type="ItemCategory" Value="Consume"/>
+				<property Type="ItemCategory" Value="Material"/>
+				<property Type="ItemCategory" Value="Tool"/>
+				<property Type="ItemCategory" Value="Machine"/>
+				<property Type="ItemCategory" Value="Etc"/>
+			</Tabs>
+		</class>
+		<class name="WarehouseWarehouse" Layout="WarehouseManager" ItemLayout="WarehouseWareItem">
+			<Aligns>
+				<property Type="HorizontalAlignment" Value="Centre"/>
+				<property Type="VerticalAlignment" Value="Top"/>
+				<property Type="Area" Value="{{0, 0}, {0.12963, 0}, {0.28125, 0}, {0.87963, 0}}"/>
+			</Aligns>
+			<Tabs>
+				<property Type="ItemCategory" Value="Weapon"/>
+				<property Type="ItemCategory" Value="Armor"/>
+				<property Type="ItemCategory" Value="Accessory"/>
+				<property Type="ItemCategory" Value="Consume"/>
+				<property Type="ItemCategory" Value="Material"/>
+				<property Type="ItemCategory" Value="Tool"/>
+				<property Type="ItemCategory" Value="Machine"/>
+				<property Type="ItemCategory" Value="Etc"/>
+			</Tabs>
+		</class>
+	</idspace>
+</idspaces>

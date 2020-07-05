@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Dialog">
+	<class name="Open_DrakyNest2">
+		<Scripts>
+			<property Type="ShowFrontmessageFormat" MessageColor="Corn">
+				<GameMessageForm Type="EtcMessage224"/>
+			</property>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="Progress/Tutorial/GuideDrakyNest2" PropertyValue="true"/>
+		</Scripts>
+	</class>
+</idspace>

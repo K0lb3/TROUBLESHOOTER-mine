@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="CrafterTooltipTest">
+	<schema>
+		<rule property="FillLayoutFunc" type="function"/>
+		<rule property="FilterDataFunc" type="function" default="FilterTooltipTestElemDefault"/>
+		<rule property="ContentLayout" type="table" subtype="string" default=""/>
+	</schema>
+	<class name="Buff" Order="1" Title="[!Ignore]버프" Idspace="Buff" Layout="CrafterTooltipTestElemBuff" FillLayoutFunc="FillTooltipTestElemBuff" FilterDataFunc="FilterTooltipTestElemBuff" TooltipLayout="ToolTip_Buff" ContentLayout="Title, _HL_, _LF_, Content"/>
+	<class name="Ability" Order="2" Title="[!Ignore]어빌리티" Idspace="Ability" Layout="CrafterTooltipTestElemAbility" FillLayoutFunc="FillTooltipTestElemAbility" TooltipLayout="ToolTip_Ability" ContentLayout="List/Title/Title/Title, _HL_, _LF_, List/Content/Content"/>
+	<class name="Item" Order="3" Title="[!Ignore]아이템" Idspace="Item" Layout="CrafterTooltipTestElemItem" FillLayoutFunc="FillTooltipTestElemItem" TooltipLayout="ToolTip_Item" ContentLayout="List/Title/Title/Text, _HL_, _LF_, List/Title/Type/Rank, _LF_, List/MainStatus/MainStatus/Status/StatusName, '_SPACE_', List/MainStatus/MainStatus/Status, '_LF_', List/Content/Content"/>
+	<class name="Mastery" Order="4" Title="[!Ignore]마스터리" Idspace="Mastery" Layout="CrafterTooltipTestElemMastery" FillLayoutFunc="FillTooltipTestElemMastery" TooltipLayout="ToolTip_Mastery" ContentLayout="List/Title/Title, _HL_, _LF_, List/Content/Content"/>
+	<class name="Pc" Order="5" Title="[!Ignore]로스터" Idspace="Pc" Layout="CrafterTooltipTestElemObjectInfo" FillLayoutFunc="FillTooltipTestElemObjectInfo" TooltipLayout="ToolTip_Simple" ContentLayout="Title, _HL_, _LF_, Content"/>
+	<class name="Monster" Order="6" Title="[!Ignore]몬스터" Idspace="Monster" Layout="CrafterTooltipTestElemMonsterInfo" FillLayoutFunc="FillTooltipTestElemMonsterInfo" TooltipLayout="ToolTip_Simple" ContentLayout="Title, _HL_, _LF_, Content"/>
+</idspace>

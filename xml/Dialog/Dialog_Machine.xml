@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Dialog">
+	<class name="RemoveMachine_EntryPoint">
+		<Scripts>
+			<property Type="Script" Script="ProgressRemoveMachineAction" C_RosterName="env.roster_name"/>
+		</Scripts>
+	</class>
+	<class name="UpgradeMachineAI_EntryPoint">
+		<Scripts>
+			<property Type="Script" Script="ProgressUpgradeMachineAIMasteryAction" C_RosterName="env.roster_name" C_UpgradeStage="env.upgrade_stage"/>
+		</Scripts>
+	</class>
+	<class name="ChangeMachineAI_EntryPoint">
+		<Scripts>
+			<property Type="Switch" C_TestTarget="env.upgrade_stage &gt;= 2">
+				<property C_Case="true">
+					<property Type="Script" Script="ProgressUpgradeMachineAIMasteryAction" C_RosterName="env.roster_name" UpgradeStage="2"/>
+				</property>
+			</property>
+			<property Type="Switch" C_TestTarget="env.upgrade_stage &gt;= 3">
+				<property C_Case="true">
+					<property Type="Script" Script="ProgressUpgradeMachineAIMasteryAction" C_RosterName="env.roster_name" UpgradeStage="3"/>
+				</property>
+			</property>
+			<property Type="Switch" C_TestTarget="env.upgrade_stage &gt;= 4">
+				<property C_Case="true">
+					<property Type="Script" Script="ProgressUpgradeMachineAIMasteryAction" C_RosterName="env.roster_name" UpgradeStage="4"/>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+</idspace>

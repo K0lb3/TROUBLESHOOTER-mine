@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Tutorial_CrowBillAfter_3E5Vck" Value="[!Dashboard:TimeLimiter]다음 적 등장 시간"/>
+		<class name="Tutorial_CrowBillAfter_xLgCb7" Value="[!Dashboard:ObjectiveMarker]알버스가 아이작에게 대화를 하면 합류 이벤트가 발생합니다."/>
+		<class name="Tutorial_CrowBillAfter_vpqK6T" Value="[!Dashboard:ObjectiveMarker]알버스 혹은 시온으로 아이린에게 대화를 하면 합류 이벤트가 발생합니다."/>
+		<class name="Tutorial_CrowBillAfter_kP9AJB" Value="[!Objective]적을 제압하시오."/>
+		<class name="Tutorial_CrowBillAfter_3y2hPH" Value="[!Title]하염없이 내리는 빗줄기"/>
+		<class name="Tutorial_CrowBillAfter_In7eMQ" Value="[!Title]까마귀부리 정류장"/>
+		<class name="Tutorial_CrowBillAfter_7K5ZMW" Value="[!Dialog]출동 명령을 받고 현장으로 출동하던 알버스와 시온."/>
+		<class name="Tutorial_CrowBillAfter_9wC1kA" Value="[!Dialog]갑작스러운 악천후와 함께 꽉 막혀버린 도로 사이를 지나 현장으로 달려간다."/>
+		<class name="Tutorial_CrowBillAfter_a55bY2" Value="[!BalloonChat][!speaker:EnemyGroup1_2]제길. 바퀴벌레 녀석들!"/>
+		<class name="Tutorial_CrowBillAfter_Jkex4I" Value="[!BalloonChat][!speaker:EnemyGroup1_1]야야~ 왔어!"/>
+		<class name="Tutorial_CrowBillAfter_gvxNgR" Value="[!BalloonChat][!speaker:VHPD3]!!!!!"/>
+		<class name="Tutorial_CrowBillAfter_lT2YGw" Value="[!BalloonChat][!speaker:VHPD3]대장님 전방에 새로운 적입니다!!"/>
+		<class name="Tutorial_CrowBillAfter_UJjylf" Value="[!BalloonChat][!speaker:VHPD1]!!!!"/>
+		<class name="Tutorial_CrowBillAfter_8muNhx" Value="[!BalloonChat][!speaker:VHPD2]후방에도 적 다수입니다!!"/>
+		<class name="Tutorial_CrowBillAfter_XgWRxM" Value="[!BalloonChat][!speaker:VHPD1]이런!!"/>
+		<class name="Tutorial_CrowBillAfter_VUPgXm" Value="[!BalloonChat][!speaker:VHPD1]역시 트러블슈터를 기다렸어야 했나..."/>
+		<class name="Tutorial_CrowBillAfter_mKzByC" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_ChkzQt"/>
+		<class name="Tutorial_CrowBillAfter_It0B6H" Value="[!Ignore][!DialogSystemMessageBox]Tutorial_CrowBillAfter_wkEToJ"/>
+		<class name="Tutorial_CrowBillAfter_kEGXb9" Value="[!Ignore]Tutorial_CrowBillAfter_RHJt5W"/>
+		<class name="Tutorial_CrowBillAfter_ydzZJ8" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_AqkF4V"/>
+		<class name="Tutorial_CrowBillAfter_79ppxE" Value="[!Ignore][!SMMessage]Tutorial_CrowBillAfter_RpldhI"/>
+		<class name="Tutorial_CrowBillAfter_pIjSOT" Value="[!Ignore][!SMTitle]Tutorial_CrowBillAfter_AugXis"/>
+		<class name="Tutorial_CrowBillAfter_PNpl4o" Value="[!Ignore][!DialogSystemMessageBox]Tutorial_CrowBillAfter_IswXX7"/>
+		<class name="Tutorial_CrowBillAfter_1duPm3" Value="[!Ignore]Tutorial_CrowBillAfter_dtY3tC"/>
+		<class name="Tutorial_CrowBillAfter_4I7oQV" Value="[!Ignore][!SMMessage]Tutorial_CrowBillAfter_fas1XC"/>
+		<class name="Tutorial_CrowBillAfter_ZibQYH" Value="[!Ignore][!SMTitle]Tutorial_CrowBillAfter_MTr5AX"/>
+		<class name="Tutorial_CrowBillAfter_gM5H4f" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_YxQmgH"/>
+		<class name="Tutorial_CrowBillAfter_n3ccKH" Value="[!Ignore][!SMMessage]Tutorial_CrowBillAfter_PNhO2g"/>
+		<class name="Tutorial_CrowBillAfter_Io8maK" Value="[!Ignore][!SMTitle]Tutorial_CrowBillAfter_OuFrWc"/>
+		<class name="Tutorial_CrowBillAfter_ZXNBBD" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_OWoHU5"/>
+		<class name="Tutorial_CrowBillAfter_lWL8oA" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_BaDvDS"/>
+		<class name="Tutorial_CrowBillAfter_mh0S4M" Value="[!Ignore][!BalloonChat][!speaker:VHPD2]Tutorial_CrowBillAfter_3obFjY"/>
+		<class name="Tutorial_CrowBillAfter_EXu3FK" Value="[!Ignore][!SMMessage]Tutorial_CrowBillAfter_0zx15E"/>
+		<class name="Tutorial_CrowBillAfter_jjR5Po" Value="[!Ignore][!SMTitle]Tutorial_CrowBillAfter_uY7Yuz"/>
+		<class name="Tutorial_CrowBillAfter_vo2c3e" Value="[!Ignore][!BalloonChat][!speaker:VHPD2]Tutorial_CrowBillAfter_ffQ6CB"/>
+		<class name="Tutorial_CrowBillAfter_jy8zPq" Value="[!Ignore][!SMMessage]Tutorial_CrowBillAfter_04lSkj"/>
+		<class name="Tutorial_CrowBillAfter_bzyqMj" Value="[!Ignore][!SMTitle]Tutorial_CrowBillAfter_E0TQuU"/>
+		<class name="Tutorial_CrowBillAfter_HRjqlB" Value="[!Ignore][!BalloonChat][!speaker:VHPD3]Tutorial_CrowBillAfter_pWvXi1"/>
+		<class name="Tutorial_CrowBillAfter_8MtSMZ" Value="[!Ignore][!SMMessage]Tutorial_CrowBillAfter_SaZ2jN"/>
+		<class name="Tutorial_CrowBillAfter_H15b0q" Value="[!Ignore][!SMTitle]Tutorial_CrowBillAfter_Tk59bn"/>
+		<class name="Tutorial_CrowBillAfter_ZCVrUY" Value="[!Ignore][!DialogSystemMessageBox]Tutorial_CrowBillAfter_OvCclk"/>
+		<class name="Tutorial_CrowBillAfter_FaGkAV" Value="[!Ignore]Tutorial_CrowBillAfter_1nKiI0"/>
+		<class name="Tutorial_CrowBillAfter_1acDoO" Value="[!Ignore][!BalloonChat][!speaker:VHPD3]Tutorial_CrowBillAfter_lGhTgZ"/>
+		<class name="Tutorial_CrowBillAfter_3QDOUy" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_XEUG2C"/>
+		<class name="Tutorial_CrowBillAfter_v0B2wL" Value="[!Ignore][!BalloonChat][!speaker:VHPD3]Tutorial_CrowBillAfter_IGPO15"/>
+		<class name="Tutorial_CrowBillAfter_VAwcfB" Value="[!Ignore][!SMMessage]Tutorial_CrowBillAfter_V4aPxj"/>
+		<class name="Tutorial_CrowBillAfter_97EIlh" Value="[!Ignore][!SMTitle]Tutorial_CrowBillAfter_L5iIcy"/>
+		<class name="Tutorial_CrowBillAfter_puRomI" Value="[!Ignore][!BalloonChat][!speaker:VHPD3]Tutorial_CrowBillAfter_z8ZI9Z"/>
+		<class name="Tutorial_CrowBillAfter_ypcMRB" Value="[!Ignore][!BalloonChat][!speaker:VHPD3]Tutorial_CrowBillAfter_wGrTA5"/>
+		<class name="Tutorial_CrowBillAfter_siE66y" Value="[!Ignore][!SMMessage]Tutorial_CrowBillAfter_ifjOoh"/>
+		<class name="Tutorial_CrowBillAfter_foIDNo" Value="[!Ignore][!SMTitle]Tutorial_CrowBillAfter_y90NW2"/>
+		<class name="Tutorial_CrowBillAfter_dHOZ8G" Value="[!Ignore][!BalloonChat][!speaker:VHPD4]Tutorial_CrowBillAfter_errxVX"/>
+		<class name="Tutorial_CrowBillAfter_RBCeEe" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_BOfSlY"/>
+		<class name="Tutorial_CrowBillAfter_oHqw6I" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_qyafNY"/>
+		<class name="Tutorial_CrowBillAfter_3cWSzZ" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_GDhhRO"/>
+		<class name="Tutorial_CrowBillAfter_TXtsF8" Value="[!Ignore][!SMMessage]Tutorial_CrowBillAfter_XcneYf"/>
+		<class name="Tutorial_CrowBillAfter_SznvOe" Value="[!Ignore][!SMTitle]Tutorial_CrowBillAfter_FmgWZT"/>
+		<class name="Tutorial_CrowBillAfter_nhzYnw" Value="[!Ignore][!BalloonChat][!speaker:VHPD2]Tutorial_CrowBillAfter_Jag9z6"/>
+		<class name="Tutorial_CrowBillAfter_ktaCED" Value="[!Ignore][!DialogSystemMessageBox]Tutorial_CrowBillAfter_7mRtFx"/>
+		<class name="Tutorial_CrowBillAfter_9iNM5z" Value="[!Ignore]Tutorial_CrowBillAfter_XuS2lF"/>
+		<class name="Tutorial_CrowBillAfter_XVJ0dD" Value="[!Ignore][!SMMessage]Tutorial_CrowBillAfter_Ah8DFk"/>
+		<class name="Tutorial_CrowBillAfter_3fIdMH" Value="[!Ignore][!SMTitle]Tutorial_CrowBillAfter_umJXnz"/>
+		<class name="Tutorial_CrowBillAfter_9ijMZL" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_CRTc5z"/>
+		<class name="Tutorial_CrowBillAfter_4mHOCs" Value="[!Ignore][!BalloonChat][!speaker:VHPD3]Tutorial_CrowBillAfter_26YSHC"/>
+		<class name="Tutorial_CrowBillAfter_yXUqS3" Value="[!Ignore][!SMMessage]Tutorial_CrowBillAfter_xfqc6i"/>
+		<class name="Tutorial_CrowBillAfter_563YpI" Value="[!Ignore][!SMTitle]Tutorial_CrowBillAfter_xJwfwe"/>
+		<class name="Tutorial_CrowBillAfter_8LcSSr" Value="[!Ignore][!BalloonChat][!speaker:VHPD3]Tutorial_CrowBillAfter_ygQYS9"/>
+		<class name="Tutorial_CrowBillAfter_y19sKy" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_R5JRGw"/>
+		<class name="Tutorial_CrowBillAfter_iwNKVq" Value="[!Ignore][!BalloonChat][!speaker:VHPD3]Tutorial_CrowBillAfter_ARy7tJ"/>
+		<class name="Tutorial_CrowBillAfter_MCnGVk" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_Pabe7f"/>
+		<class name="Tutorial_CrowBillAfter_FgbMNu" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_9Bvumm"/>
+		<class name="Tutorial_CrowBillAfter_pslPIG" Value="[!Ignore][!BalloonChat][!speaker:VHPD3]Tutorial_CrowBillAfter_yMYx0R"/>
+		<class name="Tutorial_CrowBillAfter_KpZL44" Value="[!Ignore][!BalloonChat][!speaker:VHPD3]Tutorial_CrowBillAfter_W96Aat"/>
+		<class name="Tutorial_CrowBillAfter_hNO6wO" Value="[!Ignore][!BalloonChat][!speaker:VHPD3]Tutorial_CrowBillAfter_F8TPqX"/>
+		<class name="Tutorial_CrowBillAfter_jJemFP" Value="[!Ignore][!BalloonChat][!speaker:Civil02]Tutorial_CrowBillAfter_Q0VCWK"/>
+		<class name="Tutorial_CrowBillAfter_NDgXvu" Value="[!Ignore][!BalloonChat][!speaker:VHPD3]Tutorial_CrowBillAfter_TYOdHb"/>
+		<class name="Tutorial_CrowBillAfter_DAH9Ib" Value="[!Ignore][!BalloonChat][!speaker:Civil01]Tutorial_CrowBillAfter_N1W8ox"/>
+		<class name="Tutorial_CrowBillAfter_1EVYsh" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_4Vat9N"/>
+		<class name="Tutorial_CrowBillAfter_pXQX88" Value="[!Ignore][!BalloonChat][!speaker:VHPD3]Tutorial_CrowBillAfter_79ayJK"/>
+		<class name="Tutorial_CrowBillAfter_4DfLgf" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_2qnz8y"/>
+		<class name="Tutorial_CrowBillAfter_9gw7nS" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_uSO5fA"/>
+		<class name="Tutorial_CrowBillAfter_p3ipLo" Value="[!Ignore][!DialogSystemMessageBox]Tutorial_CrowBillAfter_v5Ln1R"/>
+		<class name="Tutorial_CrowBillAfter_j5u324" Value="[!Ignore]Tutorial_CrowBillAfter_MYctvH"/>
+		<class name="Tutorial_CrowBillAfter_Ls8mBc" Value="[!Ignore][!BalloonChat][!speaker:VHPD3]Tutorial_CrowBillAfter_uIpcjd"/>
+		<class name="Tutorial_CrowBillAfter_U1SdqQ" Value="[!Ignore][!SMMessage]Tutorial_CrowBillAfter_JzvUun"/>
+		<class name="Tutorial_CrowBillAfter_k7j1tz" Value="[!Ignore][!SMTitle]Tutorial_CrowBillAfter_sBQBwe"/>
+		<class name="Tutorial_CrowBillAfter_JHQ9qK" Value="[!Ignore][!BalloonChat][!speaker:VHPD3]Tutorial_CrowBillAfter_5Gj7Bu"/>
+		<class name="Tutorial_CrowBillAfter_OWR3RS" Value="[!Ignore][!BalloonChat][!speaker:Civil01]Tutorial_CrowBillAfter_v8x6N0"/>
+		<class name="Tutorial_CrowBillAfter_z3NBcj" Value="[!Ignore][!BalloonChat][!speaker:VHPD3]Tutorial_CrowBillAfter_BC34Xk"/>
+		<class name="Tutorial_CrowBillAfter_SIIEbr" Value="[!Ignore][!BalloonChat][!speaker:VHPD3]Tutorial_CrowBillAfter_gHdpio"/>
+		<class name="Tutorial_CrowBillAfter_edKVRS" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_uxMj1J"/>
+		<class name="Tutorial_CrowBillAfter_aadO6i" Value="[!Ignore][!BalloonChat][!speaker:VHPD3]Tutorial_CrowBillAfter_C2RJMC"/>
+		<class name="Tutorial_CrowBillAfter_vtCMHK" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_Iw1xVz"/>
+		<class name="Tutorial_CrowBillAfter_lxvptY" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_Ca9DAF"/>
+		<class name="Tutorial_CrowBillAfter_Iyq19s" Value="[!Ignore][!DialogSystemMessageBox]Tutorial_CrowBillAfter_3L5eUm"/>
+		<class name="Tutorial_CrowBillAfter_sEEUpZ" Value="[!Ignore]Tutorial_CrowBillAfter_9SYOJc"/>
+		<class name="Tutorial_CrowBillAfter_u3VhDw" Value="[!Ignore][!BalloonChat][!speaker:VHPD4]Tutorial_CrowBillAfter_B3D3Fr"/>
+		<class name="Tutorial_CrowBillAfter_MGWfaP" Value="[!Ignore][!VictoryCondition]Tutorial_CrowBillAfter_02nP7R"/>
+		<class name="Tutorial_CrowBillAfter_GmELdT" Value="[!Ignore][!VictoryCondition]Tutorial_CrowBillAfter_3sfaSe"/>
+		<class name="Tutorial_CrowBillAfter_L8dfJU" Value="[!Ignore][!VictoryCondition]Tutorial_CrowBillAfter_Qhchaa"/>
+		<class name="Tutorial_CrowBillAfter_ehO4pC" Value="[!Ignore][!FrontMessage]Tutorial_CrowBillAfter_8xTADv"/>
+		<class name="Tutorial_CrowBillAfter_Z37sIV" Value="[!Ignore][!SMMessage]Tutorial_CrowBillAfter_vpEYlm"/>
+		<class name="Tutorial_CrowBillAfter_7pBsQS" Value="[!Ignore][!SMTitle]Tutorial_CrowBillAfter_1PJFtE"/>
+		<class name="Tutorial_CrowBillAfter_7bO1GC" Value="[!Ignore][!BalloonChat][!speaker:VHPD4]Tutorial_CrowBillAfter_ZVrgoA"/>
+		<class name="Tutorial_CrowBillAfter_2BP6mT" Value="[!Ignore][!BalloonChat][!speaker:Enemy3]Tutorial_CrowBillAfter_0tRP90"/>
+		<class name="Tutorial_CrowBillAfter_SEplce" Value="[!Ignore][!BalloonChat][!speaker:Civil01]Tutorial_CrowBillAfter_LoeyPd"/>
+		<class name="Tutorial_CrowBillAfter_1ecPzA" Value="[!Ignore][!BalloonChat][!speaker:VHPD4]Tutorial_CrowBillAfter_t8EeKz"/>
+		<class name="Tutorial_CrowBillAfter_wvVth9" Value="[!Ignore][!BalloonChat][!speaker:Civil02]Tutorial_CrowBillAfter_JtmNiO"/>
+		<class name="Tutorial_CrowBillAfter_qz18Zn" Value="[!Ignore][!BalloonChat][!speaker:Enemy3]Tutorial_CrowBillAfter_0gOXz4"/>
+		<class name="Tutorial_CrowBillAfter_pAmDeJ" Value="[!Ignore][!BalloonChat][!speaker:Enemy3]Tutorial_CrowBillAfter_2yKdSY"/>
+		<class name="Tutorial_CrowBillAfter_DxjGBk" Value="[!Ignore][!BalloonChat][!speaker:Enemy3]Tutorial_CrowBillAfter_Us9AKZ"/>
+		<class name="Tutorial_CrowBillAfter_h5Nhzw" Value="[!Ignore][!DialogSystemMessageBox]Tutorial_CrowBillAfter_NaD4xV"/>
+		<class name="Tutorial_CrowBillAfter_9cMJpS" Value="[!Ignore]Tutorial_CrowBillAfter_tslZtb"/>
+		<class name="Tutorial_CrowBillAfter_ZuS9Mp" Value="[!Ignore][!BalloonChat][!speaker:Enemy3]Tutorial_CrowBillAfter_g5FqrO"/>
+		<class name="Tutorial_CrowBillAfter_7ViHOr" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_xTi4yw"/>
+		<class name="Tutorial_CrowBillAfter_fCPYaF" Value="[!Ignore][!BalloonChat][!speaker:VHPD3]Tutorial_CrowBillAfter_75MtcB"/>
+		<class name="Tutorial_CrowBillAfter_zdRBgf" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_4kiAJI"/>
+		<class name="Tutorial_CrowBillAfter_LwGnnT" Value="[!Ignore][!SMMessage]Tutorial_CrowBillAfter_dljaxv"/>
+		<class name="Tutorial_CrowBillAfter_mrq3hQ" Value="[!Ignore][!SMTitle]Tutorial_CrowBillAfter_3d9Rpr"/>
+		<class name="Tutorial_CrowBillAfter_K1M8RM" Value="[!Ignore][!BalloonChat][!speaker:Enemy4]Tutorial_CrowBillAfter_t6m0Q3"/>
+		<class name="Tutorial_CrowBillAfter_mfRC0G" Value="[!Ignore][!BalloonChat][!speaker:Enemy3]Tutorial_CrowBillAfter_hJpiYz"/>
+		<class name="Tutorial_CrowBillAfter_9tUFtW" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_tWi5sR"/>
+		<class name="Tutorial_CrowBillAfter_QsR0Ob" Value="[!Ignore][!BalloonChat][!speaker:VHPD2]Tutorial_CrowBillAfter_2UbjU2"/>
+		<class name="Tutorial_CrowBillAfter_Gt9XY8" Value="[!Ignore][!BalloonChat][!speaker:VHPD2]Tutorial_CrowBillAfter_essqvO"/>
+		<class name="Tutorial_CrowBillAfter_emwaKl" Value="[!Ignore][!SMMessage]Tutorial_CrowBillAfter_hek56R"/>
+		<class name="Tutorial_CrowBillAfter_kVeMpE" Value="[!Ignore][!SMTitle]Tutorial_CrowBillAfter_w70NrZ"/>
+		<class name="Tutorial_CrowBillAfter_6vVQPs" Value="[!Ignore][!BalloonChat][!speaker:Enemy5]Tutorial_CrowBillAfter_lFXxIg"/>
+		<class name="Tutorial_CrowBillAfter_hVpEFC" Value="[!Ignore][!BalloonChat][!speaker:Enemy3]Tutorial_CrowBillAfter_YVHgGB"/>
+		<class name="Tutorial_CrowBillAfter_KLUSuZ" Value="[!Ignore][!BalloonChat][!speaker:Enemy1]Tutorial_CrowBillAfter_5fcJw2"/>
+		<class name="Tutorial_CrowBillAfter_JH6eeD" Value="[!Ignore][!BalloonChat][!speaker:VHPD3]Tutorial_CrowBillAfter_lMsUpD"/>
+		<class name="Tutorial_CrowBillAfter_hyECbw" Value="[!Ignore][!BalloonChat][!speaker:VHPD3]Tutorial_CrowBillAfter_yiPYX1"/>
+		<class name="Tutorial_CrowBillAfter_YhYSDA" Value="[!Ignore][!BalloonChat][!speaker:VHPD3]Tutorial_CrowBillAfter_HFs2dX"/>
+		<class name="Tutorial_CrowBillAfter_pUEK3u" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_LdDlDT"/>
+		<class name="Tutorial_CrowBillAfter_pGgYlz" Value="[!Ignore][!SMMessage]Tutorial_CrowBillAfter_eIXhpE"/>
+		<class name="Tutorial_CrowBillAfter_IcxEGK" Value="[!Ignore][!SMTitle]Tutorial_CrowBillAfter_lbGYWM"/>
+		<class name="Tutorial_CrowBillAfter_DMpLKa" Value="[!Ignore][!SMTitle]Tutorial_CrowBillAfter_W5CB55"/>
+		<class name="Tutorial_CrowBillAfter_LMj43P" Value="[!Ignore][!BalloonChat][!speaker:Enemy4]Tutorial_CrowBillAfter_zYRcmA"/>
+		<class name="Tutorial_CrowBillAfter_0NzTbt" Value="[!Ignore][!BalloonChat][!speaker:Enemy3]Tutorial_CrowBillAfter_1YqkeE"/>
+		<class name="Tutorial_CrowBillAfter_DMiQ5F" Value="[!Ignore][!SMMessage]Tutorial_CrowBillAfter_oAKdHW"/>
+		<class name="Tutorial_CrowBillAfter_gRF9np" Value="[!Ignore][!SMTitle]Tutorial_CrowBillAfter_SYtICp"/>
+		<class name="Tutorial_CrowBillAfter_8W0Mpb" Value="[!Ignore][!BalloonChat][!speaker:Enemy3]Tutorial_CrowBillAfter_5QmIyl"/>
+		<class name="Tutorial_CrowBillAfter_BhSkh3" Value="[!Ignore][!BalloonChat][!speaker:Enemy3]Tutorial_CrowBillAfter_PqLW4R"/>
+		<class name="Tutorial_CrowBillAfter_of0hPx" Value="[!Ignore][!BalloonChat][!speaker:VHPD3]Tutorial_CrowBillAfter_QU51nW"/>
+		<class name="Tutorial_CrowBillAfter_cmQWx6" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_cIYQLh"/>
+		<class name="Tutorial_CrowBillAfter_B9qBTm" Value="[!Ignore][!BalloonChat][!speaker:Enemy4]Tutorial_CrowBillAfter_IqZ6pN"/>
+		<class name="Tutorial_CrowBillAfter_T1Mqhl" Value="[!BalloonChat][!speaker:Irene]아차차차..."/>
+		<class name="Tutorial_CrowBillAfter_7ovNU6" Value="[!Ignore][!Subtitle][!speaker:Albus_]Tutorial_CrowBillAfter_PPgBdo"/>
+		<class name="Tutorial_CrowBillAfter_ZtGERJ" Value="[!Ignore][!Subtitle][!speaker:Sion_]Tutorial_CrowBillAfter_N0NeJj"/>
+		<class name="Tutorial_CrowBillAfter_Zjc6wo" Value="[!Ignore][!Subtitle][!speaker:Irene_Lonesome]Tutorial_CrowBillAfter_yTrLrs"/>
+		<class name="Tutorial_CrowBillAfter_h38Xvf" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_9BAJFe"/>
+		<class name="Tutorial_CrowBillAfter_4vk8B9" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_7q4Utn"/>
+		<class name="Tutorial_CrowBillAfter_g9kbVr" Value="[!BalloonChat][!speaker:VHPD1]트러블슈터를 지원하여 적을 섬멸한다!!"/>
+		<class name="Tutorial_CrowBillAfter_WAIZjx" Value="[!Ignore][!Subtitle][!speaker:Albus_]Tutorial_CrowBillAfter_PPgBdo"/>
+		<class name="Tutorial_CrowBillAfter_aunQiT" Value="[!Ignore][!Subtitle][!speaker:Sion_]Tutorial_CrowBillAfter_N0NeJj"/>
+		<class name="Tutorial_CrowBillAfter_8XUjqE" Value="[!Ignore][!Subtitle][!speaker:Irene_Lonesome]Tutorial_CrowBillAfter_yTrLrs"/>
+		<class name="Tutorial_CrowBillAfter_EZCNAN" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_0KAiZQ"/>
+		<class name="Tutorial_CrowBillAfter_yW5QRq" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_JEh8Av"/>
+		<class name="Tutorial_CrowBillAfter_OpVVCT" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_d73oQA"/>
+		<class name="Tutorial_CrowBillAfter_cg2EYC" Value="[!Ignore][!Subtitle]Tutorial_CrowBillAfter_zL5ZdF"/>
+		<class name="Tutorial_CrowBillAfter_7RY262" Value="[!Ignore][!Subtitle]Tutorial_CrowBillAfter_EXDWAX"/>
+		<class name="Tutorial_CrowBillAfter_9Ak3QO" Value="[!Ignore][!Subtitle]Tutorial_CrowBillAfter_F5ZbW2"/>
+		<class name="Tutorial_CrowBillAfter_NXmSQE" Value="[!Dialog][!speaker:VHPDMale2_Normal]분대장님. 구급대가 도로가 막혀 제때 도착하지 못할 것 같습니다."/>
+		<class name="Tutorial_CrowBillAfter_33vIBf" Value="[!Dialog][!speaker:VHPD_Issac_Normal]그렇군... &apos;앤 메이시&apos;양에게 연락은 했나? 그녀가 근처에 있다면 아직 희망은 있을지도..."/>
+		<class name="Tutorial_CrowBillAfter_4fxP2f" Value="[!Dialog][!speaker:VHPDMale2_Normal]본부에서 거의 도착할 때가 되었다고 하나 아직 연락이..."/>
+		<class name="Tutorial_CrowBillAfter_8k4LG0" Value="[!Dialog][!speaker:VHPD_Issac_Think]알았네. 자네는 델타 분대 중상자들을 수습해주게."/>
+		<class name="Tutorial_CrowBillAfter_8VMQUQ" Value="[!Dialog][!speaker:VHPDMale2_Normal]알겠습니다."/>
+		<class name="Tutorial_CrowBillAfter_GzM9es" Value="[!Dialog][!speaker:Albus_Disappoint]죄송합니다. 저희가 늦는 바람에 많은 피해가 있었군요."/>
+		<class name="Tutorial_CrowBillAfter_5VD9pM" Value="[!Dialog][!speaker:VHPD_Issac_Smile]아니네... 이런 날씨의 이 곳 교통 사정은 잘 알고 있지."/>
+		<class name="Tutorial_CrowBillAfter_yXp9FY" Value="[!Dialog][!speaker:VHPD_Issac_Think]그리고 본부에서 자네들에게 연락한 시간을 알고 있네."/>
+		<class name="Tutorial_CrowBillAfter_Wmj4Zt" Value="[!Dialog][!speaker:VHPD_Issac_Smile]자네들은 최선을 다한 것일세."/>
+		<class name="Tutorial_CrowBillAfter_NECPV8" Value="[!Dialog][!speaker:Albus_Disappoint]부상자분들은 병원까지 버티실 수 있을까요?"/>
+		<class name="Tutorial_CrowBillAfter_vCVgN5" Value="[!Dialog][!speaker:VHPD_Issac_Normal]아마 힘들지도 모르네... "/>
+		<class name="Tutorial_CrowBillAfter_cN4HrD" Value="[!Dialog][!speaker:VHPD_Issac_Normal]웬만한 외상은 다 치료되는 세상이라고 해도 결국 제때 치료를 받지 못하고 시간이 지나가 버리면 어쩔 수 없는 거지."/>
+		<class name="Tutorial_CrowBillAfter_ZhbmwC" Value="[!Dialog][!speaker:VHPD_Issac_Smile]자네들과 나도 언젠가 부딪힐 상황이지."/>
+		<class name="Tutorial_CrowBillAfter_oMIfcT" Value="[!Dialog][!speaker:VHPD_Issac_Smile]너무 걱정 말게. 그래도 이 도시엔 조그만 축복이 있네."/>
+		<class name="Tutorial_CrowBillAfter_HmHcSp" Value="[!Dialog][!speaker:Albus_SurpriseStare]축복이요?"/>
+		<class name="Tutorial_CrowBillAfter_xya23J" Value="[!Dialog][!speaker:VHPD_Issac_Smile]마음씨 좋은 치유능력자가 있다네. 그녀가 오고 있네."/>
+		<class name="Tutorial_CrowBillAfter_d3M7Kt" Value="[!Ignore][!SMMessage]Tutorial_CrowBillAfter_ZFSaLU"/>
+		<class name="Tutorial_CrowBillAfter_ci1Wvl" Value="[!Ignore][!SMTitle]Tutorial_CrowBillAfter_WmzhlZ"/>
+		<class name="Tutorial_CrowBillAfter_86ydsF" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_ScflGW"/>
+		<class name="Tutorial_CrowBillAfter_mRWeiM" Value="[!Ignore][!BalloonChat][!speaker:VHPD4]Tutorial_CrowBillAfter_t9WJAr"/>
+		<class name="Tutorial_CrowBillAfter_4b3w61" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_f733NV"/>
+		<class name="Tutorial_CrowBillAfter_LrwgJr" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_Mk2b0p"/>
+		<class name="Tutorial_CrowBillAfter_owLFCF" Value="[!Ignore][!BalloonChat][!speaker:VHPD4]Tutorial_CrowBillAfter_7bVNPw"/>
+		<class name="Tutorial_CrowBillAfter_zCOuWH" Value="[!Ignore][!BalloonChat][!speaker:Enemy3]Tutorial_CrowBillAfter_2JZagl"/>
+		<class name="Tutorial_CrowBillAfter_o3n9e9" Value="[!Ignore][!BalloonChat][!speaker:Enemy4]Tutorial_CrowBillAfter_bBxDXq"/>
+		<class name="Tutorial_CrowBillAfter_Ua2EtD" Value="[!Ignore][!BalloonChat][!speaker:VHPD3]Tutorial_CrowBillAfter_P7zCPP"/>
+		<class name="Tutorial_CrowBillAfter_nhWbvh" Value="[!Ignore][!BalloonChat][!speaker:VHPD3]Tutorial_CrowBillAfter_M0tnNF"/>
+		<class name="Tutorial_CrowBillAfter_1YT3hp" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_cpgV7d"/>
+		<class name="Tutorial_CrowBillAfter_hkt8bl" Value="[!Ignore][!BalloonChat][!speaker:VHPD2]Tutorial_CrowBillAfter_LsuSiU"/>
+		<class name="Tutorial_CrowBillAfter_mxseuG" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_K772an"/>
+		<class name="Tutorial_CrowBillAfter_zoQfCG" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_64g7je"/>
+		<class name="Tutorial_CrowBillAfter_Dpvpqx" Value="[!Ignore][!BalloonChat][!speaker:VHPD4]Tutorial_CrowBillAfter_RwmHNK"/>
+		<class name="Tutorial_CrowBillAfter_tJyULZ" Value="[!Ignore][!SMMessage]Tutorial_CrowBillAfter_rpLC2S"/>
+		<class name="Tutorial_CrowBillAfter_6XEb2y" Value="[!Ignore][!SMTitle]Tutorial_CrowBillAfter_yaDcxL"/>
+		<class name="Tutorial_CrowBillAfter_Trkx2R" Value="[!VictoryCondition]알버스 전투 불능"/>
+		<class name="Tutorial_CrowBillAfter_1A00zx" Value="[!VictoryCondition]시온 전투 불능"/>
+		<class name="Tutorial_CrowBillAfter_DmyWSx" Value="[!VictoryCondition]아이린 전투 불능"/>
+		<class name="Tutorial_CrowBillAfter_BTfMcN" Value="[!VictoryCondition]아이작 전투 불능"/>
+		<class name="Tutorial_CrowBillAfter_Q8dSHv" Value="[!VictoryCondition]적을 모두 소탕하시오."/>
+		<class name="Tutorial_CrowBillAfter_hgiNKF" Value="[!Dialog][!speaker:VHPDMale_Normal]트러블슈터! 난 아이작 고든 경감이네."/>
+		<class name="Tutorial_CrowBillAfter_iTkfJF" Value="[!Dialog][!speaker:VHPDMale_Normal]상황이 급박하네. 지금 현장 지휘권을 가져가겠나?"/>
+		<class name="Tutorial_CrowBillAfter_LYdIco" Value="[!Dialog][!speaker:Albus_Think][colour=&apos;FFFFFF00&apos;]현장 지휘권에 대해서는"/>
+		<class name="Tutorial_CrowBillAfter_97h54r" Value="[!Choice]네. 지금 바로 제가 가져가겠습니다."/>
+		<class name="Tutorial_CrowBillAfter_9o6hMC" Value="[!Choice]아닙니다. 현 상태로 엄호 부탁합니다."/>
+		<class name="Tutorial_CrowBillAfter_Dtrnng" Value="[!Dialog][!speaker:Albus_Serious]$CompanyName$ 소속 알버스. 지금 시각부터 현장 지휘를 시작합니다."/>
+		<class name="Tutorial_CrowBillAfter_kcBnIn" Value="[!BalloonChat][!speaker:VHPD1]알버스... 소문의 그 트러블슈터군."/>
+		<class name="Tutorial_CrowBillAfter_5GL2Op" Value="[!BalloonChat][!speaker:VHPD1]아직 젊은데... 대단하군..."/>
+		<class name="Tutorial_CrowBillAfter_wWZVUm" Value="[!BalloonChat][!speaker:VHPD1]지금 시각부터 트러블슈터 알버스의 지휘에 따라 행동한다!!"/>
+		<class name="Tutorial_CrowBillAfter_pJKszW" Value="[!Dialog][!speaker:Albus_Serious]지금 지휘권 이양은 혼선이 일어날 것 같습니다."/>
+		<class name="Tutorial_CrowBillAfter_6LR9hF" Value="[!Dialog][!speaker:Albus_Serious]현 지휘권을 유지한 채 저희를 지원 바랍니다."/>
+		<class name="Tutorial_CrowBillAfter_POYY6Y" Value="[!BalloonChat][!speaker:VHPD1]역시 소문의 트러블슈터군... 냉철한 판단이야."/>
+		<class name="Tutorial_CrowBillAfter_NsBbV6" Value="[!BalloonChat][!speaker:VHPD1]알겠네. 최대한 자네들을 지원하겠네. 실망시키지 않겠어."/>
+		<class name="Tutorial_CrowBillAfter_KY3Y1M" Value="[!Ignore][!Dialog][!speaker:VHPD_Issac_Think]Tutorial_CrowBillAfter_1MMf5m"/>
+		<class name="Tutorial_CrowBillAfter_KGzLgj" Value="[!Dialog][!speaker:Irene_Smile]누군가 했더니... 트러블슈터 너였구나!"/>
+		<class name="Tutorial_CrowBillAfter_LuPHSo" Value="[!Dialog][!speaker:Irene_Normal]이렇게 같은 트러블슈터를 자주 만나는 건 처음이군"/>
+		<class name="Tutorial_CrowBillAfter_n3BnuN" Value="[!Dialog][!speaker:Irene_Surprise]설마..."/>
+		<class name="Tutorial_CrowBillAfter_BpeEGp" Value="[!Dialog][!speaker:Irene_Smile]이 아이린 님을 쫓아다니는 거냐?"/>
+		<class name="Tutorial_CrowBillAfter_3AVmV6" Value="[!Dialog][!speaker:Albus_Normal]아이린 씨. 여전하시군요."/>
+		<class name="Tutorial_CrowBillAfter_dIadlD" Value="[!Dialog][!speaker:Irene_Smile]그래. 오늘도 함께 하는 건가?"/>
+		<class name="Tutorial_CrowBillAfter_zmPfFn" Value="[!Dialog][!speaker:Albus_Laugh]아이린 씨 일반인이 이러시면 곤란합니다."/>
+		<class name="Tutorial_CrowBillAfter_FA2AJs" Value="[!Dialog][!speaker:Irene_Surprise]트러블슈터인 네가 보장하면 해결되지 않는가?"/>
+		<class name="Tutorial_CrowBillAfter_xEEJ4K" Value="[!Dialog][!speaker:Albus_Laugh]일단 상황이 급하니 이번에도 힘을 빌리겠습니다."/>
+		<class name="Tutorial_CrowBillAfter_0Mhi2b" Value="[!Dialog][!speaker:Irene_Normal]당연한 말 아니냐! 나야말로 잘 부탁한다."/>
+		<class name="Tutorial_CrowBillAfter_1lhsaa" Value="[!Dialog][!speaker:Irene_Surprise]네가 여기 있다는 건?"/>
+		<class name="Tutorial_CrowBillAfter_ECyC8m" Value="[!Dialog][!speaker:Irene_Surprise]그 트러블슈터도 왔다는 거냐?"/>
+		<class name="Tutorial_CrowBillAfter_vqAF6z" Value="[!Subtitle][!speaker:Albus_Doubt]......"/>
+		<class name="Tutorial_CrowBillAfter_Hwl5DS" Value="[!Dialog][!speaker:Sion_Surprise]햄버거 소녀.."/>
+		<class name="Tutorial_CrowBillAfter_ddMym5" Value="[!Dialog][!speaker:Irene_Smile]어서 넌 안전한 곳으로 숨어라. 악당들이 많다."/>
+		<class name="Tutorial_CrowBillAfter_zKeoLa" Value="[!Dialog][!speaker:Sion_Smile]내가 도와줄게."/>
+		<class name="Tutorial_CrowBillAfter_zc1vgj" Value="[!Dialog][!speaker:Irene_Smile]괜찮겠느냐? 저번처럼 도망쳐도 된다."/>
+		<class name="Tutorial_CrowBillAfter_zbkmqm" Value="[!Dialog][!speaker:Sion_Stare]안 도망쳤다니까..."/>
+		<class name="Tutorial_CrowBillAfter_LjIDCt" Value="[!Dialog][!speaker:Sion_Angry]아니 오늘은 안 도망치고 제대로 도와줄게."/>
+		<class name="Tutorial_CrowBillAfter_4ShoIA" Value="[!Dialog][!speaker:Sion_Normal]맡겨줘~☆"/>
+		<class name="Tutorial_CrowBillAfter_ebrPfj" Value="[!Dialog][!speaker:Irene_Normal]&apos;제법 정의로운 녀석이군&apos;"/>
+		<class name="Tutorial_CrowBillAfter_J8rdNd" Value="[!Dialog][!speaker:Irene_Normal]그럼 오늘은 믿어 보마."/>
+		<class name="Tutorial_CrowBillAfter_ZTKisz" Value="[!Dialog][!speaker:VHPD_Issac_Smile]여긴 함정이었나..."/>
+		<class name="Tutorial_CrowBillAfter_dWw6ig" Value="[!Dialog][!speaker:Albus_Disappoint]쉽지 않은 임무겠어..."/>
+		<class name="Tutorial_CrowBillAfter_IP5jWA" Value="[!Subtitle][!speaker:Albus_Serious]트러블슈터 알버스. 현장에 합류합니다!"/>
+		<class name="Tutorial_CrowBillAfter_Pbenge" Value="[!Subtitle][!speaker:Sion_Happy]견습 트러블슈터 시온. 현장 합류~☆"/>
+		<class name="Tutorial_CrowBillAfter_kJLtkD" Value="[!Subtitle][!speaker:Irene_Heroic]내가 히어로 아이린이다!!"/>
+		<class name="Tutorial_CrowBillAfter_njycz1" Value="[!BalloonChat][!speaker:VHPD1]분대원!!"/>
+		<class name="Tutorial_CrowBillAfter_n3dsBf" Value="[!Ignore][!BalloonChat][!speaker:VHPD1]Tutorial_CrowBillAfter_DFO0o8"/>
+		<class name="Tutorial_CrowBillAfter_6PeM6v" Value="[!BalloonChat][!speaker:Irene]저 녀석 제법이잖아!"/>
+		<class name="Tutorial_CrowBillAfter_d0hATP" Value="[!BalloonChat][!speaker:VHPD1]저 소녀는..."/>
+		<class name="Tutorial_CrowBillAfter_xekyjb" Value="[!BalloonChat][!speaker:Sion]알버스!"/>
+		<class name="Tutorial_CrowBillAfter_HWmOA2" Value="[!BalloonChat][!speaker:Albus]음. 무슨 일이야. 시온?"/>
+		<class name="Tutorial_CrowBillAfter_ktt614" Value="[!BalloonChat][!speaker:Albus]무슨 문제라도?"/>
+		<class name="Tutorial_CrowBillAfter_FBa7vg" Value="[!BalloonChat][!speaker:Sion]현장 끝나면 햄버거 소녀한테... 알지?"/>
+		<class name="Tutorial_CrowBillAfter_0bYUKR" Value="[!BalloonChat][!speaker:Albus]알았어. 일단 현장에 집중해. 시온."/>
+		<class name="Tutorial_CrowBillAfter_RZGTOT" Value="[!BalloonChat][!speaker:Sion]OK~☆ 맡겨만 달라고!"/>
+		<class name="Tutorial_CrowBillAfter_NV9Hge" Value="[!BalloonChat][!speaker:EnemyGroup1_2]이 녀석들아! 우리의 승리다!"/>
+		<class name="Tutorial_CrowBillAfter_Qt7wIy" Value="[!Subtitle][!speaker:VHPDMale2_Normal]앤 메이시 양이 도착했습니다!!"/>
+		<class name="Tutorial_CrowBillAfter_Q8iEIE" Value="[!Dialog][!speaker:EmptySubTitle_]치유능력자 &apos;앤&apos;."/>
+		<class name="Tutorial_CrowBillAfter_kIReko" Value="[!Dialog][!speaker:EmptySubTitle_]아이작이 말한 지 얼마 되지 않아 도착한 그녀는 부상자들의 &apos;치유&apos;를 시작한다."/>
+		<class name="Tutorial_CrowBillAfter_i5OLB3" Value="[!Dialog][!speaker:EmptySubTitle_]그리고 &apos;치유&apos;를 통하여 생명력을 유지한 부상자들은 신속히 구급차에 올라가 가까운 병원으로 향했다."/>
+		<class name="Tutorial_CrowBillAfter_zbsQbc" Value="[!Dialog][!speaker:EmptySubTitle_]이들 대부분은 시간은 다르겠지만 완치가 되어 원래의 생활로 돌아갈 것이다."/>
+		<class name="Tutorial_CrowBillAfter_RU2dvZ" Value="[!Dialog][!speaker:EmptySubTitle_]하지만..."/>
+		<class name="Tutorial_CrowBillAfter_3cvAxy" Value="[!Dialog][!speaker:Joel_Normal]허억...허억..."/>
+		<class name="Tutorial_CrowBillAfter_tetGue" Value="[!Dialog][!speaker:EmptySubTitle_]공허하게 울려 퍼지는 힐링 소리..."/>
+		<class name="Tutorial_CrowBillAfter_t6zN8G" Value="[!Dialog][!speaker:Albus_Embarrassed]......."/>
+		<class name="Tutorial_CrowBillAfter_PSp6GZ" Value="[!Dialog][!speaker:Joel_Normal]크윽...."/>
+		<class name="Tutorial_CrowBillAfter_reJXlb" Value="[!Dialog][!speaker:Anne_Strict]아저씨. 정신 차려요. 이름이 뭐죠?"/>
+		<class name="Tutorial_CrowBillAfter_jfc8nY" Value="[!Dialog][!speaker:Joel_Normal]죠엘..."/>
+		<class name="Tutorial_CrowBillAfter_YFXp8v" Value="[!Dialog][!speaker:Anne_Smile]죠엘 씨. 정신만 차리면 죽지 않아요. 제 말 들리시죠?"/>
+		<class name="Tutorial_CrowBillAfter_30oBqq" Value="[!Dialog][!speaker:Anne_Strict]제가 계속 치유하고 있으니까 아저씨도 마음 단단히 먹고 살겠다고 생각하세요."/>
+		<class name="Tutorial_CrowBillAfter_E6IjbQ" Value="[!Dialog][!speaker:Joel_Normal]으윽...."/>
+		<class name="Tutorial_CrowBillAfter_QNrEpL" Value="[!Dialog][!speaker:Anne_Surprise]죠엘 씨!"/>
+		<class name="Tutorial_CrowBillAfter_mtRgzN" Value="[!Dialog][!speaker:Anne_Surprise]죠엘 씨? 죠엘 씨? 아니 죠엘 씨! 뭐 하는 거예요!"/>
+		<class name="Tutorial_CrowBillAfter_V3sJ7q" Value="[!Dialog][!speaker:Sion_Stare]제길..."/>
+		<class name="Tutorial_CrowBillAfter_MJbGDL" Value="[!Dialog][!speaker:VHPD_Issac_Normal]그의 이름은..."/>
+		<class name="Tutorial_CrowBillAfter_TeSzTZ" Value="[!Dialog][!speaker:VHPD_Issac_Normal] 발할라의 빛이 되리라..."/>
+		<class name="Tutorial_CrowBillAfter_IiFecc" Value="[!Dialog][!speaker:EmptySubTitle_]아이작 경감의 입에서 흘러나온 말."/>
+		<class name="Tutorial_CrowBillAfter_d0AlNd" Value="[!Dialog][!speaker:EmptySubTitle_]발할라의 순국선열들에게 존경의 뜻을 담아 부르는 말..."/>
+		<class name="Tutorial_CrowBillAfter_81utqH" Value="[!Dialog][!speaker:Anne_Cry]...... 뭐라는 거에요... 아직 안 끝났단 말이에요!"/>
+		<class name="Tutorial_CrowBillAfter_MYBOSJ" Value="[!Dialog][!speaker:EmptySubTitle_]       『  사망자  』   "/>
+		<class name="Tutorial_CrowBillAfter_Q66ia0" Value="[!Dialog][!speaker:EmptySubTitle_]치유능력자 &apos;앤&apos;의 노력에도 불구하고 오랜 시간 방치된 경찰 죠엘은 더 이상 발할라를 지킬 수 없게 되었다."/>
+		<class name="Tutorial_CrowBillAfter_XxNe80" Value="[!Dialog][!speaker:EmptySubTitle_]현장의 사람들은 이날만큼은 범죄자들을 제압하여 발할라의 치안을 지켜낸 것을 기뻐할 수 없었다."/>
+		<class name="Tutorial_CrowBillAfter_gxCuez" Value="[!Dialog][!speaker:VHPD_Issac_Smile]앤 메이시 양. 그만 일어나렴."/>
+		<class name="Tutorial_CrowBillAfter_uf2UUl" Value="[!Dialog][!speaker:VHPD_Issac_Normal]빗줄기가 거칠다. 감기 들겠다."/>
+		<class name="Tutorial_CrowBillAfter_Mz6JjO" Value="[!Dialog][!speaker:Anne_Cry]싫어요. 죠엘 씨는 일어날 거에요!"/>
+		<class name="Tutorial_CrowBillAfter_NGocKV" Value="[!Dialog][!speaker:EmptySubTitle_]계속 연이어 번지는 빛... 눈물이 글썽거리며 숨을 헐떡거리는 작은 소녀의 모습을 현장의 사람들은 묵묵히 바라볼 뿐이었다."/>
+		<class name="Tutorial_CrowBillAfter_8X3wvn" Value="[!Dialog][!speaker:VHPD_Issac_Normal]메이시 양... 이미 늦은 건 어쩔 수 없어. 넌 충분히 잘해주었어."/>
+		<class name="Tutorial_CrowBillAfter_iivl5G" Value="[!Dialog][!speaker:Anne_Sorrow]맨날 너무 늦잖아요... "/>
+		<class name="Tutorial_CrowBillAfter_vbrzPR" Value="[!Dialog][!speaker:VHPD_Issac_Think]미안하다. 하지만 이젠 죠엘을 보내주자. 이렇게 빗속에 계속 둘 거니?"/>
+		<class name="Tutorial_CrowBillAfter_y3mJKv" Value="[!Dialog][!speaker:Anne_Sorrow]왜..."/>
+		<class name="Tutorial_CrowBillAfter_hzmQqn" Value="[!Dialog][!speaker:Anne_Cry]왜 맨날 나 먼저 안 부르는 거예요!! "/>
+		<class name="Tutorial_CrowBillAfter_RJ7jWk" Value="[!Dialog][!speaker:Anne_Cry]제가 먼저 오면 다 살릴 수 있다면서요!!"/>
+		<class name="Tutorial_CrowBillAfter_Ov62Dp" Value="[!Dialog][!speaker:VHPD_Issac_Normal]너마저 다치게 할 순 없잖니."/>
+		<class name="Tutorial_CrowBillAfter_Tie7At" Value="[!Dialog][!speaker:VHPD_Issac_Smile]언제나 도와주는 건 고맙지만 넌 우리가 지켜야 할 &apos;시민&apos;이야."/>
+		<class name="Tutorial_CrowBillAfter_4uPFJk" Value="[!Dialog][!speaker:VHPD_Issac_Normal]죠엘도..."/>
+		<class name="Tutorial_CrowBillAfter_MTqNbg" Value="[!Dialog][!speaker:VHPD_Issac_Think]네가 다치는 걸 원하지 않을 거다."/>
+		<class name="Tutorial_CrowBillAfter_aWz1Nv" Value="[!Subtitle][!speaker:EmptySubTitle_]나..."/>
+		<class name="Tutorial_CrowBillAfter_g7I46I" Value="[!Subtitle][!speaker:EmptySubTitle_]조금 더 강해질 수 없을까?"/>
+		<class name="Tutorial_CrowBillAfter_n2LcpQ" Value="[!Dialog][!speaker:Albus_EyeAversion]아이린 씨!"/>
+		<class name="Tutorial_CrowBillAfter_227iPS" Value="[!Subtitle][!speaker:Irene_Lonesome]트러블슈터. 미안하다."/>
+		<class name="Tutorial_CrowBillAfter_sYF0kY" Value="[!Subtitle][!speaker:Irene_Lonesome]오늘은 이대로 날 보내줬으면 하네."/>
+		<class name="Tutorial_CrowBillAfter_3UBLPs" Value="[!Subtitle][!speaker:Irene_Lonesome]그럼 용건은 다음에..."/>
+		<class name="Tutorial_CrowBillAfter_taH6J0" Value="[!Subtitle][!speaker:Sion_Angry]돌아가자. 알버스."/>
+	</idspace>
+</idspaces>

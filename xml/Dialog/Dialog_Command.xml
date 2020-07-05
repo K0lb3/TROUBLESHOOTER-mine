@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Dialog">
+	<class name="Command_AddSteamStat">
+		<Scripts>
+			<property Type="AddSteamStat" C_Stat="env.stat_name" C_Value="env.value"/>
+		</Scripts>
+	</class>
+	<class name="Command_UpdateSteamStat">
+		<Scripts>
+			<property Type="UpdateSteamStat" C_Stat="env.stat_name" C_Value="env.value"/>
+		</Scripts>
+	</class>
+	<class name="Command_UpdateSteamAchievement">
+		<Scripts>
+			<property Type="UpdateSteamAchievement" C_Achievement="env.achievement_name" C_Achieved="env.achieved"/>
+		</Scripts>
+	</class>
+	<class name="Command_ResetSteamAchievement">
+		<Scripts>
+			<property Type="UpdateSteamAchievement" C_Achievement="env.achievement_name" Achieved="false"/>
+		</Scripts>
+	</class>
+</idspace>

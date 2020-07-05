@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Dialog">
+	<class name="Salary_Event_Begin_To_Talk_Irene_1">
+		<Scripts>
+			<property Type="BattleDialog" C_SpeakerInfo="env.roster_name" SpeakerEmotion="Smile" Mode="Start" Close="false" Message="오늘은 급여일이다. 트러블슈터." DialogType="Main" Slot="Left3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Continue" Close="true" Message="[!speaker:Albus_Normal](오늘이 급여일이었구나.)" DialogType="Main" Slot="Right3" Effect="Appear"/>
+		</Scripts>
+	</class>
+	<class name="Salary_Event_Selection_Full_Irene_1">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Start" Close="true" Message="[!speaker:Albus_Think](보너스도 드릴 수 있기는 한데...)" DialogType="Main" Slot="Right3" Effect="Appear"/>
+		</Scripts>
+	</class>
+	<class name="Salary_Event_Selection_NoBonus_Irene_1">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Start" Close="true" Message="[!speaker:Albus_Think](급여는 충분히 지급할 수 있겠어.)" DialogType="Main" Slot="Right3" Effect="Appear"/>
+		</Scripts>
+	</class>
+	<class name="Salary_Event_Selection_NoSalary_Irene_1">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Disappointed" Mode="Start" Close="true" Message="[!speaker:Albus_Disappointed](이런, 급여를 지급할 여유가 없어..)" DialogType="Main" Slot="Right3" Effect="Appear"/>
+		</Scripts>
+	</class>
+	<class name="Salary_Event_Process_Normal_Irene_1">
+		<Scripts>
+			<property Type="BattleDialog" C_SpeakerInfo="env.roster_name" SpeakerEmotion="Smile" Mode="Start" Close="true" Message="역시! 신뢰할 수 있군!" DialogType="Main" Slot="Left3" Effect="Appear"/>
+		</Scripts>
+	</class>
+	<class name="Salary_Event_Process_Bonus_Irene_1">
+		<Scripts>
+			<property Type="BattleDialog" C_SpeakerInfo="env.roster_name" SpeakerEmotion="Smile" Mode="Start" Close="true" Message="상여금인 건가?! 믿음직스러운걸!" DialogType="Main" Slot="Left3" Effect="Appear"/>
+		</Scripts>
+	</class>
+	<class name="Salary_Event_Process_Delay_Irene_1">
+		<Scripts>
+			<property Type="Switch" C_TestTarget="env.cur_roster.SalaryCountDelayCont &lt; 3">
+				<property Case="true">
+					<property Type="BattleDialog" C_SpeakerInfo="env.roster_name" SpeakerEmotion="Lonesome" Mode="Start" Close="true" Message="뭐.. 한 번쯤은..." DialogType="Main" Slot="Left3" Effect="Appear"/>
+				</property>
+				<property Case="false">
+					<property Type="BattleDialog" C_SpeakerInfo="env.roster_name" SpeakerEmotion="Rage" Mode="Start" Close="true" Message="널 더 이상 신뢰해야 하는지 의문이다! 트러블슈터!" DialogType="Main" Slot="Left3" Effect="Appear"/>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+</idspace>

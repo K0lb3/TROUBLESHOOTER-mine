@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Tutorial_RamjiPlaza_exuiea" Value="[!Dashboard:Counter]적 남은 수"/>
+		<class name="Tutorial_RamjiPlaza_DahXnZ" Value="[!Dashboard:ObjectiveMarker]알버스로 레이 근처로 이동하여 대화를 하세요."/>
+		<class name="Tutorial_RamjiPlaza_fIpnL4" Value="[!Dashboard:ObjectiveMarker]알버스로 아이린 근처로 이동하여 대화를 하세요."/>
+		<class name="Tutorial_RamjiPlaza_IzwW8G" Value="[!Dashboard:ObjectiveMarker]알버스로 비앙카 근처로 이동하여 대화를 하세요."/>
+		<class name="Tutorial_RamjiPlaza_4JQC1y" Value="[!Dashboard:ObjectiveMarker]해당 캐릭터들이 전투 상태에 들어가면 이벤트가 발생합니다."/>
+		<class name="Tutorial_RamjiPlaza_r4zdGc" Value="[!VictoryCondition]적을 모두 제압하시오."/>
+		<class name="Tutorial_RamjiPlaza_DnJAuA" Value="[!Objective]람지플라자 내 억류된 시민을 구출하세요."/>
+		<class name="Tutorial_RamjiPlaza_0OEvkQ" Value="[!Dialog][!speaker:Leton_Laugh]쳇. 시시하군."/>
+		<class name="Tutorial_RamjiPlaza_3UaFjH" Value="[!Dialog][!speaker:Leton_Normal]레이. 이제 할 일을 하러 가야지."/>
+		<class name="Tutorial_RamjiPlaza_0aNKLG" Value="[!Dialog][!speaker:Ray_Normal]그래."/>
+		<class name="Tutorial_RamjiPlaza_lqnE60" Value="[!Dialog][!speaker:Ray_Normal_Smile]저쪽으로 나가자~♡"/>
+		<class name="Tutorial_RamjiPlaza_5MhpuP" Value="[!Dialog][!speaker:Leton_Stare]일이 이렇게 꼬이다니..."/>
+		<class name="Tutorial_RamjiPlaza_Z8UDu5" Value="[!Dialog][!speaker:Leton_Serious]빨리 쓰러진 레이 녀석을 데리고 이 곳을 빠져나가야겠군..."/>
+		<class name="Tutorial_RamjiPlaza_XXVlen" Value="[!Dialog][!speaker:Albus_SurpriseStare]저 사람들 괜찮겠지...?"/>
+		<class name="Tutorial_RamjiPlaza_YCBDcp" Value="[!Dialog][!speaker:Ray_Surprise]큰 사고를 쳤네. 레톤도 뻗어버리고..."/>
+		<class name="Tutorial_RamjiPlaza_4coryk" Value="[!Dialog][!speaker:Ray_Serious]일단 레톤을 데리고 이 곳을 빠져나가야겠어..."/>
+		<class name="Tutorial_RamjiPlaza_xD6Jqf" Value="[!Dialog][!speaker:Albus_SurpriseStare]저 사람들 괜찮겠지...?"/>
+		<class name="Tutorial_RamjiPlaza_jhPbS3" Value="[!Ignore][!BalloonChat][!speaker:Leton]이 악당녀석들..."/>
+		<class name="Tutorial_RamjiPlaza_RF3YxV" Value="[!Ignore][!BalloonChat][!speaker:Leton]도대체 악당 녀석들은 줄어들지가 않아..."/>
+		<class name="Tutorial_RamjiPlaza_fJwtU8" Value="[!BalloonChat][!speaker:Leton]레이. 서두르자."/>
+		<class name="Tutorial_RamjiPlaza_hAmY4m" Value="[!BalloonChat][!speaker:Ray]레톤. 빨리 와~!"/>
+		<class name="Tutorial_RamjiPlaza_3WSgsA" Value="[!BalloonChat][!speaker:Civil01]누가 살려주세요..."/>
+		<class name="Tutorial_RamjiPlaza_vKPccU" Value="[!BalloonChat][!speaker:Civil02]여기야... 이쪽을 보라고..."/>
+		<class name="Tutorial_RamjiPlaza_P5ic9t" Value="[!BalloonChat][!speaker:Civil03]여기야... 여기..."/>
+		<class name="Tutorial_RamjiPlaza_uJfOHb" Value="[!BalloonChat][!speaker:Civil04]여기야.. 여기..."/>
+		<class name="Tutorial_RamjiPlaza_fVYU7t" Value="[!BalloonChat][!speaker:Civil05]그림의 사람들이 걸어 다니다니..."/>
+		<class name="Tutorial_RamjiPlaza_SwkfQt" Value="[!BalloonChat][!speaker:Civil05]내가 헛것을 본 건가..."/>
+		<class name="Tutorial_RamjiPlaza_gd53Z5" Value="[!BalloonChat][!speaker:Civil06]엄마..."/>
+		<class name="Tutorial_RamjiPlaza_91Wcjw" Value="[!BalloonChat][!speaker:Civil07]누나..."/>
+		<class name="Tutorial_RamjiPlaza_Zsofi3" Value="[!BalloonChat][!speaker:Civil08]여기에요! 살려주세요!"/>
+		<class name="Tutorial_RamjiPlaza_jZFZpa" Value="[!BalloonChat][!speaker:Civil09]여기에요... 여기..."/>
+		<class name="Tutorial_RamjiPlaza_y84iKV" Value="[!BalloonChat][!speaker:Civil10]여기야! 여기!"/>
+		<class name="Tutorial_RamjiPlaza_3Yf0zN" Value="[!BalloonChat][!speaker:Civil11]살려주세요..."/>
+		<class name="Tutorial_RamjiPlaza_3N6vsz" Value="[!BalloonChat][!speaker:Civil_Anne]조심하세요!"/>
+		<class name="Tutorial_RamjiPlaza_M9kM8e" Value="[!BalloonChat][!speaker:Leton]레톤!!!"/>
+		<class name="Tutorial_RamjiPlaza_bn1G91" Value="[!BalloonChat][!speaker:Ray]도대체 왜 이렇게 상황이 안 좋아진 거지..."/>
+		<class name="Tutorial_RamjiPlaza_81gP7P" Value="[!BalloonChat][!speaker:Leton]레이!!!!"/>
+		<class name="Tutorial_RamjiPlaza_tf90Uq" Value="[!Dialog][!speaker:Irene_Heroic]어딜 도망가느냐! 이 악당 녀석들!"/>
+		<class name="Tutorial_RamjiPlaza_GtR7Nz" Value="[!Dialog][!speaker:Leton_Normal]레이! 지금이다!"/>
+		<class name="Tutorial_RamjiPlaza_f2vxO9" Value="[!Dialog][!speaker:Ray_Normal_Smile]알았어~♡"/>
+		<class name="Tutorial_RamjiPlaza_pq7daX" Value="[!BalloonChat][!speaker:Ray]흐음?"/>
+		<class name="Tutorial_RamjiPlaza_36karN" Value="[!Dialog][!speaker:Leton_Normal]레이. 복잡한 일에 휘말리기 전에 빨리 빠져 나가자."/>
+		<class name="Tutorial_RamjiPlaza_E7hll6" Value="[!Dialog][!speaker:Ray_Normal_Smile]레톤... 잠시만~♡"/>
+		<class name="Tutorial_RamjiPlaza_Yn5jQZ" Value="[!Dialog][!speaker:Ray_Smile]얘! 너 괜찮니?"/>
+		<class name="Tutorial_RamjiPlaza_yQy8hF" Value="[!Dialog][!speaker:Albus_Normal]네. 괜찮습니다. 도와주셔서 감사합니다."/>
+		<class name="Tutorial_RamjiPlaza_Ufk18a" Value="[!Dialog][!speaker:Ray_Smile2]여기 위험해. 같이 빠져나가자~♡"/>
+		<class name="Tutorial_RamjiPlaza_hWbeim" Value="[!Dialog][!speaker:Albus_SurpriseStare]아... 저는..."/>
+		<class name="Tutorial_RamjiPlaza_tomn9G" Value="[!Dialog][!speaker:Albus_Think][colour=&apos;FFFFFF00&apos;]이분들에게 뭐라 말해야 할까..."/>
+		<class name="Tutorial_RamjiPlaza_pWJNNH" Value="[!Choice]시민 구출에 협력해주세요!"/>
+		<class name="Tutorial_RamjiPlaza_T3HQaD" Value="[!Choice]위험하니 어서 대피하세요!"/>
+		<class name="Tutorial_RamjiPlaza_pS9U6c" Value="[!Choice]도망치시는 건가요?"/>
+		<class name="Tutorial_RamjiPlaza_ClDzS3" Value="[!Choice]당신들이 이렇게 만든 건가요!"/>
+		<class name="Tutorial_RamjiPlaza_4Ru8r6" Value="[!Dialog][!speaker:Albus_Serious]괜찮으십니까!!"/>
+		<class name="Tutorial_RamjiPlaza_dalyLM" Value="[!Dialog][!speaker:Albus_Serious]어서 안전한 곳으로 대피하세요!"/>
+		<class name="Tutorial_RamjiPlaza_b2ONIH" Value="[!Dialog][!speaker:Irene_Surprise]대피?"/>
+		<class name="Tutorial_RamjiPlaza_gpTlRv" Value="[!Dialog][!speaker:Irene_Normal]아니다. 난 괜찮다. 자네야 말로 어서 대피해!"/>
+		<class name="Tutorial_RamjiPlaza_Qgqdpc" Value="[!Dialog][!speaker:Albus_SurpriseStare]네?"/>
+		<class name="Tutorial_RamjiPlaza_DJjFth" Value="[!Dialog][!speaker:Irene_Smile2]나, 히어로 아이린이 자네의 등 뒤를 지켜주겠네. 어서 도망가게!"/>
+		<class name="Tutorial_RamjiPlaza_8Kesdh" Value="[!Dialog][!speaker:Albus_Surprise]아니 전..."/>
+		<class name="Tutorial_RamjiPlaza_8gq0hm" Value="[!BalloonChat][!speaker:Irene]검?? 흉기???"/>
+		<class name="Tutorial_RamjiPlaza_eHbzSg" Value="[!Dialog][!speaker:Irene_Think][colour=&apos;FFFFFF00&apos;]이 상황에서 검을 들고 나타날 녀석은..."/>
+		<class name="Tutorial_RamjiPlaza_H2gclZ" Value="[!Choice]악당이다."/>
+		<class name="Tutorial_RamjiPlaza_4Y6h6N" Value="[!Choice]악당이지."/>
+		<class name="Tutorial_RamjiPlaza_REfB4z" Value="[!Choice]악당뿐이다."/>
+		<class name="Tutorial_RamjiPlaza_zgGiVw" Value="[!Choice]악당!!"/>
+		<class name="Tutorial_RamjiPlaza_RnlA1u" Value="[!Dialog][!speaker:Irene_Smile]하하하하!"/>
+		<class name="Tutorial_RamjiPlaza_Ouu5QI" Value="[!Dialog][!speaker:Irene_Normal]이 악당 녀석!!"/>
+		<class name="Tutorial_RamjiPlaza_IlLnxf" Value="[!Dialog][!speaker:Irene_Heroic]당장 항복하고 무기를 버려!"/>
+		<class name="Tutorial_RamjiPlaza_Xct9eI" Value="[!Dialog][!speaker:Irene_Heroic]그렇지 않으면 이 히어로 아이린이 용서하지 않겠다!"/>
+		<class name="Tutorial_RamjiPlaza_HjNCTt" Value="[!Dialog][!speaker:Albus_Surprise]네???"/>
+		<class name="Tutorial_RamjiPlaza_k88rSb" Value="[!Dialog][!speaker:Albus_SurpriseStare]말도 안 돼..."/>
+		<class name="Tutorial_RamjiPlaza_cPqdNG" Value="[!Dialog][!speaker:Albus_Embarrassed]제가 악당이라니요! 제가 어딜 봐서 악당입니까!"/>
+		<class name="Tutorial_RamjiPlaza_HBsAI1" Value="[!Dialog][!speaker:Irene_Surprise]악당이 아니라고???"/>
+		<class name="Tutorial_RamjiPlaza_ndYMpu" Value="[!Dialog][!speaker:Irene_Think]강하게 부정하다니..."/>
+		<class name="Tutorial_RamjiPlaza_3AYXaO" Value="[!Dialog][!speaker:Irene_Think]설마..."/>
+		<class name="Tutorial_RamjiPlaza_XzI2Q1" Value="[!Dialog][!speaker:Irene_Think][colour=&apos;FFFFFF00&apos;]악당이란 말에 강하게 부정하는 녀석은..."/>
+		<class name="Tutorial_RamjiPlaza_xjOgSO" Value="[!Choice]역시 악당이지."/>
+		<class name="Tutorial_RamjiPlaza_mAOy0F" Value="[!Choice]악당 말곤 없지."/>
+		<class name="Tutorial_RamjiPlaza_awHmVa" Value="[!Choice]악당같이 생겼네."/>
+		<class name="Tutorial_RamjiPlaza_nznfl1" Value="[!Choice]악당이 될 녀석이지."/>
+		<class name="Tutorial_RamjiPlaza_Kk585X" Value="[!Dialog][!speaker:Irene_Fury]비열한 녀석."/>
+		<class name="Tutorial_RamjiPlaza_CKuoQa" Value="[!Dialog][!speaker:Irene_Fury]역시 악당의 연기는 교묘하구나."/>
+		<class name="Tutorial_RamjiPlaza_zT6miy" Value="[!Dialog][!speaker:Irene_Normal]하지만!"/>
+		<class name="Tutorial_RamjiPlaza_DQLr2X" Value="[!Dialog][!speaker:Irene_Smile]이 히어로 아이린 님에게는 통하지 않는다!"/>
+		<class name="Tutorial_RamjiPlaza_EIY1Rj" Value="[!Dialog][!speaker:Irene_Heroic]지금 네가 들고 있는 흉기!!"/>
+		<class name="Tutorial_RamjiPlaza_Ygl5sj" Value="[!Dialog][!speaker:Irene_Heroic]그것이 바로 악당의 증거다!"/>
+		<class name="Tutorial_RamjiPlaza_rP4TzC" Value="[!Dialog][!speaker:Albus_Disappoint]하아..."/>
+		<class name="Tutorial_RamjiPlaza_ZgzM6m" Value="[!Dialog][!speaker:Albus_Serious]이럴 시간이 없어. 정신 차리자."/>
+		<class name="Tutorial_RamjiPlaza_JrYJb5" Value="[!Dialog][!speaker:Albus_Laugh][colour=&apos;FFFFFF00&apos;]이 사람 일반적인 말은 안통하는 것 같은데..."/>
+		<class name="Tutorial_RamjiPlaza_436vsd" Value="[!Choice]전 트러블슈터입니다. 협력 부탁드립니다."/>
+		<class name="Tutorial_RamjiPlaza_toS9Ny" Value="[!Choice]더 흉악한 악당들이 있습니다."/>
+		<class name="Tutorial_RamjiPlaza_4Z5Hi2" Value="[!Choice]당신이야말로 악당입니다!"/>
+		<class name="Tutorial_RamjiPlaza_uc7Mf0" Value="[!Choice]히어로가 출동할 시간입니다."/>
+		<class name="Tutorial_RamjiPlaza_4hcPfw" Value="[!Dialog][!speaker:Leton_Serious]레이. 귀찮은 일에 휘말리기 전에 가자."/>
+		<class name="Tutorial_RamjiPlaza_fKcSgw" Value="[!Dialog][!speaker:Ray_Smile]그래~♡"/>
+		<class name="Tutorial_RamjiPlaza_oAFwRv" Value="[!Dialog][!speaker:Albus_Think]&apos;경찰 지원을 기다려야 하나...&apos;"/>
+		<class name="Tutorial_RamjiPlaza_u7aWNy" Value="[!Dialog][!speaker:Albus_Think]상황이 늦어지면 시민들이 ..."/>
+		<class name="Tutorial_RamjiPlaza_9OGpki" Value="[!Dialog][!speaker:Albus_Serious]역시 지원을 기다릴 수만은 없어..."/>
+		<class name="Tutorial_RamjiPlaza_OdkrjX" Value="[!VictoryCondition]알버스 전투 불능"/>
+		<class name="Tutorial_RamjiPlaza_81tBDK" Value="[!VictoryCondition]시민들을 구출하세요."/>
+		<class name="Tutorial_RamjiPlaza_ufYFl1" Value="[!Dialog][!speaker:Albus_Serious]당신들이 이렇게 만든 건가요!!"/>
+		<class name="Tutorial_RamjiPlaza_8ww92a" Value="[!Dialog][!speaker:Ray_Normal]얘! 갑자기 무슨 소리니!"/>
+		<class name="Tutorial_RamjiPlaza_9vprFl" Value="[!Dialog][!speaker:Albus_Serious]전 트러블슈터입니다!"/>
+		<class name="Tutorial_RamjiPlaza_6kImqP" Value="[!Dialog][!speaker:Albus_Serious]결백하다면 순순히 조사에 응하세요!"/>
+		<class name="Tutorial_RamjiPlaza_iTQ6Eo" Value="[!Dialog][!speaker:Leton_Normal]어이. 청년. 번지수가 잘못된 것 같다."/>
+		<class name="Tutorial_RamjiPlaza_KkkHd5" Value="[!Dialog][!speaker:Leton_Normal]저기 보이는 가면 쓴 녀석들에게 물어봐야지."/>
+		<class name="Tutorial_RamjiPlaza_gJYFbF" Value="[!Dialog][!speaker:Albus_Serious]당신들이 더 수상합니다!"/>
+		<class name="Tutorial_RamjiPlaza_XQlauT" Value="[!Dialog][!speaker:Leton_Serious]레이... 시간 낭비 말고 가자."/>
+		<class name="Tutorial_RamjiPlaza_iA6rEi" Value="[!Dialog][!speaker:Ray_Serious]기분 더럽네."/>
+		<class name="Tutorial_RamjiPlaza_pLBYSL" Value="[!Dialog][!speaker:Leton_Smile]레이... 씨? 그냥 가는 게 나을 것 같은데..."/>
+		<class name="Tutorial_RamjiPlaza_9UEbP7" Value="[!Dialog][!speaker:Ray_Serious]너 사람들에게 함부로 말하면 어떻게 되는지 알려줄게."/>
+		<class name="Tutorial_RamjiPlaza_uhBsSS" Value="[!Dialog][!speaker:Albus_Fury]말 돌리지 마세요!"/>
+		<class name="Tutorial_RamjiPlaza_SSjBbv" Value="[!Dialog][!speaker:Leton_Smile]레이... 그냥 가자..."/>
+		<class name="Tutorial_RamjiPlaza_opLepp" Value="[!Dialog][!speaker:Ray_Normal]귀여운 아이야!"/>
+		<class name="Tutorial_RamjiPlaza_kQUzLh" Value="[!Dialog][!speaker:Ray_Normal]말하는 건 네 자유지만~"/>
+		<class name="Tutorial_RamjiPlaza_Dc8Mol" Value="[!Dialog][!speaker:Ray_Normal_Smile]자유에는 언제나 대가가 따른단다~♡"/>
+		<class name="Tutorial_RamjiPlaza_6rBfgi" Value="[!Dialog][!speaker:Leton_Smile]이봐. 우린 이 상황과 무관해."/>
+		<class name="Tutorial_RamjiPlaza_9w1iPm" Value="[!Dialog][!speaker:Leton_Normal]이 누님이 화나면 무섭다고..."/>
+		<class name="Tutorial_RamjiPlaza_phSwOC" Value="[!Dialog][!speaker:Leton_Normal]서로 바쁜 상황이니 그냥 넘어가자."/>
+		<class name="Tutorial_RamjiPlaza_mmxk6j" Value="[!Dialog][!speaker:Albus_Fury]그럴 순 없습니다."/>
+		<class name="Tutorial_RamjiPlaza_2djKHy" Value="[!Dialog][!speaker:Albus_Fury]당신들을 여기서 보내면 더 큰 위험이 올 것이니까요."/>
+		<class name="Tutorial_RamjiPlaza_pAuHIw" Value="[!BalloonChat][!speaker:Ray]야!! 너 이리와!!"/>
+		<class name="Tutorial_RamjiPlaza_MVbCn7" Value="[!BalloonChat][!speaker:Albus]그렇게 강하신데 왜 도망치시나요!"/>
+		<class name="Tutorial_RamjiPlaza_8vpcYt" Value="[!Dialog][!speaker:Ray_Surprise]얘! 갑자기 뭔 소리니!"/>
+		<class name="Tutorial_RamjiPlaza_2JSFah" Value="[!Dialog][!speaker:Albus_Stare]시민들이 위협에 빠져 있어요. 충분히 도와주실 수 있잖아요!"/>
+		<class name="Tutorial_RamjiPlaza_qNt4pb" Value="[!Dialog][!speaker:Leton_Smile]어이. 청년. 번지수가 잘못된 것 같다."/>
+		<class name="Tutorial_RamjiPlaza_wkoU3A" Value="[!Dialog][!speaker:Leton_Normal]그런 건 경찰들에게 연락해."/>
+		<class name="Tutorial_RamjiPlaza_KcHuTw" Value="[!Dialog][!speaker:Albus_Serious]경찰들이 오면 늦어요!"/>
+		<class name="Tutorial_RamjiPlaza_eQChaI" Value="[!Dialog][!speaker:Ray_Surprise_Smile]......"/>
+		<class name="Tutorial_RamjiPlaza_CPv88N" Value="[!Dialog][!speaker:Leton_Stare]레이. 시간 낭비 말고 가자."/>
+		<class name="Tutorial_RamjiPlaza_UVBucW" Value="[!BalloonChat][!speaker:Ray]음..."/>
+		<class name="Tutorial_RamjiPlaza_hGWKVF" Value="[!BalloonChat][!speaker:Ray]음~☆"/>
+		<class name="Tutorial_RamjiPlaza_ekasCO" Value="[!BalloonChat][!speaker:Ray]흐음~♡"/>
+		<class name="Tutorial_RamjiPlaza_MEhp0y" Value="[!Dialog][!speaker:Leton_Smile]레이..."/>
+		<class name="Tutorial_RamjiPlaza_wd6CFB" Value="[!Dialog][!speaker:Leton_Smile]쓸데없는 생각 하지 마.."/>
+		<class name="Tutorial_RamjiPlaza_7VTDfQ" Value="[!Dialog][!speaker:Ray_Smile]레~에~톤~!"/>
+		<class name="Tutorial_RamjiPlaza_mXlFKs" Value="[!Dialog][!speaker:Ray_Smile]레톤. 일은 내가 마무리할 테니 너 얘 도와줘라~☆"/>
+		<class name="Tutorial_RamjiPlaza_H3LhJ0" Value="[!Dialog][!speaker:Albus_SurpriseStare]저기 이럴 시간에도 시민들이!!"/>
+		<class name="Tutorial_RamjiPlaza_81hE52" Value="[!Dialog][!speaker:Leton_Serious]내가 왜... 도와줄 이유 따위 없어."/>
+		<class name="Tutorial_RamjiPlaza_ytd6zs" Value="[!Dialog][!speaker:Ray_Smile2]레톤~ 그러지 말고~ 힘 좀 내~♡"/>
+		<class name="Tutorial_RamjiPlaza_34lGO6" Value="[!Dialog][!speaker:Albus_Disappoint]부탁드립니다."/>
+		<class name="Tutorial_RamjiPlaza_ZcTS2y" Value="[!Dialog][!speaker:Leton_Smile]레이... 우리 일 바쁘다... 이럴 시간이 어딨어?"/>
+		<class name="Tutorial_RamjiPlaza_MB0FRm" Value="[!Dialog][!speaker:Ray_Smile]그건 내가 한다니까~☆ 걱정말아!"/>
+		<class name="Tutorial_RamjiPlaza_l8gjcD" Value="[!Dialog][!speaker:Albus_Embarrassed]도와주세요!"/>
+		<class name="Tutorial_RamjiPlaza_TdNywp" Value="[!BalloonChat][!speaker:Ray]......"/>
+		<class name="Tutorial_RamjiPlaza_KyR8NC" Value="[!Dialog][!speaker:Albus_Stare]좀 도와주세요!! 시민들이!"/>
+		<class name="Tutorial_RamjiPlaza_Hm7bOc" Value="[!Dialog][!speaker:Leton_Serious]야... 사람 이야기 중에 끼어들지 마."/>
+		<class name="Tutorial_RamjiPlaza_lVF3b4" Value="[!Dialog][!speaker:Albus_Fury]도와주세요! 이 상황이 안 보이시나요!"/>
+		<class name="Tutorial_RamjiPlaza_yRVNVb" Value="[!Dialog][!speaker:Leton_Smile]하아... 레이 그냥 가자."/>
+		<class name="Tutorial_RamjiPlaza_oCohEq" Value="[!Dialog][!speaker:Albus_Stare]그렇게 강하시면서 너무 하시는군요!"/>
+		<class name="Tutorial_RamjiPlaza_eb5bbn" Value="[!Dialog][!speaker:Leton_Smile]하아..."/>
+		<class name="Tutorial_RamjiPlaza_JZ30EF" Value="[!Dialog][!speaker:Albus_Fury]사람이 어떻게 이러실 수가 있어요!"/>
+		<class name="Tutorial_RamjiPlaza_LVOoHA" Value="[!BalloonChat][!speaker:Ray]야!!!"/>
+		<class name="Tutorial_RamjiPlaza_2RXCDD" Value="[!Dialog][!speaker:Ray_Serious]너 입 닥쳐 줄래?"/>
+		<class name="Tutorial_RamjiPlaza_NzRkOu" Value="[!Dialog][!speaker:Albus_Surprise]네?"/>
+		<class name="Tutorial_RamjiPlaza_8H9dNy" Value="[!Dialog][!speaker:Ray_Serious]우리가 안 도와줘서 화나니?"/>
+		<class name="Tutorial_RamjiPlaza_a1Awsx" Value="[!Dialog][!speaker:Albus_SurpriseStare]아니 시민들이..."/>
+		<class name="Tutorial_RamjiPlaza_KLHAdT" Value="[!Dialog][!speaker:Ray_Serious]네가 약한 거잖아."/>
+		<class name="Tutorial_RamjiPlaza_o6O88s" Value="[!Dialog][!speaker:Albus_Embarrassed]아니 그건..."/>
+		<class name="Tutorial_RamjiPlaza_A4k6TM" Value="[!Dialog][!speaker:Ray_Serious]너 딱 봐도 약해."/>
+		<class name="Tutorial_RamjiPlaza_hzPPbj" Value="[!Dialog][!speaker:Albus_Embarrassed]......"/>
+		<class name="Tutorial_RamjiPlaza_odYlbc" Value="[!Dialog][!speaker:Leton_Smile]하아... 그만하고 가자."/>
+		<class name="Tutorial_RamjiPlaza_wjNhu2" Value="[!Dialog][!speaker:Ray_Surprise_Smile]약한 주제에 여기 시민들을 다 구하겠다고?"/>
+		<class name="Tutorial_RamjiPlaza_OQP3vE" Value="[!Dialog][!speaker:Albus_Disappoint]여러분이 도와주시면..."/>
+		<class name="Tutorial_RamjiPlaza_ugJNWi" Value="[!Dialog][!speaker:Ray_Serious]난 네 징징대는 모습을 보니 전혀 돕고 싶지 않아졌는데?"/>
+		<class name="Tutorial_RamjiPlaza_g4VFaF" Value="[!Dialog][!speaker:Leton_Serious]야... 레이... 그냥 가자..."/>
+		<class name="Tutorial_RamjiPlaza_JTx5IG" Value="[!Dialog][!speaker:Albus_Embarrassed]죄... 죄송합니다..."/>
+		<class name="Tutorial_RamjiPlaza_ib499n" Value="[!Dialog][!speaker:Albus_Disappoint]제 태도가 무례했습니다. 죄송합니다."/>
+		<class name="Tutorial_RamjiPlaza_H9zIS9" Value="[!Dialog][!speaker:Albus_Disappoint]죄송합니다. 제발 도와주세요."/>
+		<class name="Tutorial_RamjiPlaza_LuUBik" Value="[!Dialog][!speaker:Ray_Serious]우리도 바쁜 일이 있어 둘 다 도와줄 순 없어."/>
+		<class name="Tutorial_RamjiPlaza_ZOPu7m" Value="[!Dialog][!speaker:Ray_Normal]시민들 위험에 우리가 뛰어들 이유도 없고."/>
+		<class name="Tutorial_RamjiPlaza_0LVpJ2" Value="[!Dialog][!speaker:Albus_Embarrassed]......"/>
+		<class name="Tutorial_RamjiPlaza_KzQok3" Value="[!Dialog][!speaker:Ray_Normal_Smile]하지만 저기 레톤은 널 확실히 도와줄 거야."/>
+		<class name="Tutorial_RamjiPlaza_OKdvHG" Value="[!Dialog][!speaker:Leton_Serious]결국 나한테 떠넘기는군."/>
+		<class name="Tutorial_RamjiPlaza_HRFqFF" Value="[!Dialog][!speaker:Ray_Normal]레톤. 그만 빼고 도와줘. 일은 내가 마무리할게."/>
+		<class name="Tutorial_RamjiPlaza_ZOSKAJ" Value="[!Dialog][!speaker:Leton_Stare]......"/>
+		<class name="Tutorial_RamjiPlaza_Evw1fG" Value="[!Dialog][!speaker:Leton_Serious]마음만 급한 청년. 이 곳의 시민들을 구하면 되나?"/>
+		<class name="Tutorial_RamjiPlaza_OaS1sk" Value="[!Dialog][!speaker:Albus_Surprise]......"/>
+		<class name="Tutorial_RamjiPlaza_BmpTcu" Value="[!Dialog][!speaker:Albus_Happy]감사합니다!!"/>
+		<class name="Tutorial_RamjiPlaza_MzwSy7" Value="[!Dialog][!speaker:Leton_Smile]레이. 내가 갈 때까지 사고 치지 마!"/>
+		<class name="Tutorial_RamjiPlaza_MBYnx7" Value="[!Dialog][!speaker:Ray_Smile]걱정 마~☆ 이따 보자!"/>
+		<class name="Tutorial_RamjiPlaza_2nxzKC" Value="[!Dialog][!speaker:Ray_Smile]다음엔 좋은 모습으로 만나자~♡"/>
+		<class name="Tutorial_RamjiPlaza_t1NWA5" Value="[!Dialog][!speaker:Leton_Laugh]자. 이렇게 된 거 잘 부탁한다. 까만 머리."/>
+		<class name="Tutorial_RamjiPlaza_qZhKqT" Value="[!Dialog][!speaker:Albus_Normal]저기..."/>
+		<class name="Tutorial_RamjiPlaza_mxITVv" Value="[!Dialog][!speaker:Albus_Disappoint]죄송하지만 사람들을 구출할 수 있게 협력 부탁드립니다!"/>
+		<class name="Tutorial_RamjiPlaza_McVOxm" Value="[!BalloonChat][!speaker:Ray]어머~☆"/>
+		<class name="Tutorial_RamjiPlaza_7E0c9G" Value="[!Dialog][!speaker:Ray_Smile2]레톤~ 도와달라는데?"/>
+		<class name="Tutorial_RamjiPlaza_IoQZ5S" Value="[!Dialog][!speaker:Leton_Normal]레이 너... "/>
+		<class name="Tutorial_RamjiPlaza_EU5eJK" Value="[!Dialog][!speaker:Leton_Serious]우리 해야 할 일 많다. 모르지 않겠지?"/>
+		<class name="Tutorial_RamjiPlaza_NaQPFK" Value="[!Dialog][!speaker:Albus_Disappoint]부탁입니다. 아직 많은 사람이 위험해요."/>
+		<class name="Tutorial_RamjiPlaza_eQg0mb" Value="[!Dialog][!speaker:Albus_Disappoint]늦어지면 더 많은 희생자가 나올 겁니다!"/>
+		<class name="Tutorial_RamjiPlaza_WgBF8b" Value="[!Dialog][!speaker:Leton_Serious]청년. 그럴 시간에 경찰을 불러."/>
+		<class name="Tutorial_RamjiPlaza_YLRqA7" Value="[!Dialog][!speaker:Leton_Stare]레이. 괜한 일에 휘말리지 말고 빨리 이동하자."/>
+		<class name="Tutorial_RamjiPlaza_nSJuhq" Value="[!Dialog][!speaker:Ray_Normal_Smile]알았어. 너무 다급해 하지 마~♡"/>
+		<class name="Tutorial_RamjiPlaza_g9tqbD" Value="[!Dialog][!speaker:Albus_SurpriseStare]&apos;이런... 그냥 가버리시는 건가...&apos;"/>
+		<class name="Tutorial_RamjiPlaza_n7siT8" Value="[!BalloonChat][!speaker:Ray]이 아이 귀엽잖아~♡"/>
+		<class name="Tutorial_RamjiPlaza_W4HvjB" Value="[!BalloonChat][!speaker:Ray]레톤~ "/>
+		<class name="Tutorial_RamjiPlaza_RZVStd" Value="[!BalloonChat][!speaker:Ray]먼저가~!"/>
+		<class name="Tutorial_RamjiPlaza_Gmj2x7" Value="[!Dialog][!speaker:Leton_Surprise]뭐!!"/>
+		<class name="Tutorial_RamjiPlaza_4j13ab" Value="[!Dialog][!speaker:Leton_Stare]레이 너 또 빠지는 거냐!"/>
+		<class name="Tutorial_RamjiPlaza_X6bFnl" Value="[!Dialog][!speaker:Ray_Smile]미안~ 미안~ 저 아이 혼자 위험할 거야~♡"/>
+		<class name="Tutorial_RamjiPlaza_gWm0oo" Value="[!Dialog][!speaker:Ray_Smile2]레톤 너도 도와주면 더 금방 끝날 텐데...그치?"/>
+		<class name="Tutorial_RamjiPlaza_wxQXS1" Value="[!Dialog][!speaker:Leton_Serious]하아... 이래서 너랑 나오기 싫은 거야."/>
+		<class name="Tutorial_RamjiPlaza_GLaNbr" Value="[!Dialog][!speaker:Leton_Stare]됐다. 이 일은 내가 할 테니 적당히 사고 치지 말고 돌아와."/>
+		<class name="Tutorial_RamjiPlaza_FwlnrR" Value="[!Dialog][!speaker:Ray_Smile2]레톤 고마워~♡"/>
+		<class name="Tutorial_RamjiPlaza_SziRpg" Value="[!Dialog][!speaker:Leton_Normal]....."/>
+		<class name="Tutorial_RamjiPlaza_IYNhJ2" Value="[!Dialog][!speaker:Leton_Smile]그럼. 나 먼저 간다. 레이."/>
+		<class name="Tutorial_RamjiPlaza_KOBlg8" Value="[!Dialog][!speaker:Ray_Smile]OK~☆ 저녁에 보자!"/>
+		<class name="Tutorial_RamjiPlaza_gyK5QQ" Value="[!Dialog][!speaker:Ray_Smile]둘 다 도와줄 순 없지만, 나라도 괜찮겠지?"/>
+		<class name="Tutorial_RamjiPlaza_UdWp6s" Value="[!Dialog][!speaker:Albus_Embarrassed]아..아닙니다! 감사합니다!!"/>
+		<class name="Tutorial_RamjiPlaza_sMQzgu" Value="[!Dialog][!speaker:Ray_Smile2]자! 그럼 시작해볼까요?"/>
+		<class name="Tutorial_RamjiPlaza_v4kgO3" Value="[!Dialog][!speaker:Albus_Serious]이곳은 위험하니 어서 대피하세요!"/>
+		<class name="Tutorial_RamjiPlaza_QregCV" Value="[!BalloonChat][!speaker:Ray]어머 트러블슈터야?"/>
+		<class name="Tutorial_RamjiPlaza_7zg99u" Value="[!Dialog][!speaker:Ray_Normal]레톤~ 트러블슈터님이 대피하래~"/>
+		<class name="Tutorial_RamjiPlaza_Rwhdcj" Value="[!Dialog][!speaker:Leton_Stare]&apos;트러블슈터라... &apos;"/>
+		<class name="Tutorial_RamjiPlaza_czytj4" Value="[!Dialog][!speaker:Leton_Serious]&apos;엮이면 골치 아프겠군.&apos;"/>
+		<class name="Tutorial_RamjiPlaza_cQNRhl" Value="[!Dialog][!speaker:Albus_Serious]현장 상황이 매우 급하니 빠르게 대피해 주시기 바랍니다."/>
+		<class name="Tutorial_RamjiPlaza_L28M1E" Value="[!Dialog][!speaker:Ray_Normal_Smile]흐음~"/>
+		<class name="Tutorial_RamjiPlaza_k2UC0h" Value="[!Dialog][!speaker:Leton_Smile]OK! 트러블슈터. 우리는 이만 가 볼게~☆"/>
+		<class name="Tutorial_RamjiPlaza_bBYGpB" Value="[!Dialog][!speaker:Ray_Smile]트러블슈터 군. 다음에 봐~♡"/>
+		<class name="Tutorial_RamjiPlaza_ZgfLha" Value="[!Dialog][!speaker:Albus_Serious]자! 아직 남은 시민들을 구하러 가자."/>
+		<class name="Tutorial_RamjiPlaza_x0KTgP" Value="[!Ignore][!Dialog][!speaker:Albus_Think]현재 전력이 되지 않는다면 이 현장이라도 대피시키는 게 낫겠지."/>
+		<class name="Tutorial_RamjiPlaza_mMVd6H" Value="[!Ignore][!BalloonChat][!speaker:Albus]아이린 씨!"/>
+		<class name="Tutorial_RamjiPlaza_rMQUEt" Value="[!Ignore][!BalloonChat][!speaker:Albus]지금와 용서를 구해도 늦었다!! 악당!"/>
+		<class name="Tutorial_RamjiPlaza_lgCWlV" Value="[!BalloonChat][!speaker:Albus]전 트러블슈터 알버스입니다!"/>
+		<class name="Tutorial_RamjiPlaza_qbNAYg" Value="[!Ignore][!BalloonChat][!speaker:Albus]제가 여기를 맡겠습니다. 이 틈에 도망치세요!"/>
+		<class name="Tutorial_RamjiPlaza_VRXDw1" Value="[!Ignore][!BalloonChat][!speaker:Irene]무슨 소리냐! 악당!"/>
+		<class name="Tutorial_RamjiPlaza_Qtf0aP" Value="[!Ignore][!BalloonChat][!speaker:Irene]지금 날 방심하게 할 생각이라면 오산이다!"/>
+		<class name="Tutorial_RamjiPlaza_D3NZJl" Value="[!Ignore][!Dialog][!speaker:Albus_Laugh]절 악당이라고 하셔도 좋습니다."/>
+		<class name="Tutorial_RamjiPlaza_0T8w8K" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]하지만 지금은 아이린 씨를 안전하게 대피하도록 최선을 다하겠습니다."/>
+		<class name="Tutorial_RamjiPlaza_tWKPHp" Value="[!Ignore][!Dialog][!speaker:Irene_Surprise]진짜 트러블슈터냐?"/>
+		<class name="Tutorial_RamjiPlaza_JaAKfu" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]아이린 씨가 현장에 있으면..."/>
+		<class name="Tutorial_RamjiPlaza_r7vOnI" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]전 시민들을 구하러가지 못하고 아이린 씨를 지켜야합니다."/>
+		<class name="Tutorial_RamjiPlaza_LzgxpS" Value="[!Ignore][!BalloonChat][!speaker:Irene]진짜... 트러블슈터인가..."/>
+		<class name="Tutorial_RamjiPlaza_Na3DcI" Value="[!Ignore][!Dialog][!speaker:Irene_Lonesome]방해된다는 거군."/>
+		<class name="Tutorial_RamjiPlaza_2uigER" Value="[!Ignore][!Dialog][!speaker:Irene_Lonesome]대피하면 되는 거냐?"/>
+		<class name="Tutorial_RamjiPlaza_oLav8K" Value="[!Ignore][!BalloonChat][!speaker:Albus]네 아이린 씨. 그럼 전 시민을 구하러 가겠습니다."/>
+		<class name="Tutorial_RamjiPlaza_kZTaAB" Value="[!Ignore][!BalloonChat][!speaker:Albus]시민 구조에 도움이 되면 좋겠지만 이런 상황이니 이게 최선이겠지.."/>
+		<class name="Tutorial_RamjiPlaza_0dXjhn" Value="[!Ignore][!Dialog][!speaker:Irene_Normal]트러블슈터 알버스."/>
+		<class name="Tutorial_RamjiPlaza_ZCZgJ4" Value="[!Ignore][!Dialog][!speaker:Irene_Smile]즉 나 히어로 아이린을 상대하기 힘드니 이 현장에서 이탈시키기 위한 기책!!"/>
+		<class name="Tutorial_RamjiPlaza_nV2AKg" Value="[!Ignore][!Dialog][!speaker:Irene_Heroic]이 상황에서 시민 구출 도움을 요청하는 게 아니고 도망치라고 하는 자!!"/>
+		<class name="Tutorial_RamjiPlaza_K4v9ts" Value="[!Dialog][!speaker:Albus_Serious]아이린 씨!"/>
+		<class name="Tutorial_RamjiPlaza_mAyt6k" Value="[!Dialog][!speaker:Irene_Fury]이 악당 녀석! 남의 이름을 함부로 부르지 마라!"/>
+		<class name="Tutorial_RamjiPlaza_3yuyyi" Value="[!Dialog][!speaker:Albus_Serious]당신이야말로 악당입니다!"/>
+		<class name="Tutorial_RamjiPlaza_65wyTN" Value="[!Dialog][!speaker:Irene_Surprise]뭐!!"/>
+		<class name="Tutorial_RamjiPlaza_6zCYUs" Value="[!Dialog][!speaker:Albus_Doubt]시민을 구하려는 저희를 방해하는 사람이 악당이 아니면 무엇입니까!"/>
+		<class name="Tutorial_RamjiPlaza_0Uqe2J" Value="[!Dialog][!speaker:Irene_Surprise]아니!! 무슨 소리야!!"/>
+		<class name="Tutorial_RamjiPlaza_ERWaf5" Value="[!Dialog][!speaker:Albus_Serious]아이린 씨. 악당이 아니라면 증명하세요!!"/>
+		<class name="Tutorial_RamjiPlaza_rYqyyk" Value="[!Dialog][!speaker:Irene_Rage]아니!! 뭘 증명하라는 거냐!"/>
+		<class name="Tutorial_RamjiPlaza_z8bhwX" Value="[!Dialog][!speaker:Irene_Rage]내가 바로 히어로 아이린이야!"/>
+		<class name="Tutorial_RamjiPlaza_jo2Rfa" Value="[!Dialog][!speaker:Albus_Serious]시민을 구하려는 자를 공격하는 자는 히어로가 아닙니다!"/>
+		<class name="Tutorial_RamjiPlaza_LKjhCK" Value="[!Dialog][!speaker:Irene_Heroic]아니!! 날 혼란하게 하지 마라! 악당!"/>
+		<class name="Tutorial_RamjiPlaza_3sOGIR" Value="[!Dialog][!speaker:Albus_Doubt]아... 역시 아이린 씨는 우리를 공격할 악당이시군요."/>
+		<class name="Tutorial_RamjiPlaza_SqPnSs" Value="[!Dialog][!speaker:Irene_Rage]뭐야! 난 악당이 아니라고! 히어로 아이린이란 말이다!"/>
+		<class name="Tutorial_RamjiPlaza_x0nQmi" Value="[!Dialog][!speaker:Albus_Serious]그럼 시민 구출에 협력해주세요."/>
+		<class name="Tutorial_RamjiPlaza_ec2X64" Value="[!Dialog][!speaker:Irene_Lonesome]아니 그건..."/>
+		<class name="Tutorial_RamjiPlaza_8ZoMm5" Value="[!Dialog][!speaker:Irene_Fury]......"/>
+		<class name="Tutorial_RamjiPlaza_HxhPsu" Value="[!Dialog][!speaker:Irene_Heroic]알았다. 일단 시민 구출에 협력하마!"/>
+		<class name="Tutorial_RamjiPlaza_MFj2dX" Value="[!Dialog][!speaker:Albus_Normal]감사합니다!"/>
+		<class name="Tutorial_RamjiPlaza_Ps0s6i" Value="[!Dialog][!speaker:Albus_EyeAversion]&apos;설마 했지만... 이 방법이 통하네...&apos;"/>
+		<class name="Tutorial_RamjiPlaza_VAtaT8" Value="[!Dialog][!speaker:Albus_Serious]전 트러블슈터입니다!"/>
+		<class name="Tutorial_RamjiPlaza_eeZzZw" Value="[!Dialog][!speaker:Albus_Serious]시민들을 구출할 수 있게 협력 부탁드립니다!"/>
+		<class name="Tutorial_RamjiPlaza_uGOEQ6" Value="[!Dialog][!speaker:Irene_Think]트러블슈터??"/>
+		<class name="Tutorial_RamjiPlaza_VaFqtL" Value="[!Dialog][!speaker:Irene_Surprise]진짜 트러블슈터야??"/>
+		<class name="Tutorial_RamjiPlaza_rWYrOm" Value="[!Dialog][!speaker:Albus_Serious]네. 트러블슈터 알버스라고 합니다!"/>
+		<class name="Tutorial_RamjiPlaza_MwIc69" Value="[!Dialog][!speaker:Irene_Rage]말도 안 돼!!"/>
+		<class name="Tutorial_RamjiPlaza_KUHQVc" Value="[!Dialog][!speaker:Irene_Rage]트러블슈터가 경찰이 출동하지 않은 사건에 출동하다니 거짓말이야!"/>
+		<class name="Tutorial_RamjiPlaza_vEQ18J" Value="[!Dialog][!speaker:Albus_Serious]현장에 있다가 사건에 휘말렸습니다."/>
+		<class name="Tutorial_RamjiPlaza_C7d5vh" Value="[!Dialog][!speaker:Albus_Serious]협력 부탁드립니다. 지금 이 순간에도 시민들이 위험합니다."/>
+		<class name="Tutorial_RamjiPlaza_6w1xXM" Value="[!Dialog][!speaker:Irene_Lonesome]이런... 진짜 트러블슈터인가..."/>
+		<class name="Tutorial_RamjiPlaza_zLvI3M" Value="[!Dialog][!speaker:Irene_Fury]아니면... 날 방심하게 하려는 함정?"/>
+		<class name="Tutorial_RamjiPlaza_IAOxsq" Value="[!Dialog][!speaker:Irene_Lonesome]지금 상황에서는 믿어 봐야 하나..."/>
+		<class name="Tutorial_RamjiPlaza_3SQCmM" Value="[!Dialog][!speaker:Albus_Stare]지금 이럴 시간이 없습니다!"/>
+		<class name="Tutorial_RamjiPlaza_6ClikY" Value="[!Dialog][!speaker:Albus_Stare]지금 흉악한 악당 녀석들이 시민들을 위협하고 있어요!"/>
+		<class name="Tutorial_RamjiPlaza_NQjlSU" Value="[!Dialog][!speaker:Irene_Surprise]뭐!! 흉악한 녀석!"/>
+		<class name="Tutorial_RamjiPlaza_OUhF3r" Value="[!Dialog][!speaker:Irene_Fury]이 악당 녀석! 날 조급하게 만들려는 거냐!"/>
+		<class name="Tutorial_RamjiPlaza_1RK0HP" Value="[!Dialog][!speaker:Albus_Stare]이럴 시간이 없습니다!"/>
+		<class name="Tutorial_RamjiPlaza_zhY8yP" Value="[!Dialog][!speaker:Albus_Stare]늦어지면 더 많은 희생자가 나올 겁니다!!"/>
+		<class name="Tutorial_RamjiPlaza_lui9RW" Value="[!Dialog][!speaker:Irene_Surprise]......"/>
+		<class name="Tutorial_RamjiPlaza_syloCZ" Value="[!Dialog][!speaker:Irene_Surprise]&apos;악당이 악당을 처리한다고 말하다니...&apos;"/>
+		<class name="Tutorial_RamjiPlaza_bMR1gb" Value="[!Dialog][!speaker:Irene_Think]&apos;그럼 악당이 아닌 건가...&apos;"/>
+		<class name="Tutorial_RamjiPlaza_9pIXyv" Value="[!Dialog][!speaker:Irene_Fury]&apos;아니 아니... 지금 이 상황에서 악당이 아닐 리가...&apos;"/>
+		<class name="Tutorial_RamjiPlaza_6eAr7U" Value="[!Dialog][!speaker:Albus_Serious]제가 앞장서겠습니다. 제 뒤를 맡기겠습니다."/>
+		<class name="Tutorial_RamjiPlaza_y2kzvK" Value="[!Dialog][!speaker:Albus_Serious]만약 제가 악당이라면 바로 응징하세요."/>
+		<class name="Tutorial_RamjiPlaza_MhSgVt" Value="[!Dialog][!speaker:Irene_Surprise]!!!"/>
+		<class name="Tutorial_RamjiPlaza_ZFotax" Value="[!Dialog][!speaker:Irene_Surprise]뭐야... 악당이 이렇게 당당해도 되는 거야?"/>
+		<class name="Tutorial_RamjiPlaza_vErknT" Value="[!Dialog][!speaker:Albus_Serious]아이린 씨! 시간이 없습니다!"/>
+		<class name="Tutorial_RamjiPlaza_uy1d0X" Value="[!Dialog][!speaker:Irene_Fury]알았다. 빨리 앞장 서라."/>
+		<class name="Tutorial_RamjiPlaza_sL7eRZ" Value="[!BalloonChat][!speaker:Alisa]비앙카!!"/>
+		<class name="Tutorial_RamjiPlaza_2UKPSh" Value="[!BalloonChat][!speaker:Alisa]이 녀석들!! 용서치 않겠다!"/>
+		<class name="Tutorial_RamjiPlaza_RoQzL3" Value="[!BalloonChat][!speaker:Bianca]안돼!! 알리사!!"/>
+		<class name="Tutorial_RamjiPlaza_hT9TkG" Value="[!BalloonChat][!speaker:Bianca]이 녀석들 용서하지 않을 거야."/>
+		<class name="Tutorial_RamjiPlaza_fnrKOz" Value="[!Dialog][!speaker:Alisa_Serious]더 이상의 교전은 무의미해..."/>
+		<class name="Tutorial_RamjiPlaza_JIQbsY" Value="[!Dialog][!speaker:Alisa_Serious]일단 비앙카를 데리고 이 곳을 빠져나가야겠어..."/>
+		<class name="Tutorial_RamjiPlaza_4Q7yS4" Value="[!Dialog][!speaker:Albus_SurpriseStare]저 사람들은..."/>
+		<class name="Tutorial_RamjiPlaza_8WLvd2" Value="[!Dialog][!speaker:Bianca_Stare]더 이상의 교전은 무의미해..."/>
+		<class name="Tutorial_RamjiPlaza_gu1wEC" Value="[!Dialog][!speaker:Bianca_Stare]조금만 참아. 알리사 내가 도움을 청해올게..."/>
+		<class name="Tutorial_RamjiPlaza_hRiONR" Value="[!Dialog][!speaker:Albus_SurpriseStare]저 사람들은..."/>
+		<class name="Tutorial_RamjiPlaza_OZ2xxK" Value="[!Dialog][!speaker:Alisa_Smile]비비!!"/>
+		<class name="Tutorial_RamjiPlaza_zKP12s" Value="[!Dialog][!speaker:Alisa_Normal]이쪽으로 나가자!"/>
+		<class name="Tutorial_RamjiPlaza_95vHrZ" Value="[!Dialog][!speaker:Bianca_Happy]응. 알았어! "/>
+		<class name="Tutorial_RamjiPlaza_jtAKHq" Value="[!BalloonChat][!speaker:Alisa]비앙카! 서둘러~!"/>
+		<class name="Tutorial_RamjiPlaza_kjJKJ8" Value="[!BalloonChat][!speaker:Bianca]알리사~! 어서 와~!"/>
+		<class name="Tutorial_RamjiPlaza_Ab8mDV" Value="[!Dialog][!speaker:Alisa_Normal]비앙카. 일단 여기로 넘어가자."/>
+		<class name="Tutorial_RamjiPlaza_q1gCB4" Value="[!Dialog][!speaker:Bianca_Normal]알았어~!"/>
+		<class name="Tutorial_RamjiPlaza_QiZkRh" Value="[!Dialog][!speaker:Bianca_Surprise]??"/>
+		<class name="Tutorial_RamjiPlaza_Z6Mdnf" Value="[!Dialog][!speaker:Bianca_Surprise]저번의 그 답답한 남자잖아..."/>
+		<class name="Tutorial_RamjiPlaza_CEHYs7" Value="[!Dialog][!speaker:Albus_SurpriseStare]이 분은 열차에서 봤던..."/>
+		<class name="Tutorial_RamjiPlaza_k3iJHQ" Value="[!Dialog][!speaker:Albus_Surprise]어... 그렇다면?"/>
+		<class name="Tutorial_RamjiPlaza_6bVWMm" Value="[!Dialog][!speaker:Bianca_Stare]이 상황에 어딜 한눈파니. 여전히 답답하구나."/>
+		<class name="Tutorial_RamjiPlaza_oVHHa6" Value="[!Dialog][!speaker:Albus_Surprise][colour=&apos;FFFFFF00&apos;]아니... 전..."/>
+		<class name="Tutorial_RamjiPlaza_MVhB0p" Value="[!Choice]시민 구출을 도와주십시오."/>
+		<class name="Tutorial_RamjiPlaza_BZigg6" Value="[!Choice]알리사를 쳐다본다."/>
+		<class name="Tutorial_RamjiPlaza_UIyYBo" Value="[!BalloonChat][!speaker:Albus]여긴 위험하니 안전한 곳으로 대피하세요!"/>
+		<class name="Tutorial_RamjiPlaza_zxe9cy" Value="[!Dialog][!speaker:Alisa_Normal]도와줘서 고마워. 트러블슈터일줄 몰랐네."/>
+		<class name="Tutorial_RamjiPlaza_A2PWjF" Value="[!Dialog][!speaker:Alisa_Smile]우린 대피하면 되는 건가?"/>
+		<class name="Tutorial_RamjiPlaza_SzsLSH" Value="[!Dialog][!speaker:Albus_Happy]네. 안전한 곳으로 이동해주세요."/>
+		<class name="Tutorial_RamjiPlaza_3grqVQ" Value="[!Dialog][!speaker:Albus_Laugh]현장은 저희가 맡겠습니다."/>
+		<class name="Tutorial_RamjiPlaza_nQ1t2H" Value="[!Dialog][!speaker:Bianca_Rage]너 여기 정말 해결할 수 있는 거야?"/>
+		<class name="Tutorial_RamjiPlaza_H2eAvu" Value="[!Dialog][!speaker:Bianca_Rage]도저히 미덥지가 않아."/>
+		<class name="Tutorial_RamjiPlaza_j4UXng" Value="[!Dialog][!speaker:Alisa_Smile]비앙카. 해결 가능하니까 대피하라는 거잖아."/>
+		<class name="Tutorial_RamjiPlaza_dtLkwF" Value="[!Dialog][!speaker:Bianca_Rage]무슨 소리야. 딱 보아하니 정의감에 아무 생각 없이 말한 거잖아."/>
+		<class name="Tutorial_RamjiPlaza_yPJ94S" Value="[!Dialog][!speaker:Alisa_Smile]비앙카. 그건 실례잖아. 마음에 안 든다고 그렇게 말하면 안 돼."/>
+		<class name="Tutorial_RamjiPlaza_Xkmvf9" Value="[!BalloonChat][!speaker:Alisa]트러블슈터. 고생해."/>
+		<class name="Tutorial_RamjiPlaza_1LBX7c" Value="[!BalloonChat][!speaker:Alisa]가자. 비앙카."/>
+		<class name="Tutorial_RamjiPlaza_qhBDLt" Value="[!BalloonChat][!speaker:Bianca]당신 같은 남자가 트러블슈터라니..."/>
+		<class name="Tutorial_RamjiPlaza_4tQUSa" Value="[!Dialog][!speaker:Albus_Laugh]이런 왠지 제대로 미움받는 거 같네..."/>
+		<class name="Tutorial_RamjiPlaza_G2eia7" Value="[!Dialog][!speaker:Albus_Serious]전 트러블슈터 알버스입니다!"/>
+		<class name="Tutorial_RamjiPlaza_mP74DV" Value="[!Dialog][!speaker:Albus_Serious]시민 구출에 협조 부탁드립니다!"/>
+		<class name="Tutorial_RamjiPlaza_AQM759" Value="[!Dialog][!speaker:Bianca_Surprise]너 트러블슈터였어?"/>
+		<class name="Tutorial_RamjiPlaza_2JJ8sb" Value="[!Dialog][!speaker:Bianca_Surprise]너가 트러블슈터야?"/>
+		<class name="Tutorial_RamjiPlaza_67Trbf" Value="[!Dialog][!speaker:Alisa_Surprise]허어? 트러블슈터라고?"/>
+		<class name="Tutorial_RamjiPlaza_tsvu18" Value="[!Dialog][!speaker:Alisa_Smile]나도 트러블슈터야."/>
+		<class name="Tutorial_RamjiPlaza_GI2CWh" Value="[!Dialog][!speaker:Albus_Surprise]역시 트러블슈터셨군요..."/>
+		<class name="Tutorial_RamjiPlaza_Jq4s8u" Value="[!Dialog][!speaker:Alisa_Normal]긴 말 필요 있겠어? 현장 해결을 위해 협력하자."/>
+		<class name="Tutorial_RamjiPlaza_EtWjCM" Value="[!Dialog][!speaker:Alisa_Smile]비앙카~! 괜찮겠지?"/>
+		<class name="Tutorial_RamjiPlaza_SvUI2v" Value="[!Dialog][!speaker:Bianca_Happy]나도 참가할까?"/>
+		<class name="Tutorial_RamjiPlaza_B5AsOi" Value="[!Dialog][!speaker:Alisa_Surprise]비앙카~~ 네가 옆에 있으면 내가 마음껏 뛰어놀 수 없잖아."/>
+		<class name="Tutorial_RamjiPlaza_RvyrAc" Value="[!Dialog][!speaker:Alisa_Smile]먼저 숙소로 돌아가 좀 쉬어."/>
+		<class name="Tutorial_RamjiPlaza_izvMnt" Value="[!Dialog][!speaker:Bianca_Rage]알았어. 난 도움이 안 될 테니... 빠져줄게."/>
+		<class name="Tutorial_RamjiPlaza_EQDdbC" Value="[!BalloonChat][!speaker:Bianca]너! 제대로 해! 알리사 발목 잡기만 해봐!"/>
+		<class name="Tutorial_RamjiPlaza_Wh8nAD" Value="[!BalloonChat][!speaker:Albus]......."/>
+		<class name="Tutorial_RamjiPlaza_chSEKC" Value="[!Dialog][!speaker:Alisa_Smile]괜찮아. 감정 표현이 서툰 녀석이야."/>
+		<class name="Tutorial_RamjiPlaza_z6yePy" Value="[!Dialog][!speaker:Alisa_Normal]자! 우리는 우리 할 일을 합시다."/>
+		<class name="Tutorial_RamjiPlaza_ho6yRk" Value="[!BalloonChat][!speaker:Bianca]저기! 정신 차려!"/>
+		<class name="Tutorial_RamjiPlaza_YkKSaD" Value="[!Dialog][!speaker:Bianca_Normal]&apos;또 넋을 잃고 쳐다보네...&apos;"/>
+		<class name="Tutorial_RamjiPlaza_4Pq91t" Value="[!Dialog][!speaker:Bianca_Rage]너!! 정신 차려!!"/>
+		<class name="Tutorial_RamjiPlaza_3e5XVX" Value="[!Dialog][!speaker:Albus_SurpriseStare]......"/>
+		<class name="Tutorial_RamjiPlaza_LQ0Iw0" Value="[!Dialog][!speaker:Albus_Embarrassed]죄송합니다."/>
+		<class name="Tutorial_RamjiPlaza_P0VUFx" Value="[!Dialog][!speaker:Albus_Embarrassed]전 트러블슈터 알버스입니다."/>
+		<class name="Tutorial_RamjiPlaza_sqXJYX" Value="[!Dialog][!speaker:Alisa_Normal]허어? 트러블슈터였네."/>
+		<class name="Tutorial_RamjiPlaza_M6iWJ5" Value="[!Dialog][!speaker:Bianca_Happy]저렇게 어리버리한 트러블슈터도 있어?"/>
+		<class name="Tutorial_RamjiPlaza_EdORTj" Value="[!Dialog][!speaker:Albus_Disappoint]트러블슈터로서 부끄러운 일이지만 저에겐 이 상황을 해결할 힘이 없습니다."/>
+		<class name="Tutorial_RamjiPlaza_bD6rTU" Value="[!Dialog][!speaker:Albus_Disappoint]부탁입니다. 시민들 구출에 협력해주세요."/>
+		<class name="Tutorial_RamjiPlaza_HFh5Hk" Value="[!Dialog][!speaker:Bianca_Happy]나도 참가할래."/>
+		<class name="Tutorial_RamjiPlaza_Z7Gpfh" Value="[!Dialog][!speaker:Alisa_Smile]먼저 숙소로 돌아가 좀 쉬어."/>
+		<class name="Tutorial_RamjiPlaza_CswMxY" Value="[!Dialog][!speaker:Bianca_Stare]싫어. 이 급박한 순간에도 갑자기 알리사를 넋놓고 쳐다보는 사람따위 어떻게 믿어."/>
+		<class name="Tutorial_RamjiPlaza_pxC1qN" Value="[!Dialog][!speaker:Albus_Embarrassed]아니 그건..."/>
+		<class name="Tutorial_RamjiPlaza_sYWgvk" Value="[!Dialog][!speaker:Alisa_Think]흐음..."/>
+		<class name="Tutorial_RamjiPlaza_gm9UHa" Value="[!Dialog][!speaker:Alisa_Smile]그래. 알았어."/>
+		<class name="Tutorial_RamjiPlaza_4m4jqp" Value="[!Dialog][!speaker:Bianca_Surprise]정말??"/>
+		<class name="Tutorial_RamjiPlaza_IDoiQg" Value="[!Dialog][!speaker:Alisa_Smile]그래. 다만 위험하면 나한테 다 맡겨~"/>
+		<class name="Tutorial_RamjiPlaza_CpoWig" Value="[!Dialog][!speaker:Albus_Serious]당신들 멈추세요. 더 이상 움직이면 제압하겠습니다."/>
+		<class name="Tutorial_RamjiPlaza_ioP37q" Value="[!Dialog][!speaker:Alisa_Smile]아니 무슨 소리야?"/>
+		<class name="Tutorial_RamjiPlaza_Bm3D9W" Value="[!Dialog][!speaker:Alisa_Smile]헤에... 트러블슈터네?"/>
+		<class name="Tutorial_RamjiPlaza_yyWwm7" Value="[!Dialog][!speaker:Bianca_Rage]너 제정신이니?"/>
+		<class name="Tutorial_RamjiPlaza_8JBi8B" Value="[!Dialog][!speaker:Bianca_Rage]저기 가면 쓰고 설치는 녀석들이 안 보여?"/>
+		<class name="Tutorial_RamjiPlaza_X5nI61" Value="[!Dialog][!speaker:Albus_Serious]당신들이 조금 전까지 가면 쓰지 않았다는 걸 누가 압니까?"/>
+		<class name="Tutorial_RamjiPlaza_WYlDNS" Value="[!Dialog][!speaker:Alisa_Serious]어이. 트러블슈터? 그런 논리면 너도 해당하는 거 아닌가?"/>
+		<class name="Tutorial_RamjiPlaza_i2EtYu" Value="[!Dialog][!speaker:Albus_Serious]전 트러블슈터에요."/>
+		<class name="Tutorial_RamjiPlaza_eeDqID" Value="[!Dialog][!speaker:Alisa_Smile]나도 트러블슈터인데 어쩌냐?"/>
+		<class name="Tutorial_RamjiPlaza_sKI0uz" Value="[!Dialog][!speaker:Albus_Serious]그걸 누가 믿어요. 현재 상황에서는 당신들이 가장 수상합니다."/>
+		<class name="Tutorial_RamjiPlaza_IkUE1r" Value="[!Dialog][!speaker:Bianca_Rage]저 아이 답답한 걸 넘어 짜증 나는 녀석이네."/>
+		<class name="Tutorial_RamjiPlaza_wLTOVG" Value="[!Dialog][!speaker:Bianca_Rage]알리사 그냥 가자!"/>
+		<class name="Tutorial_RamjiPlaza_SmiqiR" Value="[!Dialog][!speaker:Alisa_Serious]어이 트러블슈터는 감투가 아니라고..."/>
+		<class name="Tutorial_RamjiPlaza_kh4Yfy" Value="[!Dialog][!speaker:Alisa_Serious]조금 더 자신의 역할과 위치에 자각을 가졌으면 해."/>
+		<class name="Tutorial_RamjiPlaza_Fdsdxg" Value="[!Dialog][!speaker:Albus_EyeAversion]당신 같은 분들에게 충고들을 생각 없습니다."/>
+		<class name="Tutorial_RamjiPlaza_tv0uxg" Value="[!Dialog][!speaker:Bianca_Rage]저 녀석... 완전히 삐뚤어졌어."/>
+		<class name="Tutorial_RamjiPlaza_NrgCy5" Value="[!Dialog][!speaker:Alisa_Rage]하아... 그냥 서로 갈 길 갑시다."/>
+		<class name="Tutorial_RamjiPlaza_bAc9UO" Value="[!Dialog][!speaker:Albus_Fury]이 자리를 뜬다면 적대 행위로 간주하겠습니다!"/>
+		<class name="Tutorial_RamjiPlaza_Rkzjj6" Value="[!Dialog][!speaker:Alisa_Rage]비앙카! 기회다! 뒤로 숨어!"/>
+		<class name="Tutorial_RamjiPlaza_sQvDUS" Value="[!Dialog][!speaker:Bianca_Surprise]알았어!"/>
+		<class name="Tutorial_RamjiPlaza_ahwk1r" Value="[!BalloonChat]내세에는 한술의 뜻과 함께 하길..."/>
+		<class name="Tutorial_RamjiPlaza_XArYfx" Value="[!BalloonChat][!speaker:Albus]이럴 수가..."/>
+		<class name="Tutorial_RamjiPlaza_1KE7wt" Value="[!BalloonChat]모든 것은 한술의 뜻이다!"/>
+		<class name="Tutorial_RamjiPlaza_UjHAYY" Value="[!BalloonChat][!speaker:Albus]안돼..."/>
+		<class name="Tutorial_RamjiPlaza_xJra4u" Value="[!BalloonChat]바보 같은 녀석."/>
+		<class name="Tutorial_RamjiPlaza_P2esm1" Value="[!BalloonChat][!speaker:Albus]도대체 왜..."/>
+		<class name="Tutorial_RamjiPlaza_0hTDjw" Value="[!BalloonChat]한술의 의지가 네 녀석을 인도하겠지."/>
+		<class name="Tutorial_RamjiPlaza_0Ponwa" Value="[!BalloonChat][!speaker:Albus]도대체 왜..."/>
+		<class name="Tutorial_RamjiPlaza_gfu5pm" Value="[!BalloonChat][!speaker:Albus]제길... 조금만 더 빨랐다면..."/>
+		<class name="Tutorial_RamjiPlaza_ofR3Gi" Value="[!BalloonChat]믿음을 거부하고 무사할 줄 알았느냐!"/>
+		<class name="Tutorial_RamjiPlaza_lTZsfJ" Value="[!BalloonChat][!speaker:Albus]저 녀석들..."/>
+		<class name="Tutorial_RamjiPlaza_bBca6t" Value="[!BalloonChat]바보 같은 녀석"/>
+		<class name="Tutorial_RamjiPlaza_RAwrTa" Value="[!BalloonChat][!speaker:Albus]피해자가 더 늘어나기 전에 제압해야 해..."/>
+		<class name="Tutorial_RamjiPlaza_3K4ptb" Value="[!BalloonChat][!speaker:Albus]아 이럴 수가..."/>
+		<class name="Tutorial_RamjiPlaza_rg2624" Value="[!BalloonChat][!speaker:Albus]피해자가 더 늘어나기 전에 제압해야 해..."/>
+		<class name="Tutorial_RamjiPlaza_GhJAJ2" Value="[!Dialog][!speaker:Ray_Normal_Smile]레톤. 늦어질 것 같은데?"/>
+		<class name="Tutorial_RamjiPlaza_K6ktoM" Value="[!Dialog][!speaker:Leton_Normal]아직 안 늦었어."/>
+		<class name="Tutorial_RamjiPlaza_uD9N5w" Value="[!BalloonChat][!speaker:Albus]저 분들 위험해..."/>
+		<class name="Tutorial_RamjiPlaza_2jbVl8" Value="[!BalloonChat][!speaker:Ray]음? 뭐 하는 아이지?"/>
+		<class name="Tutorial_RamjiPlaza_ec4bVi" Value="[!BalloonChat][!speaker:Leton]일단 적의 적은 아군인가..."/>
+		<class name="Tutorial_RamjiPlaza_wQMDQ8" Value="[!BalloonChat][!speaker:Irene]이 악당 녀석들!!"/>
+		<class name="Tutorial_RamjiPlaza_eCyD3T" Value="[!Dialog][!speaker:Irene_Heroic]용서하지 않겠다!!"/>
+		<class name="Tutorial_RamjiPlaza_GxAJwK" Value="[!Dialog][!speaker:Gangster_StreetFat_Normal]이 녀석 단단히 미쳤군."/>
+		<class name="Tutorial_RamjiPlaza_A1Ck4H" Value="[!Dialog][!speaker:Gangster_StreetHelmet_Normal]마지막 발악을 하는구만."/>
+		<class name="Tutorial_RamjiPlaza_YbxNgd" Value="[!BalloonChat][!speaker:Ray]화이팅~♡"/>
+		<class name="Tutorial_RamjiPlaza_BjHCqM" Value="[!BalloonChat][!speaker:Ray]자 힘내자~♡"/>
+		<class name="Tutorial_RamjiPlaza_8SWjp1" Value="[!BalloonChat][!speaker:Ray]생각보다 많이 지체되네..."/>
+		<class name="Tutorial_RamjiPlaza_nB4GVq" Value="[!BalloonChat][!speaker:Ray]레톤 화 났겠는데..."/>
+		<class name="Tutorial_RamjiPlaza_LTeOML" Value="[!BalloonChat][!speaker:Leton]이봐! 이왕 이렇게 된 거 화끈하게 가자고!"/>
+		<class name="Tutorial_RamjiPlaza_RwMEPY" Value="[!BalloonChat][!speaker:Leton]이런 생각보다 오래 걸리는데..."/>
+		<class name="Tutorial_RamjiPlaza_GV9kh0" Value="[!BalloonChat][!speaker:Irene]이 녀석... 진짜 악당은 아니겠지..."/>
+		<class name="Tutorial_RamjiPlaza_4Hj2Nu" Value="[!BalloonChat][!speaker:Irene]내가 히어로 아이린이다!!"/>
+		<class name="Tutorial_RamjiPlaza_XxWhlQ" Value="[!Dialog][!speaker:Albus_Serious]잘 부탁드립니다! 히어로 아이린 씨!"/>
+		<class name="Tutorial_RamjiPlaza_QYWCjn" Value="[!Dialog][!speaker:Irene_Rage]아직 널 신뢰하는 게 아니야!"/>
+		<class name="Tutorial_RamjiPlaza_OwsNns" Value="[!Dialog][!speaker:Albus_Serious]네. 잘 알고 있습니다. 그러니 제 뒤를 맡기겠습니다."/>
+		<class name="Tutorial_RamjiPlaza_XfI8lB" Value="[!Dialog][!speaker:Irene_Fury]알았다. 빨리 시민들을 구하러 가자."/>
+		<class name="Tutorial_RamjiPlaza_BKxVMI" Value="[!Dialog][!speaker:Irene_Serious]일단 널 믿어 보겠다."/>
+		<class name="Tutorial_RamjiPlaza_694q3G" Value="[!Dialog][!speaker:Irene_Heroic]하지만 날 속인거 라면 용서치 않겠다!!"/>
+		<class name="Tutorial_RamjiPlaza_EsgKbK" Value="[!Dialog][!speaker:Albus_Normal]알겠습니다! 히어로 아이린 씨!"/>
+		<class name="Tutorial_RamjiPlaza_B6D7s2" Value="[!Dialog][!speaker:Irene_Rage]네 녀석! 아직 널 신뢰하는 게 아니야!"/>
+		<class name="Tutorial_RamjiPlaza_YsSbgL" Value="[!Dialog][!speaker:Irene_Fury]자! 어서 빨리 시민들을 구하러 가자!"/>
+		<class name="Tutorial_RamjiPlaza_w6I0qd" Value="[!Dialog][!speaker:Albus_Normal]알겠습니다! 히어로 아이린 씨!"/>
+		<class name="Tutorial_RamjiPlaza_QrMfCw" Value="[!Dialog][!speaker:Albus_Laugh]잘 부탁드립니다!"/>
+		<class name="Tutorial_RamjiPlaza_GtK5Ut" Value="[!Dialog][!speaker:Irene_Rage]시끄럽다!"/>
+		<class name="Tutorial_RamjiPlaza_RvyIjX" Value="[!Dialog][!speaker:Irene_Heroic]허튼  짓을 한다면 바로 널 응징할 거다!"/>
+		<class name="Tutorial_RamjiPlaza_dHJC5X" Value="[!Dialog][!speaker:Albus_Laugh]걱정 마세요. 히어로 아이린 씨."/>
+		<class name="Tutorial_RamjiPlaza_n5DRh9" Value="[!Dialog][!speaker:Albus_Normal]시민들을 꼭 안전하게 구출할 겁니다."/>
+		<class name="Tutorial_RamjiPlaza_nvcRwu" Value="[!Dialog][!speaker:Albus_Normal]전 트러블슈터입니다!"/>
+		<class name="Tutorial_RamjiPlaza_PZGkny" Value="[!Dialog][!speaker:Albus_Normal]히어로 아이린 님! 협력 부탁드립니다!"/>
+		<class name="Tutorial_RamjiPlaza_PrErfB" Value="[!Dialog][!speaker:Irene_Think]트러블슈터??"/>
+		<class name="Tutorial_RamjiPlaza_mQXLzO" Value="[!Dialog][!speaker:Irene_Surprise]진짜 트러블슈터야??"/>
+		<class name="Tutorial_RamjiPlaza_hQBDjG" Value="[!Dialog][!speaker:Albus_Laugh]네. 트러블슈터 알버스라고 합니다!"/>
+		<class name="Tutorial_RamjiPlaza_OVB27n" Value="[!Dialog][!speaker:Albus_Normal]현장에 있다가 사건에 휘말렸습니다."/>
+		<class name="Tutorial_RamjiPlaza_uuUnyO" Value="[!Dialog][!speaker:Irene_Think]흠..."/>
+		<class name="Tutorial_RamjiPlaza_UtRnKS" Value="[!Dialog][!speaker:Irene_Normal]나의 도움을 바라다니 넌 악당이 아니구나."/>
+		<class name="Tutorial_RamjiPlaza_Xz9DAe" Value="[!Dialog][!speaker:Irene_Heroic]좋다. 트러블슈터! 힘을 빌려주마!"/>
+		<class name="Tutorial_RamjiPlaza_gOhdvu" Value="[!Dialog][!speaker:Irene_Normal]자! 어서 빨리 시민들을 구하러 가자!"/>
+		<class name="Tutorial_RamjiPlaza_MNqouP" Value="[!Dialog][!speaker:Albus_Normal]알겠습니다! 히어로 아이린 씨!"/>
+		<class name="Tutorial_RamjiPlaza_RXfxDW" Value="[!Dialog][!speaker:Albus_Laugh]잘 부탁드립니다!"/>
+		<class name="Tutorial_RamjiPlaza_i7MbOs" Value="[!Dialog][!speaker:Irene_Smile]나야말로 잘 부탁한다."/>
+		<class name="Tutorial_RamjiPlaza_8DqE1p" Value="[!BalloonChat][!speaker:Alisa]이제 몸이 좀 풀리는군."/>
+		<class name="Tutorial_RamjiPlaza_7FXcfc" Value="[!BalloonChat][!speaker:Bianca]다들 정말 추하군요."/>
+		<class name="Tutorial_RamjiPlaza_fcBgaD" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Normal]자매님들 가슴엔 스푼 하나가 있으십니까?"/>
+		<class name="Tutorial_RamjiPlaza_bZKG4T" Value="[!Dialog][!speaker:Alisa_Serious]비앙카. 조심해!"/>
+		<class name="Tutorial_RamjiPlaza_v8LU7h" Value="[!Dialog][!speaker:Bianca_Normal]응. 걱정 마~!"/>
+		<class name="Tutorial_RamjiPlaza_n1cWSV" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Normal]사양하지 마시고 저희와 함께 스푼교의 길을 걸어 갑시다."/>
+		<class name="Tutorial_RamjiPlaza_61ZrfM" Value="[!BalloonChat][!speaker:Bianca]어? 어디서 봤던 사람인데..."/>
+		<class name="Tutorial_RamjiPlaza_a3BZQ0" Value="[!BalloonChat][!speaker:Alisa]열차에서 봤던 녀석이군."/>
+		<class name="Tutorial_RamjiPlaza_Ka6qqQ" Value="[!Ignore][!BalloonChat][!speaker:Ray]히어로 잘 부탁한다~♡"/>
+		<class name="Tutorial_RamjiPlaza_2FJsdA" Value="[!Ignore][!BalloonChat][!speaker:Irene]맡겨줘!"/>
+		<class name="Tutorial_RamjiPlaza_tgo69m" Value="[!Ignore][!BalloonChat][!speaker:Ray]우리 열심히 해봐요~♡"/>
+		<class name="Tutorial_RamjiPlaza_X0z0CP" Value="[!Ignore][!BalloonChat][!speaker:Alisa]그쪽이야말로~"/>
+		<class name="Tutorial_RamjiPlaza_iV41YD" Value="[!Ignore][!BalloonChat][!speaker:Bianca]잘 부탁해요."/>
+		<class name="Tutorial_RamjiPlaza_CauAlc" Value="[!Ignore][!BalloonChat][!speaker:Ray]후훗~ 나도요~♡"/>
+		<class name="Tutorial_RamjiPlaza_Zv9hOD" Value="[!Ignore][!BalloonChat][!speaker:Leton]히어로 아이린 양! 잘 부탁한다!"/>
+		<class name="Tutorial_RamjiPlaza_zPMCK4" Value="[!Ignore][!BalloonChat][!speaker:Irene]물론이지!"/>
+		<class name="Tutorial_RamjiPlaza_tFvDR0" Value="[!Ignore][!BalloonChat][!speaker:Alisa]위험한 분위기의 남자로군."/>
+		<class name="Tutorial_RamjiPlaza_Zd2VDo" Value="[!Ignore][!BalloonChat][!speaker:Leton]오 마이~ 갓."/>
+		<class name="Tutorial_RamjiPlaza_oBHtUI" Value="[!Ignore][!BalloonChat][!speaker:Leton]원래 잘생기면 다 그런거라고~"/>
+		<class name="Tutorial_RamjiPlaza_4CeNmx" Value="[!Ignore][!BalloonChat][!speaker:Leton]이런 르블랑?"/>
+		<class name="Tutorial_RamjiPlaza_WiYDnf" Value="[!Ignore][!BalloonChat][!speaker:Leton]하... 좀 더 후드를 눌러써야겠군..."/>
+		<class name="Tutorial_RamjiPlaza_UobE3Y" Value="[!BalloonChat][!speaker:Albus]안돼!!!"/>
+		<class name="Tutorial_RamjiPlaza_yGcVnF" Value="[!BalloonChat][!speaker:Albus]안돼!!"/>
+		<class name="Tutorial_RamjiPlaza_m9w9mx" Value="[!Dialog][!speaker:Albus_Surprise]레이 씨!"/>
+		<class name="Tutorial_RamjiPlaza_4n0J3a" Value="[!BalloonChat][!speaker:Ray]음? 또 무슨 일이 남았니?"/>
+		<class name="Tutorial_RamjiPlaza_12HFgn" Value="[!BalloonChat][!speaker:Albus]오늘 도와주셔서 감사합니다!!"/>
+		<class name="Tutorial_RamjiPlaza_pKp5aY" Value="[!Dialog][!speaker:Ray_Normal_Smile]알버스 군."/>
+		<class name="Tutorial_RamjiPlaza_uykdWz" Value="[!Dialog][!speaker:Albus_Normal]네. 말씀하세요."/>
+		<class name="Tutorial_RamjiPlaza_78kGcJ" Value="[!Dialog][!speaker:Ray_Normal_Smile]오늘은 우연히 널 도운 거야."/>
+		<class name="Tutorial_RamjiPlaza_38KQHA" Value="[!Dialog][!speaker:Albus_Normal]네. 감사합니다."/>
+		<class name="Tutorial_RamjiPlaza_1zu6jo" Value="[!Dialog][!speaker:Ray_Normal]다음엔 너 혼자일지도 몰라."/>
+		<class name="Tutorial_RamjiPlaza_IGsaEM" Value="[!Dialog][!speaker:Albus_Normal]좀 더 노력하겠습니다. 더 강하게 성장할 겁니다."/>
+		<class name="Tutorial_RamjiPlaza_5CyV30" Value="[!Dialog][!speaker:Albus_Laugh]레이 씨처럼요."/>
+		<class name="Tutorial_RamjiPlaza_NLNdqn" Value="[!BalloonChat][!speaker:Ray]말이라도 그렇게 해주니 고맙네~"/>
+		<class name="Tutorial_RamjiPlaza_BV19Db" Value="[!BalloonChat][!speaker:Ray]나중에 더 멋진 모습으로 보자~♡"/>
+		<class name="Tutorial_RamjiPlaza_PR6J6t" Value="[!Dialog][!speaker:Alisa_Normal]일단락되었군. 고생했어."/>
+		<class name="Tutorial_RamjiPlaza_5XajhX" Value="[!Dialog][!speaker:Albus_Normal]도와주셔서 감사합니다."/>
+		<class name="Tutorial_RamjiPlaza_v7vPgw" Value="[!Dialog][!speaker:Alisa_Smile]아냐. 아냐. 나도 명색이 트러블슈터인데 당연할 일이지."/>
+		<class name="Tutorial_RamjiPlaza_5dl2Dj" Value="[!Dialog][!speaker:Alisa_Smile]아. 미안하지만 난 이만 가볼게."/>
+		<class name="Tutorial_RamjiPlaza_CXXHnJ" Value="[!Dialog][!speaker:Albus_Surprise]네??"/>
+		<class name="Tutorial_RamjiPlaza_BcuY1e" Value="[!Dialog][!speaker:Alisa_Smile]곧 경찰이 올 텐데 뒷수습 좀 부탁해. 난 시간을 많이 뺏겨서 말야."/>
+		<class name="Tutorial_RamjiPlaza_gSMt42" Value="[!Dialog][!speaker:Alisa_Normal]음?"/>
+		<class name="Tutorial_RamjiPlaza_kGw6oN" Value="[!Dialog][!speaker:Albus_Surprise]실례가 되지 않는다면 성함을 여쭤봐도 될까요?"/>
+		<class name="Tutorial_RamjiPlaza_cQ8J0T" Value="[!Dialog][!speaker:Alisa_Normal]알리사 이바노바."/>
+		<class name="Tutorial_RamjiPlaza_xGtHlO" Value="[!Dialog][!speaker:Alisa_Smile]그리고 다음에 여성에게 성함을 묻기 전에 자기 이름부터 정중하게 밝혀주면 좋은 남자가 될 거야. 알버스 군."/>
+		<class name="Tutorial_RamjiPlaza_9pkvIA" Value="[!Dialog][!speaker:Albus_Surprise]헛, 제 이름을...어떻게?"/>
+		<class name="Tutorial_RamjiPlaza_lu4zrc" Value="[!Dialog][!speaker:Alisa_Normal]아까 도움 요청하면서 커다랗게 &apos;트러블슈터 알버스입니다!&apos; 하고 외쳤잖아."/>
+		<class name="Tutorial_RamjiPlaza_nD8UeI" Value="[!Dialog][!speaker:Alisa_Smile]요즘 시대에 그렇게 당당하게 외치는 건 오랜만이라 기억해놨지."/>
+		<class name="Tutorial_RamjiPlaza_QkghIM" Value="[!Dialog][!speaker:Albus_Embarrassed]...... 그렇군요."/>
+		<class name="Tutorial_RamjiPlaza_BBUPpR" Value="[!Dialog][!speaker:Alisa_Normal]괜찮아. 좋은 모습이었어. 부끄러워할 이유가 어딨어."/>
+		<class name="Tutorial_RamjiPlaza_JhF4da" Value="[!Dialog][!speaker:Albus_Normal]감사합니다."/>
+		<class name="Tutorial_RamjiPlaza_fGDGDI" Value="[!Dialog][!speaker:Alisa_Smile]아 그리고 우리 비앙카가 한 말은 신경 쓰지 마 그 아이는 원래 그런 아이니까."/>
+		<class name="Tutorial_RamjiPlaza_eW2WdE" Value="[!Dialog][!speaker:Albus_Embarrassed]네... 전 괜찮습니다."/>
+		<class name="Tutorial_RamjiPlaza_5vFZEw" Value="[!Dialog][!speaker:Alisa_Smile]그럼 이만 다음에 봐. 알버스 군."/>
+		<class name="Tutorial_RamjiPlaza_Daub0J" Value="[!Dialog][!speaker:Albus_Normal]네. 알리사 씨."/>
+		<class name="Tutorial_RamjiPlaza_DhBgp3" Value="[!BalloonChat][!speaker:Albus]도와주셔서 감사합니다. 아이린 씨."/>
+		<class name="Tutorial_RamjiPlaza_p4An0H" Value="[!Dialog][!speaker:Irene_Heroic]히어로의 당연한 일이지. 딱히 널 도운 게 아니야."/>
+		<class name="Tutorial_RamjiPlaza_i50NK4" Value="[!Dialog][!speaker:Albus_Laugh]하하..."/>
+		<class name="Tutorial_RamjiPlaza_1ZY84L" Value="[!Dialog][!speaker:Irene_Normal]트러블슈터야말로 고생했어."/>
+		<class name="Tutorial_RamjiPlaza_y0TWjJ" Value="[!Dialog][!speaker:Irene_Smile]다음번에도 그런 정신으로 활동하면 좋을듯해. 나처럼 말이지."/>
+		<class name="Tutorial_RamjiPlaza_ijHfUe" Value="[!BalloonChat][!speaker:Irene]그럼 난 이만!"/>
+		<class name="Tutorial_RamjiPlaza_tdIHgj" Value="[!Ignore][!Dialog][!speaker:Irene_Normal]트러블슈터. 제법이구나."/>
+		<class name="Tutorial_RamjiPlaza_QrlPrA" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]아이린 씨 덕분입니다. 도와주셔서 감사합니다."/>
+		<class name="Tutorial_RamjiPlaza_a3X35K" Value="[!Dialog][!speaker:Alisa_Normal]이런 거기서 그런 실수를 할 줄이야. 미안해."/>
+		<class name="Tutorial_RamjiPlaza_4x6WIm" Value="[!Dialog][!speaker:Albus_SurpriseStare]아닙니다. 도움이 없었다면 저 역시 그렇게 되었을 거예요."/>
+		<class name="Tutorial_RamjiPlaza_sCPq3i" Value="[!Dialog][!speaker:Alisa_Serious]아냐. 나도 명색이 트러블슈터인데 당연히 부끄러울 뿐이야."/>
+		<class name="Tutorial_RamjiPlaza_axH5XU" Value="[!Dialog][!speaker:Alisa_Think]&apos;그것보다 시간이 이렇게나 걸리다니... 비앙카 완전 화났겠는 걸...&apos;"/>
+		<class name="Tutorial_RamjiPlaza_C4jKkS" Value="[!Dialog][!speaker:Alisa_Smile]미안하지만 난 이만 가볼게."/>
+		<class name="Tutorial_RamjiPlaza_3gWjkm" Value="[!Dialog][!speaker:Alisa_Smile]곧 경찰이 올 텐데 뒷수습 좀 부탁해. 난 시간을 많이 뺏겨서 말야."/>
+		<class name="Tutorial_RamjiPlaza_bOGgoh" Value="[!Dialog][!speaker:Albus_Normal]알겠습니다."/>
+		<class name="Tutorial_RamjiPlaza_YEGBj0" Value="[!Dialog][!speaker:Albus_Laugh]저기..."/>
+		<class name="Tutorial_RamjiPlaza_b6O4UP" Value="[!Dialog][!speaker:Alisa_Surprise]응? 무슨 할 말이 남았나?"/>
+		<class name="Tutorial_RamjiPlaza_TerqFk" Value="[!Dialog][!speaker:Albus_Embarrassed]실례가 되지 않는다면 성함을 여쭤봐도 될까요?"/>
+		<class name="Tutorial_RamjiPlaza_85x9g1" Value="[!Dialog][!speaker:Alisa_Smile]그럼 마무리를 잘 부탁해. 알버스 군."/>
+		<class name="Tutorial_RamjiPlaza_yI12tb" Value="[!Dialog][!speaker:Albus_Surprise]헛, 제 이름을...?"/>
+		<class name="Tutorial_RamjiPlaza_tJKW1b" Value="[!Dialog][!speaker:Alisa_Normal]아까 도움 요청하면서 커다랗게 &apos;트러블슈터 알버스입니다!&apos; 하고 외쳤잖아."/>
+		<class name="Tutorial_RamjiPlaza_x9DDIz" Value="[!Dialog][!speaker:Alisa_Smile]요즘 시대에 그렇게 당당하게 외치는 건 오랜만이라 기억해놨지."/>
+		<class name="Tutorial_RamjiPlaza_7aRGAf" Value="[!Dialog][!speaker:Albus_Embarrassed]...... 그렇군요."/>
+		<class name="Tutorial_RamjiPlaza_Ocn28F" Value="[!Dialog][!speaker:Alisa_Smile]괜찮아. 좋은 모습이었어. 부끄러워할 이유가 어딨어."/>
+		<class name="Tutorial_RamjiPlaza_Bc7mQe" Value="[!Dialog][!speaker:Alisa_Normal]그럼 다음에 보자. 알버스 군."/>
+		<class name="Tutorial_RamjiPlaza_9YY3CS" Value="[!Dialog][!speaker:Bianca_Happy]이제 다 끝난 거야?"/>
+		<class name="Tutorial_RamjiPlaza_2h1CC2" Value="[!Dialog][!speaker:Alisa_Smile]어. 적어도 이제 그 가면 쓴 녀석들은 없는 것 같네."/>
+		<class name="Tutorial_RamjiPlaza_mtYJ3h" Value="[!Dialog][!speaker:Albus_Normal]경찰 분대도 곧 도착한다고 합니다."/>
+		<class name="Tutorial_RamjiPlaza_7qa9Bv" Value="[!Dialog][!speaker:Albus_Normal]제시간에 혼절하거나 부상당한 시민들을 안전하게 이송할 수 있을 것 같습니다."/>
+		<class name="Tutorial_RamjiPlaza_5VdWBe" Value="[!Dialog][!speaker:Bianca_Smile]훗. 다 우리 덕분이야."/>
+		<class name="Tutorial_RamjiPlaza_yUT0vu" Value="[!Dialog][!speaker:Alisa_Serious]비앙카. 다들 고생한 거야."/>
+		<class name="Tutorial_RamjiPlaza_3eQsSl" Value="[!Dialog][!speaker:Bianca_Happy]아냐. 우리 덕분이야."/>
+		<class name="Tutorial_RamjiPlaza_pKvLXf" Value="[!Dialog][!speaker:Alisa_Smile]미안해. 알버스 군."/>
+		<class name="Tutorial_RamjiPlaza_7rvgKg" Value="[!Dialog][!speaker:Albus_Surprise]헛, 제 이름을 어떻게?"/>
+		<class name="Tutorial_RamjiPlaza_S5Xyh7" Value="[!Dialog][!speaker:Bianca_Normal]......바보야?"/>
+		<class name="Tutorial_RamjiPlaza_V0YSFG" Value="[!Dialog][!speaker:Bianca_Rage]아까 그렇게 큰 소리로 &apos;트러블슈터 알버스입니다!!&apos; 하고 외쳤는데 어떻게 모르니?"/>
+		<class name="Tutorial_RamjiPlaza_P0zxhu" Value="[!Dialog][!speaker:Bianca_Rage]그렇게 당당하게 외치다니 자랑스럽나 봐~!"/>
+		<class name="Tutorial_RamjiPlaza_reEYGV" Value="[!Dialog][!speaker:Albus_Embarrassed]아....."/>
+		<class name="Tutorial_RamjiPlaza_2Qzbsx" Value="[!Dialog][!speaker:Alisa_Serious]적당히 해. 비앙카."/>
+		<class name="Tutorial_RamjiPlaza_9qBf3B" Value="[!Dialog][!speaker:Alisa_Normal]알리사 이바노바."/>
+		<class name="Tutorial_RamjiPlaza_HTYxmL" Value="[!Dialog][!speaker:Alisa_Smile]편하게 알리사라고 불러. 알버스 군."/>
+		<class name="Tutorial_RamjiPlaza_OoWe8C" Value="[!Dialog][!speaker:Albus_Laugh]네. 알리사 씨."/>
+		<class name="Tutorial_RamjiPlaza_063umO" Value="[!Dialog][!speaker:Bianca_Stare]너 왜 내 이름은 안 묻지?"/>
+		<class name="Tutorial_RamjiPlaza_v65tO0" Value="[!Dialog][!speaker:Albus_SurpriseStare]비앙카 씨...잖아요? 방금 바로 옆에서 들어서..."/>
+		<class name="Tutorial_RamjiPlaza_3DGIFQ" Value="[!Dialog][!speaker:Bianca_Smile]......한심한 남자네."/>
+		<class name="Tutorial_RamjiPlaza_o775pe" Value="[!Dialog][!speaker:Bianca_Rage]조금 괜찮게 봐주려고 해도 정말 근본이 엉망이야."/>
+		<class name="Tutorial_RamjiPlaza_GAWCx4" Value="[!Dialog][!speaker:Albus_Embarrassed]......"/>
+		<class name="Tutorial_RamjiPlaza_hcpvIv" Value="[!Dialog][!speaker:Alisa_Smile]&apos;또 삐졌군...&apos;"/>
+		<class name="Tutorial_RamjiPlaza_y8iTNu" Value="[!Dialog][!speaker:Alisa_Normal]알버스 군. 직접 들은 게 아니면 알고 있어도 정중히 묻는 게 좋은 사람이야. 아직 사회생활이 서투네. 하하"/>
+		<class name="Tutorial_RamjiPlaza_WwohtH" Value="[!Dialog][!speaker:Albus_Embarrassed]아... 죄송합니다."/>
+		<class name="Tutorial_RamjiPlaza_hdXzSD" Value="[!Dialog][!speaker:Alisa_Smile]너무 신경 쓰지 마. 자주 저러니까."/>
+		<class name="Tutorial_RamjiPlaza_PM5Rwv" Value="[!Dialog][!speaker:Alisa_Normal]아 그리고 경찰들이 오면 뒷수습 좀 부탁해. 우린 시간을 많이 뺏겨서 말이야."/>
+		<class name="Tutorial_RamjiPlaza_mBFKo7" Value="[!Dialog][!speaker:Albus_Embarrassed]알겠습니다."/>
+		<class name="Tutorial_RamjiPlaza_tzmOps" Value="[!Dialog][!speaker:Alisa_Smile]그래. 그럼 다음에 또 보자."/>
+		<class name="Tutorial_RamjiPlaza_e9nAq7" Value="[!Dialog][!speaker:Bianca_Rage]엉망이야..."/>
+		<class name="Tutorial_RamjiPlaza_LMpjDC" Value="[!Dialog][!speaker:Alisa_Serious]이런 면목 없군."/>
+		<class name="Tutorial_RamjiPlaza_PsNyhe" Value="[!Dialog][!speaker:Albus_Disappoint]아닙니다. 제가 무리한 부탁을 드려서..."/>
+		<class name="Tutorial_RamjiPlaza_4peHlv" Value="[!Dialog][!speaker:Bianca_Rage]그렇게까지 지원을 해줬는데 자기만 살려고 한 거지..."/>
+		<class name="Tutorial_RamjiPlaza_ocRFut" Value="[!Dialog][!speaker:Bianca_Rage]뭐. 어쨌든 해결됐으니 더 말은 안 할게."/>
+		<class name="Tutorial_RamjiPlaza_Z6WMle" Value="[!Dialog][!speaker:Alisa_Serious]비앙카 말이 심했어. 미안하네."/>
+		<class name="Tutorial_RamjiPlaza_QcPPzh" Value="[!Dialog][!speaker:Albus_Disappoint]아닙니다. 그래도 여러분의 도움이 없었다면..."/>
+		<class name="Tutorial_RamjiPlaza_65MJ6u" Value="[!Dialog][!speaker:Bianca_Rage]더 엉망이었겠지."/>
+		<class name="Tutorial_RamjiPlaza_JmzkRU" Value="[!Dialog][!speaker:Alisa_Smile]괜찮아. 트러블슈터로서 최선을 다하는 좋은 모습이었어. 부끄러워할 이유가 어딨어."/>
+		<class name="Tutorial_RamjiPlaza_lpJE4m" Value="[!Dialog][!speaker:Alisa_Normal]아 참..."/>
+		<class name="Tutorial_RamjiPlaza_zgAqbK" Value="[!Dialog][!speaker:Alisa_Smile]곧 경찰이 올 텐데 뒷수습 좀 부탁해. 우린 시간을 많이 뺏겨서 말이야."/>
+		<class name="Tutorial_RamjiPlaza_MTNP35" Value="[!Dialog][!speaker:Albus_Embarrassed]네..."/>
+		<class name="Tutorial_RamjiPlaza_qMPigh" Value="[!Dialog][!speaker:Albus_Surprise]저... 저기...?"/>
+		<class name="Tutorial_RamjiPlaza_nO5Mal" Value="[!Dialog][!speaker:Albus_Normal]실례가 되지 않는다면 성함을 여쭤봐도 될까요?"/>
+		<class name="Tutorial_RamjiPlaza_r7nJys" Value="[!Dialog][!speaker:Bianca_Rage]난 저런 멍청이한테 이름 가르쳐 줄 생각 없어."/>
+		<class name="Tutorial_RamjiPlaza_Vjoe8M" Value="[!Dialog][!speaker:Alisa_Smile]저 까칠이는 비앙카야."/>
+		<class name="Tutorial_RamjiPlaza_cUqg7k" Value="[!Dialog][!speaker:Alisa_Smile]표현만 저렇게 하지 좋은 녀석이야. 나쁘게 생각하지 마."/>
+		<class name="Tutorial_RamjiPlaza_TFEw3K" Value="[!Dialog][!speaker:Bianca_Normal]알리사 괜찮아?"/>
+		<class name="Tutorial_RamjiPlaza_3bJeeZ" Value="[!Dialog][!speaker:Alisa_Normal]뭐. 괜찮아. 이 정도쯤이야."/>
+		<class name="Tutorial_RamjiPlaza_FCeJnt" Value="[!Dialog][!speaker:Albus_Normal]경찰 분대도 곧 도착한다고 합니다."/>
+		<class name="Tutorial_RamjiPlaza_XJQPEI" Value="[!Dialog][!speaker:Albus_Normal]제시간에 혼절하거나 부상당한 시민들을 안전하게 이송할 수 있을 것 같습니다."/>
+		<class name="Tutorial_RamjiPlaza_Xp9zAL" Value="[!Dialog][!speaker:Bianca_Rage]너 일 처리가 먼저니?"/>
+		<class name="Tutorial_RamjiPlaza_aYHXVo" Value="[!Dialog][!speaker:Albus_SurpriseStare]네??"/>
+		<class name="Tutorial_RamjiPlaza_6SsdW8" Value="[!Dialog][!speaker:Bianca_Rage]도와준 사람이 혼절했었는데 이쪽에 더 신경 써야 하는 거 아냐?"/>
+		<class name="Tutorial_RamjiPlaza_sBMuZS" Value="[!Dialog][!speaker:Alisa_Smile]비앙카. 다들 고생한 거야. 그리고 트러블슈터로서 당연히 시민부터 챙겨야지."/>
+		<class name="Tutorial_RamjiPlaza_x5PjqQ" Value="[!Dialog][!speaker:Albus_Embarrassed]아... 아닙니다. 죄송합니다."/>
+		<class name="Tutorial_RamjiPlaza_VFkHOY" Value="[!Dialog][!speaker:Alisa_Normal]미안해할 필요 없어. 알버스 군. 자네 덕분에 많은 사람이 구조된 거니까"/>
+		<class name="Tutorial_RamjiPlaza_c8X4NP" Value="[!Dialog][!speaker:Albus_Embarrassed]네."/>
+		<class name="Tutorial_RamjiPlaza_Gq2XsA" Value="[!Dialog][!speaker:Alisa_Smile]괜찮아. 좋은 모습이었어. 부끄러워할 이유가 어딨어."/>
+		<class name="Tutorial_RamjiPlaza_T4OtJK" Value="[!Dialog][!speaker:Alisa_Normal]아 참. 알버스 군."/>
+		<class name="Tutorial_RamjiPlaza_x0wpuK" Value="[!Dialog][!speaker:Bianca_Smile]난 저런 멍청이한테 이름 가르쳐 줄 생각 없어."/>
+		<class name="Tutorial_RamjiPlaza_nGQTX9" Value="[!Dialog][!speaker:Albus_Normal]경찰들도 곧 도착한다고 합니다."/>
+		<class name="Tutorial_RamjiPlaza_9jLoqI" Value="[!Dialog][!speaker:Albus_Normal]제시간에 혼절하거나 부상당한 시민들을 안전하게 이송할 수 있을 것 같습니다."/>
+		<class name="Tutorial_RamjiPlaza_nctw6z" Value="[!Dialog][!speaker:Alisa_Serious]트러블슈터군."/>
+		<class name="Tutorial_RamjiPlaza_RPTFSa" Value="[!Dialog][!speaker:Bianca_Normal]알리사 난 괜찮아."/>
+		<class name="Tutorial_RamjiPlaza_saT9nN" Value="[!Dialog][!speaker:Alisa_Smile]아니. 한마디 해야겠어."/>
+		<class name="Tutorial_RamjiPlaza_481ZiW" Value="[!Dialog][!speaker:Bianca_Stare]알리사 난 괜찮다니까~"/>
+		<class name="Tutorial_RamjiPlaza_1FvzTe" Value="[!Dialog][!speaker:Alisa_Serious]쓰레기 같은 녀석..."/>
+		<class name="Tutorial_RamjiPlaza_2OaZJa" Value="[!Dialog][!speaker:Alisa_Rage]우린 네 녀석 임무를 위한 소모품이 아니야!"/>
+		<class name="Tutorial_RamjiPlaza_WtfGI3" Value="[!Dialog][!speaker:Bianca_Normal]아냐. 제가 어리버리해도 그런 의도로 그런 건 아닐 거야."/>
+		<class name="Tutorial_RamjiPlaza_Zw83va" Value="[!Dialog][!speaker:Alisa_Rage]시민을 구해서 보람차듯 너와 함께 하는 사람들을 소중히 생각해"/>
+		<class name="Tutorial_RamjiPlaza_RJttEZ" Value="[!Dialog][!speaker:Albus_Embarrassed]죄... 죄송합니다."/>
+		<class name="Tutorial_RamjiPlaza_gqCjtl" Value="[!BalloonChat][!speaker:Albus]괜찮으십니까?"/>
+		<class name="Tutorial_RamjiPlaza_CjC9Cc" Value="[!Dialog][!speaker:Irene_Lonesome]미안하다. 큰 도움이 되지 못했다."/>
+		<class name="Tutorial_RamjiPlaza_m9rMQp" Value="[!Dialog][!speaker:Albus_Surprise]아닙니다. 아이린 씨 덕분에 이 상황을 해결할 수 있었습니다."/>
+		<class name="Tutorial_RamjiPlaza_yXQQEz" Value="[!Dialog][!speaker:Irene_Lonesome]말은 고맙지만, 악당에게 쓰러진 히어로는 비난받아도 마땅할 뿐이다..."/>
+		<class name="Tutorial_RamjiPlaza_AaoFsd" Value="[!Dialog][!speaker:Albus_Surprise]아닙니다... 아이린 씨가 없었다면..."/>
+		<class name="Tutorial_RamjiPlaza_iYgYFp" Value="[!Dialog][!speaker:Irene_Lonesome]됐다. 나도 안다. 더 이상 위로하지 마라."/>
+		<class name="Tutorial_RamjiPlaza_you3ic" Value="[!BalloonChat][!speaker:Irene]그럼. 난 이만."/>
+		<class name="Tutorial_RamjiPlaza_r0CJJC" Value="[!Ignore][!Dialog][!speaker:Irene_Rage]뭐!!!!"/>
+		<class name="Tutorial_RamjiPlaza_KEcJws" Value="[!Ignore][!BalloonChat][!speaker:Irene]이 녀석 좋은 녀석이잖아. 사람 위로도 하고..."/>
+		<class name="Tutorial_RamjiPlaza_7YIskn" Value="[!Ignore][!BalloonChat][!speaker:Irene]악당들이 좋아한다고!!"/>
+		<class name="Tutorial_RamjiPlaza_z6utki" Value="[!Ignore][!BalloonChat][!speaker:Albus]네. 악당들이 좋아하는 일을 하면 안되죠. 아이린 씨!"/>
+		<class name="Tutorial_RamjiPlaza_uazXvV" Value="[!Ignore][!Dialog][!speaker:Irene_Smile]그럴순 없지. 악당 녀석들의 함정에 넘어갈 뻔했군."/>
+		<class name="Tutorial_RamjiPlaza_wqOWuj" Value="[!Ignore][!Dialog][!speaker:Irene_Smile]고맙다. 트러블슈터!"/>
+		<class name="Tutorial_RamjiPlaza_ul3GGW" Value="[!Ignore][!Dialog][!speaker:Albus_Laugh]아니에요. 아이린 씨. 힘내세요! 응원합니다!"/>
+		<class name="Tutorial_RamjiPlaza_oehj6A" Value="[!Ignore][!BalloonChat][!speaker:Irene]하하! 고맙다!"/>
+		<class name="Tutorial_RamjiPlaza_pZLH3X" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]나도 힘내야겠는걸?"/>
+		<class name="Tutorial_RamjiPlaza_8YinRW" Value="[!Ignore][!Dialog][!speaker:Irene_Lonesome]지금은 멋지지 않다는 말인가..."/>
+		<class name="Tutorial_RamjiPlaza_0Fq3dA" Value="[!Ignore][!Dialog][!speaker:Albus_Surprise]아니 그런 말이 아니라..."/>
+		<class name="Tutorial_RamjiPlaza_fbE02m" Value="[!Ignore][!Dialog][!speaker:Irene_Lonesome]트러블슈터..."/>
+		<class name="Tutorial_RamjiPlaza_CL3rRp" Value="[!Ignore][!Dialog][!speaker:Irene_Heroic]그대가 인정할만한 멋진 히어로가 되겠네!!! 두고 봐.!!"/>
+		<class name="Tutorial_RamjiPlaza_MHHTGH" Value="[!Ignore][!BalloonChat][!speaker:Irene]제길 무시당했어..."/>
+		<class name="Tutorial_RamjiPlaza_jltQBM" Value="[!Ignore][!Dialog][!speaker:Albus_Embarrassed]이건 아닌데..."/>
+		<class name="Tutorial_RamjiPlaza_ucOPmM" Value="[!Ignore][!Dialog][!speaker:Irene_Rage]트러블슈터따위에게 실망이란 소리를 듣다니 치욕이다!"/>
+		<class name="Tutorial_RamjiPlaza_vmSDL2" Value="[!Ignore][!Dialog][!speaker:Albus_Serious]그러니 기운내세요. 이게 뭡니까! 히어로씨!"/>
+		<class name="Tutorial_RamjiPlaza_79g21i" Value="[!Ignore][!Dialog][!speaker:Irene_Surprise]트러블슈터... 너 히어로라고했나?"/>
+		<class name="Tutorial_RamjiPlaza_hcBDsy" Value="[!Ignore][!Dialog][!speaker:Albus_Serious]네 히어로 아이린 씨!"/>
+		<class name="Tutorial_RamjiPlaza_rQfvnc" Value="[!Ignore][!Dialog][!speaker:Irene_Heroic]그대가 인정할만한 멋진 히어로가 되겠네!!! 두고 봐.!!"/>
+		<class name="Tutorial_RamjiPlaza_OnooJQ" Value="[!Ignore][!BalloonChat][!speaker:Irene]힘내자! 아이린!"/>
+		<class name="Tutorial_RamjiPlaza_GSbTR9" Value="[!Ignore][!Dialog][!speaker:Albus_Laugh]재밌는 분이야."/>
+		<class name="Tutorial_RamjiPlaza_IZHECU" Value="[!Ignore][!Dialog][!speaker:Irene_Rage]뭐!!!!"/>
+		<class name="Tutorial_RamjiPlaza_A41SK5" Value="[!Ignore][!Dialog][!speaker:Albus_Serious]트러블슈터와 히어로에게 좌절할 시간이 어딨나요!"/>
+		<class name="Tutorial_RamjiPlaza_aC1C8c" Value="[!Ignore][!Dialog][!speaker:Albus_Laugh]힘내요. 우리. 악당들을 물리쳐야죠."/>
+		<class name="Tutorial_RamjiPlaza_4nN2HN" Value="[!Ignore][!Dialog][!speaker:Irene_Surprise]네 녀석..."/>
+		<class name="Tutorial_RamjiPlaza_0Y00UL" Value="[!Ignore][!BalloonChat][!speaker:Irene]트러블슈터! 고맙다!"/>
+		<class name="Tutorial_RamjiPlaza_Um3kcT" Value="[!Ignore][!BalloonChat][!speaker:Irene]난 당장 또 다른 악당을 찾아나서야겠다!"/>
+		<class name="Tutorial_RamjiPlaza_Ml9gjz" Value="[!Ignore][!Dialog][!speaker:Albus_Laugh]힘내세요. 아이린 씨."/>
+		<class name="Tutorial_RamjiPlaza_LaBfBR" Value="[!BalloonChat][!speaker:Ray]음? 또 무슨 일이 남았니?"/>
+		<class name="Tutorial_RamjiPlaza_aShBg9" Value="[!BalloonChat][!speaker:Albus]오늘 도와주셔서 감사합니다!!"/>
+		<class name="Tutorial_RamjiPlaza_1Aro9b" Value="[!Dialog][!speaker:Ray_Normal]큰 도움 못 줬는데 그렇게 말해주니 고맙네."/>
+		<class name="Tutorial_RamjiPlaza_xy9p3B" Value="[!Dialog][!speaker:Albus_Normal]아닙니다. 레이 씨가 아니었다면 이 상황 해결하지 못했을 거예요."/>
+		<class name="Tutorial_RamjiPlaza_RL5snb" Value="[!Dialog][!speaker:Ray_Normal]그래. 그렇게 생각해주면 고마울 뿐이야."/>
+		<class name="Tutorial_RamjiPlaza_OBKdZz" Value="[!Dialog][!speaker:Albus_Normal]네. 감사합니다."/>
+		<class name="Tutorial_RamjiPlaza_IERRjC" Value="[!Dialog][!speaker:Ray_Normal]오늘은 우연히 함께했지만, 다음엔 너 혼자일지도 몰라.."/>
+		<class name="Tutorial_RamjiPlaza_VPyMqv" Value="[!Dialog][!speaker:Albus_Normal]좀 더 노력하겠습니다. 더 강하게 성장할 겁니다."/>
+		<class name="Tutorial_RamjiPlaza_45B0Pd" Value="[!BalloonChat][!speaker:Ray]넌 충분히 그럴 수 있을 거야~"/>
+		<class name="Tutorial_RamjiPlaza_XhcGDP" Value="[!Dialog][!speaker:Leton_Normal]까만 머리. 이제 속이 좀 시원하나?"/>
+		<class name="Tutorial_RamjiPlaza_JVZn8z" Value="[!Dialog][!speaker:Albus_Happy]정말 도와주셔서 감사합니다."/>
+		<class name="Tutorial_RamjiPlaza_YaJ1YT" Value="[!Dialog][!speaker:Leton_Smile]오늘은 우리랑 만났지만, 다음엔 혼자 해결해야 할 거야."/>
+		<class name="Tutorial_RamjiPlaza_nZJSLa" Value="[!Dialog][!speaker:Albus_Normal]더 열심히 노력하겠습니다."/>
+		<class name="Tutorial_RamjiPlaza_JenLw8" Value="[!Dialog][!speaker:Albus_Normal]강해지도록 하겠습니다."/>
+		<class name="Tutorial_RamjiPlaza_JVTL97" Value="[!Dialog][!speaker:Leton_Normal]강해지는 것도 좋지만 좋은 동료를 찾아."/>
+		<class name="Tutorial_RamjiPlaza_qhZsJq" Value="[!Dialog][!speaker:Leton_Smile]좋은 동료만큼 힘이 되는 건 없지."/>
+		<class name="Tutorial_RamjiPlaza_v7gHAd" Value="[!BalloonChat][!speaker:Leton]자. 그럼 이만!"/>
+		<class name="Tutorial_RamjiPlaza_IhUs8M" Value="[!Dialog][!speaker:Leton_Smile]뭐. 생각 없이 날뛰다 보니 사고만 치다 가는 것 같군."/>
+		<class name="Tutorial_RamjiPlaza_k5kbPq" Value="[!Dialog][!speaker:Albus_Normal]아닙니다. 정말 많은 도움이 되었습니다."/>
+		<class name="Tutorial_RamjiPlaza_R2aE6t" Value="[!Dialog][!speaker:Albus_Normal]정말 감사드립니다!"/>
+		<class name="Tutorial_RamjiPlaza_9bNI9L" Value="[!BalloonChat][!speaker:Leton]그래. 그럼 난 이만 일이 많이 늦어서~"/>
+		<class name="Tutorial_RamjiPlaza_0CgWOa" Value="[!Title]미련이 남지 않도록..."/>
+		<class name="Tutorial_RamjiPlaza_ReU2o6" Value="[!Title]람지플라자"/>
+		<class name="Tutorial_RamjiPlaza_IF9yEA" Value="[!Dialog]알버스는 브루스 씨가 추천한 람지플라자에 도착했다."/>
+		<class name="Tutorial_RamjiPlaza_V6Y8bT" Value="[!Dialog][!speaker:Albus_Surprise]....."/>
+		<class name="Tutorial_RamjiPlaza_TiBHhy" Value="[!Dialog][!speaker:Albus_SurpriseStare]여기 예전엔 그냥 들판이었는데..."/>
+		<class name="Tutorial_RamjiPlaza_tpws2w" Value="[!Title]야외 미술 전시관"/>
+		<class name="Tutorial_RamjiPlaza_xfRul9" Value="[!Title]람지플라자"/>
+		<class name="Tutorial_RamjiPlaza_nnfIyV" Value="[!Dialog][!speaker:Albus_SurpriseStare]이게 람지스트 씨의 그림이구나..."/>
+		<class name="Tutorial_RamjiPlaza_prs5hM" Value="[!Dialog]『대재해를 그린 작가. 람지스트.』"/>
+		<class name="Tutorial_RamjiPlaza_mJbtOZ" Value="[!Dialog]그는 대재해 작품 이후, 유명세와 상관없이 꾸준히 작품 활동을 이어갔다."/>
+		<class name="Tutorial_RamjiPlaza_8s75QK" Value="[!Dialog][!speaker:Civil_Oldman_Normal]여기가 만들어지기 1년 전에 그린 그림일세."/>
+		<class name="Tutorial_RamjiPlaza_16Stt5" Value="[!Dialog][!speaker:Albus_Surprise]그럼 이 광장도『예언의 땅』이군요?"/>
+		<class name="Tutorial_RamjiPlaza_FWeVTE" Value="[!Dialog][!speaker:Civil_Oldman_Normal]『예언의 땅』은 무슨... 그림 그려놓고 똑같이 만든 건데..."/>
+		<class name="Tutorial_RamjiPlaza_BwpuWK" Value="[!Dialog]사람들은 람지스트의 작품에 담긴 장소를 『예언의 땅』이라고 불렀다."/>
+		<class name="Tutorial_RamjiPlaza_j8mNeW" Value="[!Dialog]람지스트의 광적인 추종자들은 그의 그림을『신의 계시』라 칭하며 『예언의 땅』을 찾으려고 노력한다."/>
+		<class name="Tutorial_RamjiPlaza_r061NI" Value="[!Dialog]하지만 그의 그림의 장소는 실재하지 않는 경우가 대다수였다."/>
+		<class name="Tutorial_RamjiPlaza_fCt41e" Value="[!Dialog][!speaker:Civil_Oldman_Normal]한낱 그림의 장소가 존재하지 않는다고 인위적으로 만들다니... "/>
+		<class name="Tutorial_RamjiPlaza_UbBWdo" Value="[!Dialog][!speaker:Civil_Oldman_Normal]나 같은 시민이야 이런 좋은 휴식 장소를 얻었으니 상관없는 일이다만."/>
+		<class name="Tutorial_RamjiPlaza_yJXGvz" Value="[!Dialog][!speaker:Albus_Laugh]이유야 어떻든 이 광장이 만들어졌으니 그의『예언』은 또 이루어진 거네요."/>
+		<class name="Tutorial_RamjiPlaza_N46piB" Value="[!Dialog][!speaker:Civil_Oldman_Normal]『예언』은 무슨? 내가 이 공원이 만들어지고 나서 매일같이 나왔네."/>
+		<class name="Tutorial_RamjiPlaza_HsXJxe" Value="[!Dialog][!speaker:Civil_Oldman_Normal]하지만 저 그림과 같은 상황이 일어난 적이 없어."/>
+		<class name="Tutorial_RamjiPlaza_V4cCmz" Value="[!Dialog][!speaker:Albus_SurpriseStare]아직 안 일어난 거 아닐까요?"/>
+		<class name="Tutorial_RamjiPlaza_lzBQBX" Value="[!Dialog][!speaker:Civil_Oldman_Normal]쯧쯧... 젊은 사람이 정신 차리게."/>
+		<class name="Tutorial_RamjiPlaza_Jju4ta" Value="[!Dialog][!speaker:Civil_Oldman_Normal]자네 나이면 『예언』같은데 관심 가지기보다 『노력』을 해야 할 시기야."/>
+		<class name="Tutorial_RamjiPlaza_M0NmxY" Value="[!Dialog][!speaker:Albus_Laugh]......"/>
+		<class name="Tutorial_RamjiPlaza_LClsUD" Value="[!Dialog]이어지는 노인의 질책에 알버스는 멋쩍은 웃음을 지으며 발길을 돌렸다."/>
+		<class name="Tutorial_RamjiPlaza_rnQeSp" Value="[!Title]중앙 분수대"/>
+		<class name="Tutorial_RamjiPlaza_71dsMu" Value="[!Title]람지플라자"/>
+		<class name="Tutorial_RamjiPlaza_qOD1d3" Value="[!Dialog][!speaker:Civil_Boy_Normal]아이스 쵸코 주세요!"/>
+		<class name="Tutorial_RamjiPlaza_DWRUS2" Value="[!Dialog][!speaker:Civil_Girl_Normal]전 새콤달콤 주스요!"/>
+		<class name="Tutorial_RamjiPlaza_gJe5uT" Value="[!Dialog][!speaker:Anne_Surprise]벌써 이렇게 줄이..."/>
+		<class name="Tutorial_RamjiPlaza_xEECgb" Value="[!Dialog][!speaker:Anne_Smile]조금 빨리 올 걸 그랬어..."/>
+		<class name="Tutorial_RamjiPlaza_hZoUaW" Value="[!Title]가로수 쉼터"/>
+		<class name="Tutorial_RamjiPlaza_nnmZcR" Value="[!Title]람지플라자"/>
+		<class name="Tutorial_RamjiPlaza_FnE5vo" Value="[!Dialog][!speaker:Bianca_Happy]알리사. 그래서 있지 내가~"/>
+		<class name="Tutorial_RamjiPlaza_SlwEtN" Value="[!Dialog][!speaker:Bianca_Smile]그래서 내가 이렇게 말했어! &apos;내 인생은 내가 알아서 해! 할아범!&apos;"/>
+		<class name="Tutorial_RamjiPlaza_HsHCRB" Value="[!Dialog][!speaker:Bianca_Happy]그때 그 할아범 표정을 봤어야 했어!! "/>
+		<class name="Tutorial_RamjiPlaza_4iGEQI" Value="[!Dialog][!speaker:Alisa_Smile]어르신이 가슴이 아주 아프셨겠어."/>
+		<class name="Tutorial_RamjiPlaza_fRwyBv" Value="[!Dialog][!speaker:Bianca_Happy]당연하지."/>
+		<class name="Tutorial_RamjiPlaza_8ETabI" Value="[!Dialog][!speaker:Alisa_Normal]비비. 더 좋은 표현 방법이 있었을 거야."/>
+		<class name="Tutorial_RamjiPlaza_e2yDiO" Value="[!Dialog][!speaker:Bianca_Smile]몰라~ 알고 싶지도 않고~"/>
+		<class name="Tutorial_RamjiPlaza_S2i622" Value="[!Title]참방참방 쉼터 휴게실"/>
+		<class name="Tutorial_RamjiPlaza_sfXklH" Value="[!Title]람지플라자"/>
+		<class name="Tutorial_RamjiPlaza_XfQMYZ" Value="[!Dialog][!speaker:Leton_Smile]레이. 이제 슬슬 가야지. 늦었어."/>
+		<class name="Tutorial_RamjiPlaza_e6poPp" Value="[!Dialog][!speaker:Ray_Smile]걱정 마~☆ 아직 시간 좀 더 있으니까~"/>
+		<class name="Tutorial_RamjiPlaza_ftmcEi" Value="[!Dialog][!speaker:Ray_Smile2]레톤 너 동전 좀 있어? 있으면 빨리 내놔~♡"/>
+		<class name="Tutorial_RamjiPlaza_99dA1q" Value="[!Dialog][!speaker:Leton_Normal]뭘 또 사려고?"/>
+		<class name="Tutorial_RamjiPlaza_H5RggO" Value="[!Dialog][!speaker:Ray_Smile2]이거~☆"/>
+		<class name="Tutorial_RamjiPlaza_GTUNon" Value="[!Dialog][!speaker:Leton_Stare]넌 도대체 이 깡통들을 왜 모으는 거냐..."/>
+		<class name="Tutorial_RamjiPlaza_EMawXX" Value="[!Dialog][!speaker:Ray_Smile]귀엽자나~♡"/>
+		<class name="Tutorial_RamjiPlaza_GHR3Py" Value="[!Title]야외 식당가"/>
+		<class name="Tutorial_RamjiPlaza_yZfAw4" Value="[!Title]람지플라자"/>
+		<class name="Tutorial_RamjiPlaza_KK10Y3" Value="[!Dialog][!speaker:Irene_Normal]잘 먹겠습니다!"/>
+		<class name="Tutorial_RamjiPlaza_uMy8ea" Value="[!Dialog][!speaker:Sion_Happy]흐흡~~~~~~~ 흡!"/>
+		<class name="Tutorial_RamjiPlaza_slwsNa" Value="[!Dialog][!speaker:Luna_Bored]저게 도대체 인간이야..."/>
+		<class name="Tutorial_RamjiPlaza_OJdl1L" Value="[!Dialog][!speaker:Marco_Smile]자리가 나려면 한참 기다려야겠다."/>
+		<class name="Tutorial_RamjiPlaza_3Fm7OR" Value="[!Dialog][!speaker:Luna_Annoying]바보 멍청이 마르코."/>
+		<class name="Tutorial_RamjiPlaza_0ncu8X" Value="[!Dialog][!speaker:Luna_Annoying]밥은 네가 책임진다며!"/>
+		<class name="Tutorial_RamjiPlaza_H3mv1x" Value="[!Dialog][!speaker:Marco_Smile]야... 내 탓이 아니잖아..."/>
+		<class name="Tutorial_RamjiPlaza_Zqrcy3" Value="[!Dialog][!speaker:Civil_Jessie_Normal]앤 다음은 어디 갈까?"/>
+		<class name="Tutorial_RamjiPlaza_4VyyNx" Value="[!Dialog][!speaker:Anne_Smile]참방참방 쉼터로 가자! 어때?"/>
+		<class name="Tutorial_RamjiPlaza_QMhPhI" Value="[!Dialog][!speaker:Civil_Jessie_Normal]좋아. 그럼 모두 참방참방 쉼터로 가자."/>
+		<class name="Tutorial_RamjiPlaza_Ejtf99" Value="[!Title]가로수 산책길"/>
+		<class name="Tutorial_RamjiPlaza_iNFsP4" Value="[!Dialog][!speaker:Albus_Laugh]10년은 너무 오래 걸린 건가..."/>
+		<class name="Tutorial_RamjiPlaza_SxXSGP" Value="[!Dialog][!speaker:Albus_Normal]정말 많이 변했구나..."/>
+		<class name="Tutorial_RamjiPlaza_cCbHZr" Value="[!Dialog]익숙함을 찾아보기 위해 오래된 기억을 더듬을수록 낯섦만 가득할 뿐이었다."/>
+		<class name="Tutorial_RamjiPlaza_DpdglU" Value="[!Dialog][!speaker:Albus_SurpriseStare]그래도 이 시기에 꽃씨가 날리는 건 여전하구나..."/>
+		<class name="Tutorial_RamjiPlaza_4Menop" Value="[!Dialog]도시의 외형은 변했지만, 지역적 특색마저 변하진 않았다. "/>
+		<class name="Tutorial_RamjiPlaza_og71Hv" Value="[!Dialog]하지만 그것이 전부였다."/>
+		<class name="Tutorial_RamjiPlaza_VfGfD1" Value="[!Dialog][!speaker:Albus_Normal]&apos;이제 시작인 걸... 조급해하지 말자.&apos;"/>
+		<class name="Tutorial_RamjiPlaza_wRDfos" Value="[!Dialog][!speaker:Albus_Laugh]이제 슬슬 돌아가 볼까..."/>
+		<class name="Tutorial_RamjiPlaza_25ue9C" Value="[!Dialog][!speaker:Albus_Surprise]아니!!..."/>
+		<class name="Tutorial_RamjiPlaza_WlQjRF" Value="[!Dialog]한순간이었다."/>
+		<class name="Tutorial_RamjiPlaza_3msl2P" Value="[!Dialog]람지플라자를 나가려는 알버스 앞으로 한 무리의 검은 승합차들이 스쳐지나갔다."/>
+		<class name="Tutorial_RamjiPlaza_EBg6nD" Value="[!Dialog]곧 총격과 폭발음 그리고 시민들의 비명이 이어졌다."/>
+		<class name="Tutorial_RamjiPlaza_xWGWcY" Value="[!Dialog][!speaker:Albus_Surprise]이럴 수가... 시민들을 구해야 해..."/>
+		<class name="Tutorial_RamjiPlaza_UVDSHv" Value="[!Title]상황 관제실"/>
+		<class name="Tutorial_RamjiPlaza_8bjKpC" Value="[!Title]바람장벽지구 경찰청"/>
+		<class name="Tutorial_RamjiPlaza_QiXtEk" Value="[!Dialog][!speaker:Albus_Serious][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;]여기는 트러블슈터 알버스. 은빛구름 지역 람지플라자에 테러 발생."/>
+		<class name="Tutorial_RamjiPlaza_KmjVyQ" Value="[!Dialog][!speaker:Albus_Serious][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;]빠른 지원 요청 바랍니다."/>
+		<class name="Tutorial_RamjiPlaza_eQpP2w" Value="[!Dialog][!speaker:Joel_Costume_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]  트러블슈터 알버스 님. 현장으로 가는 길에 연쇄 추돌 사고로 병력의 도착이 30분 이상 지연될 것 같습니다."/>
+		<class name="Tutorial_RamjiPlaza_cmUYaC" Value="[!Dialog][!speaker:Albus_Serious][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;]알겠습니다. 최대한 빠른 지원 부탁드립니다."/>
+		<class name="Tutorial_RamjiPlaza_yFzPHu" Value="[!Dialog][!speaker:Albus_Normal]시민들 상황은 어떠한가요?"/>
+		<class name="Tutorial_RamjiPlaza_IBv2u5" Value="[!Dialog][!speaker:VHPD_Assault_Normal]혼절했던 시민들은 치유능력자의 도움으로 위급한 상황은 넘겼습니다."/>
+		<class name="Tutorial_RamjiPlaza_6MAVJu" Value="[!Dialog][!speaker:Albus_Surprise]치유능력자?"/>
+		<class name="Tutorial_RamjiPlaza_QbC5AO" Value="[!Dialog][!speaker:VHPD_Assault_Normal]넵. 저희 지구에 몇 안 되는 치유능력자인 앤 메이시 양이 현장에 있어서 많은 도움을 받았습니다."/>
+		<class name="Tutorial_RamjiPlaza_poq1ao" Value="[!Dialog][!speaker:Albus_Think]아까 현장에서 치유능력자가 있었다면 많은 도움이 되었을 텐데..."/>
+		<class name="Tutorial_RamjiPlaza_gA5VH8" Value="[!Dialog][!speaker:Albus_Normal]혹시 치유능력자분, 앤 메이시 양은 어디 계시는지?"/>
+		<class name="Tutorial_RamjiPlaza_6xcqiZ" Value="[!Dialog][!speaker:VHPD_Assault_Normal]조금 전 구급 차량과 함께 인근 병원으로 이동했습니다."/>
+		<class name="Tutorial_RamjiPlaza_ePS2Ma" Value="[!Dialog][!speaker:Albus_Laugh]아 그렇군요."/>
+		<class name="Tutorial_RamjiPlaza_WcAD9p" Value="[!Dialog][!speaker:Albus_Normal]다음에 뵈면 감사의 말씀을 드려야겠네요."/>
+		<class name="Tutorial_RamjiPlaza_UX8D25" Value="[!Dialog][!speaker:VHPD_Assault_Normal]그리고 트러블슈터 알버스 님."/>
+		<class name="Tutorial_RamjiPlaza_mNdbFh" Value="[!Dialog][!speaker:VHPD_Assault_Normal]몇몇 시민들 말로는 구조 활동 중에 알버스 님 말고도 몇분 더 계셨다고 하는데..."/>
+		<class name="Tutorial_RamjiPlaza_HGr9Yb" Value="[!Dialog][!speaker:Albus_Normal]네 제가 현장 권한으로 몇몇 분들을 구조 활동에 참여시켰습니다."/>
+		<class name="Tutorial_RamjiPlaza_EyT2kO" Value="[!Dialog][!speaker:VHPD_Assault_Normal]잘 아시겠지만, 민간인이 사건 현장에 참여했다가 문제가 생기면 모든 책임이 알버스 님에게 돌아갑니다."/>
+		<class name="Tutorial_RamjiPlaza_Lrcr5y" Value="[!Dialog][!speaker:Albus_Normal]잘 알고 있습니다. 조심하도록 하겠습니다."/>
+		<class name="Tutorial_RamjiPlaza_Vj0aPi" Value="[!Dialog][!speaker:VHPD_Assault_Normal]혹시나 해서 드린 말씀입니다. 개의치 마십시오."/>
+		<class name="Tutorial_RamjiPlaza_bST9Pk" Value="[!Dialog][!speaker:Albus_Normal]혹시 범인들의 정체와 목적은 좀 밝혀졌나요?"/>
+		<class name="Tutorial_RamjiPlaza_zvB6B2" Value="[!Dialog][!speaker:VHPD_Assault_Normal]그건 저희도... 범인들은 일단 지구 이탈자들이 대부분이긴 합니다."/>
+		<class name="Tutorial_RamjiPlaza_F3bo7J" Value="[!Dialog][!speaker:VHPD_Assault_Normal]일단 조사가 완료되는 대로 확인하실 수 있도록 연락드리겠습니다."/>
+		<class name="Tutorial_RamjiPlaza_5L83jA" Value="[!BalloonChat][!speaker:Albus]도대체 뭐 하는 녀석들인 거야..."/>
+		<class name="Tutorial_RamjiPlaza_xpeXyZ" Value="[!BalloonChat][!speaker:EnemyRoamer04_2]한술을 믿습니까?"/>
+		<class name="Tutorial_RamjiPlaza_xY7eZU" Value="[!BalloonChat][!speaker:EnemyRoamer04_1]믿습니다!"/>
+		<class name="Tutorial_RamjiPlaza_8J0F3q" Value="[!BalloonChat][!speaker:EnemyRoamer04_3]믿습니다!"/>
+		<class name="Tutorial_RamjiPlaza_PKjfoG" Value="[!Ignore][!Dialog][!speaker:VHPD_Assault_Normal]그건 저희도... 범인들은 단순 포교활동이었다고 하는데..."/>
+		<class name="Tutorial_RamjiPlaza_7Plplw" Value="[!Ignore][!Dialog][!speaker:VHPD_Assault_Normal]조사가 완료되는 대로 확인하실 수 있도록 연락드리겠습니다."/>
+		<class name="Tutorial_RamjiPlaza_eXpkPq" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]알겠습니다. 그럼 전 이만 돌아가겠습니다."/>
+		<class name="Tutorial_RamjiPlaza_oWFcsK" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]현장 수습 잘 부탁드립니다."/>
+		<class name="Tutorial_RamjiPlaza_2wAYjt" Value="[!Ignore][!Dialog][!speaker:VHPD_Assault_Normal]넵. 고생하셨습니다. 트러블슈터 알버스 님."/>
+		<class name="Tutorial_RamjiPlaza_WkiQQJ" Value="[!Ignore][!Dialog][!speaker:VHPD_Assault_Normal]다음에 다른 현장에서 뵙도록 하겠습니다."/>
+		<class name="Tutorial_RamjiPlaza_Z5aV3M" Value="[!BalloonChat][!speaker:Civil_Anne]다치셨네요!"/>
+		<class name="Tutorial_RamjiPlaza_B3GmI4" Value="[!BalloonChat][!speaker:Civil_Anne]안 되겠어요. 잠시만요."/>
+		<class name="Tutorial_RamjiPlaza_IghMni" Value="[!BalloonChat]치유능력자잖아!!"/>
+		<class name="Tutorial_RamjiPlaza_S7SYPZ" Value="[!Dialog][!speaker:Gangster_SpoonNormal_]우리는 모두 가슴에!"/>
+		<class name="Tutorial_RamjiPlaza_FHGMU6" Value="[!BalloonChat][!speaker:Enemy08_2]숟가락 하나를 품고 있지!!"/>
+		<class name="Tutorial_RamjiPlaza_RHuAcX" Value="[!BalloonChat][!speaker:Enemy08_1]숟가락 하나를 품고 있지!!"/>
+		<class name="Tutorial_RamjiPlaza_0obfBc" Value="[!BalloonChat][!speaker:EnemyRoamer03_1]숟가락 하나를 품고 있지!!"/>
+		<class name="Tutorial_RamjiPlaza_WvIkAz" Value="[!BalloonChat][!speaker:EnemyRoamer03_2]숟가락 하나를 품고 있지!!"/>
+		<class name="Tutorial_RamjiPlaza_H67JoV" Value="[!Dialog][!speaker:Gangster_SpoonThin_Normal]이렇게 많은 동지들이 있을 줄이야..."/>
+		<class name="Tutorial_RamjiPlaza_PYUQR6" Value="[!Dialog][!speaker:Gangster_SpoonFat_Normal]동지들을 만나 반갑소."/>
+		<class name="Tutorial_RamjiPlaza_V1VdFR" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Normal]이제 시작이네. 그대들의 믿음이 기적을 일으킬걸세."/>
+		<class name="Tutorial_RamjiPlaza_ZVaYK3" Value="[!Dialog][!speaker:Albus_Surprise]아... 아까 그 아이..."/>
+		<class name="Tutorial_RamjiPlaza_NGm7JV" Value="[!Dialog][!speaker:VHPD_Assault_Normal]구조 도중 만나셨군요. 앤 메이시 양이라고 합니다."/>
+		<class name="Tutorial_RamjiPlaza_ISmUlg" Value="[!Dialog][!speaker:VHPD_Assault_Normal]종종 사건 현장 지원도 와주곤 하는 착한 아이죠."/>
+		<class name="Tutorial_RamjiPlaza_i8SJ6t" Value="[!Dialog][!speaker:Albus_Normal]경찰들 내에선 이미 유명인사였군요."/>
+		<class name="Tutorial_RamjiPlaza_ZXXqlJ" Value="[!Dialog][!speaker:VHPD_Assault_Normal]이미 많은 트러블슈터 팀에서 스카웃 제의를 받고 있나 봅니다."/>
+		<class name="Tutorial_RamjiPlaza_LDA1SN" Value="[!Dialog][!speaker:Albus_Normal]네 말씀하세요."/>
+		<class name="Tutorial_RamjiPlaza_Fb3La8" Value="[!Dialog][!speaker:VHPD_Assault_Normal]외람된 말씀이지만..."/>
+		<class name="Tutorial_RamjiPlaza_x3c9UV" Value="[!Dialog][!speaker:Albus_Laugh]곤란해하지 않으셔도 됩니다. 말씀하세요."/>
+		<class name="Tutorial_RamjiPlaza_QanBjl" Value="[!Dialog][!speaker:VHPD_Assault_Normal]민간인이 현장에 참여했다가 문제가 생기면 모든 책임이 알버스 님에게 돌아갑니다."/>
+		<class name="Tutorial_RamjiPlaza_OhOc1B" Value="[!Dialog][!speaker:Albus_Normal]잘 알고 있습니다. 오늘은 상황이 급박해서..."/>
+		<class name="Tutorial_RamjiPlaza_f1AyEC" Value="[!Dialog][!speaker:VHPD_Assault_Normal]넵. 알겠습니다."/>
+	</idspace>
+</idspaces>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="NpcGen">
+	<class name="Alley_Base_Night_Lobby"/>
+	<class name="Bar_Silverlining">
+		<NpcList>
+			<property Npc="Don" StandAni="NPCstd" ClickScript="Don_SilverliningClick" PreClickScript="Don_SilverliningPreClick" HelloMessage="None">
+				<Position X="51.35" Y="50.5" Z="6"/>
+				<Direction X="-3" Y="-1"/>
+			</property>
+			<property Npc="Pierto" StandAni="NPCstd" ClickScript="NPCNormalDialog" HelloMessage="None" VisibleScript="CheckNPCVisible_Pierto_Peddler_Silverlining">
+				<Position X="46.35" Y="50" Z="6"/>
+				<Direction X="1" Y="2"/>
+			</property>
+			<property Npc="Niels" StandAni="NPCstd" ClickScript="NPCNormalDialog" HelloMessage="None" VisibleScript="CheckNPCVisible_Pierto_Peddler_Silverlining">
+				<Position X="47.5" Y="50.1" Z="6"/>
+				<Direction X="-2" Y="1"/>
+			</property>
+			<property Npc="Giselle" StandAni="NPCstd" ClickScript="NPCNormalDialog" HelloMessage="None" VisibleScript="CheckNPCVisible_Giselle_Silverlining">
+				<Position X="50.3" Y="53" Z="6"/>
+				<Direction X="1" Y="2"/>
+			</property>
+		</NpcList>
+	</class>
+	<class name="Bar_Silverlining_Close"/>
+	<class name="ControlTower_13"/>
+	<class name="CrowNest"/>
+	<class name="CrowBill"/>
+	<class name="WhiteCloudStation"/>
+	<class name="GoblinTunnel"/>
+	<class name="LobbyMain"/>
+	<class name="LobbyMemorial"/>
+	<class name="MemorialPark"/>
+	<class name="Metrodium"/>
+	<class name="Office_Albus"/>
+	<class name="ShooterStreet">
+		<NpcList>
+			<property Npc="NPC_Neguri" StandAni="NPCstd" ClickScript="None">
+				<Position X="38" Y="56" Z="42"/>
+				<Direction X="1" Y="0"/>
+			</property>
+			<property Npc="NPC_Neguri_Red" StandAni="NPCstd" ClickScript="None">
+				<Position X="39" Y="55" Z="42"/>
+				<Direction X="0" Y="1"/>
+			</property>
+			<property Npc="NPC_Yasha" StandAni="NPCstd" ClickScript="None">
+				<Position X="37" Y="60" Z="42"/>
+				<Direction X="1" Y="0"/>
+			</property>
+			<property Npc="NPC_Dorori" StandAni="NPCstd" ClickScript="None">
+				<Position X="41" Y="56" Z="52"/>
+				<Direction X="1" Y="0"/>
+			</property>
+			<property Npc="NPC_Dorori_Wind" StandAni="NPCstd" ClickScript="None">
+				<Position X="41" Y="55" Z="52"/>
+				<Direction X="1" Y="0"/>
+			</property>
+			<property Npc="NPC_Tima" StandAni="NPCstd" ClickScript="None">
+				<Position X="38" Y="59" Z="42"/>
+				<Direction X="1" Y="0"/>
+			</property>
+			<property Npc="NPC_Tima_Black" StandAni="NPCstd" ClickScript="None">
+				<Position X="38" Y="58" Z="42"/>
+				<Direction X="-1" Y="0"/>
+			</property>
+			<property Npc="WorkTable_A" StandAni="NPCstd" ClickScript="NPCNormalDialog">
+				<Position X="37" Y="46" Z="2"/>
+				<Direction X="-1" Y="0"/>
+			</property>
+			<property Npc="WorkTable_B" StandAni="NPCstd" ClickScript="NPCNormalDialog">
+				<Position X="37" Y="49" Z="2"/>
+				<Direction X="1" Y="0"/>
+			</property>
+			<property Npc="MapViewer" StandAni="NPCstd" ClickScript="NPCNormalDialog">
+				<Position X="59" Y="48" Z="2"/>
+				<Direction X="0" Y="-1"/>
+			</property>
+			<property Npc="MapViewer" StandAni="NPCstd" ClickScript="NPCNormalDialog">
+				<Position X="58" Y="48" Z="2"/>
+				<Direction X="0" Y="-1"/>
+			</property>
+			<property Npc="JukeBox" StandAni="NPCstd" ClickScript="NPCNormalDialog">
+				<Position X="61" Y="54" Z="8"/>
+				<Direction X="1" Y="0"/>
+			</property>
+			<property Npc="AL" StandAni="NPCstd" ClickScript="NPCNormalDialog">
+				<Position X="43" Y="60" Z="2"/>
+				<Direction X="1" Y="0"/>
+			</property>
+			<property Npc="Leo" StandAni="NPCstd" ClickScript="NPCNormalDialog">
+				<Position X="37" Y="63" Z="2"/>
+				<Direction X="0" Y="1"/>
+			</property>
+			<property Npc="Hundred" StandAni="NPCstd" ClickScript="NPCNormalDialog">
+				<Position X="44" Y="50" Z="2"/>
+				<Direction X="1" Y="0"/>
+			</property>
+			<property Npc="Oleg" StandAni="NPCstd" ClickScript="NPCNormalDialog">
+				<Position X="55" Y="33" Z="5"/>
+				<Direction X="0" Y="1"/>
+			</property>
+			<property Npc="Dembel" StandAni="NPCstd" ClickScript="NPCNormalDialog">
+				<Position X="46" Y="33" Z="5"/>
+				<Direction X="0" Y="1"/>
+			</property>
+			<property Npc="Sam" StandAni="NPCstd" ClickScript="NPCNormalDialog">
+				<Position X="52" Y="60" Z="2"/>
+				<Direction X="0" Y="-1"/>
+			</property>
+			<property Npc="Sabana" StandAni="NPCstd" ClickScript="NPCNormalDialog">
+				<Position X="65" Y="33" Z="5"/>
+				<Direction X="0" Y="1"/>
+			</property>
+			<property Npc="Camila" StandAni="NPCstd" ClickScript="NPCNormalDialog">
+				<Position X="68" Y="33" Z="5"/>
+				<Direction X="0" Y="1"/>
+			</property>
+			<property Npc="Bruna" StandAni="NPCstd" ClickScript="NPCNormalDialog">
+				<Position X="69" Y="53" Z="8"/>
+				<Direction X="-1" Y="0"/>
+			</property>
+			<property Npc="Diogo" StandAni="NPCstd" ClickScript="NPCNormalDialog">
+				<Position X="36" Y="39" Z="2"/>
+				<Direction X="0" Y="1"/>
+			</property>
+			<property Npc="Roberto" StandAni="NPCstd" ClickScript="NPCNormalDialog">
+				<Position X="59" Y="59" Z="8"/>
+				<Direction X="0" Y="-1"/>
+			</property>
+			<property Npc="Dimitri" StandAni="NPCstd" ClickScript="NPCNormalDialog">
+				<Position X="65.3" Y="57" Z="5"/>
+				<Direction X="-1" Y="0"/>
+			</property>
+		</NpcList>
+	</class>
+</idspace>

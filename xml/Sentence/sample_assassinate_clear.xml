@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="sample_assassinate_clear_xz2Y2f" Value="[!Dashboard:HitList]남은 표적 수"/>
+		<class name="sample_assassinate_clear_KO8c7W" Value="[!Objective]표적을 처치하세요"/>
+		<class name="sample_assassinate_clear_Usngdq" Value="[!Objective]적을 전멸시켜라!"/>
+	</idspace>
+</idspaces>

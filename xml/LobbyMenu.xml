@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="LobbyMenu">
+	<schema>
+		<rule property="KeyBinding" type="link" target="KeyBinding"/>
+	</schema>
+	<class name="Company" Priority="1" Title="회사" Desc="" Image="Icons/CompanyInfo" PushedImage="Icons/CompanyInfo_Pushed" KeyBinding="OfficeCompany"/>
+	<class name="Roster" Priority="2" Title="사원 정보" Desc="" Image="Icons/RosterInfo" PushedImage="Icons/RosterInfo_Pushed" KeyBinding="OfficeRoster"/>
+	<class name="Beast" Priority="3" Title="야수 목록" Desc="" Image="Icons/BeastInfo" PushedImage="Icons/BeastInfo_Pushed" KeyBinding="OfficeBeast"/>
+	<class name="Machine" Priority="4" Title="기계 목록" Desc="" Image="Icons/MachineInfo" PushedImage="Icons/MachineInfo_Pushed" KeyBinding="OfficeMachine"/>
+	<class name="Quest" Priority="5" Title="의뢰 목록" Desc="" Image="Icons/QuestInfo" PushedImage="Icons/QuestInfo_Pushed" KeyBinding="OfficeQuest"/>
+	<class name="Inventory" Priority="6" Title="창고" Desc="" Image="Icons/Inventory" PushedImage="Icons/Inventory_Pushed" KeyBinding="OfficeInventory"/>
+	<class name="MasteryInventory" Priority="7" Title="특성 목록" Desc="" Image="Icons/MasteryInventory" PushedImage="Icons/MasteryInventory_Pushed" KeyBinding="OfficeMastery"/>
+	<class name="ModuleInventory" Priority="8" Title="모듈 목록" Desc="" Image="Icons/ModuleInventory" PushedImage="Icons/ModuleInventory_Pushed" KeyBinding="OfficeModule"/>
+	<class name="MailBox" Priority="9" Title="우편함" Desc="" Image="Icons/Mail" PushedImage="Icons/Mail_Pushed" KeyBinding="OfficeMail"/>
+	<class name="Community" Priority="10" Title="커뮤니티" Desc="" Image="Icons/Mail" PushedImage="Icons/Mail_Pushed" KeyBinding="Community"/>
+	<class name="LobbyMinimap" Priority="11" Title="미니맵" Desc="" Image="Icons/Minimap" PushedImage="Icons/Minimap_Pushed" KeyBinding="LobbyMinimap"/>
+	<class name="Friend" Priority="11.1" Title="친구 목록" Desc="" Image="Icons/Roster" PushedImage="Icons/Roster" KeyBinding="None"/>
+	<class name="Guild" Priority="11.2" Title="길드" Desc="" Image="Icons/Option" PushedImage="Icons/Option_Pushed" KeyBinding="None"/>
+	<class name="PersonalShop" Priority="11.3" Title="개인 상점" Desc="" Image="Icons/Option" PushedImage="Icons/Option_Pushed" KeyBinding="None"/>
+	<class name="ZoneMove" Priority="12" Title="지역 이동" Desc="" Image="Icons/ZoneMove" PushedImage="Icons/ZoneMove_Pushed" KeyBinding="OfficeLocation"/>
+	<class name="Option" Priority="13" Title="설정" Desc="" Image="Icons/Option" PushedImage="Icons/Option_Pushed" KeyBinding="CommonEscape"/>
+</idspace>

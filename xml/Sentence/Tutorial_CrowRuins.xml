@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Tutorial_CrowRuins_uOaJ4Y" Value="[!Dashboard:Counter]남은 추적자 수"/>
+		<class name="Tutorial_CrowRuins_MRaIoS" Value="[!Dashboard:Counter]남은 스푼교도 수"/>
+		<class name="Tutorial_CrowRuins_8fyGuV" Value="[!Dashboard:ObjectiveMarker]해당 지역에 도착하면 현장을 이탈할 수 있습니다."/>
+		<class name="Tutorial_CrowRuins_62jEPx" Value="[!Dashboard:TimeLimiter]다음 추적자 도착까지 남은 시간"/>
+		<class name="Tutorial_CrowRuins_bVCDBT" Value="[!Dashboard:Counter]도주한 적 수"/>
+		<class name="Tutorial_CrowRuins_tLukku" Value="[!Objective]현장을 무사히 이탈하시오."/>
+		<class name="Tutorial_CrowRuins_80Gl5n" Value="[!VictoryCondition]현장의 적을 모두 제압하시오."/>
+		<class name="Tutorial_CrowRuins_2mlQAo" Value="해당 지역에 적이 도착하면 현장을 이탈합니다."/>
+		<class name="Tutorial_CrowRuins_78kUQp" Value="해당 지역에 적이 도착하면 현장을 이탈합니다."/>
+		<class name="Tutorial_CrowRuins_wURt7t" Value="해당 지역에 적이 도착하면 현장을 이탈합니다."/>
+		<class name="Tutorial_CrowRuins_4eO1J8" Value="[!Title]버려진 아이들"/>
+		<class name="Tutorial_CrowRuins_pqTRJX" Value="[!Title]15년 전, 앨리 근처 숲"/>
+		<class name="Tutorial_CrowRuins_dOXg0y" Value="[!Dialog]레이의 부모님이 돌아오시지 않은 지 3개월..."/>
+		<class name="Tutorial_CrowRuins_nCKm9L" Value="[!Dialog]내색을 하지 않으려고 하지만 레이의 얼굴은 하루가 다르게 어두워졌다."/>
+		<class name="Tutorial_CrowRuins_XG6xRk" Value="[!Dialog][!speaker:Leton_Normal_Boy]레이. 따라와."/>
+		<class name="Tutorial_CrowRuins_Eh0Zve" Value="[!Dialog][!speaker:Ray_Surprise_Girl]...?"/>
+		<class name="Tutorial_CrowRuins_mwOfco" Value="[!Dialog][!speaker:Gangster_SpoonBottle_Naam_Normal_Boy]어디가... 나도 가..."/>
+		<class name="Tutorial_CrowRuins_czAOFR" Value="[!Dialog][!speaker:Gangster_SpoonBat_Turk_Normal_Boy]나도! 나도 갈거야!"/>
+		<class name="Tutorial_CrowRuins_3TFiGP" Value="[!Dialog][!speaker:Carter_Normal_Boy]그래. 다 같이 가자."/>
+		<class name="Tutorial_CrowRuins_7dC9Fa" Value="[!Dialog][!speaker:Carter_Normal_Boy]뭐해. 헤이싱. 너도 가자."/>
+		<class name="Tutorial_CrowRuins_pEAaZS" Value="[!Dialog][!speaker:Heissing_Smile_Boy]나?"/>
+		<class name="Tutorial_CrowRuins_Nx7tRS" Value="[!Dialog][!speaker:Carter_Normal_Boy]당연하지."/>
+		<class name="Tutorial_CrowRuins_pTSKr1" Value="[!Dialog][!speaker:Ray_Surprise_Girl]와..."/>
+		<class name="Tutorial_CrowRuins_LgPIsK" Value="[!Dialog][!speaker:Leton_Normal_Boy]어때. 괜찮지?"/>
+		<class name="Tutorial_CrowRuins_ZTWlTk" Value="[!Dialog][!speaker:Ray_Normal_Girl]어. 이뻐..."/>
+		<class name="Tutorial_CrowRuins_v5VrMt" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Normal]......"/>
+		<class name="Tutorial_CrowRuins_ZgC4Yt" Value="[!Dialog][!speaker:Carter_Normal_Boy]힘들면 종종 오자"/>
+		<class name="Tutorial_CrowRuins_rBdVfF" Value="[!Dialog]앨리의 버려진 아이들..."/>
+		<class name="Tutorial_CrowRuins_zV61zt" Value="[!Dialog]함께 행동함으로써 불안과 걱정을 잠시나마 잊을 수 있었다."/>
+		<class name="Tutorial_CrowRuins_yV32UB" Value="[!Dialog][!speaker:Ray_Normal_Girl]다들 고마워."/>
+		<class name="Tutorial_CrowRuins_WccOU7" Value="[!Dialog][!speaker:Leton_Normal_Boy]히히. 레이는 맨날 내 밥 챙겨주자나."/>
+		<class name="Tutorial_CrowRuins_GxQDf9" Value="[!Dialog][!speaker:Heissing_Smile_Boy]미안 나는 도움이 못 되서..."/>
+		<class name="Tutorial_CrowRuins_5oI7VR" Value="[!Dialog][!speaker:Carter_Normal_Boy]괜찮아. 우리는 충분히 잘해 낼 거야."/>
+		<class name="Tutorial_CrowRuins_DDfuLC" Value="[!Dialog][!speaker:Gangster_SpoonBottle_Naam_Normal_Boy]레이 누나... 나 배고파."/>
+		<class name="Tutorial_CrowRuins_JQaQx7" Value="[!Dialog][!speaker:Gangster_SpoonBat_Turk_Normal_Boy]나암은 맨날 배고파~"/>
+		<class name="Tutorial_CrowRuins_Wk1kog" Value="[!Dialog][!speaker:Carter_Normal_Boy]자. 그럼 마을로 돌아가 볼까?"/>
+		<class name="Tutorial_CrowRuins_zOI8od" Value="[!Dialog]그 때는 아직 세상을 알지 못했기에 참고 견뎌 어른이 된다면 모든 것이 가능할 줄 알았다."/>
+		<class name="Tutorial_CrowRuins_9X9G0o" Value="[!Title]어른의 세계"/>
+		<class name="Tutorial_CrowRuins_Vz9A3b" Value="[!Title]2년 전, 발할라 오딘 지구"/>
+		<class name="Tutorial_CrowRuins_gENicL" Value="[!Dialog][!speaker:Robert_Normal]어르신. 녀석이 도착했습니다."/>
+		<class name="Tutorial_CrowRuins_PUrrYp" Value="[!Dialog][!speaker:Edward_Normal_Hat]응 그래."/>
+		<class name="Tutorial_CrowRuins_RiRsBJ" Value="[!Dialog][!speaker:Edward_Smile_Hat]그런데 전혀 입질이 오지 않는구만..."/>
+		<class name="Tutorial_CrowRuins_nJ85aA" Value="[!Dialog][!speaker:Robert_Normal]&apos;저녀석이 『 앨리  』의 그 녀석인가...&apos;"/>
+		<class name="Tutorial_CrowRuins_SDQB7K" Value="[!Dialog][!speaker:Edward_Smile_Hat]페기 양. 오늘 대회의는 취소해주게나."/>
+		<class name="Tutorial_CrowRuins_Nl9nFD" Value="[!Dialog][!speaker:Peggy_Normal]네. 알겠습니다. 에드워드 님."/>
+		<class name="Tutorial_CrowRuins_YhBNvH" Value="[!Dialog][!speaker:Edward_Normal_Hat]로버트. 저 아이와 이야기 할 수 있게 자리를 물려주겠나?"/>
+		<class name="Tutorial_CrowRuins_kH7IZ4" Value="[!Dialog][!speaker:Robert_Normal]어르신. 저 녀석은 위험합니다."/>
+		<class name="Tutorial_CrowRuins_DqFdkz" Value="[!Dialog][!speaker:Edward_Smile_Hat]괜찮아. 로버트."/>
+		<class name="Tutorial_CrowRuins_5ae9Ph" Value="[!Dialog][!speaker:Edward_Normal_Hat] 여기까지 온 아이야. 괜한 노력 말고 물려주게나."/>
+		<class name="Tutorial_CrowRuins_w9LNSa" Value="[!Dialog][!speaker:Robert_Normal]알겠습니다."/>
+		<class name="Tutorial_CrowRuins_qXp5dS" Value="[!Dialog][!speaker:Robert_Normal]다들 물러난다."/>
+		<class name="Tutorial_CrowRuins_HuJbVs" Value="[!Dialog][!speaker:Edward_Smile_Hat]페기 양. 자네도 물러나게."/>
+		<class name="Tutorial_CrowRuins_RbUosI" Value="[!Dialog][!speaker:Peggy_Normal]알겠습니다."/>
+		<class name="Tutorial_CrowRuins_bJhR3v" Value="[!Dialog][!speaker:Edward_Normal_Hat]젊은 녀석이 고생이 많구나."/>
+		<class name="Tutorial_CrowRuins_wekp8G" Value="[!Dialog][!speaker:Edward_Normal_Hat]하지만 욕심이 너무 많구나."/>
+		<class name="Tutorial_CrowRuins_PNHnSR" Value="[!Dialog][!speaker:Edward_Normal_Hat]네가 살아가는 이 세상은 네가 쌓아 올린 것이 아니야."/>
+		<class name="Tutorial_CrowRuins_gMFJnp" Value="[!Dialog][!speaker:Carter_Normal_Young_Band]저희에게 기회를..."/>
+		<class name="Tutorial_CrowRuins_0h1iut" Value="[!Dialog][!speaker:Carter_Normal_Young_Band]기회를 주십시오."/>
+		<class name="Tutorial_CrowRuins_uTorH9" Value="[!Dialog][!speaker:Edward_Normal_Hat]여기까지 온 녀석이 떼를 쓰다니..."/>
+		<class name="Tutorial_CrowRuins_P1o4Pi" Value="[!Dialog][!speaker:Carter_Normal_Young_Band]기회를 주신다면 무엇이든 해 내겠습니다."/>
+		<class name="Tutorial_CrowRuins_3T0SnW" Value="[!Dialog][!speaker:Edward_Think_Hat]거 참... 어른 없이 큰 것들은 예의가 없구나..."/>
+		<class name="Tutorial_CrowRuins_uFee9R" Value="[!Dialog][!speaker:Carter_Normal_Young_Band2]제 생명 모든 것을 드리겠습니다."/>
+		<class name="Tutorial_CrowRuins_XNe5ox" Value="[!Dialog][!speaker:Edward_Smile_Hat]....."/>
+		<class name="Tutorial_CrowRuins_C5Siqc" Value="[!Dialog][!speaker:Edward_Think_Hat]파괴된 조직의 순간 복원 능력..."/>
+		<class name="Tutorial_CrowRuins_7ykzo9" Value="[!Dialog][!speaker:Edward_Think_Hat]강인한 정신이 버텨준다면 좋은 능력이지."/>
+		<class name="Tutorial_CrowRuins_aACqT4" Value="[!Dialog][!speaker:Edward_Normal_Hat]하지만 그 능력으로 원하는 것을 얻을 수 있더냐?"/>
+		<class name="Tutorial_CrowRuins_DFsytC" Value="[!Dialog][!speaker:Taesoo_Normal]이렇게까지 일을 벌인 녀석이 인질 때문에 못 움직이다니..."/>
+		<class name="Tutorial_CrowRuins_7lMbfM" Value="[!Dialog][!speaker:Taesoo_Normal]시시하군."/>
+		<class name="Tutorial_CrowRuins_IpK6V7" Value="[!Dialog][!speaker:Gangster_SpoonBat_Turk_Hurted_Young2]......"/>
+		<class name="Tutorial_CrowRuins_78LqUD" Value="[!Dialog][!speaker:Gangster_SpoonBottle_Naam_Hurted_Young2]형... 미안해..."/>
+		<class name="Tutorial_CrowRuins_XshPNP" Value="[!Dialog][!speaker:Hwangrang_Normal]타이수 대장. 그냥 인질 다 죽일까?"/>
+		<class name="Tutorial_CrowRuins_C55QuJ" Value="[!Dialog][!speaker:Hwangrang_Normal]난 저 녀석이 어떻게 나올지 궁금해 미치겠어."/>
+		<class name="Tutorial_CrowRuins_RWqnNs" Value="[!Dialog][!speaker:Carter_Normal_Young]......하지 말아주십시오."/>
+		<class name="Tutorial_CrowRuins_UWl8n6" Value="[!Dialog][!speaker:Carter_Normal_Young]내일까지 『고난의 성채』에 갈 사람을 정하겠습니다."/>
+		<class name="Tutorial_CrowRuins_bMGBCe" Value="[!Dialog][!speaker:Hwangrang_Normal]봐! 역시 재밌는 녀석이야."/>
+		<class name="Tutorial_CrowRuins_sZw53x" Value="[!Dialog][!speaker:Taesoo_Normal]황랑. 호들갑 그만 떨어."/>
+		<class name="Tutorial_CrowRuins_vwCVu8" Value="[!Dialog][!speaker:Taesoo_Smile]상납금은 밀리지 마라."/>
+		<class name="Tutorial_CrowRuins_HlOgIu" Value="[!Dialog][!speaker:Gangster_ButcherRyo_Serious_Young]&apos;애처롭군...&apos;"/>
+		<class name="Tutorial_CrowRuins_WtgsAc" Value="[!Dialog]구룡회가 앨리를 습격한 날."/>
+		<class name="Tutorial_CrowRuins_cO1hxJ" Value="[!Dialog]카터는 아무것도 할 수 없었다."/>
+		<class name="Tutorial_CrowRuins_4Z5F0t" Value="[!Dialog]카터가 수 년간 노력하여 쌓아왔던 모든 것이 무너졌고..."/>
+		<class name="Tutorial_CrowRuins_efFwDZ" Value="[!Dialog]희망은 절망이 되어 원망만이 남았다."/>
+		<class name="Tutorial_CrowRuins_WCOnf9" Value="[!Dialog][!speaker:Carter_Normal_Young_Band2]얻을 수 없었습니다."/>
+		<class name="Tutorial_CrowRuins_KukqFZ" Value="[!Dialog][!speaker:Edward_Smile_Hat]그래. 그런 하찮은 능력에 기대지 말게."/>
+		<class name="Tutorial_CrowRuins_B18aXI" Value="[!Dialog][!speaker:Edward_Smile_Hat]그 정도 능력은 저 뒤에서 네 등을 뚫어져라 바라보는 녀석도 가지고 있다네."/>
+		<class name="Tutorial_CrowRuins_QTxF03" Value="[!Dialog][!speaker:Carter_Normal_Young_Band2]죄송합니다."/>
+		<class name="Tutorial_CrowRuins_LAiqye" Value="[!Dialog][!speaker:Edward_Smile_Hat]괜찮아. 자네는 충분히 해줬네."/>
+		<class name="Tutorial_CrowRuins_zCG9lL" Value="[!Dialog][!speaker:Edward_Smile_Hat]자네가 만들어 낸『 앨리 』지역의 가치."/>
+		<class name="Tutorial_CrowRuins_wxey0x" Value="[!Dialog][!speaker:Edward_Smile_Hat]우리가『 앨리 』를 합병할 매력을 느끼게 해줬지."/>
+		<class name="Tutorial_CrowRuins_caWtXT" Value="[!Dialog][!speaker:Edward_Normal_Hat]그건 정말 좋은 것이었네."/>
+		<class name="Tutorial_CrowRuins_tIUX2u" Value="[!Dialog][!speaker:Edward_Think_Hat]젊은 녀석이니 이런 생각을 하는 구나..."/>
+		<class name="Tutorial_CrowRuins_Yb67Rb" Value="[!Dialog][!speaker:Edward_Normal_Hat]나름 신선한 자극이었네."/>
+		<class name="Tutorial_CrowRuins_ChugES" Value="[!Dialog][!speaker:Carter_Normal_Young_Band]부탁드립니다. 어르신."/>
+		<class name="Tutorial_CrowRuins_RryL0K" Value="[!Dialog][!speaker:Edward_Normal_Hat]미안하네. 그만하지."/>
+		<class name="Tutorial_CrowRuins_OZTA4L" Value="[!Dialog][!speaker:Edward_Normal_Hat]발할라는 이주 의향이 있는 『 앨리 』거주민들을 조건없이 다 수용했다네."/>
+		<class name="Tutorial_CrowRuins_6iSRhl" Value="[!Dialog][!speaker:Edward_Normal_Hat]자네가 우리에게 감동을 선사했기에 배려한 선처일 뿐이네."/>
+		<class name="Tutorial_CrowRuins_8avw1K" Value="[!Dialog][!speaker:Edward_Normal_Hat]그리고 이런 선례가 발생하길 바라며 불필요한 부담을 져 본 거라네."/>
+		<class name="Tutorial_CrowRuins_gLymFJ" Value="[!Dialog][!speaker:Edward_Smile_Hat]어른들이 아이들의 미래를 보고 투자해 본 거지."/>
+		<class name="Tutorial_CrowRuins_gsDsIs" Value="[!Dialog][!speaker:Edward_Smile_Hat]적어도 지난 1년간 나에게 도달하기 위해 많은 노력을 한 것은 기특해."/>
+		<class name="Tutorial_CrowRuins_WPJ7j6" Value="[!Dialog][!speaker:Edward_Normal_Hat]하지만 기특할 뿐이야."/>
+		<class name="Tutorial_CrowRuins_r3YE7v" Value="[!Dialog][!speaker:Edward_Normal_Hat]자네도 이제 어른이 되야지."/>
+		<class name="Tutorial_CrowRuins_q7MFkL" Value="[!Dialog][!speaker:Edward_Think_Hat]이 늙은이가 인생의 황혼에 바라는 것이 무엇일까?"/>
+		<class name="Tutorial_CrowRuins_MudEVn" Value="[!Dialog][!speaker:Edward_Think_Hat]여든이 넘는 자가 젊은이에게 바라는 것이 무엇일까?"/>
+		<class name="Tutorial_CrowRuins_M3lD8Y" Value="[!Dialog][!speaker:Edward_Smile_Hat]고민해 본 적 있나?"/>
+		<class name="Tutorial_CrowRuins_wY3a0x" Value="[!Dialog][!speaker:Edward_Normal_Hat]오늘은 자네의 무례를 용서하겠네."/>
+		<class name="Tutorial_CrowRuins_MSmQqw" Value="[!Dialog][!speaker:Edward_Think_Hat]누군가에게 원하는 것이 있다면, 원하는 것과 바꿀 가치를 가져오게나."/>
+		<class name="Tutorial_CrowRuins_xrpGfx" Value="[!Dialog][!speaker:Edward_Smile_Hat]적어도 그런 자리라면 또 만나주지."/>
+		<class name="Tutorial_CrowRuins_JfYDUN" Value="[!Title]늑대와 사냥꾼"/>
+		<class name="Tutorial_CrowRuins_LXWq9x" Value="[!Title]까마귀 폐허"/>
+		<class name="Tutorial_CrowRuins_wObILo" Value="[!Subtitle][!speaker:Gangster_BlackTigerNormal_Normal]다들 정신 차리고 포위해!"/>
+		<class name="Tutorial_CrowRuins_Yo4OKj" Value="[!Subtitle][!speaker:Gangster_BlackTigerFat_Normal]왼쪽이다! 막아!"/>
+		<class name="Tutorial_CrowRuins_vl9Joq" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Normal]&apos;드디어 몰아 넣었군.&apos;"/>
+		<class name="Tutorial_CrowRuins_Lv8Oky" Value="[!Dialog][!speaker:Leton_Smile]저 영감탱이. 끈질긴데..."/>
+		<class name="Tutorial_CrowRuins_Oo0WiF" Value="[!Dialog][!speaker:Carter_Normal]&apos;대니 녀석... 우리 정보를 팔았군...&apos;"/>
+		<class name="Tutorial_CrowRuins_ZmLT0T" Value="[!Dialog][!speaker:Leton_Serious]카터 어떻게 할 거냐?"/>
+		<class name="Tutorial_CrowRuins_N9oQYQ" Value="[!Dialog][!speaker:Carter_Normal]&apos;상황을 보니 추적자는 이 녀석들만이 아니겠군...&apos;"/>
+		<class name="Tutorial_CrowRuins_LoE8hT" Value="[!Dialog][!speaker:Carter_Smile]일단 물러나자. 레톤."/>
+		<class name="Tutorial_CrowRuins_WFkWen" Value="[!Dialog][!speaker:Carter_Smile]우리를 찾는 손님들이 많을 것 같다. 지체되면 힘들어진다."/>
+		<class name="Tutorial_CrowRuins_YmGQuy" Value="[!Dialog][!speaker:Leton_Serious]OK~☆ 그럼 어디로 갈건가?"/>
+		<class name="Tutorial_CrowRuins_jaOuyg" Value="[!Dialog][!speaker:Carter_Normal]&apos;북서쪽 길은 바람장벽과 가까우니 온다면 경찰이나 트러블슈터겠군.&apos;"/>
+		<class name="Tutorial_CrowRuins_4vtOeS" Value="[!Dialog][!speaker:Carter_Smile]&apos;$CompanyName$... 레이와 헤이싱인가...&apos;"/>
+		<class name="Tutorial_CrowRuins_dfeEUA" Value="[!Dialog][!speaker:Carter_Normal]&apos;북동쪽 숲을 우회하는 길은 스푼교도겠군...&apos;"/>
+		<class name="Tutorial_CrowRuins_PFXkBZ" Value="[!Dialog][!speaker:Carter_Normal]&apos;남서쪽 외곽도로...&apos;"/>
+		<class name="Tutorial_CrowRuins_DzwsiC" Value="[!Dialog][!speaker:Carter_Normal]&apos;혹여나 고용된 추적자들이 온다면... 이 방향이겠군.&apos;"/>
+		<class name="Tutorial_CrowRuins_Bm9UxN" Value="[!Dialog][!speaker:Carter_Normal]&apos;남동쪽 숲길이라...&apos;"/>
+		<class name="Tutorial_CrowRuins_Kgrkm9" Value="[!Dialog][!speaker:Carter_Normal]&apos;길은 험하겠지만 안전을 기하려면 이 곳 뿐이겠어.&apos;"/>
+		<class name="Tutorial_CrowRuins_jOAgM1" Value="[!Dialog][!speaker:Carter_Smile]레톤. 만약 상황이 급박하면 흩어져서 다음 약속 장소에서 만나자."/>
+		<class name="Tutorial_CrowRuins_QFDleV" Value="[!Dialog][!speaker:Leton_Smile]OK~☆ "/>
+		<class name="Tutorial_CrowRuins_Skg6mL" Value="[!VictoryCondition]카터 전투 불능"/>
+		<class name="Tutorial_CrowRuins_aURAaf" Value="[!VictoryCondition]레톤 전투 불능"/>
+		<class name="Tutorial_CrowRuins_QSwq0x" Value="[!VictoryCondition]현장을 무사히 이탈하시오."/>
+		<class name="Tutorial_CrowRuins_MTqX26" Value="[!Title]궁여지책"/>
+		<class name="Tutorial_CrowRuins_Bm6IyJ" Value="[!Title]4개월 전, 흑호 코퍼레이션 옥상"/>
+		<class name="Tutorial_CrowRuins_3HYdwZ" Value="[!Dialog][!speaker:Gangster_Trey_Normal]날 찾아오다니 미쳤군."/>
+		<class name="Tutorial_CrowRuins_l3xbfP" Value="[!Dialog][!speaker:Gangster_Trey_Normal]그래서 날 돕겠다는 건가?"/>
+		<class name="Tutorial_CrowRuins_QjQpw5" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Normal]그래. 네 녀석이 원하는 걸 가능하게 해주지."/>
+		<class name="Tutorial_CrowRuins_0I9cvK" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Think]......"/>
+		<class name="Tutorial_CrowRuins_NNNjZO" Value="[!Dialog][!speaker:Gangster_Trey_Normal]미치겠군."/>
+		<class name="Tutorial_CrowRuins_uUbG72" Value="[!Dialog][!speaker:Gangster_Trey_Normal]바로 얼마전까지 난 자네의 머리통에 총알을 박아 넣을까 말까 고민했어."/>
+		<class name="Tutorial_CrowRuins_zcel4q" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Normal]피차 일반이네."/>
+		<class name="Tutorial_CrowRuins_zQbP22" Value="[!Dialog][!speaker:Gangster_Trey_Normal]그 고결하던 정의감은 퇴직과 함께 날려 버린건가?"/>
+		<class name="Tutorial_CrowRuins_3XBk4J" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Normal]정의감? 정의감따위 10년 전에 버렸지. 그저 공무원이었을 뿐이야."/>
+		<class name="Tutorial_CrowRuins_ayOUHW" Value="[!Dialog][!speaker:Gangster_Trey_Normal]공무원따위가 그렇게 성실했나?"/>
+		<class name="Tutorial_CrowRuins_GEOE8F" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Normal]게으른 자가 있다면 성실한 자도 있겠지."/>
+		<class name="Tutorial_CrowRuins_g4SI93" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Think]그리고 그런 녀석들은 이미 다 떠났어."/>
+		<class name="Tutorial_CrowRuins_wEi1mb" Value="[!Dialog][!speaker:Gangster_Trey_Normal]재밌군. 재밌어."/>
+		<class name="Tutorial_CrowRuins_xG5rRT" Value="[!Dialog][!speaker:Gangster_Trey_Normal]아이작. 자네 개인 계좌를 불러보게."/>
+		<class name="Tutorial_CrowRuins_cj85kO" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Normal]?"/>
+		<class name="Tutorial_CrowRuins_NPNHoZ" Value="[!Dialog][!speaker:Gangster_Trey_Normal]자네 제안의 가치로 1400만 Vill 입금하겠네."/>
+		<class name="Tutorial_CrowRuins_Zn8nOA" Value="[!Dialog][!speaker:Gangster_Trey_Normal]그 돈으로 자네가 필요한 사업체 하나를 만들고 필요한 것을 구입하게."/>
+		<class name="Tutorial_CrowRuins_SqDrIj" Value="[!Dialog][!speaker:Gangster_Trey_Normal]회사 이름은 『 흑호 코퍼레이션 』"/>
+		<class name="Tutorial_CrowRuins_pKcFWD" Value="[!Dialog][!speaker:Gangster_Trey_Normal]그리고 필요한 인력은 조직 내에서 추려서 사업체 하나 분리할테니 합병해."/>
+		<class name="Tutorial_CrowRuins_jE3QR9" Value="[!Dialog][!speaker:Gangster_Trey_Normal]왜 거절인가?"/>
+		<class name="Tutorial_CrowRuins_TQwxQw" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Normal]아니네. 그렇게 하지."/>
+		<class name="Tutorial_CrowRuins_n0NqIe" Value="[!Dialog][!speaker:Gangster_Trey_Normal]좋아."/>
+		<class name="Tutorial_CrowRuins_RZOV8w" Value="[!Dialog][!speaker:Gangster_Trey_Normal]그럼 당분간 지는 태양을 같이 보는 것으로 하지."/>
+		<class name="Tutorial_CrowRuins_fnPdAf" Value="[!Dialog][!speaker:Gangster_Trey_Normal]그리고 내일 뜨는 해도 같이 보면 좋겠군."/>
+		<class name="Tutorial_CrowRuins_AfaSj0" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Kaze_Normal]존 님. 우리보다 먼저 온 녀석들이 있는데요?"/>
+		<class name="Tutorial_CrowRuins_poNcfc" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]『 한술 』의 뜻에 따라 배제한다."/>
+		<class name="Tutorial_CrowRuins_oHMmJx" Value="[!Dialog][!speaker:Gangster_DannyLaw_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Radio&apos;][colour=&apos;FFFFE959&apos;]도착했나?"/>
+		<class name="Tutorial_CrowRuins_EDHqzI" Value="[!Dialog][!speaker:Gangster_SmugglerHunter_Zeff_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Radio&apos;][colour=&apos;FFFFE959&apos;]늦지 않은 것 같다."/>
+		<class name="Tutorial_CrowRuins_yxUO11" Value="[!Dialog][!speaker:Gangster_DannyLaw_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Radio&apos;][colour=&apos;FFFFE959&apos;]보수는 평소의 3배다. 확실하게 처리해라."/>
+		<class name="Tutorial_CrowRuins_it7X9e" Value="[!Dialog][!speaker:Gangster_SmugglerHunter_Zeff_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Radio&apos;][colour=&apos;FFFFE959&apos;]어얼~ 통이 커졌어?"/>
+		<class name="Tutorial_CrowRuins_g5xS4o" Value="[!Dialog][!speaker:Gangster_SmugglerHunter_Zeff_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Radio&apos;][colour=&apos;FFFFE959&apos;]『 구룡회 』에 들어가서 그런가?"/>
+		<class name="Tutorial_CrowRuins_9ibpoC" Value="[!Dialog][!speaker:Gangster_DannyLaw_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Radio&apos;][colour=&apos;FFFFE959&apos;]쓸데 없는 소리 하지 말고 일이나 확실하게 해."/>
+		<class name="Tutorial_CrowRuins_7U9srY" Value="[!Dialog][!speaker:Gangster_SmugglerHunter_Zeff_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Radio&apos;][colour=&apos;FFFFE959&apos;]돈이나 준비해."/>
+		<class name="Tutorial_CrowRuins_vSChPr" Value="[!Dialog][!speaker:VHPD_Jane_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]알버스 군. 1시간 전 해당 지역으로 『 흑호 코퍼레이션 』이 사냥 허가를 받고 진입했네."/>
+		<class name="Tutorial_CrowRuins_teOLag" Value="[!Dialog][!speaker:Albus_Surprise][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]『 흑호 코퍼레이션 』이요?"/>
+		<class name="Tutorial_CrowRuins_fcnEMQ" Value="[!Dialog][!speaker:Albus_SurpriseStare][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]설마 『 흑호 코퍼레이션 』이 정식 트러블슈터 회사로 승인된 건가요?"/>
+		<class name="Tutorial_CrowRuins_1iWbx4" Value="[!Dialog][!speaker:VHPD_Jane_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]아니야. 어디까지나 아직은 운송 기업이야."/>
+		<class name="Tutorial_CrowRuins_q3hMe2" Value="[!Dialog][!speaker:Albus_SurpriseStare][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]......"/>
+		<class name="Tutorial_CrowRuins_NYZRHY" Value="[!Dialog][!speaker:VHPD_Jane_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]아마도 현장에 다른 목적이 있는 것 같지만..."/>
+		<class name="Tutorial_CrowRuins_EExYpS" Value="[!Dialog][!speaker:VHPD_Jane_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]스푼교도 제압하는 과정에 마찰을 빚지 않는게 좋을 거야."/>
+		<class name="Tutorial_CrowRuins_YzXvd7" Value="[!Dialog][!speaker:Albus_SurpriseStare][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]알겠습니다."/>
+		<class name="Tutorial_CrowRuins_owKp3G" Value="[!Dialog][!speaker:Ray_Surprise]카터..."/>
+		<class name="Tutorial_CrowRuins_hV3NJ8" Value="[!Dialog][!speaker:Ray_Serious]카터. 지금이라도 늦지 않았어."/>
+		<class name="Tutorial_CrowRuins_TSfyI6" Value="[!Dialog][!speaker:Carter_Normal]미안하다. 레이"/>
+		<class name="Tutorial_CrowRuins_4KxHcp" Value="[!Dialog][!speaker:Heissing_Smile]네게 닿기까지 조금 시간이 걸렸군."/>
+		<class name="Tutorial_CrowRuins_7NEv1f" Value="[!Dialog][!speaker:Carter_Normal]마음껏 쫓아와라. 헤이싱."/>
+		<class name="Tutorial_CrowRuins_7BVnQF" Value="[!Dialog][!speaker:Carter_Smile]언제나 네 앞에서 달려가고 있겠다."/>
+		<class name="Tutorial_CrowRuins_ggHSd3" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Normal]놓쳐 버렸나..."/>
+		<class name="Tutorial_CrowRuins_YrSPS8" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Think]......"/>
+		<class name="Tutorial_CrowRuins_tKxDIz" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Normal]다들 현장을 빠르게 이탈한다."/>
+		<class name="Tutorial_CrowRuins_HHhqSK" Value="[!Dialog][!speaker:Gangster_SmugglerHunter_Zeff_Normal]하아... 대니한테 엄청 욕 먹겠군."/>
+		<class name="Tutorial_CrowRuins_gzkxY9" Value="[!Dialog][!speaker:Gangster_SmugglerHunter_Zeff_Normal]다들 쓸데 없는 짓 말고 도망친 사냥감을 쫓는다."/>
+		<class name="Tutorial_CrowRuins_DLvKgF" Value="[!Dialog][!speaker:Gangster_SmugglerHunter_Zeff_Normal]빨리 이동해!"/>
+		<class name="Tutorial_CrowRuins_5FM1pX" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]놓쳤군..."/>
+		<class name="Tutorial_CrowRuins_U3lANs" Value="[!Dialog][!speaker:Gangster_SpoonSword_Ralph_Normal]존 님. 현장의 트러블슈터는 $CompanyName$입니다."/>
+		<class name="Tutorial_CrowRuins_3GiF6x" Value="[!Dialog][!speaker:Gangster_SpoonSword_Ralph_Normal]물러나시죠."/>
+		<class name="Tutorial_CrowRuins_78LqN9" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]알았다."/>
+		<class name="Tutorial_CrowRuins_UfZLQi" Value="[!Dialog][!speaker:VHPD_Assault_Normal]알버스 님. 스푼교도, 밀수업자, 흑호 코페레이션이 모두 현장을 이탈하기 시작합니다."/>
+		<class name="Tutorial_CrowRuins_cEXozE" Value="[!Dialog][!speaker:Albus_Think][colour=&apos;FFFFFF00&apos;]&apos;일단 현장의 스푼교도와 밀수업자들은 최대한 제압해야겠지...&apos;"/>
+		<class name="Tutorial_CrowRuins_u8GS4m" Value="[!Choice]적을 소탕한다."/>
+		<class name="Tutorial_CrowRuins_8jGPQs" Value="현장에 남은 적을 제압합니다."/>
+		<class name="Tutorial_CrowRuins_c1At6z" Value="[!Choice]현장을 이탈한다."/>
+		<class name="Tutorial_CrowRuins_4RN4xn" Value="현장에서 이탈합니다."/>
+		<class name="Tutorial_CrowRuins_eJdq3B" Value="[!Dialog][!speaker:Albus_Smile]......"/>
+		<class name="Tutorial_CrowRuins_zrrl8r" Value="[!Dialog][!speaker:Albus_Normal]&apos;세력을 줄일 수 있을 때 확실히 줄여놔야 해...&apos;"/>
+		<class name="Tutorial_CrowRuins_zPfX98" Value="[!Dialog][!speaker:Albus_Normal]지금부터 현장의 적대하는 적을 모두 제압합니다."/>
+		<class name="Tutorial_CrowRuins_ZHqzHU" Value="[!Dialog][!speaker:Sion_Stare]&apos;또 저 병이 도졌군... 고쳐지질 않아...&apos;"/>
+		<class name="Tutorial_CrowRuins_NbVBRS" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_CrowRuins_WuKyEd" Value="[!Dialog][!speaker:Albus_Serious]......"/>
+		<class name="Tutorial_CrowRuins_Uk04pE" Value="[!Dialog][!speaker:Albus_Serious]&apos;우리 피해도 만만치 않아...&apos;"/>
+		<class name="Tutorial_CrowRuins_nEvEMP" Value="[!Dialog][!speaker:Albus_Smile]&apos;이런 성과 없는 일에 너무 매달리지 말자...&apos;"/>
+		<class name="Tutorial_CrowRuins_rJbMpU" Value="[!Dialog][!speaker:Albus_Normal]지금부터 현장을 이탈하여 바람장벽 지구로 복귀합니다."/>
+		<class name="Tutorial_CrowRuins_RSzMez" Value="[!Dialog][!speaker:Albus_Smile]&apos;이런 성과 없는 일에 너무 매달리지 말자...&apos;"/>
+		<class name="Tutorial_CrowRuins_OpfQlM" Value="[!Dialog][!speaker:Albus_Normal]지금부터 현장을 이탈하여 바람장벽 지구로 복귀합니다."/>
+		<class name="Tutorial_CrowRuins_Fv72VW" Value="[!Dialog][!speaker:Ray_Normal]레톤. 후회할 선택 하지마."/>
+		<class name="Tutorial_CrowRuins_labV3I" Value="[!Dialog][!speaker:Leton_Smile]나 역시 후회할 선택은 하고 싶지 않아."/>
+		<class name="Tutorial_CrowRuins_bZjgB6" Value="[!Dialog][!speaker:Leton_Normal]그렇기 때문에 카터를 따라갈 뿐이야."/>
+		<class name="Tutorial_CrowRuins_W3qEDc" Value="[!Dialog][!speaker:Heissing_Smile]휴가가 얼마 남지 않았다."/>
+		<class name="Tutorial_CrowRuins_9Re177" Value="[!Dialog][!speaker:Heissing_Smile]돌아가기 전에 저녁이나 같이 하자."/>
+		<class name="Tutorial_CrowRuins_j7WEGz" Value="[!Dialog][!speaker:Leton_Smile]그래."/>
+		<class name="Tutorial_CrowRuins_5jk9qo" Value="[!Dialog][!speaker:Leton_Normal]네가 어디에 있든 내가 널 찾아가마."/>
+		<class name="Tutorial_CrowRuins_TFmSQp" Value="[!Ignore][!FrontMessage]헤이싱이 카터와 레톤을 적대하지 않습니다."/>
+		<class name="Tutorial_CrowRuins_Zwd3c0" Value="[!Ignore][!Dialog][colour=&apos;FFFFFF00&apos;]카터와 레톤이 현장을 이탈 시, 알버스와 아군 회사 동료들이 4명 이상 생존해 있으면, 플레이어 회사 인원으로 미션을 계속 진행할 지 선택지가 주어집니다."/>
+		<class name="Tutorial_CrowRuins_drce6V" Value="[!Ignore][!Dialog][colour=&apos;FFFFFF00&apos;]알버스가 생존하지 못했거나 플레이어 회사 동료들이 4명 이상 전투 불능이 된 경우, 선택지 없이 강제적으로 퇴각합니다."/>
+	</idspace>
+</idspaces>

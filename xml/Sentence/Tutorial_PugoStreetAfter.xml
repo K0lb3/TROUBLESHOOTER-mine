@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Tutorial_PugoStreetAfter_jndmmW" Value="[!Dashboard:Counter]남은 적 수"/>
+		<class name="Tutorial_PugoStreetAfter_DxaARW" Value="[!Objective]시민을 모두 구출하시오."/>
+		<class name="Tutorial_PugoStreetAfter_nzLj8t" Value="[!Objective]적을 모두 제압하시오"/>
+		<class name="Tutorial_PugoStreetAfter_FjIy9z" Value="[!Title]어둠 뒤에서..."/>
+		<class name="Tutorial_PugoStreetAfter_nmJIgW" Value="[!Title]1년 전, 오딘 지구 오페라하우스"/>
+		<class name="Tutorial_PugoStreetAfter_REbbSq" Value="[!Dialog][!speaker:Marco_Smile2]허어. 격상하셨어? 이런 데를 다 들락거리고?"/>
+		<class name="Tutorial_PugoStreetAfter_siT865" Value="[!Dialog][!speaker:Chris_Normal]조용히 앉아. 공연 중이다."/>
+		<class name="Tutorial_PugoStreetAfter_gTV3X6" Value="[!Dialog][!speaker:Chris_Smile]그리고 공연장 안은 금연이다."/>
+		<class name="Tutorial_PugoStreetAfter_nlNiuc" Value="[!Dialog][!speaker:Marco_Smile2]어이가 없어서..."/>
+		<class name="Tutorial_PugoStreetAfter_VwwgXE" Value="[!Dialog][!speaker:Marco_Smile2]많이 컸다. 너."/>
+		<class name="Tutorial_PugoStreetAfter_Lt4gAU" Value="[!Dialog][!speaker:Chris_Satisfying]넌 더 경박해졌구나."/>
+		<class name="Tutorial_PugoStreetAfter_2PodJP" Value="[!Dialog][!speaker:Marco_Serious2]하아..."/>
+		<class name="Tutorial_PugoStreetAfter_QzgutW" Value="[!Dialog][!speaker:Marco_Rage2]야! 누님께서 안 계신다고 네 녀석이 보스인 양 까불지 마."/>
+		<class name="Tutorial_PugoStreetAfter_R03U9p" Value="[!Dialog][!speaker:Marco_Rage2]조직의 서열따위 죽은 자에게는 부여되지 않는다고."/>
+		<class name="Tutorial_PugoStreetAfter_QFt7Ee" Value="[!Dialog][!speaker:Chris_Smile]고맙군. 기억해두지."/>
+		<class name="Tutorial_PugoStreetAfter_FOGKjx" Value="[!Dialog][!speaker:Marco_Stare2]그래서 날 감히 불러낸 이유나 들어 볼까?"/>
+		<class name="Tutorial_PugoStreetAfter_cRU4EF" Value="[!Dialog][!speaker:Chris_Normal]출장을 가 줬으면 한다."/>
+		<class name="Tutorial_PugoStreetAfter_Rv4zNE" Value="[!Dialog][!speaker:Marco_Stare2]뭐? 출장? 뭔 미친 소리야."/>
+		<class name="Tutorial_PugoStreetAfter_UxBGes" Value="[!Dialog][!speaker:Chris_Normal]앞의 문서는 네가 해줘야 할 일들이다."/>
+		<class name="Tutorial_PugoStreetAfter_YFYZ5B" Value="[!Dialog][!speaker:Marco_Stare2]....."/>
+		<class name="Tutorial_PugoStreetAfter_SPdkIC" Value="[!Dialog][!speaker:Marco_Rage2]도대체 누구 생각이야?"/>
+		<class name="Tutorial_PugoStreetAfter_s8iDGo" Value="[!Dialog][!speaker:Chris_Smile]VIP?"/>
+		<class name="Tutorial_PugoStreetAfter_0hg0AN" Value="[!Dialog][!speaker:Marco_Smile2]또라이 녀석들. 어떻게든 자기들 권력을 유지하려고 잔머리를 굴리는군."/>
+		<class name="Tutorial_PugoStreetAfter_stm5tp" Value="[!Dialog][!speaker:Chris_Smile]원래부터 그런 녀석들이지."/>
+		<class name="Tutorial_PugoStreetAfter_INge5p" Value="[!Dialog][!speaker:Marco_Smile2]이런 일 그다지 하고 싶지 않은데?"/>
+		<class name="Tutorial_PugoStreetAfter_B2oVMw" Value="[!Dialog][!speaker:Marco_Smile2]그리고 네가 가. 왜 나보고 가라 마라야."/>
+		<class name="Tutorial_PugoStreetAfter_8sTmJG" Value="[!Dialog][!speaker:Chris_Serious]누님도 널 보내는 데 동의했다. 거부하려면 직접 전화해."/>
+		<class name="Tutorial_PugoStreetAfter_qTf8Tb" Value="[!Dialog][!speaker:Marco_Serious2]뭐!"/>
+		<class name="Tutorial_PugoStreetAfter_vJHHSY" Value="[!Dialog][!speaker:Marco_Serious2]하아..."/>
+		<class name="Tutorial_PugoStreetAfter_qAQqHc" Value="[!Dialog][!speaker:Marco_Smile2]네 녀석이 또 누님을 꼬드겼구나... 뱀대가리 같은 녀석."/>
+		<class name="Tutorial_PugoStreetAfter_4YsuFJ" Value="[!Dialog][!speaker:Chris_Smile]네가 가장 적임이기에 결정한 일이다."/>
+		<class name="Tutorial_PugoStreetAfter_Uls7H2" Value="[!Dialog][!speaker:Marco_Smile2]그래. 그래. 사람 죽이는 일 말이지."/>
+		<class name="Tutorial_PugoStreetAfter_fdbnvu" Value="[!Dialog][!speaker:Chris_Normal]그래."/>
+		<class name="Tutorial_PugoStreetAfter_EcxJIg" Value="[!Dialog][!speaker:Luna_Depressed]......"/>
+		<class name="Tutorial_PugoStreetAfter_T5n5IE" Value="[!Dialog][!speaker:Marco_Normal2]작업 인원은 몇 명이나 붙여 줄 건가?"/>
+		<class name="Tutorial_PugoStreetAfter_VfT9d0" Value="[!Dialog][!speaker:Chris_Smile]루나."/>
+		<class name="Tutorial_PugoStreetAfter_PSKaDY" Value="[!Dialog][!speaker:Marco_Rage2]미친. 장난해?"/>
+		<class name="Tutorial_PugoStreetAfter_CLx9qz" Value="[!Dialog][!speaker:Marco_Rage2]폐기물을 주워왔으면 스스로 처리해. 감히 어디다 갖다 붙이는 거야!"/>
+		<class name="Tutorial_PugoStreetAfter_FM1Zfs" Value="[!Dialog][!speaker:Chris_Think]내 결정이 아냐."/>
+		<class name="Tutorial_PugoStreetAfter_moggor" Value="[!Dialog][!speaker:Marco_Rage2]......"/>
+		<class name="Tutorial_PugoStreetAfter_mUM5tJ" Value="[!Dialog][!speaker:Marco_Rage2]다 망가진 괴물 새끼 하나 붙여주고 이걸 하란 말이지?"/>
+		<class name="Tutorial_PugoStreetAfter_DREdio" Value="[!Dialog][!speaker:Marco_Rage2]하아. 정말 대단하군. 대단해."/>
+		<class name="Tutorial_PugoStreetAfter_UrXMBg" Value="[!Dialog][!speaker:Chris_Normal]그만큼 누님이 널 신뢰하는 거 겠지."/>
+		<class name="Tutorial_PugoStreetAfter_iYHxmo" Value="[!Dialog][!speaker:Marco_Serious2]그 녀석 방해되면 처분해 버릴 거야."/>
+		<class name="Tutorial_PugoStreetAfter_RyNEVy" Value="[!Dialog][!speaker:Chris_Normal]그래. 처분 권한은 네 자유다."/>
+		<class name="Tutorial_PugoStreetAfter_wC7WlK" Value="[!Dialog][!speaker:Marco_Smile2]잘됐네. 안 그래도 본부 가면 크리스~ 크리스~ 하면서 네 녀석 꽁무니 따라다니는 게 짜증 났는데..."/>
+		<class name="Tutorial_PugoStreetAfter_4cKAWX" Value="[!Dialog][!speaker:Marco_Normal2]그녀석. 일 끝나면 처분하고 올 거야."/>
+		<class name="Tutorial_PugoStreetAfter_Ht2KOP" Value="[!Dialog][!speaker:Chris_Normal]알아서 해. 난 네 선택을 존중한다."/>
+		<class name="Tutorial_PugoStreetAfter_BgbsnF" Value="[!Dialog][!speaker:Marco_Normal2]가증스럽게 앞에서는 끌어 안아주더니..."/>
+		<class name="Tutorial_PugoStreetAfter_4XiT1y" Value="[!Dialog][!speaker:Chris_Smile]아직 14살 밖에 안된 아이니까."/>
+		<class name="Tutorial_PugoStreetAfter_M5uPsk" Value="[!Dialog][!speaker:Chris_Smile]하지만 그 아이도 조직의 일원이지."/>
+		<class name="Tutorial_PugoStreetAfter_EqzP80" Value="[!Dialog][!speaker:Marco_Smile2]조직의 일원이라... 웃기고 자빠졌네."/>
+		<class name="Tutorial_PugoStreetAfter_flVpoj" Value="[!Dialog][!speaker:Chris_Normal]그리고 출장 가는 김에 이걸 좀 전해줘."/>
+		<class name="Tutorial_PugoStreetAfter_SNNX1T" Value="[!Dialog][!speaker:Marco_Smile2]그건 또 뭐야?"/>
+		<class name="Tutorial_PugoStreetAfter_0ee2CR" Value="[!Dialog][!speaker:Chris_Smile]예전 아는 동생한테 보내는 선물."/>
+		<class name="Tutorial_PugoStreetAfter_uVkmBA" Value="[!Dialog][!speaker:Marco_Stare2]스카웃이냐?"/>
+		<class name="Tutorial_PugoStreetAfter_3msl2P" Value="[!Dialog][!speaker:Chris_Smile]상황에 따라."/>
+		<class name="Tutorial_PugoStreetAfter_8mYbUn" Value="[!Title]3일 전, 푸고 번화가"/>
+		<class name="Tutorial_PugoStreetAfter_6qxHy0" Value="[!Dialog][!speaker:Gangster_SpoonBat_Turk_Normal]나암! 여기야! 빨리!"/>
+		<class name="Tutorial_PugoStreetAfter_7F15DR" Value="[!BalloonChat][!speaker:Joshua]절대 놓치지 마!!"/>
+		<class name="Tutorial_PugoStreetAfter_54y4ir" Value="[!Dialog][!speaker:Marco_Rage]적당히 좀 하지..."/>
+		<class name="Tutorial_PugoStreetAfter_FxWiqQ" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Joshua_Normal]네 녀석... 뭐하는 짓이냐..."/>
+		<class name="Tutorial_PugoStreetAfter_byUB3j" Value="[!Dialog][!speaker:Marco_Smile]내가 할 소리야."/>
+		<class name="Tutorial_PugoStreetAfter_YyVcHN" Value="[!Dialog][!speaker:Marco_Normal]......"/>
+		<class name="Tutorial_PugoStreetAfter_JLsmzp" Value="[!Dialog][!speaker:Marco_Normal]다음 목표로 간다."/>
+		<class name="Tutorial_PugoStreetAfter_B1S7NL" Value="[!Dialog][!speaker:Luna_Normal]응."/>
+		<class name="Tutorial_PugoStreetAfter_F8cwKB" Value="[!Title]루나와 마르코 숙소"/>
+		<class name="Tutorial_PugoStreetAfter_hvjO9K" Value="[!Title]10개월 전..."/>
+		<class name="Tutorial_PugoStreetAfter_jzSgaR" Value="[!Dialog]람지플라자에 나타난 스푼교도들에게 휘말렸던 마르코와 루나."/>
+		<class name="Tutorial_PugoStreetAfter_3sFHaH" Value="[!Dialog][!speaker:Marco_Smile]하.. 김씨가 그 공원 음식이 괜찮다고 했는데 말야."/>
+		<class name="Tutorial_PugoStreetAfter_683xzF" Value="[!Dialog][!speaker:Luna_Bored2]......"/>
+		<class name="Tutorial_PugoStreetAfter_02Tq3g" Value="[!Dialog][!speaker:Marco_Smile]웬 녀석이 죽치고 그렇게 먹어댈 줄 누가 알았겠냐."/>
+		<class name="Tutorial_PugoStreetAfter_RI5OoK" Value="[!Dialog][!speaker:Luna_Bored2]......"/>
+		<class name="Tutorial_PugoStreetAfter_8b4L66" Value="[!Dialog][!speaker:Marco_Smile]......"/>
+		<class name="Tutorial_PugoStreetAfter_jPHI7W" Value="[!Dialog][!speaker:Marco_Smile]일이 끝날 때까지 못 돌아가. 몇개월이 걸릴지도 모르고..."/>
+		<class name="Tutorial_PugoStreetAfter_GUW9hY" Value="[!Dialog][!speaker:Marco_Smile]서로 신경 건드리지 말고 최대한 잘 지내보자."/>
+		<class name="Tutorial_PugoStreetAfter_REacuX" Value="[!Dialog][!speaker:Luna_Bored2]......"/>
+		<class name="Tutorial_PugoStreetAfter_h0vO3N" Value="[!Dialog][!speaker:Luna_Annoying]배고프니까 밥이나 빨리 해."/>
+		<class name="Tutorial_PugoStreetAfter_PnDCB1" Value="[!Dialog][!speaker:Marco_Smile]......"/>
+		<class name="Tutorial_PugoStreetAfter_dOsIvd" Value="[!Dialog][!speaker:Marco_Smile]그래. 같이 있는 동안 밥은 내가 챙기마."/>
+		<class name="Tutorial_PugoStreetAfter_4SZwDR" Value="[!Title]부탁"/>
+		<class name="Tutorial_PugoStreetAfter_5pxczr" Value="[!Title]8개월 전, 늦은 오후"/>
+		<class name="Tutorial_PugoStreetAfter_4RE8Ft" Value="[!Dialog]푸고 상점가가 앨리 출신들로 인해 들썩이던 날..."/>
+		<class name="Tutorial_PugoStreetAfter_JHMkC7" Value="[!Dialog]그리고 루나와 앤이 처음 만난 날..."/>
+		<class name="Tutorial_PugoStreetAfter_ZhYIty" Value="[!Dialog][!speaker:Marco_Smile]미안하다. 루나."/>
+		<class name="Tutorial_PugoStreetAfter_bVrfTr" Value="[!Dialog][!speaker:Marco_Smile]조금만 기다려라. 금방 점심 차려줄게."/>
+		<class name="Tutorial_PugoStreetAfter_SsxbQF" Value="[!Dialog][!speaker:Luna_Happy]......"/>
+		<class name="Tutorial_PugoStreetAfter_kMf6Rh" Value="[!Dialog][!speaker:Luna_Happy]마르코."/>
+		<class name="Tutorial_PugoStreetAfter_jusmnJ" Value="[!Dialog][!speaker:Marco_Smile]미안하다고 했잖아. 조금만 기다려."/>
+		<class name="Tutorial_PugoStreetAfter_uW5Q1a" Value="[!Dialog][!speaker:Luna_Happy]나 점심 먹었어."/>
+		<class name="Tutorial_PugoStreetAfter_PepljG" Value="[!Dialog][!speaker:Marco_Smile]......"/>
+		<class name="Tutorial_PugoStreetAfter_tINoeg" Value="[!Dialog][!speaker:Marco_Smile]허락없이 외출한 거냐?"/>
+		<class name="Tutorial_PugoStreetAfter_ayZhZX" Value="[!Dialog][!speaker:Luna_Annoying]네가 늦었잖아."/>
+		<class name="Tutorial_PugoStreetAfter_wp3YWB" Value="[!Dialog][!speaker:Marco_Smile]......"/>
+		<class name="Tutorial_PugoStreetAfter_L73det" Value="[!Dialog][!speaker:Luna_Happy]마르코."/>
+		<class name="Tutorial_PugoStreetAfter_UCPrcC" Value="[!Dialog][!speaker:Marco_Smile]왜?"/>
+		<class name="Tutorial_PugoStreetAfter_UMNnru" Value="[!Dialog][!speaker:Luna_Annoying]나 네 말 잘 따를게. 허락없이 외출도 안 하고."/>
+		<class name="Tutorial_PugoStreetAfter_caQldB" Value="[!Dialog][!speaker:Marco_Smile]당연히 그래야 해. 아니면..."/>
+		<class name="Tutorial_PugoStreetAfter_gWroTa" Value="[!Dialog][!speaker:Luna_Annoying]응. 그러니까..."/>
+		<class name="Tutorial_PugoStreetAfter_U1vU0s" Value="[!Dialog][!speaker:Luna_Annoying]나 2주에 하루... 하루만 자유 시간 주면 안 돼?"/>
+		<class name="Tutorial_PugoStreetAfter_co72yS" Value="[!Dialog][!speaker:Marco_Smile]......"/>
+		<class name="Tutorial_PugoStreetAfter_qucZaV" Value="[!Dialog][!speaker:Luna_Annoying]물론. 일 없을 때. 그리고 나 진짜 말 잘 들을게."/>
+		<class name="Tutorial_PugoStreetAfter_MrB5rN" Value="[!Dialog][!speaker:Marco_Smile]......"/>
+		<class name="Tutorial_PugoStreetAfter_a8pHEc" Value="[!Dialog][!speaker:Luna_Happy]응?"/>
+		<class name="Tutorial_PugoStreetAfter_idFAgi" Value="[!Dialog][!speaker:Marco_Smile]......"/>
+		<class name="Tutorial_PugoStreetAfter_QlCT75" Value="[!Dialog][!speaker:Marco_Smile]......말이 되는 소리를 해."/>
+		<class name="Tutorial_PugoStreetAfter_7pwD3C" Value="[!Dialog][!speaker:Luna_Annoying]......"/>
+		<class name="Tutorial_PugoStreetAfter_4S4Vv6" Value="[!Dialog][!speaker:Luna_Annoying]나 본부 가 버릴 거야..."/>
+		<class name="Tutorial_PugoStreetAfter_Aj9xgt" Value="[!Dialog][!speaker:Marco_Smile]......"/>
+		<class name="Tutorial_PugoStreetAfter_VaKiLe" Value="[!Dialog][!speaker:Luna_Annoying]다 망쳐 버릴 거야..."/>
+		<class name="Tutorial_PugoStreetAfter_bjya3W" Value="[!Dialog][!speaker:Marco_Smile]......"/>
+		<class name="Tutorial_PugoStreetAfter_Iomdrg" Value="[!Dialog][!speaker:Marco_Smile]루나. 너 후회할 거야."/>
+		<class name="Tutorial_PugoStreetAfter_xt9P56" Value="[!Dialog][!speaker:Luna_Annoying]......후회 안해."/>
+		<class name="Tutorial_PugoStreetAfter_WPjumm" Value="[!Dialog][!speaker:Marco_Smile]......"/>
+		<class name="Tutorial_PugoStreetAfter_hV5nw0" Value="[!Dialog][!speaker:Marco_Smile]&apos;14살인가... &apos;"/>
+		<class name="Tutorial_PugoStreetAfter_HMXD2v" Value="[!Dialog][colour=&apos;FFFFFF00&apos;]마르코!!! 내 인형!!!"/>
+		<class name="Tutorial_PugoStreetAfter_g1R9nH" Value="[!Dialog][colour=&apos;FFFFFF00&apos;]마르코!!!"/>
+		<class name="Tutorial_PugoStreetAfter_8SVfLu" Value="[!Title]추억이 가시가 되어..."/>
+		<class name="Tutorial_PugoStreetAfter_wXHAbe" Value="[!Title]6개월 전, 잿빛 공원묘지"/>
+		<class name="Tutorial_PugoStreetAfter_jNTZRI" Value="[!Dialog][!speaker:Luna_Annoying]내 인형 줘. 마르코."/>
+		<class name="Tutorial_PugoStreetAfter_YZ4L19" Value="[!Dialog][!speaker:Luna_Annoying]빨리 던지라고..."/>
+		<class name="Tutorial_PugoStreetAfter_AMS4ba" Value="[!Dialog][!speaker:Luna_Normal]마르코. 내가 잘못했어."/>
+		<class name="Tutorial_PugoStreetAfter_2olcIY" Value="[!Dialog][!speaker:Luna_Normal]더 이상 안 만날게."/>
+		<class name="Tutorial_PugoStreetAfter_jwWV6H" Value="[!Dialog][!speaker:Luna_Normal]더 이상 내 시간 달라고 억지 부리지 않을게."/>
+		<class name="Tutorial_PugoStreetAfter_3oD6V3" Value="[!Dialog][!speaker:Luna_Normal]제발 부탁이야. 저 아이를 구할 기회를 줘."/>
+		<class name="Tutorial_PugoStreetAfter_UqcbkH" Value="[!Dialog][!speaker:Luna_Annoying]응? 제발..."/>
+		<class name="Tutorial_PugoStreetAfter_2JYdSJ" Value="[!Dialog][!speaker:Luna_Annoying]마르코..."/>
+		<class name="Tutorial_PugoStreetAfter_MeT00H" Value="[!Title]아파도 아픈 줄 모르고..."/>
+		<class name="Tutorial_PugoStreetAfter_Rhak6y" Value="[!Title]잿빛 공원묘지 사건 다음날 새벽..."/>
+		<class name="Tutorial_PugoStreetAfter_6AbhEB" Value="[!Dialog][colour=&apos;FFFF99FF&apos;]한동안 열심히 일처리 하길래 놔뒀더니..."/>
+		<class name="Tutorial_PugoStreetAfter_aM5NQ0" Value="[!Dialog][!speaker:Luna_Depressed]......"/>
+		<class name="Tutorial_PugoStreetAfter_S1OYGg" Value="[!Dialog][!speaker:Luna_Depressed]......열심히 했어."/>
+		<class name="Tutorial_PugoStreetAfter_rrnGHo" Value="[!Dialog][colour=&apos;FFFF99FF&apos;]후회할 거라 했지?"/>
+		<class name="Tutorial_PugoStreetAfter_io5kF5" Value="[!Dialog][!speaker:Luna_Depressed]후회 안 해..."/>
+		<class name="Tutorial_PugoStreetAfter_2gaCt8" Value="[!Dialog][colour=&apos;FFFF99FF&apos;]이대로 일이 잘 풀리면 이번 달에 본부로 복귀한다."/>
+		<class name="Tutorial_PugoStreetAfter_LoTf5s" Value="[!Dialog][colour=&apos;FFFF99FF&apos;]망가진 너에게 기회를 준 누님을 실망시키지 마."/>
+		<class name="Tutorial_PugoStreetAfter_frv8SN" Value="[!Dialog][!speaker:Luna_Depressed]알아..."/>
+		<class name="Tutorial_PugoStreetAfter_uGn8d3" Value="[!Dialog][!speaker:Luna_Depressed]내가 어떻게 해야 되는지 다 알아..."/>
+		<class name="Tutorial_PugoStreetAfter_2IGnkp" Value="[!Dialog][!speaker:Luna_Depressed]안 단 말이야..."/>
+		<class name="Tutorial_PugoStreetAfter_Cygq74" Value="[!Dialog][!speaker:Luna_Depressed2]......"/>
+		<class name="Tutorial_PugoStreetAfter_tPKAOh" Value="[!Dialog][colour=&apos;FFFF99FF&apos;]정신 차려. 넌 벤데타 조직원이야."/>
+		<class name="Tutorial_PugoStreetAfter_06lbhB" Value="[!Dialog][!speaker:Luna_Depressed]고양이 사줬어야 했는데..."/>
+		<class name="Tutorial_PugoStreetAfter_S2t53A" Value="[!Dialog][!speaker:Luna_Depressed]람지 플라자 가야 하는데..."/>
+		<class name="Tutorial_PugoStreetAfter_jGMW6y" Value="[!Dialog][!speaker:Luna_Depressed]난 후회 안 해."/>
+		<class name="Tutorial_PugoStreetAfter_W8AxQx" Value="[!Dialog][!speaker:Luna_Depressed]그런데 가슴이 아파..."/>
+		<class name="Tutorial_PugoStreetAfter_Zo8KvK" Value="[!Dialog][!speaker:Luna_Depressed]앤..."/>
+		<class name="Tutorial_PugoStreetAfter_i41SmN" Value="[!Dialog][!speaker:Luna_Depressed2]안녕..."/>
+		<class name="Tutorial_PugoStreetAfter_TVeLZx" Value="[!Title]벌어지는 균열"/>
+		<class name="Tutorial_PugoStreetAfter_WDPotZ" Value="[!Title]2일 전, 푸고 번화가"/>
+		<class name="Tutorial_PugoStreetAfter_dwSVt7" Value="[!Dialog][!speaker:Gangster_WhiteTigerNormal_Andrei_Normal]아직 조슈아에게서 연락은 없나?"/>
+		<class name="Tutorial_PugoStreetAfter_xbZcQZ" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Normal]네. 어제 스푼교 잔당을 추출하러 나간 후로 연락이 두절되셨습니다."/>
+		<class name="Tutorial_PugoStreetAfter_l0Ih7n" Value="[!Dialog][!speaker:Gangster_WhiteTigerNormal_Andrei_Normal]......"/>
+		<class name="Tutorial_PugoStreetAfter_nmQYpn" Value="[!Dialog][!speaker:Gangster_WhiteTigerNormal_Normal]일단 조슈아 님이 마지막으로 계셨던 곳부터 수색해보겠습니다."/>
+		<class name="Tutorial_PugoStreetAfter_G3leRD" Value="[!Dialog][!speaker:Gangster_WhiteTigerNormal_Andrei_Normal]그래. 그리고 만약 조슈아의 정보를 입수하게 되면 누구보다 나에게 먼저 알려라."/>
+		<class name="Tutorial_PugoStreetAfter_WaDVvw" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Normal]알겠습니다."/>
+		<class name="Tutorial_PugoStreetAfter_Pi7adP" Value="[!Dialog][!speaker:Gangster_WhiteTigerNormal_Andrei_Normal]&apos;이 시기에 연락 두절이라... &apos;"/>
+		<class name="Tutorial_PugoStreetAfter_AVbkFP" Value="[!Dialog][!speaker:Gangster_WhiteTigerNormal_Andrei_Normal]&apos;누구지... &apos;"/>
+		<class name="Tutorial_PugoStreetAfter_NGtgPN" Value="[!Dialog][!speaker:Gangster_WhiteTigerNormal_Andrei_Normal]&apos;조슈아 제발 살아 있어라...&apos;"/>
+		<class name="Tutorial_PugoStreetAfter_wJKotg" Value="[!Title]균열의 틈 사이로"/>
+		<class name="Tutorial_PugoStreetAfter_KDMCDN" Value="[!Title]1일 전, 푸고 번화가"/>
+		<class name="Tutorial_PugoStreetAfter_phPRP5" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]안드레이 녀석은?"/>
+		<class name="Tutorial_PugoStreetAfter_sQemdP" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]......"/>
+		<class name="Tutorial_PugoStreetAfter_hzV7fd" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]일단 지금은 살아 있습니다."/>
+		<class name="Tutorial_PugoStreetAfter_EldWDB" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]......"/>
+		<class name="Tutorial_PugoStreetAfter_4yfm8d" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]의료진도 이미 손을 뗀 상태입니다. 아마 오늘을 넘기기 힘들 겁니다."/>
+		<class name="Tutorial_PugoStreetAfter_FXHuib" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]조슈아는 아직도 행방불명인가?"/>
+		<class name="Tutorial_PugoStreetAfter_3wStIA" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]네. 수색은 하지만 단서가 안 잡히는 걸로 봐서..."/>
+		<class name="Tutorial_PugoStreetAfter_qtuF65" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]전문적인 암살과 처리가 이루어진 듯 합니다."/>
+		<class name="Tutorial_PugoStreetAfter_OM1JOk" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]......"/>
+		<class name="Tutorial_PugoStreetAfter_Y2lFhX" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]베르케 님. 제 견해로는 안드레이에게 총을 겨눈 자는..."/>
+		<class name="Tutorial_PugoStreetAfter_Pt0GIs" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]머트를 살해한 녀석이겠지."/>
+		<class name="Tutorial_PugoStreetAfter_g06VDg" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]네. 저도 그렇게 생각합니다."/>
+		<class name="Tutorial_PugoStreetAfter_dyGE2q" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]출혈... 쇼크사가 아닌..."/>
+		<class name="Tutorial_PugoStreetAfter_RZVStd" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal] 단 한발의 관통상으로 중요 뇌 기능을 모두 망가뜨리는 우연이 두 번 발생할 리 없지."/>
+		<class name="Tutorial_PugoStreetAfter_gWm0oo" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]네. 머트 때와 마찬가지로 목격자는 아무도 없습니다."/>
+		<class name="Tutorial_PugoStreetAfter_DFzwJs" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]매우 신중하고 영리한 녀석입니다."/>
+		<class name="Tutorial_PugoStreetAfter_UdWp6s" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]혹시 『 흑호 』쪽의 동향은?"/>
+		<class name="Tutorial_PugoStreetAfter_jFWtxs" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]그녀석들... 진심으로 트러블슈터가 되려는 지 모든 마찰을 회피하고 있습니다."/>
+		<class name="Tutorial_PugoStreetAfter_2vYTHH" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]트레이 녀석의 속 마음은 모르겠지만 적어도 이렇게 노출될 일을 진행할 자는 아니겠죠."/>
+		<class name="Tutorial_PugoStreetAfter_83luem" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]그럼 역시 『 블랙펄 』의 그 여자인가..."/>
+		<class name="Tutorial_PugoStreetAfter_3NPVQN" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]적어도 세계수 지구의 그 강대한『 스컬 』이 공중분해 된 소문이 사실이라면..."/>
+		<class name="Tutorial_PugoStreetAfter_5b76we" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]가능성 충분히 있습니다."/>
+		<class name="Tutorial_PugoStreetAfter_I8tYWm" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]하지만..."/>
+		<class name="Tutorial_PugoStreetAfter_cRjrXk" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]그 외에 또 의심이 가는 자가 있는 건가?"/>
+		<class name="Tutorial_PugoStreetAfter_XFe9OH" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]이런 암살은 저희에 대한 정보가 없으면 불가능합니다."/>
+		<class name="Tutorial_PugoStreetAfter_l0XjDq" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]안 그래도 경찰과 잦은 충돌이 있어 개별 활동을 하는 간부들의 행동 경로들을 흘린 자가 있을 거라고 생각합니다."/>
+		<class name="Tutorial_PugoStreetAfter_Pxx50Y" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]배신자인가..."/>
+		<class name="Tutorial_PugoStreetAfter_VS0qZF" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]......"/>
+		<class name="Tutorial_PugoStreetAfter_0TPW4s" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]죠슈아 일과 안드레이 일은 내가 보스에게 보고 하겠다."/>
+		<class name="Tutorial_PugoStreetAfter_gaixwB" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]감사합니다. 베르케 님."/>
+		<class name="Tutorial_PugoStreetAfter_n00KTM" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]늙은이가 남아 뭘 하겠나. 이런 불편한 일이나 해서 자네들 짐이나 덜어 주는 거지."/>
+		<class name="Tutorial_PugoStreetAfter_whjvKL" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]그럼 저는 후성과 함께 이 구역을 좀 더 수색하겠습니다."/>
+		<class name="Tutorial_PugoStreetAfter_yALKxH" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]그래. 자네들 역시 조심하게나."/>
+		<class name="Tutorial_PugoStreetAfter_HDPQPe" Value="[!Title]바람이 분다."/>
+		<class name="Tutorial_PugoStreetAfter_Q8Hzyn" Value="[!Title]30분 전, 푸고 번화가"/>
+		<class name="Tutorial_PugoStreetAfter_7Ai4Z9" Value="[!Dialog][!speaker:Gangster_WhiteTigerDagger_HouCheng_Normal]잘 부탁하네."/>
+		<class name="Tutorial_PugoStreetAfter_EPp1ZN" Value="[!Dialog][!speaker:Gangster_YukyunHyang_Normal]백호파는 구룡회의 백룡회와 거래를 하고 있을 텐데..."/>
+		<class name="Tutorial_PugoStreetAfter_1QMD6W" Value="[!Dialog][!speaker:Gangster_YukyunHyang_Normal]다른 파벌인 적룡회에게 비밀리에 요청을 넣는다는 건 쿠데타인가?"/>
+		<class name="Tutorial_PugoStreetAfter_98VVWn" Value="[!Dialog][!speaker:Gangster_WhiteTigerDagger_HouCheng_Normal]리더는 의리라는 감성 놀이에 빠져 나오지 못하고..."/>
+		<class name="Tutorial_PugoStreetAfter_umcgLB" Value="[!Dialog][!speaker:Gangster_WhiteTigerDagger_HouCheng_Normal]그를 따르는 자들은 의리라는 감정팔이에 끌려 다니고만 있지."/>
+		<class name="Tutorial_PugoStreetAfter_MeiKlE" Value="[!Dialog][!speaker:Gangster_WhiteTigerDagger_HouCheng_Normal]이미 반년 사이에 간부의 반이 사라졌네."/>
+		<class name="Tutorial_PugoStreetAfter_lpblyD" Value="[!Dialog][!speaker:Gangster_YukyunHyang_Normal]미치겠군. 그래서 이제 자네가 리더를 하려고 하는 건가?"/>
+		<class name="Tutorial_PugoStreetAfter_egkroP" Value="[!Dialog][!speaker:Gangster_YukyunHyang_Normal]외부 세력을 끌여들여서?"/>
+		<class name="Tutorial_PugoStreetAfter_ZjCzIK" Value="[!Dialog][!speaker:Gangster_WhiteTigerDagger_HouCheng_Normal]난 그런 그릇이 아니야."/>
+		<class name="Tutorial_PugoStreetAfter_44veM0" Value="[!Dialog][!speaker:Gangster_YukyunHyang_Normal]그럼 누구지? 말하지 않으면 난 움직이지 않아."/>
+		<class name="Tutorial_PugoStreetAfter_lbWG9m" Value="[!Dialog][!speaker:Gangster_WhiteTigerDagger_HouCheng_Normal]대니 로."/>
+		<class name="Tutorial_PugoStreetAfter_NHVcrO" Value="[!Dialog][!speaker:Gangster_YukyunHyang_Normal]우하하하하하!"/>
+		<class name="Tutorial_PugoStreetAfter_0TwQHu" Value="[!Dialog][!speaker:Gangster_YukyunHyang_Normal]대니 로?"/>
+		<class name="Tutorial_PugoStreetAfter_of9Vjz" Value="[!Dialog][!speaker:Gangster_YukyunHyang_Normal]진심인가?"/>
+		<class name="Tutorial_PugoStreetAfter_0L8hVn" Value="[!Dialog][!speaker:Gangster_WhiteTigerDagger_HouCheng_Normal]그래."/>
+		<class name="Tutorial_PugoStreetAfter_6ON7GZ" Value="[!Dialog][!speaker:Gangster_YukyunHyang_Normal]마지막 『 잉어 』가 용을 쓰는군."/>
+		<class name="Tutorial_PugoStreetAfter_qfm83u" Value="[!Dialog][!speaker:Gangster_YukyunHyang_Normal]좋아. 좋아."/>
+		<class name="Tutorial_PugoStreetAfter_x47SfO" Value="[!Dialog][!speaker:Gangster_YukyunHyang_Normal]대니에게 빚을 만들어 두는 것도 좋겠지."/>
+		<class name="Tutorial_PugoStreetAfter_L5gdRp" Value="[!Dialog][!speaker:Gangster_YukyunHyang_Normal]하지만 어디까지나 내 개인이 돕는 것이야."/>
+		<class name="Tutorial_PugoStreetAfter_cvK8Xz" Value="[!Dialog][!speaker:Gangster_WhiteTigerDagger_HouCheng_Normal]알겠네. 맘껏 날뛰어 조직의 시선을 빼앗아 주게."/>
+		<class name="Tutorial_PugoStreetAfter_9YDQSY" Value="[!Dialog][!speaker:Gangster_YukyunHyang_Normal]물론 망나니 짓이야말로 내 전문이지."/>
+		<class name="Tutorial_PugoStreetAfter_L4vSa6" Value="[!Dialog][!speaker:NewsCaster_Normal]속보입니다."/>
+		<class name="Tutorial_PugoStreetAfter_JJ0AiM" Value="[!Dialog][!speaker:NewsCaster_Normal]한동안 잠잠했던 폭력 조직 &apos;백호&apos;가 푸고 번화가에서 다시 무차별 적인 폭력 사건을 일으키고 있습니다."/>
+		<class name="Tutorial_PugoStreetAfter_swtGzU" Value="[!Dialog][!speaker:NewsCaster_Normal]현재 바람장벽지구 경찰청과 『  $CompanyName$  』가 현장으로 출동하였습니다."/>
+		<class name="Tutorial_PugoStreetAfter_xz2Y2f" Value="[!Dialog][!speaker:NewsCaster_Normal]시민들은 사태가 진압될 때까지 안전한 곳으로 대피해 주시기 바랍니다."/>
+		<class name="Tutorial_PugoStreetAfter_YFWJhn" Value="[!Dialog][!speaker:Albus_Serious]다들 시민들의 구조가 최우선입니다."/>
+		<class name="Tutorial_PugoStreetAfter_DQvVpD" Value="[!BalloonChat][!speaker:VHPDAssult03]역시 시민들의 편..."/>
+		<class name="Tutorial_PugoStreetAfter_lfyXC9" Value="[!Dialog][!speaker:Albus_Serious]그리고 여러분 자신들의 안전도 중요합니다."/>
+		<class name="Tutorial_PugoStreetAfter_JkOmfy" Value="[!BalloonChat][!speaker:VHPDAssult03]역시 알버스 님..."/>
+		<class name="Tutorial_PugoStreetAfter_SdsZHX" Value="[!Dialog][!speaker:Albus_Serious]그럼 지금부터 현장 임무를 시작하겠습니다!"/>
+		<class name="Tutorial_PugoStreetAfter_2hvzso" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_PugoStreetAfter_SgMJM0" Value="[!VictoryCondition]시민 전원 전투 불능"/>
+		<class name="Tutorial_PugoStreetAfter_sDvUDu" Value="[!VictoryCondition]시민을 모두 구출하시오."/>
+		<class name="Tutorial_PugoStreetAfter_QZbsCk" Value="[!Title]잊으려 하면 할수록..."/>
+		<class name="Tutorial_PugoStreetAfter_nHuocV" Value="[!Title]8개월 전, 푸고 거리"/>
+		<class name="Tutorial_PugoStreetAfter_0Su1X5" Value="[!Dialog][!speaker:Luna_Bored]왜 도와준 거야?"/>
+		<class name="Tutorial_PugoStreetAfter_ak6yWY" Value="[!Dialog][!speaker:Anne_Strict]당연히 도와야죠."/>
+		<class name="Tutorial_PugoStreetAfter_frQ0i2" Value="[!Dialog][!speaker:Anne_Smile]다 큰 어른들이 우리 같은 아이들을 때리는데 그걸 어떻게 참고 보고 있어요!"/>
+		<class name="Tutorial_PugoStreetAfter_rkgBJ8" Value="[!Dialog][!speaker:Luna_Bored]난 상관없었는데..."/>
+		<class name="Tutorial_PugoStreetAfter_1IbusK" Value="[!Dialog][!speaker:Anne_Surprise]상관없긴요! 무슨 말이에요!"/>
+		<class name="Tutorial_PugoStreetAfter_6OzCOH" Value="[!Dialog][!speaker:Anne_Strict]아무리 새치기했다고 해도 그 이유로 폭력을 행사하다니 그건 아니라고요!"/>
+		<class name="Tutorial_PugoStreetAfter_Id0cwL" Value="[!Dialog][!speaker:Luna_Bored]그런가..."/>
+		<class name="Tutorial_PugoStreetAfter_OK0mqD" Value="[!Dialog][!speaker:Marco_Smile]......"/>
+		<class name="Tutorial_PugoStreetAfter_QF1Xez" Value="[!Dialog][!speaker:Marco_Smile]이제 저 아이 곁에는 좋은 동료들이 많아."/>
+		<class name="Tutorial_PugoStreetAfter_OoDhA2" Value="[!Dialog][!speaker:Luna_Depressed]......."/>
+		<class name="Tutorial_PugoStreetAfter_0hhC1o" Value="[!Dialog][!speaker:Luna_Depressed].......나도 알아."/>
+		<class name="Tutorial_PugoStreetAfter_zd7g3l" Value="[!Dialog][!speaker:Marco_Smile]이제 일이 마무리되는 대로 이 곳을 떠날 거다."/>
+		<class name="Tutorial_PugoStreetAfter_9pfxro" Value="[!Dialog][!speaker:Marco_Smile]그러니 이제 지켜보는 것도 끝내라."/>
+		<class name="Tutorial_PugoStreetAfter_s7rpmE" Value="[!Dialog][!speaker:Luna_Depressed]......."/>
+		<class name="Tutorial_PugoStreetAfter_DXcWgD" Value="[!Dialog][!speaker:Marco_Smile]약속 했지. 네가 역할을 제대로 안하면..."/>
+		<class name="Tutorial_PugoStreetAfter_q1lVen" Value="[!Dialog][!speaker:Luna_Depressed]응 알아!"/>
+		<class name="Tutorial_PugoStreetAfter_HQJNrq" Value="[!Dialog][!speaker:Marco_Smile]......"/>
+		<class name="Tutorial_PugoStreetAfter_Sb53wu" Value="[!Dialog][!speaker:Luna_Depressed]마르코. 다음 일하러 가야지."/>
+		<class name="Tutorial_PugoStreetAfter_OQFYh6" Value="[!Dialog][!speaker:Marco_Smile]그래. 가자."/>
+		<class name="Tutorial_PugoStreetAfter_UnEDUv" Value="[!Dialog][!speaker:Luna_Depressed]응."/>
+		<class name="Tutorial_PugoStreetAfter_H0WdAA" Value="[!Dialog][!speaker:Gangster_YukyunHyang_Normal]백룡의 공주님이시군요."/>
+		<class name="Tutorial_PugoStreetAfter_uPeSzJ" Value="[!Dialog][!speaker:Gangster_YukyunHyang_Normal]처음 뵙겠습니다. 적룡의 육연향이라고 합니다."/>
+		<class name="Tutorial_PugoStreetAfter_WmBHCC" Value="[!Dialog][!speaker:Kylie_Smile]벌써 내 목숨을 가지러 온 거냐?"/>
+		<class name="Tutorial_PugoStreetAfter_pTYXgn" Value="[!Dialog][!speaker:Gangster_YukyunHyang_Normal]아닙니다. 하지만 기회는 자주 오지 않겠군요."/>
+		<class name="Tutorial_PugoStreetAfter_m7OJd6" Value="[!Dialog][!speaker:Gangster_YukyunHyang_Normal]지금 당신 목을 베어 아스카 님을 뵙도록 하지요."/>
+		<class name="Tutorial_PugoStreetAfter_C0Usv5" Value="[!Dialog][!speaker:Kylie_Satisfying]해 볼 수 있다면 해 보아라. 끝까지 저항해 주마."/>
+		<class name="Tutorial_PugoStreetAfter_St9jml" Value="[!BalloonChat][!speaker:Civil01]나야 나!! 나부터!!"/>
+		<class name="Tutorial_PugoStreetAfter_FshMfS" Value="[!BalloonChat][!speaker:Civil02]제발 구해줘!!"/>
+		<class name="Tutorial_PugoStreetAfter_SiHjpA" Value="[!BalloonChat][!speaker:Civil02]나 연애도 못 해봤단 말야!!"/>
+		<class name="Tutorial_PugoStreetAfter_aN9PMZ" Value="[!BalloonChat][!speaker:Civil03]자네들! 조심하게나!"/>
+		<class name="Tutorial_PugoStreetAfter_Pei0z2" Value="[!BalloonChat][!speaker:Civil04]난 충분히 살았어!"/>
+		<class name="Tutorial_PugoStreetAfter_eX93k1" Value="[!BalloonChat][!speaker:Civil04]다른 젊은이들부터 구하게나!"/>
+		<class name="Tutorial_PugoStreetAfter_6mCuUi" Value="[!BalloonChat][!speaker:Civil05]여기네! 여기! 살려줘!"/>
+		<class name="Tutorial_PugoStreetAfter_ci4gCm" Value="[!BalloonChat][!speaker:Civil06]우왓! 트러블슈터다!"/>
+		<class name="Tutorial_PugoStreetAfter_VNAMIo" Value="[!BalloonChat][!speaker:Civil07]아저씨! 아줌마! 여기에요!"/>
+		<class name="Tutorial_PugoStreetAfter_nTwzMA" Value="[!Dialog][!speaker:VHPD_Assault_Normal]알버스 님. 현장의 시민들을 모두 구출하였습니다."/>
+		<class name="Tutorial_PugoStreetAfter_nYyCku" Value="[!Dialog][!speaker:Albus_Serious]알겠습니다. 그럼 지금부터 현장에서 모든 적을 제압합니다."/>
+		<class name="Tutorial_PugoStreetAfter_tKyTvJ" Value="[!VictoryCondition]적을 모두 제압하시오."/>
+	</idspace>
+</idspaces>

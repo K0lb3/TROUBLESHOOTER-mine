@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Tutorial_PugoBackStreetAfter_TzFjld" Value="[!Dashboard:Counter]남은 스푼교 잔당 수"/>
+		<class name="Tutorial_PugoBackStreetAfter_HulA6A" Value="[!Dashboard:TimeLimiter]지원 분대 도착까지 남은 시간"/>
+		<class name="Tutorial_PugoBackStreetAfter_Rop5zd" Value="[!Dashboard:ObjectiveMarker]해당 오브젝트를 모두 파괴하면 해당 지역의 통신이 복구됩니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_UFMOks" Value="[!Dashboard:ObjectiveMarker]해당 오브젝트를 모두 파괴하면 해당 지역의 통신이 복구됩니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_i7DwCO" Value="[!Dashboard:ObjectiveMarker]해당 오브젝트를 모두 파괴하면 해당 지역의 통신이 복구됩니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_wzVKgq" Value="[!Dashboard:ObjectiveMarker]해당 오브젝트를 모두 파괴하면 해당 지역의 통신이 복구됩니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_Tg2l2L" Value="[!Dashboard:ObjectiveMarker]해당 오브젝트를 모두 파괴하면 해당 지역의 통신이 복구됩니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_OFKq9O" Value="[!Dashboard:Counter]남은 전파 방해기 수"/>
+		<class name="Tutorial_PugoBackStreetAfter_nis3tT" Value="[!Dashboard:ObjectiveMarker]해당 지역에 아군만 존재하면, 진입로를 확보할 수 있습니다.
+
+[colour=&apos;FFFFFF00&apos;]제한 시간 내 진입로를 확보해야 합니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_a2QqhT" Value="[!Dashboard:ObjectiveMarker]해당 지역에 아군만 존재하면, 진입로를 확보할 수 있습니다.
+
+[colour=&apos;FFFFFF00&apos;]제한 시간 내 진입로를 확보해야 합니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_cUjsPk" Value="[!Dashboard:ObjectiveMarker]해당 지역에 아군만 존재하면, 진입로를 확보할 수 있습니다.
+
+[colour=&apos;FFFFFF00&apos;]제한 시간 내 진입로를 확보해야 합니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_tvb4O3" Value="[!Objective]스푼교도를 제압하시오."/>
+		<class name="Tutorial_PugoBackStreetAfter_nsb5kI" Value="[!Objective]전파 방해기를 파괴하시오."/>
+		<class name="Tutorial_PugoBackStreetAfter_ZaIhQM" Value="[!Objective]제한 시간 내 진입로를 확보하시오."/>
+		<class name="Tutorial_PugoBackStreetAfter_iOWHSX" Value="적이 해당 지역으로 진입했을 때, 해당 지역에 아군이 없으면 패배합니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_0b0Pen" Value="적이 해당 지역으로 진입했을 때, 해당 지역에 아군이 없으면 패배합니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_OAzRE1" Value="적이 해당 지역으로 진입했을 때, 해당 지역에 아군이 없으면 패배합니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_AtDdqX" Value="적이 해당 지역으로 진입했을 때, 해당 지역에 아군이 없으면 패배합니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_11yxRj" Value="[!Objective]지원 분대가 도착할때까지 진입로를 지켜내시오."/>
+		<class name="Tutorial_PugoBackStreetAfter_frAQBc" Value="[!Title]뿌린 대로 거두리라"/>
+		<class name="Tutorial_PugoBackStreetAfter_8Wsa1x" Value="[!Title]푸고 뒷골목"/>
+		<class name="Tutorial_PugoBackStreetAfter_tMveCw" Value="[!Dialog][!speaker:Gangster_WhiteTigerDagger_HouCheng_Normal]야! 안 비켜!"/>
+		<class name="Tutorial_PugoBackStreetAfter_05rZgs" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]이 일은 베르케님에게 맡겼습니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_rmsHSC" Value="[!Dialog][!speaker:Gangster_WhiteTigerDagger_HouCheng_Normal]무슨 개소리야!"/>
+		<class name="Tutorial_PugoBackStreetAfter_pZo6XE" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Joshua_Normal]후성씨. 케빈은 보스로부터 항쟁의 지휘권을 일임 받았습니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_WUrkIU" Value="[!Dialog][!speaker:Gangster_WhiteTigerDagger_HouCheng_Normal]뭐! 그래서! 어쩔건데!"/>
+		<class name="Tutorial_PugoBackStreetAfter_JFSast" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]후성. 참아."/>
+		<class name="Tutorial_PugoBackStreetAfter_bWewtp" Value="[!Dialog][!speaker:Gangster_WhiteTigerDagger_HouCheng_Normal]하! 미치겠군."/>
+		<class name="Tutorial_PugoBackStreetAfter_Mkku8B" Value="[!Dialog][!speaker:Gangster_WhiteTigerDagger_HouCheng_Normal]저 녀석들을 이 곳으로 몰아넣는다고 고생한건 우리 애들이야."/>
+		<class name="Tutorial_PugoBackStreetAfter_10QJLg" Value="[!Dialog][!speaker:Gangster_WhiteTigerDagger_HouCheng_Normal]그걸 눈 앞에서 가로채?"/>
+		<class name="Tutorial_PugoBackStreetAfter_YDJf7V" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]후성씨의 공은 보스에게 제대로 보고할 예정입니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_pTQYgY" Value="[!Dialog][!speaker:Gangster_WhiteTigerDagger_HouCheng_Normal]네 녀석이 뭐라고 보고할지 어떻게 알아!?"/>
+		<class name="Tutorial_PugoBackStreetAfter_q5bTa7" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Joshua_Normal]그만하시죠. 후성씨."/>
+		<class name="Tutorial_PugoBackStreetAfter_wtNznR" Value="[!Dialog][!speaker:Gangster_WhiteTigerDagger_HouCheng_Normal]네 녀석이나 입 다물어 이 자식아!"/>
+		<class name="Tutorial_PugoBackStreetAfter_vLWIdv" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Joshua_Normal]한번 해보시겠다면 사양은 안 하겠습니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_5BBK6e" Value="[!Dialog][!speaker:Gangster_WhiteTigerSniper_Mert_Normal]후성씨. 이번 불만은 다음 간부 회의에서 하시는 게 나을 듯합니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_RB8dR0" Value="[!Dialog][!speaker:Gangster_WhiteTigerDagger_HouCheng_Normal]하아... 이 자식들이 단체로 물 먹이려고 하네?"/>
+		<class name="Tutorial_PugoBackStreetAfter_EpmP1Q" Value="[!Dialog][!speaker:Gangster_WhiteTigerDagger_HouCheng_Normal]다리우스! 넌 가만히 있을 거냐!"/>
+		<class name="Tutorial_PugoBackStreetAfter_AVEmKe" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]케빈."/>
+		<class name="Tutorial_PugoBackStreetAfter_s7d0kj" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]네. 다리우스님."/>
+		<class name="Tutorial_PugoBackStreetAfter_Q2N9ij" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]지금 이 일은 베르케 영감의 부탁인가?"/>
+		<class name="Tutorial_PugoBackStreetAfter_0wNC0i" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]어디까지나 제 판단입니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_A5VpnR" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]모든 일은 케빈 네 책임이다."/>
+		<class name="Tutorial_PugoBackStreetAfter_RM4LYJ" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]네."/>
+		<class name="Tutorial_PugoBackStreetAfter_ogZisK" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]알았다. 그러면 나와 후성은 빠지겠다."/>
+		<class name="Tutorial_PugoBackStreetAfter_EekR0A" Value="[!Dialog][!speaker:Gangster_WhiteTigerDagger_HouCheng_Normal]뭐!?"/>
+		<class name="Tutorial_PugoBackStreetAfter_JRVrqe" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]후성. 어차피 우리 모두 올라가봐야 협소해서 서로 불편할 뿐이다."/>
+		<class name="Tutorial_PugoBackStreetAfter_pX1odc" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Darius_Normal]이번 건은 고생했지만 포기해."/>
+		<class name="Tutorial_PugoBackStreetAfter_AWU9lf" Value="[!Dialog][!speaker:Gangster_WhiteTigerDagger_HouCheng_Normal]하아... 이 녀석이고 저 녀석이고..."/>
+		<class name="Tutorial_PugoBackStreetAfter_uVapvB" Value="[!Dialog][!speaker:Gangster_WhiteTigerSniper_Mert_Normal]케빈. 고생했다."/>
+		<class name="Tutorial_PugoBackStreetAfter_AowZuE" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Joshua_Normal]그런데 진짜 베르케 형님한테 맡겨도 되는 건가?"/>
+		<class name="Tutorial_PugoBackStreetAfter_7YWrro" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Joshua_Normal]그 녀석들 실비아님 장례식에도 가장 먼저 달려왔던 녀석들이다."/>
+		<class name="Tutorial_PugoBackStreetAfter_c0nXSA" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]보스의 명령을 누구보다 소중히 하시는 분이다."/>
+		<class name="Tutorial_PugoBackStreetAfter_3LaGel" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]걱정할 필요 없다."/>
+		<class name="Tutorial_PugoBackStreetAfter_SP2zyl" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Joshua_Normal]그래도 씁쓸하군. 그 녀석들 10년 전 같이 고생한 녀석들인데..."/>
+		<class name="Tutorial_PugoBackStreetAfter_J4tB5l" Value="[!Dialog][!speaker:Gangster_WhiteTigerSniper_Mert_Normal]...그놈의 사나이 소리는 이제 못 듣겠군."/>
+		<class name="Tutorial_PugoBackStreetAfter_TqxqRZ" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]그만. 이제 우리도 준비해야 할 시간이다."/>
+		<class name="Tutorial_PugoBackStreetAfter_buaQrS" Value="[!Title]경찰 도착 2시간 전..."/>
+		<class name="Tutorial_PugoBackStreetAfter_iAB7Tz" Value="[!Title]푸고 뒷골목 옥상"/>
+		<class name="Tutorial_PugoBackStreetAfter_7JPHAx" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]조홍. 잘 지냈나?"/>
+		<class name="Tutorial_PugoBackStreetAfter_gah3h5" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]그 위에 하산도 오랜만이군."/>
+		<class name="Tutorial_PugoBackStreetAfter_q5luhw" Value="[!Dialog][!speaker:Gangster_SpoonFighter_ZhoHong_Normal]형님도 오랜만입니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_VoGRUd" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Hasan_Normal]푸님도 잔인하시군요. 굳이 형님을 보내시다니...."/>
+		<class name="Tutorial_PugoBackStreetAfter_P3XGW9" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]내가 자원한걸세."/>
+		<class name="Tutorial_PugoBackStreetAfter_5XjYsQ" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]......"/>
+		<class name="Tutorial_PugoBackStreetAfter_QmHGSW" Value="[!Dialog][!speaker:Gangster_SpoonFighter_ZhoHong_Normal]형님. 푸님이 자홍뒷골목에서 저희 보스를 의도적으로 돕지 않은 것이 사실입니까?"/>
+		<class name="Tutorial_PugoBackStreetAfter_j0WJ3e" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]나는 모르네."/>
+		<class name="Tutorial_PugoBackStreetAfter_SFQkbw" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]그런데 자네들. 끝까지 저항할 생각인가?"/>
+		<class name="Tutorial_PugoBackStreetAfter_QRZ8it" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Hasan_Normal]이 푸고 거리는 엄연히 &apos;성난 황소&apos; 파의 구역입니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_gHE7Ed" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]음. 그랬었지."/>
+		<class name="Tutorial_PugoBackStreetAfter_GPtcro" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]그런데 내 눈에는 &apos;성난 황소&apos; 조직원들은 보이지 않고 광신도 집단만 보이는구나."/>
+		<class name="Tutorial_PugoBackStreetAfter_yik78x" Value="[!Dialog][!speaker:Gangster_SpoonFighter_ZhoHong_Normal]형님이 뭐라고 하시던 저희도 저희의 긍지가 있습니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_4JG0RD" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]흠..."/>
+		<class name="Tutorial_PugoBackStreetAfter_HqzsNB" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]조홍. 하산."/>
+		<class name="Tutorial_PugoBackStreetAfter_Gu0WqL" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]항복할 생각은 없나?"/>
+		<class name="Tutorial_PugoBackStreetAfter_oVddIu" Value="[!Dialog][!speaker:Gangster_SpoonFighter_ZhoHong_Normal]형님. 농담하십니까?"/>
+		<class name="Tutorial_PugoBackStreetAfter_XEK7Iu" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]자네들의 선택으로 옆에 서 있는 자들의 미래 정도는 바꿀 수 있네."/>
+		<class name="Tutorial_PugoBackStreetAfter_gikceC" Value="[!Dialog][!speaker:VHPD_Jane_Angry]......."/>
+		<class name="Tutorial_PugoBackStreetAfter_nq5N49" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Hasan_Normal]교활한 제안이시군요. 굳이 힘으로 밀어버리셔도 충분하실 것을..."/>
+		<class name="Tutorial_PugoBackStreetAfter_Fw9Gy2" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]교활한 제안인가?"/>
+		<class name="Tutorial_PugoBackStreetAfter_iBvnVn" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]아님. 사나이답게 자결하겠나?"/>
+		<class name="Tutorial_PugoBackStreetAfter_m5xml5" Value="[!Dialog][!speaker:Gangster_SpoonFighter_ZhoHong_Normal]형님. 그냥 저희는 오늘까지 마음대로 살렵니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_o8Lfmf" Value="[!Dialog][!speaker:Gangster_SpoonFighter_ZhoHong_Normal]그러니 시간 낭비하지 마십시오."/>
+		<class name="Tutorial_PugoBackStreetAfter_M89JrL" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]지금부터 2시간."/>
+		<class name="Tutorial_PugoBackStreetAfter_MJ7OZk" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]2시간 뒤에 다시 대답을 들으러 오겠네."/>
+		<class name="Tutorial_PugoBackStreetAfter_8J69eK" Value="[!Dialog][!speaker:Gangster_SpoonFighter_ZhoHong_Normal]굳이 그러시지 않으셔도 됩니다. 형님."/>
+		<class name="Tutorial_PugoBackStreetAfter_Mpmkb6" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Hasan_Normal]저도 같은 생각입니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_7KwM4o" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]오늘까지 살 녀석들이 2시간 더 산다고 무슨 상관인가."/>
+		<class name="Tutorial_PugoBackStreetAfter_9ceJsL" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]남은 2시간 잘 사용하게나."/>
+		<class name="Tutorial_PugoBackStreetAfter_tbvlqO" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]자네 말대로 했네."/>
+		<class name="Tutorial_PugoBackStreetAfter_dFiHpL" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]감사합니다. 베르케님."/>
+		<class name="Tutorial_PugoBackStreetAfter_3PzrgC" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]후성은 많이 화났겠군."/>
+		<class name="Tutorial_PugoBackStreetAfter_Lxxuql" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]그 부분은 제가 책임지겠습니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_IaGyq9" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]그럼 이제 기다리면 되는 것인가?"/>
+		<class name="Tutorial_PugoBackStreetAfter_qROlxx" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]네. 익명으로 신고했으니 곧 경찰과 $CompanyName$[이] 도착할 것입니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_Z10nck" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]자넨 역시 $CompanyName$[이] &apos;실버라이닝&apos;과 겹쳐보이는 건가?"/>
+		<class name="Tutorial_PugoBackStreetAfter_5ptMhi" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]부정하진 않겠습니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_FxvbYr" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]그래. 자네가 날 위해 그 녀석들의 마지막을 직접 보낼 수 있는 기회를 줬으니..."/>
+		<class name="Tutorial_PugoBackStreetAfter_pXt1BU" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]나 역시 자네의 장기 말이 되어주겠네."/>
+		<class name="Tutorial_PugoBackStreetAfter_fIJxmY" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]감사합니다. 베르케님."/>
+		<class name="Tutorial_PugoBackStreetAfter_NxXFIl" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Hasan_Normal]굳이 넌 이 가면을 쓰지 않았어도 괜찮을텐데..."/>
+		<class name="Tutorial_PugoBackStreetAfter_TqRQyG" Value="[!Dialog][!speaker:Gangster_SpoonFighter_ZhoHong_Normal]가면이라..."/>
+		<class name="Tutorial_PugoBackStreetAfter_VIKVw3" Value="[!Dialog][!speaker:Gangster_SpoonFighter_ZhoHong_Normal]그런 말은 샤키님과 다른 동지들에게 실례가 되는 말이다."/>
+		<class name="Tutorial_PugoBackStreetAfter_FZSUHC" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Hasan_Normal]......."/>
+		<class name="Tutorial_PugoBackStreetAfter_bE4NuK" Value="[!Dialog][!speaker:Gangster_SpoonFighter_ZhoHong_Normal]스푼교도들에게는 미안할 뿐이다."/>
+		<class name="Tutorial_PugoBackStreetAfter_Qrsz6b" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Hasan_Normal]......."/>
+		<class name="Tutorial_PugoBackStreetAfter_4Ag7tn" Value="[!Dialog][!speaker:Gangster_SpoonFighter_ZhoHong_Normal]이 사나이 조홍. 목숨이 아까울 건 없다."/>
+		<class name="Tutorial_PugoBackStreetAfter_7HSTrb" Value="[!Dialog][!speaker:Gangster_SpoonFighter_ZhoHong_Normal]하지만 마지막까지 보스를 뵙지 못한 건 아쉽군."/>
+		<class name="Tutorial_PugoBackStreetAfter_ANDy24" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Hasan_Normal]보스는 분명 살아계실 것이다."/>
+		<class name="Tutorial_PugoBackStreetAfter_r8hWQ4" Value="[!Dialog][!speaker:Gangster_SpoonFighter_ZhoHong_Normal]10년 전, 베르케 형님이 우리를 거절했을 때..."/>
+		<class name="Tutorial_PugoBackStreetAfter_JxAFlv" Value="[!Dialog][!speaker:Gangster_SpoonFighter_ZhoHong_Normal]너와 나를 받아 준 것은 보스였다."/>
+		<class name="Tutorial_PugoBackStreetAfter_BtrtXo" Value="[!Dialog][!speaker:Gangster_SpoonFighter_ZhoHong_Normal]조직에 몸을 담은 자가 보스를 보필하지 못하고 조직을 지켜내지 못한다면 마지막은 뻔한 것이지."/>
+		<class name="Tutorial_PugoBackStreetAfter_AdBkw3" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Hasan_Normal]그래도 참 가혹하군. 우리의 마지막을 담당하는 것이 베르케 형님이라니..."/>
+		<class name="Tutorial_PugoBackStreetAfter_FYA4DS" Value="[!Dialog][!speaker:Gangster_SpoonFighter_ZhoHong_Normal]우리 폭력배들의 인생이 다 그런 것이지."/>
+		<class name="Tutorial_PugoBackStreetAfter_v7D4tK" Value="[!Dialog][!speaker:VHPD_Assault_Normal]현재 전파방해기로 인하여, 정확한 현장 상황 파악이 어려운 상태입니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_FAXVwn" Value="[!Dialog][!speaker:VHPD_Assault_Normal]하지만 옥상 진입로 근처에는 다수의 차량 타이어 자국과 옥상의 불빛 그리고 육안으로 확인된 몇몇 스푼교도들의 모습을 종합해보면 허위 제보는 아닌 듯합니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_eAzwb0" Value="[!Dialog][!speaker:Albus_Think]&apos; 이 지역의 스푼교도들은 다 몰아냈다고 생각했는데...&apos;"/>
+		<class name="Tutorial_PugoBackStreetAfter_bh8gnz" Value="[!Dialog][!speaker:Albus_Normal]알겠습니다. 잠시 대기 부탁드립니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_aKOlNc" Value="[!Dialog][!speaker:VHPD_Assault_Normal]앤 메이시양!!"/>
+		<class name="Tutorial_PugoBackStreetAfter_I1SdTZ" Value="[!Dialog][!speaker:Anne_Smile_Surprise]네?"/>
+		<class name="Tutorial_PugoBackStreetAfter_aDpCHX" Value="[!Dialog][!speaker:VHPD_Assault_Normal]자네 덕분에 저번 사건 현장에서 심한 부상을 입었음에도 불구하고, 큰 탈 없이 가족들 품으로 돌아갈 수 있었네."/>
+		<class name="Tutorial_PugoBackStreetAfter_lO7T0T" Value="[!Dialog][!speaker:VHPD_Assault_Normal]고맙네. 앤 메이시양."/>
+		<class name="Tutorial_PugoBackStreetAfter_pDcGvi" Value="[!Dialog][!speaker:Anne_Smile]제가 도움이 되었다니 다행이에요."/>
+		<class name="Tutorial_PugoBackStreetAfter_qvWvD3" Value="[!Dialog][!speaker:Anne_Normal2]아직 많이 부족하지만 최선을 다하겠습니다!"/>
+		<class name="Tutorial_PugoBackStreetAfter_z5s06s" Value="[!Dialog][!speaker:VHPD_Scout_Normal]부족하다니 무슨 소리야!"/>
+		<class name="Tutorial_PugoBackStreetAfter_sBn5mP" Value="[!Dialog][!speaker:VHPD_Scout_Normal]앤 메이시양은 정말 많은 사람들의 행복을 지켜주고 있단다."/>
+		<class name="Tutorial_PugoBackStreetAfter_nhbaad" Value="[!Dialog][!speaker:Anne_Smile_Surprise]앗! 그렇게 봐주셔서 감사합니다!"/>
+		<class name="Tutorial_PugoBackStreetAfter_vKPDAX" Value="[!Dialog][!speaker:Anne_Smile]저. 더 힘내도록 할게요."/>
+		<class name="Tutorial_PugoBackStreetAfter_nl8cKq" Value="[!Dialog][!speaker:Heissing_Normal]지낼 만 한가?"/>
+		<class name="Tutorial_PugoBackStreetAfter_tHgyqR" Value="[!Dialog][!speaker:Ray_Normal]응. 그럭저럭."/>
+		<class name="Tutorial_PugoBackStreetAfter_5kKCRk" Value="[!Dialog][!speaker:Heissing_Smile]다행이군."/>
+		<class name="Tutorial_PugoBackStreetAfter_0Nx2hP" Value="[!Dialog][!speaker:Ray_Normal]헤이싱. 이 시간에도 카터는 움직이고 있을 거야."/>
+		<class name="Tutorial_PugoBackStreetAfter_fAjOyz" Value="[!Dialog][!speaker:Heissing_Smile]......."/>
+		<class name="Tutorial_PugoBackStreetAfter_yNrsyh" Value="[!Dialog][!speaker:Ray_Normal_Smile]나 혼자 아무것도 할 수 없는 건 잘 알아."/>
+		<class name="Tutorial_PugoBackStreetAfter_leMV3Q" Value="[!Dialog][!speaker:Ray_Serious]하지만 카터와 연관이 없는 사건들에 휘말릴 때마다 과연 내가 이곳에 있는 것이 잘하는 일인지 모르겠어."/>
+		<class name="Tutorial_PugoBackStreetAfter_12zQpu" Value="[!Dialog][!speaker:Heissing_Normal]레이. 조급해하지 마라."/>
+		<class name="Tutorial_PugoBackStreetAfter_Mqx8kE" Value="[!Dialog][!speaker:Ray_Normal]넌 이런 순간도 침착하구나. 난 카터가 뭘할지 답답할 뿐인데..."/>
+		<class name="Tutorial_PugoBackStreetAfter_LqO5qv" Value="[!Dialog][!speaker:Heissing_Smile]레이..."/>
+		<class name="Tutorial_PugoBackStreetAfter_f8w4PK" Value="[!Dialog][!speaker:Heissing_Smile]카터를 멈출 힘을 갖추는 게 먼저다."/>
+		<class name="Tutorial_PugoBackStreetAfter_ekIUFn" Value="[!Dialog][!speaker:Ray_Serious]......"/>
+		<class name="Tutorial_PugoBackStreetAfter_E9CUY5" Value="[!Dialog][!speaker:Ray_Normal]알았어. 알았다고!"/>
+		<class name="Tutorial_PugoBackStreetAfter_JPkc1n" Value="[!Dialog][!speaker:Heissing_EyeClose]......"/>
+		<class name="Tutorial_PugoBackStreetAfter_UbHuMy" Value="[!Dialog][!speaker:Sion_Normal]......"/>
+		<class name="Tutorial_PugoBackStreetAfter_PfYAF4" Value="[!Dialog][!speaker:Irene_Surprise]시온 군. 뭘 그렇게 흐뭇하게 바라보고 있나?"/>
+		<class name="Tutorial_PugoBackStreetAfter_bQK4IL" Value="[!Dialog][!speaker:Sion_Normal]사장님?"/>
+		<class name="Tutorial_PugoBackStreetAfter_8pppsZ" Value="[!Dialog][!speaker:Irene_Surprise]알버스 군?"/>
+		<class name="Tutorial_PugoBackStreetAfter_5l9353" Value="[!Dialog][!speaker:Sion_Laugh]네~☆"/>
+		<class name="Tutorial_PugoBackStreetAfter_TqHp95" Value="[!Dialog][!speaker:Sion_Angry]정확히는 히어로랑 사장님이랑 한창 이곳 사건들을 해결하러 다닐 때가 생각났지."/>
+		<class name="Tutorial_PugoBackStreetAfter_kCcBxf" Value="[!Dialog][!speaker:Irene_Think]그랬었지......"/>
+		<class name="Tutorial_PugoBackStreetAfter_YcnE3h" Value="[!Dialog][!speaker:Sion_Angry]그때는 셋 뿐이다보니 매 임무마다 걱정이 이만저만이 아니었는데..."/>
+		<class name="Tutorial_PugoBackStreetAfter_UOBpv1" Value="[!Dialog][!speaker:Irene_Think]&apos;음... 분명 임무 시작 전에 시온 군이 혼자 다니지 말라고 난리였지...&apos;"/>
+		<class name="Tutorial_PugoBackStreetAfter_ePnamq" Value="[!Dialog][!speaker:Sion_Normal]하지만 이제는 우리 말고도 앤, 헤이싱 형, 레이 누나가 있네."/>
+		<class name="Tutorial_PugoBackStreetAfter_LOJQTT" Value="[!Dialog][!speaker:Sion_Laugh]새삼 사장님이 꾸준히 노력하고 있구나 하는 생각이 들었어~☆"/>
+		<class name="Tutorial_PugoBackStreetAfter_6hY1Ma" Value="[!Dialog][!speaker:Irene_Normal]......."/>
+		<class name="Tutorial_PugoBackStreetAfter_fKtepC" Value="[!Ignore][!Title]Tutorial_TrainingRoom_L8lGfU"/>
+		<class name="Tutorial_PugoBackStreetAfter_oHnTwz" Value="[!Ignore][!Title]Tutorial_TrainingRoom_sMlaZT"/>
+		<class name="Tutorial_PugoBackStreetAfter_kuhBy6" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Smile_Costume2]Tutorial_TrainingRoom_r1jbJB"/>
+		<class name="Tutorial_PugoBackStreetAfter_yI3nND" Value="[!Ignore][!Dialog][!speaker:Giselle_Normal_Costume]Tutorial_TrainingRoom_weNks7"/>
+		<class name="Tutorial_PugoBackStreetAfter_JKiya5" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Normal_Costume2]Tutorial_TrainingRoom_NqrOvp"/>
+		<class name="Tutorial_PugoBackStreetAfter_Qw9f0Q" Value="[!Ignore][!Dialog][!speaker:Giselle_Smile2_Costume]Tutorial_TrainingRoom_nSfabz"/>
+		<class name="Tutorial_PugoBackStreetAfter_wFfmvP" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Normal_Costume2]Tutorial_TrainingRoom_Sq6klv"/>
+		<class name="Tutorial_PugoBackStreetAfter_XzxaOI" Value="[!Ignore][!Dialog][!speaker:Giselle_Annoying_Costume]Tutorial_TrainingRoom_wBBJYK"/>
+		<class name="Tutorial_PugoBackStreetAfter_NuYr53" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Angry_Costume2]Tutorial_TrainingRoom_1mj3g9"/>
+		<class name="Tutorial_PugoBackStreetAfter_zGr1Zr" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Angry_Costume2]Tutorial_TrainingRoom_PnEBt9"/>
+		<class name="Tutorial_PugoBackStreetAfter_GtvXpt" Value="[!Ignore][!Dialog][!speaker:Giselle_Smile_Costume]Tutorial_TrainingRoom_19BblM"/>
+		<class name="Tutorial_PugoBackStreetAfter_SEJebc" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Normal_Costume2]Tutorial_TrainingRoom_LaHJ16"/>
+		<class name="Tutorial_PugoBackStreetAfter_uuX6eF" Value="[!Ignore][!Dialog][!speaker:Giselle_Smile_Costume]Tutorial_TrainingRoom_ncSUkP"/>
+		<class name="Tutorial_PugoBackStreetAfter_ELFsUD" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Normal_Costume2]Tutorial_TrainingRoom_eyNKzV"/>
+		<class name="Tutorial_PugoBackStreetAfter_Zi57oh" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Normal_Costume2]Tutorial_TrainingRoom_FsSNUV"/>
+		<class name="Tutorial_PugoBackStreetAfter_51yOdk" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Normal_Costume2]Tutorial_TrainingRoom_lOJjOp"/>
+		<class name="Tutorial_PugoBackStreetAfter_x1SpTo" Value="[!Ignore][!Dialog][!speaker:Giselle_Annoying_Costume]Tutorial_TrainingRoom_ncSUkP"/>
+		<class name="Tutorial_PugoBackStreetAfter_u3B5sy" Value="[!Ignore][!Dialog][!speaker:Giselle_Normal_Costume]Tutorial_TrainingRoom_7iPgWc"/>
+		<class name="Tutorial_PugoBackStreetAfter_awHjmy" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Angry_Costume2]Tutorial_TrainingRoom_xoiruL"/>
+		<class name="Tutorial_PugoBackStreetAfter_Fbt5ZK" Value="[!Ignore][!Dialog][!speaker:Giselle_Annoying_Costume]Tutorial_TrainingRoom_KHqlvP"/>
+		<class name="Tutorial_PugoBackStreetAfter_N9CVkL" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Smile_Costume2]Tutorial_TrainingRoom_zFsP1j"/>
+		<class name="Tutorial_PugoBackStreetAfter_6rBfgi" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Smile_Costume2]Tutorial_TrainingRoom_pKU04K"/>
+		<class name="Tutorial_PugoBackStreetAfter_9w1iPm" Value="[!Ignore][!Dialog][!speaker:Giselle_Smile_Costume]Tutorial_TrainingRoom_LIrTuV"/>
+		<class name="Tutorial_PugoBackStreetAfter_SgkEd5" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Normal_Costume2]Tutorial_TrainingRoom_tRrvxr"/>
+		<class name="Tutorial_PugoBackStreetAfter_QvdOKs" Value="[!Ignore][!Dialog][!speaker:Giselle_Satisfying_Costume]Tutorial_TrainingRoom_jYNcr3"/>
+		<class name="Tutorial_PugoBackStreetAfter_LodasT" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Smile_Costume2]Tutorial_TrainingRoom_d7ghZB"/>
+		<class name="Tutorial_PugoBackStreetAfter_tIJLQZ" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Normal_Costume2]Tutorial_TrainingRoom_aXryg6"/>
+		<class name="Tutorial_PugoBackStreetAfter_T65bve" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Normal_Costume2]Tutorial_TrainingRoom_AZ8Ki0"/>
+		<class name="Tutorial_PugoBackStreetAfter_TciQ1E" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Normal_Costume2]Tutorial_TrainingRoom_2DUIIq"/>
+		<class name="Tutorial_PugoBackStreetAfter_pvtDam" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Smile_Costume2]Tutorial_TrainingRoom_DxaARW"/>
+		<class name="Tutorial_PugoBackStreetAfter_sDMLM1" Value="[!Ignore][!Dialog][!speaker:Giselle_Satisfying_Costume]Tutorial_TrainingRoom_25ue9C"/>
+		<class name="Tutorial_PugoBackStreetAfter_a5fc39" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Angry_Costume2]Tutorial_TrainingRoom_WlQjRF"/>
+		<class name="Tutorial_PugoBackStreetAfter_j4ABgY" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Angry_Costume2]Tutorial_TrainingRoom_3msl2P"/>
+		<class name="Tutorial_PugoBackStreetAfter_gDYOoX" Value="[!Ignore][!Dialog][!speaker:Giselle_Annoying_Costume]Tutorial_TrainingRoom_VGNTDB"/>
+		<class name="Tutorial_PugoBackStreetAfter_qthl2B" Value="[!Ignore][!Dialog][!speaker:Giselle_Smile2_Costume]Tutorial_TrainingRoom_jL6BYO"/>
+		<class name="Tutorial_PugoBackStreetAfter_KpUoLV" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Angry_Costume2]Tutorial_TrainingRoom_lyU7ah"/>
+		<class name="Tutorial_PugoBackStreetAfter_OcEKP8" Value="[!Ignore][!Dialog][!speaker:Giselle_Smile_Costume]Tutorial_TrainingRoom_lvxFef"/>
+		<class name="Tutorial_PugoBackStreetAfter_Ry6fdS" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Smile_Costume2]Tutorial_TrainingRoom_PeWWsM"/>
+		<class name="Tutorial_PugoBackStreetAfter_LXW00D" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Smile_Costume2]Tutorial_TrainingRoom_d54Wg8"/>
+		<class name="Tutorial_PugoBackStreetAfter_5n3fWT" Value="[!Ignore][!Dialog][!speaker:Giselle_Smile2_Costume]Tutorial_TrainingRoom_DSdB7X"/>
+		<class name="Tutorial_PugoBackStreetAfter_p1F3l0" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Angry_Costume2]Tutorial_TrainingRoom_cmXFQC"/>
+		<class name="Tutorial_PugoBackStreetAfter_0MaPr0" Value="[!Ignore][!Dialog][!speaker:Giselle_Smile_Costume]Tutorial_TrainingRoom_ncSUkP"/>
+		<class name="Tutorial_PugoBackStreetAfter_2lhd3N" Value="[!Ignore][!Dialog][!speaker:Giselle_Normal_Costume]Tutorial_TrainingRoom_V9NINA"/>
+		<class name="Tutorial_PugoBackStreetAfter_JHYmvy" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Angry_Costume2]Tutorial_TrainingRoom_iHjRVj"/>
+		<class name="Tutorial_PugoBackStreetAfter_nUvzwg" Value="[!Ignore][!Dialog][!speaker:Giselle_Smile_Costume]Tutorial_TrainingRoom_zE0j64"/>
+		<class name="Tutorial_PugoBackStreetAfter_6EN9jN" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Angry_Costume2]Tutorial_TrainingRoom_jZXVOe"/>
+		<class name="Tutorial_PugoBackStreetAfter_g1ZxS0" Value="[!Ignore][!Dialog][!speaker:Giselle_Satisfying_Costume]Tutorial_TrainingRoom_jJVMzP"/>
+		<class name="Tutorial_PugoBackStreetAfter_GkUU8f" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Normal_Costume2]Tutorial_TrainingRoom_IctsRD"/>
+		<class name="Tutorial_PugoBackStreetAfter_60YgUo" Value="[!Ignore][!Dialog][!speaker:Giselle_Smile_Costume]Tutorial_TrainingRoom_dwg6Ta"/>
+		<class name="Tutorial_PugoBackStreetAfter_8Ak38O" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Angry_Costume2]Tutorial_TrainingRoom_dJcsda"/>
+		<class name="Tutorial_PugoBackStreetAfter_3ZcpAR" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Normal_Costume2]Tutorial_TrainingRoom_13lLKh"/>
+		<class name="Tutorial_PugoBackStreetAfter_aoT7Dk" Value="[!Ignore][!Dialog][!speaker:Giselle_Annoying_Costume]Tutorial_TrainingRoom_8rVtXJ"/>
+		<class name="Tutorial_PugoBackStreetAfter_JJbSvv" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Normal_Costume2]Tutorial_TrainingRoom_nty9AG"/>
+		<class name="Tutorial_PugoBackStreetAfter_FscrkO" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Normal_Costume2]Tutorial_TrainingRoom_pvuLt3"/>
+		<class name="Tutorial_PugoBackStreetAfter_PP8EUR" Value="[!Ignore][!Dialog][!speaker:Giselle_Smile_Costume]Tutorial_TrainingRoom_mNAP2s"/>
+		<class name="Tutorial_PugoBackStreetAfter_dDqCP0" Value="[!Ignore][!Dialog][!speaker:VHPD_Jane_Normal_Costume2]Tutorial_TrainingRoom_6DFeM5"/>
+		<class name="Tutorial_PugoBackStreetAfter_JAG9C3" Value="[!Dialog][!speaker:Albus_Serious]지금부터 현장의 스푼교도들을 제압합니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_KX1iNI" Value="[!Dialog][!speaker:Albus_Serious]또한 전파 방해기를 철거하여 현장의 통신 상황을 복구합니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_cwhBfh" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_PugoBackStreetAfter_APz1iV" Value="[!VictoryCondition]스푼교도를 제압하시오."/>
+		<class name="Tutorial_PugoBackStreetAfter_RC6aSS" Value="[!VictoryCondition]전파 방해기를 파괴하시오."/>
+		<class name="Tutorial_PugoBackStreetAfter_d6sO3I" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Hasan_Normal]생각지 못한 불청객이군."/>
+		<class name="Tutorial_PugoBackStreetAfter_4rXRa9" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Hasan_Normal]이 일대는 백호파가 포위하고 있어야 할 텐데..."/>
+		<class name="Tutorial_PugoBackStreetAfter_mwdhMb" Value="[!Dialog][!speaker:Gangster_SpoonFighter_ZhoHong_Normal]상대가 누구라도 상관 없지."/>
+		<class name="Tutorial_PugoBackStreetAfter_vAvvVW" Value="[!Dialog][!speaker:VHPD_Scout_Normal]알버스님. 현장의 스푼교도를 제압하였으며 남은 전파 방해기 역시 모두 철거되었습니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_o5rH8M" Value="[!Dialog][!speaker:VHPD_Scout_Normal]다만 검거한 스푼교도들을 호송할 분대 차량이 이 골목 근처까지 도착하려면 시간이 걸릴 것 같습니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_0M5SoS" Value="[!Dialog][!speaker:VHPD_Assault_Normal]알겠습니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_lpRVxw" Value="[!BalloonChat][!speaker:VHPDAssult01]응? 뭐지..."/>
+		<class name="Tutorial_PugoBackStreetAfter_LzeOuR" Value="[!BalloonChat][!speaker:VHPDAssult01]!!!"/>
+		<class name="Tutorial_PugoBackStreetAfter_FOqtyp" Value="[!Dialog][!speaker:VHPD_Assault_Normal]알버스님! 남서쪽 진입로에 백호파 다수입니다!!"/>
+		<class name="Tutorial_PugoBackStreetAfter_SFyPrP" Value="[!Dialog][!speaker:Albus_Surprise]백호파가 여길 어떻게..."/>
+		<class name="Tutorial_PugoBackStreetAfter_iy7V3h" Value="[!BalloonChat][!speaker:VHPDAssult01]북쪽 진입로! 백호파!"/>
+		<class name="Tutorial_PugoBackStreetAfter_ubKEZ3" Value="[!BalloonChat][!speaker:VHPDAssult01]남동쪽 진입로. 백호파!"/>
+		<class name="Tutorial_PugoBackStreetAfter_RUHXCB" Value="[!BalloonChat][!speaker:VHPDAssult01]알버스님!!"/>
+		<class name="Tutorial_PugoBackStreetAfter_rV2Gej" Value="[!Dialog][!speaker:Heissing_Smile]재밌는 상황이군."/>
+		<class name="Tutorial_PugoBackStreetAfter_OOJgwa" Value="[!Dialog][!speaker:Albus_Fury]다들 진입로에서 떨어지세요!!"/>
+		<class name="Tutorial_PugoBackStreetAfter_emYB7y" Value="[!Dialog][!speaker:Albus_Serious]일단 각 진입로에서 가장 먼 중앙으로 이동합니다!"/>
+		<class name="Tutorial_PugoBackStreetAfter_HQc1pR" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]저녀석들이 $CompanyName$인가?"/>
+		<class name="Tutorial_PugoBackStreetAfter_Ob667O" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]그럼 이제 올라갈 준비를 해야겠군."/>
+		<class name="Tutorial_PugoBackStreetAfter_3QWlo4" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]이런 일을 부탁드려 죄송합니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_UKxfxN" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]나야말로 조직 일에 내 개인사를 배려해줘서 고맙네."/>
+		<class name="Tutorial_PugoBackStreetAfter_tZzPgP" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]오래 기다렸다! 다들 올라간다!"/>
+		<class name="Tutorial_PugoBackStreetAfter_gpgzEF" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]머트. 베르케님이 올라가셨다."/>
+		<class name="Tutorial_PugoBackStreetAfter_vAdNkk" Value="[!Dialog][!speaker:Gangster_WhiteTigerSniper_Mert_Normal]알았다. 준비하지."/>
+		<class name="Tutorial_PugoBackStreetAfter_tN8Go6" Value="[!Dialog][!speaker:Albus_Serious]앤양. 레이씨. 일단 전원 최대한 빨리 응급처치를 부탁합니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_JG3i1C" Value="[!Dialog][!speaker:Anne_Strict]네! 맡겨주세요!"/>
+		<class name="Tutorial_PugoBackStreetAfter_hh85Hq" Value="[!Dialog][!speaker:Ray_Normal]걱정마~☆"/>
+		<class name="Tutorial_PugoBackStreetAfter_lQCi6f" Value="[!Dialog][!speaker:VHPD_Scout_Normal]고마워. 앤 메이시양."/>
+		<class name="Tutorial_PugoBackStreetAfter_kReDZ4" Value="[!Dialog][!speaker:VHPD_Scout_Normal]넌 내가 꼭 지켜낼게."/>
+		<class name="Tutorial_PugoBackStreetAfter_7OTtny" Value="[!Dialog][!speaker:Anne_Normal2]우리 모두 다 안전하게 나갈 수 있어요."/>
+		<class name="Tutorial_PugoBackStreetAfter_wmpgvG" Value="[!Dialog][!speaker:Ray_Normal_Smile]당연하지~☆ "/>
+		<class name="Tutorial_PugoBackStreetAfter_OmqXFG" Value="[!Dialog][!speaker:Gangster_WhiteTigerHelmet_Normal]진입로 봉쇄를 완료하였습니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_mqIbZ7" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]알았다."/>
+		<class name="Tutorial_PugoBackStreetAfter_CqEAbU" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]과거의 망령이라..."/>
+		<class name="Tutorial_PugoBackStreetAfter_mL4ANk" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Berke_Normal]젊은 것들은 언제까지 악몽을 꿀 생각인가..."/>
+		<class name="Tutorial_PugoBackStreetAfter_9vVcvc" Value="[!BalloonChat][!speaker:Berke]자!!"/>
+		<class name="Tutorial_PugoBackStreetAfter_3nc1Yx" Value="[!BalloonChat][!speaker:Berke]응징의 시간이다!!"/>
+		<class name="Tutorial_PugoBackStreetAfter_Vf1lDh" Value="[!Dialog][!speaker:Ray_Normal_Smile]알버스 군. 얼굴이 굳었어."/>
+		<class name="Tutorial_PugoBackStreetAfter_aBOhcH" Value="[!Dialog][!speaker:Ray_Surprise]많이 위험한 상황인 거야?"/>
+		<class name="Tutorial_PugoBackStreetAfter_19DTOI" Value="[!Dialog][!speaker:Albus_Serious]적어도 백호파가 우연히 스푼교도들을 쫓다가 마주친 것은 아니라고 보고 있습니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_B9jOlf" Value="[!Dialog][!speaker:Albus_Serious]그랬다면 이 많은 인원이 각 진입로로 동시에 들어오진 않았을 겁니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_K1HPYh" Value="[!Dialog][!speaker:Ray_Serious]계획된 일이라는 말이구나."/>
+		<class name="Tutorial_PugoBackStreetAfter_94jOqv" Value="[!Dialog][!speaker:Albus_Serious]네. 적어도 현재로선 그렇게 판단됩니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_OeOcZH" Value="[!Dialog][!speaker:Sion_Depressed]정말 현장 확인이 안되는 사건은 출동하는 게 아니야..."/>
+		<class name="Tutorial_PugoBackStreetAfter_b8hoM0" Value="[!Dialog][!speaker:Ray_Normal]그럼 이제 우리는 어떻게 할 건가?"/>
+		<class name="Tutorial_PugoBackStreetAfter_KofAQF" Value="[!Dialog][!speaker:Albus_Serious]백호파의 포위망을 뚫고 현장을 이탈하겠습니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_FQN2k3" Value="[!Dialog][!speaker:Irene_Surprise]......"/>
+		<class name="Tutorial_PugoBackStreetAfter_YAvtT8" Value="[!Dialog][!speaker:Heissing_Smile]퇴각하는 건가?"/>
+		<class name="Tutorial_PugoBackStreetAfter_FPrPne" Value="[!Dialog][!speaker:Albus_Serious]네."/>
+		<class name="Tutorial_PugoBackStreetAfter_3aDODG" Value="[!Dialog][!speaker:Ray_Serious]아래에도 백호파가 대기하고 있는 것 아냐?"/>
+		<class name="Tutorial_PugoBackStreetAfter_VFu67T" Value="[!Dialog][!speaker:Albus_Serious]네. 가능성이 높습니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_p95lQX" Value="[!Dialog][!speaker:Ray_Normal]차라리 경찰에 지원 요청하고 농성하는 것은 어때?"/>
+		<class name="Tutorial_PugoBackStreetAfter_9cXnAD" Value="[!Dialog][!speaker:Sion_Stare]경찰 병력 자체로 여기까지 뚫고 오는 것은 무리야."/>
+		<class name="Tutorial_PugoBackStreetAfter_idyAV7" Value="[!Dialog][!speaker:Sion_Stare]그게 가능했으면 우리가 출동하지도 않았을 거야."/>
+		<class name="Tutorial_PugoBackStreetAfter_QEWcow" Value="[!Dialog][!speaker:Ray_Serious]그렇다고 지친 우리만으로 진입로 아래서 대기하고 있는 백호파를 다 뚫고 나가는 것도 무리 아냐?"/>
+		<class name="Tutorial_PugoBackStreetAfter_8AyBMj" Value="[!Dialog][!speaker:Albus_Think]&apos;레이 씨와 시온의 말 모두 맞아. 지원 경찰 분대와 우리가 따로 전투를 벌여서는 백호파의 포위망을 뚫을 수 없을 거야.&apos;"/>
+		<class name="Tutorial_PugoBackStreetAfter_LfCyyb" Value="[!Dialog][!speaker:Albus_Think]&apos;그러려면 진입로를 확보한 채, 지원 분대가 도착할 순간까지 버텨야겠어...&apos;"/>
+		<class name="Tutorial_PugoBackStreetAfter_qmq5mW" Value="[!Title]동남쪽 진입로"/>
+		<class name="Tutorial_PugoBackStreetAfter_j918JP" Value="[!Dialog][!speaker:Albus_Think]최초 진입한 동남쪽 진입로..."/>
+		<class name="Tutorial_PugoBackStreetAfter_QjSku2" Value="[!Dialog][!speaker:Albus_Think]아마도 우리 팀을 노린 함정이었다면 절대 허술하지 않겠지..."/>
+		<class name="Tutorial_PugoBackStreetAfter_eev0o9" Value="[!Title]남서쪽 진입로"/>
+		<class name="Tutorial_PugoBackStreetAfter_lnymvt" Value="[!Title]푸고 뒷골목 옥상"/>
+		<class name="Tutorial_PugoBackStreetAfter_z5rpe4" Value="[!Dialog][!speaker:Albus_Think]남서쪽 진입로는 가장 공간이 넓을텐데..."/>
+		<class name="Tutorial_PugoBackStreetAfter_bS9nAg" Value="[!Dialog][!speaker:Albus_Think]엄폐물이 너무 없어...저격당하기 시작하면 힘들지 몰라..."/>
+		<class name="Tutorial_PugoBackStreetAfter_bF4dDQ" Value="[!Title]북서쪽 진입로"/>
+		<class name="Tutorial_PugoBackStreetAfter_588YWA" Value="[!Title]푸고 뒷골목 옥상"/>
+		<class name="Tutorial_PugoBackStreetAfter_LaUfP9" Value="[!Dialog][!speaker:Albus_Think]북서쪽 진입로는 입구가 좁다보니 분명 진입한 병력도 적을텐데..."/>
+		<class name="Tutorial_PugoBackStreetAfter_VErlEw" Value="[!Dialog][!speaker:Albus_Think]하지만 이동 중에 다른 진입로로 올라온 병력에 협공당할 수도 있겠어..."/>
+		<class name="Tutorial_PugoBackStreetAfter_lFlKE9" Value="[!Title]북쪽 진입로"/>
+		<class name="Tutorial_PugoBackStreetAfter_WGySeL" Value="[!Title]푸고 뒷골목 옥상"/>
+		<class name="Tutorial_PugoBackStreetAfter_6PRC1X" Value="[!Dialog][!speaker:Albus_Think]북쪽 진입로는 농성하기는 좋을텐데..."/>
+		<class name="Tutorial_PugoBackStreetAfter_JORDhI" Value="[!Dialog][!speaker:Albus_Think]이동 거리가 멀어 전열이 늘어질 가능성이 높아..."/>
+		<class name="Tutorial_PugoBackStreetAfter_unR9yi" Value="[!Dialog][!speaker:Albus_Think][colour=&apos;FFFFFF00&apos;]&apos;가장 탈출 가능성이 높은 경로를 찾아야해...&apos;"/>
+		<class name="Tutorial_PugoBackStreetAfter_GbUjGA" Value="[!Choice]동남쪽 진입로"/>
+		<class name="Tutorial_PugoBackStreetAfter_0AaSeN" Value="탈출 지역을 동남쪽 진입로로 지정합니다. 플레이어는 경찰 병력이 도착하기까지 해당 진입로 입구를 확보하고 방어해야 합니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_bbdcP1" Value="[!Choice]남서쪽 진입로"/>
+		<class name="Tutorial_PugoBackStreetAfter_mj5Bop" Value="탈출 지역을 남서쪽 진입로로 지정합니다. 플레이어는 경찰 병력이 도착하기까지 해당 진입로 입구를 확보하고 방어해야 합니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_iiJkHt" Value="[!Choice]북서쪽 진입로"/>
+		<class name="Tutorial_PugoBackStreetAfter_cGu6eK" Value="탈출 지역을 북서쪽 진입로로 지정합니다. 플레이어는 경찰 병력이 도착하기까지 해당 진입로 입구를 확보하고 방어해야 합니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_kGLRJb" Value="[!Choice]북쪽 진입로"/>
+		<class name="Tutorial_PugoBackStreetAfter_BJYFMe" Value="탈출 지역을 북쪽 진입로로 지정합니다. 플레이어는 경찰 병력이 도착하기까지 해당 진입로 입구를 확보하고 방어해야 합니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_Kmz3Uy" Value="[!Dialog][!speaker:Albus_Serious][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]제인 경감님. 지원 분대를 동남쪽 진입로로 부탁드립니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_xytNco" Value="[!Dialog][!speaker:Albus_Serious][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]제인 경감님. 지원 분대를 남서쪽 진입로로 부탁드립니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_5LOiyd" Value="[!Dialog][!speaker:Albus_Serious][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]제인 경감님. 지원 분대를 북동쪽 진입로로 부탁드립니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_GY5Sqm" Value="[!Dialog][!speaker:Albus_Serious][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]제인 경감님. 지원 분대를 북쪽 진입로로 부탁드립니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_HkuWAO" Value="[!Dialog][!speaker:VHPD_Jane_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]돌파할 생각인가?"/>
+		<class name="Tutorial_PugoBackStreetAfter_MojZuL" Value="[!Dialog][!speaker:Albus_Serious][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]지원 분대와 협공하면 어느 정도 가능할 것 같습니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_2oIjG4" Value="[!Dialog][!speaker:VHPD_Jane_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]알았다. 진입로에 도착하면 바로 연락하겠다."/>
+		<class name="Tutorial_PugoBackStreetAfter_JLg9gz" Value="[!Dialog][!speaker:Albus_Normal]지금부터 지원 분대가 도착하기 전까지 탈출할 진입로를 확보합니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_zvjbx0" Value="[!Dialog][!speaker:Sion_SurpriseStare]경찰 분대가 도착하기 전까지 탈환이라니..."/>
+		<class name="Tutorial_PugoBackStreetAfter_dLrrfk" Value="[!Dialog][!speaker:Ray_Serious]알버스 군. 무리하는 것 아냐?"/>
+		<class name="Tutorial_PugoBackStreetAfter_GhRMZx" Value="[!Dialog][!speaker:Irene_Serious]앤. 넌 내 뒤로 따라와."/>
+		<class name="Tutorial_PugoBackStreetAfter_OMZYBv" Value="[!Dialog][!speaker:Anne_Strict]네. 아이린 언니."/>
+		<class name="Tutorial_PugoBackStreetAfter_f85356" Value="[!Dialog][!speaker:Albus_Serious]그럼 지금부터 진입로를 탈환하겠습니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_ZexEW2" Value="[!VictoryCondition]제한 시간 내 진입로 확보 실패"/>
+		<class name="Tutorial_PugoBackStreetAfter_AsKm1r" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_PugoBackStreetAfter_7tcpCd" Value="[!VictoryCondition]알버스 전투 불능"/>
+		<class name="Tutorial_PugoBackStreetAfter_nFWI1X" Value="[!VictoryCondition]제한 시간 내 진입로를 확보하시오."/>
+		<class name="Tutorial_PugoBackStreetAfter_iK1rFj" Value="[!Dialog][!speaker:Albus_Serious][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]제인 경감님. $CompanyName$의 알버스입니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_oCRgoH" Value="[!Dialog][!speaker:VHPD_Jane_Normal][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]알버스 군. 조금 전 상황 보고 받았다. 현장 상황은 어떤가?"/>
+		<class name="Tutorial_PugoBackStreetAfter_AJi3xi" Value="[!Dialog][!speaker:Albus_Serious][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]현장 인원으로 포위망을 뚫기는 어려울 듯 합니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_B88KX8" Value="[!Dialog][!speaker:VHPD_Jane_Angry][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]현장 상황 파악 없이 출동시켜 이런 상황을 만들어 미안하다."/>
+		<class name="Tutorial_PugoBackStreetAfter_6i9eSj" Value="[!Dialog][!speaker:VHPD_Jane_Angry][colour=&apos;FFFFFFFF&apos;][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;]그리고 지금 지원 분대가 가고 있으니 조금만 버텨줬으면 한다."/>
+		<class name="Tutorial_PugoBackStreetAfter_uPDR09" Value="[!BalloonChat][!speaker:Albus]지원 분대가 곧 도착합니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_BK2Eo0" Value="[!BalloonChat][!speaker:Albus]그때까지 진입로를 사수합니다!"/>
+		<class name="Tutorial_PugoBackStreetAfter_VezRr3" Value="[!VictoryCondition]진입로 방어 실패"/>
+		<class name="Tutorial_PugoBackStreetAfter_Y3klhB" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_PugoBackStreetAfter_c2FS7P" Value="[!VictoryCondition]알버스 전투 불능"/>
+		<class name="Tutorial_PugoBackStreetAfter_zjkkQH" Value="[!VictoryCondition]지원 분대가 도착할 때까지 진입로를 지켜내시오."/>
+		<class name="Tutorial_PugoBackStreetAfter_DvtISL" Value="[!Dialog][!speaker:Irene_Surprise]경찰 사이렌 소리다!"/>
+		<class name="Tutorial_PugoBackStreetAfter_7s7cwR" Value="[!Dialog][!speaker:Anne_Surprise]저기. 경찰분들이 오고 있어요!"/>
+		<class name="Tutorial_PugoBackStreetAfter_CFWNpN" Value="[!Dialog][!speaker:Albus_Normal]아이린 씨. 선두를 부탁드립니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_HrXplK" Value="[!Dialog][!speaker:Irene_Surprise]내가?"/>
+		<class name="Tutorial_PugoBackStreetAfter_1kTYGT" Value="[!Dialog][!speaker:Albus_Laugh]네. 아이린씨의 돌파력이 필요해요."/>
+		<class name="Tutorial_PugoBackStreetAfter_ofipU4" Value="[!Dialog][!speaker:Irene_Normal]알았다. 기대에 부응하마."/>
+		<class name="Tutorial_PugoBackStreetAfter_cxi0ym" Value="[!Dialog][!speaker:Albus_Normal]앤양과 레이씨는 최대한 아이린씨를 지원 부탁드려요."/>
+		<class name="Tutorial_PugoBackStreetAfter_ITV2jv" Value="[!Dialog][!speaker:Albus_Normal]아이린 씨가 선두에 서면 많은 화력이 집중될테니 잘 부탁드립니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_RUAAD8" Value="[!Dialog][!speaker:Ray_Normal]당연한 말을 하고 그래."/>
+		<class name="Tutorial_PugoBackStreetAfter_FbAurj" Value="[!Dialog][!speaker:Anne_Strict]절대 아이린 언니가 쓰러지도록 두지 않을 거예요!"/>
+		<class name="Tutorial_PugoBackStreetAfter_HtGnDG" Value="[!Dialog][!speaker:Albus_Serious]그리고 헤이싱씨와 시온은 후위에서 최대한 화력을 집중해 아이린 씨의 앞길을 열어주세요."/>
+		<class name="Tutorial_PugoBackStreetAfter_Acyk7z" Value="[!Dialog][!speaker:Heissing_Normal]알았다."/>
+		<class name="Tutorial_PugoBackStreetAfter_vfNu9G" Value="[!Dialog][!speaker:Albus_Serious]그리고 진압대는 후위를 따라 지원해주시고"/>
+		<class name="Tutorial_PugoBackStreetAfter_dhQk6B" Value="[!Dialog][!speaker:VHPD_Assault_Normal]알겠습니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_Z4idJq" Value="[!Dialog][!speaker:Albus_Serious]기동대는 선두의 앤양과 레이씨를 부탁합니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_RND0TW" Value="[!Dialog][!speaker:VHPD_Scout_Normal]저희가 쓰러지는 한이 있어도 두 분을 지켜내겠습니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_bFDMYW" Value="[!Dialog][!speaker:Albus_Laugh]쓰러지지 마세요. 다들 무사히 돌아갑시다."/>
+		<class name="Tutorial_PugoBackStreetAfter_BHbZhZ" Value="[!Dialog][!speaker:Irene_Smile2]그럼 알버스 군은 나와 같이 선두로 오는 건가?"/>
+		<class name="Tutorial_PugoBackStreetAfter_k7s8Xi" Value="[!Dialog][!speaker:Albus_Laugh]......"/>
+		<class name="Tutorial_PugoBackStreetAfter_1TE5bX" Value="[!Dialog][!speaker:Sion_Surprise]사장님. 설마..."/>
+		<class name="Tutorial_PugoBackStreetAfter_yiE5PJ" Value="[!Dialog][!speaker:Albus_Serious]전 여기서 포위망이 뚫릴때까지 진입하는 적을 차단하겠습니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_2Qe6Pn" Value="[!Dialog][!speaker:Anne_Surprise]......"/>
+		<class name="Tutorial_PugoBackStreetAfter_bIQxE7" Value="[!Dialog][!speaker:Heissing_Smile]......."/>
+		<class name="Tutorial_PugoBackStreetAfter_kbUYYR" Value="[!Dialog][!speaker:Sion_Stare]사장님. 혼자 남는 건 위험해!"/>
+		<class name="Tutorial_PugoBackStreetAfter_ZLfSVn" Value="[!Dialog][!speaker:Ray_Surprise]그래! 같이 내려가서 그깟 포위망 바로 뚫어 버리자."/>
+		<class name="Tutorial_PugoBackStreetAfter_K965jX" Value="[!Dialog][!speaker:Sion_Stare]사장님. 같이 내려 갑시다."/>
+		<class name="Tutorial_PugoBackStreetAfter_Pu569F" Value="[!Dialog][!speaker:Albus_Normal]좁은 진입로에서 협공당해버리면 포위망을 뚫는 건 불가능해."/>
+		<class name="Tutorial_PugoBackStreetAfter_XOB427" Value="[!Dialog][!speaker:Sion_Stare]......"/>
+		<class name="Tutorial_PugoBackStreetAfter_KpXUqm" Value="[!Dialog][!speaker:Albus_Normal]어차피 나도 오래는 버티지 못해."/>
+		<class name="Tutorial_PugoBackStreetAfter_M4eM5H" Value="[!Dialog][!speaker:Albus_Normal]포위망이 뚫리는 것 같으면 바로 따라 붙을게."/>
+		<class name="Tutorial_PugoBackStreetAfter_n7kjmw" Value="[!Dialog][!speaker:Albus_Laugh]그렇게 내가 걱정된다면 포위망을 조금이라도 빨리 뚫어줘."/>
+		<class name="Tutorial_PugoBackStreetAfter_QES8jW" Value="[!Dialog][!speaker:Albus_Normal]그럼 아이린 씨부터 돌입하면 다들 뒤따라 내려가 포위망을 돌파합니다!"/>
+		<class name="Tutorial_PugoBackStreetAfter_V1EsYw" Value="[!Dialog][!speaker:Albus_Serious]아이린 씨부터 돌입하면 다들 따라 내려갑니다!"/>
+		<class name="Tutorial_PugoBackStreetAfter_69BUsj" Value="[!Dialog][!speaker:Irene_Serious]그럼 출발합니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_4aWdTQ" Value="[!Dialog][!speaker:Ray_Normal]알버스 군! 이따 봐~☆"/>
+		<class name="Tutorial_PugoBackStreetAfter_Rbk9rW" Value="[!Dialog][!speaker:Anne_Strict]알버스 오빠! 위험하면 도망치셔야 해요!"/>
+		<class name="Tutorial_PugoBackStreetAfter_ZnaxdU" Value="[!Dialog][!speaker:Albus_Serious]헤이싱 씨. 잘 부탁드립니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_PA5x1j" Value="[!Dialog][!speaker:Heissing_Smile]물론이다."/>
+		<class name="Tutorial_PugoBackStreetAfter_6Id1zY" Value="[!BalloonChat][!speaker:Sion]알버스!!"/>
+		<class name="Tutorial_PugoBackStreetAfter_Qigk12" Value="[!Dialog][!speaker:Albus_SurpriseStare]......"/>
+		<class name="Tutorial_PugoBackStreetAfter_aceto6" Value="[!Dialog][!speaker:Sion_Smile]무리하지 마."/>
+		<class name="Tutorial_PugoBackStreetAfter_sYGoUW" Value="[!Dialog][!speaker:Albus_SurpriseStare]응......"/>
+		<class name="Tutorial_PugoBackStreetAfter_8lBdI5" Value="[!Dialog][!speaker:Albus_Normal]바로 따라붙을 거야. 걱정 마."/>
+		<class name="Tutorial_PugoBackStreetAfter_cKKhGw" Value="[!Dialog][!speaker:VHPD_Assault_Normal]정말 혼자서 괜찮으시겠습니까?"/>
+		<class name="Tutorial_PugoBackStreetAfter_rANv2c" Value="[!Dialog][!speaker:VHPD_Assault_Normal]저희라도 도움이 된다면 남겠습니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_D7pp2L" Value="[!Dialog][!speaker:Albus_Normal]아닙니다. 지금은 포위망을 뚫는 것이 최우선입니다. 후위를 보조해 주세요."/>
+		<class name="Tutorial_PugoBackStreetAfter_vl3TN6" Value="[!Dialog][!speaker:VHPD_Assault_Normal]알겠습니다. 조심하십시오. 알버스 님."/>
+		<class name="Tutorial_PugoBackStreetAfter_Cycd33" Value="[!Title]사건 발생 3일 전..."/>
+		<class name="Tutorial_PugoBackStreetAfter_9iBX4B" Value="[!Title]자홍거리 술집"/>
+		<class name="Tutorial_PugoBackStreetAfter_0nXXSQ" Value="[!Dialog][!speaker:Gangster_WhiteTigerSniper_Mert_Normal]케빈. 굳이 이렇게 복잡한 방법을 선택하는 이유가 뭐지?"/>
+		<class name="Tutorial_PugoBackStreetAfter_GqVnWk" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]즉사가 아니면 동료들이 돕고..."/>
+		<class name="Tutorial_PugoBackStreetAfter_H9q9ps" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]저격수에게 즉사 당할만큼 굼뜨지도 않아."/>
+		<class name="Tutorial_PugoBackStreetAfter_0PcF5E" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]별빛 거리에서 충분히 느끼지 않았나?"/>
+		<class name="Tutorial_PugoBackStreetAfter_q8MC2q" Value="[!Dialog][!speaker:Gangster_WhiteTigerSniper_Mert_Normal]......"/>
+		<class name="Tutorial_PugoBackStreetAfter_hwbNZH" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]모든 변수를 제거하는 거야."/>
+		<class name="Tutorial_PugoBackStreetAfter_iBKJeS" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]발할라의 의료 인프라와 경찰력으로부터 고립시키고..."/>
+		<class name="Tutorial_PugoBackStreetAfter_9AH61U" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]동료로부터 고립시키고..."/>
+		<class name="Tutorial_PugoBackStreetAfter_am3AX0" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]그리고 마지막 순간까지..."/>
+		<class name="Tutorial_PugoBackStreetAfter_0kp7s5" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]도움을 청하지 않을 이유를 던져 줘야지..."/>
+		<class name="Tutorial_PugoBackStreetAfter_KstKHG" Value="[!Dialog][!speaker:Gangster_WhiteTigerSniper_Mert_Normal]......"/>
+		<class name="Tutorial_PugoBackStreetAfter_LXCzFB" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]머트. 그만큼 난 그녀석을 인정하는 거야."/>
+		<class name="Tutorial_PugoBackStreetAfter_EusK6Y" Value="[!Dialog][!speaker:Gangster_WhiteTigerSniper_Mert_Normal]그 녀석이 맨 마지막에 남지 않는 경우는?"/>
+		<class name="Tutorial_PugoBackStreetAfter_rgSUVk" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]$CompanyName$의 사건 해결 방식은 효율성이야."/>
+		<class name="Tutorial_PugoBackStreetAfter_1rNquj" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]구성원 각자가 맡은 역할이 명확하지. 그 역할이 바뀔 리가 없어."/>
+		<class name="Tutorial_PugoBackStreetAfter_znWRtE" Value="[!Dialog][!speaker:Gangster_WhiteTigerSniper_Mert_Normal]케빈."/>
+		<class name="Tutorial_PugoBackStreetAfter_LLoseR" Value="[!Dialog][!speaker:Gangster_WhiteTigerSniper_Mert_Normal]이렇게까지 하는 것은 10년 전 일 때문인가?"/>
+		<class name="Tutorial_PugoBackStreetAfter_9iFhMD" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]그래. 그런 일은 두 번 다시 겪고 싶지 않아."/>
+		<class name="Tutorial_PugoBackStreetAfter_FcpX8E" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]머트. 너만 믿는다."/>
+		<class name="Tutorial_PugoBackStreetAfter_bUwHDi" Value="[!Title]사건 다음 날 아침..."/>
+		<class name="Tutorial_PugoBackStreetAfter_JJSeAY" Value="[!Title]하늘바람 공원"/>
+		<class name="Tutorial_PugoBackStreetAfter_v1rXat" Value="[!Dialog]푸고 뒷골목 사건 현장 다음 날..."/>
+		<class name="Tutorial_PugoBackStreetAfter_KLQnLH" Value="[!Dialog]하늘 바람 공원 주민들은 하얗게 물든 공원 하늘에서 새벽부터 울어대는 까마귀 소리에 잠을 설친다."/>
+		<class name="Tutorial_PugoBackStreetAfter_H0MyeT" Value="[!Dialog]잠을 설친 시민들은 분노에 차 까마귀들 울음소리가 들리는 곳을 바라본다."/>
+		<class name="Tutorial_PugoBackStreetAfter_XlrFII" Value="[!Dialog]전에 보지 못했던 낯선 십자가들."/>
+		<class name="Tutorial_PugoBackStreetAfter_08jGu6" Value="[!Dialog]눈을 비비고 무엇인지 확인하던 시민들은 경악한다."/>
+		<class name="Tutorial_PugoBackStreetAfter_cvEc6W" Value="[!Dialog][!speaker:VHPD_Assault_Normal]제인 경감님. 시체의 신원이 확인되었습니다."/>
+		<class name="Tutorial_PugoBackStreetAfter_PBWqcJ" Value="[!Dialog][!speaker:VHPD_Jane_Angry]당분간 현장의 민간인의 출입을 통제해."/>
+		<class name="Tutorial_PugoBackStreetAfter_G6vYBE" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Joshua_Normal]꾸물거리지 말고 다들 올라가!"/>
+		<class name="Tutorial_PugoBackStreetAfter_xjjH0o" Value="[!Dialog][!speaker:Albus_Normal]백호파가 또 옵니다! 다들 긴장하세요!"/>
+		<class name="Tutorial_PugoBackStreetAfter_5ccJA2" Value="[!Dialog][!speaker:Gangster_WhiteTigerSniper_Mert_Normal]정말 마지막에 남았군..."/>
+		<class name="Tutorial_PugoBackStreetAfter_HSd3fl" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]머트. 단 한발이다. "/>
+		<class name="Tutorial_PugoBackStreetAfter_SPS8D6" Value="[!Dialog][!speaker:Gangster_WhiteTigerSniper_Mert_Normal]두말하면 잔소리다."/>
+	</idspace>
+</idspaces>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="sample_info_agent_negotiator_9f6ebs" Value="[!Dashboard:TimeLimiter]시간은 강물과 같아, 흘러가버리면 돌이킬 수 없구나."/>
+		<class name="sample_info_agent_negotiator_OTWbp8" Value="개가 좋아 고양이가 좋아?"/>
+		<class name="sample_info_agent_negotiator_XIDgvW" Value="나는어디 여긴누구?"/>
+		<class name="sample_info_agent_negotiator_pgXGEL" Value="아침에는 발이 네개, 점심에는 두개, 저녁에는 세개가 되는 것은 무엇인가?"/>
+		<class name="sample_info_agent_negotiator_xdEQOm" Value="[!Objective]필요한 정보를 수집하세요"/>
+	</idspace>
+</idspaces>

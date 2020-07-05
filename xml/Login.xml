@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Login">
+	<class name="Login">
+		<SequenceImage>
+			<property Image="Loading_Irene"/>
+			<property Image="Loading_LunarKill3"/>
+			<property Image="Loading_DailyIrene"/>
+			<property Image="Loading_Albus_Office"/>
+			<property Image="Loading_DailyAnne_Robin"/>
+			<property Image="Loading_Ramjiplaza_Alley"/>
+			<property Image="Loading_AlbusResearching"/>
+		</SequenceImage>
+	</class>
+	<class name="ServerSelect"/>
+	<class name="Load"/>
+	<class name="AutoDetect">
+		<SequenceImage>
+			<property Image="Loading_Irene"/>
+			<property Image="Loading_LunarKill3"/>
+			<property Image="Loading_DailyIrene"/>
+			<property Image="Loading_Albus_Office"/>
+			<property Image="Loading_DailyAnne_Robin"/>
+			<property Image="Loading_Ramjiplaza_Alley"/>
+			<property Image="Loading_AlbusResearching"/>
+		</SequenceImage>
+	</class>
+</idspace>

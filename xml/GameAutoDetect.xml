@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="GameAutoDetect">
+	<schema>
+		<rule property="Desc" type="calculated" default="CalculatedProperty_TextFormater_GameDifficulty"/>
+	</schema>
+	<class name="Auto" Title="자동 감지" Image="Loading_AlbusResearching">
+		<Desc_Base>
+			<property CaseColor="LimeGold" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="성능 테스트를 통해 그래픽 품질을 자동으로 선택합니다."/>
+			<property CaseColor="White" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="게임을 원활히 진행하기 위하여 아래의 사양을 요구합니다."/>
+			<property CaseColor="Orange" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="성능 테스트는 상황에 따라 시간이 제법 걸릴 수 있습니다."/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="권장 사양" CaseLineBreak="false" LineBreak="false" Text=""/>
+			<property CaseColor="Perano" CaseType="Custom" CaseValueType="string" CaseValue="운영체제" CaseLineBreak="false" LineBreak="false" Text="64-bit Windows 7 SP 1, Windows 8.1, Windows 10"/>
+			<property CaseColor="Perano" CaseType="Custom" CaseValueType="string" CaseValue="프로세서" CaseLineBreak="false" LineBreak="false" Text="Intel Core i5 6500, AMD RYZEN 2500X or higher"/>
+			<property CaseColor="Perano" CaseType="Custom" CaseValueType="string" CaseValue="메모리" CaseLineBreak="false" LineBreak="false" Text="16 GB RAM"/>
+			<property CaseColor="Perano" CaseType="Custom" CaseValueType="string" CaseValue="그래픽" CaseLineBreak="false" LineBreak="true" Text="NVIDIA Geforce GTX 1060 6G, AMD Radeon RX 580 or higher"/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="최소 사양" CaseLineBreak="false" LineBreak="false" Text=""/>
+			<property CaseColor="Perano" CaseType="Custom" CaseValueType="string" CaseValue="운영체제" CaseLineBreak="false" LineBreak="false" Text="64-bit Windows 7 SP 1, Windows 8.1, Windows 10"/>
+			<property CaseColor="Perano" CaseType="Custom" CaseValueType="string" CaseValue="프로세서" CaseLineBreak="false" LineBreak="false" Text="Intel Core i3 3220 @ 3.3 GHz, AMD FX 4300 @ 3.8 GHz or higher"/>
+			<property CaseColor="Perano" CaseType="Custom" CaseValueType="string" CaseValue="메모리" CaseLineBreak="false" LineBreak="false" Text="8 GB RAM"/>
+			<property CaseColor="Perano" CaseType="Custom" CaseValueType="string" CaseValue="그래픽" CaseLineBreak="false" LineBreak="false" Text="NVIDIA Geforce GTX 650 with 1 GB VRAM or AMD Radeon HD 7750 with 1 GB VRAM or better"/>
+		</Desc_Base>
+	</class>
+	<class name="Manual" Title="수동 설정" Image="Loading_Albus_Office">
+		<Desc_Base>
+			<property CaseColor="LimeGold" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="성능 테스트를 생략하고 그래픽 품질을 수동으로 선택합니다."/>
+			<property CaseColor="White" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="게임을 원활히 진행하기 위하여 아래의 사양을 요구합니다."/>
+			<property CaseColor="Orange" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="성능 테스트를 하지 않는 경우, 최저 품질 선택 후 게임을 실행하여 프레임을 확인 후 직접 조정하시는 것을 추천드립니다."/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="권장 사양" CaseLineBreak="false" LineBreak="false" Text=""/>
+			<property CaseColor="Perano" CaseType="Custom" CaseValueType="string" CaseValue="운영체제" CaseLineBreak="false" LineBreak="false" Text="64-bit Windows 7 SP 1, Windows 8.1, Windows 10"/>
+			<property CaseColor="Perano" CaseType="Custom" CaseValueType="string" CaseValue="프로세서" CaseLineBreak="false" LineBreak="false" Text="Intel Core i5 6500, AMD RYZEN 2500X or higher"/>
+			<property CaseColor="Perano" CaseType="Custom" CaseValueType="string" CaseValue="메모리" CaseLineBreak="false" LineBreak="false" Text="16 GB RAM"/>
+			<property CaseColor="Perano" CaseType="Custom" CaseValueType="string" CaseValue="그래픽" CaseLineBreak="false" LineBreak="true" Text="NVIDIA Geforce GTX 1060 6G, AMD Radeon RX 580 or higher"/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="최소 사양" CaseLineBreak="false" LineBreak="false" Text=""/>
+			<property CaseColor="Perano" CaseType="Custom" CaseValueType="string" CaseValue="운영체제" CaseLineBreak="false" LineBreak="false" Text="64-bit Windows 7 SP 1, Windows 8.1, Windows 10"/>
+			<property CaseColor="Perano" CaseType="Custom" CaseValueType="string" CaseValue="프로세서" CaseLineBreak="false" LineBreak="false" Text="Intel Core i3 3220 @ 3.3 GHz, AMD FX 4300 @ 3.8 GHz or higher"/>
+			<property CaseColor="Perano" CaseType="Custom" CaseValueType="string" CaseValue="메모리" CaseLineBreak="false" LineBreak="false" Text="8 GB RAM"/>
+			<property CaseColor="Perano" CaseType="Custom" CaseValueType="string" CaseValue="그래픽" CaseLineBreak="false" LineBreak="false" Text="NVIDIA Geforce GTX 650 with 1 GB VRAM or AMD Radeon HD 7750 with 1 GB VRAM or better"/>
+		</Desc_Base>
+	</class>
+</idspace>

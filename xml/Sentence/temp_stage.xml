@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="temp_stage_VCOn5A" Value="[!Objective]new_test_stage_pupEkL"/>
+		<class name="temp_stage_dk4Tg4" Value="[!Dialog][!speaker:Anne_Normal]new_test_stage_JQ65rN"/>
+		<class name="temp_stage_kRMcS5" Value="[!Dialog][!speaker:Albus_Normal]new_test_stage_8p5O7p"/>
+		<class name="temp_stage_j4gjSh" Value="[!Dialog][!speaker:Irene_Rage]new_test_stage_6UMlRx"/>
+		<class name="temp_stage_uzbZLm" Value="[!Ignore][!Title]new_test_stage_wQ0gpL"/>
+		<class name="temp_stage_uE3KAA" Value="[!Ignore][!Title]new_test_stage_RWaNEK"/>
+		<class name="temp_stage_iDqnKa" Value="[!Ignore][!SMMessage]new_test_stage_vGkmY5"/>
+		<class name="temp_stage_RtWenf" Value="[!Ignore][!DialogSystemMessageBox]new_test_stage_kinZQ6"/>
+		<class name="temp_stage_IYSBt5" Value="[!Ignore][!BalloonChat][!speaker:e_Carter]new_test_stage_XeFHZl"/>
+	</idspace>
+</idspaces>

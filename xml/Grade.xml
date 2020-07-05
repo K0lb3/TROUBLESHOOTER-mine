@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Grade">
+	<class name="Bronze" Title="브론즈" Lv="1" BaseReward="100" Reward="80" PromotionLv="5" Color="Bronze"/>
+	<class name="Iron" Title="아이언" Lv="2" BaseReward="150" Reward="100" PromotionLv="10" Color="Sirocco"/>
+	<class name="Silver" Title="실버" Lv="3" BaseReward="200" Reward="125" PromotionLv="15" Color="Grey"/>
+	<class name="Gold" Title="골드" Lv="4" BaseReward="250" Reward="160" PromotionLv="20" Color="Gold"/>
+	<class name="Platinum" Title="플래티넘" Lv="5" BaseReward="300" Reward="200" PromotionLv="25" Color="Orange"/>
+	<class name="Mithril" Title="미스릴" Lv="6" BaseReward="350" Reward="250" PromotionLv="30" Color="Blue_Place"/>
+	<class name="Orichalcum" Title="오리하르콘" Lv="7" BaseReward="400" Reward="320" PromotionLv="35" Color="DodgerBlue"/>
+	<class name="Adamantite" Title="아다만타이트" Lv="8" BaseReward="450" Reward="450" PromotionLv="40" Color="Red"/>
+	<class name="Lord" Title="로드" Lv="9" BaseReward="500" Reward="600" PromotionLv="-" Color="Yellow"/>
+</idspace>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="lc_mission_15_1_I67ekr" Value="[!Objective]수상한 상자를 찾아 복귀"/>
+		<class name="lc_mission_15_1_PqQ5PN" Value="[!Dialog][!speaker:Sion_Normal]수상해보이는 상자는 다 뒤짚어보면 되는거지?"/>
+		<class name="lc_mission_15_1_0SCA0z" Value="[!Dialog][!speaker:Albus_Normal]이번에는 잘 들었는데?
+의심스러워 보이는 상자는 전부다 뒤져봐야 해."/>
+		<class name="lc_mission_15_1_Qc5eTR" Value="[!Dialog][!speaker:Albus_Normal]XXX역을 시작으로 갱단들이 역을 점령하고 무언가를 찾고 있다고 접수됐어.
+무얼 찾는지는 모르겠지만 아직도 계속 찾고 있다니 우리가 한발 빠르게 움직이자."/>
+		<class name="lc_mission_15_1_JTRsbY" Value="[!Dialog][!speaker:Sion_Normal]근데 상자라면..."/>
+		<class name="lc_mission_15_1_WLIB4G" Value="[!Dialog][!speaker:Sion_Normal]이런거!"/>
+		<class name="lc_mission_15_1_Pds7HX" Value="[!Dialog][!speaker:Sion_Normal]그리고 이런거!"/>
+		<class name="lc_mission_15_1_CytJR8" Value="[!Dialog][!speaker:Sion_Normal]뒤져봤는데.
+뭐 특별한 건 없는데?"/>
+		<class name="lc_mission_15_1_tEIP68" Value="[!Dialog][!speaker:Sion_Normal]어...
+이거 조심해야 되겠는데."/>
+		<class name="lc_mission_15_1_0GXAPZ" Value="[!Dialog][!speaker:Albus_Normal]그래 제발 조심 좀 하자!"/>
+		<class name="lc_mission_15_1_quubpC" Value="[!Title]상자 안에서 앰풀상자를 찾았습니다!"/>
+		<class name="lc_mission_15_1_zI71MR" Value="[!Title]발견"/>
+		<class name="lc_mission_15_1_C0d543" Value="[!Dialog][!speaker:Sion_Smile]자 이제.
+빠져나가자고!"/>
+	</idspace>
+</idspaces>

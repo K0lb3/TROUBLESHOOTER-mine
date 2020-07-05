@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Tutorial_SilverCloudStation_lq8Azr" Value="[!Dashboard:TimeLimiter]탈출까지 남은 시간"/>
+		<class name="Tutorial_SilverCloudStation_oweQ5N" Value="[!Dashboard:Counter]탈출하지 못한 시민"/>
+		<class name="Tutorial_SilverCloudStation_V5gMZ8" Value="[!Objective]시민들을 모두 탈출시키시오."/>
+		<class name="Tutorial_SilverCloudStation_CVkLUE" Value="[!Ignore][!BalloonChat][!speaker:OchreFat]흐억. 늦었다!"/>
+		<class name="Tutorial_SilverCloudStation_VZ176r" Value="[!Ignore][!BalloonChat][!speaker:OchreFat]기다려! 코라짱!"/>
+		<class name="Tutorial_SilverCloudStation_t5ZKdx" Value="[!BalloonChat][!speaker:Anne]저 아직 하고 싶은 것이 너무 많은데..."/>
+		<class name="Tutorial_SilverCloudStation_JebcUd" Value="[!BalloonChat][!speaker:Anne]아직 다 도망치지 못 했잖아요!"/>
+		<class name="Tutorial_SilverCloudStation_DgDLuu" Value="[!BalloonChat][!speaker:Anne]저! 제일 마지막에 나가겠어요!"/>
+		<class name="Tutorial_SilverCloudStation_iya5KC" Value="[!Ignore][!BalloonChat][!speaker:Anne]감사합니다!!"/>
+		<class name="Tutorial_SilverCloudStation_dJ6qQw" Value="[!Ignore][!BalloonChat][!speaker:Anne]그리고 조심하세요. 여기 나쁜 아저씨들이 진짜 많아요."/>
+		<class name="Tutorial_SilverCloudStation_Xwi0at" Value="[!BalloonChat][!speaker:Anne]감사합니다!"/>
+		<class name="Tutorial_SilverCloudStation_2jVEr6" Value="[!BalloonChat][!speaker:Anne]저도 돕겠어요!"/>
+		<class name="Tutorial_SilverCloudStation_YFiiHS" Value="[!BalloonChat][!speaker:Sion]오~☆ 걱정 마! 내가 지켜줄게!"/>
+		<class name="Tutorial_SilverCloudStation_3VlGaU" Value="[!BalloonChat][!speaker:Boy]아... 나 원래대로 돌아가지 못하는 건가..."/>
+		<class name="Tutorial_SilverCloudStation_amFkqU" Value="[!BalloonChat][!speaker:Boy]이야. 살았다! 고마워!!"/>
+		<class name="Tutorial_SilverCloudStation_1BcDuG" Value="[!BalloonChat][!speaker:Boy]역시 자신의 운명에서 도망쳐선 안 돼!"/>
+		<class name="Tutorial_SilverCloudStation_xp9WW1" Value="[!BalloonChat][!speaker:Boy]고마워."/>
+		<class name="Tutorial_SilverCloudStation_wYsVx5" Value="[!BalloonChat][!speaker:Boy]나도 도울 수 있다면 돕겠어."/>
+		<class name="Tutorial_SilverCloudStation_sOozZh" Value="[!BalloonChat][!speaker:GreenThin]일단 여기서는 잠시 퇴장해야겠군..."/>
+		<class name="Tutorial_SilverCloudStation_FsUDPU" Value="[!Ignore][!BalloonChat][!speaker:GreenThin]고맙다. 젊은 친구들."/>
+		<class name="Tutorial_SilverCloudStation_nlNLYG" Value="[!Ignore][!BalloonChat][!speaker:GreenThin]예상외의 결과군. 좋은 정보야."/>
+		<class name="Tutorial_SilverCloudStation_XhBhUC" Value="[!BalloonChat][!speaker:GreenThin]허억.. 무서워. 나 어떡해..."/>
+		<class name="Tutorial_SilverCloudStation_vxQXSd" Value="[!BalloonChat][!speaker:GreenThin]나부터 무사히 도망치게해줘!"/>
+		<class name="Tutorial_SilverCloudStation_q6MbYs" Value="[!Ignore][!BalloonChat][!speaker:EnemyJoin1_01]위에 망보던 녀석들이 당했다!"/>
+		<class name="Tutorial_SilverCloudStation_SXvy60" Value="[!Ignore][!BalloonChat][!speaker:EnemyJoin1_02]누군가 침입했다!! 경계해!"/>
+		<class name="Tutorial_SilverCloudStation_6uUeHJ" Value="[!Ignore][!BalloonChat][!speaker:Enemy2_01]!!"/>
+		<class name="Tutorial_SilverCloudStation_SUOT0o" Value="[!Ignore][!BalloonChat][!speaker:Enemy2_03]??"/>
+		<class name="Tutorial_SilverCloudStation_CvUX1z" Value="[!Ignore][!BalloonChat][!speaker:Anne]앗 저 언니 위험해..."/>
+		<class name="Tutorial_SilverCloudStation_MjweSb" Value="[!Ignore][!BalloonChat][!speaker:Irene]도대체 어디야..."/>
+		<class name="Tutorial_SilverCloudStation_K31tz1" Value="[!Ignore][!BalloonChat][!speaker:Enemy2_02]야!!! 여자아이!!!"/>
+		<class name="Tutorial_SilverCloudStation_4EbA1K" Value="[!Ignore][!BalloonChat][!speaker:EnemyJoin1_02]너희들 일을 어떻게 하는 거야! 인질이 지 마음대로 돌아다니잖아!!"/>
+		<class name="Tutorial_SilverCloudStation_CN8tTe" Value="[!Ignore][!BalloonChat][!speaker:Anne]저기! 여기 나쁜 사람들이에요! 도망치세요!"/>
+		<class name="Tutorial_SilverCloudStation_G3aMSF" Value="[!Ignore][!BalloonChat][!speaker:Irene]!!!!!"/>
+		<class name="Tutorial_SilverCloudStation_Sj9AMQ" Value="[!Ignore][!BalloonChat][!speaker:Enemy2_02]너희들 조용히 안해!!"/>
+		<class name="Tutorial_SilverCloudStation_KHQNTk" Value="[!Ignore][!BalloonChat][!speaker:EnemyJoin1_02]야! 너도 도망갈 생각말고 좋은 말 할 때 일로 와!!!"/>
+		<class name="Tutorial_SilverCloudStation_Ruv0Hc" Value="[!Ignore][!BalloonChat][!speaker:Irene]이 악당 녀석들 찾았다!"/>
+		<class name="Tutorial_SilverCloudStation_lWhC9N" Value="[!Ignore][!BalloonChat][!speaker:Enemy2_04]뭐지..."/>
+		<class name="Tutorial_SilverCloudStation_Y7bxX4" Value="[!Ignore][!BalloonChat][!speaker:Irene]내가 히어로 아이린이다!!"/>
+		<class name="Tutorial_SilverCloudStation_xfkPrC" Value="[!Ignore][!BalloonChat][!speaker:EnemyJoin1_01]히어로 아이린??"/>
+		<class name="Tutorial_SilverCloudStation_tcI90G" Value="[!Ignore][!BalloonChat][!speaker:EnemyJoin1_01]설마 위에 당한 녀석들이 말한... 빨간머리!"/>
+		<class name="Tutorial_SilverCloudStation_p8YjRn" Value="[!Ignore][!BalloonChat][!speaker:Irene]내가 너희들을 응징하겠다!!!"/>
+		<class name="Tutorial_SilverCloudStation_kbQUJS" Value="[!Ignore][!BalloonChat][!speaker:OchreFat]우와 히어로 아이린!!... 넷상에서 떠도는 말이 진짜였어..."/>
+		<class name="Tutorial_SilverCloudStation_CLwxsz" Value="[!Ignore][!BalloonChat][!speaker:GreenThin]흐음... 히어로 아이린..."/>
+		<class name="Tutorial_SilverCloudStation_WSxzzt" Value="[!Ignore][!BalloonChat][!speaker:Albus]이번엔 늦지 않았네."/>
+		<class name="Tutorial_SilverCloudStation_VSgoKE" Value="[!Ignore][!BalloonChat][!speaker:EnemyJoin1_01]위에 망보던 녀석들이 다 당했다!"/>
+		<class name="Tutorial_SilverCloudStation_VwwgXE" Value="[!Ignore][!BalloonChat][!speaker:EnemyJoin1_02]빨간 머리를 조심해!!"/>
+		<class name="Tutorial_SilverCloudStation_MtivVl" Value="[!Ignore][!BalloonChat][!speaker:EnemyJoin1_01]이 녀석이야!!!"/>
+		<class name="Tutorial_SilverCloudStation_oYdC41" Value="[!Ignore][!BalloonChat][!speaker:EnemyJoin1_02]다들 조심해! 기습이다!"/>
+		<class name="Tutorial_SilverCloudStation_w2UFYw" Value="[!Ignore][!BalloonChat][!speaker:Irene]이 악당 녀석들 찾았다!"/>
+		<class name="Tutorial_SilverCloudStation_oXBcjN" Value="[!Ignore][!BalloonChat][!speaker:Irene]히어로 아이린!! 너희들을 응징하겠다!!!"/>
+		<class name="Tutorial_SilverCloudStation_R03U9p" Value="[!Ignore][!BalloonChat][!speaker:Sion]우왔~☆ 히어로 아이린이다!!"/>
+		<class name="Tutorial_SilverCloudStation_xTLIs0" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_SilverCloudStation_knjjZ4" Value="[!VictoryCondition]시민 전투 불능"/>
+		<class name="Tutorial_SilverCloudStation_1QcCwn" Value="[!VictoryCondition]시민들을 모두 구출하시오"/>
+		<class name="Tutorial_SilverCloudStation_zs08I7" Value="[!BalloonChat][!speaker:OchreFat]더 이상 공부 안 해도 되는 건가..."/>
+		<class name="Tutorial_SilverCloudStation_pMSsvH" Value="[!BalloonChat][!speaker:OchreFat]흐억. 늦었다! 난 이만 먼저 갈게!"/>
+		<class name="Tutorial_SilverCloudStation_god6GX" Value="[!BalloonChat][!speaker:OchreFat]이번에도 떨어지면 어떡하지... 차라리 취직할걸..."/>
+		<class name="Tutorial_SilverCloudStation_pNpLPn" Value="[!BalloonChat][!speaker:OchreFat]어... 고맙다."/>
+		<class name="Tutorial_SilverCloudStation_VhxSPR" Value="[!BalloonChat][!speaker:OchreFat]일단 이렇게 된 거 어서 빨리 도망치자."/>
+		<class name="Tutorial_SilverCloudStation_ZYjXaR" Value="[!BalloonChat][!speaker:Oldman]할멈... 이제 가네. 곧 봐..."/>
+		<class name="Tutorial_SilverCloudStation_873tLM" Value="[!BalloonChat][!speaker:Oldman]덕분에 살았네. 고맙네. 젊은이들."/>
+		<class name="Tutorial_SilverCloudStation_auFkrF" Value="[!BalloonChat][!speaker:Oldman]할멈. 아직 곁에 갈 시간이 아닌가 보구료."/>
+		<class name="Tutorial_SilverCloudStation_70Rm3t" Value="[!BalloonChat][!speaker:Oldman]조금만 더 기다려. 할 일 다하고 곧 찾아갈게. 할멈."/>
+		<class name="Tutorial_SilverCloudStation_AfmWR9" Value="[!BalloonChat][!speaker:Oldman]고맙네. 하지만 노인네가 짐이 될까 걱정이네."/>
+		<class name="Tutorial_SilverCloudStation_Y4CP51" Value="[!BalloonChat][!speaker:Oldman]내가 짐이 된다면 나부터 버리고 가게나."/>
+		<class name="Tutorial_SilverCloudStation_B5sybE" Value="[!BalloonChat][!speaker:SalaryWoman]하아... 나 이제 취업했는데..."/>
+		<class name="Tutorial_SilverCloudStation_jLnk9w" Value="[!BalloonChat][!speaker:SalaryWoman]고마워! 고마워! 덕분에 살았어!"/>
+		<class name="Tutorial_SilverCloudStation_OhzGZd" Value="[!BalloonChat][!speaker:SalaryWoman]마리아의 팬미팅이 있는데 안 늦을 것 같아! 행복해!"/>
+		<class name="Tutorial_SilverCloudStation_Q8ZJX4" Value="[!BalloonChat][!speaker:SalaryWoman]도와줘서 고마워"/>
+		<class name="Tutorial_SilverCloudStation_1bCi3e" Value="[!BalloonChat][!speaker:SalaryWoman]나 꼭 가야 할 약속이 있어."/>
+		<class name="Tutorial_SilverCloudStation_M6KWvI" Value="[!BalloonChat][!speaker:SalaryWoman]무사히 여길 빠져나갈 수 있게 도와줘."/>
+		<class name="Tutorial_SilverCloudStation_USmJqh" Value="[!BalloonChat][!speaker:Albus]도와준다니 고맙네."/>
+		<class name="Tutorial_SilverCloudStation_TmfAUK" Value="[!BalloonChat][!speaker:Albus]하지만 여기는 우리한테 맡기고 다른 사람들을 도와주렴!"/>
+		<class name="Tutorial_SilverCloudStation_SkbeR8" Value="[!BalloonChat][!speaker:Irene]히어로로서 당연한 일이다."/>
+		<class name="Tutorial_SilverCloudStation_PKPlKt" Value="[!BalloonChat][!speaker:Irene]일단 악당들이 많으니 잠시 저기 숨어 있으렴"/>
+		<class name="Tutorial_SilverCloudStation_2Q2r1N" Value="[!BalloonChat][!speaker:Enemy3_01]자! 가자."/>
+		<class name="Tutorial_SilverCloudStation_BR3UEJ" Value="[!BalloonChat][!speaker:Enemy3_03]꼬마! 뭐하냐! 빨리 안가나!"/>
+		<class name="Tutorial_SilverCloudStation_1WVAkh" Value="[!BalloonChat][!speaker:Enemy6_01]자! 시간 없다. 가자."/>
+		<class name="Tutorial_SilverCloudStation_HBQS3T" Value="[!BalloonChat][!speaker:Enemy6_03]너도 빨리 가!"/>
+		<class name="Tutorial_SilverCloudStation_rm0yPD" Value="[!BalloonChat][!speaker:Enemy4_01]우리가 가장 늦다. 가자!"/>
+		<class name="Tutorial_SilverCloudStation_WI23Mz" Value="[!BalloonChat][!speaker:Enemy4_03]너! 빨리 쫓아가!"/>
+		<class name="Tutorial_SilverCloudStation_WzC1r7" Value="[!BalloonChat][!speaker:Enemy4_03]어여 가!"/>
+		<class name="Tutorial_SilverCloudStation_apF1mI" Value="[!Ignore][!BalloonChat][!speaker:Enemy4_03]가라고!"/>
+		<class name="Tutorial_SilverCloudStation_o8NPHg" Value="[!BalloonChat][!speaker:Enemy6_01]자! 시간 없다. 가자."/>
+		<class name="Tutorial_SilverCloudStation_hLDbib" Value="[!BalloonChat][!speaker:Enemy6_03]너도 빨리 가!"/>
+		<class name="Tutorial_SilverCloudStation_vUxAi1" Value="[!BalloonChat][!speaker:Enemy6_03]너도 빨리 가!"/>
+	</idspace>
+</idspaces>

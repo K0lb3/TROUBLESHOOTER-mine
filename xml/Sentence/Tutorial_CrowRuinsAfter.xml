@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Tutorial_CrowRuinsAfter_jOXq5T" Value="[!Dashboard:Counter]남은 스푼교도 수"/>
+		<class name="Tutorial_CrowRuinsAfter_zyrji7" Value="[!Objective]스푼교도를 모두 제압하시오."/>
+		<class name="Tutorial_CrowRuinsAfter_iAOjgx" Value="[!Title]국가안정보장회의"/>
+		<class name="Tutorial_CrowRuinsAfter_4GpuY9" Value="[!Title]1년 반 전, 발할라 시청"/>
+		<class name="Tutorial_CrowRuinsAfter_e0XZhk" Value="[!Dialog][!speaker:Mimir_Normal][colour=&apos;FFFFAA00&apos;]지금부터 최고평의회 에드워드 르블랑의 요청으로 제 256차 국가안전보장회의를 시작합니다."/>
+		<class name="Tutorial_CrowRuinsAfter_FoKKQ8" Value="[!Dialog][!speaker:Mimir_][colour=&apos;FFFFAA00&apos;]먼저 회의 성립을 위한 정족수 확인을 위한 호명을 진행합니다."/>
+		<class name="Tutorial_CrowRuinsAfter_Mx19Py" Value="[!Dialog][!speaker:Mimir_Normal][colour=&apos;FFFFFF00&apos;]『 의장 』 - 최고평의회 에드워드 르블랑."/>
+		<class name="Tutorial_CrowRuinsAfter_UHfggG" Value="[!Dialog][!speaker:Edward_Normal2]참가했네."/>
+		<class name="Tutorial_CrowRuinsAfter_knWMrr" Value="[!Dialog][!speaker:Mimir_Normal][colour=&apos;FFFFFF00&apos;]『 부의장 』 - 발할라 시장 칼 레인."/>
+		<class name="Tutorial_CrowRuinsAfter_urIO3U" Value="[!Dialog][!speaker:Karl_Normal]참가하였습니다."/>
+		<class name="Tutorial_CrowRuinsAfter_KcZskv" Value="[!Dialog][!speaker:Mimir_Normal][colour=&apos;FFFFFF00&apos;]『 상임 위원 』 - 발할라 국립 이능 연구소장 릴리 러버."/>
+		<class name="Tutorial_CrowRuinsAfter_TylFnl" Value="[!Dialog][!speaker:Lily_Normal]참여했습니다."/>
+		<class name="Tutorial_CrowRuinsAfter_UHiRBZ" Value="[!Dialog][!speaker:Mimir_Normal][colour=&apos;FFFFFF00&apos;]『 상임 위원 』 - 발할라 이민관리국장 조만 천."/>
+		<class name="Tutorial_CrowRuinsAfter_UauyGh" Value="[!Dialog][!speaker:Joman_Normal]출석하였습니다."/>
+		<class name="Tutorial_CrowRuinsAfter_l1HMvk" Value="[!Dialog][!speaker:Mimir_Normal][colour=&apos;FFFFFF00&apos;]『 법정 감독관 』 - 동방연합 고등판무관 영인 황."/>
+		<class name="Tutorial_CrowRuinsAfter_d5tkHD" Value="[!Dialog][!speaker:YoungIn_Normal]이번에 처음 참여하게 되었습니다."/>
+		<class name="Tutorial_CrowRuinsAfter_Vnx3ke" Value="[!Dialog][!speaker:YoungIn_Normal]잘 부탁드립니다."/>
+		<class name="Tutorial_CrowRuinsAfter_qIPmBH" Value="[!Dialog][!speaker:Mimir_Normal][colour=&apos;FFFFFF00&apos;]『 법정 감독관 』 - 카라스 연방 고등판무관 아이라 로스노프스키."/>
+		<class name="Tutorial_CrowRuinsAfter_gqmUK6" Value="[!Dialog][!speaker:Aira_Normal]이제는 이런 의례는 간략하게 하면 안 돼?"/>
+		<class name="Tutorial_CrowRuinsAfter_XHyCLH" Value="[!Dialog][!speaker:Aira_Smile]너무 고리타분 하잖아."/>
+		<class name="Tutorial_CrowRuinsAfter_EJ8Dqq" Value="[!Dialog][!speaker:Mimir_Normal][colour=&apos;FFFFFF00&apos;]『 법정 감독관 』 - 아테르 제국 고등판무관 모건 프론트아머."/>
+		<class name="Tutorial_CrowRuinsAfter_epPHH7" Value="[!Dialog][!speaker:Mogan_Serious]형식은 중요합니다. 아이라 님."/>
+		<class name="Tutorial_CrowRuinsAfter_OWFWr7" Value="[!Dialog][!speaker:Mimir_Normal][colour=&apos;FFFFAA00&apos;]최소 정족수 7명을 확인하였습니다."/>
+		<class name="Tutorial_CrowRuinsAfter_Omn4RR" Value="[!Dialog][!speaker:Mimir_Normal][colour=&apos;FFFFAA00&apos;]이 회의 내용은 발할라 중앙 관리 시스템 미미르에 영구 기록되며, 정보 보안 등급 7 단계『 오리하르콘 』등급으로 관리됩니다."/>
+		<class name="Tutorial_CrowRuinsAfter_46UX98" Value="[!Dialog][!speaker:Mimir_Normal][colour=&apos;FFFFAA00&apos;]그럼 지금부터 제 256차 국가안전보장회의의 개회를 선언합니다."/>
+		<class name="Tutorial_CrowRuinsAfter_7SA9PG" Value="[!Dialog][!speaker:Edward_Normal2]긴급한 소집이었는데 응해줘서 고맙네."/>
+		<class name="Tutorial_CrowRuinsAfter_ay9thd" Value="[!Dialog][!speaker:Edward_Normal2]그리고 황 고등판무관도 환영하오."/>
+		<class name="Tutorial_CrowRuinsAfter_YtkIpI" Value="[!Dialog][!speaker:YoungIn_Normal]네. 잘 부탁드립니다."/>
+		<class name="Tutorial_CrowRuinsAfter_FtP6ic" Value="[!Dialog]『 고등판무관 』"/>
+		<class name="Tutorial_CrowRuinsAfter_lzQE4f" Value="[!Dialog]아테르 제국, 카라스 연방, 동방 연합에서 파견한 최고 직급의 외교관을 말한다."/>
+		<class name="Tutorial_CrowRuinsAfter_W8kgP5" Value="[!Dialog]이들은 표면적으로는 발할라에 파견된 다른 국가의 대사들과 마찬가지로 각 국의 입장을 대변하고 발할라의 의사를 전달하는 소통 창구 역할을 한다."/>
+		<class name="Tutorial_CrowRuinsAfter_QzICw7" Value="[!Dialog]하지만 이들의 실제 역할은 발할라 최고 평의회를 비롯한 발할라 운영 전반부에 걸친 중요한 결정의 과정의 의결권을 가진 자로 참여하여,"/>
+		<class name="Tutorial_CrowRuinsAfter_16hI1x" Value="[!Dialog]발할라 정부가 독자적인 움직임을 보이거나 혹은 특정 국가에 편향된 성향을 가지지 않도록 감독하는 역할을 하고 있다."/>
+		<class name="Tutorial_CrowRuinsAfter_ooHvp6" Value="[!Dialog][!speaker:Aira_Normal]『 오리하르콘 』등급이라..."/>
+		<class name="Tutorial_CrowRuinsAfter_RX9Xuq" Value="[!Dialog][!speaker:Aira_Smile]언제나 들을 때마다 너무 와 닿질 않아..."/>
+		<class name="Tutorial_CrowRuinsAfter_89DwJS" Value="[!Dialog][!speaker:Aira_Smile]숫자나 간단한 등급 표기도 많을텐데..."/>
+		<class name="Tutorial_CrowRuinsAfter_s2fWgh" Value="[!Dialog][!speaker:Mogan_Normal]이미 상징성을 가지는 단어에 개인 취향을 결부시켜 불만을 가져봐야 무의미합니다."/>
+		<class name="Tutorial_CrowRuinsAfter_NVwTyP" Value="[!Dialog][!speaker:Lily_Stare]&apos;또 시작이군...&apos;"/>
+		<class name="Tutorial_CrowRuinsAfter_fytJpe" Value="[!Dialog][!speaker:Aira_Normal]고귀하신 황제 폐하의 위광 아래 충성하는 제국의 귀족다운 말이야."/>
+		<class name="Tutorial_CrowRuinsAfter_8SMNQe" Value="[!Dialog][!speaker:Mogan_Serious]......"/>
+		<class name="Tutorial_CrowRuinsAfter_P8PAEb" Value="[!Dialog][!speaker:Aira_Serious]정말 모건 자네 말대로 모든 귀족들이 황제에게 충성한다면, 끊임없이 황권을 차지하기 위한 내란은 도대체 무엇일까?"/>
+		<class name="Tutorial_CrowRuinsAfter_jglBO4" Value="[!Dialog][!speaker:Mogan_Serious]아이라 님. 절 향한 모욕은 괜찮습니다만, 황제 폐하를 향한다면 참아드릴 수 없군요."/>
+		<class name="Tutorial_CrowRuinsAfter_qHi3im" Value="[!Dialog][!speaker:YoungIn_Normal]회의와 상관없는 말은 그만하시지요."/>
+		<class name="Tutorial_CrowRuinsAfter_YVQkr5" Value="[!Dialog][!speaker:YoungIn_Normal]두 분의 감정은 이 곳이 아닌 다른 곳에서 처리하셔도 충분할 듯 합니다."/>
+		<class name="Tutorial_CrowRuinsAfter_UTKaiz" Value="[!Dialog][!speaker:Mogan_Serious]자네의 말은 정론이나, 동방연합의 대표인 자네의 말을 따를 의무는 없네."/>
+		<class name="Tutorial_CrowRuinsAfter_K17i8K" Value="[!Dialog][!speaker:Aira_Smile]확실히 우리나 제국에 비해 동방연합이 세대 교체는 빨라."/>
+		<class name="Tutorial_CrowRuinsAfter_n9q84D" Value="[!Dialog][!speaker:Aira_Smile]20년 전 그렇게 다 바꿔 겨우 안정시키더니 또 대대적인 물갈이라고?"/>
+		<class name="Tutorial_CrowRuinsAfter_7fOzld" Value="[!Dialog][!speaker:YoungIn_Normal]고인물은 썩기 마련입니다."/>
+		<class name="Tutorial_CrowRuinsAfter_he6rc0" Value="[!Dialog][!speaker:Mogan_Normal]그 의견에 반대네. 구관이 명관이지."/>
+		<class name="Tutorial_CrowRuinsAfter_eaTCAu" Value="[!Dialog][!speaker:YoungIn_Normal]썩은 내를 풍기는 자들은 썩은 내를 맡지 못합니다."/>
+		<class name="Tutorial_CrowRuinsAfter_2Iyymn" Value="[!Dialog][!speaker:Aira_Smile]이야~~ 황 고등판무관! 재밌는 사람이군!"/>
+		<class name="Tutorial_CrowRuinsAfter_XkwrFC" Value="[!Dialog][!speaker:Mogan_Normal]......"/>
+		<class name="Tutorial_CrowRuinsAfter_EkcRDo" Value="[!Dialog][!speaker:Aira_Smile]승룡전에서 살아남으면 거물이 되어 있을 사람이라 막대하기도 그렇고..."/>
+		<class name="Tutorial_CrowRuinsAfter_fveTzB" Value="[!Dialog][!speaker:Aira_Normal]어차피 승룡전에서 희생될 분이라면 굳이 잘 대해 주기도 그래~"/>
+		<class name="Tutorial_CrowRuinsAfter_i4nnWU" Value="[!Dialog][!speaker:Aira_Smile]그렇지 않아?"/>
+		<class name="Tutorial_CrowRuinsAfter_WbQBJP" Value="[!Dialog][!speaker:YoungIn_Smile]아이라 님이 걱정해 주실 부분은 아닙니다."/>
+		<class name="Tutorial_CrowRuinsAfter_LCsP2A" Value="[!Dialog][!speaker:Karl_Normal]다들 그만하시고 회의를 진행하는 것이 어떻습니까?"/>
+		<class name="Tutorial_CrowRuinsAfter_mqpisr" Value="[!Dialog][!speaker:Aira_Smile]칼 시장. 내년에 볼 수 있어?"/>
+		<class name="Tutorial_CrowRuinsAfter_vlIchV" Value="[!Dialog][!speaker:Karl_Normal]&apos;이 여자... 도대체 무엇 때문에 심기가 뒤틀린거지...&apos;"/>
+		<class name="Tutorial_CrowRuinsAfter_fxJyss" Value="[!Dialog][!speaker:Karl_Smile]그것이 순리라면 따라야죠."/>
+		<class name="Tutorial_CrowRuinsAfter_JRX0Nm" Value="[!Dialog][!speaker:Edward_Normal2]다들 회의를 진행하게 협조해주게나."/>
+		<class name="Tutorial_CrowRuinsAfter_kUbgXE" Value="[!Dialog][!speaker:Mogan_Normal]알겠습니다. 에드워드 경."/>
+		<class name="Tutorial_CrowRuinsAfter_sAI9Q1" Value="[!Dialog][!speaker:Edward_Smile2]아이라 경. 양해를 구하지."/>
+		<class name="Tutorial_CrowRuinsAfter_OzZc5o" Value="[!Dialog][!speaker:Aira_Smile]......"/>
+		<class name="Tutorial_CrowRuinsAfter_sV92AO" Value="[!Dialog][!speaker:Aira_Smile]나만 나쁜 사람 됐잖아?"/>
+		<class name="Tutorial_CrowRuinsAfter_ediMqI" Value="[!Dialog][!speaker:Edward_Normal2]그럼 이번 회의 안건을 진행하겠네."/>
+		<class name="Tutorial_CrowRuinsAfter_5OotQM" Value="[!Dialog][!speaker:Edward_Normal2]이번 안건은 이민 관리국 천조만의 기획을 받아 내 직권으로 상정하는 프로젝트네."/>
+		<class name="Tutorial_CrowRuinsAfter_P49ALn" Value="[!Dialog][!speaker:Edward_Normal2]프로젝트 이름은『 버려진 아이들 』이네."/>
+		<class name="Tutorial_CrowRuinsAfter_8IqMrv" Value="[!Dialog][!speaker:Edward_Normal2]그럼 프로젝트에 대한 취지와 내용을 설명해 주게. 천조만 국장."/>
+		<class name="Tutorial_CrowRuinsAfter_o3OuFK" Value="[!Title]회의 시작 1시간 후"/>
+		<class name="Tutorial_CrowRuinsAfter_55zk2V" Value="[!Dialog][!speaker:Aira_Smile]정말 당신들은 힘들겠어."/>
+		<class name="Tutorial_CrowRuinsAfter_4xAZh4" Value="[!Dialog][!speaker:Edward_Smile2]이해해주게. 아이라 경."/>
+		<class name="Tutorial_CrowRuinsAfter_hcTjyI" Value="[!Dialog][!speaker:Aira_Serious]차라리 발할라가 군대를 가지겠다고 하는 게 낫지 않겠어?"/>
+		<class name="Tutorial_CrowRuinsAfter_FggQTk" Value="[!Dialog][!speaker:YoungIn_Serious]반대입니다."/>
+		<class name="Tutorial_CrowRuinsAfter_J7Yp9D" Value="[!Dialog][!speaker:YoungIn_Serious]동방 연합은 3국의 완충지로 발할라의 존재를 인정하고 있습니다."/>
+		<class name="Tutorial_CrowRuinsAfter_BjB7Is" Value="[!Dialog][!speaker:Mogan_Serious]저희는 상관없습니다만..."/>
+		<class name="Tutorial_CrowRuinsAfter_soIRIN" Value="[!Dialog][!speaker:Mogan_Serious]3국의 평화 조약은 무효화되고 세계 대전이 다시 시작되겠지요."/>
+		<class name="Tutorial_CrowRuinsAfter_lHMzD9" Value="[!Dialog][!speaker:Aira_Smile]다들 정말 진지하군."/>
+		<class name="Tutorial_CrowRuinsAfter_G0uCvQ" Value="[!Dialog][!speaker:Aira_Smile]모든 일을 진지하게만 바라보니 이러지도 저러지도 못하고 정작 이런 안건 같은 걸 생각하는 자가 생기는 거야."/>
+		<class name="Tutorial_CrowRuinsAfter_MFbcGv" Value="[!Dialog][!speaker:YoungIn_Normal]특정 지구의 치안을 약화시키고 나머지 지구의 치안 강화를 강화하여, 반정부세력이 자연스럽게 목표한 지구로 몰려들게 하는 것은 가능한 일이라고 봅니다."/>
+		<class name="Tutorial_CrowRuinsAfter_dtAwQ3" Value="[!Dialog][!speaker:YoungIn_Normal]다만 그 목표 지구가 왜 저희 동방연합과 국경을 마주하고 있는 바람장벽지구인지 설명을 부탁드립니다."/>
+		<class name="Tutorial_CrowRuinsAfter_Q8la2P" Value="[!Dialog][!speaker:Joman_Normal]인위적인 치안의 약화가 시민들에게 자연스럽게 보일 수 있는 지역이여야 하는 것이 첫번째 조건입니다."/>
+		<class name="Tutorial_CrowRuinsAfter_IHYJ89" Value="[!Dialog][!speaker:Mogan_Normal]단지 치안이 낮은 지역이라면 카라스 연방과 국경을 바라보는 붉은 광산 지구가 있지 않은가?"/>
+		<class name="Tutorial_CrowRuinsAfter_wH9CyE" Value="[!Dialog][!speaker:Aira_Smile]귀찮은 프로젝트를 우리 쪽에 엮으려고 하지마."/>
+		<class name="Tutorial_CrowRuinsAfter_3M9BUw" Value="[!Dialog][!speaker:Mogan_Normal]사실을 말하는 것입니다. 아이라 경."/>
+		<class name="Tutorial_CrowRuinsAfter_ZG4MFC" Value="[!Dialog][!speaker:Joman_Normal]안타깝게도 붉은 광산 지구는 이미 많은 반 정부 세력을 유배시킨 지역입니다."/>
+		<class name="Tutorial_CrowRuinsAfter_rsbk5d" Value="[!Dialog][!speaker:Joman_Normal]그런 곳에 이런 프로젝트를 진행하는 건 불에 기름을 붓는 격이 됩니다."/>
+		<class name="Tutorial_CrowRuinsAfter_ensXu6" Value="[!Dialog][!speaker:YoungIn_Serious]그렇다고 한들 이 프로젝트는 저희에게는 그다지 실익이 없는 것 같군요."/>
+		<class name="Tutorial_CrowRuinsAfter_37WwRz" Value="[!Dialog][!speaker:YoungIn_Serious]지금으로선 저는 이 프로젝트를 반대할 것입니다."/>
+		<class name="Tutorial_CrowRuinsAfter_diTj50" Value="[!Dialog][!speaker:Joman_Normal]황 감독관 님. 그것은 단편적인 생각입니다."/>
+		<class name="Tutorial_CrowRuinsAfter_xY0CWc" Value="[!Dialog][!speaker:Joman_Normal]이 프로젝트로 유입되는 사람들로 바람 장벽지구의 경제는 활성화되고, 그 영향은 동방 연합의 이익이 될 것 입니다."/>
+		<class name="Tutorial_CrowRuinsAfter_c9Exlc" Value="[!Dialog][!speaker:Joman_Normal]반정부세력의 사람들도 의식주를 해결해야 하기 때문입니다."/>
+		<class name="Tutorial_CrowRuinsAfter_avNJM0" Value="[!Dialog][!speaker:Joman_Normal]민간에서는 경제 활성화에 맞춰 노후화된 인프라에 대한 재건축 붐이 일어날 것이고, 자체 원자재 확보가 힘든 바람장벽지구는 동방 연합의 많은 원자재들을 수입할 것입니다."/>
+		<class name="Tutorial_CrowRuinsAfter_uV4RRN" Value="[!Dialog][!speaker:Joman_Normal]그리고 장기적으로는 향상된 물류 인프라를 바탕으로 동방 연합의 물류가 쉽게 전 세계로 퍼져 나갈 수 있을 것입니다."/>
+		<class name="Tutorial_CrowRuinsAfter_feAWBB" Value="[!Dialog][!speaker:YoungIn_Serious]6개월이면 종료하겠다는 프로젝트가 장기적으로 그런 효과를 발생시킬지는 의문이군요."/>
+		<class name="Tutorial_CrowRuinsAfter_iEPkBt" Value="[!Dialog][!speaker:Edward_Normal2]그것은 걱정하지 않아도 될 걸세."/>
+		<class name="Tutorial_CrowRuinsAfter_ruy91V" Value="[!Dialog][!speaker:Edward_Normal2]민간에서는 한 번 투자 붐이 일면 맹목적인 투자가 뒤를 따르지."/>
+		<class name="Tutorial_CrowRuinsAfter_kYsVQ3" Value="[!Dialog][!speaker:Edward_Smile2]설령 조금 손해를 본다한들 쉽게 손절하지 못하는 것이 민간 자본의 특징이야."/>
+		<class name="Tutorial_CrowRuinsAfter_3Xf8hF" Value="[!Dialog][!speaker:Aira_Normal]현재를 속여 엄청난 빚을 진 채무자들을 발생시킬 셈인가?"/>
+		<class name="Tutorial_CrowRuinsAfter_9GuCVC" Value="[!Dialog][!speaker:Edward_Normal2]채무자들은 빚을 갚기 위해 또 열심히 일할 걸세."/>
+		<class name="Tutorial_CrowRuinsAfter_TLoWdH" Value="[!Dialog][!speaker:Mogan_Normal]그들이 진실을 알면 분노할 것이고 결국 반정부성향을 가질 것입니다."/>
+		<class name="Tutorial_CrowRuinsAfter_CdDZAq" Value="[!Dialog][!speaker:Edward_Normal2]괜찮아. 바람장벽지구에만 일어나는 붐을 타지 못한 대다수의 시민들이 그들의 몰락을 보며 기뻐할 것이네."/>
+		<class name="Tutorial_CrowRuinsAfter_RQTDun" Value="[!Dialog][!speaker:YoungIn_Normal]일단 이 부분에 대한 판단은 검토해 보겠습니다."/>
+		<class name="Tutorial_CrowRuinsAfter_kpIxpr" Value="[!Dialog][!speaker:Mogan_Serious]『 스푼교 』라면 변절자 람지스트의 조직이 아닌가?"/>
+		<class name="Tutorial_CrowRuinsAfter_eHr6aB" Value="[!Dialog][!speaker:Mogan_Serious]지난 10년 간 변절자 람지스트를 통제하지 못한 자네들이 그와 연관된 조직을 이용하겠다는 것이 전혀 신뢰가 가지 않는군."/>
+		<class name="Tutorial_CrowRuinsAfter_FRBafb" Value="[!Dialog][!speaker:Aira_Normal]에드워드 경. 망나니 아들을 향한 분노인가?"/>
+		<class name="Tutorial_CrowRuinsAfter_VjnXJb" Value="[!Dialog][!speaker:Edward_Smile2]오해 말게. 그저 이 프로젝트에 적절할 소재일 뿐이네."/>
+		<class name="Tutorial_CrowRuinsAfter_XJP8Ho" Value="[!Dialog][!speaker:YoungIn_Normal]통제 불가능한 조직을 어떻게 통제하실 생각이십니까?"/>
+		<class name="Tutorial_CrowRuinsAfter_gUA4Zc" Value="[!Dialog][!speaker:Joman_Normal]스푼교는 약속된 낙원,『 배부름의 땅 』의 개념을 가지고 있습니다."/>
+		<class name="Tutorial_CrowRuinsAfter_30N4FW" Value="[!Dialog][!speaker:Joman_Smile]이 부분을 파고들 생각입니다."/>
+		<class name="Tutorial_CrowRuinsAfter_TaneeT" Value="[!Dialog][!speaker:Aira_Smile]정말 작명 센스는 유치해서 못 봐주겠군."/>
+		<class name="Tutorial_CrowRuinsAfter_18SHIE" Value="[!Dialog][!speaker:Mogan_Normal]약속된 낙원이라니... 패배자다운 생각이군."/>
+		<class name="Tutorial_CrowRuinsAfter_dTvPEC" Value="[!Dialog][!speaker:Joman_Smile]저희는 스푼교의 포교 활동을 비밀리에 지원하여 스푼교의 세력화를 가속화하고, 반대로 범죄 조직과의 마찰을 유도하여 범죄 조직들로 하여금 스푼교를 탄압하게 유도할 것입니다."/>
+		<class name="Tutorial_CrowRuinsAfter_vocUoB" Value="[!Dialog][!speaker:Aira_Smile]불만이 있으면 스스로 떠나라?"/>
+		<class name="Tutorial_CrowRuinsAfter_nhiMvk" Value="[!Dialog][!speaker:YoungIn_Serious]......"/>
+		<class name="Tutorial_CrowRuinsAfter_VlaoVH" Value="[!Dialog][!speaker:YoungIn_Normal]스푼교의 세력화가 빨라 범죄 조직을 압도한다면 해당 지구에 정착을 할텐데요?"/>
+		<class name="Tutorial_CrowRuinsAfter_UHq59R" Value="[!Dialog][!speaker:YoungIn_Normal]또 범죄 조직의 탄압이 강하면 스푼교의 세력이 집결하기도 전에 중심 세력이 와해되겠네요."/>
+		<class name="Tutorial_CrowRuinsAfter_QWeZtZ" Value="[!Dialog][!speaker:YoungIn_Serious]이런 밸런스를 발할라는 해낼 수 있다고 말하는 것입니까?"/>
+		<class name="Tutorial_CrowRuinsAfter_JNg3jg" Value="[!Dialog][!speaker:Joman_Normal]저희 이민관리국은 지난 20 년간 발할라로 이주한 사람들의 심리 상태와 이주 결정을 하게 된 환경에 관한 데이터를 가지고 있습니다."/>
+		<class name="Tutorial_CrowRuinsAfter_HHBajS" Value="[!Dialog][!speaker:Joman_Normal]자기 근거지를 버리고 떠나는 자를 누구보다 제일 잘 이해하고 있다고 자부합니다."/>
+		<class name="Tutorial_CrowRuinsAfter_jb3ERB" Value="[!Dialog][!speaker:Lily_Normal]&apos;조만 국장. 신났군.&apos;"/>
+		<class name="Tutorial_CrowRuinsAfter_65zssc" Value="[!Title]프로젝트 감독관"/>
+		<class name="Tutorial_CrowRuinsAfter_L4ftBf" Value="[!Title]1년 전, 발할라 시청"/>
+		<class name="Tutorial_CrowRuinsAfter_QY2Bew" Value="[!Dialog][!speaker:Edward_Normal2]어떤가? 이 일을 맡아줄 수 있겠나?"/>
+		<class name="Tutorial_CrowRuinsAfter_eGZmBu" Value="[!Dialog][!speaker:Belladonna_Smile]......"/>
+		<class name="Tutorial_CrowRuinsAfter_ZbC3O5" Value="[!Dialog][!speaker:Belladonna_Satisfying]굳이 왜 저희를 불러 이렇게 귀찮은 방법을 선택하시는 건가요?"/>
+		<class name="Tutorial_CrowRuinsAfter_IouVDJ" Value="[!Dialog][!speaker:Edward_Normal2]무슨 말인가?"/>
+		<class name="Tutorial_CrowRuinsAfter_PTmjNV" Value="[!Dialog][!speaker:Belladonna_Smile]발할라는 이미 한 번 사용하셨던 쉬운 방법이 있지 않나요?"/>
+		<class name="Tutorial_CrowRuinsAfter_GQkBs3" Value="[!Dialog][!speaker:Belladonna_Satisfying]한번에 모아~ 펑~~!!"/>
+		<class name="Tutorial_CrowRuinsAfter_XgGgur" Value="[!Dialog][!speaker:Edward_Normal2]......."/>
+		<class name="Tutorial_CrowRuinsAfter_DHjcDd" Value="[!Dialog][!speaker:Edward_Smile2]한낱 늙은이를 놀리려고 이 발할라를 적으로 돌리지 말게나."/>
+		<class name="Tutorial_CrowRuinsAfter_irZtcX" Value="[!Dialog][!speaker:Belladonna_Smile]그것 나름대로 재밌겠군요."/>
+		<class name="Tutorial_CrowRuinsAfter_doDisY" Value="[!Dialog][!speaker:Belladonna_Think]......"/>
+		<class name="Tutorial_CrowRuinsAfter_kZYxBs" Value="[!Dialog][!speaker:Belladonna_Satisfying]선금은 지금 제시한 것으로 충분합니다."/>
+		<class name="Tutorial_CrowRuinsAfter_ziRXvA" Value="[!Dialog][!speaker:Edward_Normal2]이번 일을 처리해주면 금융권에 진출한 자네 조직 자금에 대한 동결 건은 바로 해제될 것이네."/>
+		<class name="Tutorial_CrowRuinsAfter_vwmQ5f" Value="[!Dialog][!speaker:Belladonna_Normal]착각하지 마세요. 에드워드 씨."/>
+		<class name="Tutorial_CrowRuinsAfter_8PDoXL" Value="[!Dialog][!speaker:Belladonna_Smile]저희는 부를 추구하지만, 부에 지배되지 않습니다."/>
+		<class name="Tutorial_CrowRuinsAfter_aXm4bB" Value="[!Dialog][!speaker:Belladonna_Satisfying]이 순간도 조직『 벤데타 』가 발할라라는 존재를 적으로 할지 아군으로 할지 정하는 과정에 지나지 않습니다."/>
+		<class name="Tutorial_CrowRuinsAfter_elhDwt" Value="[!Dialog][!speaker:Edward_Normal2]......"/>
+		<class name="Tutorial_CrowRuinsAfter_jcMs4l" Value="[!Dialog][!speaker:Edward_Smile2]어둠의 시대는 끝나가고 있네."/>
+		<class name="Tutorial_CrowRuinsAfter_v4zmc1" Value="[!Dialog][!speaker:Edward_Smile2]그걸 잘 알기에 자네 조직도 합법적 사업에 진출하는 것이 아닌가?"/>
+		<class name="Tutorial_CrowRuinsAfter_acyLZL" Value="[!Dialog][!speaker:Belladonna_Smile]발할라의 위정자 다운 발상이네요."/>
+		<class name="Tutorial_CrowRuinsAfter_YOLXK7" Value="[!Dialog][!speaker:Belladonna_Satisfying]하지만 세상은 원래 어둡답니다."/>
+		<class name="Tutorial_CrowRuinsAfter_P4EmKk" Value="[!Dialog][!speaker:Belladonna_Smile]그저 태양 빛이 닿는 곳만이 잠시 밝을 뿐입니다."/>
+		<class name="Tutorial_CrowRuinsAfter_JAqvmf" Value="[!Dialog][!speaker:Belladonna_Normal]본질은 어둠이죠."/>
+		<class name="Tutorial_CrowRuinsAfter_EhrVTN" Value="[!Dialog][!speaker:Edward_Normal2]자네들이 바라보는 세상은 그런가?"/>
+		<class name="Tutorial_CrowRuinsAfter_RwG1ow" Value="[!Dialog][!speaker:Belladonna_Satisfying]네. 인간 세상은 변하지 않습니다. 반복될 뿐이죠."/>
+		<class name="Tutorial_CrowRuinsAfter_XRLuMf" Value="[!Title]외톨이 늑대"/>
+		<class name="Tutorial_CrowRuinsAfter_Ytcgyf" Value="[!Title]까마귀 폐허"/>
+		<class name="Tutorial_CrowRuinsAfter_ICkYOO" Value="[!Dialog][!speaker:Carter_Black_Normal]다른 동지들에게도 이 소식을 전달하게."/>
+		<class name="Tutorial_CrowRuinsAfter_vFucAe" Value="[!Dialog][!speaker:Gangster_SpoonGun2_Normal]드디어 『 배부름의 땅 』으로 출발하는군요."/>
+		<class name="Tutorial_CrowRuinsAfter_K8ArMU" Value="[!Dialog][!speaker:Gangster_SpoonDestroyer2_Normal]동지들이 많이 기뻐할 것 입니다."/>
+		<class name="Tutorial_CrowRuinsAfter_xhoSYe" Value="[!Dialog][!speaker:Carter_Black_Normal]각 구역별로 비전투원 신자들부터『 좌표 』로 이동할 것이네."/>
+		<class name="Tutorial_CrowRuinsAfter_kL49Ib" Value="[!Dialog][!speaker:Gangster_SpoonGun2_Normal]출발 전에 샤키 님이 축복해주신다면 모든 동지들이 많은 힘을 얻을 것 입니다."/>
+		<class name="Tutorial_CrowRuinsAfter_8k8jXo" Value="[!Dialog][!speaker:Carter_Black_Normal]알겠네. 각 구역의 출발 순서가 정해지면 맞춰서 가도록 하지."/>
+		<class name="Tutorial_CrowRuinsAfter_yX0snh" Value="[!Dialog][!speaker:Gangster_SpoonGun2_Normal]네. 그럼 저희들은 각 구역의 동지들에게 소식을 전하러 이동하겠습니다."/>
+		<class name="Tutorial_CrowRuinsAfter_YyZK1J" Value="[!Dialog][!speaker:Gangster_SpoonSword_Ralph_Normal]넌 누구냐?"/>
+		<class name="Tutorial_CrowRuinsAfter_kzvwP6" Value="[!Dialog][!speaker:Gangster_SpoonSword_Ralph_Normal]샤키 님은 어디 계시지?"/>
+		<class name="Tutorial_CrowRuinsAfter_TgZVf8" Value="[!Dialog][!speaker:Carter_Black_Normal]......"/>
+		<class name="Tutorial_CrowRuinsAfter_85wuNu" Value="[!Dialog][!speaker:Carter_Black_Normal]가면 뒤의 진실을 탐하지 말라."/>
+		<class name="Tutorial_CrowRuinsAfter_pDpCGn" Value="[!Dialog][!speaker:Gangster_SpoonSword_Ralph_Normal]너... 세 치의 혀로 한술을 더럽히는 거냐..."/>
+		<class name="Tutorial_CrowRuinsAfter_e1a3if" Value="[!Dialog][!speaker:Gangster_SpoonSword_Ralph_Normal]흑가면을 쓴 네 녀석이 샤키 님이 아니라는 것. 그것은 넌 우리의 적이라는 것."/>
+		<class name="Tutorial_CrowRuinsAfter_PSUmj2" Value="[!Dialog][!speaker:Gangster_SpoonSword_Ralph_Normal]빨리 샤키 님이 어디에 있는지 말하지 못할까!?"/>
+		<class name="Tutorial_CrowRuinsAfter_plhCcr" Value="[!Dialog][!speaker:Carter_Black_Normal]&apos;역시 오랫동안 샤키를 보좌한 녀석들을 데려가기란 무리인가...&apos;"/>
+		<class name="Tutorial_CrowRuinsAfter_tVfyCd" Value="[!Dialog][!speaker:Carter_Black_Normal]&apos;그렇다면 여기서...&apos;"/>
+		<class name="Tutorial_CrowRuinsAfter_ZU0NVn" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]랄프. 멈춰라."/>
+		<class name="Tutorial_CrowRuinsAfter_JfLg1A" Value="[!Dialog][!speaker:Gangster_SpoonDestroyer_Chang_Normal]존 님!!"/>
+		<class name="Tutorial_CrowRuinsAfter_phwCjc" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]두술은 첫술의 모습을 한 또 다른 첫술이지."/>
+		<class name="Tutorial_CrowRuinsAfter_flaASX" Value="[!Dialog][!speaker:Gangster_SpoonSword_Ralph_Normal]존 님. 살아계셨군요!"/>
+		<class name="Tutorial_CrowRuinsAfter_wgtFAt" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Kaze_Normal]이 카제 님이 함께하는 데 당연한 것 아니냐~!"/>
+		<class name="Tutorial_CrowRuinsAfter_PoNput" Value="[!Dialog][!speaker:Carter_Black_Normal]&apos;불사의 존...&apos;"/>
+		<class name="Tutorial_CrowRuinsAfter_cMDZak" Value="[!Dialog][!speaker:Carter_Black_Normal]&apos;쉽지 않군...&apos;"/>
+		<class name="Tutorial_CrowRuinsAfter_sRY79A" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]흑가면을 쓴 자여."/>
+		<class name="Tutorial_CrowRuinsAfter_KqX7Jz" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]내 스승 샤키는 어떻게 되었나?"/>
+		<class name="Tutorial_CrowRuinsAfter_EcoyDA" Value="[!Dialog][!speaker:Carter_Black_Normal]......"/>
+		<class name="Tutorial_CrowRuinsAfter_spQRiU" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]시신 정도는 수습하게 해주지 않겠나?"/>
+		<class name="Tutorial_CrowRuinsAfter_ajGjKm" Value="[!Dialog][!speaker:Carter_Black_Normal]재가 되어 이 대지에 뿌려졌네."/>
+		<class name="Tutorial_CrowRuinsAfter_wMnF4O" Value="[!Dialog][!speaker:Gangster_SpoonSword_Ralph_Normal]역시!!  네 녀석!!"/>
+		<class name="Tutorial_CrowRuinsAfter_XYzlk9" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]랄프!"/>
+		<class name="Tutorial_CrowRuinsAfter_JrF8b1" Value="[!Dialog][!speaker:Gangster_SpoonSword_Ralph_Normal]왜 말리시는 겁니까!? 존 님!"/>
+		<class name="Tutorial_CrowRuinsAfter_TEF3Sy" Value="[!Dialog][!speaker:Gangster_SpoonSword_Ralph_Normal]샤키 님의 원수를 갚고 존 님이 두술이 되어 저희를 이끄셔야 합니다!"/>
+		<class name="Tutorial_CrowRuinsAfter_Wy2s4K" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]나 역시 두술이 되고 싶었다. 랄프."/>
+		<class name="Tutorial_CrowRuinsAfter_j5jO8t" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]......"/>
+		<class name="Tutorial_CrowRuinsAfter_gh6koV" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]흑가면을 쓴 자여. 그대가 가슴에 품은 수저는 무엇인가?"/>
+		<class name="Tutorial_CrowRuinsAfter_udF2so" Value="[!Dialog][!speaker:Carter_Black_Normal]새로운 세상을 만드는 것이다."/>
+		<class name="Tutorial_CrowRuinsAfter_JQaxxI" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]그 곳엔 동지들이 평안하게 쉴 『 배부름의 땅 』이 존재하는가?"/>
+		<class name="Tutorial_CrowRuinsAfter_JSkiK0" Value="[!Dialog][!speaker:Carter_Black_Normal]새로운 세상에서는『 배부름의 땅 』은 스스로 만들어 가는 곳이다."/>
+		<class name="Tutorial_CrowRuinsAfter_D9Y0jv" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]동지들을 이끌 『 좌표 』를 만들 수 있는가?"/>
+		<class name="Tutorial_CrowRuinsAfter_nvbEc2" Value="[!Dialog][!speaker:Carter_Black_Normal]이미 모든 『 좌표 』는 이어졌다."/>
+		<class name="Tutorial_CrowRuinsAfter_Ve7oB1" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]『 첫술 』은 모두 비웠는가?"/>
+		<class name="Tutorial_CrowRuinsAfter_LC95Yu" Value="[!Dialog][!speaker:Carter_Black_Normal]......"/>
+		<class name="Tutorial_CrowRuinsAfter_2qGF8A" Value="[!Dialog][!speaker:Gangster_SpoonGun2_Normal]비상!! 경찰 토벌대입니다!!"/>
+		<class name="Tutorial_CrowRuinsAfter_4XFtWj" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]넌... 아직 젊은 녀석이군."/>
+		<class name="Tutorial_CrowRuinsAfter_7W8I4s" Value="[!Dialog][!speaker:Carter_Black_Normal]......"/>
+		<class name="Tutorial_CrowRuinsAfter_swKS7v" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]내 첫번째 스승 샤키는 1년 전 어리석은 날 구하다 사망했네."/>
+		<class name="Tutorial_CrowRuinsAfter_6PQlbm" Value="[!Dialog][!speaker:Carter_Black_Normal]!?"/>
+		<class name="Tutorial_CrowRuinsAfter_b5eJVZ" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]스승의 흑가면과 은수저를 이어 받는 것이 부담스러웠던 날 대신하여 지금의 스승이 샤키가 되었네."/>
+		<class name="Tutorial_CrowRuinsAfter_2yqW9M" Value="[!Dialog][!speaker:Carter_Black_Normal]......"/>
+		<class name="Tutorial_CrowRuinsAfter_L5QWab" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]이어 받은 스승이 비슷한 체격, 화염능력자이며 완전 복원 능력을 가진 자였던 것은 우연이라고 생각했지."/>
+		<class name="Tutorial_CrowRuinsAfter_bdBQSb" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]하지만 눈을 감는 스승이나 이어 받는 스승 모두 다 『 한술 』의 뜻이라고 했었네."/>
+		<class name="Tutorial_CrowRuinsAfter_1Sa8vy" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]자네의 체격, 그리고 자네도 화염능력자겠지. 완전 복원 능력을 갖춘..."/>
+		<class name="Tutorial_CrowRuinsAfter_A3CK7v" Value="[!Dialog][!speaker:Carter_Black_Normal]......"/>
+		<class name="Tutorial_CrowRuinsAfter_phF3kQ" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]결국 다 『 한술 』의 뜻인거지."/>
+		<class name="Tutorial_CrowRuinsAfter_XTi0SF" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]한동안 나를 따르는『 첫술 』들과 이 곳에서 경찰들의 발목을 잡고 있겠네."/>
+		<class name="Tutorial_CrowRuinsAfter_XB7PcU" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]그러면 『 첫술 』은 비워지고 자네는 우리에게는『 두술 』이자 다른 이에게는 『 첫술 』로써 자네의 가슴에 품은 수저를 뜰 수 있을 것이네."/>
+		<class name="Tutorial_CrowRuinsAfter_JQEfsf" Value="[!Dialog][!speaker:Carter_Black_Normal]왜지? 너의 그 맹목적인 신뢰는 광기에 지나지 않는다."/>
+		<class name="Tutorial_CrowRuinsAfter_HrLbBf" Value="[!Dialog][!speaker:Carter_Black_Normal]난 내 목적을 위해 이 자리에 있을 뿐..."/>
+		<class name="Tutorial_CrowRuinsAfter_5Y7Hoj" Value="[!Dialog][!speaker:Carter_Black_Normal]그리고 네 녀석들을 제거하면 돼."/>
+		<class name="Tutorial_CrowRuinsAfter_wkeI9V" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]외톨이 늑대같은 말이군."/>
+		<class name="Tutorial_CrowRuinsAfter_Nvq3Kg" Value="[!Dialog][!speaker:Carter_Black_Normal]......"/>
+		<class name="Tutorial_CrowRuinsAfter_mGo6Ut" Value="[!Dialog][!speaker:Carter_Black_Normal]도대체 날 왜 믿는 거지?"/>
+		<class name="Tutorial_CrowRuinsAfter_Fc6a6a" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]널 믿는 것이 아니다. 꼬마야."/>
+		<class name="Tutorial_CrowRuinsAfter_2JxPAY" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]내 스승의 흑가면을 쓰고 내 앞에 서 있는 현실을 믿는 것이다."/>
+		<class name="Tutorial_CrowRuinsAfter_QBSOOj" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]그 흑가면과 동지들이 필요한 너와..."/>
+		<class name="Tutorial_CrowRuinsAfter_lZD35u" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]동지들을 지키고 싶으나 무엇을 해야 될지 모르는 나."/>
+		<class name="Tutorial_CrowRuinsAfter_4Q6ggp" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]한술에 이르길..."/>
+		<class name="Tutorial_CrowRuinsAfter_0DTJF8" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]밥은 배고픈 자가 먹는 것이라고 하지."/>
+		<class name="Tutorial_CrowRuinsAfter_6wATJY" Value="[!Dialog][!speaker:Carter_Black_Normal]......"/>
+		<class name="Tutorial_CrowRuinsAfter_BQf7vC" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]나의 스승과『 첫술 』의 동지들은 첫술을 크게 떠버려 첫술에 허기를 달래 버렸네."/>
+		<class name="Tutorial_CrowRuinsAfter_5UUaBw" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]배고픔이 없으니『 두술 』을 뜨는 걸 주저할 수 밖에..."/>
+		<class name="Tutorial_CrowRuinsAfter_10lgt1" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]자네를 믿는 것이 아니니 마음껏 주린 배를 채우게나."/>
+		<class name="Tutorial_CrowRuinsAfter_eDBEb1" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]여기는 허기를 달랜 자들이 막겠네."/>
+		<class name="Tutorial_CrowRuinsAfter_QAaMIa" Value="[!Dialog][!speaker:Sion_Stare]비 오는 날 출동이 좋았던 적도 있었는데..."/>
+		<class name="Tutorial_CrowRuinsAfter_w8ziVH" Value="[!Dialog][!speaker:Albus_Normal]다들 궂은 날씨에 출동해서 미안해요."/>
+		<class name="Tutorial_CrowRuinsAfter_dPzNSr" Value="[!Dialog][!speaker:Albus_Serious]하지만 최대한 빨리 이 지역을 안정화시켜야 외곽 도로의 치안과 스푼교도의 소탕이 가능할 것 같습니다."/>
+		<class name="Tutorial_CrowRuinsAfter_oTrGVR" Value="[!Dialog][!speaker:Irene_Normal]히어로가 궂은 날씨를 가릴 수는 없지."/>
+		<class name="Tutorial_CrowRuinsAfter_h7jMqR" Value="[!Dialog][!speaker:Anne_Smile]네. 맞아요. 너무 신경쓰지 마세요. 알버스 오빠."/>
+		<class name="Tutorial_CrowRuinsAfter_Hncdib" Value="[!Dialog][!speaker:Kylie_Normal]진작에 지하 벙커 같은 건 모두 폭파시켜놨으면 이런 일도 없잖아..."/>
+		<class name="Tutorial_CrowRuinsAfter_FFr9YW" Value="[!Dialog][!speaker:Giselle_Smile2]그 작업도 다 비용인데 누가 하니?"/>
+		<class name="Tutorial_CrowRuinsAfter_IuXgPc" Value="[!Dialog][!speaker:Kylie_Rage]&apos;또 참견이네...&apos;"/>
+		<class name="Tutorial_CrowRuinsAfter_5acRPo" Value="[!Dialog][!speaker:Sion_SurpriseStare]그런데 헤이싱 형은 갑자기 왜 출동 못한거야?"/>
+		<class name="Tutorial_CrowRuinsAfter_3fA9WJ" Value="[!Dialog][!speaker:Albus_Laugh]개인적인 일로 중요한 약속이 있다고 하셨어."/>
+		<class name="Tutorial_CrowRuinsAfter_YTWq4b" Value="[!Dialog][!speaker:Albus_Normal]오래 전부터 계속 부탁하신 부분이라 보내드릴 수 밖에 없었어."/>
+		<class name="Tutorial_CrowRuinsAfter_AzVEIb" Value="[!Dialog][!speaker:Giselle_Satisfying]&apos;너무 뻔한 거짓말인데...&apos;"/>
+		<class name="Tutorial_CrowRuinsAfter_MDvRcD" Value="[!Dialog][!speaker:Ray_Serious]....."/>
+		<class name="Tutorial_CrowRuinsAfter_AqWZ7C" Value="[!Dialog][!speaker:Leton_Smile]&apos;정말 못 말려...&apos;"/>
+		<class name="Tutorial_CrowRuinsAfter_vu55Vl" Value="[!Dialog][!speaker:Kylie_Serious]&apos;이런 날을 위해 자기 빈 자리를 메꿔 달라니... 여전히 정말 제멋대로인 녀석이군.&apos;"/>
+		<class name="Tutorial_CrowRuinsAfter_KHRRBN" Value="[!Dialog][!speaker:Irene_Normal]괜찮아. 한 사람이 빠지면 내가 더 열심히 뛸게."/>
+		<class name="Tutorial_CrowRuinsAfter_TYTCfE" Value="[!Dialog][!speaker:Leton_Normal]OK~☆ 그럼 빨리 해결하고 갑시다~!!"/>
+		<class name="Tutorial_CrowRuinsAfter_G5lLJy" Value="[!Dialog][!speaker:Anne_Smile]넵!"/>
+		<class name="Tutorial_CrowRuinsAfter_uwwz1L" Value="[!Dialog][!speaker:Anne_Think]&apos;헤이싱 오빠. 도대체 무슨 일일까...&apos;"/>
+		<class name="Tutorial_CrowRuinsAfter_v0rOUZ" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_CrowRuinsAfter_untBy3" Value="[!VictoryCondition]스푼교도를 모두 제압하시오."/>
+		<class name="Tutorial_CrowRuinsAfter_kspvyP" Value="[!Title]마지막 인사"/>
+		<class name="Tutorial_CrowRuinsAfter_r0NPLN" Value="[!Dialog]폭우로 한치 앞도 잘 보이지 않던 날."/>
+		<class name="Tutorial_CrowRuinsAfter_FszzZ5" Value="[!Dialog]지하 벙커에서 생활을 하던 스푼교도들은 지상으로 하나둘씩 모여들기 시작한다."/>
+		<class name="Tutorial_CrowRuinsAfter_fWKPA5" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Normal]오... 샤키 님이다."/>
+		<class name="Tutorial_CrowRuinsAfter_fhLGy5" Value="[!Dialog][!speaker:Gangster_SpoonFighter_Normal]평소랑 조금 다르신데..."/>
+		<class name="Tutorial_CrowRuinsAfter_NCRl60" Value="[!Dialog][!speaker:Gangster_SpoonNormal_Normal]검정색 옷으로 바꿔 입으셨네. "/>
+		<class name="Tutorial_CrowRuinsAfter_xhhoym" Value="[!Dialog][!speaker:Gangster_SpoonFighter_Normal]오. 그러고보니 『 흑수저 』그 자체 모습이군."/>
+		<class name="Tutorial_CrowRuinsAfter_WFmn6T" Value="[!Dialog][!speaker:Civil_Girl_Spoon_Normal]엄마. 엄마. 샤키님인가봐."/>
+		<class name="Tutorial_CrowRuinsAfter_YErbSP" Value="[!Dialog][!speaker:Civil_Woman_Spoon_Normal]그래 샤키님이구나..."/>
+		<class name="Tutorial_CrowRuinsAfter_GHvoGD" Value="[!Dialog][!speaker:Civil_Boy_Spoon_Normal]샤키님 처음 봤구나?"/>
+		<class name="Tutorial_CrowRuinsAfter_2QFx4R" Value="[!Dialog][!speaker:Civil_Boy_Spoon2_Normal]샤키 님은 키가 엄청 커서 진짜 알아 보기 쉬워요."/>
+		<class name="Tutorial_CrowRuinsAfter_IK8obR" Value="[!Dialog][!speaker:Carter_Black_Normal]동지들이여."/>
+		<class name="Tutorial_CrowRuinsAfter_Hz8jbP" Value="[!Dialog][!speaker:Civil_Girl_Spoon_Normal]엄마. 엄마. 샤키님이 우리보고 동지들이래~"/>
+		<class name="Tutorial_CrowRuinsAfter_QWxtZv" Value="[!Dialog][!speaker:Civil_Woman_Spoon_Normal]쉿. 샤키 님 이야기를 들어야지."/>
+		<class name="Tutorial_CrowRuinsAfter_LciFJ1" Value="[!Dialog]스푼교도들은 장대 빗 속에서도 자신들을 이끄는 자의 말을 하나하나 가슴속에 새기며 자리를 지켰다."/>
+		<class name="Tutorial_CrowRuinsAfter_jL0UQj" Value="[!Dialog]그들에게 이 자리에 서 있기까지 얼마나 힘들었는 지는 중요하지 않았다."/>
+		<class name="Tutorial_CrowRuinsAfter_REGrWv" Value="[!Dialog]그들에게는 약속된 낙원, 『 배부름의 땅 』이 있기 때문이었다."/>
+		<class name="Tutorial_CrowRuinsAfter_HimBP7" Value="[!Dialog]A.E 804. 3월"/>
+		<class name="Tutorial_CrowRuinsAfter_U8mGkR" Value="[!Dialog] 철의 숲과 까마귀 폐허에 숨어있던 스푼교도들은 첫술의 동지들만 남긴 채 자취를 감추게 된다."/>
+	</idspace>
+</idspaces>

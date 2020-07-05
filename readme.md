@@ -16,6 +16,13 @@ or adjust the ROOT folder in ``path.py``.
 * extract_imagesets.py - splits the extracted imagesets into its single images
 * index_dumper.py - used to extract the index.xml from the game
 
+## script & xml Folders
+
+The content of these two folders is encrypted,
+but they are necessary to create a wiki or similar content.
+That's why they are shared here.
+(They developers haven't disagreed with that ~~yet~~.)
+
 ## index.xml
 
 This file lists all game assets with their original path, package path and virtual path (in zips).

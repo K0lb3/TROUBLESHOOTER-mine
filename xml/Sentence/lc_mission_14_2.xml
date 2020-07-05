@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="lc_mission_14_2_ePtx5v" Value="[!Objective]숨겨진 통로를 찾아 보스를 처치하세요!"/>
+		<class name="lc_mission_14_2_hm3soL" Value="[!SMMessage]숨겨진 통로가 열렸습니다!"/>
+		<class name="lc_mission_14_2_BPh71Y" Value="[!SMTitle]NextRoom"/>
+		<class name="lc_mission_14_2_CJCmZF" Value="[!Dialog][!speaker:Albus_Normal]내려오긴 했는데..
+지상에서 봤던 구조랑은 아주 다른데?"/>
+		<class name="lc_mission_14_2_IXJNZI" Value="[!Dialog][!speaker:Sion_Normal]숨겨진 곳이 있다는 거지?
+그래도 잡히는 대로 쓰러트리고 생각하자.
+빨리 끝내자고!
+나 배고파.."/>
+		<class name="lc_mission_14_2_77BIEl" Value="[!Ignore][!Dialog][!speaker:Albus_Normal]시온 밥먹으로 가자!"/>
+		<class name="lc_mission_14_2_6PKnZp" Value="[!Ignore][!Dialog][!speaker:Sion_Smile]빨리 나가자고~
+사무실 앞 꼬치구이 맛있더라!"/>
+	</idspace>
+</idspaces>

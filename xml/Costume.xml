@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Costume">
+	<schema>
+		<rule property="Shape" type="string" default="None"/>
+		<rule property="Mesh" type="string" default="None"/>
+	</schema>
+	<class name="Albus2" Shape="Albus2" Mesh="None"/>
+	<class name="Sion2" Shape="Sion2" Mesh="None"/>
+	<class name="Irene2" Shape="Irene2" Mesh="None"/>
+	<class name="Anne2" Shape="Anne2" Mesh="None"/>
+	<class name="Heissing2" Shape="Heissing2" Mesh="None"/>
+	<class name="Ray2" Shape="Ray2" Mesh="None"/>
+	<class name="Giselle2" Shape="Giselle2" Mesh="None"/>
+	<class name="Kylie2" Shape="Kylie2" Mesh="None"/>
+	<class name="Leton2" Shape="Leton2" Mesh="None"/>
+	<class name="Albus3" Shape="Albus3" Mesh="None"/>
+	<class name="Sion3" Shape="Sion3" Mesh="None"/>
+	<class name="Irene3" Shape="Irene3" Mesh="None"/>
+	<class name="Anne3" Shape="Anne3" Mesh="None"/>
+	<class name="Heissing3" Shape="Heissing3" Mesh="None"/>
+	<class name="Ray3" Shape="Ray3" Mesh="None"/>
+	<class name="Giselle3" Shape="Giselle3" Mesh="None"/>
+	<class name="Kylie3" Shape="Kylie3" Mesh="None"/>
+	<class name="Leton3" Shape="Leton3" Mesh="None"/>
+</idspace>

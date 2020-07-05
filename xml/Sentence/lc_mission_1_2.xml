@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="lc_mission_1_2_KIEQxi" Value="[!Objective]침투를 눈치챈 모든 감시자를 처치하며 연구소로 침투하시오."/>
+		<class name="lc_mission_1_2_TmCX4V" Value="[!BalloonChat][!speaker:mon_ser_1_1]거수자 출현!
+1팀 출동"/>
+		<class name="lc_mission_1_2_VSgoKE" Value="[!BalloonChat][!speaker:mon_ser_2_1]거수자 출현!
+2팀 출동"/>
+		<class name="lc_mission_1_2_VwwgXE" Value="[!BalloonChat][!speaker:mon_ser_3_1]거수자 출현!
+3팀 출동"/>
+		<class name="lc_mission_1_2_GiQUNl" Value="[!BalloonChat][!speaker:mon_ser_4_1]거수자 출현!
+4팀 출동"/>
+		<class name="lc_mission_1_2_oYdC41" Value="[!Dialog][!speaker:Albus_Serious]정보대로라면 정문 옆에 시설관리 직원들을 위한 문이 따로 있다고 했어.
+출입키도 입수했고 이제 최대한 감시자를 피해서 가야 해!"/>
+		<class name="lc_mission_1_2_w2UFYw" Value="[!Dialog][!speaker:Sion_Smile]그래그래 알았어!
+걱정하지 말라고!"/>
+		<class name="lc_mission_1_2_oXBcjN" Value="[!Dialog][!speaker:Albus_Serious]지금 그 말이 더 걱정된다..."/>
+		<class name="lc_mission_1_2_emZauO" Value="[!SMMessage]연구소 침투를 눈치챈 모든 감시자를 처치해야 합니다!"/>
+		<class name="lc_mission_1_2_R03U9p" Value="[!SMTitle]미션 성공 조건"/>
+	</idspace>
+</idspaces>

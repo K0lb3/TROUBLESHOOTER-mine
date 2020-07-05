@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="MissionObjective">
+	<schema>
+		<rule property="MakerArguments" type="table" subtype="link" target="StageMakerArgument" default=""/>
+		<rule property="Initializer" type="function"/>
+	</schema>
+	<class name="DashboardEvaluator" Desc="[!Ignore]상황판 평가" MakerArguments="DashboardKey, SuccessExpression, FailExpression" Initializer="MissionObjectiveInitializer_DashboardEvaluator"/>
+	<class name="TriggerCondition" Desc="[!Ignore]트리거 조건" MakerArguments="SuccessCondition, FailCondition" Initializer="MissionObjectiveInitializer_Condition"/>
+</idspace>

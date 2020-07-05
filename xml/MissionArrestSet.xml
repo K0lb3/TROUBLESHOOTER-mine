@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="ArrestSet">
+	<schema>
+		<rule property="SightSharing" type="bool" default="false"/>
+		<rule property="AutoRetreat" type="bool" default="false"/>
+		<rule property="RetreatChatInterval" type="number" default="2.5"/>
+		<rule property="LinkedQuest" type="calculated" default="Calculated_GetArrestGenSetLinkedQuest"/>
+	</schema>
+	<class name="Javer" Title="자베르" BaseMonType="Mon_Gangster_Javer" MarkerIcon="Icons/Arrest" ArrestMessage="$Killer$[이] $Unit$[을] 체포하였습니다." MarkerMessage="해당 유닛이 전투불능이 되면 체포됩니다." AutoRetreat="true" RetreatChat="[!Ignore]이건 미친 짓이야, 나는 여기서 나가겠어." RetreatChatInterval="2.5" RetreatMessage="$Unit$[이] 현장을 이탈합니다."/>
+</idspace>

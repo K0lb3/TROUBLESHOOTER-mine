@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Raid_DrakyNest_mO7YpU" Value="[!Dashboard:Counter]남은 드라키 우두머리 수"/>
+		<class name="Raid_DrakyNest_EaDNu4" Value="[!Dashboard:Counter]남은 드라키 수"/>
+		<class name="Raid_DrakyNest_xAxGbd" Value="[!Dashboard:TimeLimiter]귀환까지 남은 시간"/>
+		<class name="Raid_DrakyNest_LGYrpg" Value="[!Objective]드라키 우두머리를 제압하시오."/>
+		<class name="Raid_DrakyNest_39FM1Z" Value="[!Objective]드라키 우두머리를 제압하시오."/>
+		<class name="Raid_DrakyNest_gBrKPI" Value="[!Title]최상위 포식자"/>
+		<class name="Raid_DrakyNest_Albfj2" Value="[!Title]철의 숲 버려진 동굴"/>
+		<class name="Raid_DrakyNest_zUBiIc" Value="[!Dialog][!speaker:Beast_Dragon_Earth3_Normal]......"/>
+		<class name="Raid_DrakyNest_YK4uBv" Value="[!Dialog][!speaker:Beast_Frog_Fire2_Normal]이 괴물들은 지난 가을보다 진짜 많이 늘었네요..."/>
+		<class name="Raid_DrakyNest_5eByYJ" Value="[!Dialog][!speaker:Beast_Frog_Fire2_Normal]왕네굴 씨. 우리 살아나갈 수 있을까요?"/>
+		<class name="Raid_DrakyNest_KUwThr" Value="[!Dialog][!speaker:Beast_Frog_Normal3_Normal]......"/>
+		<class name="Raid_DrakyNest_ydbkl5" Value="[!Dialog][!speaker:Beast_Frog_Normal3_Normal]미안하다. 괜히 여기 오자고 해서..."/>
+		<class name="Raid_DrakyNest_grSQ1B" Value="[!Dialog][!speaker:Beast_Dragon_Earth3_Normal]그 놈의 은색 티마 녀석 때문에 티마 사냥이 안 그래도 힘든데..."/>
+		<class name="Raid_DrakyNest_lgkV96" Value="[!Dialog][!speaker:Beast_Dragon_Earth3_Normal]그걸 훔쳐 먹어? 이 도둑 네구리 녀석들!"/>
+		<class name="Raid_DrakyNest_kKP7Pd" Value="[!Dialog][!speaker:Beast_Frog_Normal3_Normal]훔쳐 먹다뇨..."/>
+		<class name="Raid_DrakyNest_Zqqsdh" Value="[!Dialog][!speaker:Beast_Frog_Normal3_Normal]그냥 혀가 닿는 곳에 먹을 것이 있으니 주워 먹은 건데..."/>
+		<class name="Raid_DrakyNest_WO6VlX" Value="[!Dialog][!speaker:Beast_Frog_Fire2_Normal]대장... 뒤에는 어린 녀석들 뿐이에요. 기회를 봐서 튀어요."/>
+		<class name="Raid_DrakyNest_Q7jocR" Value="[!Dialog][!speaker:Beast_Dragon_Frost3_Ground_Normal]오! 맛있는 거군!"/>
+		<class name="Raid_DrakyNest_DL2shj" Value="[!Dialog][!speaker:Beast_Frog_Fire2_Normal]흐헉! 돌연변이 드라키!"/>
+		<class name="Raid_DrakyNest_JME2e8" Value="[!Dialog][!speaker:Beast_Frog_Normal3_Normal]다들 튀어!"/>
+		<class name="Raid_DrakyNest_4A24lN" Value="[!Dialog][!speaker:Beast_Dragon_Frost3_Ground_Normal]하! 요 녀석이 제일 맛난 녀석인데..."/>
+		<class name="Raid_DrakyNest_fk69yr" Value="[!Dialog][!speaker:Beast_Dragon_Frost3_Ground_Normal]왕 네굴 간식이라~☆"/>
+		<class name="Raid_DrakyNest_CMaF40" Value="[!Dialog][!speaker:Beast_Dragon_Earth3_Normal]서리 군주!"/>
+		<class name="Raid_DrakyNest_0Kghc3" Value="[!Dialog][!speaker:Beast_Dragon_Frost3_Ground_Normal]왜?"/>
+		<class name="Raid_DrakyNest_Fz2dYy" Value="[!Dialog][!speaker:Beast_Dragon_Earth3_Normal]이 녀석들의 무리 본거지를 알아야 우리 아이들을 위한 사냥을 할 것 아니오!"/>
+		<class name="Raid_DrakyNest_mktRFk" Value="[!Dialog][!speaker:Beast_Dragon_Frost3_Ground_Normal]그건 네 녀석 임무지. 내 알 바 아냐."/>
+		<class name="Raid_DrakyNest_NF9aIS" Value="[!Dialog][!speaker:Beast_Dragon_Earth3_Normal]그래도 이건 아니지 않습니까?"/>
+		<class name="Raid_DrakyNest_j4DeRC" Value="[!Dialog][!speaker:Beast_Dragon_Frost3_Ground_Normal]히햐.. 언제부터 남작따위가 군주한테 이러는 거야?"/>
+		<class name="Raid_DrakyNest_xPDT7Q" Value="[!Dialog][!speaker:Beast_Dragon_Frost3_Ground_Normal]계속 짜증나게 하면 네 녀석부터 먹어 줄까?"/>
+		<class name="Raid_DrakyNest_9wbysH" Value="[!Dialog]지난 겨울, 평소와 달리 철의 숲 외곽까지 내려와 겨울나기를 시도한 네구리 무리."/>
+		<class name="Raid_DrakyNest_XBKk0R" Value="[!Dialog]이는 예상치 못했던 상황으로, 겨울이 끝나자마자 발할라 경찰청은 지구 내 유일한 &apos;사냥허가증&apos;을 보유한 지젤에게 철의 숲 내부 수색을 요청한다."/>
+		<class name="Raid_DrakyNest_y7w0KY" Value="[!Dialog][!speaker:VHPD_Jane_Normal]단순하게 보면 혹한으로 네구리들의 서식지가 얼어붙어 이동해 온 거겠지."/>
+		<class name="Raid_DrakyNest_3JBHfu" Value="[!Dialog][!speaker:VHPD_Jane_Normal]하지만 몇몇 동물학자들은 네구리를 위협할만한 혹은 경쟁하는 상위 포식자가 나타난 것이 아닌가 걱정하고 있어."/>
+		<class name="Raid_DrakyNest_NAhjVE" Value="[!Dialog][!speaker:VHPD_Jane_Normal]그리고 그런 녀석들이 자원 관리 구역의 생태계에도 영향을 줄 까봐 걱정하고 있지."/>
+		<class name="Raid_DrakyNest_bD5iW7" Value="[!Dialog][!speaker:Albus_Think]상위 포식자라..."/>
+		<class name="Raid_DrakyNest_RrFzkP" Value="[!Dialog][!speaker:Albus_Surprise]설마 최근 많은 수의 티마 무리를 이끌고 다니는 은색 티마인가요?"/>
+		<class name="Raid_DrakyNest_olyEu5" Value="[!Dialog][!speaker:Giselle_Normal]티마는 아냐."/>
+		<class name="Raid_DrakyNest_kzRuWZ" Value="[!Dialog][!speaker:Albus_SurpriseStare]...."/>
+		<class name="Raid_DrakyNest_A8AgCU" Value="[!Dialog][!speaker:Giselle_Smile]티마는 네구리랑 먹이를 경쟁하지만 어디까지나 네구리가 상위 포식자야."/>
+		<class name="Raid_DrakyNest_99rHoq" Value="[!Dialog][!speaker:Giselle_Satisfying]게다가 계속 이동을 하며 서식지 반경이 넓은 티마와 달리 네구리들은 습기가 많은 지역에 모여서 군락을 이루지."/>
+		<class name="Raid_DrakyNest_T3HQaD" Value="[!Dialog][!speaker:Giselle_Normal]따라서 네구리들이 티마 무리를 피해 이동할 이유가 없어."/>
+		<class name="Raid_DrakyNest_62p2PV" Value="[!Dialog][!speaker:Albus_SurpriseStare]그렇군요..."/>
+		<class name="Raid_DrakyNest_0EoTIf" Value="[!Dialog][!speaker:VHPD_Jane_Normal]......."/>
+		<class name="Raid_DrakyNest_9LeCHw" Value="[!Dialog][!speaker:VHPD_Jane_Normal]지젤. 네 전문 분야니 맡길게."/>
+		<class name="Raid_DrakyNest_qZhKqT" Value="[!Dialog][!speaker:VHPD_Jane_Normal]그리고 알버스 군."/>
+		<class name="Raid_DrakyNest_JjUyw8" Value="[!Dialog][!speaker:Albus_Normal]네. 제인 경감님."/>
+		<class name="Raid_DrakyNest_EU5eJK" Value="[!Dialog][!speaker:VHPD_Jane_Normal]우리가 무력하니 널 돕지 못하고 계속 발목을 잡는군."/>
+		<class name="Raid_DrakyNest_hkZLfL" Value="[!Dialog][!speaker:VHPD_Jane_Smile]이런 일까지 마다하지 않고 처리해 줘서 고맙네."/>
+		<class name="Raid_DrakyNest_65wyTN" Value="[!Dialog][!speaker:Albus_Normal]아닙니다. 언제나 저희 팀을 믿고 의뢰를 주셔서 저희가 더 감사드려요."/>
+		<class name="Raid_DrakyNest_X6bFnl" Value="[!Dialog][!speaker:VHPD_Jane_Smile]......"/>
+		<class name="Raid_DrakyNest_uc1l2f" Value="[!Dialog][!speaker:VHPD_Jane_Smile]그럼. 잘 부탁하네."/>
+		<class name="Raid_DrakyNest_uZLt4g" Value="[!Dialog][!speaker:Giselle_Smile]그래. 그럼 가 볼까?"/>
+		<class name="Raid_DrakyNest_uJ2Pod" Value="[!Dialog][!speaker:Giselle_Smile2]발광석에 습기찬 동굴이라..."/>
+		<class name="Raid_DrakyNest_sMQzgu" Value="[!Dialog][!speaker:Giselle_Smile]그리고 이 온기..."/>
+		<class name="Raid_DrakyNest_9vprFl" Value="[!Dialog][!speaker:Giselle_Satisfying]제법 재밌는 곳이잖아."/>
+		<class name="Raid_DrakyNest_QregCV" Value="[!BalloonChat][!speaker:Giselle]자. 그럼 누군지 만나러 가 볼까?"/>
+		<class name="Raid_DrakyNest_EaCwkh" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Raid_DrakyNest_COcRU4" Value="[!VictoryCondition]동굴을 수색하시오."/>
+		<class name="Raid_DrakyNest_51mNyY" Value="[!Dialog]드라키 우두머리를 제압하였습니다. 계속 임무를 진행하시겠습니까?"/>
+		<class name="Raid_DrakyNest_MFn8Jy" Value="[!Choice]사냥을 계속한다."/>
+		<class name="Raid_DrakyNest_27YNsg" Value="[!Choice]귀환한다."/>
+		<class name="Raid_DrakyNest_t8ddqa" Value="[!Objective]남은 귀환 시간까지 살아남으시오"/>
+		<class name="Raid_DrakyNest_uqmCyg" Value="[!Ignore][!Dialog][!speaker:EmptySubTitle_]Raid_IronForest_Dirty_34XoJi"/>
+		<class name="Raid_DrakyNest_QJOVOp" Value="[!Ignore][!Choice]Raid_IronForest_Dirty_FB81iF"/>
+		<class name="Raid_DrakyNest_g1ZxS0" Value="[!Ignore][!Choice]Raid_IronForest_Dirty_7TxJS5"/>
+		<class name="Raid_DrakyNest_zGnvwA" Value="[!Ignore][!BalloonChat][!speaker:Dorori_Wind_01]Raid_IronForest_Dirty_Pg1kIA"/>
+		<class name="Raid_DrakyNest_60YgUo" Value="[!Ignore][!FrontMessage]Raid_IronForest_Dirty_EXDdao"/>
+		<class name="Raid_DrakyNest_j75Lrn" Value="[!Ignore][!Title]Raid_IronForest_Dirty_2rPY9T"/>
+		<class name="Raid_DrakyNest_8Ak38O" Value="[!Ignore][!Title]Raid_IronForest_Dirty_mtf4IA"/>
+		<class name="Raid_DrakyNest_2OMJPd" Value="[!Ignore][!BalloonChat][!speaker:Dorori_Fire_Boss]Raid_IronForest_Dirty_5WaZ8a"/>
+		<class name="Raid_DrakyNest_aoT7Dk" Value="[!Ignore][!FrontMessage]Raid_IronForest_Dirty_L7pdQQ"/>
+		<class name="Raid_DrakyNest_JJbSvv" Value="[!Ignore][!BalloonChat]Raid_IronForest_Dirty_Y54dGi"/>
+		<class name="Raid_DrakyNest_p9aTfO" Value="[!Ignore][!Dialog][!speaker:Heissing_Normal]Raid_IronForest_Dirty_6BxMDm"/>
+		<class name="Raid_DrakyNest_SM82QH" Value="[!Ignore][!Dialog][!speaker:Heissing_EyeClose]Raid_IronForest_Dirty_oe9tUh"/>
+		<class name="Raid_DrakyNest_qqTht1" Value="[!Ignore][!FrontMessage]Raid_IronForest_Dirty_hMJ9N1"/>
+		<class name="Raid_DrakyNest_dDqCP0" Value="[!Ignore][!FrontMessage]Raid_IronForest_Dirty_XXwN9r"/>
+		<class name="Raid_DrakyNest_bDxy7V" Value="[!Dialog]드라키 우두머리를 모두 제압하였습니다. 남은 야수들까지 사냥하시겠습니까?"/>
+		<class name="Raid_DrakyNest_pYWzYD" Value="[!VictoryCondition]남은 야수를 모두 제압하시오."/>
+		<class name="Raid_DrakyNest_wRxq7E" Value="[!Choice]귀환한다."/>
+		<class name="Raid_DrakyNest_GmOKsW" Value="[!Objective]남은 귀환 시간까지 살아남으시오"/>
+		<class name="Raid_DrakyNest_LqaIpG" Value="[!VictoryCondition]남은 귀환 시간까지 생존하시오."/>
+		<class name="Raid_DrakyNest_qizV0r" Value="[!Ignore][!BalloonChat][!speaker:Dot]Raid_IronForest_Dirty_jHSGvY"/>
+		<class name="Raid_DrakyNest_1cM7YV" Value="[!Ignore][!Dialog][!speaker:Beast_Frog_Dot_Normal]Raid_IronForest_Dirty_134iPl"/>
+		<class name="Raid_DrakyNest_uKbab7" Value="[!Dialog][!speaker:Giselle_Annoying]후끈한 열기의 진원지 앞에 빙판이라 너무 노골적이잖아."/>
+		<class name="Raid_DrakyNest_zMQ9lW" Value="[!Dialog][!speaker:Giselle_Smile]그렇게 감추고 싶은 거니?"/>
+		<class name="Raid_DrakyNest_cP2yPm" Value="[!Dialog][!speaker:Giselle_Normal]A급 생태계 파괴종인 드라키네."/>
+		<class name="Raid_DrakyNest_AQIL8e" Value="[!Dialog][!speaker:Giselle_Smile]기껏 기대했는데..."/>
+		<class name="Raid_DrakyNest_lJcDCL" Value="[!Dialog][!speaker:Giselle_Smile2]길들여지지 않는 야수들은 참 매력이 없어~"/>
+		<class name="Raid_DrakyNest_8mYbUn" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Raid_DrakyNest_6qxHy0" Value="[!VictoryCondition]드라키 우두머리를 제압하시오."/>
+		<class name="Raid_DrakyNest_AzyuEv" Value="[!BalloonChat][!speaker:Giselle]각인 전의 아이라면 어떻게라도 해볼 수 있을텐데..."/>
+		<class name="Raid_DrakyNest_BhWRmm" Value="[!Dialog][!speaker:Giselle_Smile]성체로 진화한 드라키라니~!"/>
+		<class name="Raid_DrakyNest_cL7mX5" Value="[!Dialog][!speaker:Giselle_Smile2]너희들 제법 제대로 무리를 이루었구나?"/>
+		<class name="Raid_DrakyNest_OZNXwR" Value="[!Dialog][!speaker:Giselle_Satisfying]&apos;여기에 완전 정착했다면 분명 부화장이 있을텐데...&apos;"/>
+		<class name="Raid_DrakyNest_bgAGWI" Value="[!Dialog][!speaker:Beast_Frog_Normal3_Normal]......"/>
+		<class name="Raid_DrakyNest_VzxQIM" Value="[!Dialog][!speaker:Albus_Surprise]드라키??"/>
+		<class name="Raid_DrakyNest_Hy55zO" Value="[!Dialog][!speaker:Albus_SurpriseStare]도대체... 이런 곳에 왜 드라키가..."/>
+		<class name="Raid_DrakyNest_HVVfcO" Value="[!BalloonChat][!speaker:Neguri]네굴~!"/>
+		<class name="Raid_DrakyNest_6BdnOQ" Value="[!Dialog][!speaker:Irene_Surprise]뭐야! 저 날아다니는 도마뱀은?"/>
+		<class name="Raid_DrakyNest_WvsN5D" Value="[!Dialog][!speaker:Irene_Fury]&apos;으... 비늘은 싫은데...&apos;"/>
+		<class name="Raid_DrakyNest_VIhxi9" Value="[!Dialog][!speaker:Anne_Surprise]드라키다!"/>
+		<class name="Raid_DrakyNest_XWwZyt" Value="[!Dialog][!speaker:Anne_Think]&apos;철의 숲에는 드라키가 살지 않는데... 어떻게 된 거지...&apos;"/>
+		<class name="Raid_DrakyNest_vt7NCs" Value="[!Dialog][!speaker:Heissing_EyeClose]......"/>
+		<class name="Raid_DrakyNest_ctw6zJ" Value="[!Dialog][!speaker:Heissing_Normal]&apos;이런 일은 전혀 즐겁지 않군...&apos;"/>
+		<class name="Raid_DrakyNest_XPzDNC" Value="[!Dialog][!speaker:Ray_Surprise]쟤네 너무 귀엽다~☆"/>
+		<class name="Raid_DrakyNest_PTFSan" Value="[!Dialog][!speaker:Ray_Surprise]&apos;지젤 씨한테 한마리 키우자고 부탁해야지~☆&apos;"/>
+		<class name="Raid_DrakyNest_aT9nNu" Value="[!Dialog][!speaker:Sion_Surprise]설마... 용?"/>
+		<class name="Raid_DrakyNest_LWrTo4" Value="[!Dialog][!speaker:Sion_SurpriseStare]흐음..."/>
+		<class name="Raid_DrakyNest_R2f0DR" Value="[!Dialog][!speaker:Sion_Depressed]&apos;에이... 드라키잖아...&apos;"/>
+		<class name="Raid_DrakyNest_2WX4z1" Value="[!Dialog][!speaker:Kylie_Smile]뭐야. 드라키잖아."/>
+		<class name="Raid_DrakyNest_Tzii3b" Value="[!Dialog][!speaker:Kylie_Satisfying]&apos;저녀석들 비늘을 모아가면 꽤 좋은 것을 제작할 수 있겠어.&apos;"/>
+		<class name="Raid_DrakyNest_xJabBQ" Value="[!Dialog][!speaker:Leton_Smile]&apos;여기까지 올라 오다니 꽤 불어났네.&apos;"/>
+		<class name="Raid_DrakyNest_DOlDjR" Value="[!Dialog][!speaker:Leton_Laugh]&apos;릴리 소장이 이 상황을 보면 기뻐하겠군...&apos;"/>
+		<class name="Raid_DrakyNest_tfGI3C" Value="[!Dialog][!speaker:Leton_Smile]&apos;그럼 나는 또 알이나 있나 찾아볼까...&apos;"/>
+		<class name="Raid_DrakyNest_LB23EY" Value="[!Dialog][!speaker:Albus_Surprise]빙판??"/>
+		<class name="Raid_DrakyNest_mhW8Lo" Value="[!Dialog][!speaker:Albus_SurpriseStare]도대체 왜 이런 곳에..."/>
+		<class name="Raid_DrakyNest_e76inM" Value="[!Dialog][!speaker:Sion_Surprise]안으로 올수록 후끈한데 빙판이 생겼어?"/>
+		<class name="Raid_DrakyNest_xWwFJ7" Value="[!Dialog][!speaker:Irene_Surprise]??"/>
+		<class name="Raid_DrakyNest_qZfGdk" Value="[!Dialog][!speaker:Irene_Think]&apos;빙판이 생길 곳이 아닌데...&apos;"/>
+		<class name="Raid_DrakyNest_NF90Z5" Value="[!Dialog][!speaker:Irene_Think]&apos;아니 빙판이 생겼으니 지금 엄청 추운건가?&apos;"/>
+		<class name="Raid_DrakyNest_CVPZth" Value="[!Dialog][!speaker:Anne_Surprise]어? 빙판이야..."/>
+		<class name="Raid_DrakyNest_eputyG" Value="[!Dialog][!speaker:Anne_Think]설마..."/>
+		<class name="Raid_DrakyNest_vAi0Oz" Value="[!Dialog][!speaker:Anne_Smile]아닐 거야... 이런데 드라키 둥지가 생길 리가..."/>
+		<class name="Raid_DrakyNest_9DThxz" Value="[!Dialog][!speaker:Heissing_Rage]&apos;드라키 둥지군...&apos;"/>
+		<class name="Raid_DrakyNest_kfNFm4" Value="[!Dialog][!speaker:Ray_Surprise]이런 곳에 빙판이라니 신기한데?"/>
+		<class name="Raid_DrakyNest_da6vZP" Value="[!Dialog][!speaker:Kylie_Satisfying]드라키들은 둥지 입구를 위장하기 위해 빙판을 만든다더니 정말이었네?"/>
+		<class name="Raid_DrakyNest_bGuP5g" Value="[!Dialog][!speaker:Leton_Serious]&apos;여기를 또 오게 될 줄이야...&apos;"/>
+	</idspace>
+</idspaces>

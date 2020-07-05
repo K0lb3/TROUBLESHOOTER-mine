@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="sample_escort_transportdrone_U59vVJ" Value="[!Dashboard:EscortCounter]남은 호위대상"/>
+		<class name="sample_escort_transportdrone_VXO6aM" Value="[!Dashboard:TimeLimiter]적 지원 도착까지 남은시간"/>
+		<class name="sample_escort_transportdrone_x3QRb0" Value="[!Objective]대상을 호위하여 지역을 벗어나세요"/>
+	</idspace>
+</idspaces>

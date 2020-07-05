@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="lc_mission_3_1_dbDmfQ" Value="[!Dashboard:Counter]안쪽 사무실에 보관되어있는 로윈의 우편물 찾기"/>
+		<class name="lc_mission_3_1_XljZBC" Value="[!Objective]로윈의 개인 우편물을 찾아 정보 입수"/>
+		<class name="lc_mission_3_1_l28T8y" Value="[!Dialog][!speaker:Albus_Think]이런...
+들킨건가."/>
+		<class name="lc_mission_3_1_0bytXh" Value="[!Dialog][!speaker:Sion_Normal]다음에 다시 와야겠는데.
+후퇴!"/>
+		<class name="lc_mission_3_1_vCViHK" Value="[!Dialog][!speaker:Sion_Depressed]걸렸다...
+튀어!"/>
+		<class name="lc_mission_3_1_DPCZEY" Value="[!Dialog][!speaker:Albus_Think]이번일은 시작 부터 쉽지 않은데."/>
+		<class name="lc_mission_3_1_NfmJlq" Value="[!SMMessage]외곽 순환 경비 드론이  근처에 있습니다!"/>
+		<class name="lc_mission_3_1_zWBvCX" Value="[!SMTitle]경고!"/>
+		<class name="lc_mission_3_1_JxhZFa" Value="[!SMMessage]내부 순환 경비 드론이  근처에 있습니다!"/>
+		<class name="lc_mission_3_1_Bpm1eH" Value="[!SMTitle]경고!"/>
+		<class name="lc_mission_3_1_zXniEa" Value="[!Dialog][!speaker:Albus_Think]비리 경찰이 비리 경찰을 조사한다?..."/>
+		<class name="lc_mission_3_1_i8rVtX" Value="[!Dialog][!speaker:Albus_Normal]이번에는 좀 복잡한데...
+뭐. 우리도 얻을 게 있으니 도와주긴 해야 겠지."/>
+		<class name="lc_mission_3_1_0nty9A" Value="[!Dialog][!speaker:Sion_Normal]난 그 치들하고 엮기는 건 꺼림직해.
+비리 경찰이 비리를 조사?
+웃기는 이야기야."/>
+		<class name="lc_mission_3_1_IxUgpe" Value="[!Dialog][!speaker:Albus_Think]그럴수록 빨리 끝내고 정리하자고."/>
+		<class name="lc_mission_3_1_mpafCD" Value="[!Dialog][!speaker:Sion_Smile]그게 정답이겠지!
+빨리 시작하자!"/>
+		<class name="lc_mission_3_1_XdQrqT" Value="[!Dialog][!speaker:Albus_Normal]순찰도는 경비 드론만 조심하면 되고,
+안쪽 사무실에 개인 우편물이 모여있다고하니 캐비닛을 뒤져보면 로윈의 우편물도 있겠지."/>
+		<class name="lc_mission_3_1_WpihN0" Value="[!Dialog][!speaker:Albus_Normal]항상 로윈님의 행복을 아이들과 함께 기도드립니다.."/>
+		<class name="lc_mission_3_1_8gYuBV" Value="[!Dialog][!speaker:Albus_Smile]우편물을 찾은 것 같은데?!"/>
+		<class name="lc_mission_3_1_pnhP14" Value="[!Dialog][!speaker:Sion_Smile]줘봐 나도 보자고!"/>
+		<class name="lc_mission_3_1_DXYSCx" Value="[!Dialog][!speaker:Sion_Normal]내용만 봐서는 보육원에서 독지가에게 보낸 흔한 감사편지 인데?
+뒷돈 챙기는 비리 경찰이라며?
+이건 무슨 암호 같은 거가?"/>
+		<class name="lc_mission_3_1_PhtOg3" Value="[!Dialog][!speaker:Albus_Normal]편지가 암호인지 사실인지는 확인해봐야 되겠지?
+우리야 사실만 확인해서 넘겨주면 되니까.
+이 주소로 찾아가 보자!"/>
+		<class name="lc_mission_3_1_gZ2STy" Value="[!SMMessage]캐비닛 안에는 아무 것도 없습니다."/>
+		<class name="lc_mission_3_1_3uYN3P" Value="[!SMTitle]비어있는 캐비닛"/>
+		<class name="lc_mission_3_1_6alzwu" Value="[!Ignore][!SMMessage]각종 영수증외에 다른 물품은 없습니다."/>
+		<class name="lc_mission_3_1_xhoqgz" Value="[!Ignore][!SMTitle]각종 영수증 서류"/>
+		<class name="lc_mission_3_1_AOOJyN" Value="[!Ignore][!SMMessage]파쇄되어 내용을 알 수 없습니다."/>
+		<class name="lc_mission_3_1_5vssfC" Value="[!Ignore][!SMTitle]파쇄된 문서 조각"/>
+		<class name="lc_mission_3_1_L3IMPG" Value="[!Ignore][!SMMessage]업무일지 속에서 관련된 내용을 찾을 수 없었습니다."/>
+		<class name="lc_mission_3_1_EbYBHO" Value="[!Ignore][!SMTitle]업무 일지 서류함업무일지함"/>
+	</idspace>
+</idspaces>

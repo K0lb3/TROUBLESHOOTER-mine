@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="HitMethod">
+		<class name="_Top_" EffectPos="_TOP_" Hit="HitBack" Finish="FinishBack" Block="Block" Dodge="Dodge"/>
+		<class name="_Center_" EffectPos="_CENTER_" Hit="HitBack" Finish="FinishBack" Block="Block" Dodge="Dodge"/>
+		<class name="_Bottom_" EffectPos="_BOTTOM_" Hit="HitCrouch" Finish="FinishCrouch" Block="Block" Dodge="Dodge"/>
+		<class name="Top" EffectPos="Top" Hit="HitBack" Finish="FinishBack" Block="Block" Dodge="Dodge"/>
+		<class name="TopCenter" EffectPos="TopCenter" Hit="HitBack" Finish="FinishBack" Block="Block" Dodge="Dodge"/>
+		<class name="TopCenterRight" EffectPos="TopCenterRight" Hit="HitBack" Finish="FinishBack" Block="Block" Dodge="Dodge"/>
+		<class name="TopCenterLeft" EffectPos="TopCenterLeft" Hit="HitBack" Finish="FinishBack" Block="Block" Dodge="Dodge"/>
+		<class name="Center" EffectPos="Center" Hit="HitBack" Finish="FinishBack" Block="Block" Dodge="Dodge"/>
+		<class name="CenterBottom" EffectPos="CenterBottom" Hit="HitBack" Finish="FinishBack" Block="Block" Dodge="Dodge"/>
+		<class name="CenterBottomLeft" EffectPos="CenterBottomLeft" Hit="HitBack" Finish="FinishBack" Block="Block" Dodge="Dodge"/>
+		<class name="CenterBottomRight" EffectPos="CenterBottomRight" Hit="HitBack" Finish="FinishBack" Block="Block" Dodge="Dodge"/>
+		<class name="BottomLeft" EffectPos="BottomLeft" Hit="HitCrouch" Finish="FinishCrouch" Block="Block" Dodge="Dodge"/>
+		<class name="BottomRight" EffectPos="BottomRight" Hit="HitCrouch" Finish="FinishCrouch" Block="Block" Dodge="Dodge"/>
+		<class name="BottomEffect" EffectPos="BottomEffect" Hit="HitCrouch" Finish="FinishCrouch" Block="Block" Dodge="Dodge"/>
+		<class name="Head" EffectPos="Head" Hit="HitBack" Finish="FinishBack" Block="Block" Dodge="Dodge"/>
+		<class name="Neck" EffectPos="Neck" Hit="HitBack" Finish="FinishBack" Block="Block" Dodge="Dodge"/>
+		<class name="Chest" EffectPos="Chest" Hit="HitBack" Finish="FinishBack" Block="Block" Dodge="Dodge"/>
+		<class name="Pelvis" EffectPos="Pelvis" Hit="HitCrouch" Finish="FinishCrouch" Block="Block" Dodge="Dodge"/>
+		<class name="Body" EffectPos="Body" Hit="HitBack" Finish="FinishBack" Block="Block" Dodge="Dodge"/>
+		<class name="Stomach" EffectPos="Stomach" Hit="HitCrouch" Finish="FinishCrouch" Block="Block" Dodge="Dodge"/>
+		<class name="RightHand" EffectPos="RightHand" Hit="HitCrouch" Finish="FinishCrouch" Block="Block" Dodge="Dodge"/>
+		<class name="LeftHand" EffectPos="LeftHand" Hit="HitCrouch" Finish="FinishCrouch" Block="Block" Dodge="Dodge"/>
+		<class name="Heal" EffectPos="_CENTER_" Hit="Astd" Finish="Astd" Block="Astd" Dodge="Astd"/>
+		<class name="WeaponProp1" EffectPos="WeaponProp1" Hit="HitCrouch" Finish="FinishCrouch" Block="Block" Dodge="Dodge"/>
+		<class name="LeftForearm" EffectPos="LeftForearm" Hit="HitCrouch" Finish="FinishCrouch" Block="Block" Dodge="Dodge"/>
+	</idspace>
+	<idspace id="DeadMethod">
+		<!--[!Ignore]
+			각도의 경우 0을 기준점에서 대상으로의 방향으로 봐서 왼쪽이 +값 오른쪽이 -값임
+		-->
+		<schema>
+			<rule property="Type" type="string" default="Normal"/>
+			<rule property="Fly" type="bool" default="false"/>
+			<rule property="Knockback" type="bool" default="false"/>
+			<rule property="Gravity" type="number" default="9800"/>
+			<rule property="Bounce" type="number" default="2"/>
+			<rule property="PoseChain" type="table" default="DeadLoop"/>
+		</schema>
+		<class name="Normal" Type="Normal" PoseChain="Dead"/>
+		<class name="NormalKnockback" Type="Knockback" PoseChain="Dead"/>
+		<class name="NormalStraight" Type="Fly" PoseChain="None" FloatRatio="1.0" PushRatio="0.5" Angle="0" Gravity="1000"/>
+		<class name="BlowUp" Type="Fly" PoseChain="None" FloatRatio="1.0" PushRatio="0.01" Angle="0"/>
+		<class name="StraightThrow" Type="Fly" PoseChain="None" FloatRatio="0.3" PushRatio="0.75" Angle="0" Gravity="4900"/>
+	</idspace>
+</idspaces>

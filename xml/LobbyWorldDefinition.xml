@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="LobbyWorldDefinition">
+	<schema>
+		<rule property="AllowLobbyMenu" type="table" subtype="string" default=""/>
+		<rule property="HideLobbyMenu" type="table" subtype="string" default=""/>
+		<rule property="BaseBGM" type="link" target="Bgm" default="None"/>
+		<rule property="BaseCamPitch" type="number" default="30"/>
+		<rule property="BaseCamYaw" type="number" default="45"/>
+		<rule property="BaseCamZoomDist" type="number" default="1500"/>
+		<rule property="DummyWorld" type="bool" default="false"/>
+		<rule property="EnableCommonLobbyEnter" type="bool" default="true"/>
+		<rule property="LoadingKey" type="string" default="Mission_testalert"/>
+		<rule property="MapEventPosition" type="link" target="MapEventPosition" default="None"/>
+		<rule property="NpcGen" type="link" target="NpcGen" default="None"/>
+		<rule property="Mode" type="string" default="Lobby"/>
+		<rule property="Title" type="string" default=""/>
+		<rule property="Zone" type="link" target="Zone" default="WindWallTown"/>
+	</schema>
+	<class name="ShooterStreet" Title="사수거리" Map="ShopStreet" LobbyMap="LobbyMap_ShooterStreet" NpcGen="ShooterStreet" Zone="WindWallTown" LoadingKey="Lobby_ShooterStreet" Mode="Lobby" BaseBGM="OneForAll">
+		<CameraPoint>
+			<Base CharSlotCursorImage="TaharezLook/NpcTalk" FOV="30">
+				<CamPosition type="table" value="100, 1400, 2070"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="6300" InnerRange="100000" OuterRange="500"/>
+				<CharacterSlot>
+					<property PX="45.75" PY="24.8" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="46.1" PY="24.6" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="45.35" PY="24.6" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="46.45" PY="24.8" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="45.01" PY="24.8" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="46.8" PY="24.6" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="44.75" PY="24.6" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="47.16" PY="24.8" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Base>
+			<WorldMap CharSlotCursorImage="TaharezLook/NpcTalk" FOV="35">
+				<CamPosition type="table" value="-750, 1423.744, 325"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="6300" InnerRange="100000" OuterRange="500"/>
+			</WorldMap>
+			<Formation CharSlotCursorImage="TaharezLook/CancelLineup" OnClick="OnLineupMemberObjectClicked" FOV="35" UseCharacterOutline="No">
+				<CamPosition type="table" value="1320, 120, -990"/>
+				<CamDirection type="table" value="-1, 0, 0"/>
+				<CamEnableDOF Enabled="true" FocusDist="4000" InnerRange="100000" OuterRange="500"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="53.5" PY="43.1" PZ="2" DX="1" DY="0" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="53.1" PY="42.75" PZ="2" DX="1" DY="0" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="53.1" PY="43.45" PZ="2" DX="1" DY="0" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="53.5" PY="42.4" PZ="2" DX="1" DY="0" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="53.1" PY="42" PZ="2" DX="1" DY="0" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="53.5" PY="43.7" PZ="2" DX="1" DY="0" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="53.5" PY="41.75" PZ="2" DX="1" DY="0" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="53.1" PY="44.16" PZ="2" DX="1" DY="0" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Formation>
+		</CameraPoint>
+		<WayPoint>
+			<StartPosition type="table" value="50, 50, 2"/>
+		</WayPoint>
+	</class>
+	<class name="ShooterStreet_Single" Title="사수거리" Map="ShooterStreet_Night_A" LobbyMap="" NpcGen="ShooterStreet" Zone="WindWallTown" LoadingKey="Lobby_ShooterStreet" Mode="SingleLobby" BaseBGM="OneForAll">
+		<CameraPoint>
+			<Base CharSlotCursorImage="TaharezLook/NpcTalk" FOV="30">
+				<CamPosition type="table" value="100, 1400, 2070"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="6300" InnerRange="100000" OuterRange="500"/>
+				<CharacterSlot>
+					<property PX="45.75" PY="24.8" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="46.1" PY="24.6" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="45.35" PY="24.6" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="46.45" PY="24.8" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="45.01" PY="24.8" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="46.8" PY="24.6" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="44.75" PY="24.6" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="47.16" PY="24.8" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Base>
+			<WorldMap CharSlotCursorImage="TaharezLook/NpcTalk" FOV="35">
+				<CamPosition type="table" value="-750, 1423.744, 325"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="6300" InnerRange="100000" OuterRange="500"/>
+			</WorldMap>
+			<Formation CharSlotCursorImage="TaharezLook/CancelLineup" OnClick="OnLineupMemberObjectClicked" FOV="35" UseCharacterOutline="No">
+				<CamPosition type="table" value="-385, 430, -3750"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="4000" InnerRange="100000" OuterRange="500"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="45.75" PY="24.8" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="46.1" PY="24.6" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="45.35" PY="24.6" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="46.45" PY="24.8" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="45.01" PY="24.8" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="46.8" PY="24.6" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="44.75" PY="24.6" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="47.16" PY="24.8" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Formation>
+		</CameraPoint>
+		<WayPoint>
+			<StartPosition type="table" value="45, 57, 30"/>
+		</WayPoint>
+	</class>
+	<class name="ShooterStreet_Night" Title="사수거리" Map="ShooterStreet_Night" LobbyMap="" NpcGen="None" Zone="WindWallTown" LoadingKey="Lobby_ShooterStreet" Mode="Lobby" BaseBGM="OneForAll">
+		<CameraPoint>
+			<Base CharSlotCursorImage="TaharezLook/NpcTalk" FOV="30">
+				<CamPosition type="table" value="100, 1400, 2070"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="6300" InnerRange="100000" OuterRange="500"/>
+				<CharacterSlot>
+					<property PX="45.75" PY="24.8" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="46.1" PY="24.6" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="45.35" PY="24.6" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="46.45" PY="24.8" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="45.01" PY="24.8" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="46.8" PY="24.6" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="44.75" PY="24.6" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="47.16" PY="24.8" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Base>
+			<WorldMap CharSlotCursorImage="TaharezLook/NpcTalk" FOV="35">
+				<CamPosition type="table" value="-750, 1423.744, 325"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="6300" InnerRange="100000" OuterRange="500"/>
+			</WorldMap>
+			<Formation CharSlotCursorImage="TaharezLook/CancelLineup" OnClick="OnLineupMemberObjectClicked" FOV="35" UseCharacterOutline="No">
+				<CamPosition type="table" value="-385, 430, -3750"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="4000" InnerRange="100000" OuterRange="500"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="45.75" PY="24.8" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="46.1" PY="24.6" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="45.35" PY="24.6" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="46.45" PY="24.8" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="45.01" PY="24.8" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="46.8" PY="24.6" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="44.75" PY="24.6" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="47.16" PY="24.8" PZ="32" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Formation>
+		</CameraPoint>
+		<WayPoint>
+			<StartPosition type="table" value="45, 57, 30"/>
+		</WayPoint>
+	</class>
+	<class name="Office" Title="실버라이닝" Map="Silverlining" LobbyMap="" NpcGen="Bar_Silverlining" Zone="WindWallTown" LoadingKey="Lobby_Office" Mode="Office" BaseBGM="OneForAll" HideLobbyMenu="LobbyMinimap">
+		<CameraPoint>
+			<Base CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnClickRosterIdle" FOV="40" ShowObjects="Yes">
+				<CamPosition type="table" value="75, 250, 2100"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="6300" InnerRange="100000" OuterRange="500"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="OfficeStdIdle" LoopAni="OfficeStd" IdleAni="OfficeStdIdle" EquipmentType="OfficeEquipment"/>
+				</DefaultCharSlot>
+				<CharacterSlot Mode="name">
+					<Kylie PX="47.575" PY="53" PZ="6" DX="-1" DY="0" StartAni="OfficeStdIdle" IdleAni="OfficeStdIdle" LoopAni="OfficeStd"/>
+					<Giselle PX="50.3" PY="53" PZ="6" DX="1" DY="2" StartAni="OfficeStdIdle" IdleAni="OfficeStdIdle" LoopAni="OfficeStd"/>
+					<Leton PX="46.35" PY="52" PZ="5.5" DX="1" DY="0" StartAni="OfficeStdIdle" IdleAni="OfficeStdIdle" LoopAni="OfficeStd"/>
+				</CharacterSlot>
+			</Base>
+			<MemberInfo_Bar CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnClickRosterIdle" FOV="50" UseCharacterOutline="No">
+				<CamPosition type="table" value="75, 177, 1130"/>
+				<CamDirection type="table" value="0, 0.01, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="200" InnerRange="100000" OuterRange="200"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="49" PY="54" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</MemberInfo_Bar>
+			<MemberInfo_Workshop CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnClickRosterIdle" FOV="50" UseCharacterOutline="No">
+				<CamPosition type="table" value="1300, 177, 1000"/>
+				<CamDirection type="table" value="0, 0.01, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="200" InnerRange="100000" OuterRange="200"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="57.15" PY="53" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</MemberInfo_Workshop>
+			<MemberInfo_Office CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnClickRosterIdle" FOV="50" UseCharacterOutline="No">
+				<CamPosition type="table" value="-1425, 177, 1130"/>
+				<CamDirection type="table" value="0, 0.01, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="200" InnerRange="100000" OuterRange="200"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="39" PY="54" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</MemberInfo_Office>
+			<MemberInfo_Beast CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="40">
+				<CamPosition type="table" value="970, 350, 1160"/>
+				<CamDirection type="table" value="0.65, -0.47, -0.59"/>
+				<CamEnableDOF Enabled="true" FocusDist="200" InnerRange="100000" OuterRange="200"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<Dorori1 PX="59.06" PY="55.2" PZ="28" DX="-1" DY="1"/>
+					<Dorori2 PX="59.08" PY="54.65" PZ="28" DX="-1" DY="0"/>
+					<Dorori3 PX="59.09" PY="53.9" PZ="28" DX="-1" DY="1"/>
+					<Dorori4 PX="59.12" PY="53" PZ="28" DX="-1" DY="1"/>
+					<Tima1 PX="57.5" PY="54" PZ="6" DX="-1" DY="1"/>
+					<Tima2 PX="58.9" PY="53.8" PZ="7.85" DX="-1" DY="3"/>
+					<Tima3 PX="58.9" PY="55" PZ="7.85" DX="0" DY="1"/>
+					<Tima4 PX="58.2" PY="55" PZ="6" DX="-1" DY="0"/>
+					<Neguri1 PX="54.945" PY="55.9" PZ="8" DX="1" DY="1"/>
+					<Neguri2 PX="55.025" PY="55.5" PZ="8" DX="1" DY="1"/>
+					<Neguri3 PX="55.5" PY="55.6" PZ="11.2" DX="0" DY="1"/>
+					<Neguri4 PX="55.975" PY="55.9" PZ="8" DX="-1" DY="1"/>
+					<Yasha1 PX="57.1" PY="53" PZ="13.5" DX="-1" DY="3"/>
+					<Yasha2 PX="57.5" PY="53.15" PZ="13.7" DX="0" DY="1"/>
+					<Yasha3 PX="57.9" PY="52.95" PZ="13.35" DX="1" DY="3"/>
+					<Yasha4 PX="57.6" PY="52.95" PZ="22" DX="0" DY="1"/>
+					<Draky1 PX="58.99" PY="55.2" PZ="17" DX="-2" DY="1"/>
+					<Draky2 PX="59.01" PY="54.65" PZ="17" DX="-1" DY="0"/>
+					<Draky3 PX="59.02" PY="53.9" PZ="17" DX="-1" DY="1"/>
+					<Draky4 PX="59.05" PY="53" PZ="17" DX="-1" DY="1"/>
+				</CharacterSlot>
+			</MemberInfo_Beast>
+			<MemberInfo_Machine CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="40">
+				<CamPosition type="table" value="970, 350, 1160"/>
+				<CamDirection type="table" value="0.65, -0.47, -0.59"/>
+				<CamEnableDOF Enabled="true" FocusDist="200" InnerRange="100000" OuterRange="200"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<Drone1 PX="56.2" PY="54.3" PZ="14.1" DX="1" DY="1"/>
+					<Drone2 PX="56" PY="54.3" PZ="14.1" DX="1" DY="1"/>
+					<Drone3 PX="56.2" PY="54.55" PZ="14.1" DX="1" DY="1"/>
+					<Drone4 PX="56" PY="54.55" PZ="14.1" DX="1" DY="1"/>
+					<Drone5 PX="56.2" PY="54.8" PZ="14.1" DX="1" DY="1"/>
+					<Drone6 PX="56" PY="54.8" PZ="14.1" DX="1" DY="1"/>
+					<Drone7 PX="56.2" PY="55.05" PZ="14.1" DX="1" DY="1"/>
+					<Drone8 PX="56" PY="55.05" PZ="14.1" DX="1" DY="1"/>
+					<Drone9 PX="55.8" PY="54.8" PZ="14.1" DX="1" DY="1"/>
+					<Drone10 PX="55.8" PY="55.05" PZ="14.1" DX="1" DY="1"/>
+				</CharacterSlot>
+			</MemberInfo_Machine>
+			<Roster_Bar CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="40">
+				<CamPosition type="table" value="75, 250, 1600"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="100" InnerRange="100000" OuterRange="100"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="51.2" PY="126.2" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Roster_Bar>
+			<Roster_Office CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="40">
+				<CamPosition type="table" value="-1425, 210, 1600"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="100" InnerRange="100000" OuterRange="100"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="OfficeStdIdle" LoopAni="OfficeStd" IdleAni="OfficeStdIdle" EquipmentType="OfficeEquipment"/>
+				</DefaultCharSlot>
+				<CharacterSlot Mode="name">
+					<property name="Albus" PX="38.2" PY="53" PZ="6" DX="1" DY="0" StartAni="OfficeStdIdle" IdleAni="OfficeStdIdle" LoopAni="OfficeStd">
+						<AABB>
+							<Center x="0" y="65" z="0"/>
+							<Size x="60" y="130" z="80"/>
+						</AABB>
+					</property>
+					<property name="Sion" PX="39.55" PY="53" PZ="6" DX="-1" DY="0" StartAni="OfficeStdIdle" IdleAni="OfficeStdIdle" LoopAni="OfficeStd">
+						<AABB>
+							<Center x="0" y="65" z="-40"/>
+							<Size x="60" y="130" z="80"/>
+						</AABB>
+					</property>
+					<property name="Irene" PX="39.625" PY="50.5" PZ="6" DX="0" DY="0" StartAni="OfficeStdIdle" IdleAni="OfficeStdIdle" LoopAni="OfficeStd">
+						<AABB>
+							<Center x="0" y="65" z="-10"/>
+							<Size x="60" y="130" z="80"/>
+						</AABB>
+					</property>
+					<property name="Anne" PX="39.25" PY="50.5" PZ="6" DX="0" DY="0" StartAni="OfficeStdIdle" IdleAni="OfficeStdIdle" LoopAni="OfficeStd"/>
+					<property name="Ray" PX="37.3" PY="52" PZ="6" DX="-1" DY="0" StartAni="OfficeStdIdle" IdleAni="OfficeStdIdle" LoopAni="OfficeStd">
+						<AABB>
+							<Center x="0" y="70" z="20"/>
+							<Size x="60" y="140" z="90"/>
+						</AABB>
+					</property>
+					<property name="Heissing" PX="38.5" PY="50.5" PZ="6" DX="0" DY="0" StartAni="OfficeStdIdle" IdleAni="OfficeStdIdle" LoopAni="OfficeStd"/>
+					<property name="AlbusStd" PX="40" PY="56" PZ="6" DX="-1" DY="-1" StartAni="Std" IdleAni="Std" LoopAni="Std"/>
+				</CharacterSlot>
+			</Roster_Office>
+			<Roster_Workshop CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="40">
+				<CamPosition type="table" value="1300, 250, 1600"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="100" InnerRange="100000" OuterRange="100"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="51.2" PY="126.2" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Roster_Workshop>
+			<WorldMap CharSlotCursorImage="TaharezLook/NpcTalk" FOV="40">
+				<CamPosition type="table" value="-1550, 270, 1000"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="6300" InnerRange="100000" OuterRange="500"/>
+				<CharacterSlot Mode="name">
+					<Albus PX="58" PY="97" PZ="4" DX="6" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<Sion PX="51.41" PY="125.76" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<Irene PX="50.71" PY="125.76" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<Kylie PX="51.71" PY="126.06" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<Ray PX="50.41" PY="126.06" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<Leton PX="52.16" PY="125.76" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<Alisa PX="49.86" PY="125.76" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<Heissing PX="52.41" PY="126.16" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</WorldMap>
+			<BarMaster CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnClickRosterIdle" FOV="35">
+				<CamPosition type="table" value="220, 1400, 2070"/>
+				<CamDirection type="table" value="0.5, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="6300" InnerRange="100000" OuterRange="500"/>
+				<CharacterSlot Mode="name">
+					<Ray PX="48.25" PY="47.25" PZ="6" DX="0" DY="1" StartAni="OfficeStdIdle" LIdleAnioopAni="OfficeStdIdle" LoopAni="OfficeStdI"/>
+				</CharacterSlot>
+			</BarMaster>
+			<Office CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnClickRosterIdle" FOV="40" ShowObjects="Yes">
+				<CamPosition type="table" value="-1425, 250, 2070"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="6300" InnerRange="100000" OuterRange="500"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="OfficeStdIdle" LoopAni="OfficeStd" IdleAni="OfficeStdIdle" EquipmentType="OfficeEquipment"/>
+				</DefaultCharSlot>
+				<CharacterSlot Mode="name">
+					<property name="Albus" PX="38.2" PY="53" PZ="6" DX="1" DY="0" StartAni="OfficeStdIdle" IdleAni="OfficeStdIdle" LoopAni="OfficeStd">
+						<AABB>
+							<Center x="0" y="65" z="0"/>
+							<Size x="60" y="130" z="80"/>
+						</AABB>
+					</property>
+					<property name="Sion" PX="39.55" PY="53" PZ="6" DX="-1" DY="0" StartAni="OfficeStdIdle" IdleAni="OfficeStdIdle" LoopAni="OfficeStd">
+						<AABB>
+							<Center x="0" y="65" z="-40"/>
+							<Size x="60" y="130" z="80"/>
+						</AABB>
+					</property>
+					<property name="Irene" PX="39.625" PY="50.5" PZ="6" DX="0" DY="0" StartAni="OfficeStdIdle" IdleAni="OfficeStdIdle" LoopAni="OfficeStd">
+						<AABB>
+							<Center x="0" y="65" z="-10"/>
+							<Size x="60" y="130" z="80"/>
+						</AABB>
+					</property>
+					<property name="Anne" PX="39.25" PY="50.5" PZ="6" DX="0" DY="0" StartAni="OfficeStdIdle" IdleAni="OfficeStdIdle" LoopAni="OfficeStd"/>
+					<property name="Ray" PX="37.3" PY="52" PZ="6" DX="-1" DY="0" StartAni="OfficeStdIdle" IdleAni="OfficeStdIdle" LoopAni="OfficeStd">
+						<AABB>
+							<Center x="0" y="70" z="20"/>
+							<Size x="60" y="140" z="90"/>
+						</AABB>
+					</property>
+					<property name="Heissing" PX="38.5" PY="50.5" PZ="6" DX="0" DY="0" StartAni="OfficeStdIdle" IdleAni="OfficeStdIdle" LoopAni="OfficeStd"/>
+					<property name="AlbusStd" PX="40" PY="56" PZ="6" DX="-1" DY="-1" StartAni="Std" IdleAni="Std" LoopAni="Std"/>
+				</CharacterSlot>
+			</Office>
+			<ActivityReport CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="40">
+				<CamPosition type="table" value="-1425, 210, 1600"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="100" InnerRange="100000" OuterRange="100"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="51.2" PY="126.2" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</ActivityReport>
+			<Statistics CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="40">
+				<CamPosition type="table" value="-1425, 210, 1600"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="100" InnerRange="100000" OuterRange="100"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="51.2" PY="126.2" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Statistics>
+			<Mastery CharSlotCursorImage="TaharezLook/CancelLineup" OnClick="OnLineupMemberObjectClicked" FOV="50" UseCharacterOutline="No">
+				<CamPosition type="table" value="-1425, 177, 1080"/>
+				<CamDirection type="table" value="0, 0.01, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="200" InnerRange="100000" OuterRange="200"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="39" PY="54" PZ="6" DX="0" DY="1" StartAni="SelectLoop" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Mastery>
+			<Workshop CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="40" ShowObjects="Yes">
+				<CamPosition type="table" value="1270, 250, 2070"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="10000" InnerRange="100000" OuterRange="500"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="OfficeStd" LoopAni="OfficeStd" IdleAni="OfficeStdIdle"/>
+					<property DX="0" DY="1" StartAni="SelectLoop" LoopAni="SelectLoop" IdleAni="Select"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<Dorori1 PX="59.06" PY="55.2" PZ="28" DX="-1" DY="1"/>
+					<Dorori2 PX="59.08" PY="54.65" PZ="28" DX="-1" DY="0"/>
+					<Dorori3 PX="59.09" PY="53.9" PZ="28" DX="-1" DY="1"/>
+					<Dorori4 PX="59.12" PY="53" PZ="28" DX="-1" DY="1"/>
+					<Tima1 PX="57.5" PY="54" PZ="6" DX="-1" DY="1"/>
+					<Tima2 StartAni="OfficeStd" LoopAni="OfficeStd" IdleAni="OfficeStdIdle" PX="58.9" PY="53.8" PZ="7.85" DX="-1" DY="3"/>
+					<Tima3 StartAni="OfficeStdIdle" LoopAni="OfficeStd" IdleAni="OfficeStdIdle" PX="58.9" PY="55" PZ="7.85" DX="0" DY="1"/>
+					<Tima4 StartAni="OfficeStdIdle" LoopAni="OfficeStd" IdleAni="OfficeStdIdle" PX="58.2" PY="55" PZ="6" DX="-1" DY="0"/>
+					<Neguri1 StartAni="OfficeStd" PX="54.945" PY="55.9" PZ="8" DX="1" DY="1"/>
+					<Neguri2 StartAni="OfficeStd" PX="55.025" PY="55.5" PZ="8" DX="1" DY="1"/>
+					<Neguri3 PX="55.5" PY="55.6" PZ="11.2" DX="0" DY="1" StartAni="Atk1" LoopAni="Astd" IdleAni="Atk3"/>
+					<Neguri4 StartAni="OfficeStd" PX="55.975" PY="55.9" PZ="8" DX="-1" DY="1"/>
+					<Yasha1 PX="57.1" PY="53" PZ="13.5" DX="-1" DY="3"/>
+					<Yasha2 PX="57.5" PY="53.15" PZ="13.7" DX="0" DY="1"/>
+					<Yasha3 PX="57.9" PY="52.95" PZ="13.35" DX="1" DY="3"/>
+					<Yasha4 PX="57.6" PY="52.95" PZ="22" DX="0" DY="1"/>
+					<Draky1 PX="58.99" PY="55.2" PZ="17" DX="-2" DY="1"/>
+					<Draky2 PX="59.01" PY="54.65" PZ="17" DX="-1" DY="0"/>
+					<Draky3 PX="59.02" PY="53.9" PZ="17" DX="-1" DY="1"/>
+					<Draky4 PX="59.05" PY="53" PZ="17" DX="-1" DY="1"/>
+					<Drone1 PX="56.2" PY="54.3" PZ="14.1" DX="1" DY="1"/>
+					<Drone2 PX="56" PY="54.3" PZ="14.1" DX="1" DY="1"/>
+					<Drone3 PX="56.2" PY="54.55" PZ="14.1" DX="1" DY="1"/>
+					<Drone4 PX="56" PY="54.55" PZ="14.1" DX="1" DY="1"/>
+					<Drone5 PX="56.2" PY="54.8" PZ="14.1" DX="1" DY="1"/>
+					<Drone6 PX="56" PY="54.8" PZ="14.1" DX="1" DY="1"/>
+					<Drone7 PX="56.2" PY="55.05" PZ="14.1" DX="1" DY="1"/>
+					<Drone8 PX="56" PY="55.05" PZ="14.1" DX="1" DY="1"/>
+					<Drone9 PX="55.8" PY="54.8" PZ="14.1" DX="1" DY="1"/>
+					<Drone10 PX="55.8" PY="55.05" PZ="14.1" DX="1" DY="1"/>
+				</CharacterSlot>
+			</Workshop>
+			<Formation CharSlotCursorImage="TaharezLook/CancelLineup" OnClick="OnLineupMemberObjectClicked" FOV="35" UseCharacterOutline="No">
+				<CamPosition type="table" value="-1435, 135, 1610"/>
+				<CamDirection type="table" value="0, 0.065, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="400" InnerRange="100000" OuterRange="400"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="38.75" PY="54.85" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="39.1" PY="54.55" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="38.35" PY="54.55" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="39.45" PY="54.85" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="39.8" PY="54.55" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="38.01" PY="54.85" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="40.16" PY="54.85" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="37.75" PY="54.55" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Formation>
+			<Inventory CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="35">
+				<CamPosition type="table" value="1250, 1400, 2000"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="10000" InnerRange="100000" OuterRange="500"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="51.2" PY="126.2" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Inventory>
+			<Identify CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="50">
+				<CamPosition type="table" value="1310, 210, 1250"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="500" InnerRange="100000" OuterRange="500"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="55" PY="54" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Identify>
+			<Craft CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="50">
+				<CamPosition type="table" value="1310, 210, 1250"/>
+				<CamDirection type="table" value="0.7, 0.05, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="500" InnerRange="100000" OuterRange="500"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="55" PY="54" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Craft>
+			<Upgrade CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="50">
+				<CamPosition type="table" value="1320, 210, 1150"/>
+				<CamDirection type="table" value="-0.7, 0.05, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="500" InnerRange="100000" OuterRange="500"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="55" PY="54" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Upgrade>
+			<Troublemaker CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="40">
+				<CamPosition type="table" value="-1100, 180, 1200"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="200" InnerRange="100000" OuterRange="200"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="40.5" PY="52" PZ="6" DX="1" DY="0" StartAni="OfficeStdIdle" LoopAni="OfficeStd"/>
+				</CharacterSlot>
+			</Troublemaker>
+			<ItemBook CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="40">
+				<CamPosition type="table" value="-1100, 180, 1200"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="200" InnerRange="100000" OuterRange="200"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="40.5" PY="52" PZ="6" DX="1" DY="0" StartAni="OfficeStdIdle" LoopAni="OfficeStd"/>
+				</CharacterSlot>
+			</ItemBook>
+			<Technique CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="40">
+				<CamPosition type="table" value="-1100, 180, 1200"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="200" InnerRange="100000" OuterRange="200"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="40.5" PY="52" PZ="6" DX="1" DY="0" StartAni="OfficeStdIdle" LoopAni="OfficeStd"/>
+				</CharacterSlot>
+			</Technique>
+			<Leader CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="35">
+				<CamPosition type="table" value="241, 1400, 2070"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="6300" InnerRange="100000" OuterRange="500"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="51.2" PY="126.2" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Leader>
+			<TroubleBook CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="40">
+				<CamPosition type="table" value="-1375, 250, 2070"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="6300" InnerRange="100000" OuterRange="500"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="51.2" PY="126.2" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</TroubleBook>
+			<Company CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="35">
+				<CamPosition type="table" value="-975, 1400, 1800"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="6300" InnerRange="100000" OuterRange="500"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="51.2" PY="126.2" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Company>
+			<Equipment CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked">
+				<CamPosition type="table" value="290.739929, 550.845978, 1800.863647"/>
+				<CamDirection type="table" value="1.001, -0.23, -0.999258"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="51.2" PY="126.2" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Equipment>
+		</CameraPoint>
+		<WayPoint>
+			<StartPosition type="table" value="53, 50, 2"/>
+		</WayPoint>
+	</class>
+	<class name="Office_Night" Title="실버라이닝" Map="Silverlining_Event_Night" LobbyMap="" NpcGen="None" Zone="WindWallTown" LoadingKey="Lobby_Office_Night" Mode="Office" BaseBGM="TenYearsMemories" EnableCommonLobbyEnter="false" AllowLobbyMenu="MailBox, Option" HideLobbyMenu="LobbyMinimap">
+		<CameraPoint>
+			<Base CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnClickRosterIdle" FOV="40" ShowObjects="Yes">
+				<CamPosition type="table" value="75, 250, 2100"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="6300" InnerRange="100000" OuterRange="500"/>
+				<CharacterSlot>
+				</CharacterSlot>
+			</Base>
+			<MemberInfo_Bar CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnClickRosterIdle" FOV="50" UseCharacterOutline="No">
+				<CamPosition type="table" value="75, 177, 1130"/>
+				<CamDirection type="table" value="0, 0.01, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="200" InnerRange="100000" OuterRange="200"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="49" PY="54" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</MemberInfo_Bar>
+			<MemberInfo_Workshop CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnClickRosterIdle" FOV="50" UseCharacterOutline="No">
+				<CamPosition type="table" value="1300, 177, 1000"/>
+				<CamDirection type="table" value="0, 0.01, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="200" InnerRange="100000" OuterRange="200"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="57.15" PY="53" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</MemberInfo_Workshop>
+			<MemberInfo_Office CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnClickRosterIdle" FOV="50" UseCharacterOutline="No">
+				<CamPosition type="table" value="-1425, 177, 1130"/>
+				<CamDirection type="table" value="0, 0.01, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="200" InnerRange="100000" OuterRange="200"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="39" PY="54" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</MemberInfo_Office>
+			<Roster_Bar CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="40">
+				<CamPosition type="table" value="75, 250, 1600"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="100" InnerRange="100000" OuterRange="100"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="51.2" PY="126.2" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Roster_Bar>
+			<Roster_Office CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="40">
+				<CamPosition type="table" value="-1425, 210, 1600"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="100" InnerRange="100000" OuterRange="100"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="OfficeStdIdle" LoopAni="OfficeStd" IdleAni="OfficeStdIdle" EquipmentType="EmptyEquipment"/>
+				</DefaultCharSlot>
+				<CharacterSlot Mode="name">
+					<Albus PX="37.15" PY="53.2" PZ="6" DX="5" DY="1" StartAni="OfficeStdIdle" IdleAni="OfficeStdIdle" LoopAni="OfficeStd"/>
+					<Sion PX="38.7" PY="53.9" PZ="6" DX="-1" DY="-1" StartAni="OfficeStdIdle" IdleAni="OfficeStdIdle" LoopAni="OfficeStd"/>
+					<AlbusStd PX="40" PY="56" PZ="6" DX="-1" DY="-1" StartAni="Std" IdleAni="Std" LoopAni="Std"/>
+				</CharacterSlot>
+			</Roster_Office>
+			<Roster_Workshop CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="40">
+				<CamPosition type="table" value="1300, 250, 1600"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="100" InnerRange="100000" OuterRange="100"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="51.2" PY="126.2" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Roster_Workshop>
+			<WorldMap CharSlotCursorImage="TaharezLook/NpcTalk" FOV="40">
+				<CamPosition type="table" value="-1550, 270, 1000"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="6300" InnerRange="100000" OuterRange="500"/>
+				<CharacterSlot Mode="name">
+					<Albus PX="58" PY="97" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<Sion PX="51.41" PY="125.76" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<Irene PX="50.71" PY="125.76" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<Kylie PX="51.71" PY="126.06" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<Ray PX="50.41" PY="126.06" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<Leton PX="52.16" PY="125.76" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<Alisa PX="49.86" PY="125.76" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<Heissing PX="52.41" PY="126.16" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</WorldMap>
+			<BarMaster CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnClickRosterIdle" FOV="35">
+				<CamPosition type="table" value="220, 1400, 2070"/>
+				<CamDirection type="table" value="0.5, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="6300" InnerRange="100000" OuterRange="500"/>
+				<CharacterSlot Mode="name">
+					<Albus PX="58" PY="97" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<Sion PX="51.41" PY="125.76" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<Irene PX="50.71" PY="125.76" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<Kylie PX="51.71" PY="126.06" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<Ray PX="50.41" PY="126.06" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<Leton PX="52.16" PY="125.76" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<Alisa PX="49.86" PY="125.76" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<Heissing PX="52.41" PY="126.16" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</BarMaster>
+			<Office CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnClickRosterIdle" FOV="40" ShowObjects="Yes">
+				<CamPosition type="table" value="-1425, 250, 2070"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="6300" InnerRange="100000" OuterRange="500"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="OfficeStdIdle" LoopAni="OfficeStd" IdleAni="OfficeStdIdle" EquipmentType="EmptyEquipment"/>
+				</DefaultCharSlot>
+				<CharacterSlot Mode="name">
+					<Albus PX="37.15" PY="53.2" PZ="6" DX="5" DY="1" StartAni="OfficeStdIdle" IdleAni="OfficeStdIdle" LoopAni="OfficeStd"/>
+					<Sion PX="38.7" PY="53.9" PZ="6" DX="-1" DY="-1" StartAni="OfficeStdIdle" IdleAni="OfficeStdIdle" LoopAni="OfficeStd"/>
+					<Irene PX="40.5" PY="52.3" PZ="6" DX="1" DY="0" StartAni="OfficeStdIdle" IdleAni="OfficeStdIdle" LoopAni="OfficeStd"/>
+					<Anne PX="38" PY="51.95" PZ="6" DX="0" DY="0" StartAni="OfficeStdIdle" IdleAni="OfficeStdIdle" LoopAni="OfficeStd"/>
+					<AlbusStd PX="40" PY="56" PZ="6" DX="-1" DY="-1" StartAni="Std" IdleAni="Std" LoopAni="Std"/>
+				</CharacterSlot>
+			</Office>
+			<ActivityReport CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="40">
+				<CamPosition type="table" value="-1425, 210, 1600"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="100" InnerRange="100000" OuterRange="100"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="51.2" PY="126.2" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</ActivityReport>
+			<Statistics CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="40">
+				<CamPosition type="table" value="-1425, 210, 1600"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="100" InnerRange="100000" OuterRange="100"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="51.2" PY="126.2" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Statistics>
+			<Mastery CharSlotCursorImage="TaharezLook/CancelLineup" OnClick="OnLineupMemberObjectClicked" FOV="50" UseCharacterOutline="No">
+				<CamPosition type="table" value="-1425, 177, 1080"/>
+				<CamDirection type="table" value="0, 0.01, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="200" InnerRange="100000" OuterRange="200"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="39" PY="54" PZ="6" DX="0" DY="1" StartAni="SelectLoop" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Mastery>
+			<Workshop CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="40" ShowObjects="Yes">
+				<CamPosition type="table" value="1260, 250, 2070"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="10000" InnerRange="100000" OuterRange="500"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="OfficeStdIdle" LoopAni="OfficeStd" IdleAni="OfficeStdIdle" EquipmentType="EmptyEquipment"/>
+				</DefaultCharSlot>
+				<CharacterSlot Mode="name">
+					<Albus PX="55" PY="52" PZ="6" DX="1" DY="1" StartAni="Std" IdleAni="Std" LoopAni="Std"/>
+					<Sion PX="57" PY="54.15" PZ="6" DX="0" DY="1" StartAni="OfficeStdIdle" IdleAni="OfficeStd" LoopAni="OfficeStd"/>
+				</CharacterSlot>
+			</Workshop>
+			<Formation CharSlotCursorImage="TaharezLook/CancelLineup" OnClick="OnLineupMemberObjectClicked" FOV="35" UseCharacterOutline="No">
+				<CamPosition type="table" value="-1435, 135, 1610"/>
+				<CamDirection type="table" value="0, 0.065, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="400" InnerRange="100000" OuterRange="400"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="38.75" PY="54.6" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="39.1" PY="54.8" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="38.35" PY="54.6" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="39.45" PY="54.8" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="38.01" PY="54.8" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="39.8" PY="54.6" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="37.75" PY="54.6" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="40.16" PY="54.8" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Formation>
+			<Inventory CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="35">
+				<CamPosition type="table" value="1250, 1400, 2000"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="10000" InnerRange="100000" OuterRange="500"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="51.2" PY="126.2" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Inventory>
+			<Identify CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="50">
+				<CamPosition type="table" value="1310, 210, 1250"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="500" InnerRange="100000" OuterRange="500"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="55" PY="54" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Identify>
+			<Craft CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="50">
+				<CamPosition type="table" value="1310, 210, 1250"/>
+				<CamDirection type="table" value="0.7, 0.05, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="500" InnerRange="100000" OuterRange="500"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="55" PY="54" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Craft>
+			<Upgrade CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="50">
+				<CamPosition type="table" value="1310, 210, 1250"/>
+				<CamDirection type="table" value="0.7, 0.05, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="10000" InnerRange="100000" OuterRange="500"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="55" PY="54" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Upgrade>
+			<Troublemaker CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="40">
+				<CamPosition type="table" value="-1100, 180, 1200"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="200" InnerRange="100000" OuterRange="200"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="40.5" PY="52" PZ="6" DX="1" DY="0" StartAni="OfficeStdIdle" LoopAni="OfficeStd"/>
+				</CharacterSlot>
+			</Troublemaker>
+			<Technique CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="40">
+				<CamPosition type="table" value="-1100, 180, 1200"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="200" InnerRange="100000" OuterRange="200"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="40.5" PY="52" PZ="6" DX="1" DY="0" StartAni="OfficeStdIdle" LoopAni="OfficeStd"/>
+				</CharacterSlot>
+			</Technique>
+			<Leader CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="35">
+				<CamPosition type="table" value="241, 1400, 2070"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="6300" InnerRange="100000" OuterRange="500"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="51.2" PY="126.2" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Leader>
+			<TroubleBook CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="40">
+				<CamPosition type="table" value="-1375, 250, 2070"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="6300" InnerRange="100000" OuterRange="500"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="51.2" PY="126.2" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</TroubleBook>
+			<Company CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked" FOV="35">
+				<CamPosition type="table" value="-975, 1400, 1800"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="6300" InnerRange="100000" OuterRange="500"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="51.2" PY="126.2" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Company>
+			<Equipment CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnCraftRosterClicked">
+				<CamPosition type="table" value="290.739929, 550.845978, 1800.863647"/>
+				<CamDirection type="table" value="1.001, -0.23, -0.999258"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="51.2" PY="126.2" PZ="6" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Equipment>
+		</CameraPoint>
+		<WayPoint>
+			<StartPosition type="table" value="53, 50, 2"/>
+		</WayPoint>
+	</class>
+	<class name="Office_Albus" Title="알버스의 오피스텔" Map="Office_Albus" LobbyMap="" NpcGen="Office_Albus" Zone="WorldTreeTown" LoadingKey="Lobby_Office_Albus" Mode="Office" BaseBGM="Crosswalk" HideLobbyMenu="LobbyMinimap">
+		<CameraPoint>
+			<Base CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnClickRosterIdle" FOV="45">
+				<CamPosition type="table" value="300, 870, 250"/>
+				<CamDirection type="table" value="0, -0.02, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="6300" InnerRange="100000" OuterRange="500"/>
+				<CharacterSlot>
+					<property PX="12.5" PY="10.5" PZ="72" DX="1" DY="-1" StartAni="Std" LoopAni="Std"/>
+				</CharacterSlot>
+			</Base>
+			<Mastery_Bar CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnLineupMemberObjectClicked" FOV="30" UseCharacterOutline="No">
+				<CamPosition type="table" value="300, 850, -175"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="200" InnerRange="100000" OuterRange="200"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="13.5" PY="10" PZ="72" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Mastery_Bar>
+			<Roster_Bar CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnLineupMemberObjectClicked" FOV="30" UseCharacterOutline="No">
+				<CamPosition type="table" value="300, 850, -175"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="200" InnerRange="100000" OuterRange="200"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="13.5" PY="10" PZ="72" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Roster_Bar>
+			<MemberInfo_Bar CharSlotCursorImage="TaharezLook/CancelLineup" OnClick="OnLineupMemberObjectClicked" FOV="30" UseCharacterOutline="No">
+				<CamPosition type="table" value="300, 850, -175"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="200" InnerRange="100000" OuterRange="200"/>
+				<DefaultCharSlot>
+					<property DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</DefaultCharSlot>
+				<CharacterSlot>
+					<property PX="13.5" PY="10" PZ="72" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</MemberInfo_Bar>
+		</CameraPoint>
+		<WayPoint>
+			<StartPosition type="table" value="53, 50, 2"/>
+		</WayPoint>
+	</class>
+	<class name="LandOfStart" Title="LandOfStart" Map="LandOfStart" LobbyMap="" LoadingKey="Lobby_LandOfStart" Mode="Office" DummyWorld="true">
+		<CameraPoint>
+			<Base CharSlotCursorImage="TaharezLook/NpcTalk" OnClick="OnClickRosterIdle" FOV="30">
+				<CamPosition type="table" value="100, 1400, 2070"/>
+				<CamDirection type="table" value="0, 0, -1"/>
+				<CamEnableDOF Enabled="true" FocusDist="6300" InnerRange="100000" OuterRange="500"/>
+				<CharacterSlot>
+					<property PX="16.75" PY="29.8" PZ="0" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="17.1" PY="29.6" PZ="0" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="16.35" PY="29.6" PZ="0" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="17.45" PY="29.8" PZ="0" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="16.01" PY="29.8" PZ="0" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="17.8" PY="29.6" PZ="0" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="15.75" PY="29.6" PZ="0" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+					<property PX="18.16" PY="29.8" PZ="0" DX="0" DY="1" StartAni="Select" LoopAni="SelectLoop"/>
+				</CharacterSlot>
+			</Base>
+		</CameraPoint>
+	</class>
+</idspace>

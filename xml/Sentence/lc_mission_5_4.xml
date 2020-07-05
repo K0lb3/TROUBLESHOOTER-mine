@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="lc_mission_5_4_19BblM" Value="[!Dashboard:Counter]앨리 과격파가 숨겨둔 상자 찾기"/>
+		<class name="lc_mission_5_4_uJs5c7" Value="[!Objective]앨리 과격파가 숨겨둔 상자 찾기"/>
+		<class name="lc_mission_5_4_LaHJ16" Value="[!Dialog][!speaker:Anne_Smile]이렇게 또 한 건 성공했네요.
+근데 시작할 때도 그랬지만...
+뭔가 조금 불안하네요."/>
+		<class name="lc_mission_5_4_Dow7Mn" Value="[!Dialog][!speaker:Sion_Normal]너무 쉽게 끝났어.
+심심한 엔딩이네."/>
+		<class name="lc_mission_5_4_lqet7F" Value="[!Dialog][!speaker:Albus_Smile]뭐.. 찾는데는 시간이 걸렸지만!
+이런 의뢰도 있어야지.
+상자 위치는 경찰에 넘기고 이제 돌아가자~"/>
+		<class name="lc_mission_5_4_py2I03" Value="[!Dialog][!speaker:Sion_Happy]오늘 저녁은 뭘 먹지?"/>
+		<class name="lc_mission_5_4_uPRHUP" Value="[!Dialog][!speaker:Anne_Think]어? 발소리?!
+나만 들린 건가?"/>
+		<class name="lc_mission_5_4_6rzt26" Value="[!Dialog][!speaker:Anne_Think]경비원이 순찰 돌지도 모르니 좀 서둘러야겠어요."/>
+		<class name="lc_mission_5_4_rwxOPO" Value="[!Dialog][!speaker:Anne_Think]어?"/>
+		<class name="lc_mission_5_4_sLsT7i" Value="[!Dialog][!speaker:Anne_Smile]휴...
+문소리가 난 줄 알았는데.
+잘못 들은 거네요."/>
+		<class name="lc_mission_5_4_106ZpP" Value="[!Dialog][!speaker:Anne_Think]상자 찾는 게 쉽지 않네요.
+분명 사람이 잘 안 가는 곳에 숨겼을 텐데..."/>
+		<class name="lc_mission_5_4_Ok5Ua7" Value="[!Dialog][!speaker:Anne_Think]경비원 순찰 시간을 알아보고 들어올 걸 그랬어요.
+영 신경이 쓰이네요."/>
+		<class name="lc_mission_5_4_H18CBk" Value="[!Dialog][!speaker:Anne_Normal]음.... 찾기 어려운 곳을 모두 찾아봤으면 반대로 찾기 쉬운 곳도 찾아봐야겠어요.
+다른 상자들을 찾아볼까요? 나무는 숲에 숨긴다잖아요."/>
+		<class name="lc_mission_5_4_08IES8" Value="[!Dialog][!speaker:Anne_Think]여긴 경비원이 없는 건가?
+이 정도면 순찰이라도 돌았을 텐데.."/>
+		<class name="lc_mission_5_4_4xTft0" Value="[!Dialog][!speaker:Anne_Normal]우리 괜히 떨었나 봐요.
+경비는 신경 쓰지 말고 꼼꼼히 찾아봐요."/>
+		<class name="lc_mission_5_4_WAv7vO" Value="[!Dialog][!speaker:Sion_Smile]오..
+앨리 과격파 놈들 돈도 많은가 본데?
+이런 근사한 사무실을 쓰고말이야."/>
+		<class name="lc_mission_5_4_JJ69eh" Value="[!Dialog][!speaker:Albus_Think]아마 위장용이겠지.
+도시장벽 밖에 굶고 있는 앨리인들이 한둘이 아닌데.
+이런 곳에 돈을 막 쓰지는 않겠지.
+아니면 이번일이 그만큼 중요한 일이거나."/>
+		<class name="lc_mission_5_4_63ra5c" Value="[!Dialog][!speaker:Anne_Think]순찰 도는 경비원도 있을 거에요.
+살짝 불안해요.
+우리 빨리 찾고 나가요!"/>
+		<class name="lc_mission_5_4_9XDtdR" Value="[!FrontMessage]상자를 찾았습니다!"/>
+		<class name="lc_mission_5_4_KA4zXn" Value="목표 확인"/>
+	</idspace>
+</idspaces>

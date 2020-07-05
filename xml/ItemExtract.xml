@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Extract">
+		<class name="All" Title="전체" Image="Icons/AllTab2" HoverImage="Icons/AllTab2_Hover" PushedImage="Icons/AllTab2_Pushed" Color="Combine_Yellow_Flat" Order="0"/>
+		<class name="Material" Title="재료" Image="Icons/MaterialTab" HoverImage="Icons/MaterialTab_Hover" PushedImage="Icons/MaterialTab_Pushed" Color="Combine_Magenta_Flat" Order="1"/>
+		<class name="Machine" Title="기계" Image="Icons/MachineTab" HoverImage="Icons/MachineTab_Hover" PushedImage="Icons/MachineTab_Pushed" Color="Combine_Red_Flat" Order="2"/>
+	</idspace>
+</idspaces>

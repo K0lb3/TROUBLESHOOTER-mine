@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Machine">
+		<schema>
+			<rule property="AbilityMasteryCount" type="calculated" default="Get_AbilityMasteryCount"/>
+			<rule property="AttackMasteryCount" type="calculated" default="Get_AttackMasteryCount"/>
+			<rule property="BasicMastery" type="string" default="None"/>
+			<rule property="BasicMasteryCount" type="calculated" default="Get_BasicMasteryCount"/>
+			<rule property="BonusAbilityMasteryCost" type="number" default="0"/>
+			<rule property="BonusAttackMasteryCost" type="number" default="0"/>
+			<rule property="BonusBasicMasteryCost" type="number" default="0"/>
+			<rule property="BonusDefenceMasteryCost" type="number" default="0"/>
+			<rule property="BonusSubMasteryCost" type="number" default="0"/>
+			<rule property="BonusTP" type="number" default="0"/>
+			<rule property="CalcRestoreCP" type="function" default="CalcRestoreCP_Machine"/>
+			<rule property="CharacterMasteries" type="linktable" target="SetCharacterMastery"/>
+			<rule property="ConditionState" type="string" default="Good"/>
+			<rule property="CP" type="number" default="120"/>
+			<rule property="CPRestoreRamainTime" type="function" default="Get_CPRestoreRamainTime_Machine"/>
+			<rule property="DefenceMasteryCount" type="calculated" default="Get_DefenceMasteryCount"/>
+			<rule property="EnableJobs" type="table" default=""/>
+			<rule property="Exp" type="number" default="0"/>
+			<rule property="RestExp" type="number" default="0"/>
+			<rule property="RestJobExp" type="number" default="0"/>
+			<rule property="LastMissionPlayTime" type="number" default="0"/>
+			<rule property="ExtraMaxAbilityMasteryCount" type="calculated" default="Get_ExtraMaxAbilityMasteryCount_PC"/>
+			<rule property="ExtraMaxAttackMasteryCount" type="calculated" default="Get_ExtraMaxAttackMasteryCount_PC"/>
+			<rule property="ExtraMaxBasicMasteryCount" type="calculated" default="Get_ExtraMaxBasicMasteryCount_PC"/>
+			<rule property="ExtraMaxDefenceMasteryCount" type="calculated" default="Get_ExtraMaxDefenceMasteryCount_PC"/>
+			<rule property="ExtraMaxSubMasteryCount" type="calculated" default="Get_ExtraMaxSubMasteryCount_PC"/>
+			<rule property="JobExp" type="number" default="0"/>
+			<rule property="GetEstimatedCP" type="function" default="GetEstimatedCP_Machine"/>
+			<rule property="Info" type="link" target="ObjectInfo" default="None"/>
+			<rule property="IsNew" type="bool" default="true"/>
+			<rule property="KillCount" type="number" default="0"/>
+			<rule property="Lv" type="number" default="1"/>
+			<rule property="JobLv" type="number" default="1"/>
+			<rule property="LastJobLv" type="number" default="0"/>
+			<rule property="MasteryBoard" type="link" target="PcMasteryBoard" default="Base"/>
+			<rule property="MasteryPopupMessage" type="string" default=""/>
+			<rule property="MasteryPopupMessageTarget" type="string" default=""/>
+			<rule property="MaxAbilityMasteryCost" type="calculated" default="Get_MaxAbilityMasteryCost_PC"/>
+			<rule property="MaxAbilityMasteryCount" type="calculated" default="Get_MaxMasteryCountByType_PC"/>
+			<rule property="MaxAttackMasteryCost" type="calculated" default="Get_MaxAttackMasteryCost_PC"/>
+			<rule property="MaxAttackMasteryCount" type="calculated" default="Get_MaxMasteryCountByType_PC"/>
+			<rule property="MaxBasicMasteryCost" type="calculated" default="Get_MaxBasicMasteryCost_PC"/>
+			<rule property="MaxBasicMasteryCount" type="calculated" default="Get_MaxMasteryCountByType_PC"/>
+			<rule property="MaxCP" type="number" default="120"/>
+			<rule property="MaxDefenceMasteryCost" type="calculated" default="Get_MaxDefenceMasteryCost_PC"/>
+			<rule property="MaxDefenceMasteryCount" type="calculated" default="Get_MaxMasteryCountByType_PC"/>
+			<rule property="MaxLv" type="number" default="32"/>
+			<rule property="MaxSubMasteryCost" type="calculated" default="Get_MaxSubMasteryCost_PC"/>
+			<rule property="MaxSubMasteryCount" type="calculated" default="Get_MaxMasteryCountByType_PC"/>
+			<rule property="MaxTP" type="calculated" default="Get_MaxTrainingPoint"/>
+			<rule property="Nickname" type="string" default=""/>
+			<rule property="Object" type="link" target="Object" default="None"/>
+			<rule property="OverChargeCP" type="calculated" default="Get_OverChargeCP_Machine"/>
+			<rule property="Profession" type="table" default=""/>
+			<rule property="ResetMasteryCount" type="number" default="0"/>
+			<rule property="ResetMasteryTime" type="number" default="0"/>
+			<rule property="RestoreCPPerMin" type="calculated" default="Get_RestoreCPPerMin_Machine"/>
+			<rule property="Salary" type="number" default="0"/>
+			<rule property="StartingMastery" type="table" default=""/>
+			<rule property="Stats" type="link" target="RosterStats" default="Stats"/>
+			<rule property="SubMasteryCount" type="calculated" default="Get_SubMasteryCount"/>
+			<rule property="TP" type="calculated" default="Get_TrainingPoint"/>
+			<rule property="UniqueMasteryCount" type="calculated" default="Get_UniqueMasteryCount"/>
+			<rule property="UseTime" type="number" default="0"/>
+			<rule property="IsNewClass" type="bool" default="false"/>
+			<rule property="NeedLevelAdjustment" type="bool" default="false"/>
+			<rule property="RosterType" type="string" default="Machine"/>
+			<rule property="RosterKey" type="string" default=""/>
+			<rule property="RosterTitle" type="string" default=""/>
+			<rule property="MachineType" type="link" target="MachineType" default="None"/>
+			<rule property="SceneScale" type="calculated" default="CalculatedProperty_Machine_SceneScale"/>
+			<rule property="ExpType" type="string" default="Beast"/>
+			<rule property="JobExpType" type="string" default="JobBeast"/>
+			<rule property="ActiveAbility" type="maptable" subtype="bool" target="Ability" default="false"/>
+			<rule property="SlotIndex" type="number" default="0"/>
+			<rule property="Base_MaxBasicMasteryCount" type="calculated" default="CalculatedProperty_Machine_BaseMaxMasteryCount"/>
+			<rule property="Base_MaxSubMasteryCount" type="calculated" default="CalculatedProperty_Machine_BaseMaxMasteryCount"/>
+			<rule property="Base_MaxAttackMasteryCount" type="calculated" default="CalculatedProperty_Machine_BaseMaxMasteryCount"/>
+			<rule property="Base_MaxDefenceMasteryCount" type="calculated" default="CalculatedProperty_Machine_BaseMaxMasteryCount"/>
+			<rule property="Base_MaxAbilityMasteryCount" type="calculated" default="CalculatedProperty_Machine_BaseMaxMasteryCount"/>
+			<rule property="OSType" type="string" default="None"/>
+			<rule property="CraftMastery" type="string" default="None"/>
+			<rule property="AIUpgradeMastery1" type="string" default="None"/>
+			<rule property="AIUpgradeMastery2" type="string" default="None"/>
+			<rule property="AIUpgradeMastery3" type="string" default="None"/>
+			<rule property="AIUpgradeStage" type="number" default="1"/>
+			<rule property="AIUpgradeMaxStage" type="number" default="4"/>
+			<rule property="CraftKey" type="string" default=""/>
+			<rule property="UnlockAbilityMasteryCount" type="calculated" default="Get_UnlockAbilityMasteryCost_Machine"/>
+			<rule property="UnlockAttackMasteryCount" type="calculated" default="Get_UnlockAttackMasteryCost_Machine"/>
+			<rule property="UnlockBasicMasteryCount" type="calculated" default="Get_UnlockBasicMasteryCost_Machine"/>
+			<rule property="UnlockDefenceMasteryCount" type="calculated" default="Get_UnlockDefenceMasteryCost_Machine"/>
+			<rule property="UnlockSubMasteryCount" type="calculated" default="Get_UnlockSubMasteryCost_Machine"/>
+			<rule property="Locked" type="bool" default="false"/>
+		</schema>
+		<class name="Machine" MachineType="Mon_DroneFrame_Rifle_Heat" Lv="1" OfficeSlot="99"/>
+	</idspace>
+	<idspace id="MachineCraftUniqueMastery">
+		<class name="MachineUnique_MaximumLoad" Type="MaximumLoad" Probability="20"/>
+		<class name="MachineUnique_MaxPower" Type="MaxPower" Probability="20"/>
+		<class name="MachineUnique_FrameModule" Type="FrameModule" Probability="20"/>
+		<class name="MachineUnique_SupportModule" Type="SupportModule" Probability="20"/>
+		<class name="MachineUnique_ComplementaryModule" Type="ComplementaryModule" Probability="20"/>
+		<class name="MachineUnique_SaftyModule" Type="SaftyModule" Probability="20"/>
+		<class name="MachineUnique_AIModule" Type="AIModule" Probability="20"/>
+		<class name="MachineUnique_MaxHP" Type="MaxHP" Probability="30"/>
+		<class name="MachineUnique_SightRange" Type="SightRange" Probability="30"/>
+		<class name="MachineUnique_MoveDist" Type="MoveDist" Probability="30"/>
+		<class name="MachineUnique_Speed" Type="Speed" Probability="30"/>
+		<class name="MachineUnique_AttackPower" Type="AttackPower" Probability="30"/>
+		<class name="MachineUnique_ESPPower" Type="ESPPower" Probability="30"/>
+		<class name="MachineUnique_Accuracy" Type="Accuracy" Probability="30"/>
+		<class name="MachineUnique_CriticalChance" Type="CriticalStrikeChance" Probability="30"/>
+		<class name="MachineUnique_CriticalDeal" Type="CriticalStrikeDeal" Probability="30"/>
+		<class name="MachineUnique_Armor" Type="Armor" Probability="30"/>
+		<class name="MachineUnique_Resistance" Type="Resistance" Probability="30"/>
+		<class name="MachineUnique_Block" Type="Block" Probability="30"/>
+		<class name="MachineUnique_Dodge" Type="Dodge" Probability="30"/>
+		<class name="MachineUnique_Overcharge" Type="Overcharge" Probability="10"/>
+		<class name="MachineUnique_LowEnergy" Type="LowEnergy" Probability="10"/>
+		<class name="MachineUnique_DealyCast" Type="DealyCast" Probability="10"/>
+		<class name="MachineUnique_StablePosture" Type="StablePosture" Probability="10"/>
+		<class name="MachineUnique_HighPosition" Type="HighPosition" Probability="10"/>
+		<class name="MachineUnique_Waiting" Type="Waiting" Probability="10"/>
+	</idspace>
+	<idspace id="MachineStatusRanges">
+		<class name="MaximumLoad" Min="0" Max="1000"/>
+		<class name="MaxPower" Min="0" Max="50"/>
+		<class name="FrameModule" Min="0" Max="10"/>
+		<class name="SupportModule" Min="0" Max="10"/>
+		<class name="ComplementaryModule" Min="0" Max="10"/>
+		<class name="SaftyModule" Min="0" Max="10"/>
+		<class name="AIModule" Min="0" Max="10"/>
+		<class name="MaxHP" Min="0" Max="9999"/>
+		<class name="MaxFuel" Min="0" Max="5000"/>
+		<class name="RegenFuel" Min="0" Max="100"/>
+		<class name="SightRange" Min="0" Max="20"/>
+		<class name="MoveDist" Min="0" Max="20"/>
+		<class name="Speed" Min="0" Max="200"/>
+		<class name="AttackPower" Min="0" Max="2500"/>
+		<class name="ESPPower" Min="0" Max="2500"/>
+		<class name="Accuracy" Min="0" Max="100"/>
+		<class name="CriticalStrikeChance" Min="0" Max="100"/>
+		<class name="CriticalStrikeDeal" Min="0" Max="500"/>
+		<class name="Armor" Min="0" Max="2500"/>
+		<class name="Resistance" Min="0" Max="2500"/>
+		<class name="Block" Min="0" Max="100"/>
+		<class name="Dodge" Min="0" Max="100"/>
+		<class name="SlashingResistance" Min="0" Max="999"/>
+		<class name="PiercingResistance" Min="0" Max="999"/>
+		<class name="BluntResistance" Min="0" Max="999"/>
+		<class name="FireResistance" Min="0" Max="999"/>
+		<class name="IceResistance" Min="0" Max="999"/>
+		<class name="LightningResistance" Min="0" Max="999"/>
+		<class name="EarthResistance" Min="0" Max="999"/>
+		<class name="WaterResistance" Min="0" Max="999"/>
+		<class name="WindResistance" Min="0" Max="999"/>
+	</idspace>
+	<idspace id="MachineAIUpgrade">
+		<class name="Windows" Order="1" Image="Mastery/Windows">
+			<AIUpgrade>
+				<property Type="Application_EnhancedPower" Lv="1"/>
+				<property Type="Application_EnhancedWeapon" Lv="1"/>
+				<property Type="Application_EnhancedSensor" Lv="1"/>
+				<property Type="Application_FuelControl" Lv="1"/>
+				<property Type="Application_PowerControl" Lv="2"/>
+				<property Type="Application_EnhancedArmor" Lv="2"/>
+				<property Type="Application_AutoCounterShoot" Lv="3"/>
+				<property Type="Application_EnhancedManager" Lv="3"/>
+			</AIUpgrade>
+		</class>
+		<class name="Linux" Order="2" Image="Mastery/Linux">
+			<AIUpgrade>
+				<property Type="Application_EnhancedPower" Lv="1"/>
+				<property Type="Application_MaximumLoadControl" Lv="1"/>
+				<property Type="Application_WeaponControl" Lv="1"/>
+				<property Type="Application_FuelControl" Lv="1"/>
+				<property Type="Application_PowerControl" Lv="2"/>
+				<property Type="Application_EnhancedFuel" Lv="2"/>
+				<property Type="Application_ControlLife" Lv="3"/>
+				<property Type="Application_EnhancedManager" Lv="3"/>
+			</AIUpgrade>
+		</class>
+		<class name="MacOS" Order="3" Image="Mastery/MacOS">
+			<AIUpgrade>
+				<property Type="Application_EnhancedPower" Lv="1"/>
+				<property Type="Application_EnhancedFrame" Lv="1"/>
+				<property Type="Application_EnhancedMove" Lv="1"/>
+				<property Type="Application_FuelControl" Lv="1"/>
+				<property Type="Application_PowerControl" Lv="2"/>
+				<property Type="Application_MoveControl" Lv="2"/>
+				<property Type="Application_AutoCounterShoot" Lv="3"/>
+				<property Type="Application_ControlLife" Lv="3"/>
+			</AIUpgrade>
+		</class>
+	</idspace>
+	<idspace id="MachineReinforcementType">
+		<class name="Normal">
+			<property Title="기본형" RequireJobLv="1" RequireItem="None" RequireItemCount="0" IsNew="true"/>
+			<property Title="개량형" RequireJobLv="16" RequireItem="Statement_Module" RequireItemCount="50" IsNew="true"/>
+			<property Title="강화형" RequireJobLv="16" RequireItem="Statement_Module" RequireItemCount="50" IsNew="true"/>
+			<property Title="완성형" RequireJobLv="16" RequireItem="Statement_Module" RequireItemCount="50" IsNew="true"/>
+		</class>
+	</idspace>
+	<idspace id="MachineSPType">
+		<class name="Heat" Order="1"/>
+		<class name="Info" Order="2"/>
+		<class name="Charge" Order="3"/>
+	</idspace>
+	<idspace id="MachineCategory">
+		<schema>
+			<rule property="Monster" type="link" target="Monster" default="None"/>
+			<rule property="Opened" type="bool" default="false"/>
+			<rule property="Desc" type="calculated" default="CalculatedProperty_TextFormater_Common"/>
+			<rule property="Desc_Format" type="calculated" default="CalculatedProperty_TextFormater_MachineCategoryFormat"/>
+		</schema>
+		<class name="Rifle" Opened="true" Order="1" CraftOrderKey="RF" MaxBasicMasteryCount="4" MaxSubMasteryCount="3" MaxAttackMasteryCount="3" MaxDefenceMasteryCount="3" MaxAbilityMasteryCount="3" Monster="Mon_DroneFrame_Rifle_Heat">
+			<SPType>
+				<property name="Heat" Type="Mon_DroneFrame_Rifle_Heat"/>
+				<property name="Info" Type="Mon_DroneFrame_Rifle_Info"/>
+				<property name="Charge" Type="Mon_DroneFrame_Rifle_Charge"/>
+			</SPType>
+		</class>
+		<class name="Flamethrower" Opened="true" Order="2" CraftOrderKey="FT" MaxBasicMasteryCount="4" MaxSubMasteryCount="3" MaxAttackMasteryCount="4" MaxDefenceMasteryCount="3" MaxAbilityMasteryCount="2" Monster="Mon_DroneFrame_Flamethrower_Heat">
+			<SPType>
+				<property name="Heat" Type="Mon_DroneFrame_Flamethrower_Heat"/>
+				<property name="Info" Type="Mon_DroneFrame_Flamethrower_Info"/>
+				<property name="Charge" Type="Mon_DroneFrame_Flamethrower_Charge"/>
+			</SPType>
+		</class>
+		<class name="Sprinkler" Opened="true" Order="3" CraftOrderKey="SK" MaxBasicMasteryCount="3" MaxSubMasteryCount="3" MaxAttackMasteryCount="3" MaxDefenceMasteryCount="4" MaxAbilityMasteryCount="3" Monster="Mon_DroneFrame_Sprinkler_Heat">
+			<SPType>
+				<property name="Heat" Type="Mon_DroneFrame_Sprinkler_Heat"/>
+				<property name="Info" Type="Mon_DroneFrame_Sprinkler_Info"/>
+				<property name="Charge" Type="Mon_DroneFrame_Sprinkler_Charge"/>
+			</SPType>
+		</class>
+		<class name="Transport" Opened="true" Order="4" CraftOrderKey="TP" MaxBasicMasteryCount="5" MaxSubMasteryCount="3" MaxAttackMasteryCount="2" MaxDefenceMasteryCount="3" MaxAbilityMasteryCount="3" Monster="Mon_DroneFrame_Transport_Heat">
+			<SPType>
+				<property name="Heat" Type="Mon_DroneFrame_Transport_Heat"/>
+				<property name="Info" Type="Mon_DroneFrame_Transport_Info"/>
+				<property name="Charge" Type="Mon_DroneFrame_Transport_Charge"/>
+			</SPType>
+		</class>
+		<class name="Speed" Opened="true" Order="5" CraftOrderKey="SD" MaxBasicMasteryCount="4" MaxSubMasteryCount="4" MaxAttackMasteryCount="3" MaxDefenceMasteryCount="3" MaxAbilityMasteryCount="2" Monster="Mon_DroneFrame_Speed_Heat">
+			<SPType>
+				<property name="Heat" Type="Mon_DroneFrame_Speed_Heat"/>
+				<property name="Info" Type="Mon_DroneFrame_Speed_Info"/>
+				<property name="Charge" Type="Mon_DroneFrame_Speed_Charge"/>
+			</SPType>
+		</class>
+		<class name="Enhanced" Opened="true" Order="6" CraftOrderKey="ED" MaxBasicMasteryCount="3" MaxSubMasteryCount="3" MaxAttackMasteryCount="4" MaxDefenceMasteryCount="4" MaxAbilityMasteryCount="2" Monster="Mon_DroneFrame_Enhanced_Heat">
+			<SPType>
+				<property name="Heat" Type="Mon_DroneFrame_Enhanced_Heat"/>
+				<property name="Info" Type="Mon_DroneFrame_Enhanced_Info"/>
+				<property name="Charge" Type="Mon_DroneFrame_Enhanced_Charge"/>
+			</SPType>
+		</class>
+		<class name="Bikron" Opened="false" Order="6" CraftOrderKey="ED" MaxBasicMasteryCount="4" MaxSubMasteryCount="4" MaxAttackMasteryCount="4" MaxDefenceMasteryCount="4" MaxAbilityMasteryCount="5" Monster="Mon_DroneFrame_Enhanced_Heat">
+			<SPType>
+				<property name="Heat" Type="Mon_DroneFrame_Enhanced_Heat"/>
+				<property name="Info" Type="Mon_DroneFrame_Enhanced_Info"/>
+				<property name="Charge" Type="Mon_DroneFrame_Enhanced_Charge"/>
+			</SPType>
+		</class>
+		<class name="Android" Opened="false" Order="7" CraftOrderKey="ED" MaxBasicMasteryCount="4" MaxSubMasteryCount="4" MaxAttackMasteryCount="4" MaxDefenceMasteryCount="4" MaxAbilityMasteryCount="5" Monster="Mon_DroneFrame_Enhanced_Heat">
+			<SPType>
+				<property name="Heat" Type="Mon_DroneFrame_Enhanced_Heat"/>
+				<property name="Info" Type="Mon_DroneFrame_Enhanced_Info"/>
+				<property name="Charge" Type="Mon_DroneFrame_Enhanced_Charge"/>
+			</SPType>
+		</class>
+	</idspace>
+	<idspace id="MachineType">
+		<schema>
+			<rule property="Monster" type="link" target="Monster" default="None"/>
+			<rule property="Category" type="link" target="MachineCategory" default="None"/>
+			<rule property="LobbyScale" type="number" default="1"/>
+			<rule property="MissionScale" type="number" default="1"/>
+			<rule property="AIUpgradeType" type="link" target="MachineReinforcementType" default="Normal"/>
+		</schema>
+		<class name="Mon_DroneFrame_Rifle_Heat" Category="Rifle" Monster="Mon_DroneFrame_Rifle_Heat" LobbySlot="Drone" LobbyScale="0.35">
+			<Masteries>
+				<property>
+					<property Name="Module_PriorInformation" RequireLv="1"/>
+					<property Name="Module_EnhancedAuxiliaryPower" RequireLv="8"/>
+					<property Name="Module_NightSensor" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_Rifle" RequireLv="1"/>
+					<property Name="Module_AddSP" RequireLv="8"/>
+					<property Name="Module_AuxiliaryWeapon" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_EnhancedWeaponAim" RequireLv="1"/>
+					<property Name="Module_MachineFury" RequireLv="8"/>
+					<property Name="Module_MoveOverwatch" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_ControlReactor" RequireLv="1"/>
+					<property Name="Module_Overcharge" RequireLv="8"/>
+					<property Name="Module_SupportingFire" RequireLv="16"/>
+				</property>
+			</Masteries>
+		</class>
+		<class name="Mon_DroneFrame_Flamethrower_Heat" Category="Flamethrower" Monster="Mon_DroneFrame_Flamethrower_Heat" LobbySlot="Drone" LobbyScale="0.35">
+			<Masteries>
+				<property>
+					<property Name="Module_FireResistance" RequireLv="1"/>
+					<property Name="Module_EnhancedAuxiliaryPower" RequireLv="8"/>
+					<property Name="Module_SubEngine" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_Flamethrower" RequireLv="1"/>
+					<property Name="Module_AddSP" RequireLv="8"/>
+					<property Name="Module_EnhancedWeaponPower" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_AdditionalComputer" RequireLv="1"/>
+					<property Name="Module_MachineFury" RequireLv="8"/>
+					<property Name="Module_CloseCheckFire" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_ApplicationEnhancement" RequireLv="1"/>
+					<property Name="Module_Overcharge" RequireLv="8"/>
+					<property Name="Module_FrameControl" RequireLv="16"/>
+				</property>
+			</Masteries>
+		</class>
+		<class name="Mon_DroneFrame_Sprinkler_Heat" Category="Sprinkler" Monster="Mon_DroneFrame_Sprinkler_Heat" LobbySlot="Drone" LobbyScale="0.35">
+			<Masteries>
+				<property>
+					<property Name="Module_WaterResistance" RequireLv="1"/>
+					<property Name="Module_EnhancedAuxiliaryPower" RequireLv="8"/>
+					<property Name="Module_AuxiliaryAIModule" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_IceLaser" RequireLv="1"/>
+					<property Name="Module_AddSP" RequireLv="8"/>
+					<property Name="Module_IceResistance" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_AuxiliarySupportModule" RequireLv="1"/>
+					<property Name="Module_MachineFury" RequireLv="8"/>
+					<property Name="Module_Cauterize" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_Retribution" RequireLv="1"/>
+					<property Name="Module_Overcharge" RequireLv="8"/>
+					<property Name="Module_EmergencyRescue" RequireLv="16"/>
+				</property>
+			</Masteries>
+		</class>
+		<class name="Mon_DroneFrame_Transport_Heat" Category="Transport" Monster="Mon_DroneFrame_Transport_Heat" LobbySlot="Drone" LobbyScale="0.35">
+			<Masteries>
+				<property>
+					<property Name="Module_Alternator" RequireLv="1"/>
+					<property Name="Module_EnhancedAuxiliaryPower" RequireLv="8"/>
+					<property Name="Module_AuxiliarySaftyModule" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_EscapeMove" RequireLv="1"/>
+					<property Name="Module_AddSP" RequireLv="8"/>
+					<property Name="Module_AssistEquipment" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_TacticalSupplementation" RequireLv="1"/>
+					<property Name="Module_MachineFury" RequireLv="8"/>
+					<property Name="Module_LoadLighten" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_EmergencyFuel" RequireLv="1"/>
+					<property Name="Module_Overcharge" RequireLv="8"/>
+					<property Name="Module_LoadManager" RequireLv="16"/>
+				</property>
+			</Masteries>
+		</class>
+		<class name="Mon_DroneFrame_Speed_Heat" Category="Speed" Monster="Mon_DroneFrame_Speed_Heat" LobbySlot="Drone" LobbyScale="0.35">
+			<Masteries>
+				<property>
+					<property Name="Module_Insulation" RequireLv="1"/>
+					<property Name="Module_EnhancedAuxiliaryPower" RequireLv="8"/>
+					<property Name="Module_Mobility" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_EnhancedHover" RequireLv="1"/>
+					<property Name="Module_AddSP" RequireLv="8"/>
+					<property Name="Module_Overclocking" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_AutoReload" RequireLv="1"/>
+					<property Name="Module_MachineFury" RequireLv="8"/>
+					<property Name="Module_Boosts_Speed" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_LightningReflexes" RequireLv="1"/>
+					<property Name="Module_Overcharge" RequireLv="8"/>
+					<property Name="Module_HighSpeedHover" RequireLv="16"/>
+				</property>
+			</Masteries>
+		</class>
+		<class name="Mon_DroneFrame_Enhanced_Heat" Category="Enhanced" Monster="Mon_DroneFrame_Enhanced_Heat" LobbySlot="Drone" LobbyScale="0.35">
+			<Masteries>
+				<property>
+					<property Name="Module_Durability" RequireLv="1"/>
+					<property Name="Module_EnhancedAuxiliaryPower" RequireLv="8"/>
+					<property Name="Module_Elasticity" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_TacticalSupplementation" RequireLv="1"/>
+					<property Name="Module_AddSP" RequireLv="8"/>
+					<property Name="Module_AuxiliaryComplementaryModule" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_HardArmor" RequireLv="1"/>
+					<property Name="Module_MachineFury" RequireLv="8"/>
+					<property Name="Module_ShockAbsorber" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_ApplicationControl" RequireLv="1"/>
+					<property Name="Module_Overcharge" RequireLv="8"/>
+					<property Name="Module_EnhancedFrame" RequireLv="16"/>
+				</property>
+			</Masteries>
+		</class>
+		<class name="Mon_DroneFrame_Rifle_Info" Category="Rifle" Monster="Mon_DroneFrame_Rifle_Info" LobbySlot="Drone" LobbyScale="0.35">
+			<Masteries>
+				<property>
+					<property Name="Module_PriorInformation" RequireLv="1"/>
+					<property Name="Module_PowerProvider" RequireLv="8"/>
+					<property Name="Module_NightSensor" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_Rifle" RequireLv="1"/>
+					<property Name="Module_SystemSecurity" RequireLv="8"/>
+					<property Name="Module_AuxiliaryWeapon" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_EnhancedWeaponAim" RequireLv="1"/>
+					<property Name="Module_DiskRadom" RequireLv="8"/>
+					<property Name="Module_MoveOverwatch" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_ControlReactor" RequireLv="1"/>
+					<property Name="Module_InformationJammer" RequireLv="8"/>
+					<property Name="Module_SupportingFire" RequireLv="16"/>
+				</property>
+			</Masteries>
+		</class>
+		<class name="Mon_DroneFrame_Flamethrower_Info" Category="Flamethrower" Monster="Mon_DroneFrame_Flamethrower_Info" LobbySlot="Drone" LobbyScale="0.35">
+			<Masteries>
+				<property>
+					<property Name="Module_FireResistance" RequireLv="1"/>
+					<property Name="Module_PowerProvider" RequireLv="8"/>
+					<property Name="Module_SubEngine" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_Flamethrower" RequireLv="1"/>
+					<property Name="Module_SystemSecurity" RequireLv="8"/>
+					<property Name="Module_EnhancedWeaponPower" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_AdditionalComputer" RequireLv="1"/>
+					<property Name="Module_DiskRadom" RequireLv="8"/>
+					<property Name="Module_CloseCheckFire" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_ApplicationEnhancement" RequireLv="1"/>
+					<property Name="Module_InformationJammer" RequireLv="8"/>
+					<property Name="Module_FrameControl" RequireLv="16"/>
+				</property>
+			</Masteries>
+		</class>
+		<class name="Mon_DroneFrame_Sprinkler_Info" Category="Sprinkler" Monster="Mon_DroneFrame_Sprinkler_Info" LobbySlot="Drone" LobbyScale="0.35">
+			<Masteries>
+				<property>
+					<property Name="Module_WaterResistance" RequireLv="1"/>
+					<property Name="Module_PowerProvider" RequireLv="8"/>
+					<property Name="Module_AuxiliaryAIModule" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_IceLaser" RequireLv="1"/>
+					<property Name="Module_SystemSecurity" RequireLv="8"/>
+					<property Name="Module_IceResistance" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_AuxiliarySupportModule" RequireLv="1"/>
+					<property Name="Module_DiskRadom" RequireLv="8"/>
+					<property Name="Module_Cauterize" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_Retribution" RequireLv="1"/>
+					<property Name="Module_InformationJammer" RequireLv="8"/>
+					<property Name="Module_EmergencyRescue" RequireLv="16"/>
+				</property>
+			</Masteries>
+		</class>
+		<class name="Mon_DroneFrame_Transport_Info" Category="Transport" Monster="Mon_DroneFrame_Transport_Info" LobbySlot="Drone" LobbyScale="0.35">
+			<Masteries>
+				<property>
+					<property Name="Module_Alternator" RequireLv="1"/>
+					<property Name="Module_PowerProvider" RequireLv="8"/>
+					<property Name="Module_AuxiliarySaftyModule" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_EscapeMove" RequireLv="1"/>
+					<property Name="Module_SystemSecurity" RequireLv="8"/>
+					<property Name="Module_AssistEquipment" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_TacticalSupplementation" RequireLv="1"/>
+					<property Name="Module_DiskRadom" RequireLv="8"/>
+					<property Name="Module_LoadLighten" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_EmergencyFuel" RequireLv="1"/>
+					<property Name="Module_InformationJammer" RequireLv="8"/>
+					<property Name="Module_LoadManager" RequireLv="16"/>
+				</property>
+			</Masteries>
+		</class>
+		<class name="Mon_DroneFrame_Speed_Info" Category="Speed" Monster="Mon_DroneFrame_Speed_Info" LobbySlot="Drone" LobbyScale="0.35">
+			<Masteries>
+				<property>
+					<property Name="Module_Insulation" RequireLv="1"/>
+					<property Name="Module_PowerProvider" RequireLv="8"/>
+					<property Name="Module_Mobility" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_EnhancedHover" RequireLv="1"/>
+					<property Name="Module_SystemSecurity" RequireLv="8"/>
+					<property Name="Module_Overclocking" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_AutoReload" RequireLv="1"/>
+					<property Name="Module_DiskRadom" RequireLv="8"/>
+					<property Name="Module_Boosts_Speed" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_LightningReflexes" RequireLv="1"/>
+					<property Name="Module_InformationJammer" RequireLv="8"/>
+					<property Name="Module_HighSpeedHover" RequireLv="16"/>
+				</property>
+			</Masteries>
+		</class>
+		<class name="Mon_DroneFrame_Enhanced_Info" Category="Enhanced" Monster="Mon_DroneFrame_Enhanced_Info" LobbySlot="Drone" LobbyScale="0.35">
+			<Masteries>
+				<property>
+					<property Name="Module_Durability" RequireLv="1"/>
+					<property Name="Module_PowerProvider" RequireLv="8"/>
+					<property Name="Module_Elasticity" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_TacticalSupplementation" RequireLv="1"/>
+					<property Name="Module_SystemSecurity" RequireLv="8"/>
+					<property Name="Module_AuxiliaryComplementaryModule" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_HardArmor" RequireLv="1"/>
+					<property Name="Module_DiskRadom" RequireLv="8"/>
+					<property Name="Module_ShockAbsorber" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_ApplicationControl" RequireLv="1"/>
+					<property Name="Module_InformationJammer" RequireLv="8"/>
+					<property Name="Module_EnhancedFrame" RequireLv="16"/>
+				</property>
+			</Masteries>
+		</class>
+		<class name="Mon_DroneFrame_Rifle_Charge" Category="Rifle" Monster="Mon_DroneFrame_Rifle_Charge" LobbySlot="Drone" LobbyScale="0.35">
+			<Masteries>
+				<property>
+					<property Name="Module_PriorInformation" RequireLv="1"/>
+					<property Name="Module_AuxiliaryPowerControl" RequireLv="8"/>
+					<property Name="Module_NightSensor" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_Rifle" RequireLv="1"/>
+					<property Name="Module_SubEnergy" RequireLv="8"/>
+					<property Name="Module_AuxiliaryWeapon" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_EnhancedWeaponAim" RequireLv="1"/>
+					<property Name="Module_GoodEnergy" RequireLv="8"/>
+					<property Name="Module_MoveOverwatch" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_ControlReactor" RequireLv="1"/>
+					<property Name="Module_ConversionOfFuel" RequireLv="8"/>
+					<property Name="Module_SupportingFire" RequireLv="16"/>
+				</property>
+			</Masteries>
+		</class>
+		<class name="Mon_DroneFrame_Flamethrower_Charge" Category="Flamethrower" Monster="Mon_DroneFrame_Flamethrower_Charge" LobbySlot="Drone" LobbyScale="0.35">
+			<Masteries>
+				<property>
+					<property Name="Module_FireResistance" RequireLv="1"/>
+					<property Name="Module_AuxiliaryPowerControl" RequireLv="8"/>
+					<property Name="Module_SubEngine" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_Flamethrower" RequireLv="1"/>
+					<property Name="Module_SubEnergy" RequireLv="8"/>
+					<property Name="Module_EnhancedWeaponPower" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_AdditionalComputer" RequireLv="1"/>
+					<property Name="Module_GoodEnergy" RequireLv="8"/>
+					<property Name="Module_CloseCheckFire" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_ApplicationEnhancement" RequireLv="1"/>
+					<property Name="Module_ConversionOfFuel" RequireLv="8"/>
+					<property Name="Module_FrameControl" RequireLv="16"/>
+				</property>
+			</Masteries>
+		</class>
+		<class name="Mon_DroneFrame_Sprinkler_Charge" Category="Sprinkler" Monster="Mon_DroneFrame_Sprinkler_Charge" LobbySlot="Drone" LobbyScale="0.35">
+			<Masteries>
+				<property>
+					<property Name="Module_WaterResistance" RequireLv="1"/>
+					<property Name="Module_AuxiliaryPowerControl" RequireLv="8"/>
+					<property Name="Module_AuxiliaryAIModule" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_IceLaser" RequireLv="1"/>
+					<property Name="Module_SubEnergy" RequireLv="8"/>
+					<property Name="Module_IceResistance" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_AuxiliarySupportModule" RequireLv="1"/>
+					<property Name="Module_GoodEnergy" RequireLv="8"/>
+					<property Name="Module_Cauterize" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_Retribution" RequireLv="1"/>
+					<property Name="Module_ConversionOfFuel" RequireLv="8"/>
+					<property Name="Module_EmergencyRescue" RequireLv="16"/>
+				</property>
+			</Masteries>
+		</class>
+		<class name="Mon_DroneFrame_Transport_Charge" Category="Transport" Monster="Mon_DroneFrame_Transport_Charge" LobbySlot="Drone" LobbyScale="0.35">
+			<Masteries>
+				<property>
+					<property Name="Module_Alternator" RequireLv="1"/>
+					<property Name="Module_AuxiliaryPowerControl" RequireLv="8"/>
+					<property Name="Module_AuxiliarySaftyModule" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_EscapeMove" RequireLv="1"/>
+					<property Name="Module_SubEnergy" RequireLv="8"/>
+					<property Name="Module_AssistEquipment" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_TacticalSupplementation" RequireLv="1"/>
+					<property Name="Module_GoodEnergy" RequireLv="8"/>
+					<property Name="Module_LoadLighten" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_EmergencyFuel" RequireLv="1"/>
+					<property Name="Module_ConversionOfFuel" RequireLv="8"/>
+					<property Name="Module_LoadManager" RequireLv="16"/>
+				</property>
+			</Masteries>
+		</class>
+		<class name="Mon_DroneFrame_Speed_Charge" Category="Speed" Monster="Mon_DroneFrame_Speed_Charge" LobbySlot="Drone" LobbyScale="0.35">
+			<Masteries>
+				<property>
+					<property Name="Module_Insulation" RequireLv="1"/>
+					<property Name="Module_AuxiliaryPowerControl" RequireLv="8"/>
+					<property Name="Module_Mobility" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_EnhancedHover" RequireLv="1"/>
+					<property Name="Module_SubEnergy" RequireLv="8"/>
+					<property Name="Module_Overclocking" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_AutoReload" RequireLv="1"/>
+					<property Name="Module_GoodEnergy" RequireLv="8"/>
+					<property Name="Module_Boosts_Speed" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_LightningReflexes" RequireLv="1"/>
+					<property Name="Module_ConversionOfFuel" RequireLv="8"/>
+					<property Name="Module_HighSpeedHover" RequireLv="16"/>
+				</property>
+			</Masteries>
+		</class>
+		<class name="Mon_DroneFrame_Enhanced_Charge" Category="Enhanced" Monster="Mon_DroneFrame_Enhanced_Charge" LobbySlot="Drone" LobbyScale="0.35">
+			<Masteries>
+				<property>
+					<property Name="Module_Durability" RequireLv="1"/>
+					<property Name="Module_AuxiliaryPowerControl" RequireLv="8"/>
+					<property Name="Module_Elasticity" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_TacticalSupplementation" RequireLv="1"/>
+					<property Name="Module_SubEnergy" RequireLv="8"/>
+					<property Name="Module_AuxiliaryComplementaryModule" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_HardArmor" RequireLv="1"/>
+					<property Name="Module_GoodEnergy" RequireLv="8"/>
+					<property Name="Module_ShockAbsorber" RequireLv="16"/>
+				</property>
+				<property>
+					<property Name="Module_ApplicationControl" RequireLv="1"/>
+					<property Name="Module_ConversionOfFuel" RequireLv="8"/>
+					<property Name="Module_EnhancedFrame" RequireLv="16"/>
+				</property>
+			</Masteries>
+		</class>
+	</idspace>
+</idspaces>

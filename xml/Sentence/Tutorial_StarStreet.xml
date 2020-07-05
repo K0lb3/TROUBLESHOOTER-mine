@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Tutorial_StarStreet_xboLNZ" Value="[!Dashboard:Counter]아군 방어선 병력 수"/>
+		<class name="Tutorial_StarStreet_goNxpj" Value="[!Dashboard:Counter]적 방어선 병력 수"/>
+		<class name="Tutorial_StarStreet_D6JmMQ" Value="[!Dashboard:ObjectiveMarker]적이 해당 지역으로 진입했을 때, 해당 방어선의 경찰 병력이 모두 전투 불능이면 패배합니다."/>
+		<class name="Tutorial_StarStreet_wiBF0y" Value="[!Dashboard:ObjectiveMarker]아군이 해당 지역으로 진입했을 때, 해당 방어선의 적 병력이 모두 전투 불능이면 승리합니다."/>
+		<class name="Tutorial_StarStreet_qm6kxN" Value="[!Dashboard:Counter]남은 적 저격수 수"/>
+		<class name="Tutorial_StarStreet_SvXonV" Value="[!VictoryCondition]별빛 거리를 탈환하시오."/>
+		<class name="Tutorial_StarStreet_1PtXKv" Value="[!Objective]적 방어선을 돌파하시오."/>
+		<class name="Tutorial_StarStreet_OV4SD2" Value="[!Objective]적 저격수 병력을 무력화하시오."/>
+		<class name="Tutorial_StarStreet_n00KTM" Value="[!Title]힘겨루기"/>
+		<class name="Tutorial_StarStreet_UdWp6s" Value="[!Title]별빛 거리 1번가"/>
+		<class name="Tutorial_StarStreet_yALKxH" Value="[!Subtitle][!speaker:EmptySubTitle_]끊임없이 발생하는 백호파의 폭력 사건."/>
+		<class name="Tutorial_StarStreet_RrJBdT" Value="[!Subtitle][!speaker:EmptySubTitle_]도시를 가득 메우는 붉은 화염"/>
+		<class name="Tutorial_StarStreet_pASsMZ" Value="[!Subtitle][!speaker:EmptySubTitle_]하루도 쉬지 않고 울려대는 경찰 사이렌."/>
+		<class name="Tutorial_StarStreet_pF3l9b" Value="[!Subtitle][!speaker:EmptySubTitle_]바람장벽 경찰청은 동시다발적으로 일어나는 백호파의 범죄를 저지하기 위해 동분서주한다."/>
+		<class name="Tutorial_StarStreet_j8Ut6s" Value="[!Subtitle][!speaker:EmptySubTitle_]하지만 사건 현장이 넓어지고 과격해지면서..."/>
+		<class name="Tutorial_StarStreet_SUOT0o" Value="[!Subtitle][!speaker:EmptySubTitle_]경찰력이 적절한 시기에 도움을 주지 못하는 지역이 늘어난다."/>
+		<class name="Tutorial_StarStreet_uihnKJ" Value="[!Subtitle][!speaker:EmptySubTitle_]시민들은 백호파를 미워하는 만큼이나 자신을 지켜주지 못하는 경찰들을 원망한다."/>
+		<class name="Tutorial_StarStreet_GjkvaP" Value="[!Subtitle][!speaker:EmptySubTitle_][colour=&apos;FFFFAA00&apos;]&apos;모든 것은 경찰이 무능하기 때문이야.&apos;"/>
+		<class name="Tutorial_StarStreet_Wolzch" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Joshua_Normal]이 불길. 이 소리. 오랜만이군."/>
+		<class name="Tutorial_StarStreet_TmfAUK" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]아마도 이번 불길은 쉽게 꺼지지 않을 것이다."/>
+		<class name="Tutorial_StarStreet_9Ppfr6" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]상황은 다르지만 10년 전 못지않겠지."/>
+		<class name="Tutorial_StarStreet_bHE3wy" Value="[!Dialog][!speaker:Gangster_WhiteTigerSniper_Mert_Normal]그나저나 경찰 녀석들 제법인데?"/>
+		<class name="Tutorial_StarStreet_1QMD6W" Value="[!Dialog][!speaker:Gangster_WhiteTigerSniper_Mert_Normal]누가 지휘하는 거야? 아이작인가? 제인인가?"/>
+		<class name="Tutorial_StarStreet_98VVWn" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]$CompanyName$."/>
+		<class name="Tutorial_StarStreet_umcgLB" Value="[!Dialog][!speaker:Gangster_WhiteTigerSniper_Mert_Normal]응? 뭐냐? 그 이상한 이름은?"/>
+		<class name="Tutorial_StarStreet_W1ssFw" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]성난 황소를 무너뜨린 트러블슈터 회사다."/>
+		<class name="Tutorial_StarStreet_nzsTGl" Value="[!Dialog][!speaker:Gangster_WhiteTigerSniper_Mert_Normal]으음? 그 소문은 과장된 것이 아니었던가?"/>
+		<class name="Tutorial_StarStreet_NZSlQi" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Joshua_Normal]나도 그렇게 생각했었다."/>
+		<class name="Tutorial_StarStreet_4hgxaW" Value="[!Dialog][!speaker:Gangster_WhiteTigerSniper_Mert_Normal]했었다? 그 말은..."/>
+		<class name="Tutorial_StarStreet_ACh0XX" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Joshua_Normal]최근 그 녀석들과 만났다. 젊고 몇 안 되지만 감당하기 어려웠지."/>
+		<class name="Tutorial_StarStreet_fNw0Kk" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Joshua_Normal]10년 전 &apos;실버라이닝&apos; 괴물들이 겹쳐 보이더군."/>
+		<class name="Tutorial_StarStreet_3v5G2O" Value="[!Dialog][!speaker:Gangster_WhiteTigerSniper_Mert_Normal]그렇게 높이 평가할 녀석들이란 말인가? 믿기지 않는군."/>
+		<class name="Tutorial_StarStreet_CVSQ9i" Value="[!Dialog][!speaker:Gangster_WhiteTigerSniper_Mert_Normal]정말 그런 녀석들이라면 여기서 우리에게 발목 잡히고 있진 않겠지."/>
+		<class name="Tutorial_StarStreet_CN8tTe" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Joshua_Normal]아직은 아닐지 몰라. 하지만 분명 우리의 큰 걸림돌이 될 녀석들이다."/>
+		<class name="Tutorial_StarStreet_Sj9AMQ" Value="[!Dialog][!speaker:Gangster_WhiteTigerSniper_Mert_Normal]그렇게 신경쓰이면 이런 전면전이 아닌 방법도 많지 않은가?"/>
+		<class name="Tutorial_StarStreet_Ruv0Hc" Value="[!Dialog][!speaker:Gangster_WhiteTigerSniper_Mert_Normal]&apos;실버라이닝&apos;의 너구리 &apos;돈&apos;을 길들이는 것처럼..."/>
+		<class name="Tutorial_StarStreet_Y7bxX4" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]보스의 명령은 &apos;공포&apos;를 위한 &apos;혼란&apos;을 만드는 것이다."/>
+		<class name="Tutorial_StarStreet_tcI90G" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]&apos;혼란&apos;을 만들기 위해선 시민들이 기댈 &apos;희망&apos;이 있는 것이 좋겠지."/>
+		<class name="Tutorial_StarStreet_kbQUJS" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]진정한 &apos;혼란&apos;은 &apos;희망&apos;이 꺼져버렸을 때 나오는 것이니까..."/>
+		<class name="Tutorial_StarStreet_3zS3mP" Value="[!Dialog][!speaker:Gangster_WhiteTigerSniper_Mert_Normal]자네의 미학은 알다가도 모르겠군."/>
+		<class name="Tutorial_StarStreet_9LhIU3" Value="[!Dialog][!speaker:Gangster_WhiteTigerSniper_Mert_Normal]하지만 자네가 백호의 두뇌다. 보스가 자네를 신임하는 한 자네를 따르지."/>
+		<class name="Tutorial_StarStreet_ZdPUBX" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Joshua_Normal]다들 말이 많아. 나이가 들었군."/>
+		<class name="Tutorial_StarStreet_FjIy9z" Value="[!Dialog][!speaker:Gangster_WhiteTigerSniper_Mert_Normal]이러고 있으니 10년 전 그 &apos;실버라이닝&apos; 그 괴물들과의 전면전이 생각나는군."/>
+		<class name="Tutorial_StarStreet_ZMvbco" Value="[!Dialog][!speaker:Gangster_WhiteTigerSword_Joshua_Normal]무력하기 그지없었던 싸움이었지."/>
+		<class name="Tutorial_StarStreet_4au1o6" Value="[!Dialog][!speaker:Gangster_WhiteTigerSniper_Mert_Normal]그래. 시원하게 패배했지."/>
+		<class name="Tutorial_StarStreet_HDPQPe" Value="[!Dialog][!speaker:Gangster_WhiteTigerThin_Kevin_Normal]쓸데없는 소리. 결국 이 지구를 지배한 건 우리다."/>
+		<class name="Tutorial_StarStreet_x6mMA0" Value="[!Title]사건 발생 1시간째.."/>
+		<class name="Tutorial_StarStreet_N7j95k" Value="[!Title]별빛 거리 남쪽 진입로"/>
+		<class name="Tutorial_StarStreet_EPp1ZN" Value="[!Subtitle][!speaker:EmptySubTitle_]메트로디움 지구 별빛 거리."/>
+		<class name="Tutorial_StarStreet_xGFFhR" Value="[!Subtitle][!speaker:EmptySubTitle_]바람장벽 경찰청으로 이어지는 중요 경로 중 하나다."/>
+		<class name="Tutorial_StarStreet_uzlezf" Value="[!Subtitle][!speaker:EmptySubTitle_]중요 경로에서 벌어지는 시가전."/>
+		<class name="Tutorial_StarStreet_EzSJsf" Value="[!Subtitle][!speaker:EmptySubTitle_]필연적으로 경찰청으로 복귀를 반복해야 하는 발할라 경찰들은..."/>
+		<class name="Tutorial_StarStreet_tdI0QM" Value="[!Subtitle][!speaker:EmptySubTitle_]이러한 시가전으로 인해 기동력을 빼앗긴다."/>
+		<class name="Tutorial_StarStreet_VCmu1i" Value="[!Subtitle][!speaker:EmptySubTitle_]결국 본청으로 복귀할 수 없는 경찰 병력들은 해당 현장에 다시 투입된다."/>
+		<class name="Tutorial_StarStreet_OowgmH" Value="[!Subtitle][!speaker:EmptySubTitle_]경찰들의 피로는 누적되고 지휘 체계는 혼란에 빠진다."/>
+		<class name="Tutorial_StarStreet_lpblyD" Value="[!Dialog]백호파와 경찰 병력의 교전이 시작한 지 1시간."/>
+		<class name="Tutorial_StarStreet_X9BUP7" Value="[!Dialog]백호파의 거침없는 공세에 금방이라도 무너질 것 같았던 현장 상황은 제인 경감의 분대와 트러블슈터 $CompanyName$의 참전으로 교착 상태가 되었다."/>
+		<class name="Tutorial_StarStreet_ZjCzIK" Value="[!Dialog][!speaker:Anne_Sorrow]정신 차리고 조금만 참으세요!"/>
+		<class name="Tutorial_StarStreet_AKZnfF" Value="[!Dialog]교착 상태가 이어지자 가장 바쁜 사람은 앤이었다."/>
+		<class name="Tutorial_StarStreet_6M8xfL" Value="[!Dialog][!speaker:Sion_Stare]&apos;빨리 사건 해결을 하지 못하면 앤이 지쳐버리겠는걸...&apos;"/>
+		<class name="Tutorial_StarStreet_4fBatC" Value="[!Dialog]아이린의 눈에 들어온 백호파 3인방..."/>
+		<class name="Tutorial_StarStreet_krYU2P" Value="[!Dialog][!speaker:Irene_Fury]저 녀석들..."/>
+		<class name="Tutorial_StarStreet_4IuAgt" Value="[!Dialog][!speaker:Irene_Fury]뻔히 보이는 곳에서 내려다보고 있다니..."/>
+		<class name="Tutorial_StarStreet_dNRASN" Value="[!Dialog]혼란스러운 상황에서도 묵묵히 현장을 지켜보고 있는 헤이싱."/>
+		<class name="Tutorial_StarStreet_zWXk30" Value="[!Dialog][!speaker:VHPD_Jane_Angry]......"/>
+		<class name="Tutorial_StarStreet_Zz7saP" Value="[!Dialog][!speaker:Heissing_Smile]&apos;이렇게 끌려다녀서야...무의미한 소모전이군.&apos;"/>
+		<class name="Tutorial_StarStreet_qO8Vw2" Value="[!Dialog]몇 차례의 교전 후 소강상태."/>
+		<class name="Tutorial_StarStreet_XM4IzR" Value="[!Dialog]백호파와 경찰 양쪽 모두 다음 교전이 이 거리에서의 승부를 결정하리라는 것을 예감했다."/>
+		<class name="Tutorial_StarStreet_W34cDv" Value="[!Dialog][!speaker:VHPD_Jane_Angry]이 방어선마저 뚫렸다면 거리를 탈환할 기회조차 없었겠지. 생각만 해도 끔찍하군."/>
+		<class name="Tutorial_StarStreet_pisJrC" Value="[!Dialog][!speaker:VHPD_Jane_Normal]제때 도착해서 고맙다. $CompanyName$."/>
+		<class name="Tutorial_StarStreet_lxT1RF" Value="[!Dialog][!speaker:Albus_Serious]제인 경감님의 분대가 오지 않았다면 저희로도 무리였을 겁니다."/>
+		<class name="Tutorial_StarStreet_SJcgVS" Value="[!Dialog][!speaker:VHPD_Jane_Normal]자네들이 버텨냈기에 만들어낸 기회다."/>
+		<class name="Tutorial_StarStreet_msAqZ8" Value="[!Dialog][!speaker:VHPD_Jane_Normal]이대로 우리 분대는 자네 분대와 합류한다."/>
+		<class name="Tutorial_StarStreet_EldWDB" Value="[!Dialog][!speaker:VHPD_Jane_Normal]본청으로 향하는 길을 열어줘. $CompanyName$."/>
+		<class name="Tutorial_StarStreet_xwZrpt" Value="[!Dialog][!speaker:Albus_Serious]네. 꼭 본청으로 복귀하는 길을 열도록 하겠습니다."/>
+		<class name="Tutorial_StarStreet_FqDMeb" Value="[!Dialog][!speaker:VHPD_Jane_Angry]그럼 시간이 없으니 현재 보고된 현장 상황을 설명한다."/>
+		<class name="Tutorial_StarStreet_FXHuib" Value="[!Dialog][!speaker:VHPD_Jane_Angry]북쪽 진입로는 현재 백호파 녀석들이 방어선을 구축하고 있지."/>
+		<class name="Tutorial_StarStreet_3wStIA" Value="[!Dialog][!speaker:VHPD_Jane_Angry]본청으로 가기 위해서는 우리가 돌파해야만 하는 곳이지."/>
+		<class name="Tutorial_StarStreet_qtuF65" Value="[!Dialog][!speaker:VHPD_Jane_Normal]북쪽 진입로를 향하는 가장 빠른 주도로는 육교 밑의 사고 차량으로 인하여 진입할 수 없는 상태야."/>
+		<class name="Tutorial_StarStreet_GFuW3z" Value="[!Dialog][!speaker:VHPD_Jane_Normal]어쩔 수 없이 우회로를 찾아 임무를 수행해야 해"/>
+		<class name="Tutorial_StarStreet_le7p95" Value="[!Dialog][!speaker:Albus_Think]시가전은 피할 수 없겠군요."/>
+		<class name="Tutorial_StarStreet_hx2wk4" Value="[!Dialog][!speaker:VHPD_Jane_Smile]녀석들이 노리는 바겠지."/>
+		<class name="Tutorial_StarStreet_K4rfFj" Value="[!Dialog][!speaker:VHPD_Jane_Normal]그리고 저격수들이 배치된 것을 확인했다."/>
+		<class name="Tutorial_StarStreet_BYSBCQ" Value="[!Dialog][!speaker:VHPD_Jane_Normal]거리의 탈환을 위해서는 방어선 돌파는 물론 저격수들을 배제할 필요가 있어."/>
+		<class name="Tutorial_StarStreet_CBZ37C" Value="[!Dialog][!speaker:VHPD_Jane_Smile] 그렇지 않았다간 기껏 탈환한 거리를 손쉽게 내주게 될 거야."/>
+		<class name="Tutorial_StarStreet_yT7YIg" Value="[!Dialog][!speaker:Albus_Serious]알겠습니다. 저격수를 최대한 배제하면서 방어선을 돌파하도록 하겠습니다."/>
+		<class name="Tutorial_StarStreet_MhovsH" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Tutorial_StarStreet_lDDfNB" Value="[!VictoryCondition]적 방어선 돌파"/>
+		<class name="Tutorial_StarStreet_k04qbH" Value="[!VictoryCondition]적 방어선을 돌파하시오."/>
+		<class name="Tutorial_StarStreet_0tZLyB" Value="[!VictoryCondition]적 저격수 병력을 무력화하시오."/>
+		<class name="Tutorial_StarStreet_biSEwD" Value="[!Ignore][!Title]안하무인 조슈아"/>
+		<class name="Tutorial_StarStreet_11Mb5f" Value="[!Ignore][!Title]백호파 행동대장"/>
+		<class name="Tutorial_StarStreet_FlnVFu" Value="[!Ignore][!BalloonChat][!speaker:Joshua]천상천하 유아독존!!"/>
+		<class name="Tutorial_StarStreet_GleRja" Value="[!Ignore][!FrontMessage]죠슈아가 광분 상태가 되었습니다."/>
+		<class name="Tutorial_StarStreet_lnhtQw" Value="[!Ignore][!BalloonChat][!speaker:Joshua]내 분노가 너희를 멸하리라!!"/>
+		<class name="Tutorial_StarStreet_9pqfqv" Value="[!Ignore][!FrontMessage]조슈아가 과충전 상태가 되었습니다."/>
+		<class name="Tutorial_StarStreet_vIgLRX" Value="[!Ignore][!BalloonChat][!speaker:Joshua]찰나의 순간이 모든 것을 결정지으리라!"/>
+		<class name="Tutorial_StarStreet_dg4uJ0" Value="[!Ignore][!FrontMessage]조슈아가 가속 상태가 되었습니다."/>
+		<class name="Tutorial_StarStreet_kJv2bq" Value="[!Ignore][!FrontMessage]조슈아가 광분 상태가 되었습니다."/>
+		<class name="Tutorial_StarStreet_Ok4xY9" Value="[!Ignore][!Title]잔인한 케빈"/>
+		<class name="Tutorial_StarStreet_urbvcJ" Value="[!Ignore][!Title]백호파 간부"/>
+		<class name="Tutorial_StarStreet_QZReZm" Value="[!Ignore][!BalloonChat][!speaker:Kevin]하찮은 것들..."/>
+		<class name="Tutorial_StarStreet_xjYqPi" Value="[!Ignore][!FrontMessage]케빈이 분노 상태가 되었습니다."/>
+		<class name="Tutorial_StarStreet_Q4YqoC" Value="[!Ignore][!Title]일격 필살의 머트"/>
+		<class name="Tutorial_StarStreet_Zo1GF9" Value="[!Ignore][!Title]백호파 저격수 리더"/>
+		<class name="Tutorial_StarStreet_dObmQI" Value="[!Ignore][!BalloonChat][!speaker:Mert]이 곳을 지배하는 것은 백호다."/>
+		<class name="Tutorial_StarStreet_3r3FEO" Value="[!Ignore][!FrontMessage]머트가 평정 상태가 되었습니다."/>
+		<class name="Tutorial_StarStreet_4p7cow" Value="[!Ignore][!BalloonChat][!speaker:Kevin]자. 청소시간이다."/>
+		<class name="Tutorial_StarStreet_j2I9LT" Value="[!Ignore][!FrontMessage]케빈이 과충전 상태가 되었습니다."/>
+		<class name="Tutorial_StarStreet_PymmAb" Value="[!Ignore][!BalloonChat][!speaker:Kevin]다 쓸어 내버려!!"/>
+		<class name="Tutorial_StarStreet_ub24Dr" Value="[!Ignore][!FrontMessage]케빈이 분노 상태가 되었습니다."/>
+		<class name="Tutorial_StarStreet_T73xW8" Value="[!Ignore][!BalloonChat][!speaker:Mert]10년 동안 이 곳을 지배한 백호다."/>
+		<class name="Tutorial_StarStreet_hG69qB" Value="[!Ignore][!FrontMessage]머트가 과충전 상태가 되었습니다."/>
+		<class name="Tutorial_StarStreet_WYjr5C" Value="[!Ignore][!BalloonChat][!speaker:Mert]다음 10년도 우리가 지배한다."/>
+		<class name="Tutorial_StarStreet_tnRoxL" Value="[!Ignore][!FrontMessage]머트가 평정 상태가 되었습니다."/>
+		<class name="Tutorial_StarStreet_of9Vjz" Value="[!BalloonChat]이곳은 백호의 땅이다!"/>
+		<class name="Tutorial_StarStreet_0L8hVn" Value="[!BalloonChat][!speaker:Joshua]다들 반격의 시간이다!!"/>
+		<class name="Tutorial_StarStreet_3fb1fX" Value="[!BalloonChat][!speaker:Kevin]뭐하나! 더 밀어붙여!"/>
+		<class name="Tutorial_StarStreet_x47SfO" Value="[!BalloonChat][!speaker:Mert]이 틈이다. 밀고 올라가라!"/>
+		<class name="Tutorial_StarStreet_OF73At" Value="[!Subtitle][!speaker:EmptySubTitle_]방어선이 무너지고 저격수들이 배제되자..."/>
+		<class name="Tutorial_StarStreet_TXIxNi" Value="[!Subtitle][!speaker:EmptySubTitle_]백호파는 빠르게 현장을 이탈하였다."/>
+		<class name="Tutorial_StarStreet_DUUjnC" Value="[!Subtitle][!speaker:EmptySubTitle_]하지만 현장의 수습은 생각보다 오래 걸렸다."/>
+		<class name="Tutorial_StarStreet_Cok05S" Value="[!Dialog][!speaker:VHPD_Jane_Normal]미안하다."/>
+		<class name="Tutorial_StarStreet_fpohlI" Value="[!Dialog][!speaker:VHPD_Jane_Smile]아이작이 떠난 뒤로 지휘 체계가 엉망이다. 이해 바란다."/>
+		<class name="Tutorial_StarStreet_wnuRkv" Value="[!Dialog][!speaker:Albus_Disappoint]아이작 경감님은 아직도 복귀하시지 못하신 건가요?"/>
+		<class name="Tutorial_StarStreet_Y4wNqa" Value="[!Dialog][!speaker:VHPD_Jane_Angry]&apos;아이작 녀석...&apos;"/>
+		<class name="Tutorial_StarStreet_flAQso" Value="[!Title]일주일 전"/>
+		<class name="Tutorial_StarStreet_C7WO95" Value="[!Title]바람장벽 경찰청"/>
+		<class name="Tutorial_StarStreet_KKziHt" Value="[!Dialog]&apos;스푼교&apos; 토벌 과정에서 민간인을 동원하고 심지어 부상자를 낸 책임으로 정직 1개월 처분을 받았던 아이작."/>
+		<class name="Tutorial_StarStreet_jR1wTY" Value="[!Dialog]발할라 언론에서는 그를 사건 해결 능력이 없는 무능한 경찰의 대표로 보도하였다."/>
+		<class name="Tutorial_StarStreet_UydLRJ" Value="[!Dialog]정직 1개월 처분은 금세 지나갔지만 복귀한 그에게 주어진 것은 기동대의 임무가 아닌 교통계의 임무였다."/>
+		<class name="Tutorial_StarStreet_FyxfRW" Value="[!Dialog]경찰청의 고위 간부들은 더는 언론에 경찰청이 공격받을 먹잇감을 주고 싶지 않았기 때문이었다."/>
+		<class name="Tutorial_StarStreet_jOQco3" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Normal]10년인가..."/>
+		<class name="Tutorial_StarStreet_wFn3Vs" Value="[!Dialog][!speaker:VHPD_Jane_Angry]그래서 결국 결심한 건가?"/>
+		<class name="Tutorial_StarStreet_1BcDuG" Value="[!Dialog][!speaker:VHPD_Jane_Angry]10년 동안 버텨놓고?"/>
+		<class name="Tutorial_StarStreet_873tLM" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Normal]10년이나 지났네. 그러니 포기할 수 있게 된 거지."/>
+		<class name="Tutorial_StarStreet_BHYf2F" Value="[!Dialog][!speaker:VHPD_Jane_Rage]정말 개판이군."/>
+		<class name="Tutorial_StarStreet_god6GX" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Smile]자네라면 충분히 나보다 더 잘해 낼걸세."/>
+		<class name="Tutorial_StarStreet_bduFDF" Value="[!Dialog][!speaker:VHPD_Jane_Rage]웃지 마!"/>
+		<class name="Tutorial_StarStreet_L1gm3H" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Normal]그리고 $CompanyName$ 같은 트러블슈터도 있네. 그들은 많은 도움이 될 거야. "/>
+		<class name="Tutorial_StarStreet_ZYjXaR" Value="[!Dialog][!speaker:VHPD_Jane_Rage]한마디만 더 하면 네 면상을 날려 버린다."/>
+		<class name="Tutorial_StarStreet_zs08I7" Value="[!Dialog][colour=&apos;FFFFAA00&apos;]오늘부로 제인 경감이 바람장벽지구 기동대를 지휘한다."/>
+		<class name="Tutorial_StarStreet_jmxEHy" Value="[!Dialog][!speaker:VHPD_Jane_Normal]짜증 나는군..."/>
+		<class name="Tutorial_StarStreet_zLj2hX" Value="[!Dialog][!speaker:VHPD_Jane_Smile]진작 전출 신청을 넣었어야 했는데..."/>
+		<class name="Tutorial_StarStreet_31BtvN" Value="[!Dialog][!speaker:VHPD_Jane_Angry]&apos;아이작. 선은 넘지 마라...&apos;"/>
+		<class name="Tutorial_StarStreet_vRdS9A" Value="[!Dialog][!speaker:VHPD_Jane_Angry]아이작 경감은 어제부로 퇴직했다."/>
+		<class name="Tutorial_StarStreet_CxcxwT" Value="[!BalloonChat][!speaker:Albus]!!!"/>
+		<class name="Tutorial_StarStreet_JIK38D" Value="[!BalloonChat][!speaker:Sion]!!!"/>
+		<class name="Tutorial_StarStreet_wmj69I" Value="[!BalloonChat][!speaker:Irene]!!!"/>
+		<class name="Tutorial_StarStreet_K6KVxS" Value="[!BalloonChat][!speaker:Anne]!!!"/>
+		<class name="Tutorial_StarStreet_N2yF0S" Value="[!BalloonChat][!speaker:Heissing]??"/>
+		<class name="Tutorial_StarStreet_Cl9nTd" Value="[!Dialog][!speaker:Albus_Surprise]도대체 무슨 이유이신가요?"/>
+		<class name="Tutorial_StarStreet_lccTGX" Value="[!Dialog][!speaker:Anne_Surprise]아이작 경감님이..."/>
+		<class name="Tutorial_StarStreet_CuTi9D" Value="[!Dialog][!speaker:Sion_Surprise]설마 저번 일로 퇴직까지 당한 거야?"/>
+		<class name="Tutorial_StarStreet_fEKZAB" Value="[!Dialog][!speaker:Irene_Serious]......"/>
+		<class name="Tutorial_StarStreet_sYmP69" Value="[!Dialog][!speaker:VHPD_Jane_Normal]&apos;다들 놀라는 걸 보니 역시 말을 하지 않았군.&apos;"/>
+		<class name="Tutorial_StarStreet_IfLUzW" Value="[!Dialog][!speaker:VHPD_Jane_Angry]&apos;도대체 네 녀석은 뭘 하려는 거냐... 아이작.&apos;"/>
+		<class name="Tutorial_StarStreet_oZncwB" Value="[!Dialog][!speaker:Joel_Costume_Normal]경감님. 언제까지 기동대에 계실 겁니까?"/>
+		<class name="Tutorial_StarStreet_ZoDNJq" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Normal]무슨 소리인가?"/>
+		<class name="Tutorial_StarStreet_OLJ8jE" Value="[!Dialog][!speaker:Joel_Costume_Smile]다른 간부들은 현장을 떠나 진급하기 위해 중앙부서를 원하지 않습니까..."/>
+		<class name="Tutorial_StarStreet_ch5N00" Value="[!Dialog][!speaker:Joel_Costume_Normal]경감님도 언젠가 중앙부서로 가셔야죠."/>
+		<class name="Tutorial_StarStreet_nfR9Od" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Normal]생각 없네. 그리고 자네도 눈앞에 벌어지는 현장에 충실하게나."/>
+		<class name="Tutorial_StarStreet_HodT9c" Value="[!Dialog][!speaker:Joel_Costume_Smile]그 말 책임지셔야 합니다. 경감님만 믿고 따라갑니다!"/>
+		<class name="Tutorial_StarStreet_JTRsbY" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Smile]자네나 현장에서 도망가지 말게나."/>
+		<class name="Tutorial_StarStreet_WLIB4G" Value="[!Dialog][!speaker:Joel_Costume_Smile]무슨 소리입니까! 제가 경감님보다 10년은 젊습니다. 경감님보다 10년은 더 현장에 있을 겁니다."/>
+		<class name="Tutorial_StarStreet_Pds7HX" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Normal]자네 말 대로라면 발할라의 미래는 밝군."/>
+		<class name="Tutorial_StarStreet_CytJR8" Value="[!Dialog][!speaker:VHPD_Issac_Costume_Smile]내가 현장에서 떠나면 꼭 발할라를 지켜주게나."/>
+	</idspace>
+</idspaces>

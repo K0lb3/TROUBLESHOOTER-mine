@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="RangeRenderer">
+		<schema>
+			<rule property="AbsorbOrigin" type="bool"/>
+		</schema>
+		<class name="Invisible" RenderType="None"/>
+		<class name="AlertMark" RenderType="AlertMark"/>
+		<class name="DirectionalModel_Horn45" RenderType="DirectionalModel" Entity="Horn_45.mesh"/>
+		<class name="DoubleOutline_AbilityInfoAssist" RenderType="DoubleOutline" Material="MoveRangeLine4" Material2="MoveRangeLine_Dot_LightGreen"/>
+		<class name="DoubleOutline_AbilityInfoAttack" RenderType="DoubleOutline" Material="MoveRangeLine3" Material2="MoveRangeLine_Dot_Orange"/>
+		<class name="DoubleOutline_AbilityInfoHeal" RenderType="DoubleOutline" Material="MoveRangeLine_WhiteBlue" Material2="MoveRangeLine_Dot_WhiteBlue"/>
+		<class name="DoubleOutline_AbilityInfoSummon" RenderType="DoubleOutline" Material="MoveRangeLine3" Material2="MoveRangeLine2"/>
+		<class name="DoubleOutline_AbilityInfoStateChange" RenderType="DoubleOutline" Material="MoveRangeLine_White" Material2="MoveRangeLine_Dot_White"/>
+		<class name="DoubleOutline_AbilityInfoDev" RenderType="DoubleOutline" Material="MoveRangeLine_White" Material2="MoveRangeLine_Dot_White"/>
+		<class name="DoubleOutline_AbilityInfoMove" RenderType="DoubleOutline" Material="MoveRangeLine3" Material2="MoveRangeLine2"/>
+		<class name="DoubleOutline_AbilityInfoInteraction" RenderType="DoubleOutline" Material="MoveRangeLine2" Material2="MoveRangeLine_Dot_Yellow"/>
+		<class name="DoubleOutline_MoveRangeExtra" RenderType="DoubleOutline" Material="MoveRangeLineDot" Material2="MoveRangeLine2" AbsorbOrigin="true"/>
+		<class name="DoubleParticle_AbilityInfoAssist" RenderType="DoubleParticle" Particle="Particles/Dandylion/Selection_AssistRange" Particle2="Particles/Dandylion/Selection_AssistRange"/>
+		<class name="DoubleParticle_AbilityInfoAttack" RenderType="DoubleParticle" Particle="Particles/Dandylion/Selection_AttackRange" Particle2="Particles/Dandylion/Selection_AttackRange"/>
+		<class name="DoubleParticle_AbilityInfoHeal" RenderType="DoubleParticle" Particle="Particles/Dandylion/Selection_HealRange" Particle2="Particles/Dandylion/Selection_HealRange"/>
+		<class name="DoubleParticle_AbilityInfoSummon" RenderType="DoubleParticle" Particle="Particles/Dandylion/Selection_WhiteRange" Particle2="Particles/Dandylion/Selection_WhiteRange"/>
+		<class name="DoubleParticle_AbilityInfoStateChange" RenderType="DoubleParticle" Particle="Particles/Dandylion/Selection_WhiteRange" Particle2="Particles/Dandylion/Selection_WhiteRange"/>
+		<class name="DoubleParticle_AbilityInfoDev" RenderType="DoubleParticle" Particle="Particles/Dandylion/Selection_WhiteRange" Particle2="Particles/Dandylion/Selection_WhiteRange"/>
+		<class name="DoubleParticle_AbilityInfoMove" RenderType="DoubleParticle" Particle="Particles/Dandylion/Selection_WhiteRange" Particle2="Particles/Dandylion/Selection_WhiteRange"/>
+		<class name="DoubleParticle_AbilityInfoInteraction" RenderType="DoubleParticle" Particle="Particles/Dandylion/Selection_InteractionRange" Particle2="Particles/Dandylion/Selection_InteractionRange"/>
+		<class name="DoubleParticle_AttackBlunt" RenderType="DoubleParticle" Particle="Particles/Dandylion/Selection_AttackRange" Particle2="Particles/Dandylion/Selection_Blunt"/>
+		<class name="DoubleParticle_AttackPierce" RenderType="DoubleParticle" Particle="Particles/Dandylion/Selection_AttackRange" Particle2="Particles/Dandylion/Selection_Pierce"/>
+		<class name="DoubleParticle_AttackPunch" RenderType="DoubleParticle" Particle="Particles/Dandylion/Selection_AttackRange" Particle2="Particles/Dandylion/Selection_Punch"/>
+		<class name="DoubleParticle_AttackSlash" RenderType="DoubleParticle" Particle="Particles/Dandylion/Selection_AttackRange" Particle2="Particles/Dandylion/Selection_Slash"/>
+		<class name="DoubleParticle_MoveRangeArrizerEx" RenderType="DoubleParticle" Particle="Particles/Dandylion/Selection_MoveRangeArizer" Particle2="Particles/Dandylion/Selection_MoveRangeArizer2"/>
+		<class name="Fan" RenderType="Fan"/>
+		<class name="Marker_Blue" RenderType="Marker" Marker="BLUE"/>
+		<class name="Marker_Red" RenderType="Marker" Marker="RED"/>
+		<class name="MovePath_Primary" RenderType="MovePathLine" Material="MovePathLine"/>
+		<class name="MovePath_Secondary" RenderType="MovePathLine" Material="MovePathLine2"/>
+		<class name="Outline_Sight" RenderType="Outline" Material="MoveRangeLine_Dot_White"/>
+		<class name="Outline_Assist" RenderType="Outline" Material="MoveRangeLine4"/>
+		<class name="Outline_Assist_AbosrbOrigin" RenderType="Outline" Material="MoveRangeLine4" AbsorbOrigin="true"/>
+		<class name="Outline_Attack" RenderType="Outline" Material="MoveRangeLine3"/>
+		<class name="Outline_MoveRange" RenderType="Outline" Material="MoveRangeLine" AbsorbOrigin="true"/>
+		<class name="Outline_SecondaryMoveRange" RenderType="Outline" Material="MoveRangeLine2" AbsorbOrigin="true"/>
+		<class name="Particle_Alert" RenderType="Particle" Particle="Particles/Dandylion/Selection_Alert"/>
+		<class name="Particle_Apply" RenderType="Particle" Particle="Particles/Dandylion/Selection_Apply"/>
+		<class name="Particle_Assist" RenderType="Particle" Particle="Particles/Dandylion/Selection_Assist"/>
+		<class name="Particle_Assist_HemiSphere_1" RenderType="Particle" Particle="Particles/Dandylion/Selection_Assist_HemiSphere_1"/>
+		<class name="Particle_Assist_HemiSphere_1.4" RenderType="Particle" Particle="Particles/Dandylion/Selection_Assist_HemiSphere_1.4"/>
+		<class name="Particle_Assist_HemiSphere_2" RenderType="Particle" Particle="Particles/Dandylion/Selection_Assist_HemiSphere_2"/>
+		<class name="Particle_Assist_HemiSphere_3" RenderType="Particle" Particle="Particles/Dandylion/Selection_Assist_HemiSphere_3"/>
+		<class name="Particle_Assist_HemiSphere_4" RenderType="Particle" Particle="Particles/Dandylion/Selection_Assist_HemiSphere_4"/>
+		<class name="Particle_Assist_HemiSphere_5" RenderType="Particle" Particle="Particles/Dandylion/Selection_Assist_HemiSphere_5"/>
+		<class name="Particle_Assist_HemiSphere_Custom" RenderType="Particle" Particle="Particles/Dandylion/Selection_Assist_HemiSphere_1"/>
+		<class name="Particle_AssistRange" RenderType="Particle" Particle="Particles/Dandylion/Selection_AssistRange"/>
+		<class name="Particle_Attack_HemiSphere_1" RenderType="Particle" Particle="Particles/Dandylion/Selection_Attack_HemiSphere_1"/>
+		<class name="Particle_Attack_HemiSphere_1.4" RenderType="Particle" Particle="Particles/Dandylion/Selection_Attack_HemiSphere_1.4"/>
+		<class name="Particle_Attack_HemiSphere_2" RenderType="Particle" Particle="Particles/Dandylion/Selection_Attack_HemiSphere_2"/>
+		<class name="Particle_Attack_HemiSphere_3" RenderType="Particle" Particle="Particles/Dandylion/Selection_Attack_HemiSphere_3"/>
+		<class name="Particle_Attack_HemiSphere_4" RenderType="Particle" Particle="Particles/Dandylion/Selection_Attack_HemiSphere_4"/>
+		<class name="Particle_Attack_HemiSphere_5" RenderType="Particle" Particle="Particles/Dandylion/Selection_Attack_HemiSphere_5"/>
+		<class name="Particle_Attack_HemiSphere_6" RenderType="Particle" Particle="Particles/Dandylion/Selection_Attack_HemiSphere_6"/>
+		<class name="Particle_Attack_HemiSphere_Custom" RenderType="Particle" Particle="Particles/Dandylion/Selection_Attack_HemiSphere_1"/>
+		<class name="Particle_Sight" RenderType="Particle" Particle="Particles/Dandylion/Selection_AttackRange"/>
+		<class name="Particle_AttackRange" RenderType="Particle" Particle="Particles/Dandylion/Selection_AttackRange"/>
+		<class name="Particle_Blunt" RenderType="Particle" Particle="Particles/Dandylion/Selection_Blunt"/>
+		<class name="Particle_Buff" RenderType="Particle" Particle="Particles/Dandylion/Selection_Buff"/>
+		<class name="Particle_Damaged" RenderType="Particle" Particle="Particles/Dandylion/Selection_Damaged"/>
+		<class name="Particle_Help" RenderType="Particle" Particle="Particles/Dandylion/Selection_Help"/>
+		<class name="Particle_HemiSphere" RenderType="Particle" Particle="Particles/Dandylion/Selection_HemiSphere"/>
+		<class name="Particle_Interaction" RenderType="Particle" Particle="Particles/Dandylion/Selection_Interaction"/>
+		<class name="Particle_Move" RenderType="Particle" Particle="Particles/Dandylion/Selection_Move"/>
+		<class name="Particle_MoveRangeArrizer" RenderType="Particle" Particle="Particles/Dandylion/Selection_MoveRangeArizer"/>
+		<class name="Particle_MoveRangeArrizer2" RenderType="Particle" Particle="Particles/Dandylion/Selection_MoveRangeArizer2"/>
+		<class name="Particle_NegativePosition" RenderType="Particle" Particle="Particles/Dandylion/Selection_NegativePosition"/>
+		<class name="Particle_Pierce" RenderType="Particle" Particle="Particles/Dandylion/Selection_Pierce"/>
+		<class name="Particle_Position" RenderType="Particle" Particle="Particles/Dandylion/Selection_Position"/>
+		<class name="Particle_Punch" RenderType="Particle" Particle="Particles/Dandylion/Selection_Punch"/>
+		<class name="Particle_Slash" RenderType="Particle" Particle="Particles/Dandylion/Selection_Slash"/>
+		<class name="Sphere" RenderType="Sphere"/>
+	</idspace>
+	<idspace id="RendererSet">
+		<class name="BattleInfoTargetAbility">
+			<property type="link" target="RangeRenderer" value="Particle_AttackRange"/>
+			<property type="link" target="RangeRenderer" value="Particle_Assist_HemiSphere_Custom"/>
+		</class>
+	</idspace>
+	<idspace id="Range">
+		<schema>
+			<rule property="Fill" type="bool" default="true"/>
+			<rule property="Renderer" type="table" subtype="link" target="RangeRenderer" default="Particle_AttackRange"/>
+			<rule property="SecondaryRenderer" type="table" subtype="link" target="RangeRenderer" default="Particle_AttackRange"/>
+			<rule property="PrecisePick" type="bool" default="false"/>
+			<rule property="ShowDelay" type="number" default="0"/>
+			<rule property="FixLength" type="bool"/>
+			<rule property="Randomize" type="bool" default="false"/>
+			<rule property="TriggerSound" type="string" default="None"/>
+			<rule property="ExcludeSelf" type="bool" default="false"/>
+			<rule property="EnterableFilter" type="bool" default="true"/>
+			<rule property="SightFilter" type="bool" default="false"/>
+			<rule property="HeightFilter" type="bool" default="false"/>
+			<rule property="HeightFilterBase" type="string" default="UsingPos"/>
+			<rule property="HeightRange" type="number" default="10000"/>
+			<rule property="Throwing" type="bool" default="true"/>
+			<rule property="ExpandedRange" type="string"/>
+		</schema>
+		<class name="Dummy" Type="Sphere" Script="" Distance="1" Width="1" Fill="false" FixLength="false" Radius="1" Angle="90" Thickness="1" ChainCount="0" Team="Enemy" Randomize="false" ExcludeSelf="false" EnterableFilter="true" SightFilter="false" HeightFilter="false" HeightFilterBase="UsingPos" HeightRange="10000" Scale="1" ShowDelay="0" Renderer="Particle_AttackRange" Throwing="false" Marker="" ExpandedRange=""/>
+		<class name="Sight" Type="Sight" Renderer="Outline_Sight, Particle_Sight"/>
+		<class name="AbilityInfoAttack" Type="Dot" Renderer="DoubleOutline_AbilityInfoAttack, DoubleParticle_AbilityInfoAttack"/>
+		<class name="AbilityInfoAssist" Type="Dot" Renderer="DoubleOutline_AbilityInfoAssist, DoubleParticle_AbilityInfoAssist"/>
+		<class name="AbilityInfoHeal" Type="Dot" Renderer="DoubleOutline_AbilityInfoHeal, DoubleParticle_AbilityInfoHeal"/>
+		<class name="AbilityInfoSummon" Type="Dot" Renderer="DoubleOutline_AbilityInfoSummon, DoubleParticle_AbilityInfoStateChange"/>
+		<class name="AbilityInfoStateChange" Type="Dot" Renderer="DoubleOutline_AbilityInfoStateChange, DoubleParticle_AbilityInfoStateChange"/>
+		<class name="AbilityInfoDev" Type="Dot" Renderer="DoubleOutline_AbilityInfoDev, DoubleParticle_AbilityInfoDev"/>
+		<class name="AbilityInfoMove" Type="Dot" Renderer="DoubleOutline_AbilityInfoMove, DoubleParticle_AbilityInfoMove"/>
+		<class name="AbilityInfoInteraction" Type="Dot" Renderer="DoubleOutline_AbilityInfoInteraction, DoubleParticle_AbilityInfoInteraction"/>
+		<class name="AbilityInfoPickingSphereAttack" Type="Dot" Renderer="Particle_Move, Particle_Attack_HemiSphere_Custom"/>
+		<class name="AbilityInfoPickingSphereAssist" Type="Dot" Renderer="Particle_Move, Particle_Assist_HemiSphere_Custom"/>
+		<class name="Box1" Type="Box" Distance="1" Renderer="Particle_AttackRange" ExpandedRange="Box2"/>
+		<class name="Box1_ExSelf" Type="Box" Distance="1" Renderer="Particle_AttackRange" ExpandedRange="Box2_ExSelf" ExcludeSelf="true"/>
+		<class name="Box1_Assist" Type="Box" Distance="1" Renderer="Particle_AssistRange" ExpandedRange="Box2_Assist"/>
+		<class name="Box1_DamagedArea" Type="Box" Distance="1" Renderer="Particle_NegativePosition, Outline_Attack" ExpandedRange="Box2_DamagedArea"/>
+		<class name="Box1_Trap" Type="Box" Distance="1" HeightFilter="true" HeightRange="18" Renderer="Outline_Attack"/>
+		<class name="Box1_Slash" Type="Box" Distance="1" Renderer="Particle_Slash"/>
+		<class name="Box1_Attack_Outline_Sight" Type="Box" Distance="1" SightFilter="true" HeightFilter="true" HeightRange="16" Renderer="Particle_AttackRange, Outline_Attack"/>
+		<class name="Box1_AttackSlash" Type="Box" Distance="1" HeightFilter="true" HeightRange="16" Renderer="DoubleParticle_AttackSlash, Outline_Attack"/>
+		<class name="Box1_Attack" Type="Box" Distance="1" HeightFilter="true" HeightRange="16" Renderer="Particle_Damaged"/>
+		<class name="Box1_Attack_HemiSphere" Type="Box" Distance="1" HeightFilter="true" HeightRange="16" Renderer="Particle_Attack_HemiSphere_1.4"/>
+		<class name="Box1_Attack_Delay" Type="Box" Distance="1" HeightFilter="true" HeightRange="16" ShowDelay="0.1" Renderer="Particle_Damaged"/>
+		<class name="Box1_Attack_Outline" Type="Box" Distance="1" HeightFilter="true" HeightRange="16" Renderer="Particle_AttackRange, Outline_Attack"/>
+		<class name="Box1_AttackBlunt" Type="Box" Distance="1" HeightFilter="true" HeightRange="16" Renderer="DoubleParticle_AttackBlunt, Outline_Attack"/>
+		<class name="Box1_Assist_Outline_Sight" Type="Box" Distance="1" SightFilter="true" HeightFilter="true" HeightRange="16" Renderer="Particle_AssistRange, Outline_Assist"/>
+		<class name="Box1_Interaction" Type="Box" Distance="1" ExcludeSelf="true" SightFilter="true" HeightFilter="true" HeightRange="16" Renderer="Particle_Interaction"/>
+		<class name="Box2" Type="Box" Distance="2" Renderer="Particle_AttackRange" ExpandedRange="Box3"/>
+		<class name="Box2_ExSelf" Type="Box" Distance="2" Renderer="Particle_AttackRange" ExpandedRange="Box3_ExSelf" ExcludeSelf="true"/>
+		<class name="Box2_Assist" Type="Box" Distance="2" Renderer="Particle_AssistRange" ExpandedRange="Box3_Assist"/>
+		<class name="Box2_DamagedArea" Type="Box" Distance="1" Renderer="Particle_NegativePosition" ExpandedRange="Box3_DamagedArea"/>
+		<class name="Box3" Type="Box" Distance="3" Renderer="Particle_AttackRange" ExpandedRange="Box4"/>
+		<class name="Box3_ExSelf" Type="Box" Distance="3" Renderer="Particle_AttackRange" ExcludeSelf="true"/>
+		<class name="Box3_Assist" Type="Box" Distance="3" Renderer="Particle_AssistRange" ExpandedRange="Box4_Assist"/>
+		<class name="Box3_DamagedArea" Type="Box" Distance="3" Renderer="Particle_NegativePosition" ExpandedRange="Box4_DamagedArea"/>
+		<class name="Box4" Type="Box" Distance="4" Renderer="Particle_AttackRange" ExpandedRange="Box5"/>
+		<class name="Box4_Assist" Type="Box" Distance="4" Renderer="Particle_AssistRange" ExpandedRange="Box5_Assist"/>
+		<class name="Box4_DamagedArea" Type="Box" Distance="4" Renderer="Particle_NegativePosition" ExpandedRange="Box5_DamagedArea"/>
+		<class name="Box5" Type="Box" Distance="5" Renderer="Particle_AttackRange"/>
+		<class name="Box5_Assist" Type="Box" Distance="5" Renderer="Particle_AssistRange"/>
+		<class name="Box5_DamagedArea" Type="Box" Distance="5" Renderer="Particle_NegativePosition"/>
+		<class name="Chain3x3" Type="Chain" Distance="3" ChainCount="3" Team="Enemy"/>
+		<class name="Chain3x3_4" Type="Chain" Distance="3" ChainCount="4" Team="Enemy"/>
+		<class name="Chain3x3_6" Type="Chain" Distance="3" ChainCount="6" Team="Enemy"/>
+		<class name="Chain4x4" Type="Chain" Distance="4" ChainCount="4" Team="Enemy"/>
+		<class name="CloakingDetect" Type="Box" Distance="1" SightFilter="true" HeightFilter="true" HeightRange="16"/>
+		<class name="Cross1" Type="Cross" Distance="1" Renderer="Particle_AttackRange" ExpandedRange="Cross2"/>
+		<class name="Cross1_Assist" Type="Cross" Distance="1" Renderer="Particle_AssistRange" ExpandedRange="Cross2_Assist"/>
+		<class name="Cross2" Type="Cross" Distance="2" Renderer="Particle_AttackRange" ExpandedRange="Cross3"/>
+		<class name="Cross2_Assist" Type="Cross" Distance="2" Renderer="Particle_AssistRange" ExpandedRange="Cross3_Assist"/>
+		<class name="Cross3" Type="Cross" Distance="3" Renderer="Particle_AttackRange" ExpandedRange="Cross4"/>
+		<class name="Cross3_Assist" Type="Cross" Distance="3" Renderer="Particle_AssistRange" ExpandedRange="Cross4_Assist"/>
+		<class name="Cross4" Type="Cross" Distance="4" Renderer="Particle_AttackRange" ExpandedRange="Cross5"/>
+		<class name="Cross4_Assist" Type="Cross" Distance="4" Renderer="Particle_AssistRange" ExpandedRange="Cross5_Assist"/>
+		<class name="Cross5" Type="Cross" Distance="5" Renderer="Particle_AttackRange" ExpandedRange="Cross6"/>
+		<class name="Cross5_Assist" Type="Cross" Distance="5" Renderer="Particle_AssistRange" ExpandedRange="Cross6_Assist"/>
+		<class name="Cross6" Type="Cross" Distance="6" Renderer="Particle_AttackRange"/>
+		<class name="Cross6_Assist" Type="Cross" Distance="6" Renderer="Particle_AssistRange"/>
+		<class name="Diamond1" Type="Diamond" Distance="1" Randomize="true" Renderer="Particle_AttackRange" ExpandedRange="Diamond2"/>
+		<class name="Diamond1_Assist" Type="Diamond" Distance="1" Randomize="true" Renderer="Particle_AssistRange" ExpandedRange="Diamond2_Assist"/>
+		<class name="Diamond1_DamagedArea" Type="Diamond" Distance="1" Renderer="Particle_NegativePosition" ExpandedRange="Diamond2_DamagedArea"/>
+		<class name="Diamond1_NoFill" Type="Diamond" Distance="1" Fill="false"/>
+		<class name="Diamond1_NoFill_Melee" Type="Diamond" Distance="1" Fill="false" HeightFilter="true" HeightRange="16"/>
+		<class name="Diamond1_Interaction" Type="Diamond" ExcludeSelf="true" SightFilter="true" HeightFilter="true" HeightRange="10" Renderer="Particle_Interaction"/>
+		<class name="Diamond2" Type="Diamond" Distance="2" Renderer="Particle_AttackRange" ExpandedRange="Diamond3"/>
+		<class name="Diamond2_Assist" Type="Diamond" Distance="2" Renderer="Particle_AssistRange" ExpandedRange="Diamond3_Assist"/>
+		<class name="Diamond2_DamagedArea" Type="Diamond" Distance="2" Renderer="Particle_NegativePosition" ExpandedRange="Diamond3_DamagedArea"/>
+		<class name="Diamond3" Type="Diamond" Distance="3" Renderer="Particle_AttackRange" ExpandedRange="Diamond4"/>
+		<class name="Diamond3_Assist" Type="Diamond" Distance="3" Renderer="Particle_AssistRange" ExpandedRange="Diamond4_Assist"/>
+		<class name="Diamond3_DamagedArea" Type="Diamond" Distance="3" Renderer="Particle_NegativePosition" ExpandedRange="Diamond4_DamagedArea"/>
+		<class name="Diamond4" Type="Diamond" Distance="4" Renderer="Particle_AttackRange" ExpandedRange="Diamond5"/>
+		<class name="Diamond4_Assist" Type="Diamond" Distance="4" Renderer="Particle_AssistRange" ExpandedRange="Diamond5_Assist"/>
+		<class name="Diamond4_DamagedArea" Type="Diamond" Distance="4" Renderer="Particle_NegativePosition" ExpandedRange="Diamond5_DamagedArea"/>
+		<class name="Diamond5" Type="Diamond" Distance="5" Renderer="Particle_AttackRange" ExpandedRange="Diamond6"/>
+		<class name="Diamond5_Assist" Type="Diamond" Distance="5" Renderer="Particle_AssistRange" ExpandedRange="Diamond6_Assist"/>
+		<class name="Diamond5_DamagedArea" Type="Diamond" Distance="5" Renderer="Particle_NegativePosition" ExpandedRange="Diamond6_DamagedArea"/>
+		<class name="Diamond6" Type="Diamond" Distance="6" Renderer="Particle_AttackRange" ExpandedRange="Diamond7"/>
+		<class name="Diamond6_Assist" Type="Diamond" Distance="6" Renderer="Particle_AssistRange" ExpandedRange="Diamond7_Assist"/>
+		<class name="Diamond6_DamagedArea" Type="Diamond" Distance="6" Renderer="Particle_NegativePosition" ExpandedRange="Diamond7_DamagedArea"/>
+		<class name="Diamond7" Type="Diamond" Distance="7" Renderer="Particle_AttackRange" ExpandedRange="Diamond8"/>
+		<class name="Diamond7_Assist" Type="Diamond" Distance="7" Renderer="Particle_AssistRange" ExpandedRange="Diamond8_Assist"/>
+		<class name="Diamond7_DamagedArea" Type="Diamond" Distance="7" Renderer="Particle_NegativePosition" ExpandedRange="Diamond8_DamagedArea"/>
+		<class name="Diamond7_Sight" Type="Diamond" Distance="7" SightFilter="true" Renderer="Particle_AttackRange"/>
+		<class name="Diamond8" Type="Diamond" Distance="8" Renderer="Particle_AttackRange" ExpandedRange="Diamond9"/>
+		<class name="Diamond8_Assist" Type="Diamond" Distance="8" Renderer="Particle_AssistRange" ExpandedRange="Diamond9_Assist"/>
+		<class name="Diamond8_DamagedArea" Type="Diamond" Distance="8" Renderer="Particle_NegativePosition" ExpandedRange="Diamond9_DamagedArea"/>
+		<class name="Diamond9" Type="Diamond" Distance="9" Renderer="Particle_AttackRange"/>
+		<class name="Diamond9_Assist" Type="Diamond" Distance="9" Renderer="Particle_AssistRange"/>
+		<class name="Diamond9_DamagedArea" Type="Diamond" Distance="9" Renderer="Particle_NegativePosition"/>
+		<class name="Dot" Type="Dot" ExpandedRange="Dot"/>
+		<class name="DotPicking" Type="Dot" ExpandedRange="DotPicking"/>
+		<class name="StagePickPosition" Type="Dot" Renderer="Particle_Apply" ExpandedRange="StagePickPosition"/>
+		<class name="DotAlert" Type="Dot" Renderer="Particle_Alert" ExpandedRange="DotAlert"/>
+		<class name="DotAlly" Type="Dot" Renderer="Particle_Move" ExpandedRange="DotAlly"/>
+		<class name="DotAllyAlertMark" Type="Dot" Renderer="Particle_Move, AlertMark" ExpandedRange="DotAllyAlertMark"/>
+		<class name="DotApply" Type="Dot" Renderer="Particle_Apply" ExpandedRange="DotApply"/>
+		<class name="DotAssist" Type="Dot" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="DotAssist"/>
+		<class name="DotBlunt" Type="Dot" Renderer="Particle_Blunt" ExpandedRange="DotBlunt"/>
+		<class name="DotBuff" Type="Dot" Renderer="Particle_Buff" ExpandedRange="DotBuff"/>
+		<class name="DotDamaged" Type="Dot" Renderer="Particle_Damaged" ExpandedRange="DotDamaged"/>
+		<class name="DotHelp" Type="Dot" Renderer="Particle_Help" ExpandedRange="DotHelp"/>
+		<class name="DotSlash" Type="Dot" Renderer="Particle_Slash" ExpandedRange="DotSlash"/>
+		<class name="Fan30x100" Type="Fan" Radius="12" Angle="30" Thickness="1" Renderer="Fan"/>
+		<class name="Fan30x120_Pierce" Type="Fan" Radius="12" Angle="30" Thickness="1" Renderer="Fan, Particle_Damaged"/>
+		<class name="Fan75x100" Type="Fan" Radius="10" Angle="75" Thickness="1" Renderer="Fan"/>
+		<class name="Fan75x100_Attack" Type="Fan" Radius="10" Angle="75" Thickness="1" Renderer="Fan, Particle_Damaged"/>
+		<class name="Fan75x120" Type="Fan" Radius="12" Angle="75" Thickness="1" Renderer="Fan" ExpandedRange="Fan75x130"/>
+		<class name="Fan60x120" Type="Fan" Radius="12" Angle="60" Thickness="1" Renderer="Fan"/>
+		<class name="Fan75x120_Pierce" Type="Fan" Radius="12" Angle="75" Thickness="1" Renderer="Fan, Particle_Damaged" ExpandedRange="Fan75x130_Pierce"/>
+		<class name="Fan75x130" Type="Fan" Radius="13" Angle="75" Thickness="1" Renderer="Fan"/>
+		<class name="Fan75x130_Pierce" Type="Fan" Radius="13" Angle="75" Thickness="1" Renderer="Fan, Particle_Damaged"/>
+		<class name="Fan100x150" Type="Fan" Radius="15" Angle="100" Thickness="1" Renderer="Fan"/>
+		<class name="Fan100x150_Pierce" Type="Fan" Radius="15" Angle="100" Thickness="1" Renderer="Fan, Particle_Damaged"/>
+		<class name="Fan110x150" Type="Fan" Radius="15" Angle="120" Thickness="0.3" Renderer="Fan"/>
+		<class name="Fan110x150_Pierce" Type="Fan" Radius="15" Angle="120" Thickness="1" Renderer="Fan, Particle_Damaged"/>
+		<class name="Fan120x17" Type="Fan" Radius="1.75" Angle="120" Thickness="0.3" Renderer="Fan, Particle_Damaged"/>
+		<class name="Fan120x17_Blunt" Type="Fan" Radius="1.75" Angle="120" Thickness="0.3" Renderer="Fan, Particle_Damaged"/>
+		<class name="Fan120x35" Type="Fan" Radius="3.5" Angle="120" Thickness="1" Renderer="Fan"/>
+		<class name="Fan15x25_Blunt" Type="Fan" Radius="2.5" Angle="15" Thickness="0.3" Renderer="Fan, Particle_Damaged"/>
+		<class name="Fan30x150" Type="Fan" Radius="15" Angle="30" Thickness="1" Renderer="Fan"/>
+		<class name="Fan30x150_Pierce" Type="Fan" Radius="15" Angle="30" Thickness="1" Renderer="Fan, Particle_Damaged"/>
+		<class name="Fan45x100" Type="Fan" Radius="10" Angle="45" Thickness="0.3" Renderer="Fan"/>
+		<class name="Fan45x43" Type="Fan" Radius="4.3" Angle="45" Thickness="0.3" Renderer="Fan"/>
+		<class name="Fan45x43_DamagedArea" Type="Fan" Radius="4.3" Angle="45" Thickness="0.3" Renderer="Particle_NegativePosition"/>
+		<class name="Fan60x100" Type="Fan" Radius="10" Angle="60" Thickness="0.3" Renderer="Fan"/>
+		<class name="Fan90x35_Slash" Type="Fan" Radius="3.5" Angle="90" Thickness="1" Renderer="Fan, Particle_Damaged"/>
+		<class name="Global" Type="Global" Renderer="Marker_Blue"/>
+		<class name="HemiSphere2" Type="Sphere" Renderer="Particle_HemiSphere"/>
+		<class name="HollowBox1" Type="Box" Distance="1" Fill="false" Renderer="Particle_Punch"/>
+		<class name="Horn45x3" Type="Horn" Radius="4.3" Angle="45" Renderer="DirectionalModel_Horn45"/>
+		<class name="Horn45x3Debug" Type="Horn" Radius="4.3" Angle="45" Renderer="Particle_NegativePosition"/>
+		<class name="Line15" Type="StraightLine" Distance="15" Width="0.5" FixLength="true" Renderer="Particle_NegativePosition"/>
+		<class name="Line2_Ability_NeguriTongueBash" Type="StraightLine" Distance="2" Width="0.25" FixLength="true" HeightFilter="true" HeightFilterBase="SelfPos" HeightRange="20" Renderer="Particle_Damaged"/>
+		<class name="Line3x10" Type="StraightLine" Distance="10" Width="2" FixLength="true" Renderer="Particle_NegativePosition"/>
+		<class name="Line3_Ability_Neguri_TongueStorm" Type="StraightLine" Distance="3" Width="0.25" FixLength="true" HeightFilter="true" HeightFilterBase="SelfPos" HeightRange="20" Renderer="Particle_Damaged"/>
+		<class name="Line4_Ability_Flypaper" Type="StraightLine" Distance="4" Width="0.25" FixLength="true" HeightFilter="true" HeightFilterBase="SelfPos" HeightRange="20" Renderer="Particle_Damaged"/>
+		<class name="Line4" Type="StraightLine" Distance="4" Width="0.5" FixLength="true" Renderer="Particle_NegativePosition"/>
+		<class name="Line4_Blunt" Type="StraightLine" Distance="4" Width="0.8" FixLength="true" Renderer="Particle_Blunt"/>
+		<class name="Line4_Ability_ThrowerFlame" Type="StraightLine" Distance="4" Width="0.5" FixLength="true" HeightFilter="true" HeightFilterBase="SelfPos" HeightRange="20" Renderer="Particle_Damaged" ExcludeSelf="true"/>
+		<class name="Line4_Ability_ThrowerFlame_Width" Type="StraightLine" Distance="4" Width="1.2" FixLength="true" HeightFilter="true" HeightFilterBase="SelfPos" HeightRange="20" Renderer="Particle_Damaged" ExcludeSelf="true"/>
+		<class name="Line5_Ability_ThrowerFlame_Width" Type="StraightLine" Distance="5" Width="1.2" FixLength="true" HeightFilter="true" HeightFilterBase="SelfPos" HeightRange="20" Renderer="Particle_Damaged" ExcludeSelf="true"/>
+		<class name="Line6_Ability_FlypaperBig" Type="StraightLine" Distance="6" Width="0.25" FixLength="true" HeightFilter="true" HeightFilterBase="SelfPos" HeightRange="20" Renderer="Particle_Damaged"/>
+		<class name="Line6_Pierce" Type="StraightLine" Distance="6" Width="0.8" FixLength="true" Renderer="Particle_Pierce"/>
+		<class name="Line6_Slash" Type="StraightLine" Distance="6" Width="0.8" FixLength="true" Renderer="Particle_Slash"/>
+		<class name="Line6_Damaged" Type="StraightLine" Distance="6" Width="0.8" FixLength="true" Renderer="Particle_Damaged"/>
+		<class name="Line6_Ability_GlideShaving" Type="StraightLine" Distance="6" Width="0.8" FixLength="true" HeightFilter="true" HeightFilterBase="SelfPos" HeightRange="20" Renderer="Particle_Damaged"/>
+		<class name="Line6_Ability_GlideShaving_ExSelf" Type="StraightLine" Distance="6" Width="0.8" FixLength="true" HeightFilter="true" HeightFilterBase="SelfPos" HeightRange="20" Renderer="Particle_Damaged" ExcludeSelf="true"/>
+		<class name="Line10_Assist" Type="StraightLine" Distance="10" Width="0.8" FixLength="true" Renderer="Particle_Assist"/>
+		<class name="Line10_Damaged" Type="StraightLine" Distance="10" Width="0.8" FixLength="true" Renderer="Particle_Damaged" ExpandedRange="Line11_Damaged"/>
+		<class name="Line11_Damaged" Type="StraightLine" Distance="11" Width="0.8" FixLength="true" Renderer="Particle_Damaged" ExpandedRange="Line12_Damaged"/>
+		<class name="Line12_Damaged" Type="StraightLine" Distance="12" Width="0.8" FixLength="true" Renderer="Particle_Damaged"/>
+		<class name="Line10_Damaged_ExSelf" Type="StraightLine" Distance="10" Width="0.8" FixLength="true" Renderer="Particle_Damaged" ExcludeSelf="true"/>
+		<class name="Line10_Damaged_Width" Type="StraightLine" Distance="10" Width="1.5" FixLength="true" Renderer="Particle_Damaged"/>
+		<class name="Line10_Damaged_Width_ExSelf" Type="StraightLine" Distance="10" Width="1.5" FixLength="true" Renderer="Particle_Damaged" ExcludeSelf="true"/>
+		<class name="Line7_Damaged_Slim" Type="StraightLine" Distance="7" Width="0.5" FixLength="true" Renderer="Particle_Damaged" ExpandedRange="Line8_Damaged_Slim"/>
+		<class name="Line8_Damaged_Slim" Type="StraightLine" Distance="8" Width="0.5" FixLength="true" Renderer="Particle_Damaged" ExpandedRange="Line9_Damaged_Slim"/>
+		<class name="Line9_Damaged_Slim" Type="StraightLine" Distance="9" Width="0.5" FixLength="true" Renderer="Particle_Damaged" ExpandedRange="Line10_Damaged_Slim"/>
+		<class name="Line10_Damaged_Slim" Type="StraightLine" Distance="10" Width="0.5" FixLength="true" Renderer="Particle_Damaged" ExpandedRange="Line11_Damaged_Slim"/>
+		<class name="Line11_Damaged_Slim" Type="StraightLine" Distance="11" Width="0.5" FixLength="true" Renderer="Particle_Damaged" ExpandedRange="Line12_Damaged_Slim"/>
+		<class name="Line12_Damaged_Slim" Type="StraightLine" Distance="12" Width="0.5" FixLength="true" Renderer="Particle_Damaged" ExpandedRange="Line13_Damaged_Slim"/>
+		<class name="Line13_Damaged_Slim" Type="StraightLine" Distance="13" Width="0.5" FixLength="true" Renderer="Particle_Damaged" ExpandedRange="Line14_Damaged_Slim"/>
+		<class name="Line14_Damaged_Slim" Type="StraightLine" Distance="14" Width="0.5" FixLength="true" Renderer="Particle_Damaged"/>
+		<class name="Line8_Damaged_Slim2" Type="StraightLine" Distance="8" Width="0.42" FixLength="true" Renderer="Particle_Damaged" ExpandedRange="Line10_Damaged_Slim2"/>
+		<class name="Line9_Damaged_Slim2" Type="StraightLine" Distance="9" Width="0.42" FixLength="true" Renderer="Particle_Damaged" ExpandedRange="Line10_Damaged_Slim2"/>
+		<class name="Line10_Damaged_Slim2" Type="StraightLine" Distance="10" Width="0.42" FixLength="true" Renderer="Particle_Damaged" ExpandedRange="Line11_Damaged_Slim2"/>
+		<class name="Line11_Damaged_Slim2" Type="StraightLine" Distance="11" Width="0.42" FixLength="true" Renderer="Particle_Damaged" ExpandedRange="Line12_Damaged_Slim2"/>
+		<class name="Line12_Damaged_Slim2" Type="StraightLine" Distance="12" Width="0.42" FixLength="true" Renderer="Particle_Damaged" ExpandedRange="Line13_Damaged_Slim2"/>
+		<class name="Line13_Damaged_Slim2" Type="StraightLine" Distance="13" Width="0.42" FixLength="true" Renderer="Particle_Damaged" ExpandedRange="Line14_Damaged_Slim2"/>
+		<class name="Line14_Damaged_Slim2" Type="StraightLine" Distance="14" Width="0.42" FixLength="true" Renderer="Particle_Damaged" ExpandedRange="Line15_Damaged_Slim2"/>
+		<class name="Line15_Damaged_Slim2" Type="StraightLine" Distance="15" Width="0.42" FixLength="true" Renderer="Particle_Damaged" ExpandedRange="Line16_Damaged_Slim2"/>
+		<class name="Line16_Damaged_Slim2" Type="StraightLine" Distance="16" Width="0.42" FixLength="true" Renderer="Particle_Damaged" ExpandedRange="Line17_Damaged_Slim2"/>
+		<class name="Line17_Damaged_Slim2" Type="StraightLine" Distance="17" Width="0.42" FixLength="true" Renderer="Particle_Damaged" ExpandedRange="Line18_Damaged_Slim2"/>
+		<class name="Line18_Damaged_Slim2" Type="StraightLine" Distance="18" Width="0.42" FixLength="true" Renderer="Particle_Damaged" ExpandedRange="Line19_Damaged_Slim2"/>
+		<class name="Line19_Damaged_Slim2" Type="StraightLine" Distance="19" Width="0.42" FixLength="true" Renderer="Particle_Damaged" ExpandedRange="Line20_Damaged_Slim2"/>
+		<class name="Line20_Damaged_Slim2" Type="StraightLine" Distance="20" Width="0.42" FixLength="true" Renderer="Particle_Damaged"/>
+		<class name="Line_Damaged" Type="StraightLine" Width="0.8" FixLength="false" Renderer="Particle_Damaged"/>
+		<class name="Line_Damaged_Width" Type="StraightLine" Width="1.5" FixLength="false" Renderer="Particle_Damaged"/>
+		<class name="Line_Damaged_Slim" Type="StraightLine" Width="0.5" FixLength="false" Renderer="Particle_Damaged"/>
+		<class name="Line_Blunt" Type="StraightLine" Width="0.8" FixLength="false" Renderer="Particle_Blunt"/>
+		<class name="Line_Pierce" Type="StraightLine" Width="0.8" FixLength="false" Renderer="Particle_Pierce"/>
+		<class name="Line_Slash" Type="StraightLine" Width="0.8" FixLength="false" Renderer="Particle_Slash"/>
+		<class name="MovePath" Type="Custom" Script="Get_MovePath" ShowDelay="0.1" Renderer="MovePath_Primary" SecondaryRenderer="MovePath_Secondary" Throwing="false"/>
+		<class name="SecondMovePath" Type="Custom" Script="Get_MovePathSecondary" ShowDelay="0.1" Renderer="MovePath_Secondary" Throwing="false"/>
+		<class name="MoveRange" Type="MoveRange" EnterableFilter="false" Renderer="Particle_MoveRangeArrizer, Outline_MoveRange" SecondaryRenderer="DoubleParticle_MoveRangeArrizerEx, DoubleOutline_MoveRangeExtra" Mode="Extra" Throwing="false"/>
+		<class name="MoveRange2" Type="MoveRange" FixLength="true" Distance="2" EnterableFilter="false" Renderer="Particle_MoveRangeArrizer, Outline_MoveRange" SecondaryRenderer="DoubleParticle_MoveRangeArrizerEx, DoubleOutline_MoveRangeExtra" Mode="Extra" Throwing="false"/>
+		<class name="MoveRange3" Type="MoveRange" FixLength="true" Distance="3" EnterableFilter="false" Renderer="Particle_MoveRangeArrizer, Outline_MoveRange" SecondaryRenderer="DoubleParticle_MoveRangeArrizerEx, DoubleOutline_MoveRangeExtra" Mode="Extra" Throwing="false"/>
+		<class name="MoveRange4" Type="MoveRange" FixLength="true" Distance="4" EnterableFilter="false" Renderer="Particle_MoveRangeArrizer, Outline_MoveRange" SecondaryRenderer="DoubleParticle_MoveRangeArrizerEx, DoubleOutline_MoveRangeExtra" Mode="Extra" Throwing="false"/>
+		<class name="MoveRange5" Type="MoveRange" FixLength="true" Distance="5" EnterableFilter="false" Renderer="Particle_MoveRangeArrizer, Outline_MoveRange" SecondaryRenderer="DoubleParticle_MoveRangeArrizerEx, DoubleOutline_MoveRangeExtra" Mode="Extra" Throwing="false"/>
+		<class name="MoveRange6" Type="MoveRange" FixLength="true" Distance="6" EnterableFilter="false" Renderer="Particle_MoveRangeArrizer, Outline_MoveRange" SecondaryRenderer="DoubleParticle_MoveRangeArrizerEx, DoubleOutline_MoveRangeExtra" Mode="Extra" Throwing="false"/>
+		<class name="MoveRange7" Type="MoveRange" FixLength="true" Distance="7" EnterableFilter="false" Renderer="Particle_MoveRangeArrizer, Outline_MoveRange" SecondaryRenderer="DoubleParticle_MoveRangeArrizerEx, DoubleOutline_MoveRangeExtra" Mode="Extra" Throwing="false"/>
+		<class name="MoveRange8" Type="MoveRange" FixLength="true" Distance="8" EnterableFilter="false" Renderer="Particle_MoveRangeArrizer, Outline_MoveRange" SecondaryRenderer="DoubleParticle_MoveRangeArrizerEx, DoubleOutline_MoveRangeExtra" Mode="Extra" Throwing="false"/>
+		<class name="MoveRange_AbilityGuide" Type="MoveRange" EnterableFilter="false" Renderer="Particle_MoveRangeArrizer, Outline_MoveRange" SecondaryRenderer="Particle_MoveRangeArrizer, Outline_MoveRange" Mode="Extra" Throwing="false"/>
+		<class name="SecondMoveRange" Type="MoveRange" EnterableFilter="false" Renderer="Particle_MoveRangeArrizer2, Outline_SecondaryMoveRange" Mode="Secondary" Throwing="false"/>
+		<class name="MoveTarget" Type="Dot" Renderer="Particle_Move"/>
+		<class name="PiercingSlash6" Type="StraightLine" Distance="6" Width="0.7" FixLength="true" Renderer="Particle_Slash"/>
+		<class name="PlaceHolder" Type="Dot" Renderer="Particle_Position"/>
+		<class name="Radius2" Type="Sphere" Radius="2" Renderer="Invisible" ExpandedRange="Radius3"/>
+		<class name="Radius2_DamagedArea" Type="Sphere" Radius="2" Renderer="Particle_NegativePosition"/>
+		<class name="Radius3" Type="Sphere" Radius="3" Renderer="Particle_NegativePosition" ExpandedRange="Radius4"/>
+		<class name="Radius4" Type="Sphere" Radius="4" Renderer="Particle_NegativePosition" ExpandedRange="Radius5"/>
+		<class name="Radius5" Type="Sphere" Radius="5" Renderer="Particle_NegativePosition"/>
+		<class name="Rect1_Pierce" Type="StraightLine" Width="1" FixLength="false" Renderer="Particle_Pierce"/>
+		<class name="Sight_Attack_Outline" Type="Sight" Radius="1" Renderer="Particle_AttackRange, Outline_Attack"/>
+		<class name="Sphere1" Type="Sphere" Radius="1" ExpandedRange="Sphere1.4"/>
+		<class name="Sphere1_ExSelf" Type="Sphere" Radius="1" ExcludeSelf="true" ExpandedRange="Sphere1.4_ExSelf"/>
+		<class name="Sphere1_Interaction" Type="Sphere" Radius="1" ExcludeSelf="true" SightFilter="true" Renderer="" ExpandedRange="Sphere1.4_Interaction"/>
+		<class name="Sphere1_Attack" Type="Sphere" Radius="1" Renderer="Particle_Damaged" ExpandedRange="Sphere1.4_Attack"/>
+		<class name="Sphere1_Assist" Type="Sphere" Radius="1" Renderer="Particle_Assist" ExpandedRange="Sphere1.4_Assist"/>
+		<class name="Sphere1_Attack_Outline" Type="Sphere" Radius="1" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere1.4_Attack_Outline"/>
+		<class name="Sphere1_Assist_Outline" Type="Sphere" Radius="1" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere1.4_Assist_Outline"/>
+		<class name="Sphere1_Attack_Outline_Sight" Type="Sphere" Radius="1" SightFilter="true" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere1.4_Attack_Outline_Sight"/>
+		<class name="Sphere1_Assist_Outline_Sight" Type="Sphere" Radius="1" SightFilter="true" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere1.4_Assist_Outline_Sight"/>
+		<class name="Sphere1_Attack_HemiSphere" Type="Sphere" Radius="1" Renderer="Particle_Attack_HemiSphere_1" ExpandedRange="Sphere1.4_Attack_HemiSphere"/>
+		<class name="Sphere1_Assist_HemiSphere" Type="Sphere" Radius="1" Renderer="Particle_Assist_HemiSphere_1" ExpandedRange="Sphere1.4_Assist_HemiSphere"/>
+		<class name="Sphere1.4" Type="Sphere" Radius="1.4" Renderer="Particle_AttackRange" ExpandedRange="Sphere2"/>
+		<class name="Sphere1.4_ExSelf" Type="Sphere" Radius="1.4" ExcludeSelf="true" ExpandedRange="Sphere2_ExSelf"/>
+		<class name="Sphere1.4_Interaction" Type="Sphere" Radius="1.4" ExcludeSelf="true" SightFilter="true" Renderer=""/>
+		<class name="Sphere1.4_Attack" Type="Sphere" Radius="1.4" Renderer="Particle_Damaged" ExpandedRange="Sphere2_Attack"/>
+		<class name="Sphere1.4_Attack_Delay" Type="Sphere" Radius="1.4" ShowDelay="0.1" Renderer="Particle_Damaged" ExpandedRange="Sphere2_Attack_Delay"/>
+		<class name="Sphere1.4_Assist" Type="Sphere" Radius="1.4" Renderer="Particle_Assist" ExpandedRange="Sphere2_Assist"/>
+		<class name="Sphere1.4_Attack_Outline" Type="Sphere" Radius="1.4" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere2_Attack_Outline"/>
+		<class name="Sphere1.4_Assist_Outline" Type="Sphere" Radius="1.4" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere2_Assist_Outline"/>
+		<class name="Sphere1.4_Attack_Outline_Sight" Type="Sphere" Radius="1.4" SightFilter="true" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere2_Attack_Outline_Sight"/>
+		<class name="Sphere1.4_Attack_Outline_Sight_NoEnter" Type="Sphere" Radius="1.4" EnterableFilter="false" SightFilter="true" Renderer="Particle_AttackRange, Outline_Attack"/>
+		<class name="Sphere1.4_Assist_Outline_Sight" Type="Sphere" Radius="1.4" SightFilter="true" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere2_Assist_Outline_Sight"/>
+		<class name="Sphere1.4_AttackSlash" Type="Sphere" Radius="1.4" Renderer="DoubleParticle_AttackSlash, Outline_Attack"/>
+		<class name="Sphere1.4_AttackBlunt" Type="Sphere" Radius="1.4" Renderer="DoubleParticle_AttackBlunt, Outline_Attack"/>
+		<class name="Sphere1.4_AttackPunch" Type="Sphere" Radius="1.4" Renderer="DoubleParticle_AttackPunch, Outline_Attack"/>
+		<class name="Sphere1.4_AttackPierce" Type="Sphere" Radius="1.4" Renderer="DoubleParticle_AttackPierce, Outline_Attack"/>
+		<class name="Sphere1.4_Attack_HemiSphere" Type="Sphere" Radius="1.4" Renderer="Particle_Attack_HemiSphere_1.4" ExpandedRange="Sphere2_Attack_HemiSphere"/>
+		<class name="Sphere1.4_Assist_HemiSphere" Type="Sphere" Radius="1.4" Renderer="Particle_Assist_HemiSphere_1.4" ExpandedRange="Sphere2_Assist_HemiSphere"/>
+		<class name="Sphere2_Ability_NeguriTongueBash" Type="Sphere" Radius="2" ExcludeSelf="true" HeightFilter="true" HeightFilterBase="SelfPos" HeightRange="20" Renderer="Particle_AttackRange, Outline_Attack"/>
+		<class name="Sphere2TILE" Type="Sphere" Radius="2" Marker="YELLOW"/>
+		<class name="Sphere2" Type="Sphere" Radius="2" ExpandedRange="Sphere3"/>
+		<class name="Sphere2_ExSelf" Type="Sphere" Radius="2" ExcludeSelf="true" ExpandedRange="Sphere3_ExSelf"/>
+		<class name="Sphere2_Attack" Type="Sphere" Radius="2" Renderer="Particle_Damaged" ExpandedRange="Sphere3_Attack"/>
+		<class name="Sphere2_Trap" Type="Sphere" Radius="2" Renderer="Outline_Attack, Particle_Damaged" ExpandedRange="Sphere3_Trap"/>
+		<class name="Sphere2_Trap_Ally" Type="Sphere" Radius="2" Renderer="Outline_Assist" ExpandedRange="Sphere3_Trap_Assist"/>
+		<class name="Sphere2_Attack_Delay" Type="Sphere" Radius="2" ShowDelay="0.1" Renderer="Particle_Damaged" ExpandedRange="Sphere3_Attack_Delay"/>
+		<class name="Sphere2_Assist" Type="Sphere" Radius="2" Renderer="Particle_Assist" ExpandedRange="Sphere3_Assist"/>
+		<class name="Sphere2_Assist_Delay" Type="Sphere" Radius="2" ShowDelay="0.1" Renderer="Particle_Assist"/>
+		<class name="Sphere2_Attack_Outline" Type="Sphere" Radius="2" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere3_Attack_Outline"/>
+		<class name="Sphere2_Assist_Outline" Type="Sphere" Radius="2" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere3_Assist_Outline"/>
+		<class name="Sphere2_Attack_Outline_Sight" Type="Sphere" Radius="2" SightFilter="true" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere3_Attack_Outline_Sight"/>
+		<class name="Sphere2_Assist_Outline_Sight" Type="Sphere" Radius="2" SightFilter="true" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere3_Assist_Outline_Sight"/>
+		<class name="Sphere2_Attack_HemiSphere" Type="Sphere" Radius="2" Renderer="Particle_Attack_HemiSphere_2" ExpandedRange="Sphere3_Attack_HemiSphere"/>
+		<class name="Sphere2_Assist_HemiSphere" Type="Sphere" Radius="2" Renderer="Particle_Assist_HemiSphere_2" ExpandedRange="Sphere3_Assist_HemiSphere"/>
+		<class name="Sphere2_Rand" Type="Sphere" Radius="2" Randomize="true" ExpandedRange="Sphere3_Rand"/>
+		<class name="Sphere3_Ability_Neguri_TongueStorm" Type="Sphere" Radius="3" ExcludeSelf="true" HeightFilter="true" HeightFilterBase="SelfPos" HeightRange="20" Renderer="Particle_AttackRange, Outline_Attack"/>
+		<class name="Sphere3" Type="Sphere" Radius="3" ExpandedRange="Sphere4"/>
+		<class name="Sphere3_ExSelf" Type="Sphere" Radius="3" ExcludeSelf="true" ExpandedRange="Sphere4_ExSelf"/>
+		<class name="Sphere3_Attack" Type="Sphere" Radius="3" Renderer="Particle_Damaged" ExpandedRange="Sphere4_Attack"/>
+		<class name="Sphere3_Trap" Type="Sphere" Radius="3" Renderer="Outline_Attack, Particle_Damaged"/>
+		<class name="Sphere3_Trap_Assist" Type="Sphere" Radius="3" Renderer="Outline_Assist"/>
+		<class name="Sphere3_Attack_Delay" Type="Sphere" Radius="3" ShowDelay="0.1" Renderer="Particle_Damaged"/>
+		<class name="Sphere3_Assist" Type="Sphere" Radius="3" Renderer="Particle_Assist" ExpandedRange="Sphere4_Assist"/>
+		<class name="Sphere3_Attack_Outline" Type="Sphere" Radius="3" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere4_Attack_Outline"/>
+		<class name="Sphere3_Attack_Outline_NoEnter" Type="Sphere" Radius="3" EnterableFilter="false" Renderer="Particle_AttackRange, Outline_Attack"/>
+		<class name="Sphere3_Assist_Outline" Type="Sphere" Radius="3" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere4_Assist_Outline"/>
+		<class name="Sphere3_Attack_Outline_Sight" Type="Sphere" Radius="3" SightFilter="true" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere4_Attack_Outline_Sight"/>
+		<class name="Sphere3_Assist_Outline_Sight" Type="Sphere" Radius="3" SightFilter="true" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere4_Assist_Outline_Sight"/>
+		<class name="Sphere3_Attack_HemiSphere" Type="Sphere" Radius="3" Renderer="Particle_Attack_HemiSphere_3" ExpandedRange="Sphere4_Attack_HemiSphere"/>
+		<class name="Sphere3_Assist_HemiSphere" Type="Sphere" Radius="3" Renderer="Particle_Assist_HemiSphere_3" ExpandedRange="Sphere4_Assist_HemiSphere"/>
+		<class name="Sphere3_Rand" Type="Sphere" Radius="3" Randomize="true" Renderer="Invisible"/>
+		<class name="Sphere4_Ability_Flypaper" Type="Sphere" Radius="4" ExcludeSelf="true" HeightFilter="true" HeightFilterBase="SelfPos" HeightRange="20" Renderer="Particle_AttackRange, Outline_Attack"/>
+		<class name="Sphere4" Type="Sphere" Radius="4" ExpandedRange="Sphere5"/>
+		<class name="Sphere4_ExSelf" Type="Sphere" Radius="4" ExcludeSelf="true" ExpandedRange="Sphere5_ExSelf"/>
+		<class name="Sphere4_Attack" Type="Sphere" Radius="4" Renderer="Particle_Damaged" ExpandedRange="Sphere5_Attack"/>
+		<class name="Sphere4_Trap" Type="Sphere" Radius="4" Renderer="Outline_Attack, Particle_Damaged"/>
+		<class name="Sphere4_Assist" Type="Sphere" Radius="4" Renderer="Particle_Assist" ExpandedRange="Sphere5_Assist"/>
+		<class name="Sphere4_Attack_Outline" Type="Sphere" Radius="4" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere5_Attack_Outline"/>
+		<class name="Sphere4_Assist_Outline" Type="Sphere" Radius="4" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere5_Assist_Outline"/>
+		<class name="Sphere4_Attack_Outline_Sight" Type="Sphere" Radius="4" SightFilter="true" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere5_Attack_Outline_Sight"/>
+		<class name="Sphere4_Attack_Outline_Sight_Height" Type="Sphere" Radius="4" SightFilter="true" HeightFilter="true" HeightRange="50" Renderer="Particle_AttackRange, Outline_Attack"/>
+		<class name="Sphere4_Assist_Outline_Sight" Type="Sphere" Radius="4" SightFilter="true" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere5_Assist_Outline_Sight"/>
+		<class name="Sphere4_Attack_HemiSphere" Type="Sphere" Radius="4" Renderer="Particle_Attack_HemiSphere_4" ExpandedRange="Sphere5_Attack_HemiSphere"/>
+		<class name="Sphere4_Assist_HemiSphere" Type="Sphere" Radius="4" Renderer="Particle_Assist_HemiSphere_4" ExpandedRange="Sphere5_Assist_HemiSphere"/>
+		<class name="Sphere4_Ability_ThrowerFlame" Type="Sphere" Radius="4" ExcludeSelf="true" HeightFilter="true" HeightFilterBase="SelfPos" HeightRange="20" Renderer="Particle_AttackRange, Outline_Attack"/>
+		<class name="Sphere5" Type="Sphere" Radius="5" ExpandedRange="Sphere6"/>
+		<class name="Sphere5_ExSelf" Type="Sphere" Radius="5" ExcludeSelf="true" ExpandedRange="Sphere6_ExSelf"/>
+		<class name="Sphere5_Attack" Type="Sphere" Radius="5" Renderer="Particle_Damaged" ExpandedRange="Sphere6_Attack"/>
+		<class name="Sphere5_Assist" Type="Sphere" Radius="5" Renderer="Particle_Assist" ExpandedRange="Sphere6_Assist"/>
+		<class name="Sphere5_Attack_Outline" Type="Sphere" Radius="5" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere6_Attack_Outline"/>
+		<class name="Sphere5_Attack_Outline_Sight_ExSelf" Type="Sphere" Radius="5" SightFilter="true" ExcludeSelf="true" Renderer="Particle_AttackRange, Outline_Attack"/>
+		<class name="Sphere5_Assist_Outline" Type="Sphere" Radius="5" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere6_Assist_Outline"/>
+		<class name="Sphere5_Attack_Outline_Sight" Type="Sphere" Radius="5" SightFilter="true" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere6_Attack_Outline_Sight"/>
+		<class name="Sphere5_Assist_Outline_Sight" Type="Sphere" Radius="5" SightFilter="true" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere6_Assist_Outline_Sight"/>
+		<class name="Sphere5_Assist_Outline_Sight_ExSelf" Type="Sphere" Radius="5" ExcludeSelf="true" SightFilter="true" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere6_Assist_Outline_Sight_ExSelf"/>
+		<class name="Sphere5_Assist_Outline_Sight_WindWalk" Type="Sphere" Radius="5" ExcludeSelf="true" SightFilter="true" Renderer="Particle_AssistRange, Outline_Assist_AbosrbOrigin"/>
+		<class name="Sphere5_Attack_Outline_Sight_Height" Type="Sphere" Radius="5" SightFilter="true" HeightFilter="true" HeightRange="50" Renderer="Particle_AttackRange, Outline_Attack"/>
+		<class name="Sphere5_Attack_HemiSphere" Type="Sphere" Radius="5" Renderer="Particle_Attack_HemiSphere_5" ExpandedRange="Sphere6_Attack_HemiSphere"/>
+		<class name="Sphere5_Assist_HemiSphere" Type="Sphere" Radius="5" Renderer="Particle_Assist_HemiSphere_5" ExpandedRange="Sphere6_Assist_HemiSphere"/>
+		<class name="Sphere5_Ability_ThrowerFlame" Type="Sphere" Radius="5" ExcludeSelf="true" HeightFilter="true" HeightFilterBase="SelfPos" HeightRange="20" Renderer="Particle_AttackRange, Outline_Attack"/>
+		<class name="Sphere5.6_Ability_GlideShaving" Type="Sphere" Radius="5.65" ExcludeSelf="true" HeightFilter="true" HeightFilterBase="SelfPos" HeightRange="20" Renderer="Particle_AttackRange, Outline_Attack"/>
+		<class name="Sphere6_Ability_FlypaperBig" Type="Sphere" Radius="6" ExcludeSelf="true" HeightFilter="true" HeightFilterBase="SelfPos" HeightRange="20" Renderer="Particle_AttackRange, Outline_Attack"/>
+		<class name="Sphere6" Type="Sphere" Radius="6" ExpandedRange="Sphere7"/>
+		<class name="Sphere6_ExSelf" Type="Sphere" Radius="6" ExcludeSelf="true" ExpandedRange="Sphere7_ExSelf"/>
+		<class name="Sphere6_Attack" Type="Sphere" Radius="6" Renderer="Particle_Damaged" ExpandedRange="Sphere7_Attack"/>
+		<class name="Sphere6_Assist" Type="Sphere" Radius="6" Renderer="Particle_Assist" ExpandedRange="Sphere7_Assist"/>
+		<class name="Sphere6_Attack_Outline" Type="Sphere" Radius="6" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere7_Attack_Outline"/>
+		<class name="Sphere6_Attack_Outline_NoEnter" Type="Sphere" Radius="6" Renderer="Particle_AttackRange, Outline_Attack"/>
+		<class name="Sphere6_Attack_Outline_ExSelf" Type="Sphere" Radius="6" ExcludeSelf="true" Renderer="Particle_AttackRange, Outline_Attack"/>
+		<class name="Sphere6_Attack_Outline_ExSelf_Filter20" Type="Sphere" Radius="6" ExcludeSelf="true" HeightFilter="true" HeightRange="20" Renderer="Particle_AttackRange, Outline_Attack"/>
+		<class name="Sphere6_Assist_Outline" Type="Sphere" Radius="6" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere7_Assist_Outline"/>
+		<class name="Sphere6_Attack_Outline_Sight" Type="Sphere" Radius="6" SightFilter="true" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere7_Attack_Outline_Sight"/>
+		<class name="Sphere6_Attack_Outline_Sight_NoEnter" Type="Sphere" Radius="6" EnterableFilter="false" SightFilter="true" Renderer="Particle_AttackRange, Outline_Attack"/>
+		<class name="Sphere6_Assist_Outline_Sight" Type="Sphere" Radius="6" SightFilter="true" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere7_Assist_Outline_Sight"/>
+		<class name="Sphere6_Assist_Outline_Sight_ExSelf" Type="Sphere" Radius="6" ExcludeSelf="true" SightFilter="true" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere7_Assist_Outline_Sight_ExSelf"/>
+		<class name="Sphere6_Attack_HemiSphere" Type="Sphere" Radius="6" Renderer="Particle_Attack_HemiSphere_5" ExpandedRange="Sphere7_Attack_HemiSphere"/>
+		<class name="Sphere6_Assist_HemiSphere" Type="Sphere" Radius="6" Renderer="Particle_Assist_HemiSphere_5"/>
+		<class name="Sphere7" Type="Sphere" Radius="7" ExpandedRange="Sphere8"/>
+		<class name="Sphere7_ExSelf" Type="Sphere" Radius="7" ExcludeSelf="true" ExpandedRange="Sphere8_ExSelf"/>
+		<class name="Sphere7_Attack" Type="Sphere" Radius="7" Renderer="Particle_Damaged" ExpandedRange="Sphere8_Attack"/>
+		<class name="Sphere7_Assist" Type="Sphere" Radius="7" Renderer="Particle_Assist" ExpandedRange="Sphere8_Assist"/>
+		<class name="Sphere7_Attack_Outline" Type="Sphere" Radius="7" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere8_Attack_Outline"/>
+		<class name="Sphere7_Attack_Outline_NoThrowing" Type="Sphere" Radius="7" Renderer="Particle_AttackRange, Outline_Attack" Throwing="false" ExpandedRange="Sphere8_Attack_Outline_NoThrowing"/>
+		<class name="Sphere7_Attack_Outline_NoThrowing_NoEnter" Type="Sphere" Radius="7" EnterableFilter="false" Renderer="Particle_AttackRange, Outline_Attack" Throwing="false"/>
+		<class name="Sphere7_Assist_Outline" Type="Sphere" Radius="7" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere8_Assist_Outline"/>
+		<class name="Sphere7_Assist_Outline_NoEnter" Type="Sphere" Radius="7" EnterableFilter="false" Renderer="Particle_AssistRange, Outline_Assist"/>
+		<class name="Sphere7_Attack_Outline_Sight" Type="Sphere" Radius="7" SightFilter="true" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere8_Attack_Outline_Sight"/>
+		<class name="Sphere7_Assist_Outline_Sight" Type="Sphere" Radius="7" SightFilter="true" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere8_Assist_Outline_Sight"/>
+		<class name="Sphere7_Assist_Outline_Sight_ExSelf" Type="Sphere" Radius="7" ExcludeSelf="true" SightFilter="true" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere8_Assist_Outline_Sight_ExSelf"/>
+		<class name="Sphere7_Attack_HemiSphere" Type="Sphere" Radius="7" Renderer="Particle_Attack_HemiSphere_6" ExpandedRange=""/>
+		<class name="Sphere8" Type="Sphere" Radius="8" Renderer="Particle_AttackRange" ExpandedRange="Sphere9"/>
+		<class name="Sphere8_ExSelf" Type="Sphere" Radius="8" ExcludeSelf="true" ExpandedRange="Sphere9_ExSelf"/>
+		<class name="Sphere8_Attack" Type="Sphere" Radius="8" Renderer="Particle_Damaged" ExpandedRange="Sphere9_Attack"/>
+		<class name="Sphere8_Assist" Type="Sphere" Radius="8" Renderer="Particle_Assist" ExpandedRange="Sphere9_Assist"/>
+		<class name="Sphere8_Attack_Outline" Type="Sphere" Radius="8" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere9_Attack_Outline"/>
+		<class name="Sphere8_Attack_Outline_NoEnter" Type="Sphere" Radius="8" EnterableFilter="false" Renderer="Particle_AttackRange, Outline_Attack"/>
+		<class name="Sphere8_Assist_Outline" Type="Sphere" Radius="8" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere9_Assist_Outline"/>
+		<class name="Sphere8_Attack_Outline_Sight" Type="Sphere" Radius="8" SightFilter="true" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere9_Attack_Outline_Sight"/>
+		<class name="Sphere8_Attack_Outline_Sight_NoEnter" Type="Sphere" Radius="8" EnterableFilter="false" SightFilter="true" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere9_Attack_Outline_Sight_NoEnter"/>
+		<class name="Sphere8_Attack_Outline_NoThrowing" Type="Sphere" Radius="8" Renderer="Particle_AttackRange, Outline_Attack" Throwing="false"/>
+		<class name="Sphere8_Attack_Outline_Sight_NoThrowing" Type="Sphere" Radius="8" SightFilter="true" Renderer="Particle_AttackRange, Outline_Attack" Throwing="false" ExpandedRange="Sphere9_Attack_Outline_Sight_NoThrowing"/>
+		<class name="Sphere8_Assist_Outline_Sight" Type="Sphere" Radius="8" SightFilter="true" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere9_Assist_Outline_Sight"/>
+		<class name="Sphere8_Assist_Outline_Sight_ExSelf" Type="Sphere" Radius="8" ExcludeSelf="true" SightFilter="true" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere9_Assist_Outline_Sight_ExSelf"/>
+		<class name="Sphere9" Type="Sphere" Radius="9" Renderer="Particle_AttackRange" ExpandedRange="Sphere10"/>
+		<class name="Sphere9_ExSelf" Type="Sphere" Radius="9" ExcludeSelf="true" ExpandedRange="Sphere10_ExSelf"/>
+		<class name="Sphere9_Attack" Type="Sphere" Radius="9" Renderer="Particle_Damaged" ExpandedRange="Sphere10_Attack"/>
+		<class name="Sphere9_Assist" Type="Sphere" Radius="9" Renderer="Particle_Assist" ExpandedRange="Sphere10_Assist"/>
+		<class name="Sphere9_Attack_Outline" Type="Sphere" Radius="9" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere10_Attack_Outline"/>
+		<class name="Sphere9_Assist_Outline" Type="Sphere" Radius="9" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere10_Assist_Outline"/>
+		<class name="Sphere9_Attack_Outline_Sight" Type="Sphere" Radius="9" SightFilter="true" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere10_Attack_Outline_Sight"/>
+		<class name="Sphere9_Attack_Outline_Sight_NoEnter" Type="Sphere" Radius="9" EnterableFilter="false" SightFilter="true" Renderer="Particle_AttackRange, Outline_Attack"/>
+		<class name="Sphere9_Attack_Outline_Sight_NoThrowing" Type="Sphere" Radius="9" SightFilter="true" Renderer="Particle_AttackRange, Outline_Attack" Throwing="false" ExpandedRange="Sphere10_Attack_Outline_Sight_NoThrowing"/>
+		<class name="Sphere9_Assist_Outline_Sight" Type="Sphere" Radius="9" SightFilter="true" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere10_Assist_Outline_Sight"/>
+		<class name="Sphere9_Assist_Outline_Sight_ExSelf" Type="Sphere" Radius="9" ExcludeSelf="true" SightFilter="true" Renderer="Particle_AssistRange, Outline_Assist"/>
+		<class name="Sphere10" Type="Sphere" Radius="10" Renderer="Particle_AttackRange" ExpandedRange="Sphere11"/>
+		<class name="Sphere10_ExSelf" Type="Sphere" Radius="10" ExcludeSelf="true" ExpandedRange="Sphere11_ExSelf"/>
+		<class name="Sphere10_Attack" Type="Sphere" Radius="10" Renderer="Particle_Damaged" ExpandedRange="Sphere11_Attack"/>
+		<class name="Sphere10_Assist" Type="Sphere" Radius="10" Renderer="Particle_Assist" ExpandedRange="Sphere11_Assist"/>
+		<class name="Sphere10_Attack_Outline" Type="Sphere" Radius="10" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere11_Attack_Outline"/>
+		<class name="Sphere10_Assist_Outline" Type="Sphere" Radius="10" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere11_Assist_Outline"/>
+		<class name="Sphere10_Assist_Outline_Sight" Type="Sphere" Radius="10" SightFilter="true" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere11_Assist_Outline_Sight"/>
+		<class name="Sphere10_Attack_Outline_Sight" Type="Sphere" Radius="10" SightFilter="true" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere11_Attack_Outline_Sight"/>
+		<class name="Sphere10_Attack_Outline_Sight_NoThrowing" Type="Sphere" Radius="10" SightFilter="true" Renderer="Particle_AttackRange, Outline_Attack" Throwing="false"/>
+		<class name="Sphere11" Type="Sphere" Radius="11" Renderer="Particle_AttackRange" ExpandedRange="Sphere12"/>
+		<class name="Sphere11_ExSelf" Type="Sphere" Radius="11" ExcludeSelf="true" ExpandedRange="Sphere12_ExSelf"/>
+		<class name="Sphere11_Attack" Type="Sphere" Radius="11" Renderer="Particle_Damaged" ExpandedRange="Sphere12_Attack"/>
+		<class name="Sphere11_Assist" Type="Sphere" Radius="11" Renderer="Particle_Assist" ExpandedRange="Sphere12_Assist"/>
+		<class name="Sphere11_Attack_Outline" Type="Sphere" Radius="11" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere12_Attack_Outline"/>
+		<class name="Sphere11_Assist_Outline" Type="Sphere" Radius="11" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere12_Assist_Outline"/>
+		<class name="Sphere11_Attack_Outline_Sight" Type="Sphere" Radius="11" SightFilter="true" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere12_Attack_Outline_Sight"/>
+		<class name="Sphere11_Assist_Outline_Sight" Type="Sphere" Radius="11" SightFilter="true" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere12_Assist_Outline_Sight"/>
+		<class name="Sphere12" Type="Sphere" Radius="12" Renderer="Particle_AttackRange" ExpandedRange="Sphere13"/>
+		<class name="Sphere12_ExSelf" Type="Sphere" Radius="12" ExcludeSelf="true" ExpandedRange="Sphere13_ExSelf"/>
+		<class name="Sphere12_Attack" Type="Sphere" Radius="12" Renderer="Particle_Damaged" ExpandedRange="Sphere13_Attack"/>
+		<class name="Sphere12_Assist" Type="Sphere" Radius="12" Renderer="Particle_Assist" ExpandedRange="Sphere13_Assist"/>
+		<class name="Sphere12_Attack_Outline" Type="Sphere" Radius="12" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere13_Attack_Outline"/>
+		<class name="Sphere12_Assist_Outline" Type="Sphere" Radius="12" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere13_Assist_Outline"/>
+		<class name="Sphere12_Attack_Outline_Sight" Type="Sphere" Radius="12" SightFilter="true" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere13_Attack_Outline_Sight"/>
+		<class name="Sphere12_Attack_Outline_Sight_ExSelf" Type="Sphere" Radius="12" SightFilter="true" Renderer="Particle_AttackRange, Outline_Attack" ExcludeSelf="true" ExpandedRange="Sphere13_Attack_Outline_Sight_ExSelf"/>
+		<class name="Sphere12_Attack_Outline_Sight_NoEnter" Type="Sphere" Radius="12" EnterableFilter="false" SightFilter="true" Renderer="Particle_AttackRange, Outline_Attack"/>
+		<class name="Sphere12_Assist_Outline_Sight" Type="Sphere" Radius="12" SightFilter="true" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere13_Assist_Outline_Sight"/>
+		<class name="Sphere12_Assist_Outline_Sight_ExSelf" Type="Sphere" Radius="12" ExcludeSelf="true" SightFilter="true" Renderer="Particle_AssistRange, Outline_Assist"/>
+		<class name="Sphere13" Type="Sphere" Radius="13" Renderer="Particle_AttackRange" ExpandedRange="Sphere14"/>
+		<class name="Sphere13_ExSelf" Type="Sphere" Radius="13" ExcludeSelf="true" ExpandedRange="Sphere14_ExSelf"/>
+		<class name="Sphere13_Attack" Type="Sphere" Radius="13" Renderer="Particle_Damaged" ExpandedRange="Sphere14_Attack"/>
+		<class name="Sphere13_Assist" Type="Sphere" Radius="13" Renderer="Particle_Assist" ExpandedRange="Sphere14_Assist"/>
+		<class name="Sphere13_Attack_Outline" Type="Sphere" Radius="13" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere14_Attack_Outline"/>
+		<class name="Sphere13_Assist_Outline" Type="Sphere" Radius="13" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere14_Assist_Outline"/>
+		<class name="Sphere13_Attack_Outline_Sight" Type="Sphere" Radius="13" SightFilter="true" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere14_Attack_Outline_Sight"/>
+		<class name="Sphere13_Assist_Outline_Sight" Type="Sphere" Radius="13" SightFilter="true" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere14_Assist_Outline_Sight"/>
+		<class name="Sphere13_Attack_Outline_Sight_ExSelf" Type="Sphere" Radius="13" SightFilter="true" Renderer="Particle_AttackRange, Outline_Attack" ExcludeSelf="true"/>
+		<class name="Sphere14" Type="Sphere" Radius="14" Renderer="Particle_AttackRange" ExpandedRange="Sphere15"/>
+		<class name="Sphere14_ExSelf" Type="Sphere" Radius="14" ExcludeSelf="true" ExpandedRange="Sphere15_ExSelf"/>
+		<class name="Sphere14_Attack" Type="Sphere" Radius="14" Renderer="Particle_Damaged" ExpandedRange="Sphere15_Attack"/>
+		<class name="Sphere14_Assist" Type="Sphere" Radius="14" Renderer="Particle_Assist" ExpandedRange="Sphere15_Assist"/>
+		<class name="Sphere14_Attack_Outline" Type="Sphere" Radius="14" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere15_Attack_Outline"/>
+		<class name="Sphere14_Assist_Outline" Type="Sphere" Radius="14" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere15_Assist_Outline"/>
+		<class name="Sphere14_Attack_Outline_Sight" Type="Sphere" Radius="14" SightFilter="true" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere15_Attack_Outline_Sight"/>
+		<class name="Sphere14_Assist_Outline_Sight" Type="Sphere" Radius="14" SightFilter="true" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere15_Assist_Outline_Sight"/>
+		<class name="Sphere15" Type="Sphere" Radius="15" Renderer="Particle_AttackRange" ExpandedRange="Sphere16"/>
+		<class name="Sphere15_ExSelf" Type="Sphere" Radius="15" ExcludeSelf="true" ExpandedRange="Sphere16_ExSelf"/>
+		<class name="Sphere15_Attack" Type="Sphere" Radius="15" Renderer="Particle_Damaged" ExpandedRange="Sphere16_Attack"/>
+		<class name="Sphere15_Assist" Type="Sphere" Radius="15" Renderer="Particle_Assist" ExpandedRange="Sphere16_Assist"/>
+		<class name="Sphere15_Attack_Outline" Type="Sphere" Radius="15" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere16_Attack_Outline"/>
+		<class name="Sphere15_Assist_Outline" Type="Sphere" Radius="15" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere16_Assist_Outline"/>
+		<class name="Sphere15_Attack_Outline_Sight" Type="Sphere" Radius="15" SightFilter="true" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere16_Attack_Outline_Sight"/>
+		<class name="Sphere15_Assist_Outline_Sight" Type="Sphere" Radius="15" SightFilter="true" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere16_Assist_Outline_Sight"/>
+		<class name="Sphere15_Assist_Outline_Sight_ExSelf" Type="Sphere" Radius="15" ExcludeSelf="true" SightFilter="true" Renderer="Particle_AssistRange, Outline_Assist"/>
+		<class name="Sphere15_HemiSphere" Type="Sphere" Radius="15" Renderer="Sphere" ExpandedRange="Sphere16_HemiSphere"/>
+		<class name="Sphere16" Type="Sphere" Radius="16" Renderer="Particle_AttackRange" ExpandedRange="Sphere17"/>
+		<class name="Sphere16_ExSelf" Type="Sphere" Radius="16" ExcludeSelf="true" ExpandedRange="Sphere17_ExSelf"/>
+		<class name="Sphere16_Attack" Type="Sphere" Radius="16" Renderer="Particle_Damaged" ExpandedRange="Sphere17_Attack"/>
+		<class name="Sphere16_Assist" Type="Sphere" Radius="16" Renderer="Particle_Assist" ExpandedRange="Sphere17_Assist"/>
+		<class name="Sphere16_Attack_Outline" Type="Sphere" Radius="16" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere17_Attack_Outline"/>
+		<class name="Sphere16_Assist_Outline" Type="Sphere" Radius="16" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere17_Assist_Outline"/>
+		<class name="Sphere16_Attack_Outline_Sight" Type="Sphere" Radius="16" SightFilter="true" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Sphere17_Attack_Outline_Sight"/>
+		<class name="Sphere16_Assist_Outline_Sight" Type="Sphere" Radius="16" SightFilter="true" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Sphere17_Assist_Outline_Sight"/>
+		<class name="Sphere16_Assist_Outline_Sight_ExSelf" Type="Sphere" Radius="16" ExcludeSelf="true" SightFilter="true" Renderer="Particle_AssistRange, Outline_Assist"/>
+		<class name="Sphere16_HemiSphere" Type="Sphere" Radius="16" Renderer="Sphere" ExpandedRange="Sphere17_HemiSphere"/>
+		<class name="Sphere17" Type="Sphere" Radius="17" Renderer="Particle_AttackRange"/>
+		<class name="Sphere17_ExSelf" Type="Sphere" Radius="17" ExcludeSelf="true"/>
+		<class name="Sphere17_Attack" Type="Sphere" Radius="17" Renderer="Particle_Damaged"/>
+		<class name="Sphere17_Assist" Type="Sphere" Radius="17" Renderer="Particle_Assist"/>
+		<class name="Sphere17_Attack_Outline" Type="Sphere" Radius="17" Renderer="Particle_AttackRange, Outline_Attack"/>
+		<class name="Sphere17_Assist_Outline" Type="Sphere" Radius="17" Renderer="Particle_AssistRange, Outline_Assist"/>
+		<class name="Sphere17_Attack_Outline_Sight" Type="Sphere" Radius="17" SightFilter="true" Renderer="Particle_AttackRange, Outline_Attack"/>
+		<class name="Sphere17_Assist_Outline_Sight" Type="Sphere" Radius="17" SightFilter="true" Renderer="Particle_AssistRange, Outline_Assist"/>
+		<class name="Sphere17_Assist_Outline_Sight_ExSelf" Type="Sphere" Radius="17" ExcludeSelf="true" SightFilter="true" Renderer="Particle_AssistRange, Outline_Assist"/>
+		<class name="Sphere17_HemiSphere" Type="Sphere" Radius="17" Renderer="Sphere"/>
+		<class name="StraightShoot_CheckFire" Type="StraightLine" Distance="8" Width="0.6" FixLength="true" Renderer="Particle_Pierce"/>
+		<class name="XCross1" Type="XCross" Distance="1" ExpandedRange="XCross2"/>
+		<class name="XCross2" Type="XCross" Distance="2" ExpandedRange="XCross3"/>
+		<class name="XCross3" Type="XCross" Distance="3" ExpandedRange="XCross4"/>
+		<class name="XCross4" Type="XCross" Distance="4" ExpandedRange="XCross5"/>
+		<class name="XCross5" Type="XCross" Distance="5"/>
+		<class name="XCrossEx1" Type="XCross" Distance="1" Fill="false"/>
+		<class name="Rush2_Attack_Outline" Type="Rush" Distance="2" Width="1" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Rush3_Attack_Outline"/>
+		<class name="Rush3_Attack_Outline" Type="Rush" Distance="3" Width="1" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Rush4_Attack_Outline"/>
+		<class name="Rush4_Attack_Outline" Type="Rush" Distance="4" Width="1" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Rush5_Attack_Outline"/>
+		<class name="Rush5_Attack_Outline" Type="Rush" Distance="5" Width="1" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Rush6_Attack_Outline"/>
+		<class name="Rush6_Attack_Outline" Type="Rush" Distance="6" Width="1" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Rush7_Attack_Outline"/>
+		<class name="Rush7_Attack_Outline" Type="Rush" Distance="7" Width="1" Renderer="Particle_AttackRange, Outline_Attack" ExpandedRange="Rush8_Attack_Outline"/>
+		<class name="Rush8_Attack_Outline" Type="Rush" Distance="8" Width="1" Renderer="Particle_AttackRange, Outline_Attack"/>
+		<class name="Rush9_Attack_Outline_Width3" Type="Rush" Distance="9" Width="3" Renderer="Particle_AttackRange, Outline_Attack"/>
+		<class name="Rush3_Assist_Outline" Type="Rush" Distance="3" Width="1" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Rush4_Assist_Outline"/>
+		<class name="Rush4_Assist_Outline" Type="Rush" Distance="4" Width="1" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Rush5_Assist_Outline"/>
+		<class name="Rush5_Assist_Outline" Type="Rush" Distance="5" Width="1" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Rush6_Assist_Outline"/>
+		<class name="Rush6_Assist_Outline" Type="Rush" Distance="6" Width="1" Renderer="Particle_AssistRange, Outline_Assist" ExpandedRange="Rush7_Assist_Outline"/>
+		<class name="Rush7_Assist_Outline" Type="Rush" Distance="7" Width="1" Renderer="Particle_AssistRange, Outline_Assist"/>
+		<class name="ObjectiveArea" Type="Custom" Script="Get_ObjectiveArea" Renderer="Outline_MoveRange"/>
+	</idspace>
+</idspaces>

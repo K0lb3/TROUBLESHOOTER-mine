@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="GuideTrigger">
+	<schema>
+		<rule property="Pass" type="bool" default="false"/>
+		<rule property="ThisPass" type="bool" default="false"/>
+		<rule property="Register" type="function" default="GuideTriggerRegister_WorldEvent"/>
+		<rule property="EventType" type="table" subtype="string"/>
+		<rule property="Checker" type="function" default="GuideTriggerChecker_Empty"/>
+		<rule property="Director" type="function" default=""/>
+		<rule property="TestBuff" type="string" default=""/>
+		<rule property="HelpMessage" type="link" target="Help" default="None"/>
+		<rule property="IsEnable" type="function" default="GuideTriggerIsEnable_Default"/>
+		<rule property="Reserved" type="bool" default="false"/>
+		<rule property="Restorer" type="function" default="GuideTriggerRestorer_Empty"/>
+	</schema>
+	<class name="StateVitality" EventType="UnitTurnAcquired" Checker="GuideTriggerChecker_StateVitality" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="StateVitality"/>
+	<class name="StateFatigue" EventType="UnitTurnAcquired" Checker="GuideTriggerChecker_StateFatigue" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="StateFatigue"/>
+	<class name="RestorePotion" EventType="UnitTurnAcquired" Checker="GuideTriggerChecker_RestorePotion" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="RestorePotion"/>
+	<class name="SPGained" EventType="UnitTurnAcquired" Checker="GuideTriggerChecker_SPGained" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="SPGained"/>
+	<class name="SPFullGained" EventType="UnitTurnAcquired" Checker="GuideTriggerChecker_SPFullGained" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="SPFullGained"/>
+	<class name="RestoreCost" EventType="UnitTurnAcquired" Checker="GuideTriggerChecker_RestoreCost" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="RestoreCost"/>
+	<class name="NeedTurnOrder" EventType="UnitTurnAcquired" Checker="GuideTriggerChecker_NeedTurnOrder" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="NeedTurnOrder" IsEnable="GuideTriggerIsEnable_AfterFireflyPark"/>
+	<class name="FindVIP" EventType="UnitTurnAcquired" Checker="GuideTriggerChecker_FindVIP" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="FindVIP"/>
+	<class name="AngerKillCivil" EventType="UnitTakeDamage" Checker="GuideTriggerChecker_AngerKillCivil" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="AngerKillCivil"/>
+	<class name="OutOfAction" EventType="UnitDead" Checker="GuideTriggerChecker_OutOfAction" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="OutOfAction"/>
+	<class name="BuffAdded" EventType="BuffAdded" Checker="GuideTriggerChecker_BuffAdded" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="BuffAdded"/>
+	<class name="BlackoutFlashed" EventType="ChainEffectOccured" Checker="GuideTriggerChecker_ChainEffect" ChainType="BlackoutFlashed" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="BlackoutFlashed"/>
+	<class name="DangerMoved" EventType="AbilityUsed" Checker="GuideTriggerChecker_DangerMoved" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="DangerMoved"/>
+	<class name="FindPatrol" EventType="UnitMoved, AbilityUsed, PatrolDetected" Checker="GuideTriggerChecker_FindPatrol" Director="GuideTriggerDirector_BattleDialogMessage_FindEnemy" HelpMessage="FindPatrol"/>
+	<class name="FindDetecting" EventType="UnitMoved, AbilityUsed, PatrolDetected" Checker="GuideTriggerChecker_FindDetecting" Director="GuideTriggerDirector_BattleDialogMessage_FindEnemy" HelpMessage="FindDetecting"/>
+	<class name="FindChest" EventType="UnitMoved, AbilityUsed" Checker="GuideTriggerChecker_FindChest" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="FindChest"/>
+	<class name="FindPsionicStone" EventType="UnitMoved, AbilityUsed" Checker="GuideTriggerChecker_FindPsionicStone" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="FindPsionicStone"/>
+	<class name="FindUnrestCivil" EventType="UnitMoved, AbilityUsed" Checker="GuideTriggerChecker_FindBuffOwner" Director="GuideTriggerDirector_BattleDialogMessage" TestBuff="Civil_Unrest" HelpMessage="FindUnrestCivil"/>
+	<class name="FindChildCivil" EventType="UnitMoved, AbilityUsed" Checker="GuideTriggerChecker_FindChildCivil" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="FindChildCivil"/>
+	<class name="FindInjuredCivil" EventType="UnitMoved, AbilityUsed" Checker="GuideTriggerChecker_FindBuffOwner" Director="GuideTriggerDirector_BattleDialogMessage" TestBuff="InjuredRescue" HelpMessage="FindInjuredCivil"/>
+	<class name="FindConfusedCivil" EventType="UnitMoved, AbilityUsed" Checker="GuideTriggerChecker_FindBuffOwner" Director="GuideTriggerDirector_BattleDialogMessage" TestBuff="Civil_Confusion" HelpMessage="FindConfusedCivil"/>
+	<class name="FindInjuredRageCivil" EventType="UnitMoved, AbilityUsed" Checker="GuideTriggerChecker_FindBuffOwner" Director="GuideTriggerDirector_BattleDialogMessage" TestBuff="InjuredRageRescue" HelpMessage="FindInjuredRageCivil"/>
+	<class name="FindElectricCharger" EventType="UnitMoved, AbilityUsed" Checker="GuideTriggerChecker_FindElectricCharger" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="FindElectricCharger"/>
+	<class name="FindOilingMachine" EventType="UnitMoved, AbilityUsed" Checker="GuideTriggerChecker_FindOilingMachine" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="FindOilingMachine"/>
+	<class name="FindToxicSubstance" EventType="UnitMoved, AbilityUsed" Checker="GuideTriggerChecker_FindToxicSubstance" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="FindToxicSubstance"/>
+	<class name="FindEliteMonster" EventType="UnitMoved, AbilityUsed" Checker="GuideTriggerChecker_FindEliteMonster" Director="GuideTriggerDirector_BattleDialogMessage_FindEnemy" HelpMessage="FindEliteMonster"/>
+	<class name="FindEpicMonster" EventType="UnitMoved, AbilityUsed" Checker="GuideTriggerChecker_FindEpicMonster" Director="GuideTriggerDirector_BattleDialogMessage_FindEnemy" HelpMessage="FindEpicMonster"/>
+	<class name="FindLegendMonster" EventType="UnitMoved, AbilityUsed" Checker="GuideTriggerChecker_FindLegendMonster" Director="GuideTriggerDirector_BattleDialogMessage_FindEnemy" HelpMessage="FindLegendMonster"/>
+	<class name="FindNeutral" EventType="UnitMoved, AbilityUsed" Checker="GuideTriggerChecker_FindNeutral" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="FindNeutral"/>
+	<class name="FindAlly" EventType="UnitMoved, AbilityUsed" Checker="GuideTriggerChecker_FindAlly" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="FindAlly"/>
+	<class name="FindThirdForce" EventType="UnitMoved, AbilityUsed" Checker="GuideTriggerChecker_FindThirdForce" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="FindThirdForce"/>
+	<class name="FindSuppressionTarget" EventType="UnitMoved, AbilityUsed" Checker="GuideTriggerChecker_FindSuppressionTarget" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="FindSuppressionTarget"/>
+	<class name="FindTima" EventType="UnitMoved, AbilityUsed" Checker="GuideTriggerChecker_FindTima" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="FindTima"/>
+	<class name="FindHeadshot" EventType="UnitMoved, AbilityUsed" Checker="GuideTriggerChecker_FindHeadshot" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="FindHeadshot"/>
+	<class name="UsedCCAbility" EventType="UnitGiveDamage" Checker="GuideTriggerChecker_UsedCCAbility" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="UsedCCAbility"/>
+	<class name="InTileFieldEffect_Bush" EventType="BuffAdded" Checker="InTileFieldEffectGuideChecker" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="FieldEffect_Bush" FieldEffectType="Bush"/>
+	<class name="InTileFieldEffect_Swamp" EventType="BuffAdded" Checker="InTileFieldEffectGuideChecker" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="FieldEffect_Swamp" FieldEffectType="Swamp"/>
+	<class name="InTileFieldEffect_Ice" EventType="BuffAdded" Checker="InTileFieldEffectGuideChecker" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="FieldEffect_Ice" FieldEffectType="Ice"/>
+	<class name="InTileFieldEffect_Water" EventType="BuffAdded" Checker="InTileFieldEffectGuideChecker" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="FieldEffect_Water" FieldEffectType="Water"/>
+	<class name="InTileFieldEffect_ContaminatedWater" EventType="BuffAdded" Checker="InTileFieldEffectGuideChecker" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="FieldEffect_ContaminatedWater" FieldEffectType="ContaminatedWater"/>
+	<class name="InTileFieldEffect_Lava" EventType="BuffAdded" Checker="InTileFieldEffectGuideChecker" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="FieldEffect_Lava" FieldEffectType="Lava"/>
+	<class name="KnockbackStunOccured" EventType="BuffAdded" Checker="GuideTriggerChecker_KnockbackStunOccured" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="KnockbackStunOccured"/>
+	<class name="Chain" EventType="BuffLifeAddedByGroup" Checker="GuideTriggerChecker_BuffLifeAddedByGroup" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="Chain"/>
+	<class name="DirectingSkipAvailable" EventType="MissionBegin" Checker="GuideTriggerChecker_DirectingSkipAvailable" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="DirectingSkipAvailable"/>
+	<class name="MonsterOverKill" EventType="MonsterOverKill" Checker="GuideTriggerChecker_MonsterOverKill" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="MonsterOverKill"/>
+	<class name="MonsterPerfectKill" EventType="MonsterPerfectKill" Checker="GuideTriggerChecker_MonsterPerfectKill" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="MonsterPerfectKill"/>
+	<class name="MovingKnockbackIgnored" EventType="MovingKnockbackIgnored" Checker="GuideTriggerChecker_MovingKnockbackIgnored" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="MovingKnockbackIgnored"/>
+	<class name="CheckPointUpdated" EventType="CheckPointUpdated" Checker="GuideTriggerChecker_CheckAsIsEvent" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="CheckPointUpdated"/>
+	<class name="FireShieldTakeDamage" EventType="UnitTakeDamage" Checker="GuideTriggerChecker_FireShieldTakeDamage" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="FireShieldTakeDamage"/>
+	<class name="BeastHunter" EventType="UnitDead" Checker="GuideTriggerChecker_BeastHunter" Director="GuideTriggerDirector_AchievementMastery" FrontmessageKey="BeastHunterAchieved" Mastery="BeastHunter" Reserved="true" Restorer="GuideTriggerRestorer_Mastery"/>
+	<class name="MachineHunter" EventType="UnitDead" Checker="GuideTriggerChecker_MachineHunter" Director="GuideTriggerDirector_AchievementMastery" FrontmessageKey="MachineHunterAchieved" Mastery="MachineHunter" Reserved="true" Restorer="GuideTriggerRestorer_Mastery"/>
+	<class name="GiantKiller" EventType="UnitDead" Checker="GuideTriggerChecker_GiantKiller" Director="GuideTriggerDirector_AchievementMastery" FrontmessageKey="GiantKillerAchieved" Mastery="GiantKiller" Reserved="true" Restorer="GuideTriggerRestorer_Mastery"/>
+	<class name="MassExtract" EventType="ItemAcquired" Checker="GuideTriggerChecker_MassExtract" Director="GuideTriggerDirector_AchievementMastery" FrontmessageKey="MassExtractAchieved" Mastery="MassExtract" Reserved="true" Restorer="GuideTriggerRestorer_Mastery"/>
+	<class name="MaterialCollector" EventType="UnitDead" Checker="GuideTriggerChecker_MaterialCollector" Director="GuideTriggerDirector_AchievementMastery" FrontmessageKey="MaterialCollectorAchieved" Mastery="MaterialCollector" Reserved="true" Restorer="GuideTriggerRestorer_Mastery"/>
+	<class name="InnerPeace" EventType="AbilityUsed" Checker="GuideTriggerChecker_InnerPeace" Director="GuideTriggerDirector_AchievementMastery" FrontmessageKey="InnerPeaceAchieved" Mastery="InnerPeace" Reserved="true" Restorer="GuideTriggerRestorer_Mastery"/>
+	<class name="BeastMaster" EventType="BeastTamingSucceeded" Checker="GuideTriggerChecker_BeastMaster" Director="GuideTriggerDirector_AchievementMastery" FrontmessageKey="BeastMasterAchieved" Mastery="BeastMaster" Reserved="true" Restorer="GuideTriggerRestorer_Mastery"/>
+	<class name="HideHide" EventType="AbilityUsed" Checker="GuideTriggerChecker_CompanyStatTest" CompanyStat="UseAbilityConceal" StatGoal="10" Director="GuideTriggerDirector_AchievementMastery" FrontmessageKey="HideHideAchieved" Mastery="HideHide" Reserved="true" Restorer="GuideTriggerRestorer_Mastery"/>
+	<class name="RushReady" EventType="UnitDodgedOnCover" Checker="GuideTriggerChecker_CompanyStatTest" CompanyStat="DodgeOnCover" StatGoal="100" Director="GuideTriggerDirector_AchievementMastery" FrontmessageKey="RushReadyAchieved" Mastery="RushReady" Reserved="true" Restorer="GuideTriggerRestorer_Mastery"/>
+	<class name="SmokeScreen" EventType="BuffAdded" Checker="GuideTriggerChecker_SmokeScreen" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="SmokeScreen"/>
+	<class name="Silence" EventType="BuffAdded" Checker="GuideTriggerChecker_Silence" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="Silence"/>
+	<class name="Faint" EventType="ChainEffectOccured" Checker="GuideTriggerChecker_ChainEffect" ChainType="Faint" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="Faint"/>
+	<class name="MudCaked" EventType="ChainEffectOccured" Checker="GuideTriggerChecker_ChainEffect" ChainType="MudCaked" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="Mud"/>
+	<class name="Slip" EventType="ChainEffectOccured" Checker="GuideTriggerChecker_ChainEffect" ChainType="Slip" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="Slip"/>
+	<class name="Engaging" EventType="ChainEffectOccured" Checker="GuideTriggerChecker_ChainEffect" ChainType="Engaging" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="Engaging"/>
+	<class name="CastDelayTime" EventType="AbilityUsed" Checker="GuideTriggerChecker_CastDelayTime" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="CastDelayTime" IsEnable="GuideTriggerIsEnable_AfterFireflyPark"/>
+	<class name="DeepseaEscape" EventType="UnitPropertyUpdated" Checker="GuideTriggerChecker_DeepseaEscape" Director="GuideTriggerDirector_AchievementMastery" FrontmessageKey="DeepseaEscapeAchieved" Mastery="DeepseaEscape" Reserved="true" Restorer="GuideTriggerRestorer_Mastery"/>
+	<class name="KillAchievement_IreneLuna" EventType="UnitDead" Checker="GuideTriggerChecker_KillAchievement" Killer="Irene" Target="Luna" Director="GuideTriggerDirector_SteamAchievement" Achievement="SituationIreneKillLuna"/>
+	<class name="KillAchievement_AlbusGiselle" EventType="UnitDead" Checker="GuideTriggerChecker_KillAchievement" Killer="Albus" Target="Giselle" Director="GuideTriggerDirector_SteamAchievement" Achievement="SituationAlbusKillGiselle"/>
+	<class name="KillAchievement_AnneAlbus" EventType="UnitDead" Checker="GuideTriggerChecker_KillAchievement" Killer="Anne" Target="Albus" Director="GuideTriggerDirector_SteamAchievement" Achievement="SituationAnneKillAlbus"/>
+	<class name="KillAchievement_AnneIrene" EventType="UnitDead" Checker="GuideTriggerChecker_KillAchievement" Killer="Anne" Target="Irene" Director="GuideTriggerDirector_SteamAchievement" Achievement="SituationAnneKillIrene"/>
+	<class name="Berserker" EventType="BuffAdded" Checker="GuideTriggerChecker_Berserker" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="Berserker"/>
+	<class name="BattleEntrust" EventType="UnitTurnStart" Checker="GuideTriggerChecker_BattleEntrust" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="BattleEntrust" IsEnable="GuideTriggerIsEnable_AfterFireflyPark"/>
+	<class name="MovePointCustomizing" EventType="UnitTurnStart" Checker="GuideTriggerChecker_MovePointCustomizing" Director="GuideTriggerDirector_BattleDialogMessagePosition" HelpMessage="MovePointCustomizing" IsEnable="GuideTriggerIsEnable_AfterFireflyPark"/>
+	<class name="BattleInfoMode" EventType="UnitTurnStart, UnitTurnAcquired" Checker="GuideTriggerChecker_BattleInfoMode" Director="GuideTriggerDirector_BattleDialogMessageSync" HelpMessage="BattleInfoMode" IsEnable="GuideTriggerIsEnable_AfterFireflyPark"/>
+	<class name="LookUpTargetMode" EventType="" HelpMessage="LookUpTargetMode"/>
+	<class name="BeastTraining" FrontmessageKey="BeastTrainingAchieved" Mastery="BeastTraining" Register="GuideTriggerRegister_BeastTraining"/>
+	<class name="GiselleHunterBeastFound" EventType="UnitMoved, AbilityUsed" Checker="GuideTriggerChecker_GiselleHunterBeastFound" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="GiselleHunterBeastFound"/>
+	<class name="GiselleHunterTamingFailed" EventType="TamingFailed" Checker="GuideTriggerChecker_GiselleHunterTamingFailed" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="GiselleHunterTamingFailed"/>
+	<class name="GiselleHunterTamingSucceeded" EventType="TamingSucceeded" Checker="GuideTriggerChecker_GiselleHunterTamingSucceeded" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="GiselleHunterTamingSucceeded"/>
+	<class name="ShadowStep" EventType="ShadowSniperConfused" Checker="GuideTriggerChecker_ShadowStep" Director="GuideTriggerDirector_AchievementMastery" FrontmessageKey="ShadowStepAchieved" Mastery="ShadowStep" Reserved="true" Restorer="GuideTriggerRestorer_Mastery"/>
+	<class name="IronWall" EventType="UnitTurnStart" Checker="GuideTriggerChecker_IronWall" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="IronWall"/>
+	<class name="StableStatus" EventType="UnitTurnStart" Checker="GuideTriggerChecker_StableStatus" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="StableStatus" IsEnable="GuideTriggerIsEnable_AfterSilverlining"/>
+	<class name="PowerfulTrap" EventType="AbilityUsed" Checker="GuideTriggerChecker_PowerfulTrap" Director="GuideTriggerDirector_AchievementMastery" FrontmessageKey="PowerfulTrapAchieved" Mastery="PowerfulTrap" Reserved="true" Restorer="GuideTriggerRestorer_Mastery"/>
+	<class name="TreasureHunter" EventType="AbilityUsed" Checker="GuideTriggerChecker_TreasureHunter" Director="GuideTriggerDirector_AchievementMasteryCheckTechnique" FrontmessageKey="TreasureHunterAchieved" Mastery="TreasureHunter" Reserved="true" Restorer="GuideTriggerRestorer_MasteryCheckTechnique"/>
+	<class name="HackerRestart" EventType="AbilityUsed" Checker="GuideTriggerChecker_HackerRestart" Director="GuideTriggerDirector_AchievementMasteryWithSteam" FrontmessageKey="RestartAchieved" Mastery="Restart" Achievement="SituationHackerZeroUseCount" Reserved="true" Restorer="GuideTriggerRestorer_Mastery"/>
+	<class name="EngineerAutoProtocolRestore" EventType="AbilityUsed" Checker="GuideTriggerChecker_EngineerAutoProtocolRestore" Director="GuideTriggerDirector_AchievementMasteryWithSteam" FrontmessageKey="AutoProtocolRestoreAchieved" Mastery="AutoProtocolRestore" Achievement="SituationEngineerZeroUseCount" Reserved="true" Restorer="GuideTriggerRestorer_Mastery"/>
+	<class name="CodeOptimization" EventType="AbilityUsed" Checker="GuideTriggerChecker_CodeOptimization" Director="GuideTriggerDirector_AchievementMastery" FrontmessageKey="CodeOptimizationAchieved" Mastery="CodeOptimization" Reserved="true" Restorer="GuideTriggerRestorer_Mastery"/>
+	<class name="SearchProtocolUsed" EventType="AbilityUsed" Checker="GuideTriggerChecker_SearchProtocolUsed" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="SearchProtocolUsed"/>
+	<class name="Stealth" EventType="AbilityUsed, CloakingDetected" Checker="GuideTriggerChecker_Stealth" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="Stealth"/>
+	<class name="MaxActionTime" EventType="UnitPropertyUpdated" Checker="GuideTriggerChecker_MaxActionTime" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="MaxActionTime"/>
+	<class name="AbilityRangeLock" EventType="" Director="GuideTriggerDirector_BattleDialogMessageSync" HelpMessage="AbilityRangeLock" IsEnable="GuideTriggerIsEnable_AfterFireflyPark"/>
+	<class name="RisingStar" EventType="PerformanceGreatInvoked" Checker="GuideTriggerChecker_RisingStar" Director="GuideTriggerDirector_AchievementMasteryWithSteam" FrontmessageKey="RisingStarAchieved" Mastery="RisingStar" Achievement="SituationRisingStar" Reserved="true" Restorer="GuideTriggerRestorer_Mastery"/>
+	<class name="EnthusiasticPerformance" EventType="PerformanceFinishInvoked" Checker="GuideTriggerChecker_EnthusiasticPerformance" Director="GuideTriggerDirector_AchievementMasteryWithSteam" FrontmessageKey="EnthusiasticPerformanceAchieved" Mastery="EnthusiasticPerformance" Achievement="SituationEnthusiasticPerformance" Reserved="true" Restorer="GuideTriggerRestorer_Mastery"/>
+	<class name="SubscriptionConcert" EventType="PerformanceFinishInvoked" Checker="GuideTriggerChecker_SubscriptionConcert" Director="GuideTriggerDirector_AchievementMastery" FrontmessageKey="SubscriptionConcertAchieved" Mastery="SubscriptionConcert" Reserved="true" Restorer="GuideTriggerRestorer_Mastery"/>
+	<class name="Encore" EventType="PerformanceFinishInvoked" Checker="GuideTriggerChecker_Encore" Director="GuideTriggerDirector_AchievementMasteryWithSteam" FrontmessageKey="EncoreAchieved" Mastery="Encore" Achievement="SituationEncore" Reserved="true" Restorer="GuideTriggerRestorer_Mastery"/>
+	<class name="ShowClose" EventType="PerformanceFinishInvoked" Checker="GuideTriggerChecker_ShowClose" Director="GuideTriggerDirector_AchievementMasteryWithSteam" FrontmessageKey="ShowCloseAchieved" Mastery="ShowClose" Achievement="SituationShowClose" Reserved="true" Restorer="GuideTriggerRestorer_Mastery"/>
+	<class name="Gourmand" EventType="" Checker="" Director="" FrontmessageKey="GourmandAchieved" Mastery="Gourmand" Achievement="SituationGourmand"/>
+	<class name="StickyWeb" EventType="BuffAdded" Checker="GuideTriggerChecker_StickyWeb" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="StickyWeb"/>
+	<class name="AutoRetreat" EventType="RunIntoBattle" Checker="GuideTriggerChecker_AutoRetreat" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="AutoRetreat"/>
+</idspace>

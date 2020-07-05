@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Dialog">
+	<class name="Salary_Event_Begin_To_Talk_Ray_1">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Normal" Mode="Start" Close="true" Message="[!speaker:Albus_Normal]오늘은 레이씨 급여일이네." DialogType="Main" Slot="Right3" Effect="Appear"/>
+		</Scripts>
+	</class>
+	<class name="Salary_Event_Selection_Full_Ray_1">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Start" Close="true" Message="[!speaker:Albus_Think](보너스를 챙겨줄 수 있기는 한데...)" DialogType="Main" Slot="Right3" Effect="Appear"/>
+		</Scripts>
+	</class>
+	<class name="Salary_Event_Selection_NoBonus_Ray_1">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Think" Mode="Start" Close="true" Message="[!speaker:Albus_Think](급여는 충분히 지급할 수 있겠어.)" DialogType="Main" Slot="Right3" Effect="Appear"/>
+		</Scripts>
+	</class>
+	<class name="Salary_Event_Selection_NoSalary_Ray_1">
+		<Scripts>
+			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Disappointed" Mode="Start" Close="true" Message="[!speaker:Albus_Disappointed](이런, 급여를 지급할 여유가 없어..)" DialogType="Main" Slot="Right3" Effect="Appear"/>
+		</Scripts>
+	</class>
+	<class name="Salary_Event_Process_Normal_Ray_1">
+		<Scripts>
+			<property Type="BattleDialog" C_SpeakerInfo="env.roster_name" SpeakerEmotion="Smile2" Mode="Start" Close="true" Message="알버스 군. 고마워~☆" DialogType="Main" Slot="Left3" Effect="Appear"/>
+		</Scripts>
+	</class>
+	<class name="Salary_Event_Process_Bonus_Ray_1">
+		<Scripts>
+			<property Type="BattleDialog" C_SpeakerInfo="env.roster_name" SpeakerEmotion="Surprise_Smile" Mode="Start" Close="true" Message="이렇게 무리하지 않아도 돼. 알버스 군." DialogType="Main" Slot="Left3" Effect="Appear"/>
+		</Scripts>
+	</class>
+	<class name="Salary_Event_Process_Delay_Ray_1">
+		<Scripts>
+			<property Type="Switch" C_TestTarget="env.cur_roster.SalaryCountDelayCont &lt; 3">
+				<property Case="true">
+					<property Type="BattleDialog" C_SpeakerInfo="env.roster_name" SpeakerEmotion="Smile" Mode="Start" Close="true" Message="너무 신경 쓰지마. 돈이야 들어오면 주면 돼지" DialogType="Main" Slot="Left3" Effect="Appear"/>
+				</property>
+				<property Case="false">
+					<property Type="BattleDialog" C_SpeakerInfo="env.roster_name" SpeakerEmotion="Normal" Mode="Start" Close="false" Message="신경 쓰지마. 알버스 군." DialogType="Main" Slot="Left3" Effect="Appear"/>
+					<property Type="BattleDialog" C_SpeakerInfo="env.roster_name" SpeakerEmotion="Smile" Mode="Continue" Close="true" Message="일단 업무에 집중하자~☆" DialogType="Main" Slot="Left3" Effect="Appear"/>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+</idspace>

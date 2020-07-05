@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Collection">
+	<schema>
+		<rule property="IsRecentViewable" type="bool" default="true"/>
+	</schema>
+	<class name="Trouble01" Title="제 1 장. 트러블슈터입니다." Order="1" Image="Lobby2/Chapter1" PushedImage="Lobby2/Chapter1_Pushed" HoverImage="Lobby2/Chapter1_Hover">
+		<Images>
+			<property Image="Loading_AccessDenied" CheckType="Stage" Stage="Tutorial_FireflyPark"/>
+			<property Image="Loading_Station_Albus_Start" CheckType="Stage" Stage="Tutorial_Silverlining"/>
+			<property Image="Loading_Train_Albus" CheckType="Stage" Stage="Tutorial_Silverlining"/>
+			<property Image="Loading_Train_Albus2" CheckType="Stage" Stage="Tutorial_Silverlining"/>
+			<property Image="Loading_Station_Albus_Arrived" CheckType="Stage" Stage="Tutorial_Silverlining"/>
+			<property Image="Loading_Albus_Sleep" CheckType="Stage" Stage="Tutorial_Silverlining"/>
+			<property Image="Loading_Eschaton" CheckType="Stage" Stage="Tutorial_RamjiPlaza"/>
+			<property Image="Loading_Ramji" CheckType="Stage" Stage="Tutorial_RamjiPlaza"/>
+			<property Image="Loading_Ramjiplaza_Traveler" CheckType="Stage" Stage="Tutorial_RamjiPlaza"/>
+			<property Image="Loading_Ramjiplaza_Irene" CheckType="Stage" Stage="Tutorial_RamjiPlaza"/>
+			<property Image="Loading_Ramjiplaza_Alley" CheckType="Stage" Stage="Tutorial_RamjiPlaza"/>
+			<property Image="Loading_AlbusRamji" CheckType="Stage" Stage="Tutorial_RamjiPlaza"/>
+			<property Image="Loading_RamjiDanger" CheckType="Stage" Stage="Tutorial_RamjiPlaza"/>
+			<property Image="Loading_Joel_3" CheckType="Stage" Stage="Tutorial_RamjiPlaza"/>
+			<property Image="Loading_RamjiplazaNews" CheckType="Custom" Script="CheckCollection_Tutorial_RamjiPlaza_Lobby"/>
+			<property Image="Loading_SionAlba" CheckType="Stage" Stage="Tutorial_PugoStreet"/>
+			<property Image="Loading_Market" CheckType="Stage" Stage="Tutorial_PugoStreet"/>
+			<property Image="Loading_Road113" CheckType="Stage" Stage="Tutorial_Road_113"/>
+			<property Image="Loading_Road113_End" CheckType="Stage" Stage="Tutorial_Road_113"/>
+			<property Image="Loading_Rain" CheckType="Stage" Stage="Tutorial_CrowBillAfter"/>
+			<property Image="Loading_CrowBillAfter" CheckType="Stage" Stage="Tutorial_CrowBillAfter"/>
+			<property Image="Loading_SionAndHeisising" CheckType="Stage" Stage="Tutorial_PugoShop"/>
+			<property Image="Loading_SionAndHeisising2" CheckType="Stage" Stage="Tutorial_PugoShop"/>
+			<property Image="Loading_SionAndHeisisingWithEnemy" CheckType="Stage" Stage="Tutorial_PugoShop"/>
+			<property Image="Loading_SionAndHeisisingWithEnemy2" CheckType="Stage" Stage="Tutorial_PugoShop"/>
+			<property Image="Loading_Reunion" CheckType="Stage" Stage="Tutorial_PugoShop"/>
+		</Images>
+	</class>
+	<class name="Trouble02" Title="제 2 장. 균열의 시작" Order="2" Image="Lobby2/Chapter2" PushedImage="Lobby2/Chapter2_Pushed" HoverImage="Lobby2/Chapter2_Hover">
+		<Images>
+			<property Image="Loading_PurpleBackStreet_Spoon" CheckType="Stage" Stage="Tutorial_PurpleBackStreet"/>
+			<property Image="Loading_PurpleBackStreet_Bull" CheckType="Stage" Stage="Tutorial_PurpleBackStreet"/>
+			<property Image="Loading_Purple_Irene" CheckType="Stage" Stage="Tutorial_PurpleBackStreet"/>
+			<property Image="Loading_PurpleBackStreet_Tiger" CheckType="Stage" Stage="Tutorial_PurpleBackStreet"/>
+			<property Image="Loading_SionAndAlbus_BlueFog" CheckType="Stage" Stage="Tutorial_BlueFogStreet"/>
+			<property Image="Loading_irene_Blue" CheckType="Stage" Stage="Tutorial_BlueFogStreet"/>
+			<property Image="Loading_Irene_Run" CheckType="Stage" Stage="Tutorial_BlueFogStreet"/>
+			<property Image="Loading_Workshop1" CheckType="Custom" Script="CheckCollection_WorkshopOpened"/>
+			<property Image="Loading_Workshop2" CheckType="Custom" Script="CheckCollection_WorkshopOpened"/>
+			<property Image="Loading_Sharky" CheckType="Stage" Stage="Tutorial_PugoBackStreet"/>
+			<property Image="Loading_Construction" CheckType="Stage" Stage="Tutorial_Hansando"/>
+			<property Image="Loading_AlbusResearching" CheckType="Stage" Stage="Tutorial_GrayCemeteryPark"/>
+			<property Image="Loading_AlbusResearchingStart" CheckType="Stage" Stage="Tutorial_GrayCemeteryPark"/>
+			<property Image="Loading_AnneLuna" CheckType="Stage" Stage="Tutorial_GrayCemeteryPark"/>
+			<property Image="Loading_AnneLuna2" CheckType="Stage" Stage="Tutorial_GrayCemeteryPark"/>
+			<property Image="Loading_Marco" CheckType="Stage" Stage="Tutorial_GrayCemeteryPark"/>
+			<property Image="Loading_Lasa2" CheckType="Stage" Stage="Tutorial_Lasa"/>
+			<property Image="Loading_Truck" CheckType="Stage" Stage="Tutorial_LokoCabin"/>
+		</Images>
+	</class>
+	<class name="Trouble03" Title="제 3 장. 가려진 음모" Order="3" Image="Lobby2/Chapter3" PushedImage="Lobby2/Chapter3_Pushed" HoverImage="Lobby2/Chapter3_Hover">
+		<Images>
+			<property Image="Loading_Sharky2" CheckType="Stage" Stage="Tutorial_LokoCabin"/>
+			<property Image="Loading_Joel_0" CheckType="Stage" Stage="Tutorial_SkyBlue"/>
+			<property Image="Loading_Joel_1" CheckType="Stage" Stage="Tutorial_SkyBlue"/>
+			<property Image="Loading_Joel_2" CheckType="Stage" Stage="Tutorial_SkyBlue"/>
+			<property Image="Loading_Joel_4" CheckType="Stage" Stage="Tutorial_SkyBlue"/>
+			<property Image="Loading_Joel_5" CheckType="Stage" Stage="Tutorial_SkyBlue"/>
+			<property Image="Loading_Joel_6" CheckType="Stage" Stage="Tutorial_SkyBlue"/>
+			<property Image="Loading_Memories_Isaac" CheckType="Stage" Stage="Tutorial_SkyBlue"/>
+			<property Image="Loading_Memories_IsaacwithAlbus" CheckType="Stage" Stage="Tutorial_SkyBlue"/>
+			<property Image="Loading_Memories_Albus" CheckType="Stage" Stage="Tutorial_SkyBlue"/>
+			<property Image="Loading_Memories_IsaacwithJoel" CheckType="Stage" Stage="Tutorial_SkyBlue"/>
+			<property Image="Loading_Memories_IsaacwithSharky" CheckType="Stage" Stage="Tutorial_SkyBlue"/>
+			<property Image="Loading_WhiteTiger" CheckType="Stage" Stage="Tutorial_PurpleStreet"/>
+			<property Image="Loading_Alleyfight" CheckType="Stage" Stage="Tutorial_PugoShopAfter"/>
+			<property Image="Loading_Roberto" CheckType="Custom" Script="CheckCollection_Tutorial_PugoShopAfter_Lobby"/>
+			<property Image="Loading_PastAlley_1" CheckType="Stage" Stage="Tutorial_HansolStreet"/>
+			<property Image="Loading_PastAlley_Small1" CheckType="Stage" Stage="Tutorial_HansolStreet"/>
+			<property Image="Loading_PastAlley_2" CheckType="Stage" Stage="Tutorial_HansolStreet"/>
+			<property Image="Loading_PastAlley_3" CheckType="Stage" Stage="Tutorial_HansolStreet"/>
+			<property Image="Loading_PastAlley_Small2" CheckType="Stage" Stage="Tutorial_HansolStreet"/>
+			<property Image="Loading_PastAlley_4" CheckType="Stage" Stage="Tutorial_HansolStreet"/>
+			<property Image="Loading_PastAlley_5" CheckType="Stage" Stage="Tutorial_HansolStreet"/>
+			<property Image="Loading_Conference" CheckType="Stage" Stage="Tutorial_Road_112"/>
+			<property Image="Loading_ESP" CheckType="Stage" Stage="Tutorial_Road_112"/>
+			<property Image="Loading_ESPStone" CheckType="Stage" Stage="Tutorial_Road_112"/>
+			<property Image="Loading_RichVein" CheckType="Stage" Stage="Tutorial_Road_112"/>
+			<property Image="Loading_Road_112_Ramjist" CheckType="Stage" Stage="Tutorial_Road_112"/>
+			<property Image="Loading_WhiteTiger_Angry" CheckType="Stage" Stage="Tutorial_MetroStreet"/>
+			<property Image="Loading_PoliceWithJane" CheckType="Stage" Stage="Tutorial_StarStreet"/>
+			<property Image="Loading_WhiteTiger_Boss" CheckType="Stage" Stage="Tutorial_StarStreet"/>
+			<property Image="Loading_IssacLeave1" CheckType="Stage" Stage="Tutorial_StarStreet"/>
+			<property Image="Loading_IssacLeave2" CheckType="Stage" Stage="Tutorial_StarStreet"/>
+			<property Image="Loading_IssacLeave3" CheckType="Stage" Stage="Tutorial_StarStreet"/>
+		</Images>
+	</class>
+	<class name="Trouble04" Title="제 4 장. 결의" Order="4" Image="Lobby2/Chapter4" PushedImage="Lobby2/Chapter4_Pushed" HoverImage="Lobby2/Chapter4_Hover">
+		<Images>
+			<property Image="Loading_SpoonAttackWhiteTiger" CheckType="Stage" Stage="Tutorial_CrescentBridge"/>
+			<property Image="Loading_BloodwalkerView" CheckType="Stage" Stage="Tutorial_CrescentBridge"/>
+			<property Image="Loading_Brothers" CheckType="Stage" Stage="Tutorial_CrescentBridge"/>
+			<property Image="Loading_DianeWithRay" CheckType="Stage" Stage="Tutorial_GrayPortWareHouse"/>
+			<property Image="Loading_Bikron" CheckType="Stage" Stage="Tutorial_GrayPortWareHouse"/>
+			<property Image="Loading_AnneBrokenFoxAcc" CheckType="Custom" Script="CheckCollection_Tutorial_GrayPortWareHouse_Lobby"/>
+			<property Image="Loading_AnneBrokenFoxAcc1" CheckType="Custom" Script="CheckCollection_Tutorial_GrayPortWareHouse_Lobby"/>
+			<property Image="Loading_AnneBrokenFoxAcc2" CheckType="Custom" Script="CheckCollection_Tutorial_GrayPortWareHouse_Lobby"/>
+			<property Image="Loading_AnneBrokenFoxAcc3" CheckType="Custom" Script="CheckCollection_Tutorial_GrayPortWareHouse_Lobby"/>
+			<property Image="Loading_RayImmigration" CheckType="Stage" Stage="Tutorial_DustWind"/>
+			<property Image="Loading_RayRejectJob" CheckType="Stage" Stage="Tutorial_DustWind"/>
+			<property Image="Loading_RayChaosBrush1" CheckType="Stage" Stage="Tutorial_DustWind"/>
+			<property Image="Loading_RayChaosBrush2" CheckType="Stage" Stage="Tutorial_DustWind"/>
+			<property Image="Loading_RayChaosBrush3" CheckType="Stage" Stage="Tutorial_DustWind"/>
+			<property Image="Loading_Rayazit1" CheckType="Stage" Stage="Tutorial_DustWind"/>
+			<property Image="Loading_Rayazit2" CheckType="Stage" Stage="Tutorial_DustWind"/>
+			<property Image="Loading_RayMeetCarterAgain" CheckType="Stage" Stage="Tutorial_DustWind"/>
+			<property Image="Loading_ExplosionCarter" CheckType="Stage" Stage="Tutorial_DustWind"/>
+			<property Image="Loading_KylieAndHeissing" CheckType="Custom" Script="CheckCollection_Tutorial_SkyWindPark_Heissing"/>
+			<property Image="Loading_HeissingAndKylie2" CheckType="Custom" Script="CheckCollection_KylieAndHeissing"/>
+			<property Image="Loading_RayAndJoel_4" CheckType="Custom" Script="CheckCollection_Tutorial_SkyWindPark_Ray"/>
+			<property Image="Loading_RayAndJoel_2" CheckType="Custom" Script="CheckCollection_Tutorial_SkyWindPark_Ray"/>
+			<property Image="Loading_RayAndJoel_5" CheckType="Custom" Script="CheckCollection_Tutorial_SkyWindPark_Ray"/>
+			<property Image="Loading_RayAndJoel_1" CheckType="Custom" Script="CheckCollection_Tutorial_SkyWindPark_Ray"/>
+			<property Image="Loading_RayAndJoel_3" CheckType="Custom" Script="CheckCollection_Tutorial_SkyWindPark_Ray"/>
+			<property Image="Loading_JaneAndGiselle" CheckType="Stage" Stage="Tutorial_TrainingRoom"/>
+			<property Image="Loading_JaneAndGiselleCafe1" CheckType="Stage" Stage="Tutorial_TrainingRoom"/>
+			<property Image="Loading_JaneAndGiselleCafe2" CheckType="Stage" Stage="Tutorial_TrainingRoom"/>
+			<property Image="Loading_JaneAndGiselleCafe3" CheckType="Stage" Stage="Tutorial_TrainingRoom"/>
+			<property Image="Loading_JaneAndGiselleCafe4" CheckType="Stage" Stage="Tutorial_TrainingRoom"/>
+			<property Image="Loading_MertAndKevin" CheckType="Stage" Stage="Tutorial_PugoBackStreetAfter"/>
+			<property Image="Loading_ParkCross" CheckType="Stage" Stage="Tutorial_PugoBackStreetAfter"/>
+			<property Image="Loading_AlbusHospital1" CheckType="Custom" Script="CheckCollection_Tutorial_PugoBackStreetAfter_Lobby"/>
+			<property Image="Loading_Albus_Giselle_Pocha1" CheckType="Stage" Stage="Tutorial_GrayCemeteryParkAfter"/>
+			<property Image="Loading_Albus_Giselle_Office1" CheckType="Stage" Stage="Tutorial_GrayCemeteryParkAfter"/>
+			<property Image="Loading_Albus_Giselle_Office2" CheckType="Stage" Stage="Tutorial_GrayCemeteryParkAfter"/>
+			<property Image="Loading_Albus_Giselle_Office4" CheckType="Stage" Stage="Tutorial_GrayCemeteryParkAfter"/>
+			<property Image="Loading_Albus_Giselle_Office5" CheckType="Stage" Stage="Tutorial_GrayCemeteryParkAfter"/>
+			<property Image="Loading_Albus_Sleep_Night" CheckType="Stage" Stage="Tutorial_GrayCemeteryParkAfter"/>
+			<property Image="Loading_Albus_Sleep_Morning" CheckType="Stage" Stage="Tutorial_GrayCemeteryParkAfter"/>
+			<property Image="Loading_Albus_Giselle_Office9" CheckType="Stage" Stage="Tutorial_GrayCemeteryParkAfter"/>
+			<property Image="Loading_Albus_Giselle_Office6" CheckType="Stage" Stage="Tutorial_GrayCemeteryParkAfter"/>
+			<property Image="Loading_Albus_Giselle_Office3" CheckType="Stage" Stage="Tutorial_GrayCemeteryParkAfter"/>
+			<property Image="Loading_Albus_Giselle_Office7" CheckType="Stage" Stage="Tutorial_GrayCemeteryParkAfter"/>
+			<property Image="Loading_Albus_Giselle_Office8" CheckType="Stage" Stage="Tutorial_GrayCemeteryParkAfter"/>
+			<property Image="Loading_Albus_Giselle_Office10" CheckType="Stage" Stage="Tutorial_GrayCemeteryParkAfter"/>
+			<property Image="Loading_Albus_Giselle_Park" CheckType="Stage" Stage="Tutorial_GrayCemeteryParkAfter"/>
+			<property Image="Loading_Giselle_Call_Jane01" CheckType="Stage" Stage="Tutorial_GrayCemeteryParkAfter"/>
+			<property Image="Loading_AlbusHospital3" CheckType="Stage" Stage="Tutorial_GrayCemeteryParkAfter"/>
+			<property Image="Loading_GiselleSilverlining" CheckType="Custom" Script="CheckCollection_Tutorial_GrayCemeteryParkAfter_Lobby"/>
+			<property Image="Loading_HeissingAndKylie" CheckType="Custom" Script="CheckCollection_ChallengeRoad111Heissing"/>
+		</Images>
+	</class>
+	<class name="Trouble05" Title="제 5 장. 변화의 시작" Order="5" Image="Lobby2/Chapter5" PushedImage="Lobby2/Chapter5_Pushed" HoverImage="Lobby2/Chapter5_Hover">
+		<Images>
+			<property Image="Loading_CarterAndLeton" CheckType="Stage" Stage="Tutorial_DustWindRestArea"/>
+			<property Image="Loading_WhiteTiger_Foo" CheckType="Stage" Stage="Tutorial_MarketStreet"/>
+			<property Image="Loading_TenYearsAgo" CheckType="Stage" Stage="Tutorial_MarketStreet"/>
+			<property Image="Loading_BlackTigerTrayAndIssac" CheckType="Stage" Stage="Tutorial_MarketStreet"/>
+			<property Image="Loading_GiselleAndAlbus" CheckType="Stage" Stage="Tutorial_MarketStreet"/>
+			<property Image="Loading_AfterWork" CheckType="Custom" Script="CheckCollection_Tutorial_MarketStreet_Lobby"/>
+			<property Image="Loading_OfficeTalk" CheckType="Custom" Script="CheckCollection_Tutorial_MarketStreet_Lobby"/>
+			<property Image="Loading_OfficeTalk_Anne" CheckType="Custom" Script="CheckCollection_Tutorial_MarketStreet_Lobby"/>
+			<property Image="Loading_KylieLoadmeet1" CheckType="Stage" Stage="Tutorial_Road_110"/>
+			<property Image="Loading_KylieLoadmeet2" CheckType="Stage" Stage="Tutorial_Road_110"/>
+			<property Image="Loading_KylieLoadmeet3" CheckType="Stage" Stage="Tutorial_Road_110"/>
+			<property Image="Loading_KylieLoadmeet4" CheckType="Stage" Stage="Tutorial_Road_110"/>
+			<property Image="Loading_KyliePast1" CheckType="Stage" Stage="Tutorial_Road_110"/>
+			<property Image="Loading_KyliePast2" CheckType="Stage" Stage="Tutorial_Road_110"/>
+			<property Image="Loading_KyliePast3" CheckType="Stage" Stage="Tutorial_Road_110"/>
+			<property Image="Loading_KyliePast4" CheckType="Stage" Stage="Tutorial_Road_110"/>
+			<property Image="Loading_KyliePast5" CheckType="Stage" Stage="Tutorial_Road_110"/>
+			<property Image="Loading_KyliePast6" CheckType="Stage" Stage="Tutorial_Road_110"/>
+			<property Image="Loading_KyliePast7" CheckType="Stage" Stage="Tutorial_Road_110"/>
+			<property Image="Loading_NaamTurk1" CheckType="Stage" Stage="Tutorial_PurpleStreetAfter"/>
+			<property Image="Loading_NaamTurk2" CheckType="Stage" Stage="Tutorial_PurpleStreetAfter"/>
+			<property Image="Loading_NaamTurk3" CheckType="Stage" Stage="Tutorial_PurpleStreetAfter"/>
+			<property Image="Loading_DonFight" CheckType="Stage" Stage="Tutorial_PurpleStreetAfter"/>
+			<property Image="Loading_RayAndHeissing" CheckType="Custom" Script="CheckCollection_Tutorial_PurpleStreetAfter_Lobby"/>
+			<property Image="Loading_HeissingAndHakuya" CheckType="Custom" Script="CheckCollection_Tutorial_PurpleStreetAfter_Lobby"/>
+			<property Image="Loading_CarterMeet" CheckType="Stage" Stage="Tutorial_CrowRuins"/>
+			<property Image="Loading_CarterMeet2" CheckType="Stage" Stage="Tutorial_CrowRuins"/>
+			<property Image="Loading_IssacTray" CheckType="Stage" Stage="Tutorial_CrowRuins"/>
+			<property Image="Loading_MarcoChris_1" CheckType="Stage" Stage="Tutorial_PugoStreetAfter"/>
+			<property Image="Loading_MarcoChris_2" CheckType="Stage" Stage="Tutorial_PugoStreetAfter"/>
+			<property Image="Loading_MarcoChris_3" CheckType="Stage" Stage="Tutorial_PugoStreetAfter"/>
+			<property Image="Loading_LunaMarco_1" CheckType="Stage" Stage="Tutorial_PugoStreetAfter"/>
+			<property Image="Loading_LunaMarco_2" CheckType="Stage" Stage="Tutorial_PugoStreetAfter"/>
+			<property Image="Loading_LunaMarco_3" CheckType="Stage" Stage="Tutorial_PugoStreetAfter"/>
+			<property Image="Loading_AlbusDon" CheckType="Custom" Script="CheckCollection_Tutorial_PugoStreetAfter_Lobby"/>
+			<property Image="Loading_LilyLetter" CheckType="Stage" Stage="Tutorial_WasteBuilding"/>
+			<property Image="Loading_KarlEdward" CheckType="Stage" Stage="Tutorial_WasteBuilding"/>
+			<property Image="Loading_Karl" CheckType="Stage" Stage="Tutorial_WasteBuilding"/>
+			<property Image="Loading_Karl2" CheckType="Stage" Stage="Tutorial_WasteBuilding"/>
+			<property Image="Loading_Spoon" CheckType="Stage" Stage="Tutorial_WasteBuilding"/>
+			<property Image="Loading_CarterMeet3" CheckType="Stage" Stage="Tutorial_WasteBuilding"/>
+			<property Image="Loading_LetonYoung" CheckType="Stage" Stage="Tutorial_GroundWaterSlum"/>
+			<property Image="Loading_LetonYoung3" CheckType="Stage" Stage="Tutorial_GroundWaterSlum"/>
+			<property Image="Loading_LetonYoung2" CheckType="Stage" Stage="Tutorial_GroundWaterSlum"/>
+			<property Image="Loading_Leton_Nego" CheckType="Stage" Stage="Tutorial_GroundWaterSlum"/>
+			<property Image="Loading_LetonLillyMeet" CheckType="Stage" Stage="Tutorial_GroundWaterSlum"/>
+			<property Image="Loading_Carter" CheckType="Stage" Stage="Tutorial_GroundWaterSlum"/>
+			<property Image="Loading_Carter_BlackMask" CheckType="Stage" Stage="Tutorial_GroundWaterSlum"/>
+			<property Image="Loading_CampingAlley3" CheckType="Stage" Stage="Tutorial_GroundWaterSlum"/>
+			<property Image="Loading_CampingAlley1" CheckType="Stage" Stage="Tutorial_GroundWaterSlum"/>
+			<property Image="Loading_CampingAlley2" CheckType="Stage" Stage="Tutorial_GroundWaterSlum"/>
+			<property Image="Loading_CarterMeet4" CheckType="Stage" Stage="Tutorial_GroundWaterSlum"/>
+			<property Image="Loading_RionRest" CheckType="Stage" Stage="Tutorial_GroundWaterSlum"/>
+			<property Image="Loading_Ramjist" CheckType="Stage" Stage="Tutorial_GroundWaterSlum"/>
+			<property Image="Loading_LetonRay" CheckType="Stage" Stage="Tutorial_GroundWaterSlum"/>
+		</Images>
+	</class>
+	<class name="Trouble06" Title="제 6 장. 진심" Order="6" Image="Lobby2/Chapter6" PushedImage="Lobby2/Chapter6_Pushed" HoverImage="Lobby2/Chapter6_Hover">
+		<Images>
+			<property Image="Loading_ConferencePeople" CheckType="Stage" Stage="Tutorial_CrowRuinsAfter"/>
+			<property Image="Loading_ConferencePeople2" CheckType="Stage" Stage="Tutorial_CrowRuinsAfter"/>
+			<property Image="Loading_HeissingSneak3" CheckType="Stage" Stage="Tutorial_CrowRuinsAfter"/>
+			<property Image="Loading_HeissingSneak4" CheckType="Stage" Stage="Tutorial_CrowRuinsAfter"/>
+			<property Image="Loading_HeissingSneak1" CheckType="Stage" Stage="Tutorial_CrowRuinsAfter"/>
+			<property Image="Loading_Heissing_Laydown1" CheckType="Custom" Script="CheckCollection_Heissing_Laydown"/>
+			<property Image="Loading_Heissing_Laydown2" CheckType="Custom" Script="CheckCollection_Heissing_Laydown"/>
+			<property Image="Loading_AnnePresentBook2" CheckType="Custom" Script="CheckCollection_Heissing_Laydown"/>
+			<property Image="Loading_AnnePresentBook" CheckType="Custom" Script="CheckCollection_Heissing_Laydown"/>
+			<property Image="Loading_HeissingSneak2" CheckType="Custom" Script="CheckCollection_Heissing_Tutorial_CrowRuinsAfter_Alley"/>
+			<property Image="Loading_PastAlley_7" CheckType="Custom" Script="CheckCollection_Heissing_Tutorial_CrowRuinsAfter_Alley"/>
+			<property Image="Loading_CarterIssac" CheckType="Custom" Script="CheckCollection_Heissing_Tutorial_CrowRuinsAfter_Alley"/>
+			<property Image="Loading_CarterGotShot" CheckType="Custom" Script="CheckCollection_Heissing_Tutorial_CrowRuinsAfter_Alley"/>
+			<property Image="Loading_Carter_Laydown" CheckType="Custom" Script="CheckCollection_Carter_Laydown"/>
+			<property Image="Loading_Carter_Laydown2" CheckType="Custom" Script="CheckCollection_Carter_Laydown"/>
+			<property Image="Loading_Carter_Laydown3" CheckType="Custom" Script="CheckCollection_Carter_Laydown"/>
+			<property Image="Loading_JoelAndIssac1" CheckType="Stage" Stage="Tutorial_SkyBlueAfter"/>
+			<property Image="Loading_JoelAndIssac2" CheckType="Stage" Stage="Tutorial_SkyBlueAfter"/>
+			<property Image="Loading_JoelAndIssac3" CheckType="Stage" Stage="Tutorial_SkyBlueAfter"/>
+			<property Image="Loading_Memories_Isaac2" CheckType="Stage" Stage="Tutorial_SkyBlueAfter"/>
+			<property Image="Loading_Memories_IsaacwithA2" CheckType="Stage" Stage="Tutorial_SkyBlueAfter"/>
+			<property Image="Loading_Memories_IsaacUSB" CheckType="Stage" Stage="Tutorial_SkyBlueAfter"/>
+			<property Image="Loading_KyliePast1_Ryo" CheckType="Stage" Stage="Tutorial_PurpleStreet_Kylie"/>
+			<property Image="Loading_KyliePast2_Ryo" CheckType="Stage" Stage="Tutorial_PurpleStreet_Kylie"/>
+			<property Image="Loading_KyliePast3_Ryo" CheckType="Stage" Stage="Tutorial_PurpleStreet_Kylie"/>
+			<property Image="Loading_KyliePast4_Ryo" CheckType="Stage" Stage="Tutorial_PurpleStreet_Kylie"/>
+			<property Image="Loading_RayAndKylie" CheckType="Stage" Stage="Tutorial_PurpleStreet_Kylie"/>
+			<property Image="Loading_RayFriends2" CheckType="Custom" Script="CheckCollection_Tutorial_PurpleStreet_Kylie"/>
+			<property Image="Loading_RayFriends3" CheckType="Custom" Script="CheckCollection_Tutorial_PurpleStreet_Kylie"/>
+			<property Image="Loading_RayFriends4" CheckType="Custom" Script="CheckCollection_Tutorial_PurpleStreet_Kylie"/>
+			<property Image="Loading_RayFriends5" CheckType="Custom" Script="CheckCollection_Tutorial_PurpleStreet_Kylie"/>
+			<property Image="Loading_AlbusHospital2" CheckType="Stage" Stage="Tutorial_TrainingRoomAfter"/>
+			<property Image="Loading_Giselle_Call_Jane02" CheckType="Stage" Stage="Tutorial_TrainingRoomAfter"/>
+			<property Image="Loading_Giselle_Call_Jane03" CheckType="Stage" Stage="Tutorial_TrainingRoomAfter"/>
+			<property Image="Loading_DonResearching" CheckType="Custom" Script="CheckCollection_Tutorial_TrainingRoomAfter"/>
+			<property Image="Loading_ChrisLeave" CheckType="Custom" Script="CheckCollection_Tutorial_TrainingRoomAfter"/>
+			<property Image="Loading_Silverlining_Past" CheckType="Custom" Script="CheckCollection_Tutorial_TrainingRoomAfter"/>
+			<property Image="Loading_CompanyDining" CheckType="Stage" Stage="Tutorial_SilverliningAfter"/>
+			<property Image="Loading_CompanyDining2" CheckType="Stage" Stage="Tutorial_SilverliningAfter"/>
+			<property Image="Loading_CompanyDining3" CheckType="Stage" Stage="Tutorial_SilverliningAfter"/>
+			<property Image="Loading_CompanyDining4" CheckType="Stage" Stage="Tutorial_SilverliningAfter"/>
+			<property Image="Loading_LunaAndAnne" CheckType="Stage" Stage="Tutorial_SilverliningAfter"/>
+			<property Image="Loading_LunaAndAnne2" CheckType="Stage" Stage="Tutorial_SilverliningAfter"/>
+			<property Image="Loading_LunarKill1" CheckType="Stage" Stage="Tutorial_SilverliningAfter"/>
+			<property Image="Loading_LunarKill2" CheckType="Stage" Stage="Tutorial_SilverliningAfter"/>
+			<property Image="Loading_LunarKill3" CheckType="Stage" Stage="Tutorial_SilverliningAfter"/>
+			<property Image="Loading_Edward" CheckType="Custom" Script="CheckCollection_Tutorial_SilverliningAfter"/>
+			<property Image="Loading_AlbusAndVisha" CheckType="Stage" Stage="Tutorial_WhiteTigerBase"/>
+			<property Image="Loading_WhiteTigerFinal" CheckType="Custom" Script="CheckCollection_Tutorial_WhiteTigerBase"/>
+			<property Image="Loading_Karl3" CheckType="Custom" Script="CheckCollection_Tutorial_WhiteTigerBase"/>
+			<property Image="Loading_Edward2" CheckType="Custom" Script="CheckCollection_Tutorial_WhiteTigerBase"/>
+			<property Image="Loading_CarterRest" CheckType="Custom" Script="CheckCollection_Tutorial_WhiteTigerBase"/>
+			<property Image="Loading_BloodwalkerView2" CheckType="Custom" Script="CheckCollection_Tutorial_WhiteTigerBase"/>
+			<property Image="Loading_Memories_IsaacwithTrey" CheckType="Custom" Script="CheckCollection_Tutorial_WhiteTigerBase"/>
+			<property Image="Loading_MarcoBalloon" CheckType="Custom" Script="CheckCollection_Tutorial_WhiteTigerBase"/>
+			<property Image="Loading_DailySion" CheckType="Custom" Script="CheckCollection_Tutorial_WhiteTigerBase"/>
+			<property Image="Loading_DailyIrene" CheckType="Custom" Script="CheckCollection_Tutorial_WhiteTigerBase"/>
+			<property Image="Loading_AnneSchool" CheckType="Custom" Script="CheckCollection_Tutorial_WhiteTigerBase"/>
+			<property Image="Loading_HeissingRead" CheckType="Custom" Script="CheckCollection_Tutorial_WhiteTigerBase"/>
+			<property Image="Loading_RayFriends" CheckType="Custom" Script="CheckCollection_Tutorial_WhiteTigerBase"/>
+			<property Image="Loading_GiselleJaneBar" CheckType="Custom" Script="CheckCollection_Tutorial_WhiteTigerBase"/>
+			<property Image="Loading_KylieRyo" CheckType="Custom" Script="CheckCollection_Tutorial_WhiteTigerBase"/>
+			<property Image="Loading_LetonRiver" CheckType="Custom" Script="CheckCollection_Tutorial_WhiteTigerBase"/>
+			<property Image="Loading_DeleteProject" CheckType="Custom" Script="CheckCollection_Tutorial_WhiteTigerBase"/>
+			<property Image="Loading_AlisaAndBiancei_Silverlining" CheckType="Custom" Script="CheckCollection_Tutorial_WhiteTigerBase"/>
+		</Images>
+	</class>
+	<class name="Etc" Title="그 외 이야기" Order="7" Image="Lobby2/Chapter0" PushedImage="Lobby2/Chapter0_Pushed" HoverImage="Lobby2/Chapter0_Hover" IsRecentViewable="false">
+		<Images>
+			<property Image="Loading_Albus_Office" CheckType="Custom" Script="CheckCollection_ItemBookOpened"/>
+			<property Image="Loading_CustomerSatisfaction" CheckType="Custom" Script="CheckCollection_AfterCompanyName"/>
+			<property Image="Loading_Expertise" CheckType="Custom" Script="CheckCollection_AfterCompanyName"/>
+			<property Image="Loading_Individualism" CheckType="Custom" Script="CheckCollection_AfterCompanyName"/>
+			<property Image="Loading_Pride" CheckType="Custom" Script="CheckCollection_AfterCompanyName"/>
+			<property Image="Loading_Scavenger" CheckType="Custom" Script="CheckCollection_AfterCompanyName"/>
+			<property Image="Loading_Jukebox" CheckType="Custom" Script="CheckCollection_JukeboxOpened"/>
+			<property Image="Loading_LostItem" CheckType="Custom" Script="CheckCollection_LostShopOpened"/>
+			<property Image="Loading_Irene" CheckType="Custom" Script="CheckCollection_AfterTutorial"/>
+			<property Image="Loading_Alert" CheckType="Custom" Script="CheckCollection_AfterTutorial"/>
+			<property Image="Loading_SeasonsGreetings" CheckType="Stage" Stage="Tutorial_SkyWindPark"/>
+		</Images>
+	</class>
+</idspace>

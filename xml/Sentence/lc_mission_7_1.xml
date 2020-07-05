@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="lc_mission_7_1_nzsTGl" Value="[!Dashboard:Counter]테러리스트를 처치하고 폭탄을 확보"/>
+		<class name="lc_mission_7_1_ZHvojW" Value="[!Dashboard:Checklist]폭탄을 되찾으려는 적 처치"/>
+		<class name="lc_mission_7_1_NZSlQi" Value="[!Objective]주유소 테러 막기"/>
+		<class name="lc_mission_7_1_jSAjBQ" Value="[!Dialog][!speaker:Albus_Doubt]여기가 터지만 사방이 불바다가 되겠지?
+주유 탱크가 터지면.. 후."/>
+		<class name="lc_mission_7_1_ACh0XX" Value="[!Dialog][!speaker:Albus_Fury]폭탄 확보부터 서둘러야겠다."/>
+		<class name="lc_mission_7_1_fNw0Kk" Value="[!Dialog][!speaker:Albus_Fury]역시 이대로 끝나지 않네.
+곧 있으면 몰려오겠는데."/>
+	</idspace>
+</idspaces>

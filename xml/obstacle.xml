@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="ObstacleMethod">
+		<schema>
+			<rule property="Mastery" type="link" target="Mastery" default="None"/>
+		</schema>
+		<class name="Normal" Title="일반형" Mastery="NormalObject"/>
+		<class name="Flammable" Title="인화성" Mastery="FlammableObject"/>
+		<class name="Toxic" Title="유독성" Mastery="ToxicObject"/>
+		<class name="Repairable" Title="일반형" Mastery="RepairableObject"/>
+	</idspace>
+	<idspace id="Obstacle">
+		<schema>
+			<rule property="Method" type="link" target="ObstacleMethod" default="None"/>
+			<rule property="DestroyReward" type="number" default="0"/>
+			<rule property="DestroyCount" type="number" default="0"/>
+			<rule property="DangerRange" type="number" default="0"/>
+			<rule property="InteractionList" type="table" subtype="link" target="Interaction" default=""/>
+		</schema>
+		<class name="ElectricCharger" Method="Flammable" DangerRange="3.4" DestroyReward="0" InteractionList="Fueling">
+			<MonsterSet>
+				<property Monster="Object_ElectricCharger" MonsterDisabled="Object_ElectricCharger_Disabled" MonsterDestroyed="Object_ElectricCharger_Destroyed" MonsterFueled="Object_ElectricCharger_Fueled"/>
+			</MonsterSet>
+		</class>
+		<class name="OilingMachine" Method="Flammable" DangerRange="4.4" DestroyReward="0" InteractionList="Fueling">
+			<MonsterSet>
+				<property Monster="Object_OilingMachine" MonsterDisabled="Object_OilingMachine_Disabled" MonsterDestroyed="Object_OilingMachine_Destroyed" MonsterFueled="Object_OilingMachine_Fueled"/>
+			</MonsterSet>
+		</class>
+		<class name="ToxicSubstance" Method="Toxic" DangerRange="4.4" DestroyReward="0">
+			<MonsterSet>
+				<property Monster="Object_ToxicSubstance" MonsterDisabled="Object_ToxicSubstance_Disabled" MonsterDestroyed="Object_ToxicSubstance_Destroyed"/>
+			</MonsterSet>
+		</class>
+		<class name="JammingMachine" Method="Normal" DangerRange="0" DestroyReward="75">
+			<MonsterSet>
+				<property Monster="Object_JammingMachine" MonsterDestroyed="Object_JammingMachine_Destroyed"/>
+			</MonsterSet>
+		</class>
+		<class name="JammingMachine_Training" Method="Normal" DangerRange="0" DestroyReward="0">
+			<MonsterSet>
+				<property Monster="Object_JammingMachine" MonsterDestroyed="Object_JammingMachine_Destroyed"/>
+			</MonsterSet>
+		</class>
+		<class name="FenceCharger" Method="Repairable" DangerRange="0" DestroyReward="0">
+			<MonsterSet>
+				<property Monster="Object_FenceCharger_Disabled" MonsterDisabled="Object_FenceCharger" MonsterDestroyed="Object_FenceCharger_Destroyed"/>
+			</MonsterSet>
+		</class>
+	</idspace>
+</idspaces>

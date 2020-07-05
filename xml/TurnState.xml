@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="TurnState">
+	<schema>
+		<rule property="Moved" type="bool" default="true"/>
+		<rule property="UsedMainAbility" type="bool" default="true"/>
+		<rule property="TurnEnded" type="bool" default="true"/>
+		<rule property="ExtraMovable" type="bool" default="false"/>
+		<rule property="ExtraAttackable" type="bool" default="false"/>
+		<rule property="ExtraActable" type="bool" default="false"/>
+		<rule property="Stable" type="bool" default="false"/>
+		<rule property="SpecialChecker" type="string" default="None"/>
+	</schema>
+	<class name="TurnState"/>
+</idspace>

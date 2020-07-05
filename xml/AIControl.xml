@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="AIControl">
+	<schema>
+		<rule property="KeyBinding" type="link" target="KeyBinding"/>
+	</schema>
+	<class name="Search" Title="탐색" Order="1" Desc="전황이 확인 되지 않은 지역을 적극적으로 탐색합니다." Image="TaharezLook/Control_Search" Icon="HUD/Control_Search" KeyBinding="AutoStrategy_Search"/>
+	<class name="Battle" Title="전투" Order="2" Desc="시야가 확보된 지역에서 적을 경계하며 이동합니다." Image="TaharezLook/Control_Battle" Icon="HUD/Control_Battle" KeyBinding="AutoStrategy_Battle"/>
+	<class name="Defensive" Title="수비" Order="3" Desc="경계중인 적을 먼저 깨우지 않으며 이동합니다." Image="TaharezLook/Control_Defence" Icon="HUD/Control_Defence" KeyBinding="AutoStrategy_Defensive"/>
+	<class name="Hold" Title="주둔" Order="4" Desc="현재 위치를 사수합니다." Image="TaharezLook/Control_Hold" Icon="HUD/Control_Hold" KeyBinding="AutoStrategy_Hold"/>
+	<class name="Manual" Title="취소" Order="5" Desc="위임 상태를 해제합니다. 다음 턴에 다시 플레이어가 직접 조작이 가능합니다." Image="TaharezLook/Control_Cancel" Icon="HUD/Control_Cancel" KeyBinding="AutoStrategy_Manual"/>
+	<class name="Retreat" Title="후퇴" Order="6" Desc="현장을 이탈시킵니다. 현재 임무로 다시 복귀할 수 없습니다." Image="TaharezLook/Control_Retreat" Icon="HUD/Control_Retreat" KeyBinding="AutoStrategy_Retreat"/>
+</idspace>

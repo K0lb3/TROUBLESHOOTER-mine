@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Common_SilverCloud_FPM4CY" Value="[!Dashboard:TimeLimiter]다음 적 등장 시간"/>
+		<class name="Common_SilverCloud_dz41EL" Value="[!Dashboard:ObjectiveMarker]알버스로 해당 지역으로 이동하면 해당 분대의 지휘권을 획득하실 수 있습니다."/>
+		<class name="Common_SilverCloud_GdpEX1" Value="[!VictoryCondition]적을 모두 제압하시오."/>
+		<class name="Common_SilverCloud_Q6dQAj" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Common_SilverCloud_VQGsTm" Value="[!BalloonChat][!speaker:Albus]트러블슈터 알버스입니다."/>
+		<class name="Common_SilverCloud_vHeuSE" Value="[!BalloonChat][!speaker:Albus]현 시각부터 현장 지휘권을 넘겨받겠습니다."/>
+		<class name="Common_SilverCloud_BMSPh2" Value="[!Dialog][!speaker:VHPDFemale2_Normal]다들 정신 차려!"/>
+		<class name="Common_SilverCloud_SXF4YP" Value="[!Dialog][!speaker:VHPDFemale2_Normal]곧 트러블슈터가 올 거다. 다들 조금만 버텨내자."/>
+		<class name="Common_SilverCloud_KKziHt" Value="[!Dialog][!speaker:Albus_Normal]이번엔 늦지 않아야 할 텐데... 빨리 가자."/>
+	</idspace>
+</idspaces>

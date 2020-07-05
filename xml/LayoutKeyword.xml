@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="LayoutKeyword">
+	<class name="IMAGE_ENEMYPHASE" Message="[!이미지]ENEMY PHASE"/>
+	<class name="IMAGE_RP" Message="[!이미지]RP"/>
+	<class name="IMAGE_NP" Message="[!이미지]NP"/>
+	<class name="IMAGE_TP" Message="[!이미지]TP"/>
+	<class name="IMAGE_CP" Message="[!이미지]CP"/>
+	<class name="IMAGE_HP" Message="[!이미지]HP"/>
+	<class name="IMAGE_EXP" Message="[!이미지]EXP"/>
+	<class name="IMAGE_Prev" Message="[!이미지]◀"/>
+	<class name="IMAGE_Next" Message="[!이미지]▶"/>
+	<class name="IMAGE_LEVEL" Message="[!이미지]LEVEL"/>
+	<class name="IMAGE_Lv" Message="[!이미지]Lv"/>
+	<class name="IMAGE_FIXED" Message="[!이미지]FIXED"/>
+	<class name="IMAGE_V" Message="[!이미지]V"/>
+	<class name="IMAGE_NOWLOADING" Message="[!이미지]NOW LOADING..."/>
+	<class name="IMAGE_STATS" Message="[!이미지]STATS"/>
+	<class name="IMAGE_RANK" Message="[!이미지]RANK"/>
+	<class name="IMAGE_MORALE" Message="[!이미지]MORALE"/>
+	<class name="IMAGE_MEMBERS" Message="[!이미지]MEMBERS"/>
+	<class name="IMAGE_SPOILS" Message="[!이미지]SPOILS"/>
+	<class name="IMAGE_Star" Message="[!이미지]★"/>
+	<class name="IMAGE_ABILITYDESCRIPTION" Message="[!이미지]ABILITY DESCRIPTION"/>
+	<class name="IMAGE_TRAIININGPOINTS" Message="[!이미지]TRAIINING POINTS"/>
+	<class name="IMAGE_CONDITIONPOINTS" Message="[!이미지]CONDITION POINTS"/>
+	<class name="Next" Message="다음"/>
+	<class name="Leave" Message="나가기"/>
+	<class name="Send" Message="보내기"/>
+	<class name="Confirm" Message="확인"/>
+	<class name="Accept" Message="수락"/>
+	<class name="Reject" Message="거절"/>
+	<class name="Move" Message="이동"/>
+	<class name="Cancel" Message="취소"/>
+	<class name="Close" Message="닫기"/>
+	<class name="Account" Message="계정"/>
+	<class name="Password" Message="비밀번호"/>
+	<class name="ReEnterPassword" Message="비밀번호 재입력"/>
+	<class name="Email" Message="이메일"/>
+	<class name="Login" Message="게임 접속"/>
+	<class name="LoginWithSteam" Message="스팀으로 접속"/>
+	<class name="Me" Message="[!유저본인을지칭하는용어]나"/>
+	<class name="MailBox" Message="우편함"/>
+	<class name="NewMail" Message="편지 쓰기"/>
+	<class name="Delete" Message="삭제"/>
+	<class name="AutoDetect" Message="자동감지"/>
+	<class name="SelectAll" Message="전체 선택"/>
+	<class name="MarkRead" Message="읽음 표시"/>
+	<class name="ReceiveAll" Message="모두 수령"/>
+	<class name="ItemBook" Message="재료 도감"/>
+	<class name="AddFriend" Message="친구 추가"/>
+	<class name="Rename" Message="이름 변경"/>
+	<class name="Save" Message="저장"/>
+	<class name="SaveCurrentState" Message="현 상태 저장"/>
+	<class name="Apply" Message="적용"/>
+	<class name="Back" Message="뒤로"/>
+	<class name="Revert" Message="되돌리기"/>
+	<class name="TranslationSuggest" Message="번역 지원"/>
+	<class name="OriginalText" Message="원문"/>
+	<class name="TranslatedText" Message="번역문"/>
+	<class name="Reference" Message="참고"/>
+	<class name="Translating" Message="새 번역"/>
+	<class name="ApplyChanges" Message="변경사항 적용"/>
+	<class name="Return" Message="반송"/>
+	<class name="SearchDictionary" Message="텍스트 검색"/>
+	<class name="RecentMessage" Message="최근 메시지"/>
+	<class name="Summit" Message="제출"/>
+	<class name="PhraseList" Message="구문 목록"/>
+	<class name="TranslationSuggestions" Message="다른 유저의 제안"/>
+	<class name="TranslationHistories" Message="번역 변경 내역"/>
+	<class name="CraftNeedItem" Message="필요 재료 제작"/>
+	<class name="SendLog" Message="로그 전송"/>
+	<class name="AbilityPreset" Message="프리셋 설정"/>
+</idspace>

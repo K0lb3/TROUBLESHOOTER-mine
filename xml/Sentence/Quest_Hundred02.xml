@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Quest_Hundred02_py8LWY" Value="[!Dashboard:Counter]남은 드론 수"/>
+		<class name="Quest_Hundred02_1YU4Bt" Value="[!Dashboard:ObjectiveMarker]적이 해당 지역으로 진입하면 패배합니다."/>
+		<class name="Quest_Hundred02_NKulZp" Value="[!VictoryCondition]폐기된 드론을 모두 파괴하시오."/>
+		<class name="Quest_Hundred02_8Nq5nh" Value="[!Title]잠들어 있는 불청객"/>
+		<class name="Quest_Hundred02_q2ueQD" Value="[!Title]철의 숲 해체작업장"/>
+		<class name="Quest_Hundred02_uWtJsQ" Value="[!Dialog][!speaker:Sion_SurpriseStare]뭐가 이렇게 많아?"/>
+		<class name="Quest_Hundred02_Fx59J7" Value="[!Dialog][!speaker:Sion_Depressed]억만 형. 완전 거짓말쟁이..."/>
+		<class name="Quest_Hundred02_dIuAio" Value="[!Dialog][!speaker:Albus_Laugh]어차피 맡은 의뢰니 힘내자. 시온."/>
+		<class name="Quest_Hundred02_xFIh90" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Quest_Hundred02_BdBqsA" Value="[!Ignore][!Dialog][!speaker:Giselle_Satisfying]알버스. "/>
+		<class name="Quest_Hundred02_F10PAW" Value="[!Dialog][!speaker:Kylie_Normal]이 정도면 양반이지."/>
+		<class name="Quest_Hundred02_IfMizF" Value="[!Dialog][!speaker:Irene_Surprise]그런데 왜 이렇게 다 모아둔 거지?"/>
+		<class name="Quest_Hundred02_ecLVt2" Value="[!Dialog][!speaker:Kylie_Smile]당장 필요한 것이 없으면 해체 작업도 비용이니 일단 모아두는 거야."/>
+		<class name="Quest_Hundred02_XioggC" Value="[!Dialog][!speaker:Albus_Serious]드론이 해체작업장 바깥으로 나가기 전에 파괴합니다!"/>
+		<class name="Quest_Hundred02_bXm5g3" Value="[!VictoryCondition]적 해체작업장 이탈"/>
+		<class name="Quest_Hundred02_QsTeac" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Quest_Hundred02_k5kMNq" Value="[!VictoryCondition]폐기된 드론을 모두 파괴하시오."/>
+		<class name="Quest_Hundred02_tO4VTH" Value="[!BalloonChat]전투 가능 드론 발견!"/>
+		<class name="Quest_Hundred02_ZWcU2I" Value="[!BalloonChat]다들 조심하세요!"/>
+		<class name="Quest_Hundred02_6UHkVt" Value="[!BalloonChat]여기입니다!"/>
+		<class name="Quest_Hundred02_5ssqsT" Value="[!BalloonChat]찾느라 고생했잖아!"/>
+		<class name="Quest_Hundred02_TDS12J" Value="[!BalloonChat]빙고~☆"/>
+		<class name="Quest_Hundred02_YI0REt" Value="[!BalloonChat]찾았다~☆"/>
+		<class name="Quest_Hundred02_91Z1sN" Value="[!BalloonChat]여기다!"/>
+		<class name="Quest_Hundred02_viTRjS" Value="[!BalloonChat]놓치지 않는다!"/>
+		<class name="Quest_Hundred02_wsoNsX" Value="[!BalloonChat]히어로 아이린. 당황하지 않는다!"/>
+		<class name="Quest_Hundred02_TzqFof" Value="[!BalloonChat]여기에요!"/>
+		<class name="Quest_Hundred02_ymIL3Y" Value="[!BalloonChat]찾았어요!"/>
+		<class name="Quest_Hundred02_88DbG7" Value="[!BalloonChat]봐주지 않을 거에요!"/>
+		<class name="Quest_Hundred02_KOvX3Z" Value="[!BalloonChat]시시하군."/>
+		<class name="Quest_Hundred02_83tL2C" Value="[!BalloonChat]지루하군."/>
+		<class name="Quest_Hundred02_9arZto" Value="[!BalloonChat]찾았다."/>
+		<class name="Quest_Hundred02_CAjVxO" Value="[!BalloonChat]여기야~  찾았어~☆"/>
+		<class name="Quest_Hundred02_oC2gvW" Value="[!BalloonChat]여기야~☆"/>
+		<class name="Quest_Hundred02_WYZoFO" Value="[!BalloonChat]도망치지 못해!"/>
+		<class name="Quest_Hundred02_9TmjV3" Value="[!BalloonChat]여기."/>
+		<class name="Quest_Hundred02_r49Imo" Value="[!BalloonChat]여기네."/>
+		<class name="Quest_Hundred02_aDvp4v" Value="[!BalloonChat]이쪽이야."/>
+		<class name="Quest_Hundred02_Spa4U2" Value="[!BalloonChat]너무 뻔하잖아."/>
+		<class name="Quest_Hundred02_QRbmrJ" Value="[!BalloonChat]역시 여기였군."/>
+		<class name="Quest_Hundred02_NeT8MZ" Value="[!BalloonChat]역시 여기군."/>
+		<class name="Quest_Hundred02_eQFjn5" Value="[!BalloonChat]OK~☆"/>
+		<class name="Quest_Hundred02_wW4acx" Value="[!BalloonChat]휘유~☆"/>
+		<class name="Quest_Hundred02_AYHsOi" Value="[!BalloonChat]빙고~☆"/>
+		<class name="Quest_Hundred02_2Q0WXJ" Value="[!BalloonChat]『 시스템 복구  : 휴면 해제 』"/>
+		<class name="Quest_Hundred02_nKBFY8" Value="[!BalloonChat]!?"/>
+		<class name="Quest_Hundred02_VWvuM1" Value="[!Dialog][!speaker:Drone_Sprinkler_Rust_Normal][colour=&apos;FFFF5943&apos;]『 경고: 외부 위협 접근 』"/>
+		<class name="Quest_Hundred02_Ab7Tgs" Value="[!Dialog][!speaker:Drone_Sprinkler_Rust_Normal][colour=&apos;FFFF5943&apos;]『 안전을 확보하기 위하여 현장 이탈 시작하겠습니다. 』"/>
+		<class name="Quest_Hundred02_N5cB6Q" Value="[!BalloonChat]『 시스템 복구  : 휴면 해제 』"/>
+		<class name="Quest_Hundred02_opDi6Q" Value="[!BalloonChat]『 시스템 복구  : 휴면 해제 』"/>
+	</idspace>
+</idspaces>

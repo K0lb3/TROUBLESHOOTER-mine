@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="sample_escort_vip_xN2pI1" Value="[!Dashboard:EscortCounter]남은 호위대상"/>
+		<class name="sample_escort_vip_y7pEgB" Value="[!Dashboard:TimeLimiter]적 지원 도착까지 남은시간"/>
+		<class name="sample_escort_vip_pN6u9b" Value="[!Objective]시간내에 vip 를 탈출시키시오"/>
+	</idspace>
+</idspaces>

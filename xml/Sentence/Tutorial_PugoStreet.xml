@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Tutorial_PugoStreet_ZgQIUl" Value="[!Dashboard:Counter]남은 무장 강도 수"/>
+		<class name="Tutorial_PugoStreet_JJbSvv" Value="[!Dashboard:ObjectiveMarker]알버스로 시온 근처로 이동하여 대화를 하세요."/>
+		<class name="Tutorial_PugoStreet_Q8Hzyn" Value="[!Objective]무장 강도를 소탕하시오."/>
+		<class name="Tutorial_PugoStreet_ptqXhG" Value="[!Objective]알버스가 직접 시온과 대화하시오."/>
+		<class name="Tutorial_PugoStreet_dnfyhP" Value="[!VictoryCondition]알버스 전투 불능"/>
+		<class name="Tutorial_PugoStreet_zp5UI4" Value="[!VictoryCondition]시온 전투 불능"/>
+		<class name="Tutorial_PugoStreet_XSd1tY" Value="[!VictoryCondition]적을 모두 제압하시오."/>
+		<class name="Tutorial_PugoStreet_91Wcjw" Value="[!VictoryCondition]알버스가 직접 시온과 대화하시오."/>
+		<class name="Tutorial_PugoStreet_n1gWLJ" Value="[!Ignore][!BalloonChat][!speaker:Albus]저기! 일단 이자리를 피하세요!"/>
+		<class name="Tutorial_PugoStreet_XKHqvw" Value="[!Ignore][!BalloonChat][!speaker:Sion]싫어! 내 저녁밥의 원수를 갚아줄 거야!"/>
+		<class name="Tutorial_PugoStreet_9TcX1d" Value="[!Dialog][!speaker:Sion_Think]......"/>
+		<class name="Tutorial_PugoStreet_SOiiZq" Value="[!Ignore][!BalloonChat][!speaker:Albus]한 번에 기세를 잡아야 해."/>
+		<class name="Tutorial_PugoStreet_rZsMhw" Value="[!Ignore][!BalloonChat][!speaker:Albus]멋진 번개다..."/>
+		<class name="Tutorial_PugoStreet_VXJ0KD" Value="[!Ignore][!BalloonChat][!speaker:Sion]저 사람은 왜 끼어든거지..."/>
+		<class name="Tutorial_PugoStreet_bdh0iS" Value="[!Ignore][!BalloonChat][!speaker:EnemyGroup2_1]제대로 한몫 챙기겠는걸!"/>
+		<class name="Tutorial_PugoStreet_ph8FO7" Value="[!Ignore][!BalloonChat][!speaker:EnemyGroup2_2]후후후... 이젠 우리 세상이다!"/>
+		<class name="Tutorial_PugoStreet_zY2jwr" Value="[!Ignore][!BalloonChat][!speaker:EnemyGroup2_3]그런데 바깥에서 기다리는 녀석들은 어디있지?"/>
+		<class name="Tutorial_PugoStreet_ZxeXDS" Value="[!Title]희망 가득히..."/>
+		<class name="Tutorial_PugoStreet_fqOSIs" Value="[!Title]푸고 거리 사건 종결 후"/>
+		<class name="Tutorial_PugoStreet_qo8Qpl" Value="[!Dialog][!speaker:Sion_Depressed]오늘 저녁도 엉망이군..."/>
+		<class name="Tutorial_PugoStreet_TD0b4n" Value="[!Dialog][!speaker:Sion_Depressed]아... 내일부터는 또 무슨 일을 해야 하나..."/>
+		<class name="Tutorial_PugoStreet_LHr1pd" Value="[!Dialog][!speaker:Albus_Normal]시온 씨!"/>
+		<class name="Tutorial_PugoStreet_ythRDU" Value="[!Dialog][!speaker:Albus_Normal]협력해주셔서 감사합니다."/>
+		<class name="Tutorial_PugoStreet_fr3WnG" Value="[!Dialog][!speaker:Sion_Smile]아냐. 나도 덕분에 그 녀석들을 혼내 줄 수 있었어."/>
+		<class name="Tutorial_PugoStreet_lctAOG" Value="[!Dialog][!speaker:Albus_Happy]시온 씨 혹시 트러블슈터에 관심 있으세요?"/>
+		<class name="Tutorial_PugoStreet_W0yG83" Value="[!Dialog][!speaker:Sion_Stare]......"/>
+		<class name="Tutorial_PugoStreet_oHnTwz" Value="[!Dialog][!speaker:Albus_Laugh]잠깐이면 됩니다."/>
+		<class name="Tutorial_PugoStreet_JJ0AiM" Value="[!Dialog][!speaker:Sion_Stare]정말 트러블슈터 관한 일이냐?"/>
+		<class name="Tutorial_PugoStreet_swtGzU" Value="[!Dialog][!speaker:Albus_Surprise]네??"/>
+		<class name="Tutorial_PugoStreet_KO8c7W" Value="[!Dialog][!speaker:Sion_Stare]요즘 하도 &apos;관심 있으세요?&apos; 하고 다가와서는 결국 종교 권유였던 경험이 있어서 말야..."/>
+		<class name="Tutorial_PugoStreet_UqUn6T" Value="[!Dialog][!speaker:Sion_Stare]나 지금 저녁을 망치고 뛰기까지 해서 매우 짜증 나 있으니 불필요한 이야기로 시간 뺏지 않았으면 해."/>
+		<class name="Tutorial_PugoStreet_lfyXC9" Value="[!Dialog][!speaker:Albus_Laugh]&apos;배고프셨구나. 이거 기회다.&apos;"/>
+		<class name="Tutorial_PugoStreet_gDmnfM" Value="[!Dialog][!speaker:Albus_Normal]시온 씨! 괜찮다면 이렇게 서서 이야기 말고 밥이나 먹으면서 이야기합시다."/>
+		<class name="Tutorial_PugoStreet_SdsZHX" Value="[!Dialog][!speaker:Sion_Surprise]뭐! 뭐라고 했어?"/>
+		<class name="Tutorial_PugoStreet_U59vVJ" Value="[!Dialog][!speaker:Albus_Normal]저녁 망치셨다면서요. 제가 한턱내겠습니다!"/>
+		<class name="Tutorial_PugoStreet_icLMPC" Value="[!Dialog][!speaker:Sion_Happy]뭐! 진짜!"/>
+		<class name="Tutorial_PugoStreet_xN2pI1" Value="[!Dialog][!speaker:Albus_Laugh]네. 시온 씨가 거절하지 않으신다면요."/>
+		<class name="Tutorial_PugoStreet_pN6u9b" Value="[!Dialog][!speaker:Sion_Laugh]하하. 사양하지 않을게."/>
+		<class name="Tutorial_PugoStreet_ZItXEj" Value="[!Title]견습 트러블슈터"/>
+		<class name="Tutorial_PugoStreet_4sBa4y" Value="[!Title]푸고 뒷거리 포장마차 거리."/>
+		<class name="Tutorial_PugoStreet_4r9Xc2" Value="[!Dialog][!speaker:Sion_SurpriseStare]트러블슈터 수입이 그렇게 좋단 말야!"/>
+		<class name="Tutorial_PugoStreet_WDPotZ" Value="[!Dialog][!speaker:Albus_Laugh]꾸준히 사건을 해결해 나갈 자신만 있다면 충분한 고수익을 보장합니다."/>
+		<class name="Tutorial_PugoStreet_ZrSFT8" Value="[!Subtitle][!speaker:EmptySubTitle_]『어머니. 시온입니다.』"/>
+		<class name="Tutorial_PugoStreet_Uv54oG" Value="[!Dialog]『최근 젊고 능력 있는 사장님을 만났습니다. 』"/>
+		<class name="Tutorial_PugoStreet_t18J7N" Value="[!Dialog]『그리고 그분에게 스카웃 제의를 받았습니다. 』"/>
+		<class name="Tutorial_PugoStreet_4VkHbX" Value="[!Dialog][!speaker:Sion_Think]흐음..."/>
+		<class name="Tutorial_PugoStreet_F6igBP" Value="[!Dialog][!speaker:Sion_Think]&apos;지금 생활할 돈도 없는데 1년 견습 생활을 어떻게 버텨...&apos;"/>
+		<class name="Tutorial_PugoStreet_AfmWR9" Value="[!Dialog][!speaker:Albus_Normal]시온 씨가 저희 회사 견습 트러블슈터로 입사하시면..."/>
+		<class name="Tutorial_PugoStreet_FlD6bt" Value="[!Dialog][!speaker:Albus_Laugh]식비, 활동비 등을 전액 제공하고 임무 성과에 따라 인센티브를 드리겠습니다."/>
+		<class name="Tutorial_PugoStreet_pIM9oC" Value="[!Dialog][!speaker:Sion_Surprise]뭐!! 식비 전액? 하루 3끼? 간식 포함?"/>
+		<class name="Tutorial_PugoStreet_E4NHRk" Value="[!Dialog][!speaker:Albus_Normal]물론입니다. 시온 씨가 무리 없이 일하도록 지원하겠습니다."/>
+		<class name="Tutorial_PugoStreet_1VBLAl" Value="[!Dialog][!speaker:Sion_Stare]알버스 씨. 이거 사기 아니죠?"/>
+		<class name="Tutorial_PugoStreet_Gtr3OY" Value="[!Dialog][!speaker:Albus_SurpriseStare]사기라뇨! 다 시온 씨 능력을 보고, 제가 투자하는 겁니다."/>
+		<class name="Tutorial_PugoStreet_OTWbp8" Value="[!Dialog][!speaker:Albus_Laugh]시온 씨. 오늘처럼 같이 일해봐요."/>
+		<class name="Tutorial_PugoStreet_2k4XdH" Value="[!Dialog][!speaker:Sion_Angry]좋습니다. 계약하죠!"/>
+		<class name="Tutorial_PugoStreet_ETvOmd" Value="[!Dialog]『저를 높게 평가하시기에 한동안 같이 일해보기로 하였습니다. 』"/>
+		<class name="Tutorial_PugoStreet_jIlYnF" Value="[!Dialog]『아르바이트 생활보다 안정적인 직업이니 마음 놓으시기 바랍니다.』"/>
+		<class name="Tutorial_PugoStreet_G5WLsE" Value="[!Dialog]『자리 잡히면 곧 연락드리겠습니다.』"/>
+		<class name="Tutorial_PugoStreet_XIDgvW" Value="[!Dialog]『듬직한 막내 아들 시온 올림』"/>
+		<class name="Tutorial_PugoStreet_UKG3No" Value="[!Dialog][!speaker:Sion_Laugh]자~ 사장님. 잘 부탁드립니다!"/>
+		<class name="Tutorial_PugoStreet_TYde8i" Value="[!Dialog][!speaker:Albus_Laugh]아니. 그렇게 부르실 필요 없어요. 편하게 알버스라고 불러주세요."/>
+		<class name="Tutorial_PugoStreet_q7sZe2" Value="[!Dialog][!speaker:Sion_Happy]OK~☆ 열심히 할게. 알버스!"/>
+		<class name="Tutorial_PugoStreet_6ZHHnL" Value="[!Dialog]이날 시온은 1년간 아르바이트 생활의 종지부를 찍고 $CompanyName$의 입사를 결정한다."/>
+		<class name="Tutorial_PugoStreet_VitT7q" Value="[!Ignore][!BalloonChat][!speaker:Sion]아... 오늘 저녁 어쩌지..."/>
+		<class name="Tutorial_PugoStreet_9q0z3f" Value="[!Ignore][!BalloonChat][!speaker:EnemyGroup1_2]아니 이 녀석이!"/>
+		<class name="Tutorial_PugoStreet_B2PAWI" Value="[!Ignore][!BalloonChat][!speaker:Sion]자 내 차례다!"/>
+		<class name="Tutorial_PugoStreet_Cl4uDM" Value="[!Ignore][!DialogSystemMessageBox]시온의 섬광랑은 연쇄 공격 타입입니다. 연쇄공격은 최초 피격 대상의 주위 반경으로 퍼져나갑니다."/>
+		<class name="Tutorial_PugoStreet_wRpCVo" Value="[!Ignore]연쇄 공격"/>
+		<class name="Tutorial_PugoStreet_lNtXdB" Value="[!Dialog][!speaker:Sion_Normal_Young]형! 형! 나 형들이랑 같이 살 수 있어!"/>
+		<class name="Tutorial_PugoStreet_8h50Y9" Value="[!Title]미련 가득히..."/>
+		<class name="Tutorial_PugoStreet_6omQom" Value="[!Title]2년 전, 오딘 지구"/>
+		<class name="Tutorial_PugoStreet_Iu69zp" Value="[!Dialog][!speaker:Serena_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait11/Phone_Message&apos;] 시온. 이삿짐은 다 쌌니?"/>
+		<class name="Tutorial_PugoStreet_ExiVaH" Value="[!Dialog][!speaker:Serena_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait11/Phone_Message&apos;] 마중 나갈테니 출발하기 전에 연락주렴."/>
+		<class name="Tutorial_PugoStreet_vhdc83" Value="[!Subtitle][!speaker:EmptySubTitle_][colour=&apos;FFF3C993&apos;]&apos;네가 시온이구나. 난 비샤라고 해.&apos;"/>
+		<class name="Tutorial_PugoStreet_RLerHU" Value="[!Subtitle][!speaker:EmptySubTitle_][colour=&apos;FFF3C993&apos;]&apos;리온. 시온은 아직 어리잖니. 형인 네가 양보해주겠니?&apos;"/>
+		<class name="Tutorial_PugoStreet_D15vmS" Value="[!Subtitle][!speaker:EmptySubTitle_][colour=&apos;FFF3C993&apos;]&apos;오늘 저녁은 네가 좋아하는 만두 요리야.&apos;"/>
+		<class name="Tutorial_PugoStreet_Jroj9v" Value="[!Subtitle][!speaker:EmptySubTitle_][colour=&apos;FFF3C993&apos;]&apos;리온. 시온. 너희 둘을 만나 다행이다. &apos;"/>
+		<class name="Tutorial_PugoStreet_CxcxwT" Value="[!Subtitle][!speaker:EmptySubTitle_][colour=&apos;FFF3C993&apos;]&apos;리온. 시온을 잘 부탁한다.&apos;"/>
+		<class name="Tutorial_PugoStreet_pkoDgZ" Value="[!Dialog][!speaker:Serena_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait11/Phone_Message&apos;] 시온. 전화는 왜 안 받는 거니?"/>
+		<class name="Tutorial_PugoStreet_moxvqi" Value="[!Dialog][!speaker:Serena_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait11/Phone_Message&apos;] 아빠가 많이 화나셨어."/>
+		<class name="Tutorial_PugoStreet_mDpmXm" Value="[!Subtitle][!speaker:EmptySubTitle_][colour=&apos;FFFF6D25&apos;]&apos;너는 자랑스러운 내 아들이다.&apos;"/>
+		<class name="Tutorial_PugoStreet_eVzWFV" Value="[!Subtitle][!speaker:EmptySubTitle_][colour=&apos;FFFF6D25&apos;]&apos;시온. 네가 이제부터 차기 당주다.&apos;"/>
+		<class name="Tutorial_PugoStreet_qPwkxn" Value="[!Subtitle][!speaker:EmptySubTitle_][colour=&apos;FFFF6D25&apos;]&apos;졸업하면 바로 돌아와라. 네가 있을 곳은 여기다.&apos;"/>
+		<class name="Tutorial_PugoStreet_R27uC0" Value="[!Subtitle][!speaker:EmptySubTitle_][colour=&apos;FFFF6D25&apos;]&apos;시온! 당장 돌아오지 못해!!&apos;"/>
+		<class name="Tutorial_PugoStreet_IhTOsw" Value="[!Dialog][!speaker:Serena_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait11/Phone_Message&apos;] 시온. 엄마야. 건강하지?"/>
+		<class name="Tutorial_PugoStreet_LdEW8r" Value="[!Dialog][!speaker:Serena_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait11/Phone_Message&apos;] 메시지 확인하는 대로 연락 부탁한다."/>
+		<class name="Tutorial_PugoStreet_6wy9iU" Value="[!Subtitle][!speaker:EmptySubTitle_][colour=&apos;FFDB00D3&apos;]&apos;비샤형! 비샤형!!! 일어나란 말야!!&apos;"/>
+		<class name="Tutorial_PugoStreet_I6yt05" Value="[!Subtitle][!speaker:EmptySubTitle_][colour=&apos;FFDB00D3&apos;]&apos;미안하다. 시온. 넌 엄마 곁에 있어 주렴.&apos;"/>
+		<class name="Tutorial_PugoStreet_mBzUOU" Value="[!Dialog][!speaker:Serena_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait11/Phone_Message&apos;] ......"/>
+		<class name="Tutorial_PugoStreet_r8HYY5" Value="[!Dialog][!speaker:Serena_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait11/Phone_Message&apos;] 시온. 엄마는 언제나 네 편이란다."/>
+		<class name="Tutorial_PugoStreet_3zKiYD" Value="[!Dialog][!speaker:Serena_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait11/Phone_Message&apos;] 그러니 네가 하고 싶은 대로 하렴."/>
+		<class name="Tutorial_PugoStreet_wgCLJq" Value="[!Dialog]『내 이름은 시온』"/>
+		<class name="Tutorial_PugoStreet_rzNAAr" Value="[!Dialog]『발할라에 온 지 6년. 오늘부터 독립이다.』"/>
+		<class name="Tutorial_PugoStreet_A6bLqx" Value="[!Title]배고픔 가득히..."/>
+		<class name="Tutorial_PugoStreet_0WO70s" Value="[!Title]홀로서기 3개월 째."/>
+		<class name="Tutorial_PugoStreet_Ylz86b" Value="[!Dialog][!speaker:Sion_Normal]사장님!! 번개돌이 시온! 배달 완료했습니다!!"/>
+		<class name="Tutorial_PugoStreet_13lLKh" Value="[!Dialog][!speaker:Civil_Man_Boss_Bare_Normal]이 녀석아! 배달이 잘못 갔잖아!  오늘 벌써 몇 번째야!!"/>
+		<class name="Tutorial_PugoStreet_hzV7fd" Value="[!Dialog][!speaker:Sion_Laugh]하하하하! 잘못 갔군요!"/>
+		<class name="Tutorial_PugoStreet_OAY0Q0" Value="[!Dialog][!speaker:Civil_Man_Boss_Bare_Rage]이 녀석이... 남의 장사 말아먹고... 웃어?!"/>
+		<class name="Tutorial_PugoStreet_V3sUy2" Value="[!Dialog][!speaker:Civil_Man_Boss_Bare_Rage]이 멍청한 녀석!! 넌 해고야!! 해고!"/>
+		<class name="Tutorial_PugoStreet_hMo9Ph" Value="[!Dialog][!speaker:Sion_Surprise]!!!"/>
+		<class name="Tutorial_PugoStreet_GmdqXr" Value="[!Dialog][!speaker:Sion_Cry]사장님! 한 번만 봐주세요~!!"/>
+		<class name="Tutorial_PugoStreet_4wr457" Value="[!Dialog]귀족 집안의 유학생으로 편하게 지냈던 시온의 홀로서기는 쉽지 않았다."/>
+		<class name="Tutorial_PugoStreet_1vAriV" Value="[!Dialog][!speaker:Sion_Depressed]아 배고파..."/>
+		<class name="Tutorial_PugoStreet_XCjFiG" Value="[!Dialog][!speaker:Sion_Depressed]&apos;돈 걱정 안하고 마음껏 먹어보고 싶다...&apos;"/>
+		<class name="Tutorial_PugoStreet_dY7nnq" Value="[!Dialog][!speaker:Sion_SurpriseStare]&apos;또 범죄 사건인가... 이 동네는 정말...&apos;"/>
+		<class name="Tutorial_PugoStreet_6p4g2P" Value="[!Dialog][!speaker:Sion_Smile]&apos;리온 형은 잘 지내고 있을까?&apos;"/>
+		<class name="Tutorial_PugoStreet_paaiWP" Value="[!Dialog]그리고 1년이 흘렀다."/>
+		<class name="Tutorial_PugoStreet_awq8az" Value="[!Dialog][!speaker:Sion_Normal]싸장님! 이거 진짜 맛있는데요!!"/>
+		<class name="Tutorial_PugoStreet_BsORXt" Value="[!Dialog][!speaker:Sion_Laugh]제가 많이 먹을 테니 싸게 좀 주세요!"/>
+		<class name="Tutorial_PugoStreet_4EbA1K" Value="[!Dialog][!speaker:Civil_Man_Boss_Green_]이 녀석! 너한테 줄건 없다!"/>
+		<class name="Tutorial_PugoStreet_bTePZK" Value="[!Title]앞만 보고 걸어가기"/>
+		<class name="Tutorial_PugoStreet_LtXUGR" Value="[!Title]3개월 전, 푸고 거리"/>
+		<class name="Tutorial_PugoStreet_NR6Edi" Value="[!BalloonChat][!speaker:civil01]이런 젠장! 오늘 장사 끝이군.."/>
+		<class name="Tutorial_PugoStreet_3WXNgk" Value="[!Subtitle][!speaker:EmptySubTitle_]『잘 지내고 계시죠? 전 잘 지내고 있습니다.』 "/>
+		<class name="Tutorial_PugoStreet_bLGB8H" Value="[!BalloonChat][!speaker:Sion]이것만 먹고 피해야지..."/>
+		<class name="Tutorial_PugoStreet_ENYKOH" Value="[!Subtitle][!speaker:EmptySubTitle_]『죄송하지만 형들과 함께한 이곳에 잠시 머물려고 합니다.』 "/>
+		<class name="Tutorial_PugoStreet_SYRyRz" Value="[!Subtitle][!speaker:EmptySubTitle_]『남은 미련 다 풀고 돌아가겠습니다.』 "/>
+		<class name="Tutorial_PugoStreet_fTDntx" Value="[!BalloonChat][!speaker:Sion]!!"/>
+		<class name="Tutorial_PugoStreet_bduFDF" Value="[!BalloonChat][!speaker:Sion]하아... 이 나쁜 녀석들!"/>
+		<class name="Tutorial_PugoStreet_R4lyHV" Value="[!Subtitle][!speaker:EmptySubTitle_]『사랑하는 어머니의 아들 시온 올림』 "/>
+		<class name="Tutorial_PugoStreet_G7kAZm" Value="[!Dialog][!speaker:Albus_Normal]전 현장담당자 트러블슈터 알버스입니다."/>
+		<class name="Tutorial_PugoStreet_hZtgbg" Value="[!Dialog][!speaker:Sion_Surprise]뭐? 트러블슈터?"/>
+		<class name="Tutorial_PugoStreet_O93gHa" Value="[!Dialog][!speaker:Sion_Smile]잘 됐다. 난 시온이라고 해."/>
+		<class name="Tutorial_PugoStreet_LiIcsf" Value="[!Dialog][!speaker:Sion_Smile]자, 저 녀석들을 같이 혼내주자. 나도 저들을 용서할 수 없거든!"/>
+		<class name="Tutorial_PugoStreet_uALrLu" Value="[!Dialog][!speaker:Albus_Normal]죄송합니다만 여기는 위험하니 대피하시기 바랍니다."/>
+		<class name="Tutorial_PugoStreet_TfVf1s" Value="[!Dialog][!speaker:Sion_Stare]싫은데...? 난 저 녀석들을 용서할 수가 없어."/>
+		<class name="Tutorial_PugoStreet_rd25zU" Value="[!Dialog][!speaker:Albus_Surprise]도대체 무슨 원한이..."/>
+		<class name="Tutorial_PugoStreet_OczvFu" Value="[!Dialog][!speaker:Sion_Angry]내 소중한 저녁 식사를 망친 녀석들이야. 용서할 수가 없지."/>
+		<class name="Tutorial_PugoStreet_x1Rzyd" Value="[!Dialog][!speaker:Albus_Surprise]아니... 고작 그런 이유로..."/>
+		<class name="Tutorial_PugoStreet_0G1xBi" Value="[!Dialog][!speaker:Sion_Stare]이봐 너에겐 고작일지 몰라도 나한테는 전 재산이야."/>
+		<class name="Tutorial_PugoStreet_Wv0jMf" Value="[!Dialog][!speaker:Albus_Think]&apos;도망치지 않는 걸로봐서 일반인은 아닌 것 같은데...&apos;"/>
+		<class name="Tutorial_PugoStreet_NFohRD" Value="[!Dialog][!speaker:Albus_Normal]&apos;하긴 람지플라자 사건 때도 나보다 강한 분들이 많았지...&apos;"/>
+		<class name="Tutorial_PugoStreet_dJeF9S" Value="[!Dialog][!speaker:Sion_Stare]이봐. 결정 못 하겠으면 비켜. 내가 전부 처리해줄 테니."/>
+		<class name="Tutorial_PugoStreet_YZcKTb" Value="[!Dialog][!speaker:Albus_Think][colour=&apos;FFFFFF00&apos;]어떻게 해야 하지..."/>
+		<class name="Tutorial_PugoStreet_ELFsUD" Value="[!Choice]합류하여 임무를 진행한다."/>
+		<class name="Tutorial_PugoStreet_fe8pVS" Value="[!Choice]경찰들을 시켜 돌려보낸다."/>
+		<class name="Tutorial_PugoStreet_ybtua9" Value="[!Dialog][!speaker:Albus_Serious]전방 적 다수 확인됩니다. 다들 준비하세요."/>
+		<class name="Tutorial_PugoStreet_rKim7x" Value="[!BalloonChat][!speaker:EnemyGroup1_1]왔네. 왔어~~!!"/>
+		<class name="Tutorial_PugoStreet_iGOft3" Value="[!BalloonChat][!speaker:EnemyGroup1_2]흐아~ 몸 좀 풀어볼까!"/>
+		<class name="Tutorial_PugoStreet_26luHj" Value="[!Dialog][!speaker:Sion_Angry]저기 경찰. 나도 돕겠어!"/>
+		<class name="Tutorial_PugoStreet_TqpGlB" Value="[!Dialog][!speaker:Albus_SurpriseStare]&apos;일반 시민이잖아!?&apos;"/>
+		<class name="Tutorial_PugoStreet_oszDea" Value="[!Dialog][!speaker:Albus_Serious]대피하십시오. 여긴 위험합니다!!"/>
+		<class name="Tutorial_PugoStreet_dRdTxk" Value="[!Dialog][!speaker:Sion_Stare]안돼! 이대로 그냥 갈 수 없어."/>
+		<class name="Tutorial_PugoStreet_wFJ7Jy" Value="[!BalloonChat][!speaker:Sion]내 저녁밥에게 사과해!"/>
+		<class name="Tutorial_PugoStreet_dMaKyX" Value="[!BalloonChat][!speaker:Albus]번개 능력자!"/>
+		<class name="Tutorial_PugoStreet_Cgk1xi" Value="[!Dialog][!speaker:Albus_Serious]알겠습니다. 그럼 일단 현장 상황의 지휘를 따라주십시오."/>
+		<class name="Tutorial_PugoStreet_hty0bQ" Value="[!Dialog][!speaker:Albus_Serious]시온 씨에게 문제가 생기면 모두 제 책임이니까요."/>
+		<class name="Tutorial_PugoStreet_cP2yPm" Value="[!Dialog][!speaker:Sion_Laugh]OK~☆ 실망시키지 않을게!"/>
+		<class name="Tutorial_PugoStreet_6qxHy0" Value="[!Dialog][!speaker:Albus_Serious]아무리 그러셔도 안 됩니다. 대피해주세요."/>
+		<class name="Tutorial_PugoStreet_v7MSX0" Value="[!Dialog][!speaker:Albus_Think]&apos;말로는 안 되겠군. 경찰들에게 부탁해 일단 강제로 대피시켜야겠어&apos;"/>
+		<class name="Tutorial_PugoStreet_AAIYsf" Value="[!Dialog][!speaker:Sion_Stare]지금 이러고 있을 상황이야?"/>
+		<class name="Tutorial_PugoStreet_t9CjZE" Value="[!Dialog][!speaker:Albus_Serious]제가 할 말입니다. 당신에게 여기는 위험합니다."/>
+		<class name="Tutorial_PugoStreet_3WfdXC" Value="[!Dialog][!speaker:Albus_Fury]뭐 하는 짓입니까!"/>
+		<class name="Tutorial_PugoStreet_x6mMA0" Value="[!Dialog][!speaker:Sion_Laugh]피했네? 너 제법이구나."/>
+		<class name="Tutorial_PugoStreet_R4yE85" Value="[!Dialog][!speaker:Sion_Normal]아무튼 나 이 정도는 해. 트러블슈터 정도면 알아보겠지?"/>
+		<class name="Tutorial_PugoStreet_1QMD6W" Value="[!Dialog][!speaker:Sion_Laugh]나랑 이러고 있을 시간이 없잖아. 빨리 협력하자. 트러블슈터."/>
+		<class name="Tutorial_PugoStreet_6xmldT" Value="[!Dialog][!speaker:Albus_EyeAversion]도대체... 이 동네는 정상이 아니야..."/>
+		<class name="Tutorial_PugoStreet_viClC4" Value="[!Dialog][!speaker:Sion_Normal]이봐. 걱정 마. 네 통제에 잘 따를 테니까."/>
+		<class name="Tutorial_PugoStreet_ApWVt2" Value="[!Dialog][!speaker:Albus_Smile]막무가내 시군요."/>
+		<class name="Tutorial_PugoStreet_sRxH3Q" Value="[!Dialog][!speaker:Albus_Serious]만약 통제를 따르지 않으시면 시온 씨에게 어떤 문제가 생겨도 전 책임지지 않겠습니다."/>
+		<class name="Tutorial_PugoStreet_cSBnzJ" Value="[!Dialog][!speaker:Sion_Smile]OK~☆"/>
+		<class name="Tutorial_PugoStreet_AfC3LE" Value="[!BalloonChat][!speaker:VHPD1]알버스 씨... 나중에 문제 생기면 곤란하실 텐데..."/>
+		<class name="Tutorial_PugoStreet_dmlH9f" Value="[!BalloonChat][!speaker:VHPD2]현장 보고서 복잡해지는군...."/>
+		<class name="Tutorial_PugoStreet_RkaTYT" Value="[!BalloonChat][!speaker:Albus]안돼애애애!!!!!"/>
+		<class name="Tutorial_PugoStreet_K71ghc" Value="[!BalloonChat][!speaker:Albus]제법인데... 걱정 안 해도 되겠어."/>
+		<class name="Tutorial_PugoStreet_8fszdH" Value="[!Dialog][!speaker:Gangster_DannyLaw_Normal]경찰 녀석들 요즘 따라 부지런하군."/>
+		<class name="Tutorial_PugoStreet_kWrpqi" Value="[!Dialog][!speaker:Gangster_Sharky_Normal]다 부질없는 짓... 모든 것은 순리대로 흐를 뿐이지."/>
+		<class name="Tutorial_PugoStreet_dt6z3l" Value="[!Dialog][!speaker:Gangster_DannyLaw_Normal]이렇게 쫓기는 것도 순리인가?"/>
+		<class name="Tutorial_PugoStreet_RpRVcw" Value="[!Dialog][!speaker:Gangster_Sharky_Normal]모든 일은 정해져 있네. 의심할 필요가 없지."/>
+		<class name="Tutorial_PugoStreet_2AzCDJ" Value="[!Dialog][!speaker:Gangster_DannyLaw_Normal]자네들이 바라는 것이 이루어지면 좋겠군."/>
+		<class name="Tutorial_PugoStreet_5IjARN" Value="[!Dialog][!speaker:Gangster_DannyLaw_Normal]그럼 난 이만. 뒷일은 자네들에게 맡기지. 몸조심하길."/>
+		<class name="Tutorial_PugoStreet_LBHSkD" Value="[!Dialog][!speaker:Gangster_Sharky_Normal]걱정 말게. 나 역시 자리를 피할 것이니..."/>
+		<class name="Tutorial_PugoStreet_hAkTkU" Value="[!Dialog][!speaker:Gangster_DannyLaw_Normal]뭐야. 대장이 도망가는 건가?"/>
+		<class name="Tutorial_PugoStreet_Sa91e9" Value="[!Dialog][!speaker:Gangster_Sharky_Normal]각자에게 주어진 일이 있을 뿐."/>
+		<class name="Tutorial_PugoStreet_Q8ZJX4" Value="[!Dialog][!speaker:Gangster_Sharky_Normal]저들은 여기서 자네와 날 위해 시간을 버는 것이 사명이지."/>
+		<class name="Tutorial_PugoStreet_2ltRPW" Value="[!Dialog][!speaker:Gangster_DannyLaw_Normal]훗. 이해할 수 없군. 이래서 종교는 사절이야."/>
+	</idspace>
+</idspaces>

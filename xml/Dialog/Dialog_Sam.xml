@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Dialog">
+	<class name="Sam_Main">
+		<Scripts>
+			<property Type="Script" Script="ProgressPreDialogCheck_CommonNPC"/>
+		</Scripts>
+	</class>
+	<class name="Sam_Selection">
+		<Scripts>
+			<property Type="Switch" C_DlgName="npc.Info.Title" C_TestTarget="company.Npc[npc.name].QP">
+				<property Case="0">
+					<property Type="Jump" JumpTo="Sam_QP_0"/>
+				</property>
+				<property Case="1">
+					<property Type="Jump" JumpTo="Sam_QP_1"/>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+	<class name="Sam_QP_0">
+		<Scripts>
+			<property Type="Dialog" C_DlgName="npc.Info.Title">
+				<property Text="사람은 무언가를 희생시키지 않으면 아무것도 얻을 수 없지."/>
+				<property Text="자네의 돈을 댓가로 나의 물건을 얻어 가게나."/>
+			</property>
+			<property Type="Action" Command="UpdateCompanyProperty" PropertyType="Npc/Sam/QP" C_PropertyValue="1"/>
+		</Scripts>
+	</class>
+	<class name="Sam_QP_1">
+		<Scripts>
+			<property Type="Switch" C_DlgName="npc.Info.Title" C_TestTarget="math.random(1,4)">
+				<property Case="1">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="언제나 등가 교환이야."/>
+						<property Text="같은 가치만큼 돈을 지불해."/>
+					</property>
+				</property>
+				<property Case="2">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="너에게 필요한 것이라면 무엇이든 구해보지."/>
+					</property>
+				</property>
+				<property Case="3">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="연금술이란 믿는 자에게만 보상을 가져다주지."/>
+					</property>
+				</property>
+				<property Case="4">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="이런 재료를 취급하는 사람은 나 뿐이야."/>
+					</property>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+</idspace>

@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="LoadingDesc">
+		<class name="None" Title="" Desc=""/>
+		<class name="Troubleshooter" Title="트러블슈터" Desc="도시 국가 발할라에서 범죄 활동에 대한 수사, 체포권이 허락된 자들을 말한다."/>
+		<class name="CompanyName" Title="회사 이름" Desc="회사 이름은 다른 플레이어들과 대화시 사용되는 이름입니다."/>
+		<class name="TroubleshooterRight" Title="트러블슈터의 권한" Desc="자체적인 판단 아래 해당 사건이 범죄 사건이라고 판단하면 수사 후 체포하여 구금할 권리를 가진다."/>
+		<class name="Eschaton" Title="대재해" Desc="지금으로부터 10년 전, 많은 사람들의 목숨을 앗아간 '대재해' 라고 불리는 큰 폭발이 있었다."/>
+		<class name="RightOfResidence" Title="발할라의 거주권" Desc="발할라는 각 지구 내 이주는 자유로우나 타 지구로의 이주는 엄격히 제한되어 있다."/>
+		<class name="TroubleshooterOffice" Title="트러블슈터 사무실" Desc="사무실은 회사를 관리하고 임무를 진행하는 개인 장소입니다."/>
+		<class name="Condition" Title="의욕" Desc="의욕이 0이 되면 무기력 상태가 됩니다. 무기력 상태에서는 임무에 참여할 수가 없습니다."/>
+		<class name="Vigor" Title="활기" Desc="의욕이 높으면 활기 상태로 임무를 시작합니다. 활기 상태에서는 매 턴 기력이 3 추가 증가합니다."/>
+		<class name="Fatigue" Title="피로" Desc="의욕이 낮으면 피로 상태로 임무를 시작합니다. 피로 상태에서는 매 턴 기력 회복량이 1 감소합니다."/>
+		<class name="TraingPoint" Title="훈련 점수" Desc="특성을 습득할 수 있는 점수로 레벨 당 1 포인트가 주어집니다."/>
+		<class name="WindWallArea" Title="바람장벽 지구" Desc="발할라의 국경 지대로 이주민들의 유입을 통제하기 위한 거대한 장벽이 세워져 있다."/>
+		<class name="Workshop" Title="작업대" Desc="작업대를 이용하시면 장비의 분해와 강화를 할 수 있습니다."/>
+		<class name="GearItem" Title="기어 아이템" Desc="기어 아이템은 하의 인벤토리에 장착할 수 있는 장착 아이템입니다."/>
+		<class name="NewRecipe" Title="새로운 제작" Desc="새로운 동료가 합류하면 해당 동료가 가진 전문 기술에 따라 새로운 제작 가능한 아이템이 추가 됩니다."/>
+		<class name="CivilRescue" Title="시민 구출" Desc="구출한 시민 수에 따라 해당 지역의 추가 평판을 얻거나 잃을 수 있습니다."/>
+		<class name="ProbationTroubleshooter" Title="견습 트러블슈터" Desc="트러블슈터 회사에 근무하며 트러블슈터들의 활동을 보조하는 사람들을 말한다."/>
+		<class name="GameDifficulty" Title="게임 난이도" Desc="게임 난이도는 언제든지 설정 메뉴를 통하여 변경 가능합니다."/>
+		<class name="SP" Title="SP" Desc="초능력자이거나 기백 소유자들은 SP 게이지가 활성화됩니다. SP의 누적에 따라 각 속성에 대한 보너스를 받습니다."/>
+		<class name="TurnOrder" Title="캐릭터 턴 순서" Desc="ALT 키를 누르시면 현재 시야 내의 모든 캐릭터의 턴 순서를 상태창에서 확인하실 수 있습니다."/>
+		<class name="Weather" Title="날씨 효과" Desc="임무를 수행하는 지역의 날씨는 전투 상황에 영향을 미칠 수 있습니다."/>
+		<class name="StableStatus" Title="안정된 자세" Desc="턴 시작 시, 행동력을 소모하지 않은 상태에서 적을 공격하면 명중률 20% 상승 효과가 적용됩니다. 해당 상태 적용 시, 유닛 상태 정보의 행동력 바가 푸른색으로 표시됩니다."/>
+		<class name="MovePathCustomizing" Title="이동 경로 사용자 지정" Desc="Ctrl 키를 누른 채로 경로를 설정하면 이동범위 내에서 원하는 경로로 이동할 수 있습니다."/>
+		<class name="EagleEye" Title="카메라 전략 모드" Desc="H 키를 누르시면 현재 카메라 모드보다 더 넓은 지역을 한눈에 보실 수 있습니다."/>
+		<class name="EventMission" Title="이벤트 미션" Desc="플레이어 캐릭터의 성장과 상관없이 이야기 흐름 진행을 보여주기 위한 미션입니다."/>
+		<class name="ZOC" Title="ZOC" Desc="적이 위치한 지역의 근접한 4 타일은 한 번에 이동할 수 없으므로 두 번에 나눠 이동해야 합니다."/>
+		<class name="ItemIdentify" Title="아이템 감정" Desc="감정되지 않은 아이템은 골동품 상인 닐스를 통하여 감정할 수 있습니다."/>
+		<class name="PlayerInfoInMission" Title="플레이어 캐릭터 정보 보기" Desc="미션 진행 중 우상단의 캐릭터 보기 버튼을 통하여 현재 플레이어 캐릭터의 자세한 정보를 확인하실 수 있습니다."/>
+		<class name="EnemyInfoInMission" Title="적 정보" Desc="시야 내 적을 선택하면 화면 상단에 적의 현재 상태를 자세하게 확인하실 수 있습니다."/>
+		<class name="Overcharge" Title="과충전" Desc="SP가 최대치가 되면 과충전 상태가 됩니다. 과충전 상태에서는 어빌리티의 기력 소모가 0 이 되며 캐릭터에 따라 숨겨졌던 특정 어빌리티가 활성화됩니다."/>
+		<class name="ItemBox" Title="아이템 상자" Desc="아이템 상자에는 다양한 아이템이 들어 있습니다. 가끔 비어있을 수 있습니다."/>
+		<class name="MoveAttack" Title="이동 공격" Desc="이동 공격이 가능한 어빌리티는 이동과 공격을 한 번에 시도할 수 있습니다."/>
+		<class name="ItemProtect" Title="아이템 보호" Desc="[colour='FFFFFF00']물품 목록[colour='FFCCCCCC']에서 아이템에 [colour='FFFFFF00']Alt + 우클릭[colour='FFCCCCCC']을 통하여 보호/해제 설정을 변경할 수 있습니다. 보호된 아이템은 상점 판매, 아이템 분해가 되지 않습니다."/>
+		<class name="AcquireMastery" Title="특성 획득" Desc="적을 전투 불능으로 만들면 해당 몬스터가 보유한 특성을 확률적으로 획득할 수 있습니다."/>
+		<class name="Minimap" Title="미니맵 보기" Desc="미션 진행 중 우상단의 미니맵 보기 버튼을 통하여 현재 진행 중인 지역의 정보를 확인하실 수 있습니다."/>
+		<class name="TacticView" Title="전략 시점" Desc="미션 진행 중 우상단의 전략 시점 보기 버튼을 통하여 현재 카메라 모드보다 더 넓은 지역을 한눈에 보실 수 있습니다."/>
+		<class name="BattleInfoMode" Title="전투 미리 보기" Desc="미션 진행 중 우상단의 전투 미리 보기 버튼을 통하여 현재 시점에서 이동 후 시야와 공격 대상을 미리 확인하실 수 있습니다."/>
+		<class name="PsiStone" Title="이능석" Desc="이능석의 에너지를 추출하여 [colour='FFFFAA00']아이템 제작[colour='FFCCCCCC'] 혹은 [colour='FFFFAA00']아이템 강화[colour='FFCCCCCC']에 필요한 [colour='FF00FF00']재료[colour='FFCCCCCC']를 획득할 수 있습니다."/>
+		<class name="ThirdTeam" Title="제 3세력 유닛" Desc="해당 임무의 적과 플레이어 팀 모두에게 적대 관계인 유닛을 말합니다. 해당 유닛은 자홍색으로 표시됩니다."/>
+		<class name="TileInfo" Title="타일 정보 표시" Desc="타일의 상세한 정보는 게임 옵션의 타일 정보 표시를 통해 활성화 가능합니다."/>
+		<class name="CameraOption" Title="카메라 옵션" Desc="연출 카메라의 적용 여부는 게임 옵션을 통해 변경 가능합니다."/>
+		<class name="FastDirect" Title="빠르게 연출" Desc="이동, 공격등 게임 연출 속도는 게임 옵션을 통해 변경 가능합니다."/>
+		<class name="SkipDirect" Title="연출 건너뛰기" Desc="연출 진행은 ESC 키를 통해 건너뛸 수 있습니다."/>
+		<class name="ContinueMission" Title="미션 이어하기" Desc="중단된 미션은 다시 접속하시면 이어하실 수 있습니다."/>
+		<class name="CameraRotation" Title="카메라 회전 각도" Desc="임무 진행 시 Q, E 키를 이용한 회전 각도는 게임 옵션을 통해 변경 가능합니다."/>
+		<class name="CameraWheel" Title="카메라 화면 높이 조정" Desc="임무 진행 시 마우스 휠을 사용해 카메라를 위, 아래로 이동시킬 수 있습니다."/>
+		<class name="CameraViewAngle" Title="카메라 수직 각도 조정" Desc="임무 진행 시 [, ] 키를 사용해 카메라의 수직 각도를 변경시킬 수 있습니다."/>
+		<class name="AutoBattle" Title="전투 위임" Desc="경찰 지원 병력의 경우, 왼쪽 캐릭터 상태창 위의 위임 행동 패널을 통하여 '탐색', '전투', '주둔', '후퇴' 등의 명령을 내릴 수 있습니다."/>
+		<class name="AbilityRangeLock" Title="어빌리티 범위 고정" Desc="미션 진행 중 광역 어빌리티의 범위를 설정한 채로 R 키를 누르시면, 어빌리티 적용 범위를 고정한 채로 Tab 키를 눌러 개별 목표에 대한 전투 정보를 확인할 수 있습니다."/>
+	</idspace>
+	<idspace id="LoadingDescGroup">
+		<schema>
+			<rule property="DescList" type="table"/>
+		</schema>
+		<class name="Group01">
+			<DescList>
+				<property Desc="Condition"/>
+				<property Desc="TraingPoint"/>
+				<property Desc="WindWallArea"/>
+			</DescList>
+		</class>
+		<class name="Group02">
+			<DescList>
+				<property Desc="SP"/>
+				<property Desc="TurnOrder"/>
+				<property Desc="StableStatus"/>
+				<property Desc="AcquireMastery"/>
+			</DescList>
+		</class>
+		<class name="Group03">
+			<DescList>
+				<property Desc="PlayerInfoInMission"/>
+				<property Desc="SP"/>
+				<property Desc="Overcharge"/>
+				<property Desc="TurnOrder"/>
+				<property Desc="MovePathCustomizing"/>
+				<property Desc="EnemyInfoInMission"/>
+				<property Desc="ItemBox"/>
+				<property Desc="MoveAttack"/>
+				<property Desc="ZOC"/>
+				<property Desc="StableStatus"/>
+				<property Desc="EagleEye"/>
+				<property Desc="ItemProtect"/>
+				<property Desc="Minimap"/>
+				<property Desc="TacticView"/>
+				<property Desc="BattleInfoMode"/>
+				<property Desc="AbilityRangeLock"/>
+				<property Desc="CameraRotation"/>
+				<property Desc="CameraWheel"/>
+				<property Desc="CameraViewAngle"/>
+			</DescList>
+		</class>
+		<class name="Group04">
+			<DescList>
+				<property Desc="AcquireMastery"/>
+				<property Desc="AutoBattle"/>
+				<property Desc="EagleEye"/>
+				<property Desc="EnemyInfoInMission"/>
+				<property Desc="ItemBox"/>
+				<property Desc="ItemProtect"/>
+				<property Desc="Minimap"/>
+				<property Desc="TacticView"/>
+				<property Desc="BattleInfoMode"/>
+				<property Desc="MoveAttack"/>
+				<property Desc="MovePathCustomizing"/>
+				<property Desc="Overcharge"/>
+				<property Desc="PlayerInfoInMission"/>
+				<property Desc="SP"/>
+				<property Desc="StableStatus"/>
+				<property Desc="ThirdTeam"/>
+				<property Desc="TurnOrder"/>
+				<property Desc="ZOC"/>
+				<property Desc="TileInfo"/>
+				<property Desc="CameraOption"/>
+				<property Desc="FastDirect"/>
+				<property Desc="SkipDirect"/>
+				<property Desc="ContinueMission"/>
+				<property Desc="Vigor"/>
+				<property Desc="Fatigue"/>
+				<property Desc="AbilityRangeLock"/>
+				<property Desc="CameraRotation"/>
+				<property Desc="CameraWheel"/>
+				<property Desc="CameraViewAngle"/>
+			</DescList>
+		</class>
+	</idspace>
+	<idspace id="Loading">
+		<schema>
+			<rule property="Images" type="table"/>
+			<rule property="LoadData" type="table"/>
+		</schema>
+		<class name="Mission_TutorialCrowBill" Title="트러블슈터" SubTitle="까마귀부리 정류장" BGM="TroubleWaltz" Type="Custom" TypeKey="Troubleshooter">
+			<Images>
+				<property Image="Loading_Irene_Albus"/>
+			</Images>
+		</class>
+		<class name="Custom_CreateCompanyName" Title="" SubTitle="" BGM="OneForAll" Type="Custom" TypeKey="CompanyName">
+			<Images>
+				<property Image="Loading_Alisa_Bianca"/>
+			</Images>
+		</class>
+		<class name="Mission_TutorialFireflyPark" Title="내가 하고 싶은 것" SubTitle="반딧불 공원" BGM="TroubleWaltz" Type="Custom" TypeKey="TroubleshooterRight">
+			<Images>
+				<property Image="Loading_AccessDenied"/>
+			</Images>
+		</class>
+		<class name="Lobby_Office_Albus" Title="나를 알아 가기 위하여..." SubTitle="알버스의 오피스텔" BGM="TroubleWaltz" Type="Custom" TypeKey="Eschaton">
+			<Images>
+				<property Image="Loading_Eschaton"/>
+			</Images>
+		</class>
+		<class name="Mission_TutorialSilverlining" Title="떠나는 날은 언제나..." SubTitle="은빛 구름 거리 356" BGM="TroubleWaltz" Type="Custom" TypeKey="RightOfResidence">
+			<Images>
+				<property Image="Loading_Station_Albus_Start"/>
+			</Images>
+		</class>
+		<class name="Custom_OfficeContract" Title="" SubTitle="" BGM="OneForAll" Type="Custom" TypeKey="TroubleshooterOffice">
+			<Images>
+				<property Image="Loading_ContractOffice"/>
+			</Images>
+		</class>
+		<class name="Lobby_Office_OfficeMoveIn" Title="바 실버라이닝" SubTitle="은빛 구름 거리 356" BGM="OneForAll" Type="Group01" TypeKey="None">
+			<Images>
+				<property Image="Loading_Train_Albus"/>
+				<property Image="Loading_Train_Albus2"/>
+				<property Image="Loading_Station_Albus_Arrived"/>
+			</Images>
+		</class>
+		<class name="Lobby_Office_Night" Title="서로의 어깨에 기대어..." SubTitle="바 실버라이닝" BGM="TroubleWaltz" Type="Custom" TypeKey="Workshop">
+			<Images>
+				<property Image="Loading_Market"/>
+			</Images>
+		</class>
+		<class name="Lobby_Office_HeissingAndAnne" Title="서로의 어깨에 기대어..." SubTitle="바 실버라이닝" BGM="TroubleWaltz" Type="Custom" TypeKey="GearItem">
+			<Images>
+				<property Image="Loading_AnneBrokenFoxAcc"/>
+			</Images>
+		</class>
+		<class name="Lobby_Office_HeissingAndRay" Title="서로의 어깨에 기대어..." SubTitle="바 실버라이닝" BGM="TroubleWaltz" Type="Custom" TypeKey="NewRecipe">
+			<Images>
+				<property Image="Loading_Ray_Heising"/>
+			</Images>
+		</class>
+		<class name="Tutorial_RamjiPlaza" Title="미련이 남지 않도록..." SubTitle="람지플라자" BGM="TroubleWaltz" Type="Custom" TypeKey="CivilRescue">
+			<Images>
+				<property Image="Loading_Ramji"/>
+			</Images>
+		</class>
+		<class name="Mission_TutorialPugoStreet" Title="앞만 보고 걸어가기" SubTitle="푸고 거리" BGM="TroubleWaltz" Type="Custom" TypeKey="ProbationTroubleshooter">
+			<Images>
+				<property Image="Loading_TutorialPugoStreet"/>
+			</Images>
+		</class>
+		<class name="Lobby_Office_RamjiPlaza_Lose" Title="바 실버라이닝" SubTitle="은빛 구름 거리 356" BGM="OneForAll" Type="Custom" TypeKey="GameDifficulty">
+			<Images>
+				<property Image="Loading_Albus_Sleep"/>
+			</Images>
+		</class>
+		<class name="Lobby_Office_RamjiPlaza_Win" Title="바 실버라이닝" SubTitle="은빛 구름 거리 356" BGM="OneForAll" Type="Custom" TypeKey="GameDifficulty">
+			<Images>
+				<property Image="Loading_Ramjiplaza_Traveler"/>
+			</Images>
+		</class>
+		<class name="Tutorial_Construction_A" Title="언젠가 같이 걸어갈 날을 위해..." SubTitle="영일 공사장" BGM="TroubleWaltz" Type="Group02" TypeKey="None">
+			<Images>
+				<property Image="Loading_Construction_A"/>
+			</Images>
+		</class>
+		<class name="Tutorial_Road_113" Title="국경 외곽 도로" SubTitle="113번 외곽 도로" BGM="TroubleWaltz" Type="Group02" TypeKey="None">
+			<Images>
+				<property Image="Loading_Common_Road_113"/>
+			</Images>
+		</class>
+		<class name="Tutorial_CrowBillAfter" Title="하염 없이 내리는 빗줄기" SubTitle="까마귀부리 정류장" BGM="TroubleWaltz" Type="Custom" TypeKey="Weather">
+			<Images>
+				<property Image="Loading_Rain"/>
+			</Images>
+		</class>
+		<class name="Tutorial_PugoShop" Title="조각 맞추기" SubTitle="푸고 상점가" BGM="TroubleWaltz" Type="Custom" TypeKey="MovePathCustomizing">
+			<Images>
+				<property Image="Loading_PugoShop"/>
+			</Images>
+		</class>
+		<class name="Tutorial_PurpleBackStreet" Title="번져가는 자홍빛 불빛" SubTitle="자홍 뒷골목" BGM="TroubleWaltz" Type="Custom" TypeKey="EagleEye">
+			<Images>
+				<property Image="Loading_PurpleBackStreet"/>
+			</Images>
+		</class>
+		<class name="Tutorial_BlueFogStreet" Title="저 높은 곳에..." SubTitle="푸른안개 거리" BGM="TroubleWaltz" Type="Custom" TypeKey="ZOC">
+			<Images>
+				<property Image="Loading_BlueFogStreet"/>
+			</Images>
+		</class>
+		<class name="Tutorial_SilverliningMarco" Title="과거의 사슬" SubTitle="바 실버라이닝" BGM="TroubleWaltz" Type="Custom" TypeKey="EventMission">
+			<Images>
+				<property Image="Loading_Luna_Marco"/>
+			</Images>
+		</class>
+		<class name="Tutorial_PugoBackStreet" Title="피리 부는 사나이" SubTitle="푸고 뒷골목" BGM="TroubleWaltz" Type="Custom" TypeKey="ItemIdentify">
+			<Images>
+				<property Image="Loading_PugoBackStreet"/>
+			</Images>
+		</class>
+		<class name="Tutorial_Hansando" Title="달 밝은 밤에" SubTitle="한산도 하역장" BGM="TroubleWaltz" Type="Custom" TypeKey="EagleEye">
+			<Images>
+				<property Image="Loading_Hansando"/>
+			</Images>
+		</class>
+		<class name="Tutorial_GrayCemeteryPark" Title="오늘도 함께" SubTitle="잿빛 공원묘지" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_AnneLuna2"/>
+			</Images>
+		</class>
+		<class name="Tutorial_Lasa" Title="칠전팔기" SubTitle="잿빛 항구 A 선착장" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_Lasa2"/>
+			</Images>
+		</class>
+		<class name="Tutorial_Orsay" Title="어부지리" SubTitle="철의 숲 간이역" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_Orsay"/>
+			</Images>
+		</class>
+		<class name="Tutorial_LokoCabin" Title="가면 속의 그림자" SubTitle="철의 숲 물류 캠프" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_LokoCabin"/>
+			</Images>
+		</class>
+		<class name="Tutorial_SkyBlue" Title="혼자만의 시간" SubTitle="하늘바람 상점가" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_SkyBlue"/>
+			</Images>
+		</class>
+		<class name="Tutorial_PurpleStreet" Title="엉켜버린 실타래" SubTitle="자홍거리" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_PurpleStreet"/>
+			</Images>
+		</class>
+		<class name="Tutorial_PugoShopAfter" Title="잠시 멈춰 돌아보기" SubTitle="푸고 거리" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_PugoShopAfter"/>
+			</Images>
+		</class>
+		<class name="Tutorial_HansolStreet" Title="안녕. 친구여" SubTitle="한솔 거리" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_HansolStreet"/>
+			</Images>
+		</class>
+		<class name="Tutorial_CrescentBridge" Title="진심을 담아..." SubTitle="초승달 대교" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_CrescentBridge"/>
+			</Images>
+		</class>
+		<class name="Tutorial_Road_112" Title="침입자" SubTitle="철의 숲 자원관리구역" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_Road_112"/>
+			</Images>
+		</class>
+		<class name="Tutorial_MetroStreet" Title="성난 호랑이" SubTitle="달빛거리" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_MetroStreet"/>
+			</Images>
+		</class>
+		<class name="Tutorial_GrayPortWareHouse" Title="동상이몽" SubTitle="잿빛 항구 물류창고" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_GrayPortWareHouse"/>
+			</Images>
+		</class>
+		<class name="Tutorial_StarStreet" Title="힘겨루기" SubTitle="별빛 거리" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_StarStreet"/>
+			</Images>
+		</class>
+		<class name="Tutorial_CrowResidence" Title="잃어버린 시간" SubTitle="까마귀골목 뒷거리" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_CrowResidence"/>
+			</Images>
+		</class>
+		<class name="Tutorial_DustWind" Title="갈림길" SubTitle="먼지바람 톨게이트" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_DustWind"/>
+			</Images>
+		</class>
+		<class name="Tutorial_SkyWindPark" Title="과거의 잔향" SubTitle="하늘바람 공원" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_SkyWindPark"/>
+			</Images>
+		</class>
+		<class name="Tutorial_TrainingRoom" Title="괄목상대" SubTitle="바람장벽지구 경찰청 훈련장" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_TrainingRoom"/>
+			</Images>
+		</class>
+		<class name="Tutorial_PugoBackStreetAfter" Title="뿌린 대로 거두리라" SubTitle="푸고 뒷골목" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_PugoBackStreetAfter"/>
+			</Images>
+		</class>
+		<class name="Tutorial_GrayCemeteryParkAfter" Title="다시 함께" SubTitle="잿빛 공원묘지" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_AlbusHospital2"/>
+			</Images>
+		</class>
+		<class name="Tutorial_Road_111" Title="설상가상" SubTitle="철의 숲 자원개발구역" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_Road_111"/>
+			</Images>
+		</class>
+		<class name="Tutorial_DustWindRestArea" Title="같이 걸어가기" SubTitle="먼지바람 고속도로 휴게소" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_DustWindRestArea"/>
+			</Images>
+		</class>
+		<class name="Tutorial_MarketStreet" Title="한 걸음 물러나서..." SubTitle="은빛 구름 시장 거리" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_MarketStreet"/>
+			</Images>
+		</class>
+		<class name="Tutorial_Road_110" Title="과거는 묻어두고..." SubTitle="외곽 도로 정비소" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_KylieLoadmeet1"/>
+			</Images>
+		</class>
+		<class name="Tutorial_PurpleStreetAfter" Title="각자의 긍지" SubTitle="자홍거리 상점가" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_PurpleStreetAfter"/>
+			</Images>
+		</class>
+		<class name="Tutorial_CrowRuins" Title="늑대와 사냥꾼" SubTitle="까마귀 폐허" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_CrowRuins"/>
+			</Images>
+		</class>
+		<class name="Tutorial_PugoStreetAfter" Title="만나고 헤어지고..." SubTitle="푸고 번화가" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_PugoStreetAfter"/>
+			</Images>
+		</class>
+		<class name="Tutorial_WasteBuilding" Title="그림자 연극" SubTitle="까마귀폐허 도깨비굴" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_WasteBuilding"/>
+			</Images>
+		</class>
+		<class name="Tutorial_GroundWaterSlum" Title="불과 얼음" SubTitle="까마귀폐허 지하수로" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_GroundWaterSlum"/>
+			</Images>
+		</class>
+		<class name="Tutorial_CrowRuinsAfter" Title="외톨이 늑대" SubTitle="까마귀폐허" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_CrowRuinsAfter"/>
+			</Images>
+		</class>
+		<class name="Tutorial_CrowRuinsAfter_Alley" Title="비는 눈물 따라 흐르고..." SubTitle="까마귀폐허" BGM="FairyTale" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_Heissing_Laydown1"/>
+			</Images>
+		</class>
+		<class name="Tutorial_SkyBlueAfter" Title="각자의 역할" SubTitle="하늘바람 상점가" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_Memories_IsaacwithSharky"/>
+			</Images>
+		</class>
+		<class name="Tutorial_PurpleStreet_Kylie" Title="미워도 다시 한번..." SubTitle="자홍거리 재건축지구" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_KyliePast5"/>
+			</Images>
+		</class>
+		<class name="Tutorial_TrainingRoomAfter" Title="서로를 위해..." SubTitle="바람장벽지구 경찰청 훈련장" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_JaneAndGiselle"/>
+			</Images>
+		</class>
+		<class name="Tutorial_SilverliningAfter" Title="너를 위해..." SubTitle="은빛 구름 뒷거리" BGM="Dandelion" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_CompanyDining"/>
+			</Images>
+		</class>
+		<class name="Tutorial_WhiteTigerBase" Title="나를 위해.." SubTitle="자홍거리 뒷골목" BGM="TroubleWaltz" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_Karl2"/>
+			</Images>
+		</class>
+		<class name="Common_FallenLeavesPark" Title="떨어지는 낙엽 밟기" SubTitle="가랑잎 공원" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Common_FallenLeavesPark"/>
+			</Images>
+		</class>
+		<class name="Common_Construction_B" Title="어두운 곳엔 위험이 가득" SubTitle="영일 공사장" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Construction_A"/>
+			</Images>
+		</class>
+		<class name="Common_Road_114" Title="악당과 포식자" SubTitle="114 번 외곽 도로" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Common_Road_114"/>
+			</Images>
+		</class>
+		<class name="Common_SilverCloud" Title="은빛 토끼 공원" SubTitle="은빛 구름 거리 233" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Common_SilverCloud"/>
+			</Images>
+		</class>
+		<class name="Common_GamnamBaseParkPlace" Title="꼬리가 길면 밟히는 법" SubTitle="푸고 중심가 지하 주차장" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_GamnamBaseParkPlace"/>
+			</Images>
+		</class>
+		<class name="Common_Road_115" Title="야수의 증오" SubTitle="115 번 외곽 도로" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Road_115"/>
+			</Images>
+		</class>
+		<class name="Common_MetrodiumStreet" Title="내일을 위한 굴욕" SubTitle="메트로디움 옥상 주차장" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_MetrodiumStreet"/>
+			</Images>
+		</class>
+		<class name="Common_GangNamParkPlace" Title="이 일만 끝나면..." SubTitle="성난 술통 상점가" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Common_ParkPlace"/>
+			</Images>
+		</class>
+		<class name="Common_GrayPortGasStation" Title="자신이 원하는 길" SubTitle="잿빛 항구 외곽 주유소" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Common_GrayPortGasStation"/>
+			</Images>
+		</class>
+		<class name="Common_BlueFogStreet" Title="돌아갈 수 없기에..." SubTitle="푸른안개 거리" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Common_BlueFogStreet"/>
+			</Images>
+		</class>
+		<class name="Common_PurpleStreet" Title="용서하지 않으리..." SubTitle="자홍거리" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Common_PurpleStreet"/>
+			</Images>
+		</class>
+		<class name="Common_Rama" Title="벌어지는 틈새" SubTitle="철의 숲 마라 늪" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Common_Rama"/>
+			</Images>
+		</class>
+		<class name="Common_FogCliff" Title="이상 징후" SubTitle="철의 숲 안개 절벽" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Common_FogCliff"/>
+			</Images>
+		</class>
+		<class name="Common_MetrodiumResidence" Title="호랑이 사냥" SubTitle="메트로디움 거주구" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Common_MetrodiumResidence"/>
+			</Images>
+		</class>
+		<class name="Common_GrayPortWareHouse" Title="버릴 것은 없다." SubTitle="잿빛 항구 G 물류 창고" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Common_GrayPortWareHouse"/>
+			</Images>
+		</class>
+		<class name="Common_SkyWindPark" Title="비처럼 음악처럼..." SubTitle="하늘바람 공원" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Common_SkyWindPark"/>
+			</Images>
+		</class>
+		<class name="Common_ShadowWallUnderWay" Title="꼬리 자르기" SubTitle="그림자 장벽 지하수로" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Common_ShadowWallUnderWay"/>
+			</Images>
+		</class>
+		<class name="Common_Road_111" Title="위험의 전조" SubTitle="철의 숲 자원개발구역" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Common_Road_111"/>
+			</Images>
+		</class>
+		<class name="Common_Chubongdo" Title="밟히는 꼬리" SubTitle="추봉도 하역장" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Common_Chubongdo"/>
+			</Images>
+		</class>
+		<class name="Common_Road_110" Title="계약 파기" SubTitle="외곽 도로 정비소" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Common_Road_110"/>
+			</Images>
+		</class>
+		<class name="Common_PugoStreetAfter" Title="혼란은 악당을 부른다." SubTitle="푸고 번화가" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Common_PugoStreetAfter"/>
+			</Images>
+		</class>
+		<class name="Common_GroundWaterSlum" Title="순교자" SubTitle="까마귀폐허 지하수로" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Common_GroundWaterSlum"/>
+			</Images>
+		</class>
+		<class name="Raid_PurpleBackStreet" Title="악당들의 은신처" SubTitle="자홍 뒷골목" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_PurpleBackStreet"/>
+			</Images>
+		</class>
+		<class name="Raid_LokoCabin" Title="차오르는 달" SubTitle="철의 숲 물류 캠프" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_LokoCabin2"/>
+			</Images>
+		</class>
+		<class name="Raid_ShadowFogSlum" Title="축제 전야" SubTitle="그늘 안개 슬럼가" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_ShadowFogSlum"/>
+			</Images>
+		</class>
+		<class name="Raid_Road_112" Title="전사의 최후" SubTitle="철의 숲 자원관리구역" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Road_112_Night"/>
+			</Images>
+		</class>
+		<class name="Raid_StarStreet" Title="호랑이 등에 타다" SubTitle="별빛 사거리" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Raid_StarStreet"/>
+			</Images>
+		</class>
+		<class name="Raid_IronForest_Dirty" Title="괴수와 사냥꾼" SubTitle="철의 숲 오염지" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Raid_IronForest_Dirty"/>
+			</Images>
+		</class>
+		<class name="Raid_MailCenter" Title="토사구팽" SubTitle="푸른 안개 G 물류센터" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Raid_MailCenter"/>
+			</Images>
+		</class>
+		<class name="Raid_DrakyNest" Title="최상위 포식자" SubTitle="철의 숲 버려진 동굴" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Raid_DrakyNest"/>
+			</Images>
+		</class>
+		<class name="Raid_DrakyNest2" Title="생태계 파괴자" SubTitle="드라키의 둥지" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Raid_DrakyNest2"/>
+			</Images>
+		</class>
+		<class name="Raid_ShadeFogBackStreet" Title="변절자" SubTitle="자홍 거리 상점가" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Raid_ShadeFogBackStreet"/>
+			</Images>
+		</class>
+		<class name="Quest_Roberto01" Title="실력 테스트" SubTitle="사수거리 공원" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Quest_Roberto01"/>
+			</Images>
+		</class>
+		<class name="Quest_Roberto02" Title="어둠 속의 불청객" SubTitle="은빛 중심가 지하 주차장" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Quest_Roberto02"/>
+			</Images>
+		</class>
+		<class name="Quest_Roberto03" Title="과거의 은원" SubTitle="사수거리 공원" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Quest_Roberto01"/>
+			</Images>
+		</class>
+		<class name="Quest_Roberto04" Title="소녀의 부탁" SubTitle="사수거리 공원" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Quest_Roberto01"/>
+			</Images>
+		</class>
+		<class name="Quest_Hundred01" Title="고철 더미 아래 불청객" SubTitle="은빛 구름 고물 처리장" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Quest_Hundred01"/>
+			</Images>
+		</class>
+		<class name="Quest_Hundred02" Title="잠들어 있는 불청객" SubTitle="철의 숲 해체작업장" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Quest_Hundred01"/>
+			</Images>
+		</class>
+		<class name="Quest_Al01" Title="화물 속의 불청객" SubTitle="푸른안개 거리" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Quest_Al01"/>
+			</Images>
+		</class>
+		<class name="Quest_Dembel03" Title="위험한 운송업자" SubTitle="까마귀골목 뒷거리" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Quest_Dembel03"/>
+			</Images>
+		</class>
+		<class name="Lobby_ShooterStreet" Title="발할라의 행정 구역" SubTitle="사수거리" BGM="FinishMyWork" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Carter_Leton"/>
+				<property Image="Loading_Irene_Albus"/>
+				<property Image="Loading_Ray_Heising"/>
+				<property Image="Loading_Alisa_Bianca"/>
+				<property Image="Loading_Ray_Heising"/>
+				<property Image="Loading_Irene_Albus"/>
+				<property Image="Loading_Sion_Anne"/>
+			</Images>
+		</class>
+		<class name="Lobby_Office" Title="바 실버라이닝" SubTitle="은빛 구름 거리 356" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Carter_Leton"/>
+				<property Image="Loading_Ray_Heising"/>
+				<property Image="Loading_Alisa_Bianca"/>
+				<property Image="Loading_Sion_Anne"/>
+				<property Image="Loading_Irene_Albus"/>
+			</Images>
+		</class>
+		<class name="Lobby_Office_Heissing" Title="바 실버라이닝" SubTitle="은빛 구름 거리 뒷골목" BGM="FairyTale" Type="Group03" TypeKey="None">
+			<Images>
+				<property Image="Loading_Heissing_Laydown1"/>
+			</Images>
+		</class>
+		<class name="Lobby_LandOfStart" Title="발할라의 행정 구역" SubTitle="사수거리" BGM="WeAreTroubleshooter" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Carter_Leton"/>
+				<property Image="Loading_Ray_Heising"/>
+				<property Image="Loading_Alisa_Bianca"/>
+				<property Image="Loading_Sion_Anne"/>
+				<property Image="Loading_Irene_Albus"/>
+			</Images>
+		</class>
+		<class name="Login_Start" Title="바 실버라이닝" SubTitle="은빛 구름 거리 356" BGM="OneForAll" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Carter_Leton"/>
+				<property Image="Loading_Ray_Heising"/>
+				<property Image="Loading_Alisa_Bianca"/>
+				<property Image="Loading_Sion_Anne"/>
+				<property Image="Loading_Irene_Albus"/>
+			</Images>
+		</class>
+		<class name="Custom_noLoadingImg" Title="없음" SubTitle="없음" BGM="OneForAll" Type="None" TypeKey="None">
+			<Images>
+				<property Image="Loading_Title"/>
+			</Images>
+		</class>
+	</idspace>
+</idspaces>

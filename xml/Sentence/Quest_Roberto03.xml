@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Quest_Roberto03_S6hi7G" Value="[!Objective]로베르트를 제압하시오."/>
+		<class name="Quest_Roberto03_l2B51n" Value="[!Title]과거의 은원"/>
+		<class name="Quest_Roberto03_0ZaW6Y" Value="[!Title]사수거리 공원"/>
+		<class name="Quest_Roberto03_K2cC2u" Value="[!Dialog][!speaker:Oleg_Normal]억만 형님. 또 무슨 일이야?"/>
+		<class name="Quest_Roberto03_UEa9Jv" Value="[!Dialog][!speaker:Hundred_Normal]로베르토가 아이린과 한 판 붙는다."/>
+		<class name="Quest_Roberto03_W0Wa6d" Value="[!Dialog][!speaker:Oleg_Smile]아이린? 히어로?"/>
+		<class name="Quest_Roberto03_J0XQP5" Value="[!Dialog][!speaker:Oleg_Normal]저 둘은 여전히 사이가 안 좋은 건가?"/>
+		<class name="Quest_Roberto03_NQs3jP" Value="[!Dialog][!speaker:Oleg_Smile]이제 그만할 때도 되지 않았나..."/>
+		<class name="Quest_Roberto03_0yBPj4" Value="[!Dialog][!speaker:Hundred_Normal]올레그. 넌 어디다 걸래?"/>
+		<class name="Quest_Roberto03_Rufc7U" Value="[!Dialog][!speaker:Oleg_Smile]형님은 내기 밖에 몰라요? 맨날 뭐하면 내기에요?"/>
+		<class name="Quest_Roberto03_0uhvHZ" Value="[!Dialog][!speaker:Hundred_Normal]이렇게 재밌는 이벤트에 내기를 안하면 되겠나."/>
+		<class name="Quest_Roberto03_q95TpO" Value="[!Dialog][!speaker:Oleg_Normal]당연히 아이린이지. 로베르토 녀석 최근 위험한 임무는 다 피한다고."/>
+		<class name="Quest_Roberto03_GowLIC" Value="[!Dialog][!speaker:Hundred_Normal]그럼 넌 아이린인가?"/>
+		<class name="Quest_Roberto03_2Qugqn" Value="[!Dialog][!speaker:Oleg_Normal]그럼 형님은 로베르토 씨인가?"/>
+		<class name="Quest_Roberto03_14YnMQ" Value="[!Dialog][!speaker:Hundred_Normal]당연히 아이린이지. 지는 내기 따위 안한다."/>
+		<class name="Quest_Roberto03_6uat7m" Value="[!Dialog][!speaker:Oleg_Normal]뭐야. 내기가 성립이 안되잖아."/>
+		<class name="Quest_Roberto03_6ktt4I" Value="[!Dialog][!speaker:Dembel_Normal]로베르토 씨. 아이린한테 질텐데..."/>
+		<class name="Quest_Roberto03_jAdeXL" Value="[!Dialog][!speaker:Sam_Normal]작년 그 티마 토벌전 이후부터 로베르토 씨는 정말..."/>
+		<class name="Quest_Roberto03_33hjPZ" Value="[!Dialog][!speaker:Sam_Normal]뭐. 이제는 $CompanyName$[이] 있으니까 상관없나..."/>
+		<class name="Quest_Roberto03_qXe4Ds" Value="[!Dialog][!speaker:AL_Smile]그래도 로베르토가 아이린 신경 많이 썼어."/>
+		<class name="Quest_Roberto03_9QUuo1" Value="[!Dialog][!speaker:AL_Normal]로베르토 아니었으면 아이린은 이미..."/>
+		<class name="Quest_Roberto03_tqnktZ" Value="[!Dialog][!speaker:Dembel_Normal]정작 당사자는 전혀 모르는거지?"/>
+		<class name="Quest_Roberto03_CImYbP" Value="[!Dialog][!speaker:AL_Normal]로베르토가 굳이 말할 성격은 아니니까..."/>
+		<class name="Quest_Roberto03_QQCAEj" Value="[!Dialog][!speaker:Dembel_Smile]로베르토 씨 답네."/>
+		<class name="Quest_Roberto03_kM6sd7" Value="[!Dialog][!speaker:Roberto_Normal]아이린. 전력을 다해라. 알았지?"/>
+		<class name="Quest_Roberto03_qCxkSZ" Value="[!Dialog][!speaker:Irene_Serious]당연하지."/>
+		<class name="Quest_Roberto03_bduPIL" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Quest_Roberto03_lcuZKp" Value="[!VictoryCondition]로베르토를 제압하시오."/>
+		<class name="Quest_Roberto03_0Ylzft" Value="[!Ignore][!Dialog][!speaker:Dembel_Normal]$CompanyName$? 요즘 엄청 활약하는 그 팀 아닌가?"/>
+		<class name="Quest_Roberto03_qo7UtC" Value="[!Ignore][!Dialog][!speaker:AL_Normal]그래. 그 팀이야."/>
+		<class name="Quest_Roberto03_zCUFwl" Value="[!Ignore][!Dialog][!speaker:AL_Smile]히어로 아이린도 이 팀 소속이야."/>
+		<class name="Quest_Roberto03_bEEfHJ" Value="[!Ignore][!Dialog][!speaker:Dembel_Normal]히어로 아이린? 그 빨간머리 아가씨?"/>
+		<class name="Quest_Roberto03_lMLQit" Value="[!Ignore][!Dialog][!speaker:AL_Normal]그래. 저쪽에 서 있네."/>
+		<class name="Quest_Roberto03_QUQBzr" Value="[!Ignore][!Dialog][!speaker:Dembel_Smile]그 아가씨가 있다면, 경찰청 일에 몰두할만 하군."/>
+		<class name="Quest_Roberto03_5Pd8ZJ" Value="[!Ignore][!Dialog][!speaker:Dembel_Normal]$CompanyName$? 요즘 엄청 활약하는 그 팀 아닌가?"/>
+		<class name="Quest_Roberto03_PPQf80" Value="[!Ignore][!Dialog][!speaker:AL_Normal]그래. 그 팀이야."/>
+		<class name="Quest_Roberto03_5XfsXv" Value="[!Ignore][!Dialog][!speaker:AL_Smile]히어로 아이린도 이 팀 소속이야."/>
+		<class name="Quest_Roberto03_NaXX59" Value="[!Ignore][!Dialog][!speaker:Dembel_Normal]히어로 아이린? 그 빨간머리 아가씨?"/>
+		<class name="Quest_Roberto03_GAVU7y" Value="[!Ignore][!Dialog][!speaker:AL_Normal]그래. 저쪽에 서 있네."/>
+		<class name="Quest_Roberto03_gaLUHf" Value="[!Ignore][!Dialog][!speaker:Dembel_Smile]그 아가씨가 있다면, 경찰청 일에 몰두할만 하군."/>
+		<class name="Quest_Roberto03_8NPXgc" Value="[!Dialog][!speaker:Sion_Happy]히어로~☆ 화이팅!!"/>
+		<class name="Quest_Roberto03_qB7k3u" Value="[!Dialog][!speaker:Albus_Laugh]&apos;어쩌다 이렇게 된 걸까...&apos;"/>
+		<class name="Quest_Roberto03_DvH6Ri" Value="[!Dialog][!speaker:Anne_Think]아이린 언니... 괜찮겠죠?"/>
+		<class name="Quest_Roberto03_W5rhGQ" Value="[!Dialog][!speaker:Sion_Smile]응. 안 져."/>
+		<class name="Quest_Roberto03_mbeVDb" Value="[!Dialog][!speaker:Anne_Think]아이린 언니... 괜찮겠죠?"/>
+		<class name="Quest_Roberto03_dAzR6v" Value="[!Dialog][!speaker:Albus_Normal]어디까지나 실력 테스트니까 큰 문제는 없을 거야."/>
+		<class name="Quest_Roberto03_k3CJjq" Value="[!Dialog][!speaker:Sion_Happy]히어로~☆ 화이팅!!"/>
+		<class name="Quest_Roberto03_h6XPJt" Value="[!Dialog][!speaker:Heissing_Smile]......"/>
+		<class name="Quest_Roberto03_uuogGJ" Value="[!Dialog][!speaker:Ray_Serious]도대체 왜 이런 일에 어울려 주는 건지..."/>
+		<class name="Quest_Roberto03_ORBr2X" Value="[!Dialog][!speaker:Ray_Normal]아이린! 혼쭐을 내줘!!"/>
+		<class name="Quest_Roberto03_HB6Of4" Value="[!Dialog][!speaker:Kylie_Normal]로베르토 녀석. 정말 솔직하지 못해."/>
+		<class name="Quest_Roberto03_3BOtaT" Value="[!Dialog][!speaker:Ray_Surprise]솔직?"/>
+		<class name="Quest_Roberto03_hXzciw" Value="[!Dialog][!speaker:Kylie_Satisfying]그래."/>
+		<class name="Quest_Roberto03_Txiuw9" Value="[!Dialog][!speaker:Ray_Serious]......"/>
+		<class name="Quest_Roberto03_w5sUO4" Value="[!Dialog][!speaker:Kylie_Satisfying]로베르토! 네 녀석이 하고 싶은 대로 됐으니 제대로 해 봐!"/>
+		<class name="Quest_Roberto03_OBGzto" Value="[!Dialog][!speaker:Roberto_Surprise]카일리 누님!!"/>
+		<class name="Quest_Roberto03_w3jPYs" Value="[!Dialog][!speaker:Kylie_Satisfying]전력을 다하지 않으면 아이린에게 실례다! 알았지!"/>
+		<class name="Quest_Roberto03_LdBYor" Value="[!Dialog][!speaker:Roberto_Smile]알겠습니다!"/>
+		<class name="Quest_Roberto03_3U85me" Value="[!BalloonChat][!speaker:Roberto]아이린! 겨우 이 정도였나?"/>
+		<class name="Quest_Roberto03_TWaIAS" Value="[!BalloonChat][!speaker:Roberto]이 정도 실력이면 실망인데!"/>
+		<class name="Quest_Roberto03_X8FNgK" Value="[!BalloonChat][!speaker:Roberto]이 정도로 히어로라니 때려치워!"/>
+		<class name="Quest_Roberto03_sY1jUh" Value="[!BalloonChat][!speaker:Roberto]넌 여전히 약하구나."/>
+		<class name="Quest_Roberto03_2w7cCp" Value="[!BalloonChat][!speaker:Albus]아이린 씨! 침착하세요!"/>
+		<class name="Quest_Roberto03_ipK98g" Value="[!Dialog][!speaker:Irene_Normal]고마워. 알버스 군."/>
+		<class name="Quest_Roberto03_X2tGga" Value="[!BalloonChat][!speaker:Sion]히어로~☆. 화이팅~!!"/>
+		<class name="Quest_Roberto03_WmbAe4" Value="[!Dialog][!speaker:Irene_Smile2]응. 히어로는 지지 않아!"/>
+		<class name="Quest_Roberto03_FOO6H5" Value="[!BalloonChat][!speaker:Anne]아이린 언니! 힘내세요!"/>
+		<class name="Quest_Roberto03_wTVJBm" Value="[!Dialog][!speaker:Irene_Smile2]응! 앤! 고마워!"/>
+		<class name="Quest_Roberto03_gQuxH4" Value="[!Ignore][!BalloonChat][!speaker:Giselle]알버스. 딴 생각말고 집중해."/>
+		<class name="Quest_Roberto03_DHeT3Q" Value="[!Ignore][!BalloonChat][!speaker:Giselle]알버스. 딴 생각말고 집중해."/>
+		<class name="Quest_Roberto03_D02W5F" Value="[!Dialog][!speaker:Giselle_Satisfying]로베르토. 억지를 부렸으면 실망하게 하지 마라~"/>
+		<class name="Quest_Roberto03_ZDnmsi" Value="[!Dialog][!speaker:Roberto_Laugh]오! 지젤 님!"/>
+		<class name="Quest_Roberto03_UbJbAb" Value="[!Dialog][!speaker:Roberto_Laugh]지젤 님이 응원하신다면 절대 지지 않습니다!"/>
+		<class name="Quest_Roberto03_aBLxv8" Value="[!Dialog][!speaker:Leton_Normal]다들 열정에 가득찬 바보들이군요."/>
+		<class name="Quest_Roberto03_ILYmA1" Value="[!Dialog][!speaker:Giselle_Smile]뭐 어때. 복잡한 일들을 모두가 알 필요는 없잖아?"/>
+		<class name="Quest_Roberto03_8oZLzO" Value="[!Dialog][!speaker:Giselle_Satisfying]너도 그래서 혼자 짊어지고 있는 것 아니니?"/>
+		<class name="Quest_Roberto03_ZwXNPE" Value="[!Dialog][!speaker:Leton_Normal]별로 그럴려고 한 것은 아닌데..."/>
+		<class name="Quest_Roberto03_rBpzS4" Value="[!Dialog][!speaker:Giselle_Satisfying]그래?"/>
+		<class name="Quest_Roberto03_qJ0TVL" Value="[!Dialog][!speaker:Leton_Smile]그럼요."/>
+		<class name="Quest_Roberto03_uUD1r2" Value="[!Dialog][!speaker:Giselle_Satisfying]로베르토. 억지를 부렸으면 실망하게 하지 마라~"/>
+		<class name="Quest_Roberto03_pNuV9g" Value="[!Dialog][!speaker:Roberto_Surprise]!!"/>
+		<class name="Quest_Roberto03_PRlTiC" Value="[!Dialog][!speaker:Roberto_Laugh]물론입니다."/>
+		<class name="Quest_Roberto03_yyDEdG" Value="[!BalloonChat]어이쿠.."/>
+		<class name="Quest_Roberto03_pv6ggg" Value="[!BalloonChat]저런..."/>
+		<class name="Quest_Roberto03_2w5s0f" Value="[!BalloonChat]이런..."/>
+		<class name="Quest_Roberto03_zkxxm4" Value="[!BalloonChat]어이쿠..."/>
+		<class name="Quest_Roberto03_k5CVPR" Value="[!BalloonChat]이런..."/>
+		<class name="Quest_Roberto03_1oloa1" Value="[!BalloonChat][!speaker:Ray]아이린!! 제대로 혼내줘!"/>
+		<class name="Quest_Roberto03_O2dUqd" Value="[!Dialog][!speaker:Irene_Normal]물론이지!"/>
+	</idspace>
+</idspaces>

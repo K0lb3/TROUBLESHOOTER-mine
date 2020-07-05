@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="lc_mission_4_1_6kzMCk" Value="[!Objective]막아서는 모든 적 처치"/>
+		<class name="lc_mission_4_1_CMTr5A" Value="[!Dialog][!speaker:Gangster_BullNormal_Rage]네놈들이 트러블 슈터까지 끌어드려서 판을 키웠지만, 뜻대로 되진 않을 거다!"/>
+		<class name="lc_mission_4_1_WkKlXf" Value="[!Dialog][!speaker:Gangster_BlackTigerFat_Rage]제길 누가 누굴 끌어드려.
+저 꼬마 때문에 일만 꼬이는데!
+거래를 파투내면 되지만, 이러면 우리 손해가 너무 큰데."/>
+		<class name="lc_mission_4_1_NRRxJ7" Value="[!Dialog][!speaker:Gangster_BullNormal_Rage]그렇게 되게 놔둘 줄 알아!"/>
+		<class name="lc_mission_4_1_c3ZGlN" Value="[!Dialog][!speaker:Gangster_BlackTigerFat_Rage]저 새끼 도망간다!
+뭐해 좇아!"/>
+		<class name="lc_mission_4_1_SM82QH" Value="[!Dialog][!speaker:Irene_Lonesome]히어로가 무시 당한 거야?"/>
+		<class name="lc_mission_4_1_S3obFj" Value="[!Dialog][!speaker:Irene_Rage]그래! 본격적으로 혼내주겠어!"/>
+		<class name="lc_mission_4_1_EuY7Yu" Value="[!Dialog][!speaker:Gangster_BlackTigerFat_Rage]어디서 이상한 게 껴들어서 판을 깨!
+지원 요청하고 저년도 잡아."/>
+		<class name="lc_mission_4_1_tKyTvJ" Value="[!Dialog][!speaker:Gangster_BlackTigerFat_Rage]얼빠진 것들..
+뭐한다고 저런 꼬마한테 발목을 잡혀!
+거래 파투내려면 빨리빨리 움직여.
+우선 꼬마부터 정리해버려!"/>
+		<class name="lc_mission_4_1_ocCub5" Value="[!Dialog][!speaker:Irene_Rage]하... 꼬마?
+넌 이 꼬마한테 혼나야겠다!
+거래든 뭐든 니들이 하는 건 다 뭉개줄께!"/>
+		<class name="lc_mission_4_1_xWgo5e" Value="[!Dialog][!speaker:Irene_Rage]다 덤벼!"/>
+		<class name="lc_mission_4_1_wOCWaq" Value="[!Dialog][!speaker:VHPD_Jane_Normal]흠... 예상은 했지만 앨리 과격파가 개입했군요."/>
+		<class name="lc_mission_4_1_58Tp9d" Value="[!Dialog][!speaker:VHPD_Jane_Normal]그쪽은 트러블슈터 아이린 씨 인가요?
+소문은 들었지만... 이번 사건에 개입하실지는 몰랐네요..."/>
+		<class name="lc_mission_4_1_1htxkg" Value="[!Dialog][!speaker:Irene_Smile]히어로는 사건을 피하지 않아요!"/>
+		<class name="lc_mission_4_1_mNAP2s" Value="[!Dialog][!speaker:VHPD_Jane_Normal]그...래요. 히어로 답 내요."/>
+		<class name="lc_mission_4_1_qeY0dL" Value="[!Dialog][!speaker:VHPD_Jane_Normal]이번 일은 갱단 간의 세력 다툼이지만.
+마약 거래에서 부터 시작된 일입니다.
+앨리 과격파가 경쟁 갱단의 거래를 막기 위해 이렇게 나선 거지요."/>
+		<class name="lc_mission_4_1_EehjTF" Value="[!Dialog][!speaker:VHPD_Jane_Normal]저희는 마약 공급 조직을 잡기 위해 잠복 중 이었는데...
+일이 이렇게 꼬여버렸네요.
+여기 뻗어버린 갱단원들은 저희가 조사해보겠습니다."/>
+		<class name="lc_mission_4_1_ptqXhG" Value="[!Dialog][!speaker:Irene_Smile]오오!
+마약 거래! 갱단!
+저도 이번 일에 참여해드리겠습니다.
+어때요? 저라면 큰 도움이 될 거에요."/>
+		<class name="lc_mission_4_1_z6vZVD" Value="[!Dialog][!speaker:VHPD_Jane_Normal]음... 아이린 씨 실력이라면 충분하지요.
+그럼. 잘 부탁드립니다."/>
+		<class name="lc_mission_4_1_B0ZRax" Value="[!Dialog][!speaker:VHPD_Jane_Normal]이번 일에 아이린 씨가 개입한 게 알려지면 좋지 않으니.
+조사는 저희에게 맡겨주세요.
+새로운 거래 정보를 입수한면 연락드리겠습니다."/>
+		<class name="lc_mission_4_1_QwvsLv" Value="[!Dialog][!speaker:Irene_Smile]히어로 같이. 히어로 답게!
+이 아이린에게 맡겨주세요!"/>
+	</idspace>
+</idspaces>

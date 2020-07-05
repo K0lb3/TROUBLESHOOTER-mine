@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="AbilityDirectingEvent">
+	<schema>
+		<rule property="Image" type="string" default="Item/HPPotion"/>
+		<rule property="Mark" type="string" default="TaharezLook/ExclamationMark"/>
+		<rule property="FormatTableMaker" type="function" default="AbilityDirectingEventFormat_Empty"/>
+		<rule property="ColorSelector" type="function" default="AbilityDirectingEventColor_Default"/>
+		<rule property="AliveOnly" type="bool" default="false"/>
+		<rule property="HandleFunc" type="function" default="AbilityDirectingEventHandler_Message"/>
+	</schema>
+	<class name="AbilityInvoked" DirectingEvent="Ending" Color="Yellow" Message="$Ability$" FormatTableMaker="AbilityDirectingEventFormat_AbilityName"/>
+	<class name="AbilityInvokedBeginning" DirectingEvent="Beginning" Color="Yellow" Message="$Ability$" FormatTableMaker="AbilityDirectingEventFormat_AbilityName"/>
+	<class name="AddCost" DirectingEvent="Ending" Color="Red" Message="$Count$ $Cost$" FormatTableMaker="AbilityDirectingEventFormat_AddCost" AliveOnly="true" HandleFunc="AbilityDirectingEventHandler_AddCost"/>
+	<class name="AddSp" DirectingEvent="Ending" AliveOnly="true" HandleFunc="AbilityDirectingEventHandler_AddSp"/>
+	<class name="AddCostCustomEvent" DirectingEvent="Custom" Color="Red" Message="$Count$ $Cost$" FormatTableMaker="AbilityDirectingEventFormat_AddCost" AliveOnly="true" HandleFunc="AbilityDirectingEventHandler_AddCost"/>
+	<class name="AddWait" DirectingEvent="FirstHit" Color="Red" Message="$Time$ 턴 대기 시간" FormatTableMaker="AbilityDirectingEventFormat_AddWait" AliveOnly="true" HandleFunc="AbilityDirectingEventHandler_AddWait"/>
+	<class name="AddWaitCustomEvent" DirectingEvent="Custom" Color="Red" Message="$Time$ 턴 대기 시간" FormatTableMaker="AbilityDirectingEventFormat_AddWait" AliveOnly="true" HandleFunc="AbilityDirectingEventHandler_AddWait"/>
+	<class name="Anger" DirectingEvent="Beginning" Color="Yellow" Message="분노"/>
+	<class name="AssassinationCompleted" DirectingEvent="Ending" Color="White" Message="암살 성공 완료"/>
+	<class name="AssassinationProgress" DirectingEvent="Ending" Color="White" Message="암살 성공 $Current$/$Target$" FormatTableMaker="AbilityDirectingEventFormat_AssassinationProgress"/>
+	<class name="Bladestorm" DirectingEvent="Beginning" Color="Yellow" Message="칼날폭풍"/>
+	<class name="Bloodbath" DirectingEvent="Ending" Color="Yellow" Message="피범벅!"/>
+	<class name="BuffDischarged" DirectingEvent="Ending" Color="White" Message="$Buff$ 해제" FormatTableMaker="AbilityDirectingEventFormat_BuffName"/>
+	<class name="BuffDischargedFromAbility" DirectingEvent="Custom" Color="White" Message="$Buff$ 해제" FormatTableMaker="AbilityDirectingEventFormat_BuffName"/>
+	<class name="BuffImmuned" DirectingEvent="Ending" Color="White" Message="$Buff$ 면역 ($Reason$)" FormatTableMaker="AbilityDirectingEventFormat_BuffImmuned" HandleFunc="AbilityDirectingEventHandler_BuffImmuned"/>
+	<class name="BuffImmunedFromAbility" DirectingEvent="Custom" Color="White" Message="$Buff$ 면역 ($Reason$)" FormatTableMaker="AbilityDirectingEventFormat_BuffImmuned" HandleFunc="AbilityDirectingEventHandler_BuffImmuned"/>
+	<class name="BuffInvoked" DirectingEvent="Ending" Color="Yellow" Message="$Buff$" FormatTableMaker="AbilityDirectingEventFormat_BuffName" ColorSelector="AbilityDirectingEventColor_Buff" HandleFunc="AbilityDirectingEventHandler_BuffInvoked" AliveOnly="true"/>
+	<class name="BuffInvokedFromAbility" DirectingEvent="Custom" Color="Yellow" Message="$Buff$" FormatTableMaker="AbilityDirectingEventFormat_BuffName" ColorSelector="AbilityDirectingEventColor_Buff" HandleFunc="AbilityDirectingEventHandler_BuffInvokedAbility" AliveOnly="true"/>
+	<class name="BuffInvokedCustomEvent" DirectingEvent="Custom" Color="Yellow" Message="$Buff$" FormatTableMaker="AbilityDirectingEventFormat_BuffName" ColorSelector="AbilityDirectingEventColor_Buff" HandleFunc="AbilityDirectingEventHandler_BuffInvoked" AliveOnly="true"/>
+	<class name="BuffRevealedFromAbility" DirectingEvent="Custom" Color="Yellow" Message="$Buff$" FormatTableMaker="AbilityDirectingEventFormat_BuffName" ColorSelector="AbilityDirectingEventColor_Buff" HandleFunc="AbilityDirectingEventHandler_BuffRevealedFromAbility" AliveOnly="true"/>
+	<class name="BuffRemainTurn" DirectingEvent="Ending" Color="White" Message="$Buff$ $Remain$턴" FormatTableMaker="AbilityDirectingEventFormat_BuffRemainTurn"/>
+	<class name="BuffRemainTurn_Added" DirectingEvent="Ending" Color="White" Message="$Buff$ $Remain$턴 증가" FormatTableMaker="AbilityDirectingEventFormat_BuffRemainTurn"/>
+	<class name="CounterAttack" DirectingEvent="Beginning" Color="Yellow" Message="반격"/>
+	<class name="CounterAttackBlocked" DirectingEvent="Beginning" Color="White" Message="반격(봉쇄당함)"/>
+	<class name="CounterShoot" DirectingEvent="Beginning" Color="Yellow" Message="보복 사격"/>
+	<class name="AutoCounterShoot" DirectingEvent="Beginning" Color="Yellow" Message="자동 보복 사격"/>
+	<class name="Bonecrusher" DirectingEvent="Beginning" Color="Yellow" Message="살을 주고 뼈를 취한다"/>
+	<class name="OneSpoon" DirectingEvent="Beginning" Color="Yellow" Message="한술"/>
+	<class name="Forestallment" DirectingEvent="Beginning" Color="Yellow" Message="기선제압"/>
+	<class name="FireSupport" DirectingEvent="Beginning" Color="Yellow" Message="지원 사격"/>
+	<class name="AutoFireSupport" DirectingEvent="Beginning" Color="Yellow" Message="자동 지원 사격"/>
+	<class name="HealSupport" DirectingEvent="Beginning" Color="Yellow" Message="지원 회복"/>
+	<class name="AttackWithBeast" DirectingEvent="Beginning" Color="Yellow" Message="야수 협공"/>
+	<class name="OverwatchingShot" DirectingEvent="Beginning" Color="Yellow" Message="경계 사격"/>
+	<class name="GetWord" DirectingEvent="Ending" Color="White" Message="$Word$" FormatTableMaker="AbilityDirectingEventFormat_GetWord" ColorSelector="AbilityDirectingEventColor_EventArg"/>
+	<class name="GetWordAliveOnly" DirectingEvent="Ending" Color="White" Message="$Word$" FormatTableMaker="AbilityDirectingEventFormat_GetWord" ColorSelector="AbilityDirectingEventColor_EventArg" AliveOnly="true"/>
+	<class name="GetWordCustomEvent" DirectingEvent="Custom" Color="White" Message="$Word$" FormatTableMaker="AbilityDirectingEventFormat_GetWord" ColorSelector="AbilityDirectingEventColor_EventArg"/>
+	<class name="HackingRemainTurn" DirectingEvent="Ending" Color="White" Message="자폭까지 남은 시간: $Remain$턴" FormatTableMaker="AbilityDirectingEventFormat_HackingRemainTurn"/>
+	<class name="HeadShot" DirectingEvent="FirstHit" Color="Yellow" Message="헤드샷"/>
+	<class name="HeadShotImmuned" DirectingEvent="FirstHit" Color="White" Message="헤드샷 면역 ($Reason$)" FormatTableMaker="AbilityDirectingEventFormat_Reason"/>
+	<class name="HitAndRun" DirectingEvent="Ending" Color="Yellow" Message="치고 빠지기"/>
+	<class name="IceSkin" DirectingEvent="FirstHit" Color="Yellow" Message="얼음 가죽"/>
+	<class name="ImpulseFields" DirectingEvent="FirstHit" Color="Yellow" Message="충격장"/>
+	<class name="Module_ShockAbsorber" DirectingEvent="FirstHit" Color="Yellow" Message="충격흡수"/>
+	<class name="IronHeart" DirectingEvent="FirstHit" Color="Yellow" Message="강철심장"/>
+	<class name="Module_WaterResistance" DirectingEvent="FirstHit" Color="Yellow" Message="내수성"/>
+	<class name="Module_IceResistance" DirectingEvent="FirstHit" Color="Yellow" Message="내한성"/>
+	<class name="Module_Insulation" DirectingEvent="FirstHit" Color="Yellow" Message="절연성"/>
+	<class name="Module_FireResistance" DirectingEvent="FirstHit" Color="Yellow" Message="내화성"/>
+	<class name="HeavyEquipment" DirectingEvent="FirstHit" Color="Yellow" Message="중장비"/>
+	<class name="LavaSkin" DirectingEvent="FirstHit" Color="Yellow" Message="용암 가죽"/>
+	<class name="LightningReflexes" DirectingEvent="FirstHit" Color="Yellow" Message="전광석화"/>
+	<class name="LightningSkin" DirectingEvent="FirstHit" Color="Yellow" Message="번개 가죽"/>
+	<class name="LastStand" DirectingEvent="FirstHit" Color="Yellow" Message="최후의 저항"/>
+	<class name="LuckyShot" DirectingEvent="FirstHit" Color="Yellow" Message="행운의 일격"/>
+	<class name="MasteryInvoked" DirectingEvent="Ending" Color="Yellow" Message="$Mastery$" FormatTableMaker="AbilityDirectingEventFormat_MasteryName"/>
+	<class name="MasteryInvokedBeginning" DirectingEvent="Beginning" Color="Yellow" Message="$Mastery$" FormatTableMaker="AbilityDirectingEventFormat_MasteryName"/>
+	<class name="MasteryInvokedCustomEvent" DirectingEvent="Custom" Color="Yellow" Message="$Mastery$" HandleFunc="AbilityDirectingEventHandler_MasteryInvoked" FormatTableMaker="AbilityDirectingEventFormat_MasteryName"/>
+	<class name="MotherNatureRage" DirectingEvent="Beginning" Color="Yellow" Message="대자연의 분노"/>
+	<class name="SoulCurse" DirectingEvent="Beginning" Color="Yellow" Message="영혼의 저주"/>
+	<class name="SoulAscension" DirectingEvent="Beginning" Color="Yellow" Message="영혼의 승천"/>
+	<class name="OneShotOneKill" DirectingEvent="Ending" Color="Yellow" Message="한 방에 한 명씩"/>
+	<class name="Outlaw" DirectingEvent="FirstHit" Color="Yellow" Message="무법자"/>
+	<class name="Pyromaniac" DirectingEvent="FirstHit" Color="Yellow" Message="방화광"/>
+	<class name="SerialShot" DirectingEvent="Ending" Color="Yellow" Message="연쇄 사격"/>
+	<class name="Shaking" DirectingEvent="Ending" Color="Yellow" Message="흔들기"/>
+	<class name="WindHammer" DirectingEvent="FinalHit" Color="Yellow" Message="바람 망치"/>
+	<class name="StarShieldActivated" DirectingEvent="FinalHit" Color="Yellow" ColorSelector="AbilityDirectingEventColor_Buff" Message="별빛 방패!" HandleFunc="AbilityDirectingEventHandler_StarShield"/>
+	<class name="ChainAbility" DirectingEvent="Beginning" Color="Yellow" Message="연계기"/>
+	<class name="DirectDamageByType" DirectingEvent="FinalHit" Color="Yellow" Message="" HandleFunc="AbilityDirectingEventHandler_DirectDamageByType"/>
+	<class name="BigText" DirectingEvent="Ending" Color="Yellow" Message="" AliveOnly="true" HandleFunc="AbilityDirectingEventHandler_BigText"/>
+	<class name="BigTextCustomEvent" DirectingEvent="Custom" Color="Yellow" Message="" AliveOnly="true" HandleFunc="AbilityDirectingEventHandler_BigText"/>
+	<class name="Dead" DirectingEvent="Custom" HandleFunc="AbilityDirectingEventHandler_Dead"/>
+	<class name="TamingFailedSummoner" DirectingEvent="Ending" Color="Yellow" Message="야수 호출" AliveOnly="true"/>
+	<class name="TamingFailed" DirectingEvent="Ending" Color="Yellow" Message="길들이기 실패" AliveOnly="true"/>
+	<class name="SearchProtocolSucceeded" DirectingEvent="Ending" Color="Yellow" Message="" AliveOnly="true" HandleFunc="AbilityDirectingEventHandler_SearchProtocolSucceeded"/>
+	<class name="SearchProtocolFailed" DirectingEvent="Ending" Color="Yellow" Message="발견 대상 없음" AliveOnly="true"/>
+	<class name="Malfunction" DirectingEvent="Beginning" Color="Yellow" Message="오작동" AliveOnly="true"/>
+	<class name="FreezingReleased" DirectingEvent="Beginning" Color="Yellow" Message="" HandleFunc="AbilityDirectingEventHandler_FreezingReleased"/>
+	<class name="FreezingRemoved" DirectingEvent="FirstHit" Color="Yellow" Message="" HandleFunc="AbilityDirectingEventHandler_FreezingRemoved"/>
+	<class name="PerformanceGreatInvoked" DirectingEvent="Ending" Color="Yellow" Message="$Great$" FormatTableMaker="AbilityDirectingEventFormat_GreatName"/>
+	<class name="PerformanceFinishInvoked" DirectingEvent="Ending" Color="Yellow" Message="마무리 $Lv$" FormatTableMaker="AbilityDirectingEventFormat_GreatLv"/>
+</idspace>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Dialog">
+	<class name="Hundred_Main">
+		<Scripts>
+			<property Type="Script" Script="ProgressPreDialogCheck_CommonNPC"/>
+		</Scripts>
+	</class>
+	<class name="Hundred_Selection">
+		<Scripts>
+			<property Type="Switch" C_DlgName="npc.Info.Title" C_TestTarget="company.Npc[npc.name].QP">
+				<property Case="0">
+					<property Type="Jump" JumpTo="Hundred_QP_0"/>
+				</property>
+				<property Case="1">
+					<property Type="Jump" JumpTo="Hundred_QP_1"/>
+				</property>
+				<property Case="2">
+					<property Type="Jump" JumpTo="Hundred_QP_2"/>
+				</property>
+				<property Case="3">
+					<property Type="Jump" JumpTo="Hundred_QP_3"/>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+	<class name="Hundred_QP_0">
+		<Scripts>
+			<property Type="Dialog" C_DlgName="npc.Info.Title">
+				<property Text="사람들이 필요하지 않은 고물들과 고철을 수집하고 있지"/>
+				<property Text="물론 내가 원하는 것들이 따로 있으니 잘 보고 가져오면 좋겠다."/>
+			</property>
+			<property Type="Action" Command="UpdateCompanyProperty" PropertyType="Npc/Hundred/QP" C_PropertyValue="1"/>
+		</Scripts>
+	</class>
+	<class name="Hundred_QP_1">
+		<Scripts>
+			<property Type="Switch" C_DlgName="npc.Info.Title" C_TestTarget="math.random(1,3)">
+				<property Case="1">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="너희들의 불필요한 것들을 처리해주는 일이다."/>
+						<property Text="그러니 사주는 것만으로도 감사하다고 생각해야지"/>
+					</property>
+				</property>
+				<property Case="2">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="무슨 일이지?"/>
+						<property Text="필요한 건 알아서 찾아봐."/>
+					</property>
+				</property>
+				<property Case="3">
+					<property Type="Dialog" C_DlgName="npc.Info.Title">
+						<property Text="망가뜨리면 굳이 수리하지 말고 새것을 사라."/>
+						<property Text="그리고 망가진 건 나에게 팔아야지"/>
+					</property>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+</idspace>

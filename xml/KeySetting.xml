@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="KeySetting">
+	<class name="key1" UIName="CameraRotation" Title="카메라 좌/우 회전"/>
+	<class name="Key2" UIName="CameraMove" Title="카메라 이동"/>
+	<class name="Key3" UIName="HawkEyeMode" Title="전략 카메라 시점"/>
+	<class name="key4" UIName="CameraZomeInOut" Title="카메라 확대/축소"/>
+	<class name="key5" UIName="CurrentCharacter" Title="현재 캐릭터 선택"/>
+	<class name="key6" UIName="DialogFast" Title="빠른 대화"/>
+	<class name="key7" UIName="DialogNext" Title="다음 대화"/>
+	<class name="key8" UIName="OfficeCameraMove" Title="사무실 화면 이동"/>
+	<class name="key9" UIName="Chat" Title="채팅창 활성/비활성화"/>
+	<class name="key10" UIName="PrevoiusMode" Title="이전 단계로 가기"/>
+	<class name="key11" UIName="OfficeCompanyMenu" Title="회사 정보 보기"/>
+	<class name="key12" UIName="OfficeInventoryMenu" Title="창고 정보 보기"/>
+	<class name="key13" UIName="OfficeMailMenu" Title="우편함 정보 보기"/>
+	<class name="key14" UIName="OfficeQuestMenu" Title="의뢰 정보 보기"/>
+	<class name="key15" UIName="OfficeRosterMenu" Title="사원 정보 보기"/>
+	<class name="key16" UIName="OfficeTechniqueMenu" Title="특성 목록 보기"/>
+	<class name="key17" UIName="PathSelect" Title="이동 경로 지정"/>
+	<class name="key18" UIName="PlayerSelect" Title="아군 캐릭터 선택"/>
+	<class name="key19" UIName="ReleaseAim" Title="조준 모드 해제"/>
+	<class name="key20" UIName="SelectAbility" Title="어빌리티 선택/사용"/>
+	<class name="key21" UIName="SkipDirect" Title="연출 건너뛰기"/>
+	<class name="key22" UIName="TargetChange" Title="다음/이전 목표 대상"/>
+	<class name="key23" UIName="TargetChangeNext" Title="다음 목표 대상"/>
+	<class name="key24" UIName="TargetChangePrev" Title="이전 목표 대상"/>
+	<class name="key25" UIName="TurnEnd" Title="캐릭터 턴 종료"/>
+	<class name="key26" UIName="UnitOrder" Title="캐릭터 턴 순서 표시"/>
+	<class name="key27" UIName="UseAbility2" Title="어빌리티 사용"/>
+	<class name="key28" UIName="UseAbility" Title="어빌리티 사용"/>
+</idspace>

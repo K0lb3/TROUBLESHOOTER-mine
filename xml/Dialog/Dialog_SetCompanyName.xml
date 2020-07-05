@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Dialog">
+	<class name="Initial_SetCompanyName">
+		<Scripts>
+			<property Type="Env" Key="NoHint" C_Value="true"/>
+			<property Type="Jump" JumpTo="Initial_SetCompanyNameLoop"/>
+		</Scripts>
+	</class>
+	<class name="Initial_SetCompanyNameLoop">
+		<Scripts>
+			<property Type="CompanyName" Title="TROUBLESHOOTER DATABASE" C_Hint="env.NoHint and &apos;&apos; or string.gsub(company.CompanyName, &apos;@&apos;, &apos;&apos;)" Validation="[^@]*" MaxLength="20" NameTarget="company_name" MasteryTarget="company_mastery"/>
+			<property Type="Switch" C_TestTarget="env._last_action_success">
+				<property C_Case="true">
+					<property Type="Action" Command="UpdateCompanyProperty" Commit="false" PropertyType="CompanyMastery" C_PropertyValue="env.company_mastery"/>
+					<property Type="Action" Command="UpdateCompanyProperty" Commit="false" C_PropertyType="string.format(&apos;CompanyMasteries/%s/Opened&apos;, env.company_mastery)" C_PropertyValue="true"/>
+					<property Type="Action" Command="UpdateCompanyProperty" Commit="false" C_PropertyType="string.format(&apos;CompanyMasteries/%s/IsNew&apos;, env.company_mastery)" C_PropertyValue="false"/>
+					<property Type="Action" Command="UpdateCompanyName" C_Name="env.company_name"/>
+					<property Type="Switch" C_TestTarget="env._last_action_success">
+						<property C_Case="false">
+							<property Type="MessageBox" Title="에러" Message="이름이 중복되었거나 허용되지 않습니다"/>
+							<property Type="Jump" JumpTo="Initial_SetCompanyNameLoop"/>
+						</property>
+						<property C_Case="true">
+							<property Type="CloseCompanyName"/>
+						</property>
+					</property>
+				</property>
+			</property>
+		</Scripts>
+	</class>
+</idspace>

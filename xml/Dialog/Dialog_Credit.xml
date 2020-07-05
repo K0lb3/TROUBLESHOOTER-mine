@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="Dialog">
+	<class name="Credit_Episode01_Master">
+		<Scripts>
+			<property Type="SceneFade" Direct="false" FadeType="Out"/>
+			<property Type="PlayBGM" Volume="1" Direct="false" BGMName="ShortBreak" FadeTime="1"/>
+			<property Type="Jump" JumpTo="Credit_Episode01_01"/>
+			<property Type="ShowCredit" CreditType="Credit01" Slow="false"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="ShowCredit" CreditType="None" Slow="false"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="Jump" JumpTo="Credit_Episode01_02"/>
+			<property Type="ShowCredit" CreditType="Credit02" Slow="false"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="ShowCredit" CreditType="None" Slow="false"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="Jump" JumpTo="Credit_Episode01_03"/>
+			<property Type="ShowCredit" CreditType="Credit03" Slow="false"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="ShowCredit" CreditType="None" Slow="false"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="Jump" JumpTo="Credit_Episode01_04"/>
+			<property Type="ShowCredit" CreditType="Credit04" Slow="false"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="ShowCredit" CreditType="None" Slow="false"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="Jump" JumpTo="Credit_Episode01_05"/>
+			<property Type="ShowCredit" CreditType="Credit05" Slow="false"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="ShowCredit" CreditType="None" Slow="false"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="Jump" JumpTo="Credit_Episode01_06"/>
+			<property Type="ShowCredit" CreditType="Credit06" Slow="false"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="ShowCredit" CreditType="None" Slow="false"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="Jump" JumpTo="Credit_Episode01_07"/>
+			<property Type="ShowCredit" CreditType="Credit07" Slow="false"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="ShowCredit" CreditType="None" Slow="false"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="Jump" JumpTo="Credit_Episode01_08"/>
+			<property Type="ShowCredit" CreditType="Credit08" Slow="false"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="ShowCredit" CreditType="None" Slow="false"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="Jump" JumpTo="Credit_Episode01_09"/>
+			<property Type="ShowCredit" CreditType="Credit09" Slow="false"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="ShowCredit" CreditType="None" Slow="false"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="ShowCredit" CreditType="Credit09_2" Slow="false"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="ShowCredit" CreditType="None" Slow="false"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="Jump" JumpTo="Credit_Episode01_10"/>
+			<property Type="ShowCredit" CreditType="Credit10" Slow="false"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="ShowCredit" CreditType="None" Slow="false"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="Jump" JumpTo="Credit_Episode01_11"/>
+			<property Type="ShowCredit" CreditType="Credit11" Slow="false"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="ShowCredit" CreditType="None" Slow="false"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="ShowCredit" CreditType="Credit11_2" Slow="false"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="ShowCredit" CreditType="None" Slow="false"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="Jump" JumpTo="Credit_Episode01_12"/>
+			<property Type="ShowCredit" CreditType="Credit12" Slow="false"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="ShowCredit" CreditType="None" Slow="false"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="Jump" JumpTo="Credit_Episode01_13"/>
+			<property Type="ShowCredit" CreditType="Credit13" Slow="false"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="ShowCredit" CreditType="None" Slow="false"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="ShowCredit" CreditType="Credit13_2" Slow="false"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="ShowCredit" CreditType="None" Slow="false"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="Jump" JumpTo="Credit_Episode01_14"/>
+			<property Type="ShowCredit" CreditType="Credit14" Slow="false"/>
+			<property Type="Sleep" Time="4"/>
+			<property Type="ShowCredit" CreditType="None" Slow="false"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="ShowCredit" CreditType="Credit14_2" Slow="false"/>
+			<property Type="Sleep" Time="4"/>
+			<property Type="ShowCredit" CreditType="None" Slow="false"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="Jump" JumpTo="Credit_Episode01_15"/>
+			<property Type="ShowCredit" CreditType="Credit15" Slow="false"/>
+			<property Type="Sleep" Time="4"/>
+			<property Type="ShowCredit" CreditType="None" Slow="false"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="ShowCredit" CreditType="Credit15_2" Slow="false"/>
+			<property Type="Sleep" Time="4"/>
+			<property Type="ShowCredit" CreditType="None" Slow="false"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="Jump" JumpTo="Credit_Episode01_16"/>
+			<property Type="ShowCredit" CreditType="Credit16" Slow="false"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="ShowCredit" CreditType="None" Slow="false"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="Jump" JumpTo="Credit_Episode01_17"/>
+			<property Type="ShowCredit" CreditType="Credit17" Slow="false"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="ShowCredit" CreditType="None" Slow="false"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="ShowCredit" CreditType="Credit17_2" Slow="false"/>
+			<property Type="Sleep" Time="4"/>
+			<property Type="ShowCredit" CreditType="None" Slow="false"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="ShowCredit" CreditType="Credit17_3" Slow="false"/>
+			<property Type="Sleep" Time="5"/>
+			<property Type="ShowCredit" CreditType="None" Slow="false"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="PlayBGM" Volume="0" Direct="false" BGMName="ShortBreak" FadeTime="3"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="Jump" JumpTo="Credit_Episode01_18"/>
+			<property Type="SceneFade" Direct="true" FadeType="In"/>
+			<property Type="Jump" JumpTo="Credit_Episode01_19"/>
+			<property Type="StopBGM" Direct="false" FadeTime="3"/>
+			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="Progress/Character/Albus" PropertyValue="29"/>
+		</Scripts>
+	</class>
+	<class name="Credit_Episode01_01">
+		<Scripts>
+			<property Type="Sleep" Time="1"/>
+			<property Type="TitleMessage" Message="모든 것은 끝난다." Title="디미트리의 화방"/>
+			<property Type="Sleep" Time="0.25"/>
+			<property Type="ShowBackgroundImage" DialogType="Sub" DialogEffect="Appear" BackgroundImage="WhiteTigerFinal" Slow="true"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="TitleMessage"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="BattleDialog" SpeakerInfo="Bianca" SpeakerEmotion="Stare" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Start" Close="false" Message="[!speaker:Bianca_Stare]디미트리. 이번에는 확실한 거야?"/>
+			<property Type="BattleDialog" SpeakerInfo="Bianca" SpeakerEmotion="Rage" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Bianca_Rage]저번처럼 날 헛걸음 시키는 것 아니겠지?"/>
+			<property Type="BattleDialog" SpeakerInfo="Dimitri" SpeakerEmotion="Surprise" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Dimitri_Surprise]전 정말 억울합니다. 저 역시 속았을 뿐입니다."/>
+			<property Type="BattleDialog" SpeakerInfo="Bianca" SpeakerEmotion="Rage" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Bianca_Rage]네가 억울한 건 관심 없어."/>
+			<property Type="BattleDialog" SpeakerInfo="Bianca" SpeakerEmotion="Stare" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Bianca_Stare]내가 지불한 돈 값을 하란 말야."/>
+			<property Type="BattleDialog" SpeakerInfo="Dimitri" SpeakerEmotion="Surprise" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Dimitri_Surprise]알리사 님. 사정을 알고 계시지 않습니까? 뭐라고 말씀 좀 해주세요."/>
+			<property Type="BattleDialog" SpeakerInfo="Alisa" SpeakerEmotion="Smile" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Alisa_Smile]미술품 감정하는 사람이 감정을 제대로 하지 못했으면 어쩔 수 없지."/>
+			<property Type="BattleDialog" SpeakerInfo="Alisa" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Alisa_Normal]그래서 이 그림인건가?"/>
+			<property Type="BattleDialog" SpeakerInfo="Dimitri" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Dimitri_Normal]백호파의 보스 푸가 체포되어 경찰 포토라인에 선 모습을 그린 람지스트의 작품입니다."/>
+			<property Type="BattleDialog" SpeakerInfo="Dimitri" SpeakerEmotion="Smile" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Dimitri_Smile]서명도 진품임을 확인하였습니다."/>
+			<property Type="BattleDialog" SpeakerInfo="Bianca" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Bianca_Normal]너 저번에도 똑같은 말 한 거 알지?"/>
+			<property Type="BattleDialog" SpeakerInfo="Dimitri" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Dimitri_Normal]저도 저번 일도 있어서 가짜가 아닐까 의심했지만, 뉴스에서 저 장면을 보자마자 진품임을 확신했습니다."/>
+			<property Type="BattleDialog" SpeakerInfo="Dimitri" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Dimitri_Normal]반년 전만 해도 백호파의 해체를 누가 상상이라도 했겠습니까?"/>
+			<property Type="BattleDialog" SpeakerInfo="Alisa" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Alisa_Normal]그래서 이거 언제쯤 그려진 거지?"/>
+			<property Type="BattleDialog" SpeakerInfo="Dimitri" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Dimitri_Normal]최신 작품입니다. 길어야 6개월 전쯤 그려진 작품이라고 보입니다."/>
+			<property Type="BattleDialog" SpeakerInfo="Bianca" SpeakerEmotion="Surprise" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Bianca_Surprise]6개월?"/>
+			<property Type="BattleDialog" SpeakerInfo="Alisa" SpeakerEmotion="Smile" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Alisa_Smile]디미트리 책임질 수 있어?"/>
+			<property Type="BattleDialog" SpeakerInfo="Dimitri" SpeakerEmotion="Surprise" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Dimitri_Surprise]물론입니다."/>
+			<property Type="BattleDialog" SpeakerInfo="Dimitri" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="true" Message="[!speaker:Dimitri_Normal]이건 분명 람지스트의 작품입니다."/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="HideBackgroundImage" DialogType="Sub" Slow="true"/>
+			<property Type="Sleep" Time="1"/>
+		</Scripts>
+	</class>
+	<class name="Credit_Episode01_02">
+		<Scripts>
+			<property Type="Sleep" Time="1"/>
+			<property Type="Sleep" Time="0.25"/>
+			<property Type="BattleDialog" SpeakerInfo="NewsCaster" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Start" Close="false" Message="[!speaker:NewsCaster_Normal]제5차 발할라 시장 선거의 최종 개표 결과, 현 시장인 칼 레인 후보가 과반인 58.6%를 얻어 시장 연임에 성공하였습니다. "/>
+			<property Type="BattleDialog" SpeakerInfo="NewsCaster" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="true" Message="[!speaker:NewsCaster_Normal]이로 인해 선거 기간 내 쟁점이던 트러블슈터의 제도는 강화와 확장의 새로운 국면에 접어들게 되었습니다."/>
+			<property Type="Sleep" Time="0.25"/>
+			<property Type="TitleMessage" Message="욕심은 멈추지 않는다." Title="발할라 시장실"/>
+			<property Type="Sleep" Time="0.25"/>
+			<property Type="ShowBackgroundImage" DialogType="Sub" DialogEffect="Appear" BackgroundImage="Karl3" Slow="true"/>
+			<property Type="PlaySound" SoundGroup="Effect" NoWait="On" SoundName="Environment/Environment_CellPhone.ogg"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="TitleMessage"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="BattleDialog" SpeakerInfo="Lily" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Start" Close="false" Message="[!speaker:Lily_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait11/Phone_Message&apos;][colour=&apos;FFFFE959&apos;] 축하해. 칼 시장."/>
+			<property Type="BattleDialog" SpeakerInfo="Karl" SpeakerEmotion="Smile" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Karl_Smile]이곳에서 맞이하는 아침 햇살은 역시 최고군"/>
+			<property Type="BattleDialog" SpeakerInfo="Karl" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Karl_Normal]이런 행복을 망할 영감 때문에 다른 녀석에게 내줄 뻔 할 줄이야..."/>
+			<property Type="BattleDialog" SpeakerInfo="Lily" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Lily_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait11/Phone_Message&apos;][colour=&apos;FFFFE959&apos;] 당신 에드워드의 충견 아니었어?"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="발할라 10년, 트러블슈터 제도의 도입을 주장하며 시장 선거에서 돌풍을 일으켰던 칼 레인."/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="정치적 배경이 없는 그가 돌풍을 일으킬 수 있었던 이유는 트러블슈터 제도에 많은 관심을 가졌던 상원의원 에드워드 르블랑의 전폭적인 지지 덕분이었다."/>
+			<property Type="BattleDialog" SpeakerInfo="Karl" SpeakerEmotion="Think" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Karl_Think]에드워드 영감은 너무 거칠어"/>
+			<property Type="BattleDialog" SpeakerInfo="Karl" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Karl_Normal]대귀족으로 태어난 자라 사람 목숨을 너무 가볍게 여기지."/>
+			<property Type="BattleDialog" SpeakerInfo="Karl" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Karl_Normal]『 버려진 아이들 』프로젝트 역시 예외없이 정상적으로 진행됐다면 수많은 사람들이 몰살되었겠지."/>
+			<property Type="BattleDialog" SpeakerInfo="Karl" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Karl_Normal]자네 프로젝트에 의해서 말이야."/>
+			<property Type="BattleDialog" SpeakerInfo="Lily" SpeakerEmotion="Stare" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Lily_Stare][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait11/Phone_Message&apos;][colour=&apos;FFFFE959&apos;] 정치는 정치꾼들끼리 해."/>
+			<property Type="BattleDialog" SpeakerInfo="Lily" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Lily_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait11/Phone_Message&apos;][colour=&apos;FFFFE959&apos;] 날 끌어들이지 마."/>
+			<property Type="BattleDialog" SpeakerInfo="Lily" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Lily_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait11/Phone_Message&apos;][colour=&apos;FFFFE959&apos;] 나는 어디까지나 연구자야."/>
+			<property Type="BattleDialog" SpeakerInfo="Karl" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Karl_Normal]발할라 건국 이래, 발할라 국립 이능 연구소장을 쭉 연임하는 자네가 그런 말을 하니 우습군."/>
+			<property Type="BattleDialog" SpeakerInfo="Lily" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Lily_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait11/Phone_Message&apos;][colour=&apos;FFFFE959&apos;] 쓸데없는 소리 말고 다가오는 예산 회의에서 우리 쪽으로 추가경정예산을 편성 부탁해."/>
+			<property Type="BattleDialog" SpeakerInfo="Karl" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Karl_Normal]그 말. 다분히 정치적인 발언이네. 릴리 소장."/>
+			<property Type="BattleDialog" SpeakerInfo="Lily" SpeakerEmotion="Smile" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Lily_Smile][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait11/Phone_Message&apos;][colour=&apos;FFFFE959&apos;] 선거에 승리하더니 점잖던 입도 참으로 가벼워졌네."/>
+			<property Type="BattleDialog" SpeakerInfo="Karl" SpeakerEmotion="Smile" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Karl_Smile]자네는 느낄 수 없는 선출직만의 행복이지. 자네같은 반영구직은 영원히 모를 거야."/>
+			<property Type="BattleDialog" SpeakerInfo="Lily" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Lily_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait11/Phone_Message&apos;][colour=&apos;FFFFE959&apos;] 그리고 하나 더."/>
+			<property Type="BattleDialog" SpeakerInfo="Karl" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Karl_Normal]더 요청할 것이 남았나?"/>
+			<property Type="BattleDialog" SpeakerInfo="Lily" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Lily_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait11/Phone_Message&apos;][colour=&apos;FFFFE959&apos;] 다시 한번 그 아이를 두고 협박한다면 가만두지 않을 거야."/>
+			<property Type="BattleDialog" SpeakerInfo="Karl" SpeakerEmotion="Think" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Karl_Think]......"/>
+			<property Type="BattleDialog" SpeakerInfo="Lily" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Lily_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait11/Phone_Message&apos;][colour=&apos;FFFFE959&apos;] 알겠어?"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="세 번째 맞이하는 칼 레인의 발할라 시장 임기."/>
+			<property Type="BattleDialog" SpeakerInfo="Karl" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Karl_Normal]자네가 그렇게까지 말한다면 궁금해도 참아야지."/>
+			<property Type="BattleDialog" SpeakerInfo="Karl" SpeakerEmotion="Smile" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="true" Message="[!speaker:Karl_Smile]말했듯이 나는 이곳의 아침 햇살을 포기할 생각이 없네."/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="HideBackgroundImage" DialogType="Sub" Slow="true"/>
+			<property Type="Sleep" Time="1"/>
+		</Scripts>
+	</class>
+	<class name="Credit_Episode01_03">
+		<Scripts>
+			<property Type="Sleep" Time="1"/>
+			<property Type="TitleMessage" Message="노인은 죽지 않는다." Title="오딘 지구"/>
+			<property Type="Sleep" Time="0.25"/>
+			<property Type="ShowBackgroundImage" DialogType="Sub" DialogEffect="Appear" BackgroundImage="Edward2" Slow="true"/>
+			<property Type="PlaySound" SoundGroup="Effect" NoWait="On" SoundName="Environment/Environment_CellPhone.ogg"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="TitleMessage"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="BattleDialog" SpeakerInfo="Peggy" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Start" Close="false" Message="[!speaker:Peggy_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;] 에드워드 님. 페기입니다."/>
+			<property Type="BattleDialog" SpeakerInfo="Edward" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Edward_Normal]웃챠!"/>
+			<property Type="BattleDialog" SpeakerInfo="Peggy" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Peggy_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;] 바쁘신데 죄송합니다."/>
+			<property Type="BattleDialog" SpeakerInfo="Edward" SpeakerEmotion="Smile" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Edward_Smile]괜찮네. 안 그래도 자네 전화 기다리고 있었네."/>
+			<property Type="BattleDialog" SpeakerInfo="Edward" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Edward_Normal]로버트 녀석은?"/>
+			<property Type="BattleDialog" SpeakerInfo="Peggy" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Peggy_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;] 사망 장소는 특정하였으나 시신으로 보이는 물체는 찾을 수 없었습니다."/>
+			<property Type="BattleDialog" SpeakerInfo="Peggy" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Peggy_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;] 카터에 의해 DNA 정보조차 찾을 수 없도록 완전 소각된 듯 합니다."/>
+			<property Type="BattleDialog" SpeakerInfo="Edward" SpeakerEmotion="Think" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Edward_Think]누군가 개입했거나 살아 있을 가능성은 없나?"/>
+			<property Type="BattleDialog" SpeakerInfo="Peggy" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Peggy_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;] 국립 이능 연구소 요원이 현장에 있었고 완전 소각을 확인한 듯 합니다."/>
+			<property Type="BattleDialog" SpeakerInfo="Peggy" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Peggy_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;] 국립 이능 연구소 쪽에서도 알려지면 좋을 일이 없는 사실이니 철저하게 진행한 듯 합니다."/>
+			<property Type="BattleDialog" SpeakerInfo="Edward" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Edward_Normal]프로젝트를 훔쳐간 어린 도둑놈은?"/>
+			<property Type="BattleDialog" SpeakerInfo="Peggy" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Peggy_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;] 목표 좌표를 이탈하여 스푼교도들을 이끌고 철의 숲을 가로질러 고난의 성채로 향하고 있습니다."/>
+			<property Type="BattleDialog" SpeakerInfo="Peggy" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Peggy_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;] 하지만 카라스연방 국경수비대와 동방연합 기계화 1여단이 철의 숲을 포위하고 있어 고난의 성채로의 진입은 불가능할 것 입니다."/>
+			<property Type="BattleDialog" SpeakerInfo="Edward" SpeakerEmotion="Smile" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Edward_Smile]그나마 다행이군."/>
+			<property Type="BattleDialog" SpeakerInfo="Peggy" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Peggy_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;] 그럼 일이 마무리되면 다시 연락드리겠습니다."/>
+			<property Type="BattleDialog" SpeakerInfo="Edward" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Edward_Normal]마지막까지 잘 정리해 주게나."/>
+			<property Type="BattleDialog" SpeakerInfo="Peggy" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Peggy_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;] 알겠습니다."/>
+			<property Type="BattleDialog" SpeakerInfo="Edward" SpeakerEmotion="Smile" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Edward_Smile]......"/>
+			<property Type="BattleDialog" SpeakerInfo="Edward" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="true" Message="[!speaker:Edward_Normal]웃챠! 이번엔 어떤 놈이냐!"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="HideBackgroundImage" DialogType="Sub" Slow="true"/>
+			<property Type="Sleep" Time="1"/>
+		</Scripts>
+	</class>
+	<class name="Credit_Episode01_04">
+		<Scripts>
+			<property Type="Sleep" Time="1"/>
+			<property Type="TitleMessage" Message="버려진 아이들" Title="철의 숲 북쪽 기슭"/>
+			<property Type="Sleep" Time="0.25"/>
+			<property Type="ShowBackgroundImage" DialogType="Sub" DialogEffect="Appear" BackgroundImage="CarterRest" Slow="true"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="TitleMessage"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="BattleDialog" SpeakerInfo="NewsCaster" SpeakerEmotion="Normal" Effect="Appear" Mode="Start" Close="false" Slot="Center" Message="[!speaker:NewsCaster_Normal]바람지구 경찰청에서는 먼지바람 톨게이트에서 일어난 자살 테러 사건 역시 백호파의 사주로 일어난 사건으로 보고 수사 방향을 좁혀가고 있습니다." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="NewsCaster" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:NewsCaster_Normal]이 사건에 대해 백호파의 보스 푸는 단 한마디의 언급도 없이 변호인을 선임하고 묵비권을 행사하고 있습니다." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Carter" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Carter_Normal]......" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_SpoonThin_Nevil" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Gangster_SpoonThin_Nevil_Normal]샤키 님. 정찰대가 돌아왔습니다." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_SpoonThin_Nevil" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Gangster_SpoonThin_Nevil_Normal]앗. 가면을... 죄송합니다." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Carter" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Carter_Normal]상관없다." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_SpoonThin_Nevil" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Gangster_SpoonThin_Nevil_Normal]아닙니다. 그냥 여기서 보고하겠습니다." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Carter" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Carter_Normal]알았다." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_SpoonThin_Nevil" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Gangster_SpoonThin_Nevil_Normal]고난의 성채 북쪽 방향에는 카라스연방 국경 수비대의 군용 안드로이드." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_SpoonThin_Nevil" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Gangster_SpoonThin_Nevil_Normal]고난의 성채 남쪽 방향에는 동방연합의 군용 바이크론이 확인되었습니다." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Carter" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Carter_Normal]&apos;생각보다 빠르군...&apos;" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Carter" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Carter_Normal]어제 모임 이후 동지들 상황은 어떤가?" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_SpoonThin_Nevil" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Gangster_SpoonThin_Nevil_Normal]긴 행군에 지친 동지들을 위해 요리, 위생, 의료 등 각 파트의 전문가인 동지들이 솔선수범하여 어려운 동지들을 지원하고 있습니다." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Carter" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Carter_Normal]내가 모든 곳을 관리할 수 없으니 잘 부탁하네." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_SpoonFat" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Gangster_SpoonFat_Normal]샤키 님!" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_SpoonThin_Nevil" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Gangster_SpoonThin_Nevil_Normal]거기 멈춰라." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_SpoonFat" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Gangster_SpoonFat_Normal]네빌 님!" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_SpoonThin_Nevil" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Gangster_SpoonThin_Nevil_Normal]무슨 일이길래 그렇게 호들갑이냐?" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_SpoonFat" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Gangster_SpoonFat_Normal]연락이 두절되었던 수송대의 간부 터크 님과 나암 님이 후발대에 합류하였습니다." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_SpoonThin_Nevil" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Gangster_SpoonThin_Nevil_Normal]터크와 나암이?" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Carter" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="true" Slot="Center" Message="[!speaker:Carter_Normal]......" DialogType="Sub"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="BattleDialog" SpeakerInfo="Carter_Black" SpeakerEmotion="Smile" Effect="Appear" Mode="Start" Close="true" Slot="Center" Message="[!speaker:Carter_Black_Smile]그래. 알았다. 내가 직접 만나러 가겠다." DialogType="Sub"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="HideBackgroundImage" DialogType="Sub" Slow="true"/>
+			<property Type="Sleep" Time="1"/>
+		</Scripts>
+	</class>
+	<class name="Credit_Episode01_05">
+		<Scripts>
+			<property Type="Sleep" Time="1"/>
+			<property Type="TitleMessage" Message="부모의 마음" Title="아테르 제국 수도 &apos;테르&apos;"/>
+			<property Type="Sleep" Time="0.25"/>
+			<property Type="ShowBackgroundImage" DialogType="Sub" DialogEffect="Appear" BackgroundImage="BloodwalkerView2" Slow="true"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="TitleMessage"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="BattleDialog" SpeakerInfo="Serena" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Start" Close="false" Message="[!speaker:Serena_Normal]패인!"/>
+			<property Type="BattleDialog" SpeakerInfo="Serena" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Serena_Normal]시온이 TV에 나온다!"/>
+			<property Type="BattleDialog" SpeakerInfo="Serena" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Serena_Normal]옆에 까만 머리 젊은이가 시온이 말하는 젊은 사장인 것 같아."/>
+			<property Type="BattleDialog" SpeakerInfo="Payne" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Payne_Normal]......"/>
+			<property Type="BattleDialog" SpeakerInfo="NewsCaster" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:NewsCaster_Normal]창립한 지 1년이 채 안된 트러블슈터 회사가 지역에 오랜 시간 뿌리를 내린 범죄 조직의 두목을 체포하고 조직 전체를 해체하였습니다."/>
+			<property Type="BattleDialog" SpeakerInfo="NewsCaster" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:NewsCaster_Normal]이런 이례적인 성과는 많은 시민에게 감흥을 주어 꾸준히 악화하여가던 트러블슈터 제도에 대한 시각이 다시 긍정적으로 변하고 있습니다."/>
+			<property Type="BattleDialog" SpeakerInfo="NewsCaster" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:NewsCaster_Normal]오늘은 $CompanyName$의 이런 활약에 대해 전문가를 모시고 이야기를 나눠 보겠습니다."/>
+			<property Type="BattleDialog" SpeakerInfo="Interviewer_CrimeExpert" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Interviewer_CrimeExpert_Normal]이미 9개월 전, $CompanyName$의 사장 알버스 번스타인과 첫 번째 직원 시온 블러드워커는 경찰들과 협력해 범죄 조직 성난 황소파를 해체하였습니다."/>
+			<property Type="BattleDialog" SpeakerInfo="Interviewer_CrimeExpert" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Interviewer_CrimeExpert_Normal]그때는 실질적인 범죄 조직을 소탕한 것은 경찰 병력으로 법적인 문제를 면책하기 위해 신생 트러블슈터를 이용하는 것이라는 시각이 많았습니다."/>
+			<property Type="BattleDialog" SpeakerInfo="Interviewer_CrimeExpert" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Interviewer_CrimeExpert_Normal]하지만 지금 다시 그 때 사건을 돌이켜보면 $CompanyName$ 자체 역량의 재발견은 물론 시온 블러드워커라는 인재를 재발견할 수 있습니다."/>
+			<property Type="BattleDialog" SpeakerInfo="Interviewer_CrimeExpert" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Interviewer_CrimeExpert_Normal]모든 사건 현장에서 그가 보여주는 압도적인 파워와 상황에 따른 다양한 역할 변화는 이미 A급 트러블슈터와 비교해도 손색이 없습니다."/>
+			<property Type="BattleDialog" SpeakerInfo="Interviewer_CrimeExpert" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Interviewer_CrimeExpert_Normal]$CompanyName$의 사장 알버스가 한 최고의 선택은 시온을 영입한 것 입니다."/>
+			<property Type="BattleDialog" SpeakerInfo="Serena" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Serena_Normal]들었어? A급 트러블슈터래."/>
+			<property Type="BattleDialog" SpeakerInfo="Payne" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Payne_Normal]당연하지. 블러드워커의 차기 당주다."/>
+			<property Type="BattleDialog" SpeakerInfo="Serena" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Serena_Normal]......"/>
+			<property Type="BattleDialog" SpeakerInfo="Serena" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Serena_Normal]그렇게 아이들이 당신을 따라오지 않아 실망이야?"/>
+			<property Type="BattleDialog" SpeakerInfo="Payne" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Payne_Normal]......"/>
+			<property Type="BattleDialog" SpeakerInfo="Serena" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Serena_Normal]참고 기다려. 패인."/>
+			<property Type="BattleDialog" SpeakerInfo="Serena" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="true" Message="[!speaker:Serena_Normal]아이들은 집에 돌아오기 마련이니까."/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="HideBackgroundImage" DialogType="Sub" Slow="true"/>
+			<property Type="Sleep" Time="1"/>
+		</Scripts>
+	</class>
+	<class name="Credit_Episode01_06">
+		<Scripts>
+			<property Type="Sleep" Time="1"/>
+			<property Type="TitleMessage" Message="타락은 멈추지 않는다." Title="하늘바람 포장마차 거리"/>
+			<property Type="Sleep" Time="0.25"/>
+			<property Type="PlayLoopSound" Name="Rain" SoundGroup="Effect" NoWait="On" SoundName="Environment/Environment_Rain.wav" FadeTime="1" Volume="0.3"/>
+			<property Type="PlayLoopSound" Name="CarPass" SoundGroup="Effect" NoWait="On" SoundName="Environment/Environment_CarPass.ogg" FadeTime="1" Volume="0.3"/>
+			<property Type="ShowBackgroundImage" DialogType="Sub" DialogEffect="Appear" BackgroundImage="Memories_IsaacwithTrey" Slow="true"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="TitleMessage"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="BattleDialog" SpeakerInfo="Yuske" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Start" Close="false" Message="[!speaker:Yuske_Normal]어서 오십시오!!"/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_Trey" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Gangster_Trey_Normal]비만 오면 이곳에 있다더니 정말이군."/>
+			<property Type="BattleDialog" SpeakerInfo="Issac" SpeakerEmotion="Think" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Issac_Think]회장님이 이런 곳까지 웬 일이십니까?"/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_Trey" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Gangster_Trey_Normal]날 회장이라 부르는 녀석은 너밖에 없다."/>
+			<property Type="BattleDialog" SpeakerInfo="Issac" SpeakerEmotion="Smile" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Issac_Smile]이젠 익숙해져야 하는 거 아닌가?"/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_Trey" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Gangster_Trey_Normal]10년을 살아온 생활 방식을 갑자기 바꾸는 것이 쉽지 않지."/>
+			<property Type="BattleDialog" SpeakerInfo="Issac" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Issac_Normal]해보니 별 것 아니더군. 그냥 하면 돼."/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_Trey" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Gangster_Trey_Normal]널 습격하는 녀석들이 그 사실을 깨달았으면 좋겠군."/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_Trey" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Gangster_Trey_Normal]생활 방식따위 환경에 의해 결정된 것에 지나지 않는다는 것을 말야."/>
+			<property Type="BattleDialog" SpeakerInfo="Issac" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Issac_Normal]......"/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_Trey" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Gangster_Trey_Normal]막 주문 하려던 중 아닌가? 주인장 주문 받아야지?"/>
+			<property Type="BattleDialog" SpeakerInfo="Yuske" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Yuske_Normal]오늘도 같은 메뉴시죠? 얼큰한 우동에 계란 풀고 고춧가루 조금."/>
+			<property Type="BattleDialog" SpeakerInfo="Issac" SpeakerEmotion="Smile" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Issac_Smile]그래."/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_Trey" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Gangster_Trey_Normal]독특한 방식이군. 이 지역 먹는 방식이 아닌데?"/>
+			<property Type="BattleDialog" SpeakerInfo="Issac" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Issac_Normal]누군가 먹는 모습을 봤지. 독특하니 따라해봤고 취향에 맞더군."/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_Trey" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Gangster_Trey_Normal]조직 폭력배의 사장은 취향에 맞는가?"/>
+			<property Type="BattleDialog" SpeakerInfo="Issac" SpeakerEmotion="Smile" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Issac_Smile]나쁘지 않더군."/>
+			<property Type="BattleDialog" SpeakerInfo="Issac" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Issac_Normal]그리고 더는 조직폭력배 조직이 아냐."/>
+			<property Type="BattleDialog" SpeakerInfo="Issac" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="true" Message="[!speaker:Issac_Normal]트러블슈터 &apos;흑호&apos; 입니다. 회장님."/>
+			<property Type="HideBackgroundImage" DialogType="Sub" Slow="true"/>
+			<property Type="StopLoopSound" Name="Rain"/>
+			<property Type="StopLoopSound" Name="CarPass"/>
+			<property Type="Sleep" Time="1"/>
+		</Scripts>
+	</class>
+	<class name="Credit_Episode01_07">
+		<Scripts>
+			<property Type="Sleep" Time="1"/>
+			<property Type="BattleDialog" SpeakerInfo="Marco" SpeakerEmotion="Rage" Effect="Appear" Mode="Start" Close="false" Slot="Center" Message="[!speaker:Marco_Rage]이 동네 거리가 다 왜 이래." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_StreetHelmet" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Gangster_StreetHelmet_Normal]마르코다! 마르코!" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_StreetNormal2" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="true" Slot="Center" Message="[!speaker:Gangster_StreetNormal2_Normal]에이... 씨! 일단 튀어!" DialogType="Sub"/>
+			<property Type="TitleMessage" Message="어둠은 그림자를 감춘다." Title="오딘 지구 뒷거리"/>
+			<property Type="Sleep" Time="0.25"/>
+			<property Type="ShowBackgroundImage" DialogType="Sub" DialogEffect="Appear" BackgroundImage="MarcoBalloon" Slow="true"/>
+			<property Type="PlaySound" SoundGroup="Effect" NoWait="On" SoundName="Environment/Environment_CellPhone.ogg"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="TitleMessage"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="BattleDialog" SpeakerInfo="Chris" SpeakerEmotion="Serious" Effect="Appear" Mode="Start" Close="false" Slot="Center" Message="[!speaker:Chris_Serious][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;] 돌아오자마자 난리도 아니군." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Chris" SpeakerEmotion="Serious" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Chris_Serious][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;] 적당히 할 수 없나?" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Marco" SpeakerEmotion="Rage" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Marco_Rage][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;] 까불지 마." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Marco" SpeakerEmotion="Rage" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Marco_Rage][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;] 네 녀석 때문에 일 년이나 지방에 갇혀 있었단 말이다." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Luna" SpeakerEmotion="Happy" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Luna_Happy]마르코. 크리스야?" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Luna" SpeakerEmotion="Happy" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Luna_Happy]크리스~!" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Chris" SpeakerEmotion="Smile" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Chris_Smile][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;] 처분하고 오는 것 아니었나?" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Luna" SpeakerEmotion="Happy" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Luna_Happy]크리스면 나 바꿔줘. 나도 통화하고 싶어." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Marco" SpeakerEmotion="Smile" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Marco_Smile][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;] 짜증 나게 하지 마라." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Luna" SpeakerEmotion="Depressed" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Luna_Depressed]......" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Luna" SpeakerEmotion="Depressed2" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Luna_Depressed2]미안해." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Marco" SpeakerEmotion="Rage" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Marco_Rage]루나. 네 녀석한테 하는 말 아니니 귀찮게 하지마!" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Luna" SpeakerEmotion="Surprise" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Luna_Surprise]진짜?" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Marco" SpeakerEmotion="Rage" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Marco_Rage]그래. 한 번만 더 귀찮게 하면 너부터 처리해 버린다." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Luna" SpeakerEmotion="Rage" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Luna_Rage]해봐. 이 멸치 대가리야!" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Marco" SpeakerEmotion="Rage" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Marco_Rage]뭐!!" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Luna" SpeakerEmotion="Serious" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Luna_Serious]해.보.라.고! 이 삐적 마른 멸치야!" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Chris" SpeakerEmotion="Smile" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Chris_Smile][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;] 서로 많이 친해졌나 보군." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Marco" SpeakerEmotion="Rage" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Marco_Rage]네 귀는 썩어 문드러졌나?" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Luna" SpeakerEmotion="Rage" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Luna_Rage]내 귀는 정상이거든!!" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Chris" SpeakerEmotion="Think" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Chris_Think][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;] ......" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Chris" SpeakerEmotion="Smile" Effect="Appear" Mode="Continue" Close="true" Slot="Center" Message="[!speaker:Chris_Smile][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;] 마르코. 귀환을 축하한다." DialogType="Sub"/>
+			<property Type="HideBackgroundImage" DialogType="Sub" Slow="true"/>
+			<property Type="Sleep" Time="1"/>
+		</Scripts>
+	</class>
+	<class name="Credit_Episode01_08">
+		<Scripts>
+			<property Type="Sleep" Time="1"/>
+			<property Type="BattleDialog" SpeakerInfo="Patron_Girl" SpeakerEmotion="Normal" Effect="Appear" Mode="Start" Close="false" Slot="Center" Message="[!speaker:Patron_Girl_Normal]아저씨! 혹시 $CompanyName$!!" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Sion" SpeakerEmotion="Laugh_Hat" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Sion_Laugh_Hat]하하... 아니야." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Patron_Girl" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Patron_Girl_Normal]맞잖아! 뇌제 시온 블라드미르!!" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Sion" SpeakerEmotion="Smile_Hat" Effect="Appear" Mode="Continue" Close="true" Slot="Center" Message="[!speaker:Sion_Smile_Hat]&apos;블러드워커란다...&apos;" DialogType="Sub"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="TitleMessage" Message="생각은 변하기 마련이다." Title="푸고 상점가"/>
+			<property Type="Sleep" Time="0.25"/>
+			<property Type="ShowBackgroundImage" DialogType="Sub" DialogEffect="Appear" BackgroundImage="DailySion" Slow="true"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="TitleMessage"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Start" Close="false" Slot="Center" Message="『 안녕하세요. 어머니 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 오늘은 제가 사는 동네 까페에 나와 어머니께 편지를 쓰기 위해 펜을 잡았습니다. 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 어제 어머니가 제가 나오는 방송을 봤다고 전화를 하셔서 깜짝 놀랐습니다. 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 그만큼 어머니와 아버지가 제 소식에 관심이 많고 그만큼 절 아껴주시고 있다는 생각이 들어 감사하고 행복했습니다. 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Sion" SpeakerEmotion="Normal_Hat" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Sion_Normal_Hat]나는 복받은 아이지." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 이 일을 처음 시작했을 때는 그저 발할라를 떠나기 싫어 우연히 만난 알버스 사장의 손을 잡았을 뿐이었습니다. 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 이 일에 한창 재미를 붙이고 몰두를 할 때도 어디까지나 동료들과의 생활이 즐겁고 이 일이 가지는 사명감에 충실할 뿐이었습니다. 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 그런데 최근 생각이 많이 달라졌습니다. 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 오늘 거리에서 저를 알아보고 사인해 달라는 꼬마 소녀가 있었습니다. 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 단지 TV에 나와서 생긴 이벤트로 생각했으나 꼬마 소녀가 마지막에 제 손을 잡고 이렇게 말했습니다. 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 아빠를 구해줘서 고맙습니다. 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Sion" SpeakerEmotion="Smile_Hat" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Sion_Smile_Hat]믿으시려나..." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 어머니. 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 아들 시온은 발할라에서 정식 트러블슈터 시험을 쳐 보려고 합니다.  』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Sion" SpeakerEmotion="Normal_Hat" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Sion_Normal_Hat]......" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Sion" SpeakerEmotion="Laugh_Hat" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Sion_Laugh_Hat]아버지 당장 달려올 것 같은데..." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Sion" SpeakerEmotion="Normal_Hat" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Sion_Normal_Hat]역시... 당분간은 모르시는 게 나으려나..." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 그리고 이번 명절에 귀국하여 찾아뵙도록 하겠습니다.  』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 그럼 그때까지 두분 다 건강하세요.  』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="true" Slot="Center" Message="『 아들 시온 올림.  』" DialogType="Sub"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="HideBackgroundImage" DialogType="Sub" Slow="true"/>
+			<property Type="Sleep" Time="1"/>
+		</Scripts>
+	</class>
+	<class name="Credit_Episode01_09">
+		<Scripts>
+			<property Type="Sleep" Time="1"/>
+			<property Type="PlaySound" SoundGroup="Effect" NoWait="On" SoundName="Environment/Environment_CellPhone.ogg"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="BattleDialog" SpeakerInfo="Eunomia" SpeakerEmotion="Normal" Effect="Appear" Mode="Start" Close="false" Slot="Center" Message="[!speaker:Eunomia_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait11/Phone_Message&apos;][colour=&apos;FFFFE959&apos;] 린. 뭐해?" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Irene" SpeakerEmotion="Fury_Pony" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Irene_Fury_Pony]무슨 일이야..." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Eunomia" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Eunomia_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait11/Phone_Message&apos;][colour=&apos;FFFFE959&apos;] 일주일 휴가라며?" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Eunomia" SpeakerEmotion="Smile" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Eunomia_Smile][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait11/Phone_Message&apos;][colour=&apos;FFFFE959&apos;] 집에는 안 올 거니?" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Irene" SpeakerEmotion="Lonesome_Pony" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Irene_Lonesome_Pony]바빠. 나 공부해." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Eunomia" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Eunomia_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait11/Phone_Message&apos;][colour=&apos;FFFFE959&apos;] 그래? 무슨 공부?" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Irene" SpeakerEmotion="Lonesome_Pony" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Irene_Lonesome_Pony]트러블슈터..." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Eunomia" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Eunomia_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait11/Phone_Message&apos;][colour=&apos;FFFFE959&apos;] ......" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Eunomia" SpeakerEmotion="Smile" Effect="Appear" Mode="Continue" Close="true" Slot="Center" Message="[!speaker:Eunomia_Smile][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait11/Phone_Message&apos;][colour=&apos;FFFFE959&apos;] 응원할게. 린." DialogType="Sub"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="TitleMessage" Message="꿈을 이뤄나가는 방법" Title="아이린의 집"/>
+			<property Type="Sleep" Time="0.25"/>
+			<property Type="ShowBackgroundImage" DialogType="Sub" DialogEffect="Appear" BackgroundImage="DailyIrene" Slow="true"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="TitleMessage"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Start" Close="false" Slot="Center" Message="『 나의 꿈은 히어로. 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 어릴 적부터 단 한 번도 변하지 않은 유일한 꿈.』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 정의. 평화. 사랑.』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 히어로가 갖춰야할 덕목.』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 히어로의 길은 아무런 보상도 없는 고독한 길.』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 아무도 알아주지 않아도 자신만의 의지로 나아가야 하는 외로운 길.』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Irene" SpeakerEmotion="Normal_Pony" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Irene_Normal_Pony]알버스는 이 어려운 걸 다 통과한거야..." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Irene" SpeakerEmotion="Smile_Pony" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Irene_Smile_Pony]&apos;알버스도 한 걸 히어로가 못 할리 없지.&apos;" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 트러블슈터. 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 히어로 vs 트러블슈터. 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 히어로는 고독하다. 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 더 많은 사람을 구하고 도울 수 있다면 조금이라도 더 좋은 방법을 선택해야 한다. 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 그것이 설령 돈을 받고 일하는 트러블슈터일지라도. 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 인정받지 못하더라도 그것이 히어로의 길. 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="true" Slot="Center" Message="『 세상을 지키는 히어로다. 』" DialogType="Sub"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="HideBackgroundImage" DialogType="Sub" Slow="true"/>
+			<property Type="Sleep" Time="1"/>
+		</Scripts>
+	</class>
+	<class name="Credit_Episode01_10">
+		<Scripts>
+			<property Type="Sleep" Time="1"/>
+			<property Type="BattleDialog" SpeakerInfo="Civil_Jessie" SpeakerEmotion="Normal" Effect="Appear" Mode="Start" Close="false" Slot="Center" Message="[!speaker:Civil_Jessie_Normal]앤. 여기까지가 지난 수업 분량이야." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Anne" SpeakerEmotion="Think" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Anne_Think]맨날 도움만 받아서 미안해." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Civil_Jessie" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Civil_Jessie_Normal]아냐. 앤이 얼마나 노력하는지 제일 잘 알고 있는 내가 챙겨줘야지!" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Anne" SpeakerEmotion="Smile" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Anne_Smile]고마워. 제시." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Civil_Jessie" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="true" Slot="Center" Message="[!speaker:Civil_Jessie_Normal]화이팅!" DialogType="Sub"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="TitleMessage" Message="아이는 미래를 꿈꾼다." Title="산들바람 중학교"/>
+			<property Type="Sleep" Time="0.25"/>
+			<property Type="ShowBackgroundImage" DialogType="Sub" DialogEffect="Appear" BackgroundImage="AnneSchool" Slow="true"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="TitleMessage"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Start" Close="false" Slot="Center" Message="하교 후 보충 수업에 참여한 앤." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="앤은 창 밖의 평화로움에 시선을 뺏긴 채 이런 저런 생각을 낙서를 쌓아간다." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 오늘은 학교 보충 수업을 한다. 무려 일주일동안. 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 평소라면 사건 현장에 있어야 할 시간.』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 헤이싱 오빠는 선물한 책을 안 읽나 봅니다. 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 제시랑 새로 개장한 람지플라자! 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 공부는 어려워. 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="『 경찰청 언니 오빠들이 선물을 보내줌. 감사 편지 써야함! 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="생각 하나하나 노트에 적히는 낙서" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="수업 내용은 앤의 귀에 들리지 않는다." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="true" Slot="Center" Message="『 루나. 기다려.』" DialogType="Sub"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="HideBackgroundImage" DialogType="Sub" Slow="true"/>
+			<property Type="Sleep" Time="1"/>
+		</Scripts>
+	</class>
+	<class name="Credit_Episode01_11">
+		<Scripts>
+			<property Type="Sleep" Time="1"/>
+			<property Type="TitleMessage" Message="마음은 전해지기 마련이다." Title="헤이싱의 집"/>
+			<property Type="Sleep" Time="0.25"/>
+			<property Type="ShowBackgroundImage" DialogType="Sub" DialogEffect="Appear" BackgroundImage="HeissingRead" Slow="true"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="TitleMessage"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="BattleDialog" SpeakerInfo="Heissing" SpeakerEmotion="Smile_Shirts" Effect="Appear" Slot="Center" Mode="Start" Close="false" Message="[!speaker:Heissing_Smile_Shirts]안녕하세요. 여우씨라..." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="앤이 헤이싱에게 선물한 책." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="숲 속에서 혼자 사는 갈색 여우가 사람을 좋아해서 밤마다 마을로 틈틈히 내려와 사람들의 소원을 이루고 다니는 이야기." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="그러던 어느 날, 여우는 자신과 눈이 마주친 어린 소녀 블링을 사랑하게 된다." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Heissing" SpeakerEmotion="Smile_Shirts" Effect="Appear" Slot="Center" Mode="Continue" Close="true" Message="[!speaker:Heissing_Smile_Shirts]이루어 질 수 없는 사랑이군..." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="블링과 여우는 금새 친한 친구가 되었고 여우는 블링과 함께 많은 추억을 남긴다." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Heissing" SpeakerEmotion="Smile_Shirts" Effect="Appear" Slot="Center" Mode="Continue" Close="true" Message="[!speaker:Heissing_Smile_Shirts]블링이 실수로 떨어뜨린 구슬을 여우가 하나하나 물어 주워주는 에피소드." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Heissing" SpeakerEmotion="Smile_Shirts" Effect="Appear" Slot="Center" Mode="Continue" Close="true" Message="[!speaker:Heissing_Smile_Shirts]어린 소녀들은 이런 이야기를 좋아하는 건가..." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Heissing" SpeakerEmotion="Smile_Shirts" Effect="Appear" Slot="Center" Mode="Continue" Close="true" Message="[!speaker:Heissing_Smile_Shirts]!?" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="헤이싱은 책장을 넘기던 중 메모를 발견한다." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="『 헤이싱 오빠. 안녕하세요. 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Slot="Center" Mode="Continue" Close="true" Message="『 오빠가 이 메모를 발견했다면 책을 읽고 계신 거네요! 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="『 이 책은 제가 어린 시절부터 좋아하던 애니메이션의 원작 소설이에요. 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="『 그리고 오빠가 고쳐준 저의 소중한 여우참! 갈색 여우의 이야기입니다! 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="『 전 오빠가 아무 말없이 제 여우참의 구슬을 주워주고 계실 때 오빠가 소설 속의 여우처럼 보였답니다. 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="『 물론 오빠는 갈색이 아니지만요! 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="『 헤이싱 오빠 ! 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="『 언제나 묵묵히 제 곁을 지켜주시고 챙겨주셔서 감사합니다! 』" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Heissing" SpeakerEmotion="Smile_Shirts" Effect="Appear" Slot="Center" Mode="Continue" Close="true" Message="[!speaker:Heissing_Smile_Shirts]......." DialogType="Sub"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="HideBackgroundImage" DialogType="Sub" Slow="true"/>
+			<property Type="Sleep" Time="1"/>
+		</Scripts>
+	</class>
+	<class name="Credit_Episode01_12">
+		<Scripts>
+			<property Type="Sleep" Time="1"/>
+			<property Type="TitleMessage" Message="나는 너를 친구라고 부른다." Title="메트로디움 상점가"/>
+			<property Type="Sleep" Time="0.25"/>
+			<property Type="ShowBackgroundImage" DialogType="Sub" DialogEffect="Appear" BackgroundImage="RayFriends" Slow="true"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="TitleMessage"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="BattleDialog" SpeakerInfo="Ray" SpeakerEmotion="Normal_Ourdoor_Happy" Effect="Appear" Mode="Start" Close="false" Slot="Center" Message="[!speaker:Ray_Normal_Ourdoor_Happy]다음은 어디로 갈까!" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Clare" SpeakerEmotion="Laugh3" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Clare_Laugh3]레이. 완전히 신났어." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Diane" SpeakerEmotion="Smile3" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Diane_Smile3]이렇게 웃는 레이 보니까 얼마나 좋아." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Angela" SpeakerEmotion="Normal_Sunglass" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Angela_Normal_Sunglass]정말이지." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Angela" SpeakerEmotion="Normal_Sunglass" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Angela_Normal_Sunglass]나이를 먹어도 예전과 다 똑같니?" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Clare" SpeakerEmotion="Laugh3" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Clare_Laugh3]예전과 똑같이 친구니까 똑같지!" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Ray" SpeakerEmotion="Normal_Ourdoor_Happy" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Ray_Normal_Ourdoor_Happy]자! 오늘은 내가 쏜다!" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Diane" SpeakerEmotion="Smile3" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Diane_Smile3]레이. 무리하지 마." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Diane" SpeakerEmotion="Smile3" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Diane_Smile3]우리가 불러낸 거니까." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Clare" SpeakerEmotion="Laugh3" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Clare_Laugh3]제일 돈 잘 버는 다이앤이 쏘세요!" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Angela" SpeakerEmotion="Normal_Sunglass" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Angela_Normal_Sunglass]나한테는 기대하지 마. 난 그저 평범한 사무직이야." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Ray" SpeakerEmotion="Normal_Ourdoor_Happy" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Ray_Normal_Ourdoor_Happy]걱정 마시라! 친구들! 이 레이가 쏜다!" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Clare" SpeakerEmotion="Laugh3" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="[!speaker:Clare_Laugh3]GO~! GO~!" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="false" Slot="Center" Message="앨리의 친구들과 한 번도 느낄 수 없었던 편안함" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Mode="Continue" Close="true" Slot="Center" Message="소중한 친구들." DialogType="Sub"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="HideBackgroundImage" DialogType="Sub" Slow="true"/>
+			<property Type="Sleep" Time="1"/>
+		</Scripts>
+	</class>
+	<class name="Credit_Episode01_13">
+		<Scripts>
+			<property Type="Sleep" Time="1"/>
+			<property Type="TitleMessage" Message="시간은 멈추지 않는다." Title="메트로디움 호텔 바"/>
+			<property Type="Sleep" Time="0.25"/>
+			<property Type="ShowBackgroundImage" DialogType="Sub" DialogEffect="Appear" BackgroundImage="GiselleJaneBar" Slow="true"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="TitleMessage"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="BattleDialog" SpeakerInfo="VHPD_Jane" SpeakerEmotion="Normal_Costume3" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Start" Close="false" Message="[!speaker:VHPD_Jane_Normal_Costume3]네 말대로 이런 시간 가끔은 괜찮네."/>
+			<property Type="BattleDialog" SpeakerInfo="Giselle" SpeakerEmotion="Annoying_Bar" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Giselle_Annoying_Bar]경찰은 언제 그만둘 거야?"/>
+			<property Type="BattleDialog" SpeakerInfo="VHPD_Jane" SpeakerEmotion="Smile_Costume3" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:VHPD_Jane_Smile_Costume3]아직은 생각없어."/>
+			<property Type="BattleDialog" SpeakerInfo="Giselle" SpeakerEmotion="Normal_Bar" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Giselle_Normal_Bar]설마 정년까지 근무할 거라는 것은 아니겠지?"/>
+			<property Type="BattleDialog" SpeakerInfo="VHPD_Jane" SpeakerEmotion="Smile_Costume3" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:VHPD_Jane_Smile_Costume3]또 모르지."/>
+			<property Type="BattleDialog" SpeakerInfo="Giselle" SpeakerEmotion="Smile_Bar" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Giselle_Smile_Bar]......"/>
+			<property Type="BattleDialog" SpeakerInfo="VHPD_Jane" SpeakerEmotion="Normal_Costume3" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:VHPD_Jane_Normal_Costume3]너야말로 어떻게 할 건가?"/>
+			<property Type="BattleDialog" SpeakerInfo="Giselle" SpeakerEmotion="Normal_Bar" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Giselle_Normal_Bar]나?"/>
+			<property Type="BattleDialog" SpeakerInfo="VHPD_Jane" SpeakerEmotion="Normal_Costume3" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:VHPD_Jane_Normal_Costume3]그래."/>
+			<property Type="BattleDialog" SpeakerInfo="Giselle" SpeakerEmotion="Smile_Bar" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Giselle_Smile_Bar]이제 수면 위로 나오겠지."/>
+			<property Type="BattleDialog" SpeakerInfo="Giselle" SpeakerEmotion="Satisfying_Bar" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Giselle_Satisfying_Bar]그럼 사냥해야지."/>
+			<property Type="BattleDialog" SpeakerInfo="VHPD_Jane" SpeakerEmotion="Smile_Costume3" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:VHPD_Jane_Smile_Costume3]여전하구나. 그 가학성."/>
+			<property Type="BattleDialog" SpeakerInfo="Giselle" SpeakerEmotion="Annoying_Bar" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Giselle_Annoying_Bar]너보다 더 하겠니?"/>
+			<property Type="BattleDialog" SpeakerInfo="Giselle" SpeakerEmotion="Satisfying_Bar" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Giselle_Satisfying_Bar]우리 콤비가 왜 깨졌는 지 잊은 거야?"/>
+			<property Type="BattleDialog" SpeakerInfo="VHPD_Jane" SpeakerEmotion="Smile_Costume3" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:VHPD_Jane_Smile_Costume3]너랑 같이 다닐 때가 벌써 10년도 넘은 일이네."/>
+			<property Type="BattleDialog" SpeakerInfo="Giselle" SpeakerEmotion="Satisfying_Bar" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Giselle_Satisfying_Bar]12년."/>
+			<property Type="BattleDialog" SpeakerInfo="VHPD_Jane" SpeakerEmotion="Smile_Costume3" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="true" Message="[!speaker:VHPD_Jane_Smile_Costume3]진짜 세월 빠르다."/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="HideBackgroundImage" DialogType="Sub" Slow="true"/>
+			<property Type="Sleep" Time="1"/>
+		</Scripts>
+	</class>
+	<class name="Credit_Episode01_14">
+		<Scripts>
+			<property Type="Sleep" Time="1"/>
+			<property Type="TitleMessage" Message="죄는 사라지지 않는다." Title="구룡회 제 1 지부 &apos;백룡회&apos;"/>
+			<property Type="Sleep" Time="0.25"/>
+			<property Type="ShowBackgroundImage" DialogType="Sub" DialogEffect="Appear" BackgroundImage="KylieRyo" Slow="true"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="TitleMessage"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="BattleDialog" SpeakerInfo="Kylie" SpeakerEmotion="Satisfying_Young" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Start" Close="false" Message="[!speaker:Kylie_Satisfying_Young]와줘서 고맙구나."/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_ButcherRyo" SpeakerEmotion="Normal_Young" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Gangster_ButcherRyo_Normal_Young]......"/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_ButcherRyo" SpeakerEmotion="Normal_Young" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Gangster_ButcherRyo_Normal_Young]거리에서 객사할 운명이었던 저희 형제를 거둬주셨던 분입니다."/>
+			<property Type="BattleDialog" SpeakerInfo="Kylie" SpeakerEmotion="Normal_Young" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Kylie_Normal_Young]......"/>
+			<property Type="BattleDialog" SpeakerInfo="Kylie" SpeakerEmotion="Normal_Young" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Kylie_Normal_Young]쇼타로는 여전히 똑같은 상태인가?"/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_ButcherRyo" SpeakerEmotion="Normal_Young" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Gangster_ButcherRyo_Normal_Young]네."/>
+			<property Type="BattleDialog" SpeakerInfo="Kylie" SpeakerEmotion="Normal_Young" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Kylie_Normal_Young]......."/>
+			<property Type="BattleDialog" SpeakerInfo="Kylie" SpeakerEmotion="Normal_Young" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Kylie_Normal_Young]여전히 살수 일로 병원비를 충당할 생각이냐?"/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_ButcherRyo" SpeakerEmotion="Normal_Young" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Gangster_ButcherRyo_Normal_Young]......"/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_ButcherRyo" SpeakerEmotion="Normal_Young" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Gangster_ButcherRyo_Normal_Young]배운 것이 그것 밖에 없습니다."/>
+			<property Type="BattleDialog" SpeakerInfo="Kylie" SpeakerEmotion="Satisfying_Young" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Kylie_Satisfying_Young]......"/>
+			<property Type="BattleDialog" SpeakerInfo="Kylie" SpeakerEmotion="Satisfying_Young" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Kylie_Satisfying_Young]네가 써는 회는 나쁘지 않아."/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_ButcherRyo" SpeakerEmotion="Normal_Young" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Gangster_ButcherRyo_Normal_Young]......"/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_ButcherRyo" SpeakerEmotion="Normal_Young" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Gangster_ButcherRyo_Normal_Young]큰 돈을 만질 수 없습니다."/>
+			<property Type="BattleDialog" SpeakerInfo="Kylie" SpeakerEmotion="Normal_Young" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Kylie_Normal_Young]......"/>
+			<property Type="BattleDialog" SpeakerInfo="Kylie" SpeakerEmotion="Normal_Young" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Kylie_Normal_Young]사람의 목숨을 빼앗는 업에서 벗어나 제대로 된 삶을 살라고 조직에서 파문시켰거늘..."/>
+			<property Type="BattleDialog" SpeakerInfo="Kylie" SpeakerEmotion="Normal_Young" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Kylie_Normal_Young]더 많은 업을 짓고 사는 구나."/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_ButcherRyo" SpeakerEmotion="Normal_Young" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Gangster_ButcherRyo_Normal_Young]......"/>
+			<property Type="BattleDialog" SpeakerInfo="Kylie" SpeakerEmotion="Normal_Young" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Kylie_Normal_Young]네가 정녕 큰 돈이 목적이라면 왜 『 승룡전 』의 용이 되려하지 않느냐?"/>
+			<property Type="BattleDialog" SpeakerInfo="Gangster_ButcherRyo" SpeakerEmotion="Normal_Young" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Gangster_ButcherRyo_Normal_Young]......."/>
+			<property Type="BattleDialog" SpeakerInfo="Kylie" SpeakerEmotion="Normal_Young" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Kylie_Normal_Young]나라는 족쇄에 갇혀 이러지도 저러지도 못하는 바보 같은 녀석."/>
+			<property Type="BattleDialog" SpeakerInfo="Kylie" SpeakerEmotion="Normal_Young" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="true" Message="[!speaker:Kylie_Normal_Young]차라리 조직의 용이 되어라."/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="HideBackgroundImage" DialogType="Sub" Slow="true"/>
+			<property Type="Sleep" Time="1"/>
+		</Scripts>
+	</class>
+	<class name="Credit_Episode01_15">
+		<Scripts>
+			<property Type="Sleep" Time="1"/>
+			<property Type="Sleep" Time="2"/>
+			<property Type="TitleMessage" Message="모르는 것이 약이다." Title="재의 강 하류 산책로"/>
+			<property Type="Sleep" Time="0.25"/>
+			<property Type="ShowBackgroundImage" DialogType="Sub" DialogEffect="Appear" BackgroundImage="LetonRiver" Slow="true"/>
+			<property Type="PlayLoopSound" Name="Ocean" SoundGroup="Effect" NoWait="On" SoundName="Environment/Environment_OceanWave.wav" FadeTime="1" Volume="0.3"/>
+			<property Type="PlaySound" SoundGroup="Effect" NoWait="On" SoundName="Environment/Environment_CellPhone.ogg"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="TitleMessage"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="BattleDialog" SpeakerInfo="Lily" SpeakerEmotion="Smile" Effect="Appear" Slot="Center" Mode="Start" Close="false" Message="[!speaker:Lily_Smile][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;] 이제 어떻게 할래?" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Lily" SpeakerEmotion="Normal" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Lily_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;] 연구소로 돌아올래?" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Lily" SpeakerEmotion="Normal" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Lily_Normal][image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Portrait2/Phone_Hand&apos;][colour=&apos;FFFFE959&apos;] 아니면 조금 더 그 쪽에 있을 거니?" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Leton" SpeakerEmotion="Stare" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Leton_Stare]......" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="발할라 국립 이능 연구소." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="릴리 소장 밑에서 국립 이능 연구소 요원으로 일하기 시작한지 3년." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Empty" SpeakerEmotion="Normal" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="알고 싶지 않은 사실들을 계속 알아가게 된다." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Leton" SpeakerEmotion="Stare" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Leton_Stare]......" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Leton" SpeakerEmotion="Seroius" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Leton_Seroius]레이가 제일 부럽네..." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Leton" SpeakerEmotion="Seroius" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Leton_Seroius]......" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Leton" SpeakerEmotion="Normal" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Leton_Normal]헤이싱 녀석은 이제 곧 돌아가는 건가..." DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Leton" SpeakerEmotion="Think" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Leton_Think]......" DialogType="Sub"/>
+			<property Type="BattleDialog" SpeakerInfo="Leton" SpeakerEmotion="Smile" Effect="Appear" Slot="Center" Mode="Continue" Close="true" Message="[!speaker:Leton_Smile]아... 진짜..." DialogType="Sub"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="HideBackgroundImage" DialogType="Sub" Slow="true"/>
+			<property Type="StopLoopSound" Name="Ocean"/>
+			<property Type="Sleep" Time="1"/>
+		</Scripts>
+	</class>
+	<class name="Credit_Episode01_16">
+		<Scripts>
+			<property Type="Sleep" Time="1"/>
+			<property Type="TitleMessage" Message="누군가는 기억한다." Title="발할라 국립 이능 연구소"/>
+			<property Type="Sleep" Time="0.25"/>
+			<property Type="ShowBackgroundImage" DialogType="Sub" DialogEffect="Appear" BackgroundImage="DeleteProject" Slow="true"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="TitleMessage"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="BattleDialog" SpeakerInfo="ResearchAssistant_Researcher" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Start" Close="false" Message="[!speaker:ResearchAssistant_Researcher_Normal]소장님. 미미르에게서 이 프로젝트들 보안 등급 갱신 요청이 들어왔는데 어떻게 할까요?"/>
+			<property Type="BattleDialog" SpeakerInfo="Lily" SpeakerEmotion="Stare" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Lily_Stare]흠... 보자."/>
+			<property Type="BattleDialog" SpeakerInfo="Lily" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Lily_Normal]이 프로젝트는 장기적으로 국정 운영 관련자들은 알아야 할 것 같으니 보안 등급 『 미스릴 』"/>
+			<property Type="BattleDialog" SpeakerInfo="ResearchAssistant_Researcher" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:ResearchAssistant_Researcher_Normal]프로젝트 진행 당시 보안 등급보다 한 단계 내려가는 데 괜찮을까요?"/>
+			<property Type="BattleDialog" SpeakerInfo="Lily" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Lily_Normal]진행 과정부터 결과까지 참고할 부분이 많을테니 괜찮아."/>
+			<property Type="BattleDialog" SpeakerInfo="Lily" SpeakerEmotion="Smile" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Lily_Smile]프로젝트 관련자들도 그 정도는 이해할 거야."/>
+			<property Type="BattleDialog" SpeakerInfo="ResearchAssistant_Researcher" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:ResearchAssistant_Researcher_Normal]그럼 이건 어떻게 할까요?"/>
+			<property Type="BattleDialog" SpeakerInfo="Lily" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Lily_Normal]그건 다음 진행 예정 프로젝트니 보안 등급 『 오리하르콘 』"/>
+			<property Type="BattleDialog" SpeakerInfo="ResearchAssistant_Researcher" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:ResearchAssistant_Researcher_Normal]알겠습니다."/>
+			<property Type="BattleDialog" SpeakerInfo="ResearchAssistant_Researcher" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:ResearchAssistant_Researcher_Normal]그럼 마지막 이 폐기된 프로젝트는 어떻게 할까요?"/>
+			<property Type="BattleDialog" SpeakerInfo="Lily" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Lily_Normal]이 프로젝트는 보안 등급 『 아다만타이트 』"/>
+			<property Type="BattleDialog" SpeakerInfo="ResearchAssistant_Researcher" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:ResearchAssistant_Researcher_Normal]『 아다만타이트 』요?"/>
+			<property Type="BattleDialog" SpeakerInfo="ResearchAssistant_Researcher" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:ResearchAssistant_Researcher_Normal]『 아다만타이트 』면 저희도 다시 열람 불가능 할 텐데 괜찮으시겠어요?"/>
+			<property Type="BattleDialog" SpeakerInfo="Lily" SpeakerEmotion="Smile" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Lily_Smile]자신이 두 번 다시 사용하지 않을 것을 계속 가지고 있어 봐야 쓰레기밖에 안돼."/>
+			<property Type="BattleDialog" SpeakerInfo="ResearchAssistant_Researcher" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:ResearchAssistant_Researcher_Normal]정말 위험한 쓰레기군요."/>
+			<property Type="BattleDialog" SpeakerInfo="Lily" SpeakerEmotion="Smile" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Lily_Smile]그리고 관련 출력했던 종이 문서는 평소처럼 부탁해."/>
+			<property Type="BattleDialog" SpeakerInfo="ResearchAssistant_Researcher" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="true" Message="[!speaker:ResearchAssistant_Researcher_Normal]넵. 파쇄해서 소각하도록 하겠습니다."/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="HideBackgroundImage" DialogType="Sub" Slow="true"/>
+			<property Type="Sleep" Time="1"/>
+		</Scripts>
+	</class>
+	<class name="Credit_Episode01_17">
+		<Scripts>
+			<property Type="Sleep" Time="2"/>
+			<property Type="ShowBackgroundImage" DialogType="Sub" DialogEffect="Appear" BackgroundImage="AbandonedChilren" Slow="true"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="ShowBackgroundImage" DialogType="Sub" DialogEffect="Fade" BackgroundImage="AbandonedChilren2" Slow="true"/>
+			<property Type="Sleep" Time="4"/>
+			<property Type="HideBackgroundImage" DialogType="Sub" Slow="true"/>
+			<property Type="Sleep" Time="3"/>
+		</Scripts>
+	</class>
+	<class name="Credit_Episode01_18">
+		<Scripts>
+			<property Type="Sleep" Time="2"/>
+			<property Type="PlayBGM" Volume="1" Direct="false" BGMName="Reminiscence" FadeTime="3"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="ShowBackgroundImage" DialogType="Sub" DialogEffect="Appear" BackgroundImage="AlisaAndBiancei_Silverlining" Slow="true"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="BattleDialog" SpeakerInfo="Bianca" SpeakerEmotion="Surprise" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Start" Close="false" Message="[!speaker:Bianca_Surprise]여기야?"/>
+			<property Type="BattleDialog" SpeakerInfo="Alisa" SpeakerEmotion="Smile" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Alisa_Smile]그래. $CompanyName$."/>
+			<property Type="BattleDialog" SpeakerInfo="Bianca" SpeakerEmotion="Happy" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="false" Message="[!speaker:Bianca_Happy]좋네. 그럼 들어가 볼까?"/>
+			<property Type="BattleDialog" SpeakerInfo="Alisa" SpeakerEmotion="Normal" DialogType="Sub" Effect="Appear" Slot="Center" Mode="Continue" Close="true" Message="[!speaker:Alisa_Normal]그래."/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="ShowBackgroundImage" DialogType="Sub" DialogEffect="Fade" BackgroundImage="White" Slow="true"/>
+			<property Type="Sleep" Time="1"/>
+		</Scripts>
+	</class>
+	<class name="Credit_Episode01_19">
+		<Scripts>
+			<property Type="Sleep" Time="2"/>
+			<property Type="ShowBackgroundImage" DialogType="Sub" DialogEffect="Fade" BackgroundImage="AbandonedChilren3" Slow="true"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="ShowBackgroundImage" DialogType="Sub" DialogEffect="Fade" BackgroundImage="AbandonedChilren4" Slow="true"/>
+			<property Type="Sleep" Time="4"/>
+			<property Type="ShowBackgroundImage" DialogType="Sub" DialogEffect="Fade" BackgroundImage="White" Slow="true"/>
+			<property Type="Sleep" Time="2"/>
+			<property Type="HideBackgroundImage" DialogType="Sub" Slow="true"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="UpdateSteamAchievement" Achievement="StoryEpisode1Ending" Achieved="true"/>
+			<property Type="Sleep" Time="1"/>
+		</Scripts>
+	</class>
+</idspace>
