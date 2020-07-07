@@ -1,6 +1,6 @@
 -- reward exp
 function Get_Reward_Exp(self, expTaker)
-	local baseExp = self.MaxHP/8;
+	
 	local masteryTable = GetMastery(expTaker);
 	local mastery_Individualism = GetMasteryMastered(masteryTable, 'Individualism');
 	local mastery_Learning = GetMasteryMastered(masteryTable, 'Learning');
@@ -13,6 +13,12 @@ function Get_Reward_Exp(self, expTaker)
 		thokCount = GetCompanyInstantProperty(company, 'TreasureHouseOfKnowledgeAmount') or 0;
 	end
 	
+	-- 1. 기본 경험치 정하기.
+	local baseExp = self.MaxHP;
+	local baseExpDenominator = 8;
+	baseExp = self.MaxHP/baseExpDenominator;
+	
+	-- 2. 경험치 배율 정하기
 	local ratio = 1;
 	if mastery_Individualism then
 		ratio = ratio + mastery_Individualism.ApplyAmount/100;
@@ -33,43 +39,20 @@ function Get_Reward_Exp(self, expTaker)
 		ratio = ratio + thokCount / 100;
 	end
 	
-	-- 미션 내부 레벨 보정도
+	-- 3. 미션 내부 레벨 보정도
 	local mission = GetMission(expTaker);
-	if mission.Lv > expTaker.Lv then
-		local missionlevelDiff = math.max(0, math.min(10, mission.Lv - expTaker.Lv));
-		ratio = ratio + 0.2 * missionlevelDiff;
-	elseif mission.Lv < expTaker.Lv then
-		-- 보정룰
-		local missionlevelDiff = math.max(0, math.min(10, expTaker.Lv - mission.Lv));
-		if expTaker.Lv > mission.Lv + 20 then
-			ratio = ratio - 0.5;
-		elseif expTaker.Lv > mission.Lv + 15 then
-			ratio = ratio - 0.4;
-		elseif expTaker.Lv > mission.Lv + 10 then
-			ratio = ratio - 0.3;
-		elseif expTaker.Lv > mission.Lv + 5 then
-			ratio = ratio - 0.2;
-		elseif expTaker.Lv > mission.Lv then
-			ratio = ratio - 0.1;
-		end
+	local missionlevelDiff = math.max(-10, math.min(10, mission.Lv - expTaker.Lv));
+	local missionMultiplyExp = 0.2;
+	if missionlevelDiff < 0 then
+		missionMultiplyExp = 0.1;
 	end
+	ratio = math.max(0.5, ratio + missionMultiplyExp * missionlevelDiff);
 	
-	local result = self.Grade.ExpRatio * baseExp * ( 2 * self.Lv )/ ( self.Lv  + expTaker.Lv) * ratio;
-	
-	local finalRatio = 1;
-	-- 보정룰
-	if expTaker.Lv > self.Lv + 15 then
-		finalRatio = 0.25;
-	elseif expTaker.Lv > self.Lv + 10 then
-		finalRatio = 0.5;
-	elseif expTaker.Lv > self.Lv + 5 then
-		finalRatio = 0.75;
-	elseif expTaker.Lv < self.Lv then
-		finalRatio = 1.5;
-	end
-	result = result * finalRatio;
-	
+	-- 4. 공격자와 전투 불능자의 레벨 보정도.
+	local expTakerToDeadLevelEXPRatio = ( 2 * self.Lv )/ ( self.Lv  + expTaker.Lv);	
+	local result = self.Grade.ExpRatio * baseExp * expTakerToDeadLevelEXPRatio * ratio;	
 	result = math.max(1, math.floor(result));
+	
 	--------------------------------------------------------
 	-- 클래스 경험치
 	--------------------------------------------------------

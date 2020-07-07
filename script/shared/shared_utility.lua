@@ -997,6 +997,7 @@ function Set:union(s)
 	for k, v in pairs(tfrom) do
 		tto[k] = v;
 	end
+	return tto;
 end
 function Set:getKeys()
 	local keys = {};

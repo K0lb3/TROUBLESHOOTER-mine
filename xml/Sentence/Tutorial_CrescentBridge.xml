@@ -56,7 +56,7 @@
 		<class name="Tutorial_CrescentBridge_poeCYH" Value="[!Subtitle][!speaker:NewsCaster_Normal][colour=&apos;FFFFFFC8&apos;]중앙 정부의 결단을 촉구하는 시위를 이어가고 있습니다."/>
 		<class name="Tutorial_CrescentBridge_JQ65rN" Value="[!BalloonChat][!speaker:DirectTeam_Whitetiger01]이 녀석! 죽어랏!"/>
 		<class name="Tutorial_CrescentBridge_dkfj2i" Value="[!PlaySound]나도 자네를 보면 가슴이 아프네."/>
-		<class name="Tutorial_CrescentBridge_zmglOu" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]『 두 술 』을 뜰려면 『 첫 술 』을 비워야 하는 법."/>
+		<class name="Tutorial_CrescentBridge_zmglOu" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]『 두 술 』을 뜨려면 『 첫 술 』을 비워야 하는 법."/>
 		<class name="Tutorial_CrescentBridge_wQ0gpL" Value="[!Dialog][!speaker:Gangster_WhiteTigerFat_Normal]으윽..."/>
 		<class name="Tutorial_CrescentBridge_vGkmY5" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]아픈가?"/>
 		<class name="Tutorial_CrescentBridge_B5uwGp" Value="[!Dialog][!speaker:Gangster_SpoonNormal_John_Normal]나도 자네를 보면 가슴이 아프네."/>

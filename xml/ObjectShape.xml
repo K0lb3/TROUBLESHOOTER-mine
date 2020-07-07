@@ -21,6 +21,7 @@
 			<rule property="RTTSceneCameraSet" type="string" default="Normal"/>
 			<rule property="RushDistance" type="number" default="5"/>
 			<rule property="Scale" type="number" default="1"/>
+			<rule property="MeshEffectScale" type="number" default="1"/>
 			<rule property="SwordTrail" type="table" subtype="table" default=""/>
 			<rule property="TargetMarkType" type="string" default="Face"/>
 			<rule property="UICamera" type="table"/>
@@ -565,6 +566,78 @@
 				</Run>
 			</Footstep>
 		</class>
+		<class name="Beast_Bat_Red" AnimationDefinition="Beast_Bat" ObjectAnimationInfo="Beast_Bat" BodySize="Dorori" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Bat_Red.mesh" Scale="1" InfoCamType="Battle_Info_Normal_Dorori" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera" MoveCameraAniSpeed="1.5" WalkSpeed="562" RunSpeed="562" AmoveSpeed="562" RushSpeed="843" BodyType="Human" AttachAnimPrefix="Beast_Bat_Flame" AdditionalSkeleton="Beast_Bat_Black.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+			<OfficeEquipment/>
+			<EmptyEquipment/>
+			<Footstep>
+				<Amove MoveType="BeastMove">
+					<Timing>
+						<property Frame="0" FootBone="Bip001 R Foot"/>
+						<property Frame="6" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Amove>
+				<Rush MoveType="BeastMove">
+					<Timing>
+						<property Frame="0" FootBone="Bip001 R Foot"/>
+						<property Frame="6" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Rush>
+				<Run MoveType="BeastMove">
+					<Timing>
+						<property Frame="0" FootBone="Bip001 R Foot"/>
+						<property Frame="6" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Run>
+			</Footstep>
+		</class>
+		<class name="Beast_Bat_Red_Leader" AnimationDefinition="Beast_Bat" ObjectAnimationInfo="Beast_Bat" BodySize="Dorori" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Bat_Red.mesh" Scale="1.7" InfoCamType="Battle_Info_Normal_Dorori" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera" MoveCameraAniSpeed="1.2" WalkSpeed="900" RunSpeed="900" AmoveSpeed="900" RushSpeed="1080" BodyType="Human" AttachAnimPrefix="Beast_Bat_Flame" AdditionalSkeleton="Beast_Bat_Black.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+			<OfficeEquipment/>
+			<EmptyEquipment/>
+			<Footstep>
+				<Amove MoveType="BeastMove">
+					<Timing>
+						<property Frame="0" FootBone="Bip001 R Foot"/>
+						<property Frame="6" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Amove>
+				<Rush MoveType="BeastMove">
+					<Timing>
+						<property Frame="0" FootBone="Bip001 R Foot"/>
+						<property Frame="6" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Rush>
+				<Run MoveType="BeastMove">
+					<Timing>
+						<property Frame="0" FootBone="Bip001 R Foot"/>
+						<property Frame="6" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Run>
+			</Footstep>
+		</class>
+		<class name="Beast_Bat_Gold" AnimationDefinition="Beast_Bat" ObjectAnimationInfo="Beast_Bat" BodySize="Dorori" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Bat_Gold.mesh" Scale="0.6" InfoCamType="Battle_Info_Normal_Dorori" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera" MoveCameraAniSpeed="1.5" WalkSpeed="338" RunSpeed="338" AmoveSpeed="338" RushSpeed="506" BodyType="Human" AttachAnimPrefix="Beast_Bat_Flame" AdditionalSkeleton="Beast_Bat_Black.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+			<OfficeEquipment/>
+			<EmptyEquipment/>
+			<Footstep>
+				<Amove MoveType="BeastMove">
+					<Timing>
+						<property Frame="0" FootBone="Bip001 R Foot"/>
+						<property Frame="6" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Amove>
+				<Rush MoveType="BeastMove">
+					<Timing>
+						<property Frame="0" FootBone="Bip001 R Foot"/>
+						<property Frame="6" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Rush>
+				<Run MoveType="BeastMove">
+					<Timing>
+						<property Frame="0" FootBone="Bip001 R Foot"/>
+						<property Frame="6" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Run>
+			</Footstep>
+		</class>
 		<class name="Beast_Bat_Flame" AnimationDefinition="Beast_Bat" ObjectAnimationInfo="Beast_Bat" BodySize="Dorori" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Bat_Flame.mesh" Scale="1" InfoCamType="Battle_Info_Normal_Dorori" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera" MoveCameraAniSpeed="1.5" WalkSpeed="562" RunSpeed="562" AmoveSpeed="562" RushSpeed="843" BodyType="Human" AttachAnimPrefix="Beast_Bat_Flame" AdditionalSkeleton="Beast_Bat_Black.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
 			<OfficeEquipment/>
 			<EmptyEquipment/>
@@ -829,7 +902,7 @@
 				</Run>
 			</Footstep>
 		</class>
-		<class name="Beast_Frog_Normal" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog_Normal" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Normal.mesh" Scale="0.5" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.5" WalkSpeed="300" RunSpeed="300" AmoveSpeed="300" RushSpeed="450" BodyType="Human" AttachAnimPrefix="Beast_Frog_Normal" AdditionalSkeleton="" Invisible="false" RTTSceneCameraSet="Beast">
+		<class name="Beast_Frog_Normal" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Normal.mesh" Scale="0.5" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.5" WalkSpeed="300" RunSpeed="300" AmoveSpeed="300" RushSpeed="450" BodyType="Human" AttachAnimPrefix="Beast_Frog_Normal" AdditionalSkeleton="" Invisible="false" RTTSceneCameraSet="Beast">
 			<OfficeEquipment/>
 			<EmptyEquipment/>
 			<Footstep>
@@ -871,7 +944,7 @@
 				</Run>
 			</Footstep>
 		</class>
-		<class name="Beast_Frog_Black" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog_Black" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Black.mesh" Scale="0.55" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.5" WalkSpeed="330" RunSpeed="330" AmoveSpeed="330" RushSpeed="495" BodyType="Human" AttachAnimPrefix="Beast_Frog_Black" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+		<class name="Beast_Frog_Black" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Black.mesh" Scale="0.55" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.5" WalkSpeed="330" RunSpeed="330" AmoveSpeed="330" RushSpeed="495" BodyType="Human" AttachAnimPrefix="Beast_Frog_Black" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
 			<OfficeEquipment/>
 			<EmptyEquipment/>
 			<Footstep>
@@ -913,7 +986,7 @@
 				</Run>
 			</Footstep>
 		</class>
-		<class name="Beast_Frog_Lightning" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog_Lightning" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Lightning.mesh" Scale="0.45" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.5" WalkSpeed="270" RunSpeed="270" AmoveSpeed="270" RushSpeed="405" BodyType="Human" AttachAnimPrefix="Beast_Frog_Lightning" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+		<class name="Beast_Frog_Lightning" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Lightning.mesh" Scale="0.45" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.5" WalkSpeed="270" RunSpeed="270" AmoveSpeed="270" RushSpeed="405" BodyType="Human" AttachAnimPrefix="Beast_Frog_Lightning" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
 			<OfficeEquipment/>
 			<EmptyEquipment/>
 			<Footstep>
@@ -955,7 +1028,7 @@
 				</Run>
 			</Footstep>
 		</class>
-		<class name="Beast_Frog_Fire" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog_Fire" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Fire.mesh" Scale="0.55" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.5" WalkSpeed="330" RunSpeed="330" AmoveSpeed="330" RushSpeed="495" BodyType="Human" AttachAnimPrefix="Beast_Frog_Fire" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+		<class name="Beast_Frog_Fire" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Fire.mesh" Scale="0.55" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.5" WalkSpeed="330" RunSpeed="330" AmoveSpeed="330" RushSpeed="495" BodyType="Human" AttachAnimPrefix="Beast_Frog_Fire" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
 			<OfficeEquipment/>
 			<EmptyEquipment/>
 			<Footstep>
@@ -997,7 +1070,7 @@
 				</Run>
 			</Footstep>
 		</class>
-		<class name="Beast_Frog_Poison" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog_Poison" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Poison.mesh" Scale="0.55" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.5" WalkSpeed="330" RunSpeed="330" AmoveSpeed="330" RushSpeed="495" BodyType="Human" AttachAnimPrefix="Beast_Frog_Poison" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+		<class name="Beast_Frog_Poison" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Poison.mesh" Scale="0.55" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.5" WalkSpeed="330" RunSpeed="330" AmoveSpeed="330" RushSpeed="495" BodyType="Human" AttachAnimPrefix="Beast_Frog_Poison" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
 			<OfficeEquipment/>
 			<EmptyEquipment/>
 			<Footstep>
@@ -1039,7 +1112,7 @@
 				</Run>
 			</Footstep>
 		</class>
-		<class name="Beast_Frog_Normal2" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog_Normal2" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Normal.mesh" Scale="0.75" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.3" WalkSpeed="450" RunSpeed="450" AmoveSpeed="450" RushSpeed="585" BodyType="Human" AttachAnimPrefix="Beast_Frog_Normal" AdditionalSkeleton="" Invisible="false" RTTSceneCameraSet="Beast">
+		<class name="Beast_Frog_PoisonBlue" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Poison2.mesh" Scale="0.55" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.5" WalkSpeed="330" RunSpeed="330" AmoveSpeed="330" RushSpeed="495" BodyType="Human" AttachAnimPrefix="Beast_Frog_Poison" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
 			<OfficeEquipment/>
 			<EmptyEquipment/>
 			<Footstep>
@@ -1081,7 +1154,7 @@
 				</Run>
 			</Footstep>
 		</class>
-		<class name="Beast_Frog_Black2" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog_Black2" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Black.mesh" Scale="0.75" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.3" WalkSpeed="450" RunSpeed="450" AmoveSpeed="450" RushSpeed="585" BodyType="Human" AttachAnimPrefix="Beast_Frog_Black" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+		<class name="Beast_Frog_PoisonRed" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_PoisonRed.mesh" Scale="0.55" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.5" WalkSpeed="330" RunSpeed="330" AmoveSpeed="330" RushSpeed="495" BodyType="Human" AttachAnimPrefix="Beast_Frog_Poison" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
 			<OfficeEquipment/>
 			<EmptyEquipment/>
 			<Footstep>
@@ -1123,7 +1196,7 @@
 				</Run>
 			</Footstep>
 		</class>
-		<class name="Beast_Frog_Lightning2" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog_Lightning2" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Lightning.mesh" Scale="0.75" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.3" WalkSpeed="450" RunSpeed="450" AmoveSpeed="450" RushSpeed="585" BodyType="Human" AttachAnimPrefix="Beast_Frog_Lightning" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+		<class name="Beast_Frog_Normal2" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Normal.mesh" Scale="0.75" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.3" WalkSpeed="450" RunSpeed="450" AmoveSpeed="450" RushSpeed="585" BodyType="Human" AttachAnimPrefix="Beast_Frog_Normal" AdditionalSkeleton="" Invisible="false" RTTSceneCameraSet="Beast">
 			<OfficeEquipment/>
 			<EmptyEquipment/>
 			<Footstep>
@@ -1165,7 +1238,7 @@
 				</Run>
 			</Footstep>
 		</class>
-		<class name="Beast_Frog_Fire2" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog_Fire2" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Fire.mesh" Scale="0.8" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.3" WalkSpeed="480" RunSpeed="480" AmoveSpeed="480" RushSpeed="624" BodyType="Human" AttachAnimPrefix="Beast_Frog_Fire" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+		<class name="Beast_Frog_Black2" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Black.mesh" Scale="0.75" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.3" WalkSpeed="450" RunSpeed="450" AmoveSpeed="450" RushSpeed="585" BodyType="Human" AttachAnimPrefix="Beast_Frog_Black" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
 			<OfficeEquipment/>
 			<EmptyEquipment/>
 			<Footstep>
@@ -1207,7 +1280,7 @@
 				</Run>
 			</Footstep>
 		</class>
-		<class name="Beast_Frog_Poison2" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog_Poison2" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Poison.mesh" Scale="0.8" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.3" WalkSpeed="480" RunSpeed="480" AmoveSpeed="480" RushSpeed="624" BodyType="Human" AttachAnimPrefix="Beast_Frog_Poison" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+		<class name="Beast_Frog_Lightning2" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Lightning.mesh" Scale="0.75" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.3" WalkSpeed="450" RunSpeed="450" AmoveSpeed="450" RushSpeed="585" BodyType="Human" AttachAnimPrefix="Beast_Frog_Lightning" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
 			<OfficeEquipment/>
 			<EmptyEquipment/>
 			<Footstep>
@@ -1249,7 +1322,7 @@
 				</Run>
 			</Footstep>
 		</class>
-		<class name="Beast_Frog_Normal3" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog_Normal3" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Normal.mesh" Scale="1" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.2" WalkSpeed="600" RunSpeed="600" AmoveSpeed="600" RushSpeed="720" BodyType="Human" AttachAnimPrefix="Beast_Frog_Normal" AdditionalSkeleton="" Invisible="false" RTTSceneCameraSet="Beast">
+		<class name="Beast_Frog_Fire2" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Fire.mesh" Scale="0.8" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.3" WalkSpeed="480" RunSpeed="480" AmoveSpeed="480" RushSpeed="624" BodyType="Human" AttachAnimPrefix="Beast_Frog_Fire" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
 			<OfficeEquipment/>
 			<EmptyEquipment/>
 			<Footstep>
@@ -1291,7 +1364,7 @@
 				</Run>
 			</Footstep>
 		</class>
-		<class name="Beast_Frog_Black3" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog_Black3" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Black.mesh" Scale="1" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.2" WalkSpeed="600" RunSpeed="600" AmoveSpeed="600" RushSpeed="720" BodyType="Human" AttachAnimPrefix="Beast_Frog_Black" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+		<class name="Beast_Frog_Poison2" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Poison.mesh" Scale="0.8" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.3" WalkSpeed="480" RunSpeed="480" AmoveSpeed="480" RushSpeed="624" BodyType="Human" AttachAnimPrefix="Beast_Frog_Poison" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
 			<OfficeEquipment/>
 			<EmptyEquipment/>
 			<Footstep>
@@ -1333,7 +1406,7 @@
 				</Run>
 			</Footstep>
 		</class>
-		<class name="Beast_Frog_Lightning3" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog_Lightning3" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Lightning.mesh" Scale="0.95" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.2" WalkSpeed="570" RunSpeed="570" AmoveSpeed="570" RushSpeed="684" BodyType="Human" AttachAnimPrefix="Beast_Frog_Lightning" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+		<class name="Beast_Frog_PoisonBlue2" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Poison2.mesh" Scale="0.8" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.3" WalkSpeed="480" RunSpeed="480" AmoveSpeed="480" RushSpeed="624" BodyType="Human" AttachAnimPrefix="Beast_Frog_Poison" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
 			<OfficeEquipment/>
 			<EmptyEquipment/>
 			<Footstep>
@@ -1375,7 +1448,7 @@
 				</Run>
 			</Footstep>
 		</class>
-		<class name="Beast_Frog_Fire3" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog_Fire3" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Fire.mesh" Scale="1" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.2" WalkSpeed="600" RunSpeed="600" AmoveSpeed="600" RushSpeed="720" BodyType="Human" AttachAnimPrefix="Beast_Frog_Fire" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+		<class name="Beast_Frog_PoisonRed2" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_PoisonRed.mesh" Scale="0.8" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.3" WalkSpeed="480" RunSpeed="480" AmoveSpeed="480" RushSpeed="624" BodyType="Human" AttachAnimPrefix="Beast_Frog_Poison" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
 			<OfficeEquipment/>
 			<EmptyEquipment/>
 			<Footstep>
@@ -1417,7 +1490,7 @@
 				</Run>
 			</Footstep>
 		</class>
-		<class name="Beast_Frog_Poison3" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog_Poison3" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Poison.mesh" Scale="0.9" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.2" WalkSpeed="540" RunSpeed="540" AmoveSpeed="540" RushSpeed="648" BodyType="Human" AttachAnimPrefix="Beast_Frog_Poison" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+		<class name="Beast_Frog_Normal3" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Normal.mesh" Scale="1" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.2" WalkSpeed="600" RunSpeed="600" AmoveSpeed="600" RushSpeed="720" BodyType="Human" AttachAnimPrefix="Beast_Frog_Normal" AdditionalSkeleton="" Invisible="false" RTTSceneCameraSet="Beast">
 			<OfficeEquipment/>
 			<EmptyEquipment/>
 			<Footstep>
@@ -1459,7 +1532,7 @@
 				</Run>
 			</Footstep>
 		</class>
-		<class name="Beast_Frog_Dot" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog_Dot" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Dot.mesh" Scale="1" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.2" WalkSpeed="600" RunSpeed="600" AmoveSpeed="600" RushSpeed="720" BodyType="Human" AttachAnimPrefix="Beast_Frog_Dot" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+		<class name="Beast_Frog_Black3" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Black.mesh" Scale="1" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.2" WalkSpeed="600" RunSpeed="600" AmoveSpeed="600" RushSpeed="720" BodyType="Human" AttachAnimPrefix="Beast_Frog_Black" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
 			<OfficeEquipment/>
 			<EmptyEquipment/>
 			<Footstep>
@@ -1501,7 +1574,7 @@
 				</Run>
 			</Footstep>
 		</class>
-		<class name="Beast_Frog_White" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog_White" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_White.mesh" Scale="0.9" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.2" WalkSpeed="540" RunSpeed="540" AmoveSpeed="540" RushSpeed="648" BodyType="Human" AttachAnimPrefix="Beast_Frog_White" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+		<class name="Beast_Frog_Lightning3" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Lightning.mesh" Scale="0.95" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.2" WalkSpeed="570" RunSpeed="570" AmoveSpeed="570" RushSpeed="684" BodyType="Human" AttachAnimPrefix="Beast_Frog_Lightning" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
 			<OfficeEquipment/>
 			<EmptyEquipment/>
 			<Footstep>
@@ -1543,7 +1616,301 @@
 				</Run>
 			</Footstep>
 		</class>
-		<class name="Beast_Frog_Glutton" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog_Dot" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Glutton.mesh" Scale="0.6" InfoCamType="Battle_Info_Normal" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.5" WalkSpeed="360" RunSpeed="360" AmoveSpeed="360" RushSpeed="540" BodyType="Human" AttachAnimPrefix="Beast_Frog_Glutton" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+		<class name="Beast_Frog_Gold" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Gold.mesh" Scale="1" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.2" WalkSpeed="600" RunSpeed="600" AmoveSpeed="600" RushSpeed="720" BodyType="Human" AttachAnimPrefix="Beast_Frog_Lightning" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+			<OfficeEquipment/>
+			<EmptyEquipment/>
+			<Footstep>
+				<Amove MoveType="BeastMove">
+					<Timing>
+						<property Frame="1" FootBone="Bip001 R Hand"/>
+						<property Frame="1" FootBone="Bip001 L Hand"/>
+						<property Frame="4" FootBone="Bip001 R Foot"/>
+						<property Frame="4" FootBone="Bip001 L Foot"/>
+						<property Frame="12" FootBone="Bip001 R Hand"/>
+						<property Frame="12" FootBone="Bip001 L Hand"/>
+						<property Frame="14" FootBone="Bip001 R Foot"/>
+						<property Frame="14" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Amove>
+				<Rush MoveType="BeastMove">
+					<Timing>
+						<property Frame="1" FootBone="Bip001 R Hand"/>
+						<property Frame="1" FootBone="Bip001 L Hand"/>
+						<property Frame="4" FootBone="Bip001 R Foot"/>
+						<property Frame="4" FootBone="Bip001 L Foot"/>
+						<property Frame="12" FootBone="Bip001 R Hand"/>
+						<property Frame="12" FootBone="Bip001 L Hand"/>
+						<property Frame="14" FootBone="Bip001 R Foot"/>
+						<property Frame="14" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Rush>
+				<Run MoveType="BeastMove">
+					<Timing>
+						<property Frame="1" FootBone="Bip001 R Hand"/>
+						<property Frame="1" FootBone="Bip001 L Hand"/>
+						<property Frame="4" FootBone="Bip001 R Foot"/>
+						<property Frame="4" FootBone="Bip001 L Foot"/>
+						<property Frame="12" FootBone="Bip001 R Hand"/>
+						<property Frame="12" FootBone="Bip001 L Hand"/>
+						<property Frame="14" FootBone="Bip001 R Foot"/>
+						<property Frame="14" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Run>
+			</Footstep>
+		</class>
+		<class name="Beast_Frog_Fire3" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Fire.mesh" Scale="1" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.2" WalkSpeed="600" RunSpeed="600" AmoveSpeed="600" RushSpeed="720" BodyType="Human" AttachAnimPrefix="Beast_Frog_Fire" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+			<OfficeEquipment/>
+			<EmptyEquipment/>
+			<Footstep>
+				<Amove MoveType="BeastMove">
+					<Timing>
+						<property Frame="1" FootBone="Bip001 R Hand"/>
+						<property Frame="1" FootBone="Bip001 L Hand"/>
+						<property Frame="4" FootBone="Bip001 R Foot"/>
+						<property Frame="4" FootBone="Bip001 L Foot"/>
+						<property Frame="12" FootBone="Bip001 R Hand"/>
+						<property Frame="12" FootBone="Bip001 L Hand"/>
+						<property Frame="14" FootBone="Bip001 R Foot"/>
+						<property Frame="14" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Amove>
+				<Rush MoveType="BeastMove">
+					<Timing>
+						<property Frame="1" FootBone="Bip001 R Hand"/>
+						<property Frame="1" FootBone="Bip001 L Hand"/>
+						<property Frame="4" FootBone="Bip001 R Foot"/>
+						<property Frame="4" FootBone="Bip001 L Foot"/>
+						<property Frame="12" FootBone="Bip001 R Hand"/>
+						<property Frame="12" FootBone="Bip001 L Hand"/>
+						<property Frame="14" FootBone="Bip001 R Foot"/>
+						<property Frame="14" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Rush>
+				<Run MoveType="BeastMove">
+					<Timing>
+						<property Frame="1" FootBone="Bip001 R Hand"/>
+						<property Frame="1" FootBone="Bip001 L Hand"/>
+						<property Frame="4" FootBone="Bip001 R Foot"/>
+						<property Frame="4" FootBone="Bip001 L Foot"/>
+						<property Frame="12" FootBone="Bip001 R Hand"/>
+						<property Frame="12" FootBone="Bip001 L Hand"/>
+						<property Frame="14" FootBone="Bip001 R Foot"/>
+						<property Frame="14" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Run>
+			</Footstep>
+		</class>
+		<class name="Beast_Frog_Poison3" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Poison.mesh" Scale="0.9" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.2" WalkSpeed="540" RunSpeed="540" AmoveSpeed="540" RushSpeed="648" BodyType="Human" AttachAnimPrefix="Beast_Frog_Poison" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+			<OfficeEquipment/>
+			<EmptyEquipment/>
+			<Footstep>
+				<Amove MoveType="BeastMove">
+					<Timing>
+						<property Frame="1" FootBone="Bip001 R Hand"/>
+						<property Frame="1" FootBone="Bip001 L Hand"/>
+						<property Frame="4" FootBone="Bip001 R Foot"/>
+						<property Frame="4" FootBone="Bip001 L Foot"/>
+						<property Frame="12" FootBone="Bip001 R Hand"/>
+						<property Frame="12" FootBone="Bip001 L Hand"/>
+						<property Frame="14" FootBone="Bip001 R Foot"/>
+						<property Frame="14" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Amove>
+				<Rush MoveType="BeastMove">
+					<Timing>
+						<property Frame="1" FootBone="Bip001 R Hand"/>
+						<property Frame="1" FootBone="Bip001 L Hand"/>
+						<property Frame="4" FootBone="Bip001 R Foot"/>
+						<property Frame="4" FootBone="Bip001 L Foot"/>
+						<property Frame="12" FootBone="Bip001 R Hand"/>
+						<property Frame="12" FootBone="Bip001 L Hand"/>
+						<property Frame="14" FootBone="Bip001 R Foot"/>
+						<property Frame="14" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Rush>
+				<Run MoveType="BeastMove">
+					<Timing>
+						<property Frame="1" FootBone="Bip001 R Hand"/>
+						<property Frame="1" FootBone="Bip001 L Hand"/>
+						<property Frame="4" FootBone="Bip001 R Foot"/>
+						<property Frame="4" FootBone="Bip001 L Foot"/>
+						<property Frame="12" FootBone="Bip001 R Hand"/>
+						<property Frame="12" FootBone="Bip001 L Hand"/>
+						<property Frame="14" FootBone="Bip001 R Foot"/>
+						<property Frame="14" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Run>
+			</Footstep>
+		</class>
+		<class name="Beast_Frog_PoisonBlue3" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Poison2.mesh" Scale="1" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.2" WalkSpeed="600" RunSpeed="600" AmoveSpeed="600" RushSpeed="720" BodyType="Human" AttachAnimPrefix="Beast_Frog_Poison" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+			<OfficeEquipment/>
+			<EmptyEquipment/>
+			<Footstep>
+				<Amove MoveType="BeastMove">
+					<Timing>
+						<property Frame="1" FootBone="Bip001 R Hand"/>
+						<property Frame="1" FootBone="Bip001 L Hand"/>
+						<property Frame="4" FootBone="Bip001 R Foot"/>
+						<property Frame="4" FootBone="Bip001 L Foot"/>
+						<property Frame="12" FootBone="Bip001 R Hand"/>
+						<property Frame="12" FootBone="Bip001 L Hand"/>
+						<property Frame="14" FootBone="Bip001 R Foot"/>
+						<property Frame="14" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Amove>
+				<Rush MoveType="BeastMove">
+					<Timing>
+						<property Frame="1" FootBone="Bip001 R Hand"/>
+						<property Frame="1" FootBone="Bip001 L Hand"/>
+						<property Frame="4" FootBone="Bip001 R Foot"/>
+						<property Frame="4" FootBone="Bip001 L Foot"/>
+						<property Frame="12" FootBone="Bip001 R Hand"/>
+						<property Frame="12" FootBone="Bip001 L Hand"/>
+						<property Frame="14" FootBone="Bip001 R Foot"/>
+						<property Frame="14" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Rush>
+				<Run MoveType="BeastMove">
+					<Timing>
+						<property Frame="1" FootBone="Bip001 R Hand"/>
+						<property Frame="1" FootBone="Bip001 L Hand"/>
+						<property Frame="4" FootBone="Bip001 R Foot"/>
+						<property Frame="4" FootBone="Bip001 L Foot"/>
+						<property Frame="12" FootBone="Bip001 R Hand"/>
+						<property Frame="12" FootBone="Bip001 L Hand"/>
+						<property Frame="14" FootBone="Bip001 R Foot"/>
+						<property Frame="14" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Run>
+			</Footstep>
+		</class>
+		<class name="Beast_Frog_PoisonRed3" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_PoisonRed.mesh" Scale="1" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.2" WalkSpeed="600" RunSpeed="600" AmoveSpeed="600" RushSpeed="720" BodyType="Human" AttachAnimPrefix="Beast_Frog_Poison" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+			<OfficeEquipment/>
+			<EmptyEquipment/>
+			<Footstep>
+				<Amove MoveType="BeastMove">
+					<Timing>
+						<property Frame="1" FootBone="Bip001 R Hand"/>
+						<property Frame="1" FootBone="Bip001 L Hand"/>
+						<property Frame="4" FootBone="Bip001 R Foot"/>
+						<property Frame="4" FootBone="Bip001 L Foot"/>
+						<property Frame="12" FootBone="Bip001 R Hand"/>
+						<property Frame="12" FootBone="Bip001 L Hand"/>
+						<property Frame="14" FootBone="Bip001 R Foot"/>
+						<property Frame="14" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Amove>
+				<Rush MoveType="BeastMove">
+					<Timing>
+						<property Frame="1" FootBone="Bip001 R Hand"/>
+						<property Frame="1" FootBone="Bip001 L Hand"/>
+						<property Frame="4" FootBone="Bip001 R Foot"/>
+						<property Frame="4" FootBone="Bip001 L Foot"/>
+						<property Frame="12" FootBone="Bip001 R Hand"/>
+						<property Frame="12" FootBone="Bip001 L Hand"/>
+						<property Frame="14" FootBone="Bip001 R Foot"/>
+						<property Frame="14" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Rush>
+				<Run MoveType="BeastMove">
+					<Timing>
+						<property Frame="1" FootBone="Bip001 R Hand"/>
+						<property Frame="1" FootBone="Bip001 L Hand"/>
+						<property Frame="4" FootBone="Bip001 R Foot"/>
+						<property Frame="4" FootBone="Bip001 L Foot"/>
+						<property Frame="12" FootBone="Bip001 R Hand"/>
+						<property Frame="12" FootBone="Bip001 L Hand"/>
+						<property Frame="14" FootBone="Bip001 R Foot"/>
+						<property Frame="14" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Run>
+			</Footstep>
+		</class>
+		<class name="Beast_Frog_Dot" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Dot.mesh" Scale="1" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.2" WalkSpeed="600" RunSpeed="600" AmoveSpeed="600" RushSpeed="720" BodyType="Human" AttachAnimPrefix="Beast_Frog_Dot" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+			<OfficeEquipment/>
+			<EmptyEquipment/>
+			<Footstep>
+				<Amove MoveType="BeastMove">
+					<Timing>
+						<property Frame="1" FootBone="Bip001 R Hand"/>
+						<property Frame="1" FootBone="Bip001 L Hand"/>
+						<property Frame="4" FootBone="Bip001 R Foot"/>
+						<property Frame="4" FootBone="Bip001 L Foot"/>
+						<property Frame="12" FootBone="Bip001 R Hand"/>
+						<property Frame="12" FootBone="Bip001 L Hand"/>
+						<property Frame="14" FootBone="Bip001 R Foot"/>
+						<property Frame="14" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Amove>
+				<Rush MoveType="BeastMove">
+					<Timing>
+						<property Frame="1" FootBone="Bip001 R Hand"/>
+						<property Frame="1" FootBone="Bip001 L Hand"/>
+						<property Frame="4" FootBone="Bip001 R Foot"/>
+						<property Frame="4" FootBone="Bip001 L Foot"/>
+						<property Frame="12" FootBone="Bip001 R Hand"/>
+						<property Frame="12" FootBone="Bip001 L Hand"/>
+						<property Frame="14" FootBone="Bip001 R Foot"/>
+						<property Frame="14" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Rush>
+				<Run MoveType="BeastMove">
+					<Timing>
+						<property Frame="1" FootBone="Bip001 R Hand"/>
+						<property Frame="1" FootBone="Bip001 L Hand"/>
+						<property Frame="4" FootBone="Bip001 R Foot"/>
+						<property Frame="4" FootBone="Bip001 L Foot"/>
+						<property Frame="12" FootBone="Bip001 R Hand"/>
+						<property Frame="12" FootBone="Bip001 L Hand"/>
+						<property Frame="14" FootBone="Bip001 R Foot"/>
+						<property Frame="14" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Run>
+			</Footstep>
+		</class>
+		<class name="Beast_Frog_White" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_White.mesh" Scale="0.9" InfoCamType="Battle_Info_Normal_Neguri" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.2" WalkSpeed="540" RunSpeed="540" AmoveSpeed="540" RushSpeed="648" BodyType="Human" AttachAnimPrefix="Beast_Frog_White" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+			<OfficeEquipment/>
+			<EmptyEquipment/>
+			<Footstep>
+				<Amove MoveType="BeastMove">
+					<Timing>
+						<property Frame="1" FootBone="Bip001 R Hand"/>
+						<property Frame="1" FootBone="Bip001 L Hand"/>
+						<property Frame="4" FootBone="Bip001 R Foot"/>
+						<property Frame="4" FootBone="Bip001 L Foot"/>
+						<property Frame="12" FootBone="Bip001 R Hand"/>
+						<property Frame="12" FootBone="Bip001 L Hand"/>
+						<property Frame="14" FootBone="Bip001 R Foot"/>
+						<property Frame="14" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Amove>
+				<Rush MoveType="BeastMove">
+					<Timing>
+						<property Frame="1" FootBone="Bip001 R Hand"/>
+						<property Frame="1" FootBone="Bip001 L Hand"/>
+						<property Frame="4" FootBone="Bip001 R Foot"/>
+						<property Frame="4" FootBone="Bip001 L Foot"/>
+						<property Frame="12" FootBone="Bip001 R Hand"/>
+						<property Frame="12" FootBone="Bip001 L Hand"/>
+						<property Frame="14" FootBone="Bip001 R Foot"/>
+						<property Frame="14" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Rush>
+				<Run MoveType="BeastMove">
+					<Timing>
+						<property Frame="1" FootBone="Bip001 R Hand"/>
+						<property Frame="1" FootBone="Bip001 L Hand"/>
+						<property Frame="4" FootBone="Bip001 R Foot"/>
+						<property Frame="4" FootBone="Bip001 L Foot"/>
+						<property Frame="12" FootBone="Bip001 R Hand"/>
+						<property Frame="12" FootBone="Bip001 L Hand"/>
+						<property Frame="14" FootBone="Bip001 R Foot"/>
+						<property Frame="14" FootBone="Bip001 L Foot"/>
+					</Timing>
+				</Run>
+			</Footstep>
+		</class>
+		<class name="Beast_Frog_Glutton" AnimationDefinition="Beast_Frog" ObjectAnimationInfo="Beast_Frog" BodySize="Neguri" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Frog_Glutton.mesh" Scale="0.6" InfoCamType="Battle_Info_Normal" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera_Frog" MoveCameraAniSpeed="1.5" WalkSpeed="360" RunSpeed="360" AmoveSpeed="360" RushSpeed="540" BodyType="Human" AttachAnimPrefix="Beast_Frog_Glutton" AdditionalSkeleton="Beast_Frog_Normal.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
 			<OfficeEquipment/>
 			<EmptyEquipment/>
 			<Footstep>
@@ -1663,7 +2030,163 @@
 				</Run>
 			</Footstep>
 		</class>
-		<class name="Beast_Spider_Grey3" AnimationDefinition="Beast_Spider" ObjectAnimationInfo="Beast_Spider" BodySize="Spider" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Spider_Grey.mesh" Scale="1.65" InfoCamType="Battle_Info_Normal_Spider" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera" MoveCameraAniSpeed="1.2" WalkSpeed="750" RunSpeed="750" AmoveSpeed="750" RushSpeed="900" BodyType="Human" AttachAnimPrefix="Beast_Spider_Black" AdditionalSkeleton="Beast_Spider_Black.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+		<class name="Beast_Spider_Grey3" AnimationDefinition="Beast_Spider" ObjectAnimationInfo="Beast_Spider" BodySize="Spider" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Spider_Grey.mesh" Scale="1.5" InfoCamType="Battle_Info_Normal_Spider" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera" MoveCameraAniSpeed="1.2" WalkSpeed="750" RunSpeed="750" AmoveSpeed="750" RushSpeed="900" BodyType="Human" AttachAnimPrefix="Beast_Spider_Black" AdditionalSkeleton="Beast_Spider_Black.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+			<OfficeEquipment/>
+			<EmptyEquipment/>
+			<Footstep>
+				<Amove MoveType="BeastMove">
+					<Timing>
+						<property Frame="0" FootBone="Bone_L1_05"/>
+						<property Frame="3" FootBone="Bone_R2_05"/>
+						<property Frame="5" FootBone="Bone_R1_05"/>
+						<property Frame="8" FootBone="Bone_L2_05"/>
+						<property Frame="11" FootBone="Bone_R2_05"/>
+						<property Frame="14" FootBone="Bone_R1_05"/>
+						<property Frame="17" FootBone="Bone_L2_05"/>
+					</Timing>
+				</Amove>
+				<Rush MoveType="BeastMove">
+					<Timing>
+						<property Frame="0" FootBone="Bone_L1_05"/>
+						<property Frame="3" FootBone="Bone_R2_05"/>
+						<property Frame="5" FootBone="Bone_R1_05"/>
+						<property Frame="8" FootBone="Bone_L2_05"/>
+						<property Frame="11" FootBone="Bone_R2_05"/>
+						<property Frame="14" FootBone="Bone_R1_05"/>
+						<property Frame="17" FootBone="Bone_L2_05"/>
+					</Timing>
+				</Rush>
+				<Run MoveType="BeastMove">
+					<Timing>
+						<property Frame="0" FootBone="Bone_L1_05"/>
+						<property Frame="3" FootBone="Bone_R2_05"/>
+						<property Frame="5" FootBone="Bone_R1_05"/>
+						<property Frame="8" FootBone="Bone_L2_05"/>
+						<property Frame="11" FootBone="Bone_R2_05"/>
+						<property Frame="14" FootBone="Bone_R1_05"/>
+						<property Frame="17" FootBone="Bone_L2_05"/>
+					</Timing>
+				</Run>
+			</Footstep>
+		</class>
+		<class name="Beast_Spider_BlackWidow1" AnimationDefinition="Beast_Spider" ObjectAnimationInfo="Beast_Spider" BodySize="Spider" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Spider_BlackWidow.mesh" Scale="0.75" InfoCamType="Battle_Info_Normal_Spider" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera" MoveCameraAniSpeed="1.4" WalkSpeed="374" RunSpeed="374" AmoveSpeed="374" RushSpeed="524" BodyType="Human" AttachAnimPrefix="Beast_Spider_Black" AdditionalSkeleton="Beast_Spider_Black.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+			<OfficeEquipment/>
+			<EmptyEquipment/>
+			<Footstep>
+				<Amove MoveType="BeastMove">
+					<Timing>
+						<property Frame="0" FootBone="Bone_L1_05"/>
+						<property Frame="3" FootBone="Bone_R2_05"/>
+						<property Frame="5" FootBone="Bone_R1_05"/>
+						<property Frame="8" FootBone="Bone_L2_05"/>
+						<property Frame="11" FootBone="Bone_R2_05"/>
+						<property Frame="14" FootBone="Bone_R1_05"/>
+						<property Frame="17" FootBone="Bone_L2_05"/>
+					</Timing>
+				</Amove>
+				<Rush MoveType="BeastMove">
+					<Timing>
+						<property Frame="0" FootBone="Bone_L1_05"/>
+						<property Frame="3" FootBone="Bone_R2_05"/>
+						<property Frame="5" FootBone="Bone_R1_05"/>
+						<property Frame="8" FootBone="Bone_L2_05"/>
+						<property Frame="11" FootBone="Bone_R2_05"/>
+						<property Frame="14" FootBone="Bone_R1_05"/>
+						<property Frame="17" FootBone="Bone_L2_05"/>
+					</Timing>
+				</Rush>
+				<Run MoveType="BeastMove">
+					<Timing>
+						<property Frame="0" FootBone="Bone_L1_05"/>
+						<property Frame="3" FootBone="Bone_R2_05"/>
+						<property Frame="5" FootBone="Bone_R1_05"/>
+						<property Frame="8" FootBone="Bone_L2_05"/>
+						<property Frame="11" FootBone="Bone_R2_05"/>
+						<property Frame="14" FootBone="Bone_R1_05"/>
+						<property Frame="17" FootBone="Bone_L2_05"/>
+					</Timing>
+				</Run>
+			</Footstep>
+		</class>
+		<class name="Beast_Spider_BlackWidow2" AnimationDefinition="Beast_Spider" ObjectAnimationInfo="Beast_Spider" BodySize="Spider" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Spider_BlackWidow.mesh" Scale="1" InfoCamType="Battle_Info_Normal_Spider" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera" MoveCameraAniSpeed="1.3" WalkSpeed="562" RunSpeed="562" AmoveSpeed="562" RushSpeed="731" BodyType="Human" AttachAnimPrefix="Beast_Spider_Black" AdditionalSkeleton="Beast_Spider_Black.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+			<OfficeEquipment/>
+			<EmptyEquipment/>
+			<Footstep>
+				<Amove MoveType="BeastMove">
+					<Timing>
+						<property Frame="0" FootBone="Bone_L1_05"/>
+						<property Frame="3" FootBone="Bone_R2_05"/>
+						<property Frame="5" FootBone="Bone_R1_05"/>
+						<property Frame="8" FootBone="Bone_L2_05"/>
+						<property Frame="11" FootBone="Bone_R2_05"/>
+						<property Frame="14" FootBone="Bone_R1_05"/>
+						<property Frame="17" FootBone="Bone_L2_05"/>
+					</Timing>
+				</Amove>
+				<Rush MoveType="BeastMove">
+					<Timing>
+						<property Frame="0" FootBone="Bone_L1_05"/>
+						<property Frame="3" FootBone="Bone_R2_05"/>
+						<property Frame="5" FootBone="Bone_R1_05"/>
+						<property Frame="8" FootBone="Bone_L2_05"/>
+						<property Frame="11" FootBone="Bone_R2_05"/>
+						<property Frame="14" FootBone="Bone_R1_05"/>
+						<property Frame="17" FootBone="Bone_L2_05"/>
+					</Timing>
+				</Rush>
+				<Run MoveType="BeastMove">
+					<Timing>
+						<property Frame="0" FootBone="Bone_L1_05"/>
+						<property Frame="3" FootBone="Bone_R2_05"/>
+						<property Frame="5" FootBone="Bone_R1_05"/>
+						<property Frame="8" FootBone="Bone_L2_05"/>
+						<property Frame="11" FootBone="Bone_R2_05"/>
+						<property Frame="14" FootBone="Bone_R1_05"/>
+						<property Frame="17" FootBone="Bone_L2_05"/>
+					</Timing>
+				</Run>
+			</Footstep>
+		</class>
+		<class name="Beast_Spider_BlackWidow3" AnimationDefinition="Beast_Spider" ObjectAnimationInfo="Beast_Spider" BodySize="Spider" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Spider_BlackWidow.mesh" Scale="1.65" InfoCamType="Battle_Info_Normal_Spider" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera" MoveCameraAniSpeed="1.2" WalkSpeed="750" RunSpeed="750" AmoveSpeed="750" RushSpeed="900" BodyType="Human" AttachAnimPrefix="Beast_Spider_Black" AdditionalSkeleton="Beast_Spider_Black.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+			<OfficeEquipment/>
+			<EmptyEquipment/>
+			<Footstep>
+				<Amove MoveType="BeastMove">
+					<Timing>
+						<property Frame="0" FootBone="Bone_L1_05"/>
+						<property Frame="3" FootBone="Bone_R2_05"/>
+						<property Frame="5" FootBone="Bone_R1_05"/>
+						<property Frame="8" FootBone="Bone_L2_05"/>
+						<property Frame="11" FootBone="Bone_R2_05"/>
+						<property Frame="14" FootBone="Bone_R1_05"/>
+						<property Frame="17" FootBone="Bone_L2_05"/>
+					</Timing>
+				</Amove>
+				<Rush MoveType="BeastMove">
+					<Timing>
+						<property Frame="0" FootBone="Bone_L1_05"/>
+						<property Frame="3" FootBone="Bone_R2_05"/>
+						<property Frame="5" FootBone="Bone_R1_05"/>
+						<property Frame="8" FootBone="Bone_L2_05"/>
+						<property Frame="11" FootBone="Bone_R2_05"/>
+						<property Frame="14" FootBone="Bone_R1_05"/>
+						<property Frame="17" FootBone="Bone_L2_05"/>
+					</Timing>
+				</Rush>
+				<Run MoveType="BeastMove">
+					<Timing>
+						<property Frame="0" FootBone="Bone_L1_05"/>
+						<property Frame="3" FootBone="Bone_R2_05"/>
+						<property Frame="5" FootBone="Bone_R1_05"/>
+						<property Frame="8" FootBone="Bone_L2_05"/>
+						<property Frame="11" FootBone="Bone_R2_05"/>
+						<property Frame="14" FootBone="Bone_R1_05"/>
+						<property Frame="17" FootBone="Bone_L2_05"/>
+					</Timing>
+				</Run>
+			</Footstep>
+		</class>
+		<class name="Beast_Spider_BlackWidow4" AnimationDefinition="Beast_Spider" ObjectAnimationInfo="Beast_Spider" BodySize="Spider" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Spider_BlackWidow.mesh" Scale="2.25" InfoCamType="Battle_Info_Normal_Spider" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera" MoveCameraAniSpeed="1.2" WalkSpeed="1124" RunSpeed="1124" AmoveSpeed="1124" RushSpeed="1462" BodyType="Human" AttachAnimPrefix="Beast_Spider_Black" AdditionalSkeleton="Beast_Spider_Black.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
 			<OfficeEquipment/>
 			<EmptyEquipment/>
 			<Footstep>
@@ -2404,6 +2927,14 @@
 				</Run>
 			</Footstep>
 		</class>
+		<class name="Beast_Spider_Egg" AnimationDefinition="Beast_Spider_Egg" ObjectAnimationInfo="Beast_Spider" BodySize="Spider" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Egg_Pocket_a_a.mesh" Scale="1" InfoCamType="Battle_Info_Normal_Egg" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera" MoveCameraAniSpeed="1" WalkSpeed="125" RunSpeed="900" AmoveSpeed="900" RushSpeed="900" BodyType="Human" AttachAnimPrefix="Beast_Spider" AdditionalSkeleton="" Invisible="false" RTTSceneCameraSet="Beast">
+			<OfficeEquipment/>
+			<EmptyEquipment/>
+		</class>
+		<class name="Beast_Spider_Egg_Dead" AnimationDefinition="Beast_Spider" ObjectAnimationInfo="Beast_Spider" BodySize="Spider" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Egg_Pocket_a_a_dead_Asset.mesh" Scale="1" InfoCamType="Battle_Info_Normal_Egg" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera" MoveCameraAniSpeed="1" WalkSpeed="125" RunSpeed="900" AmoveSpeed="900" RushSpeed="900" BodyType="Human" AttachAnimPrefix="Beast_Spider" AdditionalSkeleton="" Invisible="false" RTTSceneCameraSet="Beast">
+			<OfficeEquipment/>
+			<EmptyEquipment/>
+		</class>
 		<class name="Beast_Tima_Base" AnimationDefinition="Beast_Tima" ObjectAnimationInfo="Beast_Tima" BodySize="Tima" ThrowFrame="0" ThrowFromPos="None" DeadFrame="58" Mesh="Beast_Tima_Base.mesh" Scale="1.2" InfoCamType="Battle_Info_Normal_Tima" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera" MoveCameraAniSpeed="1.3" WalkSpeed="125" RunSpeed="900" AmoveSpeed="900" RushSpeed="1170" BodyType="Human" AttachAnimPrefix="Beast_Tima_Base" AdditionalSkeleton="" Invisible="false" RTTSceneCameraSet="Beast">
 			<OfficeEquipment/>
 			<EmptyEquipment/>
@@ -2734,15 +3265,45 @@
 				</Run>
 			</Footstep>
 		</class>
-		<class name="Beast_Dragon_Egg_A" AnimationDefinition="Beast_Dragon" ObjectAnimationInfo="Beast_Dragon" BodySize="Dragon" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Dragon_Egg_a.mesh" Scale="1" InfoCamType="Battle_Info_Normal_Egg" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera" MoveCameraAniSpeed="1" WalkSpeed="125" RunSpeed="900" AmoveSpeed="900" RushSpeed="900" BodyType="Human" AttachAnimPrefix="Beast_Dragon" AdditionalSkeleton="" Invisible="false" RTTSceneCameraSet="Beast">
+		<class name="Beast_Tima_Yellow" AnimationDefinition="Beast_Tima" ObjectAnimationInfo="Beast_Tima" BodySize="Tima" ThrowFrame="0" ThrowFromPos="None" DeadFrame="58" Mesh="Beast_Tima_Yellow.mesh" Scale="1.3" InfoCamType="Battle_Info_Normal_Tima" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera" MoveCameraAniSpeed="1.3" WalkSpeed="125" RunSpeed="900" AmoveSpeed="900" RushSpeed="1170" BodyType="Human" AttachAnimPrefix="Beast_Tima_Yellow" AdditionalSkeleton="Beast_Tima_Base.skeleton" Invisible="false" RTTSceneCameraSet="Beast">
+			<OfficeEquipment/>
+			<EmptyEquipment/>
+			<Footstep>
+				<Amove MoveType="BeastMove">
+					<Timing>
+						<property Frame="0" FootBone="Bip001 R Toe0"/>
+						<property Frame="3" FootBone="Bip001 R Finger0"/>
+						<property Frame="7" FootBone="Bip001 L Finger0"/>
+						<property Frame="14" FootBone="Bip001 L Toe0"/>
+					</Timing>
+				</Amove>
+				<Rush MoveType="BeastMove">
+					<Timing>
+						<property Frame="0" FootBone="Bip001 R Toe0"/>
+						<property Frame="3" FootBone="Bip001 R Finger0"/>
+						<property Frame="7" FootBone="Bip001 L Finger0"/>
+						<property Frame="14" FootBone="Bip001 L Toe0"/>
+					</Timing>
+				</Rush>
+				<Run MoveType="BeastMove">
+					<Timing>
+						<property Frame="0" FootBone="Bip001 R Toe0"/>
+						<property Frame="3" FootBone="Bip001 R Finger0"/>
+						<property Frame="7" FootBone="Bip001 L Finger0"/>
+						<property Frame="14" FootBone="Bip001 L Toe0"/>
+					</Timing>
+				</Run>
+			</Footstep>
+		</class>
+		<class name="Beast_Dragon_Egg_A" AnimationDefinition="None" ObjectAnimationInfo="Beast_Dragon" BodySize="Dragon" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Dragon_Egg_a.mesh" Scale="1" InfoCamType="Battle_Info_Normal_Egg" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera" MoveCameraAniSpeed="1" WalkSpeed="125" RunSpeed="900" AmoveSpeed="900" RushSpeed="900" BodyType="Human" AttachAnimPrefix="Beast_Dragon" AdditionalSkeleton="" Invisible="false" RTTSceneCameraSet="Beast">
 			<OfficeEquipment/>
 			<EmptyEquipment/>
 		</class>
-		<class name="Beast_Dragon_Egg_B" AnimationDefinition="Beast_Dragon" ObjectAnimationInfo="Beast_Dragon" BodySize="Dragon" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Dragon_Egg_b.mesh" Scale="1" InfoCamType="Battle_Info_Normal_Egg" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera" MoveCameraAniSpeed="1" WalkSpeed="125" RunSpeed="900" AmoveSpeed="900" RushSpeed="900" BodyType="Human" AttachAnimPrefix="Beast_Dragon" AdditionalSkeleton="" Invisible="false" RTTSceneCameraSet="Beast">
+		<class name="Beast_Dragon_Egg_B" AnimationDefinition="None" ObjectAnimationInfo="Beast_Dragon" BodySize="Dragon" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Dragon_Egg_b.mesh" Scale="1" InfoCamType="Battle_Info_Normal_Egg" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera" MoveCameraAniSpeed="1" WalkSpeed="125" RunSpeed="900" AmoveSpeed="900" RushSpeed="900" BodyType="Human" AttachAnimPrefix="Beast_Dragon" AdditionalSkeleton="" Invisible="false" RTTSceneCameraSet="Beast">
 			<OfficeEquipment/>
 			<EmptyEquipment/>
 		</class>
-		<class name="Beast_Dragon_Egg_C" AnimationDefinition="Beast_Dragon" ObjectAnimationInfo="Beast_Dragon" BodySize="Dragon" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Dragon_Egg_c.mesh" Scale="1" InfoCamType="Battle_Info_Normal_Egg" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera" MoveCameraAniSpeed="1" WalkSpeed="125" RunSpeed="900" AmoveSpeed="900" RushSpeed="900" BodyType="Human" AttachAnimPrefix="Beast_Dragon" AdditionalSkeleton="" Invisible="false" RTTSceneCameraSet="Beast">
+		<class name="Beast_Dragon_Egg_C" AnimationDefinition="None" ObjectAnimationInfo="Beast_Dragon" BodySize="Dragon" ThrowFrame="0" ThrowFromPos="None" DeadFrame="60" Mesh="Beast_Dragon_Egg_c.mesh" Scale="1" InfoCamType="Battle_Info_Normal_Egg" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera" MoveCameraAniSpeed="1" WalkSpeed="125" RunSpeed="900" AmoveSpeed="900" RushSpeed="900" BodyType="Human" AttachAnimPrefix="Beast_Dragon" AdditionalSkeleton="" Invisible="false" RTTSceneCameraSet="Beast">
 			<OfficeEquipment/>
 			<EmptyEquipment/>
 		</class>
@@ -9662,6 +10223,14 @@
 			<EmptyEquipment/>
 		</class>
 		<class name="ItemCube_White_Off" AnimationDefinition="ItemCube_Off" ObjectAnimationInfo="ItemCube_White_Off" BodySize="Undefined" ThrowFrame="0" ThrowFromPos="None" DeadFrame="0" Mesh="Item_Cube_White_Off.mesh" Scale="0.9" InfoCamType="Battle_Info_Normal" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera" WalkSpeed="0" RunSpeed="0" AmoveSpeed="0" RushSpeed="0" BodyType="Metal" AttachAnimPrefix="ItemCube" Invisible="false" TargetMarkType="Center" RTTSceneCameraSet="Normal">
+			<OfficeEquipment/>
+			<EmptyEquipment/>
+		</class>
+		<class name="RustBox_Active" AnimationDefinition="RustBox_Active" ObjectAnimationInfo="ItemCube_White_Active" BodySize="Undefined" ThrowFrame="0" ThrowFromPos="None" DeadFrame="0" Mesh="Box_Metal_Rust.mesh" Scale="1.5" InfoCamType="Battle_Info_Normal" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera" WalkSpeed="0" RunSpeed="0" AmoveSpeed="0" RushSpeed="0" BodyType="Metal" AttachAnimPrefix="ItemCube" Invisible="false" TargetMarkType="Center" RTTSceneCameraSet="Normal">
+			<OfficeEquipment/>
+			<EmptyEquipment/>
+		</class>
+		<class name="RustBox_Off" AnimationDefinition="RustBox_Off" ObjectAnimationInfo="ItemCube_White_Off" BodySize="Undefined" ThrowFrame="0" ThrowFromPos="None" DeadFrame="0" Mesh="Box_Metal_Rust.mesh" Scale="1.5" InfoCamType="Battle_Info_Normal" InfoAnimation="Astd" MemberInfoCamType="MemberInfo" FaceCamType="NPCFacing" MoveCamera="MoveCamera" WalkSpeed="0" RunSpeed="0" AmoveSpeed="0" RushSpeed="0" BodyType="Metal" AttachAnimPrefix="ItemCube" Invisible="false" TargetMarkType="Center" RTTSceneCameraSet="Normal">
 			<OfficeEquipment/>
 			<EmptyEquipment/>
 		</class>

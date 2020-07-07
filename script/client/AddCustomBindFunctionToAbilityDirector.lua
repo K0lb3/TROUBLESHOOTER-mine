@@ -1038,6 +1038,9 @@ end
 ------------------------------- VoiceText 연출 --------------------------------
 ------------------------------------------------------------------------------
 function UpdateCharacterVoiceText(args)
+	if not IsClient() then
+		return;
+	end
 	if not GetOption().Gameplay.ShowCharacterVoiceText then
 		return;
 	end

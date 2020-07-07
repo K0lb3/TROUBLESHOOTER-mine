@@ -7,7 +7,7 @@
 	</class>
 	<class name="Pierto_Selection">
 		<Scripts>
-			<property Type="Switch" C_DlgName="npc.Info.Title" C_TestTarget="not company.Progress.Tutorial.LostShop and company.LostShop.IsNew">
+			<property Type="Switch" C_DlgName="npc.Info.Title" C_TestTarget="not company.Progress.Tutorial.LostShop and (company.LostShop.IsNew or company.MissionCleared.Tutorial_Orsay)">
 				<property C_Case="true">
 					<property Type="Jump" JumpTo="Pierto_Tutorial_LostShop"/>
 				</property>
@@ -124,7 +124,7 @@
 			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Surprise" Mode="Continue" Close="false" Message="[!speaker:Albus_Surprise]아니 그건..." DialogType="Sub" Slot="Right3" Effect="Appear"/>
 			<property Type="BattleDialog" SpeakerInfo="Pierto" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Pierto_Normal]농담이네. 농담." DialogType="Sub" Slot="Left3" Effect="Appear"/>
 			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="Embarrassed" Mode="Continue" Close="false" Message="[!speaker:Albus_Embarrassed]......" DialogType="Sub" Slot="Right3" Effect="Appear"/>
-			<property Type="BattleDialog" SpeakerInfo="Pierto" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Pierto_Normal]편한 것도 가끔은 시장 거리에도 나가고 해 봐." DialogType="Sub" Slot="Left3" Effect="Appear"/>
+			<property Type="BattleDialog" SpeakerInfo="Pierto" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Pierto_Normal]편한 것도 좋지만 가끔은 시장 거리에도 나가고 해 봐" DialogType="Sub" Slot="Left3" Effect="Appear"/>
 			<property Type="BattleDialog" SpeakerInfo="Albus" SpeakerEmotion="SurpriseStare" Mode="Continue" Close="false" Message="[!speaker:Albus_SurpriseStare]네?" DialogType="Sub" Slot="Right3" Effect="Appear"/>
 			<property Type="BattleDialog" SpeakerInfo="Pierto" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Pierto_Normal]일단 유통 단계를 하나 거치다보니 자네들이 직접 구하는 것보다는 비싸게 느껴질지 모르겠만..." DialogType="Sub" Slot="Left3" Effect="Appear"/>
 			<property Type="BattleDialog" SpeakerInfo="Pierto" SpeakerEmotion="Normal" Mode="Continue" Close="false" Message="[!speaker:Pierto_Normal]돈만 있다면 언제든지 편하게 구할 수 있다네." DialogType="Sub" Slot="Left3" Effect="Appear"/>

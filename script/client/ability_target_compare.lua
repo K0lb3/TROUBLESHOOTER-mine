@@ -18,11 +18,11 @@ function ConstructCompareAbilityUsingTargetInfo(user, ability, target)
 	end			
 	-- 데미지
 	if ability.Type == 'Attack' then
-		ret.Damage = GetDamageCalculator(user, target, ability, weather, GetPosition(target), 1);
+		ret.Damage = GetDamageCalculator(user, target, ability, weather, temperature, GetPosition(target), 1);
 	end
 	-- 힐
 	if ability.Type == 'Heal' and ability.SubType2 == 'HP' then
-		local heal = GetDamageCalculator(user, target, ability, weather, GetPosition(target), 1);
+		local heal = GetDamageCalculator(user, target, ability, weather, temperature, GetPosition(target), 1);
 		ret.Heal = math.min(heal, target.MaxHP - target.HP);
 	end	
 	-- 힐

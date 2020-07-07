@@ -43,7 +43,7 @@ function IsEnableIdentifyItem(item, company)
 		isEnable = false;
 	end
 	-- 6. 옵션 그룹이 있는가.
-	local itemOptionGroup = itemIdentifyTypeList[item.Type.name];
+	local itemOptionGroup = itemIdentifyTypeList[item.IdentifyType];
 	if not itemOptionGroup then
 		table.insert(reason, 'NoItemOptionGroup');
 		isEnable = false;
@@ -61,7 +61,7 @@ end
 function GetIdentifyItemOptions(item)
 	local itemIdentifyTypeList = GetClassList('ItemIdentifyType');
 	local itemIdentifyList = GetClassList('ItemIdentify');
-	local itemOptionGroup = itemIdentifyTypeList[item.Type.name];
+	local itemOptionGroup = itemIdentifyTypeList[item.IdentifyType];
 	
 	local picker = RandomPicker.new();
 	for key, value in pairs (itemOptionGroup.Options) do

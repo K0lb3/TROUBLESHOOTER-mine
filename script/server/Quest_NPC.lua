@@ -80,3 +80,18 @@ function TestQuestStart(company, npc, questType, curQuest)
 	end
 	return true;
 end
+
+function TestQuestReplayEnable(company, npc)
+	local checked = {};
+	for _, propName in ipairs({ 'EndQuest', 'ProgressQuest', 'ProgressQuest_Client', 'StartQuest' }) do
+		for _, questType in pairs(npc[propName]) do
+			if not checked[questType] then
+				checked[questType] = true;			
+				if GetQuestState(company, questType) == 'Completed' then
+					return true;
+				end
+			end
+		end
+	end
+	return false;
+end

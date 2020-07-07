@@ -1377,7 +1377,7 @@
 			<property name="Ability_QuickShaving">
 				<Voice>
 					<property Sound="Voice/Voice_Alisa_Ability_QuickShaving_01.ogg" Prob="10" Text="[!speaker:Alisa]퀵 쉐이빙!" Offset="0" Volume="1"/>
-					<property Sound="Voice/Voice_Alisa_Ability_QuickShaving_02.ogg" Prob="10" Text="[!speaker:Alisa]ㅎ그러게 도망쳤어야지!" Offset="0" Volume="1"/>
+					<property Sound="Voice/Voice_Alisa_Ability_QuickShaving_02.ogg" Prob="10" Text="[!speaker:Alisa]하. 그러게 도망쳤어야지!" Offset="0" Volume="1"/>
 				</Voice>
 			</property>
 			<property name="Attack_CriticalHit">
@@ -1478,7 +1478,7 @@
 					<property Sound="Voice/Voice_Alisa_Move_01.ogg" Prob="10" Text="[!speaker:Alisa]거점 확보하겠다" Offset="0" Volume="1"/>
 					<property Sound="Voice/Voice_Alisa_Move_02.ogg" Prob="10" Text="[!speaker:Alisa]알았어!" Offset="0" Volume="1"/>
 					<property Sound="Voice/Voice_Alisa_Move_03.ogg" Prob="10" Text="[!speaker:Alisa]신속히 이동한다!" Offset="0" Volume="1"/>
-					<property Sound="Voice/Voice_Alisa_Move_04.ogg" Prob="10" Text="[!speaker:Alisa]너무 긴장하지 않아도 되" Offset="0" Volume="1"/>
+					<property Sound="Voice/Voice_Alisa_Move_04.ogg" Prob="10" Text="[!speaker:Alisa]너무 긴장하지 않아도 돼" Offset="0" Volume="1"/>
 					<property Sound="Voice/Voice_Alisa_Move_05.ogg" Prob="10" Text="[!speaker:Alisa]그렇게 조급해 할 필요없어" Offset="0" Volume="1"/>
 					<property Sound="Voice/Voice_Alisa_Move_06.ogg" Prob="10" Text="[!speaker:Alisa]내가 있으니 걱정마" Offset="0" Volume="1"/>
 				</Voice>
@@ -1594,7 +1594,7 @@
 					<property Sound="Voice/Voice_Anne_Attack_CriticalHit_01.ogg" Prob="10" Text="[!speaker:Anne]후후, 혼나야죠!" Offset="0" Volume="1"/>
 					<property Sound="Voice/Voice_Anne_Attack_CriticalHit_02.ogg" Prob="10" Text="[!speaker:Anne]혼나야죠!" Offset="0" Volume="1"/>
 					<property Sound="Voice/Voice_Anne_Attack_CriticalHit_03.ogg" Prob="10" Text="[!speaker:Anne]저 화났어요!" Offset="0" Volume="1"/>
-					<property Sound="Voice/Voice_Anne_Attack_CriticalHit_04.ogg" Prob="10" Text="[!speaker:Anne]아플거에요!" Offset="0" Volume="1"/>
+					<property Sound="Voice/Voice_Anne_Attack_CriticalHit_04.ogg" Prob="10" Text="[!speaker:Anne]아플 거에요!" Offset="0" Volume="1"/>
 				</Voice>
 			</property>
 			<property name="Attack_Fail">
@@ -2374,7 +2374,7 @@
 					<property Sound="Voice/Voice_Irene_Attack_Miss_01.ogg" Prob="10" Text="[!speaker:Irene]으햐아아.. 안풀리네~!" Offset="0" Volume="0.9"/>
 					<property Sound="Voice/Voice_Irene_Attack_Miss_02.ogg" Prob="10" Text="[!speaker:Irene]칫.. 피하다니!" Offset="0" Volume="0.9"/>
 					<property Sound="Voice/Voice_Irene_Attack_Miss_03.ogg" Prob="10" Text="[!speaker:Irene]뭐야!? 빗나갔어!" Offset="0" Volume="0.9"/>
-					<property Sound="Voice/Voice_Irene_Attack_Miss_04.ogg" Prob="10" Text="[!speaker:Irene]이 악당녀석! 비것하다!" Offset="0" Volume="0.9"/>
+					<property Sound="Voice/Voice_Irene_Attack_Miss_04.ogg" Prob="10" Text="[!speaker:Irene]이 악당 녀석! 비겁하다!" Offset="0" Volume="0.9"/>
 				</Voice>
 			</property>
 			<property name="Damage">

@@ -46,7 +46,7 @@
 						<property name="Month" value="5"/>
 					</Date>
 				</property>
-				<property Stage="Tutorial_CrowBillAfter" Mission="Tutorial_CrowBillAfter" Title="하염 없이 내리는 빗줄기" Location="까마귀부리 정류장" DescTitle="발할라의 빛이 되리라" Desc="현장의 사람들은 이 날만큼은 범죄자들을 제압하여 발할라의 치안을 지켜낸 것을 기뻐할 수 없었다. 아무리 발달한 의료 기술이라도 이미 생을 달리한 사람을 살릴 수 는 없기 때문이다." Rank="B" Image="Loading_CrowBillAfter" ButtonImage="Troublebook/Tutorial_CrowBillAfter" ButtonDisabledImage="Troublebook/Tutorial_CrowBillAfter_Disabled">
+				<property Stage="Tutorial_CrowBillAfter" Mission="Tutorial_CrowBillAfter" Title="하염없이 내리는 빗줄기" Location="까마귀부리 정류장" DescTitle="발할라의 빛이 되리라" Desc="현장의 사람들은 이날만큼은 범죄자들을 제압하여 발할라의 치안을 지켜낸 것을 기뻐할 수 없었다. 아무리 발달한 의료 기술이라도 이미 생을 달리한 사람을 살릴 수는 없기 때문이다." Rank="B" Image="Loading_CrowBillAfter" ButtonImage="Troublebook/Tutorial_CrowBillAfter" ButtonDisabledImage="Troublebook/Tutorial_CrowBillAfter_Disabled">
 					<Date>
 						<property name="Year" value="803"/>
 						<property name="Month" value="6"/>

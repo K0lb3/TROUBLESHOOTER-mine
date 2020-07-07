@@ -132,7 +132,7 @@ function DefaultFieldEffectApplyLevelDeterminer(buffAffector, fieldEffect, targe
 	local mt = GetMastery(target);
 	local mastery_WildLife = GetMasteryMasteredLikeWildLife(mt);
 	-- 지형효과 디버프 면역 (ex. 전문 사냥꾼의 부츠, 철거업자 운동화)
-	local mastery_ImmuneDebuff_FieldEffect = GetMasteryMastered(mt, 'Boots_BlackIron_Legend') or GetMasteryMastered(mt, 'Sneakers_Wrecking_Set');	
+	local mastery_ImmuneDebuff_FieldEffect = GetMasteryMastered(mt, 'Boots_BlackIron_Legend') or GetMasteryMastered(mt, 'Sneakers_Wrecking_Set') or GetMasteryMastered(mt, 'Boots_Extractor_Set');	
 	local mastery = mastery_WildLife or mastery_ImmuneDebuff_FieldEffect;
 	if mastery then
 		local targetBuffApplySet = {

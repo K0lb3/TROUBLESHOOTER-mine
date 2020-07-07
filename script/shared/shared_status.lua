@@ -287,7 +287,13 @@ function CalculatedProperty_Status_Item(obj, arg, data)
 	end
 	-- 무기의 달인 (무기 카테고리 한정)
 	local mastery_Weaponmaster = GetMasteryMasteredWithData(obj, 'Weaponmaster', data);
-	if mastery_Weaponmaster and (arg == 'AttackPower' or arg == 'ESPPower') then		
+	if mastery_Weaponmaster and (arg == 'AttackPower' or arg == 'ESPPower') then
+		local applyAmount = mastery_Weaponmaster.ApplyAmount;
+		-- 백병전의 달인
+		local mastery_MeleeBattleMaster = GetMasteryMasteredWithData(obj, 'MeleeBattleMaster', data);
+		if mastery_MeleeBattleMaster then
+			applyAmount = applyAmount + mastery_MeleeBattleMaster.ApplyAmount;
+		end
 		local weaponAmount = 0;
 		for i = 1, #equipments do
 			local curEquip = equipments[i];
@@ -299,7 +305,7 @@ function CalculatedProperty_Status_Item(obj, arg, data)
 			end
 		end	
 		if weaponAmount > 0 then
-			local addAmount = math.floor(weaponAmount * mastery_Weaponmaster.ApplyAmount / 100);
+			local addAmount = math.floor(weaponAmount * applyAmount / 100);
 			if addAmount ~= 0 then
 				result = result + addAmount;
 				table.insert(info, MakeMasteryStatInfo(mastery_Weaponmaster.name, addAmount));
@@ -413,11 +419,7 @@ function CalculatedProperty_Status_Mastery(obj, arg, data)
 	return result;
 end
 function CalculatedProperty_Status_Cloaking(obj, arg, data)
-	if obj.Detected then
-		return false;
-	else
-		return CalculatedProperty_Status_Boolean_Or(obj, arg, data);
-	end
+	return CalculatedProperty_Status_Boolean_Or(obj, arg, data);
 end
 ---------------------------------------------------------------------------------------
 -- CalculatedProperty_SpecialCase_Mastery_ 스테이터스에서 특성으로 추가계산해주는 부분.
@@ -669,6 +671,16 @@ function CalculatedProperty_SpecialCase_Mastery_MaxHP(obj, arg, data)
 		return math.floor(mastery.CustomCacheData.All / mastery.ApplyAmount) * mastery.ApplyAmount4;
 	end);
 	
+	-- 생명의 불꽃
+	result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'LifeFlame', data, info, function(obj, mastery)
+		return math.floor(mastery.CustomCacheData / mastery.ApplyAmount) * mastery.ApplyAmount2;
+	end);
+	
+	-- 노익장
+	result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'LegendVeteran', data, info, function(obj, mastery)
+		return math.floor(mastery.CustomCacheData / mastery.ApplyAmount) * mastery.ApplyAmount2;
+	end);
+	
 	return result, info;
 end
 function CalculatedProperty_SpecialCase_Mastery_AttackPower(obj, arg, data)
@@ -808,6 +820,17 @@ function CalculatedProperty_SpecialCase_Mastery_Accuracy(obj, arg, data)
 	-- 리듬에 맞춰 흥겹게
 	result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'RhythmicalMovements', data, info, function(obj, mastery)
 		return mastery.CustomCacheData['Attack'] * mastery.ApplyAmount4;
+	end);
+	
+	-- 신경망 가속
+	result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'NeuralNetworkAcceleration', data, info, function(obj, mastery)
+		local addValue = 0;
+		-- 강화된 신경망
+		local mastery_EnhancedNeuralNetwork = GetMasteryMasteredWithData(obj, 'EnhancedNeuralNetwork', data);
+		if mastery_EnhancedNeuralNetwork then
+			addValue = addValue + math.floor(mastery.CustomCacheData / mastery_EnhancedNeuralNetwork.ApplyAmount2) * mastery_EnhancedNeuralNetwork.ApplyAmount3;
+		end
+		return addValue;
 	end);
 	
 	return result, info;
@@ -1004,6 +1027,22 @@ function CalculatedProperty_SpecialCase_Mastery_Armor(obj, arg, data)
 		return math.floor(mastery.CustomCacheData.Beast / mastery.ApplyAmount) * mastery.ApplyAmount2
 		 + math.floor(mastery.CustomCacheData.Draky / mastery.ApplyAmount) * mastery.ApplyAmount3;
 	end);
+	-- 신경망 제어
+	result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'NeuralNetworkControl', data, info, function(obj, mastery)
+		local addValue = 0;
+		-- 강화된 신경망
+		local mastery_EnhancedNeuralNetwork = GetMasteryMasteredWithData(obj, 'EnhancedNeuralNetwork', data);
+		if mastery_EnhancedNeuralNetwork then
+			addValue = addValue + math.floor(mastery.CustomCacheData / mastery_EnhancedNeuralNetwork.ApplyAmount4) * mastery_EnhancedNeuralNetwork.ApplyAmount5;
+		end
+		return addValue;
+	end);
+	-- 야샤의 딱딱한 껍질
+	local addMastery_Amulet_Yasha_Scale = GetAdditionalMasteryStatusByLevel(obj, 'Amulet_Yasha_Scale', data);
+	if addMastery_Amulet_Yasha_Scale ~= 0 then
+		result = result + addMastery_Amulet_Yasha_Scale;
+		table.insert(info, { Type = 'Amulet_Yasha_Scale', Value = addMastery_Amulet_Yasha_Scale, ValueType = 'Equipment'});
+	end
 	
 	return result, info;
 end
@@ -1067,6 +1106,16 @@ function CalculatedProperty_SpecialCase_Mastery_Resistance(obj, arg, data)
 	result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'HardScale', data, info, function(obj, mastery)
 		return math.floor(mastery.CustomCacheData.ESP / mastery.ApplyAmount) * mastery.ApplyAmount2
 		+ math.floor(mastery.CustomCacheData.Draky / mastery.ApplyAmount) * mastery.ApplyAmount3;
+	end);
+	-- 신경망 제어
+	result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'NeuralNetworkControl', data, info, function(obj, mastery)
+		local addValue = 0;
+		-- 강화된 신경망
+		local mastery_EnhancedNeuralNetwork = GetMasteryMasteredWithData(obj, 'EnhancedNeuralNetwork', data);
+		if mastery_EnhancedNeuralNetwork then
+			addValue = addValue + math.floor(mastery.CustomCacheData / mastery_EnhancedNeuralNetwork.ApplyAmount4) * mastery_EnhancedNeuralNetwork.ApplyAmount5;
+		end
+		return addValue;
 	end);
 	
 	return result, info;
@@ -1221,6 +1270,11 @@ function CalculatedProperty_SpecialCase_Mastery_Dodge(obj, arg, data)
 		return mastery.CustomCacheData['Defence'] * mastery.ApplyAmount4;
 	end);
 	
+	-- 신경망 제어
+	result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'NeuralNetworkControl', data, info, function(obj, mastery)
+		return math.floor(mastery.CustomCacheData / mastery.ApplyAmount3) * mastery.ApplyAmount4;
+	end);
+	
 	return result, info;
 end
 function CalculatedProperty_SpecialCase_Mastery_Block(obj, arg, data)
@@ -1253,6 +1307,11 @@ function CalculatedProperty_SpecialCase_Mastery_Block(obj, arg, data)
 		return math.floor(mastery.CustomCacheData / mastery.ApplyAmount) * mastery.ApplyAmount3;
 	end);
 	
+	-- 신경망 제어
+	result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'NeuralNetworkControl', data, info, function(obj, mastery)
+		return math.floor(mastery.CustomCacheData / mastery.ApplyAmount3) * mastery.ApplyAmount4;
+	end);
+	
 	return result, info;
 end
 function CalculatedProperty_SpecialCase_Mastery_IncreaseDamage(obj, arg, data)
@@ -1267,6 +1326,11 @@ function CalculatedProperty_SpecialCase_Mastery_IncreaseDamage(obj, arg, data)
 	
 	-- 통합 강화 프로그램
 	result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'Module_ApplicationEnhancement', data, info, function(obj, mastery)
+		return math.floor(mastery.CustomCacheData / mastery.ApplyAmount) * mastery.ApplyAmount2;
+	end);
+	
+	-- 맹화
+	result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'RagedFire', data, info, function(obj, mastery)
 		return math.floor(mastery.CustomCacheData / mastery.ApplyAmount) * mastery.ApplyAmount2;
 	end);
 	
@@ -1312,6 +1376,11 @@ function CalculatedProperty_SpecialCase_Mastery_Speed(obj, arg, data)
 	-- 리듬에 맞춰 흥겹게
 	result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'RhythmicalMovements', data, info, function(obj, mastery)
 		return mastery.CustomCacheData['Ability'] * mastery.ApplyAmount5;
+	end);
+	
+	-- 신경망 가속
+	result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'NeuralNetworkAcceleration', data, info, function(obj, mastery)
+		return math.floor(mastery.CustomCacheData / mastery.ApplyAmount) * mastery.ApplyAmount2;
 	end);
 	
 	return result, info;
@@ -1479,6 +1548,70 @@ function CalculatedProperty_SpecialCase_Mastery_PerformanceSlot(obj, arg, data)
 			return mastery.ApplyAmount;
 		end);
 	end
+	return result, info;
+end
+function CalculatedProperty_SpecialCase_Mastery_IncreaseDamage_ESP(obj, arg, data)
+	local result = 0;
+	local info = {};
+	-- 마도서
+	local spellBookCount = nil;
+	result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'SpellBook', data, info, function(obj, mastery)
+		spellBookCount = mastery.CustomCacheData;
+		return spellBookCount * mastery.ApplyAmount;
+	end);
+	if spellBookCount ~= nil then
+		-- 금지된 마도서
+		result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'ForbiddenBook', data, info, function(obj, mastery)
+			return spellBookCount * mastery.ApplyAmount;
+		end);
+	end
+	
+	-- 마녀의 책
+	local witchBookCount = nil;
+	result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'WitchBook', data, info, function(obj, mastery)
+		witchBookCount = mastery.CustomCacheData;
+		return witchBookCount * mastery.ApplyAmount;
+	end);
+	if witchBookCount ~= nil then
+		-- 대마녀
+		result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'ArchWitch', data, info, function(obj, mastery)
+			return witchBookCount * mastery.ApplyAmount;
+		end);
+	end
+	
+	-- 특성 현자
+	local addMastery_Sage = GetAdditionalMasteryStatusByMasteryCount(obj, 'Sage', data, function(mastery)
+		if mastery.Lv <= 0 then
+			return false;
+		end
+		return mastery.Category.name == 'Set';
+	end, 'ApplyAmount2');
+	if addMastery_Sage ~= 0 then
+		result = result + addMastery_Sage;
+		table.insert(info, MakeMasteryStatInfo('Sage', addMastery_Sage));
+	end
+	
+	return result, info;
+end
+function CalculatedProperty_SpecialCase_Mastery_IncreaseDamage_Physical(obj, arg, data)
+	local result = 0;
+	local info = {};
+	
+	return result, info;
+end
+function CalculatedProperty_SpecialCase_Mastery_IncreaseDamage_Melee(obj, arg, data)
+	local result = 0;
+	local info = {};
+	
+	-- 발경
+	result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'ReleaseEnergy', data, info, function(obj, mastery)
+		return mastery.ApplyAmount;
+	end);
+	-- 사석위호
+	result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'StuckArrowheadInStone', data, info, function(obj, mastery)
+		return mastery.ApplyAmount;
+	end);
+	
 	return result, info;
 end
 ---------------------------------------------------------------------------------------
@@ -1823,17 +1956,13 @@ function CalculatedProperty_Ability_ServantAbility(obj, arg)
 end
 function CalculatedProperty_Ability_NoSightLimit(obj, arg)
 	local targetRangeCls = GetClassList('Range')[obj.TargetRange];
-	return not targetRangeCls.SightFilter;
+	return not SafeIndex(targetRangeCls, 'SightFilter');
 end
 function CalculatedProperty_ItemTradable(item, arg)
 	if not item.Category.IsTradable then
 		return false;
 	end
-	if item.Rank.BindType == 'None' then
-		return true;
-	else
-		return not item.Binded;
-	end
+	return not item.Binded;
 end
 function CalculatedProperty_ItemSellable(item, arg)
 	return item.Rank.Sellable and item.Category.IsSellable and item.Type.Sellable;
@@ -2234,6 +2363,9 @@ function CalculatedProperty_SpecialCase_SightRange(obj, arg, data)
 			local immuneMastery = nil;
 			if IsDarkTime(mission.MissionTime.name) then
 				immuneMastery = GetMasteryMasteredWithData(obj, 'MoonBeast', data);
+				if not immuneMastery and HasBuff(obj, 'Illumination') then
+					immuneMastery = GetClassList('Mastery')['Illumination'];
+				end
 			end
 			if immuneMastery then
 				result = result - sightPenalty;
@@ -2254,6 +2386,7 @@ end
 -------------------------------------------------------------------
 local sharedKeywordTable = nil;
 local sharedKeywordTableNoColor = nil;
+g_masteryApplyAmountExplain = false;
 local customKeywordTable = {
 	Buff = {
 		Dead = function(buff)
@@ -3426,8 +3559,28 @@ local customKeywordTable = {
 		end,
 		TargetItem = function(quest)
 			return GetQuestTargetItemText(quest);
+		end,
+		TargetCivilName = function(quest)
+			return GetQuestTargetCivilNameText(quest);
 		end
-	}
+	},
+	ApplyAmount = {
+		ApplyAmountValue = function(obj)
+			return MasteryApplyAmountValue(obj.ApplyAmountType, 'ApplyAmount', true);
+		end,
+		ApplyAmountValue2 = function(obj)
+			return MasteryApplyAmountValue(obj.ApplyAmountType2, 'ApplyAmount2', true);
+		end,
+		ApplyAmountValue3 = function(obj)
+			return MasteryApplyAmountValue(obj.ApplyAmountType3, 'ApplyAmount3', true);
+		end,
+		ApplyAmountValue4 = function(obj)
+			return MasteryApplyAmountValue(obj.ApplyAmountType4, 'ApplyAmount4', true);
+		end,
+		ApplyAmountValue5 = function(obj)
+			return MasteryApplyAmountValue(obj.ApplyAmountType5, 'ApplyAmount5', true);
+		end,
+	},
 };
 function GetCustomKeywordTable(idspace)
 	return customKeywordTable[idspace];
@@ -3592,6 +3745,14 @@ function CalculatedProperty_TextFormater_GameDifficulty(obj, arg)
 		desc = desc..GetMasteryMasteryDescBaseText(obj.Desc_Base, '$White$', '$White$');
 	end
 	return FormatMessageWithCustomKeywordTable(desc, obj, idspace, false);
+end
+function CalculatedProperty_TextFormater_ApplyAmount(obj, arg)
+	local desc = ''
+	local descBase = GetWithoutError(obj, 'Desc_Base');
+	if descBase and #descBase > 0 then
+		desc = desc..GetMasteryMasteryDescBaseText(descBase, '$White$', '$White$');
+	end
+	return FormatMessageWithCustomKeywordTable(desc, obj, 'ApplyAmount', false);
 end
 function GetMasteryAbility(mastery, abilityType)
 	local result = nil;
@@ -3766,6 +3927,12 @@ function CalculatedProperty_ItemIdentifyPrice(obj, arg)
 	result = baseIdentifyPrice + requireLvPrice + rankPrice;
 	result = math.floor(result);
 	return result;
+end
+function CP_GetItemIdentifyType(obj, arg)
+	if obj.Custom_IdentifyType ~= '' then
+		return;
+	end
+	return obj.Type.name;
 end
 ---------------------------------------------------------------------
 -- 아이템 최대 스택.
@@ -3954,7 +4121,7 @@ function CalculatedProperty_Object_PatrolAvoidChecker(obj, arg)
 				return true;
 			end
 			-- 완전 엄폐
-			local coverState = GetCoverStateForCritical(obj, masteryTable, GetPosition(finder));
+			local coverState = GetCoverStateForCritical(obj, masteryTable, GetPosition(finder), finder);
 			if coverState == 'Full' then
 				return true;
 			end

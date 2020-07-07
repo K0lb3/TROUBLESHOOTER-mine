@@ -44,6 +44,9 @@
 		<class name="CivilRescue" Title="시민 구조" Color="Orange" Idspace="None" Icon="Icons/CivilRescue2" Image="Troublesum/CivilRescue" RewardRatio="1" CompanyExpRewardRatio="1" FriendshipRatio="1" IsCount="true" ProgressHost="ProgressDialogNormalProgress">
 			<EventHandler MissionEnd="OnMissionEnd_MissionClearQuest"/>
 		</class>
+		<class name="CivilRescueGen_Property" Title="시민 구조" Color="Orange" Idspace="CitizenGenSet" Icon="Icons/CivilRescue2" Image="Troublesum/CivilRescue" RewardRatio="1" CompanyExpRewardRatio="1" FriendshipRatio="1" IsCount="true" ProgressHost="ProgressDialogNormalProgress">
+			<EventHandler CitizenRescuing="OnCitizenRescuing_CivilRescueGen_Property"/>
+		</class>
 		<class name="Destroy" Title="파괴" Color="Tomato" Idspace="None" Icon="Icons/Destroy" Image="Troublesum/Destroy" RewardRatio="1" CompanyExpRewardRatio="1" FriendshipRatio="1" IsCount="true" ProgressHost="ProgressDialogNormalProgress">
 			<EventHandler MissionEnd="OnMissionEnd_MissionClearQuest"/>
 		</class>
@@ -149,7 +152,9 @@
 			<rule property="RequireRosterLv" type="number" default="0"/>
 		</schema>
 		<class name="EP1_Quest01" Title_Base="외지의 조력자" ProgressOrder="1" Objective_Base="바람장벽 지구의 트러블슈터 로베르토를 찾아가시오." Group="Normal" Rank="None" Lv="1" PriorQuest="" RequireStageLv="0" RequireCompanyLv="1" RequireFriendship="Neutral" Type="Talk" Target="Roberto" TargetType="None" TargetCount="1" ClientType="Npc" Client="Jean" DirectContinue="EP1_Quest_Roberto01" TargetNPC="Roberto" CompletionNpc="Roberto" Base_RewardNPCFriendship="30" DisableCancel="true"/>
-		<class name="EP1_Quest_Roberto01" Title_Base="실력 테스트" ProgressOrder="2" Objective_Base="로베르토를 제압하시오." Group="Normal" Rank="D" Lv="10" PriorQuest="EP1_Quest01" RequireStageLv="11" RequireCompanyLv="1" RequireFriendship="Neutral" Type="MissionClear_PVP" Target="Quest_Roberto01" TargetType="None" TargetCount="1" ClientType="Npc" Client="Roberto" DirectContinue="None" TargetNPC="Roberto" CompletionNpc="Roberto" Base_RewardNPCFriendship="40" DisableCancel="true" AcceptForm="Test" DisableWorldMap="true"/>
+		<class name="EP1_Quest_Roberto01" Title_Base="실력 테스트" ProgressOrder="2" Objective_Base="로베르토를 제압하시오." Group="Normal" Rank="D" Lv="10" PriorQuest="EP1_Quest01" RequireStageLv="11" RequireCompanyLv="1" RequireFriendship="Neutral" Type="MissionClear_PVP" Target="Quest_Roberto01" TargetType="None" TargetCount="1" ClientType="Npc" Client="Roberto" DirectContinue="None" TargetNPC="Roberto" CompletionNpc="Roberto" Base_RewardNPCFriendship="40" DisableCancel="true" AcceptForm="Test" DisableWorldMap="true">
+			<DirectMission Mission="Quest_Roberto01" Lineup="Sion, Irene, Anne, Heissing, Ray, Giselle, Kylie, Leton" Grade="Bronze" Site="SilverCloud_Street" RewardRatio="0" Lv="10"/>
+		</class>
 		<class name="EP1_Quest_Roberto02" Title_Base="어둠 속의 불청객" ProgressOrder="3" Objective_Base="지하 주차장의 야샤를 처리하시오." Group="Normal" Rank="B" Lv="18" PriorQuest="EP1_Quest_Hundred01" RequireStageLv="18" RequireCompanyLv="1" RequireFriendship="Neutral" Type="MissionClear_Hunting" Target="Quest_Roberto02" TargetType="None" TargetCount="1" ClientType="Npc" Client="Roberto" DirectContinue="None" TargetNPC="Roberto" CompletionNpc="Roberto" Base_RewardNPCFriendship="80" DisableCancel="true">
 			<Reward>
 				<property Type="RandomTroublemaker" Value="Crimnal" Amount="50"/>
@@ -163,6 +168,7 @@
 				<property Type="RandomTroublemaker" Value="Beast" Amount="50"/>
 				<property Type="Item" Value="Statement_Mastery" Amount="60"/>
 			</Reward>
+			<DirectMission Mission="Quest_Roberto03" Lineup="Albus, Sion, Anne, Heissing, Ray, Giselle, Kylie, Leton" Grade="Bronze" Site="SilverCloud_Street" RewardRatio="0" Lv="10"/>
 		</class>
 		<class name="EP1_Quest_Roberto04" Title_Base="소녀의 부탁" ProgressOrder="5" Objective_Base="로베르토를 제압하시오." Group="Normal" Rank="B" Lv="28" PriorQuest="EP1_Quest_Roberto03" RequireStageLv="30" RequireCompanyLv="1" RequireFriendship="Neutral" Type="MissionClear_PVP" Target="Quest_Roberto04" TargetType="None" TargetCount="1" ClientType="Npc" Client="Roberto" DirectContinue="None" TargetNPC="Roberto" CompletionNpc="Roberto" Base_RewardNPCFriendship="100" DisableCancel="true" AcceptForm="Test" DisableWorldMap="true">
 			<Reward>
@@ -170,25 +176,19 @@
 				<property Type="RandomTroublemaker" Value="Beast" Amount="50"/>
 				<property Type="Item" Value="Statement_Mastery" Amount="70"/>
 			</Reward>
+			<DirectMission Mission="Quest_Roberto04" Lineup="Albus, Sion, Irene, Heissing, Ray, Giselle, Kylie, Leton" Grade="Bronze" Site="SilverCloud_Street" RewardRatio="0" Lv="10"/>
 		</class>
-		<class name="EP1_Quest_Roberto05" Title_Base="시가지 훈련" ProgressOrder="6" Objective_Base="경찰청 실내 훈련장에서 지젤 팀을 제압하시오." Group="Normal" Rank="B" Lv="99999" PriorQuest="EP1_Quest_Roberto04" RequireStageLv="99999" RequireCompanyLv="1" RequireFriendship="Neutral" Type="MissionClear_PVP" Target="Quest_Roberto05" TargetType="None" TargetCount="1" ClientType="Npc" Client="Roberto" DirectContinue="None" TargetNPC="Roberto" CompletionNpc="Roberto" Base_RewardNPCFriendship="110" DisableCancel="true" AcceptForm="Test" DisableWorldMap="true">
+		<class name="EP1_Quest_Leo01" Title_Base="난폭한 불청객" ProgressOrder="4" Objective_Base="생태 연구소에 나타난 네구리를 처리하시오." Group="Normal" Rank="B" Lv="22" PriorQuest="EP1_Quest_Roberto02" RequireStageLv="24" RequireCompanyLv="1" RequireFriendship="Neutral" Type="MissionClear_Hunting" Target="Quest_Leo01" TargetType="None" TargetCount="1" ClientType="Npc" Client="Leo" DirectContinue="None" TargetNPC="Leo" CompletionNpc="Leo" Base_RewardNPCFriendship="100" DisableCancel="true">
 			<Reward>
-				<property Type="RandomTroublemaker" Value="Crimnal" Amount="50"/>
-				<property Type="RandomTroublemaker" Value="Beast" Amount="50"/>
-				<property Type="Item" Value="Statement_Mastery" Amount="60"/>
+				<property Type="RandomTroublemaker" Value="Beast" Amount="100"/>
+				<property Type="Item" Value="Potion_Giant" Amount="5"/>
+				<property Type="Item" Value="Statement_Mastery" Amount="100"/>
 			</Reward>
 		</class>
-		<class name="EP1_Quest_Roberto06" Title_Base="기계전 훈련" ProgressOrder="7" Objective_Base="경찰청 실내 훈련장에서 카일리 팀을 제압하시오." Group="Normal" Rank="B" Lv="99999" PriorQuest="EP1_Quest_Roberto05" RequireStageLv="99999" RequireCompanyLv="1" RequireFriendship="Neutral" Type="MissionClear_PVP" Target="Quest_Roberto06" TargetType="None" TargetCount="1" ClientType="Npc" Client="Roberto" DirectContinue="None" TargetNPC="Roberto" CompletionNpc="Roberto" Base_RewardNPCFriendship="120" DisableCancel="true" AcceptForm="Test" DisableWorldMap="true">
+		<class name="EP1_Quest_Bruna01" Title_Base="요란한 불청객" ProgressOrder="4" Objective_Base="황금손 거주구에 나타난 네구리를 처리하시오." Group="Normal" Rank="B" Lv="28" PriorQuest="EP1_Quest_Leo01" RequireStageLv="29" RequireCompanyLv="1" RequireFriendship="Neutral" Type="MissionClear_Hunting" Target="Quest_Bruna01" TargetType="None" TargetCount="1" ClientType="Npc" Client="Bruna" DirectContinue="None" TargetNPC="Bruna" CompletionNpc="Bruna" Base_RewardNPCFriendship="100" DisableCancel="true">
 			<Reward>
 				<property Type="RandomTroublemaker" Value="Crimnal" Amount="50"/>
-				<property Type="RandomTroublemaker" Value="Beast" Amount="50"/>
-				<property Type="Item" Value="Statement_Mastery" Amount="80"/>
-			</Reward>
-		</class>
-		<class name="EP1_Quest_Roberto07" Title_Base="정기 훈련" ProgressOrder="8" Objective_Base="경찰청 실내 훈련장에서 무작위로 지정된 상대방 팀을 제압하시오." Group="Normal" Rank="B" Lv="99999" PriorQuest="EP1_Quest_Roberto06" RequireStageLv="99999" RequireCompanyLv="1" RequireFriendship="Neutral" Type="MissionClear_PVP" Target="Quest_Roberto07" TargetType="None" TargetCount="1" ClientType="Npc" Client="Roberto" DirectContinue="None" TargetNPC="Roberto" CompletionNpc="Roberto" Base_RewardNPCFriendship="130" DisableCancel="true" RepeatLimit="1">
-			<Reward>
-				<property Type="RandomTroublemaker" Value="Crimnal" Amount="50"/>
-				<property Type="RandomTroublemaker" Value="Beast" Amount="50"/>
+				<property Type="RandomTroublemaker" Value="Wanted" Amount="25"/>
 				<property Type="Item" Value="Statement_Mastery" Amount="100"/>
 			</Reward>
 		</class>
@@ -206,7 +206,7 @@
 				<property Type="Item" Value="Wrist_Tanner_Set" Amount="1"/>
 			</Reward>
 			<TargetMonster>
-				<property Type="Monster" Target="Mon_Beast_Tima_Magma" Ratio="25"/>
+				<property Type="Monster" Target="Mon_Beast_Tima_Magma" Ratio="40"/>
 			</TargetMonster>
 		</class>
 		<class name="EP1_Quest_AL03" Title_Base="$QuestType$ - $TargetItem$" ProgressOrder="6" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="18" PriorQuest="EP1_Quest_AL02" RequireStageLv="18" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem_Kill" Target="ShinyLightningSkin" TargetType="None" TargetCount="2" ClientType="Npc" Client="AL" DirectContinue="None" TargetNPC="AL" CompletionNpc="AL" Base_RewardNPCFriendship="80" DisableCancel="true">
@@ -216,7 +216,7 @@
 				<property Type="Item" Value="Sneakers_Tanner_Set" Amount="1"/>
 			</Reward>
 			<TargetMonster>
-				<property Type="Monster" Target="Mon_Beast_Tima_Spark" Ratio="40"/>
+				<property Type="Monster" Target="Mon_Beast_Tima_Spark" Ratio="50"/>
 			</TargetMonster>
 		</class>
 		<class name="EP1_Quest_AL04" Title_Base="$QuestType$ - $TargetItem$" ProgressOrder="7" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="23" PriorQuest="EP1_Quest_AL03" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem_Kill" Target="WholeIcySkin" TargetType="None" TargetCount="3" ClientType="Npc" Client="AL" DirectContinue="None" TargetNPC="AL" CompletionNpc="AL" Base_RewardNPCFriendship="90" DisableCancel="true">
@@ -226,7 +226,7 @@
 				<property Type="Item" Value="Amulet_Tanner_Set" Amount="1"/>
 			</Reward>
 			<TargetMonster>
-				<property Type="Monster" Target="Mon_Beast_Tima_Glacier" Ratio="40"/>
+				<property Type="Monster" Target="Mon_Beast_Tima_Glacier" Ratio="60"/>
 			</TargetMonster>
 		</class>
 		<class name="EP1_Quest_AL05" Title_Base="$QuestType$ - $TargetItem$" ProgressOrder="8" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="24" PriorQuest="EP1_Quest_AL04" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem_Kill" Target="MutationPoisonSkin" TargetType="None" TargetCount="1" ClientType="Npc" Client="AL" DirectContinue="None" TargetNPC="AL" CompletionNpc="AL" Base_RewardNPCFriendship="100" DisableCancel="true">
@@ -258,6 +258,16 @@
 			<TargetMonster>
 				<property Type="Monster" Target="Mon_Beast_Bat_Wind_Leader" Ratio="100"/>
 			</TargetMonster>
+		</class>
+		<class name="EP1_Quest_AL08" Title_Base="$QuestType$ - $TargetCivilName$" ProgressOrder="11" Objective_Base="$TargetCivilName$[를] 구출하시오." Group="Normal" Rank="A" Lv="31" PriorQuest="EP1_Quest_AL07" RequireStageLv="29" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CivilRescueGen_Property" Target="Bebo" TargetType="None" TargetCount="1" ClientType="Npc" Client="AL" DirectContinue="None" TargetNPC="AL" CompletionNpc="AL" Base_RewardNPCFriendship="150" DisableCancel="true">
+			<Reward>
+				<property Type="Item" Value="Sneakers_Cyrus_Epic" Amount="1"/>
+				<property Type="Item" Value="DressShoes_Bonaparte_Epic" Amount="1"/>
+				<property Type="Item" Value="FiberReinforced_Epic" Amount="50"/>
+			</Reward>
+			<Missions>
+				<property name="Raid_StarStreet"/>
+			</Missions>
 		</class>
 		<class name="EP1_Quest_Oleg01" Title_Base="잃어버린 화물" ProgressOrder="4" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="C" Lv="12" PriorQuest="EP1_Quest_Roberto01" RequireStageLv="11" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem_Property" Target="CargoBox" TargetType="None" TargetCount="4" ClientType="Npc" Client="Oleg" DirectContinue="None" TargetNPC="Oleg" CompletionNpc="Oleg" Base_RewardNPCFriendship="60" DisableCancel="true">
 			<Reward>
@@ -308,6 +318,16 @@
 			</Reward>
 			<Missions>
 				<property name="Common_MetrodiumResidence"/>
+			</Missions>
+		</class>
+		<class name="EP1_Quest_Oleg06" Title_Base="$QuestType$ - $TargetCivilName$" ProgressOrder="9" Objective_Base="$TargetCivilName$[를] 구출하시오." Group="Normal" Rank="A" Lv="31" PriorQuest="EP1_Quest_Oleg05" RequireStageLv="29" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CivilRescueGen_Property" Target="Miki" TargetType="None" TargetCount="1" ClientType="Npc" Client="Oleg" DirectContinue="None" TargetNPC="Oleg" CompletionNpc="Oleg" Base_RewardNPCFriendship="150" DisableCancel="true">
+			<Reward>
+				<property Type="Item" Value="Sword_Cyruse_Epic" Amount="1"/>
+				<property Type="Item" Value="Bangle_Cyrus_Epic" Amount="1"/>
+				<property Type="Item" Value="BattleGlove_GiantFist_Epic" Amount="1"/>
+			</Reward>
+			<Missions>
+				<property name="Raid_StarStreet"/>
 			</Missions>
 		</class>
 		<class name="EP1_Quest_Hundred01" Title_Base="고철 더미 아래 불청객" ProgressOrder="6" Objective_Base="고물 처리장에 숨어있는 야샤를 처리하시오." Group="Normal" Rank="C" Lv="12" PriorQuest="EP1_Quest_AL01" RequireStageLv="12" RequireCompanyLv="1" RequireFriendship="Neutral" Type="MissionClear_Hunting" Target="Quest_Hundred01" TargetType="None" TargetCount="1" ClientType="Npc" Client="Hundred" DirectContinue="None" TargetNPC="Hundred" CompletionNpc="Hundred" Base_RewardNPCFriendship="70" DisableCancel="true">
@@ -370,56 +390,56 @@
 				<property Type="Item" Value="Crystal_Ice_03" Amount="50"/>
 			</Reward>
 		</class>
-		<class name="EP1_Quest_Sam01" Title_Base="$QuestType$ - $TargetItem$" ProgressOrder="5" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="D" Lv="11" PriorQuest="EP1_Quest_AL01" RequireStageLv="11" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="Bone_SavageBeast" TargetType="None" TargetCount="20" ClientType="Npc" Client="Sam" DirectContinue="None" TargetNPC="Sam" CompletionNpc="Sam" Base_RewardNPCFriendship="60" DisableCancel="true">
+		<class name="EP1_Quest_Sam01" Title_Base="$QuestType$ - $TargetItem$" ProgressOrder="5" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="D" Lv="11" PriorQuest="EP1_Quest_AL01" RequireStageLv="11" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="Bone_SavageBeast" TargetType="None" TargetCount="5" ClientType="Npc" Client="Sam" DirectContinue="None" TargetNPC="Sam" CompletionNpc="Sam" Base_RewardNPCFriendship="60" DisableCancel="true">
 			<Reward>
 				<property Type="Item" Value="Potion_HP_Rare" Amount="6"/>
 				<property Type="Item" Value="Potion_Cost_Uncommon" Amount="10"/>
 				<property Type="Item" Value="Statement_Mastery" Amount="20"/>
 			</Reward>
 		</class>
-		<class name="EP1_Quest_Sam02" Title_Base="$QuestType$ - $TargetItem$" ProgressOrder="6" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="D" Lv="12" PriorQuest="EP1_Quest_Sam01" RequireStageLv="12" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="Claw_SavageBeast" TargetType="None" TargetCount="20" ClientType="Npc" Client="Sam" DirectContinue="None" TargetNPC="Sam" CompletionNpc="Sam" Base_RewardNPCFriendship="60" DisableCancel="true">
+		<class name="EP1_Quest_Sam02" Title_Base="$QuestType$ - $TargetItem$" ProgressOrder="6" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="D" Lv="12" PriorQuest="EP1_Quest_Sam01" RequireStageLv="12" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="Claw_SavageBeast" TargetType="None" TargetCount="5" ClientType="Npc" Client="Sam" DirectContinue="None" TargetNPC="Sam" CompletionNpc="Sam" Base_RewardNPCFriendship="60" DisableCancel="true">
 			<Reward>
 				<property Type="Item" Value="Potion_HP_Rare" Amount="6"/>
 				<property Type="Item" Value="Potion_Cost_Uncommon" Amount="10"/>
 				<property Type="Item" Value="Statement_Mastery" Amount="20"/>
 			</Reward>
 		</class>
-		<class name="EP1_Quest_Sam03" Title_Base="$QuestType$ - $TargetItem$" ProgressOrder="7" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="D" Lv="13" PriorQuest="EP1_Quest_Sam02" RequireStageLv="13" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="Fang_SavageBeast" TargetType="None" TargetCount="20" ClientType="Npc" Client="Sam" DirectContinue="None" TargetNPC="Sam" CompletionNpc="Sam" Base_RewardNPCFriendship="60" DisableCancel="true">
+		<class name="EP1_Quest_Sam03" Title_Base="$QuestType$ - $TargetItem$" ProgressOrder="7" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="D" Lv="13" PriorQuest="EP1_Quest_Sam02" RequireStageLv="13" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="Fang_SavageBeast" TargetType="None" TargetCount="5" ClientType="Npc" Client="Sam" DirectContinue="None" TargetNPC="Sam" CompletionNpc="Sam" Base_RewardNPCFriendship="60" DisableCancel="true">
 			<Reward>
 				<property Type="Item" Value="Potion_HP_Rare" Amount="6"/>
 				<property Type="Item" Value="Potion_Cost_Uncommon" Amount="10"/>
 				<property Type="Item" Value="Statement_Mastery" Amount="20"/>
 			</Reward>
 		</class>
-		<class name="EP1_Quest_Sam04" Title_Base="$QuestType$ - $TargetItem$" ProgressOrder="8" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="C" Lv="21" PriorQuest="EP1_Quest_Sam03" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="Bone_Monster" TargetType="None" TargetCount="10" ClientType="Npc" Client="Sam" DirectContinue="None" TargetNPC="Sam" CompletionNpc="Sam" Base_RewardNPCFriendship="60" DisableCancel="true">
+		<class name="EP1_Quest_Sam04" Title_Base="$QuestType$ - $TargetItem$" ProgressOrder="8" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="C" Lv="21" PriorQuest="EP1_Quest_Sam03" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="Bone_Monster" TargetType="None" TargetCount="3" ClientType="Npc" Client="Sam" DirectContinue="None" TargetNPC="Sam" CompletionNpc="Sam" Base_RewardNPCFriendship="60" DisableCancel="true">
 			<Reward>
 				<property Type="Item" Value="Potion_HP_Epic" Amount="15"/>
 				<property Type="Item" Value="Potion_Cost_Rare" Amount="25"/>
 				<property Type="Item" Value="Amulet_Collector_Set" Amount="1"/>
 			</Reward>
 		</class>
-		<class name="EP1_Quest_Sam05" Title_Base="$QuestType$ - $TargetItem$" ProgressOrder="9" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="C" Lv="21" PriorQuest="EP1_Quest_Sam04" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="Claw_Monster" TargetType="None" TargetCount="10" ClientType="Npc" Client="Sam" DirectContinue="None" TargetNPC="Sam" CompletionNpc="Sam" Base_RewardNPCFriendship="60" DisableCancel="true">
+		<class name="EP1_Quest_Sam05" Title_Base="$QuestType$ - $TargetItem$" ProgressOrder="9" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="C" Lv="21" PriorQuest="EP1_Quest_Sam04" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="Claw_Monster" TargetType="None" TargetCount="3" ClientType="Npc" Client="Sam" DirectContinue="None" TargetNPC="Sam" CompletionNpc="Sam" Base_RewardNPCFriendship="60" DisableCancel="true">
 			<Reward>
 				<property Type="Item" Value="Potion_HP_Epic" Amount="15"/>
 				<property Type="Item" Value="Potion_Cost_Rare" Amount="25"/>
 				<property Type="Item" Value="Bracelet_Collector_Set" Amount="1"/>
 			</Reward>
 		</class>
-		<class name="EP1_Quest_Sam06" Title_Base="$QuestType$ - $TargetItem$" ProgressOrder="10" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="C" Lv="21" PriorQuest="EP1_Quest_Sam05" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="Fang_Monster" TargetType="None" TargetCount="10" ClientType="Npc" Client="Sam" DirectContinue="None" TargetNPC="Sam" CompletionNpc="Sam" Base_RewardNPCFriendship="60" DisableCancel="true">
+		<class name="EP1_Quest_Sam06" Title_Base="$QuestType$ - $TargetItem$" ProgressOrder="10" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="C" Lv="21" PriorQuest="EP1_Quest_Sam05" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="Fang_Monster" TargetType="None" TargetCount="3" ClientType="Npc" Client="Sam" DirectContinue="None" TargetNPC="Sam" CompletionNpc="Sam" Base_RewardNPCFriendship="60" DisableCancel="true">
 			<Reward>
 				<property Type="Item" Value="Potion_HP_Epic" Amount="15"/>
 				<property Type="Item" Value="Potion_Cost_Rare" Amount="25"/>
 				<property Type="Item" Value="Coat_Collector_Set" Amount="1"/>
 			</Reward>
 		</class>
-		<class name="EP1_Quest_Sam07" Title_Base="$QuestType$ - $TargetItem$" ProgressOrder="11" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="30" PriorQuest="EP1_Quest_Sam06" RequireStageLv="33" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="Pocket_Poison2" TargetType="None" TargetCount="5" ClientType="Npc" Client="Sam" DirectContinue="None" TargetNPC="Sam" CompletionNpc="Sam" Base_RewardNPCFriendship="60" DisableCancel="true">
+		<class name="EP1_Quest_Sam07" Title_Base="$QuestType$ - $TargetItem$" ProgressOrder="11" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="30" PriorQuest="EP1_Quest_Sam06" RequireStageLv="33" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="Pocket_Poison2" TargetType="None" TargetCount="2" ClientType="Npc" Client="Sam" DirectContinue="None" TargetNPC="Sam" CompletionNpc="Sam" Base_RewardNPCFriendship="60" DisableCancel="true">
 			<Reward>
 				<property Type="Recipe" Value="Amulet_Collector_Set" Amount="1"/>
 				<property Type="Item" Value="Potion_HP_Epic" Amount="10"/>
 				<property Type="Item" Value="Potion_Cost_Epic" Amount="15"/>
 			</Reward>
 		</class>
-		<class name="EP1_Quest_Sam08" Title_Base="$QuestType$ - $TargetItem$" ProgressOrder="12" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="36" PriorQuest="EP1_Quest_Sam07" RequireStageLv="33" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="Pocket_Oil_Rare" TargetType="None" TargetCount="2" ClientType="Npc" Client="Sam" DirectContinue="None" TargetNPC="Sam" CompletionNpc="Sam" Base_RewardNPCFriendship="60" DisableCancel="true">
+		<class name="EP1_Quest_Sam08" Title_Base="$QuestType$ - $TargetItem$" ProgressOrder="12" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="36" PriorQuest="EP1_Quest_Sam07" RequireStageLv="33" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="Pocket_Oil_Rare" TargetType="None" TargetCount="1" ClientType="Npc" Client="Sam" DirectContinue="None" TargetNPC="Sam" CompletionNpc="Sam" Base_RewardNPCFriendship="60" DisableCancel="true">
 			<Reward>
 				<property Type="Recipe" Value="Bracelet_Collector_Set" Amount="1"/>
 				<property Type="Item" Value="Potion_HP_Epic" Amount="15"/>
@@ -440,9 +460,9 @@
 				<property Type="Item" Value="Statement_Mastery" Amount="20"/>
 			</Reward>
 			<TargetMonster>
-				<property Type="Monster" Target="Mon_Gangster_BullThin" Ratio="5"/>
-				<property Type="Monster" Target="Mon_Gangster_BullFat" Ratio="5"/>
-				<property Type="Monster" Target="Mon_Gangster_BullNormal" Ratio="5"/>
+				<property Type="Monster" Target="Mon_Gangster_BullThin" Ratio="10"/>
+				<property Type="Monster" Target="Mon_Gangster_BullFat" Ratio="10"/>
+				<property Type="Monster" Target="Mon_Gangster_BullNormal" Ratio="10"/>
 			</TargetMonster>
 		</class>
 		<class name="EP1_Quest_Dembel02" Title_Base="사라진 시곗줄" ProgressOrder="6" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="C" Lv="14" PriorQuest="EP1_Quest_Dembel01" RequireStageLv="15" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem_Kill" Target="WatchChain" TargetType="None" TargetCount="1" ClientType="Npc" Client="Dembel" DirectContinue="None" TargetNPC="Dembel" CompletionNpc="Dembel" Base_RewardNPCFriendship="120" DisableCancel="true">
@@ -452,9 +472,9 @@
 				<property Type="Item" Value="Statement_Mastery" Amount="20"/>
 			</Reward>
 			<TargetMonster>
-				<property Type="Monster" Target="Mon_Gangster_SpoonFighter" Ratio="5"/>
-				<property Type="Monster" Target="Mon_Gangster_SpoonSword" Ratio="5"/>
-				<property Type="Monster" Target="Mon_Gangster_SpoonGun" Ratio="5"/>
+				<property Type="Monster" Target="Mon_Gangster_SpoonFighter" Ratio="10"/>
+				<property Type="Monster" Target="Mon_Gangster_SpoonSword" Ratio="10"/>
+				<property Type="Monster" Target="Mon_Gangster_SpoonGun" Ratio="10"/>
 			</TargetMonster>
 		</class>
 		<class name="EP1_Quest_Dembel03" Title_Base="위험한 운송업자" ProgressOrder="7" Objective_Base="운송업자 리를 구출하시오." Group="Normal" Rank="B" Lv="17" PriorQuest="EP1_Quest_Dembel02" RequireStageLv="18" RequireCompanyLv="1" RequireFriendship="Neutral" Type="MissionClear_Escort" Target="Quest_Dembel03" TargetType="None" TargetCount="1" ClientType="Npc" Client="Dembel" DirectContinue="None" TargetNPC="Dembel" CompletionNpc="Dembel" Base_RewardNPCFriendship="120" DisableCancel="true">
@@ -472,6 +492,26 @@
 			</Reward>
 			<Missions>
 				<property name="Common_BlueFogStreet"/>
+			</Missions>
+		</class>
+		<class name="EP1_Quest_Dembel05" Title_Base="약탈당한 화물 - 잿빛 항구 G 물류 창고" ProgressOrder="9" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="25" PriorQuest="EP1_Quest_Dembel04" RequireStageLv="27" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem_Property" Target="CargoBox" TargetType="None" TargetCount="6" ClientType="Npc" Client="Dembel" DirectContinue="None" TargetNPC="Dembel" CompletionNpc="Dembel" Base_RewardNPCFriendship="150" DisableCancel="true">
+			<Reward>
+				<property Type="Item" Value="Jacket_Sentinel_Epic" Amount="1"/>
+				<property Type="Item" Value="Coat_Yasha_Epic" Amount="1"/>
+				<property Type="Item" Value="Tracksuit_Yasha_Epic" Amount="1"/>
+			</Reward>
+			<Missions>
+				<property name="Common_GrayPortWareHouse"/>
+			</Missions>
+		</class>
+		<class name="EP1_Quest_Dembel06" Title_Base="$QuestType$ - $TargetCivilName$" ProgressOrder="10" Objective_Base="$TargetCivilName$[를] 구출하시오." Group="Normal" Rank="A" Lv="31" PriorQuest="EP1_Quest_Dembel05" RequireStageLv="29" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CivilRescueGen_Property" Target="Lee" TargetType="None" TargetCount="1" ClientType="Npc" Client="Dembel" DirectContinue="None" TargetNPC="Dembel" CompletionNpc="Dembel" Base_RewardNPCFriendship="150" DisableCancel="true">
+			<Reward>
+				<property Type="Item" Value="Jacket_Cyrus_Epic" Amount="1"/>
+				<property Type="Item" Value="Coat_Cyrus_Epic" Amount="1"/>
+				<property Type="Item" Value="Tracksuit_Cyrus_Epic" Amount="1"/>
+			</Reward>
+			<Missions>
+				<property name="Raid_StarStreet"/>
 			</Missions>
 		</class>
 		<class name="EP1_Quest_Dimitri01" Title_Base="위기의 미술품" ProgressOrder="6" Objective_Base="미술품을 회수하시오." Group="Normal" Rank="B" Lv="13" PriorQuest="EP1_Quest_Oleg01" RequireStageLv="13" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem_Property" Target="ArtBox" TargetType="None" TargetCount="4" ClientType="Npc" Client="Dimitri" DirectContinue="None" TargetNPC="Dimitri" CompletionNpc="Dimitri" Base_RewardNPCFriendship="150" DisableCancel="true">
@@ -545,91 +585,91 @@
 				<property Type="Item" Value="Bracelet_BonaparteGold_Epic" Amount="1"/>
 			</Reward>
 		</class>
-		<class name="EP1_Quest_Camila01" Title_Base="중개소의 요청" ProgressOrder="5" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="20" PriorQuest="EP1_Quest_Sabana01" RequireStageLv="22" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="PsionicStone_FlameFragment" TargetType="None" TargetCount="20" ClientType="Npc" Client="Camila" DirectContinue="None" TargetNPC="Camila" CompletionNpc="Camila" Base_RewardNPCFriendship="50" DisableCancel="true">
+		<class name="EP1_Quest_Camila01" Title_Base="중개소의 요청" ProgressOrder="5" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="20" PriorQuest="EP1_Quest_Sabana01" RequireStageLv="22" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="PsionicStone_FlameFragment" TargetType="None" TargetCount="10" ClientType="Npc" Client="Camila" DirectContinue="None" TargetNPC="Camila" CompletionNpc="Camila" Base_RewardNPCFriendship="50" DisableCancel="true">
 			<Reward>
 				<property Type="Item" Value="PsionicStone_FrostFragment" Amount="40"/>
 				<property Type="Item" Value="Extractor_Uncommon" Amount="8"/>
 				<property Type="Item" Value="Statement_Mastery" Amount="15"/>
 			</Reward>
 		</class>
-		<class name="EP1_Quest_Camila02" Title_Base="중개소 물품 요청 - $TargetItem$" ProgressOrder="6" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="21" PriorQuest="EP1_Quest_Camila01" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="PsionicStone_FlameElement" TargetType="None" TargetCount="5" ClientType="Npc" Client="Camila" DirectContinue="None" TargetNPC="Camila" CompletionNpc="Camila" Base_RewardNPCFriendship="50" DisableCancel="true">
+		<class name="EP1_Quest_Camila02" Title_Base="중개소 물품 요청 - $TargetItem$" ProgressOrder="6" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="21" PriorQuest="EP1_Quest_Camila01" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="PsionicStone_FlameElement" TargetType="None" TargetCount="3" ClientType="Npc" Client="Camila" DirectContinue="None" TargetNPC="Camila" CompletionNpc="Camila" Base_RewardNPCFriendship="50" DisableCancel="true">
 			<Reward>
 				<property Type="Item" Value="Jacket_Extractor_Set" Amount="1"/>
 				<property Type="Item" Value="Extractor_Rare" Amount="9"/>
 				<property Type="Item" Value="Statement_Mastery" Amount="30"/>
 			</Reward>
 		</class>
-		<class name="EP1_Quest_Camila03" Title_Base="중개소 물품 요청 - $TargetItem$" ProgressOrder="7" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="21" PriorQuest="EP1_Quest_Camila01" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="PsionicStone_FrostElement" TargetType="None" TargetCount="5" ClientType="Npc" Client="Camila" DirectContinue="None" TargetNPC="Camila" CompletionNpc="Camila" Base_RewardNPCFriendship="50" DisableCancel="true">
+		<class name="EP1_Quest_Camila03" Title_Base="중개소 물품 요청 - $TargetItem$" ProgressOrder="7" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="21" PriorQuest="EP1_Quest_Camila01" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="PsionicStone_FrostElement" TargetType="None" TargetCount="3" ClientType="Npc" Client="Camila" DirectContinue="None" TargetNPC="Camila" CompletionNpc="Camila" Base_RewardNPCFriendship="50" DisableCancel="true">
 			<Reward>
 				<property Type="Item" Value="Wrist_Extractor_Set" Amount="1"/>
 				<property Type="Item" Value="Extractor_Rare" Amount="9"/>
 				<property Type="Item" Value="Statement_Mastery" Amount="30"/>
 			</Reward>
 		</class>
-		<class name="EP1_Quest_Camila04" Title_Base="중개소 물품 요청 - $TargetItem$" ProgressOrder="8" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="21" PriorQuest="EP1_Quest_Camila02" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="PsionicStone_FlashElement" TargetType="None" TargetCount="5" ClientType="Npc" Client="Camila" DirectContinue="None" TargetNPC="Camila" CompletionNpc="Camila" Base_RewardNPCFriendship="50" DisableCancel="true">
+		<class name="EP1_Quest_Camila04" Title_Base="중개소 물품 요청 - $TargetItem$" ProgressOrder="8" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="21" PriorQuest="EP1_Quest_Camila02" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="PsionicStone_FlashElement" TargetType="None" TargetCount="3" ClientType="Npc" Client="Camila" DirectContinue="None" TargetNPC="Camila" CompletionNpc="Camila" Base_RewardNPCFriendship="50" DisableCancel="true">
 			<Reward>
 				<property Type="Item" Value="Sneakers_Extractor_Set" Amount="1"/>
 				<property Type="Item" Value="Extractor_Rare" Amount="9"/>
 				<property Type="Item" Value="Statement_Mastery" Amount="30"/>
 			</Reward>
 		</class>
-		<class name="EP1_Quest_Camila05" Title_Base="중개소 물품 요청 - $TargetItem$" ProgressOrder="9" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="21" PriorQuest="EP1_Quest_Camila03" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="PsionicStone_MistElement" TargetType="None" TargetCount="5" ClientType="Npc" Client="Camila" DirectContinue="None" TargetNPC="Camila" CompletionNpc="Camila" Base_RewardNPCFriendship="50" DisableCancel="true">
+		<class name="EP1_Quest_Camila05" Title_Base="중개소 물품 요청 - $TargetItem$" ProgressOrder="9" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="21" PriorQuest="EP1_Quest_Camila03" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="PsionicStone_MistElement" TargetType="None" TargetCount="3" ClientType="Npc" Client="Camila" DirectContinue="None" TargetNPC="Camila" CompletionNpc="Camila" Base_RewardNPCFriendship="50" DisableCancel="true">
 			<Reward>
 				<property Type="Item" Value="Coat_Extractor_Set" Amount="1"/>
 				<property Type="Item" Value="Extractor_Rare" Amount="9"/>
 				<property Type="Item" Value="Statement_Mastery" Amount="30"/>
 			</Reward>
 		</class>
-		<class name="EP1_Quest_Camila06" Title_Base="중개소 물품 요청 - $TargetItem$" ProgressOrder="10" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="21" PriorQuest="EP1_Quest_Camila04" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="PsionicStone_StormElement" TargetType="None" TargetCount="5" ClientType="Npc" Client="Camila" DirectContinue="None" TargetNPC="Camila" CompletionNpc="Camila" Base_RewardNPCFriendship="50" DisableCancel="true">
+		<class name="EP1_Quest_Camila06" Title_Base="중개소 물품 요청 - $TargetItem$" ProgressOrder="10" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="21" PriorQuest="EP1_Quest_Camila04" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="PsionicStone_StormElement" TargetType="None" TargetCount="3" ClientType="Npc" Client="Camila" DirectContinue="None" TargetNPC="Camila" CompletionNpc="Camila" Base_RewardNPCFriendship="50" DisableCancel="true">
 			<Reward>
 				<property Type="Item" Value="Ring_Extractor_Set" Amount="1"/>
 				<property Type="Item" Value="Extractor_Rare" Amount="9"/>
 				<property Type="Item" Value="Statement_Mastery" Amount="30"/>
 			</Reward>
 		</class>
-		<class name="EP1_Quest_Camila07" Title_Base="중개소 물품 요청 - $TargetItem$" ProgressOrder="11" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="21" PriorQuest="EP1_Quest_Camila05" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="PsionicStone_VerdureElement" TargetType="None" TargetCount="5" ClientType="Npc" Client="Camila" DirectContinue="None" TargetNPC="Camila" CompletionNpc="Camila" Base_RewardNPCFriendship="50" DisableCancel="true">
+		<class name="EP1_Quest_Camila07" Title_Base="중개소 물품 요청 - $TargetItem$" ProgressOrder="11" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="21" PriorQuest="EP1_Quest_Camila05" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="PsionicStone_VerdureElement" TargetType="None" TargetCount="3" ClientType="Npc" Client="Camila" DirectContinue="None" TargetNPC="Camila" CompletionNpc="Camila" Base_RewardNPCFriendship="50" DisableCancel="true">
 			<Reward>
 				<property Type="Item" Value="Boots_Extractor_Set" Amount="1"/>
 				<property Type="Item" Value="Extractor_Rare" Amount="9"/>
 				<property Type="Item" Value="Statement_Mastery" Amount="30"/>
 			</Reward>
 		</class>
-		<class name="EP1_Quest_Camila08" Title_Base="중개소 물품 요청 - $TargetItem$" ProgressOrder="12" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="27" PriorQuest="EP1_Quest_Camila06, EP1_Quest_Camila07" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="PsionicStone_FlameCrystal" TargetType="None" TargetCount="2" ClientType="Npc" Client="Camila" DirectContinue="None" TargetNPC="Camila" CompletionNpc="Camila" Base_RewardNPCFriendship="75" DisableCancel="true">
+		<class name="EP1_Quest_Camila08" Title_Base="중개소 물품 요청 - $TargetItem$" ProgressOrder="12" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="27" PriorQuest="EP1_Quest_Camila06, EP1_Quest_Camila07" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="PsionicStone_FlameCrystal" TargetType="None" TargetCount="1" ClientType="Npc" Client="Camila" DirectContinue="None" TargetNPC="Camila" CompletionNpc="Camila" Base_RewardNPCFriendship="75" DisableCancel="true">
 			<Reward>
 				<property Type="Recipe" Value="Jacket_Extractor_Set" Amount="1"/>
 				<property Type="Item" Value="Extractor_Epic" Amount="6"/>
 				<property Type="Item" Value="Statement_Mastery" Amount="50"/>
 			</Reward>
 		</class>
-		<class name="EP1_Quest_Camila09" Title_Base="중개소 물품 요청 - $TargetItem$" ProgressOrder="13" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="27" PriorQuest="EP1_Quest_Camila06, EP1_Quest_Camila07" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="PsionicStone_FrostCrystal" TargetType="None" TargetCount="2" ClientType="Npc" Client="Camila" DirectContinue="None" TargetNPC="Camila" CompletionNpc="Camila" Base_RewardNPCFriendship="75" DisableCancel="true">
+		<class name="EP1_Quest_Camila09" Title_Base="중개소 물품 요청 - $TargetItem$" ProgressOrder="13" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="27" PriorQuest="EP1_Quest_Camila06, EP1_Quest_Camila07" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="PsionicStone_FrostCrystal" TargetType="None" TargetCount="1" ClientType="Npc" Client="Camila" DirectContinue="None" TargetNPC="Camila" CompletionNpc="Camila" Base_RewardNPCFriendship="75" DisableCancel="true">
 			<Reward>
 				<property Type="Recipe" Value="Wrist_Extractor_Set" Amount="1"/>
 				<property Type="Item" Value="Extractor_Epic" Amount="6"/>
 				<property Type="Item" Value="Statement_Mastery" Amount="50"/>
 			</Reward>
 		</class>
-		<class name="EP1_Quest_Camila10" Title_Base="중개소 물품 요청 - $TargetItem$" ProgressOrder="14" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="27" PriorQuest="EP1_Quest_Camila06, EP1_Quest_Camila07" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="PsionicStone_FlashCrystal" TargetType="None" TargetCount="2" ClientType="Npc" Client="Camila" DirectContinue="None" TargetNPC="Camila" CompletionNpc="Camila" Base_RewardNPCFriendship="75" DisableCancel="true">
+		<class name="EP1_Quest_Camila10" Title_Base="중개소 물품 요청 - $TargetItem$" ProgressOrder="14" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="27" PriorQuest="EP1_Quest_Camila06, EP1_Quest_Camila07" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="PsionicStone_FlashCrystal" TargetType="None" TargetCount="1" ClientType="Npc" Client="Camila" DirectContinue="None" TargetNPC="Camila" CompletionNpc="Camila" Base_RewardNPCFriendship="75" DisableCancel="true">
 			<Reward>
 				<property Type="Recipe" Value="Sneakers_Extractor_Set" Amount="1"/>
 				<property Type="Item" Value="Extractor_Epic" Amount="6"/>
 				<property Type="Item" Value="Statement_Mastery" Amount="50"/>
 			</Reward>
 		</class>
-		<class name="EP1_Quest_Camila11" Title_Base="중개소 물품 요청 - $TargetItem$" ProgressOrder="15" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="27" PriorQuest="EP1_Quest_Camila08" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="PsionicStone_MistCrystal" TargetType="None" TargetCount="2" ClientType="Npc" Client="Camila" DirectContinue="None" TargetNPC="Camila" CompletionNpc="Camila" Base_RewardNPCFriendship="75" DisableCancel="true">
+		<class name="EP1_Quest_Camila11" Title_Base="중개소 물품 요청 - $TargetItem$" ProgressOrder="15" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="27" PriorQuest="EP1_Quest_Camila08" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="PsionicStone_MistCrystal" TargetType="None" TargetCount="1" ClientType="Npc" Client="Camila" DirectContinue="None" TargetNPC="Camila" CompletionNpc="Camila" Base_RewardNPCFriendship="75" DisableCancel="true">
 			<Reward>
 				<property Type="Recipe" Value="Coat_Extractor_Set" Amount="1"/>
 				<property Type="Item" Value="Extractor_Epic" Amount="6"/>
 				<property Type="Item" Value="Statement_Mastery" Amount="50"/>
 			</Reward>
 		</class>
-		<class name="EP1_Quest_Camila12" Title_Base="중개소 물품 요청 - $TargetItem$" ProgressOrder="16" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="27" PriorQuest="EP1_Quest_Camila09" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="PsionicStone_StormCrystal" TargetType="None" TargetCount="2" ClientType="Npc" Client="Camila" DirectContinue="None" TargetNPC="Camila" CompletionNpc="Camila" Base_RewardNPCFriendship="75" DisableCancel="true">
+		<class name="EP1_Quest_Camila12" Title_Base="중개소 물품 요청 - $TargetItem$" ProgressOrder="16" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="27" PriorQuest="EP1_Quest_Camila09" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="PsionicStone_StormCrystal" TargetType="None" TargetCount="1" ClientType="Npc" Client="Camila" DirectContinue="None" TargetNPC="Camila" CompletionNpc="Camila" Base_RewardNPCFriendship="75" DisableCancel="true">
 			<Reward>
 				<property Type="Recipe" Value="Ring_Extractor_Set" Amount="1"/>
 				<property Type="Item" Value="Extractor_Epic" Amount="6"/>
 				<property Type="Item" Value="Statement_Mastery" Amount="50"/>
 			</Reward>
 		</class>
-		<class name="EP1_Quest_Camila13" Title_Base="중개소 물품 요청 - $TargetItem$" ProgressOrder="17" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="27" PriorQuest="EP1_Quest_Camila10" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="PsionicStone_VerdureCrystal" TargetType="None" TargetCount="2" ClientType="Npc" Client="Camila" DirectContinue="None" TargetNPC="Camila" CompletionNpc="Camila" Base_RewardNPCFriendship="75" DisableCancel="true">
+		<class name="EP1_Quest_Camila13" Title_Base="중개소 물품 요청 - $TargetItem$" ProgressOrder="17" Objective_Base="$TargetItem$[를] 확보하시오." Group="Normal" Rank="B" Lv="27" PriorQuest="EP1_Quest_Camila10" RequireStageLv="23" RequireCompanyLv="1" RequireFriendship="Neutral" Type="CollectItem" Target="PsionicStone_VerdureCrystal" TargetType="None" TargetCount="1" ClientType="Npc" Client="Camila" DirectContinue="None" TargetNPC="Camila" CompletionNpc="Camila" Base_RewardNPCFriendship="75" DisableCancel="true">
 			<Reward>
 				<property Type="Recipe" Value="Boots_Extractor_Set" Amount="1"/>
 				<property Type="Item" Value="Extractor_Epic" Amount="6"/>

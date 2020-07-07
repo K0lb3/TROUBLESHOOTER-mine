@@ -207,10 +207,14 @@
 			<property Type="ShowFrontmessageFormat" MessageColor="Corn">
 				<GameMessageForm Type="EtcMessage237" WhiteItem="Costume_Anne02"/>
 			</property>
+			<property Type="ShowFrontmessageFormat" MessageColor="Corn">
+				<GameMessageForm Type="EtcMessage240" Who="Anne" C_WhiteAmount="GetSystemConstant(&apos;RECRUIT_TRAINING_MANUAL_COUNT&apos;)"/>
+			</property>
 			<property Type="Sleep" Time="3"/>
 			<property Type="ReserveChangeLocation" Lobby="LandOfStart"/>
 			<property Type="Action" Command="GiveItem" Commit="false" ItemName="Costume_Anne01" ItemCount="1" ShowMessage="false" Alternative="true"/>
 			<property Type="Action" Command="GiveItem" Commit="false" ItemName="Costume_Anne02" ItemCount="1" ShowMessage="false" Alternative="true"/>
+			<property Type="Action" Command="GiveItem" Commit="false" ItemName="Statement_Mastery" C_ItemCount="GetSystemConstant(&apos;RECRUIT_TRAINING_MANUAL_COUNT&apos;)" ShowMessage="false" Alternative="true"/>
 			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="Progress/Tutorial/Opening" PropertyValue="ScoutAnne"/>
 			<property Type="ChangeLocation" Lobby="LandOfStart"/>
 		</Scripts>
@@ -346,8 +350,12 @@
 			<property Type="ShowFrontmessageFormat" MessageColor="Corn">
 				<GameMessageForm Type="EtcMessage237" WhiteItem="Costume_Irene02"/>
 			</property>
+			<property Type="ShowFrontmessageFormat" MessageColor="Corn">
+				<GameMessageForm Type="EtcMessage240" Who="Irene" C_WhiteAmount="GetSystemConstant(&apos;RECRUIT_TRAINING_MANUAL_COUNT&apos;)"/>
+			</property>
 			<property Type="Action" Command="GiveItem" Commit="false" ItemName="Costume_Irene01" ItemCount="1" ShowMessage="false" Alternative="true"/>
 			<property Type="Action" Command="GiveItem" Commit="false" ItemName="Costume_Irene02" ItemCount="1" ShowMessage="false" Alternative="true"/>
+			<property Type="Action" Command="GiveItem" Commit="false" ItemName="Statement_Mastery" C_ItemCount="GetSystemConstant(&apos;RECRUIT_TRAINING_MANUAL_COUNT&apos;)" ShowMessage="false" Alternative="true"/>
 			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="Progress/Character/Irene" PropertyValue="9"/>
 		</Scripts>
 	</class>
@@ -765,10 +773,14 @@
 			<property Type="ShowFrontmessageFormat" MessageColor="Corn">
 				<GameMessageForm Type="EtcMessage237" WhiteItem="Costume_Kylie02"/>
 			</property>
+			<property Type="ShowFrontmessageFormat" MessageColor="Corn">
+				<GameMessageForm Type="EtcMessage240" Who="Kylie" C_WhiteAmount="GetSystemConstant(&apos;RECRUIT_TRAINING_MANUAL_COUNT&apos;)"/>
+			</property>
 			<property Type="Sleep" Time="3"/>
 			<property Type="ReserveChangeLocation" Lobby="LandOfStart"/>
 			<property Type="Action" Command="GiveItem" Commit="false" ItemName="Costume_Kylie01" ItemCount="1" ShowMessage="false" Alternative="true"/>
 			<property Type="Action" Command="GiveItem" Commit="false" ItemName="Costume_Kylie02" ItemCount="1" ShowMessage="false" Alternative="true"/>
+			<property Type="Action" Command="GiveItem" Commit="false" ItemName="Statement_Mastery" C_ItemCount="GetSystemConstant(&apos;RECRUIT_TRAINING_MANUAL_COUNT&apos;)" ShowMessage="false" Alternative="true"/>
 			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="Progress/Character/Albus" PropertyValue="16"/>
 			<property Type="ChangeLocation" Lobby="LandOfStart"/>
 		</Scripts>
@@ -849,8 +861,12 @@
 			<property Type="ShowFrontmessageFormat" MessageColor="Corn">
 				<GameMessageForm Type="EtcMessage237" WhiteItem="Costume_Giselle02"/>
 			</property>
+			<property Type="ShowFrontmessageFormat" MessageColor="Corn">
+				<GameMessageForm Type="EtcMessage240" Who="Giselle" C_WhiteAmount="GetSystemConstant(&apos;RECRUIT_TRAINING_MANUAL_COUNT&apos;)"/>
+			</property>
 			<property Type="Action" Command="GiveItem" Commit="false" ItemName="Costume_Giselle01" ItemCount="1" ShowMessage="false" Alternative="true"/>
 			<property Type="Action" Command="GiveItem" Commit="false" ItemName="Costume_Giselle02" ItemCount="1" ShowMessage="false" Alternative="true"/>
+			<property Type="Action" Command="GiveItem" Commit="false" ItemName="Statement_Mastery" C_ItemCount="GetSystemConstant(&apos;RECRUIT_TRAINING_MANUAL_COUNT&apos;)" ShowMessage="false" Alternative="true"/>
 			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="Progress/Character/Albus" PropertyValue="9"/>
 		</Scripts>
 	</class>
@@ -1357,11 +1373,15 @@
 			<property Type="ShowFrontmessageFormat" MessageColor="Corn">
 				<GameMessageForm Type="EtcMessage237" WhiteItem="Costume_Ray02"/>
 			</property>
+			<property Type="ShowFrontmessageFormat" MessageColor="Corn">
+				<GameMessageForm Type="EtcMessage240" Who="Ray" C_WhiteAmount="GetSystemConstant(&apos;RECRUIT_TRAINING_MANUAL_COUNT&apos;)"/>
+			</property>
 			<property Type="Sleep" Time="3"/>
 			<property Type="StopBGM" Direct="true" FadeTime="1"/>
 			<property Type="ReserveChangeLocation" Lobby="LandOfStart"/>
 			<property Type="Action" Command="GiveItem" Commit="false" ItemName="Costume_Ray01" ItemCount="1" ShowMessage="false" Alternative="true"/>
 			<property Type="Action" Command="GiveItem" Commit="false" ItemName="Costume_Ray02" ItemCount="1" ShowMessage="false" Alternative="true"/>
+			<property Type="Action" Command="GiveItem" Commit="false" ItemName="Statement_Mastery" C_ItemCount="GetSystemConstant(&apos;RECRUIT_TRAINING_MANUAL_COUNT&apos;)" ShowMessage="false" Alternative="true"/>
 			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="Progress/Tutorial/Opening" PropertyValue="ScoutRay"/>
 			<property Type="ChangeLocation" Lobby="LandOfStart"/>
 		</Scripts>
@@ -1426,7 +1446,10 @@
 			<property Type="ShowFrontmessageFormat" MessageColor="Corn">
 				<GameMessageForm Type="EtcMessage237" WhiteItem="Costume_Heissing02"/>
 			</property>
-			<property Type="Sleep" Time="2"/>
+			<property Type="ShowFrontmessageFormat" MessageColor="Corn">
+				<GameMessageForm Type="EtcMessage240" Who="Heissing" C_WhiteAmount="GetSystemConstant(&apos;RECRUIT_TRAINING_MANUAL_COUNT&apos;)"/>
+			</property>
+			<property Type="Sleep" Time="3"/>
 			<property Type="SceneFade" Direct="false" FadeType="Out"/>
 			<property Type="PlaySound" SoundName="Environment/Environment_Call.ogg" SoundGroup="Effect" NoWait="Off"/>
 			<property Type="PlaySound" SoundName="Environment/Environment_CallConnect.ogg" SoundGroup="Effect" NoWait="Off"/>
@@ -1443,6 +1466,7 @@
 			<property Type="StopBGM" Direct="true" FadeTime="1"/>
 			<property Type="Action" Command="GiveItem" Commit="false" ItemName="Costume_Heissing01" ItemCount="1" ShowMessage="false" Alternative="true"/>
 			<property Type="Action" Command="GiveItem" Commit="false" ItemName="Costume_Heissing02" ItemCount="1" ShowMessage="false" Alternative="true"/>
+			<property Type="Action" Command="GiveItem" Commit="false" ItemName="Statement_Mastery" C_ItemCount="GetSystemConstant(&apos;RECRUIT_TRAINING_MANUAL_COUNT&apos;)" ShowMessage="false" Alternative="true"/>
 			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="Progress/Character/Heissing" PropertyValue="7"/>
 		</Scripts>
 	</class>
@@ -1522,6 +1546,7 @@
 			<property Type="ShowFrontmessageFormat" MessageColor="Corn">
 				<GameMessageForm Type="DifficultyActivated" Difficulty="Merciless"/>
 			</property>
+			<property Type="Action" Command="UpdateAccountProperty" Commit="false" PropertyType="DifficultyOpened/Merciless" PropertyValue="true"/>
 			<property Type="Action" Command="UpdateCompanyProperty" Commit="true" PropertyType="OfficeMenu/TroubleBook/Opened" PropertyValue="true"/>
 		</Scripts>
 	</class>
@@ -1833,8 +1858,12 @@
 			<property Type="ShowFrontmessageFormat" MessageColor="Corn">
 				<GameMessageForm Type="EtcMessage237" WhiteItem="Costume_Sion02"/>
 			</property>
+			<property Type="ShowFrontmessageFormat" MessageColor="Corn">
+				<GameMessageForm Type="EtcMessage240" Who="Sion" C_WhiteAmount="GetSystemConstant(&apos;RECRUIT_TRAINING_MANUAL_COUNT&apos;)"/>
+			</property>
 			<property Type="Action" Command="GiveItem" Commit="false" ItemName="Costume_Sion01" ItemCount="1" ShowMessage="false" Alternative="true"/>
 			<property Type="Action" Command="GiveItem" Commit="false" ItemName="Costume_Sion02" ItemCount="1" ShowMessage="false" Alternative="true"/>
+			<property Type="Action" Command="GiveItem" Commit="false" ItemName="Statement_Mastery" C_ItemCount="GetSystemConstant(&apos;RECRUIT_TRAINING_MANUAL_COUNT&apos;)" ShowMessage="false" Alternative="true"/>
 			<property Type="Action" Command="UpdateCompanyProperty" Commit="false" PropertyType="Progress/Tutorial/OfficeCharPosition" PropertyValue="Default"/>
 			<property Type="Action" Command="AddCompanyProperty" Commit="true" PropertyType="Progress/Tutorial/Office" PropertyValue="1"/>
 		</Scripts>
@@ -2810,9 +2839,13 @@
 			<property Type="ShowFrontmessageFormat" MessageColor="Corn">
 				<GameMessageForm Type="EtcMessage237" WhiteItem="Costume_Leton02"/>
 			</property>
+			<property Type="ShowFrontmessageFormat" MessageColor="Corn">
+				<GameMessageForm Type="EtcMessage240" Who="Leton" C_WhiteAmount="GetSystemConstant(&apos;RECRUIT_TRAINING_MANUAL_COUNT&apos;)"/>
+			</property>
 			<property Type="Action" Command="GiveItem" Commit="false" ItemName="Costume_Leton01" ItemCount="1" ShowMessage="false" Alternative="true"/>
 			<property Type="Action" Command="GiveItem" Commit="false" ItemName="Costume_Leton02" ItemCount="1" ShowMessage="false" Alternative="true"/>
-			<property Type="Sleep" Time="2"/>
+			<property Type="Action" Command="GiveItem" Commit="false" ItemName="Statement_Mastery" C_ItemCount="GetSystemConstant(&apos;RECRUIT_TRAINING_MANUAL_COUNT&apos;)" ShowMessage="false" Alternative="true"/>
+			<property Type="Sleep" Time="2.5"/>
 			<property Type="Jump" JumpTo="Office_RecruitLeton_Complete3"/>
 		</Scripts>
 	</class>

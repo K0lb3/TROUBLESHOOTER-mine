@@ -584,6 +584,7 @@ function MissionResult_Custom_Tutorial_PugoBackStreetAfter(mission, dc, company,
 	if win then
 		dc:UpdateCompanyProperty(company, 'Progress/Character/Albus', 1);
 		dc:UpdateCompanyProperty(company, 'Progress/ZoneEnter/FadeInOut', false);
+		dc:UpdateCompanyProperty(company, 'LastLocation/LobbyType', 'Office');
 	end
 end
 function MissionResult_Custom_Tutorial_GrayCemeteryParkAfter(mission, dc, company, lineup, win, expResults, itemGetResults, isSurrender, missionAttribute, isTroublebookMission)

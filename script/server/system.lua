@@ -191,10 +191,16 @@ function NormalUnitDead(eventArg, ds)
 		local masteryTable_Supporter = GetMastery(expTaker);
 		local mastery_Supporter = GetMasteryMastered(masteryTable_Supporter, 'Supporter');
 		if mastery_Supporter then
+			local applyAmount = mastery_Supporter.ApplyAmount;
+			-- 성실한 후견인
+			local mastery_GreatSupporter = GetMasteryMastered(masteryTable_Supporter, 'GreatSupporter');
+			if mastery_GreatSupporter then
+				applyAmount = applyAmount + mastery_GreatSupporter.ApplyAmount;
+			end			
 			for _, teamMember in ipairs(rosters) do
 				if expTaker.Lv > teamMember.Lv then
-					local addExp = math.max(1, math.floor(totalGetExp * mastery_Supporter.ApplyAmount/100));
-					local addExpJob = math.max(1, math.floor(totalGetExpJob * mastery_Supporter.ApplyAmount/100));
+					local addExp = math.max(1, math.floor(totalGetExp * applyAmount/100));
+					local addExpJob = math.max(1, math.floor(totalGetExpJob * applyAmount/100));
 					table.insert(expActions, Result_AddExp(teamMember, addExp, addExpJob, mastery_Supporter.name));
 				end
 			end	

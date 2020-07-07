@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Raid_ShadowWallUnderWay_iRppTc" Value="[!Dashboard:Counter]남은 우두머리 수"/>
+		<class name="Raid_ShadowWallUnderWay_45CyLK" Value="[!Dashboard:TimeLimiter]귀환 준비까지 남은 시간"/>
+		<class name="Raid_ShadowWallUnderWay_WjdOIk" Value="[!Dashboard:Counter]남은 야수 수"/>
+		<class name="Raid_ShadowWallUnderWay_LcyBiE" Value="[!Objective]지하 수로의 야수를 처리하시오."/>
+		<class name="Raid_ShadowWallUnderWay_t9ipV3" Value="[!Dialog][!speaker:Beast_Frog_PoisonBlue3_Normal][colour=&apos;FF66FF66&apos;]이쪽이다! 이쪽에 습기가 있어!"/>
+		<class name="Raid_ShadowWallUnderWay_bUMauV" Value="[!Dialog][!speaker:Beast_Frog_PoisonBlue3_Normal][colour=&apos;FF66FF66&apos;]잿빛아! 여기야!"/>
+		<class name="Raid_ShadowWallUnderWay_JZAqWk" Value="[!Dialog][!speaker:Beast_Spider_Grey3_Normal][colour=&apos;FFAAAAAA&apos;]금방 내려갈게. 같이가!"/>
+		<class name="Raid_ShadowWallUnderWay_M5d6WN" Value="[!Title]잊혀진 자의 은신처"/>
+		<class name="Raid_ShadowWallUnderWay_KTtebU" Value="[!Title]버려진 지하수로 북쪽 입구"/>
+		<class name="Raid_ShadowWallUnderWay_wRN32N" Value="[!Dialog][!speaker:Beast_Frog_PoisonBlue3_Normal][colour=&apos;FF66FF66&apos;]여기가 진짜로 존재할 줄이야..."/>
+		<class name="Raid_ShadowWallUnderWay_s3HVUG" Value="[!Dialog][!speaker:Beast_Spider_Grey3_Normal][colour=&apos;FFAAAAAA&apos;]그러게 말이다. 그저 도시 전설이라고 생각했어."/>
+		<class name="Raid_ShadowWallUnderWay_DsQrpE" Value="[!Dialog][!speaker:Beast_Frog_PoisonBlue3_Normal][colour=&apos;FF66FF66&apos;]황금종의 전설도 사실일까?"/>
+		<class name="Raid_ShadowWallUnderWay_2fk6Y8" Value="[!Dialog][!speaker:Beast_Spider_Grey3_Normal][colour=&apos;FFAAAAAA&apos;]이곳이 존재하는 이상 단지 헛소문은 아닐지도..."/>
+		<class name="Raid_ShadowWallUnderWay_HN6Kp5" Value="[!Dialog][!speaker:Beast_Frog_PoisonBlue3_Normal][colour=&apos;FF66FF66&apos;]인간들의 틈새에 이렇게 살아간다니 정말 돌연변이들답군..."/>
+		<class name="Raid_ShadowWallUnderWay_jDLqsT" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow3_Normal][colour=&apos;FFFFAA00&apos;]거기 위에 뭐하는 녀석이냐!"/>
+		<class name="Raid_ShadowWallUnderWay_LiAISQ" Value="[!Dialog][!speaker:Beast_Frog_PoisonBlue3_Normal][colour=&apos;FF66FF66&apos;]이 곳 주민인가 보군."/>
+		<class name="Raid_ShadowWallUnderWay_Is1EnL" Value="[!Dialog][!speaker:Beast_Frog_PoisonBlue3_Normal][colour=&apos;FF66FF66&apos;]한 눈에 순혈종이 아닌 것을 바로 알아보겠네."/>
+		<class name="Raid_ShadowWallUnderWay_ZxjX1c" Value="[!Dialog][!speaker:Beast_Spider_Grey3_Normal][colour=&apos;FFAAAAAA&apos;]역시 이곳은 그 아이가 말한 은신처인가봐."/>
+		<class name="Raid_ShadowWallUnderWay_niNJGs" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow3_Normal][colour=&apos;FFFFAA00&apos;]길을 잃은 건가?"/>
+		<class name="Raid_ShadowWallUnderWay_svRQFw" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow3_Normal][colour=&apos;FFFFAA00&apos;]이곳을 어떻게 찾아 온 거지?"/>
+		<class name="Raid_ShadowWallUnderWay_2rTSMD" Value="[!Dialog][!speaker:Beast_Frog_PoisonBlue3_Normal][colour=&apos;FF66FF66&apos;]돌연변이를 위한 은신처가 있다고 해서 찾아왔어."/>
+		<class name="Raid_ShadowWallUnderWay_UcVYAQ" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow3_Normal][colour=&apos;FFFFAA00&apos;]돌연변이?"/>
+		<class name="Raid_ShadowWallUnderWay_e2n8xu" Value="[!Dialog][!speaker:Beast_Spider_Grey3_Normal][colour=&apos;FFAAAAAA&apos;]저희는 인간 사회를 모험하는 한 도로리로부터 이 곳의 이야기를 들었습니다."/>
+		<class name="Raid_ShadowWallUnderWay_7KYQ74" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow3_Normal][colour=&apos;FFFFAA00&apos;]도로리?"/>
+		<class name="Raid_ShadowWallUnderWay_Z4LAkG" Value="[!Dialog][!speaker:Beast_Spider_Grey3_Normal][colour=&apos;FFAAAAAA&apos;]네."/>
+		<class name="Raid_ShadowWallUnderWay_Tfdm61" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow3_Normal][colour=&apos;FFFFAA00&apos;]흠..."/>
+		<class name="Raid_ShadowWallUnderWay_p6jcdZ" Value="[!Dialog][!speaker:Beast_Frog_PoisonBlue3_Normal][colour=&apos;FF66FF66&apos;]단도직입적으로 우리도 이곳에서 지낼 수 있게 해줘."/>
+		<class name="Raid_ShadowWallUnderWay_hEKpO5" Value="[!Dialog][!speaker:Beast_Frog_PoisonBlue3_Normal][colour=&apos;FF66FF66&apos;]필요한 일이라면 무엇이든지 할게."/>
+		<class name="Raid_ShadowWallUnderWay_KoieVU" Value="[!Dialog][!speaker:Beast_Spider_Grey3_Normal][colour=&apos;FFAAAAAA&apos;]부탁드립니다."/>
+		<class name="Raid_ShadowWallUnderWay_HKfm3m" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow3_Normal][colour=&apos;FFAAAA00&apos;]......"/>
+		<class name="Raid_ShadowWallUnderWay_DVEJEx" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow3_Normal][colour=&apos;FFFFAA00&apos;]내가 결정할 수 있는 일이 아니다."/>
+		<class name="Raid_ShadowWallUnderWay_2cBBqg" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow3_Normal][colour=&apos;FFFFAA00&apos;]군주님에게 너희들의 요청을 전달하마."/>
+		<class name="Raid_ShadowWallUnderWay_Z8hY9u" Value="[!Dialog][!speaker:Beast_Spider_Grey3_Normal][colour=&apos;FFAAAAAA&apos;]&apos;군주?&apos;"/>
+		<class name="Raid_ShadowWallUnderWay_vEaISZ" Value="[!Dialog][!speaker:Beast_Frog_PoisonBlue3_Normal][colour=&apos;FF66FF66&apos;]&apos;이 녀석이 이 무리의 우두머리 아닌가?&apos;"/>
+		<class name="Raid_ShadowWallUnderWay_AbL0d3" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow3_Normal][colour=&apos;FFFFAA00&apos;]일단 여기서 기다려라. 곧 돌아오마."/>
+		<class name="Raid_ShadowWallUnderWay_hIan10" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow3_Normal][colour=&apos;FFFFAA00&apos;]그리고 허튼 짓 하지 말게나."/>
+		<class name="Raid_ShadowWallUnderWay_9TBFiD" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow3_Normal][colour=&apos;FFFFAA00&apos;]자네들은 아직까지 우리 영역에 들어온 칩입자에 지나지 않아."/>
+		<class name="Raid_ShadowWallUnderWay_JONa6B" Value="[!Dialog][!speaker:Beast_Frog_PoisonBlue3_Normal][colour=&apos;FF66FF66&apos;]&apos;꽤 까칠하네...&apos;"/>
+		<class name="Raid_ShadowWallUnderWay_CQpYFq" Value="[!Dialog][!speaker:Beast_Spider_Grey3_Normal][colour=&apos;FFAAAAAA&apos;]알겠습니다."/>
+		<class name="Raid_ShadowWallUnderWay_kAXEp6" Value="[!Title]잿더미 야샤 부화장"/>
+		<class name="Raid_ShadowWallUnderWay_IjnYge" Value="[!Title]버려진 지하수로 엔진실"/>
+		<class name="Raid_ShadowWallUnderWay_l6BEUb" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow2_Normal][colour=&apos;FFFFAA00&apos;]어머니. 여섯째님이 찾아오셨습니다."/>
+		<class name="Raid_ShadowWallUnderWay_NCHBTp" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow4_Normal][colour=&apos;FFFF0000&apos;]들라 해라."/>
+		<class name="Raid_ShadowWallUnderWay_NycxUl" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow3_Normal][colour=&apos;FFFFAA00&apos;]막내. 어머님을 뵙습니다."/>
+		<class name="Raid_ShadowWallUnderWay_lZQBuf" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow4_Normal][colour=&apos;FFFF0000&apos;]그래. 오랜만이구나. 무슨 일이니?"/>
+		<class name="Raid_ShadowWallUnderWay_sangV0" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow3_Normal][colour=&apos;FFFFAA00&apos;]외부로부터 흘러 들어온 네구리와 야샤가 무리에 합류해달라는 요청입니다."/>
+		<class name="Raid_ShadowWallUnderWay_u1t7px" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow4_Normal][colour=&apos;FFFF0000&apos;]합류?"/>
+		<class name="Raid_ShadowWallUnderWay_mOAjn6" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow3_Normal][colour=&apos;FFFFAA00&apos;]네. 그저 우연히 흘러든 녀석들이 아니었습니다."/>
+		<class name="Raid_ShadowWallUnderWay_m8w0m3" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow3_Normal][colour=&apos;FFFFAA00&apos;]둘 다 돌연변이 종으로 완전체로 성장한 자들이었습니다."/>
+		<class name="Raid_ShadowWallUnderWay_4Dj62H" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow4_Normal][colour=&apos;FFFF0000&apos;]......"/>
+		<class name="Raid_ShadowWallUnderWay_vtppjk" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow4_Normal][colour=&apos;FFFF0000&apos;]일이 귀찮게 되었구나."/>
+		<class name="Raid_ShadowWallUnderWay_Ks0i2D" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow3_Normal][colour=&apos;FFAAAA00&apos;]네?"/>
+		<class name="Raid_ShadowWallUnderWay_sqsJXF" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow4_Normal][colour=&apos;FFFF0000&apos;]혼자 살아갈 수 있을 성체들이 은신처를 찾는 것은 누군가에게 쫓기고 있다 말이겠지..."/>
+		<class name="Raid_ShadowWallUnderWay_zsZsY4" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow3_Normal][colour=&apos;FFAAAA00&apos;]그냥 외톨이들 아닐까요?"/>
+		<class name="Raid_ShadowWallUnderWay_nBLgFl" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow4_Normal][colour=&apos;FFFF0000&apos;]아냐... 아냐... 인간이 오는 것이야..."/>
+		<class name="Raid_ShadowWallUnderWay_RdaiVo" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow3_Normal][colour=&apos;FFFFAA00&apos;]설마... 그럴리가요..."/>
+		<class name="Raid_ShadowWallUnderWay_IwdQP2" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow4_Normal][colour=&apos;FFFF0000&apos;]넌 인간이 얼마나 집요한 지 몰라서 그렇단다."/>
+		<class name="Raid_ShadowWallUnderWay_QwTATq" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow3_Normal][colour=&apos;FFFFAA00&apos;]걱정마세요. 어머님. 인간이 오면 제가 쫓아내겠습니다."/>
+		<class name="Raid_ShadowWallUnderWay_5lNqPm" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow4_Normal][colour=&apos;FFFF0000&apos;]네가 인간을 만난 적이 없어서 상황을 파악 못 하는 구나."/>
+		<class name="Raid_ShadowWallUnderWay_ih50q9" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow3_Normal][colour=&apos;FFFFAA00&apos;]......"/>
+		<class name="Raid_ShadowWallUnderWay_0fgQXg" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow4_Normal][colour=&apos;FFFF0000&apos;]일단 그 자들을 중립지로 안내해라."/>
+		<class name="Raid_ShadowWallUnderWay_74s4Ay" Value="[!Dialog][!speaker:Beast_Spider_BlackWidow3_Normal][colour=&apos;FFFFAA00&apos;]알겠습니다."/>
+		<class name="Raid_ShadowWallUnderWay_IOtwwT" Value="[!Title]붉은 도로리 거주구"/>
+		<class name="Raid_ShadowWallUnderWay_2GHpO0" Value="[!Title]버려진 지하수로 자재 창고"/>
+		<class name="Raid_ShadowWallUnderWay_NlKzmo" Value="[!Dialog][!speaker:Beast_Bat_Red_Normal][colour=&apos;FFFFAA00&apos;]전원 대장을 향해 충성!"/>
+		<class name="Raid_ShadowWallUnderWay_gCL3eg" Value="[!BalloonChat][!speaker:Dorori_Red01]충성!"/>
+		<class name="Raid_ShadowWallUnderWay_dThRRf" Value="[!BalloonChat][!speaker:Dorori_Red02]충성!"/>
+		<class name="Raid_ShadowWallUnderWay_X3IVV4" Value="[!BalloonChat][!speaker:Dorori_Red03]충성!"/>
+		<class name="Raid_ShadowWallUnderWay_eKogjW" Value="[!BalloonChat][!speaker:Dorori_Red04]충성!"/>
+		<class name="Raid_ShadowWallUnderWay_f0UGrt" Value="[!BalloonChat][!speaker:Dorori_Red05]충성!"/>
+		<class name="Raid_ShadowWallUnderWay_7zdzM7" Value="[!BalloonChat][!speaker:Dorori_Red06]충성!"/>
+		<class name="Raid_ShadowWallUnderWay_joSZtH" Value="[!Dialog][!speaker:Beast_Bat_Red_Leader_Normal][colour=&apos;FFFF0000&apos;]이 자식들! 여기 올라 오지 말라고 했지?"/>
+		<class name="Raid_ShadowWallUnderWay_XQfJxg" Value="[!Dialog][!speaker:Beast_Bat_Red_Leader_Normal][colour=&apos;FFFF0000&apos;]다들 죽을래?"/>
+		<class name="Raid_ShadowWallUnderWay_lplNJF" Value="[!Dialog][!speaker:Beast_Bat_Red_Leader_Normal][colour=&apos;FFFF0000&apos;]저 푸른 달이 비치는 천장을 네 녀석 피로 붉게 물들여 볼까!"/>
+		<class name="Raid_ShadowWallUnderWay_8MD0B4" Value="[!Dialog][!speaker:Beast_Bat_Red_Normal][colour=&apos;FFFFAA00&apos;]피!?"/>
+		<class name="Raid_ShadowWallUnderWay_w3la2K" Value="[!BalloonChat][!speaker:Dorori_Red01]피!!"/>
+		<class name="Raid_ShadowWallUnderWay_qe5Tvr" Value="[!BalloonChat][!speaker:Dorori_Red02]피??"/>
+		<class name="Raid_ShadowWallUnderWay_dkOADN" Value="[!BalloonChat][!speaker:Dorori_Red03]피!!!!"/>
+		<class name="Raid_ShadowWallUnderWay_D3fRHi" Value="[!BalloonChat][!speaker:Dorori_Red04]피?"/>
+		<class name="Raid_ShadowWallUnderWay_LJdJdq" Value="[!BalloonChat][!speaker:Dorori_Red05]피!!"/>
+		<class name="Raid_ShadowWallUnderWay_JITB6g" Value="[!BalloonChat][!speaker:Dorori_Red06]피!!!"/>
+		<class name="Raid_ShadowWallUnderWay_a2G5SF" Value="[!Dialog][!speaker:Beast_Bat_Red_Leader_Normal][colour=&apos;FFFF0000&apos;]이런 미친 녀석들~"/>
+		<class name="Raid_ShadowWallUnderWay_a28CCC" Value="[!Dialog][!speaker:Beast_Bat_Red_Leader_Normal][colour=&apos;FFFF0000&apos;]피라면 환장을 하네."/>
+		<class name="Raid_ShadowWallUnderWay_Sum0S0" Value="[!BalloonChat][!speaker:Dorori_Red01]피!!"/>
+		<class name="Raid_ShadowWallUnderWay_b2hP0E" Value="[!BalloonChat][!speaker:Dorori_Red02]피!!"/>
+		<class name="Raid_ShadowWallUnderWay_Eh1KQp" Value="[!BalloonChat][!speaker:Dorori_Red03]피!!"/>
+		<class name="Raid_ShadowWallUnderWay_FZn7gU" Value="[!BalloonChat][!speaker:Dorori_Red04]피!!"/>
+		<class name="Raid_ShadowWallUnderWay_mXRfQ6" Value="[!BalloonChat][!speaker:Dorori_Red05]피!!"/>
+		<class name="Raid_ShadowWallUnderWay_JW8Ydk" Value="[!BalloonChat][!speaker:Dorori_Red06]피!!"/>
+		<class name="Raid_ShadowWallUnderWay_RZHhQW" Value="[!Title]붉은 네구리 거주구"/>
+		<class name="Raid_ShadowWallUnderWay_MObZlf" Value="[!Title]버려진 지하수로 저수장"/>
+		<class name="Raid_ShadowWallUnderWay_c9WRGa" Value="[!Dialog][!speaker:Beast_Frog_PoisonRed3_Normal][colour=&apos;FFFF0000&apos;]다들 인간이 올 지 모른다고 하니 철저히 준비해라."/>
+		<class name="Raid_ShadowWallUnderWay_bt3rIe" Value="[!Dialog][!speaker:Beast_Frog_PoisonRed2_Normal][colour=&apos;FFFFAA00&apos;]인간 맛있나요?"/>
+		<class name="Raid_ShadowWallUnderWay_GK5Eg2" Value="[!Dialog][!speaker:Beast_Frog_PoisonRed3_Normal][colour=&apos;FFFF0000&apos;]맛없다."/>
+		<class name="Raid_ShadowWallUnderWay_q8okiQ" Value="[!Dialog][!speaker:Beast_Frog_PoisonRed2_Normal][colour=&apos;FFFFAA00&apos;]그럼 그냥 우린 숨어있죠?"/>
+		<class name="Raid_ShadowWallUnderWay_iq3liV" Value="[!Dialog][!speaker:Beast_Frog_PoisonRed3_Normal][colour=&apos;FFFF0000&apos;]안돼."/>
+		<class name="Raid_ShadowWallUnderWay_kry4jX" Value="[!Dialog][!speaker:Beast_Frog_PoisonRed2_Normal][colour=&apos;FFFFAA00&apos;]파이프 속으로 숨으면 인간들은 못 찾을건데?"/>
+		<class name="Raid_ShadowWallUnderWay_bErbVX" Value="[!Dialog][!speaker:Beast_Frog_PoisonRed3_Normal][colour=&apos;FFFF0000&apos;]인간이 오면 잿더미 야샤의 알집을 모두 부숴버릴거다."/>
+		<class name="Raid_ShadowWallUnderWay_ejoHS8" Value="[!BalloonChat][!speaker:Neguri_Red01]!!"/>
+		<class name="Raid_ShadowWallUnderWay_KsioDc" Value="[!BalloonChat][!speaker:Neguri_Red02]!!"/>
+		<class name="Raid_ShadowWallUnderWay_LiHLKs" Value="[!BalloonChat][!speaker:Neguri_Red03]!!"/>
+		<class name="Raid_ShadowWallUnderWay_7ynZWr" Value="[!BalloonChat][!speaker:Neguri_Red04]!!"/>
+		<class name="Raid_ShadowWallUnderWay_ucQyfE" Value="[!BalloonChat][!speaker:Neguri_Red05]!!"/>
+		<class name="Raid_ShadowWallUnderWay_e7ayFF" Value="[!BalloonChat][!speaker:Neguri_Red06]!!"/>
+		<class name="Raid_ShadowWallUnderWay_lA8Rxg" Value="[!Dialog][!speaker:Beast_Frog_PoisonRed2_Normal][colour=&apos;FFFFAA00&apos;]뭐! 그 맛난 것을!!"/>
+		<class name="Raid_ShadowWallUnderWay_pCl2BC" Value="[!Dialog][!speaker:Beast_Frog_PoisonRed3_Normal][colour=&apos;FFFF0000&apos;]화나지?"/>
+		<class name="Raid_ShadowWallUnderWay_VNcl7c" Value="[!Dialog][!speaker:Beast_Frog_PoisonRed2_Normal][colour=&apos;FFFFAA00&apos;]네! 인간 못 됐어!"/>
+		<class name="Raid_ShadowWallUnderWay_2uMyUH" Value="[!Title]황금 어금니"/>
+		<class name="Raid_ShadowWallUnderWay_GtjRMw" Value="[!Title]버려진 지하수로"/>
+		<class name="Raid_ShadowWallUnderWay_3y4b0V" Value="[!Dialog][!speaker:Beast_Tima_Yellow_Normal][colour=&apos;FFFFFF55&apos;]인간인가..."/>
+		<class name="Raid_ShadowWallUnderWay_Kl0CHZ" Value="[!Dialog][!speaker:Beast_Tima_Yellow_Normal][colour=&apos;FFFFFF55&apos;]......"/>
+		<class name="Raid_ShadowWallUnderWay_a4WOXB" Value="[!Dialog][!speaker:Beast_Tima_Yellow_Normal][colour=&apos;FFFFFF55&apos;]다른 녀석들도 깨워야 하나..."/>
+		<class name="Raid_ShadowWallUnderWay_CCLFVG" Value="[!Dialog][!speaker:Kylie_Normal]어차피 이 구역을 폐쇄했으니 한 번에 무리하게 소탕하지 않아도 돼."/>
+		<class name="Raid_ShadowWallUnderWay_RJ8CgN" Value="[!Dialog][!speaker:Albus_Normal]넵. 알겠습니다."/>
+		<class name="Raid_ShadowWallUnderWay_d89MJZ" Value="[!Dialog][!speaker:Albus_Stare]상황에 따라 위험하면 일단 후퇴하도록 하겠습니다."/>
+		<class name="Raid_ShadowWallUnderWay_fWdS7f" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Raid_ShadowWallUnderWay_eaIwgD" Value="[!VictoryCondition]구역 내 야수를 모두 사냥하시오."/>
+		<class name="Raid_ShadowWallUnderWay_SHHFEG" Value="[!Title]황금 날개"/>
+		<class name="Raid_ShadowWallUnderWay_7fnCvA" Value="[!Dialog][!speaker:Beast_Bat_Gold_Normal][colour=&apos;FFFFFF55&apos;]이것아. 요란하게 좀 다니지 말고 좀 뛰어다녀."/>
+		<class name="Raid_ShadowWallUnderWay_YpqY8h" Value="[!Dialog][!speaker:Beast_Bat_Gold_Normal][colour=&apos;FFFFFF55&apos;]그러니까 살이 뒤룩뒤룩 찌는 거야."/>
+		<class name="Raid_ShadowWallUnderWay_rqKdWN" Value="[!Dialog][!speaker:Beast_Tima_Yellow_Normal][colour=&apos;FFFFFF55&apos;]어디냐?"/>
+		<class name="Raid_ShadowWallUnderWay_EjAZNu" Value="[!Dialog][!speaker:Beast_Bat_Gold_Normal][colour=&apos;FFFFFF55&apos;]니 옆."/>
+		<class name="Raid_ShadowWallUnderWay_zpRoL7" Value="[!Dialog][!speaker:Beast_Tima_Yellow_Normal][colour=&apos;FFFFFF55&apos;]네 녀석은 나이를 먹더니 또 작아졌군."/>
+		<class name="Raid_ShadowWallUnderWay_rmcNYU" Value="[!Dialog][!speaker:Beast_Bat_Gold_Normal][colour=&apos;FFFFFF55&apos;]어쩔 수 있나. 그렇게 태어났는걸."/>
+		<class name="Raid_ShadowWallUnderWay_JDbDJB" Value="[!Dialog][!speaker:Beast_Tima_Yellow_Normal][colour=&apos;FFFFFF55&apos;]소식은 들었지?"/>
+		<class name="Raid_ShadowWallUnderWay_URJ8x3" Value="[!Dialog][!speaker:Beast_Bat_Gold_Normal][colour=&apos;FFFFFF55&apos;]그래."/>
+		<class name="Raid_ShadowWallUnderWay_SciDZU" Value="[!Dialog][!speaker:Beast_Tima_Yellow_Normal][colour=&apos;FFFFFF55&apos;]늙어 죽으나 맞서다 죽으나 결과는 똑같아."/>
+		<class name="Raid_ShadowWallUnderWay_4Vx8VX" Value="[!Dialog][!speaker:Beast_Bat_Gold_Normal][colour=&apos;FFFFFF55&apos;]이 똥강아지가 늙어서 노망이 났나?"/>
+		<class name="Raid_ShadowWallUnderWay_28Mhv5" Value="[!Dialog][!speaker:Beast_Bat_Gold_Normal][colour=&apos;FFFFFF55&apos;]그냥 늙어 죽는 게 더 행복한 거거든?"/>
+		<class name="Raid_ShadowWallUnderWay_e4B0jA" Value="[!Title]황금 혀"/>
+		<class name="Raid_ShadowWallUnderWay_2pbSzs" Value="[!Title]버려진 지하수로 하수처리장"/>
+		<class name="Raid_ShadowWallUnderWay_xs5Tso" Value="[!Dialog][!speaker:Beast_Frog_Gold_Normal][colour=&apos;FFFFFF55&apos;]즐거운 목욕 시간~☆"/>
+		<class name="Raid_ShadowWallUnderWay_ZBzSwu" Value="[!Dialog][!speaker:Beast_Frog_Gold_Normal][colour=&apos;FFFFFF55&apos;]!?"/>
+		<class name="Raid_ShadowWallUnderWay_03aQ1B" Value="[!Dialog][!speaker:Beast_Bat_Gold_Normal][colour=&apos;FFFFFF55&apos;]역시 여기 있었어."/>
+		<class name="Raid_ShadowWallUnderWay_5SHY4W" Value="[!Dialog][!speaker:Beast_Frog_Gold_Normal][colour=&apos;FFFFFF55&apos;]니들 뭐냐?"/>
+		<class name="Raid_ShadowWallUnderWay_k268uj" Value="[!Dialog][!speaker:Beast_Tima_Yellow_Normal][colour=&apos;FFFFFF55&apos;]도와줘. 황금 혀."/>
+		<class name="Raid_ShadowWallUnderWay_CW7hiv" Value="[!Dialog][!speaker:Beast_Bat_Gold_Normal][colour=&apos;FFFFFF55&apos;]인간이 온다."/>
+		<class name="Raid_ShadowWallUnderWay_qTDDUC" Value="[!Dialog][!speaker:Beast_Frog_Gold_Normal][colour=&apos;FFFFFF55&apos;]??"/>
+		<class name="Raid_ShadowWallUnderWay_Zneg2Q" Value="[!Dialog][!speaker:Beast_Frog_Gold_Normal][colour=&apos;FFFFFF55&apos;]인간에겐 못 이기니까 여기 숨어 지내기로 한 것 아니었나?"/>
+		<class name="Raid_ShadowWallUnderWay_QmLrK4" Value="[!Dialog][!speaker:Beast_Frog_Gold_Normal][colour=&apos;FFFFFF55&apos;]인간이 오면 잠시 자리를 떴다가 나중에 다시 오면 돼."/>
+		<class name="Raid_ShadowWallUnderWay_AL3uZm" Value="[!Dialog][!speaker:Beast_Tima_Yellow_Normal][colour=&apos;FFFFFF55&apos;]우리야 어떻게든 도망치면 살아남겠지만 여기에 정착한 녀석들은 모두 제거될 거다."/>
+		<class name="Raid_ShadowWallUnderWay_52S0wq" Value="[!Dialog][!speaker:Beast_Frog_Gold_Normal][colour=&apos;FFFFFF55&apos;]원래 그럴 목적으로 방치한 녀석들인데?"/>
+		<class name="Raid_ShadowWallUnderWay_A5njca" Value="[!Dialog][!speaker:Beast_Bat_Gold_Normal][colour=&apos;FFFFFF55&apos;]황금 혀. 노년의 10년을 같이 보낸 사이인데 굳이 이래야겠나?"/>
+		<class name="Raid_ShadowWallUnderWay_qRxACS" Value="[!Dialog][!speaker:Beast_Tima_Yellow_Normal][colour=&apos;FFFFFF55&apos;]부탁하네. 황금 혀."/>
+		<class name="Raid_ShadowWallUnderWay_RcXK7U" Value="[!Dialog][!speaker:Beast_Frog_Gold_Normal][colour=&apos;FFFFFF55&apos;]부탁이고 뭐고 지금 오는 녀석들을 물리쳐봐야 또 올 거다. 그게 인간이야."/>
+		<class name="Raid_ShadowWallUnderWay_1kzdP6" Value="[!Dialog][!speaker:Beast_Frog_Gold_Normal][colour=&apos;FFFFFF55&apos;]그렇게 당하고도 몰라? 인간은 그저 똥이야. 그냥 피하는 게 상책이야."/>
+		<class name="Raid_ShadowWallUnderWay_ZMj1Pc" Value="[!Dialog][!speaker:Beast_Bat_Gold_Normal][colour=&apos;FFFFFF55&apos;]우리 셋. 한날 한시에는 태어나지 않았으나 한날 한시에 죽겠다고 의형제를 맺지 않았나."/>
+		<class name="Raid_ShadowWallUnderWay_wcZ6Mv" Value="[!Dialog][!speaker:Beast_Frog_Gold_Normal][colour=&apos;FFFFFF55&apos;]그래서 이제 같이 다 죽자고?"/>
+		<class name="Raid_ShadowWallUnderWay_ApQ4LZ" Value="[!Dialog][!speaker:Beast_Frog_Gold_Normal][colour=&apos;FFFFFF55&apos;]난 싫습니다."/>
+		<class name="Raid_ShadowWallUnderWay_96NWzb" Value="[!Dialog][!speaker:Kylie_Normal]이 쪽이야."/>
+		<class name="Raid_ShadowWallUnderWay_WIAifK" Value="[!Dialog][!speaker:Kylie_Normal]이 구역으로 들어가는 진입로는 남쪽, 북쪽 진입로가 있어."/>
+		<class name="Raid_ShadowWallUnderWay_KEqhEm" Value="[!Dialog][!speaker:Albus_SurpriseStare]진입로에 따른 차이가 있나요?"/>
+		<class name="Raid_ShadowWallUnderWay_POZVui" Value="[!Title]북쪽 진입로"/>
+		<class name="Raid_ShadowWallUnderWay_G7kf86" Value="[!Title]버려진 지하수로 "/>
+		<class name="Raid_ShadowWallUnderWay_jmWitK" Value="[!Dialog][!speaker:Kylie_Normal]설계도 상으로는 북쪽 진입로는 저수장과 구 통제실과 가까워."/>
+		<class name="Raid_ShadowWallUnderWay_vZJFbT" Value="[!Dialog][!speaker:Kylie_Normal]처음부터 좁은 통로를 지내야 하니 다수의 인원이 진입할 경우 엔진실까지 병목 현상이 일어날 수 있을 것 같아."/>
+		<class name="Raid_ShadowWallUnderWay_QJTppv" Value="[!Title]남쪽 진입로"/>
+		<class name="Raid_ShadowWallUnderWay_WIb4ea" Value="[!Title]버려진 지하수로"/>
+		<class name="Raid_ShadowWallUnderWay_HrVeCb" Value="[!Dialog][!speaker:Kylie_Normal]남쪽 진입로는 엔진실과 가깝지."/>
+		<class name="Raid_ShadowWallUnderWay_hHgKwG" Value="[!Dialog][!speaker:Kylie_Normal]소로를 따라 우회하면 바로 엔진실로 갈 수 있어. 하지만 엔진실에 어떤 위험이 있을지 모르지."/>
+		<class name="Raid_ShadowWallUnderWay_aDKtfw" Value="[!Dialog][!speaker:Albus_Think]&apos;엔진실부터 가야 하나...&apos;"/>
+		<class name="Raid_ShadowWallUnderWay_MLuqyk" Value="[!Choice]북쪽 진입로"/>
+		<class name="Raid_ShadowWallUnderWay_YsUHT3" Value="[!Choice]남쪽 진입로"/>
+		<class name="Raid_ShadowWallUnderWay_wl3N1q" Value="[!Dialog]야수 우두머리를 제압하였습니다. 남은 야수들을 처리하시겠습니까?"/>
+		<class name="Raid_ShadowWallUnderWay_WGDn1D" Value="[!Choice]사냥을 계속한다."/>
+		<class name="Raid_ShadowWallUnderWay_gYjxSs" Value="[!Choice]귀환한다."/>
+		<class name="Raid_ShadowWallUnderWay_gMycbx" Value="[!VictoryCondition]적을 모두 제압하시오."/>
+		<class name="Raid_ShadowWallUnderWay_mqcCN5" Value="[!Dialog][!speaker:Gangster_CheChe_Normal]Raid_ShadeFogBackStreet_Ttqooa"/>
+		<class name="Raid_ShadowWallUnderWay_0ORfhV" Value="[!Dialog][!speaker:Gangster_SmugglerHelmet_Snake_Normal]Raid_ShadeFogBackStreet_ZHSGC1"/>
+		<class name="Raid_ShadowWallUnderWay_TJkW4A" Value="[!Dialog][!speaker:Gangster_YukyunHyang_Normal]Raid_ShadeFogBackStreet_b7WNIV"/>
+		<class name="Raid_ShadowWallUnderWay_2opHpS" Value="[!Dialog][!speaker:Gangster_RyungLi_Normal]Raid_ShadeFogBackStreet_Gell6E"/>
+		<class name="Raid_ShadowWallUnderWay_h5pmLZ" Value="[!Dialog][!speaker:Gangster_Tyron_Normal]Raid_ShadeFogBackStreet_aCmDr5"/>
+		<class name="Raid_ShadowWallUnderWay_GbdeAT" Value="[!Dialog][!speaker:Gangster_HellFire_Normal]Raid_ShadeFogBackStreet_hosjeG"/>
+		<class name="Raid_ShadowWallUnderWay_5LFv2L" Value="[!Dialog][!speaker:Gangster_SkullHelmet_Normal]Raid_ShadeFogBackStreet_nX5f0h"/>
+		<class name="Raid_ShadowWallUnderWay_DAT0J9" Value="[!Dialog][!speaker:Giselle_Normal]Raid_ShadeFogBackStreet_jaj1AY"/>
+		<class name="Raid_ShadowWallUnderWay_caj8Zl" Value="[!Dialog][!speaker:Giselle_Normal]Raid_ShadeFogBackStreet_NC3pkQ"/>
+		<class name="Raid_ShadowWallUnderWay_KAiSSu" Value="[!Dialog][!speaker:Gangster_SkullThin_Normal]Raid_ShadeFogBackStreet_TMm49O"/>
+		<class name="Raid_ShadowWallUnderWay_cfIbDc" Value="[!Dialog][!speaker:Giselle_Normal]Raid_ShadeFogBackStreet_q0kQEO"/>
+		<class name="Raid_ShadowWallUnderWay_fwKHVP" Value="[!Dialog][!speaker:Giselle_Normal]Raid_ShadeFogBackStreet_HZ81UE"/>
+		<class name="Raid_ShadowWallUnderWay_xaNU0P" Value="[!Dialog][!speaker:Gangster_SkullFat_Normal]Raid_ShadeFogBackStreet_K2uOfE"/>
+		<class name="Raid_ShadowWallUnderWay_H0t2WI" Value="[!Dialog][!speaker:Giselle_Smile]Raid_ShadeFogBackStreet_VfCr6j"/>
+		<class name="Raid_ShadowWallUnderWay_8XNsiD" Value="[!Dialog][!speaker:Giselle_Satisfying]Raid_ShadeFogBackStreet_ZNar9Q"/>
+		<class name="Raid_ShadowWallUnderWay_XQcPq1" Value="[!Dialog][!speaker:Gangster_SkullNormal_Normal]Raid_ShadeFogBackStreet_1yifxK"/>
+		<class name="Raid_ShadowWallUnderWay_K3UNg8" Value="[!Dialog][!speaker:Giselle_Smile]Raid_ShadeFogBackStreet_jE9vJb"/>
+		<class name="Raid_ShadowWallUnderWay_W9UReJ" Value="[!Dialog][!speaker:Giselle_Satisfying]Raid_ShadeFogBackStreet_HKTJ14"/>
+		<class name="Raid_ShadowWallUnderWay_owJcaj" Value="[!Dialog][!speaker:Gangster_SkullHelmet_Normal]Raid_ShadeFogBackStreet_Kc9TcH"/>
+		<class name="Raid_ShadowWallUnderWay_w8iKyq" Value="[!Dialog][!speaker:EmptySubTitle_]야수 우두머리를 제압하였습니다. 계속 사냥을 계속 진행하시겠습니까?"/>
+		<class name="Raid_ShadowWallUnderWay_7sMA8h" Value="[!Objective]남은 귀환 시간까지 생존하시오."/>
+		<class name="Raid_ShadowWallUnderWay_wiaycs" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Raid_ShadowWallUnderWay_FEYz5I" Value="[!VictoryCondition]남은 귀환 시간까지 생존하시오."/>
+		<class name="Raid_ShadowWallUnderWay_TMd8Tn" Value="[!BalloonChat]키힉! 키힉!"/>
+		<class name="Raid_ShadowWallUnderWay_n0bjVZ" Value="[!BalloonChat]크르릉!"/>
+		<class name="Raid_ShadowWallUnderWay_g5avLR" Value="[!BalloonChat]키힉! 키힉!"/>
+		<class name="Raid_ShadowWallUnderWay_EQKuPv" Value="[!BalloonChat]크르릉!"/>
+		<class name="Raid_ShadowWallUnderWay_NqSZay" Value="[!BalloonChat]네르굴~!"/>
+		<class name="Raid_ShadowWallUnderWay_gJSv5Q" Value="[!BalloonChat]네르굴~!"/>
+	</idspace>
+</idspaces>

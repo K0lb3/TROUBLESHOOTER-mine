@@ -516,7 +516,7 @@ function MissionDirect_SpawnObject(mid, ds, args, conditionOutput)
 		return -1;
 	end
 	local objKey = GetObjKey(obj);
-	local action = ds:WorldAction(Result_Resurrect(obj, 'system'));
+	local action = ds:WorldAction(Result_Resurrect(obj, 'direct'));
 	local resurr = ds:Resurrect(objKey, true);
 	ds:Connect(resurr, action, 0);
 	local move = ds:Move(objKey, args.Position[1], true, args.NoEvent ~= 'On', nil, nil, nil, StringToBool(args.ForwardEvent, false), nil, nil, nil, nil, true);

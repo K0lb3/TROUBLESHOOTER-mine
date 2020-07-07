@@ -5,19 +5,19 @@ function CheckNPCFlag(npc, company)
 	
 	for i, quest in ipairs(npc.EndQuest) do
 		if TestQuestClear(company, npc, quest) then
-			print('can ClearQuest', quest);
+			--print('can ClearQuest', quest);
 			flags.CanClearQuest = true;
 		end
 	end
 	for i, quest in ipairs(npc.ProgressQuest) do
 		if TestQuestInProgress(company, npc, quest) then
-			print('can Progress', quest);
+			--print('can Progress', quest);
 			flags.ProgressQuest = true;
 		end
 	end	
 	for i, quest in ipairs(npc.StartQuest) do
 		if TestQuestStart(company, npc, quest) then
-			print('can StartQuest', quest);
+			--print('can StartQuest', quest);
 			flags.CanStartQuest = true;
 		end
 	end

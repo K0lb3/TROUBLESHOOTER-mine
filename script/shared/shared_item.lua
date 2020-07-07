@@ -234,8 +234,7 @@ function GetExtractMaterial(itemName)
 	end
 	-- 2. 재료 아이템
 	for _, info in ipairs(recipe.RequireMaterials) do
-		-- 12.5%
-		local minAmount = math.random(1,100) > 75 and 0 or 1;
+		local minAmount = 0;
 		local maxAmount = 1;
 		if info.Amount > 1 then
 			minAmount = math.round(0.4 * info.Amount);
@@ -1066,4 +1065,62 @@ function GetCraftMachineCategory(itemType)
 			return key;
 		end
 	end
+end
+----------------------------------------------------------------
+-- 무기 코스튬
+----------------------------------------------------------------
+function CP_WeaponCostume_Title(obj, arg)
+	local item = GetWithoutError(obj, 'Item');
+	if obj.Base_Title ~= '' then
+		return obj.Base_Title;
+	elseif SafeIndex(item, 1, 'name') then
+		return SafeIndex(item, 1, 'Title');
+	else
+		return obj.name;	
+	end
+end
+function CP_WeaponCostume_Mesh(obj, arg)
+	local item = GetWithoutError(obj, 'Item');
+	local baseMesh = GetWithoutError(obj, 'Base_Mesh');
+	if baseMesh ~= nil then
+		return baseMesh;
+	elseif SafeIndex(item, 1, 'name') then
+		return SafeIndex(item, 1, 'Mesh');
+	end
+end
+function CalculatedProperty_Item_UnlockWeaponCostume(obj)
+	-- 오브젝트는 CP 새로 계산하지 말고, 클래스의 프리로드 데이터로
+	if IsObject(obj) then
+		return GetHostClass(obj).UnlockWeaponCostume;
+	end
+	for _, cls in pairs(GetClassList('WeaponCostume')) do
+		for _, item in ipairs(cls.Item) do
+			if item.name == obj.name then
+				return cls.name;
+			end		
+		end
+	end
+end
+function CP_Preloader_Item_UnlockWeaponCostume(clsList, column)
+	local rets = {};
+	for _, cls in pairs(GetClassList('WeaponCostume')) do
+		for _, item in ipairs(cls.Item) do
+			if item.name then
+				rets[item.name] = cls.name;
+			end
+		end
+	end
+	return rets;
+end
+function CP_WeaponCostume_Price(obj, arg)
+	local result = 0;
+	local item = GetWithoutError(obj, 'Item');
+	if item and item.name then
+		local curItemSellPrice = SafeIndex(item, 1, 'SellPrice');
+		if curItemSellPrice then
+			result = math.floor(curItemSellPrice * 500)/100;
+		end
+	end
+	result = math.max(obj.Vill_Base, result);
+	return result;
 end

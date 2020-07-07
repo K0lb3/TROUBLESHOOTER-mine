@@ -14,7 +14,7 @@
 			<property Key="Link" Text="[colour=&apos;FF0000FF&apos;](링크)[colour=&apos;FFFFFFFF&apos;]" LinkURL="http://store.steampowered.com/app/470310/Troubleshooter/"/>
 		</Links>
 	</class>
-	<class name="UpdateNotice" CheckFuncLogin="None" Version="20200422" NextUpdate="0" ThisUpdate="20200422" ChnUpdate="0" JpnUpdate="0">
+	<class name="UpdateNotice" CheckFuncLogin="None" Version="20200624" NextUpdate="20200701" ThisUpdate="20200612" ChnUpdate="0" JpnUpdate="0">
 		<property name="Message" value="안녕하세요 트러블슈터 개발팀입니다.
 
 $NoticeContent$
@@ -41,13 +41,20 @@ $LangText$ 사용자분들에게 알려드립니다.[colour='FFFFFFFF']
 		<Links>
 			<property Key="Link" Text="[colour=&apos;FF0000FF&apos;](링크)[colour=&apos;FFFFFFFF&apos;]" LinkURL="http://store.steampowered.com/app/470310/Troubleshooter/"/>
 		</Links>
-		<property name="ChnServerNotice" type="calculated" value="UpdateNotice_ChnServerNotice"/>
-		<property name="Base_ChnServerNotice" value="
+		<property name="NewServerNotice" type="calculated" value="UpdateNotice_NewServerNotice"/>
+		<property name="ChnServerNotice" value="
 
 정식 중국 서버가 추가되었습니다. 중국 내륙 에서 게임을 하는 분들은 중국 서버를 이용하는 것을 권합니다.
 
 중국 서버는 2019년 12월 26일까지의 아시아 서버의 데이터를 사용하므로 이전에 아시아 서버를 사용했던 분들은 사용하던 데이터 그대로 중국 서버에서 게임을 이어서 할 수 있습니다.
 
 그러나 2019년 12월 26일 이후부터는 아시아 서버와 중국 서버는 데이터가 공유되지 않으므로 이 점 주의하시기 바랍니다."/>
+		<property name="EuropeServerNotice" value="
+
+유럽 서버가 추가되었습니다. 유럽에서 게임을 하는 분들은 유럽 서버를 이용하는 것을 권합니다.
+
+유럽 서버는 2020년 6월 5일까지의 북미 서버의 데이터를 사용하므로 이전에 북미 서버를 사용했던 분들은 사용하던 데이터 그대로 유럽 서버에서 게임을 이어서 할 수 있습니다.
+
+그러나 2020년 6월 5일 이후부터는 북미 서버와 유럽 서버는 데이터가 공유되지 않으므로 이 점 주의하시기 바랍니다."/>
 	</class>
 </idspace>

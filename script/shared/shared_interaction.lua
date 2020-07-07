@@ -31,3 +31,12 @@ function Calculated_GetArrestGenSetLinkedQuest(obj)
 	end
 	return ret;
 end
+function Calculated_GetCitizenGenSetLinkedQuest(obj)
+	local ret = {};
+	for key, cls in pairs(GetClassList('Quest')) do
+		if cls.Type.name == 'CivilRescueGen_Property' and cls.Target == obj.name then
+			table.insert(ret, cls);
+		end
+	end
+	return ret;
+end

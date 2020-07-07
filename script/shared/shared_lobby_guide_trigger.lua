@@ -28,6 +28,14 @@ function LobbyGuideTriggerChecker_QuestWorldMap(eventType, eventArg, company, gu
 	return not table.empty(questInfos);
 end
 
+function LobbyGuideTriggerChecker_GameMode_Challenger(eventType, eventArg, company, guideTrigger)
+	if eventArg.Mode ~= 'Challenger' then
+		return false;
+	end
+	
+	return true;
+end
+
 function GetEnableLobbyGuideTrigger(company, eventType, eventArg)
 	local list = {};
 	for _, guideTrigger in pairs(company.LobbyGuideTrigger) do

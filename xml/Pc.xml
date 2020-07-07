@@ -63,7 +63,7 @@
 			</Board>
 		</class>
 	</idspace>
-	<idspace id ="AbilityPresetEntry">
+	<idspace id="AbilityPresetEntry">
 		<class name="Base" MaxCount="0">
 			<property type="string" value=""/>
 			<property type="string" value=""/>
@@ -255,6 +255,9 @@
 				<property name="Happy" value="Laugh"/>
 				<property name="OverEat" value="Embarrassed"/>
 			</FoodEmotions>
+			<License>
+				<property Type="Troubleshooter"/>
+			</License>
 			<EnableJobs>
 				<property name="Swordsman" Order="1" RequireLv="1" IsNew="true" Lv="1" Exp="0" LastLv="0" RecoveryRatio="0.33" ExtraMasteryBoard="false" AbilityPresetIndex="1">
 					<AbilityPriority>
@@ -725,7 +728,7 @@
 				<property name="Inventory2" Item="None"/>
 			</BundleEquipment>
 		</class>
-		<class name="Irene" Registered="false" Lv="8" Salary="10" Rest="Irene" Info="Irene" Object="PC_Irene" MaxSatiety="110" MaxRefresh="90" OfficeSlot="3" Born="Valhalla" Height="155" Weight="45" Base_MaxBasicMasteryCount="0" Base_MaxSubMasteryCount="0" Base_MaxAttackMasteryCount="0" Base_MaxDefenceMasteryCount="1" Base_MaxAbilityMasteryCount="0" SlotIndex="3" IsMinor="false" CallTitle="아이린 씨">
+		<class name="Irene" Registered="false" Lv="9" Salary="10" Rest="Irene" Info="Irene" Object="PC_Irene" MaxSatiety="110" MaxRefresh="90" OfficeSlot="3" Born="Valhalla" Height="155" Weight="45" Base_MaxBasicMasteryCount="0" Base_MaxSubMasteryCount="0" Base_MaxAttackMasteryCount="0" Base_MaxDefenceMasteryCount="1" Base_MaxAbilityMasteryCount="0" SlotIndex="3" IsMinor="false" CallTitle="아이린 씨">
 			<SalaryType>
 				<property Type="A" ClearCount="7"/>
 				<property Type="B" ClearCount="15"/>
@@ -947,22 +950,24 @@
 				<property name="BodyTraining" value="1"/>
 				<property name="InnerFlame" value="1"/>
 				<property name="LightningReflexes" value="1"/>
-				<property name="OneByOne" value="1"/>
+				<property name="Sentinel" value="1"/>
+				<property name="PiercingResistance1" value="1"/>
+				<property name="CleanHit" value="1"/>
 			</BundleMasteries>
 			<BundleEquipment>
 				<property name="Weapon" Item="Bangle_Carbon">
 					<Option OptionKey="Superman" Type1="AttackPower" Value1="10" Type2="ESPPower" Value2="10"/>
 				</property>
 				<property name="Body" Item="Tracksuit_LaseerPanda">
-					<Option OptionKey="Scout" Type1="Armor" Value1="20" Type2="MaxHP" Value2="20" Type3="Dodge" Value3="4"/>
+					<Option OptionKey="Scout" Type1="Armor" Value1="30" Type2="MaxHP" Value2="30" Type3="Dodge" Value3="8"/>
 				</property>
 				<property name="Hand" Item="Wrist_CarbonBlack">
-					<Option OptionKey="Elephant" Type1="Armor" Value1="10" Type2="MaxHP" Value2="50"/>
+					<Option OptionKey="Elephant" Type1="Armor" Value1="30" Type2="MaxHP" Value2="80"/>
 				</property>
 				<property name="Leg" Item="Sneakers_Battle">
-					<Option OptionKey="Luck" Type1="Accuracy" Value1="4" Type2="CriticalStrikeChance" Value2="3"/>
+					<Option OptionKey="Luck" Type1="Accuracy" Value1="8" Type2="CriticalStrikeChance" Value2="8"/>
 				</property>
-				<property name="Inventory1" Item="Potion_HP"/>
+				<property name="Inventory1" Item="Potion_HP_Uncommon"/>
 				<property name="Inventory2" Item="None"/>
 			</BundleEquipment>
 		</class>
@@ -989,6 +994,9 @@
 				<property name="Happy" value="Smile"/>
 				<property name="OverEat" value="Sorrow"/>
 			</FoodEmotions>
+			<License>
+				<property Type="Support"/>
+			</License>
 			<EnableJobs>
 				<property name="Shaman" Order="1" RequireLv="1" IsNew="true" Lv="1" Exp="0" LastLv="0" RecoveryRatio="0.33" ExtraMasteryBoard="false" AbilityPresetIndex="1">
 					<AbilityPriority>
@@ -1788,6 +1796,11 @@
 				<property name="Happy" value="Satisfying"/>
 				<property name="OverEat" value="Stare"/>
 			</FoodEmotions>
+			<License>
+				<property Type="Troubleshooter"/>
+				<property Type="Hunter"/>
+				<property Type="Tamer"/>
+			</License>
 			<EnableJobs>
 				<property name="Gunman" Order="1" RequireLv="1" IsNew="true" Lv="16" Exp="0" LastLv="0" RecoveryRatio="0.33" ExtraMasteryBoard="false" AbilityPresetIndex="1">
 					<AbilityPriority>
@@ -2057,6 +2070,10 @@
 				<property name="Happy" value="Satisfying"/>
 				<property name="OverEat" value="Rage"/>
 			</FoodEmotions>
+			<License>
+				<property Type="Troubleshooter"/>
+				<property Type="Meister"/>
+			</License>
 			<EnableJobs>
 				<property name="Scholar" Order="1" RequireLv="1" IsNew="true" Lv="16" Exp="0" LastLv="0" RecoveryRatio="0.4" ExtraMasteryBoard="false" AbilityPresetIndex="1">
 					<AbilityPriority>
@@ -2248,6 +2265,9 @@
 				<property name="Happy" value="Laugh"/>
 				<property name="OverEat" value="Serious"/>
 			</FoodEmotions>
+			<License>
+				<property Type="Troubleshooter"/>
+			</License>
 			<EnableJobs>
 				<property name="Dancer" Order="1" RequireLv="1" IsNew="true" Lv="16" Exp="0" LastLv="0" RecoveryRatio="0.25" ExtraMasteryBoard="false" AbilityPresetIndex="1">
 					<AbilityPriority>
@@ -2521,19 +2541,194 @@
 				<property value="WindWitch"/>
 			</StartingMastery>
 			<EnableJobs>
-				<property name="Mage" Order="1" RequireLv="1" IsNew="true" Image="Mastery/Mage" Lv="1" Exp="0" LastLv="0" RecoveryRatio="0.3" ExtraMasteryBoard="false" AbilityPresetIndex="1">
+				<property name="Mage" Order="1" RequireLv="1" IsNew="true" Lv="1" Exp="0" LastLv="0" RecoveryRatio="0.25" ExtraMasteryBoard="false" AbilityPresetIndex="1">
+					<AbilityPriority>
+						<Normal>
+							<property Mode="name" Target="ResentmentOfRedLesserPanda" Priority="145"/>
+							<property Mode="name" Target="FlameStampKick" Priority="140"/>
+							<property Mode="name" Target="FlameBackJumpKick" Priority="135"/>
+							<property Mode="name" Target="FlameJumpKick" Priority="130"/>
+							<property Mode="name" Target="FlameCarriage" Priority="125"/>
+							<property Mode="name" Target="FlameDance" Priority="120"/>
+							<property Mode="name" Target="FlameKick" Priority="115"/>
+							<property Mode="name" Target="LesserDeepBreath" Priority="110"/>
+							<property Mode="name" Target="FlameShoot" Priority="105"/>
+							<property Mode="Type" Target="Attack" Priority="100"/>
+						</Normal>
+						<Danger>
+							<property Mode="name" Target="ResentmentOfRedLesserPanda" Priority="145"/>
+							<property Mode="Type" Target="Heal" Priority="140"/>
+							<property Mode="name" Target="FlameStampKick" Priority="135"/>
+							<property Mode="name" Target="LesserDeepBreath" Priority="130"/>
+							<property Mode="name" Target="FlameBackJumpKick" Priority="125"/>
+							<property Mode="name" Target="FlameJumpKick" Priority="120"/>
+							<property Mode="name" Target="FlameCarriage" Priority="115"/>
+							<property Mode="name" Target="FlameDance" Priority="110"/>
+							<property Mode="name" Target="FlameKick" Priority="105"/>
+							<property Mode="name" Target="FlameShoot" Priority="100"/>
+						</Danger>
+						<Rage>
+							<property Mode="name" Target="ResentmentOfRedLesserPanda" Priority="145"/>
+							<property Mode="name" Target="FlameStampKick" Priority="140"/>
+							<property Mode="name" Target="FlameBackJumpKick" Priority="135"/>
+							<property Mode="name" Target="FlameJumpKick" Priority="130"/>
+							<property Mode="name" Target="FlameCarriage" Priority="125"/>
+							<property Mode="name" Target="LesserDeepBreath" Priority="120"/>
+							<property Mode="name" Target="FlameDance" Priority="115"/>
+							<property Mode="name" Target="FlameKick" Priority="110"/>
+							<property Mode="name" Target="FlameShoot" Priority="105"/>
+							<property Mode="Type" Target="Attack" Priority="100"/>
+						</Rage>
+					</AbilityPriority>
 					<Abilities>
-						<property Name="PowerKick" RequireLv="0"/>
-						<property Name="WindChain" RequireLv="0"/>
-						<property Name="WhirlWind" RequireLv="0"/>
-						<property Name="WindBurst" RequireLv="0"/>
+						<property Name="FlameKick" RequireLv="0"/>
+						<property Name="FlameShoot" RequireLv="0"/>
+						<property Name="FlameDance" RequireLv="0"/>
+						<property Name="ResentmentOfRedLesserPanda" RequireLv="0"/>
+						<property Name="FlameCarriage" RequireLv="5"/>
 					</Abilities>
 					<ActiveAbility>
-						<property name="PowerKick" value="true"/>
-						<property name="WindChain" value="true"/>
-						<property name="WhirlWind" value="true"/>
-						<property name="WindBurst" value="true"/>
+						<property name="FlameKick" value="true"/>
+						<property name="FlameShoot" value="true"/>
+						<property name="FlameDance" value="true"/>
+						<property name="ResentmentOfRedLesserPanda" value="true"/>
+						<property name="FlameJumpKick" value="false"/>
+						<property name="FlameCarriage" value="false"/>
+						<property name="FlameStampKick" value="false"/>
+						<property name="FlameBackJumpKick" value="false"/>
+						<property name="LesserDeepBreath" value="false"/>
 					</ActiveAbility>
+					<Masteries>
+						<property Name="Bruise" RequireLv="1"/>
+						<property Name="CloseCombatant" RequireLv="4"/>
+						<property Name="Parry" RequireLv="8"/>
+						<property Name="Solo" RequireLv="12"/>
+						<property Name="FigterBook" RequireLv="16"/>
+					</Masteries>
+				</property>
+				<property name="Witch" Order="2" RequireLv="15" IsNew="true" Lv="1" Exp="0" LastLv="0" RecoveryRatio="0.25" ExtraMasteryBoard="true" AbilityPresetIndex="2">
+					<AbilityPriority>
+						<Normal>
+							<property Mode="name" Target="ResentmentOfRedLesserPanda" Priority="145"/>
+							<property Mode="name" Target="FlameStampKick" Priority="140"/>
+							<property Mode="name" Target="FlameBackJumpKick" Priority="135"/>
+							<property Mode="name" Target="FlameJumpKick" Priority="130"/>
+							<property Mode="name" Target="FlameCarriage" Priority="125"/>
+							<property Mode="name" Target="FlameDance" Priority="120"/>
+							<property Mode="name" Target="LesserDeepBreath" Priority="115"/>
+							<property Mode="name" Target="FlameKick" Priority="110"/>
+							<property Mode="name" Target="FlameShoot" Priority="105"/>
+							<property Mode="Type" Target="Attack" Priority="100"/>
+						</Normal>
+						<Danger>
+							<property Mode="name" Target="ResentmentOfRedLesserPanda" Priority="145"/>
+							<property Mode="Type" Target="Heal" Priority="140"/>
+							<property Mode="name" Target="FlameStampKick" Priority="135"/>
+							<property Mode="name" Target="FlameBackJumpKick" Priority="130"/>
+							<property Mode="name" Target="FlameJumpKick" Priority="125"/>
+							<property Mode="name" Target="LesserDeepBreath" Priority="120"/>
+							<property Mode="name" Target="FlameCarriage" Priority="115"/>
+							<property Mode="name" Target="FlameDance" Priority="110"/>
+							<property Mode="name" Target="FlameKick" Priority="105"/>
+							<property Mode="name" Target="FlameShoot" Priority="100"/>
+						</Danger>
+						<Rage>
+							<property Mode="name" Target="ResentmentOfRedLesserPanda" Priority="145"/>
+							<property Mode="name" Target="FlameStampKick" Priority="140"/>
+							<property Mode="name" Target="FlameBackJumpKick" Priority="135"/>
+							<property Mode="name" Target="FlameJumpKick" Priority="130"/>
+							<property Mode="name" Target="FlameCarriage" Priority="125"/>
+							<property Mode="name" Target="FlameDance" Priority="120"/>
+							<property Mode="name" Target="FlameKick" Priority="115"/>
+							<property Mode="name" Target="LesserDeepBreath" Priority="110"/>
+							<property Mode="name" Target="FlameShoot" Priority="105"/>
+							<property Mode="Type" Target="Attack" Priority="100"/>
+						</Rage>
+					</AbilityPriority>
+					<Abilities>
+						<property Name="LesserDeepBreath" RequireLv="5"/>
+						<property Name="FlameJumpKick" RequireLv="10"/>
+						<property Name="FlameBackJumpKick" RequireLv="15"/>
+					</Abilities>
+					<ActiveAbility>
+						<property name="FlameKick" value="true"/>
+						<property name="FlameShoot" value="true"/>
+						<property name="FlameDance" value="true"/>
+						<property name="ResentmentOfRedLesserPanda" value="true"/>
+						<property name="FlameJumpKick" value="false"/>
+						<property name="FlameCarriage" value="false"/>
+						<property name="FlameStampKick" value="false"/>
+						<property name="FlameBackJumpKick" value="false"/>
+						<property name="LesserDeepBreath" value="false"/>
+					</ActiveAbility>
+					<Masteries>
+						<property Name="ReleaseEnergy" RequireLv="1"/>
+						<property Name="Rend" RequireLv="4"/>
+						<property Name="NeutralizingEnergy" RequireLv="8"/>
+						<property Name="BorrowingEnergy" RequireLv="12"/>
+						<property Name="Training100" RequireLv="16"/>
+					</Masteries>
+				</property>
+				<property name="Witch" Order="3" RequireLv="15" IsNew="true" Lv="1" Exp="0" LastLv="0" RecoveryRatio="0.25" ExtraMasteryBoard="true" AbilityPresetIndex="3">
+					<AbilityPriority>
+						<Normal>
+							<property Mode="name" Target="ResentmentOfRedLesserPanda" Priority="145"/>
+							<property Mode="name" Target="FlameStampKick" Priority="140"/>
+							<property Mode="name" Target="FlameBackJumpKick" Priority="135"/>
+							<property Mode="name" Target="FlameJumpKick" Priority="130"/>
+							<property Mode="name" Target="FlameCarriage" Priority="125"/>
+							<property Mode="name" Target="FlameDance" Priority="120"/>
+							<property Mode="name" Target="FlameKick" Priority="115"/>
+							<property Mode="name" Target="LesserDeepBreath" Priority="110"/>
+							<property Mode="name" Target="FlameShoot" Priority="105"/>
+							<property Mode="Type" Target="Attack" Priority="100"/>
+						</Normal>
+						<Danger>
+							<property Mode="name" Target="ResentmentOfRedLesserPanda" Priority="145"/>
+							<property Mode="Type" Target="Heal" Priority="140"/>
+							<property Mode="name" Target="FlameStampKick" Priority="135"/>
+							<property Mode="name" Target="FlameBackJumpKick" Priority="130"/>
+							<property Mode="name" Target="FlameJumpKick" Priority="125"/>
+							<property Mode="name" Target="FlameCarriage" Priority="120"/>
+							<property Mode="name" Target="LesserDeepBreath" Priority="115"/>
+							<property Mode="name" Target="FlameDance" Priority="110"/>
+							<property Mode="name" Target="FlameKick" Priority="105"/>
+							<property Mode="name" Target="FlameShoot" Priority="100"/>
+						</Danger>
+						<Rage>
+							<property Mode="name" Target="ResentmentOfRedLesserPanda" Priority="145"/>
+							<property Mode="name" Target="FlameStampKick" Priority="140"/>
+							<property Mode="name" Target="FlameBackJumpKick" Priority="135"/>
+							<property Mode="name" Target="FlameJumpKick" Priority="130"/>
+							<property Mode="name" Target="FlameCarriage" Priority="125"/>
+							<property Mode="name" Target="FlameDance" Priority="120"/>
+							<property Mode="name" Target="FlameKick" Priority="115"/>
+							<property Mode="name" Target="FlameShoot" Priority="110"/>
+							<property Mode="name" Target="LesserDeepBreath" Priority="105"/>
+							<property Mode="Type" Target="Attack" Priority="100"/>
+						</Rage>
+					</AbilityPriority>
+					<Abilities>
+						<property Name="FlameStampKick" RequireLv="5"/>
+					</Abilities>
+					<ActiveAbility>
+						<property name="FlameKick" value="true"/>
+						<property name="FlameShoot" value="true"/>
+						<property name="FlameDance" value="true"/>
+						<property name="ResentmentOfRedLesserPanda" value="true"/>
+						<property name="FlameJumpKick" value="false"/>
+						<property name="FlameCarriage" value="false"/>
+						<property name="FlameStampKick" value="false"/>
+						<property name="FlameBackJumpKick" value="false"/>
+						<property name="LesserDeepBreath" value="false"/>
+					</ActiveAbility>
+					<Masteries>
+						<property Name="MagicCore" RequireLv="1"/>
+						<property Name="MagicField" RequireLv="4"/>
+						<property Name="SpellErosion" RequireLv="8"/>
+						<property Name="MagicOuterArmor" RequireLv="12"/>
+						<property Name="IronHeart" RequireLv="16"/>
+					</Masteries>
 				</property>
 			</EnableJobs>
 			<BundleEquipment>
@@ -2553,7 +2748,7 @@
 				<property name="Inventory2" Item="None"/>
 			</BundleEquipment>
 		</class>
-		<class name="Alisa" Registered="false" Lv="20" Salary="30" Rest="Alisa" Info="Alisa" Object="PC_Alisa" MaxSatiety="100" MaxRefresh="100" OfficeSlot="11" Born="Caras" Height="165" Weight="55" Base_MaxBasicMasteryCount="0" Base_MaxSubMasteryCount="0" Base_MaxAttackMasteryCount="0" Base_MaxDefenceMasteryCount="1" Base_MaxAbilityMasteryCount="0" IsMinor="false" CallTitle="알리사 씨">
+		<class name="Alisa" Registered="false" Lv="40" Salary="30" Rest="Alisa" Info="Alisa" Object="PC_Alisa" MaxSatiety="100" MaxRefresh="100" OfficeSlot="11" Born="Caras" Height="165" Weight="55" Base_MaxBasicMasteryCount="0" Base_MaxSubMasteryCount="0" Base_MaxAttackMasteryCount="0" Base_MaxDefenceMasteryCount="1" Base_MaxAbilityMasteryCount="0" IsMinor="false" CallTitle="알리사 씨">
 			<SalaryType>
 				<property Type="A" ClearCount="12"/>
 				<property Type="B" ClearCount="18"/>
@@ -2568,13 +2763,61 @@
 				<property value="Relaxed"/>
 				<property value="MilitaryBag"/>
 			</StartingMastery>
+			<License>
+				<property Type="Troubleshooter"/>
+			</License>
 			<EnableJobs>
-				<property name="WhiteKnight" Order="2" RequireLv="1" IsNew="true" Image="Mastery/WhiteKnight" Lv="1" Exp="0" LastLv="0" RecoveryRatio="0.3" ExtraMasteryBoard="false" AbilityPresetIndex="1">
+				<property name="Warrior" Order="1" RequireLv="1" IsNew="true" Lv="16" Exp="0" LastLv="0" RecoveryRatio="0.25" ExtraMasteryBoard="false" AbilityPresetIndex="1">
+					<AbilityPriority>
+						<Normal>
+							<property Mode="name" Target="FrostFinalKick" Priority="155"/>
+							<property Mode="name" Target="Frostmill" Priority="150"/>
+							<property Mode="name" Target="Twister" Priority="145"/>
+							<property Mode="name" Target="IceSpear" Priority="140"/>
+							<property Mode="name" Target="FrostDropkick" Priority="135"/>
+							<property Mode="name" Target="FrostSpinkick" Priority="130"/>
+							<property Mode="name" Target="IceArrow" Priority="125"/>
+							<property Mode="name" Target="BodyBlow" Priority="120"/>
+							<property Mode="name" Target="WarmUp" Priority="115"/>
+							<property Mode="name" Target="Provocation" Priority="110"/>
+							<property Mode="Type" Target="Attack" Priority="105"/>
+							<property Mode="name" Target="Tumbling" Priority="100"/>
+						</Normal>
+						<Danger>
+							<property Mode="name" Target="FrostFinalKick" Priority="155"/>
+							<property Mode="name" Target="Frostmill" Priority="150"/>
+							<property Mode="name" Target="Twister" Priority="145"/>
+							<property Mode="Type" Target="Heal" Priority="140"/>
+							<property Mode="name" Target="IceSpear" Priority="135"/>
+							<property Mode="name" Target="FrostDropkick" Priority="130"/>
+							<property Mode="name" Target="FrostSpinkick" Priority="125"/>
+							<property Mode="name" Target="IceArrow" Priority="120"/>
+							<property Mode="name" Target="BodyBlow" Priority="115"/>
+							<property Mode="name" Target="WarmUp" Priority="110"/>
+							<property Mode="name" Target="Provocation" Priority="105"/>
+							<property Mode="name" Target="Tumbling" Priority="100"/>
+						</Danger>
+						<Rage>
+							<property Mode="name" Target="FrostFinalKick" Priority="155"/>
+							<property Mode="name" Target="Frostmill" Priority="150"/>
+							<property Mode="name" Target="Twister" Priority="145"/>
+							<property Mode="name" Target="IceSpear" Priority="140"/>
+							<property Mode="name" Target="FrostDropkick" Priority="135"/>
+							<property Mode="name" Target="FrostSpinkick" Priority="130"/>
+							<property Mode="name" Target="IceArrow" Priority="125"/>
+							<property Mode="name" Target="BodyBlow" Priority="120"/>
+							<property Mode="name" Target="WarmUp" Priority="115"/>
+							<property Mode="name" Target="Provocation" Priority="110"/>
+							<property Mode="Type" Target="Attack" Priority="105"/>
+							<property Mode="name" Target="Tumbling" Priority="100"/>
+						</Rage>
+					</AbilityPriority>
 					<Abilities>
 						<property Name="QuickShaving" RequireLv="0"/>
 						<property Name="GlideShaving" RequireLv="0"/>
 						<property Name="FlexShaving" RequireLv="0"/>
 						<property Name="PerfectShaving" RequireLv="0"/>
+						<property Name="IceSpear" RequireLv="5"/>
 					</Abilities>
 					<ActiveAbility>
 						<property name="QuickShaving" value="true"/>
@@ -2582,6 +2825,148 @@
 						<property name="FlexShaving" value="true"/>
 						<property name="PerfectShaving" value="true"/>
 					</ActiveAbility>
+					<Masteries>
+						<property Name="PowerfulMovements" RequireLv="1"/>
+						<property Name="UnderstatedMovements" RequireLv="4"/>
+						<property Name="NimbleMovements" RequireLv="8"/>
+						<property Name="FlashyHandMovements" RequireLv="12"/>
+						<property Name="RhythmicalMovements" RequireLv="16"/>
+					</Masteries>
+				</property>
+				<property name="WhiteKnight" Order="2" RequireLv="15" IsNew="true" Lv="1" Exp="0" LastLv="0" RecoveryRatio="0.25" ExtraMasteryBoard="true" AbilityPresetIndex="2">
+					<AbilityPriority>
+						<Normal>
+							<property Mode="name" Target="FrostFinalKick" Priority="155"/>
+							<property Mode="name" Target="Frostmill" Priority="150"/>
+							<property Mode="name" Target="Twister" Priority="145"/>
+							<property Mode="name" Target="IceSpear" Priority="140"/>
+							<property Mode="name" Target="FrostDropkick" Priority="135"/>
+							<property Mode="name" Target="FrostSpinkick" Priority="130"/>
+							<property Mode="name" Target="IceArrow" Priority="125"/>
+							<property Mode="name" Target="BodyBlow" Priority="120"/>
+							<property Mode="name" Target="WarmUp" Priority="115"/>
+							<property Mode="name" Target="Provocation" Priority="110"/>
+							<property Mode="Type" Target="Attack" Priority="105"/>
+							<property Mode="name" Target="Tumbling" Priority="100"/>
+						</Normal>
+						<Danger>
+							<property Mode="name" Target="FrostFinalKick" Priority="155"/>
+							<property Mode="name" Target="Frostmill" Priority="150"/>
+							<property Mode="name" Target="Twister" Priority="145"/>
+							<property Mode="Type" Target="Heal" Priority="140"/>
+							<property Mode="name" Target="IceSpear" Priority="135"/>
+							<property Mode="name" Target="FrostDropkick" Priority="130"/>
+							<property Mode="name" Target="FrostSpinkick" Priority="125"/>
+							<property Mode="name" Target="IceArrow" Priority="120"/>
+							<property Mode="name" Target="BodyBlow" Priority="115"/>
+							<property Mode="name" Target="WarmUp" Priority="110"/>
+							<property Mode="name" Target="Provocation" Priority="105"/>
+							<property Mode="name" Target="Tumbling" Priority="100"/>
+						</Danger>
+						<Rage>
+							<property Mode="name" Target="FrostFinalKick" Priority="155"/>
+							<property Mode="name" Target="Frostmill" Priority="150"/>
+							<property Mode="name" Target="Twister" Priority="145"/>
+							<property Mode="name" Target="IceSpear" Priority="140"/>
+							<property Mode="name" Target="FrostDropkick" Priority="135"/>
+							<property Mode="name" Target="FrostSpinkick" Priority="130"/>
+							<property Mode="name" Target="IceArrow" Priority="125"/>
+							<property Mode="name" Target="BodyBlow" Priority="120"/>
+							<property Mode="name" Target="WarmUp" Priority="115"/>
+							<property Mode="name" Target="Provocation" Priority="110"/>
+							<property Mode="Type" Target="Attack" Priority="105"/>
+							<property Mode="name" Target="Tumbling" Priority="100"/>
+						</Rage>
+					</AbilityPriority>
+					<Abilities>
+						<property Name="FrostDropkick" RequireLv="5"/>
+						<property Name="FrostSpinkick" RequireLv="10"/>
+						<property Name="FrostFinalKick" RequireLv="15"/>
+					</Abilities>
+					<ActiveAbility>
+						<property name="QuickShaving" value="true"/>
+						<property name="GlideShaving" value="true"/>
+						<property name="FlexShaving" value="true"/>
+						<property name="PerfectShaving" value="true"/>
+					</ActiveAbility>
+					<Masteries>
+						<property Name="ExternalEnergy" RequireLv="1"/>
+						<property Name="InternalEnergy" RequireLv="4"/>
+						<property Name="OneInchPunch" RequireLv="8"/>
+						<property Name="ListeningEnergy" RequireLv="12"/>
+						<property Name="Training100_Leton" RequireLv="16"/>
+					</Masteries>
+				</property>
+				<property name="Barbarian" Order="3" RequireLv="15" IsNew="true" Lv="1" Exp="0" LastLv="0" RecoveryRatio="0.25" ExtraMasteryBoard="true" AbilityPresetIndex="3">
+					<AbilityPriority>
+						<Normal>
+							<property Mode="name" Target="FrostFinalKick" Priority="155"/>
+							<property Mode="name" Target="Frostmill" Priority="150"/>
+							<property Mode="name" Target="Twister" Priority="145"/>
+							<property Mode="name" Target="IceSpear" Priority="140"/>
+							<property Mode="name" Target="FrostDropkick" Priority="135"/>
+							<property Mode="name" Target="FrostSpinkick" Priority="130"/>
+							<property Mode="name" Target="IceArrow" Priority="125"/>
+							<property Mode="name" Target="BodyBlow" Priority="120"/>
+							<property Mode="name" Target="WarmUp" Priority="115"/>
+							<property Mode="name" Target="Provocation" Priority="110"/>
+							<property Mode="Type" Target="Attack" Priority="105"/>
+							<property Mode="name" Target="Tumbling" Priority="100"/>
+						</Normal>
+						<Danger>
+							<property Mode="name" Target="FrostFinalKick" Priority="155"/>
+							<property Mode="name" Target="Frostmill" Priority="150"/>
+							<property Mode="name" Target="Twister" Priority="145"/>
+							<property Mode="Type" Target="Heal" Priority="140"/>
+							<property Mode="name" Target="IceSpear" Priority="135"/>
+							<property Mode="name" Target="FrostDropkick" Priority="130"/>
+							<property Mode="name" Target="FrostSpinkick" Priority="125"/>
+							<property Mode="name" Target="IceArrow" Priority="120"/>
+							<property Mode="name" Target="BodyBlow" Priority="115"/>
+							<property Mode="name" Target="WarmUp" Priority="110"/>
+							<property Mode="name" Target="Provocation" Priority="105"/>
+							<property Mode="name" Target="Tumbling" Priority="100"/>
+						</Danger>
+						<Rage>
+							<property Mode="name" Target="FrostFinalKick" Priority="155"/>
+							<property Mode="name" Target="Frostmill" Priority="150"/>
+							<property Mode="name" Target="Twister" Priority="145"/>
+							<property Mode="name" Target="IceSpear" Priority="140"/>
+							<property Mode="name" Target="FrostDropkick" Priority="135"/>
+							<property Mode="name" Target="FrostSpinkick" Priority="130"/>
+							<property Mode="name" Target="IceArrow" Priority="125"/>
+							<property Mode="name" Target="BodyBlow" Priority="120"/>
+							<property Mode="name" Target="WarmUp" Priority="115"/>
+							<property Mode="name" Target="Provocation" Priority="110"/>
+							<property Mode="Type" Target="Attack" Priority="105"/>
+							<property Mode="name" Target="Tumbling" Priority="100"/>
+						</Rage>
+					</AbilityPriority>
+					<Abilities>
+						<property Name="Tumbling" RequireLv="1"/>
+						<property Name="WarmUp" RequireLv="5"/>
+						<property Name="Provocation" RequireLv="10"/>
+					</Abilities>
+					<ActiveAbility>
+						<property name="BodyBlow" value="true"/>
+						<property name="IceArrow" value="true"/>
+						<property name="Twister" value="true"/>
+						<property name="Frostmill" value="true"/>
+						<property name="IceSpear" value="false"/>
+						<property name="FrostDropkick" value="false"/>
+						<property name="FrostSpinkick" value="false"/>
+						<property name="FrostFinalKick" value="false"/>
+						<property name="Provocation" value="false"/>
+						<property name="Tumbling" value="false"/>
+						<property name="WarmUp" value="false"/>
+					</ActiveAbility>
+					<Masteries>
+						<property Name="Versatility" RequireLv="1"/>
+						<property Name="CaptivateAudience" RequireLv="4"/>
+						<property Name="Spotlight" RequireLv="8"/>
+						<property Name="Brilliance" RequireLv="12"/>
+						<property Name="Professionalism" RequireLv="16"/>
+					</Masteries>
 				</property>
 			</EnableJobs>
 			<BundleEquipment>

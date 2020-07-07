@@ -8,12 +8,14 @@ end
 --------------------------------------------------------------------
 function GetRegisteredTroubleshooter(roster)
 	local result = 0;
+	local list = {};
 	for _, pcInfo in ipairs (roster) do
 		if pcInfo.RosterType == 'Pc' and pcInfo.Registered then
 			result = result + 1;
+			table.insert(list, pcInfo);
 		end
 	end
-	return result;
+	return result, list;
 end
 --------------------------------------------------------------------
 -- 관할 구역 숫자

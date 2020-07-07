@@ -41,8 +41,8 @@
 	<class name="UnitMoveStarted_Self" ArgList="Unit, BeginPosition, Position, Path, StraightPath, MoveID, IsDash, MovingForAbility, Invoker, MovingForDirect, MoveIdentifier"/>
 	<class name="UnitMoved" ArgList="Unit, BeginPosition, Position, Path, StraightPath, MoveID, IsDash, MovingForAbility, Invoker, MovingForDirect, MoveIdentifier"/>
 	<class name="UnitMoved_Self" ArgList="Unit, BeginPosition, Position, Path, StraightPath, MoveID, IsDash, MovingForAbility, Invoker, MovingForDirect, MoveIdentifier"/>
-	<class name="UnitMovedSingleStep" ArgList="Unit, Position, EndPosition, StepIndex, StepCount, MoveID, IsDash, MovingForAbility, Invoker, MovingForDirect, MoveIdentifier"/>
-	<class name="UnitMovedSingleStep_Self" ArgList="Unit, Position, EndPosition, StepIndex, StepCount, MoveID, IsDash, MovingForAbility, Invoker, MovingForDirect, MoveIdentifier"/>
+	<class name="UnitMovedSingleStep" ArgList="Unit, Position, EndPosition, StepCount, MoveID, IsDash, MovingForAbility, Invoker, MovingForDirect, MoveIdentifier"/>
+	<class name="UnitMovedSingleStep_Self" ArgList="Unit, Position, EndPosition, StepCount, MoveID, IsDash, MovingForAbility, Invoker, MovingForDirect, MoveIdentifier"/>
 	<class name="UnitTakeDamage" ArgList="Receiver, Giver, Damage, AttackerState, DefenderState, DamageInfo, SubAction, DamageBase, ActionID"/>
 	<class name="UnitTakeDamage_Self" ArgList="Receiver, Giver, Damage, AttackerState, DefenderState, DamageInfo, SubAction, DamageBase, ActionID"/>
 	<class name="UnitGiveDamage" ArgList="Giver, Receiver, Damage, AttackerState, DefenderState, DamageInfo, SubAction, DamageBase, ActionID"/>
@@ -62,6 +62,7 @@
 	<class name="BuffAdded_Self" ArgList="Unit, BuffName, BuffLevel, Buff, AbilityBuff, Invoker"/>
 	<class name="BuffRemoved" ArgList="Unit, BuffName, Buff"/>
 	<class name="BuffRemoved_Self" ArgList="Unit, BuffName, Buff"/>
+	<class name="BuffGived_Self" ArgList="Unit, BuffName, BuffLevel, Buff, AbilityBuff"/>
 	<class name="BuffImmuned" ArgList="Unit, BuffName, AbilityBuff, Reason, Invoker"/>
 	<class name="BuffImmuned_Self" ArgList="Unit, BuffName, AbilityBuff, Reason, Invoker"/>
 	<class name="BuffPropertyUpdated" ArgList="Unit, Buff, PropertyName, Value"/>

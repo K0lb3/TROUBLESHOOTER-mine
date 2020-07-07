@@ -70,7 +70,7 @@
 	<class name="Zone"/>
 	<class name="Mission" Common_GamnamBaseParkPlace="0" Raid_PurpleBackStreet="0" Raid_ShadowFogSlum="0"/>
 	<class name="Reward"/>
-	<class name="Achievement" BeastManagerLevel="1"/>
+	<class name="Achievement" BeastManagerLevel="0"/>
 	<class name="ZoneEnter"/>
 	<class name="Episode"/>
 </idspace>

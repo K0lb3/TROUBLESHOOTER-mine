@@ -101,7 +101,8 @@
 		<class name="Sirocco" ARGB="FF636564" ColorRect="tl:FF636564 tr:FF636564 bl:FF636564 br:FF636564" ColorRectGradationAlpha="tl:FF636564 tr:00636564 bl:FF636564 br:00636564"/>
 		<class name="SunsetOranage" ARGB="FFF34C43" ColorRect="tl:FFF34C43 tr:FFF34C43 bl:FFF34C43 br:FFF34C43" ColorRectGradation="tl:FFF34C43 tr:FFF34C43 bl:FF7A2521 br:FF7A2521" ColorRectGradationAlpha="tl:FFF34C43 tr:00F34C43 bl:FFF34C43 br:00F34C43"/>
 		<class name="TallPoppy" ARGB="FF883030" ColorRect="tl:FF883030 tr:FF883030 bl:FF883030 br:FF883030" ColorRectGradationAlpha="tl:FF883030 tr:88303000 bl:FF883030 br:88303000"/>
-		<class name="TeamAllyColor" ARGB="FF3264FF" ColorRect="tl:FF64FF32 tr:FFFFFF32 bl:FF64C832 br:FFFFFFFF" ColorRectGradationAlpha="tl:FF64FF32 tr:FFFFFF32 bl:FF64C832 br:FFFFFFFF"/>
+		<class name="TeamTeamColor" ARGB="FF3264FF" ColorRect="tl:FF3264FF tr:FF32FFFF bl:FF3264C8 br:FFFFFFFF" ColorRectGradationAlpha="tl:FF3264FF tr:FF32FFFF bl:FF3264C8 br:FFFFFFFF"/>
+		<class name="TeamAllyColor" ARGB="FF64FF32" ColorRect="tl:FF64FF32 tr:FFFFFF32 bl:FF64C832 br:FFFFFFFF" ColorRectGradationAlpha="tl:FF64FF32 tr:FFFFFF32 bl:FF64C832 br:FFFFFFFF"/>
 		<class name="TeamEnemyColor" ARGB="FFFF3232" ColorRect="tl:FFFF3232 tr:FFFFFF64 bl:FFC80000 br:FFC8C832" ColorRectGradationAlpha="tl:FFFF3232 tr:FFFFFF64 bl:FFC80000 br:FFC8C832"/>
 		<class name="TeamNeutralColor" ARGB="FFFFFF00" ColorRect="tl:FFFFFF00 tr:FFFFFF64 bl:FFC8C800 br:FFFFFFFF" ColorRectGradationAlpha="tl:FFFFFF00 tr:FFFFFF64 bl:FFC8C800 br:FFFFFFFF"/>
 		<class name="TeamThirdForceColor" ARGB="FFDC00FF" ColorRect="tl:FFDC00FF tr:FFDC64FF bl:FFA500C8 br:FFFFFFFF" ColorRectGradationAlpha="tl:FFDC00FF tr:FFDC64FF bl:FFA500C8 br:FFFFFFFF"/>
@@ -128,5 +129,6 @@
 		<class name="SequentialBuGn5" Palette="edf8fb, b2e2e2, 66c2a4, 2ca25f, 006d2c"/>
 		<class name="SequentialYlGn5" Palette="ffffcc, c2e699, 78c679, 31a354, 006837"/>
 		<class name="QualitativeAccent5" Palette="7fc97f, beaed4, fdc086, ffff99, 386cb0"/>
+		<class name="QualitativePaired9" Palette="a6cee3, 1f78b4, b2df8a, 33a02c, fb9a99, e31a1c, fdbf6f, ff7f00, cab2d6"/>
 	</idspace>
 </idspaces>

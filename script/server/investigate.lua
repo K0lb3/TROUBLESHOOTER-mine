@@ -161,7 +161,7 @@ end
 function OnInvestigationOccured_Chest(obj, investigationInfo)
 	return function(eventArg, ds)
 		-- 스킵 가능
-		ds:StartMissionDirect(false);
+		ds:RunScriptArgs('SetDirectingSkipEnabled', true);
 		ds:SkipPointOn();
 		local pos = GetPosition(obj);
 		local objKey = GetObjKey(obj);
@@ -232,7 +232,7 @@ function OnInvestigationOccured_Chest(obj, investigationInfo)
 		end)() };
 		-- 스킵 종료
 		ds:SkipPointOff();
-		ds:EndMissionDirect(false);
+		ds:RunScriptArgs('SetDirectingSkipEnabled', false);
 		return unpack(actions);
 	end;
 end

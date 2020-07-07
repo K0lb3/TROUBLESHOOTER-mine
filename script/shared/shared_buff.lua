@@ -64,6 +64,10 @@ function BuffImmunityTest(buff, victim)
 		if GetMasteryMastered(masteryTable, 'Goggle_NightVision') then
 			return true, 'Mastery_Goggle_NightVision';
 		end
+		-- 발광
+		if HasBuff(victim, 'Illumination') then
+			return true, 'Mastery_Illumination';
+		end
 	end	
 	-- 고결한 자아 특수화
 	if buff.name == 'Confusion' or (buff.Type == 'Debuff' and buff.SubType == 'Mental') then
@@ -72,6 +76,11 @@ function BuffImmunityTest(buff, victim)
 			if not beastTypeCls or beastTypeCls.EvolutionType.name ~= 'EggStart' or beastTypeCls.EvolutionStage > 1 then
 				return true, 'Mastery_Draky';
 			end
+		end
+	end
+	if buff.name == 'Confusion' then
+		if GetMasteryMastered(masteryTable, 'PerfectSpirit') then
+			return true, 'Mastery_PerfectSpirit';
 		end
 	end
 	return false;
@@ -154,4 +163,12 @@ function SetBuffLife(target, win, buff)
 	end
 	win:getChild('TurnFrame'):getChild('Turn'):setProperty('ImageColours', coloList[turnColor].ColorRect);
 	win:getChild('TurnFrame'):getChild('Turn'):setProperty('Image', buff_TurnImage);
+end
+
+
+function CalculatedProperty_BuffGroupBuffList(cls, arg)
+	return Linq.new(GetClassList('Buff'))
+		:where(function(data) return data[2].Group == cls.name end)
+		:select(function(data) return data[1] end)
+		:toList();
 end

@@ -62,10 +62,12 @@
 	<class name="AllowDivision" Text="관할 구역 관리"/>
 	<class name="AllowDivisionAccept" Text="관할 구역 신청"/>
 	<class name="AllowDivisionArea" Text="관할 구역"/>
+	<class name="AllowDivisionAreaInfo" Text="관할 구역 정보"/>
 	<class name="AllowDivisionCost" Text="관할 확장 비용"/>
 	<class name="AllowDivisionList" Text="관할 구역 목록"/>
 	<class name="AllowDivisionMission" Text="관할 구역 사건 목록"/>
 	<class name="AllowDivisionPolicy" Text="관할 구역 지원 정책"/>
+	<class name="AllowDivisionPolicy_Current" Text="현재 정책"/>
 	<class name="AllowDivisionReward" Text="관할 구역 지원금"/>
 	<class name="AllSelect" Text="모두 선택하기"/>
 	<class name="Ally" Text="아군"/>
@@ -76,6 +78,8 @@
 	<class name="ApplyDivisionClose_Menu" Text="[!Menu]관할 구역 취소"/>
 	<class name="ApplyDivisionCount" Text="관할 구역 개수"/>
 	<class name="ApplyDivisionOpen_Menu" Text="[!Menu]관할 구역 신청"/>
+	<class name="ApplyDivisionBasicCount" Text="기본 관할 구역"/>
+	<class name="ApplyDivisionRegistered" Text="정식 트러블슈터"/>
 	<class name="ApplyVill" Text="신청 비용"/>
 	<class name="AquiredCount" Text="개수"/>
 	<class name="AquiredMasteryCount" Text="보유한 특성 수"/>
@@ -446,7 +450,7 @@
 	<class name="FilterCraftableModule" Text="제작 가능한 모듈만 보기"/>
 	<class name="FilterEnableCraft" Text="제작 가능한 장비만 보기"/>
 	<class name="FilterEnableDismantle" Text="분해 가능한 장비만 보기"/>
-	<class name="FilterEnableExtract" Text="추출 가능한 장비만 보기"/>
+	<class name="FilterEnableExtract" Text="추출 가능한 재료만 보기"/>
 	<class name="FilterEnableIdentify" Text="감정 가능한 장비만 보기"/>
 	<class name="FilterEnableUpgrade" Text="강화 가능한 장비만 보기"/>
 	<class name="FilterMasterable" Text="착용 가능한 특성만 보기"/>
@@ -559,6 +563,7 @@
 	<class name="InventoryCustomSort_Order3" Text="[!Menu]정렬 기준 3"/>
 	<class name="InventoryCustomSort_Sort" Text="[!Menu]정렬 목록"/>
 	<class name="InventoryCustomSort_Title" Text="[!Menu]정렬 관리"/>
+	<class name="Item" Text="아이템"/>
 	<class name="ItemAcquireRate_Menu" Text="[!Menu]아이템 획득 확률"/>
 	<class name="ItemAugmentMaterial" Text="아이템 구성 소재"/>
 	<class name="ItemBook" Text="재료 도감"/>
@@ -623,9 +628,11 @@
 	<class name="LeftInformationCount" Text="남은정보개수"/>
 	<class name="Level" Text="레벨"/>
 	<class name="Level_Menu" Text="[!Menu]레벨"/>
+	<class name="License" Text="자격증"/>
 	<class name="LoadingNow" Text="불러오는 중.."/>
 	<class name="Location_Menu" Text="[!Menu]소재지"/>
 	<class name="LocationList" Text="지역 목록"/>
+	<class name="GenLocation" Text="[!Menu]출현 지역"/>
 	<class name="Lock" Text="잠김"/>
 	<class name="LockBeast" Text="야수 보호"/>
 	<class name="LockMachine" Text="기계 보호"/>
@@ -678,6 +685,7 @@
 	<class name="Mail_MarkRead" Text="읽음 표시"/>
 	<class name="Mail_ReceiveAll" Text="모두 수령"/>
 	<class name="Mail_SelectAll" Text="전체 선택"/>
+	<class name="MailLock" Text="메일 보호"/>
 	<class name="MailCount" Text="메일 개수"/>
 	<class name="MailPaymentPaid" Text="지불됨"/>
 	<class name="MailReturned" Text="반송됨"/>
@@ -686,6 +694,8 @@
 	<class name="MailVill_Payment" Text="대금 청구"/>
 	<class name="MailVill_Payment2" Text="청구 금액"/>
 	<class name="MainProperties" Text="기본 능력"/>
+	<class name="MaintenanceDay" Text="다음 임대료 지급일"/>
+	<class name="MaintenanceDay2" Text="다음 관리비 지급일"/>
 	<class name="MasteredMasteryCount" Text="습득한 특성 수"/>
 	<class name="MasterMastery_Menu" Text="[!menu]특성 습득"/>
 	<class name="Mastery" Text="특성"/>
@@ -721,6 +731,9 @@
 	<class name="MasterySetViewMode_All_Title" Text="알려진 전체 추가 특성"/>
 	<class name="MasterySetViewMode_Basic" Text="장착 가능"/>
 	<class name="MasterySetViewMode_Basic_Title" Text="장착 가능한 추가 특성"/>
+	<class name="MasterySetViewMode_Pc_Title" Text="장착 가능한 추가 특성"/>
+	<class name="MasterySetSortMode_Basic" Text="기본"/>
+	<class name="MasterySetSortMode_Name" Text="이름순"/>
 	<class name="Material" Text="재료"/>
 	<class name="Material_Menu" Text="[!Menu]재료 아이템"/>
 	<class name="MaxCountClick" Text="최대 개수 적용"/>
@@ -802,6 +815,7 @@
 	<class name="Offline" Text="오프라인"/>
 	<class name="Option" Text="환경 설정"/>
 	<class name="Option_Menu" Text="[!Menu]환경 설정"/>
+	<class name="Option_Disabled" Text="[!Option]비활성화"/>
 	<class name="Order" Text="주문"/>
 	<class name="OrderCalling" Text="주문한다."/>
 	<class name="OrderCost" Text="주문 비용"/>
@@ -862,6 +876,11 @@
 	<class name="QuestSelectReward" Text="선택"/>
 	<class name="QuestState" Text="의뢰 상태"/>
 	<class name="QuestType" Text="의뢰 분류"/>
+	<class name="QuestReplay" Text="지난 의뢰 다시 보기"/>
+	<class name="QuestReplay_DialogStart" Text="의뢰 수락 대화"/>
+	<class name="QuestReplay_DialogProgress" Text="의뢰 진행 중 대화"/>
+	<class name="QuestReplay_DialogEnd" Text="의뢰 완료 대화"/>
+	<class name="QuestReplay_Mission" Text="의뢰 미션 다시하기"/>
 	<class name="QuickTeamFormation" Text="빠른 편성"/>
 	<class name="Race" Text="종족"/>
 	<class name="Rage_Menu" Text="[!Menu]분노"/>
@@ -890,9 +909,13 @@
 	<class name="Request" Text="요청"/>
 	<class name="RequireAddBoardNeedCount" Text="새로운 특성판 추가"/>
 	<class name="RequireCost" Text="필요 연구 점수"/>
+	<class name="ReasearchProgressInfo" Text="연구 진행 정보"/>
+	<class name="CraftModuleInfo" Text="제작 진행 정보"/>
+	<class name="ReasearchCount" Text="연구 가능 개수"/>
 	<class name="RequireLevel" Text="요구 레벨"/>
 	<class name="RequireMastery" Text="고정 연구 재료"/>
 	<class name="RequireModuleItem" Text="고정 제작 재료"/>
+	<class name="CraftModuleCount" Text="제작 가능 개수"/>
 	<class name="RequireModulePower" Text="필요 출력"/>
 	<class name="RequireMsateryTypeCost" Text="연구 필요 조건"/>
 	<class name="RequireRecipe" Text="[!Menu]해당 필요 재료"/>
@@ -902,6 +925,8 @@
 	<class name="Rescued" Text="구조 성공"/>
 	<class name="RescueFailed" Text="구조 실패"/>
 	<class name="Research" Text="연구"/>
+	<class name="Research_MaxCraftCount" Text="연구 가능한 최대 개수"/>
+	<class name="Research_MaxCraftCount_Module" Text="제작 가능한 최대 개수"/>
 	<class name="Research_Menu" Text="[!Menu]연구"/>
 	<class name="Researching" Text="연구 중..."/>
 	<class name="ResearchingMastery" Text="연구 중"/>
@@ -934,8 +959,6 @@
 	<class name="SalaryAmount_Menu" Text="[!Menu]총 급여액"/>
 	<class name="SalaryChange_Menu" Text="[!Menu]급여 변경"/>
 	<class name="SalaryDay_Menu" Text="[!Menu]다음 급여 지급일"/>
-	<class name="MaintenanceDay" Text="다음 임대료 지급일"/>
-	<class name="MaintenanceDay2" Text="다음 관리비 지급일"/>
 	<class name="SalaryDayShort_Menu" Text="[!Menu]급여일"/>
 	<class name="SalaryDelay_Menu" Text="[!Menu]급여 연체 횟수"/>
 	<class name="SalaryType" Text="임금"/>
@@ -943,6 +966,7 @@
 	<class name="SearchFilterMode_Content" Text="내용"/>
 	<class name="SearchFilterMode_Full" Text="전체"/>
 	<class name="SearchFilterMode_Title" Text="이름"/>
+	<class name="Search" Text="검색"/>
 	<class name="SecondaryKey" Text="[!Menu]보조 사용키"/>
 	<class name="SelectableAdditionReward" Text="선택 가능한 추가 보상"/>
 	<class name="SelectMode" Text="모드 선택"/>
@@ -954,21 +978,22 @@
 	<class name="Sell" Text="판매"/>
 	<class name="SellPrice" Text="판매 가격"/>
 	<class name="SellPrice_Menu" Text="[!Menu]판매 가격"/>
-	<class name="Sender" Text="보낸 사람"/>
-	<class name="SendLogToDev" Text="로그 전송"/>
 	<class name="SendAllLog" Text="전체 로그 파일 포함"/>
+	<class name="Sender" Text="보낸 사람"/>
 	<class name="SendingNow" Text="전송중.."/>
+	<class name="SendLogToDev" Text="로그 전송"/>
 	<class name="SendMail" Text="메일 보내기"/>
 	<class name="SendMail2" Text="편지 쓰기"/>
 	<class name="SendToInventory" Text="인벤토리로 보내기"/>
 	<class name="ServerList" Text="서버 목록"/>
+	<class name="Sight" Text="시야 확인"/>
 	<class name="Shooter" Text="슈터"/>
 	<class name="ShooterStreet" Text="운행 정지"/>
 	<class name="ShopBuyTitle" Text="상품 목록"/>
 	<class name="ShopDiscount" Text="%d%% 할인 판매"/>
 	<class name="ShopLostShopTitle" Text="유실물 목록"/>
-	<class name="ShopValkyrieTitle" Text="발키리 상점"/>
 	<class name="ShopSellTitle" Text="판매 목록"/>
+	<class name="ShopValkyrieTitle" Text="발키리 상점"/>
 	<class name="ShortCut_Aim" Text="[!Menu]조준 모드"/>
 	<class name="ShortCut_Battle" Text="[!Menu]전투 모드"/>
 	<class name="ShortCut_Common" Text="[!Menu]공용 사용"/>
@@ -1027,6 +1052,7 @@
 	<class name="Status_Suffix_Decrease" Text="감소합니다."/>
 	<class name="Status_Suffix_Increase" Text="증가합니다."/>
 	<class name="StatusCompare_Menu" Text="[!Menu]능력치 비교"/>
+	<class name="StatusLinkedStatus" Text="연관 능력치"/>
 	<class name="StatusRole" Text="피해량 감소"/>
 	<class name="StatusRoleDischarge" Text="상태 이상 해제"/>
 	<class name="StopService" Text="운행 정지"/>
@@ -1173,6 +1199,7 @@
 	<class name="Waypoint" Text="지역 이동"/>
 	<class name="Weapon" Text="무기"/>
 	<class name="Weapon_Menu" Text="[!Menu]무기"/>
+	<class name="WeaponCostume" Text="형상 투영"/>
 	<class name="Weather" Text="날씨"/>
 	<class name="Weight" Text="체중"/>
 	<class name="WhenEquipedBind" Text="착용 시 귀속"/>

@@ -89,6 +89,7 @@
 		<class name="Tutorial_MetroStreet_cgLwza" Value="[!VictoryCondition]백호파 습격을 외부에 알리시오."/>
 		<class name="Tutorial_MetroStreet_wRLHXl" Value="[!VictoryCondition]- 선택 목표 1: 주차장의 유선 전화를 사용하여 구조 요청하시오."/>
 		<class name="Tutorial_MetroStreet_omFvAf" Value="[!VictoryCondition]- 선택 목표 2: 전파 방해기를 모두 파괴하시오."/>
+		<class name="Tutorial_MetroStreet_wfO467" Value="[!BalloonChat][!speaker:Irene]!?"/>
 		<class name="Tutorial_MetroStreet_Rx8C5r" Value="[!BalloonChat][!speaker:Alisa]비비. 내 주위에서 너무 멀어지지 마!"/>
 		<class name="Tutorial_MetroStreet_WcWjGL" Value="[!BalloonChat][!speaker:Bianca]알았어. 걱정 마."/>
 		<class name="Tutorial_MetroStreet_79JT8N" Value="[!Dialog][!speaker:Irene_Surprise]저 사람은..."/>

@@ -31,7 +31,7 @@
 		<class name="MetrodiumStation" Title="메트로디움 역" State="None" Zone="WindWallTown" Division="Area_Center" Section="Metrodium" PX="0.53" PY="0.37" SiteKey="Metrodium"/>
 		<class name="GoldHand_Street" Title="황금손 거리" State="None" Zone="WindWallTown" Division="Area_North" Section="GoldHand" PX="0.6" PY="0.15"/>
 		<class name="GoldHand_BackStreet" Title="황금손 뒷거리" State="None" Zone="WindWallTown" Division="Area_North" Section="GoldHand" PX="0.7" PY="0.15"/>
-		<class name="GoldHand_Residence" Title="황금손 거주구" State="None" Zone="WindWallTown" Division="Area_North" Section="GoldHand" PX="0.65" PY="0.28"/>
+		<class name="GoldHand_Residence" Title="황금손 거주구" State="None" Zone="WindWallTown" Division="Area_North" Section="GoldHand" PX="0.665" PY="0.18"/>
 		<class name="GoldHand_Reconstruction" Title="황금손 재건축지구" State="None" Zone="WindWallTown" Division="Area_North" Section="GoldHand" PX="0.75" PY="0.28"/>
 		<class name="RageaWineBarrel_Street" Title="화난 술통 거리" State="None" Zone="WindWallTown" Division="Area_North" Section="RageaWineBarrel" PX="0.49" PY="0.32"/>
 		<class name="RageaWineBarrel_BackStreet" Title="화난 술통 뒷거리" State="None" Zone="WindWallTown" Division="Area_North" Section="RageaWineBarrel" PX="0.49" PY="0.28"/>
@@ -64,6 +64,7 @@
 		<class name="DustWind_Road_South" Title="먼지바람 고속도로 남단" State="None" Zone="WindWallTown" Division="Area_South" Section="DustWind" PX="0.165" PY="0.85"/>
 		<class name="DustWind_Road_North" Title="먼지바람 고속도로 북단" State="None" Zone="WindWallTown" Division="Area_South" Section="DustWind" PX="0.355" PY="0.695"/>
 		<class name="SkyWind_Street" Title="하늘바람 거리" State="None" Zone="WindWallTown" Division="Area_Center" Section="SkyWind" PX="0.697" PY="0.395"/>
+		<class name="SkyWind_AnimalShelter" Title="하늘바람 동물보호소" State="None" Zone="WindWallTown" Division="Area_Center" Section="SkyWind" PX="0.6625" PY="0.48"/>
 		<class name="SkyWind_Shop" Title="하늘바람 상점가" State="None" Zone="WindWallTown" Division="Area_Center" Section="SkyWind" PX="0.757" PY="0.3"/>
 		<class name="SkyWind_Residence" Title="하늘바람 거주구" State="None" Zone="WindWallTown" Division="Area_Center" Section="SkyWind" PX="0.625" PY="0.285"/>
 		<class name="Metrodium_Street" Title="메트로디움 거리" State="None" Zone="WindWallTown" Division="Area_Center" Section="Metrodium" PX="0.62" PY="0.42"/>

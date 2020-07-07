@@ -21,6 +21,13 @@
 			<property Type="SceneFade" Direct="true" FadeType="In"/>
 		</Scripts>
 	</class>
+	<class name="QuestEvent_Common">
+		<Scripts>
+			<property Type="SceneFade" Direct="true" FadeType="Out"/>
+			<property Type="QuestJump" C_Quest="env.quest_name" C_JumpTo="env.dialog_type"/>
+			<property Type="SceneFade" Direct="true" FadeType="In"/>
+		</Scripts>
+	</class>
 	<class name="LobbyEvent_Office_Albus1">
 		<Scripts>
 			<property Type="Jump" JumpTo="Office_Albus_MenuTutorial"/>

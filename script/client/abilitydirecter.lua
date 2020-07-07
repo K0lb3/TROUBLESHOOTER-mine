@@ -47,7 +47,12 @@ function MasterAbilityScript(ad, ability, userInfo, primaryTargetInfos, secondar
 			ad:RunScript('IncreaseCameraControlLock', nil, true);
 		end
 	end
-
+	
+	-- 어빌리티 카메라 흔들림 끄기
+	if IsClient() and GetOption().Gameplay.DisableWiggleCam then
+		ad:SetConfig('NoWiggle', true);
+	end
+	
 	local sightObjs = {};
 	if not IsMoveTypeAbility(ability) and not ad:GetConfig('NoAutoSight') then
 		AutoSightOn(ad, userInfo.User);		-- 가장 처음에 켜줘야 할듯
@@ -743,7 +748,7 @@ function ProcessHit(ad, infoRoot, action, hitTimeActionID, relativeTime, hitArg,
 				ad:Connect(ui_On, deadCamera_AfterFinish, -1);
 			end
 		end
-		if voiceSound and voiceSound ~= 'None' then
+		if voiceSound and voiceSound ~= 'None' and TestCharacterVoiceTextFrequency() then
 			local deadPlaySoundID = ad:PlaySound3D(voiceSound, targetKey, '_CENTER_', 3000, 'Effect', voiceSoundVolume or 1.0, true, 1);
 			ad:Connect(deadPlaySoundID, deadID, voiceOffset);
 			if voiceText and voiceText ~= 'None' then
@@ -895,7 +900,7 @@ function ProcessHit(ad, infoRoot, action, hitTimeActionID, relativeTime, hitArg,
 	-- 피격자 소리.
 	if hitSoundType then
 		local hitVoiceSound, hitVoiceSoundVolume, hitVoiceOffset, hitVoiceText = GetObjectVoiceSound(hitArg.Target, hitSoundType);
-		if hitVoiceSound and hitVoiceSound ~= 'None' then
+		if hitVoiceSound and hitVoiceSound ~= 'None' and TestCharacterVoiceTextFrequency() then
 			ad:Connect(ad:PlaySound3D(hitVoiceSound, targetKey, hitMethodCls.EffectPos, 3000, 'Effect', hitVoiceSoundVolume or 1.0, true, 1), coreID, 0.1);
 			if hitVoiceText and hitVoiceText ~= 'None' then
 				local textID = ad:UpdateCharacterVoiceText(hitVoiceText, targetKey);
@@ -1772,7 +1777,7 @@ function PlayAbilityDirectInternal(ad, ability, userInfo, primaryTargetInfos, se
 	local sleepID = ad:Sleep(sleepTime);
 	-- 어빌리티 사용시 
 	local voiceSound, voiceSoundVolume, voiceOffset, voiceText = GetObjectVoiceSound(userInfo.User, 'Ability_'..ability.name);
-	if voiceSound ~= nil and voiceSound ~= 'None' then
+	if voiceSound ~= nil and voiceSound ~= 'None' and TestCharacterVoiceTextFrequency() then
 		local enable = ad:EnableIf('TestObjectVisibleAndAlive', user);
 		ad:Connect(enable, sleepID, 0);
 		local voiceId = nil;
@@ -1963,7 +1968,7 @@ function ProcessAbilityAttackVoice(ad, userInfo, primaryTargetInfos, secondaryTa
 		local nextRefID = nil;
 		local sleepID = ad:Sleep(sleepTime + voiceOffset);
 		ad:Connect(sleepID, voiceRefID, -1);
-		if voiceSound ~= 'None' then
+		if voiceSound ~= 'None' and TestCharacterVoiceTextFrequency() then
 			local voiceID = nil;
 			if GetRelationWithPlayer(obj) == 'Team' then
 				voiceID = ad:PlaySound(voiceSound, 'Voice', voiceSoundVolume, true);
@@ -2218,7 +2223,7 @@ function PLAY_Move(ad, ability, userInfo, primaryTargetInfos, secondaryTargetInf
 	end
 	-- 이동 시
 	local voiceSound, voiceSoundVolume, _, voiceText = GetObjectVoiceSound(userInfo.User, 'Move');
-	if voiceSound ~= nil and voiceSound ~= 'None' and IsObjectInSight(userInfo.User) then
+	if voiceSound ~= nil and voiceSound ~= 'None' and IsObjectInSight(userInfo.User) and TestCharacterVoiceTextFrequency() then
 		local voice = nil;
 		if GetRelationWithPlayer(userInfo.User) == 'Team' then
 			voice = ad:PlaySound(voiceSound, 'Voice', voiceSoundVolume, true);
@@ -2398,11 +2403,14 @@ end
 function PLAY_ToxicLeakage_LightningSac(ad, ability, userInfo, primaryTargetInfos, secondaryTargetInfos)
 	PLAY_ToxicLeakageShared(ad, ability, userInfo, primaryTargetInfos, secondaryTargetInfos, 'Particles/Dandylion/Grenade_Explosion_Lightning');
 end
-function PLAY_ToxicLeakage_PoisonSac(ad, ability, userInfo, primaryTargetInfos, secondaryTargetInfos)
+function PLAY_ToxicLeakage_VenomSac(ad, ability, userInfo, primaryTargetInfos, secondaryTargetInfos)
 	PLAY_ToxicLeakageShared(ad, ability, userInfo, primaryTargetInfos, secondaryTargetInfos, 'Particles/Dandylion/Grenade_Explosion_Gas');
 end
 function PLAY_ToxicLeakage_Small(ad, ability, userInfo, primaryTargetInfos, secondaryTargetInfos)
 	PLAY_ToxicLeakageShared(ad, ability, userInfo, primaryTargetInfos, secondaryTargetInfos, 'Particles/Dandylion/Grenade_Explosion_Gas');
+end
+function PLAY_ToxicLeakage_WebSac(ad, ability, userInfo, primaryTargetInfos, secondaryTargetInfos)
+	PLAY_ToxicLeakageShared(ad, ability, userInfo, primaryTargetInfos, secondaryTargetInfos, 'Particles/Dandylion/Grenade_Explosion_Ice');
 end
 function PLAY_RestoreHP(ad, ability, userInfo, primaryTargetInfos, secondaryTargetInfos)
 	if IsObjectInSight(userInfo.User) then
@@ -2810,6 +2818,7 @@ function Play_RemoveStickyWeb(ad, ability, userInfo, primaryTargetInfos, seconda
 	ad:UpdateBattleEvent(GetObjKey(user), 'AbilityInvoked', { Ability = ability.name });
 	for i, info in ipairs(primaryTargetInfos) do
 		local targetKey = GetObjKey(info.Target);
+		ad:PlayAni(targetKey, 'AstdIdle', false);
 		local soundID = ad:PlaySound3D('Conceal.wav', targetKey, '_CENTER_', 3000, 'Effect', 1.0);
 		local particleID = ad:PlayParticle(targetKey, '_BOTTOM_', 'Particles/Dandylion/Buff_Conceal_Start', 1.5);
 	end

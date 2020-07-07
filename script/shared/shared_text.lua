@@ -8,7 +8,8 @@ TextMethod = {
 	PropertyColumn = 7,
 	FormatMessage = 8,
 	ClassData = 9,
-	GameMessageForm = 10
+	GameMessageForm = 10,
+	RemoveTag = 11,
 };
 function MakeText(method, data)
 	return {Method = method, Data = data};
@@ -47,6 +48,9 @@ function ClassDataText(...)
 end
 function GameMessageFormText(messageForm, baseColor)
 	return MakeText(TextMethod.GameMessageForm, {Form = messageForm, BaseColor = baseColor});
+end
+function RemoveTagText(text)
+	return MakeText(TextMethod.RemoveTag, {Text = text});
 end
 function LoadStringFormatText(data)
 	local argStrings = {};
@@ -104,6 +108,10 @@ end
 function LoadGameMessageForm(data)
 	return GameMessageBuilder(data.Form, true, data.BaseColor);
 end
+function LoadRemoveTagText(data)
+	local textStr = LoadText(data.Text);
+	return string.gsub(textStr, '%[[^]]+%]', '');
+end
 function LoadText(textData)
 	if type(textData) ~= 'table' then
 		return textData;
@@ -125,6 +133,7 @@ function LoadText(textData)
 		[TextMethod.FormatMessage] = LoadFormatMessageText,
 		[TextMethod.ClassData] = LoadClassDataText,
 		[TextMethod.GameMessageForm] = LoadGameMessageForm,
+		[TextMethod.RemoveTag] = LoadRemoveTagText,
 	};
 	return TextExtractor[textData.Method](textData.Data);
 end

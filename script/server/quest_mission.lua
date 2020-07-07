@@ -88,6 +88,13 @@ function OnArrestUnitKilled_ArrestGen_Property(user, questInfo, questCls, eventA
 	end
 	return ProgressQuestTargetCount(user, questInfo, questCls, ds, 1);
 end
+function OnCitizenRescuing_CivilRescueGen_Property(user, questInfo, questCls, eventArg, ds)
+	local genType = GetInstantProperty(eventArg.Unit, 'CitizenGenSet');
+	if genType ~= questCls.Target then
+		return;
+	end
+	return ProgressQuestTargetCount(user, questInfo, questCls, ds, 1);
+end
 function OnUnitDead_Assassination_Organization(user, questInfo, questCls, eventArg, ds)
 	if eventArg.Killer.Team ~= GetUserTeam(user) then
 		-- 설마 킬러가 내편인데 아군을 잡는다거나 하진 않겠지?

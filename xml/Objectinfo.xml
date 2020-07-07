@@ -210,6 +210,21 @@
 			<property name="Normal" Image="" Icon="Portrait5/Beast_Bat_Black_Leader"/>
 		</Emotions>
 	</class>
+	<class name="Beast_Bat_Gold" Title="황금 날개" JobName="" FamilyName="" AgeType="Beast" Image="Portrait12/Beast_Bat_Gold" Image_Small="None" Affiliation="Empty" NamedEvent="Dorori_Gold">
+		<Emotions>
+			<property name="Normal" Image="" Icon="Portrait12/Beast_Bat_Gold"/>
+		</Emotions>
+	</class>
+	<class name="Beast_Bat_Red" Title="붉은 도로리" JobName="" FamilyName="" AgeType="Beast" Image="Portrait12/Beast_Bat_Red" Image_Small="None" Affiliation="Empty">
+		<Emotions>
+			<property name="Normal" Image="" Icon="Portrait12/Beast_Bat_Red"/>
+		</Emotions>
+	</class>
+	<class name="Beast_Bat_Red_Leader" Title="붉은 왕도로리" JobName="" FamilyName="" AgeType="Beast" Image="Portrait12/Beast_Bat_Red_Leader" Image_Small="None" Affiliation="Empty" NamedEvent="Dorori_Red_Leader">
+		<Emotions>
+			<property name="Normal" Image="" Icon="Portrait12/Beast_Bat_Red_Leader"/>
+		</Emotions>
+	</class>
 	<class name="Beast_Bat_Flame" Title="용암 도로리" JobName="" FamilyName="" AgeType="Beast" Image="Portrait5/Beast_Bat_Flame" Image_Small="None" Affiliation="Empty">
 		<Emotions>
 			<property name="Normal" Image="" Icon="Portrait5/Beast_Bat_Flame"/>
@@ -283,6 +298,26 @@
 	<class name="Beast_Spider_Grey3" Title="회색 야샤" JobName="" FamilyName="" AgeType="Beast" Image="Portrait10/Beast_Spider_Grey3" Image_Small="None" Affiliation="Empty" NamedEvent="Yasha_Grey">
 		<Emotions>
 			<property name="Normal" Image="" Icon="Portrait10/Beast_Spider_Grey3"/>
+		</Emotions>
+	</class>
+	<class name="Beast_Spider_BlackWidow1" Title="새끼 잿더미 야샤" JobName="" FamilyName="" AgeType="Beast" Image="Portrait12/Beast_Spider_BlackWidow1" Image_Small="None" Affiliation="Empty">
+		<Emotions>
+			<property name="Normal" Image="" Icon="Portrait12/Beast_Spider_BlackWidow1"/>
+		</Emotions>
+	</class>
+	<class name="Beast_Spider_BlackWidow2" Title="작은 잿더미 야샤" JobName="" FamilyName="" AgeType="Beast" Image="Portrait12/Beast_Spider_BlackWidow2" Image_Small="None" Affiliation="Empty">
+		<Emotions>
+			<property name="Normal" Image="" Icon="Portrait12/Beast_Spider_BlackWidow2"/>
+		</Emotions>
+	</class>
+	<class name="Beast_Spider_BlackWidow3" Title="잿더미 야샤" JobName="" FamilyName="" AgeType="Beast" Image="Portrait12/Beast_Spider_BlackWidow3" Image_Small="None" Affiliation="Empty">
+		<Emotions>
+			<property name="Normal" Image="" Icon="Portrait12/Beast_Spider_BlackWidow3"/>
+		</Emotions>
+	</class>
+	<class name="Beast_Spider_BlackWidow4" Title="잿더미 야샤 군주" JobName="" FamilyName="" AgeType="Beast" Image="Portrait13/Beast_Spider_BlackWidow4" Image_Small="None" Affiliation="Empty" NamedEvent="Yasha_BlackWidow_Leader">
+		<Emotions>
+			<property name="Normal" Image="" Icon="Portrait13/Beast_Spider_BlackWidow4"/>
 		</Emotions>
 	</class>
 	<class name="Beast_Spider_Black1" Title="새끼 암흑 야샤" JobName="" FamilyName="" AgeType="Beast" Image="Portrait4/Beast_Spider_Black_Baby" Image_Small="None" Affiliation="Empty">
@@ -375,6 +410,11 @@
 			<property name="Normal" Image="" Icon="Portrait4/Beast_Spider_Poison"/>
 		</Emotions>
 	</class>
+	<class name="Beast_Spider_Egg" Title="야샤 알집" JobName="" FamilyName="" AgeType="Beast" Image="Portrait13/Beast_Spider_Egg" Image_Small="None" Affiliation="Empty">
+		<Emotions>
+			<property name="Normal" Image="" Icon="Portrait13/Beast_Spider_Egg"/>
+		</Emotions>
+	</class>
 	<class name="Beast_Tima_Base" Title="티마" JobName="" FamilyName="" AgeType="Beast" Image="Portrait/Beast_Tima_Base" Image_Small="None" Affiliation="Empty">
 		<Emotions>
 			<property name="Normal" Image="" Icon="Portrait/Beast_Tima_Base"/>
@@ -403,6 +443,11 @@
 	<class name="Beast_Tima_Spark" Title="전격 티마" JobName="" FamilyName="" AgeType="Beast" Image="Portrait/Beast_Tima_Spark" Image_Small="None" Affiliation="Empty">
 		<Emotions>
 			<property name="Normal" Image="" Icon="Portrait/Beast_Tima_Spark"/>
+		</Emotions>
+	</class>
+	<class name="Beast_Tima_Yellow" Title="황금 어금니" JobName="" FamilyName="" AgeType="Beast" Image="Portrait13/Beast_Tima_Gold" Image_Small="None" Affiliation="Empty" NamedEvent="Tima_Gold">
+		<Emotions>
+			<property name="Normal" Image="" Icon="Portrait13/Beast_Tima_Gold"/>
 		</Emotions>
 	</class>
 	<class name="Beast_Tima_Stone" Title="실버" JobName="" FamilyName="" AgeType="Beast" Image="Portrait/Beast_Tima_Stone" Image_Small="None" Affiliation="Empty" NamedEvent="Tima_Silver">
@@ -660,6 +705,11 @@
 			<property name="Normal" Image="" Icon="Portrait6/Beast_Frog_Lightning3"/>
 		</Emotions>
 	</class>
+	<class name="Beast_Frog_Gold" Title="황금 혀" JobName="" FamilyName="" AgeType="Beast" Image="Portrait13/Beast_Frog_Gold" Image_Small="None" Affiliation="Empty" DialogTypingSound="Male" NamedEvent="Frog_Gold">
+		<Emotions>
+			<property name="Normal" Image="" Icon="Portrait13/Beast_Frog_Gold"/>
+		</Emotions>
+	</class>
 	<class name="Beast_Frog_Fire" Title="작은 불꽃 네구리" JobName="" FamilyName="" AgeType="Beast" Image="Portrait7/Beast_Frog_Fire" Image_Small="None" Affiliation="Empty" DialogTypingSound="Male">
 		<Emotions>
 			<property name="Normal" Image="" Icon="Portrait7/Beast_Frog_Fire"/>
@@ -688,6 +738,36 @@
 	<class name="Beast_Frog_Poison3" Title="맹독 왕네구리" JobName="" FamilyName="" AgeType="Beast" Image="Portrait6/Beast_Frog_Poison3" Image_Small="None" Affiliation="Empty" DialogTypingSound="Male" NamedEvent="Frog_Poison">
 		<Emotions>
 			<property name="Normal" Image="" Icon="Portrait6/Beast_Frog_Poison3"/>
+		</Emotions>
+	</class>
+	<class name="Beast_Frog_PoisonBlue" Title="작은 돌연변이 네구리" JobName="" FamilyName="" AgeType="Beast" Image="Portrait12/Beast_Frog_PoisonBlue" Image_Small="None" Affiliation="Empty" DialogTypingSound="Male">
+		<Emotions>
+			<property name="Normal" Image="" Icon="Portrait12/Beast_Frog_PoisonBlue"/>
+		</Emotions>
+	</class>
+	<class name="Beast_Frog_PoisonBlue2" Title="돌연변이 네구리" JobName="" FamilyName="" AgeType="Beast" Image="Portrait12/Beast_Frog_PoisonBlue2" Image_Small="None" Affiliation="Empty" DialogTypingSound="Male">
+		<Emotions>
+			<property name="Normal" Image="" Icon="Portrait12/Beast_Frog_PoisonBlue2"/>
+		</Emotions>
+	</class>
+	<class name="Beast_Frog_PoisonBlue3" Title="돌연변이 왕네구리" JobName="" FamilyName="" AgeType="Beast" Image="Portrait12/Beast_Frog_PoisonBlue3" Image_Small="None" Affiliation="Empty" DialogTypingSound="Male" NamedEvent="Frog_Mutant">
+		<Emotions>
+			<property name="Normal" Image="" Icon="Portrait12/Beast_Frog_PoisonBlue3"/>
+		</Emotions>
+	</class>
+	<class name="Beast_Frog_PoisonRed" Title="작은 붉은 네구리" JobName="" FamilyName="" AgeType="Beast" Image="Portrait13/Beast_Frog_PoisonRed" Image_Small="None" Affiliation="Empty" DialogTypingSound="Male">
+		<Emotions>
+			<property name="Normal" Image="" Icon="Portrait13/Beast_Frog_PoisonRed"/>
+		</Emotions>
+	</class>
+	<class name="Beast_Frog_PoisonRed2" Title="붉은 네구리" JobName="" FamilyName="" AgeType="Beast" Image="Portrait13/Beast_Frog_PoisonRed2" Image_Small="None" Affiliation="Empty" DialogTypingSound="Male">
+		<Emotions>
+			<property name="Normal" Image="" Icon="Portrait13/Beast_Frog_PoisonRed2"/>
+		</Emotions>
+	</class>
+	<class name="Beast_Frog_PoisonRed3" Title="붉은 왕네구리" JobName="" FamilyName="" AgeType="Beast" Image="Portrait13/Beast_Frog_PoisonRed3" Image_Small="None" Affiliation="Empty" DialogTypingSound="Male" NamedEvent="Frog_Red">
+		<Emotions>
+			<property name="Normal" Image="" Icon="Portrait13/Beast_Frog_PoisonRed3"/>
 		</Emotions>
 	</class>
 	<class name="Beast_Frog_Dot" Title="점박이 네구리" JobName="" FamilyName="" AgeType="Beast" Image="Portrait6/Beast_Frog_Dot" Image_Small="None" Affiliation="Empty" DialogTypingSound="Male" NamedEvent="Frog_Dot">
@@ -2143,6 +2223,11 @@
 		</Emotions>
 	</class>
 	<class name="Lock" Title="금고" JobName="" FamilyName="" AgeType="Object" Image="Portrait/Beast_Tima_Stone" Image_Small="None" Affiliation="Empty"/>
+	<class name="Lock_RustBox" Title="잠겨있는 낡은 상자" JobName="" FamilyName="" AgeType="Object" Image="Portrait13/Lock_RustBox" Image_Small="None" Affiliation="Empty">
+		<Emotions>
+			<property name="Normal" Image="" Icon="Portrait13/Lock_RustBox"/>
+		</Emotions>
+	</class>
 	<class name="Luna" Title="루나" JobName="" FamilyName="에스티나" AgeType="Girl" Image="Portrait/Luna" Image_Small="None" Affiliation="Empty" DialogTypingSound="Light_Fast">
 		<Emotions>
 			<property name="Annoying" Image="Portrait_Luna_Annoying" Icon="Portrait4/Luna_Annoying"/>
@@ -2190,7 +2275,7 @@
 			<property name="Normal" Image="" Icon=""/>
 		</Emotions>
 	</class>
-	<class name="Miki" Title="미키" JobName="회사원" FamilyName="라베스카" AgeType="Woman" Image="Portrait2/Miki" Image_Small="None" Affiliation="Empty" DialogTypingSound="Light_Fast">
+	<class name="Miki" Title="미키" JobName="회사원" FamilyName="마슬로바" AgeType="Woman" Image="Portrait2/Miki" Image_Small="None" Affiliation="Empty" DialogTypingSound="Light_Fast">
 		<Emotions>
 			<property name="Normal" Image="" Icon=""/>
 		</Emotions>
@@ -2550,6 +2635,11 @@
 		</Emotions>
 	</class>
 	<class name="TransportDrone" Title="수송 드론" JobName="" FamilyName="" AgeType="Drone" Image="" Image_Small="None" Affiliation="Empty">
+		<Emotions>
+			<property name="Normal" Image="" Icon=""/>
+		</Emotions>
+	</class>
+	<class name="TransportDrone_Escape" Title="탈주한 수송 드론" JobName="" FamilyName="" AgeType="Drone" Image="" Image_Small="None" Affiliation="Empty">
 		<Emotions>
 			<property name="Normal" Image="" Icon=""/>
 		</Emotions>

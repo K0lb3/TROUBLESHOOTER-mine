@@ -7,9 +7,9 @@ function GetAbilityDamage(self, ability, target, usingPos, staticCache, perfChec
 	--local start = os.clock();
 	if staticCache == nil then
 		local dam, info;
-		dam, info, staticCache = GetDamageCalculator(self, target, ability, nil, usingPos, 1, 'Static', nil, nil, perfChecker);
+		dam, info, staticCache = GetDamageCalculator(self, target, ability, nil, nil, usingPos, 1, 'Static', nil, nil, perfChecker);
 	end
-	local dam, info, result = GetDamageCalculator(self, target, ability, nil, usingPos, 1, 'PositionRelative', nil, nil, perfChecker);
+	local dam, info, result = GetDamageCalculator(self, target, ability, nil, nil, usingPos, 1, 'PositionRelative', nil, nil, perfChecker);
 	result:Merge(staticCache);
 	--LogAndPrint('GetAbilityDamage', 'elapsed', os.clock() - start, dam, result:ComposeFormula());
 	perfChecker:Rise();
@@ -73,7 +73,7 @@ function IsEnemy(self, unit, citizenOnly)
 end
 function GetTargetScoreRatio(self, target)
 	local scoreRatio = 1;
-	if self.Race.name == 'Machine' and GetBuff(target, 'InformationDistortion') then
+	if self.Race.name == 'Machine' and (HasBuff(target, 'InformationDistortion') or HasBuff(target, 'InformationFalsification')) then
 		scoreRatio = scoreRatio - 0.5;
 	end
 	if HasBuff(target, 'Giant') then

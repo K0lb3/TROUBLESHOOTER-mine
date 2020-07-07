@@ -87,13 +87,6 @@ function GetSuggetionEnable_RecruitLeton(company, arg)
 	end
 	return result;
 end
-function GetSuggetionEnable_HeissingRequest(company, arg)
-	local result = false;
-	if company.Progress.Character.Albus == 13 then
-		result = true;
-	end
-	return result;
-end
 function GetSuggetionEnable_IssacRequest2(company, arg)
 	local result = false;
 	-- 아이작.

@@ -89,6 +89,22 @@ function ReasonToUpdateBattleEventMulti(target, ds, reasons, refId, refOffset)
 	end
 end
 
+function FindAbilityUsingInfo(targetInfos, testFunc)
+	for _, info in ipairs(targetInfos) do
+		if type(info) == 'table' then
+			local ret = FindAbilityUsingInfo(info, testFunc);
+			if ret then
+				return ret;
+			end
+		else
+			if testFunc(info) then
+				return info;
+			end
+		end
+	end
+	return nil;
+end
+
 function HasAnyAbilityUsingInfo(targetInfos, testFunc)
 	for _, info in ipairs(targetInfos) do
 		if type(info) == 'table' then

@@ -194,6 +194,24 @@ function Command_mastery(company, dc, masteryName, count)
 	dc:AcquireMastery(company, masteryName, count and tonumber(count) or 1);
 	dc:Commit('Command_mastery');
 end
+function Command_setmastery(company, dc, masteryName, count)
+	count = count and tonumber(count) or 1;
+	masteryName = FindClassData('Mastery', masteryName);
+	local masterySetList = GetClassList('MasterySet');
+	local setCls = masterySetList[masteryName];
+	if setCls == nil then
+		SendChat(company, 'Notice', 'System', string.format('no set mastery %s', masteryName));
+		return;
+	end
+	
+	for i = 1, 4 do
+		local needMastery = setCls['Mastery'..i];
+		if needMastery ~= 'None' then
+			dc:AcquireMastery(company, needMastery, count);
+		end
+	end
+	dc:Commit('Command_setmastery');
+end
 function Command_am(company, dc, count)
 	local masteryCategorySet = {};
 	for _, category in pairs(GetClassList('MasteryCategory')) do
@@ -1330,6 +1348,13 @@ function Command_lobbyevent(company, dc, sectionName, slotIndex)
 	StartLobbyDialog(company, 'LobbyEvent_Common', env);
 end
 
+function Command_questevent(company, dc, questName, dialogType)
+	local env = { _no_action = true };
+	env.quest_name = questName;
+	env.dialog_type = dialogType;
+	StartLobbyDialog(company, 'QuestEvent_Common', env);
+end
+
 function Command_goray(company, dc)
 	local props = {{'Progress/Tutorial/Opening','FireflyPark'},
 	{'LastLocation/LobbyType','LandOfStart'},
@@ -1907,7 +1932,9 @@ function CheatCommandResetOne(actions, obj)
 	UpdateAbilityCoolActions(actions, obj, 0);
 	local abilityList = GetAllAbility(obj, false, true);
 	for index, curAbility in ipairs (abilityList) do
-		UpdateAbilityPropertyActions(actions, obj, curAbility.name, 'UseCount', curAbility.MaxUseCount);
+		if curAbility.IsUseCount and curAbility.AutoUseCount then
+			UpdateAbilityPropertyActions(actions, obj, curAbility.name, 'UseCount', curAbility.MaxUseCount);
+		end
 	end
 	AddActionCost(actions, obj, obj.MaxCost);
 	AddSPPropertyActions(actions, obj, obj.ESP.name, obj.MaxSP, true, nil);
@@ -2341,7 +2368,7 @@ function CommandMission_giveability(mission, company, dc, objKey, abilityName)
 		return;
 	end
 	local newUseCount = ability.MaxUseCount;
-	if ability.UseCount ~= newUseCount then
+	if ability.UseCount ~= newUseCount and ability.IsUseCount and ability.AutoUseCount then
 		local actions = {};
 		UpdateAbilityPropertyActions(actions, obj, ability.name, 'UseCount', newUseCount);
 		ApplyActions(mission, actions);

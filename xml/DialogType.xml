@@ -38,4 +38,5 @@
 	<class name="QuestSuggest" Layout="QuestInformation2" LoadScript="LoadQuestInformation" Skippable="false"/>
 	<class name="QuestSuggestBack" Layout="DialogBattle" LoadScript="LoadQuestSuggestBack" Skippable="false"/>
 	<class name="Minimap" Layout="Minimap" LoadScript="LoadMinimapDialog" SkipTarget="childid=Exit, event=Clicked"/>
+	<class name="QuestReplayMission" Layout="QuestReplayMission" LoadScript="LoadQuestReplayMission" Skippable="false"/>
 </idspace>

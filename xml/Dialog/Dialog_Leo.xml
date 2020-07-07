@@ -136,8 +136,7 @@
 								<property Text="야수 보관 슬롯이 확장되었습니다."/>
 							</property>
 							<property Type="Action" Command="AddCompanyProperty" PropertyType="Vill" C_PropertyValue="-env.price"/>
-							<property Type="Action" Command="AddCompanyProperty" PropertyType="Progress/Achievement/BeastManagerLevel" C_PropertyValue="1"/>
-							<property Type="Action" Command="UpdateCompanyProperty" PropertyType="Progress/Tutorial/UnlockBeastSlot" C_PropertyValue="false" Commit="true"/>
+							<property Type="Action" Command="AddCompanyProperty" PropertyType="Progress/Achievement/BeastManagerLevel" C_PropertyValue="1" Commit="true"/>
 						</property>
 						<property Case="no">
 							<property Type="Dialog" C_DlgName="npc.Info.Title">

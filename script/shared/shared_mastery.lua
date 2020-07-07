@@ -132,8 +132,6 @@ function IsEnableMasterRosterMastery(company, pc, mastery, masteryTable)
 	
 	local isEnable = true;
 	local reason = {};	
-	local currentMasteryList = GetCurrentMasteryList(masteryTable);
-	local totalCost = GetCurrentMasteryCost(masteryTable);
 	local masteryLv = SafeIndex(masteryTable[mastery.name], 'Lv');
 	if masteryLv == nil then
 		masteryLv = 0;
@@ -142,17 +140,28 @@ function IsEnableMasterRosterMastery(company, pc, mastery, masteryTable)
 	-- 1. 이미 배운 어빌리티인가?
 	if masteryLv > 0 then
 		isEnable = false;
-		table.insert(reason, 'Mastered');		
+		table.insert(reason, 'Mastered');
 	end
 	
 	-- 2. 배울 수 있는 개수가 존재하는가?
 	if company.Mastery[mastery.name].Amount == 0 then
 		isEnable = false;
-		table.insert(reason, 'NotEnoughAmount');		
+		table.insert(reason, 'NotEnoughAmount');
 	end
 	
+	local needPullout = false;
+	if isEnable then
+		-- 먼저 넣어보자
+		needPullout = true;
+		local mt = CreateObject(mastery);
+		mt.Lv = 1;
+		masteryTable[mastery.name] = mt;
+		InvalidateObject(pc);
+	end
+	
+	local totalCost = GetCurrentMasteryCost(masteryTable);
 	-- 3. TP 가능 테스트
-	if totalCost + mastery.Cost > pc.MaxTP then
+	if totalCost > pc.MaxTP then
 		isEnable = false;
 		table.insert(reason, 'OverTP');	
 	end
@@ -172,7 +181,7 @@ function IsEnableMasterRosterMastery(company, pc, mastery, masteryTable)
 		table.insert(reason, 'MaxMasteryCatergoryError');
 	end
 	-- 4. 타입별 최대 개수 체크  
-	if #currentMasteryTypeList + 1 > masteryCategoryMaxCount then
+	if #currentMasteryTypeList > masteryCategoryMaxCount then
 		isEnable = false;
 		table.insert(reason, 'MaxMasteryTypeCount');
 	end
@@ -181,7 +190,7 @@ function IsEnableMasterRosterMastery(company, pc, mastery, masteryTable)
 	for i = 1, #currentMasteryTypeList do
 		totalTypeCost = totalTypeCost + currentMasteryTypeList[i].Cost;
 	end
-	if totalTypeCost + mastery.Cost > masteryCategoryMaxCost then
+	if totalTypeCost > masteryCategoryMaxCost then
 		isEnable = false;
 		table.insert(reason, 'OverTPByCategory');
 	end
@@ -196,7 +205,7 @@ function IsEnableMasterRosterMastery(company, pc, mastery, masteryTable)
 		unlockMasteryCount = unlockMasteryCount + 1;
 	end
 	unlockMasteryCount = unlockMasteryCount + masteryCategoryExtraCount;
-	if #currentMasteryTypeList + 1 > unlockMasteryCount then
+	if #currentMasteryTypeList > unlockMasteryCount then
 		isEnable = false;
 		table.insert(reason, 'MaxMasteryTypeUnlockCount');		
 	end
@@ -210,6 +219,11 @@ function IsEnableMasterRosterMastery(company, pc, mastery, masteryTable)
 			table.insert(reason, 'ExclusiveMastery');
 		end
 	end
+	if needPullout then
+		masteryTable[mastery.name] = nil;
+		InvalidateObject(pc);
+	end
+	
 	return isEnable, reason;
 end
 -----------------------------------------------------------------
@@ -757,6 +771,14 @@ function CP_BuffModifier_ImmuneDebuff_FieldEffect(mastery)
 		Lava = BuffNeutralizer_Lava,
 	};
 end
+-- 강철의 전투법사
+function CP_BuffModifier_IronBattleMage(mastery)
+	return {
+		IronWall = function(buff)
+			buff.DischargeOnAbility = false;
+		end
+	};
+end
 ------------------------------------------------------------------------
 -- 기본 마스터리 설정 (PC는 서버 스크립트에서만)
 -----------------------------------------------------------------------
@@ -840,11 +862,13 @@ function SetBasicMasteries(obj, isPc)
 		end
 	end
 	-- 5. 세트 아이템 특성
-	local itemSetInfoList = GetItemSetList(obj);
-	for _, itemSetInfo in ipairs(itemSetInfoList) do
-		for _, masteryInfo in ipairs(itemSetInfo.Masteries) do
-			if masteryInfo.Activated then
-				list[masteryInfo.Mastery.name] = 1;
+	if isPc then
+		local itemSetInfoList = GetItemSetList(obj);
+		for _, itemSetInfo in ipairs(itemSetInfoList) do
+			for _, masteryInfo in ipairs(itemSetInfo.Masteries) do
+				if masteryInfo.Activated then
+					list[masteryInfo.Mastery.name] = 1;
+				end
 			end
 		end
 	end
@@ -1209,6 +1233,10 @@ function Mastery_CustomCache_GreedEye(obj, arg)
 	ret['Rare'] = obj.ApplyAmount3;
 	ret['Uncommon'] = obj.ApplyAmount4;
 	return ret;
+end
+-- 마도서
+function Mastery_CustomCache_SpellBook(obj, arg)
+	return Mastery_CustomCache_MasteryCountByType(obj, Set.new({'Mage', 'BlackMage'}));
 end
 -----------------------------------------------------------------
 -- MasteryBoardManager

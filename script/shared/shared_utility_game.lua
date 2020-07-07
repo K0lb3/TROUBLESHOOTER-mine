@@ -1160,6 +1160,14 @@ function ActionCaptionInitializer(cls, action)
 			onoff = '비활성화';
 		end
 		return string.format('\\[ ▧ %s \\]\\[ %s \\] - %s', cls.Title, onoff, action.TriggerGroup);
+	elseif cls.name == 'ToogleRewardWhenResurrect' then
+		local onoff = '에러';
+		if action.OnOff == 'On' then
+			onoff = '활성화';
+		elseif action.OnOff == 'Off' then
+			onoff = '비활성화';
+		end
+		return string.format('\\[ ▧ %s \\]\\[ %s \\] - %s', cls.Title, onoff, GetUnitIndicatorString(action.Unit));
 	elseif cls.name == 'ResetAbilityCooldown' then
 		return string.format('\\[ ▧ %s \\] - 대상: %s, 어빌리티: %s', cls.Title, GetUnitIndicatorString(action.Unit), action.Ability);
 	elseif cls.name == 'ResetAbilityCooldownAll' then

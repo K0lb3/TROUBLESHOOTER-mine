@@ -182,7 +182,7 @@
 				<property name="Elephant"/>
 			</Options>
 		</class>
-		<class name="BodyArmor" Title="방탄복" Desc="방탄복" Parent="Armor">
+		<class name="BodyArmor" Title="중갑" Desc="중갑" Parent="Armor">
 			<Options>
 				<property name="MoonSentinel"/>
 				<property name="StarSentinel"/>
@@ -1812,7 +1812,7 @@
 				<property Type="Resistance" Min="10" Max="50"/>
 				<property Type="MaxHP" Min="40" Max="100"/>
 				<property Type="Dodge" Min="3" Max="10"/>
-				<property Type="WaterResistance" Min="30" Max="100"/>
+				<property Type="WindResistance" Min="30" Max="100"/>
 			</IdentifyOptions>
 		</class>
 		<class name="VerdureScout" Title="신록 정찰병의 %s" Prob="15">
@@ -1820,7 +1820,7 @@
 				<property Type="Resistance" Min="10" Max="50"/>
 				<property Type="MaxHP" Min="40" Max="100"/>
 				<property Type="Dodge" Min="3" Max="10"/>
-				<property Type="WindResistance" Min="30" Max="100"/>
+				<property Type="EarthResistance" Min="30" Max="100"/>
 			</IdentifyOptions>
 		</class>
 		<class name="MistScout" Title="안개 정찰병의 %s" Prob="15">
@@ -1828,7 +1828,7 @@
 				<property Type="Resistance" Min="10" Max="50"/>
 				<property Type="MaxHP" Min="40" Max="100"/>
 				<property Type="Dodge" Min="4" Max="10"/>
-				<property Type="EarthResistance" Min="30" Max="100"/>
+				<property Type="WaterResistance" Min="30" Max="100"/>
 			</IdentifyOptions>
 		</class>
 		<class name="King" Title="왕의 %s" Prob="5">

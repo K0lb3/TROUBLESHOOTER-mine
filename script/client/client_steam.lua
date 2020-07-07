@@ -1,21 +1,21 @@
-function InvalidateSteamStats()
-	local session = GetSession();
-	local company = session.company_info;
-	
-	-- 상자 열기
-	local steamChestCount = GetSteamStat('OpenChestCount');
-	if steamChestCount ~= nil then
-		local companyChestCount = math.min(company.Stats.OpenChest, 100);
-		if companyChestCount > steamChestCount then
-			UpdateSteamStat('OpenChestCount', companyChestCount, true);
-		end
+-- 스팀 업적
+function AddSteamStatByDirecting(args)
+	if args.team and args.team ~= GetPlayerTeamName() then
+		return;
 	end
-	-- 야수 길들이기
-	local steamTamingCount = GetSteamStat('TamingCount');
-	if steamTamingCount ~= nil then
-		local companyTamingCount = math.min(company.BeastIndex, 10);
-		if companyTamingCount > steamTamingCount then
-			UpdateSteamStat('TamingCount', companyTamingCount, true);
-		end
+	AddSteamStat(args.statName, args.addValue, true);
+end
+
+function UpdateSteamStatByDirecting(args)
+	if args.team and args.team ~= GetPlayerTeamName() then
+		return;
 	end
+	UpdateSteamStat(args.statName, args.value, true);
+end
+
+function UpdateSteamAchievementByDirecting(args)
+	if args.team and args.team ~= GetPlayerTeamName() then
+		return;
+	end
+	UpdateSteamAchievement(args.achievementName, args.achieved);
 end

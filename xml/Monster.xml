@@ -1165,7 +1165,7 @@
 			<property name="Body" Item="Jacket_Normal" Lv="0"/>
 			<property name="Hand" Item="Ring_Spy" Lv="0"/>
 			<property name="Leg" Item="Boots_Leather" Lv="0"/>
-			<property name="Inventory2" Item="Pen_Camera" Lv="0"/>
+			<property name="Inventory2" Item="Pen_Camera"/>
 		</Equipments>
 		<Masteries>
 			<property name="Patience" value="1"/>
@@ -1207,7 +1207,7 @@
 			<property name="Body" Item="Jacket_Examinee" Lv="0"/>
 			<property name="Hand" Item="Bracelet_ExamineeWatch" Lv="0"/>
 			<property name="Leg" Item="Sneakers_Examinee" Lv="0"/>
-			<property name="Inventory2" Item="Pen_Examinee" Lv="0"/>
+			<property name="Inventory2" Item="Pen_Examinee"/>
 		</Equipments>
 		<Masteries>
 			<property name="Heaviness" value="1"/>
@@ -1229,7 +1229,7 @@
 			<property name="Body" Item="Suit_Old" Lv="0"/>
 			<property name="Hand" Item="Bracelet_OldWatch" Lv="0"/>
 			<property name="Leg" Item="DressShoes_Old" Lv="0"/>
-			<property name="Inventory2" Item="Pen_FountainOld" Lv="0"/>
+			<property name="Inventory2" Item="Pen_FountainOld"/>
 		</Equipments>
 		<Masteries>
 			<property name="Patience" value="1"/>
@@ -1253,7 +1253,7 @@
 			<property name="Body" Item="Suit_Bonaparte" Lv="0"/>
 			<property name="Hand" Item="Bracelet_BonaparteSE" Lv="0"/>
 			<property name="Leg" Item="DressShoes_BonaparteShoes" Lv="0"/>
-			<property name="Inventory2" Item="Pen_Light" Lv="0"/>
+			<property name="Inventory2" Item="Pen_Light"/>
 		</Equipments>
 		<Masteries>
 			<property name="Vanquished" value="1"/>
@@ -1654,7 +1654,7 @@
 		<Equipments>
 			<property name="Body" Item="Jacket_Normal" Lv="0"/>
 			<property name="Leg" Item="Boots_Leather" Lv="0"/>
-			<property name="Inventory2" Item="Pen_Camera" Lv="0"/>
+			<property name="Inventory2" Item="Pen_Camera"/>
 		</Equipments>
 		<Masteries>
 			<property name="Patience" value="1"/>
@@ -1856,6 +1856,20 @@
 			</Rage>
 		</AbilityPriority>
 	</class>
+	<class name="InvestigationTarget_Lock_RustBox" Lv="1" Grade="Normal" Info="Lock_RustBox" Object="Object_RustBox_Active" GradeUp="" RecoveryRatio="0.33">
+		<AbilityPriority>
+			<Normal>
+				<property Mode="Type" Target="Attack" Priority="100"/>
+			</Normal>
+			<Danger>
+				<property Mode="Type" Target="Heal" Priority="100"/>
+			</Danger>
+			<Rage>
+				<property Mode="HitRateType" Target="Melee" Priority="100"/>
+				<property Mode="Type" Target="Attack" Priority="50"/>
+			</Rage>
+		</AbilityPriority>
+	</class>
 	<class name="InvestigationTarget_CargoBox" Lv="2" Grade="Normal" Info="CargoBox" Object="Object_CargoBox_Active" GradeUp="" RecoveryRatio="0.33">
 		<AbilityPriority>
 			<Normal>
@@ -1942,13 +1956,13 @@
 	<class name="Mon_Alisa" Lv="28" Grade="Normal" Info="Alisa" Object="Mon_PC_Alisa" GradeUp="" RecoveryRatio="0.33">
 		<Equipments>
 			<property name="Weapon" Item="TwoHandSword_BattleCutter" Lv="5"/>
-			<property name="Body" Item="Tracksuit_Assassin_Rare" Lv="1">
+			<property name="Body" Item="Tracksuit_Assassin_Rare" Lv="3">
 				<Option OptionKey="FlameSentinel" Type1="Resistance" Value1="50" Type2="MaxHP" Value2="100" Type3="Block" Value3="8" Type4="FireResistance" Value4="80"/>
 			</property>
-			<property name="Hand" Item="Wrist_Titan_Blacke_Rare" Lv="1">
+			<property name="Hand" Item="Wrist_Titan_Blacke_Rare" Lv="3">
 				<Option OptionKey="StarScout" Type1="Armor" Value1="50" Type2="MaxHP" Value2="100" Type3="Dodge" Value3="8" Type4="PiercingResistance" Value4="80"/>
 			</property>
-			<property name="Leg" Item="Boots_Ogre_Rare" Lv="1">
+			<property name="Leg" Item="Boots_Ogre_Rare" Lv="3">
 				<Option OptionKey="FrostSoldier" Type1="Armor" Value1="50" Type2="Accuracy" Value2="10" Type3="CriticalStrikeChance" Value3="10" Type4="IceResistance" Value4="80"/>
 			</property>
 			<property name="Inventory1" Item="Potion_HP_Epic"/>
@@ -5214,7 +5228,7 @@
 			<property value="Flypaper"/>
 		</Abilities>
 	</class>
-	<class name="Mon_Beast_Frog_Normal3" Lv="38" Grade="Epic" Info="Beast_Frog_Normal3" Object="Mon_Beast_Frog_Normal3" GradeUp="" RecoveryRatio="0.33">
+	<class name="Mon_Beast_Frog_Normal3" Lv="37" Grade="Epic" Info="Beast_Frog_Normal3" Object="Mon_Beast_Frog_Normal3" GradeUp="" RecoveryRatio="0.33">
 		<Masteries>
 			<property name="AmbushingNeguri" value="1"/>
 			<property name="BodyTraining" value="1"/>
@@ -6083,6 +6097,139 @@
 			<property value="NeguriAcidGas"/>
 		</Abilities>
 	</class>
+	<class name="Mon_Beast_Frog_PoisonBlue1" Lv="23" Grade="Normal" Info="Beast_Frog_PoisonBlue" Object="Mon_Beast_Frog_PoisonBlue" GradeUp="" RecoveryRatio="0.33">
+		<Masteries>
+			<property name="AmbushingNeguri" value="1"/>
+			<property name="BodyTraining" value="1"/>
+			<property name="BoundingLeap" value="1"/>
+			<property name="ConcentratedFire" value="1"/>
+			<property name="Damp" value="1"/>
+			<property name="MucusSkin" value="1"/>
+			<property name="Stretching" value="1"/>
+			<property name="WaterWalker" value="1"/>
+			<property name="SprayMucus" value="1"/>
+			<property name="ToadSkin" value="1"/>
+			<property name="PoisonSkin" value="1"/>
+			<property name="VenomFang" value="1"/>
+			<property name="Mutation" value="1"/>
+		</Masteries>
+		<Rewards>
+			<property Item="Claw_Beast" Min="4" Max="8"/>
+			<property Item="Bone_Beast" Min="4" Max="8"/>
+			<property Item="Skin_Beast" Min="4" Max="8"/>
+			<property Item="Skin_Neguri" Min="4" Max="8"/>
+			<property Item="Pocket_Poison2_Small" Min="4" Max="8"/>
+			<property Item="PsionicStone_MistFragment" Min="1" Max="2"/>
+		</Rewards>
+		<AbilityPriority>
+			<Normal>
+				<property Mode="name" Target="NeguriTongueBash_Poison" Priority="105"/>
+				<property Mode="name" Target="NeguriJumpAttack" Priority="100"/>
+			</Normal>
+			<Danger>
+				<property Mode="name" Target="NeguriTongueBash_Poison" Priority="105"/>
+				<property Mode="name" Target="NeguriJumpAttack" Priority="100"/>
+			</Danger>
+			<Rage>
+				<property Mode="name" Target="NeguriTongueBash_Poison" Priority="105"/>
+				<property Mode="name" Target="NeguriJumpAttack" Priority="100"/>
+			</Rage>
+		</AbilityPriority>
+		<Abilities>
+			<property value="NeguriTongueBash_Poison"/>
+			<property value="NeguriJumpAttack"/>
+		</Abilities>
+	</class>
+	<class name="Mon_Beast_Frog_PoisonRed1" Lv="30" Grade="Normal" Info="Beast_Frog_PoisonRed" Object="Mon_Beast_Frog_PoisonRed" GradeUp="Mon_Beast_Frog_PoisonRed1_Elite" RecoveryRatio="0.33">
+		<Masteries>
+			<property name="AmbushingNeguri" value="1"/>
+			<property name="BodyTraining" value="1"/>
+			<property name="WaterWalker" value="1"/>
+			<property name="Mutation" value="1"/>
+			<property name="OntheWaterHunter" value="1"/>
+			<property name="WaterToWater" value="1"/>
+			<property name="JealousEye" value="1"/>
+			<property name="ToughSkin" value="1"/>
+			<property name="Curse" value="1"/>
+			<property name="TraceOn" value="1"/>
+			<property name="MutationEye" value="1"/>
+			<property name="MutationSmell" value="1"/>
+			<property name="MutationEar" value="1"/>
+			<property name="AcidMucus" value="1"/>
+			<property name="Jealousy" value="1"/>
+		</Masteries>
+		<Rewards>
+			<property Item="Claw_SavageBeast" Min="4" Max="8"/>
+			<property Item="Bone_SavageBeast" Min="4" Max="8"/>
+			<property Item="Skin_SavageBeast" Min="4" Max="8"/>
+			<property Item="Skin_Neguri" Min="4" Max="8"/>
+			<property Item="Pocket_Poison2_Small" Min="4" Max="8"/>
+			<property Item="PsionicStone_MistElement" Min="1" Max="2"/>
+		</Rewards>
+		<AbilityPriority>
+			<Normal>
+				<property Mode="name" Target="NeguriTongueBash_Poison" Priority="105"/>
+				<property Mode="name" Target="NeguriAcidGas" Priority="100"/>
+			</Normal>
+			<Danger>
+				<property Mode="name" Target="NeguriTongueBash_Poison" Priority="105"/>
+				<property Mode="name" Target="NeguriAcidGas" Priority="100"/>
+			</Danger>
+			<Rage>
+				<property Mode="name" Target="NeguriTongueBash_Poison" Priority="105"/>
+				<property Mode="name" Target="NeguriAcidGas" Priority="100"/>
+			</Rage>
+		</AbilityPriority>
+		<Abilities>
+			<property value="NeguriTongueBash_Poison"/>
+			<property value="NeguriAcidGas"/>
+		</Abilities>
+	</class>
+	<class name="Mon_Beast_Frog_PoisonRed1_Elite" Lv="32" Grade="Elite" Info="Beast_Frog_PoisonRed" Object="Mon_Beast_Frog_PoisonRed" GradeUp="" RecoveryRatio="0.33">
+		<Masteries>
+			<property name="AmbushingNeguri" value="1"/>
+			<property name="BodyTraining" value="1"/>
+			<property name="WaterWalker" value="1"/>
+			<property name="Mutation" value="1"/>
+			<property name="OntheWaterHunter" value="1"/>
+			<property name="WaterToWater" value="1"/>
+			<property name="JealousEye" value="1"/>
+			<property name="ToughSkin" value="1"/>
+			<property name="Curse" value="1"/>
+			<property name="TraceOn" value="1"/>
+			<property name="MutationEye" value="1"/>
+			<property name="MutationSmell" value="1"/>
+			<property name="MutationEar" value="1"/>
+			<property name="AcidMucus" value="1"/>
+			<property name="Jealousy" value="1"/>
+		</Masteries>
+		<Rewards>
+			<property Item="Claw_SavageBeast" Min="4" Max="8"/>
+			<property Item="Bone_SavageBeast" Min="4" Max="8"/>
+			<property Item="Skin_SavageBeast" Min="4" Max="8"/>
+			<property Item="Skin_Neguri" Min="4" Max="8"/>
+			<property Item="Pocket_Poison2_Small" Min="4" Max="8"/>
+			<property Item="PsionicStone_MistElement" Min="1" Max="2"/>
+		</Rewards>
+		<AbilityPriority>
+			<Normal>
+				<property Mode="name" Target="NeguriTongueBash_Poison" Priority="105"/>
+				<property Mode="name" Target="NeguriAcidGas" Priority="100"/>
+			</Normal>
+			<Danger>
+				<property Mode="name" Target="NeguriTongueBash_Poison" Priority="105"/>
+				<property Mode="name" Target="NeguriAcidGas" Priority="100"/>
+			</Danger>
+			<Rage>
+				<property Mode="name" Target="NeguriTongueBash_Poison" Priority="105"/>
+				<property Mode="name" Target="NeguriAcidGas" Priority="100"/>
+			</Rage>
+		</AbilityPriority>
+		<Abilities>
+			<property value="NeguriTongueBash_Poison"/>
+			<property value="NeguriAcidGas"/>
+		</Abilities>
+	</class>
 	<class name="Mon_Beast_Frog_Poison2" Lv="26" Grade="Normal" Info="Beast_Frog_Poison2" Object="Mon_Beast_Frog_Poison2" GradeUp="Mon_Beast_Frog_Poison2_Elite" RecoveryRatio="0.33">
 		<Masteries>
 			<property name="AmbushingNeguri" value="1"/>
@@ -6114,23 +6261,23 @@
 			<Normal>
 				<property Mode="name" Target="NeguriCrying_Slow" Priority="110"/>
 				<property Mode="name" Target="NeguriAcidGas" Priority="105"/>
-				<property Mode="name" Target="NeguriTongueBash_Poison" Priority="110"/>
+				<property Mode="name" Target="Flypaper_Poison" Priority="100"/>
 			</Normal>
 			<Danger>
-				<property Mode="name" Target="NeguriAcidGas" Priority="110"/>
-				<property Mode="name" Target="NeguriTongueBash_Poison" Priority="105"/>
-				<property Mode="name" Target="NeguriCrying_Slow" Priority="100"/>
+				<property Mode="name" Target="NeguriCrying_Slow" Priority="110"/>
+				<property Mode="name" Target="NeguriAcidGas" Priority="105"/>
+				<property Mode="name" Target="Flypaper_Poison" Priority="100"/>
 			</Danger>
 			<Rage>
 				<property Mode="name" Target="NeguriCrying_Slow" Priority="110"/>
-				<property Mode="name" Target="NeguriTongueBash_Poison" Priority="105"/>
-				<property Mode="name" Target="NeguriAcidGas" Priority="100"/>
+				<property Mode="name" Target="NeguriAcidGas" Priority="105"/>
+				<property Mode="name" Target="Flypaper_Poison" Priority="100"/>
 			</Rage>
 		</AbilityPriority>
 		<Abilities>
-			<property value="NeguriCrying_Slow"/>
+			<property value="Flypaper_Poison"/>
 			<property value="NeguriAcidGas"/>
-			<property value="NeguriTongueBash_Poison"/>
+			<property value="NeguriCrying_Slow"/>
 		</Abilities>
 	</class>
 	<class name="Mon_Beast_Frog_Poison2_Elite" Lv="28" Grade="Elite" Info="Beast_Frog_Poison2" Object="Mon_Beast_Frog_Poison2" GradeUp="" RecoveryRatio="0.33">
@@ -6162,25 +6309,186 @@
 		</Rewards>
 		<AbilityPriority>
 			<Normal>
-				<property Mode="name" Target="NeguriTongueBash_Poison" Priority="105"/>
-				<property Mode="name" Target="NeguriAcidGas" Priority="100"/>
-				<property Mode="name" Target="NeguriAcidGas" Priority="100"/>
+				<property Mode="name" Target="NeguriCrying_Slow" Priority="110"/>
+				<property Mode="name" Target="NeguriAcidGas" Priority="105"/>
+				<property Mode="name" Target="Flypaper_Poison" Priority="100"/>
 			</Normal>
 			<Danger>
-				<property Mode="name" Target="NeguriTongueBash_Poison" Priority="105"/>
-				<property Mode="name" Target="NeguriAcidGas" Priority="100"/>
-				<property Mode="name" Target="NeguriAcidGas" Priority="100"/>
+				<property Mode="name" Target="NeguriCrying_Slow" Priority="110"/>
+				<property Mode="name" Target="NeguriAcidGas" Priority="105"/>
+				<property Mode="name" Target="Flypaper_Poison" Priority="100"/>
 			</Danger>
 			<Rage>
-				<property Mode="name" Target="NeguriTongueBash_Poison" Priority="105"/>
-				<property Mode="name" Target="NeguriAcidGas" Priority="100"/>
-				<property Mode="name" Target="NeguriAcidGas" Priority="100"/>
+				<property Mode="name" Target="NeguriCrying_Slow" Priority="110"/>
+				<property Mode="name" Target="NeguriAcidGas" Priority="105"/>
+				<property Mode="name" Target="Flypaper_Poison" Priority="100"/>
 			</Rage>
 		</AbilityPriority>
 		<Abilities>
-			<property value="NeguriCrying_Slow"/>
+			<property value="Flypaper_Poison"/>
 			<property value="NeguriAcidGas"/>
-			<property value="NeguriTongueBash_Poison"/>
+			<property value="NeguriCrying_Slow"/>
+		</Abilities>
+	</class>
+	<class name="Mon_Beast_Frog_PoisonBlue2" Lv="30" Grade="Normal" Info="Beast_Frog_PoisonBlue2" Object="Mon_Beast_Frog_PoisonBlue2" GradeUp="" RecoveryRatio="0.33">
+		<Masteries>
+			<property name="Mutation" value="1"/>
+			<property name="AmbushingNeguri" value="1"/>
+			<property name="BodyTraining" value="1"/>
+			<property name="BoundingLeap" value="1"/>
+			<property name="ConcentratedFire" value="1"/>
+			<property name="Damp" value="1"/>
+			<property name="MucusSkin" value="1"/>
+			<property name="Stretching" value="1"/>
+			<property name="WaterWalker" value="1"/>
+			<property name="SprayMucus" value="1"/>
+			<property name="ToadSkin" value="1"/>
+			<property name="PoisonSkin" value="1"/>
+			<property name="VenomFang" value="1"/>
+			<property name="VenomAbsorb" value="1"/>
+			<property name="Predator" value="1"/>
+			<property name="PredatorEye" value="1"/>
+			<property name="HeavyBody" value="1"/>
+		</Masteries>
+		<Rewards>
+			<property Item="Claw_SavageBeast" Min="4" Max="8"/>
+			<property Item="Bone_SavageBeast" Min="4" Max="8"/>
+			<property Item="Skin_SavageBeast" Min="4" Max="8"/>
+			<property Item="Skin_Neguri_Uncommon" Min="4" Max="8"/>
+			<property Item="Pocket_Poison2" Min="4" Max="8"/>
+			<property Item="PsionicStone_MistCrystal" Min="1" Max="2"/>
+		</Rewards>
+		<AbilityPriority>
+			<Normal>
+				<property Mode="name" Target="NeguriCrying_Fast" Priority="110"/>
+				<property Mode="name" Target="NeguriJumpAttack" Priority="105"/>
+				<property Mode="name" Target="Flypaper_Poison" Priority="100"/>
+			</Normal>
+			<Danger>
+				<property Mode="name" Target="NeguriCrying_Fast" Priority="110"/>
+				<property Mode="name" Target="NeguriJumpAttack" Priority="105"/>
+				<property Mode="name" Target="Flypaper_Poison" Priority="100"/>
+			</Danger>
+			<Rage>
+				<property Mode="name" Target="NeguriCrying_Fast" Priority="110"/>
+				<property Mode="name" Target="NeguriJumpAttack" Priority="105"/>
+				<property Mode="name" Target="Flypaper_Poison" Priority="100"/>
+			</Rage>
+		</AbilityPriority>
+		<Abilities>
+			<property value="Flypaper_Poison"/>
+			<property value="NeguriJumpAttack"/>
+			<property value="NeguriCrying_Fast"/>
+		</Abilities>
+	</class>
+	<class name="Mon_Beast_Frog_PoisonRed2" Lv="41" Grade="Normal" Info="Beast_Frog_PoisonRed2" Object="Mon_Beast_Frog_PoisonRed2" GradeUp="Mon_Beast_Frog_PoisonRed2_Elite" RecoveryRatio="0.33">
+		<Masteries>
+			<property name="AmbushingNeguri" value="1"/>
+			<property name="BodyTraining" value="1"/>
+			<property name="WaterWalker" value="1"/>
+			<property name="Mutation" value="1"/>
+			<property name="OntheWaterHunter" value="1"/>
+			<property name="WaterToWater" value="1"/>
+			<property name="JealousEye" value="1"/>
+			<property name="ToughSkin" value="1"/>
+			<property name="Curse" value="1"/>
+			<property name="TraceOn" value="1"/>
+			<property name="MutationEye" value="1"/>
+			<property name="MutationSmell" value="1"/>
+			<property name="MutationEar" value="1"/>
+			<property name="AcidMucus" value="1"/>
+			<property name="Jealousy" value="1"/>
+			<property name="ElementalGene" value="1"/>
+			<property name="HeavyBody" value="1"/>
+			<property name="ImpulseFields" value="1"/>
+			<property name="Forestallment" value="1"/>
+			<property name="MucusSkin" value="1"/>
+			<property name="PersistentLife" value="1"/>
+		</Masteries>
+		<Rewards>
+			<property Item="Claw_SavageBeast" Min="4" Max="8"/>
+			<property Item="Bone_SavageBeast" Min="4" Max="8"/>
+			<property Item="Skin_SavageBeast" Min="4" Max="8"/>
+			<property Item="Skin_Neguri_Uncommon" Min="4" Max="8"/>
+			<property Item="Pocket_Poison2" Min="4" Max="8"/>
+			<property Item="PsionicStone_MistCrystal" Min="1" Max="2"/>
+		</Rewards>
+		<AbilityPriority>
+			<Normal>
+				<property Mode="name" Target="NeguriCrying_Silence" Priority="110"/>
+				<property Mode="name" Target="NeguriAcidGas" Priority="105"/>
+				<property Mode="name" Target="Flypaper_Poison" Priority="100"/>
+			</Normal>
+			<Danger>
+				<property Mode="name" Target="NeguriCrying_Silence" Priority="110"/>
+				<property Mode="name" Target="NeguriAcidGas" Priority="105"/>
+				<property Mode="name" Target="Flypaper_Poison" Priority="100"/>
+			</Danger>
+			<Rage>
+				<property Mode="name" Target="NeguriCrying_Silence" Priority="110"/>
+				<property Mode="name" Target="NeguriAcidGas" Priority="105"/>
+				<property Mode="name" Target="Flypaper_Poison" Priority="100"/>
+			</Rage>
+		</AbilityPriority>
+		<Abilities>
+			<property value="Flypaper_Poison"/>
+			<property value="NeguriAcidGas"/>
+			<property value="NeguriCrying_Silence"/>
+		</Abilities>
+	</class>
+	<class name="Mon_Beast_Frog_PoisonRed2_Elite" Lv="43" Grade="Elite" Info="Beast_Frog_PoisonRed2" Object="Mon_Beast_Frog_PoisonRed2" GradeUp="" RecoveryRatio="0.33">
+		<Masteries>
+			<property name="AmbushingNeguri" value="1"/>
+			<property name="BodyTraining" value="1"/>
+			<property name="WaterWalker" value="1"/>
+			<property name="Mutation" value="1"/>
+			<property name="OntheWaterHunter" value="1"/>
+			<property name="WaterToWater" value="1"/>
+			<property name="JealousEye" value="1"/>
+			<property name="ToughSkin" value="1"/>
+			<property name="Curse" value="1"/>
+			<property name="TraceOn" value="1"/>
+			<property name="MutationEye" value="1"/>
+			<property name="MutationSmell" value="1"/>
+			<property name="MutationEar" value="1"/>
+			<property name="AcidMucus" value="1"/>
+			<property name="Jealousy" value="1"/>
+			<property name="ElementalGene" value="1"/>
+			<property name="HeavyBody" value="1"/>
+			<property name="ImpulseFields" value="1"/>
+			<property name="Forestallment" value="1"/>
+			<property name="MucusSkin" value="1"/>
+			<property name="PersistentLife" value="1"/>
+		</Masteries>
+		<Rewards>
+			<property Item="Claw_SavageBeast" Min="4" Max="8"/>
+			<property Item="Bone_SavageBeast" Min="4" Max="8"/>
+			<property Item="Skin_SavageBeast" Min="4" Max="8"/>
+			<property Item="Skin_Neguri_Uncommon" Min="4" Max="8"/>
+			<property Item="Pocket_Poison2" Min="4" Max="8"/>
+			<property Item="PsionicStone_MistCrystal" Min="1" Max="2"/>
+		</Rewards>
+		<AbilityPriority>
+			<Normal>
+				<property Mode="name" Target="NeguriCrying_Silence" Priority="110"/>
+				<property Mode="name" Target="NeguriAcidGas" Priority="105"/>
+				<property Mode="name" Target="Flypaper_Poison" Priority="100"/>
+			</Normal>
+			<Danger>
+				<property Mode="name" Target="NeguriCrying_Silence" Priority="110"/>
+				<property Mode="name" Target="NeguriAcidGas" Priority="105"/>
+				<property Mode="name" Target="Flypaper_Poison" Priority="100"/>
+			</Danger>
+			<Rage>
+				<property Mode="name" Target="NeguriCrying_Silence" Priority="110"/>
+				<property Mode="name" Target="NeguriAcidGas" Priority="105"/>
+				<property Mode="name" Target="Flypaper_Poison" Priority="100"/>
+			</Rage>
+		</AbilityPriority>
+		<Abilities>
+			<property value="Flypaper_Poison"/>
+			<property value="NeguriAcidGas"/>
+			<property value="NeguriCrying_Silence"/>
 		</Abilities>
 	</class>
 	<class name="Mon_Beast_Frog_Poison3" Lv="38" Grade="Epic" Info="Beast_Frog_Poison3" Object="Mon_Beast_Frog_Poison3" GradeUp="" RecoveryRatio="0.33">
@@ -6243,6 +6551,138 @@
 			<property value="NeguriCrying_Sleep"/>
 		</Abilities>
 	</class>
+	<class name="Mon_Beast_Frog_PoisonBlue3" Lv="48" Grade="Epic" Info="Beast_Frog_PoisonBlue3" Object="Mon_Beast_Frog_PoisonBlue3" GradeUp="" RecoveryRatio="0.33">
+		<Masteries>
+			<property name="AmbushingNeguri" value="1"/>
+			<property name="BodyTraining" value="1"/>
+			<property name="Mutation" value="1"/>
+			<property name="MutationEar" value="1"/>
+			<property name="MutationEye" value="1"/>
+			<property name="MutationSmell" value="1"/>
+			<property name="OntheWaterHunter" value="1"/>
+			<property name="PoisonSkin" value="1"/>
+			<property name="Predator" value="1"/>
+			<property name="SharpTeeth" value="1"/>
+			<property name="VenomFang" value="1"/>
+			<property name="VenomSac" value="1"/>
+			<property name="WaterToWater" value="1"/>
+			<property name="WaterWalker" value="1"/>
+			<property name="SurvivalTraining" value="1"/>
+			<property name="ConcentratedFire" value="1"/>
+			<property name="IndomitableWill" value="1"/>
+			<property name="HardBone" value="1"/>
+			<property name="WillToSurvive" value="1"/>
+			<property name="MuscleTraining" value="1"/>
+			<property name="Forestallment" value="1"/>
+			<property name="HappySong" value="1"/>
+			<property name="ToughSkin" value="1"/>
+			<property name="PredatorEye" value="1"/>
+			<property name="ClenchedFist" value="1"/>
+		</Masteries>
+		<Rewards>
+			<property Item="Claw_Monster" Min="4" Max="8"/>
+			<property Item="Bone_Monster" Min="4" Max="8"/>
+			<property Item="Skin_Monster" Min="4" Max="8"/>
+			<property Item="Skin_Neguri_Rare" Min="4" Max="8"/>
+			<property Item="Pocket_Poison2_Big" Min="4" Max="8"/>
+			<property Item="PsionicStone_MistCore" Min="1" Max="2"/>
+		</Rewards>
+		<AbilityPriority>
+			<Normal>
+				<property Mode="name" Target="AcidRain" Priority="120"/>
+				<property Mode="name" Target="NeguriCrying_Fast" Priority="115"/>
+				<property Mode="name" Target="FlypaperBig_Poison" Priority="110"/>
+				<property Mode="name" Target="AcidBall" Priority="105"/>
+				<property Mode="name" Target="NeguriJumpAttackBig" Priority="100"/>
+			</Normal>
+			<Danger>
+				<property Mode="name" Target="AcidRain" Priority="120"/>
+				<property Mode="name" Target="NeguriCrying_Fast" Priority="120"/>
+				<property Mode="name" Target="FlypaperBig_Poison" Priority="115"/>
+				<property Mode="name" Target="AcidBall" Priority="110"/>
+				<property Mode="name" Target="NeguriJumpAttackBig" Priority="105"/>
+			</Danger>
+			<Rage>
+				<property Mode="name" Target="AcidRain" Priority="120"/>
+				<property Mode="name" Target="NeguriCrying_Fast" Priority="120"/>
+				<property Mode="name" Target="FlypaperBig_Poison" Priority="115"/>
+				<property Mode="name" Target="AcidBall" Priority="110"/>
+				<property Mode="name" Target="NeguriJumpAttackBig" Priority="105"/>
+			</Rage>
+		</AbilityPriority>
+		<Abilities>
+			<property value="FlypaperBig_Poison"/>
+			<property value="NeguriJumpAttackBig"/>
+			<property value="NeguriCrying_Fast"/>
+			<property value="AcidBall"/>
+			<property value="AcidRain"/>
+		</Abilities>
+	</class>
+	<class name="Mon_Beast_Frog_PoisonRed3" Lv="50" Grade="Epic" Info="Beast_Frog_PoisonRed3" Object="Mon_Beast_Frog_PoisonRed3" GradeUp="" RecoveryRatio="0.33">
+		<Masteries>
+			<property name="BodyTraining" value="1"/>
+			<property name="Mutation" value="1"/>
+			<property name="Curse" value="1"/>
+			<property name="TraceOn" value="1"/>
+			<property name="MutationEye" value="1"/>
+			<property name="MutationSmell" value="1"/>
+			<property name="MutationEar" value="1"/>
+			<property name="AcidMucus" value="1"/>
+			<property name="Jealousy" value="1"/>
+			<property name="PersistentLife" value="1"/>
+			<property name="TerritorialDisputes" value="1"/>
+			<property name="HardBone" value="1"/>
+			<property name="WildNatureKnowledge" value="1"/>
+			<property name="StrongBackLeg" value="1"/>
+			<property name="SurvivalTraining" value="1"/>
+			<property name="MucusSkin" value="1"/>
+			<property name="WillToSurvive" value="1"/>
+			<property name="IndomitableWill" value="1"/>
+			<property name="SprayMucus" value="1"/>
+			<property name="Patience" value="1"/>
+			<property name="ToughSkin" value="1"/>
+			<property name="Resilient" value="1"/>
+			<property name="RegularExercise" value="1"/>
+			<property name="PredatorEye" value="1"/>
+			<property name="JealousEye" value="1"/>
+			<property name="Comradeship" value="1"/>
+			<property name="Forestallment" value="1"/>
+		</Masteries>
+		<Rewards>
+			<property Item="Claw_EvilMonster" Min="4" Max="8"/>
+			<property Item="Bone_EvilMonster" Min="4" Max="8"/>
+			<property Item="Skin_EvilMonster" Min="4" Max="8"/>
+			<property Item="Skin_Neguri_Epic" Min="4" Max="8"/>
+			<property Item="Pocket_Oil_Epic" Min="4" Max="8"/>
+			<property Item="PsionicStone_MistCore" Min="1" Max="2"/>
+		</Rewards>
+		<AbilityPriority>
+			<Normal>
+				<property Mode="name" Target="NeguriCrying_Sleep" Priority="115"/>
+				<property Mode="name" Target="NeguriCrying_Silence" Priority="110"/>
+				<property Mode="name" Target="NeguriAcidGas" Priority="105"/>
+				<property Mode="name" Target="FlypaperBig_Poison" Priority="100"/>
+			</Normal>
+			<Danger>
+				<property Mode="name" Target="NeguriCrying_Sleep" Priority="115"/>
+				<property Mode="name" Target="NeguriCrying_Silence" Priority="110"/>
+				<property Mode="name" Target="NeguriAcidGas" Priority="105"/>
+				<property Mode="name" Target="FlypaperBig_Poison" Priority="100"/>
+			</Danger>
+			<Rage>
+				<property Mode="name" Target="NeguriCrying_Sleep" Priority="115"/>
+				<property Mode="name" Target="NeguriCrying_Silence" Priority="110"/>
+				<property Mode="name" Target="NeguriAcidGas" Priority="105"/>
+				<property Mode="name" Target="FlypaperBig_Poison" Priority="100"/>
+			</Rage>
+		</AbilityPriority>
+		<Abilities>
+			<property value="FlypaperBig_Poison"/>
+			<property value="NeguriAcidGas"/>
+			<property value="NeguriCrying_Silence"/>
+			<property value="NeguriCrying_Sleep"/>
+		</Abilities>
+	</class>
 	<class name="Mon_Beast_Frog_Dot" Lv="42" Grade="Legend" Info="Beast_Frog_Dot" Object="Mon_Beast_Frog_Dot" GradeUp="" RecoveryRatio="0.33">
 		<Masteries>
 			<property name="AmbushingNeguri" value="1"/>
@@ -6299,6 +6739,80 @@
 			<property value="NeguriCrying_Destroy"/>
 			<property value="FlypaperBig_Blade2"/>
 			<property value="NeguriJumpAttackBig"/>
+		</Abilities>
+	</class>
+	<class name="Mon_Beast_Frog_Gold" Lv="53" Grade="Legend" Info="Beast_Frog_Gold" Object="Mon_Beast_Frog_Gold" GradeUp="" RecoveryRatio="0.33">
+		<Equipments>
+			<property name="Inventory2" Item="Amulet_Neguri_Gold"/>
+		</Equipments>
+		<Masteries>
+			<property name="WaterWalker" value="1"/>
+			<property name="Forestallment" value="1"/>
+			<property name="Retribution" value="1"/>
+			<property name="ElectricShockHeavy" value="1"/>
+			<property name="CounterAttack" value="1"/>
+			<property name="SecondHeart" value="1"/>
+			<property name="Devastate" value="1"/>
+			<property name="WaterToWater" value="1"/>
+			<property name="AtomDecomposition" value="1"/>
+			<property name="PersistentLife" value="1"/>
+			<property name="HardBone" value="1"/>
+			<property name="BodyTraining" value="1"/>
+			<property name="NeuralNetworkControl" value="1"/>
+			<property name="TerritorialDisputes" value="1"/>
+			<property name="WildNatureKnowledge" value="1"/>
+			<property name="ToughSkin" value="1"/>
+			<property name="MuscleResistance" value="1"/>
+			<property name="MuscleArmor" value="1"/>
+			<property name="ParentalLove" value="1"/>
+			<property name="MuscleTraining" value="1"/>
+			<property name="MusclePower" value="1"/>
+			<property name="Robust" value="1"/>
+			<property name="LightningTactics" value="1"/>
+			<property name="ThunderBolt" value="1"/>
+			<property name="Lightningmage" value="1"/>
+			<property name="ShortCircuit" value="1"/>
+			<property name="AcutePain" value="1"/>
+			<property name="PredatorEye" value="1"/>
+		</Masteries>
+		<Rewards>
+			<property Item="Claw_EvilMonster" Min="4" Max="8"/>
+			<property Item="Bone_EvilMonster" Min="4" Max="8"/>
+			<property Item="Skin_EvilMonster" Min="4" Max="8"/>
+			<property Item="Skin_Neguri_Legend" Min="4" Max="8"/>
+			<property Item="Pocket_Oil_Legend" Min="4" Max="8"/>
+			<property Item="PsionicStone_FlashCore" Min="2" Max="4"/>
+			<property Item="Amulet_Neguri_Gold" Min="1" Max="1"/>
+		</Rewards>
+		<AbilityPriority>
+			<Normal>
+				<property Mode="name" Target="NeguriCrying_ThunderBig" Priority="120"/>
+				<property Mode="name" Target="Lightningwalker" Priority="115"/>
+				<property Mode="name" Target="NeguriThunderField" Priority="110"/>
+				<property Mode="name" Target="FlypaperBig_Lightning" Priority="105"/>
+				<property Mode="name" Target="NeguriCrying_Thunder" Priority="100"/>
+			</Normal>
+			<Danger>
+				<property Mode="name" Target="NeguriCrying_ThunderBig" Priority="120"/>
+				<property Mode="name" Target="Lightningwalker" Priority="115"/>
+				<property Mode="name" Target="NeguriThunderField" Priority="110"/>
+				<property Mode="name" Target="FlypaperBig_Lightning" Priority="105"/>
+				<property Mode="name" Target="NeguriCrying_Thunder" Priority="100"/>
+			</Danger>
+			<Rage>
+				<property Mode="name" Target="NeguriCrying_ThunderBig" Priority="120"/>
+				<property Mode="name" Target="Lightningwalker" Priority="115"/>
+				<property Mode="name" Target="NeguriThunderField" Priority="110"/>
+				<property Mode="name" Target="FlypaperBig_Lightning" Priority="105"/>
+				<property Mode="name" Target="NeguriCrying_Thunder" Priority="100"/>
+			</Rage>
+		</AbilityPriority>
+		<Abilities>
+			<property value="FlypaperBig_Lightning"/>
+			<property value="NeguriThunderField"/>
+			<property value="NeguriCrying_Thunder"/>
+			<property value="NeguriCrying_ThunderBig"/>
+			<property value="Lightningwalker"/>
 		</Abilities>
 	</class>
 	<class name="Mon_Beast_Frog_White" Lv="41" Grade="Legend" Info="Beast_Frog_White" Object="Mon_Beast_Frog_White" GradeUp="" RecoveryRatio="0.33">
@@ -6558,6 +7072,260 @@
 			<property value="Gliding"/>
 			<property value="Bite"/>
 			<property value="SuperGliding"/>
+		</Abilities>
+	</class>
+	<class name="Mon_Beast_Bat_Red" Lv="40" Grade="Normal" Info="Beast_Bat_Red" Object="Mon_Beast_Bat_Red" GradeUp="Mon_Beast_Bat_Red_Elite" RecoveryRatio="0.33">
+		<Equipments>
+			<property name="Inventory2" Item="Amulet_Dorori_Fang_Red"/>
+		</Equipments>
+		<Masteries>
+			<property name="BlazingWingStroke" value="1"/>
+			<property name="BloodScent" value="1"/>
+			<property name="BloodSucker" value="1"/>
+			<property name="BloodyBeast" value="1"/>
+			<property name="Haze" value="1"/>
+			<property name="HeadWind" value="1"/>
+			<property name="Hideout" value="1"/>
+			<property name="OntheSkyHunter" value="1"/>
+			<property name="OntheSkyPredator" value="1"/>
+			<property name="OntheSkyWalker" value="1"/>
+			<property name="PositionOfAdvantage" value="1"/>
+			<property name="RapidUnderstandingBattle" value="1"/>
+			<property name="SharpTeeth" value="1"/>
+			<property name="StrongWingStroke" value="1"/>
+			<property name="TacticalConnection" value="1"/>
+			<property name="Wanderer" value="1"/>
+			<property name="WindWall" value="1"/>
+			<property name="Windway" value="1"/>
+			<property name="WindWingStroke" value="1"/>
+			<property name="PriorPlanning" value="1"/>
+		</Masteries>
+		<Rewards>
+			<property Item="Claw_SavageBeast" Min="3" Max="5"/>
+			<property Item="Bone_SavageBeast" Min="3" Max="10"/>
+			<property Item="Fang_SavageBeast" Min="3" Max="5"/>
+			<property Item="Skin_Dorori" Min="3" Max="5"/>
+			<property Item="Skin_SavageBeast" Min="3" Max="5"/>
+			<property Item="Jewel_Red" Min="3" Max="6"/>
+			<property Item="Amulet_Dorori_Fang_Red" Min="1" Max="1"/>
+		</Rewards>
+		<AbilityPriority>
+			<Normal>
+				<property Mode="name" Target="MadnessDance" Priority="110"/>
+				<property Mode="name" Target="Gliding_Bleeding" Priority="105"/>
+				<property Mode="name" Target="Bite_Bleeding" Priority="100"/>
+			</Normal>
+			<Danger>
+				<property Mode="name" Target="MadnessDance" Priority="110"/>
+				<property Mode="name" Target="Gliding_Bleeding" Priority="105"/>
+				<property Mode="name" Target="Bite_Bleeding" Priority="100"/>
+			</Danger>
+			<Rage>
+				<property Mode="name" Target="Gliding_Bleeding" Priority="110"/>
+				<property Mode="name" Target="MadnessDance" Priority="105"/>
+				<property Mode="name" Target="Bite_Bleeding" Priority="100"/>
+			</Rage>
+		</AbilityPriority>
+		<Abilities>
+			<property value="MadnessDance"/>
+			<property value="Gliding_Bleeding"/>
+			<property value="Bite_Bleeding"/>
+		</Abilities>
+	</class>
+	<class name="Mon_Beast_Bat_Red_Elite" Lv="42" Grade="Elite" Info="Beast_Bat_Red" Object="Mon_Beast_Bat_Red" GradeUp="" RecoveryRatio="0.33">
+		<Masteries>
+			<property name="BlazingWingStroke" value="1"/>
+			<property name="BloodScent" value="1"/>
+			<property name="BloodSucker" value="1"/>
+			<property name="BloodyBeast" value="1"/>
+			<property name="Haze" value="1"/>
+			<property name="HeadWind" value="1"/>
+			<property name="Hideout" value="1"/>
+			<property name="OntheSkyHunter" value="1"/>
+			<property name="OntheSkyPredator" value="1"/>
+			<property name="OntheSkyWalker" value="1"/>
+			<property name="PositionOfAdvantage" value="1"/>
+			<property name="RapidUnderstandingBattle" value="1"/>
+			<property name="SharpTeeth" value="1"/>
+			<property name="StrongWingStroke" value="1"/>
+			<property name="TacticalConnection" value="1"/>
+			<property name="Wanderer" value="1"/>
+			<property name="WindWall" value="1"/>
+			<property name="Windway" value="1"/>
+			<property name="WindWingStroke" value="1"/>
+			<property name="PriorPlanning" value="1"/>
+		</Masteries>
+		<Rewards>
+			<property Item="Claw_Monster" Min="3" Max="5"/>
+			<property Item="Bone_Monster" Min="3" Max="10"/>
+			<property Item="Fang_Monster" Min="3" Max="5"/>
+			<property Item="Skin_Dorori" Min="3" Max="5"/>
+			<property Item="Skin_Monster" Min="3" Max="5"/>
+			<property Item="Jewel_Red_Perfect" Min="3" Max="6"/>
+		</Rewards>
+		<AbilityPriority>
+			<Normal>
+				<property Mode="name" Target="MadnessDance" Priority="110"/>
+				<property Mode="name" Target="Gliding_Bleeding" Priority="105"/>
+				<property Mode="name" Target="Bite_Bleeding" Priority="100"/>
+			</Normal>
+			<Danger>
+				<property Mode="name" Target="MadnessDance" Priority="110"/>
+				<property Mode="name" Target="Gliding_Bleeding" Priority="105"/>
+				<property Mode="name" Target="Bite_Bleeding" Priority="100"/>
+			</Danger>
+			<Rage>
+				<property Mode="name" Target="Gliding_Bleeding" Priority="110"/>
+				<property Mode="name" Target="MadnessDance" Priority="105"/>
+				<property Mode="name" Target="Bite_Bleeding" Priority="100"/>
+			</Rage>
+		</AbilityPriority>
+		<Abilities>
+			<property value="MadnessDance"/>
+			<property value="Gliding_Bleeding"/>
+			<property value="Bite_Bleeding"/>
+		</Abilities>
+	</class>
+	<class name="Mon_Beast_Bat_Red_Leader" Lv="50" Grade="Epic" Info="Beast_Bat_Red_Leader" Object="Mon_Beast_Bat_Red_Leader" GradeUp="" RecoveryRatio="0.33">
+		<Equipments>
+			<property name="Inventory2" Item="Amulet_Dorori_Fang_Red"/>
+		</Equipments>
+		<Masteries>
+			<property name="BloodScent" value="1"/>
+			<property name="Haze" value="1"/>
+			<property name="HeadWind" value="1"/>
+			<property name="WindWall" value="1"/>
+			<property name="Windway" value="1"/>
+			<property name="Hemorrhage" value="1"/>
+			<property name="ToughSkin" value="1"/>
+			<property name="BodyTraining" value="1"/>
+			<property name="Robust" value="1"/>
+			<property name="MuscleArmor" value="1"/>
+			<property name="MuscleResistance" value="1"/>
+			<property name="MusclePower" value="1"/>
+			<property name="MuscleTraining" value="1"/>
+			<property name="BloodyBeast" value="1"/>
+			<property name="HardBone" value="1"/>
+			<property name="TerritorialDisputes" value="1"/>
+			<property name="PersistentLife" value="1"/>
+			<property name="WildNatureKnowledge" value="1"/>
+			<property name="HumanKillTraining" value="1"/>
+			<property name="Comradeship" value="1"/>
+			<property name="OntheSkyPredator" value="1"/>
+			<property name="TacticalSupplementation" value="1"/>
+			<property name="BlazingWingStroke" value="1"/>
+			<property name="BloodSucker" value="1"/>
+			<property name="PredatorEar" value="1"/>
+			<property name="MutationEye" value="1"/>
+			<property name="CalmZone" value="1"/>
+			<property name="Bloodthirst" value="1"/>
+		</Masteries>
+		<Rewards>
+			<property Item="Claw_EvilMonster" Min="3" Max="5"/>
+			<property Item="Bone_EvilMonster" Min="3" Max="10"/>
+			<property Item="Fang_EvilMonster" Min="3" Max="5"/>
+			<property Item="Skin_KingDorori_Epic" Min="3" Max="6"/>
+			<property Item="Skin_EvilMonster" Min="3" Max="5"/>
+			<property Item="Jewel_Black_Perfect" Min="3" Max="6"/>
+			<property Item="Amulet_Dorori_Fang_Red" Min="1" Max="1"/>
+		</Rewards>
+		<AbilityPriority>
+			<Normal>
+				<property Mode="name" Target="SuperGliding_Bleeding" Priority="120"/>
+				<property Mode="name" Target="MadnessDance" Priority="115"/>
+				<property Mode="name" Target="Gliding_Bleeding" Priority="110"/>
+				<property Mode="name" Target="Bite_Bleeding" Priority="105"/>
+			</Normal>
+			<Danger>
+				<property Mode="name" Target="SuperGliding_Bleeding" Priority="120"/>
+				<property Mode="name" Target="MadnessDance" Priority="110"/>
+				<property Mode="name" Target="Gliding_Bleeding" Priority="105"/>
+				<property Mode="name" Target="Bite_Bleeding" Priority="100"/>
+			</Danger>
+			<Rage>
+				<property Mode="name" Target="SuperGliding_Bleeding" Priority="120"/>
+				<property Mode="name" Target="Gliding_Bleeding" Priority="115"/>
+				<property Mode="name" Target="Bite_Bleeding" Priority="110"/>
+				<property Mode="name" Target="MadnessDance" Priority="100"/>
+			</Rage>
+		</AbilityPriority>
+		<Abilities>
+			<property value="Bite_Bleeding"/>
+			<property value="Gliding_Bleeding"/>
+			<property value="MadnessDance"/>
+			<property value="SuperGliding_Bleeding"/>
+		</Abilities>
+	</class>
+	<class name="Mon_Beast_Bat_Gold" Lv="53" Grade="Legend" Info="Beast_Bat_Gold" Object="Mon_Beast_Bat_Gold" GradeUp="" RecoveryRatio="0.33">
+		<Equipments>
+			<property name="Inventory2" Item="Amulet_Dorori_Feather_Gold"/>
+		</Equipments>
+		<Masteries>
+			<property name="OntheSkyHunter" value="1"/>
+			<property name="ElementalGene" value="1"/>
+			<property name="Hideout" value="1"/>
+			<property name="PersistentLife" value="1"/>
+			<property name="PositionOfAdvantage" value="1"/>
+			<property name="OntheSkyWalker" value="1"/>
+			<property name="LavaSkin" value="1"/>
+			<property name="HotBeast" value="1"/>
+			<property name="EternalFlame" value="1"/>
+			<property name="Conflagration" value="1"/>
+			<property name="FlameRegenerator" value="1"/>
+			<property name="ToughSkin" value="1"/>
+			<property name="FlameSac" value="1"/>
+			<property name="CatharsisOfIncineration" value="1"/>
+			<property name="SpreadingBlaze" value="1"/>
+			<property name="DespairFlame" value="1"/>
+			<property name="FlameAbyss" value="1"/>
+			<property name="Overcharge_Fire" value="1"/>
+			<property name="BodyTraining" value="1"/>
+			<property name="MuscleArmor" value="1"/>
+			<property name="Robust" value="1"/>
+			<property name="TerritorialDisputes" value="1"/>
+			<property name="HardBone" value="1"/>
+			<property name="WildNatureKnowledge" value="1"/>
+			<property name="MuscleTraining" value="1"/>
+			<property name="Breakthrough" value="1"/>
+		</Masteries>
+		<Rewards>
+			<property Item="Claw_EvilMonster" Min="3" Max="5"/>
+			<property Item="Bone_EvilMonster" Min="3" Max="10"/>
+			<property Item="Fang_EvilMonster" Min="3" Max="5"/>
+			<property Item="Skin_KingDorori_Legend" Min="3" Max="5"/>
+			<property Item="Skin_EvilMonster" Min="3" Max="5"/>
+			<property Item="Jewel_Yellow_Shine" Min="3" Max="6"/>
+			<property Item="Amulet_Dorori_Feather_Gold" Min="1" Max="1"/>
+		</Rewards>
+		<AbilityPriority>
+			<Normal>
+				<property Mode="name" Target="Immolation_Fire" Priority="115"/>
+				<property Mode="name" Target="ChangingMind" Priority="120"/>
+				<property Mode="name" Target="SuperGliding_Fire" Priority="110"/>
+				<property Mode="name" Target="Gliding_Fire" Priority="105"/>
+				<property Mode="name" Target="Bite_Fire" Priority="100"/>
+			</Normal>
+			<Danger>
+				<property Mode="name" Target="Immolation_Fire" Priority="115"/>
+				<property Mode="name" Target="ChangingMind" Priority="120"/>
+				<property Mode="name" Target="SuperGliding_Fire" Priority="110"/>
+				<property Mode="name" Target="Gliding_Fire" Priority="105"/>
+				<property Mode="name" Target="Bite_Fire" Priority="100"/>
+			</Danger>
+			<Rage>
+				<property Mode="name" Target="Immolation_Fire" Priority="115"/>
+				<property Mode="name" Target="ChangingMind" Priority="120"/>
+				<property Mode="name" Target="SuperGliding_Fire" Priority="110"/>
+				<property Mode="name" Target="Gliding_Fire" Priority="105"/>
+				<property Mode="name" Target="Bite_Fire" Priority="100"/>
+			</Rage>
+		</AbilityPriority>
+		<Abilities>
+			<property value="Bite_Fire"/>
+			<property value="Gliding_Fire"/>
+			<property value="Immolation_Fire"/>
+			<property value="SuperGliding_Fire"/>
+			<property value="ChangingMind"/>
 		</Abilities>
 	</class>
 	<class name="Mon_Beast_Bat_Flame" Lv="19" Grade="Normal" Info="Beast_Bat_Flame" Object="Mon_Beast_Bat_Flame" GradeUp="Mon_Beast_Bat_Flame_Elite" RecoveryRatio="0.33">
@@ -7225,6 +7993,12 @@
 			<property name="SharpTeeth" value="1"/>
 			<property name="Challenger" value="1"/>
 			<property name="DreamComeTrue" value="1"/>
+			<property name="BoundingStride" value="1"/>
+			<property name="LimitBreak" value="1"/>
+			<property name="WindRush" value="1"/>
+			<property name="FinalBlow" value="1"/>
+			<property name="BoundingLeap" value="1"/>
+			<property name="OntheSkyWalker" value="1"/>
 		</Masteries>
 		<Rewards>
 			<property Item="Claw_Beast" Min="3" Max="5"/>
@@ -7440,25 +8214,34 @@
 			<Move NoFullMove="true"/>
 		</AbilityAIArg>
 	</class>
-	<class name="Mon_Beast_Spider_Grey3" Lv="30" Grade="Legend" Info="Beast_Spider_Grey3" Object="Mon_Beast_Spider_Grey3" GradeUp="" RecoveryRatio="0.33" PatrolAwakeMoveAI="PatrolAwakeMoveAI_Tima">
+	<class name="Mon_Beast_Spider_Grey3" Lv="47" Grade="Legend" Info="Beast_Spider_Grey3" Object="Mon_Beast_Spider_Grey3" GradeUp="" RecoveryRatio="0.33" PatrolAwakeMoveAI="PatrolAwakeMoveAI_Tima">
 		<Masteries>
-			<property name="AmbushingSpider" value="1"/>
-			<property name="BluntResistance2" value="1"/>
-			<property name="BodyTraining" value="1"/>
-			<property name="ClenchedFist" value="1"/>
-			<property name="FoodinWeb" value="1"/>
-			<property name="HiddenWeb" value="1"/>
-			<property name="IndomitableWill" value="1"/>
 			<property name="Luck" value="1"/>
-			<property name="MutationEye" value="1"/>
-			<property name="Nocturnality" value="1"/>
-			<property name="OwlEye" value="1"/>
-			<property name="Resilient" value="1"/>
 			<property name="SecondHeart" value="1"/>
-			<property name="SharpTeeth" value="1"/>
+			<property name="Comradeship" value="1"/>
+			<property name="PersistentLife" value="1"/>
+			<property name="MutationSmell" value="1"/>
+			<property name="Mutation" value="1"/>
+			<property name="MutationEar" value="1"/>
+			<property name="MutationEye" value="1"/>
+			<property name="IndomitableWill" value="1"/>
 			<property name="WillToSurvive" value="1"/>
-			<property name="Wiredancer" value="1"/>
-			<property name="WebHunter" value="1"/>
+			<property name="Resilient" value="1"/>
+			<property name="CorrosionPoison" value="1"/>
+			<property name="SurvivalTraining" value="1"/>
+			<property name="Neurotoxin" value="1"/>
+			<property name="ParalysisPoison" value="1"/>
+			<property name="AcidPoison" value="1"/>
+			<property name="HardBone" value="1"/>
+			<property name="BodyTraining" value="1"/>
+			<property name="Robust" value="1"/>
+			<property name="WildNatureKnowledge" value="1"/>
+			<property name="Patience" value="1"/>
+			<property name="RegularExercise" value="1"/>
+			<property name="SharpTeeth" value="1"/>
+			<property name="TacticalSupplementation" value="1"/>
+			<property name="ResistWill" value="1"/>
+			<property name="TerritorialDisputes" value="1"/>
 		</Masteries>
 		<Rewards>
 			<property Item="Pocket_Poison_Big" Min="3" Max="3"/>
@@ -7495,6 +8278,393 @@
 			<property value="FallWeb"/>
 			<property value="SpiderBullet"/>
 			<property value="SpiderBullet_Strong"/>
+		</Abilities>
+		<AbilityAIArg>
+			<Move NoFullMove="true"/>
+		</AbilityAIArg>
+	</class>
+	<class name="Mon_Beast_Spider_BlackWidow1" Lv="32" Grade="Normal" Info="Beast_Spider_BlackWidow1" Object="Mon_Beast_Spider_BlackWidow1" GradeUp="Mon_Beast_Spider_BlackWidow1_Elite" RecoveryRatio="0.33" PatrolAwakeMoveAI="PatrolAwakeMoveAI_Tima">
+		<Masteries>
+			<property name="SharpTeeth" value="1"/>
+			<property name="Sacrifice" value="1"/>
+			<property name="BodyTraining" value="1"/>
+			<property name="CorrosionPoison" value="1"/>
+			<property name="AmbushingSpider" value="1"/>
+			<property name="JoinCobweb" value="1"/>
+			<property name="Wiredancer" value="1"/>
+			<property name="Robust" value="1"/>
+			<property name="SpinWeb" value="1"/>
+			<property name="HiddenWeb" value="1"/>
+			<property name="WebCircus" value="1"/>
+			<property name="ToughSkin" value="1"/>
+			<property name="SurvivalTraining" value="1"/>
+			<property name="ExpandCobweb" value="1"/>
+			<property name="SpreadFallWeb" value="1"/>
+			<property name="IndomitableWill" value="1"/>
+			<property name="Patience" value="1"/>
+			<property name="TacticalConcentration" value="1"/>
+			<property name="WillToSurvive" value="1"/>
+		</Masteries>
+		<Rewards>
+			<property Item="Pocket_Poison_Small" Min="3" Max="3"/>
+			<property Item="Claw_SavageBeast" Min="3" Max="3"/>
+			<property Item="Skin_Yasha" Min="3" Max="3"/>
+			<property Item="FiberYasha" Min="10" Max="20"/>
+			<property Item="Ore_BlackIronFragment" Min="3" Max="6"/>
+		</Rewards>
+		<AbilityPriority>
+			<Normal>
+				<property Mode="name" Target="Scratch" Priority="110"/>
+				<property Mode="name" Target="SpinWeb" Priority="100"/>
+			</Normal>
+			<Danger>
+				<property Mode="name" Target="Scratch" Priority="110"/>
+				<property Mode="name" Target="SpinWeb" Priority="100"/>
+			</Danger>
+			<Rage>
+				<property Mode="name" Target="Scratch" Priority="110"/>
+				<property Mode="name" Target="SpinWeb" Priority="100"/>
+			</Rage>
+		</AbilityPriority>
+		<Abilities>
+			<property value="Scratch"/>
+			<property value="SpinWeb"/>
+		</Abilities>
+		<AbilityAIArg>
+			<Move NoFullMove="true"/>
+		</AbilityAIArg>
+	</class>
+	<class name="Mon_Beast_Spider_BlackWidow1_Elite" Lv="34" Grade="Elite" Info="Beast_Spider_BlackWidow1" Object="Mon_Beast_Spider_BlackWidow1" GradeUp="" RecoveryRatio="0.33" PatrolAwakeMoveAI="PatrolAwakeMoveAI_Tima">
+		<Masteries>
+			<property name="SharpTeeth" value="1"/>
+			<property name="Sacrifice" value="1"/>
+			<property name="BodyTraining" value="1"/>
+			<property name="CorrosionPoison" value="1"/>
+			<property name="AmbushingSpider" value="1"/>
+			<property name="JoinCobweb" value="1"/>
+			<property name="Wiredancer" value="1"/>
+			<property name="Robust" value="1"/>
+			<property name="SpinWeb" value="1"/>
+			<property name="HiddenWeb" value="1"/>
+			<property name="WebCircus" value="1"/>
+			<property name="ToughSkin" value="1"/>
+			<property name="SurvivalTraining" value="1"/>
+			<property name="ExpandCobweb" value="1"/>
+			<property name="SpreadFallWeb" value="1"/>
+			<property name="IndomitableWill" value="1"/>
+			<property name="Patience" value="1"/>
+			<property name="TacticalConcentration" value="1"/>
+			<property name="WillToSurvive" value="1"/>
+		</Masteries>
+		<Rewards>
+			<property Item="Pocket_Poison_Small" Min="3" Max="3"/>
+			<property Item="Claw_SavageBeast" Min="3" Max="3"/>
+			<property Item="Skin_Yasha" Min="3" Max="3"/>
+			<property Item="FiberYasha" Min="10" Max="20"/>
+			<property Item="Ore_BlackIronFragment" Min="3" Max="6"/>
+		</Rewards>
+		<AbilityPriority>
+			<Normal>
+				<property Mode="name" Target="Scratch" Priority="110"/>
+				<property Mode="name" Target="SpinWeb" Priority="100"/>
+			</Normal>
+			<Danger>
+				<property Mode="name" Target="Scratch" Priority="110"/>
+				<property Mode="name" Target="SpinWeb" Priority="100"/>
+			</Danger>
+			<Rage>
+				<property Mode="name" Target="Scratch" Priority="110"/>
+				<property Mode="name" Target="SpinWeb" Priority="100"/>
+			</Rage>
+		</AbilityPriority>
+		<Abilities>
+			<property value="Scratch"/>
+			<property value="SpinWeb"/>
+		</Abilities>
+		<AbilityAIArg>
+			<Move NoFullMove="true"/>
+		</AbilityAIArg>
+	</class>
+	<class name="Mon_Beast_Spider_BlackWidow2" Lv="40" Grade="Normal" Info="Beast_Spider_BlackWidow2" Object="Mon_Beast_Spider_BlackWidow2" GradeUp="Mon_Beast_Spider_BlackWidow2_Elite" RecoveryRatio="0.33" PatrolAwakeMoveAI="PatrolAwakeMoveAI_Tima">
+		<Masteries>
+			<property name="AmbushingSpider" value="1"/>
+			<property name="SpinWeb" value="1"/>
+			<property name="BodyTraining" value="1"/>
+			<property name="Wiredancer" value="1"/>
+			<property name="WebHunter" value="1"/>
+			<property name="WebCircus" value="1"/>
+			<property name="HiddenWeb" value="1"/>
+			<property name="SpreadFallWeb" value="1"/>
+			<property name="AcuteSpirit" value="1"/>
+			<property name="HardBone" value="1"/>
+			<property name="Breakthrough" value="1"/>
+			<property name="JoinCobweb" value="1"/>
+			<property name="Robust" value="1"/>
+			<property name="VastSpirit" value="1"/>
+			<property name="SurvivalTraining" value="1"/>
+			<property name="AcidPoison" value="1"/>
+			<property name="HeavyPressure" value="1"/>
+			<property name="ExpandCobweb" value="1"/>
+			<property name="IndomitableWill" value="1"/>
+			<property name="Patience" value="1"/>
+			<property name="WillToSurvive" value="1"/>
+			<property name="ToughSkin" value="1"/>
+			<property name="WebSac" value="1"/>
+		</Masteries>
+		<Rewards>
+			<property Item="Pocket_Poison" Min="3" Max="3"/>
+			<property Item="Claw_SavageBeast" Min="3" Max="10"/>
+			<property Item="Skin_Yasha_Uncommon" Min="3" Max="8"/>
+			<property Item="Ore_BlackIron" Min="3" Max="6"/>
+		</Rewards>
+		<AbilityPriority>
+			<Normal>
+				<property Mode="name" Target="FallWeb" Priority="115"/>
+				<property Mode="name" Target="ClimbWeb" Priority="110"/>
+				<property Mode="name" Target="Scratch" Priority="105"/>
+				<property Mode="name" Target="SpinWeb" Priority="100"/>
+			</Normal>
+			<Danger>
+				<property Mode="name" Target="ClimbWeb" Priority="120"/>
+				<property Mode="name" Target="FallWeb" Priority="110"/>
+				<property Mode="name" Target="Scratch" Priority="105"/>
+				<property Mode="name" Target="SpinWeb" Priority="100"/>
+			</Danger>
+			<Rage>
+				<property Mode="name" Target="FallWeb" Priority="115"/>
+				<property Mode="name" Target="ClimbWeb" Priority="110"/>
+				<property Mode="name" Target="Scratch" Priority="105"/>
+				<property Mode="name" Target="SpinWeb" Priority="100"/>
+			</Rage>
+		</AbilityPriority>
+		<Abilities>
+			<property value="Scratch"/>
+			<property value="ClimbWeb"/>
+			<property value="FallWeb"/>
+		</Abilities>
+		<AbilityAIArg>
+			<Move NoFullMove="true"/>
+		</AbilityAIArg>
+	</class>
+	<class name="Mon_Beast_Spider_BlackWidow2_Elite" Lv="42" Grade="Elite" Info="Beast_Spider_BlackWidow2" Object="Mon_Beast_Spider_BlackWidow2" GradeUp="" RecoveryRatio="0.33" PatrolAwakeMoveAI="PatrolAwakeMoveAI_Tima">
+		<Masteries>
+			<property name="AmbushingSpider" value="1"/>
+			<property name="SpinWeb" value="1"/>
+			<property name="BodyTraining" value="1"/>
+			<property name="Wiredancer" value="1"/>
+			<property name="WebHunter" value="1"/>
+			<property name="WebCircus" value="1"/>
+			<property name="HiddenWeb" value="1"/>
+			<property name="SpreadFallWeb" value="1"/>
+			<property name="AcuteSpirit" value="1"/>
+			<property name="HardBone" value="1"/>
+			<property name="Breakthrough" value="1"/>
+			<property name="JoinCobweb" value="1"/>
+			<property name="Robust" value="1"/>
+			<property name="VastSpirit" value="1"/>
+			<property name="SurvivalTraining" value="1"/>
+			<property name="AcidPoison" value="1"/>
+			<property name="HeavyPressure" value="1"/>
+			<property name="ExpandCobweb" value="1"/>
+			<property name="IndomitableWill" value="1"/>
+			<property name="Patience" value="1"/>
+			<property name="WillToSurvive" value="1"/>
+			<property name="ToughSkin" value="1"/>
+			<property name="WebSac" value="1"/>
+		</Masteries>
+		<Rewards>
+			<property Item="Pocket_Poison" Min="3" Max="3"/>
+			<property Item="Claw_SavageBeast" Min="3" Max="10"/>
+			<property Item="Skin_Yasha_Uncommon" Min="3" Max="8"/>
+			<property Item="Ore_BlackIron" Min="3" Max="6"/>
+		</Rewards>
+		<AbilityPriority>
+			<Normal>
+				<property Mode="name" Target="FallWeb" Priority="115"/>
+				<property Mode="name" Target="ClimbWeb" Priority="110"/>
+				<property Mode="name" Target="Scratch" Priority="105"/>
+				<property Mode="name" Target="SpinWeb" Priority="100"/>
+			</Normal>
+			<Danger>
+				<property Mode="name" Target="ClimbWeb" Priority="120"/>
+				<property Mode="name" Target="FallWeb" Priority="110"/>
+				<property Mode="name" Target="Scratch" Priority="105"/>
+				<property Mode="name" Target="SpinWeb" Priority="100"/>
+			</Danger>
+			<Rage>
+				<property Mode="name" Target="FallWeb" Priority="115"/>
+				<property Mode="name" Target="ClimbWeb" Priority="110"/>
+				<property Mode="name" Target="Scratch" Priority="105"/>
+				<property Mode="name" Target="SpinWeb" Priority="100"/>
+			</Rage>
+		</AbilityPriority>
+		<Abilities>
+			<property value="Scratch"/>
+			<property value="ClimbWeb"/>
+			<property value="FallWeb"/>
+		</Abilities>
+		<AbilityAIArg>
+			<Move NoFullMove="true"/>
+		</AbilityAIArg>
+	</class>
+	<class name="Mon_Beast_Spider_BlackWidow3" Lv="48" Grade="Epic" Info="Beast_Spider_BlackWidow3" Object="Mon_Beast_Spider_BlackWidow3" GradeUp="" RecoveryRatio="0.33" PatrolAwakeMoveAI="PatrolAwakeMoveAI_Tima">
+		<Equipments>
+			<property name="Inventory2" Item="Amulet_Yasha_Scale"/>
+		</Equipments>
+		<Masteries>
+			<property name="AmbushingSpider" value="1"/>
+			<property name="ImpulseFields" value="1"/>
+			<property name="BodyTraining" value="1"/>
+			<property name="Wiredancer" value="1"/>
+			<property name="WebHunter" value="1"/>
+			<property name="WebCircus" value="1"/>
+			<property name="HiddenWeb" value="1"/>
+			<property name="AcuteSpirit" value="1"/>
+			<property name="Breakthrough" value="1"/>
+			<property name="MoraleBoosting" value="1"/>
+			<property name="VastSpirit" value="1"/>
+			<property name="HeavyPressure" value="1"/>
+			<property name="Neurotoxin" value="1"/>
+			<property name="IndomitableWill" value="1"/>
+			<property name="HardBone" value="1"/>
+			<property name="SurvivalTraining" value="1"/>
+			<property name="WillToSurvive" value="1"/>
+			<property name="SharpTeeth" value="1"/>
+			<property name="FastClimbWeb" value="1"/>
+			<property name="Comradeship" value="1"/>
+			<property name="PersistentLife" value="1"/>
+			<property name="PredatorEye" value="1"/>
+			<property name="Predator" value="1"/>
+			<property name="MuscleArmor" value="1"/>
+			<property name="ToughSkin" value="1"/>
+		</Masteries>
+		<Rewards>
+			<property Item="Pocket_Poison_Big" Min="3" Max="3"/>
+			<property Item="Claw_Monster" Min="3" Max="10"/>
+			<property Item="Skin_Monster" Min="3" Max="8"/>
+			<property Item="Skin_Yasha_Epic" Min="3" Max="3"/>
+			<property Item="Ore_BlackIron" Min="5" Max="10"/>
+			<property Item="Amulet_Yasha_Scale" Min="1" Max="1"/>
+		</Rewards>
+		<AbilityPriority>
+			<Normal>
+				<property Mode="name" Target="ThrowWeb" Priority="130"/>
+				<property Mode="name" Target="ClimbWeb" Priority="125"/>
+				<property Mode="name" Target="PreyThrow" Priority="120"/>
+				<property Mode="name" Target="PreyFishing" Priority="115"/>
+				<property Mode="name" Target="FallWeb_Strong" Priority="110"/>
+				<property Mode="name" Target="FallWeb" Priority="105"/>
+				<property Mode="name" Target="Scratch" Priority="100"/>
+			</Normal>
+			<Danger>
+				<property Mode="name" Target="ClimbWeb" Priority="130"/>
+				<property Mode="name" Target="ThrowWeb" Priority="125"/>
+				<property Mode="name" Target="PreyThrow" Priority="120"/>
+				<property Mode="name" Target="PreyFishing" Priority="115"/>
+				<property Mode="name" Target="FallWeb_Strong" Priority="110"/>
+				<property Mode="name" Target="FallWeb" Priority="105"/>
+				<property Mode="name" Target="Scratch" Priority="100"/>
+			</Danger>
+			<Rage>
+				<property Mode="name" Target="ClimbWeb" Priority="130"/>
+				<property Mode="name" Target="PreyThrow" Priority="125"/>
+				<property Mode="name" Target="PreyFishing" Priority="120"/>
+				<property Mode="name" Target="FallWeb_Strong" Priority="115"/>
+				<property Mode="name" Target="FallWeb" Priority="110"/>
+				<property Mode="name" Target="ThrowWeb" Priority="105"/>
+				<property Mode="name" Target="Scratch" Priority="100"/>
+			</Rage>
+		</AbilityPriority>
+		<Abilities>
+			<property value="Scratch"/>
+			<property value="ClimbWeb"/>
+			<property value="FallWeb"/>
+			<property value="FallWeb_Strong"/>
+			<property value="ThrowWeb"/>
+			<property value="PreyFishing"/>
+		</Abilities>
+		<AbilityAIArg>
+			<Move NoFullMove="true"/>
+		</AbilityAIArg>
+	</class>
+	<class name="Mon_Beast_Spider_BlackWidow4" Lv="53" Grade="Legend" Info="Beast_Spider_BlackWidow4" Object="Mon_Beast_Spider_BlackWidow4" GradeUp="" RecoveryRatio="0.33" PatrolAwakeMoveAI="PatrolAwakeMoveAI_Tima">
+		<Equipments>
+			<property name="Inventory2" Item="Amulet_Yasha_Scale2"/>
+		</Equipments>
+		<Masteries>
+			<property name="AmbushingSpider" value="1"/>
+			<property name="BodyTraining" value="1"/>
+			<property name="WebHunter" value="1"/>
+			<property name="WebCircus" value="1"/>
+			<property name="HiddenWeb" value="1"/>
+			<property name="HardBone" value="1"/>
+			<property name="PersistentLife" value="1"/>
+			<property name="HumanHunter" value="1"/>
+			<property name="ImpulseFields" value="1"/>
+			<property name="PredatorEye" value="1"/>
+			<property name="HumanKillTraining" value="1"/>
+			<property name="Predator" value="1"/>
+			<property name="TerritorialDisputes" value="1"/>
+			<property name="WildNatureKnowledge" value="1"/>
+			<property name="IndomitableWill" value="1"/>
+			<property name="Luck" value="1"/>
+			<property name="WillToSurvive" value="1"/>
+			<property name="SecondHeart" value="1"/>
+			<property name="AcuteSpirit" value="1"/>
+			<property name="HeavyPressure" value="1"/>
+			<property name="KingEye" value="1"/>
+			<property name="SurvivalTraining" value="1"/>
+			<property name="ParentalLove" value="1"/>
+			<property name="PiercingStrikes" value="1"/>
+			<property name="ToughSkin" value="1"/>
+			<property name="Veteran" value="1"/>
+			<property name="RegularExercise" value="1"/>
+			<property name="Patience" value="1"/>
+		</Masteries>
+		<Rewards>
+			<property Item="Pocket_Poison_Big" Min="3" Max="3"/>
+			<property Item="Claw_EvilMonster" Min="3" Max="10"/>
+			<property Item="Skin_EvilMonster" Min="3" Max="8"/>
+			<property Item="Skin_Yasha_Epic" Min="3" Max="3"/>
+			<property Item="Ore_BlackIron" Min="5" Max="10"/>
+			<property Item="Amulet_Yasha_Scale2" Min="1" Max="1"/>
+		</Rewards>
+		<AbilityPriority>
+			<Normal>
+				<property Mode="name" Target="ChangingMind" Priority="130"/>
+				<property Mode="name" Target="ClimbWeb" Priority="125"/>
+				<property Mode="name" Target="PreyThrow" Priority="120"/>
+				<property Mode="name" Target="PreyFishing" Priority="115"/>
+				<property Mode="name" Target="FallWeb_Strong" Priority="110"/>
+				<property Mode="name" Target="FallWeb" Priority="105"/>
+				<property Mode="name" Target="Scratch" Priority="100"/>
+			</Normal>
+			<Danger>
+				<property Mode="name" Target="ChangingMind" Priority="130"/>
+				<property Mode="name" Target="ClimbWeb" Priority="125"/>
+				<property Mode="name" Target="PreyThrow" Priority="120"/>
+				<property Mode="name" Target="PreyFishing" Priority="115"/>
+				<property Mode="name" Target="FallWeb_Strong" Priority="110"/>
+				<property Mode="name" Target="FallWeb" Priority="105"/>
+				<property Mode="name" Target="Scratch" Priority="100"/>
+			</Danger>
+			<Rage>
+				<property Mode="name" Target="ChangingMind" Priority="130"/>
+				<property Mode="name" Target="ClimbWeb" Priority="125"/>
+				<property Mode="name" Target="PreyThrow" Priority="120"/>
+				<property Mode="name" Target="PreyFishing" Priority="115"/>
+				<property Mode="name" Target="FallWeb_Strong" Priority="110"/>
+				<property Mode="name" Target="FallWeb" Priority="105"/>
+				<property Mode="name" Target="Scratch" Priority="100"/>
+			</Rage>
+		</AbilityPriority>
+		<Abilities>
+			<property value="Scratch"/>
+			<property value="ClimbWeb"/>
+			<property value="FallWeb"/>
+			<property value="FallWeb_Strong"/>
+			<property value="ChangingMind"/>
+			<property value="PreyFishing"/>
 		</Abilities>
 		<AbilityAIArg>
 			<Move NoFullMove="true"/>
@@ -8540,6 +9710,22 @@
 			<Move NoFullMove="true"/>
 		</AbilityAIArg>
 	</class>
+	<class name="Mon_Beast_Spider_Egg" Lv="1" Grade="Normal" Info="Beast_Spider_Egg" Object="Mon_Beast_Spider_Egg" GradeUp="" RecoveryRatio="0.33">
+		<Masteries>
+			<property name="HatchedObjectYasha" value="1"/>
+		</Masteries>
+		<Rewards/>
+		<EnableInteraction>
+			<property value="Investigate"/>
+		</EnableInteraction>
+		<InstantProperty>
+			<property name="MonsterType" value="Mon_Beast_Spider_Egg"/>
+			<property name="DestroyedMonsterType" value="Mon_Beast_Spider_Egg_Dead"/>
+			<property name="HatchingMonster" value="Mon_Beast_Spider_BlackWidow1"/>
+			<property name="HatchingCount" value="1"/>
+		</InstantProperty>
+	</class>
+	<class name="Mon_Beast_Spider_Egg_Dead" Grade="Normal" Info="Beast_Spider_Egg" Object="Mon_Beast_Spider_Egg_Dead" GradeUp="" RecoveryRatio="0.33"/>
 	<class name="Mon_Beast_Tima_Base" Lv="6" Grade="Normal" Info="Beast_Tima_Base" Object="Mon_Beast_Tima_Base" GradeUp="Mon_Beast_Tima_Base_Elite" RecoveryRatio="0.33" PatrolAwakeMoveAI="PatrolAwakeMoveAI_Tima">
 		<Masteries>
 			<property name="WoundInfection" value="1"/>
@@ -8579,10 +9765,10 @@
 			<property name="AmbushingPredator" value="1"/>
 		</Masteries>
 		<Rewards>
-			<property Item="Bone_Broken" Min="3" Max="10"/>
-			<property Item="Claw_Broken" Min="3" Max="10"/>
-			<property Item="Fang_Broken" Min="3" Max="10"/>
-			<property Item="Skin_Torn" Min="3" Max="10"/>
+			<property Item="Bone_Beast" Min="3" Max="10"/>
+			<property Item="Claw_Beast" Min="3" Max="10"/>
+			<property Item="Fang_Beast" Min="3" Max="10"/>
+			<property Item="Skin_Beast" Min="3" Max="10"/>
 		</Rewards>
 		<AbilityPriority>
 			<Normal>
@@ -8612,10 +9798,10 @@
 			<property name="SharpTeeth" value="1"/>
 		</Masteries>
 		<Rewards>
-			<property Item="Bone_Beast" Min="3" Max="10"/>
-			<property Item="Claw_Beast" Min="3" Max="10"/>
-			<property Item="Fang_Beast" Min="3" Max="10"/>
-			<property Item="Skin_Beast" Min="3" Max="10"/>
+			<property Item="Bone_Broken" Min="3" Max="10"/>
+			<property Item="Claw_Broken" Min="3" Max="10"/>
+			<property Item="Fang_Broken" Min="3" Max="10"/>
+			<property Item="Skin_Torn" Min="3" Max="10"/>
 		</Rewards>
 		<AbilityPriority>
 			<Normal>
@@ -8692,9 +9878,9 @@
 			<property name="ConcentratedFire" value="1"/>
 		</Masteries>
 		<Rewards>
-			<property Item="Bone_Beast" Min="3" Max="10"/>
-			<property Item="Claw_Beast" Min="3" Max="10"/>
-			<property Item="Fang_Beast" Min="3" Max="10"/>
+			<property Item="Bone_SavageBeast" Min="3" Max="10"/>
+			<property Item="Claw_SavageBeast" Min="3" Max="10"/>
+			<property Item="Fang_SavageBeast" Min="3" Max="10"/>
 			<property Item="Skin_SavageBeast" Min="3" Max="10"/>
 			<property Item="Skin_Ice" Min="3" Max="6"/>
 			<property Item="PsionicStone_FrostElement" Min="3" Max="9"/>
@@ -8745,9 +9931,9 @@
 			<property name="ConcentratedFire" value="1"/>
 		</Masteries>
 		<Rewards>
-			<property Item="Bone_Beast" Min="3" Max="10"/>
-			<property Item="Claw_Beast" Min="3" Max="10"/>
-			<property Item="Fang_Beast" Min="3" Max="10"/>
+			<property Item="Bone_SavageBeast" Min="3" Max="10"/>
+			<property Item="Claw_SavageBeast" Min="3" Max="10"/>
+			<property Item="Fang_SavageBeast" Min="3" Max="10"/>
 			<property Item="Skin_Ice" Min="3" Max="10"/>
 			<property Item="Skin_SavageBeast" Min="3" Max="10"/>
 			<property Item="PsionicStone_FrostFragment" Min="10" Max="15"/>
@@ -8795,9 +9981,9 @@
 			<property name="EternalFlame" value="1"/>
 		</Masteries>
 		<Rewards>
-			<property Item="Bone_Beast" Min="3" Max="10"/>
-			<property Item="Claw_Beast" Min="3" Max="10"/>
-			<property Item="Fang_Beast" Min="3" Max="10"/>
+			<property Item="Bone_SavageBeast" Min="3" Max="10"/>
+			<property Item="Claw_SavageBeast" Min="3" Max="10"/>
+			<property Item="Fang_SavageBeast" Min="3" Max="10"/>
 			<property Item="Skin_Lava" Min="3" Max="5"/>
 			<property Item="Skin_SavageBeast" Min="3" Max="10"/>
 			<property Item="PsionicStone_FlameFragment" Min="10" Max="15"/>
@@ -8845,9 +10031,9 @@
 			<property name="EternalFlame" value="1"/>
 		</Masteries>
 		<Rewards>
-			<property Item="Bone_Beast" Min="3" Max="10"/>
-			<property Item="Claw_Beast" Min="3" Max="10"/>
-			<property Item="Fang_Beast" Min="3" Max="10"/>
+			<property Item="Bone_SavageBeast" Min="3" Max="10"/>
+			<property Item="Claw_SavageBeast" Min="3" Max="10"/>
+			<property Item="Fang_SavageBeast" Min="3" Max="10"/>
 			<property Item="Skin_Lava" Min="3" Max="10"/>
 			<property Item="Skin_SavageBeast" Min="3" Max="10"/>
 			<property Item="PsionicStone_FlameFragment" Min="10" Max="15"/>
@@ -8965,9 +10151,9 @@
 			<property name="Rearrange" value="1"/>
 		</Masteries>
 		<Rewards>
-			<property Item="Bone_Beast" Min="3" Max="10"/>
-			<property Item="Claw_Beast" Min="3" Max="10"/>
-			<property Item="Fang_Beast" Min="3" Max="10"/>
+			<property Item="Bone_SavageBeast" Min="3" Max="10"/>
+			<property Item="Claw_SavageBeast" Min="3" Max="10"/>
+			<property Item="Fang_SavageBeast" Min="3" Max="10"/>
 			<property Item="Skin_Lightning" Min="3" Max="5"/>
 			<property Item="Skin_SavageBeast" Min="3" Max="10"/>
 			<property Item="PsionicStone_FlashFragment" Min="10" Max="15"/>
@@ -9017,9 +10203,9 @@
 			<property name="Rearrange" value="1"/>
 		</Masteries>
 		<Rewards>
-			<property Item="Bone_Beast" Min="3" Max="10"/>
-			<property Item="Claw_Beast" Min="3" Max="10"/>
-			<property Item="Fang_Beast" Min="3" Max="10"/>
+			<property Item="Bone_SavageBeast" Min="3" Max="10"/>
+			<property Item="Claw_SavageBeast" Min="3" Max="10"/>
+			<property Item="Fang_SavageBeast" Min="3" Max="10"/>
 			<property Item="Skin_Lightning" Min="3" Max="10"/>
 			<property Item="Skin_SavageBeast" Min="3" Max="10"/>
 			<property Item="PsionicStone_FlashFragment" Min="10" Max="15"/>
@@ -9050,6 +10236,88 @@
 			<property value="BreathLighting"/>
 			<property value="Howl"/>
 			<property value="LightningHeadbutt"/>
+		</Abilities>
+		<AbilityAIArg>
+			<Move NoFullMove="true"/>
+		</AbilityAIArg>
+	</class>
+	<class name="Mon_Beast_Tima_Yellow" Lv="53" Grade="Legend" Info="Beast_Tima_Yellow" Object="Mon_Beast_Tima_Yellow" GradeUp="" RecoveryRatio="0.33" PatrolAwakeMoveAI="PatrolAwakeMoveAI_Tima">
+		<Equipments>
+			<property name="Inventory2" Item="Amulet_Tima_Gold"/>
+		</Equipments>
+		<Masteries>
+			<property name="Lightningmage" value="1"/>
+			<property name="ThunderBolt" value="1"/>
+			<property name="AcutePain" value="1"/>
+			<property name="AtomDecomposition" value="1"/>
+			<property name="MuscleArmor" value="1"/>
+			<property name="BodyTraining" value="1"/>
+			<property name="MuscleResistance" value="1"/>
+			<property name="ToughSkin" value="1"/>
+			<property name="StrongJaw" value="1"/>
+			<property name="AcuteClaw" value="1"/>
+			<property name="SharpTeeth" value="1"/>
+			<property name="SurvivalTraining" value="1"/>
+			<property name="WillToSurvive" value="1"/>
+			<property name="IndomitableWill" value="1"/>
+			<property name="Veteran" value="1"/>
+			<property name="AcuteSense" value="1"/>
+			<property name="MusclePower" value="1"/>
+			<property name="HardBone" value="1"/>
+			<property name="PersistentLife" value="1"/>
+			<property name="MuscleTraining" value="1"/>
+			<property name="PriorPlanning" value="1"/>
+			<property name="LightningReflexes" value="1"/>
+			<property name="HumanKillTraining" value="1"/>
+			<property name="ConcentratedFire" value="1"/>
+			<property name="Robust" value="1"/>
+			<property name="WildNatureKnowledge" value="1"/>
+			<property name="TerritorialDisputes" value="1"/>
+			<property name="OpportunityStrikes" value="1"/>
+			<property name="OneByOne" value="1"/>
+			<property name="TacticalSupplementation" value="1"/>
+		</Masteries>
+		<Rewards>
+			<property Item="Bone_EvilMonster" Min="3" Max="10"/>
+			<property Item="Claw_EvilMonster" Min="3" Max="10"/>
+			<property Item="Fang_EvilMonster" Min="3" Max="10"/>
+			<property Item="Skin_Lightning_Legend" Min="3" Max="5"/>
+			<property Item="Skin_EvilMonster" Min="3" Max="10"/>
+			<property Item="PsionicStone_FlashCore" Min="3" Max="8"/>
+			<property Item="Amulet_Tima_Gold" Min="1" Max="1"/>
+		</Rewards>
+		<AbilityPriority>
+			<Normal>
+				<property Mode="name" Target="Howl" Priority="125"/>
+				<property Mode="name" Target="Tima_AttackMode" Priority="120"/>
+				<property Mode="name" Target="Lightningwalker" Priority="115"/>
+				<property Mode="name" Target="BreathLighting_Big" Priority="110"/>
+				<property Mode="name" Target="BreathLighting" Priority="105"/>
+				<property Mode="name" Target="Scratch_Lightning" Priority="100"/>
+			</Normal>
+			<Danger>
+				<property Mode="name" Target="Howl" Priority="125"/>
+				<property Mode="name" Target="Tima_AttackMode" Priority="120"/>
+				<property Mode="name" Target="Lightningwalker" Priority="115"/>
+				<property Mode="name" Target="BreathLighting_Big" Priority="110"/>
+				<property Mode="name" Target="BreathLighting" Priority="105"/>
+				<property Mode="name" Target="Scratch_Lightning" Priority="100"/>
+			</Danger>
+			<Rage>
+				<property Mode="name" Target="Howl" Priority="125"/>
+				<property Mode="name" Target="Tima_AttackMode" Priority="120"/>
+				<property Mode="name" Target="Lightningwalker" Priority="115"/>
+				<property Mode="name" Target="BreathLighting_Big" Priority="110"/>
+				<property Mode="name" Target="BreathLighting" Priority="105"/>
+				<property Mode="name" Target="Scratch_Lightning" Priority="100"/>
+			</Rage>
+		</AbilityPriority>
+		<Abilities>
+			<property value="Scratch_Lightning"/>
+			<property value="BreathLighting"/>
+			<property value="Howl"/>
+			<property value="BreathLighting_Big"/>
+			<property value="Lightningwalker"/>
 		</Abilities>
 		<AbilityAIArg>
 			<Move NoFullMove="true"/>
@@ -9313,7 +10581,7 @@
 			<Move NoFullMove="true"/>
 		</AbilityAIArg>
 	</class>
-	<class name="Mon_Beast_Tima_Stone" Lv="39" Grade="Legend" Info="Beast_Tima_Stone" Object="Mon_Beast_Tima_Stone" GradeUp="" RecoveryRatio="0.33" PatrolAwakeMoveAI="PatrolAwakeMoveAI_Tima">
+	<class name="Mon_Beast_Tima_Stone" Lv="46" Grade="Legend" Info="Beast_Tima_Stone" Object="Mon_Beast_Tima_Stone" GradeUp="" RecoveryRatio="0.33" PatrolAwakeMoveAI="PatrolAwakeMoveAI_Tima">
 		<Masteries>
 			<property name="Aggression" value="1"/>
 			<property name="AmbushingPredator" value="1"/>
@@ -9333,6 +10601,10 @@
 			<property name="IndomitableWill" value="1"/>
 			<property name="MuscleTraining" value="1"/>
 			<property name="Sentinel" value="1"/>
+			<property name="Sentinel" value="1"/>
+			<property name="StrongRush" value="1"/>
+			<property name="AcuteClaw" value="1"/>
+			<property name="Breakthrough" value="1"/>
 		</Masteries>
 		<Rewards>
 			<property Item="Bone_Monster" Min="3" Max="10"/>
@@ -9644,8 +10916,7 @@
 			<property name="Leg" Item="Boots_Carbon"/>
 			<property name="Inventory1" Item="Potion_HP"/>
 		</Equipments>
-		<Masteries>
-		</Masteries>
+		<Masteries/>
 		<Rewards>
 			<property Item="Tracksuit_GraffitiWorkwear" Min="1" Max="1"/>
 			<property Item="Wrist_Carbon" Min="1" Max="1"/>
@@ -9673,8 +10944,7 @@
 			<property name="Leg" Item="Boots_Carbon"/>
 			<property name="Inventory1" Item="Potion_HP"/>
 		</Equipments>
-		<Masteries>
-		</Masteries>
+		<Masteries/>
 		<Rewards>
 			<property Item="Tracksuit_GraffitiWorkwear" Min="1" Max="1"/>
 			<property Item="Wrist_Carbon" Min="1" Max="1"/>
@@ -9702,8 +10972,7 @@
 			<property name="Leg" Item="Boots_Carbon"/>
 			<property name="Inventory1" Item="Potion_HP"/>
 		</Equipments>
-		<Masteries>
-		</Masteries>
+		<Masteries/>
 		<Rewards>
 			<property Item="Tracksuit_GraffitiWorkwear" Min="1" Max="1"/>
 			<property Item="Wrist_Carbon" Min="1" Max="1"/>
@@ -10488,14 +11757,16 @@
 			<property name="MacOS" value="1"/>
 		</Masteries>
 		<Rewards>
-			<property Item="Cable_Insulated" Min="2" Max="4"/>
-			<property Item="Cable_Coaxial" Min="2" Max="3"/>
+			<property Item="Cable_Insulated" Min="3" Max="5"/>
+			<property Item="Cable_Coaxial" Min="2" Max="4"/>
 			<property Item="Cable_Fiberoptic" Min="1" Max="2"/>
-			<property Item="Conductor_Semi" Min="2" Max="4"/>
-			<property Item="Conductor_Super" Min="1" Max="2"/>
-			<property Item="Ore_BlackIronFragment" Min="4" Max="8"/>
-			<property Item="MetalPart" Min="15" Max="20"/>
-			<property Item="MetalPart_Uncomon" Min="5" Max="10"/>
+			<property Item="Conductor_Semi" Min="3" Max="5"/>
+			<property Item="Conductor_Super" Min="2" Max="4"/>
+			<property Item="Conductor_Perfect" Min="1" Max="2"/>
+			<property Item="Ore_BlackIronFragment" Min="5" Max="10"/>
+			<property Item="Ore_BlackIron" Min="2" Max="4"/>
+			<property Item="MetalPart" Min="20" Max="30"/>
+			<property Item="MetalPart_Uncomon" Min="10" Max="15"/>
 		</Rewards>
 		<AbilityPriority>
 			<Normal>
@@ -11690,8 +12961,7 @@
 				<property Mode="Type" Target="Attack" Priority="100"/>
 			</Rage>
 		</AbilityPriority>
-		<AbilityAIArg>
-		</AbilityAIArg>
+		<AbilityAIArg/>
 	</class>
 	<class name="Mon_Gangster_SmugglerHelmet_Elite" Lv="31" Grade="Elite" Info="Gangster_SmugglerHelmet" Object="Mon_Gangster_SmugglerHelmet" GradeUp="" RecoveryRatio="0.33">
 		<Equipments>
@@ -11750,8 +13020,7 @@
 				<property Mode="Type" Target="Attack" Priority="100"/>
 			</Rage>
 		</AbilityPriority>
-		<AbilityAIArg>
-		</AbilityAIArg>
+		<AbilityAIArg/>
 	</class>
 	<class name="Mon_Gangster_SmugglerHelmet2" Lv="37" Grade="Normal" Info="Gangster_SmugglerHelmet2" Object="Mon_Gangster_SmugglerHelmet2" GradeUp="Mon_Gangster_SmugglerHelmet2_Elite" RecoveryRatio="0.33">
 		<Equipments>
@@ -11810,8 +13079,7 @@
 				<property Mode="Type" Target="Attack" Priority="100"/>
 			</Rage>
 		</AbilityPriority>
-		<AbilityAIArg>
-		</AbilityAIArg>
+		<AbilityAIArg/>
 	</class>
 	<class name="Mon_Gangster_SmugglerHelmet2_Elite" Lv="39" Grade="Elite" Info="Gangster_SmugglerHelmet2" Object="Mon_Gangster_SmugglerHelmet2" GradeUp="" RecoveryRatio="0.33">
 		<Equipments>
@@ -11870,8 +13138,7 @@
 				<property Mode="Type" Target="Attack" Priority="100"/>
 			</Rage>
 		</AbilityPriority>
-		<AbilityAIArg>
-		</AbilityAIArg>
+		<AbilityAIArg/>
 	</class>
 	<class name="Mon_Gangster_SmugglerHelmet_Snake" Lv="36" Grade="Epic" Info="Gangster_SmugglerHelmet_Snake" Object="Mon_Gangster_SmugglerHelmet_Snake" GradeUp="" RecoveryRatio="0.33">
 		<Equipments>
@@ -11940,8 +13207,7 @@
 				<property Mode="Type" Target="Attack" Priority="100"/>
 			</Rage>
 		</AbilityPriority>
-		<AbilityAIArg>
-		</AbilityAIArg>
+		<AbilityAIArg/>
 	</class>
 	<class name="Mon_Gangster_SmugglerFat" Lv="28" Grade="Normal" Info="Gangster_SmugglerFat" Object="Mon_Gangster_SmugglerFat" GradeUp="Mon_Gangster_SmugglerFat_Elite" RecoveryRatio="0.33">
 		<Equipments>
@@ -13015,6 +14281,7 @@
 			<property name="FixedFire" value="1"/>
 			<property name="OpportunityStrikes" value="1"/>
 			<property name="LightningReflexes" value="1"/>
+			<property name="FinalBlow" value="1"/>
 		</Masteries>
 		<Rewards>
 			<property Item="AssultRifle_Common_300" Min="1" Max="1"/>
@@ -13126,26 +14393,25 @@
 		</Equipments>
 		<Masteries>
 			<property name="Alacrity" value="1"/>
-			<property name="HighSpeed" value="1"/>
+			<property name="Bladestorm" value="1"/>
 			<property name="Bloodlet" value="1"/>
 			<property name="BodyTraining" value="1"/>
-			<property name="BreakCastleGate" value="1"/>
+			<property name="Challenger" value="1"/>
 			<property name="Charging" value="1"/>
 			<property name="CounterAttack" value="1"/>
+			<property name="Forestallment" value="1"/>
+			<property name="HighSpeed" value="1"/>
+			<property name="ImpulseFields" value="1"/>
 			<property name="LimitBreak" value="1"/>
-			<property name="LonelyWolf" value="1"/>
+			<property name="LightningReflexes" value="1"/>
 			<property name="Overcharge" value="1"/>
 			<property name="Rearrange" value="1"/>
-			<property name="ImpulseFields" value="1"/>
+			<property name="RedThornSword" value="1"/>
 			<property name="SharpBlade" value="1"/>
+			<property name="SlashInjury" value="1"/>
 			<property name="Swordmaster" value="1"/>
 			<property name="Veteran" value="1"/>
-			<property name="WeaponBlocking" value="1"/>
-			<property name="BreakArmor" value="1"/>
-			<property name="Bloodthirst" value="1"/>
-			<property name="BloodScent" value="1"/>
-			<property name="Berserker" value="1"/>
-			<property name="RedThornSword" value="1"/>
+			<property name="VictoryShout" value="1"/>
 			<property name="Sortilege" value="1"/>
 		</Masteries>
 		<Rewards>
@@ -13745,7 +15011,7 @@
 			</Rage>
 		</AbilityPriority>
 	</class>
-	<class name="Mon_Gangster_DannyLaw" Lv="50" Grade="Epic" Info="Gangster_DannyLaw" Object="Mon_Gangster_DannyLaw" GradeUp="" RecoveryRatio="0.33">
+	<class name="Mon_Gangster_DannyLaw" Lv="50" Grade="Legend" Info="Gangster_DannyLaw" Object="Mon_Gangster_DannyLaw" GradeUp="" RecoveryRatio="0.33">
 		<Equipments>
 			<property name="Weapon" Item="Pistol_CaperV3_Crow" Lv="3">
 				<Option OptionKey="AttackPower" Type1="AttackPower" Value1="17" Type2="ESPPower" Value2="3"/>
@@ -13756,17 +15022,30 @@
 			<property name="Inventory1" Item="Potion_HP_Uncommon"/>
 		</Equipments>
 		<Masteries>
-			<property name="CloseFire" value="1"/>
-			<property name="CounterShoot" value="1"/>
 			<property name="HeadShot" value="1"/>
-			<property name="MoveWithCover" value="1"/>
-			<property name="NimbleFinger" value="1"/>
 			<property name="Overwatch" value="1"/>
-			<property name="Reload" value="1"/>
 			<property name="Sharpshooter" value="1"/>
 			<property name="PositionOfAdvantage" value="1"/>
 			<property name="FixedFire" value="1"/>
-			<property name="CheatDeath" value="1"/>
+			<property name="Zeroing" value="1"/>
+			<property name="Superiority" value="1"/>
+			<property name="Charisma" value="1"/>
+			<property name="SpiritRush" value="1"/>
+			<property name="Concentration" value="1"/>
+			<property name="UndefeatedSpirit" value="1"/>
+			<property name="HeavyPressure" value="1"/>
+			<property name="ResistWill" value="1"/>
+			<property name="Challenger" value="1"/>
+			<property name="OverfloorSpirit" value="1"/>
+			<property name="GunCompatibility" value="1"/>
+			<property name="Brazenface" value="1"/>
+			<property name="MoveWithCover" value="1"/>
+			<property name="CounterShoot" value="1"/>
+			<property name="SupportingFire" value="1"/>
+			<property name="ReasonablySuspects" value="1"/>
+			<property name="Sophistry" value="1"/>
+			<property name="RiflingEnhancement" value="1"/>
+			<property name="GunbarrelEnhancement" value="1"/>
 		</Masteries>
 		<Rewards>
 			<property Item="Pistol_CaperV3_Crow" Min="1" Max="1"/>
@@ -16909,7 +18188,7 @@
 			<property name="Body" Item="Jacket_Sentinel" Lv="5"/>
 			<property name="Hand" Item="Ring_Sky" Lv="5"/>
 			<property name="Leg" Item="Boots_Dorori" Lv="5"/>
-			<property name="Inventory1" Item="Potion_HP_Rare" Lv="5"/>
+			<property name="Inventory1" Item="Potion_HP_Rare"/>
 			<property name="Inventory2" Item="Spoon_Bronze"/>
 		</Equipments>
 		<Masteries>
@@ -17598,8 +18877,7 @@
 				<property Mode="Type" Target="Attack" Priority="100"/>
 			</Rage>
 		</AbilityPriority>
-		<AbilityAIArg>
-		</AbilityAIArg>
+		<AbilityAIArg/>
 	</class>
 	<class name="Mon_Gangster_StreetHelmet_Elite" Lv="5" Grade="Elite" Info="Gangster_StreetHelmet" Object="Mon_Gangster_StreetHelmet" GradeUp="" RecoveryRatio="0.33">
 		<Equipments>
@@ -17632,8 +18910,7 @@
 				<property Mode="Type" Target="Attack" Priority="100"/>
 			</Rage>
 		</AbilityPriority>
-		<AbilityAIArg>
-		</AbilityAIArg>
+		<AbilityAIArg/>
 	</class>
 	<class name="Mon_Gangster_StreetNormal2" Lv="2" Grade="Normal" Info="Gangster_StreetNormal2" Object="Mon_Gangster_StreetNormal2" GradeUp="Mon_Gangster_StreetNormal2_Elite" RecoveryRatio="0.33">
 		<Equipments>
@@ -17766,23 +19043,32 @@
 			<property name="Hand" Item="Wrist_Titan" Lv="3"/>
 			<property name="Leg" Item="Boots_Guide" Lv="3"/>
 			<property name="Inventory1" Item="Potion_HP_Uncommon"/>
+			<property name="Inventory2" Item="Potion_HP_Uncommon"/>
 		</Equipments>
 		<Masteries>
-			<property name="Aming" value="1"/>
 			<property name="Concentration" value="1"/>
 			<property name="Deftness" value="1"/>
-			<property name="FixedFire" value="1"/>
-			<property name="HeadShot" value="1"/>
 			<property name="HighSpeed" value="1"/>
-			<property name="HuntingDog" value="1"/>
-			<property name="Nocturnality" value="1"/>
-			<property name="Overwatch" value="1"/>
-			<property name="OwlEye" value="1"/>
-			<property name="PiercingShot" value="1"/>
 			<property name="PositionOfAdvantage" value="1"/>
 			<property name="Reload" value="1"/>
 			<property name="SerialShot" value="1"/>
-			<property name="Sharpshooter" value="1"/>
+			<property name="BreakWeapon" value="1"/>
+			<property name="HeavyStrike" value="1"/>
+			<property name="GunWeightLightening" value="1"/>
+			<property name="SurvivalTraining" value="1"/>
+			<property name="RiflingEnhancement" value="1"/>
+			<property name="HeavyPressure" value="1"/>
+			<property name="SoCloseYetFar" value="1"/>
+			<property name="GunbarrelEnhancement" value="1"/>
+			<property name="OverfloorSpirit" value="1"/>
+			<property name="GunRemodeling" value="1"/>
+			<property name="SpiritRush" value="1"/>
+			<property name="FinalBlow" value="1"/>
+			<property name="Sortilege" value="1"/>
+			<property name="ShadowZone" value="1"/>
+			<property name="MuscleTraining" value="1"/>
+			<property name="BodyTraining" value="1"/>
+			<property name="UndefeatedSpirit" value="1"/>
 		</Masteries>
 		<Rewards>
 			<property Item="AssultRifle_Common_200" Min="1" Max="1"/>
@@ -17855,7 +19141,7 @@
 			<property name="Body" Item="Jacket_StreetWhite" Lv="6"/>
 			<property name="Hand" Item="Wrist_CarbonBlack" Lv="3"/>
 			<property name="Leg" Item="Boots_Carbon" Lv="3"/>
-			<property name="Inventory1" Item="Potion_HP_Uncommon" Lv="3"/>
+			<property name="Inventory1" Item="Potion_HP_Uncommon"/>
 		</Equipments>
 		<Masteries>
 			<property name="BodyTraining" value="1"/>
@@ -17930,7 +19216,7 @@
 			<property name="Body" Item="Jacket_StreetWhite" Lv="7"/>
 			<property name="Hand" Item="Wrist_CarbonBlack" Lv="3"/>
 			<property name="Leg" Item="Boots_Carbon" Lv="3"/>
-			<property name="Inventory1" Item="Potion_HP" Lv="3"/>
+			<property name="Inventory1" Item="Potion_HP"/>
 		</Equipments>
 		<Masteries>
 			<property name="Bloodlet" value="1"/>
@@ -18005,7 +19291,7 @@
 			<property name="Body" Item="Jacket_StreetWhite" Lv="7"/>
 			<property name="Hand" Item="Wrist_CarbonBlack" Lv="3"/>
 			<property name="Leg" Item="Boots_Carbon" Lv="3"/>
-			<property name="Inventory1" Item="Potion_HP" Lv="3"/>
+			<property name="Inventory1" Item="Potion_HP"/>
 		</Equipments>
 		<Masteries>
 			<property name="LargeTopPocket" value="1"/>
@@ -18084,7 +19370,7 @@
 			<property name="Body" Item="Jacket_StreetWhite" Lv="7"/>
 			<property name="Hand" Item="Wrist_CarbonBlack" Lv="3"/>
 			<property name="Leg" Item="Boots_Carbon" Lv="3"/>
-			<property name="Inventory1" Item="Potion_HP" Lv="3"/>
+			<property name="Inventory1" Item="Potion_HP"/>
 		</Equipments>
 		<Masteries>
 			<property name="Acuity" value="1"/>
@@ -18188,10 +19474,10 @@
 	</class>
 	<class name="Mon_Gangster_WhiteTigerFat" Lv="19" Grade="Normal" Info="Gangster_WhiteTigerFat" Object="Mon_Gangster_WhiteTigerFat" GradeUp="Mon_Gangster_WhiteTigerFat_Elite" RecoveryRatio="0.33">
 		<Equipments>
-			<property name="Weapon" Item="Axe_Destroyer" Lv="2"/>
-			<property name="Body" Item="Jacket_WhiteTiger" Lv="2"/>
-			<property name="Hand" Item="Wrist_Ogre" Lv="2"/>
-			<property name="Leg" Item="Boots_EastAlliance" Lv="2"/>
+			<property name="Weapon" Item="Axe_Destroyer" Lv="1"/>
+			<property name="Body" Item="Jacket_WhiteTiger" Lv="1"/>
+			<property name="Hand" Item="Wrist_Ogre" Lv="1"/>
+			<property name="Leg" Item="Boots_EastAlliance" Lv="1"/>
 			<property name="Inventory1" Item="Potion_HP_Uncommon"/>
 			<property name="Inventory2" Item="Grenade_FlashBang"/>
 		</Equipments>
@@ -18242,10 +19528,10 @@
 	</class>
 	<class name="Mon_Gangster_WhiteTigerFat_Elite" Lv="21" Grade="Elite" Info="Gangster_WhiteTigerFat" Object="Mon_Gangster_WhiteTigerFat" GradeUp="" RecoveryRatio="0.33">
 		<Equipments>
-			<property name="Weapon" Item="Axe_Destroyer" Lv="4"/>
-			<property name="Body" Item="Jacket_WhiteTiger" Lv="4"/>
-			<property name="Hand" Item="Wrist_Ogre" Lv="4"/>
-			<property name="Leg" Item="Boots_EastAlliance" Lv="4"/>
+			<property name="Weapon" Item="Axe_Destroyer" Lv="3"/>
+			<property name="Body" Item="Jacket_WhiteTiger" Lv="3"/>
+			<property name="Hand" Item="Wrist_Ogre" Lv="3"/>
+			<property name="Leg" Item="Boots_EastAlliance" Lv="3"/>
 			<property name="Inventory1" Item="Potion_HP_Rare"/>
 			<property name="Inventory2" Item="Grenade_FlashBang"/>
 		</Equipments>
@@ -18364,7 +19650,7 @@
 			<property name="Body" Item="Jacket_WhiteTiger" Lv="9"/>
 			<property name="Hand" Item="Wrist_BlackIron" Lv="3"/>
 			<property name="Leg" Item="Boots_BlackIron" Lv="3"/>
-			<property name="Inventory1" Item="Potion_HP_Rare" Lv="3"/>
+			<property name="Inventory1" Item="Potion_HP_Rare"/>
 			<property name="Inventory2" Item="Grenade_FlashBang"/>
 		</Equipments>
 		<Masteries>
@@ -18548,10 +19834,10 @@
 	</class>
 	<class name="Mon_Gangster_WhiteTigerNormal" Lv="17" Grade="Normal" Info="Gangster_WhiteTigerNormal" Object="Mon_Gangster_WhiteTigerNormal" GradeUp="Mon_Gangster_WhiteTigerNormal_Elite" RecoveryRatio="0.33">
 		<Equipments>
-			<property name="Weapon" Item="Pistol_CaperV5" Lv="1"/>
-			<property name="Body" Item="Jacket_WhiteTiger" Lv="1"/>
-			<property name="Hand" Item="Wrist_Ogre" Lv="1"/>
-			<property name="Leg" Item="Boots_EastAlliance" Lv="1"/>
+			<property name="Weapon" Item="Pistol_CaperV5"/>
+			<property name="Body" Item="Jacket_WhiteTiger"/>
+			<property name="Hand" Item="Wrist_Ogre"/>
+			<property name="Leg" Item="Boots_EastAlliance"/>
 			<property name="Inventory1" Item="Potion_HP_Uncommon"/>
 			<property name="Inventory2" Item="Grenade_Freezing"/>
 		</Equipments>
@@ -18605,10 +19891,10 @@
 	</class>
 	<class name="Mon_Gangster_WhiteTigerNormal_Elite" Lv="19" Grade="Elite" Info="Gangster_WhiteTigerNormal" Object="Mon_Gangster_WhiteTigerNormal" GradeUp="" RecoveryRatio="0.33">
 		<Equipments>
-			<property name="Weapon" Item="Pistol_CaperV5" Lv="3"/>
-			<property name="Body" Item="Jacket_WhiteTiger" Lv="3"/>
-			<property name="Hand" Item="Wrist_Ogre" Lv="3"/>
-			<property name="Leg" Item="Boots_EastAlliance" Lv="3"/>
+			<property name="Weapon" Item="Pistol_CaperV5" Lv="2"/>
+			<property name="Body" Item="Jacket_WhiteTiger" Lv="2"/>
+			<property name="Hand" Item="Wrist_Ogre" Lv="2"/>
+			<property name="Leg" Item="Boots_EastAlliance" Lv="2"/>
 			<property name="Inventory1" Item="Potion_HP_Rare"/>
 			<property name="Inventory1" Item="Grenade_Freezing"/>
 		</Equipments>
@@ -18735,7 +20021,7 @@
 			<property name="Body" Item="Jacket_WhiteTiger" Lv="9"/>
 			<property name="Hand" Item="Wrist_BlackIron" Lv="3"/>
 			<property name="Leg" Item="Boots_BlackIron" Lv="3"/>
-			<property name="Inventory1" Item="Potion_HP_Rare" Lv="3"/>
+			<property name="Inventory1" Item="Potion_HP_Rare"/>
 			<property name="Inventory2" Item="Grenade_Freezing"/>
 		</Equipments>
 		<Masteries>
@@ -18871,10 +20157,10 @@
 	</class>
 	<class name="Mon_Gangster_WhiteTigerThin" Lv="18" Grade="Normal" Info="Gangster_WhiteTigerThin" Object="Mon_Gangster_WhiteTigerThin" GradeUp="Mon_Gangster_WhiteTigerThin_Elite" RecoveryRatio="0.33">
 		<Equipments>
-			<property name="Weapon" Item="AssultRifle_Common_300" Lv="3"/>
-			<property name="Body" Item="Jacket_WhiteTiger" Lv="3"/>
-			<property name="Hand" Item="Wrist_Ogre" Lv="3"/>
-			<property name="Leg" Item="Boots_EastAlliance" Lv="3"/>
+			<property name="Weapon" Item="AssultRifle_Common_300" Lv="2"/>
+			<property name="Body" Item="Jacket_WhiteTiger" Lv="2"/>
+			<property name="Hand" Item="Wrist_Ogre" Lv="2"/>
+			<property name="Leg" Item="Boots_EastAlliance" Lv="2"/>
 			<property name="Inventory1" Item="Potion_HP_Uncommon"/>
 			<property name="Inventory2" Item="Grenade_Smoke"/>
 		</Equipments>
@@ -18922,9 +20208,9 @@
 	<class name="Mon_Gangster_WhiteTigerThin_Elite" Lv="20" Grade="Elite" Info="Gangster_WhiteTigerThin" Object="Mon_Gangster_WhiteTigerThin" GradeUp="" RecoveryRatio="0.33">
 		<Equipments>
 			<property name="Weapon" Item="AssultRifle_Common_400"/>
-			<property name="Body" Item="Jacket_WhiteTiger" Lv="5"/>
-			<property name="Hand" Item="Wrist_Ogre" Lv="5"/>
-			<property name="Leg" Item="Boots_EastAlliance" Lv="5"/>
+			<property name="Body" Item="Jacket_WhiteTiger" Lv="4"/>
+			<property name="Hand" Item="Wrist_Ogre" Lv="4"/>
+			<property name="Leg" Item="Boots_EastAlliance" Lv="4"/>
 			<property name="Inventory1" Item="Potion_HP_Rare"/>
 			<property name="Inventory2" Item="Grenade_Smoke"/>
 		</Equipments>
@@ -19515,10 +20801,10 @@
 	</class>
 	<class name="Mon_Gangster_WhiteTigerSniper" Lv="22" Grade="Normal" Info="Gangster_WhiteTigerSniper" Object="Mon_Gangster_WhiteTigerSniper" GradeUp="Mon_Gangster_WhiteTigerSniper_Elite" RecoveryRatio="0.33" AIConfigFunc="AIConfig_Sniper">
 		<Equipments>
-			<property name="Weapon" Item="SniperRifle_RangeMaster348_Uncommon" Lv="1"/>
-			<property name="Body" Item="Jacket_WhiteTiger" Lv="3"/>
-			<property name="Hand" Item="Wrist_Titan_Black" Lv="1"/>
-			<property name="Leg" Item="Boots_Ogre" Lv="1"/>
+			<property name="Weapon" Item="SniperRifle_RangeMaster348_Uncommon"/>
+			<property name="Body" Item="Jacket_WhiteTiger" Lv="2"/>
+			<property name="Hand" Item="Wrist_Titan_Black"/>
+			<property name="Leg" Item="Boots_Ogre"/>
 			<property name="Inventory1" Item="Potion_HP_Uncommon"/>
 			<property name="Inventory2" Item="Grenade_Smoke"/>
 		</Equipments>
@@ -19570,10 +20856,10 @@
 	</class>
 	<class name="Mon_Gangster_WhiteTigerSniper_Elite" Lv="24" Grade="Elite" Info="Gangster_WhiteTigerSniper" Object="Mon_Gangster_WhiteTigerSniper" GradeUp="" RecoveryRatio="0.33" AIConfigFunc="AIConfig_Sniper">
 		<Equipments>
-			<property name="Weapon" Item="SniperRifle_RangeMaster348_Uncommon" Lv="3"/>
-			<property name="Body" Item="Jacket_WhiteTiger" Lv="6"/>
-			<property name="Hand" Item="Wrist_Titan_Black" Lv="3"/>
-			<property name="Leg" Item="Boots_Ogre" Lv="3"/>
+			<property name="Weapon" Item="SniperRifle_RangeMaster348_Uncommon" Lv="2"/>
+			<property name="Body" Item="Jacket_WhiteTiger" Lv="5"/>
+			<property name="Hand" Item="Wrist_Titan_Black" Lv="2"/>
+			<property name="Leg" Item="Boots_Ogre" Lv="2"/>
 			<property name="Inventory1" Item="Potion_HP_Rare"/>
 			<property name="Inventory2" Item="Grenade_Smoke"/>
 		</Equipments>
@@ -19819,10 +21105,10 @@
 	</class>
 	<class name="Mon_Gangster_WhiteTigerSword" Lv="23" Grade="Normal" Info="Gangster_WhiteTigerSword" Object="Mon_Gangster_WhiteTigerSword" GradeUp="Mon_Gangster_WhiteTigerSword_Elite" RecoveryRatio="0.33">
 		<Equipments>
-			<property name="Weapon" Item="Sword_AscaBlade_Red" Lv="2"/>
-			<property name="Body" Item="Jacket_WhiteTiger" Lv="2"/>
-			<property name="Hand" Item="Wrist_Ogre" Lv="2"/>
-			<property name="Leg" Item="Boots_EastAlliance" Lv="2"/>
+			<property name="Weapon" Item="Sword_AscaBlade_Red" Lv="1"/>
+			<property name="Body" Item="Jacket_WhiteTiger" Lv="1"/>
+			<property name="Hand" Item="Wrist_Ogre" Lv="1"/>
+			<property name="Leg" Item="Boots_EastAlliance" Lv="1"/>
 			<property name="Inventory1" Item="Potion_HP_Uncommon"/>
 			<property name="Inventory2" Item="Grenade_Incendiary"/>
 		</Equipments>
@@ -19869,10 +21155,10 @@
 	</class>
 	<class name="Mon_Gangster_WhiteTigerSword_Elite" Lv="25" Grade="Elite" Info="Gangster_WhiteTigerSword" Object="Mon_Gangster_WhiteTigerSword" GradeUp="" RecoveryRatio="0.33">
 		<Equipments>
-			<property name="Weapon" Item="Sword_AscaBlade_Red" Lv="4"/>
-			<property name="Body" Item="Jacket_WhiteTiger" Lv="4"/>
-			<property name="Hand" Item="Wrist_Ogre" Lv="4"/>
-			<property name="Leg" Item="Boots_EastAlliance" Lv="4"/>
+			<property name="Weapon" Item="Sword_AscaBlade_Red" Lv="3"/>
+			<property name="Body" Item="Jacket_WhiteTiger" Lv="3"/>
+			<property name="Hand" Item="Wrist_Ogre" Lv="3"/>
+			<property name="Leg" Item="Boots_EastAlliance" Lv="3"/>
 			<property name="Inventory1" Item="Potion_HP_Rare"/>
 			<property name="Inventory2" Item="Grenade_Incendiary"/>
 		</Equipments>
@@ -20183,19 +21469,19 @@
 			</Rage>
 		</AbilityPriority>
 	</class>
-	<class name="Mon_Irene" Lv="8" Grade="Normal" Info="Irene" Object="Mon_PC_Irene" GradeUp="" RecoveryRatio="0.33">
+	<class name="Mon_Irene" Lv="9" Grade="Normal" Info="Irene" Object="Mon_PC_Irene" GradeUp="" RecoveryRatio="0.33">
 		<Equipments>
 			<property name="Weapon" Item="Bangle_Carbon">
 				<Option OptionKey="Superman" Type1="AttackPower" Value1="10" Type2="ESPPower" Value2="10"/>
 			</property>
 			<property name="Body" Item="Tracksuit_LaseerPanda">
-				<Option OptionKey="Scout" Type1="Armor" Value1="20" Type2="MaxHP" Value2="20" Type3="Dodge" Value3="4"/>
+				<Option OptionKey="Scout" Type1="Armor" Value1="30" Type2="MaxHP" Value2="30" Type3="Dodge" Value3="8"/>
 			</property>
 			<property name="Hand" Item="Wrist_CarbonBlack">
-				<Option OptionKey="Elephant" Type1="Armor" Value1="10" Type2="MaxHP" Value2="50"/>
+				<Option OptionKey="Elephant" Type1="Armor" Value1="30" Type2="MaxHP" Value2="80"/>
 			</property>
 			<property name="Leg" Item="Sneakers_Battle">
-				<Option OptionKey="Luck" Type1="Accuracy" Value1="4" Type2="CriticalStrikeChance" Value2="3"/>
+				<Option OptionKey="Luck" Type1="Accuracy" Value1="8" Type2="CriticalStrikeChance" Value2="8"/>
 			</property>
 			<property name="Inventory1" Item="Potion_HP_Uncommon"/>
 		</Equipments>
@@ -20205,7 +21491,9 @@
 			<property name="BodyTraining" value="1"/>
 			<property name="InnerFlame" value="1"/>
 			<property name="LightningReflexes" value="1"/>
-			<property name="OneByOne" value="1"/>
+			<property name="Sentinel" value="1"/>
+			<property name="CleanHit" value="1"/>
+			<property name="PiercingResistance1" value="1"/>
 			<property name="SenseOfJustice" value="1"/>
 		</Masteries>
 		<AbilityPriority>
@@ -20301,14 +21589,14 @@
 	</class>
 	<class name="Mon_Kylie" Lv="25" Grade="Normal" Info="Kylie" Object="Mon_PC_Kylie" GradeUp="" RecoveryRatio="0.33">
 		<Equipments>
-			<property name="Weapon" Item="Drone_MonoAndVivi" Lv="1"/>
-			<property name="Body" Item="Jacket_Sentinel_Rare" Lv="1">
+			<property name="Weapon" Item="Drone_MonoAndVivi" Lv="5"/>
+			<property name="Body" Item="Jacket_Sentinel_Rare" Lv="5">
 				<Option OptionKey="FlameSentinel" Type1="Resistance" Value1="50" Type2="MaxHP" Value2="50" Type3="Block" Value3="5" Type4="FireResistance" Value4="80"/>
 			</property>
-			<property name="Hand" Item="Bracelet_Arch_Rare" Lv="1">
+			<property name="Hand" Item="Bracelet_Arch_Rare" Lv="5">
 				<Option OptionKey="MeteorSentinel" Type1="Armor" Value1="30" Type2="MaxHP" Value2="50" Type3="Block" Value3="5" Type4="BluntResistance" Value4="100"/>
 			</property>
-			<property name="Leg" Item="Boots_Dorori_Rare" Lv="1">
+			<property name="Leg" Item="Boots_Dorori_Rare" Lv="5">
 				<Option OptionKey="FlashSoldier" Type1="Armor" Value1="50" Type2="Accuracy" Value2="5" Type3="CriticalStrikeChance" Value3="10" Type4="LightningResistance" Value4="80"/>
 			</property>
 			<property name="Inventory1" Item="Potion_HP_Rare"/>
@@ -20398,8 +21686,7 @@
 		<Equipments>
 			<property name="Weapon" Item="Dagger_Dragon"/>
 		</Equipments>
-		<Masteries>
-		</Masteries>
+		<Masteries/>
 		<AbilityPriority>
 			<Normal>
 				<property Mode="Type" Target="Attack" Priority="100"/>
@@ -20869,8 +22156,7 @@
 		</Abilities>
 	</class>
 	<class name="Mon_Rion" Lv="2" Grade="Normal" Info="Rion" Object="Mon_PC_Rion" GradeUp="" RecoveryRatio="0.33">
-		<Masteries>
-		</Masteries>
+		<Masteries/>
 		<AbilityPriority>
 			<Normal>
 				<property Mode="Type" Target="Attack" Priority="100"/>
@@ -20940,8 +22226,7 @@
 			<property name="Leg" Item="Boots_Steelhead"/>
 			<property name="Inventory1" Item="Potion_HP_Uncommon"/>
 		</Equipments>
-		<Masteries>
-		</Masteries>
+		<Masteries/>
 		<Rewards>
 			<property Item="Sword_CarbonBlade_Black" Min="1" Max="1"/>
 			<property Item="Jacket_Steelhead" Min="1" Max="1"/>

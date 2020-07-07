@@ -2551,4 +2551,32 @@
 			</property>
 		</Slot>
 	</class>
+	<class name="RustBox">
+		<Slot>
+			<property Priority="30">
+				<Item Count="50" ItemType="Potion_Scourge" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="10" ItemType="Crystal_Spirit_05" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="10" ItemType="Crystal_Fire_05" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="10" ItemType="Crystal_Ice_05" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="10" ItemType="Crystal_Lightning_05" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="10" ItemType="Crystal_Wind_05" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="10" ItemType="Crystal_Earth_05" Type="Simple"/>
+			</property>
+			<property Priority="10">
+				<Item Count="10" ItemType="Crystal_Water_05" Type="Simple"/>
+			</property>
+		</Slot>
+	</class>
 </idspace>

@@ -29,10 +29,15 @@ function AddExp_TroubleMaker(dc, dead, expTaker, attackerState, isOverKill, isPe
 			point = point * GetSystemConstant('PerfectKillReward_Troublemaker');
 		end
 		-- 도전 모드 2배
+		local gameMode = 'Normal';
 		local mission = GetMission(expTaker);
 		local missionAttribute = GetMissionAttribute(mission);
 		if missionAttribute and missionAttribute.ChallengerMode then
-			point = point * GetSystemConstant('ChallenerModeReward_Troublemaker');
+			gameMode = 'Challenger';
+		end
+		local gameModeCls = GetClassList('GameMode')[gameMode];
+		if gameModeCls and gameModeCls.TroublemakerEXPRatio > 0 then
+			point = point * gameModeCls.TroublemakerEXPRatio;
 		end
 		-- 장벽 지구 보너스
 		local reputationMultiplier = 0;

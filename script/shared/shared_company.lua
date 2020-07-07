@@ -83,7 +83,7 @@ function Get_OfficeRentDuration(company)
 	return rentInfo.ClearCount;
 end
 function Get_MaxBeastStoreCount(company)
-	return 10 + company.Progress.Achievement.BeastManagerLevel * 10;
+	return 20 + company.Progress.Achievement.BeastManagerLevel * 10;
 end
 ---------------------------------------------------------
 -- 미션 스테이터스

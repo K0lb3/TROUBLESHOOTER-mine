@@ -205,7 +205,7 @@ function Get_ExtraMaxBasicMasteryCount_PC(pc, arg, masteryTable)
 	local info = {};
 	-- ApplyAmount Type
 	-- 열린마음, 설득, 자아성찰, 기체 강화
-	result = result + MasteryExistTestAndSumApplyAmount(masteryTable, {'OpenMind', 'Persuasion', 'SelfExamination', 'Application_EnhancedFrame', 'HardBone'}, 'ApplyAmount', info);
+	result = result + MasteryExistTestAndSumApplyAmount(masteryTable, {'OpenMind', 'Persuasion', 'SelfExamination', 'Application_EnhancedFrame', 'HardBone', 'Module_FrameEnhanced', 'Module_FrameOptimaztion', 'BeastNormalTraining'}, 'ApplyAmount', info);
 	-- FixedMastery
 	result = result + FixedMasteryTestAndSumApplyAmount(masteryTable, 'Basic', 1, info);
 	return result, info;
@@ -218,7 +218,7 @@ function Get_ExtraMaxSubMasteryCount_PC(pc, arg, masteryTable)
 	local info = {};
 	-- ApplyAmount Type
 	-- 융통성, 원칙주의, 합리적 의심, 추가 지원 모듈
-	result = result + MasteryExistTestAndSumApplyAmount(masteryTable, {'Flexibility', 'Principlism', 'ReasonablySuspects', 'Module_AuxiliarySupportModule', 'WildNatureKnowledge'}, 'ApplyAmount', info);
+	result = result + MasteryExistTestAndSumApplyAmount(masteryTable, {'Flexibility', 'Principlism', 'ReasonablySuspects', 'Module_AuxiliarySupportModule', 'WildNatureKnowledge', 'BeastSubTraining'}, 'ApplyAmount', info);
 	-- FixedMastery
 	result = result + FixedMasteryTestAndSumApplyAmount(masteryTable, 'Sub', 1, info);
 	return result, info;
@@ -231,7 +231,7 @@ function Get_ExtraMaxAttackMasteryCount_PC(pc, arg, masteryTable)
 	local info = {};
 	-- ApplyAmount Type
 	-- 히스테리, 철면피, 추가 강화 모듈
-	result = result + MasteryExistTestAndSumApplyAmount(masteryTable, {'Hysterie', 'Brazenface', 'Module_AuxiliaryComplementaryModule', 'TerritorialDisputes'}, 'ApplyAmount', info);
+	result = result + MasteryExistTestAndSumApplyAmount(masteryTable, {'Hysterie', 'Brazenface', 'Module_AuxiliaryComplementaryModule', 'TerritorialDisputes', 'BeastAttackTraining'}, 'ApplyAmount', info);
 	-- FixedMastery
 	result = result + FixedMasteryTestAndSumApplyAmount(masteryTable, 'Attack', 1, info);
 	return result, info;
@@ -244,7 +244,7 @@ function Get_ExtraMaxDefenceMasteryCount_PC(pc, arg, masteryTable)
 	local info = {};
 	-- ApplyAmount Type
 	-- 작전상 후퇴, 궤변 추가 보안 모듈
-	result = result + MasteryExistTestAndSumApplyAmount(masteryTable, {'TacticalRetreat', 'Sophistry', 'Module_AuxiliarySaftyModule', 'PersistentLife'}, 'ApplyAmount', info);
+	result = result + MasteryExistTestAndSumApplyAmount(masteryTable, {'TacticalRetreat', 'Sophistry', 'Module_AuxiliarySaftyModule', 'PersistentLife', 'BeastDefenceTraining'}, 'ApplyAmount', info);
 	-- FixedMastery
 	result = result + FixedMasteryTestAndSumApplyAmount(masteryTable, 'Defence', 1, info);
 	return result, info;
@@ -257,7 +257,7 @@ function Get_ExtraMaxAbilityMasteryCount_PC(pc, arg, masteryTable)
 	local info = {};
 	-- ApplyAmount Type
 	-- 추가 인공지능 모듈
-	result = result + MasteryExistTestAndSumApplyAmount(masteryTable, {'Module_AuxiliaryAIModule'}, 'ApplyAmount', info);
+	result = result + MasteryExistTestAndSumApplyAmount(masteryTable, {'Module_AuxiliaryAIModule', 'BeastAbilityTraining'}, 'ApplyAmount', info);
 	-- FixedMastery
 	result = result + FixedMasteryTestAndSumApplyAmount(masteryTable, 'Ability', 1, info);
 	return result, info;
@@ -307,6 +307,8 @@ function Get_MaxAbilityMasteryCost_PC(pc, arg, masteryTable)
 	result = result + Get_MaxMasteryCost_Shared_PC(pc, arg, masteryTable);
 	-- 인공지능 모듈
 	result = result + MasteryExistTestAndSumApplyAmount(masteryTable, {'MachineUnique_AIModule'}, 'ApplyAmount');
+	-- 추가 기체 최적화
+	result = result + MasteryExistTestAndSumApplyAmount(masteryTable, {'Module_FrameOptimaztion'}, 'ApplyAmount3');
 	-- FixedMastery
 	result = result + FixedMasteryTestAndSumApplyAmount(masteryTable, 'Ability', -2);
 	return result;
@@ -333,6 +335,8 @@ function Get_MaxSubMasteryCost_PC(pc, arg, masteryTable)
 	result = result + Get_MaxMasteryCost_Shared_PC(pc, arg, masteryTable);
 	-- 지원 모듈
 	result = result + MasteryExistTestAndSumApplyAmount(masteryTable, {'MachineUnique_SupportModule'}, 'ApplyAmount');
+	-- 추가 기체 강화
+	result = result + MasteryExistTestAndSumApplyAmount(masteryTable, {'Module_FrameEnhanced'}, 'ApplyAmount3');
 	-- FixedMastery
 	result = result + FixedMasteryTestAndSumApplyAmount(masteryTable, 'Sub', -2);
 	return result;
@@ -346,6 +350,8 @@ function Get_MaxAttackMasteryCost_PC(pc, arg, masteryTable)
 	result = result + Get_MaxMasteryCost_Shared_PC(pc, arg, masteryTable);
 	-- 강화 모듈
 	result = result + MasteryExistTestAndSumApplyAmount(masteryTable, {'MachineUnique_ComplementaryModule'}, 'ApplyAmount');
+	-- 추가 기체 강화
+	result = result + MasteryExistTestAndSumApplyAmount(masteryTable, {'Module_FrameEnhanced'}, 'ApplyAmount3');
 	-- FixedMastery
 	result = result + FixedMasteryTestAndSumApplyAmount(masteryTable, 'Attack', -2);
 	return result;
@@ -359,6 +365,8 @@ function Get_MaxDefenceMasteryCost_PC(pc, arg, masteryTable)
 	result = result + Get_MaxMasteryCost_Shared_PC(pc, arg, masteryTable);
 	-- 보안 모듈
 	result = result + MasteryExistTestAndSumApplyAmount(masteryTable, {'MachineUnique_SaftyModule'}, 'ApplyAmount');
+	-- 추가 기체 최적화
+	result = result + MasteryExistTestAndSumApplyAmount(masteryTable, {'Module_FrameOptimaztion'}, 'ApplyAmount3');
 	-- FixedMastery
 	result = result + FixedMasteryTestAndSumApplyAmount(masteryTable, 'Defence', -2);
 	return result;

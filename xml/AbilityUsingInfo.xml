@@ -44,6 +44,10 @@
 	<class name="AbilityUserInfo" UserHandle="-1" MainTargetHandle="-1" MissionEnded="false" Prepared="false" AttackerState="Normal" DefenderState="None" Preemptive="false" NoVoice="false" InstantCost="0" InstantSP="0">
 		<UsingPosList type="lua_value" value="{}"/>
 	</class>
-	<class name="PrimaryTargetInfo" UserHandle="-1" TargetHandle="-1" AttackerState="Normal" DefenderState="None" ChainID="-1" ChainTriggerID="0"/>
-	<class name="SecondaryTargetInfo" UserHandle="-1" TargetHandle="-1" TriggerHandle="-1" AttackerState="Normal" DefenderState="None" ChainTriggerID="-1" ChainID="-1"/>
+	<class name="PrimaryTargetInfo" UserHandle="-1" TargetHandle="-1" AttackerState="Normal" DefenderState="None" ChainID="-1" ChainTriggerID="0">
+		<DamageFlag type="lua_value" value="{}"/>
+	</class>
+	<class name="SecondaryTargetInfo" UserHandle="-1" TargetHandle="-1" TriggerHandle="-1" AttackerState="Normal" DefenderState="None" ChainTriggerID="-1" ChainID="-1">
+		<DamageFlag type="lua_value" value="{}"/>
+	</class>
 </idspace>

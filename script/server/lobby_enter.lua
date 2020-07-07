@@ -36,6 +36,9 @@ function LobbyEnter(ldm, company, lobbyType)
 	-- 기계 공용 마스터리 장착 해제
 	CheckMachineInvalidMastery(ldm, company, dc);
 	
+	-- 무기 코스튬
+	CheckWeaponCostumeUnlock(ldm, company, dc);
+	
 	local isResetActivityReport = company.ResetActivityReport;
 	if isResetActivityReport then
 		
@@ -514,6 +517,10 @@ local g_checkAchievementFuncs = {
 	StoryTrainingRoomAfter = MakeMissionClearTester('Tutorial_TrainingRoomAfter'),
 	StorySilverliningAfter = MakeMissionClearTester('Tutorial_SilverliningAfter'),
 	StoryWhiteTigerBase = MakeMissionClearTester('Tutorial_WhiteTigerBase'),
+	SituationIreneKillLuna = function(company) return company.GuideTrigger.KillAchievement_IreneLuna.Pass end,
+	SituationAlbusKillGiselle = function(company) return company.GuideTrigger.KillAchievement_AlbusGiselle.Pass end,
+	SituationAnneKillAlbus = function(company) return company.GuideTrigger.KillAchievement_AnneAlbus.Pass end,
+	SituationAnneKillIrene = function(company) return company.GuideTrigger.KillAchievement_AnneIrene.Pass end,	
 };
 
 function CheckAchievements(ldm, company, dc)
@@ -665,12 +672,23 @@ end
 function CheckMasterySetIndex(ldm, company, dc)
 	local rosterList = GetAllRoster(company, 'All');
 	for _, roster in ipairs(rosterList) do
-		local masteryTable = GetMastery(roster);
-		for k, mastery in pairs(masteryTable) do
-			if mastery.Lv > 0 and mastery.Category.name == 'Set' then
-				local open = company.MasterySetIndex[mastery.name];
-				if open == false then
-					dc:UpdateCompanyProperty(company, 'MasterySetIndex/'..mastery.name, true);
+		for i = 1, roster.MasteryBoard.Count do
+			local boardIndex = i - 1;
+			local masteryTable = GetMastery(roster, boardIndex);
+			for k, mastery in pairs(masteryTable) do
+				if mastery.Lv > 0 and mastery.Category.name == 'Set' then
+					local open = company.MasterySetIndex[mastery.name];
+					if open == false then
+						dc:UpdateCompanyProperty(company, 'MasterySetIndex/'..mastery.name, true);
+						-- 중복 방지를 위한 수동 업데이트
+						company.MasterySetIndex[mastery.name] = true;
+						local formatTable = {
+							MasteryName = ClassDataText('Mastery', k, 'Title'),
+						};
+						local text = FormatMessageText(GuideMessageText('MasterySetAvailableByUpdate'), formatTable);
+						ldm:ShowFrontmessageWithText(text);
+						ldm:AddChat('Notice', RemoveTagText(text));
+					end
 				end
 			end
 		end
@@ -681,7 +699,7 @@ function CheckMasterySetIndex(ldm, company, dc)
 		(function()
 			if not company.MasterySetIndex[key] then
 				local troublemakers = cls.HavingTroublemakers;
-				for _, troublemaker in ipairs(troublemakers) do
+				for troublemaker, _ in pairs(troublemakers) do
 					if GetTroublemakerInfoGrade(company.Troublemaker[troublemaker]) >= 4 then
 						dc:UpdateCompanyProperty(company, string.format('MasterySetIndex/%s', key), true);
 						local monCls = GetClassList('Monster')[troublemaker];
@@ -845,5 +863,52 @@ function CheckMachineInvalidMastery(ldm, company, dc)
 	end
 	if needCommit then
 		dc:Commit('CheckMachineInvalidMastery');
+	end
+end
+function CheckWeaponCostumeUnlock(ldm, company, dc)
+	if not company.WeaponCostumeOpened then
+		return;
+	end
+
+	local opened = {};
+	
+	local allItems = GetAllItems(company);
+	for i, item in ipairs(allItems) do
+		if item.Category.name == 'Weapon' then
+			local costume = GetWithoutError(item, 'UnlockWeaponCostume');
+			if costume then
+				opened[costume] = true;
+			end
+		end
+	end
+	local allWareItems = GetAllWareItems(company);
+	for i, item in ipairs(allWareItems) do
+		if item.Category.name == 'Weapon' then
+			local costume = GetWithoutError(item, 'UnlockWeaponCostume');
+			if costume then
+				opened[costume] = true;
+			end
+		end
+	end
+	local rosters = GetAllRoster(company, 'Pc');
+	for i, pcInfo in ipairs(rosters) do
+		local item = SafeIndex(pcInfo, 'Object', 'Weapon');
+		if item then
+			local costume = GetWithoutError(item, 'UnlockWeaponCostume');
+			if costume then
+				opened[costume] = true;
+			end
+		end
+	end
+	
+	local needCommit = false;
+	for key, _ in pairs(opened) do
+		if not company.WeaponCostume[key].Opened then
+			dc:UpdateCompanyProperty(company, string.format('WeaponCostume/%s/Opened', key), true);
+			needCommit = true;
+		end
+	end
+	if needCommit then
+		dc:Commit('CheckWeaponCostumeUnlock');
 	end
 end

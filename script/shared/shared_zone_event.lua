@@ -83,7 +83,7 @@ end
 -- 하늘 바람 공원: 아이린, 시온, 알버스, 앤, 헤이싱, 레이
 -- 레이 영입 후.
 function CheckZoneEvent_Tutorial_Event18(company)
-	return company.Progress.Zone.EventType == 'Zone01' and company.MissionCleared.Tutorial_DustWind and not company.MissionCleared.Tutorial_SkyWindPark;
+	return company.Progress.Zone.EventType == 'Zone01' and company.MissionCleared.Tutorial_DustWind and company.Progress.Character.Ray >= 6 and not company.MissionCleared.Tutorial_SkyWindPark;
 end
 -- 푸고뒷골목애프터.
 -- 경찰 훈련장 이후
@@ -269,9 +269,13 @@ end
 function CheckZoneEvent_Raid_Event9(company)
 	return company.Progress.Zone.EventType == 'Zone01' and company.MissionCleared.Raid_DrakyNest and company.Progress.Mission.DrakyNest;
 end
--- 10. 그늘안개 뒷골목
+-- 10. 자홍거리 상점가
 function CheckZoneEvent_Raid_Event10(company)
 	return company.Progress.Zone.EventType == 'Zone01' and company.MissionCleared.Tutorial_CrowRuinsAfter;
+end
+-- 11. 그림자 장벽 지하수로
+function CheckZoneEvent_Raid_Event11(company)
+	return company.Progress.Zone.EventType == 'Zone01' and company.MissionCleared.Raid_DrakyNest2 and company.MissionCleared.Quest_Bruna01;
 end
 -----------------------------------------------------------------
 -- 퀘스트

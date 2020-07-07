@@ -1,7 +1,7 @@
 ---------------------------------------------------------------------
 --- 특성연구 테스트.
 ---------------------------------------------------------------------
-function IsEnableTechniqueResearch(company, tech, addMasteries, itemCounter)
+function IsEnableTechniqueResearch(company, tech, addMasteries, itemCounter, count)
 
 	local techniquList = GetClassList('Technique');
 	local masteryList = GetClassList('Mastery');
@@ -41,7 +41,7 @@ function IsEnableTechniqueResearch(company, tech, addMasteries, itemCounter)
 	-- 2. 회사에 다음 마스터리들이 존재하는지 체크.
 	for i = 1, #list do
 		local curMastery = company.Mastery[list[i]];
-		if curMastery.Amount <= 0 then
+		if curMastery.Amount < count then
 			isEnable = false;
 			table.insert(reason, 'NotEnoughMasteryCount');
 			break;
@@ -78,7 +78,7 @@ function IsEnableTechniqueResearch(company, tech, addMasteries, itemCounter)
 	
 	-- 6. 제작에 필요한 아이템이 충분한가
 	for itemKey, needCount in pairs(itemList) do
-		if itemCounter(itemKey) < needCount then
+		if itemCounter(itemKey) < needCount * count then
 			isEnable = false;
 			table.insert(reason, 'NotEnoughItemCount');
 		end

@@ -1096,7 +1096,8 @@ function GuideTriggerChecker_Stealth(eventArg, ds, company)
 end
 -- 최대 액션 타임
 function GuideTriggerChecker_MaxActionTime(eventArg, ds, company)
-	if eventArg.PropertyName ~= 'Act' then
+	if GetCompanyByTeam(eventArg.Unit, GetTeam(eventArg.Unit)) ~= company 
+		or eventArg.PropertyName ~= 'Act' then
 		return false;
 	end
 	return tonumber(eventArg.Value) >= 999;

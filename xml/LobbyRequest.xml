@@ -99,6 +99,11 @@
 		<class name="SlotName" Type="string"/>
 		<class name="ErrorType" Type="string"/>
 		<class name="ErrorArgs" Type="table"/>
+		<class name="DialogType" Type="string"/>
+		<class name="ChallengerMode" Type="bool"/>
+		<class name="WeaponCostume" Type="string"/>
+		<class name="WeaponCostumes" Type="table"/>
+		<class name="Lock" type="bool"/>
 	</idspace>
 	<idspace id="LobbyRequest">
 		<schema>
@@ -195,5 +200,10 @@
 		<class name="SwitchAbilityPreset" RequireArguments="Roster, SlotIndex, SlotIndex2" ResponseArguments="Success"/>
 		<class name="UpdateActiveAbilityPreset" RequireArguments="Roster, SlotIndex" ResponseArguments="Success"/>
 		<class name="InvokeLobbyEvent" RequireArguments="SectionName, SlotIndex" ResponseArguments="Success"/>
+		<class name="InvokeQuestMission" RequireArguments="Quest, ChallengerMode" ResponseArguments="Success"/>
+		<class name="ChangeWeaponCostume" RequireArguments="ItemAddress, BaseInvKey, Roster, EquipPosition, WeaponCostume" ResponseArguments="Success"/>
+		<class name="NewWeaponCostumeConfirmed" RequireArguments="WeaponCostumes" ResponseArguments="Success"/>
+		<class name="CompanyNameTest" RequireArguments="CompanyName" ResponseArguments="Success"/>
+		<class name="ToggleMailLock" RequireArguments="MailId, Lock" ResponseArguments="Success"/>
 	</idspace>
 </idspaces>

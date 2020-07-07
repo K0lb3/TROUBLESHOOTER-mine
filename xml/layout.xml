@@ -247,17 +247,26 @@
 		</class>
 		<class name="ActivityReport" File="Report.layout" AllowToggleInterface="false">
 			<Scripts>
+				<property childid="Report/ActivityTotalCount" event="MouseEntersSurface" script="EnterToolTip_Simple"/>
+				<property childid="Report/ActivityTotalCount" event="MouseLeavesSurface" script="LeaveToolTip_Simple"/>
 				<property childid="ReportDetail/Apply" event="Clicked" script="ApplyDivisionClicked" sound="click_2.wav"/>
 				<property childid="ReportDetail/ProgressBar" event="Updated" script="UpdatedReportProgressBar"/>
 				<property childid="ReportDetail/SupportPolicy/SupportPolicy01" event="MouseButtonUp" sound="click_5.wav"/>
-				<property childid="ReportDetail/SupportPolicy/SupportPolicy01" event="MouseEntersSurface" sound="mouseover_5.wav"/>
+				<property childid="ReportDetail/SupportPolicy/SupportPolicy01" event="MouseEntersSurface" script="EnterToolTip_Simple" sound="mouseover_5.wav"/>
+				<property childid="ReportDetail/SupportPolicy/SupportPolicy01" event="MouseLeavesSurface" script="LeaveToolTip_Simple"/>
 				<property childid="ReportDetail/SupportPolicy/SupportPolicy01" event="SelectStateChanged" script="ReportSupportComponentSelectChanged"/>
 				<property childid="ReportDetail/SupportPolicy/SupportPolicy02" event="MouseButtonUp" sound="click_5.wav"/>
-				<property childid="ReportDetail/SupportPolicy/SupportPolicy02" event="MouseEntersSurface" sound="mouseover_5.wav"/>
+				<property childid="ReportDetail/SupportPolicy/SupportPolicy02" event="MouseEntersSurface" script="EnterToolTip_Simple" sound="mouseover_5.wav"/>
+				<property childid="ReportDetail/SupportPolicy/SupportPolicy02" event="MouseLeavesSurface" script="LeaveToolTip_Simple"/>
 				<property childid="ReportDetail/SupportPolicy/SupportPolicy02" event="SelectStateChanged" script="ReportSupportComponentSelectChanged"/>
 				<property childid="ReportDetail/SupportPolicy/SupportPolicy03" event="MouseButtonUp" sound="click_5.wav"/>
-				<property childid="ReportDetail/SupportPolicy/SupportPolicy03" event="MouseEntersSurface" sound="mouseover_5.wav"/>
+				<property childid="ReportDetail/SupportPolicy/SupportPolicy03" event="MouseEntersSurface" script="EnterToolTip_Simple" sound="mouseover_5.wav"/>
+				<property childid="ReportDetail/SupportPolicy/SupportPolicy03" event="MouseLeavesSurface" script="LeaveToolTip_Simple"/>
 				<property childid="ReportDetail/SupportPolicy/SupportPolicy03" event="SelectStateChanged" script="ReportSupportComponentSelectChanged"/>
+				<property childid="ReportDetail/Tag_SectionTypeReward" event="MouseEntersSurface" script="EnterToolTip_Simple"/>
+				<property childid="ReportDetail/Tag_SectionTypeReward" event="MouseLeavesSurface" script="LeaveToolTip_Simple"/>
+				<property childid="ReportDetail/Tag_DivisionBonus" event="MouseEntersSurface" script="EnterToolTip_Simple"/>
+				<property childid="ReportDetail/Tag_DivisionBonus" event="MouseLeavesSurface" script="LeaveToolTip_Simple"/>
 				<property childid="Exit" event="MouseEntersSurface" script="EnterFormationButton" sound="mouseover_1.wav"/>
 				<property childid="Exit" event="MouseLeavesSurface" script="LevaeFormationButton"/>
 				<property childid="Exit" event="Clicked" script="HideReportInfo" sound="click_character.wav"/>
@@ -269,6 +278,12 @@
 				<property childid="Report/TimeBar/Message" anim="PressAnyKeys"/>
 				<property childid="ReportDetail/ProgressBar" anim="Show_Gauge_Slow"/>
 			</Animations>
+		</class>
+		<class name="ActivityReportMission" File="ReportMissionComponent.layout">
+			<Scripts>
+				<property childid="this" event="MouseEntersSurface" sound="mouseover_5.wav"/>
+				<property childid="this" event="MouseLeavesSurface"/>
+			</Scripts>
 		</class>
 		<class name="Alert" File="Alert.layout">
 			<Animations>
@@ -534,6 +549,7 @@
 				<property childid="QuestList/Titlebar" event="MouseDoubleClick" script="QuestListTitlebarMouseDoubleClick"/>
 				<property childid="QuestList/Titlebar" event="MouseEntersSurface" script="EnterToolTip_Line" sound="mouseover_5.wav"/>
 				<property childid="QuestList/Titlebar" event="MouseLeavesSurface" script="LeaveToolTip_Line"/>
+				<property childid="Direction" event="Updated" script="OnUpdateMissionDirection"/>
 			</Scripts>
 			<Animations>
 				<property childid="TurnList" anim="Show_Alpha_Window"/>
@@ -656,7 +672,7 @@
 				<property childid="Box/Yes" event="Clicked" script="OnCommonMessageBoxYes"/>
 				<property childid="Box/OK" event="Clicked" script="OnCommonMessageBoxNo"/>
 				<property childid="Box/No" event="Clicked" script="OnCommonMessageBoxNo"/>
-				<property childid="this" event="KeyUp" script="OnCommonMessageBoxYseNoShortCut"/>
+				<property childid="this" event="KeyUp" script="OnCommonMessageBoxYesNoShortCut"/>
 			</Scripts>
 		</class>
 		<class name="Beast" File="Beast.layout">
@@ -1022,9 +1038,13 @@
 				<property childid="Salary/Content/ChangeSalary" event="Clicked" script="ChangeSalaryClicked" sound="click_character.wav"/>
 				<property childid="Job/CurrentJob" event="MouseLeavesSurface" script="LeaveToolTip_Simple"/>
 				<property childid="Job/CurrentJob" event="MouseEntersSurface" script="EnterToolTip_Simple"/>
+				<property childid="Equipment/WeaponCostume" event="MouseEntersSurface" script="EnterToolTip_Line" sound="mouseover_1.wav"/>
+				<property childid="Equipment/WeaponCostume" event="MouseLeavesSurface" script="LeaveToolTip_Line"/>
+				<property childid="Equipment/WeaponCostume" event="Clicked" script="ShowCharacterWeaponCostume" sound="click_character.wav"/>
 				<property childid="this" event="Hidden" sound="Window_Out.wav"/>
 				<property childid="this" event="Shown" sound="Window_In.wav"/>
 				<property childid="this" event="MouseWheel" script="OnCharacterMouseWheel"/>
+				<property childid="Equipment/List/Scrollbar" event="ScrollPositionChanged" script="OnCharacterEquipementScrolled"/>
 			</Scripts>
 			<Animations>
 				<property childid="this" anim="Show_Alpha_Window"/>
@@ -1040,6 +1060,8 @@
 				<property childid="Profession" anim="ChangeModeAlpha"/>
 				<property childid="Salary" anim="ChangeModeAlpha"/>
 				<property childid="Job" anim="ChangeModeAlpha"/>
+				<property childid="EquipmentArrowUp" anim="ChangeModeAlpha"/>
+				<property childid="EquipmentArrowDown" anim="ChangeModeAlpha"/>
 				<property childid="BasicInfo/ChangeAbility/Uncheck" anim="PressAnyKeys"/>
 				<property childid="BasicInfo/ChangeClass/Uncheck" anim="PressAnyKeys"/>
 				<property childid="BasicInfo/CP/ProgressBar/Frame" anim="PressAnyKeys"/>
@@ -1140,6 +1162,8 @@
 				<property childid="Profession" anim="ChangeModeAlpha"/>
 				<property childid="Salary" anim="ChangeModeAlpha"/>
 				<property childid="Job" anim="ChangeModeAlpha"/>
+				<property childid="EquipmentArrowUp" anim="ChangeModeAlpha"/>
+				<property childid="EquipmentArrowDown" anim="ChangeModeAlpha"/>
 				<property childid="BasicInfo/ChangeAbility/Uncheck" anim="PressAnyKeys"/>
 				<property childid="BasicInfo/ChangeClass/Uncheck" anim="PressAnyKeys"/>
 				<property childid="BasicInfo/CP/ProgressBar/Frame" anim="PressAnyKeys"/>
@@ -1250,6 +1274,8 @@
 				<property childid="Profession" anim="ChangeModeAlpha"/>
 				<property childid="Salary" anim="ChangeModeAlpha"/>
 				<property childid="Job" anim="ChangeModeAlpha"/>
+				<property childid="EquipmentArrowUp" anim="ChangeModeAlpha"/>
+				<property childid="EquipmentArrowDown" anim="ChangeModeAlpha"/>
 				<property childid="BasicInfo/ChangeAbility/Uncheck" anim="PressAnyKeys"/>
 				<property childid="BasicInfo/ChangeClass/Uncheck" anim="PressAnyKeys"/>
 				<property childid="BasicInfo/CP/ProgressBar/Frame" anim="PressAnyKeys"/>
@@ -1726,7 +1752,7 @@
 			<Scripts>
 				<property childid="Frame/List/Bottom/Yes" event="Clicked" script="OnCommonMessageBoxYes"/>
 				<property childid="Frame/List/Bottom/No" event="Clicked" script="OnCommonMessageBoxNo"/>
-				<property childid="this" event="KeyUp" script="OnCommonMessageBoxYseNoShortCut"/>
+				<property childid="this" event="KeyUp" script="OnCommonMessageBoxYesNoShortCut"/>
 			</Scripts>
 		</class>
 		<class name="CommonResourceFinder" File="CommonResourceFinder.layout"/>
@@ -2708,6 +2734,11 @@
 				<property childid="Inventory/Sort_Option" event="Clicked" script="ShowInventoryCustomSort"/>
 				<property childid="Inventory/Filter" event="ListSelectionAccepted" script="OnInventoryFilterOptionChanged"/>
 				<property childid="Inventory/Filter_Option" event="Clicked" script="ShowInventoryCustomFilter"/>
+				<property childid="Inventory/SearchFilter" event="TextChanged" script="OnSearchFilterTextChanged"/>
+				<property childid="Inventory/SearchFilter" event="Updated" script="OnSearchFilterUpdated"/>
+				<property childid="Inventory/SearchFilter" event="Search" script="ReloadInventoryList"/>
+				<property childid="Inventory/SearchFilter" event="Activated" script="OnSearchFilterActivated"/>
+				<property childid="Inventory/SearchFilter" event="Deactivated" script="OnSearchFilterDeactivated"/>
 			</Scripts>
 			<Animations>
 				<property childid="this" anim="Show_Alpha_Window_NoTop"/>
@@ -2793,8 +2824,8 @@
 				<property childid="Inventory/Tab/List/Tab6/Uncheck" anim="PressAnyKeys"/>
 				<property childid="Inventory/Tab/List/Tab7/Uncheck" anim="PressAnyKeys"/>
 				<property childid="Inventory/Sync" anim="WarehouseSynchronized"/>
-				<property childid="Inventory/Sync" anim="WarehouseSynchroniing"/>
-				<property childid="Inventory/SyncText" anim="WarehouseSynchroniingText"/>
+				<property childid="Inventory/Sync" anim="WarehouseSynchronizing"/>
+				<property childid="Inventory/SyncText" anim="WarehouseSynchronizingText"/>
 				<property childid="Inventory/SyncText" anim="WarehouseSynchronizedText"/>
 			</Animations>
 		</class>
@@ -4037,7 +4068,7 @@
 			<Scripts>
 				<property childid="this" event="MouseEntersSurface" script="EnterToolTip_Line" sound="mouseover_5.wav"/>
 				<property childid="this" event="MouseLeavesSurface" script="LeaveToolTip_Line"/>
-				<property childid="this" event="MouseButtonUp" sound="click_1.wav"/>
+				<property childid="this" event="MouseButtonUp" script="OnMailElementMouseUp" sound="click_1.wav"/>
 				<property childid="this" event="SelectStateChanged" script="OnSelectMailElement"/>
 				<property childid="Check" event="SelectStateChanged" script="OnSelectMailElementCheck"/>
 			</Scripts>
@@ -4184,6 +4215,7 @@
 				<property childid="MasteryExtractAll" event="MouseEntersSurface" script="EnterFormationButton" sound="mouseover_1.wav"/>
 				<property childid="MasteryExtractAll" event="MouseLeavesSurface" script="LevaeFormationButton"/>
 				<property childid="Mastery/SearchFilter" event="TextChanged" script="OnMasterySearchFilterTextChanged"/>
+				<property childid="Mastery/SearchFilter" event="Updated" script="OnMasterySearchFilterUpdated"/>
 				<property childid="Mastery/SearchFilter" event="Activated" script="OnSearchFilterActivated"/>
 				<property childid="Mastery/SearchFilter" event="Deactivated" script="OnSearchFilterDeactivated"/>
 				<property childid="Mastery/SearchMode" event="ListSelectionAccepted" script="OnMasterySearchModeChanged"/>
@@ -4363,6 +4395,11 @@
 				<property childid="MasteryInventory/Next" event="MouseButtonUp" script="Next_CurrentMasteryInventory" sound="mouseover_5.wav"/>
 				<property childid="MasteryInventory/Exit" event="MouseEntersSurface" sound="mouseover_1.wav"/>
 				<property childid="MasteryInventory/Exit" event="Clicked" script="KeyShortCutInLobby_T" sound="click_2.wav"/>
+				<property childid="MasteryInventory/SearchFilter" event="TextChanged" script="OnSearchFilterTextChanged"/>
+				<property childid="MasteryInventory/SearchFilter" event="Updated" script="OnSearchFilterUpdated"/>
+				<property childid="MasteryInventory/SearchFilter" event="Search" script="ReloadMasteryInventory"/>
+				<property childid="MasteryInventory/SearchFilter" event="Activated" script="OnSearchFilterActivated"/>
+				<property childid="MasteryInventory/SearchFilter" event="Deactivated" script="OnSearchFilterDeactivated"/>
 			</Scripts>
 			<Animations>
 				<property childid="this" anim="Show_Alpha_Window"/>
@@ -4419,6 +4456,11 @@
 				<property childid="MasteryInventory/Next" event="MouseButtonUp" script="Next_CurrentModuleInventory" sound="mouseover_5.wav"/>
 				<property childid="MasteryInventory/Exit" event="MouseEntersSurface" sound="mouseover_1.wav"/>
 				<property childid="MasteryInventory/Exit" event="Clicked" script="KeyShortCutInLobby_U" sound="click_2.wav"/>
+				<property childid="MasteryInventory/SearchFilter" event="TextChanged" script="OnSearchFilterTextChanged"/>
+				<property childid="MasteryInventory/SearchFilter" event="Updated" script="OnSearchFilterUpdated"/>
+				<property childid="MasteryInventory/SearchFilter" event="Search" script="ReloadModuleInventory"/>
+				<property childid="MasteryInventory/SearchFilter" event="Activated" script="OnSearchFilterActivated"/>
+				<property childid="MasteryInventory/SearchFilter" event="Deactivated" script="OnSearchFilterDeactivated"/>
 			</Scripts>
 			<Animations>
 				<property childid="this" anim="Show_Alpha_Window"/>
@@ -4541,6 +4583,7 @@
 				<property childid="MasterySet/Exit" event="MouseLeavesSurface" script="LevaeFormationButton"/>
 				<property childid="MasterySet/Exit" event="Clicked" script="HideMasterySetList" sound="click_character.wav"/>
 				<property childid="MasterySet/ViewMode" event="ListSelectionAccepted" script="MasterySetViewModeChanged"/>
+				<property childid="MasterySet/SortMode" event="ListSelectionAccepted" script="MasterySetSortModeChanged"/>
 				<property childid="MasterySet/SearchFilter" event="TextChanged" script="OnMasterySetSearchFilterTextChanged"/>
 				<property childid="MasterySet/SearchFilter" event="Updated" script="OnMasterySetSearchFilterUpdate"/>
 				<property childid="MasterySet/SearchFilter" event="Activated" script="OnSearchFilterActivated"/>
@@ -4617,6 +4660,40 @@
 				<property childid="Frame/List/Bottom/Confirm" event="Clicked" script="MessageBoxOK"/>
 				<property childid="Frame/List/Content/message" event="TextChanged" script="ResizeMessageBox"/>
 				<property childid="this" event="KeyUp" script="MessageBoxOnKeyUp"/>
+			</Scripts>
+		</class>
+		<class name="WeaponCostume" File="WeaponCostume.layout">
+			<ChildWindows>
+				<property childid="List/Info/Slot1" layout="WeaponCostumeComponent"/>
+				<property childid="List/Info/Slot2" layout="WeaponCostumeComponent"/>
+				<property childid="List/Info/Slot3" layout="WeaponCostumeComponent"/>
+				<property childid="List/Info/Slot4" layout="WeaponCostumeComponent"/>
+				<property childid="List/Info/Slot5" layout="WeaponCostumeComponent"/>
+				<property childid="List/Info/Slot6" layout="WeaponCostumeComponent"/>
+				<property childid="List/Info/Slot7" layout="WeaponCostumeComponent"/>
+				<property childid="List/Info/Slot8" layout="WeaponCostumeComponent"/>
+				<property childid="List/Info/Slot9" layout="WeaponCostumeComponent"/>
+				<property childid="List/Info/Slot10" layout="WeaponCostumeComponent"/>
+			</ChildWindows>
+			<Scripts>
+				<property childid="this" event="Shown" sound="openwindow_2.wav"/>
+				<property childid="this" event="Hidden" script="OnWeaponCostumeHidden"/>
+				<property childid="List/Current/Item" event="MouseEntersSurface" script="EnterToolTip_Item" sound="mouseover_1.wav"/>
+				<property childid="List/Current/Item" event="MouseLeavesSurface" script="LeaveToolTip_Item"/>
+				<property childid="List/Info/Prev" event="MouseButtonUp" script="Prev_WeaponCostumeList" sound="mouseover_5.wav"/>
+				<property childid="List/Info/Next" event="MouseButtonUp" script="Next_WeaponCostumeList" sound="mouseover_5.wav"/>
+				<property childid="List/Title/Exit" event="MouseEntersSurface" sound="mouseover_1.wav"/>
+				<property childid="List/Title/Exit" event="Clicked" script="HideWeaponCostume" sound="click_character.wav"/>
+				<property childid="List/Bottom/Button" event="MouseEntersSurface" sound="mouseover_1.wav"/>
+				<property childid="List/Bottom/Button" event="Clicked" script="ExecuteChangeWeaponCostume" sound="click_character.wav"/>
+			</Scripts>
+		</class>
+		<class name="WeaponCostumeComponent" File="WeaponCostumeComponent.layout">
+			<Scripts>
+				<property childid="this" event="MouseEntersSurface" script="EnterToolTip_WeaponCostume" sound="mouseover_1.wav"/>
+				<property childid="this" event="MouseLeavesSurface" script="LeaveToolTip_WeaponCostume"/>
+				<property childid="this" event="MouseButtonUp" sound="mouseover_5.wav"/>
+				<property childid="this" event="SelectStateChanged" script="WeaponCostumeComponentSelectChanged"/>
 			</Scripts>
 		</class>
 		<class name="Minimap" File="Minimap.layout">
@@ -5226,6 +5303,11 @@
 				<property childid="OK" event="Clicked" script="CloseWindow"/>
 			</Scripts>
 		</class>
+		<class name="QuestReplayMission" File="QuestReplayMission.layout" AllowToggleInterface="false">
+			<Scripts>
+				<property childid="this" event="Callback" script="CPP_OnDialogCallback"/>
+			</Scripts>
+		</class>
 		<class name="PropertyEditor" File="PropertyEditor.layout" AutoRescale="true">
 			<ChildWindows>
 				<property childid="Sheet" layout="PropertySheet"/>
@@ -5373,8 +5455,9 @@
 		<class name="SavedMissionInfo" File="SavedMissionInfo.layout">
 			<Scripts>
 				<property childid="Box/Yes" event="Clicked" script="OnCommonMessageBoxYes"/>
-				<property childid="Box/No" event="Clicked" script="OnCommonMessageBoxNo"/>
-				<property childid="this" event="KeyUp" script="OnCommonMessageBoxYseNoShortCut"/>
+				<property childid="Box/No" event="Clicked" script="OnCommonMessageBoxCancel"/>
+				<property childid="Box/Surrender" event="Clicked" script="OnCommonMessageBoxNo"/>
+				<property childid="this" event="KeyUp" script="OnCommonMessageBoxYesCancelShortCut"/>
 			</Scripts>
 			<Animations>
 				<property childid="Box/Right" anim="PressAnyKeys"/>
@@ -5417,10 +5500,7 @@
 				<property childid="Title" event="StartShow" sound="Shown_Profile.wav"/>
 				<property childid="Title_Information" event="StartShow" sound="Shown_Profile2.wav"/>
 				<property childid="Title_Name" event="StartShow" sound="Shown_Profile3.wav"/>
-				<property childid="Title_CharacterStartMastery" event="StartShow" sound="Shown_Profile2.wav"/>
-				<property childid="Content_CharacterStartMastery" event="StartShow" sound="Shown_Profile4.wav"/>
-				<property childid="Title_CharacterMasterySelect" event="StartShow" sound="Shown_Profile2.wav"/>
-				<property childid="Content_CharacterMasterySelect" event="StartShow" sound="Shown_Profile5.wav"/>
+				<property childid="Title_License" event="StartShow" sound="Shown_Profile2.wav"/>
 				<property childid="Accept" event="MouseEntersSurface" sound="mouseover_1.wav"/>
 				<property childid="Enroll_Effect" event="AnimationEnded" script="ScoutRoster_Enroll_Effect_AnimationEnded"/>
 				<property childid="Accept" event="Clicked" script="OnRosterProfileConfirm" sound="click_5.wav"/>
@@ -5429,6 +5509,12 @@
 				<property childid="this" anim="Show_Alpha_Window"/>
 				<property childid="this" anim="Hide_Alpha_Window"/>
 			</Animations>
+		</class>
+		<class name="RosterProfile_License" File="RosterProfile_License.layout">
+			<Scripts>
+				<property childid="this" event="MouseEntersSurface" sound="mouseover_5.wav" script="EnterToolTip_Simple"/>
+				<property childid="this" event="MouseLeavesSurface" script="LeaveToolTip_Simple"/>
+			</Scripts>
 		</class>
 		<class name="ScoutRoster_Mastery" File="SetCompanyInfo_Mastery.layout">
 			<Scripts>
@@ -5584,10 +5670,14 @@
 				<property childid="Accept" event="Callback" script="CPP_OnDialogCallback"/>
 				<property childid="Accept" event="KeyUp" script="DialogCompanyNameKeyUp"/>
 				<property childid="Edit" event="TextChanged" script="CompanyNameEditHandler" sound="Keys_Input2.wav"/>
+				<property childid="Edit" event="Updated" script="SetCompanyInfoNameEditUpdated"/>
 			</Scripts>
 			<Animations>
 				<property childid="this" anim="Show_Alpha_Window"/>
 				<property childid="this" anim="Hide_Alpha_Window"/>
+				<property childid="DuplicationCheck" anim="CompanyNameTestSucceeded"/>
+				<property childid="DuplicationCheck" anim="CompanyNameTestFailed"/>
+				<property childid="DuplicationCheck" anim="WarehouseSynchronizing"/>
 			</Animations>
 		</class>
 		<class name="SetCompanyInfo_Mastery" File="SetCompanyInfo_Mastery.layout">
@@ -6376,6 +6466,12 @@
 				<property childid="Technique/TechniqueList/List/Slot22" layout="TechniqueComponent"/>
 				<property childid="Technique/TechniqueList/List/Slot23" layout="TechniqueComponent"/>
 				<property childid="Technique/TechniqueList/List/Slot24" layout="TechniqueComponent"/>
+				<property childid="Technique/TechniqueList/List/Slot25" layout="TechniqueComponent"/>
+				<property childid="Technique/TechniqueList/List/Slot26" layout="TechniqueComponent"/>
+				<property childid="Technique/TechniqueList/List/Slot27" layout="TechniqueComponent"/>
+				<property childid="Technique/TechniqueList/List/Slot28" layout="TechniqueComponent"/>
+				<property childid="Technique/TechniqueList/List/Slot29" layout="TechniqueComponent"/>
+				<property childid="Technique/TechniqueList/List/Slot30" layout="TechniqueComponent"/>
 			</ChildWindows>
 			<Scripts>
 				<property childid="Technique/TechniqueList/Prev" event="MouseButtonUp" script="Prev_CurrentTechniqueList" sound="mouseover_5.wav"/>
@@ -6410,6 +6506,7 @@
 				<property childid="Technique/Exit" event="Clicked" script="HideTechniqueInfo" sound="click_character.wav"/>
 				<property childid="Technique/TechniqueDetail/Sort" event="ListSelectionAccepted" script="OnTechniqueSortingOptionChanged"/>
 				<property childid="Technique/TechniqueList/SearchFilter" event="TextChanged" script="OnTechniqueListSearchFilterTextChanged"/>
+				<property childid="Technique/TechniqueList/SearchFilter" event="Updated" script="OnTechniqueListSearchFilterUpdated"/>
 				<property childid="Technique/TechniqueList/SearchFilter" event="Activated" script="OnTechniqueListSearchFilterActivated"/>
 				<property childid="Technique/TechniqueList/SearchFilter" event="Deactivated" script="OnTechniqueListSearchFilterDeactivated"/>
 				<property childid="Technique/TechniqueList/SearchMode" event="ListSelectionAccepted" script="OnTechniqueListSearchModeChanged"/>
@@ -6417,6 +6514,10 @@
 				<property childid="Technique/TechniqueList/Filter_ActiveFavorite" event="MouseLeavesSurface" script="LeaveToolTip_Simple"/>
 				<property childid="Technique/TechniqueList/Filter_ActiveFavorite" event="SelectStateChanged" script="OnTechniqueFilterActiveFavoriteToggled"/>
 				<property childid="Technique/TechniqueList/FilterMode" event="ListSelectionAccepted" script="OnTechniqueListFilterModeChanged"/>
+				<property childid="Technique/TechniqueDetail/CraftCount_Add" event="MouseEntersSurface" sound="mouseover_1.wav"/>
+				<property childid="Technique/TechniqueDetail/CraftCount_Add" event="MouseButtonUp" script="AddTechniqueMasteryCraftCount" sound="click_character.wav"/>
+				<property childid="Technique/TechniqueDetail/CraftCount_Subtract" event="MouseEntersSurface" sound="mouseover_1.wav"/>
+				<property childid="Technique/TechniqueDetail/CraftCount_Subtract" event="MouseButtonUp" script="SubtractTechniqueMasteryCraftCount" sound="click_character.wav"/>
 			</Scripts>
 			<Animations>
 				<property childid="this" anim="Show_Alpha_Window3"/>
@@ -6469,6 +6570,12 @@
 				<property childid="Technique/TechniqueList/List/Slot22" layout="TechniqueComponent"/>
 				<property childid="Technique/TechniqueList/List/Slot23" layout="TechniqueComponent"/>
 				<property childid="Technique/TechniqueList/List/Slot24" layout="TechniqueComponent"/>
+				<property childid="Technique/TechniqueList/List/Slot25" layout="TechniqueComponent"/>
+				<property childid="Technique/TechniqueList/List/Slot26" layout="TechniqueComponent"/>
+				<property childid="Technique/TechniqueList/List/Slot27" layout="TechniqueComponent"/>
+				<property childid="Technique/TechniqueList/List/Slot28" layout="TechniqueComponent"/>
+				<property childid="Technique/TechniqueList/List/Slot29" layout="TechniqueComponent"/>
+				<property childid="Technique/TechniqueList/List/Slot30" layout="TechniqueComponent"/>
 			</ChildWindows>
 			<Scripts>
 				<property childid="Technique/TechniqueList/Prev" event="MouseButtonUp" script="Prev_CurrentTechniqueList" sound="mouseover_5.wav"/>
@@ -6499,11 +6606,16 @@
 				<property childid="Technique/Exit" event="Clicked" script="HideModuleInfo" sound="click_character.wav"/>
 				<property childid="Technique/TechniqueDetail/Sort" event="ListSelectionAccepted" script="OnTechniqueSortingOptionChanged"/>
 				<property childid="Technique/TechniqueList/SearchFilter" event="TextChanged" script="OnTechniqueListSearchFilterTextChanged"/>
+				<property childid="Technique/TechniqueList/SearchFilter" event="Updated" script="OnTechniqueListSearchFilterUpdated"/>
 				<property childid="Technique/TechniqueList/SearchFilter" event="Activated" script="OnTechniqueListSearchFilterActivated"/>
 				<property childid="Technique/TechniqueList/SearchFilter" event="Deactivated" script="OnTechniqueListSearchFilterDeactivated"/>
 				<property childid="Technique/TechniqueList/SearchMode" event="ListSelectionAccepted" script="OnTechniqueListSearchModeChanged"/>
 				<property childid="Technique/TechniqueList/Filter_ActiveFavorite" event="SelectStateChanged" script="OnTechniqueFilterActiveFavoriteToggled"/>
 				<property childid="Technique/TechniqueList/FilterMode" event="ListSelectionAccepted" script="OnTechniqueListFilterModeChanged"/>
+				<property childid="Technique/TechniqueDetail/CraftCount_Add" event="MouseEntersSurface" sound="mouseover_1.wav"/>
+				<property childid="Technique/TechniqueDetail/CraftCount_Add" event="MouseButtonUp" script="AddTechniqueMasteryCraftCount" sound="click_character.wav"/>
+				<property childid="Technique/TechniqueDetail/CraftCount_Subtract" event="MouseEntersSurface" sound="mouseover_1.wav"/>
+				<property childid="Technique/TechniqueDetail/CraftCount_Subtract" event="MouseButtonUp" script="SubtractTechniqueMasteryCraftCount" sound="click_character.wav"/>
 			</Scripts>
 			<Animations>
 				<property childid="this" anim="Show_Alpha_Window3"/>
@@ -6648,6 +6760,15 @@
 				<property childid="Title/Text" anim="Show_TextSideViewAnimation"/>
 			</Animations>
 		</class>
+		<class name="ToolTip_WeaponCostume" File="ToolTip_WeaponCostume.layout" Layer="Tooltip">
+			<Scripts>
+				<property childid="this" event="Updated" script="WeaponCostumeUpdated"/>
+			</Scripts>
+			<Animations>
+				<property childid="this" anim="Show_Tooltip_Simple"/>
+				<property childid="this" anim="Hide_Tooltip_Simple"/>
+			</Animations>
+		</class>
 		<class name="Tooltip_TitleCompoent" File="Tooltip_TitleCompoent.layout" Layer="Tooltip"/>
 		<class name="TooltipText" File="TooltipText.layout">
 			<UserDatas>
@@ -6770,6 +6891,12 @@
 				<property childid="Troublemaker/TroublemakerList/List/Slot40" layout="TroublemakerComponent"/>
 			</ChildWindows>
 			<Scripts>
+				<property childid="Troublemaker/TroublemakerList/Search" event="TextChanged" script="OnSearchFilterTextChanged"/>
+				<property childid="Troublemaker/TroublemakerList/Search" event="Updated" script="OnSearchFilterUpdated"/>
+				<property childid="Troublemaker/TroublemakerList/Search" event="Search" script="OnTroublemakerSearch"/>
+				<property childid="Troublemaker/TroublemakerList/Search" event="Activated" script="OnSearchFilterActivated"/>
+				<property childid="Troublemaker/TroublemakerList/Search" event="Deactivated" script="OnSearchFilterDeactivated"/>
+				<property childid="Troublemaker/TroublemakerList/SearchType" event="ListSelectionAccepted" script="OnTroublemakerSearchTypeChanged"/>
 				<property childid="Troublemaker/TroublemakerDetail/Tab/Tab1" event="MouseEntersSurface" script="Troublemaker_EnterToolTip_Line"/>
 				<property childid="Troublemaker/TroublemakerDetail/Tab/Tab1" event="MouseLeavesSurface" script="Troublemaker_LeaveToolTip_Line"/>
 				<property childid="Troublemaker/TroublemakerDetail/Tab/Tab1" event="SelectStateChanged" script="TroublemakerDetailGradeChanged"/>
@@ -7359,6 +7486,7 @@
 				<property childid="Upgrade/DismantleAll" event="Clicked" script="ItemDismantleAllButtonClicked" sound="click_2.wav"/>
 				<property childid="this" event="Callback" script="CPP_OnDialogCallback"/>
 				<property childid="Upgrade/SearchFilter" event="TextChanged" script="OnUpgradeSearchFilterTextChanged"/>
+				<property childid="Upgrade/SearchFilter" event="Updated" script="OnUpgradeSearchFilterUpdated"/>
 				<property childid="Upgrade/SearchFilter" event="Activated" script="OnSearchFilterActivated"/>
 				<property childid="Upgrade/SearchFilter" event="Deactivated" script="OnSearchFilterDeactivated"/>
 			</Scripts>
@@ -7686,12 +7814,24 @@
 			<Scripts>
 				<property childid="Front/Secondary/ViewOriginal" event="SelectStateChanged" script="OnTranslationBackLogViewModeChanged"/>
 				<property childid="Front/Secondary/ViewTranslated" event="SelectStateChanged" script="OnTranslationBackLogViewModeChanged"/>
+				<property childid="Front/Secondary/ViewEnglish" event="SelectStateChanged" script="OnTranslationBackLogViewModeChanged"/>
 				<property childid="Front/Secondary/Apply" event="Clicked" script="OnTranslationBackLogApplyChange"/>
 				<property childid="Front/Secondary/Revert" event="Clicked" script="OnTranslationBackLogRevertChange"/>
 				<property childid="Front/Secondary/Back" event="Clicked" script="OnTranslationBackLogBack"/>
 				<property childid="Front/Secondary/Translating" event="TextChanged" script="OnTranslationBackLogMarkDirty"/>
 				<property childid="Front/Primary/SearchDictionary" event="Clicked" script="OnTranslationBackLogSearchDictionary"/>
 				<property childid="Front/Primary/RecentMessage" event="Clicked" script="OnTranslationBackLogRecentMessage"/>
+				<property childid="Front/Primary/Mastery" event="Clicked" script="OnTranslationBackLogSubMode"/>
+				<property childid="Front/Primary/Ability" event="Clicked" script="OnTranslationBackLogSubMode"/>
+				<property childid="Front/Primary/Item" event="Clicked" script="OnTranslationBackLogSubMode"/>
+				<property childid="Front/Primary/Buff" event="Clicked" script="OnTranslationBackLogSubMode"/>
+				<property childid="Front/Primary/PrevPage" event="MouseButtonUp" script="OnTranslationBackLogPrevPage"/>
+				<property childid="Front/Primary/NextPage" event="MouseButtonUp" script="OnTranslationBackLogNextPage"/>
+				<property childid="Front/Primary/SearchFilter" event="TextChanged" script="OnSearchFilterTextChanged"/>
+				<property childid="Front/Primary/SearchFilter" event="Updated" script="OnSearchFilterUpdated"/>
+				<property childid="Front/Primary/SearchFilter" event="Search" script="OnSearchTranslationBackLog"/>
+				<property childid="Front/Primary/SearchFilter" event="Activated" script="OnSearchFilterActivated"/>
+				<property childid="Front/Primary/SearchFilter" event="Deactivated" script="OnSearchFilterDeactivated"/>
 				<property childid="Front/Secondary/SummitLang" event="ListSelectionAccepted" script="OnTranslationBackLogSummitLangChanged"/>
 				<property childid="Exit" event="Clicked" script="HideTranslationBackLog"/>
 			</Scripts>
@@ -7703,6 +7843,8 @@
 		<class name="TranslationBackLogElem" File="TranslationBackLogElem.layout" AutoRescale="true">
 			<Scripts>
 				<property childid="this" event="MouseButtonUp" script="OnTranslationBackLogElemClicked"/>
+				<property childid="this" event="MouseEntersSurface" script="OnTranslationBackLogElemMouseEnter"/>
+				<property childid="this" event="MouseLeavesSurface" script="OnTranslationBackLogElemMouseLeave"/>
 			</Scripts>
 			<Animations>
 				<property childid="this" anim="TranslationBackLogElemLowlight"/>
@@ -7713,8 +7855,6 @@
 			<Scripts>
 			</Scripts>
 			<Animations>
-				<property childid="this" anim="TranslationBackLogElemLowlight"/>
-				<property childid="this" anim="TranslationBackLogElemHighlight"/>
 			</Animations>
 		</class>
 		<class name="TranslationBackLogSuggestion" File="TranslationBackLogSuggestion.layout" AutoRescale="true">

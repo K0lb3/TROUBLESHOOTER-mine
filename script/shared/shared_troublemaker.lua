@@ -163,7 +163,7 @@ function CP_MasterySet_HavingTroublemakers(masterySet, arg)
 			end
 			return true;
 		end)() then
-			table.insert(retTroublemakers, key);
+			retTroublemakers[key] = true;
 		end
 	end
 	return retTroublemakers;

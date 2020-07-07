@@ -80,6 +80,9 @@
 		<class name="CorrosionPoison" Title="부식독"/>
 	</idspace>
 	<idspace id="BuffGroup">
+		<schema>
+			<rule property="BuffList" type="calculated" default="CalculatedProperty_BuffGroupBuffList"/>
+		</schema>
 		<class name="Bleeding" Title="출혈"/>
 		<class name="Rage" Title="분노"/>
 		<class name="Bruise" Title="타박상"/>
@@ -312,6 +315,7 @@
 			<rule property="DischargeOnHit" type="bool" default="false"/>
 			<rule property="DischargeOnHitDamageType" type="string" default="None"/>
 			<rule property="DischargeOnMove" type="bool" default="false"/>
+			<rule property="DischargeOnAbility" type="bool" default="false"/>
 			<rule property="DischargeOnUnconscious" type="bool" default="false"/>
 			<rule property="Dodge" type="calculated" default="CalculatedProperty_BuffStatus"/>
 			<rule property="DuplicateApplyChecker" type="number" default="0"/>
@@ -449,6 +453,7 @@
 			<rule property="Healable" type="bool" default="true"/>
 			<rule property="HoldingAbility" type="table" subtype="string"/>
 			<rule property="AbilityHolderKey" type="string"/>
+			<rule property="HideModel" type="bool" default="false"/>
 			<rule property="HPChangeFunction" type="function" default="FunctionProperty_BuffHPChangeFunction"/>
 			<rule property="HPChangeFunctionArg" type="string" default="None"/>
 			<rule property="HPChangeFunctionType" type="string" default="Fixed"/>
@@ -637,6 +642,7 @@
 				<property Event="UnitTurnAcquired_Self" Script="TurnAcquired_Common" Order="1"/>
 				<property Event="UnitTurnAcquired_Self" Script="ResetModifyAbilityAccuracyFromEventCache" Order="0"/>
 				<property Event="UnitTurnEnd_Self" Script="TurnEnd_Common" Order="1"/>
+				<property Event="PreAbilityUsing_Self" Script="PreAbilityUsing_Common" Order="1"/>
 				<property Event="PreAbilityUsing_Self" Script="ResetModifyAbilityAccuracyFromEventCache" Order="0"/>
 				<property Event="AbilityUsed_Self" Script="AbilityUsed_Common" Order="1"/>
 				<property Event="UnitMoved_Self" Script="Moved_Common" Order="1"/>
@@ -865,7 +871,7 @@
 				<property Event="BuffRemoved_Self" Script="Buff_HavingPrey_BuffRemoved" Order="1"/>
 			</EventHandler>
 		</class>
-		<class name="BeingFished" Title="[!Ignore]먹이가 됨" Desc_Base="포식자의 먹이가 되었습니다." FinalDesc2="" IsAutoTooltip="false" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/CarryingBodies" SubImage="Buff/CarryingBodies" ImmuneRace="" NeutralizeBuff="None" Type="System" SubType="None" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" Assistable="true" Invisible="true" BreakType="None" UseActionController="false" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" RemoveWhenDead="false" Untargetable="true" ScentOfPresence="false" UseAddedMessage="false">
+		<class name="BeingFished" Title="[!Ignore]먹이가 됨" Desc_Base="포식자의 먹이가 되었습니다." FinalDesc2="" IsAutoTooltip="false" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/CarryingBodies" SubImage="Buff/CarryingBodies" ImmuneRace="" NeutralizeBuff="None" Type="System" SubType="None" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="false" Attackable="false" Assistable="false" Invisible="true" BreakType="None" UseActionController="true" ActionController="DoNothingAI" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" RemoveWhenDead="false" Untargetable="true" ScentOfPresence="false" UseAddedMessage="false">
 			<EventHandler>
 				<property Event="BuffAdded_Self" Script="Buff_BeingFished_BuffAdded" Order="1"/>
 				<property Event="BuffRemoved_Self" Script="Buff_BeingFished_BuffRemoved" Order="1"/>
@@ -1077,8 +1083,13 @@
 				<property Event="UnitTurnStart_Self" Script="Buff_MaxStackAddBuff_UnitTurnStart" Order="1"/>
 			</EventHandler>
 		</class>
+		<class name="Pressure" Title="압박" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/Pressure" SubImage="Buff/Pressure" ImmuneRace="Machine" NeutralizeBuff="None" Type="Debuff" SubType="Mental" Group="Panic" Stack="true" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_Dodge="-10" Base_Block="-10" AbilityBuffEvent="Beginning">
+			<Effects>
+				<property ParticleName="Particles/Dandylion/Buff_Pressure" ParticlePos="_BOTTOM_" DirectClear="true"/>
+			</Effects>
+		</class>
 		<class name="Charm" Title="매료" Desc_Base="해당 상태를 일으킨 대상을 공격 시, 해당 대상에게 입히는 피해량이 $ApplyAmountValue$ 감소합니다. 해당 상태를 일으킨 대상이 $Dead$이 되면 $AddBuffName$ 상태가 됩니다. " FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/Charm" SubImage="Buff/Charm" ImmuneRace="Machine" NeutralizeBuff="None" Type="Debuff" SubType="Mental" Group="Panic" Stack="false" Base_MaxStack="1" Turn="3" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_Accuracy="-10" Brainwashing="true" AbilityBuffEvent="FinalHit"/>
-		<class name="BreakWeapon" Title="무기 파괴" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="true" IsTurnShow="true" IsHelpShow="true" Image="Buff/BreakWeapon" SubImage="Buff/BreakWeapon" ImmuneRace="" NeutralizeBuff="None" Type="Debuff" SubType="Aura" Group="Equipment" Stack="true" Base_MaxStack="5" Turn="3" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Eval_Accuracy="-5 * Lv" Eval_IncreaseEquipment_AttackPower="-25 * Lv" AbilityBuffEvent="FinalHit">
+		<class name="BreakWeapon" Title="무기 파괴" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="true" IsTurnShow="true" IsHelpShow="true" Image="Buff/BreakWeapon" SubImage="Buff/BreakWeapon" ImmuneRace="" NeutralizeBuff="None" Type="Debuff" SubType="Aura" Group="Equipment" Stack="true" Base_MaxStack="4" Turn="3" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Eval_Accuracy="-5 * Lv" Eval_IncreaseEquipment_AttackPower="-25 * Lv" AbilityBuffEvent="FinalHit">
 			<Effects>
 				<property ParticleName="Particles/Dandylion/Buff_BreakWeapon" ParticlePos="Center" DirectClear="true"/>
 			</Effects>
@@ -1129,12 +1140,20 @@
 				<property Event="UnitTurnStart_Self" Script="Buff_EntanglingMists_UnitTurnStart" Order="1"/>
 			</EventHandler>
 		</class>
-		<class name="StickyWeb" Title="끈끈한 거미줄" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/StickyWeb" SubImage="Buff/StickyWeb" ImmuneRace="" NeutralizeBuff="None" Type="Debuff" SubType="Physical" Group="None" Stack="false" Base_MaxStack="1" Turn="3" Movable="false" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_Dodge="-10" Eval_Block="-10" AbilityBuffEvent="FinalHit">
+		<class name="StickyWeb" Title="끈끈한 거미줄" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/StickyWeb" SubImage="Buff/StickyWeb" ImmuneRace="" NeutralizeBuff="None" Type="Debuff" SubType="Physical" Group="None" Stack="false" Base_MaxStack="1" Turn="3" Movable="false" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_Dodge="-20" Eval_Block="-20" AbilityBuffEvent="FinalHit">
 			<Effects>
 				<property ParticleName="Particles/Dandylion/Buff_StickyWeb" ParticlePos="_BOTTOM_" DirectClear="true"/>
 			</Effects>
 			<MeshEffects>
 				<property MeshName="Spider_Web_Hold.mesh" ParticlePos="_BOTTOM_" Animation="bg"/>
+			</MeshEffects>
+		</class>
+		<class name="CocoonWeb" Title="거미줄 고치" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/CocoonWeb" SubImage="Buff/CocoonWeb" ImmuneRace="" NeutralizeBuff="None" Type="Debuff" SubType="Physical" Group="None" Stack="false" Base_MaxStack="1" Turn="3" Movable="false" Attackable="false" BreakType="None" UseActionController="true" ActionController="NoAction" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_Dodge="-10" Eval_Block="-10" AbilityBuffEvent="BuffAdded" HideModel="true">
+			<Effects>
+				<property ParticleName="Particles/Dandylion/Buff_StickyWeb" ParticlePos="_BOTTOM_" DirectClear="true"/>
+			</Effects>
+			<MeshEffects>
+				<property MeshName="Spider_Cocoon.mesh" ParticlePos="_BOTTOM_" Animation="bg" InheritVisible="false"/>
 			</MeshEffects>
 		</class>
 		<class name="Hibernation" Title="겨울잠" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="false" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/Hibernation" SubImage="Buff/Hibernation" ImmuneRace="Machine" NeutralizeBuff="None" Type="Debuff" SubType="Mental" Group="Sleep" Stack="false" Base_MaxStack="1" Turn="3" Movable="true" Attackable="false" BreakType="None" UseActionController="true" ActionController="DoNothingAI" UseHPModifier="true" DischargeOnHit="true" HPModifyTiming="Start" HPChangeHitType="Hibernation" Base_HPChangeValue="33" HPChangeFunctionType="Owner" HPChangeFunctionArg="MaxHP" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_SightRange="-20" Unconscious="true" UseActionControlMessage="false">
@@ -1153,12 +1172,12 @@
 				<property ParticleName="Particles/Dandylion/Buff_Shotdown" ParticlePos="Head" DirectClear="true"/>
 			</Effects>
 		</class>
-		<class name="BattleCry" Title="전투의 외침" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/BattleCry" SubImage="Buff/BattleCry" ImmuneRace="" NeutralizeBuff="None" Type="Debuff" SubType="Mental" Group="Noise" Stack="false" Base_MaxStack="1" Turn="3" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_Accuracy="-20" AbilityBuffEvent="Ending">
+		<class name="BattleCry" Title="전투의 외침" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/BattleCry" SubImage="Buff/BattleCry" ImmuneRace="Machine" NeutralizeBuff="None" Type="Debuff" SubType="Mental" Group="Noise" Stack="false" Base_MaxStack="1" Turn="3" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_Accuracy="-20" AbilityBuffEvent="Ending">
 			<Effects>
 				<property ParticleName="Particles/Dandylion/Buff_BattleCry" ParticlePos="Head" DirectClear="true"/>
 			</Effects>
 		</class>
-		<class name="WitchCurse" Title="마녀의 저주" Desc_Base="턴 시작 시 무작위의 부정적인 상태로 변경됩니다." FinalDesc="$Perano$낮은 확률로 반대의 효과가 발생합니다.$Blue_ON$" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/WitchCurse" SubImage="Buff/WitchCurse" ImmuneRace="" NeutralizeBuff="None" Type="Debuff" SubType="Mental" Group="None" Stack="false" Base_MaxStack="1" Turn="1" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" AbilityBuffEvent="FinalHit">
+		<class name="WitchCurse" Title="마녀의 저주" Desc_Base="턴 시작 시 무작위의 부정적인 상태로 변경됩니다." FinalDesc="$Perano$낮은 확률로 반대의 효과가 발생합니다.$Blue_ON$" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/WitchCurse" SubImage="Buff/WitchCurse" ImmuneRace="Machine" NeutralizeBuff="None" Type="Debuff" SubType="Mental" Group="None" Stack="false" Base_MaxStack="1" Turn="1" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" AbilityBuffEvent="FinalHit">
 			<Effects>
 				<property ParticleName="Particles/Dandylion/Buff_WitchCurse" ParticlePos="_TOP_" DirectClear="true"/>
 			</Effects>
@@ -1166,7 +1185,7 @@
 				<property Event="UnitTurnStart_Self" Script="Buff_WitchCurse_UnitTurnStart" Order="1"/>
 			</EventHandler>
 		</class>
-		<class name="WitchBless" Title="마녀의 축복" Desc_Base="턴 시작 시 무작위의 긍정적인 상태로 변경됩니다." FinalDesc="$Perano$낮은 확률로 반대의 효과가 발생합니다.$Blue_ON$" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/WitchBless" SubImage="Buff/WitchBless" ImmuneRace="" NeutralizeBuff="None" Type="Buff" SubType="Mental" Group="None" Stack="false" Base_MaxStack="1" Turn="1" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" AbilityBuffEvent="FinalHit">
+		<class name="WitchBless" Title="마녀의 축복" Desc_Base="턴 시작 시 무작위의 긍정적인 상태로 변경됩니다." FinalDesc="$Perano$낮은 확률로 반대의 효과가 발생합니다.$Blue_ON$" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/WitchBless" SubImage="Buff/WitchBless" ImmuneRace="Machine" NeutralizeBuff="None" Type="Buff" SubType="Mental" Group="None" Stack="false" Base_MaxStack="1" Turn="1" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" AbilityBuffEvent="FinalHit">
 			<Effects>
 				<property ParticleName="Particles/Dandylion/Buff_WitchBless" ParticlePos="_BOTTOM_" DirectClear="true"/>
 			</Effects>
@@ -1201,6 +1220,14 @@
 			</Effects>
 		</class>
 		<class name="BadSmell_Aura" Title="[!Ignore]악취오라" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="false" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/BadSmell" SubImage="Buff/BadSmell" ImmuneRace="Machine" NeutralizeBuff="None" Type="System" SubType="None" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" AuraBuff="BadSmell" AuraRange="Box1_ExSelf" AuraRelation="Any" RemoveWhenDead="false" UseAddedMessage="false" AbilityBuffEvent="FinalHit"/>
+		<class name="Illumination" Title="[!Ignore]발광" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/Illumination" SubImage="Buff/Illumination" ImmuneRace="" NeutralizeBuff="None" Type="System" SubType="None" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" UseAddedMessage="false" AbilityBuffEvent="FinalHit">
+			<EventHandler>
+				<property Event="BuffAdded_Self" Script="Buff_InvalidateFieldEffect_BuffAdded" Order="1"/>
+				<property Event="BuffRemoved_Self" Script="Buff_InvalidateFieldEffect_BuffRemoved" Order="1"/>
+			</EventHandler>
+		</class>
+		<class name="Illumination_Aura" Title="[!Ignore]발광오라" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="false" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/Illumination" SubImage="Buff/Illumination" ImmuneRace="" NeutralizeBuff="None" Type="System" SubType="None" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" AuraBuff="Illumination" AuraRange="Sphere6" AuraRelation="Any" RemoveWhenDead="false" UseAddedMessage="false" AbilityBuffEvent="FinalHit"/>
+		<class name="Illumination_Aura_Exposure" Title="[!Ignore]발광오라 - 위치노출" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="false" IsAutoStatusTooltip="false" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/Illumination" SubImage="Buff/Illumination" ImmuneRace="" NeutralizeBuff="None" Type="System" SubType="None" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" AuraBuff="ExposurePosition" AuraRange="Sphere6" AuraRelation="Enemy" AuraAllowNonOccupyTarget="true" UseAddedMessage="false" AbilityBuffEvent="FinalHit" AuraAllowUntargetable="true"/>
 		<class name="Immolation_Fire" Title="분노의 불꽃" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/Immolation_Fire" SubImage="Buff/Immolation_Fire" ImmuneRace="" NeutralizeBuff="None" Type="Buff" SubType="Aura" Group="Fire" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" UseTurnStartCostEater="true" IsRemoveBuffByCostEater="true" UseTurnStartCostEaterType="Rage" UseTurnStartCostAmount="-10" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" AuraBuff="Burn" AuraRange="Box1_ExSelf" AuraRelation="Enemy" AuraType="ThroughRange" AbilityBuffEvent="FinalHit">
 			<Effects>
 				<property ParticleName="Particles/Dandylion/Buff_Immolation_Fire" ParticlePos="_BOTTOM_" DirectClear="true"/>
@@ -1357,7 +1384,7 @@ $Perano$적군$Blue_ON$: '길 잃은 영혼'이 적군에게 옮겨가 저주를
 				<property Event="UnitDetected" Script="Buff_Trick_UnitDetected" Order="1"/>
 			</EventHandler>
 		</class>
-		<class name="Luck" Title="행운" Desc_Base="$ApplyAmountValue$회의 공격 혹은 피격에 대하여 공격 시 치명타 피해를 입히고, 피격 시 회피합니다." FinalDesc="$Yellow$서로 행운 상태인 경우, 공격자가 우선권을 가집니다." FinalDesc2="$Perano$해당 효과는 최후의 저항 특성 발동을 제외한 모든 전투 상황에서 우선합니다." IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/Luck" SubImage="Buff/Luck" ImmuneRace="" NeutralizeBuff="None" Type="Buff" SubType="Mental" Group="Luck" Stack="false" Base_MaxStack="1" Turn="1" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_ApplyAmount="1" AbilityBuffEvent="FinalHit">
+		<class name="Luck" Title="행운" Desc_Base="$ApplyAmountValue$회의 공격 혹은 피격에 대하여 공격 시 치명타 피해를 입히고, 피격 시 회피합니다." FinalDesc="$Yellow$서로 행운 상태인 경우, 공격자가 우선권을 가집니다." FinalDesc2="$Perano$해당 효과는 최후의 저항 특성 발동을 제외한 모든 전투 상황에서 우선합니다." IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/Luck" SubImage="Buff/Luck" ImmuneRace="Machine" NeutralizeBuff="None" Type="Buff" SubType="Mental" Group="Luck" Stack="false" Base_MaxStack="1" Turn="1" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_ApplyAmount="1" AbilityBuffEvent="FinalHit">
 			<Effects>
 				<property ParticleName="Particles/Dandylion/Buff_Luck" ParticlePos="Top" DirectClear="true"/>
 			</Effects>
@@ -1424,14 +1451,13 @@ $Perano$적군$Blue_ON$: '길 잃은 영혼'이 적군에게 옮겨가 저주를
 				<property Event="UnitDead" Script="Buff_Imprinting_UnitDead" Order="8"/>
 			</EventHandler>
 		</class>
-		<class name="IronWall" Title="강철 장벽" Desc_Base="" FinalDesc="$Perano$이동 혹은 어빌리티 사용 시 해당 상태가 해제됩니다. " FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/IronWall" SubImage="Buff/IronWall" ImmuneRace="" NeutralizeBuff="None" Type="Buff" SubType="Aura" Group="Concentration" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" Coverable="false" BreakType="None" UseTurnStartCostEater="true" IsRemoveBuffByCostEater="false" UseTurnStartCostEaterType="Vigor" UseTurnStartCostAmount="10" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_ApplyAmount="10" Base_Armor="100" Base_Block="100" IsCoverableObject="true" AuraBuff="Conceal_For_Aura" AuraRange="Sphere1_ExSelf" DischargeOnMove="true" DischargeOnUnconscious="true" AIAttractiveRange="1.4" AIAttractivePower="150" AbilityBuffEvent="Beginning" TriggerSound="Buff/Overwatch.ogg">
+		<class name="IronWall" Title="강철 장벽" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/IronWall" SubImage="Buff/IronWall" ImmuneRace="" NeutralizeBuff="None" Type="Buff" SubType="Aura" Group="Concentration" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" Coverable="false" BreakType="None" UseTurnStartCostEater="true" IsRemoveBuffByCostEater="false" UseTurnStartCostEaterType="Vigor" UseTurnStartCostAmount="10" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_ApplyAmount="10" Base_Armor="100" Base_Block="100" IsCoverableObject="true" AuraBuff="Conceal_For_Aura" AuraRange="Sphere1_ExSelf" DischargeOnMove="true" DischargeOnAbility="true" DischargeOnUnconscious="true" AIAttractiveRange="1.4" AIAttractivePower="150" AbilityBuffEvent="Beginning" TriggerSound="Buff/Overwatch.ogg">
 			<Effects>
 				<property ParticleName="Particles/Dandylion/Buff_IronWall" ParticlePos="_CENTER_" DirectClear="true"/>
 			</Effects>
 			<EventHandler>
 				<property Event="BuffAdded_Self" Script="Buff_IronWall_BuffAdded" Order="1"/>
 				<property Event="BuffRemoved_Self" Script="Buff_IronWall_BuffRemoved" Order="1"/>
-				<property Event="PreAbilityUsing_Self" Script="Buff_IronWall_PreAbilityUsing" Order="1"/>
 			</EventHandler>
 		</class>
 		<class name="FrostWall" Title="서리 외장" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/FrostWall" SubImage="Buff/FrostWall" ImmuneRace="" NeutralizeBuff="None" Type="Buff" SubType="Aura" Group="Ice" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" Coverable="false" BreakType="None" UseTurnStartCostEater="true" IsRemoveBuffByCostEater="true" UseTurnStartCostEaterType="Vigor" UseTurnStartCostAmount="-10" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_Armor="100" Base_Resistance="100" Base_Block="100" IsCoverableObject="true" AuraBuff="Conceal_For_Aura" AuraRange="Sphere1_ExSelf" DischargeOnMove="false" DischargeOnUnconscious="true" AIAttractiveRange="1.4" AIAttractivePower="150" AbilityBuffEvent="Beginning" TriggerSound="Buff/Overwatch.ogg">
@@ -1522,9 +1548,7 @@ $Perano$적군$Blue_ON$: '길 잃은 영혼'이 적군에게 옮겨가 저주를
 				<property ParticleName="Particles/Dandylion/Buff_Immortality" ParticlePos="Head" DirectClear="true"/>
 			</Effects>
 		</class>
-		<class name="MachineFury" Title="폭주" Desc_Base="모든 피해량에 대해 자신의 최대 체력보다 낮으면 피해를 입지 않습니다. 해당 상태가 해제되면 $Dead$이 됩니다.
-
-$AddBuffName$$Perano$ 상태에 면역이 됩니다." FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/MachineFury" SubImage="Buff/MachineFury" ImmuneRace="Human, Beast" NeutralizeBuff="Shutdown" Type="State" SubType="Aura" Group="None" Stack="false" Base_MaxStack="1" Turn="3" Movable="true" Attackable="true" BreakType="None" UseActionController="true" ActionController="ConfusionAI" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_Speed="30" Base_Accuracy="30" Base_CriticalStrikeChance="30" Base_CriticalStrikeDeal="100" LoseIFF="true" AbilityBuffEvent="Beginning">
+		<class name="MachineFury" Title="폭주" Desc_Base="모든 피해량에 대해 자신의 최대 체력보다 낮으면 피해를 입지 않습니다. 해당 상태가 해제되면 $Dead$이 됩니다." FinalDesc="$AddBuffName$ 상태에 면역이 됩니다." FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/MachineFury" SubImage="Buff/MachineFury" ImmuneRace="Human, Beast" NeutralizeBuff="Shutdown" Type="State" SubType="Aura" Group="None" Stack="false" Base_MaxStack="1" Turn="3" Movable="true" Attackable="true" BreakType="None" UseActionController="true" ActionController="ConfusionAI" AddBuff="Shutdown" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_Speed="30" Base_Accuracy="30" Base_CriticalStrikeChance="30" Base_CriticalStrikeDeal="100" LoseIFF="true" AbilityBuffEvent="Beginning">
 			<Effects>
 				<property ParticleName="Particles/Dandylion/Buff_MachineFury" ParticlePos="Top" DirectClear="true"/>
 			</Effects>
@@ -1538,7 +1562,7 @@ $AddBuffName$$Perano$ 상태에 면역이 됩니다." FinalDesc="" FinalDesc2=""
 				<property ParticleName="Particles/Dandylion/Buff_Rage" ParticlePos="Chest" DirectClear="true"/>
 			</Effects>
 		</class>
-		<class name="Berserker" Title="광분" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/Berserker" SubImage="Buff/Berserker" ImmuneRace="Machine " NeutralizeBuff="None" Type="Buff" SubType="Mental" Group="Rage" Stack="true" Base_MaxStack="4" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Eval_IncreaseDamage="Lv * 50" AbilityBuffEvent="BuffAdded">
+		<class name="Berserker" Title="광분" Desc_Base="공격 어빌리티를 사용 할 경우, 해당 상태는 자동 해제 됩니다." FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/Berserker" SubImage="Buff/Berserker" ImmuneRace="Machine " NeutralizeBuff="None" Type="Buff" SubType="Mental" Group="Rage" Stack="true" Base_MaxStack="4" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Eval_IncreaseDamage="Lv * 50" AbilityBuffEvent="BuffAdded">
 			<Effects>
 				<property ParticleName="Particles/Dandylion/Buff_Berserker" ParticlePos="Chest" DirectClear="true"/>
 			</Effects>
@@ -1557,10 +1581,13 @@ $AddBuffName$$Perano$ 상태에 면역이 됩니다." FinalDesc="" FinalDesc2=""
 				<property ParticleName="Particles/Dandylion/Buff_Hatred" ParticlePos="Chest" DirectClear="true"/>
 			</Effects>
 		</class>
-		<class name="Frenzy" Title="광폭화" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/Frenzy" SubImage="Buff/Frenzy" ImmuneRace="Machine " NeutralizeBuff="None" Type="Debuff" SubType="Mental" Group="Rage" Stack="false" Base_MaxStack="1" Turn="5" Movable="true" Attackable="true" BreakType="None" UseActionController="true" ActionController="ConfusionAI" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_RegenVigor="30" Base_RegenRage="30" Base_Speed="100" Base_Armor="-300" Base_Resistance="-300" Base_IncreaseDamage="50" LoseIFF="true" AbilityBuffEvent="BuffAdded">
+		<class name="Frenzy" Title="광폭화" Desc_Base="턴 시작 시, 자신의 시야 내 공격할 대상이 없으면 현재 턴을 종료하고 해당 상태가 해제됩니다." FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/Frenzy" SubImage="Buff/Frenzy" ImmuneRace="Machine " NeutralizeBuff="None" Type="Debuff" SubType="Mental" Group="Rage" Stack="false" Base_MaxStack="1" Turn="5" Movable="true" Attackable="true" BreakType="None" UseActionController="true" ActionController="ConfusionAI" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_RegenVigor="30" Base_RegenRage="30" Base_Speed="100" Base_Armor="-300" Base_Resistance="-300" Base_IncreaseDamage="50" LoseIFF="true" AbilityBuffEvent="BuffAdded">
 			<Effects>
 				<property ParticleName="Particles/Dandylion/Buff_Frenzy" ParticlePos="Chest" DirectClear="true"/>
 			</Effects>
+			<EventHandler>
+				<property Event="UnitTurnStart_Self" Script="Buff_Frenzy_UnitTurnStart" Order="1"/>
+			</EventHandler>
 		</class>
 		<class name="Giant" Title="거대화" Desc_Base="대상의 몸이 커지며 적에 대한 위협 수치가 $ApplyAmountValue$ 증가합니다." FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/Giant" SubImage="Buff/Giant" ImmuneRace="Machine " NeutralizeBuff="None" Type="State" SubType="Aura" Group="None" Stack="true" Base_MaxStack="1" Turn="9" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="Percent" ApplyAmountType2="None" ApplyAmountType3="None" Base_ApplyAmount="100" Base_MaxHP="500" Base_MoveDist="1" Base_AttackPower="500" Base_Dodge="-30" AbilityBuffEvent="BuffAdded">
 			<Effects>
@@ -1784,12 +1811,33 @@ $AddBuffName$$Perano$ 상태에 면역이 됩니다." FinalDesc="" FinalDesc2=""
 				<property ParticleName="Particles/Dandylion/Buff_InformationDistortion" ParticlePos="_TOP_" DirectClear="true"/>
 			</Effects>
 		</class>
+		<class name="InformationFalsification_Aura" Title="정보 변조" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="false" IsAutoStatusTooltip="false" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/InformationFalsification" SubImage="Buff/InformationFalsification" ImmuneRace="" NeutralizeBuff="None" Type="System" SubType="None" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" AuraBuff="InformationFalsification" AuraRange="Sphere4" RemoveWhenDead="false" UseAddedMessage="false" AbilityBuffEvent="Beginning" Base_InfoRange="Sphere4" InfoRangeType="Self" InfoRangeRelation="Ally"/>
+		<class name="InformationFalsification_Aura_Range6" Title="정보 변조" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="false" IsAutoStatusTooltip="false" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/InformationFalsification" SubImage="Buff/InformationFalsification" ImmuneRace="" NeutralizeBuff="None" Type="System" SubType="None" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" AuraBuff="InformationFalsification" AuraRange="Sphere6" RemoveWhenDead="false" UseAddedMessage="false" AbilityBuffEvent="Beginning" Base_InfoRange="Sphere6" InfoRangeType="Self" InfoRangeRelation="Ally"/>
+		<class name="InformationFalsification" Title="정보 변조" Desc_Base="기계인 적에게 위협 수치가 $ApplyAmountValue$ 감소합니다. 자신이 받는 피해의 속성과 이전에 받은 피해의 속성이 동일하면, 현재 자신이 받는 피해량이 $ApplyAmountValue2$ 감소합니다. " FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/InformationFalsification" SubImage="Buff/InformationFalsification" ImmuneRace="" NeutralizeBuff="None" Type="Buff" SubType="Aura" Group="Info" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="Percent" ApplyAmountType2="Percent" ApplyAmountType3="None" Base_ApplyAmount="50" Base_ApplyAmount2="15" Base_Dodge="10" IsAuraSlave="true" UseAddedMessage="false" AbilityBuffEvent="Beginning">
+			<Effects>
+				<property ParticleName="Particles/Dandylion/Buff_InformationDistortion" ParticlePos="_TOP_" DirectClear="true"/>
+			</Effects>
+			<EventHandler>
+				<property Event="AbilityAffected" Script="Buff_InformationFalsification_AbilityAffected" Order="1"/>
+			</EventHandler>
+		</class>
 		<class name="InformationConstruction_Aura" Title="정보 구축" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="false" IsAutoStatusTooltip="false" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/InformationConstruction" SubImage="Buff/InformationConstruction" ImmuneRace="" NeutralizeBuff="None" Type="System" SubType="None" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" AuraBuff="InformationConstruction" AuraRange="Sphere4" RemoveWhenDead="false" UseAddedMessage="false" AbilityBuffEvent="Beginning" Base_InfoRange="Sphere4" InfoRangeType="Self" InfoRangeRelation="Ally"/>
 		<class name="InformationConstruction_Aura_Range6" Title="정보 구축" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="false" IsAutoStatusTooltip="false" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/InformationConstruction" SubImage="Buff/InformationConstruction" ImmuneRace="" NeutralizeBuff="None" Type="System" SubType="None" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" AuraBuff="InformationConstruction" AuraRange="Sphere6" RemoveWhenDead="false" UseAddedMessage="false" AbilityBuffEvent="Beginning" Base_InfoRange="Sphere6" InfoRangeType="Self" InfoRangeRelation="Ally"/>
 		<class name="InformationConstruction" Title="정보 구축" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/InformationConstruction" SubImage="Buff/InformationConstruction" ImmuneRace="" NeutralizeBuff="None" Type="Buff" SubType="Aura" Group="Info" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_Accuracy="10" Base_CriticalStrikeChance="10" AbilityBuffEvent="BuffAdded">
 			<Effects>
 				<property ParticleName="Particles/Dandylion/Buff_InformationConstruction" ParticlePos="_BOTTOM_" DirectClear="true"/>
 			</Effects>
+		</class>
+		<class name="InformationSharing_Aura" Title="정보 공유" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="false" IsAutoStatusTooltip="false" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/InformationSharing" SubImage="Buff/InformationSharing" ImmuneRace="" NeutralizeBuff="None" Type="System" SubType="None" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" AuraBuff="InformationSharing" AuraRange="Sphere4" RemoveWhenDead="false" UseAddedMessage="false" AbilityBuffEvent="Beginning" Base_InfoRange="Sphere4" InfoRangeType="Self" InfoRangeRelation="Ally"/>
+		<class name="InformationSharing_Aura_Range6" Title="정보 공유" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="false" IsAutoStatusTooltip="false" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/InformationSharing" SubImage="Buff/InformationSharing" ImmuneRace="" NeutralizeBuff="None" Type="System" SubType="None" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" AuraBuff="InformationSharing" AuraRange="Sphere6" RemoveWhenDead="false" UseAddedMessage="false" AbilityBuffEvent="Beginning" Base_InfoRange="Sphere6" InfoRangeType="Self" InfoRangeRelation="Ally"/>
+		<class name="InformationSharing" Title="정보 공유" Desc_Base="아군의 이전 공격을 회피 혹은 방어한 적을 공격할 경우, 명중률, 치명타 적중률이 $ApplyAmountValue$ 증가합니다." FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/InformationSharing" SubImage="Buff/InformationSharing" ImmuneRace="" NeutralizeBuff="None" Type="Buff" SubType="Aura" Group="Info" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="Percent" ApplyAmountType2="None" ApplyAmountType3="None" Base_ApplyAmount="10" Base_Accuracy="10" Base_CriticalStrikeChance="10" AbilityBuffEvent="BuffAdded">
+			<Effects>
+				<property ParticleName="Particles/Dandylion/Buff_InformationConstruction" ParticlePos="_BOTTOM_" DirectClear="true"/>
+			</Effects>
+			<EventHandler>
+				<property Event="AbilityUsed" Script="Buff_InformationSharing_AbilityUsed" Order="1"/>
+				<property Event="UnitTurnEnd_Self" Script="Buff_InformationSharing_UnitTurnEnd" Order="1"/>
+			</EventHandler>
 		</class>
 		<class name="Regeneration" Title="재생" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/Regeneration" SubImage="Buff/Regeneration" ImmuneRace="Machine" NeutralizeBuff="None" Type="Buff" SubType="Physical" Group="Earth" Stack="false" Base_MaxStack="1" Turn="3" Movable="true" Attackable="true" BreakType="None" UseHPModifier="true" HPModifyTiming="Start" HPChangeHitType="Heal" Base_HPChangeValue="15" HPChangeFunctionType="Owner" HPChangeFunctionArg="MaxHP" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None">
 			<Effects>
@@ -1810,13 +1858,25 @@ $AddBuffName$$Perano$ 상태에 면역이 됩니다." FinalDesc="" FinalDesc2=""
 		<class name="ChaserMode" Title="추격" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/ChaserMode" SubImage="Buff/ChaserMode" ImmuneRace="" NeutralizeBuff="None" Type="State" SubType="Aura" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_SightRange="1" Base_MoveDist="1" Base_Speed="20" Base_Accuracy="-10" RemoveWhenDead="false" AbilityBuffEvent="FinalHit"/>
 		<class name="StakeMode" Title="사냥" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/StakeMode" SubImage="Buff/StakeMode" ImmuneRace="" NeutralizeBuff="None" Type="State" SubType="Aura" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_Accuracy="10" Base_CriticalStrikeChance="15" Base_CriticalStrikeDeal="25" RemoveWhenDead="false" AbilityBuffEvent="FinalHit"/>
 		<class name="Tima_AttackMode" Title="흉폭한 티마" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/Tima_AttackMode" SubImage="Buff/Tima_AttackMode" ImmuneRace="" NeutralizeBuff="None" Type="State" SubType="Aura" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_Accuracy="10" Base_IncreaseDamage="25" RemoveWhenDead="false" AbilityBuffEvent="FinalHit"/>
+		<class name="Tima_AttackMode2" Title="흉폭한 계승자" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/Tima_AttackMode2" SubImage="Buff/Tima_AttackMode2" ImmuneRace="" NeutralizeBuff="None" Type="State" SubType="Aura" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_Accuracy="20" Base_IncreaseDamage="30" RemoveWhenDead="false" AbilityBuffEvent="FinalHit"/>
 		<class name="Tima_ChaserMode" Title="재빠른 티마" Desc_Base="돌진 이동을 하거나 돌진 공격으로 $ApplyAmountValue$칸 이상 이동하면 다음 턴 대기 시간이 $ApplyAmountValue2$만큼 줄어듭니다." FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/Tima_ChaserMode" SubImage="Buff/Tima_ChaserMode" ImmuneRace="" NeutralizeBuff="None" Type="State" SubType="Aura" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_ApplyAmount="8" Base_ApplyAmount2="10" Base_SightRange="1" Base_MoveDist="1" Base_Speed="20" Base_Accuracy="-10" RemoveWhenDead="false" AbilityBuffEvent="FinalHit">
 			<EventHandler>
 				<property Event="UnitMoved_Self" Script="Buff_Tima_ChaserMode_UnitMoved" Order="1"/>
 			</EventHandler>
 		</class>
+		<class name="Tima_ChaserMode2" Title="재빠른 계승자" Desc_Base="돌진 이동을 하거나 돌진 공격으로 $ApplyAmountValue$칸 이상 이동하면 다음 턴 대기 시간이 $ApplyAmountValue2$만큼 줄어듭니다." FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/Tima_ChaserMode2" SubImage="Buff/Tima_ChaserMode2" ImmuneRace="" NeutralizeBuff="None" Type="State" SubType="Aura" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_ApplyAmount="8" Base_ApplyAmount2="15" Base_SightRange="1" Base_MoveDist="1" Base_Speed="25" RemoveWhenDead="false" AbilityBuffEvent="FinalHit">
+			<EventHandler>
+				<property Event="UnitMoved_Self" Script="Buff_Tima_ChaserMode_UnitMoved" Order="1"/>
+			</EventHandler>
+		</class>
 		<class name="Tima_DefenceMode" Title="굳건한 티마" Desc_Base="적에게 입는 피해량이 $ApplyAmountValue$ 감소합니다." FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/Tima_DefenceMode" SubImage="Buff/Tima_DefenceMode" ImmuneRace="" NeutralizeBuff="None" Type="State" SubType="Aura" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="Percent" ApplyAmountType2="None" ApplyAmountType3="None" Base_ApplyAmount="25" Base_Block="10" RemoveWhenDead="false" AbilityBuffEvent="FinalHit"/>
+		<class name="Tima_DefenceMode2" Title="굳건한 계승자" Desc_Base="적에게 입는 피해량이 $ApplyAmountValue$ 감소합니다." FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/Tima_DefenceMode2" SubImage="Buff/Tima_DefenceMode2" ImmuneRace="" NeutralizeBuff="None" Type="State" SubType="Aura" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="Percent" ApplyAmountType2="None" ApplyAmountType3="None" Base_ApplyAmount="30" Base_Block="20" RemoveWhenDead="false" AbilityBuffEvent="FinalHit"/>
 		<class name="Tima_CheckMode" Title="영리한 티마" Desc_Base="적 공격 회피 시, 다음 턴 대기 시간이 $ApplyAmountValue$만큼 줄어듭니다." FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/Tima_CheckMode" SubImage="Buff/Tima_CheckMode" ImmuneRace="" NeutralizeBuff="None" Type="State" SubType="Aura" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_ApplyAmount="10" Base_Speed="20" Base_Dodge="10" RemoveWhenDead="false" AbilityBuffEvent="FinalHit">
+			<EventHandler>
+				<property Event="AbilityAffected" Script="Buff_Tima_CheckMode_AbilityAffected" Order="1"/>
+			</EventHandler>
+		</class>
+		<class name="Tima_CheckMode2" Title="영리한 계승자" Desc_Base="적 공격 회피 시, 다음 턴 대기 시간이 $ApplyAmountValue$만큼 줄어듭니다." FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/Tima_CheckMode2" SubImage="Buff/Tima_CheckMode2" ImmuneRace="" NeutralizeBuff="None" Type="State" SubType="Aura" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_ApplyAmount="15" Base_Speed="25" Base_Dodge="15" RemoveWhenDead="false" AbilityBuffEvent="FinalHit">
 			<EventHandler>
 				<property Event="AbilityAffected" Script="Buff_Tima_CheckMode_AbilityAffected" Order="1"/>
 			</EventHandler>
@@ -1944,24 +2004,24 @@ $LimeGold$- 매 턴 시작 시
 			</EventHandler>
 		</class>
 		<class name="AntiFreezingInfusionSolution" Title="항동결 수액" Desc_Base="얼어붙은 피 발생을 억제합니다. 억제할 때마다 해당 상태의 레벨이 $ApplyAmountValue$ 감소합니다." FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/AntiFreezingInfusionSolution" SubImage="Buff/AntiFreezingInfusionSolution" ImmuneRace="" NeutralizeBuff="None" Type="Buff" SubType="Aura" Group="None" Stack="true" Base_MaxStack="99999" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_ApplyAmount="1" RemoveWhenDead="false" UseAddedMessage="false" AbilityBuffEvent="Beginning"/>
-		<class name="ChanceOfVictory" Title="승기" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="true" IsTurnShow="true" IsHelpShow="true" Image="Buff/ChanceOfVictory" SubImage="Buff/ChanceOfVictory" ImmuneRace="" NeutralizeBuff="None" Type="Buff" SubType="Mental" Group="Happiness" Stack="true" Base_MaxStack="10" Turn="3" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Eval_Accuracy="Lv" Eval_CriticalStrikeChance="Lv" Eval_IncreaseDamage="Lv" AbilityBuffEvent="Beginning">
+		<class name="ChanceOfVictory" Title="승기" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="true" IsTurnShow="true" IsHelpShow="true" Image="Buff/ChanceOfVictory" SubImage="Buff/ChanceOfVictory" ImmuneRace="Machine" NeutralizeBuff="None" Type="Buff" SubType="Mental" Group="Happiness" Stack="true" Base_MaxStack="10" Turn="3" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Eval_Speed="Lv" Eval_Accuracy="Lv" Eval_CriticalStrikeChance="Lv" Eval_IncreaseDamage="Lv" AbilityBuffEvent="Beginning">
 			<Effects>
 				<property ParticleName="Particles/Dandylion/Buff_ChanceOfVictory" ParticlePos="_CENTER_" DirectClear="true"/>
 			</Effects>
 		</class>
-		<class name="Brave" Title="용기" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/Brave" SubImage="Buff/Brave" ImmuneRace="" NeutralizeBuff="None" Type="Buff" SubType="Mental" Group="Happiness" Stack="false" Base_MaxStack="1" Turn="3" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_AttackPower="100, 200, 300" AbilityBuffEvent="BuffAdded">
+		<class name="Brave" Title="용기" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/Brave" SubImage="Buff/Brave" ImmuneRace="Machine" NeutralizeBuff="None" Type="Buff" SubType="Mental" Group="Happiness" Stack="false" Base_MaxStack="1" Turn="3" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_AttackPower="100, 200, 300" AbilityBuffEvent="BuffAdded">
 			<Effects>
 				<property ParticleName="Particles/Dandylion/Buff_Brave" ParticlePos="_BOTTOM_" DirectClear="true"/>
 				<property ParticleName="Particles/Dandylion/Brave" ParticlePos="_BOTTOM_" DirectClear="true"/>
 			</Effects>
 		</class>
-		<class name="Faith" Title="신뢰" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/Faith" SubImage="Buff/Faith" ImmuneRace="" NeutralizeBuff="None" Type="Buff" SubType="Mental" Group="Happiness" Stack="false" Base_MaxStack="1" Turn="3" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_ESPPower="100, 200, 300" AbilityBuffEvent="BuffAdded">
+		<class name="Faith" Title="신뢰" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/Faith" SubImage="Buff/Faith" ImmuneRace="Machine" NeutralizeBuff="None" Type="Buff" SubType="Mental" Group="Happiness" Stack="false" Base_MaxStack="1" Turn="3" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_ESPPower="100, 200, 300" AbilityBuffEvent="BuffAdded">
 			<Effects>
 				<property ParticleName="Particles/Dandylion/Buff_Faith" ParticlePos="_BOTTOM_" DirectClear="true"/>
 				<property ParticleName="Particles/Dandylion/Faith" ParticlePos="_BOTTOM_" DirectClear="true"/>
 			</Effects>
 		</class>
-		<class name="Calm" Title="평정" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/Calm" SubImage="Buff/Calm" ImmuneRace="" NeutralizeBuff="None" Type="Buff" SubType="Mental" Group="Happiness" Stack="false" Base_MaxStack="1" Turn="3" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_Dodge="10" Eval_Block="10" AbilityBuffEvent="BuffAdded">
+		<class name="Calm" Title="평정" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/Calm" SubImage="Buff/Calm" ImmuneRace="Machine" NeutralizeBuff="None" Type="Buff" SubType="Mental" Group="Happiness" Stack="false" Base_MaxStack="1" Turn="3" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_Dodge="10" Eval_Block="10" AbilityBuffEvent="BuffAdded">
 			<Effects>
 				<property ParticleName="Particles/Dandylion/Buff_Calm" ParticlePos="_BOTTOM_" DirectClear="true"/>
 				<property ParticleName="Particles/Dandylion/Calm" ParticlePos="_BOTTOM_" DirectClear="true"/>
@@ -1980,6 +2040,8 @@ $LimeGold$- 매 턴 시작 시
 		</class>
 		<class name="Charisma" Title="카리스마" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="false" IsAutoStatusTooltip="false" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="false" Image="Buff/Zeal" SubImage="Buff/Zeal" ImmuneRace="" NeutralizeBuff="None" Type="System" SubType="None" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" AuraBuff="Zeal" AuraRange="Sphere4" AuraRelation="Ally" RemoveWhenDead="false" UseAddedMessage="false" AbilityBuffEvent="Beginning"/>
 		<class name="Charisma_Range6" Title="카리스마" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="false" IsAutoStatusTooltip="false" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="false" Image="Buff/Zeal" SubImage="Buff/Zeal" ImmuneRace="" NeutralizeBuff="None" Type="System" SubType="None" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" AuraBuff="Zeal" AuraRange="Sphere6" AuraRelation="Ally" RemoveWhenDead="false" UseAddedMessage="false" AbilityBuffEvent="Beginning"/>
+		<class name="Oppression" Title="억압" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="false" IsAutoStatusTooltip="false" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="false" Image="Buff/Pressure" SubImage="Buff/Pressure" ImmuneRace="" NeutralizeBuff="None" Type="System" SubType="None" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" AuraBuff="Pressure" AuraRange="Sphere4" AuraRelation="Enemy" RemoveWhenDead="false" UseAddedMessage="false" AbilityBuffEvent="Beginning"/>
+		<class name="Oppression_Range6" Title="억압" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="false" IsAutoStatusTooltip="false" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="false" Image="Buff/Pressure" SubImage="Buff/Pressure" ImmuneRace="" NeutralizeBuff="None" Type="System" SubType="None" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" AuraBuff="Pressure" AuraRange="Sphere6" AuraRelation="Enemy" RemoveWhenDead="false" UseAddedMessage="false" AbilityBuffEvent="Beginning"/>
 		<class name="Scourge" Title="스콜지" Desc_Base="복용하면 해당 상태 해제시 전투 불능이 됩니다." FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/Scourge" SubImage="Buff/Scourge" ImmuneRace="Machine" NeutralizeBuff="None" Type="Buff" SubType="Physical" Group="Ice" Stack="false" Base_MaxStack="1" Turn="3" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_Speed="10" Base_Armor="999" Eval_Resistance="999" AbilityBuffEvent="Beginning">
 			<Effects>
 				<property ParticleName="Particles/Dandylion/Buff_Scourge" ParticlePos="Pelvis" DirectClear="true"/>
@@ -2015,7 +2077,7 @@ $LimeGold$- 매 턴 시작 시
 				<property Event="AbilityUsed" Script="Buff_Hero_AbilityUsed" Order="1"/>
 			</EventHandler>
 		</class>
-		<class name="Grimreaper" Title="사신" Desc_Base="다음 공격 어빌리티에 피격된 대상은 $AddBuffName$ 상태가 됩니다." FinalDesc="$Yellow$공격 어빌리티 사용 시, 적이 전투불능이 되면 성공 여부와 상관없이 해제됩니다." FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/Grimreaper" SubImage="Buff/Grimreaper" ImmuneRace="" NeutralizeBuff="None" Type="Buff" SubType="Mental" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="Death" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None">
+		<class name="Grimreaper" Title="사신" Desc_Base="다음 공격 어빌리티에 피격된 대상은 $AddBuffName$ 상태가 됩니다." FinalDesc="$Yellow$공격 어빌리티 사용 시, 적이 전투불능이 되면 성공 여부와 상관없이 해제됩니다." FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/Grimreaper" SubImage="Buff/Grimreaper" ImmuneRace="Machine" NeutralizeBuff="None" Type="Buff" SubType="Mental" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" AddBuff="Death" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None">
 			<Effects>
 				<property ParticleName="Particles/Dandylion/Buff_Grimreaper" ParticlePos="_BOTTOM_" DirectClear="true"/>
 			</Effects>
@@ -2028,25 +2090,25 @@ $LimeGold$- 매 턴 시작 시
 				<property Event="AbilityUsed_Self" Script="Buff_Flash_AbilityUsed" Order="1"/>
 			</EventHandler>
 		</class>
-		<class name="Reinforcement" Title="강화" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/Reinforcement" SubImage="Buff/Reinforcement" ImmuneRace="" NeutralizeBuff="None" Type="Buff" SubType="Mental" Group="Concentration" Stack="false" Base_MaxStack="1" Turn="3" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_AttackPower="300" AbilityBuffEvent="BuffAdded">
+		<class name="Reinforcement" Title="강화" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/Reinforcement" SubImage="Buff/Reinforcement" ImmuneRace="Machine" NeutralizeBuff="None" Type="Buff" SubType="Mental" Group="Concentration" Stack="false" Base_MaxStack="1" Turn="3" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_AttackPower="300" AbilityBuffEvent="BuffAdded">
 			<Effects>
 				<property ParticleName="Particles/Dandylion/Buff_Reinforcement" ParticlePos="_BOTTOM_" DirectClear="true"/>
 				<property ParticleName="Particles/Dandylion/Buff_Reinforcement_Start" ParticlePos="_BOTTOM_" DirectClear="true"/>
 			</Effects>
 		</class>
-		<class name="Discipline" Title="수양" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/Discipline" SubImage="Buff/Discipline" ImmuneRace="" NeutralizeBuff="None" Type="Buff" SubType="Mental" Group="Concentration" Stack="false" Base_MaxStack="1" Turn="3" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_ESPPower="300" AbilityBuffEvent="BuffAdded">
+		<class name="Discipline" Title="수양" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/Discipline" SubImage="Buff/Discipline" ImmuneRace="Machine" NeutralizeBuff="None" Type="Buff" SubType="Mental" Group="Concentration" Stack="false" Base_MaxStack="1" Turn="3" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_ESPPower="300" AbilityBuffEvent="BuffAdded">
 			<Effects>
 				<property ParticleName="Particles/Dandylion/Buff_Discipline" ParticlePos="_BOTTOM_" DirectClear="true"/>
 				<property ParticleName="Particles/Dandylion/Buff_Discipline_Start" ParticlePos="_BOTTOM_" DirectClear="true"/>
 			</Effects>
 		</class>
-		<class name="Concentration" Title="집중" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/Concentration" SubImage="Buff/Concentration" ImmuneRace="" NeutralizeBuff="None" Type="Buff" SubType="Mental" Group="Concentration" Stack="false" Base_MaxStack="1" Turn="3" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_Accuracy="30" AbilityBuffEvent="BuffAdded">
+		<class name="Concentration" Title="집중" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/Concentration" SubImage="Buff/Concentration" ImmuneRace="Machine" NeutralizeBuff="None" Type="Buff" SubType="Mental" Group="Concentration" Stack="false" Base_MaxStack="1" Turn="3" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_Accuracy="30" AbilityBuffEvent="BuffAdded">
 			<Effects>
 				<property ParticleName="Particles/Dandylion/Buff_Concentration" ParticlePos="_BOTTOM_" DirectClear="true"/>
 				<property ParticleName="Particles/Dandylion/Buff_Concentration_Start" ParticlePos="_BOTTOM_" DirectClear="true"/>
 			</Effects>
 		</class>
-		<class name="Perseverance" Title="인내" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/Perseverance" SubImage="Buff/Perseverance" ImmuneRace="" NeutralizeBuff="None" Type="Buff" SubType="Mental" Group="Concentration" Stack="false" Base_MaxStack="1" Turn="3" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_Block="30" AbilityBuffEvent="BuffAdded">
+		<class name="Perseverance" Title="인내" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/Perseverance" SubImage="Buff/Perseverance" ImmuneRace="Machine" NeutralizeBuff="None" Type="Buff" SubType="Mental" Group="Concentration" Stack="false" Base_MaxStack="1" Turn="3" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_Block="30" AbilityBuffEvent="BuffAdded">
 			<Effects>
 				<property ParticleName="Particles/Dandylion/Buff_Perseverance" ParticlePos="_BOTTOM_" DirectClear="true"/>
 				<property ParticleName="Particles/Dandylion/Buff_Perseverance_Start" ParticlePos="_BOTTOM_" DirectClear="true"/>
@@ -2084,6 +2146,7 @@ $LimeGold$- 매 턴 시작 시
 		<class name="Rebirth" Title="부활" Desc_Base="죽음의 문턱에서 다시 돌아왔습니다." FinalDesc="$Yellow$해당 상태 시 부활이 불가능합니다." FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/Rebirth" SubImage="Buff/Rebirth" ImmuneRace="" NeutralizeBuff="None" Type="State" SubType="None" Group="None" Stack="false" Base_MaxStack="1" Turn="9" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" UseAddedMessage="false"/>
 		<class name="Overwatching" Title="경계" Desc_Base="시야 내 이동 혹은 공격 행동을 하는 첫 번째 적을 공격합니다." FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/Overwatching" SubImage="Buff/Overwatching" ImmuneRace="" NeutralizeBuff="None" Type="State" SubType="None" Group="None" Stack="false" Base_MaxStack="1" Turn="1" Movable="true" Attackable="true" BreakType="None" UseForwardTurnTest="true" DischargeOnHit="true" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" AutoMovable="false" TriggerSound="Buff/Overwatch.ogg">
 			<EventHandler>
+				<property Event="PreAbilityUsing" Script="Buff_Overwatching_PreAbilityUsing" Order="1"/>
 				<property Event="UnitMovedSingleStep" Script="Buff_Overwatching_UnitMovedSingleStep" Order="1"/>
 				<property Event="UnitPositionChanged" Script="Buff_Overwatching_UnitPositionChanged" Order="1"/>
 			</EventHandler>
@@ -2209,12 +2272,17 @@ $LimeGold$- 매 턴 시작 시
 				<property Event="UnitTakeDamage" Script="Buff_Beast_Loyalty_UnitTakeDamage" Order="1"/>
 			</EventHandler>
 		</class>
-		<class name="Stealth" Title="은신" Desc_Base="적의 시야에 들어가도 적의 은신 탐지 거리 바깥이면 발각되지 않습니다. 해당 상태에서 공격 시, 적의 회피율과 방어율을 무시합니다." FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/Stealth" SubImage="Buff/Stealth" ImmuneRace="" NeutralizeBuff="None" Type="State" SubType="None" Group="None" Stack="false" Base_MaxStack="1" Turn="3" Movable="true" Attackable="true" BreakType="None" UseForwardTurnTest="false" DischargeOnAttack="true" DischargeOnHit="true" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ScentOfPresence="false" AutoMovable="false" TriggerSound="Buff/Overwatch.ogg" Cloaking="true">
+		<class name="Stealth" Title="은신" Desc_Base="적의 시야에 들어가도 적의 은신 탐지 거리 바깥이면 발각되지 않습니다. 해당 상태에서 공격 시, 적의 회피율과 방어율을 무시합니다." FinalDesc="" FinalDesc2="$AddBuffName$ 상태가 되면, 해당 상태는 자동 해제됩니다." IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/Stealth" SubImage="Buff/Stealth" ImmuneRace="" NeutralizeBuff="None" Type="State" SubType="None" Group="None" Stack="false" Base_MaxStack="1" Turn="3" Movable="true" Attackable="true" BreakType="None" UseForwardTurnTest="false" DischargeOnAttack="true" DischargeOnHit="true" AddBuff="ExposurePosition" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ScentOfPresence="false" AutoMovable="false" TriggerSound="Buff/Overwatch.ogg" Cloaking="true">
 			<EventHandler>
 				<property Event="BuffAdded_Self" Script="Buff_Stealth_BuffAdded" Order="1"/>
 				<property Event="BuffRemoved_Self" Script="Buff_Stealth_BuffRemoved" Order="1"/>
 				<property Event="UnitMovedSingleStep" Script="Buff_Stealth_UnitMovedSingleStep" Order="2"/>
 				<property Event="UnitPositionChanged" Script="Buff_Stealth_UnitPositionChanged" Order="2"/>
+			</EventHandler>
+		</class>
+		<class name="HatchedObjectYasha" Title="부화 중인 야샤알" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="false" Image="Buff/HatchedObjectYasha" SubImage="Buff/HatchedObjectYasha" ImmuneRace="" NeutralizeBuff="None" Type="State" SubType="None" Group="None" Stack="false" Base_MaxStack="1" Turn="10" Movable="true" Attackable="true" BreakType="None" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Mute="true" EyeOffset="0" UseAddedMessage="false" UseActionControlMessage="false">
+			<EventHandler>
+				<property Event="UnitTurnStart_Self" Script="Buff_HatchedObjectYasha_UnitTurnStart" Order="1"/>
 			</EventHandler>
 		</class>
 	</idspace>

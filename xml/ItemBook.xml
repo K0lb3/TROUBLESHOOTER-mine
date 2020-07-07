@@ -66,6 +66,11 @@
 		<class name="Skin_Lava_BlackIron_Epic" Item="Skin_Lava_BlackIron_Epic"/>
 		<class name="Skin_Ice_BlackIron_Epic" Item="Skin_Ice_BlackIron_Epic"/>
 		<class name="Skin_Lightning_BlackIron_Epic" Item="Skin_Lightning_BlackIron_Epic"/>
+		<class name="Skin_Neguri_Epic" Item="Skin_Neguri_Epic"/>
+		<class name="Skin_Neguri_Legend" Item="Skin_Neguri_Legend"/>
+		<class name="Skin_KingDorori_Legend" Item="Skin_KingDorori_Legend"/>
+		<class name="Skin_Lightning_Legend" Item="Skin_Lightning_Legend"/>
+		<class name="Skin_KingDorori_Epic" Item="Skin_KingDorori_Epic"/>
 		<class name="Scale_Draky" Item="Scale_Draky"/>
 		<class name="Scale_Draky_Rare" Item="Scale_Draky_Rare"/>
 		<class name="Scale_Draky_Epic" Item="Scale_Draky_Epic"/>
@@ -89,6 +94,7 @@
 		<class name="Pocket_Oil_Uncommon" Item="Pocket_Oil_Uncommon"/>
 		<class name="Pocket_Oil_Rare" Item="Pocket_Oil_Rare"/>
 		<class name="Pocket_Oil_Epic" Item="Pocket_Oil_Epic"/>
+		<class name="Pocket_Oil_Legend" Item="Pocket_Oil_Legend"/>
 		<class name="MetalPart" Item="MetalPart"/>
 		<class name="MetalPart_Uncomon" Item="MetalPart_Uncomon"/>
 		<class name="MetalPart_Rare" Item="MetalPart_Rare"/>

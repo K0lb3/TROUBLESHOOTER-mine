@@ -247,8 +247,8 @@
 		<class name="Tutorial_Silverlining_RoUa45" Value="[!Dialog][!speaker:Luna_Bored2]됐어. 안 해. 크리스가 너랑 싸우지 말랬어."/>
 		<class name="Tutorial_Silverlining_MQ5GIR" Value="[!Dialog][!speaker:Marco_Smile]쳇. 언제나 크리스 타령이군..."/>
 		<class name="Tutorial_Silverlining_f7mcHd" Value="[!Dialog][!speaker:Luna_Rage]몰라. 나 따라오지 마."/>
-		<class name="Tutorial_Silverlining_vyuD8x" Value="[!Dialog]다음 역은 바람장벽 지구 은빛 구름 역입니다."/>
-		<class name="Tutorial_Silverlining_Bfu1Ns" Value="[!Dialog]내리실 문은 오른쪽입니다."/>
+		<class name="Tutorial_Silverlining_WLlX5I" Value="[!Dialog][colour=&apos;FFFFFF00&apos;]다음 역은 바람장벽 지구 은빛 구름 역입니다."/>
+		<class name="Tutorial_Silverlining_1SaU2k" Value="[!Dialog][colour=&apos;FFFFFF00&apos;]내리실 문은 오른쪽입니다."/>
 		<class name="Tutorial_Silverlining_p7SMi8" Value="[!Dialog]부모님과 함께 살았던 고향. 바람장벽 지구"/>
 		<class name="Tutorial_Silverlining_FlZVhi" Value="[!Dialog]바람장벽 지구의 첫인상은 그의 기억과는 매우 다른 낯선 곳이었다."/>
 		<class name="Tutorial_Silverlining_taS0t4" Value="[!Dialog]하지만 알버스를 감싸는 남부 지역 특유의 따뜻한 햇살만큼은 그가 고향에 돌아왔음을 실감하게 하였다."/>

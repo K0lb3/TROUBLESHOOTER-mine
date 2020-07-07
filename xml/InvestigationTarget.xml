@@ -7,7 +7,7 @@
 			<rule property="InvestigationOccuredCallback" type="function"/>
 		</schema>
 		<class name="Chest" Interaction="InvestigateChest" Arguments="OpenReward_Chest, ChestType" InvestigationOccuredCallback="OnInvestigationOccured_Chest"/>
-		<class name="Lock" Interaction="InvestigateLock" Arguments="OpenReward_Lock" InvestigationOccuredCallback="OnInvestigationOccured_Lock"/>
+		<class name="Lock" Interaction="InvestigateLock" Arguments="OpenReward_Lock, LockType" InvestigationOccuredCallback="OnInvestigationOccured_Lock"/>
 		<class name="Pc" Interaction="InvestigateComputer" Arguments="Priority, ConditionOutputInteraction, OnSuccessActionList, OnFailActionList" InvestigationOccuredCallback="OnInvestigationOccured_Pc"/>
 		<class name="Server" Interaction="InvestigateComputer" Arguments="Priority, ServerType" InvestigationOccuredCallback="OnInvestigationOccured_Server"/>
 	</idspace>
@@ -37,5 +37,14 @@
 		<class name="Chest" MonsterActive="InvestigationTarget_Chest" ObjectOff="Object_ItemCube_Off"/>
 		<class name="Chest_White" MonsterActive="InvestigationTarget_Chest_White" ObjectOff="Object_ItemCube_White_Off"/>
 		<class name="Chest_Recovery" MonsterActive="InvestigationTarget_Chest_Recovery" ObjectOff="Object_ItemCube_Recovery_Off"/>
+	</idspace>
+	<idspace id="LockType">
+		<schema>
+			<rule property="MonsterActive" type="link" target="Monster" Default="None"/>
+			<rule property="ObjectOff" type="link" target="Object" Default="None"/>
+			<rule property="KeyItem" type="link" target="Item" Default="None"/>
+		</schema>
+		<class name="Lock" MonsterActive="InvestigationTarget_Lock" ObjectOff="Object_ItemCubeLock_Off"/>
+		<class name="Lock_RustBox" MonsterActive="InvestigationTarget_Lock_RustBox" ObjectOff="Object_RustBox_Off" KeyItem="Lockpick_UnderWaterWay"/>
 	</idspace>
 </idspaces>

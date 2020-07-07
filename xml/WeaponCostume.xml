@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="WeaponCostumeShape">
+		<class name="BattleGlove">
+			<Equipment>
+				<property Key="RightBattleGlove" Scale="1" PX="-5" PY="0" PZ="0" RX="0" RY="-90" RZ="0"/>
+				<property Key="LeftBattleGlove" Scale="1" PX="5" PY="0" PZ="0" RX="0" RY="90" RZ="0"/>
+			</Equipment>
+		</class>
+		<class name="MultipurposeSupportDevice">
+			<Equipment>
+				<property Key="RightWeapon" Scale="1" PX="-10" PY="0" PZ="0" RX="0" RY="0" RZ="0"/>
+				<property Key="LeftWeapon" Scale="1" PX="10" PY="0" PZ="0" RX="0" RY="0" RZ="0"/>
+			</Equipment>
+		</class>
+		<class name="MachinePistol">
+			<Equipment>
+				<property Key="RightWeapon" Scale="1" PX="-10" PY="0" PZ="0" RX="0" RY="0" RZ="0"/>
+				<property Key="LeftWeapon" Scale="1" PX="10" PY="0" PZ="0" RX="0" RY="0" RZ="0"/>
+			</Equipment>
+		</class>
+		<class name="Bangle">
+			<Equipment>
+				<property Key="RightWeapon" Scale="1" PX="0" PY="0" PZ="0" RX="0" RY="0" RZ="180"/>
+				<property Key="RightWeapon2" Scale="1" PX="0" PY="0" PZ="0" RX="0" RY="0" RZ="180"/>
+			</Equipment>
+		</class>
+	</idspace>
+	<idspace id="WeaponCostume">
+		<schema>
+			<rule property="Title" type="calculated" default="CP_WeaponCostume_Title"/>
+			<rule property="Base_Title" type="string" default=""/>
+			<rule property="Type" type="link" target="ItemType" default="None"/>
+			<rule property="Item" type="table" subtype="link" target="Item" default=""/>
+			<rule property="Opened" type="bool" default="false"/>
+			<rule property="IsNew" type="bool" default="true"/>
+			<rule property="Mesh" type="calculated" default="CP_WeaponCostume_Mesh"/>
+			<rule property="Vill" type="calculated" default="CP_WeaponCostume_Price"/>
+			<rule property="Vill_Base" type="number" default="1000"/>
+		</schema>
+		<class name="AssultRifle_Common" Type="AssaultRifle" Order="1" Item="AssultRifle_Common"/>
+		<class name="AssultRifle_Common_100" Type="AssaultRifle" Order="2" Item="AssultRifle_Common_100"/>
+		<class name="AssultRifle_Common_200" Type="AssaultRifle" Order="3" Item="AssultRifle_Common_200"/>
+		<class name="AssultRifle_Common_300" Type="AssaultRifle" Order="4" Item="AssultRifle_Common_300"/>
+		<class name="AssultRifle_Common_400" Type="AssaultRifle" Order="5" Item="AssultRifle_Common_400"/>
+		<class name="AssultRifle_Common_500" Type="AssaultRifle" Order="6" Item="AssultRifle_Common_500"/>
+		<class name="AssultRifle_Common_600" Type="AssaultRifle" Order="7" Item="AssultRifle_Common_600"/>
+		<class name="AssultRifle_Common_700" Type="AssaultRifle" Order="8" Item="AssultRifle_Common_700"/>
+		<class name="AssultRifle_VHPD" Type="AssaultRifle" Order="9" Item="AssultRifle_VHPD"/>
+		<class name="AssultRifle_VHPD_Red" Type="AssaultRifle" Order="10" Item="AssultRifle_VHPD_Red"/>
+		<class name="Axe_Blood" Type="Axe" Order="11" Item="Axe_Blood"/>
+		<class name="Axe_Butcher" Type="Axe" Order="12" Item="Axe_Butcher"/>
+		<class name="Axe_Destroyer" Type="Axe" Order="13" Item="Axe_Destroyer"/>
+		<class name="Axe_Killer" Type="Axe" Order="14" Item="Axe_Killer"/>
+		<class name="Axe_Slaughter" Type="Axe" Order="15" Item="Axe_Slaughter"/>
+		<class name="Bangle_BlackIron" Type="Bangle" Order="16" Item="Bangle_BlackIron"/>
+		<class name="Bangle_BlackIron_Epic" Type="Bangle" Order="17" Item="Bangle_BlackIron_Epic"/>
+		<class name="Bangle_BlackIron_Legned" Type="Bangle" Order="18" Item="Bangle_BlackIron_Legned"/>
+		<class name="Bangle_BlackIron_Rare" Type="Bangle" Order="19" Item="Bangle_BlackIron_Rare"/>
+		<class name="Bangle_Carbon" Type="Bangle" Order="20" Item="Bangle_Carbon"/>
+		<class name="Bangle_Carbon_Blue" Type="Bangle" Order="21" Item="Bangle_Carbon_Blue"/>
+		<class name="Bangle_Carbon_Blue_Epic" Type="Bangle" Order="22" Item="Bangle_Carbon_Blue_Epic"/>
+		<class name="Bangle_Carbon_Blue_Rare" Type="Bangle" Order="23" Item="Bangle_Carbon_Blue_Rare"/>
+		<class name="Bangle_Carbon_Blue_Rare2" Type="Bangle" Order="24" Item="Bangle_Carbon_Blue_Rare2"/>
+		<class name="Bangle_Carbon_Rare" Type="Bangle" Order="25" Item="Bangle_Carbon_Rare"/>
+		<class name="Bangle_Carbon_Steelhead" Type="Bangle" Order="26" Item="Bangle_Carbon_Steelhead"/>
+		<class name="Bangle_Cyrus" Type="Bangle" Order="27" Item="Bangle_Cyrus"/>
+		<class name="Bangle_Cyrus_Epic" Type="Bangle" Order="28" Item="Bangle_Cyrus_Epic"/>
+		<class name="Bangle_Cyrus_Rare" Type="Bangle" Order="29" Item="Bangle_Cyrus_Rare"/>
+		<class name="Bangle_EastAlliance" Type="Bangle" Order="30" Item="Bangle_EastAlliance"/>
+		<class name="Bangle_EastAlliance_Rare" Type="Bangle" Order="31" Item="Bangle_EastAlliance_Rare"/>
+		<class name="Bangle_Etros" Type="Bangle" Order="32" Item="Bangle_Etros"/>
+		<class name="Bangle_Etros_New" Type="Bangle" Order="33" Item="Bangle_Etros_New"/>
+		<class name="Bangle_Etros_New_Epic" Type="Bangle" Order="34" Item="Bangle_Etros_New_Epic"/>
+		<class name="Bangle_Etros_New_Rare" Type="Bangle" Order="35" Item="Bangle_Etros_New_Rare"/>
+		<class name="Bangle_Etros_Special" Type="Bangle" Order="36" Item="Bangle_Etros_Special"/>
+		<class name="Bangle_Etros_Special_Epic" Type="Bangle" Order="37" Item="Bangle_Etros_Special_Epic"/>
+		<class name="Bangle_Etros_Special_Rare" Type="Bangle" Order="38" Item="Bangle_Etros_Special_Rare"/>
+		<class name="Bangle_HellFire" Type="Bangle" Order="39" Item="Bangle_HellFire"/>
+		<class name="Bangle_JewelCollector_Set" Type="Bangle" Order="40" Item="Bangle_JewelCollector_Set"/>
+		<class name="Bangle_Karas" Type="Bangle" Order="41" Item="Bangle_Karas"/>
+		<class name="Bangle_Karas_Epic" Type="Bangle" Order="42" Item="Bangle_Karas_Epic"/>
+		<class name="Bangle_Karas_Legend" Type="Bangle" Order="43" Item="Bangle_Karas_Legend"/>
+		<class name="Bangle_Karas_Rare" Type="Bangle" Order="44" Item="Bangle_Karas_Rare"/>
+		<class name="Bangle_Neguri_Earth_Set" Type="Bangle" Order="45" Item="Bangle_Neguri_Earth_Set"/>
+		<class name="Bangle_Neguri_Fire_Set" Type="Bangle" Order="46" Item="Bangle_Neguri_Fire_Set"/>
+		<class name="Bangle_Neguri_Lightning_Set" Type="Bangle" Order="47" Item="Bangle_Neguri_Lightning_Set"/>
+		<class name="Bangle_Thorn" Type="Bangle" Order="48" Item="Bangle_Thorn"/>
+		<class name="Bangle_Thorn_Epic" Type="Bangle" Order="49" Item="Bangle_Thorn_Epic"/>
+		<class name="Bangle_Thorn_Rare" Type="Bangle" Order="50" Item="Bangle_Thorn_Rare"/>
+		<class name="Bangle_Titan" Type="Bangle" Order="51" Item="Bangle_Titan"/>
+		<class name="Bangle_Troubleshooter" Type="Bangle" Order="52" Item="Bangle_Troubleshooter"/>
+		<class name="Baton_VHPD_Lightning" Type="Baton" Order="53" Item="Baton_VHPD_Lightning"/>
+		<class name="BattleGlove_BlackIronFist" Type="BattleGlove" Order="54" Item="BattleGlove_BlackIronFist"/>
+		<class name="BattleGlove_BlackIronFist2" Type="BattleGlove" Order="55" Item="BattleGlove_BlackIronFist2"/>
+		<class name="BattleGlove_BlackIronFist_Epic" Type="BattleGlove" Order="56" Item="BattleGlove_BlackIronFist_Epic"/>
+		<class name="BattleGlove_BlackIronFist_Epic2" Type="BattleGlove" Order="57" Item="BattleGlove_BlackIronFist_Epic2"/>
+		<class name="BattleGlove_BlackIronFist_Rare" Type="BattleGlove" Order="58" Item="BattleGlove_BlackIronFist_Rare"/>
+		<class name="BattleGlove_BlackIronFist_Rare2" Type="BattleGlove" Order="59" Item="BattleGlove_BlackIronFist_Rare2"/>
+		<class name="BattleGlove_CarbonFist" Type="BattleGlove" Order="60" Item="BattleGlove_CarbonFist"/>
+		<class name="BattleGlove_CarbonFist_Epic" Type="BattleGlove" Order="61" Item="BattleGlove_CarbonFist_Epic"/>
+		<class name="BattleGlove_CarbonFist_Rare" Type="BattleGlove" Order="62" Item="BattleGlove_CarbonFist_Rare"/>
+		<class name="BattleGlove_GiantFist" Type="BattleGlove" Order="63" Item="BattleGlove_GiantFist"/>
+		<class name="BattleGlove_GiantFist_Epic" Type="BattleGlove" Order="64" Item="BattleGlove_GiantFist_Epic"/>
+		<class name="BattleGlove_GiantFist_Rare" Type="BattleGlove" Order="65" Item="BattleGlove_GiantFist_Rare"/>
+		<class name="BattleGlove_IronFist" Type="BattleGlove" Order="66" Item="BattleGlove_IronFist"/>
+		<class name="BattleGlove_IronSpike" Type="BattleGlove" Order="67" Item="BattleGlove_IronSpike"/>
+		<class name="BattleGlove_IronSpike_Rare" Type="BattleGlove" Order="68" Item="BattleGlove_IronSpike_Rare"/>
+		<class name="BattleGlove_IronSpike_Twinkle" Type="BattleGlove" Order="69" Item="BattleGlove_IronSpike_Twinkle"/>
+		<class name="BattleGlove_OgreFist" Type="BattleGlove" Order="70" Item="BattleGlove_OgreFist"/>
+		<class name="BattleGlove_OgreFist_Epic" Type="BattleGlove" Order="71" Item="BattleGlove_OgreFist_Epic"/>
+		<class name="BattleGlove_OgreFist_Legend" Type="BattleGlove" Order="72" Item="BattleGlove_OgreFist_Legend"/>
+		<class name="BattleGlove_OgreFist_Rare" Type="BattleGlove" Order="73" Item="BattleGlove_OgreFist_Rare"/>
+		<class name="BattleGlove_Skull" Type="BattleGlove" Order="74" Item="BattleGlove_Skull"/>
+		<class name="BattleGlove_TitanFist" Type="BattleGlove" Order="75" Item="BattleGlove_TitanFist"/>
+		<class name="BattleGlove_TitanFist_Epic" Type="BattleGlove" Order="76" Item="BattleGlove_TitanFist_Epic"/>
+		<class name="BattleGlove_TitanFist_Legend" Type="BattleGlove" Order="77" Item="BattleGlove_TitanFist_Legend"/>
+		<class name="BattleGlove_TitanFist_Rare" Type="BattleGlove" Order="78" Item="BattleGlove_TitanFist_Rare"/>
+		<class name="BattleGlove_TrolleFist" Type="BattleGlove" Order="79" Item="BattleGlove_TrolleFist"/>
+		<class name="BattleGlove_TrolleFist_Epic" Type="BattleGlove" Order="80" Item="BattleGlove_TrolleFist_Epic"/>
+		<class name="BattleGlove_TrolleFist_Rare" Type="BattleGlove" Order="81" Item="BattleGlove_TrolleFist_Rare"/>
+		<class name="BattleGlove_WhiteTiger_Legend" Type="BattleGlove" Order="82" Item="BattleGlove_WhiteTiger_Legend"/>
+		<class name="BattleGlove_YellowIronFist" Type="BattleGlove" Order="83" Item="BattleGlove_YellowIronFist"/>
+		<class name="BattleGlove_YellowIronFist_Fire_Epic" Type="BattleGlove" Order="84" Item="BattleGlove_YellowIronFist_Fire_Epic"/>
+		<class name="BattleGlove_YellowIronFist_Ice_Epic" Type="BattleGlove" Order="85" Item="BattleGlove_YellowIronFist_Ice_Epic"/>
+		<class name="BattleGlove_YellowIronFist_Lightning_Epic" Type="BattleGlove" Order="86" Item="BattleGlove_YellowIronFist_Lightning_Epic"/>
+		<class name="BattleGlove_YellowIronFist_Rare" Type="BattleGlove" Order="87" Item="BattleGlove_YellowIronFist_Rare"/>
+		<class name="BattleShield_VHPD" Type="BattleShield" Order="88" Item="BattleShield_VHPD"/>
+		<class name="Bottle_AcidPoison" Type="Bottle" Order="89" Item="Bottle_AcidPoison"/>
+		<class name="Bottle_Fire" Type="Bottle" Order="90" Item="Bottle_Fire"/>
+		<class name="Bottle_throw" Type="Bottle" Order="91" Item="Bottle_throw"/>
+		<class name="Brush_Boom" Type="Spray" Order="92" Item="Brush_Boom"/>
+		<class name="Brush_Boom_CW_Epic" Type="Spray" Order="93" Item="Brush_Boom_CW_Epic"/>
+		<class name="Brush_Boom_CW_Rare" Type="Spray" Order="94" Item="Brush_Boom_CW_Rare"/>
+		<class name="Brush_Boom_CW_Uncommon" Type="Spray" Order="95" Item="Brush_Boom_CW_Uncommon"/>
+		<class name="Brush_Boom_FHD_Epic" Type="Spray" Order="96" Item="Brush_Boom_FHD_Epic"/>
+		<class name="Brush_Boom_FHD_Rare" Type="Spray" Order="97" Item="Brush_Boom_FHD_Rare"/>
+		<class name="Brush_Boom_FHD_Uncommon" Type="Spray" Order="98" Item="Brush_Boom_FHD_Uncommon"/>
+		<class name="Brush_Boom_HD_Epic" Type="Spray" Order="99" Item="Brush_Boom_HD_Epic"/>
+		<class name="Brush_Boom_HD_Rare" Type="Spray" Order="100" Item="Brush_Boom_HD_Rare"/>
+		<class name="Brush_Boom_HD_Uncommon" Type="Spray" Order="101" Item="Brush_Boom_HD_Uncommon"/>
+		<class name="Brush_Boom_KS_Epic" Type="Spray" Order="102" Item="Brush_Boom_KS_Epic"/>
+		<class name="Brush_Boom_KS_Rare" Type="Spray" Order="103" Item="Brush_Boom_KS_Rare"/>
+		<class name="Brush_Boom_KS_Uncommon" Type="Spray" Order="104" Item="Brush_Boom_KS_Uncommon"/>
+		<class name="Brush_Boom_QHD_Epic" Type="Spray" Order="105" Item="Brush_Boom_QHD_Epic"/>
+		<class name="Brush_Boom_QHD_Rare" Type="Spray" Order="106" Item="Brush_Boom_QHD_Rare"/>
+		<class name="Brush_Boom_QHD_Uncommon" Type="Spray" Order="107" Item="Brush_Boom_QHD_Uncommon"/>
+		<class name="Brush_Boom_SM_Epic" Type="Spray" Order="108" Item="Brush_Boom_SM_Epic"/>
+		<class name="Brush_Boom_SM_Rare" Type="Spray" Order="109" Item="Brush_Boom_SM_Rare"/>
+		<class name="Brush_Boom_SM_Uncommon" Type="Spray" Order="110" Item="Brush_Boom_SM_Uncommon"/>
+		<class name="Brush_Boom_WD_Epic" Type="Spray" Order="111" Item="Brush_Boom_WD_Epic"/>
+		<class name="Brush_Boom_WD_Rare" Type="Spray" Order="112" Item="Brush_Boom_WD_Rare"/>
+		<class name="Brush_Boom_WD_Uncommon" Type="Spray" Order="113" Item="Brush_Boom_WD_Uncommon"/>
+		<class name="Brush_Green" Type="Spray" Order="114" Item="Brush_Green"/>
+		<class name="Brush_Green_HD_Epic" Type="Spray" Order="115" Item="Brush_Green_HD_Epic"/>
+		<class name="Brush_Green_HD_Rare" Type="Spray" Order="116" Item="Brush_Green_HD_Rare"/>
+		<class name="Brush_Green_HD_Uncommon" Type="Spray" Order="117" Item="Brush_Green_HD_Uncommon"/>
+		<class name="Brush_Green_QHD_Epic" Type="Spray" Order="118" Item="Brush_Green_QHD_Epic"/>
+		<class name="Brush_Green_QHD_Rare" Type="Spray" Order="119" Item="Brush_Green_QHD_Rare"/>
+		<class name="Brush_Green_QHD_Uncommon" Type="Spray" Order="120" Item="Brush_Green_QHD_Uncommon"/>
+		<class name="Brush_Red" Type="Spray" Order="121" Item="Brush_Red"/>
+		<class name="Brush_Red_FHD_Epic" Type="Spray" Order="122" Item="Brush_Red_FHD_Epic"/>
+		<class name="Brush_Red_FHD_Rare" Type="Spray" Order="123" Item="Brush_Red_FHD_Rare"/>
+		<class name="Brush_Red_FHD_Uncommon" Type="Spray" Order="124" Item="Brush_Red_FHD_Uncommon"/>
+		<class name="Brush_Red_KS_Epic" Type="Spray" Order="125" Item="Brush_Red_KS_Epic"/>
+		<class name="Brush_Red_KS_Rare" Type="Spray" Order="126" Item="Brush_Red_KS_Rare"/>
+		<class name="Brush_Red_KS_Uncommon" Type="Spray" Order="127" Item="Brush_Red_KS_Uncommon"/>
+		<class name="Brush_Red_WD_Epic" Type="Spray" Order="128" Item="Brush_Red_WD_Epic"/>
+		<class name="Brush_Red_WD_Rare" Type="Spray" Order="129" Item="Brush_Red_WD_Rare"/>
+		<class name="Brush_Red_WD_Uncommon" Type="Spray" Order="130" Item="Brush_Red_WD_Uncommon"/>
+		<class name="Brush_White" Type="Spray" Order="131" Item="Brush_White"/>
+		<class name="Brush_White_CW_Epic" Type="Spray" Order="132" Item="Brush_White_CW_Epic"/>
+		<class name="Brush_White_CW_Rare" Type="Spray" Order="133" Item="Brush_White_CW_Rare"/>
+		<class name="Brush_White_CW_Uncommon" Type="Spray" Order="134" Item="Brush_White_CW_Uncommon"/>
+		<class name="Brush_White_FHD_Epic" Type="Spray" Order="135" Item="Brush_White_FHD_Epic"/>
+		<class name="Brush_White_FHD_Rare" Type="Spray" Order="136" Item="Brush_White_FHD_Rare"/>
+		<class name="Brush_White_FHD_Uncommon" Type="Spray" Order="137" Item="Brush_White_FHD_Uncommon"/>
+		<class name="Brush_White_KS_Epic" Type="Spray" Order="138" Item="Brush_White_KS_Epic"/>
+		<class name="Brush_White_KS_Rare" Type="Spray" Order="139" Item="Brush_White_KS_Rare"/>
+		<class name="Brush_White_KS_Uncommon" Type="Spray" Order="140" Item="Brush_White_KS_Uncommon"/>
+		<class name="Brush_White_SM_Epic" Type="Spray" Order="141" Item="Brush_White_SM_Epic"/>
+		<class name="Brush_White_SM_Rare" Type="Spray" Order="142" Item="Brush_White_SM_Rare"/>
+		<class name="Brush_White_SM_Uncommon" Type="Spray" Order="143" Item="Brush_White_SM_Uncommon"/>
+		<class name="Chainsaw_SingingPurpleBear" Type="Chainsaw" Order="144" Item="Chainsaw_SingingPurpleBear"/>
+		<class name="Dagger_BlackIron" Type="Dagger" Order="145" Item="Dagger_BlackIron"/>
+		<class name="Dagger_BlackIronEnhanced" Type="Dagger" Order="146" Item="Dagger_BlackIronEnhanced"/>
+		<class name="Dagger_BlackIronEnhanced_Rare" Type="Dagger" Order="147" Item="Dagger_BlackIronEnhanced_Rare"/>
+		<class name="Dagger_Carbon" Type="Dagger" Order="148" Item="Dagger_Carbon"/>
+		<class name="Dagger_Cyrus" Type="Dagger" Order="149" Item="Dagger_Cyrus"/>
+		<class name="Dagger_Cyrus_Rare" Type="Dagger" Order="150" Item="Dagger_Cyrus_Rare"/>
+		<class name="Dagger_Dragon" Type="Dagger" Order="151" Item="Dagger_Dragon"/>
+		<class name="Dagger_Pulse" Type="Dagger" Order="152" Item="Dagger_Pulse"/>
+		<class name="Dagger_Pulse_Rare" Type="Dagger" Order="153" Item="Dagger_Pulse_Rare"/>
+		<class name="Drone_MonoAndVivi" Type="MultipurposeSupportDevice" Order="154" Item="Drone_MonoAndVivi"/>
+		<class name="Drone_MonoAndVivi_M2" Type="MultipurposeSupportDevice" Order="155" Item="Drone_MonoAndVivi_M2"/>
+		<class name="Drone_MonoAndVivi_M3" Type="MultipurposeSupportDevice" Order="156" Item="Drone_MonoAndVivi_M3"/>
+		<class name="Drone_MonoAndVivi_M4" Type="MultipurposeSupportDevice" Order="157" Item="Drone_MonoAndVivi_M4"/>
+		<class name="Drone_MonoAndVivi_M5" Type="MultipurposeSupportDevice" Order="158" Item="Drone_MonoAndVivi_M5"/>
+		<class name="Drone_MonoAndVivi_V2" Type="MultipurposeSupportDevice" Order="159" Item="Drone_MonoAndVivi_V2"/>
+		<class name="Drone_MonoAndVivi_V3" Type="MultipurposeSupportDevice" Order="160" Item="Drone_MonoAndVivi_V3"/>
+		<class name="Drone_MonoAndVivi_V4" Type="MultipurposeSupportDevice" Order="161" Item="Drone_MonoAndVivi_V4"/>
+		<class name="Drone_MonoAndVivi_V5" Type="MultipurposeSupportDevice" Order="162" Item="Drone_MonoAndVivi_V5"/>
+		<class name="HeavyMachineGun_VolitionAR101" Type="HeavyMachineGun" Order="163" Item="HeavyMachineGun_VolitionAR101"/>
+		<class name="MachinePistol_BabyA_Epic" Type="MachinePistol" Order="164" Item="MachinePistol_BabyA_Epic"/>
+		<class name="MachinePistol_BabyA_Rare" Type="MachinePistol" Order="165" Item="MachinePistol_BabyA_Rare"/>
+		<class name="MachinePistol_BabyA_Uncommon" Type="MachinePistol" Order="166" Item="MachinePistol_BabyA_Uncommon"/>
+		<class name="MachinePistol_DrakeA_Epic" Type="MachinePistol" Order="167" Item="MachinePistol_DrakeA_Epic"/>
+		<class name="MachinePistol_DrakeA_Rare" Type="MachinePistol" Order="168" Item="MachinePistol_DrakeA_Rare"/>
+		<class name="MachinePistol_DrakeA_Uncommon" Type="MachinePistol" Order="169" Item="MachinePistol_DrakeA_Uncommon"/>
+		<class name="MachinePistol_DrakeB_Epic" Type="MachinePistol" Order="170" Item="MachinePistol_DrakeB_Epic"/>
+		<class name="MachinePistol_DrakeB_Rare" Type="MachinePistol" Order="171" Item="MachinePistol_DrakeB_Rare"/>
+		<class name="MachinePistol_DrakeB_Uncommon" Type="MachinePistol" Order="172" Item="MachinePistol_DrakeB_Uncommon"/>
+		<class name="MachinePistol_DrakeC_Epic" Type="MachinePistol" Order="173" Item="MachinePistol_DrakeC_Epic"/>
+		<class name="MachinePistol_DrakeC_Rare" Type="MachinePistol" Order="174" Item="MachinePistol_DrakeC_Rare"/>
+		<class name="MachinePistol_DrakeC_Uncommon" Type="MachinePistol" Order="175" Item="MachinePistol_DrakeC_Uncommon"/>
+		<class name="MachinePistol_DynamesMPC_Uncommon" Type="MachinePistol" Order="176" Item="MachinePistol_DynamesMPC_Uncommon"/>
+		<class name="MachinePistol_DynamesMPE_Epic" Type="MachinePistol" Order="177" Item="MachinePistol_DynamesMPE_Epic"/>
+		<class name="MachinePistol_DynamesMPIBC_Uncommon" Type="MachinePistol" Order="178" Item="MachinePistol_DynamesMPIBC_Uncommon"/>
+		<class name="MachinePistol_DynamesMPIBE_Epic" Type="MachinePistol" Order="179" Item="MachinePistol_DynamesMPIBE_Epic"/>
+		<class name="MachinePistol_DynamesMPIBR_Rare" Type="MachinePistol" Order="180" Item="MachinePistol_DynamesMPIBR_Rare"/>
+		<class name="MachinePistol_DynamesMPR_Rare" Type="MachinePistol" Order="181" Item="MachinePistol_DynamesMPR_Rare"/>
+		<class name="MachinePistol_Fatalsnow" Type="MachinePistol" Order="182" Item="MachinePistol_Fatalsnow"/>
+		<class name="MachinePistol_RMS233_Epic" Type="MachinePistol" Order="183" Item="MachinePistol_RMS233_Epic"/>
+		<class name="MachinePistol_RMS233_Rare" Type="MachinePistol" Order="184" Item="MachinePistol_RMS233_Rare"/>
+		<class name="MachinePistol_RMS233_Set" Type="MachinePistol" Order="185" Item="MachinePistol_RMS233_Set"/>
+		<class name="MachinePistol_RMS233_Uncommon" Type="MachinePistol" Order="186" Item="MachinePistol_RMS233_Uncommon"/>
+		<class name="Pistol_CaperV2" Type="Pistol" Order="187" Item="Pistol_CaperV2"/>
+		<class name="Pistol_CaperV3" Type="Pistol" Order="188" Item="Pistol_CaperV3"/>
+		<class name="Pistol_CaperV3_Crow" Type="Pistol" Order="189" Item="Pistol_CaperV3_Crow"/>
+		<class name="Pistol_CaperV4" Type="Pistol" Order="190" Item="Pistol_CaperV4"/>
+		<class name="Pistol_CaperV5" Type="Pistol" Order="191" Item="Pistol_CaperV5"/>
+		<class name="Pistol_CaperV6" Type="Pistol" Order="192" Item="Pistol_CaperV6"/>
+		<class name="Pistol_CaperV6_Marco" Type="Pistol" Order="193" Item="Pistol_CaperV6_Marco"/>
+		<class name="Pistol_CaperV7" Type="Pistol" Order="194" Item="Pistol_CaperV7"/>
+		<class name="Pistol_CaperV8" Type="Pistol" Order="195" Item="Pistol_CaperV8"/>
+		<class name="Pistol_CaperV8_Rare" Type="Pistol" Order="196" Item="Pistol_CaperV8_Rare"/>
+		<class name="Pistol_CaperV9_Rare" Type="Pistol" Order="197" Item="Pistol_CaperV9_Rare"/>
+		<class name="Pistol_CaperX" Type="Pistol" Order="198" Item="Pistol_CaperX"/>
+		<class name="Pistol_CaperX_Legend" Type="Pistol" Order="199" Item="Pistol_CaperX_Legend"/>
+		<class name="SniperRifle_Cyrus_Epic" Type="SniperRifle" Order="200" Item="SniperRifle_Cyrus_Epic"/>
+		<class name="SniperRifle_Cyrus_Rare" Type="SniperRifle" Order="201" Item="SniperRifle_Cyrus_Rare"/>
+		<class name="SniperRifle_Cyrus_Uncommon" Type="SniperRifle" Order="202" Item="SniperRifle_Cyrus_Uncommon"/>
+		<class name="SniperRifle_Dynames_Epic" Type="SniperRifle" Order="203" Item="SniperRifle_Dynames_Epic"/>
+		<class name="SniperRifle_Dynames_Legend" Type="SniperRifle" Order="204" Item="SniperRifle_Dynames_Legend"/>
+		<class name="SniperRifle_Dynames_Rare" Type="SniperRifle" Order="205" Item="SniperRifle_Dynames_Rare"/>
+		<class name="SniperRifle_Dynames_Uncommon" Type="SniperRifle" Order="206" Item="SniperRifle_Dynames_Uncommon"/>
+		<class name="SniperRifle_DynamesIB_Uncommon" Type="SniperRifle" Order="207" Item="SniperRifle_DynamesIB_Uncommon"/>
+		<class name="SniperRifle_DynamesIBA_Rare" Type="SniperRifle" Order="208" Item="SniperRifle_DynamesIBA_Rare"/>
+		<class name="SniperRifle_DynamesIBS_Epic" Type="SniperRifle" Order="209" Item="SniperRifle_DynamesIBS_Epic"/>
+		<class name="SniperRifle_DynamesIBS_Legend" Type="SniperRifle" Order="210" Item="SniperRifle_DynamesIBS_Legend"/>
+		<class name="SniperRifle_RangeMaster338_Uncommon" Type="SniperRifle" Order="211" Item="SniperRifle_RangeMaster338_Uncommon"/>
+		<class name="SniperRifle_RangeMaster348_Uncommon" Type="SniperRifle" Order="212" Item="SniperRifle_RangeMaster348_Uncommon"/>
+		<class name="SniperRifle_RangeMaster358_Epic" Type="SniperRifle" Order="213" Item="SniperRifle_RangeMaster358_Epic"/>
+		<class name="SniperRifle_RangeMaster358_Rare" Type="SniperRifle" Order="214" Item="SniperRifle_RangeMaster358_Rare"/>
+		<class name="SniperRifle_RangeMaster358_Uncommon" Type="SniperRifle" Order="215" Item="SniperRifle_RangeMaster358_Uncommon"/>
+		<class name="SniperRifle_RMS233_Epic" Type="SniperRifle" Order="216" Item="SniperRifle_RMS233_Epic"/>
+		<class name="SniperRifle_RMS233_Rare" Type="SniperRifle" Order="217" Item="SniperRifle_RMS233_Rare"/>
+		<class name="SniperRifle_RMS233_Uncommon" Type="SniperRifle" Order="218" Item="SniperRifle_RMS233_Uncommon"/>
+		<class name="SniperRifle_Wallenstein" Type="SniperRifle" Order="219" Item="SniperRifle_Wallenstein"/>
+		<class name="Sword_AscaBlade" Type="LongSword" Order="220" Item="Sword_AscaBlade"/>
+		<class name="Sword_AscaBlade_Black" Type="LongSword" Order="221" Item="Sword_AscaBlade_Black"/>
+		<class name="Sword_AscaBlade_Legend" Type="LongSword" Order="222" Item="Sword_AscaBlade_Legend"/>
+		<class name="Sword_AscaBlade_Red" Type="LongSword" Order="223" Item="Sword_AscaBlade_Red"/>
+		<class name="Sword_AscaBlade_Red_Rare" Type="LongSword" Order="224" Item="Sword_AscaBlade_Red_Rare"/>
+		<class name="Sword_BlackIron" Type="LongSword" Order="225" Item="Sword_BlackIron"/>
+		<class name="Sword_BlackIron_Fire_Epic" Type="LongSword" Order="226" Item="Sword_BlackIron_Fire_Epic"/>
+		<class name="Sword_BlackIron_Ice_Epic" Type="LongSword" Order="227" Item="Sword_BlackIron_Ice_Epic"/>
+		<class name="Sword_BlackIron_Rare" Type="LongSword" Order="228" Item="Sword_BlackIron_Rare"/>
+		<class name="Sword_BlackIron_Wind_Epic" Type="LongSword" Order="229" Item="Sword_BlackIron_Wind_Epic"/>
+		<class name="Sword_Breaking" Type="LongSword" Order="230" Item="Sword_Breaking"/>
+		<class name="Sword_CarbonBlade" Type="LongSword" Order="231" Item="Sword_CarbonBlade"/>
+		<class name="Sword_CarbonBlade_Black" Type="LongSword" Order="232" Item="Sword_CarbonBlade_Black"/>
+		<class name="Sword_CarbonBlade_Black_Rare" Type="LongSword" Order="233" Item="Sword_CarbonBlade_Black_Rare"/>
+		<class name="Sword_CarbonBlade_Epic" Type="LongSword" Order="234" Item="Sword_CarbonBlade_Epic"/>
+		<class name="Sword_CarbonBlade_PinkHorn" Type="LongSword" Order="235" Item="Sword_CarbonBlade_PinkHorn"/>
+		<class name="Sword_Cyrus" Type="LongSword" Order="236" Item="Sword_Cyrus"/>
+		<class name="Sword_Cyruse_Epic" Type="LongSword" Order="237" Item="Sword_Cyruse_Epic"/>
+		<class name="Sword_Cyruse_Rare" Type="LongSword" Order="238" Item="Sword_Cyruse_Rare"/>
+		<class name="Sword_Eluote" Type="LongSword" Order="239" Item="Sword_Eluote"/>
+		<class name="Sword_OgreBlade" Type="LongSword" Order="240" Item="Sword_OgreBlade"/>
+		<class name="Sword_OgreBlade_Epic" Type="LongSword" Order="241" Item="Sword_OgreBlade_Epic"/>
+		<class name="Sword_OgreBlade_Rare" Type="LongSword" Order="242" Item="Sword_OgreBlade_Rare"/>
+		<class name="Sword_Pulse" Type="LongSword" Order="243" Item="Sword_Pulse"/>
+		<class name="Sword_Pulse_Epic" Type="LongSword" Order="244" Item="Sword_Pulse_Epic"/>
+		<class name="Sword_Pulse_Rare" Type="LongSword" Order="245" Item="Sword_Pulse_Rare"/>
+		<class name="Sword_Pulse_Special_Legend" Type="LongSword" Order="246" Item="Sword_Pulse_Special_Legend"/>
+		<class name="Sword_Sever" Type="LongSword" Order="247" Item="Sword_Sever"/>
+		<class name="Sword_Sever_Epic" Type="LongSword" Order="248" Item="Sword_Sever_Epic"/>
+		<class name="Sword_Sever_Legend" Type="LongSword" Order="249" Item="Sword_Sever_Legend"/>
+		<class name="Sword_Sever_Rare" Type="LongSword" Order="250" Item="Sword_Sever_Rare"/>
+		<class name="Sword_Sever_Set" Type="LongSword" Order="251" Item="Sword_Sever_Set"/>
+		<class name="Sword_SharpBlade" Type="LongSword" Order="252" Item="Sword_SharpBlade"/>
+		<class name="Sword_SharpBlade_Epic" Type="LongSword" Order="253" Item="Sword_SharpBlade_Epic"/>
+		<class name="Sword_SharpBlade_Rare" Type="LongSword" Order="254" Item="Sword_SharpBlade_Rare"/>
+		<class name="Sword_TitanBlade" Type="LongSword" Order="255" Item="Sword_TitanBlade"/>
+		<class name="Sword_TitanBlade_Rare" Type="LongSword" Order="256" Item="Sword_TitanBlade_Rare"/>
+		<class name="Sword_Unicorn" Type="LongSword" Order="257" Item="Sword_Unicorn"/>
+		<class name="Sword_Unicorn_Epic" Type="LongSword" Order="258" Item="Sword_Unicorn_Epic"/>
+		<class name="Sword_Unicorn_Rare" Type="LongSword" Order="259" Item="Sword_Unicorn_Rare"/>
+		<class name="Sword_Windforce" Type="LongSword" Order="260" Item="Sword_Windforce"/>
+		<class name="TwoHandClub_BlackIronEnhancedPipe" Type="TwoHandClub" Order="261" Item="TwoHandClub_BlackIronEnhancedPipe"/>
+		<class name="TwoHandClub_BlackIronPipe" Type="TwoHandClub" Order="262" Item="TwoHandClub_BlackIronPipe"/>
+		<class name="TwoHandClub_CarbonBat" Type="TwoHandClub" Order="263" Item="TwoHandClub_CarbonBat"/>
+		<class name="TwoHandClub_CarbonHammer" Type="TwoHandClub" Order="264" Item="TwoHandClub_CarbonHammer"/>
+		<class name="TwoHandClub_CarbonPipe" Type="TwoHandClub" Order="265" Item="TwoHandClub_CarbonPipe"/>
+		<class name="TwoHandClub_FireBat" Type="TwoHandClub" Order="266" Item="TwoHandClub_FireBat"/>
+		<class name="TwoHandClub_SteelBat" Type="TwoHandClub" Order="267" Item="TwoHandClub_SteelBat"/>
+		<class name="TwoHandClub_SteelHammer" Type="TwoHandClub" Order="268" Item="TwoHandClub_SteelHammer"/>
+		<class name="TwoHandClub_SteelPipe" Type="TwoHandClub" Order="269" Item="TwoHandClub_SteelPipe"/>
+		<class name="TwoHandClub_TitanBat" Type="TwoHandClub" Order="270" Item="TwoHandClub_TitanBat"/>
+		<class name="TwoHandClub_TitanPipe" Type="TwoHandClub" Order="271" Item="TwoHandClub_TitanPipe"/>
+		<class name="TwoHandSword_BattleCutter" Type="TwoHandSword" Order="272" Item="TwoHandSword_BattleCutter"/>
+	</idspace>
+</idspaces>

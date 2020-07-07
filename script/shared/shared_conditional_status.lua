@@ -7,6 +7,13 @@ function GetConditionalStatus(self, arg, info, calcOption)
 	end
 end
 
+local g_environmentMonsterChecker = {
+	HotMonster = function(calcOption) return calcOption.MissionTemperature == 'Hot' or calcOption.MissionTemperature == 'ExtremelyHot' end,
+	ColdMonster = function(calcOption) return calcOption.MissionWeather == 'Snow' or calcOption.MissionTemperature == 'Cold' or calcOption.MissionTemperature == 'Freezing' end,
+	MoonMonster = function(calcOption) return IsDarkTime(calcOption.MissionTime) end,
+	RainMonster = function(calcOption) return calcOption.MissionWeather == 'Rain' end,
+};
+
 function GetConditionalStatus_Block(self, arg, info, calcOption)
 	local result = 0;
 	
@@ -46,6 +53,11 @@ function GetConditionalStatus_Block(self, arg, info, calcOption)
 				addAmount = addAmount + gatekeeper.ApplyAmount;
 			end
 			local addBlock = #targetList * addAmount;
+			
+			local mastery_DefenceChoice = GetMasteryMastered(masteryTable_Defender, 'DefenceChoice');
+			if mastery_DefenceChoice then
+				addBlock = addBlock + math.floor(#targetList / mastery_DefenceChoice.ApplyAmount2) * mastery_DefenceChoice.ApplyAmount3;
+			end
 			result = result + addBlock;
 			table.insert(info, { Type = mastery_Sentinel.name, Value = addBlock, ValueType = 'Mastery'});
 		end
@@ -60,6 +72,10 @@ function GetConditionalStatus_Block(self, arg, info, calcOption)
 			local mastery_TopChoice = GetMasteryMastered(masteryTable_Defender, 'TopChoice');
 			if mastery_TopChoice then
 				addBlock = addBlock + mastery_TopChoice.ApplyAmount;
+			end
+			local mastery_DefenceChoice = GetMasteryMastered(masteryTable_Defender, 'DefenceChoice');
+			if mastery_DefenceChoice then
+				addBlock = addBlock + mastery_DefenceChoice.ApplyAmount;
 			end
 			result = result + addBlock;
 			table.insert(info, { Type = mastery_TacticalSense.name, Value = addBlock, ValueType = 'Mastery'});
@@ -123,17 +139,6 @@ function GetConditionalStatus_Block(self, arg, info, calcOption)
 		end
 	end
 	
-	-- 홀로서기
-	local mastery_StandAlone = GetMasteryMastered(masteryTable_Defender, 'StandAlone');
-	if mastery_StandAlone then
-		FillAllyList();
-		if #allyList == 0 then
-			local addBlock = math.floor(mastery_StandAlone.CustomCacheData / mastery_StandAlone.ApplyAmount) * mastery_StandAlone.ApplyAmount2;
-			result = result + addBlock;
-			table.insert(info, MakeMasteryStatInfo(mastery_StandAlone.name, addBlock));
-		end
-	end
-	
 	-- 혼전
 	local mastery_IntenseBattle = GetMasteryMastered(masteryTable_Defender, 'IntenseBattle');
 	if mastery_IntenseBattle then
@@ -145,7 +150,24 @@ function GetConditionalStatus_Block(self, arg, info, calcOption)
 			table.insert(info, MakeMasteryStatInfo(mastery_IntenseBattle.name, addVal));
 		end
 	end
-
+	
+	-- 폭염의 괴수, 혹한의 괴수, 달빛의 괴수, 빗속의 괴수
+	for masteryName, checker in pairs(g_environmentMonsterChecker) do
+		result = result + GetMasteryValueByCustomFuncWithInfo(masteryTable_Defender, masteryName, info, function(mastery)
+			if checker(calcOption) then 
+				return mastery.ApplyAmount;
+			end
+		end);
+	end
+	
+	-- 무도의 빛 - 5 세트
+	result = result + GetMasteryValueByCustomFuncWithInfo(masteryTable_Defender, 'GoldNeguriAttackSet5', info, function(mastery)
+		local targetList = GetTargetInRangeSightRepositionWithCache(cache, usePrevPos, self, 'Sight', 'Enemy', true);
+		if #targetList > 0 then
+			return math.floor(#targetList / mastery.ApplyAmount) * mastery.ApplyAmount2;
+		end
+	end);
+	
 	return result;
 end
 
@@ -179,8 +201,14 @@ function GetConditionalStatus_Accuracy_Base(self, arg, info, calcOption)
 	elseif GetInstantProperty(self, 'WandererActive') then
 		local mastery_Wanderer = GetMasteryMastered(masteryTable_Attacker, 'Wanderer');
 		if mastery_Wanderer then	-- 사실 이 체크는 의미가 없어야한다.
-			result = result + mastery_Wanderer.ApplyAmount;
-			table.insert(info, {Type = mastery_Wanderer.name, Value = mastery_Wanderer.ApplyAmount, ValueType = 'Mastery'});
+			local addAmount = mastery_Wanderer.ApplyAmount;
+			
+			local mastery_BattleWanderer = GetMasteryMastered(masteryTable_Attacker, 'BattleWanderer');
+			if mastery_BattleWanderer then
+				addAmount = addAmount + mastery_BattleWanderer.ApplyAmount;
+			end
+			result = result + addAmount;
+			table.insert(info, {Type = mastery_Wanderer.name, Value = addAmount, ValueType = 'Mastery'});
 		end
 	end
 	
@@ -272,26 +300,13 @@ function GetConditionalStatus_Accuracy_Environment(self, arg, info, calcOption)
 		end
 	end
 	
-	-- 날씨: 비
-	local value_Weather = 0;
-	if calcOption.MissionWeather == 'Rain' then
-		value_Weather = -10;
-	end
-	if value_Weather ~= 0 then
-		result = result + value_Weather;
-		table.insert(info, {Type = 'Weather', Value = value_Weather, ValueType = 'Formula', Weather = calcOption.MissionWeather});
-	end
-	-- 특성 야생 생활 / 환경 적응
-	if value_Weather < 0 then
-		local immuneMastery = GetMasteryMasteredImmuneWeather(masteryTable_Attacker);
-		-- 빗속의 야수(비)
-		if not immuneMastery and calcOption.MissionWeather == 'Rain' then
-			immuneMastery = GetMasteryMastered(masteryTable_Attacker, 'RainBeast');
-		end
-		if immuneMastery then
-			result = result - value_Weather;
-			table.insert(info, MakeMasteryStatInfo(immuneMastery.name, -1 * value_Weather));
-		end
+	-- 폭염의 괴수, 혹한의 괴수, 달빛의 괴수, 빗속의 괴수
+	for masteryName, checker in pairs(g_environmentMonsterChecker) do
+		result = result + GetMasteryValueByCustomFuncWithInfo(masteryTable_Attacker, masteryName, info, function(mastery)
+			if checker(calcOption) then 
+				return mastery.ApplyAmount;
+			end
+		end);
 	end
 	
 	return result;
@@ -502,6 +517,23 @@ function GetConditionalStatus_CriticalStrikeChance(self, arg, info, calcOption)
 		end
 	end
 	
+	-- 폭염의 괴수, 혹한의 괴수, 달빛의 괴수, 빗속의 괴수
+	for masteryName, checker in pairs(g_environmentMonsterChecker) do
+		result = result + GetMasteryValueByCustomFuncWithInfo(masteryTable_Attacker, masteryName, info, function(mastery)
+			if checker(calcOption) then 
+				return mastery.ApplyAmount;
+			end
+		end);
+	end
+	
+	-- 마도의 빛 - 5 세트
+	result = result + GetMasteryValueByCustomFuncWithInfo(masteryTable_Attacker, 'GoldNeguriESPSet5', info, function(mastery)
+		local targetList = GetTargetInRangeSightRepositionWithCache(cache, usePrevPos, self, 'Sight', 'Enemy', true);
+		if #targetList > 0 then
+			return math.floor(#targetList / mastery.ApplyAmount) * mastery.ApplyAmount2;
+		end
+	end);
+	
 	return result;
 end
 
@@ -631,6 +663,15 @@ function GetConditionalStatus_Dodge(self, arg, info, calcOption)
 			result = result - value_Temperature;
 			table.insert(info, {Type = immuneMastery.name, Value = -1 * value_Temperature, ValueType = 'Mastery'});
 		end
+	end
+	
+	-- 폭염의 괴수, 혹한의 괴수, 달빛의 괴수, 빗속의 괴수
+	for masteryName, checker in pairs(g_environmentMonsterChecker) do
+		result = result + GetMasteryValueByCustomFuncWithInfo(masteryTable_Defender, masteryName, info, function(mastery)
+			if checker(calcOption) then 
+				return mastery.ApplyAmount;
+			end
+		end);
 	end
 	
 	return result;
@@ -772,6 +813,7 @@ function GetConditionalStatus_Speed(self, arg, info, calcOption)
 	return result;
 end
 function GetConditionalStatus_IncreaseDamage(self, arg, info, calcOption)
+	local usePrevPos = calcOption.UsePrevAbilityPosition;
 	local result = 0;
 	local masteryTable = calcOption.MasteryTable or GetMastery(self);
 	
@@ -785,25 +827,44 @@ function GetConditionalStatus_IncreaseDamage(self, arg, info, calcOption)
 			table.insert(info, MakeMasteryStatInfo(mastery_Fury.name, addAmount));
 		end
 	end
+	
+	local cache = {};
+	-- 홀로서기
+	result = result + GetMasteryValueByCustomFuncWithInfo(masteryTable, 'StandAlone', info, function(mastery)
+		local targetList = GetTargetInRangeSightRepositionWithCache(cache, usePrevPos, self, mastery.Range, 'Team', true);
+		if #targetList == 0 then
+			return math.floor(mastery.CustomCacheData / mastery.ApplyAmount2) * mastery.ApplyAmount3;
+		end
+	end);
+	
 	return result;
 end
 function GetConditionalStatus_IncreaseDamage_ESP(self, arg, info, calcOption)
 	local result = 0;
 	local masteryTable = calcOption.MasteryTable or GetMastery(self);
+
+	return result;
+end
+function GetConditionalStatus_IncreaseDamage_Ice(self, arg, info, calcOption)
+	local result = 0;
+	local masteryTable = calcOption.MasteryTable or GetMastery(self);
 	
-	local mastery_WitchBook = GetMasteryMastered(masteryTable, 'WitchBook');
-	if mastery_WitchBook then
-		local addVal = mastery_WitchBook.ApplyAmount * mastery_WitchBook.CustomCacheData;
-		local mastery_ArchWitch = GetMasteryMastered(masteryTable, 'ArchWitch');
-		if mastery_ArchWitch then
-			addVal = addVal + mastery_ArchWitch.ApplyAmount * mastery_ArchWitch.CustomCacheData;
+	local mastery_BigSnowman = GetMasteryMastered(masteryTable, 'BigSnowman');
+	if mastery_BigSnowman 
+		and (calcOption.MissionWeather == 'Snow' or calcOption.MissionTemperature == 'Cold' or calcOption.MissionTemperature == 'Freezing') then
+		result = result + mastery_BigSnowman.ApplyAmount;
+		for _, infoOne in ipairs(info) do
+			if infoOne.Type == mastery_BigSnowman.name then
+				infoOne.Value = infoOne.Value + mastery_BigSnowman.ApplyAmount;
+				break;
+			end
 		end
-		result = result + addVal;
-		table.insert(info, MakeMasteryStatInfo(mastery_WitchBook.name, addVal));
 	end
+
 	return result;
 end
 function GetConditionalStatus_DecreaseDamage(self, arg, info, calcOption)
+	local usePrevPos = calcOption.UsePrevAbilityPosition;
 	local result = 0;
 	local masteryTable = calcOption.MasteryTable or GetMastery(self);
 	
@@ -816,5 +877,23 @@ function GetConditionalStatus_DecreaseDamage(self, arg, info, calcOption)
 			table.insert(info, MakeMasteryStatInfo(mastery_StrangeScale.name, addAmount));
 		end
 	end
+	
+	local cache = {};
+	-- 홀로서기
+	result = result + GetMasteryValueByCustomFuncWithInfo(masteryTable, 'StandAlone', info, function(mastery)
+		local targetList = GetTargetInRangeSightRepositionWithCache(cache, usePrevPos, self, mastery.Range, 'Team', true);
+		if #targetList == 0 then
+			return math.floor(mastery.CustomCacheData / mastery.ApplyAmount2) * mastery.ApplyAmount3;
+		end
+	end);	
+	
+	-- 야샤의 화려한 껍질
+	result = result + GetMasteryValueByCustomFuncWithInfo(masteryTable, 'Amulet_Yasha_Scale2', info, function(mastery)
+		local targetList = GetTargetInRangeSightRepositionWithCache(cache, usePrevPos, self, mastery.Range, 'Team', true);
+		if #targetList > 0 then
+			return math.floor(#targetList / mastery.ApplyAmount2) * mastery.ApplyAmount3;
+		end
+	end);
+	
 	return result;
 end

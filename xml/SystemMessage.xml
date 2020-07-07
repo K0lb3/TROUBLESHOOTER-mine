@@ -3,11 +3,10 @@
 	<class name="AvailableOnMyTurn" Message="[!Ignore]턴이 활성화 된 상태에서만 가능합니다"/>
 	<class name="GeneralTroubleshooterGuide" Message="
 	
-문제 상황이 지속되는 경우 개발팀 공식 메일 (system@dandylion.co.kr)을 통해서 알려주시거나
+문제 상황이 지속되는 경우 $ErrorReport$기능을 이용해서 문제상황을 알려주시면 바로 문제 해결에 도움을 드리겠습니다.
 
-$SteamDiscussionLink$에 문의해 주시면 바로 문제 해결에 도움을 드리겠습니다. 
-
-불편을 드려 대단히 죄송합니다."/>
+불편을 드려 대단히 죄송합니다.
+($VersionInfo$)"/>
 	<class name="FailedToConnectMissionServer" Message="미션 서버에 접속하지 못했습니다."/>
 	<class name="FailedToConnectMissionServer_Single" Message="미션에 진입하지 못했습니다."/>
 	<class name="FailedToConnectLobbyServer" Message="로비 서버에 접속하지 못했습니다."/>
@@ -15,6 +14,7 @@ $SteamDiscussionLink$에 문의해 주시면 바로 문제 해결에 도움을 �
 	<class name="ConnectionRequestExpired" Message="접속 요청이 만료되었습니다"/>
 	<class name="ConnectionRequestExpired_Single" Message="요청이 만료되었습니다"/>
 	<class name="InvalidItemSetting" Message="아이템 오브젝트가 이상합니다."/>
+	<class name="InvalidDifficulty" Message="시작할 수 없는 난이도입니다"/>
 	<class name="FailedToOpenMission" Message="미션 열기에 실패했습니다"/>
 	<class name="FailedToLogin" Message="계정 인증에 실패했습니다."/>
 	<class name="AccountBlock_Hacking" Message="안녕하세요. 트러블슈터 개발팀입니다.
@@ -34,6 +34,7 @@ $SendMail$ (system@dandylion.co.kr)"/>
 	<class name="ServerMaintenanceMessage_Emergency" Message="현재 임시점검으로 인한 서버 점검중입니다. 점검시간은 아래와 같습니다.&#xA;&#xA;%s ~ %s"/>
 	<class name="SteamNewsLinkText" Message="스팀 페이지"/>
 	<class name="SteamDiscussionLinkText" Message="스팀 포럼 페이지"/>
+	<class name="ErrorReportLinkText" Message="오류 보고"/>
 	<class name="FailedToInitializeSteam" Message="스팀 이니셜라이즈에 실패했습니다"/>
 	<class name="UnknownConnectionError" Message="알 수 없는 연결문제가 발생했습니다."/>
 	<class name="NeedSteamLogin" Message="스팀 로그인이 필요합니다"/>
@@ -85,7 +86,13 @@ $SendMail$ (system@dandylion.co.kr)"/>
 재실행 후 스팀 클라이언트에서 업데이트를 받아 파일 무결성 검사를 수행해주세요.
 이용에 불편을 드려 죄송합니다.
 해당 사항이 지속적으로 해결되시지 않으시면 system@dandylion.co.kr로 문의 부탁드립니다"/>
-	<class name="NotAvailableToConnectLocalProcess" Message="오프라인 모드를 시작하지 못했습니다. 문제가 지속될 경우 system@dandylion.co.kr로 문의 부탁드립니다"/>
+	<class name="NotAvailableToConnectLocalProcess" Message="오프라인 모드를 시작하지 못했습니다.
+
+오프라인 모드는 내부적으로 실행해되는 프로세스와의 연결을 통해서 진행됩니다.
+
+안티 바이러스나 기타 프로그램간의 내부통신에 지장을 주는 프로세스가 시스템에 존재하는 경우 오프라인 플레이에 문제가 발생할 수 있습니다.
+
+관련 프로그램을 종료한 후 다시 실행해 보시기 바랍니다."/>
 	<class name="AddFriendRequested" Message="%s님에게 친구 요청을 보냈습니다."/>
 	<class name="NoAvailableInfoRange" Message="추가 범위 정보 없음"/>
 	<class name="TargetServerNotValid" Message="접속 대상 서버가 올바르지 않습니다."/>

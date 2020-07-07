@@ -238,6 +238,17 @@ function QuestKeywordTitle_TargetItem(cls, questName)
 	end
 	return result;
 end
+function QuestKeywordTitle_TargetCivilName(cls, questName)
+	local result = '';
+	local colorList = GetClassList('Color');
+	local curColor = colorList[cls.Color].ARGB;
+	local questCls = GetClassList('Quest')[questName];
+	local targetClsList = GetClassList(questCls.Type.Idspace);
+	local targetCls = SafeIndex(targetClsList, questCls.Target);
+	local title = SafeIndex(targetCls, 'Title') or 'Error';
+	result = string.format("[colour='%s']%s", curColor, title);
+	return result;
+end
 function QuestKeywordTitle_Item(cls, questName, item, colorOver)
 	local result = '';
 	local colorList = GetClassList('Color');

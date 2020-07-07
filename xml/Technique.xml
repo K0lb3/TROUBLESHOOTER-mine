@@ -203,7 +203,6 @@
 		<class name="BladeParry" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
 			<RequireMasteries>
 				<property name="Swordmaster"/>
-				<property name="Concentration"/>
 				<property name="Patience"/>
 			</RequireMasteries>
 		</class>
@@ -304,7 +303,6 @@
 		</class>
 		<class name="Breakthrough" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
 			<RequireMasteries>
-				<property name="LimitBreak"/>
 				<property name="ConcentratedFire"/>
 				<property name="OpportunityStrikes"/>
 				<property name="HeavyStrike"/>
@@ -354,7 +352,7 @@
 		</class>
 		<class name="Catharsis" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
 			<RequireMasteries>
-				<property name="Insight"/>
+				<property name="Learning"/>
 			</RequireMasteries>
 		</class>
 		<class name="CatharsisOfIncineration" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
@@ -438,12 +436,7 @@
 		</class>
 		<class name="ConcentratedFire" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0"/>
 		<class name="Concentration" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0"/>
-		<class name="Consideration" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
-			<RequireMasteries>
-				<property name="Willpower"/>
-				<property name="Patience"/>
-			</RequireMasteries>
-		</class>
+		<class name="Consideration" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0"/>
 		<class name="ContainingAttack" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0"/>
 		<class name="ControlReactor" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
 			<RequireMasteries>
@@ -709,12 +702,7 @@
 				<property name="IndomitableWill"/>
 			</RequireMasteries>
 		</class>
-		<class name="ForthrightStatement" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
-			<RequireMasteries>
-				<property name="Frankness"/>
-				<property name="HighSpeed"/>
-			</RequireMasteries>
-		</class>
+		<class name="ForthrightStatement" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0"/>
 		<class name="Frankness" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
 			<RequireMasteries>
 				<property name="PangOfConscience"/>
@@ -752,12 +740,7 @@
 				<property name="Sentinel"/>
 			</RequireMasteries>
 		</class>
-		<class name="GraciousRefusal" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
-			<RequireMasteries>
-				<property name="Consideration"/>
-				<property name="Patience"/>
-			</RequireMasteries>
-		</class>
+		<class name="GraciousRefusal" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0"/>
 		<class name="Grappling" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
 			<RequireMasteries>
 				<property name="Robust"/>
@@ -800,6 +783,16 @@
 		<class name="HappySong" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
 			<RequireMasteries>
 				<property name="Tension"/>
+			</RequireMasteries>
+		</class>
+		<class name="ResonantCrying" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
+			<RequireMasteries>
+				<property name="Robust"/>
+			</RequireMasteries>
+		</class>
+		<class name="EndlessSong" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
+			<RequireMasteries>
+				<property name="Patience"/>
 			</RequireMasteries>
 		</class>
 		<class name="HawkEye" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0"/>
@@ -993,12 +986,12 @@
 		<class name="InnerFlame" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0"/>
 		<class name="InnerPeace" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
 			<RequireMasteries>
-				<property name="Insight"/>
+				<property name="Understanding"/>
 			</RequireMasteries>
 		</class>
 		<class name="Insight" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
 			<RequireMasteries>
-				<property name="Understanding"/>
+				<property name="Concentration"/>
 			</RequireMasteries>
 		</class>
 		<class name="InvisibleSword" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
@@ -1467,7 +1460,7 @@
 		</class>
 		<class name="PhantomThief" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0" Developing="true">
 			<RequireMasteries>
-				<property name="Insight"/>
+				<property name="Understanding"/>
 				<property name="Luck"/>
 			</RequireMasteries>
 		</class>
@@ -1529,7 +1522,6 @@
 				<property name="Forestallment"/>
 				<property name="OneShotOneKill"/>
 				<property name="Ambush"/>
-				<property name="Catharsis"/>
 			</RequireMasteries>
 		</class>
 		<class name="Prosperity" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
@@ -1651,7 +1643,7 @@
 		<class name="Sage" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
 			<RequireMasteries>
 				<property name="Recluse"/>
-				<property name="Insight"/>
+				<property name="Understanding"/>
 			</RequireMasteries>
 		</class>
 		<class name="SameTarget" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
@@ -1730,11 +1722,7 @@
 		</class>
 		<class name="Shaking" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0"/>
 		<class name="Shaman" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0"/>
-		<class name="SharpBlade" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
-			<RequireMasteries>
-				<property name="Swordmaster"/>
-			</RequireMasteries>
-		</class>
+		<class name="SharpBlade" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0"/>
 		<class name="Sharpshooter" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
 			<RequireMasteries>
 				<property name="Concentration"/>
@@ -1823,11 +1811,7 @@
 				<property name="Fellowship"/>
 			</RequireMasteries>
 		</class>
-		<class name="Sortilege" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
-			<RequireMasteries>
-				<property name="Luck"/>
-			</RequireMasteries>
-		</class>
+		<class name="Sortilege" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0"/>
 		<class name="SoulGuide" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
 			<RequireMasteries>
 				<property name="Shaman"/>
@@ -1847,7 +1831,7 @@
 		<class name="SpellBook" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
 			<RequireMasteries>
 				<property name="Magician"/>
-				<property name="Insight"/>
+				<property name="Understanding"/>
 			</RequireMasteries>
 		</class>
 		<class name="SpellErosion" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
@@ -1956,7 +1940,7 @@
 		<class name="SwordsmanshipBook" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
 			<RequireMasteries>
 				<property name="Swordmaster"/>
-				<property name="Insight"/>
+				<property name="Understanding"/>
 			</RequireMasteries>
 		</class>
 		<class name="TacticalEnvelopment" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
@@ -2013,7 +1997,7 @@
 		<class name="ToughSpirit" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0"/>
 		<class name="TraceOn" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
 			<RequireMasteries>
-				<property name="Insight"/>
+				<property name="Understanding"/>
 			</RequireMasteries>
 		</class>
 		<class name="Training100" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
@@ -2055,7 +2039,7 @@
 		</class>
 		<class name="Understanding" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="Insight" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
 			<RequireMasteries>
-				<property name="Learning"/>
+				<property name="Concentration"/>
 			</RequireMasteries>
 		</class>
 		<class name="Vanquished" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0" Developing="true"/>
@@ -2233,7 +2217,7 @@
 		<class name="WitchBook" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
 			<RequireMasteries>
 				<property name="Shaman"/>
-				<property name="Insight"/>
+				<property name="Understanding"/>
 			</RequireMasteries>
 		</class>
 		<class name="WitchJealousy" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
@@ -3213,7 +3197,79 @@
 		<class name="LoveHate" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
 			<RequireMasteries>
 				<property name="Frankness"/>
-				<property name="PangOfConscience"/>
+			</RequireMasteries>
+		</class>
+		<class name="BloodyBeast" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
+			<RequireMasteries>
+				<property name="Hemorrhage"/>
+			</RequireMasteries>
+		</class>
+		<class name="DespairFlame" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
+			<RequireMasteries>
+				<property name="LordOfHatred"/>
+			</RequireMasteries>
+		</class>
+		<class name="JealousEye" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
+			<RequireMasteries>
+				<property name="Jealousy"/>
+			</RequireMasteries>
+		</class>
+		<class name="KingEar" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
+			<RequireMasteries>
+				<property name="PredatorEar"/>
+			</RequireMasteries>
+		</class>
+		<class name="KingSmell" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
+			<RequireMasteries>
+				<property name="PredatorSmell"/>
+			</RequireMasteries>
+		</class>
+		<class name="LifeFlame" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
+			<RequireMasteries>
+				<property name="Frankness"/>
+			</RequireMasteries>
+		</class>
+		<class name="NeuralNetworkAcceleration" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
+			<RequireMasteries>
+				<property name="ElectricPulse"/>
+			</RequireMasteries>
+		</class>
+		<class name="NeuralNetworkControl" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
+			<RequireMasteries>
+				<property name="ElectricPulse"/>
+			</RequireMasteries>
+		</class>
+		<class name="PiercingStrikes" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
+			<RequireMasteries>
+				<property name="ConcentratedFire"/>
+			</RequireMasteries>
+		</class>
+		<class name="RevengeStrikes" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
+			<RequireMasteries>
+				<property name="CounterAttack"/>
+			</RequireMasteries>
+		</class>
+		<class name="VeteranSpirit" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
+			<RequireMasteries>
+				<property name="Veteran"/>
+			</RequireMasteries>
+		</class>
+		<class name="WebNetwork" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
+			<RequireMasteries>
+				<property name="SpinWeb"/>
+			</RequireMasteries>
+		</class>
+		<class name="WebSac" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
+			<RequireMasteries>
+				<property name="HiddenWeb"/>
+			</RequireMasteries>
+		</class>
+		<class name="Oppression" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
+			<RequireMasteries>
+				<property name="Aggression"/>
+				<property name="HuntingDog"/>
+				<property name="Threat"/>
+				<property name="Veteran"/>
 			</RequireMasteries>
 		</class>
 		<class name="Module_EnhancedAuxiliaryPower" Type="Module" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">

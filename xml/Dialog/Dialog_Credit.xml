@@ -81,6 +81,10 @@
 			<property Type="Sleep" Time="3"/>
 			<property Type="ShowCredit" CreditType="None" Slow="false"/>
 			<property Type="Sleep" Time="1"/>
+			<property Type="ShowCredit" CreditType="Credit13_3" Slow="false"/>
+			<property Type="Sleep" Time="3"/>
+			<property Type="ShowCredit" CreditType="None" Slow="false"/>
+			<property Type="Sleep" Time="1"/>
 			<property Type="Jump" JumpTo="Credit_Episode01_14"/>
 			<property Type="ShowCredit" CreditType="Credit14" Slow="false"/>
 			<property Type="Sleep" Time="4"/>
@@ -96,6 +100,10 @@
 			<property Type="ShowCredit" CreditType="None" Slow="false"/>
 			<property Type="Sleep" Time="1"/>
 			<property Type="ShowCredit" CreditType="Credit15_2" Slow="false"/>
+			<property Type="Sleep" Time="4"/>
+			<property Type="ShowCredit" CreditType="None" Slow="false"/>
+			<property Type="Sleep" Time="1"/>
+			<property Type="ShowCredit" CreditType="Credit15_3" Slow="false"/>
 			<property Type="Sleep" Time="4"/>
 			<property Type="ShowCredit" CreditType="None" Slow="false"/>
 			<property Type="Sleep" Time="1"/>

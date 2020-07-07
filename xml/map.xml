@@ -324,4 +324,8 @@
 	<class name="Wow2" Tile="Level2.tile" Map="Level2.dmf"/>
 	<class name="PortWareHouse_C_DV" Tile="PortWareHouse_C_DV.tile" Map="PortWareHouse_C_DV.dmf"/>
 	<class name="PurpleBackStreet3" Tile="PurpleBackStreet3.tile" Map="PurpleBackStreet3.dmf"/>
+	<class name="SkyWindPark_Night2" Tile="SkyWindPark_Night2.tile" Map="SkyWindPark_Night2.dmf"/>
+	<class name="GoldHandStreet" Tile="GoldHandStreet.tile" Map="GoldHandStreet.dmf"/>
+	<class name="GoldHandStreet_DV" Tile="GoldHandStreet_DV.tile" Map="GoldHandStreet_DV.dmf"/>
+	<class name="GoldHandStreet2" Tile="GoldHandStreet2.tile" Map="GoldHandStreet2.dmf"/>
 </idspace>

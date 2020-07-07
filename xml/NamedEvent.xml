@@ -72,13 +72,17 @@
 		<class name="Dorori_Rock_Leader" Title="욕심쟁이 도로리" Subtitle="암석 왕도로리" MeetChat="크악! 크악!" MeetBuff="Rage" MeetAnimation="Rage" DangerChat="크악! 크악!" DangerBuff="Rage" DangerAnimation="Rage"/>
 		<class name="Dorori_Wind_Leader" Title="미치광이 도로리" Subtitle="오색 왕도로리" MeetChat="끼아악! 끼아악!" MeetBuff="Rage" MeetAnimation="Rage" DangerChat="끼아악! 끼아악!" DangerBuff="Rage" DangerAnimation="Rage"/>
 		<class name="Dorori_White_Leader" Title="심술쟁이 도로리" Subtitle="하얀 왕도로리" MeetChat="키에엑!" MeetBuff="Rage" MeetAnimation="Rage" DangerChat="키에엑! 키에엑!" DangerBuff="Rage" DangerAnimation="Rage"/>
-		<class name="Yasha_Grey" Title="외톨이 야샤" Subtitle="회색 야샤" MeetChat="히이익~ 히이익~" MeetBuff="Excitement" MeetAnimation="Rage" DangerChat="히이익~ 히이익~" DangerBuff="Excitement" DangerAnimation="Rage"/>
+		<class name="Dorori_Red_Leader" Title="흉폭한 도로리" Subtitle="붉은 왕도로리" MeetChat="끼아악! 끼아악!" MeetBuff="Hatred" MeetBuff2="Fast" MeetAnimation="Rage" DangerChat="끼아악! 끼아악!" DangerBuff="Hatred" DangerBuff2="Concentration" DangerAnimation="Rage"/>
+		<class name="Dorori_Gold" Title="자랑쟁이 도로리" Subtitle="황금 날개" MeetChat="키힉! 키힉!" MeetBuff="Excitement" MeetBuff2="Fast" MeetAnimation="Rage" DangerChat="키힉! 키힉!" DangerBuff="Excitement" DangerBuff2="Concentration" DangerAnimation="Rage"/>
 		<class name="Yasha_Lightning" Title="투영의 야샤" Subtitle="전격 야샤" MeetChat="츄츗! 츄츗" MeetBuff="Excitement" MeetAnimation="Rage" DangerChat="츄츗! 츄츗" DangerBuff="Excitement" DangerAnimation="Rage"/>
 		<class name="Yasha_Black" Title="그림자의 야샤" Subtitle="암흑 야샤" MeetChat="치이히~ 치이히~" MeetBuff="Excitement" MeetAnimation="Rage" DangerChat="치이히~ 치이히~" DangerBuff="Excitement" DangerAnimation="Rage"/>
 		<class name="Yasha_Earth" Title="기암의 야샤" Subtitle="암석 야샤" MeetChat="시이익~ 시이익~" MeetBuff="Excitement" MeetAnimation="Rage" DangerChat="시이익~ 시이익~" DangerBuff="Excitement" DangerAnimation="Rage"/>
 		<class name="Yasha_Poison" Title="환각의 야샤" Subtitle="맹독 야샤" MeetChat="슈슈슛~ 슈슈슛~" MeetBuff="Excitement" MeetAnimation="Rage" DangerChat="슈슈슛~ 슈슈슛~" DangerBuff="Excitement" DangerAnimation="Rage"/>
 		<class name="Yasha_Ice" Title="탐욕스러운 야샤" Subtitle="얼음 야샤" MeetChat="키리릭~" MeetBuff="Excitement" MeetAnimation="Rage" DangerChat="키리릭~ 키리릭~" DangerBuff="Excitement" DangerAnimation="Rage"/>
+		<class name="Yasha_BlackWidow_Leader" Title="잿더미의 지배자" Subtitle="잿더미 야샤 군주" MeetChat="치이히~ 치이히~" MeetBuff="Perseverance" MeetBuff2="Calm" MeetAnimation="Rage" DangerChat="치이히~ 치이히~" DangerBuff="Berserker" DangerBuff2="Hatred" DangerAnimation="Rage"/>
+		<class name="Yasha_Grey" Title="외톨이 야샤" Subtitle="회색 야샤" MeetChat="히이익~ 히이익~" MeetBuff="Calm" MeetBuff2="Perseverance" MeetAnimation="Rage" DangerChat="히이익~ 히이익~" DangerBuff="Calm" DangerBuff2="Perseverance" DangerAnimation="Rage"/>
 		<class name="Tima_Ash" Title="불타버린 티마" Subtitle="애쉬" MeetChat="크르릉!" MeetBuff="Rage" MeetAnimation="Rage" DangerChat="크르릉!" DangerBuff="Rage" DangerAnimation="Rage"/>
+		<class name="Tima_Gold" Title="잊혀진 티마" Subtitle="황금 어금니" MeetChat="크르르..." MeetBuff="Calm" MeetBuff2="Perseverance" MeetAnimation="Rage" DangerChat="크르릉!" DangerBuff="Calm" DangerBuff2="Perseverance" DangerAnimation="Rage"/>
 		<class name="Frog_Normal" Title="착실한 네구리" Subtitle="진흙 왕네구리" MeetChat="네굴~" MeetBuff="Excitement" MeetAnimation="Win" DangerChat="네굴~" DangerBuff="Excitement" DangerAnimation="Rage"/>
 		<class name="Frog_Black" Title="용감한 네구리" Subtitle="검은 왕네구리" MeetChat="네굴!!" MeetBuff="Excitement" MeetAnimation="Win" DangerChat="네굴!!" DangerBuff="Excitement" DangerAnimation="Rage"/>
 		<class name="Frog_Lightning" Title="우렁찬 네구리" Subtitle="섬광 왕네구리" MeetChat="네~ 구울~!" MeetBuff="Excitement" MeetAnimation="Win" DangerChat="네~ 구울~!" DangerBuff="Excitement" DangerAnimation="Rage"/>
@@ -87,6 +91,9 @@
 		<class name="Frog_Dot" Title="방랑자 네구리" Subtitle="점박이 네구리" MeetChat="네~~~굴~~~!" MeetBuff="Excitement" MeetBuff2="Fast" MeetAnimation="Win" DangerChat="네~~~굴~~~!" DangerBuff="Excitement" DangerBuff2="Fast" DangerAnimation="Rage"/>
 		<class name="Frog_White" Title="네구리 공주" Subtitle="알비노 네구리" MeetChat="네굴! 네굴!" MeetBuff="Perseverance" MeetBuff2="Calm" MeetAnimation="Win" DangerChat="네굴! 네굴!" DangerBuff="Perseverance" DangerBuff2="Calm" DangerAnimation="Rage"/>
 		<class name="Frog_Glutton" Title="장난꾸러기 네구리" Subtitle="꼬마 네구리" MeetChat="네굴굴~~~!" MeetBuff="Excitement" MeetBuff2="Fast" MeetAnimation="Win" DangerChat="네굴굴~~~!" DangerBuff="Excitement" DangerBuff2="Fast" DangerAnimation="Rage"/>
+		<class name="Frog_Gold" Title="수다쟁이 네구리" Subtitle="황금 혀" MeetChat="네르굴~!" MeetBuff="Excitement" MeetBuff2="Concentration" MeetAnimation="Win" DangerChat="네르굴~! 네르굴~!" DangerBuff="Berserker" DangerBuff2="Concentration" DangerAnimation="Rage"/>
+		<class name="Frog_Red" Title="삐뚤어진 네구리" Subtitle="붉은 왕네구리" MeetChat="네굴 네굴" MeetBuff="Rage" MeetBuff2="Giant" MeetAnimation="Win" DangerChat="네굴 네굴" DangerBuff="Berserker" DangerBuff2="Giant" DangerAnimation="Rage"/>
+		<class name="Frog_Mutant" Title="외톨이 네구리" Subtitle="돌연변이 왕네구리" MeetChat="네굴~" MeetBuff="Calm" MeetAnimation="Win" DangerChat="네굴~" DangerBuff="Concentration" DangerAnimation="Rage"/>
 		<class name="Dragon_Earth" Title="불굴의 드라키" Subtitle="암석 드라키 군주" MeetChat="그르르르~!" MeetBuff="Perseverance" MeetAnimation="Win" DangerChat="그르르르~!" DangerBuff="Rage" DangerBuff2="Perseverance" DangerAnimation="Rage"/>
 		<class name="Dragon_Flame" Title="광란의 드라키" Subtitle="불꽃 드라키 군주" MeetChat="그르르~" MeetBuff="Excitement" MeetAnimation="Win" DangerChat="그르르~" DangerBuff="Rage" DangerBuff2="Excitement" DangerAnimation="Rage"/>
 		<class name="Dragon_Frost" Title="철벽의 드라키" Subtitle="서리 드라키 군주" MeetChat="그르 그르~" MeetBuff="Calm" MeetAnimation="Win" DangerChat="그르 그르~" DangerBuff="Rage" DangerBuff2="Calm" DangerAnimation="Rage"/>

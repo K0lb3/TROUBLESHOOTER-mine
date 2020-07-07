@@ -40,7 +40,7 @@ function Battle(Attacker, Defender, ability, actions, phase, resultModifier, usi
 	-- C1. 피해량을 계산 합니다
 	perfChecker:StartRoutine('DamageCalculation');
 	perfChecker:Dive();
-	local damage = GetDamageCalculator(Attacker, Defender, ability, weather, usingPos, chainIndex, nil, SafeIndex(resultModifier, 'DamagePuff_Add'), abilityDetailInfo, perfChecker);
+	local damage = GetDamageCalculator(Attacker, Defender, ability, weather, temperature, usingPos, chainIndex, nil, SafeIndex(resultModifier, 'DamagePuff_Add'), abilityDetailInfo, perfChecker);
 	perfChecker:Rise();
 	if SafeIndex(resultModifier, 'DamagePuff') then
 		damage = damage * (100 + SafeIndex(resultModifier, 'DamagePuff')) / 100;
@@ -185,7 +185,7 @@ end
 -- 측면 목표 판단 함수
 -----------------------------------------------------------------
 function IsCoverStateNone(Attacker, Defender, masteryTable_Attcker, masteryTable_Defender)
-	local coverState = GetCoverStateForCritical(Defender, masteryTable_Defender, GetPosition(Attacker));
+	local coverState = GetCoverStateForCritical(Defender, masteryTable_Defender, GetPosition(Attacker), Attacker);
 	if coverState ~= 'None' then
 		return false;
 	end
@@ -296,6 +296,17 @@ function IsEnableDodge(actions, hitRate, Attacker, Defender, ability, phase, mas
 					adjustValue = adjustValue + mastery_LuckyCheatDeath.ApplyAmount3;
 					SetInstantProperty(Defender, mastery_LuckyCheatDeath.name, adjustValue);
 				end
+				-- 달빛의 괴수
+				local mastery_MoonMonster = GetMasteryMastered(masteryTable_Defender, 'MoonMonster');
+				if mastery_MoonMonster then
+					local applyAct = -1 * mastery_MoonMonster.ApplyAmount;
+					local added, reasons = AddActionApplyAct(actions, Defender, Defender, applyAct, 'Friendly');
+					if added then
+						AddBattleEvent(Defender, 'AddWait', { Time = applyAct });
+					end
+					ReasonToAddBattleEventMulti(Defender, reasons, 'FirstHit');
+					AddMasteryInvokedEvent(Defender, mastery_MoonMonster.name, 'FirstHit');
+				end
 				return true, 'LightningReflexes'
 			end
 		end
@@ -317,6 +328,7 @@ function IsEnableDodge(actions, hitRate, Attacker, Defender, ability, phase, mas
 			if needCost <= Defender.Cost then
 				mastery_Module_LightningReflexes.DuplicateApplyChecker = mastery_Module_LightningReflexes.DuplicateApplyChecker + 1;
 				AddMasteryInvokedEvent(Defender, mastery_Module_LightningReflexes.name, 'FirstHit');
+				damageFlag.Module_LightningReflexes = true;
 				return true, 'Module_LightningReflexes';
 			end
 		end
@@ -514,6 +526,17 @@ function AddBattleResultEventAction_Normal_Hitable(actions, Attacker, Defender, 
 				end
 				ReasonToAddBattleEventMulti(Defender, reasons, 'Ending');
 			end
+		end
+		
+		-- 난폭한 트롤 장갑
+		local mastery_BattleGlove_Skull = GetMasteryMastered(masteryTable_Attacker, 'BattleGlove_Skull');
+		if mastery_BattleGlove_Skull then
+			AddMasteryInvokedEvent(Attacker, mastery_BattleGlove_Skull.name, 'Ending');
+			local added, reasons = AddActionApplyAct(actions, Attacker, Defender, mastery_BattleGlove_Skull.ApplyAmount, 'Hostile');
+			if added then
+				AddBattleEvent(Defender, 'AddWait', { Time = mastery_BattleGlove_Skull.ApplyAmount});
+			end
+			ReasonToAddBattleEventMulti(Attacker, reasons, 'Ending');
 		end
 	end
 	
@@ -734,6 +757,8 @@ function AddBattleResultEventAction_Normal_Hitable(actions, Attacker, Defender, 
 		ConditionalMasteryBuffApplier(masteryTable_Attacker, 'BigFang', function(m) return ability.HitRateType == 'Melee' end);
 		-- 특성 더러운 숨결
 		ConditionalMasteryBuffApplier(masteryTable_Attacker, 'DirtyBreath', function(m) return ability.HitRateType == 'Force' end);
+		-- 특성 맹독 괴수
+		ConditionalMasteryBuffApplier(masteryTable_Attacker, 'PoisonMonster', function(m) return attackerState == 'Critical' and HasBuffType(Defender, 'Debuff', nil, m.BuffGroup.name) end);
 	end
 end
 -------------------------------------------------------------------------------------------------------------------------
@@ -962,6 +987,11 @@ function GetModifyResultActions_Final(actions, Attacker, Defender, ability, phas
 			if stateChange then
 				defenderState = 'Block';
 				AddBattleEvent(Defender, 'IceSkin');
+				-- 혹한의 괴수
+				local mastery_ColdMonster = GetMasteryMastered(masteryTable_Defender, 'ColdMonster');
+				if mastery_ColdMonster then
+					mastery_ColdMonster.CountChecker = 1;
+				end
 			end
 		end	
 		-- 특성 용암 가죽. LavaSkin
@@ -981,6 +1011,11 @@ function GetModifyResultActions_Final(actions, Attacker, Defender, ability, phas
 			if stateChange then
 				defenderState = 'Block';
 				AddBattleEvent(Defender, 'LavaSkin');
+				-- 폭염의 괴수
+				local mastery_HotMonster = GetMasteryMastered(masteryTable_Defender, 'HotMonster');
+				if mastery_HotMonster then
+					mastery_HotMonster.CountChecker = 1;
+				end
 			end
 		end		
 		-- 특성 번개 가죽. LightningSkin
@@ -1000,6 +1035,11 @@ function GetModifyResultActions_Final(actions, Attacker, Defender, ability, phas
 			if stateChange then
 				defenderState = 'Block';
 				AddBattleEvent(Defender, 'LightningSkin');
+				-- 빗속의 괴수
+				local mastery_RainMonster = GetMasteryMastered(masteryTable_Defender, 'RainMonster');
+				if mastery_RainMonster then
+					mastery_RainMonster.CountChecker = 1;
+				end
 			end
 		end
 		-- 특성 달빛 가죽. MoonSkin
@@ -1019,6 +1059,11 @@ function GetModifyResultActions_Final(actions, Attacker, Defender, ability, phas
 			if stateChange then
 				defenderState = 'Block';
 				AddMasteryInvokedEvent(Defender, mastery_MoonSkin.name, 'FirstHit');
+				-- 달빛의 괴수
+				local mastery_MoonMonster = GetMasteryMastered(masteryTable_Defender, 'MoonMonster');
+				if mastery_MoonMonster then
+					mastery_MoonMonster.CountChecker = 1;
+				end
 			end
 		end
 		-- 특성 내화성. Module_FireResistance
@@ -1083,6 +1128,11 @@ function GetModifyResultActions_Final(actions, Attacker, Defender, ability, phas
 				damage = math.ceil(damage * (1 - mastery_WeaponParry.ApplyAmount/100));
 				damageFlag.WeaponParry = true;
 				AddMasteryInvokedEvent(Defender, mastery_WeaponParry.name, 'FirstHit');
+				-- 백병전의 달인
+				local mastery_MeleeBattleMaster = GetMasteryMastered(masteryTable_Defender, 'MeleeBattleMaster');
+				if mastery_MeleeBattleMaster then
+					mastery_MeleeBattleMaster.CountChecker = 1;
+				end
 			end
 		end
 		-- 장비 반짝이는 충격 보호대. Amulet_AniDamage 

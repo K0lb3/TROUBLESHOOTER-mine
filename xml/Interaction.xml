@@ -20,9 +20,10 @@
 		<class name="Comfort" Title="불안한 시민" Ability="Comfort" ApplyScript="Interaction_Comfort" Particle="None" Repeat="true" RangeNoticeParticle="Particles/Dandylion/HelpSign"/>
 		<class name="Cure" Title="치료 대상" Ability="Cure" AutoAbility="false" ApplyScript="Interaction_Cure" Particle="None" RangeNoticeParticle="Particles/Dandylion/HelpSign"/>
 		<class name="HackOff" Title="기계" Ability="HackOff" ApplyScript="Interaction_HackOff" Target="Enemy" Repeat="true" RangeNoticeParticle="Particles/Dandylion/HackingSign" FrontOnly="true"/>
+		<class name="Investigate" Title="조사" Ability="Investigate" ApplyScript="Interaction_Investigate" RangeNoticeParticle="Particles/Dandylion/Investigate"/>
 		<class name="InvestigateChest" Title="상자" Ability="InvestigateChest" ApplyScript="Interaction_Investigate" RangeNoticeParticle="Particles/Dandylion/Investigate"/>
 		<class name="InvestigateComputer" Title="기계" Ability="InvestigateComputer" AutoAbility="false" ApplyScript="Interaction_Investigate" RangeNoticeParticle="Particles/Dandylion/Investigate" FrontOnly="true"/>
-		<class name="InvestigateLock" Title="금고" Ability="InvestigateLock" ApplyScript="Interaction_Investigate" RangeNoticeParticle="Particles/Dandylion/Investigate"/>
+		<class name="InvestigateLock" Title="금고" Ability="InvestigateLock" ApplyScript="Interaction_Investigate" RangeNoticeParticle="Particles/Dandylion/Investigate" FrontOnly="true"/>
 		<class name="InvestigatePsionicStone" Title="이능석" Ability="InvestigatePsionicStone" ApplyScript="Interaction_InvestigatePsionicStone" RangeNoticeParticle="Particles/Dandylion/Investigate" AutoAbility="false" AlwaysVisible="true"/>
 		<class name="InvestigateCargo" Title="화물" Ability="InvestigateCargo" ApplyScript="Interaction_Investigate" RangeNoticeParticle="Particles/Dandylion/Investigate" FrontOnly="true"/>
 		<class name="OpenCargo" Title="화물" Ability="OpenCargo" ApplyScript="Interaction_OpenCargo" RangeNoticeParticle="Particles/Dandylion/Investigate"/>

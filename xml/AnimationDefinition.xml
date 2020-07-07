@@ -637,6 +637,7 @@
 			<property name="AcidBall" Animation="atk5"/>
 			<property name="AcidRain" Animation="atk3"/>
 			<property name="Rush" Animation="amove"/>
+			<property name="Run" Animation="amove"/>
 			<property name="Block" Animation="block">
 				<Sounds>
 					<property Frame="0" SoundName="Characters/Neguri_block.wav" Volume="1" MinDistance="2500" MaxDistance="5000"/>
@@ -694,6 +695,7 @@
 					<property Frame="0" SoundName="Characters/Neguri_land.wav" Volume="1" MinDistance="2500" MaxDistance="5000"/>
 				</Sounds>
 			</property>
+			<property name="Lightningwalker" Animation="atk2"/>
 			<property name="Neguri_TongueStorm" Animation="atk4"/>
 			<property name="NeguriAcidGas" Animation="atk2"/>
 			<property name="NeguriCrying_Calm" Animation="atk3"/>
@@ -710,6 +712,7 @@
 			<property name="NeguriCrying_Silence" Animation="atk3"/>
 			<property name="NeguriCrying_Sleep" Animation="atk3"/>
 			<property name="NeguriCrying_Slow" Animation="atk3"/>
+			<property name="NeguriCrying_Fast" Animation="atk3"/>
 			<property name="NeguriCrying_Thunder" Animation="atk3"/>
 			<property name="NeguriCrying_ThunderBig" Animation="atk3"/>
 			<property name="NeguriCrying_Victory" Animation="atk3"/>
@@ -1087,7 +1090,11 @@
 			<property name="Select" Animation="astdidle"/>
 		</class>
 		<class name="Beast_Bat">
-			<property name="Rush" Animation="amove"/>
+			<property name="Rush" Animation="amove">
+				<Sounds>
+					<property Frame="0" SoundName="Characters/Bat_amove.wav" Volume="1" MinDistance="2000" MaxDistance="3000"/>
+				</Sounds>
+			</property>
 			<property name="Amove" Animation="amove">
 				<Sounds>
 					<property Frame="0" SoundName="Characters/Bat_amove.wav" Volume="1" MinDistance="2000" MaxDistance="3000"/>
@@ -1125,8 +1132,10 @@
 				</Sounds>
 			</property>
 			<property name="FireRain" Animation="atk3"/>
+			<property name="FireShield" Animation="atk3"/>
 			<property name="Frenzy" Animation="atk3"/>
 			<property name="Gliding" Animation="atk2"/>
+			<property name="Gliding_Bleeding" Animation="atk2"/>
 			<property name="Gliding_Fire" Animation="atk2"/>
 			<property name="Gliding_Ice" Animation="atk2"/>
 			<property name="GlidingMove" Animation="atk2"/>
@@ -1180,12 +1189,19 @@
 					<property Frame="0" SoundName="Characters/Bat_atk3.wav" Volume="1" MinDistance="2000" MaxDistance="3000"/>
 				</Sounds>
 			</property>
+			<property name="Run" Animation="amove">
+				<Sounds>
+					<property Frame="0" SoundName="Characters/Bat_amove.wav" Volume="1" MinDistance="2000" MaxDistance="3000"/>
+				</Sounds>
+			</property>
 			<property name="Scream" Animation="atk5"/>
+			<property name="Immolation_Fire" Animation="atk5"/>
 			<property name="Select" Animation="astdidle"/>
 			<property name="SelectLoop" Animation="astd"/>
 			<property name="Stealth" Animation="atk6"/>
 			<property name="StoneFall" Animation="atk4"/>
 			<property name="SuperGliding" Animation="atk2"/>
+			<property name="SuperGliding_Bleeding" Animation="atk2"/>
 			<property name="SuperGliding_Fire" Animation="atk2"/>
 			<property name="SuperGliding_Ice" Animation="atk2"/>
 			<property name="SuperLavaFall" Animation="atk4"/>
@@ -1226,6 +1242,7 @@
 					<property Frame="0" SoundName="Characters/Spider_atk2.wav" Volume="1" MinDistance="2000" MaxDistance="3000"/>
 				</Sounds>
 			</property>
+			<property name="ChangingMind" Animation="atk2"/>
 			<property name="Astd" Animation="astd"/>
 			<property name="ClimbWeb" Animation="atk3"/>
 			<property name="ClimbWeb_Disable" Animation="atk4"/>
@@ -1346,6 +1363,39 @@
 				</Sounds>
 			</property>
 		</class>
+		<class name="Beast_Spider_Egg">
+			<property name="Astd" Animation="std"/>
+			<property name="AstdIdle" Animation="stdidle">
+				<Sounds>
+					<property Frame="0" SoundName="Characters/Spider_astdidle.wav" Volume="1" MinDistance="2000" MaxDistance="3000"/>
+				</Sounds>
+			</property>
+			<property name="Dead" Animation="dead">
+				<Sounds>
+					<property Frame="0" SoundName="Characters/Spider_dead.wav" Volume="1" MinDistance="2000" MaxDistance="3000"/>
+				</Sounds>
+			</property>
+			<property name="FinishBack" Animation="hit_back">
+				<Sounds>
+					<property Frame="0" SoundName="Characters/Spider_hit_back.wav" Volume="1" MinDistance="2000" MaxDistance="3000"/>
+				</Sounds>
+			</property>
+			<property name="FinishCrouch" Animation="hit_back">
+				<Sounds>
+					<property Frame="0" SoundName="Characters/Spider_hit_crouch.wav" Volume="1" MinDistance="2000" MaxDistance="3000"/>
+				</Sounds>
+			</property>
+			<property name="HitBack" Animation="hit_back">
+				<Sounds>
+					<property Frame="0" SoundName="Characters/Spider_hit_back.wav" Volume="1" MinDistance="2000" MaxDistance="3000"/>
+				</Sounds>
+			</property>
+			<property name="HitCrouch" Animation="hit_back">
+				<Sounds>
+					<property Frame="0" SoundName="Characters/Spider_hit_crouch.wav" Volume="1" MinDistance="2000" MaxDistance="3000"/>
+				</Sounds>
+			</property>
+		</class>
 		<class name="Beast_Tima">
 			<property name="Rush" Animation="amove">
 				<Sounds>
@@ -1373,6 +1423,12 @@
 				</Sounds>
 			</property>
 			<property name="BreathLighting" Animation="atk6">
+				<Sounds>
+					<property Frame="0" SoundName="Characters/SionBloodwalker_atk2_cast_eff.wav" Volume="1" MinDistance="2000" MaxDistance="3000"/>
+					<property Frame="0" SoundName="Characters/Beast_tima_black_atk4_eff.ogg" Volume="1" MinDistance="2000" MaxDistance="3000"/>
+				</Sounds>
+			</property>
+			<property name="BreathLighting_Big" Animation="atk6">
 				<Sounds>
 					<property Frame="0" SoundName="Characters/SionBloodwalker_atk2_cast_eff.wav" Volume="1" MinDistance="2000" MaxDistance="3000"/>
 					<property Frame="0" SoundName="Characters/Beast_tima_black_atk4_eff.ogg" Volume="1" MinDistance="2000" MaxDistance="3000"/>
@@ -1421,6 +1477,11 @@
 			<property name="HitCrouch" Animation="hit_crouch">
 				<Sounds>
 					<property Frame="0" SoundName="Characters/Beast_hit_crouch.ogg" Volume="1" MinDistance="2000" MaxDistance="3000"/>
+				</Sounds>
+			</property>
+			<property name="Lightningwalker" Animation="atk5">
+				<Sounds>
+					<property Frame="0" SoundName="Characters/Beast_tima_atk3.ogg" Volume="1" MinDistance="2000" MaxDistance="3000"/>
 				</Sounds>
 			</property>
 			<property name="Howl" Animation="atk3">
@@ -3775,7 +3836,7 @@
 			</property>
 			<property name="Rage" Animation="rage">
 				<Sounds>
-					<property Frame="30" SoundName="Characters/SteelheadRed_Item_2.wav" Volume="1" MinDistance="2000" MaxDistance="3000"/>
+					<property Frame="0" SoundName="Monster/Shout_Gangster_MaleFat_Middle_05.ogg" Volume="1" MinDistance="2000" MaxDistance="3000" MaxCount="1"/>
 				</Sounds>
 			</property>
 			<property name="Roar" Animation="atk5">
@@ -3832,10 +3893,9 @@
 					<property Frame="27" SoundName="Monster/Shout_Gangster_MaleFat_Middle_06.ogg" Volume="1" MinDistance="2000" MaxDistance="3000"/>
 				</Sounds>
 			</property>
-			<property name="Rage" Animation="atk1">
+			<property name="Rage" Animation="rage">
 				<Sounds>
-					<property Frame="5" SoundName="Monster/Shout_Gangster_MaleFat_Middle_05.ogg" Volume="1" MinDistance="2000" MaxDistance="3000"/>
-					<property Frame="27" SoundName="Monster/Shout_Gangster_MaleFat_Middle_06.ogg" Volume="1" MinDistance="2000" MaxDistance="3000"/>
+					<property Frame="0" SoundName="Monster/Shout_Gangster_MaleFat_Middle_05.ogg" Volume="1" MinDistance="2000" MaxDistance="3000" MaxCount="1"/>
 				</Sounds>
 			</property>
 			<property name="Slash_Axe" Animation="atk2">
@@ -4191,6 +4251,14 @@
 					<property Frame="30" SoundName="Characters/SteelheadBlue_Ability_Smash_1.wav" Volume="1.0"/>
 					<property Frame="30" SoundName="Characters/SteelheadBlue_Ability_Smash_2.wav" Volume="1.0"/>
 				</Sounds>
+			</property>
+			<property name="Rage" Animation="rage">
+				<Sounds>
+					<property Frame="15" SoundName="Shout/Shout_Heissing_Short_13.ogg" Volume="1" MinDistance="2500" MaxDistance="3000" MaxCount="1"/>
+				</Sounds>
+				<Effects>
+					<property Frame="15" ParticleName="particles/dandylion/groundimpact" ParticlePos="_BOTTOM_" ParticleLength="15" AttachModel="true" DirectClear="true"/>
+				</Effects>
 			</property>
 			<property name="StdIdle" Animation="stdidle">
 				<Sounds>
@@ -5809,6 +5877,17 @@
 			</property>
 		</class>
 		<class name="ItemCube_Off"/>
+		<class name="RustBox_Active">
+			<property name="Dead" Animation="Open">
+				<Effects>
+					<property Frame="43" ParticleName="particles/dandylion/groundimpact" ParticlePos="_BOTTOM_" ParticleLength="1" AttachModel="false" DirectClear="false"/>
+				</Effects>
+			</property>
+		</class>
+		<class name="RustBox_Off">
+			<property name="Astd" Animation="Opened"/>
+			<property name="AstdIdle" Animation="Opened"/>
+		</class>
 		<class name="ArtBox_Active">
 			<property name="Astd" Animation="Activation"/>
 			<property name="AstdIdle" Animation="Activation"/>
@@ -6868,6 +6947,7 @@
 				</Sounds>
 			</property>
 			<property name="Run" Animation="amove"/>
+			<property name="Rush" Animation="amove"/>
 			<property name="Bash" Animation="atk2"/>
 			<property name="ShakeFloor" Animation="atk3"/>
 			<property name="Atk1" Animation="atk1"/>

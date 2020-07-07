@@ -56,6 +56,7 @@
 		<class name="Raid_Event8" Group="Raid" Type="Raid" EnableChallengerMode="true" Grade="Bronze" Rank="S" Mission="Raid_DrakyNest" MinRespawnDelayMinute="1"/>
 		<class name="Raid_Event9" Group="Raid" Type="Raid" EnableChallengerMode="true" Grade="Bronze" Rank="S" Mission="Raid_DrakyNest2" MinRespawnDelayMinute="1"/>
 		<class name="Raid_Event10" Group="Raid" Type="Raid" EnableChallengerMode="true" Grade="Bronze" Rank="S" Mission="Raid_ShadeFogBackStreet" MinRespawnDelayMinute="1"/>
+		<class name="Raid_Event11" Group="Raid" Type="Raid" EnableChallengerMode="true" Grade="Bronze" Rank="S" Mission="Raid_ShadowWallUnderWay" MinRespawnDelayMinute="1"/>
 		<class name="Common_Event0" Group="Normal" Type="Normal" EnableChallengerMode="true" Grade="Bronze" Rank="D" Mission="Common_FallenLeavesPark" MinRespawnDelayMinute="1"/>
 		<class name="Common_Event1" Group="Normal" Type="Normal" EnableChallengerMode="true" Grade="Bronze" Rank="C" Mission="Common_Construction_B" MinRespawnDelayMinute="1"/>
 		<class name="Common_Event2" Group="Normal" Type="Normal" EnableChallengerMode="true" Grade="Bronze" Rank="B" Mission="Common_Road_114" MinRespawnDelayMinute="1"/>

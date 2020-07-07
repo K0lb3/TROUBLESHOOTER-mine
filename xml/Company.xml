@@ -79,6 +79,8 @@
 		<rule property="Troublemaker" type="linktable" target="Troublemaker"/>
 		<rule property="Vill" type="number" default="0"/>
 		<rule property="Waypoint" type="linktable" target="Waypoint"/>
+		<rule property="WeaponCostume" type="linktable" target="WeaponCostume"/>
+		<rule property="WeaponCostumeOpened" type="bool" default="false"/>
 		<rule property="ZoneState" type="linktable" target="Zone"/>
 	</schema>
 	<class name="company" LoginTime="0" ClientCount="0" TroublesumUpdateTime="0" RepeatQuestUpdateTime="0" LastMission="">

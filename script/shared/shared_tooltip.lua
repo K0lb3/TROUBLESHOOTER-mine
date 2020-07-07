@@ -474,7 +474,10 @@ function GetAbilitySystemMessageText(ability, target)
 	if ability.RandomPickCount > 0 then
 		result = result..'\n'..'$Yellow$'..FormatMessage(GuideMessage('Ability_MultipleHit'), {Count = EncloseTextWithColorKey('White', ability.RandomPickCount, 'Yellow')})..'$Blue_ON$';
 	end
-	
+	-- 반응/반격 공격 가능
+	if target and table.find(target.OverwatchAbilityList, ability.name) then
+		result = result..'\n'..'$Yellow$'..GuideMessage('Ability_Overwatch')..'$Blue_ON$';
+	end
 	-- 적 근접 사용불가 여부.
 	if ability.NeedNoNearEnemy then
 		local hasNearEnemy = false;
@@ -1327,6 +1330,15 @@ function GetBuffSystemMessageText(buff)
 		result = ConnentTextToText(result, '\n\n', KoreanPostpositionProcess(useExplosionAbilityText))..'\n';
 	end
 	
+	-- 강철 장벽 전용
+	if buff.DischargeOnMove and buff.DischargeOnAbility then
+		local text = '$Perano$'..GuideMessage('Warning_DischargeOnMoveOrAbility')..'$Blue_ON$';
+		result = ConnentTextToText(result, '\n', text);	
+	elseif buff.DischargeOnMove then
+		local text = '$Perano$'..GuideMessage('Warning_DischargeOnMove')..'$Blue_ON$';
+		result = ConnentTextToText(result, '\n', text);		
+	end
+	
 	-- 추가 기능 메시지. FinalDesc
 	if buff.FinalDesc and buff.FinalDesc ~= '' then
 		result = ConnentTextToText(result, '\n', buff.FinalDesc);
@@ -1485,6 +1497,9 @@ function MasteryApplyAmountValue(valueType, applyAmountType, useColorEnd)
 	local result = '$White$'..'$'..applyAmountType..'$';
 	if valueType == 'Percent' then
 		result = result..'%';
+	end
+	if g_masteryApplyAmountExplain then
+		result = result .. '('..applyAmountType..')';
 	end
 	result = result..(useColorEnd and '$ColorEnd$' or '$Blue_ON$');
 	return result;
@@ -1892,12 +1907,25 @@ function GetAbilityProtocolToolTipInfo(protocolCls, target)
 	end
 	return AbilityTooltip_CommonShared(ability, target, false);
 end
-function GetAbilitySubCommandToolTipInfo(subCommandCls, target)
+function GetAbilitySubCommandToolTipInfo(subCommandCls, self, target)
 	local ability = subCommandCls.Ability;
 	if target then
 		ability = GetAbilityObject(target, ability.name) or ability;
 	end
-	return AbilityTooltip_CommonShared(ability, target, false);
+	local builder = TooltipBuilder.new();
+	builder:AppendText(AbilityTooltip_CommonShared(ability, self, false));
+	local enable, reason = subCommandCls.IsEnableTest(self, target, subCommandCls);
+	if reason ~= nil then
+		builder:AddEmptyLine();
+		local reasonText = '';
+		if type(reason) == 'table' then
+			reasonText = LoadText(reason);
+		else
+			reasonText = GuideMessage(reason);
+		end
+		builder:AddLine(reasonText, enable and 'Corn' or 'Tomato');
+	end
+	return builder:Build();
 end
 -- $MasterySystemSPMessage$
 function GetMasterySPMessageText(mastery)
@@ -2040,6 +2068,91 @@ function GetQuestTargetItemText(quest)
 	end
 	return title;
 end
+function GetQuestTargetCivilNameText(quest)
+	local title = 'Error';
+	local clsList = GetClassList(quest.Type.Idspace);
+	local cls = SafeIndex(clsList, quest.Target);
+	if cls then
+		title = clsList[quest.Target].Title;
+	end
+	return title;
+end
+function MakeMasteryDescBaseOneline(caseCls, caseEndColor, highlightColor)
+	local caseLineBreak = StringToBool(GetWithoutError(caseCls, 'CaseLineBreak'), false) and '\n' or ( caseCls.Text == '' and '' or ': ');
+	local lineBreak = StringToBool(GetWithoutError(caseCls, 'LineBreak'), false) and '\n' or '';
+	local curCaseColorType = '$'..caseCls.CaseColor..'$';
+	local curCaseEndColor = caseEndColor or '$Blue_ON$';
+	local caseTitle = '';
+	local concatenateText = '';
+	local colorHighlight = highlightColor or '$White$';
+	local colorEnd = curCaseColorType;
+	-- 1) 케이스 타이틀 얻어오기.
+	if caseCls.CaseType == 'Custom' then
+		caseTitle = caseCls.CaseValue;
+	elseif caseCls.CaseType == 'CustomText' then
+		colorHighlight = '';
+		caseTitle = caseCls.CaseValue;
+	elseif caseCls.CaseType ~= 'None' and caseCls.CaseValueType == 'string' then
+		local caseTypeList = GetClassList(caseCls.CaseType);
+		local curCaseType = GetWithoutError(caseTypeList, caseCls.CaseValue);
+		if not curCaseType then
+			return '$Red$ERROR_CASETITLE_CASETYPE1$Blue_ON$';
+		end
+		caseTitle = curCaseType.Title;
+	elseif caseCls.CaseType ~= 'None' and caseCls.CaseValueType == 'table' then
+		caseTitle = table.concat(table.map(string.split(caseCls.CaseValue, '[, ]'), function(text)
+			local caseTypeList = GetClassList(caseCls.CaseType);
+			local curCaseType = GetWithoutError(caseTypeList, text);
+			if not curCaseType then
+				return '$Red$ERROR_CASETITLE_CASETYPE2$Blue_ON$';
+			end
+			return curCaseType.Title;
+		end), ', ');
+	end
+
+	local formatTable = {};
+	
+	for _, formatData in ipairs(GetWithoutError(caseCls, 'FormatKeyword')) do
+		local text = '';
+		local colorHighlight = '';
+		if formatData.Color ~= 'None' then
+			colorHighlight = '$'..formatData.Color..'$';
+		end
+		if formatData.ValueType == 'text' then
+			text = formatData.Value
+		elseif formatData.ValueType == 'string' then
+			local clsList = GetClassList(formatData.Idspace);
+			local clsType = GetWithoutError(clsList, formatData.Key);
+			if not clsType then
+				text = '$Red$ERROR_FORMAT_TYPE$Blue_ON$';					
+			else
+				text = clsType[formatData.Value];
+			end						
+		elseif formatData.ValueType == 'table' then
+			text = table.concat(table.map(string.split(formatData.Key, '[, ]'), function(text)
+				local clsList = GetClassList(formatData.Idspace);
+				local clsType = GetWithoutError(clsList, text);
+				if not clsType then
+					return '$Red$ERROR_ADDITONALSUBCONTENTS_CASETYPE$Blue_ON$';
+				end
+				return clsType[formatData.Value];
+			end), ', ');		
+		end
+		text = colorHighlight..text;
+		if formatData.Color ~= 'None' then
+			text = text..'$ColorEnd$';
+		end
+		formatTable[formatData.FormatKey] = text;
+	end
+	
+	if caseCls.CaseType ~= 'None' then
+		caseTitle = FormatMessage(caseTitle, formatTable, nil, true);
+		concatenateText = caseTitle..curCaseEndColor..caseLineBreak;
+	end
+	local mainText = FormatMessage(caseCls.Text, formatTable, nil, true);
+	concatenateText = curCaseColorType..concatenateText..mainText..curCaseEndColor..lineBreak;
+	return concatenateText, caseTitle, mainText;
+end
 -- $MasteryAdditionalSubContents$
 function GetMasteryMasteryDescBaseText(contents, caseEndColor, highlightColor)
 	local result = '';
@@ -2047,80 +2160,7 @@ function GetMasteryMasteryDescBaseText(contents, caseEndColor, highlightColor)
 		return '';
 	end
 	for index, caseCls in ipairs (contents) do
-		local caseLineBreak = StringToBool(GetWithoutError(caseCls, 'CaseLineBreak'), false) and '\n' or ( caseCls.Text == '' and '' or ': ');
-		local lineBreak = StringToBool(GetWithoutError(caseCls, 'LineBreak'), false) and '\n' or '';
-		local curCaseColorType = '$'..caseCls.CaseColor..'$';
-		local curCaseEndColor = caseEndColor or '$Blue_ON$';
-		local caseTitle = '';
-		local concatenateText = '';
-		local colorHighlight = highlightColor or '$White$';
-		local colorEnd = curCaseColorType;
-		-- 1) 케이스 타이틀 얻어오기.
-		if caseCls.CaseType == 'Custom' then
-			caseTitle = caseCls.CaseValue;
-		elseif caseCls.CaseType == 'CustomText' then
-			colorHighlight = '';
-			caseTitle = caseCls.CaseValue;
-		elseif caseCls.CaseType ~= 'None' and caseCls.CaseValueType == 'string' then
-			local caseTypeList = GetClassList(caseCls.CaseType);
-			local curCaseType = GetWithoutError(caseTypeList, caseCls.CaseValue);
-			if not curCaseType then
-				return '$Red$ERROR_CASETITLE_CASETYPE1$Blue_ON$';
-			end
-			caseTitle = curCaseType.Title;
-		elseif caseCls.CaseType ~= 'None' and caseCls.CaseValueType == 'table' then
-			caseTitle = table.concat(table.map(string.split(caseCls.CaseValue, '[, ]'), function(text)
-				local caseTypeList = GetClassList(caseCls.CaseType);
-				local curCaseType = GetWithoutError(caseTypeList, text);
-				if not curCaseType then
-					return '$Red$ERROR_CASETITLE_CASETYPE2$Blue_ON$';
-				end
-				return curCaseType.Title;
-			end), ', ');
-		end
-
-		local formatTable = {};
-		
-		for _, formatData in ipairs(GetWithoutError(caseCls, 'FormatKeyword')) do
-			local text = '';
-			local colorHighlight = '';
-			if formatData.Color ~= 'None' then
-				colorHighlight = '$'..formatData.Color..'$';
-			end
-			if formatData.ValueType == 'text' then
-				text = formatData.Value
-			elseif formatData.ValueType == 'string' then
-				local clsList = GetClassList(formatData.Idspace);
-				local clsType = GetWithoutError(clsList, formatData.Key);
-				if not clsType then
-					text = '$Red$ERROR_FORMAT_TYPE$Blue_ON$';					
-				else
-					text = clsType[formatData.Value];
-				end						
-			elseif formatData.ValueType == 'table' then
-				text = table.concat(table.map(string.split(formatData.Key, '[, ]'), function(text)
-					local clsList = GetClassList(formatData.Idspace);
-					local clsType = GetWithoutError(clsList, text);
-					if not clsType then
-						return '$Red$ERROR_ADDITONALSUBCONTENTS_CASETYPE$Blue_ON$';
-					end
-					return clsType[formatData.Value];
-				end), ', ');		
-			end
-			text = colorHighlight..text;
-			if formatData.Color ~= 'None' then
-				text = text..'$ColorEnd$';
-			end
-			formatTable[formatData.FormatKey] = text;
-		end
-		
-		if caseCls.CaseType ~= 'None' then
-			caseTitle = FormatMessage(caseTitle, formatTable, nil, true);
-			concatenateText = caseTitle..curCaseEndColor..caseLineBreak;
-		end
-	
-		concatenateText = curCaseColorType..concatenateText..FormatMessage(caseCls.Text, formatTable, nil, true)..curCaseEndColor..lineBreak;		
-		
+		local concatenateText = MakeMasteryDescBaseOneline(caseCls, caseEndColor, highlightColor);
 		if index == 1 then
 			result = concatenateText;
 		else

@@ -33,6 +33,7 @@
 		<class name="ItemGet" Format="$ColorItem$[을] 획득하였습니다." MakerArguments="ColorItem"/>
 		<class name="CompanyGradeRised" Format="회사 등급이 $Grade$으로 상승하였습니다" MakerArguments="Grade"/>
 		<class name="CivilMailRecevied" Format="시민들로부터 $Word$[이] 도착하였습니다." MakerArguments="Word"/>
+		<class name="LockForceFailed" Format="상자에 설치된 함정이 발동하여 상자 안의 물건이 모두 소각되었습니다." MakerArguments=""/>
 		<class name="EtcMessage14" Format="전원 퇴근합니다." MakerArguments=""/>
 		<class name="EtcMessage15" Format="다음 날이 되었습니다." MakerArguments=""/>
 		<class name="EtcMessage16" Format="창고에 작업대를 설치하실 수 있습니다." MakerArguments=""/>
@@ -259,6 +260,13 @@
 		<class name="EtcMessage237" Format="기본 코스튬 $WhiteItem$[을] 획득하였습니다." MakerArguments="WhiteItem"/>
 		<class name="EtcMessage238" Format="$Who$[가] 적대 세력이 되었습니다." MakerArguments="Who"/>
 		<class name="EtcMessage239" Format="$Who$[가] $Who2$[를] 방해합니다." MakerArguments="Who, Who2"/>
+		<class name="EtcMessage240" Format="$Who$[가] 합류하여 훈련서 $WhiteAmount$개를 획득하였습니다" MakerArguments="Who, WhiteAmount"/>
+		<class name="EtcMessage241" Format="수풀 안에서 $Who$[가] 발견되었습니다." MakerArguments="Who"/>
+		<class name="EtcMessage242" Format="수풀 안에서 아무것도 발견할 수 없었습니다." MakerArguments=""/>
+		<class name="EtcMessage243" Format="수풀 안에서 $ColorItem$[이] 발견되었습니다." MakerArguments="ColorItem"/>
+		<class name="EtcMessage244" Format="잿더미 야샤 전원 &apos;$State$&apos; 상태가 되었습니다." MakerArguments="State"/>
+		<class name="EtcMessage245" Format="붉은 도로리 전원 &apos;$State$&apos; 상태가 되었습니다." MakerArguments="State"/>
+		<class name="EtcMessage246" Format="붉은 네구리 전원 &apos;$State$&apos; 상태가 되었습니다." MakerArguments="State"/>
 	</idspace>
 	<idspace id="GameSystemMessageFormatArg">
 		<schema>
@@ -288,6 +296,7 @@
 		<class name="Object" Title="[!Ignore]사물" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassTitleSelectionInitializer" Idspace="GameSystemMessageObject" ToString="GameSystemMessageFormatArgToStringCommonClass" Sort="true"/>
 		<class name="Object2" Title="[!Ignore]사물" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassTitleSelectionInitializer" Idspace="GameSystemMessageObject" ToString="GameSystemMessageFormatArgToStringCommonClass" Sort="true"/>
 		<class name="Amount" Title="[!Ignore]양" Form="FreeString" Default="" ToString="GameSystemMessageFormatArgToStringRaw"/>
+		<class name="WhiteAmount" Title="[!Ignore]양" Form="FreeString" Default="" ToString="GameSystemMessageFormatArgToStringRaw" ColorGetter="GameSystemMessageFormatArgColorGetterWhite"/>
 		<class name="Menu" Title="[!Ignore]메뉴" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassTitleSelectionInitializer" Idspace="GameSystemMessageMenu" ToString="GameSystemMessageFormatArgToStringCommonClass" Sort="true" ColorGetter="GameSystemMessageFormatArgColorGetterWhite"/>
 		<class name="SubMenu" Title="[!Ignore]서브메뉴" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassTitleSelectionInitializer" Idspace="GameSystemMessageSubMenu" ToString="GameSystemMessageFormatArgToStringCommonClass" Sort="true" ColorGetter="GameSystemMessageFormatArgColorGetterWhite"/>
 		<class name="Difficulty" Title="[!Ignore]난이도" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassTitleSelectionInitializer" Idspace="GameDifficulty" ToString="GameSystemMessageFormatArgToStringCommonClass" ColorGetter="GameSystemMessageFormatArgColorGetterWhite" Sort="true"/>

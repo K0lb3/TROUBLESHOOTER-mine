@@ -726,6 +726,7 @@
 		<Scripts>
 			<property childid="Language" event="ListSelectionAccepted" script="OnTranslationAcceptancePanelLangChanged"/>
 			<property childid="Apply" event="Clicked" script="OnTranslationAcceptancePanelApplySuggest"/>
+			<property childid="ImportHiddenContribution" event="Clicked" script="OnTranslationAcceptancePanelImportHiddenContribution"/>
 			<property childid="Search" event="TextChanged" script="OnTranslationAcceptancePanelSearchChanged"/>
 			<property childid="WithdrawAdoption" event="Clicked" script="OnTranslationAcceptancePanelWithdrawAdoption"/>
 			<property childid="ShowOnlyNotAdopted" event="SelectStateChanged" script="OnTranslationAcceptancePanelToggleShowOption"/>
@@ -747,6 +748,288 @@
 		<Animations>
 			<property childid="this" anim="TranslationBackLogElemLowlight"/>
 			<property childid="this" anim="TranslationBackLogElemHighlight"/>
+		</Animations>
+	</class>
+	<class name="CrafterMonsterMasteryPanel" File="CrafterMonsterMasteryPanel.layout">
+		<Scripts>
+			<property childid="Ability/Ability1" event="MouseLeavesSurface" script="LeaveToolTip_Ability"/>
+			<property childid="Ability/Ability1" event="MouseEntersSurface" script="EnterToolTip_Ability" sound="mouseover_2.wav"/>
+			<property childid="Ability/Ability10" event="MouseEntersSurface" script="EnterToolTip_Ability" sound="mouseover_2.wav"/>
+			<property childid="Ability/Ability10" event="MouseLeavesSurface" script="LeaveToolTip_Ability"/>
+			<property childid="Ability/Ability11" event="MouseEntersSurface" script="EnterToolTip_Ability" sound="mouseover_2.wav"/>
+			<property childid="Ability/Ability11" event="MouseLeavesSurface" script="LeaveToolTip_Ability"/>
+			<property childid="Ability/Ability12" event="MouseEntersSurface" script="EnterToolTip_Ability" sound="mouseover_2.wav"/>
+			<property childid="Ability/Ability12" event="MouseLeavesSurface" script="LeaveToolTip_Ability"/>
+			<property childid="Ability/Ability2" event="MouseEntersSurface" script="EnterToolTip_Ability" sound="mouseover_2.wav"/>
+			<property childid="Ability/Ability2" event="MouseLeavesSurface" script="LeaveToolTip_Ability"/>
+			<property childid="Ability/Ability3" event="MouseEntersSurface" script="EnterToolTip_Ability" sound="mouseover_2.wav"/>
+			<property childid="Ability/Ability3" event="MouseLeavesSurface" script="LeaveToolTip_Ability"/>
+			<property childid="Ability/Ability4" event="MouseLeavesSurface" script="LeaveToolTip_Ability"/>
+			<property childid="Ability/Ability4" event="MouseEntersSurface" script="EnterToolTip_Ability" sound="mouseover_2.wav"/>
+			<property childid="Ability/Ability5" event="MouseEntersSurface" script="EnterToolTip_Ability" sound="mouseover_2.wav"/>
+			<property childid="Ability/Ability5" event="MouseLeavesSurface" script="LeaveToolTip_Ability"/>
+			<property childid="Ability/Ability6" event="MouseEntersSurface" script="EnterToolTip_Ability" sound="mouseover_2.wav"/>
+			<property childid="Ability/Ability6" event="MouseLeavesSurface" script="LeaveToolTip_Ability"/>
+			<property childid="Ability/Ability7" event="MouseEntersSurface" script="EnterToolTip_Ability" sound="mouseover_2.wav"/>
+			<property childid="Ability/Ability7" event="MouseLeavesSurface" script="LeaveToolTip_Ability"/>
+			<property childid="Ability/Ability8" event="MouseLeavesSurface" script="LeaveToolTip_Ability"/>
+			<property childid="Ability/Ability8" event="MouseEntersSurface" script="EnterToolTip_Ability" sound="mouseover_2.wav"/>
+			<property childid="Ability/Ability9" event="MouseEntersSurface" script="EnterToolTip_Ability" sound="mouseover_2.wav"/>
+			<property childid="Ability/Ability9" event="MouseLeavesSurface" script="LeaveToolTip_Ability"/>
+			<property childid="BasicInfo/Affiliation" event="MouseLeavesSurface" script="LeaveToolTip_Simple"/>
+			<property childid="BasicInfo/Affiliation" event="MouseEntersSurface" script="EnterToolTip_Simple" sound="mouseover_2.wav"/>
+			<property childid="BasicInfo/ESP" event="MouseLeavesSurface" script="LeaveToolTip_Simple"/>
+			<property childid="BasicInfo/ESP" event="MouseEntersSurface" script="EnterToolTip_Simple" sound="mouseover_2.wav"/>
+			<property childid="BasicInfo/Job" event="MouseLeavesSurface" script="LeaveToolTip_Simple"/>
+			<property childid="BasicInfo/Job" event="MouseEntersSurface" script="EnterToolTip_Simple" sound="mouseover_2.wav"/>
+			<property childid="BasicInfo/Race" event="MouseLeavesSurface" script="LeaveToolTip_Simple"/>
+			<property childid="BasicInfo/Race" event="MouseEntersSurface" script="EnterToolTip_Simple" sound="mouseover_2.wav"/>
+			<property childid="BasicInfo/PC" event="MouseLeavesSurface" script="LeaveToolTip_Simple"/>
+			<property childid="BasicInfo/PC" event="MouseEntersSurface" script="EnterToolTip_Simple" sound="mouseover_2.wav"/>
+		</Scripts>
+	</class>
+	<class name="CrafterMonsterMastery" File="CrafterMonsterMastery.layout">
+		<ChildWindows>
+			<property childid="Mastery/SubMastery1" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/SubMastery2" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/SubMastery3" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/SubMastery4" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/SubMastery5" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/SubMastery6" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/SubMastery7" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/SubMastery8" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/AbilityMastery1" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/AbilityMastery2" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/AbilityMastery3" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/AbilityMastery4" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/AbilityMastery5" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/AbilityMastery6" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/AbilityMastery7" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/AbilityMastery8" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/AttackMastery1" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/AttackMastery2" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/AttackMastery3" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/AttackMastery4" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/AttackMastery5" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/AttackMastery6" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/AttackMastery7" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/AttackMastery8" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/BasicMastery1" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/BasicMastery2" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/BasicMastery3" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/BasicMastery4" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/BasicMastery5" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/BasicMastery6" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/BasicMastery7" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/BasicMastery8" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/DefenceMastery1" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/DefenceMastery2" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/DefenceMastery3" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/DefenceMastery4" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/DefenceMastery5" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/DefenceMastery6" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/DefenceMastery7" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/DefenceMastery8" layout="MonsterMasteryComponent"/>
+			<property childid="Mastery/List_Company/Slot1" layout="MonsterMasterySlotComponent"/>
+			<property childid="Mastery/List_Company/Slot2" layout="MonsterMasterySlotComponent"/>
+			<property childid="Mastery/List_Company/Slot3" layout="MonsterMasterySlotComponent"/>
+			<property childid="Mastery/List_Company/Slot4" layout="MonsterMasterySlotComponent"/>
+			<property childid="Mastery/List_Company/Slot5" layout="MonsterMasterySlotComponent"/>
+			<property childid="Mastery/List_Company/Slot6" layout="MonsterMasterySlotComponent"/>
+			<property childid="Mastery/List_Company/Slot7" layout="MonsterMasterySlotComponent"/>
+			<property childid="Mastery/List_Company/Slot8" layout="MonsterMasterySlotComponent"/>
+			<property childid="Mastery/List_Company/Slot9" layout="MonsterMasterySlotComponent"/>
+			<property childid="Mastery/List_Company/Slot10" layout="MonsterMasterySlotComponent"/>
+		</ChildWindows>
+		<Scripts>
+			<property childid="Mastery/Backgound_TM" event="MouseEntersSurface" script="EnterToolTip_Simple" sound="mouseover_2.wav"/>
+			<property childid="Mastery/Backgound_TM" event="MouseLeavesSurface" script="LeaveToolTip_Simple"/>
+			<property childid="Mastery/Job" event="MouseEntersSurface" script="EnterToolTip_Simple" sound="mouseover_2.wav"/>
+			<property childid="Mastery/Job" event="MouseLeavesSurface" script="LeaveToolTip_Simple"/>
+			<property childid="Mastery/ESP" event="MouseEntersSurface" script="EnterToolTip_Simple" sound="mouseover_2.wav"/>
+			<property childid="Mastery/ESP" event="MouseLeavesSurface" script="LeaveToolTip_Simple"/>
+			<property childid="Mastery/PC" event="MouseEntersSurface" script="EnterToolTip_Simple" sound="mouseover_2.wav"/>
+			<property childid="Mastery/PC" event="MouseLeavesSurface" script="LeaveToolTip_Simple"/>
+			<property childid="Mastery/Affiliation" event="MouseEntersSurface" script="EnterToolTip_Simple" sound="mouseover_2.wav"/>
+			<property childid="Mastery/Affiliation" event="MouseLeavesSurface" script="LeaveToolTip_Simple"/>
+			<property childid="Mastery/Race" event="MouseEntersSurface" script="EnterToolTip_Simple" sound="mouseover_2.wav"/>
+			<property childid="Mastery/Race" event="MouseLeavesSurface" script="LeaveToolTip_Simple"/>
+			<property childid="Mastery/Prev" event="MouseButtonUp" script="Prev_CurrentMonsterMasteryList" sound="mouseover_5.wav"/>
+			<property childid="Mastery/Next" event="MouseButtonUp" script="Next_CurrentMonsterMasteryList" sound="mouseover_5.wav"/>
+			<property childid="Mastery/List_Company/Filter_Masterable" event="SelectStateChanged" script="MonsterMasteryFilterMasterableChanged"/>
+			<property childid="Mastery/ExtractButton" event="MouseEntersSurface" sound="mouseover_1.wav"/>
+			<property childid="Mastery/ExtractButton" event="Clicked" script="MonsterMasteryExtractClicked" sound="click_2.wav"/>
+			<property childid="Mastery/MasterButton" event="MouseEntersSurface" sound="mouseover_1.wav"/>
+			<property childid="Mastery/MasterButton" event="Clicked" script="MonsterMasteryMasterClicked" sound="click_2.wav"/>
+			<property childid="Mastery/Filter_ActiveSetOnly" event="MouseEntersSurface" script="EnterToolTip_Line" sound="mouseover_2.wav"/>
+			<property childid="Mastery/Filter_ActiveSetOnly" event="MouseLeavesSurface" script="LeaveToolTip_Line"/>
+			<property childid="Mastery/Filter_ActiveSetOnly" event="SelectStateChanged" script="MasteryFilterActiveSetOnlyChanged"/>
+			<property childid="Mastery/Sort" event="ListSelectionAccepted" script="OnMonsterMasterySortingOptionChanged"/>
+			<property childid="MasteryBoardManager" event="MouseEntersSurface" script="EnterFormationButton" sound="mouseover_1.wav"/>
+			<property childid="MasteryBoardManager" event="MouseLeavesSurface" script="LevaeFormationButton"/>
+			<property childid="MasteryBoardManager" event="Clicked" script="MonsterMasterySaveClicked" sound="mouseover_2.wav"/>
+			<property childid="Exit" event="MouseEntersSurface" script="EnterFormationButton" sound="mouseover_1.wav"/>
+			<property childid="Exit" event="MouseLeavesSurface" script="LevaeFormationButton"/>
+			<property childid="Exit" event="Clicked" script="HideMonsterMasteryInfo" sound="click_2.wav"/>
+			<property childid="MasterySetList" event="Clicked" script="MonsterMasterySetListClicked"/>
+			<property childid="MasterySetList" event="MouseEntersSurface" script="EnterFormationButton" sound="mouseover_1.wav"/>
+			<property childid="MasterySetList" event="MouseLeavesSurface" script="LevaeFormationButton"/>
+			<property childid="MasteryExtractAll" event="Clicked" script="MonsterMasteryExtractAllClicked"/>
+			<property childid="MasteryExtractAll" event="MouseEntersSurface" script="EnterFormationButton" sound="mouseover_1.wav"/>
+			<property childid="MasteryExtractAll" event="MouseLeavesSurface" script="LevaeFormationButton"/>
+			<property childid="Mastery/SearchFilter" event="TextChanged" script="OnMonsterMasterySearchFilterTextChanged"/>
+			<property childid="Mastery/SearchFilter" event="Updated" script="OnMonsterMasterySearchFilterUpdated"/>
+			<property childid="Mastery/SearchFilter" event="Activated" script="OnSearchFilterActivated"/>
+			<property childid="Mastery/SearchFilter" event="Deactivated" script="OnSearchFilterDeactivated"/>
+			<property childid="Mastery/SearchMode" event="ListSelectionAccepted" script="OnMonsterMasterySearchModeChanged"/>
+			<property childid="Mastery/FilterMode" event="ListSelectionAccepted" script="OnMonsterMasteryFilterModeChanged"/>
+		</Scripts>
+		<Animations>
+			<property childid="this" anim="Show_Alpha_Window3"/>
+		</Animations>
+	</class>
+	<class name="MonsterMasteryComponent" File="MasteryComponent.layout">
+		<Scripts>
+			<property childid="this" event="MouseEntersSurface" script="EnterMonsterMasteryListInfo_Roster_Board" sound="mouseover_5.wav"/>
+			<property childid="this" event="MouseLeavesSurface" script="LeaveMonsterMasteryListInfo_Roster_Board"/>
+			<property childid="this" event="MouseDoubleClick" script="MonsterMasteryComponentDoubleClicked"/>
+			<property childid="this" event="MouseButtonUp" sound="click_2.wav"/>
+			<property childid="this" event="SelectStateChanged" script="MonsterMasteryComponentSelectChanged"/>
+		</Scripts>
+		<Animations>
+			<property childid="Open/Name/Text" anim="Show_TextSideViewAnimation"/>
+			<property childid="Open/Background/Frame" anim="PressAnyKeys"/>
+		</Animations>
+	</class>
+	<class name="MonsterMasterySlotComponent" File="MasterySlotComponent.layout">
+		<Scripts>
+			<property childid="this" event="MouseEntersSurface" script="EnterMonsterMasteryListInfo_Roster_Company" sound="mouseover_5.wav"/>
+			<property childid="this" event="MouseLeavesSurface" script="LeaveMonsterMasteryListInfo_Roster_Company"/>
+			<property childid="this" event="RefreshMastery" script="RefreshHoldingMastery"/>
+			<property childid="this" event="MouseDoubleClick" script="MonsterMasterySlotComponentDoubleClicked"/>
+			<property childid="this" event="SelectStateChanged" script="MonsterMasterySlotComponentSelectChanged"/>
+		</Scripts>
+	</class>
+	<class name="MonsterMasteryTab" File="TechniqueTab.layout">
+		<Scripts>
+			<property childid="this" event="MouseEntersSurface" script="Technique_EnterToolTip_Line"/>
+			<property childid="this" event="MouseLeavesSurface" script="Technique_LeaveToolTip_Line"/>
+			<property childid="this" event="SelectStateChanged" script="MonsterMasteryTabSelectChanged" sound="mouseover_5.wav"/>
+		</Scripts>
+	</class>
+	<class name="MonsterMasterySetComponent" File="MasterySetComponent.layout">
+		<Scripts>
+			<property childid="Open/Tooltip" event="MouseEntersSurface" script="EnterMasteryListInfo_Simple" sound="mouseover_5.wav"/>
+			<property childid="Open/Tooltip" event="MouseLeavesSurface" script="LeaveMasteryListInfo_Simple"/>
+			<property childid="Open/SetMastery1" event="MouseEntersSurface" script="EnterMasteryListInfo_Simple" sound="mouseover_5.wav"/>
+			<property childid="Open/SetMastery1" event="MouseLeavesSurface" script="LeaveMasteryListInfo_Simple"/>
+			<property childid="Open/SetMastery2" event="MouseEntersSurface" script="EnterMasteryListInfo_Simple" sound="mouseover_5.wav"/>
+			<property childid="Open/SetMastery2" event="MouseLeavesSurface" script="LeaveMasteryListInfo_Simple"/>
+			<property childid="Open/SetMastery3" event="MouseEntersSurface" script="EnterMasteryListInfo_Simple" sound="mouseover_5.wav"/>
+			<property childid="Open/SetMastery3" event="MouseLeavesSurface" script="LeaveMasteryListInfo_Simple"/>
+			<property childid="Open/SetMastery4" event="MouseEntersSurface" script="EnterMasteryListInfo_Simple" sound="mouseover_5.wav"/>
+			<property childid="Open/SetMastery4" event="MouseLeavesSurface" script="LeaveMasteryListInfo_Simple"/>
+			<property childid="this" event="MouseButtonUp" sound="click_2.wav"/>
+		</Scripts>
+		<Animations>
+			<property childid="Open/Name/Text" anim="Show_TextSideViewAnimation"/>
+			<property childid="Open/SetMastery1/Frame" anim="PressAnyKeys"/>
+			<property childid="Open/SetMastery2/Frame" anim="PressAnyKeys"/>
+			<property childid="Open/SetMastery3/Frame" anim="PressAnyKeys"/>
+			<property childid="Open/SetMastery4/Frame" anim="PressAnyKeys"/>
+		</Animations>
+	</class>
+	<class name="MonsterMasterySetComponent_Toggle" File="MasterySetComponent_Toggle.layout">
+		<Scripts>
+			<property childid="Open/SetMastery1" event="MouseEntersSurface" script="EnterMasteryListInfo_Simple" sound="mouseover_5.wav"/>
+			<property childid="Open/SetMastery1" event="MouseLeavesSurface" script="LeaveMasteryListInfo_Simple"/>
+			<property childid="Open/SetMastery2" event="MouseEntersSurface" script="EnterMasteryListInfo_Simple" sound="mouseover_5.wav"/>
+			<property childid="Open/SetMastery2" event="MouseLeavesSurface" script="LeaveMasteryListInfo_Simple"/>
+			<property childid="Open/SetMastery3" event="MouseEntersSurface" script="EnterMasteryListInfo_Simple" sound="mouseover_5.wav"/>
+			<property childid="Open/SetMastery3" event="MouseLeavesSurface" script="LeaveMasteryListInfo_Simple"/>
+			<property childid="Open/SetMastery4" event="MouseEntersSurface" script="EnterMasteryListInfo_Simple" sound="mouseover_5.wav"/>
+			<property childid="Open/SetMastery4" event="MouseLeavesSurface" script="LeaveMasteryListInfo_Simple"/>
+			<property childid="this" event="MouseEntersSurface" script="EnterMasterySetComponent_Frame" sound="mouseover_5.wav"/>
+			<property childid="this" event="MouseLeavesSurface" script="LeaveMasterySetComponent_Frame"/>
+			<property childid="this" event="MouseButtonUp" sound="click_2.wav"/>
+			<property childid="this" event="SelectStateChanged" script="MonsterMasterySetComponent_SelectChanged"/>
+		</Scripts>
+		<Animations>
+			<property childid="Open/Name/Text" anim="Show_TextSideViewAnimation"/>
+		</Animations>
+	</class>
+	<class name="CrafterMonsterMasterySetList" File="MasterySetList.layout" Layer="Dialog">
+		<ChildWindows>
+			<property childid="MasterySet/List/Slot1" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot2" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot3" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot4" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot5" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot6" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot7" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot8" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot9" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot10" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot11" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot12" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot13" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot14" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot15" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot16" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot17" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot18" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot19" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot20" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot21" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot22" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot23" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot24" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot25" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot26" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot27" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot28" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot29" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot30" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot31" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot32" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot33" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot34" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot35" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot36" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot37" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot38" layout="MonsterMasterySetComponent_Toggle"/>
+			<property childid="MasterySet/List/Slot39" layout="MonsterMasterySetComponent_Toggle"/>
+		</ChildWindows>
+		<Scripts>
+			<property childid="this" event="Shown" sound="openwindow_2.wav"/>
+			<property childid="MasterySet/Prev" event="MouseButtonUp" script="Prev_CurrentMonsterMasterySetList" sound="mouseover_5.wav"/>
+			<property childid="MasterySet/Next" event="MouseButtonUp" script="Next_CurrentMonsterMasterySetList" sound="mouseover_5.wav"/>
+			<property childid="MasterySet/Equip" event="MouseEntersSurface" sound="mouseover_1.wav"/>
+			<property childid="MasterySet/Equip" event="Clicked" script="EquipMonsterMasterySet" sound="click_character.wav"/>
+			<property childid="MasterySet/Exit" event="MouseEntersSurface" script="EnterFormationButton" sound="mouseover_1.wav"/>
+			<property childid="MasterySet/Exit" event="MouseLeavesSurface" script="LevaeFormationButton"/>
+			<property childid="MasterySet/Exit" event="Clicked" script="HideMonsterMasterySetList" sound="click_character.wav"/>
+			<property childid="MasterySet/ViewMode" event="ListSelectionAccepted" script="MonsterMasterySetViewModeChanged"/>
+			<property childid="MasterySet/SortMode" event="ListSelectionAccepted" script="MonsterMasterySetSortModeChanged"/>
+			<property childid="MasterySet/SearchFilter" event="TextChanged" script="OnMonsterMasterySetSearchFilterTextChanged"/>
+			<property childid="MasterySet/SearchFilter" event="Updated" script="OnMonsterMasterySetSearchFilterUpdate"/>
+			<property childid="MasterySet/SearchFilter" event="Activated" script="OnSearchFilterActivated"/>
+			<property childid="MasterySet/SearchFilter" event="Deactivated" script="OnSearchFilterDeactivated"/>
+		</Scripts>
+		<Animations>
+			<property childid="this" anim="Show_DialogSystemMessageBox"/>
+			<property childid="this" anim="Hide_DialogSystemMessageBox"/>
+		</Animations>
+	</class>
+	<class name="MonsterEquipment" File="CharacterEquipment.layout">
+		<Scripts>
+			<property childid="this" event="MouseLeavesSurface" script="LeaveToolTip_Item"/>
+			<property childid="this" event="MouseEntersSurface" script="EnterToolTip_Item" sound="mouseover_5.wav"/>
+			<property childid="this" event="RefreshItem" script="RefreshHoldingItem"/>
+		</Scripts>
+		<Animations>
+			<property childid="Uncheck" anim="PressAnyKeys"/>
+			<property childid="Effect" anim="PressAnyKeys"/>
 		</Animations>
 	</class>
 </idspace>

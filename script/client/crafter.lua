@@ -74,6 +74,14 @@ function MapComponentInvestigationTarget(type, component)
 				monName = chestTypeCls.MonsterActive.name;
 			end
 		end
+	elseif invType == 'Lock' then
+		local lockType = SafeIndex(investigationInfo, 'LockType');
+		if lockType then
+			local lockTypeCls = GetClassList('LockType')[lockType];
+			if lockTypeCls and lockTypeCls.name then
+				monName = lockTypeCls.MonsterActive.name;
+			end
+		end
 	end
 	return { Type = "Model", Name = GetClassList('Monster')[monName].Object.name };
 end

@@ -33721,7 +33721,7 @@
 				<property name="Taming" value="0"/>
 			</AIHateRatio>
 		</class>
-		<class name="WhiteKnight" Status="WhiteKnight" Title="백기사" Grade="2" Image="Mastery/WhiteKnight" ClassChangeItemCount="50" RequiredWeapon="TwoHandSword, Club, TwoHandClub, Chainsaw, TwoHandSpear, Axe" RequiredESP="" RequiredGender="" RequiredOrganization="" BasicMastery="HandToHandCombat" PerformanceType="None" Basic="1" Normal="4" Ultimate="2" AttackType="Melee" MaxBasicMasteryCount="4" MaxSubMasteryCount="3" MaxAttackMasteryCount="5" MaxDefenceMasteryCount="5" MaxAbilityMasteryCount="5" MaxHP="0" MaxVigor="0" RegenVigor="0" MaxFuel="0" RegenFuel="0" SightRange="0" Speed="0" MoveDist="0" AttackPower="50" ESPPower="50" Accuracy="0" CriticalStrikeChance="0" CriticalStrikeDeal="0" Armor="50" Resistance="50" Block="0" Dodge="0" AssistRatio="0.5">
+		<class name="WhiteKnight" Status="WhiteKnight" Title="백기사" Grade="2" Image="Mastery/WhiteKnight" ClassChangeItemCount="50" RequiredWeapon="TwoHandSword, Club, TwoHandClub, Chainsaw, TwoHandSpear, Axe" RequiredESP="" RequiredGender="" RequiredOrganization="" BasicMastery="HandToHandCombat" PerformanceType="None" Basic="1" Normal="4" Ultimate="2" AttackType="Melee" MaxBasicMasteryCount="5" MaxSubMasteryCount="3" MaxAttackMasteryCount="5" MaxDefenceMasteryCount="5" MaxAbilityMasteryCount="4" MaxHP="0" MaxVigor="0" RegenVigor="0" MaxFuel="0" RegenFuel="0" SightRange="0" Speed="0" MoveDist="0" AttackPower="50" ESPPower="50" Accuracy="0" CriticalStrikeChance="0" CriticalStrikeDeal="0" Armor="50" Resistance="50" Block="0" Dodge="0" AssistRatio="0.5">
 			<AIFieldBonus>
 				<property name="Fire" value="0"/>
 				<property name="Spark" value="0"/>
@@ -33742,11 +33742,6 @@
 				<property name="ContaminatedWaterBush" value="0"/>
 			</AIFieldBonus>
 			<RequireClassLv>
-				<property>
-					<RequireConditions>
-						<property name="Marauder" value="10"/>
-					</RequireConditions>
-				</property>
 				<property>
 					<RequireConditions>
 						<property name="Swordsman" value="10"/>
@@ -33971,6 +33966,111 @@
 			</AIHateRatio>
 		</class>
 		<class name="Merchant" Status="Merchant" Title="상인" Grade="1" Image="Mastery/Merchant" ClassChangeItemCount="25" RequiredWeapon="" RequiredESP="" RequiredGender="" RequiredOrganization="" BasicMastery="Accounting" PerformanceType="None" Basic="1" Normal="2" Ultimate="1" AttackType="None" MaxBasicMasteryCount="2" MaxSubMasteryCount="5" MaxAttackMasteryCount="2" MaxDefenceMasteryCount="2" MaxAbilityMasteryCount="6" MaxHP="0" MaxVigor="0" RegenVigor="0" MaxFuel="0" RegenFuel="0" SightRange="0" Speed="0" MoveDist="0" AttackPower="0" ESPPower="0" Accuracy="0" CriticalStrikeChance="0" CriticalStrikeDeal="0" Armor="0" Resistance="0" Block="0" Dodge="0" AssistRatio="0.75">
+			<AIFieldBonus>
+				<property name="Fire" value="0"/>
+				<property name="Spark" value="0"/>
+				<property name="PoisonGas" value="0"/>
+				<property name="SmokeScreen" value="50"/>
+				<property name="Blackout" value="0"/>
+				<property name="Bush" value="10"/>
+				<property name="Swamp" value="0"/>
+				<property name="Web" value="0"/>
+				<property name="Water" value="0"/>
+				<property name="SwampBush" value="0"/>
+				<property name="WaterBush" value="0"/>
+				<property name="AcidGas" value="0"/>
+				<property name="IceMist" value="0"/>
+				<property name="HealMist" value="10"/>
+				<property name="Ice" value="0"/>
+				<property name="ContaminatedWater" value="0"/>
+				<property name="ContaminatedWaterBush" value="0"/>
+			</AIFieldBonus>
+			<AIHateRatio>
+				<property name="Attack" value="1"/>
+				<property name="Assist" value="1"/>
+				<property name="Heal" value="1"/>
+				<property name="Taming" value="0"/>
+			</AIHateRatio>
+		</class>
+		<class name="Arithmetician" Status="Arithmetician" Title="산술사" Grade="2" Image="Mastery/Arithmetician" ClassChangeItemCount="50" RequiredWeapon="" RequiredESP="" RequiredGender="" RequiredOrganization="" BasicMastery="Accounting" PerformanceType="None" Basic="1" Normal="2" Ultimate="1" AttackType="None" MaxBasicMasteryCount="2" MaxSubMasteryCount="5" MaxAttackMasteryCount="2" MaxDefenceMasteryCount="2" MaxAbilityMasteryCount="6" MaxHP="0" MaxVigor="0" RegenVigor="0" MaxFuel="0" RegenFuel="0" SightRange="0" Speed="0" MoveDist="0" AttackPower="0" ESPPower="0" Accuracy="0" CriticalStrikeChance="0" CriticalStrikeDeal="0" Armor="0" Resistance="0" Block="0" Dodge="0" AssistRatio="0.75">
+			<AIFieldBonus>
+				<property name="Fire" value="0"/>
+				<property name="Spark" value="0"/>
+				<property name="PoisonGas" value="0"/>
+				<property name="SmokeScreen" value="50"/>
+				<property name="Blackout" value="0"/>
+				<property name="Bush" value="10"/>
+				<property name="Swamp" value="0"/>
+				<property name="Web" value="0"/>
+				<property name="Water" value="0"/>
+				<property name="SwampBush" value="0"/>
+				<property name="WaterBush" value="0"/>
+				<property name="AcidGas" value="0"/>
+				<property name="IceMist" value="0"/>
+				<property name="HealMist" value="10"/>
+				<property name="Ice" value="0"/>
+				<property name="ContaminatedWater" value="0"/>
+				<property name="ContaminatedWaterBush" value="0"/>
+			</AIFieldBonus>
+			<RequireClassLv>
+				<property>
+					<RequireConditions>
+						<property name="Scholar" value="10"/>
+					</RequireConditions>
+				</property>
+				<property>
+					<RequireConditions>
+						<property name="Merchant" value="10"/>
+					</RequireConditions>
+				</property>
+			</RequireClassLv>
+			<AIHateRatio>
+				<property name="Attack" value="1"/>
+				<property name="Assist" value="1"/>
+				<property name="Heal" value="1"/>
+				<property name="Taming" value="0"/>
+			</AIHateRatio>
+		</class>
+		<class name="Gambler" Status="Gambler" Title="도박사" Grade="2" Image="Mastery/Gambler" ClassChangeItemCount="50" RequiredWeapon="" RequiredESP="" RequiredGender="" RequiredOrganization="" BasicMastery="Accounting" PerformanceType="None" Basic="1" Normal="2" Ultimate="1" AttackType="None" MaxBasicMasteryCount="2" MaxSubMasteryCount="5" MaxAttackMasteryCount="2" MaxDefenceMasteryCount="2" MaxAbilityMasteryCount="6" MaxHP="0" MaxVigor="0" RegenVigor="0" MaxFuel="0" RegenFuel="0" SightRange="0" Speed="0" MoveDist="0" AttackPower="0" ESPPower="0" Accuracy="0" CriticalStrikeChance="0" CriticalStrikeDeal="0" Armor="0" Resistance="0" Block="0" Dodge="0" AssistRatio="0.75">
+			<AIFieldBonus>
+				<property name="Fire" value="0"/>
+				<property name="Spark" value="0"/>
+				<property name="PoisonGas" value="0"/>
+				<property name="SmokeScreen" value="50"/>
+				<property name="Blackout" value="0"/>
+				<property name="Bush" value="10"/>
+				<property name="Swamp" value="0"/>
+				<property name="Web" value="0"/>
+				<property name="Water" value="0"/>
+				<property name="SwampBush" value="0"/>
+				<property name="WaterBush" value="0"/>
+				<property name="AcidGas" value="0"/>
+				<property name="IceMist" value="0"/>
+				<property name="HealMist" value="10"/>
+				<property name="Ice" value="0"/>
+				<property name="ContaminatedWater" value="0"/>
+				<property name="ContaminatedWaterBush" value="0"/>
+			</AIFieldBonus>
+			<RequireClassLv>
+				<property>
+					<RequireConditions>
+						<property name="Scholar" value="10"/>
+					</RequireConditions>
+				</property>
+				<property>
+					<RequireConditions>
+						<property name="Astrologian" value="10"/>
+					</RequireConditions>
+				</property>
+			</RequireClassLv>
+			<AIHateRatio>
+				<property name="Attack" value="1"/>
+				<property name="Assist" value="1"/>
+				<property name="Heal" value="1"/>
+				<property name="Taming" value="0"/>
+			</AIHateRatio>
+		</class>
+		<class name="Astrologian" Status="Astrologian" Title="점성술사" Grade="1" Image="Mastery/Merchant" ClassChangeItemCount="25" RequiredWeapon="" RequiredESP="" RequiredGender="" RequiredOrganization="" BasicMastery="Accounting" PerformanceType="None" Basic="1" Normal="2" Ultimate="1" AttackType="None" MaxBasicMasteryCount="2" MaxSubMasteryCount="5" MaxAttackMasteryCount="2" MaxDefenceMasteryCount="2" MaxAbilityMasteryCount="6" MaxHP="0" MaxVigor="0" RegenVigor="0" MaxFuel="0" RegenFuel="0" SightRange="0" Speed="0" MoveDist="0" AttackPower="0" ESPPower="0" Accuracy="0" CriticalStrikeChance="0" CriticalStrikeDeal="0" Armor="0" Resistance="0" Block="0" Dodge="0" AssistRatio="0.75">
 			<AIFieldBonus>
 				<property name="Fire" value="0"/>
 				<property name="Spark" value="0"/>

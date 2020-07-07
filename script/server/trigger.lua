@@ -1172,18 +1172,15 @@ function CheckTeamTakeDamageToUnit(mid, session, eventArg, team, unit)
     return nil
 end
 function CheckTeamTurnEnd(mid, session, eventArg, team)
-    local movedUnit = eventArg.Unit;
-	if GetTeam(movedUnit) ~= team then
+    local unit = eventArg.Unit;
+	if GetTeam(unit) ~= team or unit.Obstacle then
 		return nil;
 	end
 	return true, {Unit = eventArg.Unit};
---	if eventArg.Unit ~= GetUnitFromUnitIndicator(mid, unit) then return nil end
---	
---	return true, {Unit = eventArg.Unit};
 end
 function CheckTeamTurnStart(mid, session, eventArg, team)
-    local movedUnit = eventArg.Unit;
-	if GetTeam(movedUnit) ~= team then
+    local unit = eventArg.Unit;
+	if GetTeam(unit) ~= team or unit.Obstacle then
 		return nil;
 	end
 	return true, {Unit = eventArg.Unit};
@@ -1666,12 +1663,9 @@ function Action_UnitAddBuff(mid, ds, conditionOutput, Unit, buffName, buffLv)
 	if unit == nil then
 		return;
 	end
-	local buff = GetBuff(unit,buffName)
-	if buff == nil or buff.Lv < buffLv then
-    	local actions = {};
-        table.insert(actions, Result_AddBuff(unit, unit, buffName, buffLv, nil))
-    	return unpack(actions);
-    end
+	local actions = {};
+	InsertBuffActions(actions, unit, unit, buffName, buffLv, true);
+	return unpack(actions);
 end
 
 function Action_SightTeamAddBuff(mid, ds, conditionOutput, Unit, team, buffName, buffLv)
@@ -1688,7 +1682,7 @@ function Action_SightTeamAddBuff(mid, ds, conditionOutput, Unit, team, buffName,
 	local actions = {};
 	for _, target in ipairs(targets) do
 		if IsInSight(target, unitPos, true) then
-			table.insert(actions, Result_AddBuff(target, target, buffName, buffLv, nil));
+			InsertBuffActions(actions, target, target, buffName, buffLv, true);
 		end
 	end
 	return unpack(actions);
@@ -1703,9 +1697,8 @@ function Action_TeamAddBuff(mid, ds, conditionOutput, team, buffName, buffLv, on
 	local giverUnit = GetUnitFromUnitIndicator(mid, giver, conditionOutput, true);
 	for index = 1, remainUnit do
 		local u = GetTeamUnitByIndex(mid, team, index, StringToBool(onFieldOnly));
-        table.insert(actions, Result_AddBuff(giverUnit or u, u, buffName, buffLv, nil))
+		InsertBuffActions(actions, giverUnit or u, u, buffName, buffLv, true);
 	end
-	
 	return unpack(actions);
 end
 function Action_TeamRemoveBuff(mid, ds, conditionOutput, team, buffName, noEvent)
@@ -2273,8 +2266,8 @@ function Action_RestoreMaxHP(mid, ds, conditionOutput, unitIndicator)
 	if unit == nil then
 		return;
 	end
-	
-	return Result_PropertyUpdated('HP', unit.MaxHP, unit, true);
+
+	return Result_PropertyUpdated('LowestHP', unit.MaxHP, unit, false), Result_PropertyUpdated('HP', unit.MaxHP, unit, true);
 end
 
 function Action_RestoreMaxSP(mid, ds, conditionOutput, unitIndicator)
@@ -2630,6 +2623,7 @@ function Action_Switch(mid, ds, conditionOutput, switchEnvironment, testExpressi
 		env[name] = envValue;
 	end
 	local testFunc = loadstring('return '.. testExpression);
+	setmetatable(env, {__index = _G});
 	setfenv(testFunc, env);
 	local testValue = testFunc();
 	for _, case in ipairs(SafeIndex(caseDefinition, 1, 'Case')) do
@@ -2686,6 +2680,7 @@ function Action_ResetObject(mid, ds, conditionOutput, unitIndicator, maxHP, maxC
 		table.insert(actions, Result_Resurrect(unit, 'system'));
 	end
 	if maxHP then
+		table.insert(actions, Result_PropertyUpdated('LowestHP', unit.MaxHP, unit, false));
 		table.insert(actions, Result_PropertyUpdated('HP', unit.MaxHP, unit, true));
 	end
 	if maxCost then

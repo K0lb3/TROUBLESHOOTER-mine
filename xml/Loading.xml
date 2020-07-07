@@ -31,16 +31,18 @@
 		<class name="PlayerInfoInMission" Title="플레이어 캐릭터 정보 보기" Desc="미션 진행 중 우상단의 캐릭터 보기 버튼을 통하여 현재 플레이어 캐릭터의 자세한 정보를 확인하실 수 있습니다."/>
 		<class name="EnemyInfoInMission" Title="적 정보" Desc="시야 내 적을 선택하면 화면 상단에 적의 현재 상태를 자세하게 확인하실 수 있습니다."/>
 		<class name="Overcharge" Title="과충전" Desc="SP가 최대치가 되면 과충전 상태가 됩니다. 과충전 상태에서는 어빌리티의 기력 소모가 0 이 되며 캐릭터에 따라 숨겨졌던 특정 어빌리티가 활성화됩니다."/>
-		<class name="ItemBox" Title="아이템 상자" Desc="아이템 상자에는 다양한 아이템이 들어 있습니다. 가끔 비어있을 수 있습니다."/>
+		<class name="ItemBox" Title="아이템 상자" Desc="아이템 상자에는 다양한 아이템이 들어 있습니다."/>
 		<class name="MoveAttack" Title="이동 공격" Desc="이동 공격이 가능한 어빌리티는 이동과 공격을 한 번에 시도할 수 있습니다."/>
 		<class name="ItemProtect" Title="아이템 보호" Desc="[colour='FFFFFF00']물품 목록[colour='FFCCCCCC']에서 아이템에 [colour='FFFFFF00']Alt + 우클릭[colour='FFCCCCCC']을 통하여 보호/해제 설정을 변경할 수 있습니다. 보호된 아이템은 상점 판매, 아이템 분해가 되지 않습니다."/>
-		<class name="AcquireMastery" Title="특성 획득" Desc="적을 전투 불능으로 만들면 해당 몬스터가 보유한 특성을 확률적으로 획득할 수 있습니다."/>
+		<class name="AcquireMastery" Title="특성 획득" Desc="적을 전투 불능으로 만들면 해당 적이 보유한 특성을 확률적으로 획득할 수 있습니다."/>
 		<class name="Minimap" Title="미니맵 보기" Desc="미션 진행 중 우상단의 미니맵 보기 버튼을 통하여 현재 진행 중인 지역의 정보를 확인하실 수 있습니다."/>
 		<class name="TacticView" Title="전략 시점" Desc="미션 진행 중 우상단의 전략 시점 보기 버튼을 통하여 현재 카메라 모드보다 더 넓은 지역을 한눈에 보실 수 있습니다."/>
 		<class name="BattleInfoMode" Title="전투 미리 보기" Desc="미션 진행 중 우상단의 전투 미리 보기 버튼을 통하여 현재 시점에서 이동 후 시야와 공격 대상을 미리 확인하실 수 있습니다."/>
 		<class name="PsiStone" Title="이능석" Desc="이능석의 에너지를 추출하여 [colour='FFFFAA00']아이템 제작[colour='FFCCCCCC'] 혹은 [colour='FFFFAA00']아이템 강화[colour='FFCCCCCC']에 필요한 [colour='FF00FF00']재료[colour='FFCCCCCC']를 획득할 수 있습니다."/>
 		<class name="ThirdTeam" Title="제 3세력 유닛" Desc="해당 임무의 적과 플레이어 팀 모두에게 적대 관계인 유닛을 말합니다. 해당 유닛은 자홍색으로 표시됩니다."/>
 		<class name="TileInfo" Title="타일 정보 표시" Desc="타일의 상세한 정보는 게임 옵션의 타일 정보 표시를 통해 활성화 가능합니다."/>
+		<class name="NSWEInfo" Title="방위 표시" Desc="3차원 공간의 방향성을 쉽게 판단하게 하기 위해 게임 옵션의 방위 정보 표시를 통해 동, 서, 남, 북 방향 표시를 활성화 가능합니다."/>
+		<class name="InteractionShorten" Title="상호 작용 간략화" Desc="게임 옵션을 통해 시민, 상자 열기들의 연출을 간략화 가능합니다."/>
 		<class name="CameraOption" Title="카메라 옵션" Desc="연출 카메라의 적용 여부는 게임 옵션을 통해 변경 가능합니다."/>
 		<class name="FastDirect" Title="빠르게 연출" Desc="이동, 공격등 게임 연출 속도는 게임 옵션을 통해 변경 가능합니다."/>
 		<class name="SkipDirect" Title="연출 건너뛰기" Desc="연출 진행은 ESC 키를 통해 건너뛸 수 있습니다."/>
@@ -91,6 +93,8 @@
 				<property Desc="CameraRotation"/>
 				<property Desc="CameraWheel"/>
 				<property Desc="CameraViewAngle"/>
+				<property Desc="NSWEInfo"/>
+				<property Desc="InteractionShorten"/>
 			</DescList>
 		</class>
 		<class name="Group04">
@@ -123,6 +127,8 @@
 				<property Desc="AbilityRangeLock"/>
 				<property Desc="CameraRotation"/>
 				<property Desc="CameraWheel"/>
+				<property Desc="NSWEInfo"/>
+				<property Desc="InteractionShorten"/>
 				<property Desc="CameraViewAngle"/>
 			</DescList>
 		</class>
@@ -214,7 +220,7 @@
 				<property Image="Loading_Common_Road_113"/>
 			</Images>
 		</class>
-		<class name="Tutorial_CrowBillAfter" Title="하염 없이 내리는 빗줄기" SubTitle="까마귀부리 정류장" BGM="TroubleWaltz" Type="Custom" TypeKey="Weather">
+		<class name="Tutorial_CrowBillAfter" Title="하염없이 내리는 빗줄기" SubTitle="까마귀부리 정류장" BGM="TroubleWaltz" Type="Custom" TypeKey="Weather">
 			<Images>
 				<property Image="Loading_Rain"/>
 			</Images>
@@ -584,6 +590,11 @@
 				<property Image="Loading_Raid_ShadeFogBackStreet"/>
 			</Images>
 		</class>
+		<class name="Raid_ShadowWallUnderWay" Title="등잔 밑이 어둡다" SubTitle="그림자 장벽 지하수로 북단" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Raid_ShadowWallUnderWay"/>
+			</Images>
+		</class>
 		<class name="Quest_Roberto01" Title="실력 테스트" SubTitle="사수거리 공원" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
 			<Images>
 				<property Image="Loading_Quest_Roberto01"/>
@@ -602,6 +613,16 @@
 		<class name="Quest_Roberto04" Title="소녀의 부탁" SubTitle="사수거리 공원" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
 			<Images>
 				<property Image="Loading_Quest_Roberto01"/>
+			</Images>
+		</class>
+		<class name="Quest_Leo01" Title="난폭한 불청객" SubTitle="하늘바람 동물보호소" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Quest_Leo01"/>
+			</Images>
+		</class>
+		<class name="Quest_Bruna01" Title="요란한 불청객" SubTitle="황금손 거주구" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
+			<Images>
+				<property Image="Loading_Quest_Bruna01"/>
 			</Images>
 		</class>
 		<class name="Quest_Hundred01" Title="고철 더미 아래 불청객" SubTitle="은빛 구름 고물 처리장" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
@@ -630,9 +651,8 @@
 				<property Image="Loading_Irene_Albus"/>
 				<property Image="Loading_Ray_Heising"/>
 				<property Image="Loading_Alisa_Bianca"/>
-				<property Image="Loading_Ray_Heising"/>
-				<property Image="Loading_Irene_Albus"/>
 				<property Image="Loading_Sion_Anne"/>
+				<property Image="Loading_Giselle_Kylie"/>
 			</Images>
 		</class>
 		<class name="Lobby_Office" Title="바 실버라이닝" SubTitle="은빛 구름 거리 356" BGM="TroubleWaltz" Type="Group04" TypeKey="None">
@@ -642,6 +662,7 @@
 				<property Image="Loading_Alisa_Bianca"/>
 				<property Image="Loading_Sion_Anne"/>
 				<property Image="Loading_Irene_Albus"/>
+				<property Image="Loading_Giselle_Kylie"/>
 			</Images>
 		</class>
 		<class name="Lobby_Office_Heissing" Title="바 실버라이닝" SubTitle="은빛 구름 거리 뒷골목" BGM="FairyTale" Type="Group03" TypeKey="None">
@@ -655,6 +676,7 @@
 				<property Image="Loading_Ray_Heising"/>
 				<property Image="Loading_Alisa_Bianca"/>
 				<property Image="Loading_Sion_Anne"/>
+				<property Image="Loading_Giselle_Kylie"/>
 				<property Image="Loading_Irene_Albus"/>
 			</Images>
 		</class>
@@ -664,6 +686,7 @@
 				<property Image="Loading_Ray_Heising"/>
 				<property Image="Loading_Alisa_Bianca"/>
 				<property Image="Loading_Sion_Anne"/>
+				<property Image="Loading_Giselle_Kylie"/>
 				<property Image="Loading_Irene_Albus"/>
 			</Images>
 		</class>

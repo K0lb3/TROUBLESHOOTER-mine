@@ -87,6 +87,7 @@ function LobbyAction_TechniqueResearch(dc, company, args)
 	
 	local techniqueName = args.TechniqueName;
 	local addMasteries = args.Materials;
+	local count = args.Count;
 	
 	local techniqueList = GetClassList('Technique');
 	local tech = techniqueList[techniqueName];
@@ -95,7 +96,7 @@ function LobbyAction_TechniqueResearch(dc, company, args)
 		return {Success = false, Reward = {}};
 	end
 	
-	local isEnableTechnique, masteryList, reason, _, itemList = IsEnableTechniqueResearch(company, tech, addMasteries, LobbyInventoryItemCounter(company));
+	local isEnableTechnique, masteryList, reason, _, itemList = IsEnableTechniqueResearch(company, tech, addMasteries, LobbyInventoryItemCounter(company), count);
 	if not isEnableTechnique then
 		for index, value in ipairs (reason) do
 			LogAndPrint('[DataError] LobbyAction ResearchTechnique : '.. value);
@@ -106,14 +107,14 @@ function LobbyAction_TechniqueResearch(dc, company, args)
 	-- 1. 회사 마스터리 Amount 감소시키기
 	for i = 1, #masteryList do
 		local masteryName = masteryList[i];
-		dc:LoseMastery(company, masteryName, 1);
+		dc:LoseMastery(company, masteryName, count);
 	end
 	if not tech.System then
-		dc:AcquireMastery(company, tech.name, 1, true);
+		dc:AcquireMastery(company, tech.name, count, true);
 	end
 	-- 2. 재료 아이템 뺏기
 	for itemKey, needCount in pairs(itemList) do
-		dc:TakeItem(GetInventoryItemByType(company, itemKey), needCount);
+		dc:TakeItem(GetInventoryItemByType(company, itemKey), needCount * count);
 	end
 	
 	-- 2. 언락 테크닉 열어주기.
@@ -135,7 +136,9 @@ function LobbyAction_TechniqueResearch(dc, company, args)
 		local itemList = GetClassList('Item');
 		local rewardItem = itemList[tech.RewardItem];
 		if rewardItem and rewardItem.name then
-			itemRewardCount = math.random(tech.RewardItemMinCount, tech.RewardItemMaxCount);			
+			for i = 1, count do
+				itemRewardCount = itemRewardCount + math.random(tech.RewardItemMinCount, tech.RewardItemMaxCount);
+			end
 			dc:GiveItem(company, tech.RewardItem, itemRewardCount);
 		end
 	end
@@ -404,6 +407,27 @@ end
 -------------------------------------------------------------------------------
 -- 아이템 추출
 -------------------------------------------------------------------------------
+function GetExtractMaterialResult(itemName, itemCount)
+	local materialList = GetExtractMaterial(itemName);
+	local rewardList = table.map(materialList, function(info)
+		local itemAmount = 0;
+		for i = 1, itemCount do
+			local addAmount = 0;
+			if info.MinAmount == info.MaxAmount then
+				addAmount = info.MaxAmount;
+			else
+				local minAmount = info.MinAmount;
+				if minAmount == 0 and math.random(1,100) <= 75 then
+					minAmount = 1;
+				end
+				addAmount = math.random(minAmount, info.MaxAmount);
+			end
+			itemAmount = itemAmount + addAmount;
+		end
+		return { ItemName = info.Item, ItemCount = itemAmount };
+	end);
+	return rewardList;
+end
 function LobbyAction_ExtractItem(dc, company, args)
 	if company.LastLocation.LobbyType == 'Office' and (not StringToBool(company.WorkshopMenu.Opened, false) or not StringToBool(company.WorkshopMenu.Upgrade.Opened, false)) then
 		LogAndPrint('company.WorkshopMenu.Opened - false');
@@ -431,20 +455,7 @@ function LobbyAction_ExtractItem(dc, company, args)
 	dc:TakeItem(item, itemCount);
 	
 	-- 3. 결과물 주기.
-	local materialList = GetExtractMaterial(item.name);
-	local rewardList = table.map(materialList, function(info)
-		local itemAmount = 0;
-		for i = 1, itemCount do
-			local addAmount = 0;
-			if info.MinAmount == info.MaxAmount then
-				addAmount = info.MaxAmount;
-			else
-				addAmount = math.random(info.MinAmount, info.MaxAmount);
-			end
-			itemAmount = itemAmount + addAmount;
-		end
-		return { ItemName = info.Item, ItemCount = itemAmount };
-	end);
+	local rewardList = GetExtractMaterialResult(item.name, itemCount);
 	rewardList = table.filter(rewardList, function(info) return info.ItemCount > 0; end);
 	
 	for _, reward in ipairs(rewardList) do
@@ -2069,16 +2080,17 @@ function LobbyAction_ChangeMasteryBoard(dc, company, args)
 	-- 4) 특성 해제로 사라지는 장착 슬롯에 착용 중인 아이템이 있으면 해제
 	local prevMasteryTable = GetMastery(roster, roster.MasteryBoard.Index);
 	local nextMasteryTable = GetMastery(roster, boardIndex);
+	local removedMasteries = {};
 	-- 자동 해제되는 마스터리도 제외해야한다.
 	for _, masteryName in ipairs(masteries) do
 		local mastery = masteryList[masteryName];
 		if mastery and mastery.ExtractItem ~= 'None' then
-			nextMasteryTable[masteryName] = nil;
+			removedMasteries[masteryName] = true;
 		end
 	end
 	local unequipMasteryList = {};
 	for masteryName, _ in pairs(prevMasteryTable) do
-		if not nextMasteryTable[masteryName] then
+		if not nextMasteryTable[masteryName] or removedMasteries[masteryName] then
 			table.insert(unequipMasteryList, masteryName);
 		end
 	end
@@ -2773,16 +2785,7 @@ function ProgressRemoveMachineAction(ldm, self, company, env, parsedScript)
 	end
 	-- 추출 결과물 주기
 	for _, extractItem in ipairs(extractItemList) do
-		local materialList = GetExtractMaterial(extractItem.name);
-		local rewardList = table.map(materialList, function(info)
-			local addAmount = 0;
-			if info.MinAmount == info.MaxAmount then
-				addAmount = info.MaxAmount;
-			else
-				addAmount = math.random(info.MinAmount, info.MaxAmount);
-			end
-			return { ItemName = info.Item, ItemCount = addAmount };
-		end);
+		local rewardList = GetExtractMaterialResult(extractItem.name, 1);
 		for _, reward in ipairs(rewardList) do
 			dc:GiveItem(company, reward.ItemName, reward.ItemCount, true);
 			ldm:AddMissionChat('GiveItem', 'GiveItem', { ItemType = reward.ItemName, ItemCount = reward.ItemCount });
@@ -2967,16 +2970,7 @@ function LobbyAction_ChangeMachine(dc, company, args)
 		local itemCls = itemList[itemName];
 		local isEnable, reason = IsEnableExtractItem(company, rosterList, itemCls);
 		if isEnable then
-			local materialList = GetExtractMaterial(itemName);
-			local rewardList = table.map(materialList, function(info)
-				local addAmount = 0;
-				if info.MinAmount == info.MaxAmount then
-					addAmount = info.MaxAmount;
-				else
-					addAmount = math.random(info.MinAmount, info.MaxAmount);
-				end
-				return { ItemName = info.Item, ItemCount = addAmount };
-			end);
+			local rewardList = GetExtractMaterialResult(itemName, 1);
 			for _, reward in ipairs(rewardList) do
 				dc:GiveItem(company, reward.ItemName, reward.ItemCount, true);
 			end
@@ -3225,5 +3219,64 @@ function LobbyAction_InvokeLobbyEvent(dc, company, args)
 	env.camera_mode = lobbyEventCls.Camera;
 	env._auto_fade_in = StringToBool(lobbyEventCls.AutoFadeIn, true);
 	StartLobbyDialog(company, 'LobbyEvent_Common', env);
+	return {Success = true};
+end
+-- 퀘스트 미션 다시하기
+function LobbyAction_InvokeQuestMission(dc, company, args)
+	local stage, progress = GetQuestState(company, args.Quest);
+	if stage ~= 'Completed' then
+		return {Success = false};
+	end
+	local questCls = GetClassList('Quest')[args.Quest];
+	if not questCls or not questCls.Mission then
+		return {Success = false};
+	end
+	StartMission(company, questCls.Mission.name, { QuestType = questCls.name, TroubleBookEpisode = 'QuestReplay', ChallengerMode = args.ChallengerMode, QuestReplay = true });
+	return {Success = true};
+end
+-- 무기 코스튬 변경
+function LobbyAction_ChangeWeaponCostume(dc, company, args)
+	local itemAddress = args.ItemAddress;
+	local item;
+	if itemAddress == 'Inventory' then
+		local itemInstanceKey = args.BaseInvKey;
+		item = GetInventoryItemByInstanceKey(company, itemInstanceKey);
+	elseif itemAddress == 'Equipment' then
+		local roster = GetRoster(company, args.Roster);
+		if roster then
+			item = GetRosterEquipItem(roster, args.EquipPosition);
+		end
+	end
+	if item == nil then
+		LogAndPrint('[ChangeWeaponCostume Failed] 대상 아이템을 찾지 못했다. company : ', company.name, ', : args : ', args);
+		return {Success = false};
+	end
+	
+	if args.WeaponCostume and args.WeaponCostume ~= 'None' then
+		local weaponCostume = company.WeaponCostume[args.WeaponCostume];
+		if not weaponCostume or not weaponCostume.Opened then
+			return {Success = false};
+		end
+		if company.Vill < weaponCostume.Vill then
+			return {Success = false};
+		end
+		dc:UpdateItemProperty(item, 'WeaponCostume', weaponCostume.name);
+		if not item.Binded then
+			dc:UpdateItemProperty(item, 'Binded', true);
+		end
+		if weaponCostume.Vill > 0 then
+			dc:AddCompanyProperty(company, 'Vill', -1 * weaponCostume.Vill);
+		end
+	else
+		dc:UpdateItemProperty(item, 'WeaponCostume', 'None');
+	end	
+	
+	return {Success = true};
+end
+function LobbyAction_NewWeaponCostumeConfirmed(dc, company, args)
+	local checkedList = args.WeaponCostumes;
+	for i, name in ipairs(checkedList) do
+		dc:UpdateCompanyProperty(company, string.format('WeaponCostume/%s/IsNew', name), false);
+	end
 	return {Success = true};
 end

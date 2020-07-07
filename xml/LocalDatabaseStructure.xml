@@ -13,6 +13,9 @@
 	<class name="migration_20200325" Target="game" Version="9" File="migration_20200325.sqlite"/>
 	<class name="migration_20200328" Target="game" Version="10" File="migration_20200328.sqlite"/>
 	<class name="migration_20200411" Target="game" Version="11" File="migration_20200411.sqlite"/>
+	<class name="migration_20200520" Target="game" Version="12" File="migration_20200520.sqlite"/>
+	<class name="migration_20200601" Target="game" Version="13" File="migration_20200601.sqlite"/>
+	<class name="migration_20200601_log" Target="log" Version="13" File="migration_20200601_log.sqlite"/>
 </idspace>
 <idspace id="StoredProcedure">
 	<schema>
@@ -37,7 +40,7 @@
 	<class name="game.del_itemEquipment_03" ParameterSet="pi_rosterID, pi_positionKey, pi_stackable, pi_mailbox, po_error" Mode="Cpp"/>
 	<class name="game.del_questProperty" ParameterSet="pi_companyID, pi_questMasterName, po_error" File="game_del_questProperty.sqlite"/>
 	<class name="game.del_expiredMails" ParameterSet="" File="game_del_expiredMails.sqlite"/>
-	<class name="game.get_companyInfo_03" ParameterSet="pi_companyID, po_error" File="game_get_companyInfo_03.sqlite"/>
+	<class name="game.get_companyInfo_04" ParameterSet="pi_companyID, po_error" File="game_get_companyInfo_04.sqlite"/>
 	<class name="game.get_companyMissionProperty" ParameterSet="pi_companyID, pi_missionType, po_result" File="game_get_companyMissionProperty.sqlite"/>
 	<class name="game.get_companyRosterInfo_04" ParameterSet="pi_companyID, pi_rosterType, po_error" File="game_get_companyRosterInfo_04.sqlite"/>
 	<class name="game.get_companyRosterList" ParameterSet="pi_companyID, po_error" File="game_get_companyRosterList.sqlite"/>
@@ -58,8 +61,9 @@
 	<class name="game.giveNewItem" ParameterSet="pi_companyID, pi_itemType, pi_itemCount, pi_invenLimit, po_error" Mode="Cpp"/>
 	<class name="game.giveItem_02" ParameterSet="pi_companyID, pi_itemType, pi_count, pi_stackLimit, pi_invenMaxCnt, po_error" Mode="Cpp"/>
 	<class name="game.giveItem_03" ParameterSet="pi_companyID, pi_itemType, pi_count, pi_stackLimit, pi_invenMaxCnt, po_error" Mode="Cpp"/>
-	<class name="game.requestLogin_05" ParameterSet="pi_memberID, pi_password, po_result" File="game_requestLogin.sqlite"/>
-	<class name="game.requestLoginSteam_05" ParameterSet="pi_steamID, po_result" File="game_requestLoginSteam.sqlite"/>
+	<class name="game.requestLogin_06" ParameterSet="pi_memberID, pi_password, po_result" File="game_requestLogin.sqlite"/>
+	<class name="game.requestLoginSteam_06" ParameterSet="pi_steamID, po_result" File="game_requestLoginSteam.sqlite"/>
+	<class name="game.set_accountProperty" ParameterSet="pi_accountID, pi_propertyName, pi_value" File="game_set_accountInfo.sqlite"/>
 	<class name="game.set_companyInfo" ParameterSet="pi_companyID, pi_propertyName, pi_value" File="game_set_companyInfo.sqlite"/>
 	<class name="game.set_companyMissionProperty" ParameterSet="pi_companyID, pi_missionType, pi_valueType, pi_cmpValue, po_result" File="game_set_companyMissionProperty.sqlite"/>
 	<class name="game.set_companyName" ParameterSet="pi_companyID, pi_newCompanyName, po_error" Mode="Cpp"/>
@@ -122,6 +126,7 @@
 	<class name="log.log_updateCompanyName_02" ParameterSet="pi_companyID, pi_prevName, pi_changedName, pi_txID, pi_commitMsg" File="log_log_updateCompanyName_02.sqlite"/>
 	<class name="log.log_updateItemProperty_02" ParameterSet="pi_companyID, pi_itemID, pi_propertyType, pi_propertyValue, pi_txID, pi_commitMsg" File="log_log_updateItemProperty_02.sqlite"/>
 	<class name="log.log_updateCompanyProperty_02" ParameterSet="pi_companyID, pi_propertyType, pi_propertyValue, pi_txID, pi_commitMsg" File="log_log_updateCompanyProperty_02.sqlite"/>
+	<class name="log.log_updateAccountProperty" ParameterSet="pi_aid, pi_propertyType, pi_propertyValue, pi_txID, pi_commitMsg" File="log_log_updateAccountProperty.sqlite"/>
 	<class name="log.log_updateMailProperty_02" ParameterSet="pi_companyID, pi_mailID, pi_propType, pi_propValue, pi_txID, pi_commitMsg" File="log_log_updateMailProperty_02.sqlite"/>
 	<class name="log.log_updateMasteryLv_03" ParameterSet="pi_rosterID, pi_masteryType, pi_masteryLevel, pi_boardIndex, pi_txID, pi_commitMsg" File="log_log_updateMasteryLv_03.sqlite"/>
 	<class name="log.log_updateNpcProperty_02" ParameterSet="pi_npcType, pi_propertyType, pi_propertyValue, pi_txID, pi_commitMsg" File="log_log_updateNpcProperty_02.sqlite"/>

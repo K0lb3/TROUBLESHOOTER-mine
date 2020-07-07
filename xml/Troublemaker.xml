@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idspaces>
 	<idspace id="TroublemakerCategory">
-		<class name="Crimnal" Title="범죄자" Image="Icons/Crimnal" PushedImage="Icons/Crimnal_Pushed" HoverImage="Icons/Crimnal_Hover" Order="1"/>
-		<class name="Spoon" Title="스푼교" Image="Icons/Spoon" PushedImage="Icons/Spoon_Pushed" HoverImage="Icons/Spoon_Hover" Order="2"/>
-		<class name="Wanted" Title="현상 수배범" Image="Icons/Wanted" PushedImage="Icons/Wanted_Pushed" HoverImage="Icons/Wanted_Hover" Order="3"/>
-		<class name="Beast" Title="야수" Image="Icons/Beast" PushedImage="Icons/Beast_Pushed" HoverImage="Icons/Beast_Hover" Order="4"/>
-		<class name="Machine" Title="기계" Image="Icons/Machine" PushedImage="Icons/Machine_Pushed" HoverImage="Icons/Machine_Hover" Order="5"/>
+		<class name="All" Title="전체" Title_Sub="적" Image="Icons/TroublemakerAll" PushedImage="Icons/TroublemakerAll_Pushed" HoverImage="Icons/TroublemakerAll_Hover" Order="1"/>
+		<class name="Crimnal" Title="범죄자" Title_Sub="범죄자" Image="Icons/Crimnal" PushedImage="Icons/Crimnal_Pushed" HoverImage="Icons/Crimnal_Hover" Order="2"/>
+		<class name="Spoon" Title="스푼교" Title_Sub="스푼교" Image="Icons/Spoon" PushedImage="Icons/Spoon_Pushed" HoverImage="Icons/Spoon_Hover" Order="3"/>
+		<class name="Wanted" Title="현상 수배범" Title_Sub="현상 수배범" Image="Icons/Wanted" PushedImage="Icons/Wanted_Pushed" HoverImage="Icons/Wanted_Hover" Order="4"/>
+		<class name="Beast" Title="야수" Title_Sub="야수" Image="Icons/Beast" PushedImage="Icons/Beast_Pushed" HoverImage="Icons/Beast_Hover" Order="5"/>
+		<class name="Machine" Title="기계" Title_Sub="기계" Image="Icons/Machine" PushedImage="Icons/Machine_Pushed" HoverImage="Icons/Machine_Hover" Order="6"/>
 	</idspace>
 	<idspace id="TroublemakerWantedMailType">
 		<class name="Wanted" Mail="VHPD_Reward_Wanted"/>
@@ -65,10 +66,14 @@
 		<class name="Mon_Beast_Bat_Wind" Category="Beast" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
 		<class name="Mon_Beast_Bat_Wind_Challenger" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
 		<class name="Mon_Beast_Bat_Wind_Leader" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerBatWindLeader"/>
+		<class name="Mon_Beast_Bat_Red" Category="Beast" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Bat_Red_Leader" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Bat_Gold" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerBatGold"/>
 		<class name="Mon_Beast_Frog_Black1" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
 		<class name="Mon_Beast_Frog_Black2" Category="Beast" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
 		<class name="Mon_Beast_Frog_Black3" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
 		<class name="Mon_Beast_Frog_Dot" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerBeastFrogDot"/>
+		<class name="Mon_Beast_Frog_Gold" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerFrogGold"/>
 		<class name="Mon_Beast_Frog_Fire1" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
 		<class name="Mon_Beast_Frog_Fire2" Category="Beast" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
 		<class name="Mon_Beast_Frog_Fire3" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
@@ -82,10 +87,20 @@
 		<class name="Mon_Beast_Frog_Poison1" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
 		<class name="Mon_Beast_Frog_Poison2" Category="Beast" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
 		<class name="Mon_Beast_Frog_Poison3" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Frog_PoisonBlue1" Category="Beast" MaxExp="100" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Frog_PoisonBlue2" Category="Beast" MaxExp="50" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Frog_PoisonBlue3" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Frog_PoisonRed1" Category="Beast" MaxExp="100" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Frog_PoisonRed2" Category="Beast" MaxExp="50" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Frog_PoisonRed3" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
 		<class name="Mon_Beast_Frog_White" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerBeastFrogWhite"/>
 		<class name="Mon_Beast_Spider_Grey1" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
 		<class name="Mon_Beast_Spider_Grey2" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
 		<class name="Mon_Beast_Spider_Grey3" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Spider_BlackWidow1" Category="Beast" MaxExp="50" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Spider_BlackWidow2" Category="Beast" MaxExp="100" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Spider_BlackWidow3" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Spider_BlackWidow4" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerSpiderBlackWidow4"/>
 		<class name="Mon_Beast_Spider_Black1" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
 		<class name="Mon_Beast_Spider_Black2" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>
 		<class name="Mon_Beast_Spider_Black3" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
@@ -112,6 +127,7 @@
 		<class name="Mon_Beast_Tima_Snow" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
 		<class name="Mon_Beast_Tima_Spark" Category="Beast" MaxExp="50" BonusItem="Valkyrie_Troublemaker"/>
 		<class name="Mon_Beast_Tima_Stone" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
+		<class name="Mon_Beast_Tima_Yellow" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerTimaYellow"/>
 		<class name="Mon_Beast_Tima_WhiteTiger" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
 		<class name="Mon_Beast_Tima_WhiteTiger2" Category="Beast" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
 		<class name="Mon_Beast_Dragon_Egg_A" Category="Beast" MaxExp="150" BonusItem="Valkyrie_Troublemaker"/>

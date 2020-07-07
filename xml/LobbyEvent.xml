@@ -72,7 +72,7 @@
 			<property Title="사냥꾼" Part="1" Image="Loading_GiselleSilverlining" Dialog="LobbyEvent_Hunter1" Map="Office" Camera="Workshop" CheckType="Property" Key="Progress/Tutorial/Hunter" Value="1"/>
 			<property Title="사냥꾼" Part="2" Image="Loading_GiselleSilverlining" Dialog="LobbyEvent_Hunter2" Map="Office" Camera="Base" CheckType="Property" Key="Progress/Tutorial/Hunter" Value="2"/>
 			<property Title="기계 제작" Image="Loading_KyliePast6" Dialog="LobbyEvent_Machine" Map="Office" Camera="Workshop" CheckType="Property" Key="Progress/Tutorial/MachineCraft" Value="3"/>
-			<property Title="모듈 제작" Image="Loading_KyliePast6" Dialog="LobbyEvent_Module" Map="Office" Camera="Workshop" CheckType="Property" Key="Progress/Tutorial/ModuleCraft" Value="2"/>
+			<property Title="모듈 제작" Image="Loading_KyliePast6" Dialog="LobbyEvent_Module" Map="ShooterStreet" Camera="Formation" CheckType="Property" Key="Progress/Tutorial/ModuleCraft" Value="2"/>
 		</Images>
 	</class>
 </idspace>

@@ -66,6 +66,7 @@ g_noActionScriptType = {
 	SwitchExpr = true,
 	Loop = true,
 	Jump = true,
+	QuestJump = true,
 	Finish = true,
 	Env = true,
 	SceneFade = true,
@@ -1220,6 +1221,9 @@ local ActionTable =
 	UpdateCompanyProperty = function(dc, npc, company, args)
 		dc:UpdateCompanyProperty(company, args.PropertyType, args.PropertyValue);
 	end,
+	UpdateAccountProperty = function(dc, npc, company, args)
+		dc:UpdateAccountProperty(company, args.PropertyType, args.PropertyValue);
+	end,
 	UpdateCompanyName = function(dc, npc, company, args)
 		dc:UpdateCompanyName(company, args.Name);
 	end,
@@ -1547,6 +1551,173 @@ function ProgressDialogNormalProgress(ldm, npc, company, questType, env)
 	env.QuestType = questType;
 	local retEnv = ProgressDialogCls(ldm, npc, company, GetQuestDialog(questCls.name, dialogKey), env);
 	return not retEnv.Closed, retEnv;
+end
+-----------------------------------------------------------------------------------------------
+-- 퀘스트 대화 다시보기
+-----------------------------------------------------------------------------------------------
+function GetQuestBookListServer(company, npc)
+	local questClsList = GetClassList('Quest');
+	local questBookMap = {};
+	
+	local npcPropProcessMap = {
+		StartQuest = 'Start',
+		ProgressQuest = 'Progress',
+		ProgressQuest_Client = 'Progress',
+		EndQuest = 'End',
+	};
+	
+	for propName, process in pairs(npcPropProcessMap) do
+		for _, questName in ipairs(npc[propName]) do
+			local state = GetQuestState(company, questName);
+			local dialogCls = GetClassList('DialogQuest')[questName];
+			if state and state == 'Completed' and dialogCls.Process[process] then
+				local info = questBookMap[questName];
+				if not info then
+					info = { Quest = questClsList[questName], Process = {} };
+					questBookMap[questName] = info;
+				end
+				info.Process[process] = true;
+			end
+		end
+	end
+	
+	local ret = {};
+	for _, info in pairs(questBookMap) do
+		table.insert(ret, info);
+	end
+	table.sort(ret, function(lhs, rhs) return lhs.Quest.ProgressOrder < rhs.Quest.ProgressOrder end);
+	return ret;
+end
+function QuestDialogReplay(ldm, npc, company, env)
+	local questList = GetQuestBookListServer(company, npc);
+	local elemCount = 6;
+	local maxPage = math.floor((#questList - 1) / elemCount) + 1;
+	local curPage = 1;
+	local questInfo = nil;
+	local stage = 'QuestList';	
+	
+	while(true) do
+		local dialogArgs = {};
+		dialogArgs.SpeakerInfo = 'EmptySubTitle';
+		dialogArgs.SpeakerEmotion = 'Normal';
+		dialogArgs.Type = 'Sub';
+		dialogArgs.Slot = 'Center';
+		dialogArgs.Effect = 'Appear';
+		dialogArgs.SelectMode = 'Additional';
+		dialogArgs.SelectType = 'List';
+		dialogArgs.Mode = 'Continue';
+		dialogArgs.Message = '';
+		
+		local chooseableMenu = {};
+		
+		if stage == 'QuestList' then
+			local startIndex = (curPage - 1) * elemCount + 1; 
+			local endIndex = math.min(curPage * elemCount, #questList);		
+			for i = startIndex, endIndex do
+				local info = questList[i];
+				table.insert(chooseableMenu, { Mode = 'QuestReplayQuest', Type = info.Quest.name });
+			end
+			if maxPage > 1 then
+				table.insert(chooseableMenu, { Mode = 'QuestReplayPage', Type = 'Prev' });
+				table.insert(chooseableMenu, { Mode = 'QuestReplayPage', Type = 'Next' });
+			end
+		elseif stage == 'DialogType' then
+			for _, dialogType in ipairs({'Start', 'Progress', 'End'}) do
+				if questInfo and questInfo.Process[dialogType] then
+					table.insert(chooseableMenu, { Mode = 'QuestReplayDialog', Type = dialogType });
+				end
+			end
+			if questInfo and questInfo.Quest.Mission then
+				table.insert(chooseableMenu, { Mode = 'QuestReplayMission', Type = questInfo.Quest.name });
+			end
+		end
+		
+		table.insert(chooseableMenu, { Mode = 'Leave', Type = 'None' });	
+		
+		local choice = {};
+		for i, menu in ipairs(chooseableMenu) do
+			dialogArgs[i] = { Mode = menu.Mode, Type = menu.Type };
+		end
+		local id, sel;
+		if #chooseableMenu == 1 then
+			sel = 1;
+		else
+			id, sel = ldm:Dialog('BattleSelDialog', dialogArgs);
+		end
+		if sel == 0 then
+			-- do nothing
+		elseif chooseableMenu[sel].Mode == 'Leave' then
+			if stage == 'QuestList' then		
+				break;
+			elseif stage == 'DialogType' then
+				stage = 'QuestList';
+				questInfo = nil;
+			end
+		elseif chooseableMenu[sel].Mode == 'QuestReplayQuest' then
+			stage = 'DialogType';
+			local questIndex = sel + (curPage - 1) * elemCount;
+			questInfo = questList[questIndex];
+		elseif chooseableMenu[sel].Mode == 'QuestReplayPage' then
+			if chooseableMenu[sel].Type == 'Prev' then
+				if curPage > 1 then
+					curPage = curPage - 1;
+				else
+					curPage = maxPage;
+				end
+			else
+				if curPage < maxPage then
+					curPage = curPage + 1;
+				else
+					curPage = 1;
+				end
+			end
+		elseif chooseableMenu[sel].Mode == 'QuestReplayDialog' then
+			local questCls = questInfo.Quest;
+			local dialogType = chooseableMenu[sel].Type;
+			local dialog = GetQuestDialog(questCls.name, dialogType);
+			if dialog then
+				local env_ = table.deepcopy(env);
+				env_._no_action = true;
+				env_.QuestType = questCls.name;
+				env_.QuestCls = questCls;
+				env_ = ProgressDialogCls(ldm, npc, company, dialog, env_);
+				if env_._last_fade_type == 'Out' then
+					ldm:SceneFadeIn('', false);
+				end
+			end
+		elseif chooseableMenu[sel].Mode == 'QuestReplayMission' then
+			local questCls = questInfo.Quest;
+			if questCls.Mission then
+				if questCls.DirectMission then
+					local directInfo = questCls.DirectMission;
+					local lineup = {};
+					if directInfo.Lineup then
+						lineup = string.split(directInfo.Lineup, '[, ]');
+					end
+					local rosterSet = Linq.new(GetAllRoster(company))
+						:select(function(r) return r.name end)
+						:toSet();
+					lineup = table.filter(lineup, function(l) return rosterSet[l] end);
+					local directMissionInfo = { Grade = directInfo.Grade, Site = directInfo.Site, RewardRatio = directInfo.RewardRatio, Lv = directInfo.Lv, Group = directInfo.Group };
+					local missionAttribute = { QuestType = questCls.name, TroubleBookEpisode = 'QuestReplay', DirectMissionInfo = directMissionInfo };					
+					if DirectMission(company, directInfo.Mission, lineup, missionAttribute) then
+						ldm:ReadyToMove();
+						env._terminated = true;
+						break;
+					end
+				else
+					ldm:CloseDialog('BattleSelDialog');
+					local id, sel = ldm:Dialog('QuestReplayMission', { Npc = npc.name, Quest = questCls.name }, true);
+					if sel == 1 then
+						env._terminated = true;
+						break;
+					end
+				end
+			end
+		end
+	end
+
+	return env;
 end
 --- 커스텀 다이얼로그 스크립트들
 function ProgressUnlockWorkshop(ds, self, company, env, parsedScript)
@@ -2131,16 +2302,16 @@ function PickIndustryBonusItem(company, pickCount)
 	for i = 1, pickCount do
 		local pickRank = nil;
 		local pickItem = nil;
-		for fixRequireLv = 0, maxRequireLv, 5 do
-			local rankPicker = RandomPicker.new();
-			for rank, info in pairs(rankInfoSet) do
-				rankPicker:addChoice(info.Prob, rank);
-			end
-			pickRank = rankPicker:pick();		
-			while pickRank ~= nil do
-				local candidateList = {};
-				-- 로스터 멤버 당
-				for _, pcInfo in ipairs(roster) do
+		local rankPicker = RandomPicker.new();
+		for rank, info in pairs(rankInfoSet) do
+			rankPicker:addChoice(info.Prob, rank);
+		end
+		pickRank = rankPicker:pick();		
+		while pickRank ~= nil do
+			local candidateList = {};
+			-- 로스터 멤버 당
+			for _, pcInfo in ipairs(roster) do
+				for fixRequireLv = 0, maxRequireLv, 5 do
 					local candidateListByRoster = SafeIndex(g_industryCandidateSet, pickRank, pcInfo.name);
 					-- 회사가 획득 가능한 것만
 					candidateListByRoster = table.filter(candidateListByRoster, function(itemName)
@@ -2154,17 +2325,17 @@ function PickIndustryBonusItem(company, pickCount)
 						local itemCls = itemList[itemName];
 						return itemCls.RequireLv == testRequireLv;
 					end);
-					table.append(candidateList, candidateListByRoster);
+					if #candidateListByRoster > 0 then
+						table.append(candidateList, candidateListByRoster);
+						break;
+					end
 				end
-				if #candidateList > 0 then
-					pickItem = candidateList[math.random(1, #candidateList)];
-					break;
-				end
-				pickRank = rankInfoSet[pickRank].Next;
 			end
-			if pickItem ~= nil then
+			if #candidateList > 0 then
+				pickItem = candidateList[math.random(1, #candidateList)];
 				break;
 			end
+			pickRank = rankInfoSet[pickRank].Next;
 		end
 		if pickItem ~= nil then
 			table.insert(pickItemList, pickItem);
@@ -2319,17 +2490,17 @@ function PickSupportItemRareEquipment(company, categoryList, fixCountKey)
 	local pickRank = nil;
 	local pickItem = nil;
 	
-	for fixRequireLv = 0, maxRequireLv, 5 do
-		local rankPicker = RandomPicker.new();
-		for rank, info in pairs(rankInfoSet) do
-			local prob = math.max(info.Prob + fixCount * info.Fix, 0);
-			rankPicker:addChoice(prob, rank);
-		end
-		pickRank = rankPicker:pick();		
-		while pickRank ~= nil do
-			local candidateList = {};
-			-- 로스터 멤버 당
-			for _, pcInfo in ipairs(roster) do
+	local rankPicker = RandomPicker.new();
+	for rank, info in pairs(rankInfoSet) do
+		local prob = math.max(info.Prob + fixCount * info.Fix, 0);
+		rankPicker:addChoice(prob, rank);
+	end
+	pickRank = rankPicker:pick();		
+	while pickRank ~= nil do
+		local candidateList = {};
+		-- 로스터 멤버 당
+		for _, pcInfo in ipairs(roster) do
+			for fixRequireLv = 0, maxRequireLv, 5 do
 				local candidateListByRoster = {};
 				-- 인자로 받은 카테고리만
 				for _, category in ipairs(categoryList) do
@@ -2350,17 +2521,17 @@ function PickSupportItemRareEquipment(company, categoryList, fixCountKey)
 					local itemCls = itemList[itemName];
 					return itemCls.RequireLv == testRequireLv;
 				end);
-				table.append(candidateList, candidateListByRoster);
+				if #candidateListByRoster > 0 then
+					table.append(candidateList, candidateListByRoster);
+					break;
+				end
 			end
-			if #candidateList > 0 then
-				pickItem = candidateList[math.random(1, #candidateList)];
-				break;
-			end
-			pickRank = rankInfoSet[pickRank].Next;
 		end
-		if pickItem ~= nil then
+		if #candidateList > 0 then
+			pickItem = candidateList[math.random(1, #candidateList)];
 			break;
 		end
+		pickRank = rankInfoSet[pickRank].Next;
 	end
 	
 	if pickRank == 'Rare' then
@@ -2513,16 +2684,16 @@ function PickFieldControlEquipment(company, missionName, roster)
 	local pickRank = nil;
 	local pickItem = nil;
 	
-	for fixRequireLv = 0, maxRequireLv, 5 do
-		local rankPicker = RandomPicker.new();
-		for rank, info in pairs(rankInfoSet) do
-			rankPicker:addChoice(info.Prob, rank);
-		end
-		pickRank = rankPicker:pick();		
-		while pickRank ~= nil do
-			local candidateList = {};
-			-- 로스터 멤버 당
-			for _, pcInfo in ipairs(roster) do
+	local rankPicker = RandomPicker.new();
+	for rank, info in pairs(rankInfoSet) do
+		rankPicker:addChoice(info.Prob, rank);
+	end
+	pickRank = rankPicker:pick();		
+	while pickRank ~= nil do
+		local candidateList = {};
+		-- 로스터 멤버 당
+		for _, pcInfo in ipairs(roster) do
+			for fixRequireLv = 0, maxRequireLv, 5 do
 				local candidateListByRoster = SafeIndex(g_fieldControlCandidateSet, pickRank, pcInfo.name);
 				-- 회사가 획득 가능한 것만
 				candidateListByRoster = table.filter(candidateListByRoster, function(itemName)
@@ -2536,17 +2707,17 @@ function PickFieldControlEquipment(company, missionName, roster)
 					local itemCls = itemList[itemName];
 					return itemCls.RequireLv == testRequireLv;
 				end);
-				table.append(candidateList, candidateListByRoster);
+				if #candidateListByRoster > 0 then
+					table.append(candidateList, candidateListByRoster);
+					break;
+				end
 			end
-			if #candidateList > 0 then
-				pickItem = candidateList[math.random(1, #candidateList)];
-				break;
-			end
-			pickRank = rankInfoSet[pickRank].Next;
 		end
-		if pickItem ~= nil then
+		if #candidateList > 0 then
+			pickItem = candidateList[math.random(1, #candidateList)];
 			break;
 		end
+		pickRank = rankInfoSet[pickRank].Next;
 	end
 	
 	return pickItem;

@@ -9,4 +9,5 @@
 	</schema>
 	<class name="EnableQuest" EventType="LobbyEnter" Checker="LobbyGuideTriggerChecker_EnableQuest" Director="LobbyGuideTriggerDirector_BattleDialogMessage" HelpMessage="EnableQuest"/>
 	<class name="QuestWorldMap" EventType="RestoreFromLobbyDialog" Checker="LobbyGuideTriggerChecker_QuestWorldMap" Director="LobbyGuideTriggerDirector_BattleDialogMessage" HelpMessage="QuestWorldMap"/>
+	<class name="GameMode_Challenger" EventType="ToggleChallengerMode" Checker="LobbyGuideTriggerChecker_GameMode_Challenger" Director="LobbyGuideTriggerDirector_BattleDialogMessage" HelpMessage="GameMode_Challenger"/>
 </idspace>

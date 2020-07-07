@@ -2,20 +2,23 @@
 <idspaces>
 	<idspace id="HelpCategory">
 		<class name="Control" Order="1" Title="기본 조작" Image="Icons/ControlTab" PushedImage="Icons/ControlTab_Pushed" HoverImage="Icons/ControlTab_Hover"/>
-		<class name="BattleInterface" Order="2" Title="전투 인터페이스" Image="Icons/BattleInterfaceTab" PushedImage="Icons/BattleInterfaceTab_Pushed" HoverImage="Icons/BattleInterfaceTab_Hover"/>
-		<class name="UnitState" Order="3" Title="유닛" Image="Icons/ConvenienceTab" PushedImage="Icons/ConvenienceTab_Pushed" HoverImage="Icons/ConvenienceTab_Hover"/>
+		<class name="GameSystem" Order="2" Title="게임 시스템" Image="Icons/BattleInterfaceTab" PushedImage="Icons/BattleInterfaceTab_Pushed" HoverImage="Icons/BattleInterfaceTab_Hover"/>
+		<class name="BattleInterface" Order="3" Title="전투 인터페이스" Image="Icons/BattleInformationTab" PushedImage="Icons/BattleInformationTab_Pushed" HoverImage="Icons/BattleInformationTab_Hover"/>
 		<class name="BattleSystem" Order="4" Title="전투 시스템" Image="Icons/BattleSystemTab" PushedImage="Icons/BattleSystemTab_Pushed" HoverImage="Icons/BattleSystemTab_Hover"/>
-		<class name="BattleState" Order="5" Title="전투 상태" Image="Icons/BattleStateTab" PushedImage="Icons/BattleStateTab_Pushed" HoverImage="Icons/BattleStateTab_Hover"/>
-		<class name="Contents" Order="6" Title="컨텐츠" Image="Icons/ContentsTab" PushedImage="Icons/ContentsTab_Pushed" HoverImage="Icons/ContentsTab_Hover"/>
-		<class name="Dictionary" Order="7" Title="백과사전" Image="Icons/ContentsTab" PushedImage="Icons/ContentsTab_Pushed" HoverImage="Icons/ContentsTab_Hover"/>
-		<class name="BattleFormula" Order="8" Title="전투 공식" Image="Icons/BattleFormulaTab" PushedImage="Icons/BattleFormulaTab_Pushed" HoverImage="Icons/BattleFormulaTab_Hover"/>
-		<class name="Convenience" Order="9" Title="편의 기능" Image="Icons/InteractionObjectTab" PushedImage="Icons/InteractionObjectTab_Pushed" HoverImage="Icons/InteractionObjectTab_Hover"/>
+		<class name="BattleFormula" Order="5" Title="전투 공식" Image="Icons/BattleFormulaTab" PushedImage="Icons/BattleFormulaTab_Pushed" HoverImage="Icons/BattleFormulaTab_Hover"/>
+		<class name="BattleState" Order="6" Title="전투 상태" Image="Icons/BattleStateTab" PushedImage="Icons/BattleStateTab_Pushed" HoverImage="Icons/BattleStateTab_Hover"/>
+		<class name="Contents" Order="7" Title="특성과 모듈" Image="Icons/ContentsTab" PushedImage="Icons/ContentsTab_Pushed" HoverImage="Icons/ContentsTab_Hover"/>
+		<class name="UnitState" Order="8" Title="유닛" Image="Icons/ConvenienceTab" PushedImage="Icons/ConvenienceTab_Pushed" HoverImage="Icons/ConvenienceTab_Hover"/>
+		<class name="Dictionary" Order="9" Title="백과사전" Image="Icons/ContentsTab" PushedImage="Icons/ContentsTab_Pushed" HoverImage="Icons/ContentsTab_Hover"/>
+		<class name="Convenience" Order="10" Title="편의 기능" Image="Icons/InteractionObjectTab" PushedImage="Icons/InteractionObjectTab_Pushed" HoverImage="Icons/InteractionObjectTab_Hover"/>
 	</idspace>
 	<idspace id="HelpSubCategory">
 		<class name="None" Title="" TitleColor="White"/>
 		<class name="Ability" Title="어빌리티" TitleColor="Yellow"/>
 		<class name="Alert" Title="경고" TitleColor="Orange"/>
 		<class name="Area" Title="지역" TitleColor="YellowOrange"/>
+		<class name="GameDifficulty" Title="게임 난이도" TitleColor="Orange"/>
+		<class name="GameMode" Title="게임 모드" TitleColor="Yellow"/>
 		<class name="BattleBonus" Title="전투 보너스" TitleColor="Yellow"/>
 		<class name="BattleFormula" Title="전투 공식" TitleColor="Cream"/>
 		<class name="BattleInterface" Title="전투 UI" TitleColor="WhiteBlue"/>
@@ -269,17 +272,23 @@
 $Note$이 상태에서는 $Rev_KeyBind_RangeLock$ 키 혹은  $KeyBindImage_Escape$  키를 이용해서 어빌리티 범위 고정 모드를 해제 하거나, 현재 선택중인 어빌리티를 다시 선택하여 어빌리티를 사용할 수 있습니다." Content_Mission="" Content_End="" KeyText="$Key_Tab$"/>
 		<class name="NeedTurnOrder" Category="Control" SubCategory="None" Order="114" Base_Title="턴 순서 보기 ($KeyBind_TurnOrder$)" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="현재 시야 내 보이는 유닛들의 턴 순서를 보여주는 기능입니다. 해당 기능은 $KeyBind_TurnOrder$ 를 누르면 ON/OFF 됩니다." Content_Mission="" Content_End=""/>
 		<class name="DirectingSkipAvailable" Category="Control" SubCategory="None" Order="115" Base_Title="연출 생략하기" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="대부분의 연출은 $KeyBind_Escape$키를 입력하면 생략하실 수 있습니다." Content_Mission="" Content_End=""/>
-		<class name="ItemProtect" Category="Control" SubCategory="None" Order="116" Base_Title="아이템 보호" AutoScript="None" AttachClass="" Base_Content="아이템을  $KeyText$ 하면 아이템을 보호/해제할 수 있습니다. 보호된 아이템은 상점 판매, 아이템 분해가 되지 않습니다." Content_Mission="" Content_End="" KeyText="$Key_LeftAlt$ + $Key_RightButton$"/>
-		<class name="TurnEnd" Category="BattleInterface" SubCategory="BattleMenu" Order="201" Base_Title="턴 종료 ($KeyBind_TurnEnd$)" AutoScript="GetHelpContent_BattleMenu_TurnEnd" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="BattleMinimap" Category="BattleInterface" SubCategory="BattleMenu" Order="202" Base_Title="미니맵 보기 ($KeyBind_Minimap$)" AutoScript="GetHelpContent_BattleMenu_BattleMinimap" AttachClass="" Base_Content="" Content_Mission="" Content_End="시야에 확인된 적과 아군의 위치뿐 아니라 플레이어 캐릭터의 사망위치 및 최근에 발생한 인기척의 위치와 관련 정보가 표시됩니다."/>
-		<class name="TacticView" Category="BattleInterface" SubCategory="BattleMenu" Order="203" Base_Title="전략 시점 보기 ($KeyBind_HawkEyeMode$)" AutoScript="GetHelpContent_BattleMenu_TacticView" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="BattleInfoMode" Category="BattleInterface" SubCategory="BattleMenu" Order="204" Base_Title="전투 미리 보기 ($KeyBind_BattleInfo$)" AutoScript="GetHelpContent_BattleMenu_BattleInfoMode" AttachClass="" Base_Content="" Content_Mission="" Content_End="시야는 $ColorText$ 선으로 표시되며, 이동 및 어빌리티들은 어빌리티의 범위가 고유 색을 가진 선으로 표시됩니다. 또한 적용 대상은 같은 색상의 빗금으로 표시됩니다.
+		<class name="GameDifficulty_Safe" Category="GameSystem" SubCategory="GameDifficulty" Order="201" Base_Title="안전" AutoScript="GetHelpContent_GameDifficulty" AutoScriptArg="Safty" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="GameDifficulty_Easy" Category="GameSystem" SubCategory="GameDifficulty" Order="202" Base_Title="쉬움" AutoScript="GetHelpContent_GameDifficulty" AutoScriptArg="Easy" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="GameDifficulty_Normal" Category="GameSystem" SubCategory="GameDifficulty" Order="203" Base_Title="일반" AutoScript="GetHelpContent_GameDifficulty" AutoScriptArg="Normal" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="GameDifficulty_Hard" Category="GameSystem" SubCategory="GameDifficulty" Order="204" Base_Title="어려움" AutoScript="GetHelpContent_GameDifficulty" AutoScriptArg="Hard" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="GameDifficulty_Merciless" Category="GameSystem" SubCategory="GameDifficulty" Order="205" Base_Title="가혹한" AutoScript="GetHelpContent_GameDifficulty" AutoScriptArg="Merciless" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="GameMode_Normal" Category="GameSystem" SubCategory="GameMode" Order="206" Base_Title="일반" AutoScript="GetHelpContent_GameMode" AutoScriptArg="Normal" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="GameMode_Challenger" Category="GameSystem" SubCategory="GameMode" Order="207" Base_Title="도전" AutoScript="GetHelpContent_GameMode" AutoScriptArg="Challenger" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="TurnEnd" Category="BattleInterface" SubCategory="BattleMenu" Order="301" Base_Title="턴 종료 ($KeyBind_TurnEnd$)" AutoScript="GetHelpContent_BattleMenu_TurnEnd" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="BattleMinimap" Category="BattleInterface" SubCategory="BattleMenu" Order="302" Base_Title="미니맵 보기 ($KeyBind_Minimap$)" AutoScript="GetHelpContent_BattleMenu_BattleMinimap" AttachClass="" Base_Content="" Content_Mission="" Content_End="시야에 확인된 적과 아군의 위치뿐 아니라 플레이어 캐릭터의 사망위치 및 최근에 발생한 인기척의 위치와 관련 정보가 표시됩니다."/>
+		<class name="TacticView" Category="BattleInterface" SubCategory="BattleMenu" Order="303" Base_Title="전략 시점 보기 ($KeyBind_HawkEyeMode$)" AutoScript="GetHelpContent_BattleMenu_TacticView" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="BattleInfoMode" Category="BattleInterface" SubCategory="BattleMenu" Order="304" Base_Title="전투 미리 보기 ($KeyBind_BattleInfo$)" AutoScript="GetHelpContent_BattleMenu_BattleInfoMode" AttachClass="" Base_Content="" Content_Mission="" Content_End="시야는 $ColorText$ 선으로 표시되며, 이동 및 어빌리티들은 어빌리티의 범위가 고유 색을 가진 선으로 표시됩니다. 또한 적용 대상은 같은 색상의 빗금으로 표시됩니다.
 
 " ColorText="$Color_White$"/>
-		<class name="BattleDetailInfo" Category="BattleInterface" SubCategory="BattleMenu" Order="205" Base_Title="캐릭터 정보 보기 ($KeyBind_CharacterInfo$)" AutoScript="GetHelpContent_BattleMenu_BattleDetailInfo" AttachClass="" Base_Content="" Content_Mission="" Content_End="적을 전투 불능시켜 적의 정보를 일정 이상 획득하면, 적의 현재 정보 역시 확인하실 수 있습니다."/>
-		<class name="CameraSetting" Category="BattleInterface" SubCategory="BattleMenu" Order="206" Base_Title="카메라 설정 ($KeyBind_Camera$)" AutoScript="GetHelpContent_BattleMenu_CameraSetting" AttachClass="" Base_Content="" Content_Mission="" Content_End="해당 설정은 환경 설정을 통해 변경 가능합니다."/>
-		<class name="DialogWindow" Category="BattleInterface" SubCategory="BattleMenu" Order="207" Base_Title="대화창 ($KeyBind_Chat$)" AutoScript="GetHelpContent_BattleMenu_DialogWindow" AttachClass="" Base_Content="" Content_Mission="" Content_End="온라인 모드인 경우, 유저들과 대화가 가능합니다."/>
-		<class name="Environments" Category="BattleInterface" SubCategory="BattleInterface" Order="208" Base_Title="환경 정보" AutoScript="GetHelpContent_SubText" AttachClass="" Base_Content="" Content_Mission="" Content_End="" Image="SystemGuide_Environments">
+		<class name="BattleDetailInfo" Category="BattleInterface" SubCategory="BattleMenu" Order="305" Base_Title="캐릭터 정보 보기 ($KeyBind_CharacterInfo$)" AutoScript="GetHelpContent_BattleMenu_BattleDetailInfo" AttachClass="" Base_Content="" Content_Mission="" Content_End="적을 전투 불능시켜 적의 정보를 일정 이상 획득하면, 적의 현재 정보 역시 확인하실 수 있습니다."/>
+		<class name="CameraSetting" Category="BattleInterface" SubCategory="BattleMenu" Order="306" Base_Title="카메라 설정 ($KeyBind_Camera$)" AutoScript="GetHelpContent_BattleMenu_CameraSetting" AttachClass="" Base_Content="" Content_Mission="" Content_End="해당 설정은 환경 설정을 통해 변경 가능합니다."/>
+		<class name="DialogWindow" Category="BattleInterface" SubCategory="BattleMenu" Order="307" Base_Title="대화창 ($KeyBind_Chat$)" AutoScript="GetHelpContent_BattleMenu_DialogWindow" AttachClass="" Base_Content="" Content_Mission="" Content_End="온라인 모드인 경우, 유저들과 대화가 가능합니다."/>
+		<class name="Environments" Category="BattleInterface" SubCategory="BattleInterface" Order="308" Base_Title="환경 정보" AutoScript="GetHelpContent_SubText" AttachClass="" Base_Content="" Content_Mission="" Content_End="" Image="SystemGuide_Environments">
 			<SubText>
 				<property Type="Numbering" Title="시간" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="현재 임무 지역의 시간을 보여줍니다."/>
 				<property Type="Numbering" Title="날씨" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="현재 임무 지역의 날씨를 보여줍니다."/>
@@ -287,7 +296,7 @@ $Note$이 상태에서는 $Rev_KeyBind_RangeLock$ 키 혹은  $KeyBindImage_Esca
 				<property Type="Numbering" Title="카메라" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="현재 카메라의 상세 조건과 카메라 조작 단축키를 확인할 수 있습니다."/>
 			</SubText>
 		</class>
-		<class name="TurnList" Category="BattleInterface" SubCategory="BattleInterface" Order="209" Base_Title="턴 대기열" AutoScript="GetHelpContent_SubText" AttachClass="TurnList_Enemy" Base_Content="" Content_Mission="" Content_End="" Image="SystemGuide_TurnList">
+		<class name="TurnList" Category="BattleInterface" SubCategory="BattleInterface" Order="309" Base_Title="턴 대기열" AutoScript="GetHelpContent_SubText" AttachClass="TurnList_Enemy" Base_Content="" Content_Mission="" Content_End="" Image="SystemGuide_TurnList">
 			<SubText>
 				<property Type="Numbering" Title="현재 턴 유닛" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="현재 행동이 가능한 캐릭터를 보여줍니다."/>
 				<property Type="Numbering" Title="다음 순서 유닛" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="현재 턴 유닛 행동 이후 , 현재 플레이어 시야에 보이는 행동 가능한 캐릭터들을 차례로 표시합니다."/>
@@ -295,7 +304,7 @@ $Note$이 상태에서는 $Rev_KeyBind_RangeLock$ 키 혹은  $KeyBindImage_Esca
 				<property Type="Numbering" Title="행동 대기 시간" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="행동 대기 시간은 턴 종료 후 다음 행동까지의 시간을 나타냅니다. 캐릭터 고유의 $Status_Speed$ 능력치에 따라 기본 값이 결정되며 $Word_Ability$나 $Event$에 의하여 증가 혹은 감소할 수 있습니다."/>
 			</SubText>
 		</class>
-		<class name="ResourceBar" Category="BattleInterface" SubCategory="BattleInterface" Order="210" Base_Title="자원 게이지" AutoScript="GetHelpContent_SubText" AttachClass="" Base_Content="" Content_Mission="" Content_End="" Image="SystemGuide_ResourceBar">
+		<class name="ResourceBar" Category="BattleInterface" SubCategory="BattleInterface" Order="310" Base_Title="자원 게이지" AutoScript="GetHelpContent_SubText" AttachClass="" Base_Content="" Content_Mission="" Content_End="" Image="SystemGuide_ResourceBar">
 			<SubText>
 				<property Type="Numbering" Title="자원 속성" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="현재 유닛의 $Resource$ 속성을 보여줍니다."/>
 				<property Type="Numbering" Title="자원 게이지" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="현재 $Resource$양을 보여줍니다. 자원은 어빌리티를 사용하기 위한 기본 단위입니다.
@@ -303,7 +312,7 @@ $Note$이 상태에서는 $Rev_KeyBind_RangeLock$ 키 혹은  $KeyBindImage_Esca
 $Note$상세한 설명은 마우스를 올리면 툴팁으로 확인 가능합니다."/>
 			</SubText>
 		</class>
-		<class name="PlayerInfo" Category="BattleInterface" SubCategory="BattleInterface" Order="211" Base_Title="현재 캐릭터 정보" AutoScript="GetHelpContent_SubText" AttachClass="" Base_Content="" Content_Mission="" Content_End="" Image="SystemGuide_PlayerInfo">
+		<class name="PlayerInfo" Category="BattleInterface" SubCategory="BattleInterface" Order="311" Base_Title="현재 캐릭터 정보" AutoScript="GetHelpContent_SubText" AttachClass="" Base_Content="" Content_Mission="" Content_End="" Image="SystemGuide_PlayerInfo">
 			<SubText>
 				<property Type="Numbering" Title="현재 캐릭터 정보" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="캐릭터의 이름과 등급을 표시합니다."/>
 				<property Type="Numbering" Title="특수 상태" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="캐릭터의 특수 상태를 표시합니다."/>
@@ -314,16 +323,16 @@ $Note$상세한 설명은 마우스를 올리면 툴팁으로 확인 가능합�
 				<property Type="Numbering" Title="엄폐 표시" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="캐릭터의 엄폐 상태를 효시합니다."/>
 			</SubText>
 		</class>
-		<class name="LookUpTargetMode" Category="BattleInterface" SubCategory="BattleInterface" Order="212" Base_Title="유닛 확인" AutoScript="None" AttachClass="" Base_Content="시야에 보이는 유닛을 클릭하면 대상의 정보를 확인할 수 있습니다. 유닛 확인중에는 해당 유닛의 이동 범위가 표시되며 아군 유닛의 경우 왼쪽 아래의 $/$현재 캐릭터 정보$/$ 창에, 그 외의 유닛은 상단의 $/$유닛 정보$/$ 창에 정보가 표시됩니다. 
+		<class name="LookUpTargetMode" Category="BattleInterface" SubCategory="BattleInterface" Order="312" Base_Title="유닛 확인" AutoScript="None" AttachClass="" Base_Content="시야에 보이는 유닛을 클릭하면 대상의 정보를 확인할 수 있습니다. 유닛 확인중에는 해당 유닛의 이동 범위가 표시되며 아군 유닛의 경우 왼쪽 아래의 $/$현재 캐릭터 정보$/$ 창에, 그 외의 유닛은 상단의 $/$유닛 정보$/$ 창에 정보가 표시됩니다. 
 		
 $KeyBindImage_Escape$ 를 누르거나 $/$턴 대기열$/$에서 가장 윗쪽의 캐릭터를 클릭하면 현재 턴을 가지고 있는 캐릭터가 다시 선택됩니다." Content_Mission="" Content_End=""/>
-		<class name="AllianceList" Category="BattleInterface" SubCategory="BattleInterface" Order="213" Base_Title="출전 인원 목록" AutoScript="None" AttachClass="" Base_Content="현재 미션에 참여하여 조작이 가능한 아군의 목록을 표시합니다. 
+		<class name="AllianceList" Category="BattleInterface" SubCategory="BattleInterface" Order="313" Base_Title="출전 인원 목록" AutoScript="None" AttachClass="" Base_Content="현재 미션에 참여하여 조작이 가능한 아군의 목록을 표시합니다. 
 
 $Note$캐릭터 아이콘을 클릭하면 해당 캐릭터로 카메라가 이동합니다." Content_Mission="" Content_End="" Image="SystemGuide_AllianceList"/>
-		<class name="TimeLimiter" Category="BattleInterface" SubCategory="BattleInterface" Order="214" Base_Title="시간 표시기" Checker="HelpChecker_Silverlining" AutoScript="None" AttachClass="" Base_Content="시간 제한 관련 임무가 발생하면 화면 상단에 $TimeLimiter$가 생성됩니다.
+		<class name="TimeLimiter" Category="BattleInterface" SubCategory="BattleInterface" Order="314" Base_Title="시간 표시기" Checker="HelpChecker_Silverlining" AutoScript="None" AttachClass="" Base_Content="시간 제한 관련 임무가 발생하면 화면 상단에 $TimeLimiter$가 생성됩니다.
 
 $TimeLimiter$의 표시된 숫자는 특정 이벤트가 일어나기까지의 $Word_RemainTime$을 나타냅니다." Content_Mission="" Content_End=""/>
-		<class name="SPGained" Category="BattleInterface" SubCategory="BattleInterface" Order="215" Base_Title="SP 게이지" Checker="HelpChecker_Hidden" AutoScript="GetHelpContent_SubText" AttachClass="" Base_Content="" Content_Mission="" Content_End="" Image="SystemGuide_SPGained">
+		<class name="SPGained" Category="BattleInterface" SubCategory="BattleInterface" Order="315" Base_Title="SP 게이지" Checker="HelpChecker_Hidden" AutoScript="GetHelpContent_SubText" AttachClass="" Base_Content="" Content_Mission="" Content_End="" Image="SystemGuide_SPGained">
 			<SubText>
 				<property Type="Numbering" Title="SP 속성" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="현재 유닛의 $Status_SP$ 속성을 보여줍니다. $Status_SP$ 속성에 따라 고유한 $BattleBonus$가 주어집니다."/>
 				<property Type="Numbering" Title="SP 게이지" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="현재 $Status_SP$양을 보여줍니다. $Status_SP$가 최대치가 되면 $Word_Overcharge$ 상태가 됩니다.
@@ -332,79 +341,79 @@ $Word_Overcharge$ 상태가 해제되면 $Status_SP$는 다시 초기화됩니�
 $Note$상세한 설명은 마우스를 올리면 툴팁으로 확인 가능합니다."/>
 			</SubText>
 		</class>
-		<class name="UnitInfo" Category="BattleInterface" SubCategory="HUD" Order="216" Base_Title="유닛 상태" AutoScript="GetHelpContent_SubText" AttachClass="" Base_Content="" Content_Mission="" Content_End="" Image="SystemGuide_UnitInfo">
+		<class name="UnitInfo" Category="BattleInterface" SubCategory="HUD" Order="316" Base_Title="유닛 상태" AutoScript="GetHelpContent_SubText" AttachClass="" Base_Content="" Content_Mission="" Content_End="" Image="SystemGuide_UnitInfo">
 			<SubText>
 				<property Type="Numbering" Title="캐릭터의 체력" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="캐릭터의 체력이 모두 소모되면 전투불능이 됩니다. 더 이상 해당 미션에서 활동할 수 없습니다."/>
 				<property Type="Numbering" Title="캐릭터의 행동력" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="캐릭터는 자신의 턴마다 2 개의 행동력을 사용할 수 있으며 행동력을 모두 소모하면 턴이 종료됩니다."/>
 				<property Type="Numbering" Title="캐릭터의 엄폐 표시" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="현재 캐릭터의 엄폐 상태를 보여줍니다."/>
 			</SubText>
 		</class>
-		<class name="BuffAdded" Category="BattleInterface" SubCategory="HUD" Order="217" Base_Title="상태 효과" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="유닛에게 $GoodEffect$ 혹은 $BadEffect$가 적용될 경우, 해당 유닛의 상태창의 체력바 하단에 $GoodEffect$는 $Img_ArrowDoubleUp$, $BadEffect$는 $Img_ArrowDoubleDown$로 표시됩니다.
+		<class name="BuffAdded" Category="BattleInterface" SubCategory="HUD" Order="317" Base_Title="상태 효과" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="유닛에게 $GoodEffect$ 혹은 $BadEffect$가 적용될 경우, 해당 유닛의 상태창의 체력바 하단에 $GoodEffect$는 $Img_ArrowDoubleUp$, $BadEffect$는 $Img_ArrowDoubleDown$로 표시됩니다.
 
 해당 효과들의 자세한 정보는 $Player$ 유닛인 경우, 좌하단의 $CharInfoWin$ 체력바 아래에서 현재 적용되는 효과들을 확인하실 수 있습니다.
 
 $Enemy$ 유닛인 경우, 해당 유닛을 $Key_LeftButton$ 으로 선택하면 화면 상단에 표시되는 $TargetInfoWin$의 체력바 아래에서 현재 적용되는 효과들을 확인하실 수 있습니다." Content_Mission="" Content_End=""/>
-		<class name="FindNeutral" Category="BattleInterface" SubCategory="HUD" Order="218" Base_Title="중립 유닛" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="$NeutralUnit$은 해당 임무의 $Enemy$ 세력과 $Hostility$ 이지만 플레이어와는 아무런 관계가 없는 $Unit$을 말합니다. 체력 바의 색깔이 $ColorText$으로 표시됩니다." Content_Mission="" Content_End="" ColorText="$Color_Yellow$"/>
-		<class name="FindAlly" Category="BattleInterface" SubCategory="HUD" Order="219" Base_Title="동맹 유닛" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="$AllyUnit$은 해당 임무의 $Enemy$ 세력과 $Hostility$이며 플레이어와는 $Alliance$인 $Unit$을 말합니다. 체력 바의 색깔이 $ColorText$으로 표시됩니다." Content_Mission="" Content_End="" ColorText="$Color_Green$"/>
-		<class name="FindThirdForce" Category="BattleInterface" SubCategory="HUD" Order="220" Base_Title="제 3 세력 유닛" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="$ThirdForceUnit$은 해당 임무의 $Enemy$ 세력과 플레이어 팀 모두에게 $Hostility$인 $Unit$을 말합니다. 체력 바의 색깔이 $ColorText$으로 표시됩니다." Content_Mission="" Content_End="" ColorText="$Color_Violet$"/>
-		<class name="SPFullGained" Category="BattleSystem" SubCategory="None" Order="301" Base_Title="과충전" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="$Status_SP$가 최대 수치가 되면 $Word_Overcharge$ 상태로 자동 전환 됩니다. $Word_Overcharge$ 상태에서는 어빌리티의 기력 소모가 일어나지 않으며, $OverchargeAbility$를 보유한 유닛인 경우 해당 어빌리티가 활성화됩니다.
+		<class name="FindNeutral" Category="BattleInterface" SubCategory="HUD" Order="318" Base_Title="중립 유닛" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="$NeutralUnit$은 해당 임무의 $Enemy$ 세력과 $Hostility$ 이지만 플레이어와는 아무런 관계가 없는 $Unit$을 말합니다. 체력 바의 색깔이 $ColorText$으로 표시됩니다." Content_Mission="" Content_End="" ColorText="$Color_Yellow$"/>
+		<class name="FindAlly" Category="BattleInterface" SubCategory="HUD" Order="319" Base_Title="동맹 유닛" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="$AllyUnit$은 해당 임무의 $Enemy$ 세력과 $Hostility$이며 플레이어와는 $Alliance$인 $Unit$을 말합니다. 체력 바의 색깔이 $ColorText$으로 표시됩니다." Content_Mission="" Content_End="" ColorText="$Color_Green$"/>
+		<class name="FindThirdForce" Category="BattleInterface" SubCategory="HUD" Order="320" Base_Title="제 3 세력 유닛" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="$ThirdForceUnit$은 해당 임무의 $Enemy$ 세력과 플레이어 팀 모두에게 $Hostility$인 $Unit$을 말합니다. 체력 바의 색깔이 $ColorText$으로 표시됩니다." Content_Mission="" Content_End="" ColorText="$Color_Violet$"/>
+		<class name="SPFullGained" Category="BattleSystem" SubCategory="None" Order="401" Base_Title="과충전" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="$Status_SP$가 최대 수치가 되면 $Word_Overcharge$ 상태로 자동 전환 됩니다. $Word_Overcharge$ 상태에서는 어빌리티의 기력 소모가 일어나지 않으며, $OverchargeAbility$를 보유한 유닛인 경우 해당 어빌리티가 활성화됩니다.
 
 $Word_Overcharge$ 지속 시간이 끝나거나 $OverchargeAbility$를 사용하면 해당 상태는 해제되고 $Status_SP$는 초기화 됩니다." Content_Mission="" Content_End=""/>
-		<class name="MonsterOverKill" Category="BattleSystem" SubCategory="None" Order="302" Base_Title="오버킬" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="대상을 $Word_OutOfAction$시키는 공격 시 대상의 [colour='FFFFAA00']남은 체력을 초과한 피해량[colour='FFFFFFFF']이 적의 [colour='FFFFAA00']최대 체력의 $OverKillRatio$[colour='FFFFFFFF']를 넘는 경우 $OverKill$을 달성할 수 있습니다.
+		<class name="MonsterOverKill" Category="BattleSystem" SubCategory="None" Order="402" Base_Title="오버킬" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="대상을 $Word_OutOfAction$시키는 공격 시 대상의 [colour='FFFFAA00']남은 체력을 초과한 피해량[colour='FFFFFFFF']이 적의 [colour='FFFFAA00']최대 체력의 $OverKillRatio$[colour='FFFFFFFF']를 넘는 경우 $OverKill$을 달성할 수 있습니다.
 
 $OverKill$을 달성하면 다음과 같은 효과가 적용됩니다." Content_Mission="" Content_End="- 획득한 경험치의 $PfKill_Exp$만큼 추가 경험치를 획득합니다.
 - $PfKill_ItemGrade$ 이상 아이템의 획득 확률이 증가합니다.
 - 특성의 획득 확률이 증가합니다.
 - 트러블 메이커 일람의 정보 획득량이 $PfKill_Troublemaker$배 증가합니다."/>
-		<class name="MonsterPerfectKill" Category="BattleSystem" SubCategory="None" Order="303" Base_Title="일격필살" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="대상을 $Word_OutOfAction$시키는 공격 시 대상의 체력이 $Status_MaxHP$인 경우 $PerfectKill$을 달성할 수 있습니다.
+		<class name="MonsterPerfectKill" Category="BattleSystem" SubCategory="None" Order="403" Base_Title="일격필살" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="대상을 $Word_OutOfAction$시키는 공격 시 대상의 체력이 $Status_MaxHP$인 경우 $PerfectKill$을 달성할 수 있습니다.
 
 $PerfectKill$을 달성하면 다음과 같은 효과가 적용됩니다." Content_Mission="" Content_End="- 획득한 경험치의 $PfKill_Exp$만큼 추가 경험치를 획득합니다.
 - $PfKill_ItemGrade$ 이상 아이템의 획득 확률이 증가합니다.
 - 특성의 획득 확률이 증가합니다.
 - 트러블 메이커 일람의 정보 획득량이 $PfKill_Troublemaker$배 증가합니다."/>
-		<class name="OutOfAction" Category="BattleSystem" SubCategory="None" Order="304" Base_Title="전투 불능" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="전투 중 $Status_HP$이 $Amount$ 이 된 유닛은 $Word_OutOfAction$이 됩니다. $Word_OutOfAction$이 되면 더 이상 해당 임무에 참여할 수 없습니다.
+		<class name="OutOfAction" Category="BattleSystem" SubCategory="None" Order="404" Base_Title="전투 불능" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="전투 중 $Status_HP$이 $Amount$ 이 된 유닛은 $Word_OutOfAction$이 됩니다. $Word_OutOfAction$이 되면 더 이상 해당 임무에 참여할 수 없습니다.
 
 또한 임무 종료 혹은 패배시 추가적으로 $/$의욕$/$이 감소하므로 조심하시길 바랍니다." Content_Mission="" Content_End="" Amount="0"/>
-		<class name="CastDelayTime" Category="BattleSystem" SubCategory="None" Order="305" Base_Title="시전 지연 시간" AutoScript="None" AttachClass="" Base_Content="$Word_CastDelayTime$이 존재하는 어빌리티를 사용할 경우, 캐릭터의 턴 대기 시간이 증가합니다.
+		<class name="CastDelayTime" Category="BattleSystem" SubCategory="None" Order="405" Base_Title="시전 지연 시간" AutoScript="None" AttachClass="" Base_Content="$Word_CastDelayTime$이 존재하는 어빌리티를 사용할 경우, 캐릭터의 턴 대기 시간이 증가합니다.
 
 어빌리티의 $Word_CastDelayTime$은 어빌리티 툴팁에서 확인하실 수 있으며, 해당 어빌리티를 선택한 경우 오른쪽 턴 대기열에 해당 수치가 적용되어 보여집니다." Content_Mission="" Content_End=""/>
-		<class name="MaxActionTime" Category="BattleSystem" SubCategory="None" Order="306" Base_Title="최대 턴 대기 시간" AutoScript="None" AttachClass="" Base_Content="캐릭터의 최대 $Word_AddWait$은 $MaxActionTime$입니다.
+		<class name="MaxActionTime" Category="BattleSystem" SubCategory="None" Order="406" Base_Title="최대 턴 대기 시간" AutoScript="None" AttachClass="" Base_Content="캐릭터의 최대 $Word_AddWait$은 $MaxActionTime$입니다.
 
 $MaxActionTime$이상의 턴 대기 지연 효과는 무효화됩니다." Content_Mission="" Content_End=""/>
-		<class name="BattleGuideSignal" Category="BattleSystem" SubCategory="None" Order="307" Base_Title="인기척 감지" AutoScript="None" AttachClass="" Base_Content="트러블슈터가 적의 인기척을 감지할 경우 표시됩니다. 인기척을 감지한 시점의 적의 위치이므로 실제 적의 위치와 다를 수 있습니다.
+		<class name="BattleGuideSignal" Category="BattleSystem" SubCategory="None" Order="407" Base_Title="인기척 감지" AutoScript="None" AttachClass="" Base_Content="트러블슈터가 적의 인기척을 감지할 경우 표시됩니다. 인기척을 감지한 시점의 적의 위치이므로 실제 적의 위치와 다를 수 있습니다.
 
 $Note$발생한 인기척의 정보는 미니맵에 표시됩니다." Content_Mission="" Content_End="" Image="SystemGuide_BattleGuideSignal"/>
-		<class name="SightAlert" Category="BattleSystem" SubCategory="Alert" Order="308" Base_Title="적 발각" AutoScript="None" AttachClass="" Base_Content="비전투 상태의 $HostileTarget$의 $Status_Sight$ 범위 내로 진입하면 해당 대상은 $BattleState$로 전환합니다.
+		<class name="SightAlert" Category="BattleSystem" SubCategory="Alert" Order="408" Base_Title="적 발각" AutoScript="None" AttachClass="" Base_Content="비전투 상태의 $HostileTarget$의 $Status_Sight$ 범위 내로 진입하면 해당 대상은 $BattleState$로 전환합니다.
 
 $BattleState$로 전환하는 유닛은 주위의 아군에게 지원 요청을 하며 해당 유닛과 지원 요청 받은 유닛은 $/$가까운 엄폐 가능한 지역$/$으로 이동을 한 후 $/$턴을 종료$/$합니다. " Content_Mission="" Content_End=""/>
-		<class name="MovingKnockbackIgnored" Category="BattleSystem" SubCategory="Alert" Order="309" Base_Title="이동 중 넉백" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="이동 중에는 넉백 효과가 적용되지 않습니다." Content_Mission="" Content_End=""/>
-		<class name="UsedCCAbility" Category="BattleSystem" SubCategory="None" Order="310" Base_Title="견제 공격" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="$Word_UsedCCAbility$이란, 적이 회피하더라도 해당 어빌리티가 가지는 적의 턴 대기시간 증가 효과가 $Percent$ 적용되는 공격을 말합니다." Content_Mission="" Content_End="" Percent="$Font_KeyBind$$/$50%$/$$Font_Base$"/>
-		<class name="BattleFormula_CounterAttack" Category="BattleSystem" SubCategory="None" Order="311" Base_Title="반격 공격" AutoScript="GetBattleFormulaContent_CounterAttack" AttachClass="" Base_Content="$/$반격 공격$/$이란, 적의 공격을 받은 후 발동하는 공격을 말합니다." Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_ReactionAttack" Category="BattleSystem" SubCategory="None" Order="312" Base_Title="반응 공격" AutoScript="GetBattleFormulaContent_ReactionAttack" AttachClass="" Base_Content="$/$반응 공격$/$이란, 적의 공격을 받지 않은 상태에서 특정 조건이 만족하여 발동하는 공격을 말합니다." Content_Mission="" Content_End=""/>
-		<class name="VHPD" Category="BattleSystem" SubCategory="None" Order="313" Base_Title="지원 병력" AutoScript="None" AttachClass="" Base_Content="발할라 경찰청은 트러블슈터의 활동을 지원하기 위하여 사건의 재해 등급에 따라 경찰 병력을 지원하고 있습니다.
+		<class name="MovingKnockbackIgnored" Category="BattleSystem" SubCategory="Alert" Order="409" Base_Title="이동 중 넉백" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="이동 중에는 넉백 효과가 적용되지 않습니다." Content_Mission="" Content_End=""/>
+		<class name="UsedCCAbility" Category="BattleSystem" SubCategory="None" Order="410" Base_Title="견제 공격" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="$Word_UsedCCAbility$이란, 적이 회피하더라도 해당 어빌리티가 가지는 적의 턴 대기시간 증가 효과가 $Percent$ 적용되는 공격을 말합니다." Content_Mission="" Content_End="" Percent="$Font_KeyBind$$/$50%$/$$Font_Base$"/>
+		<class name="BattleFormula_CounterAttack" Category="BattleSystem" SubCategory="None" Order="411" Base_Title="반격 공격" AutoScript="GetBattleFormulaContent_CounterAttack" AttachClass="" Base_Content="$/$반격 공격$/$이란, 적의 공격을 받은 후 발동하는 공격을 말합니다." Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_ReactionAttack" Category="BattleSystem" SubCategory="None" Order="412" Base_Title="반응 공격" AutoScript="GetBattleFormulaContent_ReactionAttack" AttachClass="" Base_Content="$/$반응 공격$/$이란, 적의 공격을 받지 않은 상태에서 특정 조건이 만족하여 발동하는 공격을 말합니다." Content_Mission="" Content_End=""/>
+		<class name="VHPD" Category="BattleSystem" SubCategory="None" Order="413" Base_Title="지원 병력" AutoScript="None" AttachClass="" Base_Content="발할라 경찰청은 트러블슈터의 활동을 지원하기 위하여 사건의 재해 등급에 따라 경찰 병력을 지원하고 있습니다.
 
 지원된 유닛들은 해당 임무에 한하여 플레이어가 직접 움직일 수 있으며 해당 지원 유닛이 획득한 아이템, 특성의 경우, 플레이어의 소유가 됩니다." Content_Mission="" Content_End=""/>
-		<class name="CheckPointUpdated" Category="BattleSystem" SubCategory="None" Order="314" Base_Title="체크포인트" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="시나리오 미션 진행 중 진행 상태에 따라 $Word_CheckPoint$가 활성화 됩니다. $Word_CheckPoint$는 항상 가장 마지막 지점으로 갱신됩니다.
+		<class name="CheckPointUpdated" Category="BattleSystem" SubCategory="None" Order="414" Base_Title="체크포인트" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="시나리오 미션 진행 중 진행 상태에 따라 $Word_CheckPoint$가 활성화 됩니다. $Word_CheckPoint$는 항상 가장 마지막 지점으로 갱신됩니다.
 
 $Word_CheckPoint$가 활성화되면 패배 혹은 게임 포기 시 마지막 $Word_CheckPoint$ 지점에서 다시 시작하실 수 있습니다.
 
 $Word_CheckPoint$로 귀환시 참여한 팀원들은 모두 의욕이 추가 $Amount$ 소모됩니다.
 
 $Word_CheckPoint$이후 획득한 아이템, 특성, 경험치는 모두 초기화 되므로 주의하시기 바랍니다." Content_Mission="" Content_End="" Amount="50"/>
-		<class name="FindEliteMonster" Category="BattleSystem" SubCategory="UnitRank" Order="315" Base_Title="정예" Checker="HelpChecker_GuideTrigger" AutoScript="GetHelpContent_UnitRank_Elite" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="FindEpicMonster" Category="BattleSystem" SubCategory="UnitRank" Order="316" Base_Title="영웅" Checker="HelpChecker_GuideTrigger" AutoScript="GetHelpContent_UnitRank_Epic" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="FindLegendMonster" Category="BattleSystem" SubCategory="UnitRank" Order="317" Base_Title="전설" Checker="HelpChecker_GuideTrigger" AutoScript="GetHelpContent_UnitRank_Legend" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="Resource_Vigor" Category="BattleSystem" SubCategory="Resource" Order="318" Base_Title="기력" AutoScript="GetHelpContent_Resource_Vigor" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="Resource_Rage" Category="BattleSystem" SubCategory="Resource" Order="319" Base_Title="분노" AutoScript="GetHelpContent_Resource_Rage" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="Resource_Fuel" Category="BattleSystem" SubCategory="Resource" Order="320" Base_Title="연료" AutoScript="GetHelpContent_Resource_Fuel" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="UnitState_Condition" Category="BattleSystem" SubCategory="UnitState" Order="321" Base_Title="의욕" AutoScript="GetHelpContent_UnitState_Condition" AttachClass="" Base_Content="인간은 현재 의욕에 따라 다음과 같은 효과가 발생합니다." Content_Mission="" Content_End=""/>
-		<class name="UnitState_Loyalty" Category="BattleSystem" SubCategory="UnitState" Order="322" Base_Title="충성도" AutoScript="GetHelpContent_UnitState_Loyalty" AttachClass="" Base_Content="길들여진 야수는 주인에 대한 충성심에 따라 다음과 같은 효과가 발생합니다." Content_Mission="" Content_End=""/>
-		<class name="UnitState_Duration" Category="BattleSystem" SubCategory="UnitState" Order="323" Base_Title="내구도" AutoScript="GetHelpContent_UnitState_Duration" AttachClass="" Base_Content="기계는 내구도에 따라 다음과 같은 효과가 발생합니다." Content_Mission="" Content_End=""/>
-		<class name="CoverHalf" Category="BattleSystem" SubCategory="Cover" Order="324" Base_Title="부분 엄폐" AutoScript="None" AttachClass="" Base_Content="$Img_HalfCover$ 아이콘으로 표시되는 지역은 $/$부분 엄폐$/$가 가능합니다." Content_Mission="" Content_End="엄폐 아이콘이 위치한 방향의 적으로부터 공격을 받을 시, $Status_Dodge$이 $Percent$ 증가합니다." Percent="$Font_KeyBind$$/$20%$/$$Font_Base$"/>
-		<class name="CoverFull" Category="BattleSystem" SubCategory="Cover" Order="325" Base_Title="완전 엄폐" AutoScript="None" AttachClass="" Base_Content="$Img_FullCover$ 아이콘으로 표시되는 지역은 $/$완전 엄폐$/$가 가능합니다." Content_Mission="" Content_End="엄폐 아이콘이 위치한 방향의 적으로부터 공격을 받을 시, $Status_Dodge$이 $Percent$ 증가합니다." Percent="$Font_KeyBind$$/$40%$/$$Font_Base$"/>
-		<class name="CoverNone" Category="BattleSystem" SubCategory="Cover" Order="326" Base_Title="엄폐 노출" AutoScript="None" AttachClass="" Base_Content="$Img_FullCoverOpened$, $Img_HalfCoverOpened$ 아이콘으로 표시되는 유닛은 현재 공격 캐릭터로부터 엄폐 방향의 측면이 노출된 상태이며, 해당 대상을 공격 시 $/$측면 공격$/$ 보너스가 주어집니다." Content_Mission="" Content_End="$/$측면 공격:$/$ 치명타 적중률이 $Percent$ 증가합니다." ContentBaseColor_Mission="[colour='FFFFFFFF']" HighlightColor_Mission="[colour='FFFFFF00']" Percent="$Font_KeyBind$$/$50%$/$$Font_Base$"/>
-		<class name="DangerMoved" Category="BattleSystem" SubCategory="Cover" Order="327" Base_Title="무방비 노출" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="해당 유닛의 근접한 4방향에 엄폐물이 존재하지 않는 상태는 $/$무방비 노출$/$이라고 하며, 해당 대상을 공격 시 $/$측면 공격$/$ 보너스가 주어집니다." Content_Mission="" Content_End="$/$측면 공격:$/$ 치명타 적중률이 $Percent$ 증가합니다." ContentBaseColor_Mission="[colour='FFFFFFFF']" HighlightColor_Mission="[colour='FFFFFF00']" Percent="$Font_KeyBind$$/$50%$/$$Font_Base$"/>
-		<class name="Height" Category="BattleSystem" SubCategory="BattleBonus" Order="328" Base_Title="높은 위치" AutoScript="GetHelpContent_SubText" AttachClass="" Base_Content="자신과 목표 대상이 위치한 지형의 높이 차이가 $HighHeight$m 초과하는 상태입니다.
+		<class name="FindEliteMonster" Category="BattleSystem" SubCategory="UnitRank" Order="415" Base_Title="정예" Checker="HelpChecker_GuideTrigger" AutoScript="GetHelpContent_UnitRank_Elite" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="FindEpicMonster" Category="BattleSystem" SubCategory="UnitRank" Order="416" Base_Title="영웅" Checker="HelpChecker_GuideTrigger" AutoScript="GetHelpContent_UnitRank_Epic" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="FindLegendMonster" Category="BattleSystem" SubCategory="UnitRank" Order="417" Base_Title="전설" Checker="HelpChecker_GuideTrigger" AutoScript="GetHelpContent_UnitRank_Legend" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="Resource_Vigor" Category="BattleSystem" SubCategory="Resource" Order="418" Base_Title="기력" AutoScript="GetHelpContent_Resource_Vigor" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="Resource_Rage" Category="BattleSystem" SubCategory="Resource" Order="419" Base_Title="분노" AutoScript="GetHelpContent_Resource_Rage" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="Resource_Fuel" Category="BattleSystem" SubCategory="Resource" Order="420" Base_Title="연료" AutoScript="GetHelpContent_Resource_Fuel" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="UnitState_Condition" Category="BattleSystem" SubCategory="UnitState" Order="421" Base_Title="의욕" AutoScript="GetHelpContent_UnitState_Condition" AttachClass="" Base_Content="인간은 현재 의욕에 따라 다음과 같은 효과가 발생합니다." Content_Mission="" Content_End=""/>
+		<class name="UnitState_Loyalty" Category="BattleSystem" SubCategory="UnitState" Order="422" Base_Title="충성도" AutoScript="GetHelpContent_UnitState_Loyalty" AttachClass="" Base_Content="길들여진 야수는 주인에 대한 충성심에 따라 다음과 같은 효과가 발생합니다." Content_Mission="" Content_End=""/>
+		<class name="UnitState_Duration" Category="BattleSystem" SubCategory="UnitState" Order="423" Base_Title="내구도" AutoScript="GetHelpContent_UnitState_Duration" AttachClass="" Base_Content="기계는 내구도에 따라 다음과 같은 효과가 발생합니다." Content_Mission="" Content_End=""/>
+		<class name="CoverHalf" Category="BattleSystem" SubCategory="Cover" Order="424" Base_Title="부분 엄폐" AutoScript="None" AttachClass="" Base_Content="$Img_HalfCover$ 아이콘으로 표시되는 지역은 $/$부분 엄폐$/$가 가능합니다." Content_Mission="" Content_End="엄폐 아이콘이 위치한 방향의 적으로부터 공격을 받을 시, $Status_Dodge$이 $Percent$ 증가합니다." Percent="$Font_KeyBind$$/$20%$/$$Font_Base$"/>
+		<class name="CoverFull" Category="BattleSystem" SubCategory="Cover" Order="425" Base_Title="완전 엄폐" AutoScript="None" AttachClass="" Base_Content="$Img_FullCover$ 아이콘으로 표시되는 지역은 $/$완전 엄폐$/$가 가능합니다." Content_Mission="" Content_End="엄폐 아이콘이 위치한 방향의 적으로부터 공격을 받을 시, $Status_Dodge$이 $Percent$ 증가합니다." Percent="$Font_KeyBind$$/$40%$/$$Font_Base$"/>
+		<class name="CoverNone" Category="BattleSystem" SubCategory="Cover" Order="426" Base_Title="엄폐 노출" AutoScript="None" AttachClass="" Base_Content="$Img_FullCoverOpened$, $Img_HalfCoverOpened$ 아이콘으로 표시되는 유닛은 현재 공격 캐릭터로부터 엄폐 방향의 측면이 노출된 상태이며, 해당 대상을 공격 시 $/$측면 공격$/$ 보너스가 주어집니다." Content_Mission="" Content_End="$/$측면 공격:$/$ 치명타 적중률이 $Percent$ 증가합니다." ContentBaseColor_Mission="[colour='FFFFFFFF']" HighlightColor_Mission="[colour='FFFFFF00']" Percent="$Font_KeyBind$$/$50%$/$$Font_Base$"/>
+		<class name="DangerMoved" Category="BattleSystem" SubCategory="Cover" Order="427" Base_Title="무방비 노출" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="해당 유닛의 근접한 4방향에 엄폐물이 존재하지 않는 상태는 $/$무방비 노출$/$이라고 하며, 해당 대상을 공격 시 $/$측면 공격$/$ 보너스가 주어집니다." Content_Mission="" Content_End="$/$측면 공격:$/$ 치명타 적중률이 $Percent$ 증가합니다." ContentBaseColor_Mission="[colour='FFFFFFFF']" HighlightColor_Mission="[colour='FFFFFF00']" Percent="$Font_KeyBind$$/$50%$/$$Font_Base$"/>
+		<class name="Height" Category="BattleSystem" SubCategory="BattleBonus" Order="428" Base_Title="높은 위치" AutoScript="GetHelpContent_SubText" AttachClass="" Base_Content="자신과 목표 대상이 위치한 지형의 높이 차이가 $HighHeight$m 초과하는 상태입니다.
 
 $Note$사격 공격 어빌리티로 적을 공격 시, 다음과 같은 보너스를 받습니다." Content_Mission="" Content_End="" Percent="$Font_KeyBind$$/$20%$/$$Font_Base$" Percent2="$Font_KeyBind$$/$10%$/$$Font_Base$">
 			<SubText>
@@ -412,44 +421,44 @@ $Note$사격 공격 어빌리티로 적을 공격 시, 다음과 같은 보너�
 				<property Type="Numbering" Title="목표 대상이 자신 보다 높은 위치인 경우" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="명중률이 $Percent2$ 감소합니다."/>
 			</SubText>
 		</class>
-		<class name="StableStatus" Category="BattleSystem" SubCategory="BattleBonus" Order="329" Base_Title="안정된 자세" AutoScript="None" AttachClass="" Base_Content="턴 시작 시, 행동력을 소모하지 않은 경우 $/$안정된 자세$/$ 상태가 적용되며 유닛 상태 정보의 행동력 바가 $ColorText$으로 표시됩니다." Content_Mission="" Content_End="안정된 자세 상태에서는 $Status_Accuracy$이 $Percent$ 증가합니다." ColorText="$Color_Blue2$" Percent="$Font_KeyBind$$/$20%$/$$Font_Base$"/>
-		<class name="SideAttack" Category="BattleSystem" SubCategory="BattleBonus" Order="330" Base_Title="측면 공격" AutoScript="GetHelpContent_SubText" AttachClass="" Base_Content="다음과 같은 상태일 경우, $/$측면 목표$/$ 상태가 적용되며, 이 상태의 적을 공격하는 것을 $/$측면 공격$/$이라고 합니다." Content_Mission="" Content_End="측면 공격 상태에서는 $Status_CSC$이 $Percent$ 증가합니다." Percent="$Font_KeyBind$$/$50%$/$$Font_Base$">
+		<class name="StableStatus" Category="BattleSystem" SubCategory="BattleBonus" Order="429" Base_Title="안정된 자세" AutoScript="None" AttachClass="" Base_Content="턴 시작 시, 행동력을 소모하지 않은 경우 $/$안정된 자세$/$ 상태가 적용되며 유닛 상태 정보의 행동력 바가 $ColorText$으로 표시됩니다." Content_Mission="" Content_End="안정된 자세 상태에서는 $Status_Accuracy$이 $Percent$ 증가합니다." ColorText="$Color_Blue2$" Percent="$Font_KeyBind$$/$20%$/$$Font_Base$"/>
+		<class name="SideAttack" Category="BattleSystem" SubCategory="BattleBonus" Order="430" Base_Title="측면 공격" AutoScript="GetHelpContent_SubText" AttachClass="" Base_Content="다음과 같은 상태일 경우, $/$측면 목표$/$ 상태가 적용되며, 이 상태의 적을 공격하는 것을 $/$측면 공격$/$이라고 합니다." Content_Mission="" Content_End="측면 공격 상태에서는 $Status_CSC$이 $Percent$ 증가합니다." Percent="$Font_KeyBind$$/$50%$/$$Font_Base$">
 			<SubText>
 				<property Type="Numbering" Title="무방비 노출인 적 공격 시" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="해당 유닛의 근접한 4방향에 엄폐물이 존재하지 않는 상태를 말합니다."/>
 				<property Type="Numbering" Title="엄폐 노출인 적 공격 시" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="유닛 엄폐 정보가 $Img_FullCoverOpened$ 혹은 $Img_HalfCoverOpened$로 표시되는 유닛입니다."/>
 				<property Type="Numbering" Title="엄폐를 할 수 없는 적 공격 시" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="대부분의 야수, 기계 몬스터 혹은 엄폐 불가 상태를 유발하는 어빌리티를 사용하는 유닛을 말합니다."/>
 			</SubText>
 		</class>
-		<class name="Weather" Category="BattleSystem" SubCategory="Environments" Order="331" Base_Title="날씨" AutoScript="GetHelpContent_Weather" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="MissionTime" Category="BattleSystem" SubCategory="Environments" Order="332" Base_Title="시간" AutoScript="GetHelpContent_MissionTime" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="Temperature" Category="BattleSystem" SubCategory="Environments" Order="333" Base_Title="온도" AutoScript="GetHelpContent_Temperature" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="FieldEffect_Fire" Category="BattleSystem" SubCategory="FieldEffect" Order="348" Base_Title="화재" AutoScript="GetBattleFormulaContent_FieldEffect_Fire" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="FieldEffect_Spark" Category="BattleSystem" SubCategory="FieldEffect" Order="349" Base_Title="전기장" AutoScript="GetBattleFormulaContent_FieldEffect_Spark" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="FieldEffect_PoisonGas" Category="BattleSystem" SubCategory="FieldEffect" Order="350" Base_Title="독구름" AutoScript="GetBattleFormulaContent_FieldEffect_PoisonGas" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="FieldEffect_AcidGas" Category="BattleSystem" SubCategory="FieldEffect" Order="351" Base_Title="산성 구름" AutoScript="GetBattleFormulaContent_FieldEffect_AcidGas" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="FieldEffect_PlagueMist" Category="BattleSystem" SubCategory="FieldEffect" Order="352" Base_Title="역병 구름" AutoScript="GetBattleFormulaContent_FieldEffect_PlagueMist" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="FieldEffect_IceMist" Category="BattleSystem" SubCategory="FieldEffect" Order="353" Base_Title="얼음 안개" AutoScript="GetBattleFormulaContent_FieldEffect_IceMist" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="FieldEffect_HealMist" Category="BattleSystem" SubCategory="FieldEffect" Order="354" Base_Title="회복 안개" AutoScript="GetBattleFormulaContent_FieldEffect_HealMist" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="FieldEffect_SmokeScreen" Category="BattleSystem" SubCategory="FieldEffect" Order="355" Base_Title="연막" AutoScript="GetBattleFormulaContent_FieldEffect_SmokeScreen" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="FieldEffect_Blackout" Category="BattleSystem" SubCategory="FieldEffect" Order="356" Base_Title="정전" AutoScript="GetBattleFormulaContent_FieldEffect_Blackout" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="FieldEffect_Web" Category="BattleSystem" SubCategory="FieldEffect" Order="357" Base_Title="거미줄" AutoScript="GetBattleFormulaContent_FieldEffect_Web" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="FieldEffect_Bush" Category="BattleSystem" SubCategory="FieldEffect" Order="358" Base_Title="수풀" Checker="HelpChecker_GuideTrigger_FieldEffect" AutoScript="GetBattleFormulaContent_FieldEffect_Bush" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="FieldEffect_Swamp" Category="BattleSystem" SubCategory="FieldEffect" Order="359" Base_Title="늪" Checker="HelpChecker_GuideTrigger_FieldEffect" AutoScript="GetBattleFormulaContent_FieldEffect_Swamp" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="FieldEffect_Ice" Category="BattleSystem" SubCategory="FieldEffect" Order="360" Base_Title="빙판" Checker="HelpChecker_GuideTrigger_FieldEffect" AutoScript="GetBattleFormulaContent_FieldEffect_Ice" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="FieldEffect_Water" Category="BattleSystem" SubCategory="FieldEffect" Order="361" Base_Title="물" Checker="HelpChecker_GuideTrigger_FieldEffect" AutoScript="GetBattleFormulaContent_FieldEffect_Water" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="FieldEffect_ContaminatedWater" Category="BattleSystem" SubCategory="FieldEffect" Order="362" Base_Title="오염수" Checker="HelpChecker_GuideTrigger_FieldEffect" AutoScript="GetBattleFormulaContent_FieldEffect_ContaminatedWater" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="FieldEffect_Lava" Category="BattleSystem" SubCategory="FieldEffect" Order="363" Base_Title="용암" Checker="HelpChecker_GuideTrigger_FieldEffect" AutoScript="GetBattleFormulaContent_FieldEffect_Lava" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="KnockbackStunOccured" Category="BattleSystem" SubCategory="ChainEffect" Order="364" Base_Title="충돌" Checker="HelpChecker_GuideTrigger" AutoScript="GetHelpContent_ChainEffect" AttachClass="" Base_Content="$Chain_Crash$은 공격을 받은 대상이 뒤로 밀려날 경우, 밀려나는 방향의 인접한 지형이 이동 불가능하면 발생합니다." Content_Mission="" Content_End=""/>
-		<class name="BlackoutFlashed" Category="BattleSystem" SubCategory="ChainEffect" Order="365" Base_Title="눈부심" Checker="HelpChecker_GuideTrigger" AutoScript="GetHelpContent_ChainEffect" AttachClass="" Base_Content="$Chain_Flash$은 $Img_Dark$ 암흑 상태의 대상에게 $/$섬광$/$ 계열 상태 이상을 유발하면 발생합니다." Content_Mission="" Content_End=""/>
-		<class name="Chain" Category="BattleSystem" SubCategory="ChainEffect" Order="366" Base_Title="연환" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="$Chain_BuffGroup$은 상태 이상을 목표 대상에게 발생시킬 시, 해당 대상에게 같은 계열의 더 강한 상태 이상이 존재할 경우 발생합니다.
+		<class name="Weather" Category="BattleSystem" SubCategory="Environments" Order="431" Base_Title="날씨" AutoScript="GetHelpContent_Weather" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="MissionTime" Category="BattleSystem" SubCategory="Environments" Order="432" Base_Title="시간" AutoScript="GetHelpContent_MissionTime" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="Temperature" Category="BattleSystem" SubCategory="Environments" Order="433" Base_Title="온도" AutoScript="GetHelpContent_Temperature" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="FieldEffect_Fire" Category="BattleSystem" SubCategory="FieldEffect" Order="448" Base_Title="화재" AutoScript="GetBattleFormulaContent_FieldEffect_Fire" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="FieldEffect_Spark" Category="BattleSystem" SubCategory="FieldEffect" Order="449" Base_Title="전기장" AutoScript="GetBattleFormulaContent_FieldEffect_Spark" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="FieldEffect_PoisonGas" Category="BattleSystem" SubCategory="FieldEffect" Order="450" Base_Title="독구름" AutoScript="GetBattleFormulaContent_FieldEffect_PoisonGas" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="FieldEffect_AcidGas" Category="BattleSystem" SubCategory="FieldEffect" Order="451" Base_Title="산성 구름" AutoScript="GetBattleFormulaContent_FieldEffect_AcidGas" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="FieldEffect_PlagueMist" Category="BattleSystem" SubCategory="FieldEffect" Order="452" Base_Title="역병 구름" AutoScript="GetBattleFormulaContent_FieldEffect_PlagueMist" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="FieldEffect_IceMist" Category="BattleSystem" SubCategory="FieldEffect" Order="453" Base_Title="얼음 안개" AutoScript="GetBattleFormulaContent_FieldEffect_IceMist" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="FieldEffect_HealMist" Category="BattleSystem" SubCategory="FieldEffect" Order="454" Base_Title="회복 안개" AutoScript="GetBattleFormulaContent_FieldEffect_HealMist" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="FieldEffect_SmokeScreen" Category="BattleSystem" SubCategory="FieldEffect" Order="455" Base_Title="연막" AutoScript="GetBattleFormulaContent_FieldEffect_SmokeScreen" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="FieldEffect_Blackout" Category="BattleSystem" SubCategory="FieldEffect" Order="456" Base_Title="정전" AutoScript="GetBattleFormulaContent_FieldEffect_Blackout" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="FieldEffect_Web" Category="BattleSystem" SubCategory="FieldEffect" Order="457" Base_Title="거미줄" AutoScript="GetBattleFormulaContent_FieldEffect_Web" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="FieldEffect_Bush" Category="BattleSystem" SubCategory="FieldEffect" Order="458" Base_Title="수풀" Checker="HelpChecker_GuideTrigger_FieldEffect" AutoScript="GetBattleFormulaContent_FieldEffect_Bush" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="FieldEffect_Swamp" Category="BattleSystem" SubCategory="FieldEffect" Order="459" Base_Title="늪" Checker="HelpChecker_GuideTrigger_FieldEffect" AutoScript="GetBattleFormulaContent_FieldEffect_Swamp" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="FieldEffect_Ice" Category="BattleSystem" SubCategory="FieldEffect" Order="460" Base_Title="빙판" Checker="HelpChecker_GuideTrigger_FieldEffect" AutoScript="GetBattleFormulaContent_FieldEffect_Ice" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="FieldEffect_Water" Category="BattleSystem" SubCategory="FieldEffect" Order="461" Base_Title="물" Checker="HelpChecker_GuideTrigger_FieldEffect" AutoScript="GetBattleFormulaContent_FieldEffect_Water" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="FieldEffect_ContaminatedWater" Category="BattleSystem" SubCategory="FieldEffect" Order="462" Base_Title="오염수" Checker="HelpChecker_GuideTrigger_FieldEffect" AutoScript="GetBattleFormulaContent_FieldEffect_ContaminatedWater" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="FieldEffect_Lava" Category="BattleSystem" SubCategory="FieldEffect" Order="463" Base_Title="용암" Checker="HelpChecker_GuideTrigger_FieldEffect" AutoScript="GetBattleFormulaContent_FieldEffect_Lava" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="KnockbackStunOccured" Category="BattleSystem" SubCategory="ChainEffect" Order="464" Base_Title="충돌" Checker="HelpChecker_GuideTrigger" AutoScript="GetHelpContent_ChainEffect" AttachClass="" Base_Content="$Chain_Crash$은 공격을 받은 대상이 뒤로 밀려날 경우, 밀려나는 방향의 인접한 지형이 이동 불가능하면 발생합니다." Content_Mission="" Content_End=""/>
+		<class name="BlackoutFlashed" Category="BattleSystem" SubCategory="ChainEffect" Order="465" Base_Title="눈부심" Checker="HelpChecker_GuideTrigger" AutoScript="GetHelpContent_ChainEffect" AttachClass="" Base_Content="$Chain_Flash$은 $Img_Dark$ 암흑 상태의 대상에게 $/$섬광$/$ 계열 상태 이상을 유발하면 발생합니다." Content_Mission="" Content_End=""/>
+		<class name="Chain" Category="BattleSystem" SubCategory="ChainEffect" Order="466" Base_Title="연환" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="$Chain_BuffGroup$은 상태 이상을 목표 대상에게 발생시킬 시, 해당 대상에게 같은 계열의 더 강한 상태 이상이 존재할 경우 발생합니다.
 
 $Note$연환이 발생하면 현재 발동될 상태 이상은 같은 계열의 더 강한 상태 이상으로 발동됩니다." Content_Mission="" Content_End=""/>
-		<class name="Faint" Category="BattleSystem" SubCategory="ChainEffect" Order="367" Base_Title="혼절" AutoScript="GetHelpContent_ChainEffect" AttachClass="" Base_Content="$Chain_Faint$은 $Img_Water$물, $Img_ConWater$오염수 지형 효과 상태의 인간 혹은 야수가 $/$번개$/$ 속성 치명타 피해를 입을 때 발생합니다." Content_Mission="" Content_End=""/>
-		<class name="Mud" Category="BattleSystem" SubCategory="ChainEffect" Order="368" Base_Title="진흙범벅" AutoScript="GetHelpContent_ChainEffect" AttachClass="" Base_Content="$Chain_Mud$은 $Img_Swamp$늪 지형 효과 상태의 대상이 해당 공격으로 뒤로 밀려나게 할 경우 발생합니다." Content_Mission="" Content_End=""/>
-		<class name="Slip" Category="BattleSystem" SubCategory="ChainEffect" Order="369" Base_Title="미끄러짐" AutoScript="GetHelpContent_ChainEffect" AttachClass="" Base_Content="$Chain_Slip$은 $Img_IceField$빙판 지형 효과 상태의 대상이 해당 공격으로 뒤로 [colour='FFFFFF00']3[colour='FFFFFFFF']칸 이상 밀려나게 할 경우 발생합니다." Content_Mission="" Content_End=""/>
-		<class name="Engaging" Category="BattleSystem" SubCategory="ChainEffect" Order="370" Base_Title="휘말림" AutoScript="GetHelpContent_ChainEffect" AttachClass="" Base_Content="$Chain_Engaging$은 자신의 턴이 아닌 대상이 공격을 받고 뒤로 밀려나거나, 특성으로 인하여 이동으로 설치된 덫을 발동시킬 경우, 해당 덫으로 피해를 입은 대상에게 발생합니다." Content_Mission="" Content_End=""/>
-		<class name="Fracture" Category="BattleSystem" SubCategory="ChainEffect" Order="371" Base_Title="균열" AutoScript="GetHelpContent_ChainEffect" AttachClass="" Base_Content="$Chain_Fracture$은 $Img_LavaField$용암 지형 효과 상태의 대상이 $/$얼음$/$ 속성 치명타 피해를 입을 때 발생합니다." Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_Damage" Category="BattleFormula" SubCategory="BattleFormula" Order="401" Base_Title="피해량 계산하기" AutoScript="GetHelpContent_SubText" AttachClass="" Base_Content="트러블슈터에 적용되는 피해량 계산식은 아래와 같습니다." Content_Mission="" Content_End="">
+		<class name="Faint" Category="BattleSystem" SubCategory="ChainEffect" Order="467" Base_Title="혼절" AutoScript="GetHelpContent_ChainEffect" AttachClass="" Base_Content="$Chain_Faint$은 $Img_Water$물, $Img_ConWater$오염수 지형 효과 상태의 인간 혹은 야수가 $/$번개$/$ 속성 치명타 피해를 입을 때 발생합니다." Content_Mission="" Content_End=""/>
+		<class name="Mud" Category="BattleSystem" SubCategory="ChainEffect" Order="468" Base_Title="진흙범벅" AutoScript="GetHelpContent_ChainEffect" AttachClass="" Base_Content="$Chain_Mud$은 $Img_Swamp$늪 지형 효과 상태의 대상이 해당 공격으로 뒤로 밀려나게 할 경우 발생합니다." Content_Mission="" Content_End=""/>
+		<class name="Slip" Category="BattleSystem" SubCategory="ChainEffect" Order="469" Base_Title="미끄러짐" AutoScript="GetHelpContent_ChainEffect" AttachClass="" Base_Content="$Chain_Slip$은 $Img_IceField$빙판 지형 효과 상태의 대상이 해당 공격으로 뒤로 [colour='FFFFFF00']3[colour='FFFFFFFF']칸 이상 밀려나게 할 경우 발생합니다." Content_Mission="" Content_End=""/>
+		<class name="Engaging" Category="BattleSystem" SubCategory="ChainEffect" Order="470" Base_Title="휘말림" AutoScript="GetHelpContent_ChainEffect" AttachClass="" Base_Content="$Chain_Engaging$은 자신의 턴이 아닌 대상이 공격을 받고 뒤로 밀려나거나, 특성으로 인하여 이동으로 설치된 덫을 발동시킬 경우, 해당 덫으로 피해를 입은 대상에게 발생합니다." Content_Mission="" Content_End=""/>
+		<class name="Fracture" Category="BattleSystem" SubCategory="ChainEffect" Order="471" Base_Title="균열" AutoScript="GetHelpContent_ChainEffect" AttachClass="" Base_Content="$Chain_Fracture$은 $Img_LavaField$용암 지형 효과 상태의 대상이 $/$얼음$/$ 속성 치명타 피해를 입을 때 발생합니다." Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_Damage" Category="BattleFormula" SubCategory="BattleFormula" Order="501" Base_Title="피해량 계산하기" AutoScript="GetHelpContent_SubText" AttachClass="" Base_Content="트러블슈터에 적용되는 피해량 계산식은 아래와 같습니다." Content_Mission="" Content_End="">
 			<SubText>
 				<property Type="AlphabetNumbering" Title="현재 피해량" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="어빌리티에 의해 결정된 피해량"/>
 				<property Type="AlphabetNumbering" Title="최종 방어수치" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="방어자의 방어력(저항력) + 각 공격 속성에 대한 저항력"/>
@@ -464,7 +473,7 @@ $Note$연환이 발생하면 현재 발동될 상태 이상은 같은 계열의 
 				<property Type="None" Title="피해량은 버림 처리하므로 최종 피해량은 $/$66$/$이 됩니다." TitleColor="YellowOrange" TitleLineBreak="false" LineBreak="false" Text=""/>
 			</SubText>
 		</class>
-		<class name="BattleFormula_DistanceAccuracy" Category="BattleFormula" SubCategory="BattleFormula" Order="402" Base_Title="거리에 따른 명중률 패널티" AutoScript="GetHelpContent_SubText" AttachClass="" Base_Content="트러블슈터에 적용되는 거리에 따른 최종 명중률은 아래와 같습니다." Content_Mission="" Content_End="">
+		<class name="BattleFormula_DistanceAccuracy" Category="BattleFormula" SubCategory="BattleFormula" Order="502" Base_Title="거리에 따른 명중률 패널티" AutoScript="GetHelpContent_SubText" AttachClass="" Base_Content="트러블슈터에 적용되는 거리에 따른 최종 명중률은 아래와 같습니다." Content_Mission="" Content_End="">
 			<SubText>
 				<property Type="AlphabetNumbering" Title="어빌리티 사용 형태에 따른 가중치" TitleColor="Yellow" TitleLineBreak="false" LineBreak="false" Text=""/>
 				<property Type="None" Title="근접" TitleColor="Cream" TitleLineBreak="false" LineBreak="false" Text="320%"/>
@@ -484,7 +493,7 @@ $Note$연환이 발생하면 현재 발동될 상태 이상은 같은 계열의 
 				<property Type="None" Title="따라서 사격 공격 시, 12 타일 거리의 대상은 명중률이 $/$18.75%$/$ 감소합니다." TitleColor="YellowOrange" TitleLineBreak="false" LineBreak="false" Text=""/>
 			</SubText>
 		</class>
-		<class name="BattleFormula_Speed" Category="BattleFormula" SubCategory="BattleFormula" Order="403" Base_Title="턴 속도 계산하기" AutoScript="GetHelpContent_SubText" AttachClass="" Base_Content="트러블슈터는 턴 속도 수치에 따라 다음 턴이 돌아오는 기본 턴 대기 시간을 결정하고 있습니다." Content_Mission="" Content_End="">
+		<class name="BattleFormula_Speed" Category="BattleFormula" SubCategory="BattleFormula" Order="503" Base_Title="턴 속도 계산하기" AutoScript="GetHelpContent_SubText" AttachClass="" Base_Content="트러블슈터는 턴 속도 수치에 따라 다음 턴이 돌아오는 기본 턴 대기 시간을 결정하고 있습니다." Content_Mission="" Content_End="">
 			<SubText>
 				<property Type="AlphabetNumbering" Title="현재 턴 속도" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="아이템, 특성, 환경 요소 등으로 결정된 최종 스탯."/>
 				<property Type="AlphabetNumbering" Title="기본 턴 대기 시간" TitleColor="Yellow" TitleLineBreak="true" LineBreak="true" Text="36 × ( 0.5 + 100 / A )"/>
@@ -497,7 +506,7 @@ $Note$연환이 발생하면 현재 발동될 상태 이상은 같은 계열의 
 				<property Type="None" Title="위의 공식에 따라 턴 속도가 $/$200$/$이면, 기본 턴 대기 시간 최소값에 도달하며, 턴 속도가 $/$11$/$이하이면, 기본 턴 대기 시간 최대값에 도달합니다." TitleColor="Perano" TitleLineBreak="false" LineBreak="false" Text=""/>
 			</SubText>
 		</class>
-		<class name="BattleFormula_ReleaseBuff" Category="BattleFormula" SubCategory="BattleFormula" Order="404" Base_Title="상태 이상 해제 확률 계산하기" AutoScript="GetHelpContent_SubText" AttachClass="" Base_Content="트러블슈터에 적용되는 상태 이상 해제 확률 계산식은 아래와 같습니다." Content_Mission="" Content_End="">
+		<class name="BattleFormula_ReleaseBuff" Category="BattleFormula" SubCategory="BattleFormula" Order="504" Base_Title="상태 이상 해제 확률 계산하기" AutoScript="GetHelpContent_SubText" AttachClass="" Base_Content="트러블슈터에 적용되는 상태 이상 해제 확률 계산식은 아래와 같습니다." Content_Mission="" Content_End="">
 			<SubText>
 				<property Type="AlphabetNumbering" Title="상태 해제를 위한 필요 저항력" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="100 + ( 자신의 레벨 - 1 ) * 15"/>
 				<property Type="AlphabetNumbering" Title="상태 해제를 위한 현재 저항력" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="각 상태의 해제 속성에 대한 저항력"/>
@@ -507,89 +516,150 @@ $Note$연환이 발생하면 현재 발동될 상태 이상은 같은 계열의 
 				<property Type="None" Title="현재 상태 이상" TitleColor="Cream" TitleLineBreak="false" LineBreak="false" Text="출혈"/>
 				<property Type="None" Title="상태 이상 해제 속성" TitleColor="Cream" TitleLineBreak="false" LineBreak="false" Text="참격"/>
 				<property Type="None" Title="자신의 참격 저항력" TitleColor="Cream" TitleLineBreak="false" LineBreak="true" Text="100"/>
-				<property Type="None" Title="최종 상태 이상 해제 확률" TitleColor="Cream" TitleLineBreak="true" LineBreak="true" Text="100 * 100 / ( 100 + ( 10 - 1 ) * 15 ) = 42.553"/>
+				<property Type="None" Title="최종 상태 이상 해제 확률" TitleColor="Cream" TitleLineBreak="true" LineBreak="true" Text="100 × 100 / ( 100 + ( 10 - 1 ) × 15 ) = 42.553"/>
 				<property Type="None" Title="소수점 확률은 버림 처리하므로 최종 상태 이상 해제 확률은 $/$42%$/$가 됩니다." TitleColor="YellowOrange" TitleLineBreak="false" LineBreak="false" Text=""/>
 			</SubText>
 		</class>
-		<class name="Civil2" Category="UnitState" SubCategory="CivilState" Order="507" Base_Title="구조 요청하는 시민" AutoScript="None" AttachClass="" Base_Content="$HelpCivil$은 근처에 다가가 주위의 안전을 확보하면 스스로 도망칩니다." Content_Mission="" Content_End="" HelpCivil="$Img_Help$ $Civil_Help$"/>
-		<class name="FindUnrestCivil" Category="UnitState" SubCategory="CivilState" Order="508" Base_Title="불안한 시민" Checker="HelpChecker_GuideTrigger" AutoScript="GetHelpContent_BuffAdd_Civil_Unrest" AttachClass="StableCivil" Base_Content="$UnrestCivil$은 위험에 대한 공포로 인해 스스로 도망을 치지 못합니다.
+		<class name="BattleFormula_ItemAcquired" Category="BattleFormula" SubCategory="BattleFormula" Order="505" Base_Title="아이템 획득 확률 계산하기" AutoScript="GetHelpContent_SubText" AttachClass="" Base_Content="트러블슈터에 적용되는 아이템 획득 확률 계산식은 아래와 같습니다." Content_Mission="" Content_End="">
+			<SubText>
+				<property Type="None" Title="트러블슈터의 모든 전리품은 기본적으로 전투 불능 대상으로 얻을 수 있는 전리품 중 $/$1$/$개를 가져올 수 있습니다." TitleColor="Yellow" TitleLineBreak="false" LineBreak="false" Text=""/>
+				<property Type="None" Title="또한 대상으로부터 획득할 수 있는 모든 전리품의 개별 획득 확률의 합이 $/$100%$/$를 초과할 경우 아래와 같이 보정 처리됩니다." TitleColor="Yellow" TitleLineBreak="false" LineBreak="true" Text=""/>
+				<property Type="None" Title="이해를 돕기 위해 보물 사냥꾼과 알리바바 두 특성을 가지고 아이템 획득 관계를 설명하겠습니다." TitleColor="Perano" TitleLineBreak="false" LineBreak="true" Text=""/>
+				<property Type="None" Title="예>" TitleColor="Yellow" TitleLineBreak="false" LineBreak="false" Text=""/>
+				<property Type="None" Title="대상의 각 아이템의 획득 확률" TitleColor="Yellow" TitleLineBreak="true" LineBreak="true" Text="A (고급, 5.5%), B (고급, 5.5%), C (고급, 5.5%), D (고급, 5.5%), E (일반, 5.85%), F (일반, 5.85%)"/>
+				<property Type="None" Title="특성에 따른 보너스 가중치 - 보물 사냥꾼 " TitleColor="Yellow" TitleLineBreak="true" LineBreak="true" Text="모든 아이템 획득률 100% 증가"/>
+				<property Type="None" Title="특성에 따른 보너스 가중치 - 알리바바" TitleColor="Yellow" TitleLineBreak="true" LineBreak="true" Text="고급 이상 아이템의 획득률 200% 증가"/>
+				<property Type="AlphabetNumbering" Title="기본 상태" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="A (고급, 5.5%), B (고급, 5.5%), C (고급, 5.5%), D (고급, 5.5%), E (일반, 5.85%), F (일반, 5.85%)"/>
+				<property Type="None" Title="현재 아이템 획득 확률" TitleColor="Cream" TitleLineBreak="true" LineBreak="false" Text="5.5% + 5.5% + 5.5% + 5.5% + 5.85% + 5.85% = 33.7%"/>
+				<property Type="None" Title="현재 A 아이템 획득 확률" TitleColor="Cream" TitleLineBreak="true" LineBreak="true" Text="5.5%"/>
+				<property Type="AlphabetNumbering" Title="보물 사냥꾼 특성 적용 시" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="A (고급, 5.5%), B (고급, 5.5%), C (고급, 5.5%), D (고급, 5.5%), E (일반, 5.85%), F (일반, 5.85%)"/>
+				<property Type="None" Title="현재 아이템 획득 확률" TitleColor="Cream" TitleLineBreak="true" LineBreak="false" Text="11% + 11% + 11% + 11% + 11.7% + 11.7% = 67.4%"/>
+				<property Type="None" Title="현재 A 아이템 획득 확률" TitleColor="Cream" TitleLineBreak="true" LineBreak="true" Text="11%"/>
+				<property Type="AlphabetNumbering" Title="보물 사냥꾼 + 알리바바 특성 적용 시" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="A (고급, 5.5%), B (고급, 5.5%), C (고급, 5.5%), D (고급, 5.5%), E (일반, 5.85%), F (일반, 5.85%)"/>
+				<property Type="None" Title="현재 아이템 획득 확률" TitleColor="Cream" TitleLineBreak="true" LineBreak="false" Text="33% + 33% + 33% + 33% + 11.7% + 11.7% = 155.4%"/>
+				<property Type="None" Title="현재 A 아이템 획득 확률" TitleColor="Cream" TitleLineBreak="true" LineBreak="true" Text="( 100% × 33% ) / 155.4% = 21.235%"/>
+				<property Type="None" Title="$/$C$/$의 경우, 소수점 확률은 버림 처리하므로 아이템을 하나라도 획득할 확률은 $/$100%$/$이며, 획득하는 아이템 중 A 아이템의 획득 확률은 $/$21%$/$가 됩니다." TitleColor="YellowOrange" TitleLineBreak="false" LineBreak="false" Text=""/>
+			</SubText>
+		</class>
+		<class name="BattleFormula_ExpAcquired" Category="BattleFormula" SubCategory="BattleFormula" Order="506" Base_Title="경험치 획득량 계산하기" AutoScript="GetHelpContent_SubText" AttachClass="" Base_Content="공격자가 적을 전투불능으로 만들 때 획득하는 경험치 획득량은 아래와 같습니다." Content_Mission="" Content_End="">
+			<SubText>
+				<property Type="AlphabetNumbering" Title="기본 경험치" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="전투불능 된 적의 최대 체력 / 8"/>
+				<property Type="AlphabetNumbering" Title="특성에 따른 보너스 가중치" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text="회사 특성, 개인 특성에 추가되는 경험치 보너스 가중치 비율을 모두 합산한다."/>
+				<property Type="AlphabetNumbering" Title="미션 권장 레벨과 공격자의 레벨 차이에 따른 보너스 및 패널티" TitleColor="Yellow" TitleLineBreak="false" LineBreak="false" Text=""/>
+				<property Type="None" Title="미션 권장 레벨이 공격자 레벨보다 높은 경우" TitleColor="Cream" TitleLineBreak="true" LineBreak="true" Text="미션 권장 레벨과 레벨 차이 1당 경험치 보너스가 20% 증가합니다."/>
+				<property Type="None" Title="미션 권장 레벨이 공격자 레벨보다 낮은 경우" TitleColor="Cream" TitleLineBreak="true" LineBreak="true" Text="미션 권장 레벨과 레벨 차이 1당 경험치 패널티가 10% 증가합니다."/>
+				<property Type="AlphabetNumbering" Title="공격자와 전투불능 된 적의 레벨 차이에 따른 보너스 및 패널티" TitleColor="Yellow" TitleLineBreak="true" LineBreak="false" Text=" ( 2 × 전투불능 된 적의 레벨 ) / ( 전투불능 된 적의 레벨 + 공격자 레벨 )"/>
+				<property Type="AlphabetNumbering" Title="전투불능 된 적의 등급에 따른 경험치 배율" TitleColor="Yellow" TitleLineBreak="false" LineBreak="false" Text=""/>
+				<property Type="None" Title="일반" TitleColor="Cream" TitleLineBreak="false" LineBreak="false" Text="1"/>
+				<property Type="None" Title="정예" TitleColor="Cream" TitleLineBreak="false" LineBreak="false" Text="1.25"/>
+				<property Type="None" Title="영웅" TitleColor="Cream" TitleLineBreak="false" LineBreak="false" Text="1.5"/>
+				<property Type="None" Title="전설" TitleColor="Cream" TitleLineBreak="false" LineBreak="true" Text="2"/>
+				<property Type="AlphabetNumbering" Title="최종 경험치" TitleColor="Yellow" TitleLineBreak="true" LineBreak="true" Text="A × ( B + C ) × D × E"/>
+				<property Type="None" Title="예>" TitleColor="Yellow" TitleLineBreak="false" LineBreak="false" Text=""/>
+				<property Type="None" Title="미션 권장 레벨" TitleColor="Cream" TitleLineBreak="false" LineBreak="false" Text="20"/>
+				<property Type="None" Title="공격자 최대 체력" TitleColor="Cream" TitleLineBreak="false" LineBreak="false" Text="800"/>
+				<property Type="None" Title="공격자 레벨" TitleColor="Cream" TitleLineBreak="false" LineBreak="false" Text="25"/>
+				<property Type="None" Title="전투불능 된 적 레벨" TitleColor="Cream" TitleLineBreak="false" LineBreak="false" Text="24"/>
+				<property Type="None" Title="전투불능 된 적 등급" TitleColor="Cream" TitleLineBreak="false" LineBreak="false" Text="영웅(1.5)"/>
+				<property Type="None" Title="경험치 증가 특성" TitleColor="Cream" TitleLineBreak="false" LineBreak="true" Text="학습(30%) + 이해(50%) + 통찰(70%)"/>
+				<property Type="None" Title="최종 경험치량." TitleColor="Cream" TitleLineBreak="true" LineBreak="true" Text="( 800 / 8 ) × ( 30 + 50 + 70 + ( 20 - 25 ) × 10  ) / 100 * ( 2 × 24 ) / ( 24 + 25 ) × 1.5 = 146.938"/>
+				<property Type="None" Title="소수점은 버림 처리하므로 최종 경험치량은 $/$146$/$이 됩니다." TitleColor="YellowOrange" TitleLineBreak="false" LineBreak="true" Text=""/>
+				<property Type="None" Title="$OverKill$, $PerfectKill$ 보너스의 경우 최종 경험치의 $/$100%$/$를 추가로 제공합니다. 따라서 두 효과가 적용되면 최종 경험치량은 $/$438$/$이 됩니다." TitleColor="YellowOrange" TitleLineBreak="false" LineBreak="false" Text=""/>
+			</SubText>
+		</class>
+		<class name="BattleFormula_ExpDistribute" Category="BattleFormula" SubCategory="BattleFormula" Order="507" Base_Title="경험치 분배하기" AutoScript="GetHelpContent_SubText" AttachClass="" Base_Content="아군이 적을 전투불능으로 만들어 경험치를 분배할 때, 아군에게 분배되는 경험치량은 아래와 같습니다." Content_Mission="" Content_End="">
+			<SubText>
+				<property Type="AlphabetNumbering" Title="공격자가 플레이어 회사 소속의 캐릭터인 경우" TitleColor="Yellow" TitleLineBreak="false" LineBreak="false" Text=""/>
+				<property Type="None" Title="전투불능으로 획득한 경험치" TitleColor="Cream" TitleLineBreak="true" LineBreak="false" Text="공격자가 경험치를 획득한다."/>
+				<property Type="None" Title="협력 경험치" TitleColor="Cream" TitleLineBreak="true" LineBreak="true" Text="플레이어의 회사 소속 구성원들은 공격자가 획득한 경험치의 $/$33%$/$만큼 추가 경험치를 획득한다."/>
+				<property Type="AlphabetNumbering" Title="공격자가 플레이어 회사 소속이 아닌 캐릭터인 경우" TitleColor="Yellow" TitleLineBreak="false" LineBreak="false" Text=""/>
+				<property Type="None" Title="전투불능으로 획득한 경험치" TitleColor="Cream" TitleLineBreak="true" LineBreak="false" Text="공격자가 얻은 경험치를 임무에 참여한 플레이어 회사 소속의 캐릭터들에게 균등 분배됩니다."/>
+				<property Type="None" Title="협력 경험치" TitleColor="Cream" TitleLineBreak="true" LineBreak="true" Text="플레이어의 회사 소속 구성원들은 공격자가 획득한 경험치의 $/$33%$/$만큼 추가 경험치를 획득한다."/>
+				<property Type="AlphabetNumbering" Title="공격자가 중립 NPC인 경우" TitleColor="Yellow" TitleLineBreak="false" LineBreak="false" Text=""/>
+				<property Type="None" Title="전투불능으로 획득한 경험치" TitleColor="Cream" TitleLineBreak="true" LineBreak="false" Text="공격자가 얻은 경험치는 소실됩니다."/>
+				<property Type="None" Title="협력 경험치" TitleColor="Cream" TitleLineBreak="true" LineBreak="false" Text="협력 경험치를 획득할 수 없습니다."/>
+			</SubText>
+		</class>
+		<class name="Civil2" Category="UnitState" SubCategory="CivilState" Order="601" Base_Title="구조 요청하는 시민" AutoScript="None" AttachClass="" Base_Content="$HelpCivil$은 근처에 다가가 주위의 안전을 확보하면 스스로 도망칩니다." Content_Mission="" Content_End="" HelpCivil="$Img_Help$ $Civil_Help$"/>
+		<class name="FindUnrestCivil" Category="UnitState" SubCategory="CivilState" Order="602" Base_Title="불안한 시민" Checker="HelpChecker_GuideTrigger" AutoScript="GetHelpContent_BuffAdd_Civil_Unrest" AttachClass="StableCivil" Base_Content="$UnrestCivil$은 위험에 대한 공포로 인해 스스로 도망을 치지 못합니다.
 
 $UnrestCivil$에게 다가가면 $Ability_Comfort$ 어빌리티가 활성화 됩니다.
 
 $Ability_Comfort$ 어빌리티를 사용하여 $UnrestCivil$을 진정시키면  $StableCivil$이 됩니다." Content_Mission="$StableCivil$은 $Amount$턴 동안 플레이어가 조작할 수 있으며 맵 상에 위치한 $EscapeArea$까지 이동시켜야 구조가 완료됩니다.
 
 안정된 상태가 해제되면 다시 $UnrestCivil$으로 되돌아갑니다." Content_End="" Amount="3" UnrestCivil="$Img_Unrest$ $Civil_Unrest$" StableCivil="$Img_Stable$ $Civil_Stable$"/>
-		<class name="StableCivil" Category="UnitState" SubCategory="CivilState" Order="509" Base_Title="안정된 시민" AutoScript="GetHelpContent_BuffAdd_Civil_Stabilized" AttachClass="" Base_Content="$StableCivil$은 맵 상에 위치한 $EscapeArea$까지 이동시켜야 구조가 완료됩니다." Content_Mission="" Content_End="" StableCivil="$Img_Stable$ $Civil_Stable$"/>
-		<class name="FindInjuredCivil" Category="UnitState" SubCategory="CivilState" Order="511" Base_Title="부상 당한 시민" Checker="HelpChecker_GuideTrigger" AutoScript="GetHelpContent_BuffAdd_InjuredRescue" AttachClass="" Base_Content="$InjuredCivil$은 부상으로 실신한 시민입니다. 해당 시민을 구출하기 위해서는 해당 대상의 체력을 회복시켜야 합니다." Content_Mission="" Content_End="" InjuredCivil="$Img_Injured$ $Civil_Injured$"/>
-		<class name="FindConfusedCivil" Category="UnitState" SubCategory="CivilState" Order="512" Base_Title="혼란에 빠진 시민" Checker="HelpChecker_GuideTrigger" AutoScript="GetHelpContent_BuffAdd_Civil_Confusion" AttachClass="" Base_Content="$ConfusedCivil$은 공포에 질려 도망가는 시민입니다." Content_Mission="" Content_End="" ConfusedCivil="$Img_Confused$ $Civil_Confused$"/>
-		<class name="FindChildCivil" Category="UnitState" SubCategory="CivilState" Order="513" Base_Title="아이" Checker="HelpChecker_GuideTrigger" AutoScript="GetHelpContent_BuffAdd_Civil_Child_Rescue" AttachClass="" Base_Content="$ChildCivil$는 근처에 다가가 주위의 안전을 확보하면 스스로 도망칩니다." Content_Mission="" Content_End="" ChildCivil="$Img_Unrest$ $Civil_Child$"/>
-		<class name="FindVIP" Category="UnitState" SubCategory="CivilState" Order="514" Base_Title="VIP" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="PowerOn" Category="UnitState" SubCategory="InteractionObject" Order="518" Base_Title="전원 장치" Checker="HelpChecker_Silverlining" AutoScript="GetHelpContent_BuffAdd_Blackout" AttachClass="" Base_Content="전원 장치의 전원을 내리면 실내 공간의 유닛들은 $Buff_Blackout$ 상태가 됩니다." Content_Mission="" Content_End="" Image="SystemGuide_PowerOn"/>
-		<class name="FindChest" Category="UnitState" SubCategory="InteractionObject" Order="519" Base_Title="상자" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="임무 수행 중 발견되는 상자에는 다양한 아이템이 들어있습니다. 상자를 열기 위해서는 근접하여 $Ability_InvestigateChest$ 어빌리티를 사용해야 합니다." Content_Mission="" Content_End=""/>
-		<class name="FindPsionicStone" Category="UnitState" SubCategory="InteractionObject" Order="520" Base_Title="이능석" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="임무 수행 중 발견되는 $ItemType_Extractor$의 에너지를 추출하여 $ItemCraft$에 필요한 재료를 획득할 수 있습니다.
+		<class name="StableCivil" Category="UnitState" SubCategory="CivilState" Order="603" Base_Title="안정된 시민" AutoScript="GetHelpContent_BuffAdd_Civil_Stabilized" AttachClass="" Base_Content="$StableCivil$은 맵 상에 위치한 $EscapeArea$까지 이동시켜야 구조가 완료됩니다." Content_Mission="" Content_End="" StableCivil="$Img_Stable$ $Civil_Stable$"/>
+		<class name="FindInjuredCivil" Category="UnitState" SubCategory="CivilState" Order="604" Base_Title="부상 당한 시민" Checker="HelpChecker_GuideTrigger" AutoScript="GetHelpContent_BuffAdd_InjuredRescue" AttachClass="" Base_Content="$InjuredCivil$은 부상으로 실신한 시민입니다. 해당 시민을 구출하기 위해서는 해당 대상의 체력을 회복시켜야 합니다." Content_Mission="" Content_End="" InjuredCivil="$Img_Injured$ $Civil_Injured$"/>
+		<class name="FindConfusedCivil" Category="UnitState" SubCategory="CivilState" Order="605" Base_Title="혼란에 빠진 시민" Checker="HelpChecker_GuideTrigger" AutoScript="GetHelpContent_BuffAdd_Civil_Confusion" AttachClass="" Base_Content="$ConfusedCivil$은 공포에 질려 도망가는 시민입니다." Content_Mission="" Content_End="" ConfusedCivil="$Img_Confused$ $Civil_Confused$"/>
+		<class name="FindChildCivil" Category="UnitState" SubCategory="CivilState" Order="606" Base_Title="아이" Checker="HelpChecker_GuideTrigger" AutoScript="GetHelpContent_BuffAdd_Civil_Child_Rescue" AttachClass="" Base_Content="$ChildCivil$는 근처에 다가가 주위의 안전을 확보하면 스스로 도망칩니다." Content_Mission="" Content_End="" ChildCivil="$Img_Unrest$ $Civil_Child$"/>
+		<class name="FindVIP" Category="UnitState" SubCategory="CivilState" Order="607" Base_Title="VIP" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="PowerOn" Category="UnitState" SubCategory="InteractionObject" Order="608" Base_Title="전원 장치" Checker="HelpChecker_Silverlining" AutoScript="GetHelpContent_BuffAdd_Blackout" AttachClass="" Base_Content="전원 장치의 전원을 내리면 실내 공간의 유닛들은 $Buff_Blackout$ 상태가 됩니다." Content_Mission="" Content_End="" Image="SystemGuide_PowerOn"/>
+		<class name="FindChest" Category="UnitState" SubCategory="InteractionObject" Order="609" Base_Title="상자" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="임무 수행 중 발견되는 상자에는 다양한 아이템이 들어있습니다. 상자를 열기 위해서는 근접하여 $Ability_InvestigateChest$ 어빌리티를 사용해야 합니다." Content_Mission="" Content_End=""/>
+		<class name="FindPsionicStone" Category="UnitState" SubCategory="InteractionObject" Order="610" Base_Title="이능석" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="임무 수행 중 발견되는 $ItemType_Extractor$의 에너지를 추출하여 $ItemCraft$에 필요한 재료를 획득할 수 있습니다.
 
 $ItemType_Extractor$의 에너지를 추출하기 위해서는 근접하여 $Ability_InvestPsiStone$ 어빌리티를 사용해야 합니다.
 
 $Ability_InvestPsiStone$ 어빌리티는 $Item_Extractor$를 장비하고 있어야 활성화 됩니다." Content_Mission="" Content_End=""/>
-		<class name="JammingMachine" Category="UnitState" SubCategory="IllegalityObject" Order="521" Base_Title="전파 방해기" Checker="HelpChecker_Silverlining" AutoScript="None" AttachClass="" Base_Content="전파 방해기는 해당 지역의 무선 통신을 방해하는 $IllegalObject$입니다." Content_Mission="" Content_End="발할라 경찰청에서는 해당 설치물을 파괴할 때마다 철거 비용을 추가로 지원하고 있습니다."/>
-		<class name="FindElectricCharger" Category="UnitState" SubCategory="DangerObject" Order="522" Base_Title="전기차 충전기" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="전기차 충전기는 공격 가능한 위험물 오브젝트입니다. 해당 오브젝트가 파괴되면 주위 반경 3 타일에 화염 피해를 입힙니다." Content_Mission="" Content_End="얼음 속성 피해를 입으면 폭발하지 않습니다."/>
-		<class name="FindOilingMachine" Category="UnitState" SubCategory="DangerObject" Order="523" Base_Title="가스 주유기" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="가스 주유기는 공격 가능한 위험물 오브젝트입니다. 해당 오브젝트가 파괴되면 주위 반경 4 타일에 화염 피해를 입힙니다." Content_Mission="" Content_End="얼음 속성 피해를 입으면 폭발하지 않습니다."/>
-		<class name="FindToxicSubstance" Category="UnitState" SubCategory="DangerObject" Order="524" Base_Title="유독물 탱크" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="유독물 탱크는 공격 가능한 위험물 오브젝트입니다. 해당 오브젝트가 파괴되면 주위 반경 4 타일에 화염 피해를 입힙니다. 또한 피격을 입으면 6 타일에 유독 가스가 퍼져나갑니다." Content_Mission="" Content_End="얼음 속성 피해를 입으면 폭발하지 않습니다."/>
-		<class name="FindInjuredRageCivil" Category="UnitState" SubCategory="CivilState" Order="525" Base_Title="원망하는 시민" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="아군 유닛의 공격으로 피해를 입은 시민은 $InjuredRageCivil$이 됩니다. 해당 시민이 원망 상태에서 벗어날 때까지 미션 진행중 구조할 수 없으며 미션 종료시까지 생존할 경우 구조된 시민으로 처리됩니다." Content_Mission="" Content_End="" InjuredRageCivil="$Img_InjuredRage$ $Civil_InjuredRage$"/>
-		<class name="Stand" Category="BattleState" SubCategory="EnemyState" Order="606" Base_Title="대기" AutoScript="GetHelpContent_EnemyState_Stand" AttachClass="" Base_Content="" Content_Mission="[colour=&apos;FFFF5943&apos;]적 시야 범위내 진입하면 주위의 적이 모두 전투 상태로 들어갑니다. 언제나 주의하시길 바랍니다." Content_End=""/>
-		<class name="FindPatrol" Category="BattleState" SubCategory="EnemyState" Order="607" Base_Title="순찰" Checker="HelpChecker_GuideTrigger" AutoScript="GetHelpContent_EnemyState_Patrol" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="FindDetecting" Category="BattleState" SubCategory="EnemyState" Order="608" Base_Title="감시" Checker="HelpChecker_GuideTrigger" AutoScript="GetHelpContent_EnemyState_Detecting" AttachClass="" Base_Content="" Content_Mission="경계심 단계 상승
+		<class name="JammingMachine" Category="UnitState" SubCategory="IllegalityObject" Order="611" Base_Title="전파 방해기" Checker="HelpChecker_Silverlining" AutoScript="None" AttachClass="" Base_Content="전파 방해기는 해당 지역의 무선 통신을 방해하는 $IllegalObject$입니다." Content_Mission="" Content_End="발할라 경찰청에서는 해당 설치물을 파괴할 때마다 철거 비용을 추가로 지원하고 있습니다."/>
+		<class name="FindElectricCharger" Category="UnitState" SubCategory="DangerObject" Order="612" Base_Title="전기차 충전기" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="전기차 충전기는 공격 가능한 위험물 오브젝트입니다. 해당 오브젝트가 파괴되면 주위 반경 3 타일에 화염 피해를 입힙니다." Content_Mission="" Content_End="얼음 속성 피해를 입으면 폭발하지 않습니다."/>
+		<class name="FindOilingMachine" Category="UnitState" SubCategory="DangerObject" Order="613" Base_Title="가스 주유기" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="가스 주유기는 공격 가능한 위험물 오브젝트입니다. 해당 오브젝트가 파괴되면 주위 반경 4 타일에 화염 피해를 입힙니다." Content_Mission="" Content_End="얼음 속성 피해를 입으면 폭발하지 않습니다."/>
+		<class name="FindToxicSubstance" Category="UnitState" SubCategory="DangerObject" Order="614" Base_Title="유독물 탱크" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="유독물 탱크는 공격 가능한 위험물 오브젝트입니다. 해당 오브젝트가 파괴되면 주위 반경 4 타일에 화염 피해를 입힙니다. 또한 피격을 입으면 6 타일에 유독 가스가 퍼져나갑니다." Content_Mission="" Content_End="얼음 속성 피해를 입으면 폭발하지 않습니다."/>
+		<class name="FindInjuredRageCivil" Category="UnitState" SubCategory="CivilState" Order="615" Base_Title="원망하는 시민" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="아군 유닛의 공격으로 피해를 입은 시민은 $InjuredRageCivil$이 됩니다. 해당 시민이 원망 상태에서 벗어날 때까지 미션 진행중 구조할 수 없으며 미션 종료시까지 생존할 경우 구조된 시민으로 처리됩니다." Content_Mission="" Content_End="" InjuredRageCivil="$Img_InjuredRage$ $Civil_InjuredRage$"/>
+		<class name="Stand" Category="BattleState" SubCategory="EnemyState" Order="701" Base_Title="대기" AutoScript="GetHelpContent_EnemyState_Stand" AttachClass="" Base_Content="" Content_Mission="[colour=&apos;FFFF5943&apos;]적 시야 범위내 진입하면 주위의 적이 모두 전투 상태로 들어갑니다. 언제나 주의하시길 바랍니다." Content_End=""/>
+		<class name="FindPatrol" Category="BattleState" SubCategory="EnemyState" Order="702" Base_Title="순찰" Checker="HelpChecker_GuideTrigger" AutoScript="GetHelpContent_EnemyState_Patrol" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="FindDetecting" Category="BattleState" SubCategory="EnemyState" Order="703" Base_Title="감시" Checker="HelpChecker_GuideTrigger" AutoScript="GetHelpContent_EnemyState_Detecting" AttachClass="" Base_Content="" Content_Mission="경계심 단계 상승
 $StandState$ 상태의 아군을 $PatrolState$ 상태로 변경시키며, $PatrolState$ 상태의 아군은 $BattleState$로 변경시킵니다." Content_End="" StandState="$Img_SightAlert1$ $Stand$" PatrolState="$Img_SightAlert2$ $Patrol$"/>
-		<class name="AngerKillCivil" Category="BattleState" SubCategory="EnemyState" Order="609" Base_Title="화남" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="$Buff_Anger$ 상태의 적은 시야 내 공격 가능한 적대하는 세력의 유닛이 없는 경우, 화풀이 대상으로 시민을 공격합니다.
+		<class name="AngerKillCivil" Category="BattleState" SubCategory="EnemyState" Order="704" Base_Title="화남" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="$Buff_Anger$ 상태의 적은 시야 내 공격 가능한 적대하는 세력의 유닛이 없는 경우, 화풀이 대상으로 시민을 공격합니다.
 
 $Note$화남 상태의 적이 시민을 공격하지 않게 하려면 시민으로부터 반경 4 타일 안에 아군이 위치해야 하며 적 시야에 노출되어야 합니다." Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupRage" Category="BattleState" SubCategory="Buff" Order="610" Base_Title="분노" AutoScript="GetBattleFormulaContent_BuffGroupRage" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupLuck" Category="BattleState" SubCategory="Buff" Order="611" Base_Title="행운" AutoScript="GetBattleFormulaContent_BuffGroupLuck" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupHappiness" Category="BattleState" SubCategory="Buff" Order="612" Base_Title="격앙" AutoScript="GetBattleFormulaContent_BuffGroupHappiness" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupConcentration" Category="BattleState" SubCategory="Buff" Order="613" Base_Title="집중" AutoScript="GetBattleFormulaContent_BuffGroupConcentration" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupInfo" Category="BattleState" SubCategory="Buff" Order="614" Base_Title="정보" AutoScript="GetBattleFormulaContent_BuffGroupInfo" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupHoly" Category="BattleState" SubCategory="Buff" Order="615" Base_Title="신성" AutoScript="GetBattleFormulaContent_BuffGroupHoly" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupSmell" Category="BattleState" SubCategory="Buff" Order="616" Base_Title="향" AutoScript="GetBattleFormulaContent_BuffGroupSmell" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupFire" Category="BattleState" SubCategory="Buff" Order="617" Base_Title="화염" AutoScript="GetBattleFormulaContent_BuffGroupFire" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupIce" Category="BattleState" SubCategory="Buff" Order="618" Base_Title="얼음" AutoScript="GetBattleFormulaContent_BuffGroupIce" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupWind" Category="BattleState" SubCategory="Buff" Order="619" Base_Title="바람" AutoScript="GetBattleFormulaContent_BuffGroupWind" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupEarth" Category="BattleState" SubCategory="Buff" Order="620" Base_Title="대지" AutoScript="GetBattleFormulaContent_BuffGroupEarth" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupLightning" Category="BattleState" SubCategory="Buff" Order="621" Base_Title="번개" AutoScript="GetBattleFormulaContent_BuffGroupLightning" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupWater" Category="BattleState" SubCategory="Buff" Order="622" Base_Title="물" AutoScript="GetBattleFormulaContent_BuffGroupWater" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupRage2" Category="BattleState" SubCategory="Debuff" Order="623" Base_Title="분노" AutoScript="GetBattleFormulaContent_BuffGroupRage2" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupConcentration2" Category="BattleState" SubCategory="Debuff" Order="624" Base_Title="집중" AutoScript="GetBattleFormulaContent_BuffGroupConcentration2" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupInfo2" Category="BattleState" SubCategory="Debuff" Order="625" Base_Title="정보" AutoScript="GetBattleFormulaContent_BuffGroupInfo2" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupBleeding" Category="BattleState" SubCategory="Debuff" Order="626" Base_Title="출혈" AutoScript="GetBattleFormulaContent_BuffGroupBleeding" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupBruise" Category="BattleState" SubCategory="Debuff" Order="627" Base_Title="타박상" AutoScript="GetBattleFormulaContent_BuffGroupBruise" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupDisease" Category="BattleState" SubCategory="Debuff" Order="628" Base_Title="질병" AutoScript="GetBattleFormulaContent_BuffGroupDisease" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupSilence" Category="BattleState" SubCategory="Debuff" Order="629" Base_Title="침묵" AutoScript="GetBattleFormulaContent_BuffGroupSilence" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupFaint" Category="BattleState" SubCategory="Debuff" Order="630" Base_Title="기절" AutoScript="GetBattleFormulaContent_BuffGroupFaint" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupPoison" Category="BattleState" SubCategory="Debuff" Order="631" Base_Title="중독" AutoScript="GetBattleFormulaContent_BuffGroupPoison" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupLight" Category="BattleState" SubCategory="Debuff" Order="632" Base_Title="섬광" AutoScript="GetBattleFormulaContent_BuffGroupLight" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupPanic" Category="BattleState" SubCategory="Debuff" Order="633" Base_Title="공황" AutoScript="GetBattleFormulaContent_BuffGroupPanic" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupSleep" Category="BattleState" SubCategory="Debuff" Order="634" Base_Title="수면" AutoScript="GetBattleFormulaContent_BuffGroupSleep" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupNoise" Category="BattleState" SubCategory="Debuff" Order="635" Base_Title="소음" AutoScript="GetBattleFormulaContent_BuffGroupNoise" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupSmell2" Category="BattleState" SubCategory="Debuff" Order="636" Base_Title="향" AutoScript="GetBattleFormulaContent_BuffGroupSmell2" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupEquipment2" Category="BattleState" SubCategory="Debuff" Order="637" Base_Title="장비" AutoScript="GetBattleFormulaContent_BuffGroupEquipment2" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupFire2" Category="BattleState" SubCategory="Debuff" Order="638" Base_Title="화염" AutoScript="GetBattleFormulaContent_BuffGroupFire2" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupIce2" Category="BattleState" SubCategory="Debuff" Order="639" Base_Title="얼음" AutoScript="GetBattleFormulaContent_BuffGroupIce2" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupWind2" Category="BattleState" SubCategory="Debuff" Order="640" Base_Title="바람" AutoScript="GetBattleFormulaContent_BuffGroupWind2" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupEarth2" Category="BattleState" SubCategory="Debuff" Order="641" Base_Title="대지" AutoScript="GetBattleFormulaContent_BuffGroupEarth2" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupLightning2" Category="BattleState" SubCategory="Debuff" Order="642" Base_Title="번개" AutoScript="GetBattleFormulaContent_BuffGroupLightning2" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleFormula_BuffGroupWater2" Category="BattleState" SubCategory="Debuff" Order="643" Base_Title="물" AutoScript="GetBattleFormulaContent_BuffGroupWater2" AttachClass="" Content_Mission="" Content_End=""/>
-		<class name="BattleEntrust" Category="Convenience" SubCategory="None" Order="804" Base_Title="자동 위임 기능" AutoScript="GetHelpContent_BattleEntrust" AttachClass="" Base_Content="지휘권을 이양 받은 경찰 병력들은 좌하단 위임 명령 패널을 통하여 직접 조정하지 않고 위임 시킬 수 있습니다." Content_Mission="" Content_End="내려진 명령 내 더 이상 유효한 행동이 없으면 명령을 받은 캐릭터는 계속 대기를 하게 되므로 주의하시길 바랍니다."/>
-		<class name="UDPConnection" Category="Convenience" SubCategory="None" Order="806" Base_Title="UDP 커넥션 사용" AutoScript="None" AttachClass="" Base_Content="네트워크 상태가 불안정한 플레이어 분은 '인터페이스/UDP 커넥션 사용' 옵션을 사용하시면 완화가능합니다. 다만 게임 진행상 불안정한 상황이 존재할 수 있습니다." Content_Mission="" Content_End=""/>
-		<class name="GiselleHunterBeastFound" Category="Contents" SubCategory="Beast" Order="904" Base_Title="길들이기" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="$MonGrade_Epic$ 등급 이하의 적 야수는 $Job_Hunter$ 클래스의 $Ability_Tame$ 어빌리티를 사용해서 길들일 수 있습니다. $Ability_Tame$ 어빌리티를 사용하면 대상 야수의 현재 체력의 $Percent$만큼 턴 대기 시간 동안 다른 행동을 할 수 없습니다." Content_Mission="" Content_End="" Percent="10%"/>
-		<class name="GiselleHunterTamingSucceeded" Category="Contents" SubCategory="Beast" Order="905" Base_Title="길들이기 성공" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="$Ability_Tame$에 성공한 야수는 $Ability_UnsummonBeast$ 어빌리티로 소환을 해제하거나, $Ability_SummonBeast$ 어빌리티로 다시 소환할 수 있습니다. 야수의 충성도는 같이 참여한 전투 결과에 따라 증가하거나 감소합니다.
+		<class name="BattleFormula_BuffGroupRage" Category="BattleState" SubCategory="Buff" Order="705" Base_Title="분노" AutoScript="GetBattleFormulaContent_BuffGroupRage" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupLuck" Category="BattleState" SubCategory="Buff" Order="706" Base_Title="행운" AutoScript="GetBattleFormulaContent_BuffGroupLuck" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupHappiness" Category="BattleState" SubCategory="Buff" Order="707" Base_Title="격앙" AutoScript="GetBattleFormulaContent_BuffGroupHappiness" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupConcentration" Category="BattleState" SubCategory="Buff" Order="708" Base_Title="집중" AutoScript="GetBattleFormulaContent_BuffGroupConcentration" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupInfo" Category="BattleState" SubCategory="Buff" Order="709" Base_Title="정보" AutoScript="GetBattleFormulaContent_BuffGroupInfo" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupHoly" Category="BattleState" SubCategory="Buff" Order="710" Base_Title="신성" AutoScript="GetBattleFormulaContent_BuffGroupHoly" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupSmell" Category="BattleState" SubCategory="Buff" Order="711" Base_Title="향" AutoScript="GetBattleFormulaContent_BuffGroupSmell" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupFire" Category="BattleState" SubCategory="Buff" Order="712" Base_Title="화염" AutoScript="GetBattleFormulaContent_BuffGroupFire" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupIce" Category="BattleState" SubCategory="Buff" Order="713" Base_Title="얼음" AutoScript="GetBattleFormulaContent_BuffGroupIce" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupWind" Category="BattleState" SubCategory="Buff" Order="714" Base_Title="바람" AutoScript="GetBattleFormulaContent_BuffGroupWind" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupEarth" Category="BattleState" SubCategory="Buff" Order="715" Base_Title="대지" AutoScript="GetBattleFormulaContent_BuffGroupEarth" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupLightning" Category="BattleState" SubCategory="Buff" Order="716" Base_Title="번개" AutoScript="GetBattleFormulaContent_BuffGroupLightning" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupWater" Category="BattleState" SubCategory="Buff" Order="717" Base_Title="물" AutoScript="GetBattleFormulaContent_BuffGroupWater" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupRage2" Category="BattleState" SubCategory="Debuff" Order="718" Base_Title="분노" AutoScript="GetBattleFormulaContent_BuffGroupRage2" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupConcentration2" Category="BattleState" SubCategory="Debuff" Order="719" Base_Title="집중" AutoScript="GetBattleFormulaContent_BuffGroupConcentration2" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupInfo2" Category="BattleState" SubCategory="Debuff" Order="720" Base_Title="정보" AutoScript="GetBattleFormulaContent_BuffGroupInfo2" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupBleeding" Category="BattleState" SubCategory="Debuff" Order="721" Base_Title="출혈" AutoScript="GetBattleFormulaContent_BuffGroupBleeding" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupBruise" Category="BattleState" SubCategory="Debuff" Order="722" Base_Title="타박상" AutoScript="GetBattleFormulaContent_BuffGroupBruise" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupDisease" Category="BattleState" SubCategory="Debuff" Order="723" Base_Title="질병" AutoScript="GetBattleFormulaContent_BuffGroupDisease" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupSilence" Category="BattleState" SubCategory="Debuff" Order="724" Base_Title="침묵" AutoScript="GetBattleFormulaContent_BuffGroupSilence" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupFaint" Category="BattleState" SubCategory="Debuff" Order="725" Base_Title="기절" AutoScript="GetBattleFormulaContent_BuffGroupFaint" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupPoison" Category="BattleState" SubCategory="Debuff" Order="726" Base_Title="중독" AutoScript="GetBattleFormulaContent_BuffGroupPoison" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupLight" Category="BattleState" SubCategory="Debuff" Order="727" Base_Title="섬광" AutoScript="GetBattleFormulaContent_BuffGroupLight" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupPanic" Category="BattleState" SubCategory="Debuff" Order="728" Base_Title="공황" AutoScript="GetBattleFormulaContent_BuffGroupPanic" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupSleep" Category="BattleState" SubCategory="Debuff" Order="729" Base_Title="수면" AutoScript="GetBattleFormulaContent_BuffGroupSleep" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupNoise" Category="BattleState" SubCategory="Debuff" Order="730" Base_Title="소음" AutoScript="GetBattleFormulaContent_BuffGroupNoise" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupSmell2" Category="BattleState" SubCategory="Debuff" Order="731" Base_Title="향" AutoScript="GetBattleFormulaContent_BuffGroupSmell2" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupEquipment2" Category="BattleState" SubCategory="Debuff" Order="732" Base_Title="장비" AutoScript="GetBattleFormulaContent_BuffGroupEquipment2" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupFire2" Category="BattleState" SubCategory="Debuff" Order="733" Base_Title="화염" AutoScript="GetBattleFormulaContent_BuffGroupFire2" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupIce2" Category="BattleState" SubCategory="Debuff" Order="734" Base_Title="얼음" AutoScript="GetBattleFormulaContent_BuffGroupIce2" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupWind2" Category="BattleState" SubCategory="Debuff" Order="735" Base_Title="바람" AutoScript="GetBattleFormulaContent_BuffGroupWind2" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupEarth2" Category="BattleState" SubCategory="Debuff" Order="736" Base_Title="대지" AutoScript="GetBattleFormulaContent_BuffGroupEarth2" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupLightning2" Category="BattleState" SubCategory="Debuff" Order="737" Base_Title="번개" AutoScript="GetBattleFormulaContent_BuffGroupLightning2" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="BattleFormula_BuffGroupWater2" Category="BattleState" SubCategory="Debuff" Order="738" Base_Title="물" AutoScript="GetBattleFormulaContent_BuffGroupWater2" AttachClass="" Content_Mission="" Content_End=""/>
+		<class name="GiselleHunterBeastFound" Category="Contents" SubCategory="Beast" Order="901" Base_Title="길들이기" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="$MonGrade_Epic$ 등급 이하의 적 야수는 $Job_Hunter$ 클래스의 $Ability_Tame$ 어빌리티를 사용해서 길들일 수 있습니다. $Ability_Tame$ 어빌리티를 사용하면 대상 야수의 현재 체력의 $Percent$만큼 턴 대기 시간 동안 다른 행동을 할 수 없습니다." Content_Mission="" Content_End="" Percent="10%"/>
+		<class name="GiselleHunterTamingSucceeded" Category="Contents" SubCategory="Beast" Order="902" Base_Title="길들이기 성공" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="$Ability_Tame$에 성공한 야수는 $Ability_UnsummonBeast$ 어빌리티로 소환을 해제하거나, $Ability_SummonBeast$ 어빌리티로 다시 소환할 수 있습니다. 야수의 충성도는 같이 참여한 전투 결과에 따라 증가하거나 감소합니다.
 		
 - 미션 종료시까지 야수와 소환자 모두 생존하면 충성도가 $Amount$ 증가합니다.
 - $Ability_UnsummonBeast$ 어빌리티로 소환 해제할 때마다 충성도가 $Amount2$ 감소합니다.
 - 미션 실패 시 전투에 참여했던 모든 야수는 충성도가 $Amount3$ 감소합니다." Content_Mission="" Content_End="" HighlightColor="[colour='FFFFFFFF']" Amount="5" Amount2="1" Amount3="5"/>
-		<class name="GiselleHunterTamingFailed" Category="Contents" SubCategory="Beast" Order="906" Base_Title="길들이기 실패" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="$Ability_Tame$ 어빌리티 사용 도중에 대상 야수가 공격받거나 시야에서 사라지면 실패하게 됩니다." Content_Mission="" Content_End=""/>
-		<class name="EvolutionMasteryTraining" Category="Contents" SubCategory="BeastUniqueMastey" Order="907" Base_Title="훈련" Checker="HelpChecker_BeastOpened" AutoScript="GetHelpContent_EvolutionMastery" AutoScriptArg="Training" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="EvolutionMasteryNature" Category="Contents" SubCategory="BeastUniqueMastey" Order="908" Base_Title="본성" Checker="HelpChecker_BeastOpened" AutoScript="GetHelpContent_EvolutionMastery" AutoScriptArg="Nature" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="EvolutionMasteryGene" Category="Contents" SubCategory="BeastUniqueMastey" Order="909" Base_Title="유전" Checker="HelpChecker_BeastOpened" AutoScript="GetHelpContent_EvolutionMastery" AutoScriptArg="Gene" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
-		<class name="EvolutionMasteryESP" Category="Contents" SubCategory="BeastUniqueMastey" Order="910" Base_Title="초능력" Checker="HelpChecker_BeastOpened" AutoScript="GetHelpContent_EvolutionMastery" AutoScriptArg="ESP" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="GiselleHunterTamingFailed" Category="Contents" SubCategory="Beast" Order="903" Base_Title="길들이기 실패" Checker="HelpChecker_GuideTrigger" AutoScript="None" AttachClass="" Base_Content="$Ability_Tame$ 어빌리티 사용 도중에 대상 야수가 공격받거나 시야에서 사라지면 실패하게 됩니다." Content_Mission="" Content_End=""/>
+		<class name="EvolutionMasteryTraining" Category="Contents" SubCategory="BeastUniqueMastey" Order="904" Base_Title="훈련" Checker="HelpChecker_BeastOpened" AutoScript="GetHelpContent_EvolutionMastery" AutoScriptArg="Training" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="EvolutionMasteryNature" Category="Contents" SubCategory="BeastUniqueMastey" Order="905" Base_Title="본성" Checker="HelpChecker_BeastOpened" AutoScript="GetHelpContent_EvolutionMastery" AutoScriptArg="Nature" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="EvolutionMasteryGene" Category="Contents" SubCategory="BeastUniqueMastey" Order="906" Base_Title="유전" Checker="HelpChecker_BeastOpened" AutoScript="GetHelpContent_EvolutionMastery" AutoScriptArg="Gene" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="EvolutionMasteryESP" Category="Contents" SubCategory="BeastUniqueMastey" Order="907" Base_Title="초능력" Checker="HelpChecker_BeastOpened" AutoScript="GetHelpContent_EvolutionMastery" AutoScriptArg="ESP" AttachClass="" Base_Content="" Content_Mission="" Content_End=""/>
+		<class name="BattleEntrust" Category="Convenience" SubCategory="None" Order="1001" Base_Title="자동 위임 기능" AutoScript="GetHelpContent_BattleEntrust" AttachClass="" Base_Content="지휘권을 이양 받은 경찰 병력들은 좌하단 위임 명령 패널을 통하여 직접 조정하지 않고 위임 시킬 수 있습니다." Content_Mission="" Content_End="내려진 명령 내 더 이상 유효한 행동이 없으면 명령을 받은 캐릭터는 계속 대기를 하게 되므로 주의하시길 바랍니다."/>
+		<class name="UDPConnection" Category="Convenience" SubCategory="None" Order="1002" Base_Title="UDP 커넥션 사용" AutoScript="None" AttachClass="" Base_Content="네트워크 상태가 불안정한 플레이어 분은 '인터페이스/UDP 커넥션 사용' 옵션을 사용하시면 완화가능합니다. 다만 게임 진행상 불안정한 상황이 존재할 수 있습니다." Content_Mission="" Content_End=""/>
+		<class name="ItemProtect" Category="Convenience" SubCategory="None" Order="1003" Base_Title="아이템 보호" AutoScript="None" AttachClass="" Base_Content="아이템을  $KeyText$ 하면 아이템을 보호/해제할 수 있습니다. 보호된 아이템은 상점 판매, 아이템 분해가 되지 않습니다." Content_Mission="" Content_End="" KeyText="$Key_LeftAlt$ + $Key_RightButton$"/>
 		<class name="Overwatch" Category="None" SubCategory="Ability" Order="0" Base_Title="경계" Checker="HelpChecker_Hidden" AutoScript="GetHelpContent_Common" AttachClass="" Base_Content="$Font_Base$$Ability_Overwatch$ 어빌리티는 특성 $Mastery_Overwatch$를 습득한 유닛만이 사용 가능한 어빌리티입니다.
 
 $Ability_Overwatch$를 사용하면 현재 턴은 종료되며, 다음 턴 시작 전까지 기본 공격 가능 범위 내에서 $Move2$ 혹은 $Attack2$ 행동을 하는 첫 번째 적을 발견하면 공격하는 어빌리티입니다." Content_Mission="$Ability_Overwatch$ 어빌리티를 사용하세요." Content_End=""/>

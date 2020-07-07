@@ -216,5 +216,9 @@
 		<class name="StoryEpisode1Ending" APIName="ACH_STORY_EPISODE_1_ENDING"/>
 		<class name="ChallengeWhiteTigerBase" APIName="ACH_CHALLENGE_WHITE_TIGER_BASE"/>
 		<class name="SituationCollectionAll" APIName="ACH_SITUATION_COLLECTION_ALL"/>
+		<class name="TroublemakerBatGold" APIName="ACH_TROUBLEMAKER_BAT_GOLD"/>
+		<class name="TroublemakerFrogGold" APIName="ACH_TROUBLEMAKER_FROG_GOLD"/>
+		<class name="TroublemakerTimaYellow" APIName="ACH_TROUBLEMAKER_TIMA_YELLOW"/>
+		<class name="TroublemakerSpiderBlackWidow4" APIName="ACH_TROUBLEMAKER_SPIDER_BLACK_WIDOW4"/>
 	</idspace>
 </idspaces>

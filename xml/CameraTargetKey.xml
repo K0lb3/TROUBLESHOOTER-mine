@@ -17113,7 +17113,7 @@
 			<property value="0"/>
 		</LocalLookPosRatio>
 	</class>
-	<class name="Ability_Leton_Thumbling_Middle" CamLookOrigin="Bottom" CamPosOrigin="Bottom" DOFEnable="false" DOFFocusInnerRange="100000" DOFFocusOuterRange="500" FOV="60" FogOfWarDisable="false" HumanHandle="false" RayCollideCustomRange="2500" RayCollideRangeMethod="Min" TriggerSound="CameraMove.wav">
+	<class name="Ability_Leton_Thumbling_Middle" CamLookOrigin="Bottom" CamPosOrigin="Bottom" DOFEnable="false" DOFFocusInnerRange="100000" DOFFocusOuterRange="500" FOV="60" FogOfWarDisable="true" HumanHandle="false" RayCollideCustomRange="2500" RayCollideRangeMethod="Min" TriggerSound="CameraMove.wav">
 		<DiagonalCamPosOffset>
 			<property value="0"/>
 			<property value="0"/>
@@ -17168,6 +17168,130 @@
 			<property value="0"/>
 			<property value="105"/>
 			<property value="0"/>
+		</LocalLookPosOffset>
+		<LocalLookPosRatio>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</LocalLookPosRatio>
+	</class>
+	<class name="Ability_Albus_GetleFresh01" AdjustToTarget="false" CamLookOrigin="Bottom" CamPosOrigin="Bottom" DOFEnable="false" DOFFocusInnerRange="100000" DOFFocusOuterRange="500" FOV="50" FogOfWarDisable="true" HumanHandle="false" RayCollideCustomRange="2500" RayCollideRangeMethod="Off" TriggerSound="">
+		<DiagonalCamPosOffset>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</DiagonalCamPosOffset>
+		<DiagonalCamPosRatio>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</DiagonalCamPosRatio>
+		<DiagonalLookPosOffset>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</DiagonalLookPosOffset>
+		<DiagonalLookPosRatio>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</DiagonalLookPosRatio>
+		<GlobalCamPosOffset>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</GlobalCamPosOffset>
+		<GlobalCamPosRatio>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</GlobalCamPosRatio>
+		<GlobalLookPosOffset>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</GlobalLookPosOffset>
+		<GlobalLookPosRatio>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</GlobalLookPosRatio>
+		<LocalCamPosOffset>
+			<property value="-128.3661651611328"/>
+			<property value="204.8568878173828"/>
+			<property value="215.3879699707031"/>
+		</LocalCamPosOffset>
+		<LocalCamPosRatio>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</LocalCamPosRatio>
+		<LocalLookPosOffset>
+			<property value="35.7708740234375"/>
+			<property value="116.7783355712891"/>
+			<property value="-49.44667816162109"/>
+		</LocalLookPosOffset>
+		<LocalLookPosRatio>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</LocalLookPosRatio>
+	</class>
+	<class name="Ability_Albus_Magic01" AdjustToTarget="false" CamLookOrigin="Bottom" CamPosOrigin="Bottom" DOFEnable="true" DOFFocusInnerRange="100000" DOFFocusOuterRange="500" FOV="50" FogOfWarDisable="true" HumanHandle="false" RayCollideCustomRange="2500" RayCollideRangeMethod="Max" TriggerSound="">
+		<DiagonalCamPosOffset>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</DiagonalCamPosOffset>
+		<DiagonalCamPosRatio>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</DiagonalCamPosRatio>
+		<DiagonalLookPosOffset>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</DiagonalLookPosOffset>
+		<DiagonalLookPosRatio>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</DiagonalLookPosRatio>
+		<GlobalCamPosOffset>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</GlobalCamPosOffset>
+		<GlobalCamPosRatio>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</GlobalCamPosRatio>
+		<GlobalLookPosOffset>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</GlobalLookPosOffset>
+		<GlobalLookPosRatio>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</GlobalLookPosRatio>
+		<LocalCamPosOffset>
+			<property value="-224.6122436523438"/>
+			<property value="296.5623474121094"/>
+			<property value="316.9463500976563"/>
+		</LocalCamPosOffset>
+		<LocalCamPosRatio>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</LocalCamPosRatio>
+		<LocalLookPosOffset>
+			<property value="29.61417388916016"/>
+			<property value="72.59806823730469"/>
+			<property value="-35.28050231933594"/>
 		</LocalLookPosOffset>
 		<LocalLookPosRatio>
 			<property value="0"/>

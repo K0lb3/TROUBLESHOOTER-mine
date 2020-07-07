@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspace id="AccountProperty">
+	<schema>
+		<rule property="DifficultyOpened" type="maptable" subtype="bool" target="GameDifficulty" default="false"/>
+	</schema>
+	<class name="account"/>
+</idspace>

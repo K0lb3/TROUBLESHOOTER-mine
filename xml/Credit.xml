@@ -98,75 +98,91 @@
 			<property Type="JobName" Text="ENGLISH TRANSLATOR" Text2="Wonseok Lee" Align="Center"/>
 			<property Type="Name2" Text2="Namsu Kim" Align="Center"/>
 			<property Type="JobName" Text="CHINESE TRANSLATOR" Text2="Seokmin Kong" Align="Center"/>
+			<property Type="Name2" Text2="[!Ignore]마리뮤" Align="Center"/>
 			<property Type="JobName" Text="JAPANESE TRANSLATOR" Text2="Jinju Kang" Align="Center"/>
 		</List>
 	</class>
 	<class name="Credit13">
 		<List>
 			<property Type="Job" Text="ENGLISH TRANSLATION SUPPORTER" Align="Center" Margin="40"/>
-			<property Type="Name" Text2="Albeoris" Align="Center"/>
-			<property Type="Name" Text2="Delayed Hopkick" Align="Center"/>
-			<property Type="Name" Text2="Dj Jazzy Fresherson" Align="Center"/>
-			<property Type="Name" Text2="Null Winter" Align="Center"/>
-			<property Type="Name" Text2="RainbowRain" Align="Center"/>
-			<property Type="Name" Text2="x_equals_speed" Align="Center"/>
+			<property Type="Name2" Text="BokehBot" Text2="Delayed Hopkick" Align="Center"/>
+			<property Type="Name2" Text="Dj Jazzy Fresherson" Text2="Null Winter" Align="Center"/>
+			<property Type="Name2" Text="S2SKY" Text2="TargetPractice" Align="Center"/>
+			<property Type="Name2" Text="Uriel" Text2="x_equals_speed" Align="Center"/>
 		</List>
 	</class>
 	<class name="Credit13_2">
 		<List>
-			<property Type="Job" Text="CHINESE TRANSLATION SUPPORTER" Align="Center" Margin="40"/>
-			<property Type="Name" Align="Center" Text2="B.G."/>
-			<property Type="Name" Align="Center" Text2="白虎乱风"/>
-			<property Type="Name" Align="Center" Text2="林小鹿"/>
-			<property Type="Job" Text="JAPANESE TRANSLATION SUPPORTER" Align="Center"/>
-			<property Type="Name" Align="Center" Text2="Meat Man"/>
-			<property Type="Name" Align="Center" Text2="Tarao"/>
+			<property Type="Job" Text="SIMPLIFIED CHINESE TRANSLATION SUPPORTER" Align="Center" Margin="40"/>
+			<property Type="Name2" Text="B.G." Text2="白虎乱风" Align="Center"/>
+			<property Type="Name2" Text="林小鹿" Text2="你不知道的事" Align="Center"/>
+			<property Type="Job" Text="JAPANESE TRANSLATION SUPPORTER" Align="Center" Margin="40"/>
+			<property Type="Name2" Text="Meat Man" Text2="Tarao" Align="Center"/>
+			<property Type="Name2" Text="=Randy=" Text2="youl" Align="Center"/>
+			<property Type="Name2" Text="Akizuki_P" Align="Center"/>
+		</List>
+	</class>
+	<class name="Credit13_3">
+		<List>
+			<property Type="Job" Text="RUSSIAN TRANSLATION SUPPORTER" Align="Center" Margin="40"/>
+			<property Type="Name2" Text="Albeoris" Text2="FoxyLittleThing" Align="Center"/>
+			<property Type="Name2" Text="Mefisto " Text2="Vool" Align="Center"/>
+			<property Type="Name2" Text="2bl - to better localization" Text2="Diviona team" Align="Center"/>
+			<property Type="Job" Text="TRADITIONAL CHINESE TRANSLATION SUPPORTER" Align="Center" Margin="40"/>
+			<property Type="Name2" Text="Stanley" Align="Center"/>
 		</List>
 	</class>
 	<class name="Credit14">
 		<List>
 			<property Type="Job" Text="SPECIAL SUPPORTER" Align="Center" Margin="40"/>
-			<property Type="Name2" Text="Adam" Text2="Altaira" Align="Center"/>
+			<property Type="Name2" Text="Adam" Text2="Alazabba" Align="Center"/>
+			<property Type="Name2" Text='Allan "Steelmidnight" Ahrens' Text2="Altaira" Align="Center"/>
 			<property Type="Name2" Text="bakuk4311" Text2="Becirevic Namik" Align="Center"/>
-			<property Type="Name2" Text="Buzzi" Text2="Bloodwest" Align="Center"/>
-			<property Type="Name2" Text="Christophe Ollivier(Krikroune)" Text2="chiyo1982" Align="Center"/>
-			<property Type="Name2" Text="ClearJin" Text2="Darkblue" Align="Center"/>
-			<property Type="Name2" Text="Delayed Hopkick" Text2="Daraster" Align="Center"/>
-			<property Type="Name2" Text="Echo" Text2="Fbin" Align="Center"/>
+			<property Type="Name2" Text="Bloodwest" Text2="Botzu" Align="Center"/>
+			<property Type="Name2" Text="Buzzi" Text2="Christophe Ollivier(Krikroune)" Align="Center"/>
+			<property Type="Name2" Text="chiyo1982" Text2="ClearJin" Align="Center"/>
 		</List>
 	</class>
 	<class name="Credit14_2">
 		<List>
 			<property Type="Job" Text="SPECIAL SUPPORTER" Align="Center" Margin="40"/>
+			<property Type="Name2" Text="Daniel(Tastytots)" Text2="Darkblue" Align="Center"/>
+			<property Type="Name2" Text="Delayed Hopkick" Text2="Daraster" Align="Center"/>
+			<property Type="Name2" Text="Echo" Text2="Fbin" Align="Center"/>
 			<property Type="Name2" Text="Folrand" Text2="Gollvieg" Align="Center"/>
 			<property Type="Name2" Text="HarpyEagle" Text2="Hear me roar！" Align="Center"/>
 			<property Type="Name2" Text="Hwang" Text2="Hyonii" Align="Center"/>
-			<property Type="Name2" Text="jofu" Text2="Kindra" Align="Center"/>
-			<property Type="Name2" Text="kms_2012" Text2="lividman" Align="Center"/>
-			<property Type="Name2" Text="Misslemike" Text2="Orange91" Align="Center"/>
 		</List>
 	</class>
 	<class name="Credit15">
 		<List>
 			<property Type="Job" Text="SPECIAL SUPPORTER" Align="Center" Margin="40"/>
+			<property Type="Name2" Text="jofu" Text2="Kindra" Align="Center"/>
+			<property Type="Name2" Text="kms_2012" Text2="lividman" Align="Center"/>
+			<property Type="Name2" Text="Misslemike" Text2="Orange91" Align="Center"/>
 			<property Type="Name2" Text="Ordering" Text2="Professor Rappy" Align="Center"/>
 			<property Type="Name2" Text="Purple Sonic" Text2="rainheart" Align="Center"/>
-			<property Type="Name2" Text="Rohan Rose" Text2="RexEviL" Align="Center"/>
-			<property Type="Name2" Text="SegaSega2" Text2="S2SKY" Align="Center"/>
-			<property Type="Name2" Text="[!Ignore]Shusussut(슈슈슛)" Text2="SnowMaker" Align="Center"/>
-			<property Type="Name2" Text="Solution Train" Text2="Steyr12345" Align="Center"/>
-			<property Type="Name2" Text="some_where" Text2="Xaxil Nightsun" Align="Center"/>
 		</List>
 	</class>
 	<class name="Credit15_2">
 		<List>
 			<property Type="Job" Text="SPECIAL SUPPORTER" Align="Center" Margin="40"/>
-			<property Type="Name2" Text="TargetPractice" Text2="[!Ignore]泠堂雨" Align="Center"/>
-			<property Type="Name2" Text="[!Ignore]流云" Text2="[!Ignore]너굴맨" Align="Center"/>
-			<property Type="Name2" Text="[!Ignore]녹차백만잔" Text2="[!Ignore]라이커스" Align="Center"/>
-			<property Type="Name2" Text="[!Ignore]바보멍청이(Luvily)" Text2="[!Ignore]봄마요" Align="Center"/>
-			<property Type="Name2" Text="[!Ignore]영세시민" Text2="[!Ignore]유칼리" Align="Center"/>
-			<property Type="Name2" Text="[!Ignore]은 귤" Text2="[!Ignore]체리글라세" Align="Center"/>
+			<property Type="Name2" Text="Rohan Rose" Text2="RexEviL" Align="Center"/>
+			<property Type="Name2" Text="SegaSega2" Text2="[!Ignore]Shusussut(슈슈슛)" Align="Center"/>
+			<property Type="Name2" Text="SnowMaker" Text2="Solution Train" Align="Center"/>
+			<property Type="Name2" Text="Steyr12345" Text2="some_where" Align="Center"/>
+			<property Type="Name2" Text="Xaxil Nightsun" Text2="772chosun" Align="Center"/>
+		</List>
+	</class>
+	<class name="Credit15_3">
+		<List>
+			<property Type="Job" Text="SPECIAL SUPPORTER" Align="Center" Margin="40"/>
+			<property Type="Name2" Text="[!Ignore]泠堂雨" Text2="[!Ignore]流云" Align="Center"/>
+			<property Type="Name2" Text="[!Ignore]너굴맨" Text2="[!Ignore]녹차백만잔" Align="Center"/>
+			<property Type="Name2" Text="[!Ignore]라이커스" Text2="[!Ignore]바보멍청이(Luvily)" Align="Center"/>
+			<property Type="Name2" Text="[!Ignore]봄마요" Text2="[!Ignore]영세시민" Align="Center"/>
+			<property Type="Name2" Text="[!Ignore]유칼리" Text2="[!Ignore]은 귤" Align="Center"/>
+			<property Type="Name2" Text="[!Ignore]체리글라세" Align="Center"/>
 		</List>
 	</class>
 	<class name="Credit16">

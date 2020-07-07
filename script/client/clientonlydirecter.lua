@@ -19,7 +19,7 @@ function ClientDirecting_OnCharacterDead(cds, dead, killer)
 end
 
 function ClientDirecting_OnCharacterResurrect(cds, resurrected, mode)
-	if mode == 'system' then
+	if mode == 'system' or mode == 'direct' then
 		return;
 	end
 	cds:ShowFrontmessage(string.format(GuideMessage('FrontMessageUnitResurrect_' .. (mode or 'Normal')), resurrected.Info.Title), 'Corn');
@@ -330,9 +330,51 @@ function TestEnableDetailInteraction()
 	return true;
 end
 
+g_voiceTextCounter = 1;
+g_voiceTextFrequency = 0;
+function TestCharacterVoiceTextFrequency()
+	local optionValue = GetOption().Gameplay.CharacterVoiceTextFrequency;
+	if optionValue == 0 then
+		return true;
+	elseif optionValue == 1 then
+		-- 빈도 재조정
+		if g_voiceTextFrequency < 3 or g_voiceTextFrequency > 5 then
+			g_voiceTextFrequency = math.random(3, 5);
+		end
+		if g_voiceTextCounter >= g_voiceTextFrequency then
+			g_voiceTextCounter = 1;
+			g_voiceTextFrequency = math.random(3, 5);
+			return true;
+		else
+			g_voiceTextCounter = g_voiceTextCounter + 1;
+			return false;
+		end
+	elseif optionValue == 2 then
+		-- 빈도 재조정
+		if g_voiceTextFrequency < 8 or g_voiceTextFrequency > 10 then
+			g_voiceTextFrequency = math.random(8, 10);
+		end
+		if g_voiceTextCounter >= g_voiceTextFrequency then
+			g_voiceTextCounter = 1;
+			g_voiceTextFrequency = math.random(8, 10);
+			return true;
+		else
+			g_voiceTextCounter = g_voiceTextCounter + 1;
+			return false;
+		end
+	elseif optionValue == 3 then
+		return false;
+	else
+		return true;	
+	end
+end
+function TestObjectVisibleAndAliveVoice(objKey)
+	return TestObjectVisibleAndAlive(objKey) and TestCharacterVoiceTextFrequency();
+end
+
 function ClientDirecting_SPOvercharged(cds, obj, noWait)
 	-- 스킵 가능
-	cds:StartMissionDirect(false);
+	cds:RunScriptArgs('SetDirectingSkipEnabled', true);
 	cds:SkipPointOn();
 	local objKey = GetObjKey(obj);
 	local icon = obj.ESP.SPImage;
@@ -341,12 +383,12 @@ function ClientDirecting_SPOvercharged(cds, obj, noWait)
 	local text = WordText('SPFullGained');
 	local camMove = nil;
 	if not noWait then
-		camMove = cds:ChangeCameraTarget(objKey, '_SYSTEM_', false, false, 0.5);
+		camMove = cds:ChangeCameraTarget(objKey, '_SYSTEM_', false, true, 0.5);
 	end
 	local UIEffectID = cds:PlayUIEffect(objKey, '_CENTER_', 'GeneralNotifier', 3, 1.5, PackTableToString({Icon = icon, FontColor = fontColor, AnimationKey = animationKey, Text = text}));
 	local voiceID = nil;
 	local voiceSound, voiceSoundVolume, _, voiceText = GetObjectVoiceSound(obj, 'Overcharge');
-	if voiceSound ~= nil and voiceSound ~= 'None' then
+	if voiceSound ~= nil and voiceSound ~= 'None' and TestCharacterVoiceTextFrequency() then
 		if GetRelationWithPlayer(obj) == 'Team' then
 			voiceID = cds:PlaySound(voiceSound, 'Voice', voiceSoundVolume, true);
 		else
@@ -370,7 +412,7 @@ function ClientDirecting_SPOvercharged(cds, obj, noWait)
 	end
 	-- 스킵 종료
 	cds:SkipPointOff();
-	cds:EndMissionDirect(false);
+	cds:RunScriptArgs('SetDirectingSkipEnabled', false);
 end
 function ClientDirecting_SPOverchargedAlert(cds, obj, noWait)
 	local objKey = GetObjKey(obj);

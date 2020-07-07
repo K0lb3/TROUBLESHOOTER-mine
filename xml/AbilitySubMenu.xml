@@ -107,4 +107,14 @@
 		<class name="EnchantEarth" Ability="EnchantEarth" Order="1" Image="HUD/EnchantEarth"/>
 		<class name="ReleaseEarth" Ability="ReleaseEarth" Order="2" Image="HUD/ReleaseEarth"/>
 	</idspace>
+	<idspace id="InvestigateLock">
+		<schema>
+			<rule property="Order" type="number" default="0"/>
+			<rule property="Ability" type="link" target="Ability"/>
+			<rule property="TitleColor" type="string" default="Corn"/>
+			<rule property="IsEnableTest" type="function" default="HackingProtocolEnableTest_True"/>
+		</schema>
+		<class name="InvestigateLock_Key" Ability="InvestigateLock_Key" Order="1" Image="Ability/InvestigateLock" IsEnableTest="InvestigateLockEnableTest_HasKeyItem"/>
+		<class name="InvestigateLock_Force" Ability="InvestigateLock_Force" Order="2" Image="Ability/InvestigateLock"/>
+	</idspace>
 </idspaces>

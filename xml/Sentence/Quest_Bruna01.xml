@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="Sentence">
+		<class name="Quest_Bruna01_0sILmS" Value="[!Dashboard:Counter]남은 조사 지역 수"/>
+		<class name="Quest_Bruna01_IgAG8F" Value="[!Dashboard:Counter]남은 네구리 수"/>
+		<class name="Quest_Bruna01_gQPid6" Value="[!Dashboard:ObjectiveMarker]해당 지역을 조사할 수 있습니다. 일정 확률로 네구리가 튀어 나올 수 있으니 조심하세요."/>
+		<class name="Quest_Bruna01_JfEor0" Value="[!Dashboard:ObjectiveMarker]적이 해당 지역으로 진입하면 패배합니다."/>
+		<class name="Quest_Bruna01_XDZ7Tk" Value="[!Objective]네구리가 숨어 있을 만한 모든 장소를 수색하시오."/>
+		<class name="Quest_Bruna01_5eFnDV" Value="[!Objective]네구리를 모두 제압하시오."/>
+		<class name="Quest_Bruna01_ijfCMY" Value="[!Title]요란한 불청객"/>
+		<class name="Quest_Bruna01_RAT3CA" Value="[!Title]황금손 거주구"/>
+		<class name="Quest_Bruna01_0Mx8zB" Value="[!Dialog][!speaker:Sion_Stare]결국 또 여기서 네구리를 찾아야 한다는 거지..."/>
+		<class name="Quest_Bruna01_EeO9wM" Value="[!Dialog][!speaker:Albus_Serious]일단 거주지에 가깝고 퇴로도 두 곳이라 도망치지 못하도록 신경 써야겠어."/>
+		<class name="Quest_Bruna01_RXAG9m" Value="[!Dialog][!speaker:Albus_Normal]그럼 가까운 곳부터 네구리가 있을 만한 장소를 수색하도록 하겠습니다!"/>
+		<class name="Quest_Bruna01_nC6mrK" Value="[!Dialog][!speaker:Albus_Normal]다들 도망치는 녀석이 없도록 퇴로를 차단하며 접근합니다!"/>
+		<class name="Quest_Bruna01_dxXMtF" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Quest_Bruna01_Jc9Xya" Value="[!VictoryCondition]네구리가 숨어 있을 만한 모든 장소를 수색하시오."/>
+		<class name="Quest_Bruna01_HHZBXt" Value="[!Dialog][!speaker:Giselle_Smile]&apos;호전적인 네구리의 성숙기 개체가 몸을 숨기다니...&apos;"/>
+		<class name="Quest_Bruna01_4hncy4" Value="[!Dialog][!speaker:Giselle_Satisfying]&apos;환경에 맞춰 습성이 변했나...&apos;"/>
+		<class name="Quest_Bruna01_nZsGCV" Value="[!Dialog][!speaker:Giselle_Smile]&apos;아니면 제법 똑똑한 리더가 있는 건가...&apos;"/>
+		<class name="Quest_Bruna01_QY2HvE" Value="[!Ignore][!Dialog][!speaker:Kylie_Normal]야수 밀매가 급증한 것은 역시 자원관리구역이 개방된 탓이겠지."/>
+		<class name="Quest_Bruna01_hBi51M" Value="[!Ignore][!Dialog][!speaker:Kylie_Normal]&apos;역시 자원관리구역이 개방된 탓이겠지...&apos;"/>
+		<class name="Quest_Bruna01_lFrdki" Value="[!Objective]네구리를 모두 제압하시오."/>
+		<class name="Quest_Bruna01_qzUVKl" Value="[!Dialog][!speaker:Albus_Serious]다들 네구리들이 바깥으로 나가지 못하도록 해 주세요."/>
+		<class name="Quest_Bruna01_4Lxx6f" Value="[!VictoryCondition]네구리가 동물보호소 바깥으로 탈출"/>
+		<class name="Quest_Bruna01_Kno5k3" Value="[!VictoryCondition]아군 전원 전투 불능"/>
+		<class name="Quest_Bruna01_YiRfwk" Value="[!VictoryCondition]네구리가 숨어 있을 만한 모든 장소를 수색하시오."/>
+		<class name="Quest_Bruna01_XZSi2V" Value="[!VictoryCondition]네구리를 모두 제압하시오."/>
+		<class name="Quest_Bruna01_C60hgK" Value="[!BalloonChat]네구리입니다! 다들 조심하세요!"/>
+		<class name="Quest_Bruna01_GdT9Nx" Value="[!BalloonChat]네구리입니다!"/>
+		<class name="Quest_Bruna01_fRAK1B" Value="[!BalloonChat]다들 조심하세요!"/>
+		<class name="Quest_Bruna01_pZg2uu" Value="[!BalloonChat]네구리다!! 다들 조심해!"/>
+		<class name="Quest_Bruna01_vCqSaM" Value="[!BalloonChat]찾았다!"/>
+		<class name="Quest_Bruna01_hx0xhj" Value="[!BalloonChat]여기 숨어 있었구나!"/>
+		<class name="Quest_Bruna01_Gswgof" Value="[!BalloonChat]이 녀석들! 도망가지 마라!"/>
+		<class name="Quest_Bruna01_vEoUpE" Value="[!BalloonChat]숨어 있어 봤자 소용없다!"/>
+		<class name="Quest_Bruna01_jaRiJj" Value="[!BalloonChat]여기 있었구나!"/>
+		<class name="Quest_Bruna01_h4YoCz" Value="[!BalloonChat]여기 있어요!"/>
+		<class name="Quest_Bruna01_64m4f6" Value="[!BalloonChat]여기에요!"/>
+		<class name="Quest_Bruna01_pGYhXt" Value="[!BalloonChat]네구리 찾았어요!"/>
+		<class name="Quest_Bruna01_P9yq4T" Value="[!BalloonChat]여기다."/>
+		<class name="Quest_Bruna01_5jDfZg" Value="[!BalloonChat]이쪽이다."/>
+		<class name="Quest_Bruna01_TqFRel" Value="[!BalloonChat]찾았다."/>
+		<class name="Quest_Bruna01_I8eR0C" Value="[!BalloonChat]여기야!"/>
+		<class name="Quest_Bruna01_H0R9Va" Value="[!BalloonChat]여기 있어!"/>
+		<class name="Quest_Bruna01_DrbcZj" Value="[!BalloonChat]찾았어!"/>
+		<class name="Quest_Bruna01_kzBpI6" Value="[!BalloonChat]역시 여기 있었네~"/>
+		<class name="Quest_Bruna01_r4WwSQ" Value="[!BalloonChat]어딜 도망가니~"/>
+		<class name="Quest_Bruna01_fQYIjc" Value="[!BalloonChat]여긴 너희들이 있을 곳이 아니란다~"/>
+		<class name="Quest_Bruna01_5qO0ME" Value="[!BalloonChat]여기 있었구나~"/>
+		<class name="Quest_Bruna01_OO7oss" Value="[!BalloonChat]너무 뻔한 곳에 숨어 있잖아."/>
+		<class name="Quest_Bruna01_zBWhmY" Value="[!BalloonChat]정말 시시하군."/>
+		<class name="Quest_Bruna01_sGEqbc" Value="[!BalloonChat]발견~☆"/>
+		<class name="Quest_Bruna01_B3XUbD" Value="[!BalloonChat]반갑다~☆"/>
+		<class name="Quest_Bruna01_flEBlc" Value="[!BalloonChat]빙고~☆"/>
+		<class name="Quest_Bruna01_TEZDDD" Value="[!BalloonChat][!speaker:NeguriGrey]!?"/>
+		<class name="Quest_Bruna01_Wqi8G7" Value="[!Dialog][!speaker:Giselle_Satisfying]네 녀석이 리더구나."/>
+	</idspace>
+</idspaces>

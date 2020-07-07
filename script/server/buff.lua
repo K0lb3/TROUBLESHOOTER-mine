@@ -38,6 +38,10 @@ function CalculatedProperty_BuffCustomEventHandler(self)
 		-- Order에 별 의미 없음
 		table.insert(eventHandlers, {Event='UnitMoved_Self', Script=Buff_UnitMoved_DischargeOnMove, Order=5});
 	end
+	if self.DischargeOnAbility then
+		-- Order에 별 의미 없음
+		table.insert(eventHandlers, {Event='PreAbilityUsing_Self', Script=Buff_PreAbilityUsing_DischargeOnAbility, Order=5});
+	end
 	
 	if self.DischargeOnUnconscious then
 		table.insert(eventHandlers, {Event='BuffAdded_Self', Script=Buff_BuffAdded_DischargeOnUnconscious, Order=2});
@@ -87,8 +91,10 @@ function CalculatedProperty_BuffCustomEventHandler(self)
 			table.insert(eventHandlers, {Event='UnitPositionChanged', Script=Buff_CommonAura_UnitPositionChanged_InRange, Order = 2});
 			table.insert(eventHandlers, {Event='UnitPositionChanged_Self', Script=Buff_CommonAura_UnitPositionChanged_Self_InRange, Order = 2});
 			table.insert(eventHandlers, {Event='UnitDead_Self', Script=Buff_CommonAura_UnitDead_InRange_Self, Order = 2});
+			table.insert(eventHandlers, {Event='UnitBeingExcluded', Script=Buff_CommonAura_UnitDead_InRange_Self, Order = 2});
 			table.insert(eventHandlers, {Event='UnitResurrect_Self', Script=Buff_CommonAura_UnitResurrect_InRange_Self, Order = 2});
 			table.insert(eventHandlers, {Event='UnitDead', Script=Buff_CommonAura_UnitDead_InRange_Others, Order = 2});
+			table.insert(eventHandlers, {Event='UnitBeingExcluded', Script=Buff_CommonAura_UnitDead_InRange_Others, Order = 2});
 			table.insert(eventHandlers, {Event='UnitResurrect', Script=Buff_CommonAura_UnitResurrect_InRange_Others, Order = 2});
 		elseif self.AuraType == 'ThroughRange' then
 			table.insert(eventHandlers, {Event='BuffRemoved_Self', Script= Buff_CommonAura_BuffRemoved_ThroughRange, Order = 2});
@@ -407,6 +413,15 @@ function Buff_UnitResurrect_Brainwashing(eventArg, buff, owner, giver, ds)
 end
 function Buff_UnitMoved_DischargeOnMove(eventArg, buff, owner, giver, ds)
 	return Result_RemoveBuff(owner, buff.name);
+end
+function Buff_PreAbilityUsing_DischargeOnAbility(eventArg, buff, owner, giver, ds)
+	if eventArg.Unit ~= owner or eventArg.Ability.ApplyTargetBuff.name == buff.name then
+		return;
+	end	
+	if not buff.DischargeOnMove and IsMoveTypeAbility(eventArg.Ability) then
+		return;
+	end	
+	return Result_RemoveBuff(owner, buff.name, true);
 end
 function Buff_AbilityHolder_Common_AddRef(giver, buff, owner)
 	local refKey = 'AbilityHolder'..(GetWithoutError(buff, 'AbilityHolderKey') or buff.name);
@@ -1100,7 +1115,7 @@ function Buff_Patrol_Wakeup_Process(owner, findObj, ds, noMoveDetect, connectMov
 
 				if mode == 'Surprised' then
 					SetInstantProperty(actor, 'AwakenRightBefore', true);
-					ds:ReserveMove(GetObjKey(actor), pos, false, maxDist, maxDist, true);
+					ds:ReserveMove(GetObjKey(actor), pos, nil, false, maxDist, maxDist, true);
 					SubscribeWorldEvent(actor, 'UnitMoved_Self', function(eventArg, ds, subscriptionID)
 						SetInstantProperty(actor, 'AwakenRightBefore', nil);
 						UnsubscribeWorldEvent(actor, subscriptionID);
@@ -2553,6 +2568,21 @@ function Buff_MaxStackAddBuff_UnitTurnStart(eventArg, buff, owner, giver, ds)
 	InsertBuffActions(actions, owner, owner, buff.AddBuff, 1, true);
 	return unpack(actions);
 end
+-- 광폭화
+function Buff_Frenzy_UnitTurnStart(eventArg, buff, owner, giver, ds)
+	local units = GetAllUnitInSight(owner, true);
+	local targets = table.filter(units, function(o)
+		return owner ~= o and IsEnemy(owner, o) and not o.PublicTarget;
+	end);
+	if #targets > 0 then
+		return;
+	end
+	local actions = {};
+	ds:UpdateBattleEvent(GetObjKey(owner), 'BuffDischarged', { Buff = buff.name });
+	table.insert(actions, Result_RemoveBuff(owner, buff.name, true));
+	table.insert(actions, Result_TurnEnd(owner));
+	return unpack(actions);
+end
 ----------------------------------------------------------------------------
 -- 유닛 턴 종료
 ----------------------------------------------------------------------------
@@ -2615,6 +2645,12 @@ function Buff_Lava_UnitTurnEnd(eventArg, buff, owner, giver, ds)
 	InsertBuffActions(actions, owner, owner, buff.AddBuff, 1, true);
 	InsertBuffActions(actions, owner, owner, buff.AddBuff2, 1, true);
 	return unpack(actions);
+end
+function Buff_InformationSharing_UnitTurnEnd(eventArg, buff, owner, giver, ds)
+	if eventArg.Unit ~= owner then
+		return;
+	end
+	return Result_UpdateInstantProperty(owner, buff.name, {});
 end
 --------------------------------------------------------------------------------
 -- 유닛사망 [UnitDead]
@@ -4912,13 +4948,6 @@ function Buff_Outlaw_AbilityUsed(eventArg, buff, owner, giver, ds)
 	buff.DuplicateApplyChecker = buff.DuplicateApplyChecker + 1;
 	return retAction;
 end
-function Buff_IronWall_PreAbilityUsing(eventArg, buff, owner, giver, ds)
-	if eventArg.Unit ~= owner or eventArg.Ability.name == 'IronWall' then
-		return;
-	end
-	
-	return Result_RemoveBuff(owner, buff.name);
-end
 function Buff_Trick_AbilityUsed(eventArg, buff, owner, giver, ds)
 	if eventArg.Unit ~= owner or eventArg.Ability.Type ~= 'Attack' then
 		return;
@@ -5338,6 +5367,27 @@ function Buff_FearAura_AbilityUsed(eventArg, buff, owner, giver, ds)
 	end
 	return unpack(actions);
 end
+-- 정보 공유
+function Buff_InformationSharing_AbilityUsed(eventArg, buff, owner, giver, ds)
+	if eventArg.Unit == owner
+		or not IsAllyRelation(owner, eventArg.Unit)
+		or eventArg.Ability.Type ~= 'Attack' then
+		return;
+	end
+	if not IsInSight(owner, GetPosition(eventArg.Unit), true) then
+		return;
+	end	
+	local applyTargets = {};
+	for i, infos in ipairs({eventArg.PrimaryTargetInfos, eventArg.SecondaryTargetInfos}) do
+		for j, info in ipairs(infos) do
+			if info.DefenderState == 'Dodge' or info.DefenderState == 'Block' then
+				local objKey = GetObjKey(info.Target);
+				applyTargets[objKey] = true;
+			end
+		end
+	end
+	return Result_UpdateInstantProperty(owner, buff.name, applyTargets);
+end
 --------------------------------------------------------------------------------
 -- 데미지 줌
 ----------------------------------------------------------------------------
@@ -5572,6 +5622,22 @@ function Buff_FearAura_AbilityAffected(eventArg, buff, owner, giver, ds)
 	InsertBuffActions(actions, owner, target, buff.AddBuff, 1, true);
 	ds:UpdateBattleEvent(GetObjKey(owner), 'BuffInvoked', { Buff = buff.name });
 	return unpack(actions);
+end
+-- 정보 변조
+function Buff_InformationFalsification_AbilityAffected(eventArg, buff, owner, giver, ds)
+	if eventArg.Ability.Type ~= 'Attack' then
+		return;
+	end
+	if not IsEnemy(owner, eventArg.User) or eventArg.User.HP <= 0 then
+		return;
+	end
+	local hasAnyDamage = HasAnyAbilityUsingInfo(eventArg.AbilityTargetInfos, function (targetInfo)
+		return targetInfo.MainDamage > 0;
+	end);
+	if not hasAnyDamage then
+		return;
+	end
+	return Result_UpdateInstantProperty(owner, buff.name, eventArg.Ability.SubType);
 end
 --------------------------------------------------------------------------------
 -- 팀 변경 [UnitTeamChanged]

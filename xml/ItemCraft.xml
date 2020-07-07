@@ -35,24 +35,24 @@
 			<rule property="AddExpRatio" type="number" default="0"/>
 			<rule property="Category" type="link" target="Craft" default="None"/>
 		</schema>
-		<class name="Accessory" Title="악세서리 세공" AddExpRatio="0.4" Image="Icons/Craft_Accessory" Desc="반지, 손목 고리를 제작할 수 있습니다." Category="Armor"/>
-		<class name="Clothes" Title="의상 제작" AddExpRatio="1.5" Image="Icons/Craft_Clothes" Desc="자켓, 코트, 트레이닝복 등을 제작할 수 있습니다." Category="Armor"/>
-		<class name="Leather" Title="가죽 세공" AddExpRatio="0.1" Image="Icons/Craft_Leather" Desc="가죽으로 된 방어구를 제작할 수 있습니다." Category="Armor"/>
-		<class name="Potion" Title="약물 제조" AddExpRatio="0.2" Image="Icons/Craft_Potion" Desc="사용 가능한 약물을 제조할 수 있습니다." Category="Consume"/>
-		<class name="Machine" Title="기계 제작" AddExpRatio="1.5" Image="Icons/Craft_Machine" Desc="기계의 골격을 제작할 수 있습니다." Category="Machine"/>
-		<class name="Jewel" Title="보석 세공" AddExpRatio="0.3" Image="Icons/Craft_Jewel" Desc="각종 보석 재료를 더 좋은 등급의 재료로 제작할 수 있습니다." Category="Material"/>
-		<class name="MaterialReinforce" Title="재료 강화" AddExpRatio="0.2" Image="Icons/Craft_MaterialReinforce" Desc="각종 제작 재료를 더 좋은 등급의 재료로 제작할 수 있습니다." Category="Material"/>
-		<class name="PsionicStone" Title="이능석 합성" AddExpRatio="0.1" Image="Icons/Craft_PsionicStone" Desc="이능석을 더욱 강력한 이능석으로 합성할 수 있습니다." Category="Material"/>
-		<class name="Grenade" Title="폭탄 제조" AddExpRatio="0.3" Image="Icons/Craft_Grenade" Desc="수류탄 류 아이템을 제작할 수 있습니다." Category="Tool"/>
-		<class name="Tool" Title="도구 제작" AddExpRatio="0.2" Image="Icons/Craft_Tool" Desc="기능성 아이템을 제작할 수 있습니다." Category="Tool"/>
-		<class name="Gear" Title="기어 제작" AddExpRatio="0.4" Image="Icons/Craft_Gear" Desc="기어를 제작할 수 있습니다." Category="Tool"/>
-		<class name="Drone" Title="다목적 지원 장치 제작" AddExpRatio="2" Image="Icons/Craft_Drone" Desc="다목적 지원 장치를 제작할 수 있습니다." Category="Weapon"/>
-		<class name="MachinePistol" Title="기관권총 제작" AddExpRatio="2" Image="Icons/Craft_MachinePistol" Desc="기관 권총을 제작할 수 있습니다." Category="Weapon"/>
-		<class name="BattleGlove" Title="전투 장갑 제작" AddExpRatio="2" Image="Icons/Craft_BattleGlove" Desc="전투 장갑을 제작할 수 있습니다." Category="Weapon"/>
-		<class name="Spray" Title="스프레이 제작" AddExpRatio="1.5" Image="Icons/Craft_Spray" Desc="다양한 스프레이를 제작할 수 있습니다." Category="Weapon"/>
-		<class name="Sword" Title="검 제작" AddExpRatio="2" Image="Icons/Craft_Sword" Desc="검을 제작할 수 있습니다." Category="Weapon"/>
-		<class name="SniperRifle" Title="저격총 제작" AddExpRatio="2" Image="Icons/Craft_SniperRifle" Desc="저격총을 제작할 수 있습니다." Category="Weapon"/>
-		<class name="Bangle" Title="팔찌 제작" AddExpRatio="2" Image="Icons/Craft_Bangle" Desc="팔찌를 제작할 수 있습니다." Category="Weapon"/>
+		<class name="Accessory" Title="악세서리 세공" AddExpRatio="0.8" Image="Icons/Craft_Accessory" Desc="반지, 손목 고리를 제작할 수 있습니다." Category="Armor"/>
+		<class name="Clothes" Title="의상 제작" AddExpRatio="2.5" Image="Icons/Craft_Clothes" Desc="자켓, 코트, 트레이닝복 등을 제작할 수 있습니다." Category="Armor"/>
+		<class name="Leather" Title="가죽 세공" AddExpRatio="0.3" Image="Icons/Craft_Leather" Desc="가죽으로 된 방어구를 제작할 수 있습니다." Category="Armor"/>
+		<class name="Potion" Title="약물 제조" AddExpRatio="0.4" Image="Icons/Craft_Potion" Desc="사용 가능한 약물을 제조할 수 있습니다." Category="Consume"/>
+		<class name="Machine" Title="기계 제작" AddExpRatio="2.5" Image="Icons/Craft_Machine" Desc="기계의 골격을 제작할 수 있습니다." Category="Machine"/>
+		<class name="Jewel" Title="보석 세공" AddExpRatio="0.6" Image="Icons/Craft_Jewel" Desc="각종 보석 재료를 더 좋은 등급의 재료로 제작할 수 있습니다." Category="Material"/>
+		<class name="MaterialReinforce" Title="재료 강화" AddExpRatio="0.4" Image="Icons/Craft_MaterialReinforce" Desc="각종 제작 재료를 더 좋은 등급의 재료로 제작할 수 있습니다." Category="Material"/>
+		<class name="PsionicStone" Title="이능석 합성" AddExpRatio="0.2" Image="Icons/Craft_PsionicStone" Desc="이능석을 더욱 강력한 이능석으로 합성할 수 있습니다." Category="Material"/>
+		<class name="Grenade" Title="폭탄 제조" AddExpRatio="0.6" Image="Icons/Craft_Grenade" Desc="수류탄 류 아이템을 제작할 수 있습니다." Category="Tool"/>
+		<class name="Tool" Title="도구 제작" AddExpRatio="0.4" Image="Icons/Craft_Tool" Desc="기능성 아이템을 제작할 수 있습니다." Category="Tool"/>
+		<class name="Gear" Title="기어 제작" AddExpRatio="5" Image="Icons/Craft_Gear" Desc="기어를 제작할 수 있습니다." Category="Tool"/>
+		<class name="Drone" Title="다목적 지원 장치 제작" AddExpRatio="2.5" Image="Icons/Craft_Drone" Desc="다목적 지원 장치를 제작할 수 있습니다." Category="Weapon"/>
+		<class name="MachinePistol" Title="기관권총 제작" AddExpRatio="2.5" Image="Icons/Craft_MachinePistol" Desc="기관 권총을 제작할 수 있습니다." Category="Weapon"/>
+		<class name="BattleGlove" Title="전투 장갑 제작" AddExpRatio="2.5" Image="Icons/Craft_BattleGlove" Desc="전투 장갑을 제작할 수 있습니다." Category="Weapon"/>
+		<class name="Spray" Title="스프레이 제작" AddExpRatio="2" Image="Icons/Craft_Spray" Desc="다양한 스프레이를 제작할 수 있습니다." Category="Weapon"/>
+		<class name="Sword" Title="검 제작" AddExpRatio="2.5" Image="Icons/Craft_Sword" Desc="검을 제작할 수 있습니다." Category="Weapon"/>
+		<class name="SniperRifle" Title="저격총 제작" AddExpRatio="2.5" Image="Icons/Craft_SniperRifle" Desc="저격총을 제작할 수 있습니다." Category="Weapon"/>
+		<class name="Bangle" Title="팔찌 제작" AddExpRatio="2.5" Image="Icons/Craft_Bangle" Desc="팔찌를 제작할 수 있습니다." Category="Weapon"/>
 	</idspace>
 	<idspace id="Recipe">
 		<schema>
@@ -1020,9 +1020,14 @@
 				<property Item="Pocket_Oil_Uncommon" Amount="10"/>
 			</RequireMaterials>
 		</class>
-		<class name="Pocket_Oil_Epic" Opened="false" UnLockRecipe="" Category="MaterialReinforce" RequireLv="1">
+		<class name="Pocket_Oil_Epic" Opened="false" UnLockRecipe="Pocket_Oil_Legend" Category="MaterialReinforce" RequireLv="1">
 			<RequireMaterials>
 				<property Item="Pocket_Oil_Rare" Amount="10"/>
+			</RequireMaterials>
+		</class>
+		<class name="Pocket_Oil_Legend" Opened="false" UnLockRecipe="" Category="MaterialReinforce" RequireLv="1">
+			<RequireMaterials>
+				<property Item="Pocket_Oil_Epic" Amount="10"/>
 			</RequireMaterials>
 		</class>
 		<class name="Skin_Beast" Opened="true" UnLockRecipe="" Category="Leather" RequireLv="1">
@@ -1071,11 +1076,18 @@
 				<property Item="PsionicStone_FlashElement" Amount="1"/>
 			</RequireMaterials>
 		</class>
-		<class name="Skin_Lightning_Epic" Opened="false" UnLockRecipe="Skin_Lightning_BlackIron_Epic" Category="Leather" RequireLv="2">
+		<class name="Skin_Lightning_Epic" Opened="false" UnLockRecipe="Skin_Lightning_BlackIron_Epic, Skin_Lightning_Legend" Category="Leather" RequireLv="2">
 			<RequireMaterials>
 				<property Item="FiberReinforced_Epic" Amount="1"/>
 				<property Item="Skin_Monster" Amount="1"/>
 				<property Item="PsionicStone_FlashElement" Amount="1"/>
+			</RequireMaterials>
+		</class>
+		<class name="Skin_Lightning_Legend" Opened="false" UnLockRecipe="" Category="Leather" RequireLv="2">
+			<RequireMaterials>
+				<property Item="FiberReinforced_Epic" Amount="1"/>
+				<property Item="Skin_EvilMonster" Amount="1"/>
+				<property Item="PsionicStone_FlashCore" Amount="1"/>
 			</RequireMaterials>
 		</class>
 		<class name="Skin_Monster" Opened="false" UnLockRecipe="Skin_EvilMonster, Skin_Neguri_Uncommon" Category="Leather" RequireLv="1">
@@ -1122,10 +1134,22 @@
 				<property Item="PsionicStone_VerdureFragment" Amount="1"/>
 			</RequireMaterials>
 		</class>
-		<class name="Skin_KingDorori" Opened="false" UnLockRecipe="" Category="Leather" RequireLv="2">
+		<class name="Skin_KingDorori" Opened="false" UnLockRecipe="Skin_KingDorori_Epic" Category="Leather" RequireLv="2">
 			<RequireMaterials>
 				<property Item="Skin_Dorori" Amount="3"/>
 				<property Item="PsionicStone_VerdureElement" Amount="1"/>
+			</RequireMaterials>
+		</class>
+		<class name="Skin_KingDorori_Epic" Opened="false" UnLockRecipe="Skin_KingDorori_Legend" Category="Leather" RequireLv="2">
+			<RequireMaterials>
+				<property Item="Skin_KingDorori" Amount="3"/>
+				<property Item="PsionicStone_VerdureCrystal" Amount="1"/>
+			</RequireMaterials>
+		</class>
+		<class name="Skin_KingDorori_Legend" Opened="false" UnLockRecipe="" Category="Leather" RequireLv="2">
+			<RequireMaterials>
+				<property Item="Skin_KingDorori_Epic" Amount="3"/>
+				<property Item="PsionicStone_VerdureCore" Amount="1"/>
 			</RequireMaterials>
 		</class>
 		<class name="Skin_Neguri_Uncommon" Opened="false" UnLockRecipe="Skin_Neguri_Rare" Category="Leather" RequireLv="2">
@@ -1134,10 +1158,22 @@
 				<property Item="PsionicStone_VerdureElement" Amount="1"/>
 			</RequireMaterials>
 		</class>
-		<class name="Skin_Neguri_Rare" Opened="false" UnLockRecipe="" Category="Leather" RequireLv="2">
+		<class name="Skin_Neguri_Rare" Opened="false" UnLockRecipe="Skin_Neguri_Epic" Category="Leather" RequireLv="2">
 			<RequireMaterials>
 				<property Item="Skin_Neguri_Uncommon" Amount="3"/>
 				<property Item="PsionicStone_VerdureElement" Amount="1"/>
+			</RequireMaterials>
+		</class>
+		<class name="Skin_Neguri_Epic" Opened="false" UnLockRecipe="Skin_Neguri_Legend" Category="Leather" RequireLv="2">
+			<RequireMaterials>
+				<property Item="Skin_Neguri_Rare" Amount="3"/>
+				<property Item="PsionicStone_VerdureCrystal" Amount="1"/>
+			</RequireMaterials>
+		</class>
+		<class name="Skin_Neguri_Legend" Opened="false" UnLockRecipe="" Category="Leather" RequireLv="2">
+			<RequireMaterials>
+				<property Item="Skin_Neguri_Epic" Amount="3"/>
+				<property Item="PsionicStone_VerdureCore" Amount="1"/>
 			</RequireMaterials>
 		</class>
 		<class name="Skin_Draky_Rare" Opened="false" UnLockRecipe="Skin_Draky_Epic" Category="Leather" RequireLv="2">
@@ -1298,7 +1334,7 @@
 				<property Item="Skin_Draky_Epic" Amount="1"/>
 			</RequireMaterials>
 		</class>
-		<class name="Boots_BlackIronEnhanced_Rare" Opened="false" UnLockRecipe="Boots_BlackIronEnhanced_Ice_Epic, Boots_BlackIronEnhanced_Fire_Epic, Boots_BlackIronEnhanced_Lightning_Epic" Category="Leather" RequireLv="2">
+		<class name="Boots_BlackIronEnhanced_Rare" Opened="false" UnLockRecipe="Boots_BlackIronEnhanced_Ice_Epic, Boots_BlackIronEnhanced_Fire_Epic, Boots_BlackIronEnhanced_Lightning_Epic, Boots_Neguri_Gold_Set" Category="Leather" RequireLv="2">
 			<RequireMaterials>
 				<property Item="FiberBlackIron_Rare" Amount="1"/>
 				<property Item="Bone_Draky_Rare" Amount="1"/>
@@ -1328,6 +1364,14 @@
 				<property Item="Bone_Draky_Epic" Amount="1"/>
 				<property Item="Skin_EvilMonster" Amount="1"/>
 				<property Item="Skin_Lightning_BlackIron_Epic" Amount="1"/>
+			</RequireMaterials>
+		</class>
+		<class name="Boots_Neguri_Gold_Set" Opened="false" UnLockRecipe="" Category="Leather" RequireLv="2">
+			<RequireMaterials>
+				<property Item="FiberBlackIron_Epic" Amount="1"/>
+				<property Item="Bone_Draky_Epic" Amount="1"/>
+				<property Item="Skin_EvilMonster" Amount="1"/>
+				<property Item="Skin_KingDorori_Legend" Amount="1"/>
 			</RequireMaterials>
 		</class>
 		<class name="DressShoes_Yasha_Rare" Opened="true" UnLockRecipe="DressShoes_Yasha_Epic, DressShoes_Dorori_Rare, DressShoes_Tima_Epic" Category="Leather" RequireLv="2">
@@ -1578,7 +1622,7 @@
 				<property Item="Skin_Draky_Epic" Amount="1"/>
 			</RequireMaterials>
 		</class>
-		<class name="Sneakers_BlackIronEnhanced_Rare" Opened="false" UnLockRecipe="Sneakers_BlackIronEnhanced_Epic" Category="Leather" RequireLv="2">
+		<class name="Sneakers_BlackIronEnhanced_Rare" Opened="false" UnLockRecipe="Sneakers_BlackIronEnhanced_Epic, Sneakerss_Neguri_Gold_Set" Category="Leather" RequireLv="2">
 			<RequireMaterials>
 				<property Item="FiberBlackIron_Rare" Amount="1"/>
 				<property Item="Claw_Monster" Amount="1"/>
@@ -1591,6 +1635,14 @@
 				<property Item="FiberBlackIron_Epic" Amount="1"/>
 				<property Item="Claw_EvilMonster" Amount="1"/>
 				<property Item="Skin_BlackIron_Epic" Amount="1"/>
+				<property Item="Skin_Draky_Epic" Amount="1"/>
+			</RequireMaterials>
+		</class>
+		<class name="Sneakerss_Neguri_Gold_Set" Opened="false" UnLockRecipe="" Category="Leather" RequireLv="2">
+			<RequireMaterials>
+				<property Item="FiberBlackIron_Epic" Amount="1"/>
+				<property Item="Claw_EvilMonster" Amount="1"/>
+				<property Item="Skin_KingDorori_Legend" Amount="1"/>
 				<property Item="Skin_Draky_Epic" Amount="1"/>
 			</RequireMaterials>
 		</class>
@@ -1714,7 +1766,7 @@
 				<property Item="Scale_Draky_Epic" Amount="1"/>
 			</RequireMaterials>
 		</class>
-		<class name="Wrist_BlackIronEnhanced_Rare" Opened="false" UnLockRecipe="Wrist_BlackIronEnhanced_Ice_Epic, Wrist_BlackIronEnhanced_Fire_Epic, Wrist_BlackIronEnhanced_Lightning_Epic" Category="Leather" RequireLv="2">
+		<class name="Wrist_BlackIronEnhanced_Rare" Opened="false" UnLockRecipe="Wrist_BlackIronEnhanced_Ice_Epic, Wrist_BlackIronEnhanced_Fire_Epic, Wrist_BlackIronEnhanced_Lightning_Epic, Wrist_Neguri_Gold_Set" Category="Leather" RequireLv="2">
 			<RequireMaterials>
 				<property Item="MetalBlackIronPart_Epic" Amount="1"/>
 				<property Item="Bone_Draky_Epic" Amount="1"/>
@@ -1744,6 +1796,14 @@
 				<property Item="Bone_Draky_Epic" Amount="1"/>
 				<property Item="Skin_EvilMonster" Amount="1"/>
 				<property Item="Skin_Lightning_BlackIron_Epic" Amount="1"/>
+			</RequireMaterials>
+		</class>
+		<class name="Wrist_Neguri_Gold_Set" Opened="false" UnLockRecipe="" Category="Leather" RequireLv="2">
+			<RequireMaterials>
+				<property Item="MetalBlackIronPart_Epic" Amount="1"/>
+				<property Item="Bone_Draky_Epic" Amount="1"/>
+				<property Item="Skin_EvilMonster" Amount="1"/>
+				<property Item="Skin_Lightning_Legend" Amount="1"/>
 			</RequireMaterials>
 		</class>
 		<class name="Tracksuit_Wrecking_Set" Opened="false" UnLockRecipe="" Category="Clothes" RequireLv="1">
@@ -1839,7 +1899,7 @@
 				<property Item="Skin_Lightning" Amount="1"/>
 			</RequireMaterials>
 		</class>
-		<class name="Tracksuit_BlackIronEnhanced_Rare" Opened="false" UnLockRecipe="Tracksuit_BlackIronEnhanced_Ice_Epic, Tracksuit_BlackIronEnhanced_Fire_Epic, Tracksuit_BlackIronEnhanced_Lightning_Epic" Category="Clothes" RequireLv="2">
+		<class name="Tracksuit_BlackIronEnhanced_Rare" Opened="false" UnLockRecipe="Tracksuit_BlackIronEnhanced_Ice_Epic, Tracksuit_BlackIronEnhanced_Fire_Epic, Tracksuit_BlackIronEnhanced_Lightning_Epic, Tracksuit_Neguri_Gold_Set" Category="Clothes" RequireLv="2">
 			<RequireMaterials>
 				<property Item="FiberBlackIron_Rare" Amount="3"/>
 				<property Item="FiberYasha" Amount="10"/>
@@ -1869,6 +1929,14 @@
 				<property Item="FiberYasha" Amount="10"/>
 				<property Item="Skin_Draky_Epic" Amount="2"/>
 				<property Item="Skin_Lightning_BlackIron_Epic" Amount="1"/>
+			</RequireMaterials>
+		</class>
+		<class name="Tracksuit_Neguri_Gold_Set" Opened="false" UnLockRecipe="" Category="Clothes" RequireLv="2">
+			<RequireMaterials>
+				<property Item="FiberBlackIron_Epic" Amount="3"/>
+				<property Item="FiberYasha" Amount="10"/>
+				<property Item="Skin_Draky_Epic" Amount="2"/>
+				<property Item="Skin_Lightning_Legend" Amount="1"/>
 			</RequireMaterials>
 		</class>
 		<class name="Jacket_Extractor_Set" Opened="false" UnLockRecipe="" Category="Clothes" RequireLv="1">
@@ -1972,7 +2040,7 @@
 				<property Item="Skin_Draky_Epic" Amount="1"/>
 			</RequireMaterials>
 		</class>
-		<class name="Jacket_BlackIronEnhanced_Rare" Opened="false" UnLockRecipe="Jacket_BlackIronEnhanced_Ice_Epic, Jacket_BlackIronEnhanced_Fire_Epic, Jacket_BlackIronEnhanced_Lightning_Epic" Category="Clothes" RequireLv="2">
+		<class name="Jacket_BlackIronEnhanced_Rare" Opened="false" UnLockRecipe="Jacket_BlackIronEnhanced_Ice_Epic, Jacket_BlackIronEnhanced_Fire_Epic, Jacket_BlackIronEnhanced_Lightning_Epic, Jacket_Neguri_Gold_Set" Category="Clothes" RequireLv="2">
 			<RequireMaterials>
 				<property Item="FiberBlackIron_Rare" Amount="3"/>
 				<property Item="Skin_Monster" Amount="3"/>
@@ -2002,6 +2070,14 @@
 				<property Item="Skin_EvilMonster" Amount="2"/>
 				<property Item="Skin_Lightning_BlackIron_Epic" Amount="1"/>
 				<property Item="Skin_Draky_Epic" Amount="1"/>
+			</RequireMaterials>
+		</class>
+		<class name="Jacket_Neguri_Gold_Set" Opened="false" UnLockRecipe="" Category="Clothes" RequireLv="2">
+			<RequireMaterials>
+				<property Item="FiberBlackIron_Epic" Amount="3"/>
+				<property Item="Skin_EvilMonster" Amount="2"/>
+				<property Item="Skin_Lava_BlackIron_Epic" Amount="1"/>
+				<property Item="Skin_Lightning_Legend" Amount="1"/>
 			</RequireMaterials>
 		</class>
 		<class name="Coat_Collector_Set" Opened="false" UnLockRecipe="" Category="Clothes" RequireLv="1">
@@ -2456,7 +2532,7 @@
 				<property Item="Jewel_DrakyHeart_Perfect" Amount="1"/>
 			</RequireMaterials>
 		</class>
-		<class name="Bangle_Thorn_Rare" Opened="false" UnLockRecipe="Bangle_Thorn_Epic" Category="Bangle" RequireLv="2">
+		<class name="Bangle_Thorn_Rare" Opened="false" UnLockRecipe="Bangle_Thorn_Epic, Bangle_Neguri_Gold_Set" Category="Bangle" RequireLv="2">
 			<RequireMaterials>
 				<property Item="MetalBlackIronPart_Rare" Amount="2"/>
 				<property Item="PsionicStone_StormCore" Amount="2"/>
@@ -2470,6 +2546,14 @@
 				<property Item="PsionicStone_StormCore" Amount="2"/>
 				<property Item="PsionicStone_FlashCore" Amount="1"/>
 				<property Item="Jewel_DrakyHeart_Perfect" Amount="1"/>
+			</RequireMaterials>
+		</class>
+		<class name="Bangle_Neguri_Gold_Set" Opened="false" UnLockRecipe="" Category="Bangle" RequireLv="2">
+			<RequireMaterials>
+				<property Item="MetalBlackIronPart_Epic" Amount="2"/>
+				<property Item="PsionicStone_StormCore" Amount="2"/>
+				<property Item="PsionicStone_FlashCore" Amount="1"/>
+				<property Item="Skin_Neguri_Legend" Amount="1"/>
 			</RequireMaterials>
 		</class>
 		<class name="BattleGlove_OgreFist_Rare" Opened="true" UnLockRecipe="BattleGlove_OgreFist_Epic, BattleGlove_TrolleFist_Rare" Category="BattleGlove" RequireLv="1">
@@ -2552,7 +2636,7 @@
 				<property Item="Jewel_DrakyHeart_Perfect" Amount="1"/>
 			</RequireMaterials>
 		</class>
-		<class name="BattleGlove_YellowIronFist_Rare" Opened="false" UnLockRecipe="BattleGlove_YellowIronFist_Ice_Epic, BattleGlove_YellowIronFist_Fire_Epic, BattleGlove_YellowIronFist_Lightning_Epic" Category="BattleGlove" RequireLv="2">
+		<class name="BattleGlove_YellowIronFist_Rare" Opened="false" UnLockRecipe="BattleGlove_YellowIronFist_Ice_Epic, BattleGlove_YellowIronFist_Fire_Epic, BattleGlove_YellowIronFist_Lightning_Epic, BattleGlove_Neguri_Gold_Set" Category="BattleGlove" RequireLv="2">
 			<RequireMaterials>
 				<property Item="MetalBlackIronPart_Rare" Amount="2"/>
 				<property Item="Skin_BlackIron" Amount="2"/>
@@ -2582,6 +2666,14 @@
 				<property Item="Skin_Lightning_BlackIron_Epic" Amount="2"/>
 				<property Item="PsionicStone_FrostCore" Amount="1"/>
 				<property Item="Jewel_DrakyHeart_Perfect" Amount="1"/>
+			</RequireMaterials>
+		</class>
+		<class name="BattleGlove_Neguri_Gold_Set" Opened="false" UnLockRecipe="" Category="BattleGlove" RequireLv="2">
+			<RequireMaterials>
+				<property Item="MetalBlackIronPart_Epic" Amount="2"/>
+				<property Item="Skin_Lightning_BlackIron_Epic" Amount="2"/>
+				<property Item="PsionicStone_FrostCore" Amount="1"/>
+				<property Item="Skin_Neguri_Legend" Amount="1"/>
 			</RequireMaterials>
 		</class>
 		<class name="Sword_SharpBlade_Rare" Opened="true" UnLockRecipe="Sword_SharpBlade_Epic, Sword_Pulse_Rare" Category="Sword" RequireLv="1">
@@ -3145,7 +3237,7 @@
 				<property Item="Bone_Draky_Epic" Amount="1"/>
 			</RequireMaterials>
 		</class>
-		<class name="Ring_BlackIronEnhanced_Rare" Opened="false" UnLockRecipe="Ring_BlackIronEnhanced_Epic" Category="Accessory" RequireLv="2">
+		<class name="Ring_BlackIronEnhanced_Rare" Opened="false" UnLockRecipe="Ring_BlackIronEnhanced_Epic, Ring_Neguri_Gold_Set" Category="Accessory" RequireLv="2">
 			<RequireMaterials>
 				<property Item="Jewel_DrakyHeart" Amount="2"/>
 				<property Item="MetalBlackIronPart_Rare" Amount="2"/>
@@ -3159,6 +3251,14 @@
 				<property Item="MetalBlackIronPart_Epic" Amount="1"/>
 				<property Item="Fang_EvilMonster" Amount="1"/>
 				<property Item="Skin_BlackIron_Epic" Amount="1"/>
+			</RequireMaterials>
+		</class>
+		<class name="Ring_Neguri_Gold_Set" Opened="false" UnLockRecipe="" Category="Accessory" RequireLv="2">
+			<RequireMaterials>
+				<property Item="Jewel_DrakyHeart_Perfect" Amount="1"/>
+				<property Item="MetalBlackIronPart_Epic" Amount="1"/>
+				<property Item="Fang_EvilMonster" Amount="1"/>
+				<property Item="Skin_Lightning_Legend" Amount="1"/>
 			</RequireMaterials>
 		</class>
 		<class name="Bracelet_Collector_Set" Opened="false" UnLockRecipe="" Category="Accessory" RequireLv="1">
@@ -3747,6 +3847,22 @@
 				<property Item="Skin_EvilMonster" Amount="1"/>
 				<property Item="Skin_Neguri_Rare" Amount="1"/>
 				<property Item="PsionicStone_VerdureCore" Amount="1"/>
+			</RequireMaterials>
+		</class>
+		<class name="Amulet_Neguri_GoldESP_Set" Opened="true" UnLockRecipe="" Category="Gear" RequireLv="1">
+			<RequireMaterials>
+				<property Item="MetalPart_Epic" Amount="1"/>
+				<property Item="Skin_KingDorori_Legend" Amount="1"/>
+				<property Item="Pocket_Oil_Legend" Amount="1"/>
+				<property Item="PsionicStone_FlashCore" Amount="1"/>
+			</RequireMaterials>
+		</class>
+		<class name="Amulet_Neguri_GoldAttack_Set" Opened="true" UnLockRecipe="" Category="Gear" RequireLv="1">
+			<RequireMaterials>
+				<property Item="MetalPart_Epic" Amount="1"/>
+				<property Item="Skin_Lightning_Legend" Amount="1"/>
+				<property Item="Pocket_Oil_Legend" Amount="1"/>
+				<property Item="PsionicStone_FlashCore" Amount="1"/>
 			</RequireMaterials>
 		</class>
 		<class name="Amulet_Draky_Set" Opened="true" UnLockRecipe="" Category="Gear" RequireLv="1">

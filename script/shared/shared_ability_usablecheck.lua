@@ -79,7 +79,9 @@ function TargetAbilityUseableCheck_Tame(self, ability, target, reason)
 	
 	-- 도발에 걸려있으면 제외
 	if HasBuff(target, 'Provocation') then
-		return 'Hide';
+		local curReason = { Type = 'BlockByNeutralizeBuff', Buff = GetClassList('Buff')['Provocation'].Title };	-- 클라에서는 번역이 잘 될테니까
+		table.insert(reason, curReason);
+		return 'Disable';
 	end
 	
 	local limit = 'Epic';
@@ -206,6 +208,40 @@ function TargetAbilityUseableCheck_RemoveBuffHide(self, ability, target, reason)
 		end
 	end
 end
+function TargetAbilityUseableCheck_FlypaperBig_Move(self, ability, target, reason)
+	if target.Race.name == 'Object' then
+		return 'Hide';
+	end
+	
+	local isEnable = true;
+	
+	local isDisableKnockbackMastery = nil;
+	local masteryTable = GetMastery(target);
+	for key, mastery in pairs(masteryTable) do
+		if mastery.DisableKnockback then
+			isDisableKnockbackMastery = mastery;
+			break;
+		end
+	end
+	if isDisableKnockbackMastery then
+		isEnable = false;
+		table.insert(reason, {Type = 'NotUseByHavingThisMastery', Mastery = isDisableKnockbackMastery.name});
+	end
+	
+	local fromPos = GetPosition(self);
+	local targetPos = GetPosition(target);
+	local targetDist = GetDistance2D(targetPos, fromPos);
+	local knockbackPower = math.min(math.floor(targetDist), ability.KnockbackPower);
+	local knockbackPos = GetKnockbackPosition(target, fromPos, knockbackPower, true);
+	if IsSamePosition(knockbackPos, targetPos) then
+		isEnable = false;
+		table.insert(reason, {Type = 'AfterPositionNoSpace'});
+	end
+	
+	if not isEnable then
+		return 'Disable';
+	end
+end
 
 function HackingProtocolEnableTest_True(self, target, protocolCls)
 	return true;
@@ -230,4 +266,30 @@ function AbilityProtocolEnableTest_TargetUseable(self, target, protocolCls)
 end
 function AbilitySubMenuImageFromAbility(self, arg)
 	return self.Ability.Image;
+end
+function InvestigateLockEnableTest_HasKeyItem(self, target, subCommand)
+	local ability = GetAbilityObject(self, subCommand.Ability.name);
+	if not ability or ability.UseCount <= 0 then
+		return false;
+	end
+	
+	local keyItem = nil;
+	local investigationInfo = GetInstantProperty(target, 'InvestigationInfo');
+	local lockType = SafeIndex(investigationInfo, 'LockType');
+	if lockType then
+		local lockTypeCls = GetClassList('LockType')[lockType];
+		if lockTypeCls and lockTypeCls.name then
+			keyItem = SafeIndex(lockTypeCls, 'KeyItem', 'name');
+		end
+	end
+	local isEnable = false;
+	local reason = nil;
+	if keyItem then
+		local equipItem = GetWithoutError(self, 'Inventory2');
+		if equipItem and equipItem.name == keyItem then
+			isEnable = true;
+			reason = FormatMessageText(GuideMessageText('AbilityToolTip_LockHasKey'), {KeyName = ClassDataText('Item', keyItem, 'Title')});
+		end
+	end
+	return isEnable, reason;
 end

@@ -450,4 +450,58 @@
 			</property>
 		</Reactions>
 	</class>
+	<class name="LockForceFailed">
+		<Reactions>
+			<property name="Boy">
+				<TextList>
+					<property Text="으아앙~"/>
+				</TextList>
+			</property>
+			<property name="Girl_Anne">
+				<TextList>
+					<property Text="꺄악!"/>
+				</TextList>
+			</property>
+			<property name="Girl">
+				<TextList>
+					<property Text="으앙앙앙~"/>
+					<property Text="꺄악!"/>
+				</TextList>
+			</property>
+			<property name="Man">
+				<TextList>
+					<property Text="뭐야!"/>
+					<property Text="뭐지!"/>
+				</TextList>
+			</property>
+			<property name="Man_Complain">
+				<TextList>
+					<property Text="재수 없으려니까!"/>
+					<property Text="제발!"/>
+					<property Text="뭐야!"/>
+					<property Text="뭐지!"/>
+				</TextList>
+			</property>
+			<property name="Pierto">
+				<TextList>
+					<property Text="뭐야!"/>
+				</TextList>
+			</property>
+			<property name="OldMan">
+				<TextList>
+					<property Text="오늘이 가는 날인가..."/>
+				</TextList>
+			</property>
+			<property name="Woman">
+				<TextList>
+					<property Text="꺄아아악!"/>
+				</TextList>
+			</property>
+			<property name="Woman_Complain">
+				<TextList>
+					<property Text="꺄아아악!"/>
+				</TextList>
+			</property>
+		</Reactions>
+	</class>
 </idspace>

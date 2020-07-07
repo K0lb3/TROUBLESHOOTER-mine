@@ -146,6 +146,7 @@
 		<class name="Chain3x3" Type="Chain" Distance="3" ChainCount="3" Team="Enemy"/>
 		<class name="Chain3x3_4" Type="Chain" Distance="3" ChainCount="4" Team="Enemy"/>
 		<class name="Chain3x3_6" Type="Chain" Distance="3" ChainCount="6" Team="Enemy"/>
+		<class name="Chain3x3_8" Type="Chain" Distance="3" ChainCount="8" Team="Enemy"/>
 		<class name="Chain4x4" Type="Chain" Distance="4" ChainCount="4" Team="Enemy"/>
 		<class name="CloakingDetect" Type="Box" Distance="1" SightFilter="true" HeightFilter="true" HeightRange="16"/>
 		<class name="Cross1" Type="Cross" Distance="1" Renderer="Particle_AttackRange" ExpandedRange="Cross2"/>

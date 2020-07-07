@@ -399,21 +399,22 @@
 				<property Item="Skin_Neguri" Category="Material" Type="Skin" Slot="10" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="125"/>
 				<property Item="Skin_Neguri_Uncommon" Category="Material" Type="Skin" Slot="11" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="875"/>
 				<property Item="Skin_Neguri_Rare" Category="Material" Type="Skin" Slot="11" Rate="50" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="5125"/>
-				<property Item="Skin_Dorori" Category="Material" Type="Skin" Slot="12" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="150"/>
-				<property Item="Skin_KingDorori" Category="Material" Type="Skin" Slot="12" Rate="50" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="950"/>
-				<property Item="Skin_Draky" Category="Material" Type="Skin" Slot="13" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="480"/>
-				<property Item="Skin_Draky_Rare" Category="Material" Type="Skin" Slot="14" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="1940"/>
-				<property Item="Skin_Draky_Epic" Category="Material" Type="Skin" Slot="14" Rate="50" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="8320"/>
-				<property Item="Scale_Draky" Category="Material" Type="Skin" Slot="15" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="270"/>
-				<property Item="Scale_Draky_Rare" Category="Material" Type="Skin" Slot="15" Rate="50" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="1310"/>
-				<property Item="Scale_Draky_Epic" Category="Material" Type="Skin" Slot="16" Rate="50" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="6430"/>
-				<property Item="Scale_Draky_Legend" Category="Material" Type="Skin" Slot="16" Rate="100" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="31790"/>
-				<property Item="Skin_Ice" Category="Material" Type="Skin" Slot="17" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="980"/>
-				<property Item="Skin_Lava" Category="Material" Type="Skin" Slot="17" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="980"/>
-				<property Item="Skin_Lightning" Category="Material" Type="Skin" Slot="17" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="980"/>
-				<property Item="Skin_Ice_Epic" Category="Material" Type="Skin" Slot="18" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="2600"/>
-				<property Item="Skin_Lava_Epic" Category="Material" Type="Skin" Slot="18" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="2600"/>
-				<property Item="Skin_Lightning_Epic" Category="Material" Type="Skin" Slot="18" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="2600"/>
+				<property Item="Skin_Dorori" Category="Material" Type="Skin" Slot="12" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="150"/>
+				<property Item="Skin_KingDorori" Category="Material" Type="Skin" Slot="13" Rate="50" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="950"/>
+				<property Item="Skin_KingDorori_Epic" Category="Material" Type="Skin" Slot="13" Rate="50" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="9850"/>
+				<property Item="Skin_Draky" Category="Material" Type="Skin" Slot="14" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="480"/>
+				<property Item="Skin_Draky_Rare" Category="Material" Type="Skin" Slot="15" Rate="50" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="1940"/>
+				<property Item="Skin_Draky_Epic" Category="Material" Type="Skin" Slot="15" Rate="50" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="8320"/>
+				<property Item="Scale_Draky" Category="Material" Type="Skin" Slot="16" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="270"/>
+				<property Item="Scale_Draky_Rare" Category="Material" Type="Skin" Slot="16" Rate="50" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="1310"/>
+				<property Item="Scale_Draky_Epic" Category="Material" Type="Skin" Slot="17" Rate="50" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="6430"/>
+				<property Item="Scale_Draky_Legend" Category="Material" Type="Skin" Slot="17" Rate="100" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="31790"/>
+				<property Item="Skin_Ice" Category="Material" Type="Skin" Slot="18" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="980"/>
+				<property Item="Skin_Lava" Category="Material" Type="Skin" Slot="18" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="980"/>
+				<property Item="Skin_Lightning" Category="Material" Type="Skin" Slot="18" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="980"/>
+				<property Item="Skin_Ice_Epic" Category="Material" Type="Skin" Slot="19" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="2600"/>
+				<property Item="Skin_Lava_Epic" Category="Material" Type="Skin" Slot="19" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="2600"/>
+				<property Item="Skin_Lightning_Epic" Category="Material" Type="Skin" Slot="19" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="2600"/>
 			</ItemList>
 			<ValkyrieShop>
 				<property GoodsType="Recipe" Recipe="Wrist_Tanner_Set" Category="Armor" Type="Recipe" Friendship="None" Price="1" Quest="EP1_Quest_AL05"/>

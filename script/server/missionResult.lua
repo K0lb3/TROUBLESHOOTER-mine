@@ -109,15 +109,14 @@ function OnEndMission(mission, dc, company, lineup, win, expResults, itemGetResu
 		disableLostItem = true;
 	end	
 	-- 유실물 수거 가방
-	local mastery_Amulet_Collector_Set = nil;
+	local amuletCollectorSetCount = 0;
 	for _, pc in ipairs(lineup) do
 		local obj = pc.Object;
 		if not IsDead(obj) and IsValidPosition(mission, GetPosition(obj)) then
-			mastery_Amulet_Collector_Set = GetMasteryMastered(GetMastery(obj), 'Amulet_Collector_Set');
+			local mastery_Amulet_Collector_Set = GetMasteryMastered(GetMastery(obj), 'Amulet_Collector_Set');
 			if mastery_Amulet_Collector_Set then
-				LogAndPrint('disableLostItem by mastery_Amulet_Collector_Set');
 				disableLostItem = true;
-				break;
+				amuletCollectorSetCount = amuletCollectorSetCount + 1;
 			end
 		end	
 	end
@@ -151,13 +150,17 @@ function OnEndMission(mission, dc, company, lineup, win, expResults, itemGetResu
 		end
 	end
 	-- 유실물 수거 가방
-	if win and mastery_Amulet_Collector_Set and not hasLostCandidateItem then
-		local pickCount = mastery_Amulet_Collector_Set.ApplyAmount;
-		local rewardItems = PickAmuletCollectorSetEquipment(company, mission.name, lineup, pickCount, rewardItems);
-		LogAndPrint('GiveItem by mastery_Amulet_Collector_Set', rewardItems);
-		for _, rewardItem in ipairs(rewardItems) do
+	if win and amuletCollectorSetCount > 0 and not hasLostCandidateItem then
+		local mastery = GetClassList('Mastery')['Amulet_Collector_Set'];
+		local baseCount = mastery.ApplyAmount;
+		local pickItems = PickAmuletCollectorSetEquipment(company, mission.name, lineup, baseCount, rewardItems, 'Rare');
+		if amuletCollectorSetCount > baseCount then
+			local addPickItems = PickAmuletCollectorSetEquipment(company, mission.name, lineup, amuletCollectorSetCount - baseCount, rewardItems, 'Uncommon');
+			table.append(pickItems, addPickItems);
+		end
+		for _, rewardItem in ipairs(pickItems) do
 			dc:GiveItem(company, rewardItem, 1, true, '');
-			table.insert(list.Item, { Type = rewardItem, Count = 1, Reason = mastery_Amulet_Collector_Set.name });
+			table.insert(list.Item, { Type = rewardItem, Count = 1, Reason = mastery.name });
 		end
 	end
 	-- 3-3) Stackable 아이템들을 추가
@@ -778,7 +781,7 @@ function GetMissionResultObjectState(obj, missionRank, company)
 	local missionMemberState = GetClassList('MissionMemberState');
 	local masteryTable = GetMastery(obj);
 	
-	local succ, state = pcall(GetMissionResultObjectStateByHPRatio, obj.HP, obj.LowestHP/obj.MaxHP);
+	local succ, state = pcall(GetMissionResultObjectStateByHPRatio, obj.LowestHP, obj.LowestHP/obj.MaxHP);
 	if not succ then
 		LogAndPrint('ERROR', 'GetMissionResultObjectState', state);
 		state = 'Normal';
@@ -824,7 +827,7 @@ function GetMissionResultObjectState_Machine(obj, missionRank, company)
 
 	local missionMemberState = GetClassList('MissionMemberState');
 			
-	local state = GetMissionResultObjectStateByHPRatio(obj.HP, obj.LowestHP/obj.MaxHP);
+	local state = GetMissionResultObjectStateByHPRatio(obj.LowestHP, obj.LowestHP/obj.MaxHP);
 	local realState = state;	
 	if missionRank == 'Escape' and state ~= 'Coma' then
 		state = 'Escape';
@@ -1088,20 +1091,28 @@ end
 ------------------------------------------------------------------------
 -- 유실물 수거 가방 아이템 선정
 -----------------------------------------------------------------------
-local g_amuletCollectorSetCandidateSet = nil;
-function PickAmuletCollectorSetEquipment(company, missionName, roster, pickCount, rewardItems)
+local g_amuletCollectorSetCandidateSet = {};
+function PickAmuletCollectorSetEquipment(company, missionName, roster, pickCount, rewardItems, baseRank)
 	local rankInfoSet = {
-		Rare = { Prob = 70 },
-		Epic = { Prob = 20, Next = 'Rare' },
-		Legend = { Prob = 10, Next = 'Epic' },
+		Rare = {
+			Rare = { Prob = 70 },
+			Epic = { Prob = 20, Next = 'Rare' },
+			Legend = { Prob = 10, Next = 'Epic' },
+		},
+		Uncommon = {
+			Uncommon = { Prob = 60 },
+			Rare = { Prob = 30, Next = 'Uncommon' },
+			Epic = { Prob = 9, Next = 'Rare' },
+			Legend = { Prob = 1, Next = 'Epic' },
+		},
 	};
 	
 	local categorySet = { Weapon = true, Armor = true, Accessory = true };
 
-	if g_amuletCollectorSetCandidateSet == nil then
+	if g_amuletCollectorSetCandidateSet[baseRank] == nil then
 		local candidateSet = {};
 		local pcList = GetClassList('Pc');
-		for rank, _ in pairs(rankInfoSet) do
+		for rank, _ in pairs(rankInfoSet[baseRank]) do
 			candidateSet[rank] = {};
 			for _, pcCls in pairs(pcList) do
 				candidateSet[rank][pcCls.name] = {};
@@ -1121,7 +1132,7 @@ function PickAmuletCollectorSetEquipment(company, missionName, roster, pickCount
 				end
 			end
 			for key, item in pairs(itemList) do
-				if rankInfoSet[item.Rank.name] and equipTypeSet[item.Type.name] and categorySet[item.Category.name] then
+				if rankInfoSet[baseRank][item.Rank.name] and equipTypeSet[item.Type.name] and categorySet[item.Category.name] then
 					local candidateList = SafeIndex(candidateSet, item.Rank.name, pcCls.name);
 					if candidateList ~= nil then
 						table.insert(candidateList, key);
@@ -1129,7 +1140,7 @@ function PickAmuletCollectorSetEquipment(company, missionName, roster, pickCount
 				end
 			end
 		end
-		g_amuletCollectorSetCandidateSet = candidateSet;
+		g_amuletCollectorSetCandidateSet[baseRank] = candidateSet;
 	end
 		
 	-- 현재 회사가 획득 가능한 아이템 셋
@@ -1171,18 +1182,18 @@ function PickAmuletCollectorSetEquipment(company, missionName, roster, pickCount
 	local pickItems = {};
 	
 	for i = 1, pickCount do
-		for fixRequireLv = 0, maxRequireLv, 5 do
-			local rankPicker = RandomPicker.new();
-			for rank, info in pairs(rankInfoSet) do
-				rankPicker:addChoice(info.Prob, rank);
-			end
-			local pickItem = nil;
-			local pickRank = rankPicker:pick();		
-			while pickRank ~= nil do
-				local candidateList = {};
-				-- 로스터 멤버 당
-				for _, pcInfo in ipairs(roster) do
-					local candidateListByRoster = SafeIndex(g_amuletCollectorSetCandidateSet, pickRank, pcInfo.name);
+		local rankPicker = RandomPicker.new();
+		for rank, info in pairs(rankInfoSet[baseRank]) do
+			rankPicker:addChoice(info.Prob, rank);
+		end
+		local pickItem = nil;
+		local pickRank = rankPicker:pick();		
+		while pickRank ~= nil do
+			local candidateList = {};
+			-- 로스터 멤버 당
+			for _, pcInfo in ipairs(roster) do
+				for fixRequireLv = 0, maxRequireLv, 5 do
+					local candidateListByRoster = SafeIndex(g_amuletCollectorSetCandidateSet[baseRank], pickRank, pcInfo.name);
 					-- 회사가 획득 가능한 것만
 					candidateListByRoster = table.filter(candidateListByRoster, function(itemName)
 						return itemFilter[itemName];
@@ -1195,21 +1206,23 @@ function PickAmuletCollectorSetEquipment(company, missionName, roster, pickCount
 						local itemCls = itemList[itemName];
 						return itemCls.RequireLv == testRequireLv;
 					end);
-					table.append(candidateList, candidateListByRoster);
+					if #candidateListByRoster > 0 then
+						table.append(candidateList, candidateListByRoster);
+						break;
+					end
 				end
-				if #candidateList > 0 then
-					pickItem = candidateList[math.random(1, #candidateList)];
-					break;
-				end
-				pickRank = rankInfoSet[pickRank].Next;
 			end
-			if pickItem ~= nil then
-				table.insert(pickItems, pickItem);
-				-- 드랍하는 적이 미션에 1명 뿐인 템을 얻었으면, 다음 후보에서 제외
-				if itemEnemiesAmountMap[pickItem] == 1 then
-					itemFilter[pickItem] = nil;
-				end
+			if #candidateList > 0 then
+				pickItem = candidateList[math.random(1, #candidateList)];
 				break;
+			end
+			pickRank = rankInfoSet[baseRank][pickRank].Next;
+		end
+		if pickItem ~= nil then
+			table.insert(pickItems, pickItem);
+			-- 드랍하는 적이 미션에 1명 뿐인 템을 얻었으면, 다음 후보에서 제외
+			if itemEnemiesAmountMap[pickItem] == 1 then
+				itemFilter[pickItem] = nil;
 			end
 		end
 	end

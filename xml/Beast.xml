@@ -127,6 +127,7 @@
 		<class name="GoodSmell"/>
 		<class name="Flight"/>
 		<class name="ScaleWall"/>
+		<class name="Illumination"/>
 	</idspace>
 	<idspace id="BeastHatching">
 		<class name="DrakyEgg">
@@ -190,6 +191,38 @@
 				<property Name="OntheSkyHunter" RequireLv="16"/>
 			</Masteries>
 		</class>
+		<class name="Mon_Beast_Bat_Red" Monster="Mon_Beast_Bat_Red" EvolutionType="Normal" EvolutionStage="2" EvolutionMaxStage="3" LobbySlot="Dorori" LobbyScale="0.5" DisableSummonMissionWeather="" DisableSummonMissionTemperature="" DisableSummonMissionTime="">
+			<Abilities>
+				<property Name="Bite_Bleeding" RequireLv="0" Default="true"/>
+				<property Name="Gliding_Bleeding" RequireLv="0" Default="true"/>
+				<property Name="MadnessDance" RequireLv="0" Default="true"/>
+				<property Name="SuperGliding_Bleeding" RequireLv="5" Default="false"/>
+			</Abilities>
+			<Masteries>
+				<property Name="DirtyTeeth" RequireLv="1"/>
+				<property Name="OntheSkyWalker" RequireLv="8"/>
+				<property Name="WindWingStroke" RequireLv="16"/>
+			</Masteries>
+			<Evolutions>
+				<property name="Mon_Beast_Bat_Red_Leader" Order="1" RequireItem="Jewel_Red_Perfect" RequireItemCount="1" RequireLv="40" RequireJobLv="16"/>
+			</Evolutions>
+		</class>
+		<class name="Mon_Beast_Bat_Red_Leader" Monster="Mon_Beast_Bat_Red_Leader" EvolutionType="Normal" EvolutionStage="3" EvolutionMaxStage="3" LobbySlot="Dorori" LobbyScale="0.4" DisableSummonMissionWeather="" DisableSummonMissionTemperature="" DisableSummonMissionTime="">
+			<Abilities>
+				<property Name="Bite_Bleeding" RequireLv="0" Default="true"/>
+				<property Name="Gliding_Bleeding" RequireLv="0" Default="true"/>
+				<property Name="MadnessDance" RequireLv="0" Default="true"/>
+				<property Name="SuperGliding_Bleeding" RequireLv="0" Default="true"/>
+				<property Name="Scream" RequireLv="5" Default="false"/>
+				<property Name="GlidingMove" RequireLv="10" Default="false"/>
+				<property Name="Frenzy" RequireLv="15" Default="false"/>
+			</Abilities>
+			<Masteries>
+				<property Name="WindWingStroke" RequireLv="1"/>
+				<property Name="Whirlwind" RequireLv="8"/>
+				<property Name="KingEar" RequireLv="16"/>
+			</Masteries>
+		</class>
 		<class name="Mon_Beast_Bat_Crazy" Monster="Mon_Beast_Bat_Crazy" EvolutionType="Normal" EvolutionStage="3" EvolutionMaxStage="3" LobbySlot="Dorori" LobbyScale="0.4" DisableSummonMissionWeather="" DisableSummonMissionTemperature="" DisableSummonMissionTime="">
 			<Abilities>
 				<property Name="Bite" RequireLv="0" Default="true"/>
@@ -237,6 +270,25 @@
 				<property Name="LordOfHatred" RequireLv="8"/>
 				<property Name="Overcharge_Fire" RequireLv="16"/>
 			</Masteries>
+		</class>
+		<class name="Mon_Beast_Bat_Gold" Monster="Mon_Beast_Bat_Gold" EvolutionType="Normal" EvolutionStage="3" EvolutionMaxStage="3" LobbySlot="Dorori" LobbyScale="0.5" DisableSummonMissionWeather="" DisableSummonMissionTemperature="" DisableSummonMissionTime="">
+			<Abilities>
+				<property Name="Bite_Fire" RequireLv="0" Default="true"/>
+				<property Name="Gliding_Fire" RequireLv="0" Default="true"/>
+				<property Name="Immolation_Fire" RequireLv="0" Default="true"/>
+				<property Name="SuperGliding_Fire" RequireLv="0" Default="true"/>
+				<property Name="ChangingMind" RequireLv="0" Default="false"/>
+				<property Name="FireShield" RequireLv="5" Default="false"/>
+				<property Name="GlidingMove" RequireLv="10" Default="false"/>
+			</Abilities>
+			<Masteries>
+				<property Name="BlazingWingStroke" RequireLv="1"/>
+				<property Name="LordOfHatred" RequireLv="8"/>
+				<property Name="LifeFlame" RequireLv="16"/>
+			</Masteries>
+			<FixedEvolutionMastery>
+				<property Name="Illumination" Slot="1" Rate="100"/>
+			</FixedEvolutionMastery>
 		</class>
 		<class name="Mon_Beast_Bat_Rock" Monster="Mon_Beast_Bat_Rock" EvolutionType="Normal" EvolutionStage="2" EvolutionMaxStage="3" LobbySlot="Dorori" LobbyScale="0.5" DisableSummonMissionWeather="" DisableSummonMissionTemperature="" DisableSummonMissionTime="">
 			<Abilities>
@@ -431,6 +483,71 @@
 				<property Name="WebHunter" RequireLv="1"/>
 				<property Name="ExtremeSpirit" RequireLv="8"/>
 				<property Name="Cleverfisherman" RequireLv="16"/>
+			</Masteries>
+		</class>
+		<class name="Mon_Beast_Spider_BlackWidow1" Monster="Mon_Beast_Spider_BlackWidow1" EvolutionType="Normal" EvolutionStage="1" EvolutionMaxStage="3" LobbySlot="Yasha" LobbyScale="0.275" DisableSummonMissionWeather="Rain" DisableSummonMissionTemperature="" DisableSummonMissionTime="">
+			<Abilities>
+				<property Name="Scratch" RequireLv="0" Default="true"/>
+			</Abilities>
+			<Masteries>
+				<property Name="ExpandCobweb" RequireLv="1"/>
+				<property Name="JoinCobweb" RequireLv="8"/>
+				<property Name="StandAlone" RequireLv="16"/>
+			</Masteries>
+			<Evolutions>
+				<property name="Mon_Beast_Spider_BlackWidow2" Order="1" RequireItem="Pocket_Poison" RequireItemCount="1" RequireLv="15" RequireJobLv="16"/>
+			</Evolutions>
+		</class>
+		<class name="Mon_Beast_Spider_BlackWidow2" Monster="Mon_Beast_Spider_BlackWidow2" EvolutionType="Normal" EvolutionStage="2" EvolutionMaxStage="3" LobbySlot="Yasha" LobbyScale="0.275" DisableSummonMissionWeather="Rain" DisableSummonMissionTemperature="" DisableSummonMissionTime="">
+			<Abilities>
+				<property Name="Scratch" RequireLv="0" Default="true"/>
+				<property Name="ClimbWeb" RequireLv="0" Default="false"/>
+				<property Name="FallWeb" RequireLv="0" Default="true"/>
+				<property Name="ThrowWeb" RequireLv="5" Default="false"/>
+				<property Name="PreyFishing" RequireLv="10" Default="false"/>
+				<property Name="FallWeb_Strong" RequireLv="15" Default="false"/>
+			</Abilities>
+			<Masteries>
+				<property Name="StandAlone" RequireLv="1"/>
+				<property Name="FastClimbWeb" RequireLv="8"/>
+				<property Name="RevengeStrikes" RequireLv="16"/>
+			</Masteries>
+			<Evolutions>
+				<property name="Mon_Beast_Spider_BlackWidow3" Order="1" RequireItem="Pocket_Poison_Big" RequireItemCount="1" RequireLv="30" RequireJobLv="16"/>
+			</Evolutions>
+		</class>
+		<class name="Mon_Beast_Spider_BlackWidow3" Monster="Mon_Beast_Spider_BlackWidow3" EvolutionType="Normal" EvolutionStage="3" EvolutionMaxStage="3" LobbySlot="Yasha" LobbyScale="0.275" DisableSummonMissionWeather="Rain" DisableSummonMissionTemperature="" DisableSummonMissionTime="">
+			<Abilities>
+				<property Name="Scratch" RequireLv="0" Default="true"/>
+				<property Name="ClimbWeb" RequireLv="0" Default="true"/>
+				<property Name="FallWeb" RequireLv="0" Default="true"/>
+				<property Name="FallWeb_Strong" RequireLv="0" Default="true"/>
+				<property Name="ThrowWeb" RequireLv="0" Default="true"/>
+				<property Name="PreyFishing" RequireLv="0" Default="true"/>
+				<property Name="SpiderBullet" RequireLv="5" Default="false"/>
+				<property Name="SpiderBullet_Strong" RequireLv="15" Default="false"/>
+			</Abilities>
+			<Masteries>
+				<property Name="RevengeStrikes" RequireLv="1"/>
+				<property Name="ExtremeSpirit" RequireLv="8"/>
+				<property Name="VeteranSpirit" RequireLv="16"/>
+			</Masteries>
+		</class>
+		<class name="Mon_Beast_Spider_BlackWidow4" Monster="Mon_Beast_Spider_BlackWidow4" EvolutionType="Normal" EvolutionStage="3" EvolutionMaxStage="3" LobbySlot="Yasha" LobbyScale="0.276" DisableSummonMissionWeather="Rain" DisableSummonMissionTemperature="" DisableSummonMissionTime="">
+			<Abilities>
+				<property Name="Scratch" RequireLv="0" Default="true"/>
+				<property Name="ClimbWeb" RequireLv="0" Default="true"/>
+				<property Name="FallWeb" RequireLv="0" Default="true"/>
+				<property Name="FallWeb_Strong" RequireLv="0" Default="true"/>
+				<property Name="ChangingMind" RequireLv="0" Default="true"/>
+				<property Name="PreyFishing" RequireLv="0" Default="true"/>
+				<property Name="SpiderBullet" RequireLv="5" Default="false"/>
+				<property Name="SpiderBullet_Strong" RequireLv="15" Default="false"/>
+			</Abilities>
+			<Masteries>
+				<property Name="RevengeStrikes" RequireLv="1"/>
+				<property Name="ExtremeSpirit" RequireLv="8"/>
+				<property Name="WebNetwork" RequireLv="16"/>
 			</Masteries>
 		</class>
 		<class name="Mon_Beast_Spider_Black1" Monster="Mon_Beast_Spider_Black1" EvolutionType="Normal" EvolutionStage="1" EvolutionMaxStage="3" LobbySlot="Yasha" LobbyScale="0.275" DisableSummonMissionWeather="Rain" DisableSummonMissionTemperature="" DisableSummonMissionTime="">
@@ -862,6 +979,26 @@
 				<property Name="UndefeatedSpirit" RequireLv="16"/>
 			</Masteries>
 		</class>
+		<class name="Mon_Beast_Tima_Yellow" Monster="Mon_Beast_Tima_Yellow" EvolutionType="Normal" EvolutionStage="3" EvolutionMaxStage="3" LobbySlot="Tima" LobbyScale="0.67" DisableSummonMissionWeather="" DisableSummonMissionTemperature="" DisableSummonMissionTime="">
+			<Abilities>
+				<property Name="Scratch_Lightning" RequireLv="0" Default="true"/>
+				<property Name="BreathLighting" RequireLv="0" Default="true"/>
+				<property Name="Howl" RequireLv="0" Default="true"/>
+				<property Name="BreathLighting_Big" RequireLv="0" Default="true"/>
+				<property Name="Lightningwalker" RequireLv="0" Default="true"/>
+				<property Name="ThunderArmor" RequireLv="5" Default="false"/>
+				<property Name="LightningMane" RequireLv="10" Default="false"/>
+				<property Name="LightningHeadbutt" RequireLv="15" Default="true"/>
+			</Abilities>
+			<Masteries>
+				<property Name="StrongRush" RequireLv="1"/>
+				<property Name="RageLightning" RequireLv="8"/>
+				<property Name="Oppression" RequireLv="16"/>
+			</Masteries>
+			<FixedEvolutionMastery>
+				<property Name="Illumination" Slot="1" Rate="100"/>
+			</FixedEvolutionMastery>
+		</class>
 		<class name="Mon_Beast_Frog_Normal1" Monster="Mon_Beast_Frog_Normal1" EvolutionType="Normal" EvolutionStage="1" EvolutionMaxStage="3" LobbySlot="Neguri" LobbyScale="0.4" DisableSummonMissionWeather="" DisableSummonMissionTemperature="Freezing, ExtremelyHot" DisableSummonMissionTime="">
 			<Abilities>
 				<property Name="NeguriTongueBash" RequireLv="0" Default="true"/>
@@ -1000,6 +1137,25 @@
 				<property Name="Overcharge_Lightning" RequireLv="16"/>
 			</Masteries>
 		</class>
+		<class name="Mon_Beast_Frog_Gold" Monster="Mon_Beast_Frog_Gold" EvolutionType="Normal" EvolutionStage="3" EvolutionMaxStage="3" LobbySlot="Neguri" LobbyScale="0.3" DisableSummonMissionWeather="" DisableSummonMissionTemperature="Freezing, ExtremelyHot" DisableSummonMissionTime="">
+			<Abilities>
+				<property Name="FlypaperBig_Lightning" RequireLv="0" Default="true"/>
+				<property Name="NeguriThunderField" RequireLv="0" Default="true"/>
+				<property Name="NeguriCrying_Thunder" RequireLv="0" Default="true"/>
+				<property Name="NeguriCrying_ThunderBig" RequireLv="0" Default="true"/>
+				<property Name="Lightningwalker" RequireLv="0" Default="true"/>
+				<property Name="ThunderArmor" RequireLv="5" Default="false"/>
+				<property Name="NeguriJumpAttackBig" RequireLv="10" Default="false"/>
+			</Abilities>
+			<Masteries>
+				<property Name="OntheWaterHunter" RequireLv="1"/>
+				<property Name="WaterToWater" RequireLv="8"/>
+				<property Name="NeuralNetworkAcceleration" RequireLv="16"/>
+			</Masteries>
+			<FixedEvolutionMastery>
+				<property Name="Illumination" Slot="1" Rate="100"/>
+			</FixedEvolutionMastery>
+		</class>
 		<class name="Mon_Beast_Frog_Fire1" Monster="Mon_Beast_Frog_Fire1" EvolutionType="Normal" EvolutionStage="1" EvolutionMaxStage="3" LobbySlot="Neguri" LobbyScale="0.4" DisableSummonMissionWeather="" DisableSummonMissionTemperature="Freezing, ExtremelyHot" DisableSummonMissionTime="">
 			<Abilities>
 				<property Name="NeguriTongueBash_Fire" RequireLv="0" Default="true"/>
@@ -1090,6 +1246,99 @@
 				<property Name="OntheWaterHunter" RequireLv="1"/>
 				<property Name="Curse" RequireLv="8"/>
 				<property Name="Overcharge_Water" RequireLv="16"/>
+			</Masteries>
+		</class>
+		<class name="Mon_Beast_Frog_PoisonBlue1" Monster="Mon_Beast_Frog_PoisonBlue1" EvolutionType="Normal" EvolutionStage="1" EvolutionMaxStage="3" LobbySlot="Neguri" LobbyScale="0.4" DisableSummonMissionWeather="" DisableSummonMissionTemperature="Freezing, ExtremelyHot" DisableSummonMissionTime="">
+			<Abilities>
+				<property Name="NeguriTongueBash_Poison" RequireLv="0" Default="true"/>
+				<property Name="NeguriJumpAttack" RequireLv="0" Default="true"/>
+				<property Name="NeguriCrying_Fast" RequireLv="5" Default="false"/>
+			</Abilities>
+			<Masteries>
+				<property Name="Grouping" RequireLv="1"/>
+				<property Name="StrongBackLeg" RequireLv="8"/>
+				<property Name="EndlessSong" RequireLv="16"/>
+			</Masteries>
+			<Evolutions>
+				<property name="Mon_Beast_Frog_PoisonBlue2" Order="1" RequireItem="Pocket_Oil_Uncommon" RequireItemCount="1" RequireLv="24" RequireJobLv="16"/>
+			</Evolutions>
+		</class>
+		<class name="Mon_Beast_Frog_PoisonBlue2" Monster="Mon_Beast_Frog_PoisonBlue2" EvolutionType="Normal" EvolutionStage="2" EvolutionMaxStage="3" LobbySlot="Neguri" LobbyScale="0.4" DisableSummonMissionWeather="" DisableSummonMissionTemperature="Freezing, ExtremelyHot" DisableSummonMissionTime="">
+			<Abilities>
+				<property Name="Flypaper_Poison" RequireLv="0" Default="true"/>
+				<property Name="NeguriJumpAttack" RequireLv="0" Default="true"/>
+				<property Name="NeguriCrying_Fast" RequireLv="0" Default="true"/>
+				<property Name="AcidBall" RequireLv="5" Default="false"/>
+			</Abilities>
+			<Masteries>
+				<property Name="EndlessSong" RequireLv="1"/>
+				<property Name="ElementalGene" RequireLv="8"/>
+				<property Name="OntheWaterHunter" RequireLv="16"/>
+			</Masteries>
+			<Evolutions>
+				<property name="Mon_Beast_Frog_PoisonBlue3" Order="1" RequireItem="Pocket_Oil_Rare" RequireItemCount="1" RequireLv="36" RequireJobLv="16"/>
+			</Evolutions>
+		</class>
+		<class name="Mon_Beast_Frog_PoisonBlue3" Monster="Mon_Beast_Frog_PoisonBlue3" EvolutionType="Normal" EvolutionStage="3" EvolutionMaxStage="3" LobbySlot="Neguri" LobbyScale="0.3" DisableSummonMissionWeather="" DisableSummonMissionTemperature="Freezing, ExtremelyHot" DisableSummonMissionTime="">
+			<Abilities>
+				<property Name="FlypaperBig_Poison" RequireLv="0" Default="true"/>
+				<property Name="NeguriJumpAttackBig" RequireLv="0" Default="true"/>
+				<property Name="NeguriCrying_Fast" RequireLv="0" Default="true"/>
+				<property Name="AcidBall" RequireLv="0" Default="true"/>
+				<property Name="AcidRain" RequireLv="0" Default="true"/>
+				<property Name="FlypaperBig_Move" RequireLv="5" Default="false"/>
+				<property Name="NeguriCrying_Sleep" RequireLv="10" Default="false"/>
+			</Abilities>
+			<Masteries>
+				<property Name="OntheWaterHunter" RequireLv="1"/>
+				<property Name="ResonantCrying" RequireLv="8"/>
+				<property Name="Overcharge_Water" RequireLv="16"/>
+			</Masteries>
+		</class>
+		<class name="Mon_Beast_Frog_PoisonRed1" Monster="Mon_Beast_Frog_PoisonRed1" EvolutionType="Normal" EvolutionStage="1" EvolutionMaxStage="3" LobbySlot="Neguri" LobbyScale="0.4" DisableSummonMissionWeather="" DisableSummonMissionTemperature="Freezing, ExtremelyHot" DisableSummonMissionTime="">
+			<Abilities>
+				<property Name="NeguriTongueBash_Poison" RequireLv="0" Default="true"/>
+				<property Name="NeguriAcidGas" RequireLv="0" Default="true"/>
+				<property Name="NeguriCrying_Silence" RequireLv="5" Default="false"/>
+			</Abilities>
+			<Masteries>
+				<property Name="Grouping" RequireLv="1"/>
+				<property Name="StrongBackLeg" RequireLv="8"/>
+				<property Name="EndlessSong" RequireLv="16"/>
+			</Masteries>
+			<Evolutions>
+				<property name="Mon_Beast_Frog_PoisonRed2" Order="1" RequireItem="Pocket_Oil_Uncommon" RequireItemCount="1" RequireLv="24" RequireJobLv="16"/>
+			</Evolutions>
+		</class>
+		<class name="Mon_Beast_Frog_PoisonRed2" Monster="Mon_Beast_Frog_PoisonRed2" EvolutionType="Normal" EvolutionStage="2" EvolutionMaxStage="3" LobbySlot="Neguri" LobbyScale="0.4" DisableSummonMissionWeather="" DisableSummonMissionTemperature="Freezing, ExtremelyHot" DisableSummonMissionTime="">
+			<Abilities>
+				<property Name="Flypaper_Poison" RequireLv="0" Default="true"/>
+				<property Name="NeguriAcidGas" RequireLv="0" Default="true"/>
+				<property Name="NeguriCrying_Silence" RequireLv="0" Default="true"/>
+				<property Name="NeguriCrying_Sleep" RequireLv="5" Default="false"/>
+			</Abilities>
+			<Masteries>
+				<property Name="EndlessSong" RequireLv="1"/>
+				<property Name="ElementalGene" RequireLv="8"/>
+				<property Name="OntheWaterHunter" RequireLv="16"/>
+			</Masteries>
+			<Evolutions>
+				<property name="Mon_Beast_Frog_PoisonRed3" Order="1" RequireItem="Pocket_Oil_Rare" RequireItemCount="1" RequireLv="36" RequireJobLv="16"/>
+			</Evolutions>
+		</class>
+		<class name="Mon_Beast_Frog_PoisonRed3" Monster="Mon_Beast_Frog_PoisonRed3" EvolutionType="Normal" EvolutionStage="3" EvolutionMaxStage="3" LobbySlot="Neguri" LobbyScale="0.3" DisableSummonMissionWeather="" DisableSummonMissionTemperature="Freezing, ExtremelyHot" DisableSummonMissionTime="">
+			<Abilities>
+				<property Name="FlypaperBig_Poison" RequireLv="0" Default="true"/>
+				<property Name="NeguriAcidGas" RequireLv="0" Default="true"/>
+				<property Name="NeguriCrying_Silence" RequireLv="0" Default="true"/>
+				<property Name="NeguriCrying_Sleep" RequireLv="0" Default="true"/>
+				<property Name="AcidBall" RequireLv="5" Default="false"/>
+				<property Name="AcidRain" RequireLv="10" Default="false"/>
+			</Abilities>
+			<Masteries>
+				<property Name="OntheWaterHunter" RequireLv="1"/>
+				<property Name="ResonantCrying" RequireLv="8"/>
+				<property Name="KingSmell" RequireLv="16"/>
 			</Masteries>
 		</class>
 		<class name="Mon_Beast_Frog_Glutton" Monster="Mon_Beast_Frog_Glutton" EvolutionType="Normal" EvolutionStage="3" EvolutionMaxStage="3" LobbySlot="Neguri" LobbyScale="0.4" DisableSummonMissionWeather="" DisableSummonMissionTemperature="Freezing, ExtremelyHot" DisableSummonMissionTime="">

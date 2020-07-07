@@ -19,6 +19,7 @@
 	<class name="Ability_ModifyBuff" Title="어빌리티 강화 버프"/>
 	<class name="Ability_ModifyMastery" Title="어빌리티 강화 특성"/>
 	<class name="Ability_MultipleHit" Title="$Count$연타 공격"/>
+	<class name="Ability_Overwatch" Title="반응/반격 공격 가능"/>
 	<class name="Ability_RequireBuff" Title="$RequireBuff$ 상태에서만 사용 가능 합니다."/>
 	<class name="Ability_Turn_Free" Title="해당 어빌리티는 행동력을 소모하지 않습니다."/>
 	<class name="Ability_Turn_Half" Title="해당 어빌리티는 행동력을 1개 소모합니다."/>
@@ -108,6 +109,8 @@
 	<class name="AbilityToolTip_SilentMoveTarget" Title="$MoveTarget$[이] 비전투 상태 적의 대기, 순찰, 감시 등의 상태의 적에게 발각되지 않습니다."/>
 	<class name="AbilityToolTip_SurpriseMove" Title="이동 시 비전투 상태 적의 대기, 순찰, 감시 등의 상태의 적에게 발각되어도 적은 회피 이동을 할 수 없습니다."/>
 	<class name="AbilityToolTip_SurpriseMoveTarget" Title="$MoveTarget$[이] 비전투 상태 적의 대기, 순찰, 감시 등의 상태의 적에게 발각되어도 적은 회피 이동을 할 수 없습니다."/>
+	<class name="AbilityToolTip_LockHasKey" Title="$KeyName$ 열쇠를 소모합니다."/>
+	<class name="AbilityToolTip_LockNoKey" Title="$KeyName$ 열쇠가 없어 해당 상자를 열 수 없습니다."/>
 	<class name="AbilityUsed" Title="$Name$ $AbilityName$ 어빌리티를 사용하였습니다."/>
 	<class name="AbilityUsed_Obstacle" Title="$AbilityName$ 발생하였습니다."/>
 	<class name="AbilityUseGuide_Title" Title="어빌리티 사용"/>
@@ -159,6 +162,7 @@
 	<class name="ApplyDivisionExplainOpen" Title="관할 구역 신청을 위해서는 해당 지구민들의 평판, 관할 신청 등록세 그리고 일정 횟수 이상의 임무 완료 경험이 필요합니다. 
 
 [colour='FFFFFF00']관할 구역은 트러블슈터 회사 내 소속된 정식 트러블슈터 숫자만큼 확장할 수 있습니다."/>
+	<class name="ApplyDivisionCountDesc" Title="발할라 경찰청은 트러블슈터 회사의 소재지를 기본 관할 구역으로 제공합니다. 또한 회사 내 소속된 정식 트러블슈터 자격증 보유자 수 만큼 추가 확장할 수 있습니다."/>
 	<class name="AssistMapEnabled" Title="적 위치 정보 갱신."/>
 	<class name="AssistMapEnabledDialog" Title="현장의 적 위치 정보가 갱신되었습니다!"/>
 	<class name="AttachItemAvailable" Title="수령 가능 물품이 있습니다."/>
@@ -388,6 +392,7 @@
 	<class name="DoRest" Title="휴식을 취한다."/>
 	<class name="DownloadCompanyConfirm" Title="해당 게임 데이터를 오프라인 저장 슬롯으로 내려받습니다. 온라인 상의 게임 정보는 그대로 유지되지만 다시 내려받을 수 없으며 내려받은 게임 데이터는 이후 서로 동기화할 수 없습니다. 계속 하시겠습니까?"/>
 	<class name="DuplicatedKeyBinding" Title="$Key$ 단축키는 이미 $Name$ 명령에 할당되어 있습니다. 기존 단축키는 자동으로 해제됩니다. 계속 진행하시겠습니까?"/>
+	<class name="DuplicatedCompanyName" Title="이미 등록된 회사명 입니다."/>
 	<class name="EnableApplyAllowArea" Title="관할 구역 신청이 가능합니다."/>
 	<class name="EnableEvolutionMassterySelect" Title="[colour='FFFFFF00']무작위의 새로운 고유 특성을 선택하실 수 있습니다."/>
 	<class name="EncoreAchieved" Title="공연이 끝나도 끊이지 않는 박수 소리와 환호 속에 자신이 나아갈 길을 깨달았습니다."/>
@@ -768,8 +773,12 @@ OS변경을 위해 필요한 제작서: [colour='FFFFE959']%s[colour='FFFFFFFF']
 	<class name="MasteryMasterSetFrontMessage" Title="[colour='FFFFFF00']$MasteryName$[colour='FFFFFFFF'] 특성 추가 효과가 발동하였습니다."/>
 	<class name="MasteryMasterSetFrontMessageChat" Title="$MasteryName$ 특성 추가 효과가 발동하였습니다."/>
 	<class name="MasteryResearchNotAvailable" Title="현재 해당 마스터리는 획득하거나 연구 방법을 습득한 적이 없어 제작할 수 없습니다"/>
+	<class name="MasterySetAvailableByUpdate" Title="[colour='FFFFFFFF']$MasteryName$[colour='FFFFE959'] 추가 특성 효과 정보를 획득하였습니다."/>
 	<class name="MasterySetAvailableByTroublemaker" Title="[colour='FFFFE959']트러블메이커 [colour='FFFFFFFF']$TroublemakerName$[colour='FFFFE959']의 정보 획득 [colour='FFFFFFFF']4[colour='FFFFE959'] 단계 보상으로 [colour='FFFFFFFF']$MasteryName$[colour='FFFFE959'] 추가 특성 효과 정보를 획득하였습니다. "/>
 	<class name="MasterySetAvailableByTroublemakerChat" Title="트러블메이커 $TroublemakerName$의 정보 획득 4 단계 보상으로 $MasteryName$ 추가 특성 효과 정보를 획득하였습니다. "/>
+	<class name="MasterySetLackMastery" Title="현재 보유하고 있는 $Category$ 특성 중 하나입니다."/>
+	<class name="MasterySetLackOpened" Title="현재 연구 가능한 특성 중 하나입니다."/>
+	<class name="MasterySetLackUnknown" Title="해당 특성에 대한 정보가 없습니다."/>
 	<class name="MasterySlotExpand" Title="%s 특성 슬롯이 확장되었습니다."/>
 	<class name="MasteryTooltip_GetJobMasteryByCommonExplainSuperStar" Title="대상의 시작 직업이 $Job$, $Job2$, $Job3$, $Job4$ 같은 예능계 직업인 경우 해당 직업 특성을 부여합니다."/>
 	<class name="MasteryTooltip_GetJobMasteryByOwnerExplainSuperStar" Title="해당 대상에게 %s 특성을 부여합니다."/>
@@ -788,9 +797,9 @@ OS변경을 위해 필요한 제작서: [colour='FFFFE959']%s[colour='FFFFFFFF']
 	<class name="MissionStartMessage" Title="[colour='FFFFE959']사건을 해결하기 위해 출동합니다."/>
 	<class name="Mode_Challenger" Title="참여하는 플레이어의 캐릭터의 최고 레벨과 미션의 권장레벨 차이만큼 적의 레벨이 상승합니다. 또한 적의 레벨 상승에 따라 추가 특성들이 랜덤으로 부여됩니다. 플레이어 캐릭터의 최고 레벨이 권장 레벨보다 낮으면 적용되지 않습니다. 트러블메이커 일람의 정보 획득량이 $Num$배 증가합니다."/>
 	<class name="Mode_Normal" Title="미션의 기본 설정으로 플레이합니다. 권장 레벨에 맞춰 적이 등장하며 플레이어의 성장에 영향을 받지 않습니다."/>
-	<class name="Module_TroublemakerReward_Mastery" Title="해당 몬스터가 보유한 모듈을 연구할 수 있습니다."/>
-	<class name="Module_TroublemakerReward_MasteryAlldone" Title="이미 해당 몬스터가 보유한 모든 모듈을 연구할 수 있습니다."/>
-	<class name="Module_TroublemakerReward_Recipe" Title="해당 몬스터가 보유한 아이템 중 일부를 제작할 수 있습니다."/>
+	<class name="Module_TroublemakerReward_Mastery" Title="해당 적이 보유한 모듈을 연구할 수 있습니다."/>
+	<class name="Module_TroublemakerReward_MasteryAlldone" Title="이미 해당 적이 보유한 모든 모듈을 연구할 수 있습니다."/>
+	<class name="Module_TroublemakerReward_Recipe" Title="해당 적이 보유한 아이템 중 일부를 제작할 수 있습니다."/>
 	<class name="Module_TroublemakerReward_RecipeAlldone" Title="이미 해당 몬스터로부터 얻을 수 있는 제작 가능한 아이템을 모두 제작할 수 있습니다."/>
 	<class name="MoveLocationMsg" Title="\[%s\] 지역으로 이동하시겠습니까?"/>
 	<class name="NeedCaseReconstruction" Title="해당 사건에 대한 사건 재구성이 필요합니다."/>
@@ -941,6 +950,10 @@ $White$마무리$Blue_ON$ 효과가 발생 후, 모든 공연 슬롯과 $White$�
 	<class name="Rescue" Title="시민을 구조하였습니다."/>
 	<class name="Rescue2" Title="구출에 성공하였습니다."/>
 	<class name="RescueFailed" Title="시민을 구조하지 못하였습니다."/>
+	<class name="Research_CraftCount" Title="연구할 특성의 수량을 정하세요."/>
+	<class name="Research_CraftCount_Module" Title="제작할 모듈의 수량을 정하세요."/>
+	<class name="Research_MaxCraftCount" Title="연구 가능한 최대 수량입니다."/>
+	<class name="Research_MaxCraftCount_Module" Title="제작 가능한 최대 수량입니다."/>
 	<class name="RestartAchieved" Title="더 이상 작동할 수 없는 불편함을 해소하는 방법을 깨달았습니다."/>
 	<class name="RestoreCost" Title="[colour='FFCCCCCC']전투 중 기력이 부족하면 [colour='FFFFFFFF'][image-size='w:$ImgSize$ h:$ImgSize$'][image='Ability/Rest'] [colour='FFFFE959']기력 회복[colour='FFCCCCCC'] 어빌리티를 사용하여 회복하실 수 있습니다.
 
@@ -1093,9 +1106,9 @@ $FavoriteMasteries$
 	<class name="TroublemakerCount" Title="필요 정보량 %d/%d"/>
 	<class name="TroublemakerExpGet" Title="트러블메이커 $Troublemaker$에 대한 정보를 $Amount$ 획득했습니다."/>
 	<class name="TroublemakerReward_Coin" Title="발키리 코인은 추가 특성판 확장과 같은 편의 기능과 일반적으로 입수 불가능한 아이템을 파는 발리키 상점에서만 이용할 수 있는 화폐입니다."/>
-	<class name="TroublemakerReward_Mastery" Title="해당 몬스터가 보유한 특성을 연구할 수 있습니다."/>
-	<class name="TroublemakerReward_MasteryAlldone" Title="이미 해당 몬스터가 보유한 모든 특성을 연구할 수 있습니다."/>
-	<class name="TroublemakerReward_Recipe" Title="해당 몬스터가 보유한 아이템 중 일부를 제작할 수 있습니다."/>
+	<class name="TroublemakerReward_Mastery" Title="해당 적이 보유한 특성을 연구할 수 있습니다."/>
+	<class name="TroublemakerReward_MasteryAlldone" Title="이미 해당 적이 보유한 모든 특성을 연구할 수 있습니다."/>
+	<class name="TroublemakerReward_Recipe" Title="해당 적이 보유한 아이템 중 일부를 제작할 수 있습니다."/>
 	<class name="TroublemakerReward_RecipeAlldone" Title="이미 해당 몬스터로부터 얻을 수 있는 제작 가능한 아이템을 모두 제작할 수 있습니다."/>
 	<class name="TroublemakerRewardDisabled" Title="보상을 수령할 수 없습니다."/>
 	<class name="TroublemakerRewardFailed" Title="보상 받기에 실패하였습니다."/>
@@ -1144,7 +1157,7 @@ $FavoriteMasteries$
 	<class name="UseTurnStartCostEaterAmountMessage" Title="매 턴 시작 시, %s[이] %s 소모됩니다."/>
 	<class name="UseTurnStartSPEaterAmountAddMessage" Title="매 턴 시작 시, SP가 %s 증가합니다."/>
 	<class name="UseTurnStartSPEaterAmountMessage" Title="매 턴 시작 시, SP가 %s 소모됩니다."/>
-	<class name="ValidCompanyName" Title="사용할 수 있는 회사 이름입니다. (주의: 서버에서 중복 검사 후 등록에 실패할 수 있습니다.)"/>
+	<class name="ValidCompanyName" Title="사용할 수 있는 회사 이름입니다."/>
 	<class name="ValidCompanyName_Single" Title="사용할 수 있는 회사 이름입니다."/>
 	<class name="ValidOnlineServerConfirm" Title="현재 네트워크 환경에서는 [colour='FFFFFF00']\[$GoodServer$\][colour='FFFFFFFF']에서 플레이 하는 것을 추천합니다. [colour='FFFF5943']\[$ThisServer$\][colour='FFFFFFFF']에서는 플레이 도중 잦은 지연이 있을 수 있습니다."/>
 	<class name="ValidOnlineServerConfirm2" Title="[colour='FFFF5943']\[$ThisServer$\][colour='FFFFFFFF']에서 플레이 하시겠습니까?"/>
@@ -1152,12 +1165,14 @@ $FavoriteMasteries$
 	<class name="Warning_UseTurnStartCostEater" Title="매 턴 시작 시, 소모할 %s[이] 충분하지 않으면 자동 해제됩니다."/>
 	<class name="Warning_UseTurnStartSPEater" Title="매 턴 시작 시, 소모할 SP가 충분하지 않으면 자동 해제됩니다."/>
 	<class name="Warning_UseTurnStartSPEaterOvercharge" Title="과충전 시에는 SP 소모가 일어나지 않습니다."/>
+	<class name="Warning_DischargeOnMoveOrAbility" Title="이동 혹은 어빌리티 사용 시 해당 상태가 해제됩니다."/>
+	<class name="Warning_DischargeOnMove" Title="이동 시 해당 상태가 해제됩니다."/>
 	<class name="WaypointHelp" Title="※ 시나리오 진행에 따라 특정 지역으로 이동이 봉쇄될 수 있습니다."/>
 	<class name="WorkmanshipLevelUp" Title="숙련도 레벨이 올라가면 제작할 수 있는 아이템이 증가합니다."/>
 	<class name="Worldmap_EventCustom" Title="현재 진행 가능한 모든 사건들을 유저의 설정에 따라 보여줍니다. 사건이 많아질 경우 해당 탭을 활용하시길 바랍니다."/>
 	<class name="Worldmap_EventCustomFilter" Title="사용자 정의 사건 탭의 조건을 설정 할 수 있습니다. 사건의 개수가 많아지면 해당 설정을 활용하여 원하시는 설정을 구성하십시오."/>
 	<class name="Worldmap_EventQuest" Title="현재 진행 가능한 의뢰 사건들을 보여줍니다. 의뢰 사건은 임무 해결시 사라집니다."/>
-	<class name="Worldmap_EventRaid" Title="현재 진행 가능한 강력 사건들을 보여줍니다. 강력 사건은 영웅 등급 이상의 보스 몬스터들이 출현하여 반복 진행 가능합니다."/>
+	<class name="Worldmap_EventRaid" Title="현재 진행 가능한 강력 사건들을 보여줍니다. 강력 사건은 영웅 등급 이상의 보스들이 출현하며 반복 진행 가능합니다."/>
 	<class name="Worldmap_EventRecommend" Title="현재 진행 가능한 모든 사건을 보여줍니다."/>
 	<class name="Worldmap_EventRepeat" Title="현재 진행 가능한 일반 사건들을 보여줍니다. 일반 사건은 반복 진행 가능합니다."/>
 	<class name="Worldmap_EventScenario" Title="현재 진행 가능한 시나리오 사건들을 보여줍니다. 시나리오 사건은 해결되기 전까지 사라지지 않으며 다시 도전하실 수 있습니다."/>

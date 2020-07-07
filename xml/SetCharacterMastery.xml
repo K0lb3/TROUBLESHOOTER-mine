@@ -43,12 +43,17 @@
 	<class name="ChaserTraining" TrainingManual="10"/>
 	<class name="SearchTraining" TrainingManual="10"/>
 	<class name="AdaptiveTraining" TrainingManual="10"/>
-	<class name="StandAloneTraining"  TrainingManual="10"/>
+	<class name="StandAloneTraining" TrainingManual="10"/>
 	<class name="RestoreTraining" TrainingManual="10"/>
 	<class name="RestTraining" TrainingManual="10"/>
 	<class name="RushTraining" TrainingManual="10"/>
 	<class name="EnduranceTraining" TrainingManual="10"/>
 	<class name="StrongFellowship" TrainingManual="10"/>
+	<class name="BeastNormalTraining" TrainingManual="10"/>
+	<class name="BeastSubTraining" TrainingManual="10"/>
+	<class name="BeastAttackTraining" TrainingManual="10"/>
+	<class name="BeastDefenceTraining" TrainingManual="10"/>
+	<class name="BeastAbilityTraining" TrainingManual="10"/>
 	<class name="Application_AutoCounterShoot" TrainingManual="10"/>
 	<class name="Application_ControlLife" TrainingManual="10"/>
 	<class name="Application_EnhancedArmor" TrainingManual="10"/>

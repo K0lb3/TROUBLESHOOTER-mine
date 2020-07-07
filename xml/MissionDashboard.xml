@@ -52,5 +52,6 @@
 	<class name="PsionicStone" Show="true" Count="0" MinCount="0" MaxCount="0" MakerArguments="MinCount, MaxCount, PsionicStoneGen" Initializer="InitializePsionicStoneDashboard"/>
 	<class name="CollectItem" Show="true" CollectItemSet="None" MinCount="0" MaxCount="0" MakerArguments="CollectItemSet, MinCount, MaxCount, PosHolderGroup" Initializer="InitializeCollectItemDashboard" CustomLoader="CollectItemDashboardLoader"/>
 	<class name="Arrest" Show="true" ArrestSet="None" Team="" MinCount="0" MaxCount="0" MakerArguments="ArrestSet, MinCount, MaxCount, PosHolderGroup, Team, AI, StartingBuff, AngerBuff" Initializer="InitializeArrestDashboard" CustomLoader="ArrestDashboardLoader"/>
+	<class name="CitizenGen" Show="true" CitizenGenSet="None" MinCount="0" MaxCount="0" MakerArguments="CitizenGenSet, MinCount, MaxCount, PosHolderGroup, CitizenType" Initializer="InitializeCitizenGenDashboard" CustomLoader="CitizenGenDashboardLoader"/>
 </idspace>
 <!--  MarkerImage="ObjectiveMarker" Target="None" Show="false"-->

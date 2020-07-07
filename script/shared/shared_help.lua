@@ -1213,6 +1213,37 @@ function GetHelpContent_EvolutionMastery(self, isDirect, arg)
 	result = result..'\n\n'..FormatMessage(GuideMessage(addMsgType), { Type = cls.Title, Menu = GetWord('BasicMastery_Menu3'), Training = clsList['Training'].Title });
 	return result;
 end
+
+
+
+------------------------------------------------------------------------------
+-- 모드 정보 불러오기
+------------------------------------------------------------------------------
+function GetHelpContent_GameMode(self, isDirect)
+	local result = '';
+	local difficulty = GetWithoutError(self, 'AutoScriptArg');
+	local colorList = GetClassList('Color');
+	local gameModeList = GetClassList('GameMode');
+	local curGameMode = gameModeList[difficulty];
+	if curGameMode and curGameMode.name then 
+		result = curGameMode.Desc;
+	end
+	return result;
+end
+------------------------------------------------------------------------------
+-- 난이도 정보 불러오기
+------------------------------------------------------------------------------
+function GetHelpContent_GameDifficulty(self, isDirect)
+	local result = '';
+	local difficulty = GetWithoutError(self, 'AutoScriptArg');
+	local colorList = GetClassList('Color');
+	local gameDifficultyList = GetClassList('GameDifficulty');
+	local curDifficulty = gameDifficultyList[difficulty];
+	if curDifficulty and curDifficulty.name then 
+		result = curDifficulty.Desc;
+	end
+	return result;
+end
 -----------------------------------------------------------------------------------
 -- 미션과 도움말이 다른 메시지.
 -----------------------------------------------------------------------------------

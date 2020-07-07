@@ -597,6 +597,35 @@ function SetInteractionAreaInitialize(mid, interactionAreas, reinitialize)
 		end);
 	end
 end
+
+function InitializeMissionDifficulty(company, mission)
+	local prevDifficulty = mission.Difficulty.name;
+	local missionLv = mission.Difficulty.Lv;
+	local challengerMinRatio = 1;
+	local challengerMaxRatio = 1;
+	if company.GameDifficulty == 'Safty' then
+		missionLv = math.clamp(missionLv - company.EnemyGradeUpFailCount + company.EnemyGradeUpClearCount, 1, 3);
+	elseif company.GameDifficulty == 'Easy' then
+		missionLv = math.clamp(missionLv - 3 - company.EnemyGradeUpFailCount + company.EnemyGradeUpClearCount, 4, 6);
+		challengerMinRatio = 1.1;
+		challengerMaxRatio = 1.3;
+	elseif company.GameDifficulty == 'Normal' then
+		missionLv = math.clamp(missionLv + 6 - company.EnemyGradeUpFailCount + company.EnemyGradeUpClearCount, 7, 9);
+		challengerMinRatio = 1.2;
+		challengerMaxRatio = 1.4;
+	elseif company.GameDifficulty == 'Hard' then
+		missionLv = math.clamp(missionLv + 9 - company.EnemyGradeUpFailCount + company.EnemyGradeUpClearCount, 10, 12);
+		challengerMinRatio = 1.3;
+		challengerMaxRatio = 1.5;
+	elseif company.GameDifficulty == 'Merciless' then
+		missionLv = math.clamp(missionLv + 12 - company.EnemyGradeUpFailCount + company.EnemyGradeUpClearCount, 13, 15);
+	end
+	mission.Difficulty = GetClassList('MissionDifficulty')['Difficulty'..missionLv];
+	SetMissionLevel(mission, missionLv);
+	mission.DifficultyGrade = company.GameDifficulty;
+	return challengerMinRatio, challengerMaxRatio;
+end
+
 -- 맵 이니셜라이즈 공용 함수
 function MapInitializerShared(mid, stage, memberInfos, activeQuests)
 	local mission = GetMission(mid);
@@ -612,30 +641,7 @@ function MapInitializerShared(mid, stage, memberInfos, activeQuests)
 	if singlePlay then
 		local company = GetAllCompanyInMission(mid)[1];
 		-- mission 난이도 설정
-		local prevDifficulty = mission.Difficulty.name;
-		local missionLv = mission.Difficulty.Lv;
-		local challengerMinRatio = 1;
-		local challengerMaxRatio = 1;
-		if company.GameDifficulty == 'Safty' then
-			missionLv = math.clamp(missionLv - company.EnemyGradeUpFailCount + company.EnemyGradeUpClearCount, 1, 3);
-		elseif company.GameDifficulty == 'Easy' then
-			missionLv = math.clamp(missionLv - 3 - company.EnemyGradeUpFailCount + company.EnemyGradeUpClearCount, 4, 6);
-			challengerMinRatio = 1.1;
-			challengerMaxRatio = 1.3;
-		elseif company.GameDifficulty == 'Normal' then
-			missionLv = math.clamp(missionLv + 6 - company.EnemyGradeUpFailCount + company.EnemyGradeUpClearCount, 7, 9);
-			challengerMinRatio = 1.2;
-			challengerMaxRatio = 1.4;
-		elseif company.GameDifficulty == 'Hard' then
-			missionLv = math.clamp(missionLv + 9 - company.EnemyGradeUpFailCount + company.EnemyGradeUpClearCount, 10, 12);
-			challengerMinRatio = 1.3;
-			challengerMaxRatio = 1.5;
-		elseif company.GameDifficulty == 'Merciless' then
-			missionLv = math.clamp(missionLv + 12 - company.EnemyGradeUpFailCount + company.EnemyGradeUpClearCount, 13, 15);
-		end
-		mission.Difficulty = GetClassList('MissionDifficulty')['Difficulty'..missionLv];
-		SetMissionLevel(mission, missionLv);
-		mission.DifficultyGrade = company.GameDifficulty;
+		local challengerMinRatio, challengerMaxRatio = InitializeMissionDifficulty(company, mission);
 		--LogAndPrint(string.format('MissionDifficulty Arranged From [%s] to [%s]', prevDifficulty, mission.Difficulty.name));
 		
 		if mission.EnableEnemyGradeUp then	
@@ -1141,18 +1147,7 @@ function MapReinitializerShared(mid, stage, memberInfos)
 	if singlePlay then
 		local company = GetAllCompanyInMission(mid)[1];
 		-- mission 난이도 설정
-		local prevDifficulty = mission.Difficulty.name;
-		local missionLv = mission.Difficulty.Lv;
-		if company.GameDifficulty == 'Easy' then
-			missionLv = math.clamp(missionLv, 1, 3);
-		elseif company.GameDifficulty == 'Normal' then
-			missionLv = math.clamp(missionLv + 3, 4, 6)
-		elseif company.GameDifficulty == 'Hard' then
-			missionLv = math.clamp(missionLv + 6, 7, 9);
-		end
-		mission.Difficulty = GetClassList('MissionDifficulty')['Difficulty'..missionLv];
-		SetMissionLevel(mission, missionLv);
-		mission.DifficultyGrade = company.GameDifficulty;
+		InitializeMissionDifficulty(company, mission);
 		--LogAndPrint(string.format('MissionDifficulty Arranged From [%s] to [%s]', prevDifficulty, mission.Difficulty.name));
 	end
 	

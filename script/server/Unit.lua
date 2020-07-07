@@ -50,7 +50,6 @@ function UNIT_INITIALIZER(self, team, datatable)
 	-- 기본값 세팅 --
 	self.HP = self.MaxHP;
 	self.LowestHP = self.MaxHP;
-	self.LastestHP = self.MaxHP;
 	self.Shield = 0;
 	self.Act = self.Wait;
 	
@@ -231,7 +230,6 @@ function TurnStart_Common(eventArg, buff, owner, giver, ds)
 	
 	-- 턴 시작시 전투 액션 업데이트
 	UpdateBattleTurnStartActions(actions, owner, ds);
-	owner.LastestHP = owner.HP;
 	if owner.CostType.name == 'Rage' then
 		SetInstantProperty(owner, 'RageGuard', false);
 	end
@@ -298,12 +296,13 @@ function TurnAcquired_Common(eventArg, buff, owner, giver, ds)
 		end
 	end
 	
+	return unpack(actions);
+end
+function PreAbilityUsing_Common(eventArg, buff, owner, giver, ds)
 	-- 적 노출 테스트
 	if owner.UseEnemyExposureFlag then
 		UnitExposedByEnemyTest(owner);
 	end
-	
-	return unpack(actions);
 end
 function ResetModifyAbilityAccuracyFromEventCache(eventArg, buff, owner, giver, ds)
 	SetInstantProperty(owner, 'ModifyAbilityAccuracyFromEvent_Range_Attacker_Cache', nil);
@@ -439,10 +438,6 @@ function TakeDamage_Common(eventArg, buff, owner, giver, ds)
 	if owner.LowestHP > owner.HP then
 		 owner.LowestHP = owner.HP;
 	end
-	if owner.LowestHP > 0 then
-		owner.LastestHP = owner.LowestHP;
-	end
-	owner.LastestDamage = eventArg.Damage;
 	local actions = {};
 	-- 전투 코스트 관련.
 	if eventArg.DamageInfo.damage_type ~= 'Ability' then
@@ -517,7 +512,7 @@ function UpdateBattleStateInfo(ds, owner, mission, turnState)
 		for i, target in ipairs (targetList) do
 			local targetKey = GetObjKey(target);
 			if GetRelation(owner, target) ~= 'Team' then
-				local coverState = GetCoverState(target, GetPosition(owner));
+				local coverState = GetCoverState(target, GetPosition(owner), owner);
 				ds:UpdateCoverStateIcon(targetKey, coverState);
 			end
 		end
@@ -717,7 +712,7 @@ function InitObjectFromPC(obj, pc)
 				for _, abilityName in ipairs(autoActiveAbility) do
 					activeAbilitySet[abilityName] = isActive;
 					if isActive and not FindAbility(obj, abilityName) then
-						GiveAbility(obj, abilityName);
+						GiveAbility(obj, abilityName, false);
 					end
 				end
 			end

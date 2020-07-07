@@ -74,7 +74,12 @@ function MasterLobbyNPCDialogScript(script, ldm, npc, company)
 			end
 		end		
 		
-		-- 3. 나가기 선택지.
+		-- 3. 지난 의뢰 다시 보기
+		if TestQuestReplayEnable(company, npc) then
+			table.insert(chooseableMenu, { Mode = 'QuestReplay', Type = 'None' });
+		end
+		
+		-- 4. 나가기 선택지.
 		table.insert(chooseableMenu, { Mode= 'Leave', Type= 'None'});
 
 		-- 선택지 화면은 '나가기' 하기전에 반복되도록 한다.	
@@ -144,6 +149,8 @@ function MasterLobbyNPCDialogScript(script, ldm, npc, company)
 			env = QuestDialogProgress(ldm, npc, company, chooseableMenu[sel].Type, env);
 		elseif chooseableMenu[sel].Mode == 'QuestProgress_Client' then
 			env = QuestDialogProgress(ldm, npc, company, chooseableMenu[sel].Type, env);
+		elseif chooseableMenu[sel].Mode == 'QuestReplay' then
+			env = QuestDialogReplay(ldm, npc, company, env);
 		elseif chooseableMenu[sel].Mode == 'Unlock' then
 			env = ProgressDialog(ldm, npc, company, npc.name .. '_' .. chooseableMenu[sel].Mode..'_'..chooseableMenu[sel].Type, env);
 		elseif chooseableMenu[sel].Mode == 'Rumor' then
@@ -165,60 +172,6 @@ function MasterLobbyNPCDialogScript(script, ldm, npc, company)
 		end
 		init = false;
 	end
-end
-
-function GetNPCStartQuests(self)
-	local questClsList = GetClassList('Quest');
-	local retQuests = {};
-	for name, questCls in pairs(questClsList) do
-		(function()
-			if questCls.ClientType == 'Npc' then
-				if questCls.Client == self.name then
-					table.insert(retQuests, questCls.name);
-				end
-			end
-		end)()
-	end
-	return retQuests;
-end
-function GetNPCEndQuests(self)
-	local questClsList = GetClassList('Quest');
-	local retQuests = {};
-	for name, questCls in pairs(questClsList) do
-		(function()
-			if SafeIndex(questCls, 'CompletionNpc') == self.name then
-				table.insert(retQuests, questCls.name);
-			end
-		end)()
-	end
-	return retQuests;
-end
-function GetNPCProgressQuests(self)
-	local questClsList = GetClassList('Quest');
-	local retQuests = {};
-	for name, questCls in pairs(questClsList) do
-		(function()
-			if SafeIndex(questCls, 'Type', 'ProgressHost') and SafeIndex(questCls, 'TargetNPC') == self.name then
-				table.insert(retQuests, questCls.name);
-			end
-		end)()
-	end
-	return retQuests;	
-end
-function GetNPCProgressQuests_Client(self)
-	local questClsList = GetClassList('Quest');
-	local retQuests = {};
-	for name, questCls in pairs(questClsList) do
-		(function()
-			if SafeIndex(questCls, 'Type', 'ProgressHost') and 
-				SafeIndex(questCls, 'Client') == self.name and 
-				SafeIndex(questCls, 'Client') ~= SafeIndex(questCls, 'CompletionNpc') 
-			then
-				table.insert(retQuests, questCls.name);
-			end
-		end)()
-	end
-	return retQuests;	
 end
 ------------------------------------------------------------------------------------------------------------------------
 -- NPC의 대화 구조
@@ -316,7 +269,7 @@ function Check_Don_Unlock_Warehouse2(company)
 	return company.Progress.Tutorial.Office == 50;
 end
 function Check_Leo_Unlock_BeastSlot(company, firstCheck)
-	return company.Progress.Tutorial.UnlockBeastSlot;
+	return company.Progress.Achievement.BeastManagerLevel < 3 and (company.Progress.Tutorial.UnlockBeastSlot or company.Progress.Achievement.BeastManagerLevel >= 1);
 end
 function Check_Diogo_WarehouseManager(company)
 	return company.Progress.Tutorial.WarehouseManagerLevel > 0;

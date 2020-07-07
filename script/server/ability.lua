@@ -662,12 +662,11 @@ function AbilityUseableCheck_NoTargetHide(self, ability, usingPos, ignorePositio
 		return 'Hide';
 	end
 end
-function AbilityUseableCheck_NeutralizeBuffSelfTest(self, ability, usingPos, ignorePositionLimit, reason)
-	for i, neutralizeBuff in ipairs(ability.NeutralizeBuff) do
-		if GetBuff(self, neutralizeBuff.name) then
-			table.insert(reason, {Type= 'BlockByNeutralizeBuff', Buff = neutralizeBuff.Title});	-- 클라에서는 번역이 잘 될테니까
-			return 'Hide';
-		end
+function AbilityUseableCheck_Conceal(self, ability, usingPos, ignorePositionLimit, reason)
+	local alreadyBuff = GetBuff(self, 'Conceal_For_Aura');
+	if alreadyBuff then
+		table.insert(reason, {Type = 'AlreadyBuff', Buff = 'Conceal_For_Aura'});
+		return 'Disable';
 	end
 end
 ------------------------------------------------------------------------------------------------------------
@@ -917,9 +916,11 @@ end
 function ApplyKnockbackAction(applies, self, target, ability, targetInfo, knockbackPos, prevKnockbackPos, inverse)
 	--LogAndPrint('ApplyKnockbackAction', knockbackPos, prevKnockbackPos);
 	if IsSamePosition(knockbackPos, prevKnockbackPos) then
-		AddBattleEvent(target, 'BigTextCustomEvent', {Text = WordText('ChainEvent_KnockbackStunOccured'), Font = 'NotoSansBlack-28', AnimKey = 'KnockbackStun',Color = 'FFFF5943', EventType = 'FinalHit'});
-		InsertBuffActions(applies, self, target, 'Stun', 1, true, nil, true, {Type = 'Knockback'});
-		table.insert(applies, Result_FireWorldEvent('ChainEffectOccured', {Unit = target, Trigger = self, ChainType = 'Crash'}))
+		if ability.Type == 'Attack' then
+			AddBattleEvent(target, 'BigTextCustomEvent', {Text = WordText('ChainEvent_KnockbackStunOccured'), Font = 'NotoSansBlack-28', AnimKey = 'KnockbackStun',Color = 'FFFF5943', EventType = 'FinalHit'});
+			InsertBuffActions(applies, self, target, 'Stun', 1, true, nil, true, {Type = 'Knockback'});
+			table.insert(applies, Result_FireWorldEvent('ChainEffectOccured', {Unit = target, Trigger = self, ChainType = 'Crash'}))
+		end
 	else
 		-- Slide 액션 추가
 		local slideAction = Result_Slide(target, knockbackPos, {Type = 'Ability', Value = ability.name, Unit = self});
@@ -1325,6 +1326,10 @@ function AbilityPostMaster(self, ability, isFreeAction, userInfoArgs, primaryTar
 				local damageBase = mastery.ApplyAmount;
 				local damageMultiplier = 100;
 				if mastery.name == 'FireBolt' then
+					local mastery_BigFlame = GetMasteryMastered(masteryTable, 'BigFlame');
+					if mastery_BigFlame then
+						damageBase = damageBase + mastery_BigFlame.ApplyAmount;
+					end
 					local mastery_FlameBolt = GetMasteryMastered(masteryTable, 'FlameBolt');
 					if mastery_FlameBolt and HasBuffType(target, nil, nil, mastery_FlameBolt.BuffGroup.name) then
 						damageMultiplier = damageMultiplier + mastery_FlameBolt.ApplyAmount;
@@ -1341,7 +1346,9 @@ function AbilityPostMaster(self, ability, isFreeAction, userInfoArgs, primaryTar
 				ReasonToAddBattleEventMulti(target, reasons, 'FirstHit');
 				AddBattleEvent(target, 'DirectDamageByType', { DirectDamageType = info.DirectType, Damage = damage, NextHP = nextHP, IsDead = isDead });
 				table.insert(applies, Result_FireWorldEvent('BoltInvoked', {Mastery=info.Mastery, Unit=self, Target=target, Damage=realDamage}, self));
-				table.insert(applies, Result_Damage(damage, 'Normal', 'Hit', self, target, 'Mastery', info.DamageType, mastery));
+				local damageAction = Result_Damage(damage, 'Normal', 'Hit', self, target, 'Mastery', info.DamageType, mastery);
+				damageAction.Flag = { [mastery.name] = true };
+				table.insert(applies, damageAction);
 				remainHPMap[targetKey] = nextHP;
 			end
 		end
@@ -1776,6 +1783,19 @@ function InsertBuffActions(actions, giver, obj, buffName, buffLevel, sequential,
 	
 	if curBuff.Stack then
 		local maxStack = curBuff:MaxStack(obj);
+		
+		-- 2.5. 현재 버프레벨 보정
+		for _, action in ipairs(actions) do
+			if action.buff_name == buffName and action.target == obj then
+				if action.type == 'AddBuff' then
+					curBuffLv = action.buff_level;
+				elseif action.type == 'RemoveBuff' then
+					curBuffLv = 0;
+				elseif action.type == 'BuffPropertyUpdated' and action.property_key == 'Lv' then
+					curBuffLv = action.property_value;
+				end
+			end
+		end
 	
 		-- 3. 최종 버프레벨 정하기
 		local totalLv = curBuffLv + addBuffLv;	
@@ -3452,4 +3472,12 @@ end
 function DecreaseSurprizeMoveCounter(obj)
 	local prevSurprizeMoveCounter = GetInstantProperty(obj, 'SurprizeMoveCounter') or 0;
 	SetInstantProperty(obj, 'SurprizeMoveCounter', math.max(prevSurprizeMoveCounter - 1, 0));
+end
+
+function ABL_GRAB(self, ability, target, userInfoArgs, targetInfoArgs)
+	-- 넉백 처리
+	if ability.KnockbackPower > 0 and target.Base_Movable then
+		targetInfoArgs.KnockbackPower = ability.KnockbackPower;
+		targetInfoArgs.DefenderState = 'Hit';
+	end
 end

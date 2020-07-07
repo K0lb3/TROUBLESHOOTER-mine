@@ -177,7 +177,7 @@ function AddCustomBindFunctionToDirectingScripter(ad)
 		if voiceSound == nil then
 			return voiceRefID;
 		end
-		local enableID = self:EnableIf('TestObjectVisibleAndAlive', objKey);
+		local enableID = self:EnableIf('TestObjectVisibleAndAliveVoice', objKey);
 		self:Connect(enableID, voiceRefID, 0);
 		local nextRefID = nil;
 		local sleepID = self:Sleep(sleepTime + voiceOffset + 0.5);

@@ -101,6 +101,7 @@
 		<class name="ChangeTeamDirect" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Main" Selection="Main, Sub, None"/>
 		<class name="CheckEachOther" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="false"/>
 		<class name="ChestType" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="ChestType" Default="Chest"/>
+		<class name="LockType" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="LockType" Default="Lock"/>
 		<class name="CitizenType" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="Citizen" Default="Healthy"/>
 		<class name="CloseDialog" Form="StringSelectorFixed" Initializer="StageMakerArgumentBooleanInitializer" Default="true"/>
 		<class name="CombatantAI" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="AI" ArgColumn="MakerArguments" Typer="AIType" Filter="ArgumentFilter_CombatantAI" Default="{AIType='Aggressive'}"/>
@@ -260,6 +261,7 @@
 		<class name="PsionicStoneType" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="PsionicStone" Default="PsionicStone_Flame_A"/>
 		<class name="CollectItemSet" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="CollectItemSet" Default="CargoBox"/>
 		<class name="ArrestSet" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="ArrestSet" Default="Arrest"/>
+		<class name="CitizenGenSet" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassSelectionInitializer" Idspace="CitizenGenSet" Default="None"/>
 		<class name="Quest" Form="StringSelectorFixed" Initializer="StageMakerArgumentCommonClassTitleSelectionInitializer" Idspace="Quest" Default="None"/>
 		<class name="RallyPoint" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="StagePositionIndicator" ArgColumn="MakerArguments" Typer="Type" Default="{Type='Position'}"/>
 		<class name="RallyPoint2" Form="SelectableArgumentHolder" Initializer="DACommonSelectableArgumentHolderInitializer" Idspace="StagePositionIndicator" ArgColumn="MakerArguments" Typer="Type" Default="{Type='Position'}"/>
@@ -604,5 +606,9 @@
 		</schema>
 		<class name="Contributor" Title="기여자" Form="StringSelectorFixed" Initializer="TranslationAcceptanceArgumentsContributorInitalizer" Default=""/>
 		<class name="IncludeCompeting" Title="경합중인 엔트리 포함" Form="Checkbox" Initializer="OptionInitializerCheckbox" Default="false"/>
+		<class name="FreeContributor" Title="기여자" Form="FreeString" Default=""/>
+		<class name="Lang" Title="언어" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="eng" Selection="eng, chn, tchn, jpn, rus, fra, deu, esp, prt-BR, prt-PT"/>
+		<class name="DicType" Title="사전타입" Form="StringSelectorFixed" Initializer="StageMakerArgumentStaticSelectionInitializer" Default="Text" Selection="Keyword, Text"/>
+		<class name="DicFilePath" Title="경로" Form="StringSelectorCustom" Initializer="DynamicArgumentCommonFileSelectorInitializer" Default="" BasePath="../../Dictionary" Extension="dic"/>
 	</idspace>
 </idspaces>

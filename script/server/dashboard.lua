@@ -626,6 +626,86 @@ function InitializeArrestDashboard(dashboard, dashboardKey, mission, stage, dash
 	end
 end
 
+function CitizenGenDashboardLoader(declare, inst)
+	inst.CitizenGenSet = declare.CitizenGenSet;
+end
+function InitializeCitizenGenDashboard(dashboard, dashboardKey, mission, stage, dashboardDeclaration, reinitialize)	
+	local citizenGenSet = dashboard.CitizenGenSet;
+	local citizenGenSetCls = GetClassList('CitizenGenSet')[citizenGenSet];
+	if citizenGenSetCls == nil then
+		return;
+	end
+	local createMonType = SafeIndex(citizenGenSetCls, 'BaseMonType');
+	local markerIcon = SafeIndex(citizenGenSetCls, 'MarkerIcon') or 'Icons/Transport';
+	local componentKey = 'CitizenGen'..dashboard.Key;
+	
+	local maxCount = 0;
+	for _, company in ipairs(GetAllCompanyInMission(mission)) do
+		maxCount = math.max(maxCount, table.count(citizenGenSetCls.LinkedQuest, function(questCls)
+			local stage, progress = GetQuestState(company, questCls.name);
+			return questCls.LinkedMissions[mission.name] and stage == 'InProgress' and not CheckRequestState(company, questCls, progress);
+		end));
+	end
+	if maxCount == 0 then
+		dashboard.Show = false;
+		return;
+	end
+	
+	SubscribeGlobalWorldEvent(mission, 'QuestProgressSatisfied', function(eventArg, ds)
+		if not table.exist(citizenGenSetCls.LinkedQuest, function(questCls) 
+			return questCls.name == eventArg.QuestType;
+		end) then
+			return;
+		end
+		maxCount = maxCount - 1;
+		if maxCount > 0 then
+			return;
+		end
+		
+		local actions = {UpdateDashboardCore(mission, dashboard.Key, 'Hide')};
+		return unpack(actions);
+	end);
+	
+	if reinitialize then
+		return;
+	end
+	
+	local genMin = dashboardDeclaration.MinCount;
+	local genMax = dashboardDeclaration.MaxCount;
+	local posHolder = dashboardDeclaration.PosHolderGroup;
+	local actions = {};
+	local genCount = math.random(genMin, genMax);
+	local positionHolders = table.shuffle(table.filter(GetPositionHolders(mission), function(ph) return ph.Group == posHolder; end));
+	for i = 1, genCount do
+		if #positionHolders == 0 then
+			LogAndPrint('no more PositionHolder is available', dashboardDeclaration.Key, posHolder);
+			break;
+		end
+		
+		local unitKey = GenerateUnnamedObjKey(mission);
+		local ph = table.remove(positionHolders);
+		local mon = CreateMonster(GetMissionID(mission), unitKey, createMonType, 'citizen', ph.Position, ph.Direction);
+		SetInstantPropertyWithUpdate(mon, 'MonsterType', createMonType);
+		SetInstantPropertyWithUpdate(mon, 'CitizenGenSet', citizenGenSet);
+		InitObjectFromMonster(mon, GetClassList('Monster')[createMonType]);
+		RegisterMapComponentObject(mission, componentKey, i, mon);
+		SetMonsterAIInfo(mon, 'DoNothingAI', {});
+		local dataTable = {};
+		UNIT_INITIALIZER(mon, mon.Team, dataTable);
+		if citizenGenSetCls.SightSharing then
+			SetSightSharingCustom(mon, 'player', true, 0);
+		end
+		
+		-- 시민 초기화
+		local citizenType = dashboardDeclaration.CitizenType or 'Healthy';
+		SetInstantPropertyWithUpdate(mon, 'CitizenType', citizenType);
+		local citizenCls = GetClassList('Citizen')[citizenType];
+		citizenCls.Initializer(mission, citizenCls, {}, mon);
+		
+		mission.CitizenCount = mission.CitizenCount + 1;		
+	end
+end
+
 function ObjectiveMarkerLoader(declare, inst)
 	-- table.print(declare);
 	inst.Show = declare.Show;

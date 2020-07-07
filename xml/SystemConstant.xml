@@ -65,7 +65,6 @@
 	<class name="PerfectKillReward_Exp" value="100"/>
 	<class name="PerfectKillReward_ItemGrade" value="Uncommon"/>
 	<class name="PerfectKillReward_Troublemaker" value="2"/>
-	<class name="ChallenerModeReward_Troublemaker" value="2"/>
 	<class name="MaxActionTime" value="999"/>
 	<class name="HighHeight" value="1.5"/>
 	<class name="BeastManagerUnlockTriggerCount" value="15"/>
@@ -83,4 +82,10 @@
 	<class name="CODMaxVill" value="100000000"/>
 	<class name="TranslationSuggestDest" value="http://13.209.179.168:8080/"/>
 	<class name="TGMMinimapImageSize" value="500"/>
+	<class name="NEAR_BOX_HIDE_TILES" value="25"/>
+	<class name="DISABLE_DEV_SKIP">
+		<property name="value" type="bool" value="false"/>
+	</class>
+	<class name="RECRUIT_TRAINING_MANUAL_COUNT" value="300"/>
+	<class name="TileGeneratorLinkWidth" value="3"/>
 </idspace>

@@ -287,6 +287,13 @@
 			<property Image="Loading_LostItem" CheckType="Custom" Script="CheckCollection_LostShopOpened"/>
 			<property Image="Loading_Irene" CheckType="Custom" Script="CheckCollection_AfterTutorial"/>
 			<property Image="Loading_Alert" CheckType="Custom" Script="CheckCollection_AfterTutorial"/>
+			<property Image="Loading_Irene_Albus2" CheckType="Stage" Stage="Tutorial_Silverlining"/>
+			<property Image="Loading_Sion_Anne2" CheckType="Stage" Stage="Tutorial_Silverlining"/>
+			<property Image="Loading_Ray_Heising2" CheckType="Stage" Stage="Tutorial_Silverlining"/>
+			<property Image="Loading_Giselle_Kylie2" CheckType="Stage" Stage="Tutorial_Silverlining"/>
+			<property Image="Loading_Alisa_Bianca2" CheckType="Stage" Stage="Tutorial_Silverlining"/>
+			<property Image="Loading_Carter_Leton2" CheckType="Stage" Stage="Tutorial_Silverlining"/>
+			<property Image="Loading_Luna_Marco2" CheckType="Stage" Stage="Tutorial_Silverlining"/>
 			<property Image="Loading_SeasonsGreetings" CheckType="Stage" Stage="Tutorial_SkyWindPark"/>
 		</Images>
 	</class>

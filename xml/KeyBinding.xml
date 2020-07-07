@@ -24,6 +24,8 @@
 		<class name="DialogSelect2" Title="선택지 2(우상단)" Group="Dialog" Order="4" GOrder="0" Primary="Two"/>
 		<class name="DialogSelect3" Title="선택지 3(좌하단)" Group="Dialog" Order="5" GOrder="0" Primary="Three"/>
 		<class name="DialogSelect4" Title="선택지 4(우하단)" Group="Dialog" Order="6" GOrder="0" Primary="Four"/>
+		<class name="DialogLeft" Title="이전" Group="Dialog" Order="7" GOrder="0" Primary="ArrowLeft"/>
+		<class name="DialogRight" Title="다음" Group="Dialog" Order="8" GOrder="0" Primary="ArrowRight"/>
 		<class name="OfficeLeft" Title="사무실 화면 왼쪽으로 이동" Group="Office" Order="0" GOrder="0" Primary="A" Secondary="ArrowLeft"/>
 		<class name="OfficeRight" Title="사무실 화면 오른쪽으로 이동" Group="Office" Order="1" GOrder="0" Primary="D" Secondary="ArrowRight"/>
 		<class name="OfficeCompany" Title="회사 정보 보기" Group="Office" Order="2" GOrder="0" Primary="C"/>
@@ -69,6 +71,8 @@
 		<class name="ShowMinimap" Title="미니맵 보기" Group="Battle" Order="41" GOrder="0" Primary="M"/>
 		<class name="ZoomIn" Title="카메라 확대" Group="Battle" Order="50" GOrder="0" Primary="T"/>
 		<class name="ZoomOut" Title="카메라 축소" Group="Battle" Order="51" GOrder="0" Primary="G"/>
+		<class name="HeightUp" Title="카메라 높이 올리기" Group="Battle" SubGroup="NotTargeting" Order="51.1" GOrder="0" Primary="WheelUp"/>
+		<class name="HeightDown" Title="카메라 높이 내리기" Group="Battle" SubGroup="NotTargeting" Order="51.2" GOrder="0" Primary="WheelDown"/>
 		<class name="RotateLeft" Title="카메라 좌회전" Group="Battle" Order="52" GOrder="0" Primary="Q"/>
 		<class name="RotateRight" Title="카메라 우회전" Group="Battle" Order="53" GOrder="0" Primary="E"/>
 		<class name="MoveUp" Title="카메라 위로 이동" Group="Battle" Order="54" GOrder="0" Primary="W" Secondary="ArrowUp"/>
@@ -82,8 +86,8 @@
 		<class name="PitchReset" Title="카메라 수직 각도 초기화" Group="Battle" Order="70" GOrder="0" Primary="Backslash"/>
 		<class name="TurnOrder" Title="캐릭터 턴 순서 표시" Group="Battle" Order="71" GOrder="0" Primary="LeftAlt"/>
 		<class name="WayPoint" Title="이동 경로 지정" Group="Battle" Order="72" GOrder="0" Primary="LeftControl"/>
-		<class name="NextFocusTarget" Title="다음 목표 대상" Group="Battle" Order="73" GOrder="0" Primary="Tab" Secondary="WheelDown"/>
-		<class name="PrevFocusTarget" Title="이전 목표 대상" Group="Battle" Order="74" GOrder="0" Primary="LeftShift" Secondary="WheelUp"/>
+		<class name="NextFocusTarget" Title="다음 목표 대상" Group="Battle" SubGroup="Targeting" Order="73" GOrder="0" Primary="Tab" Secondary="WheelDown"/>
+		<class name="PrevFocusTarget" Title="이전 목표 대상" Group="Battle" SubGroup="Targeting" Order="74" GOrder="0" Primary="LeftShift" Secondary="WheelUp"/>
 		<class name="AutoStrategy_Search" Title="전투위임 - 탐색" Group="Battle" Order="75" GOrder="0" Primary="One" PrimaryModifier="Ctrl"/>
 		<class name="AutoStrategy_Battle" Title="전투위임 - 전투" Group="Battle" Order="76" GOrder="0" Primary="Two" PrimaryModifier="Ctrl"/>
 		<class name="AutoStrategy_Defensive" Title="전투위임 - 수비" Group="Battle" Order="77" GOrder="0" Primary="Three" PrimaryModifier="Ctrl"/>

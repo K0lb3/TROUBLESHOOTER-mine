@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idspaces>
+	<idspace id="AbilityGuideRange_Sight">
+		<class name="base" Title="시야" Image="Icons/Spy" FrameImage="Buff/State"/>
+	</idspace>
+</idspaces>

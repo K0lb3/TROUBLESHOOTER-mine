@@ -784,11 +784,16 @@ function ModifyAbilityChecker_HappySong(mastery, ability)
 	return (ability.Type == 'Assist' or ability.Type == 'Heal');
 end
 function ModifyAbilityByMastery_HappySong(ability, owner, mastery)
+	local mastery_ListenToMySong = GetMasteryMastered(GetMastery(owner), 'ListenToMySong');
+	if mastery_ListenToMySong then
+		ability.TurnPlayType = 'Free';
+	else
 	if ability.TurnPlayType == 'Main' then
 		ability.TurnPlayType = 'Half';
 	elseif ability.TurnPlayType == 'Half' then
 		ability.TurnPlayType = 'Free';
 	end
+end
 end
 -- 마력 융합로
 function ModifyAbilityChecker_MagicReactor(mastery, ability)
@@ -1382,6 +1387,10 @@ end
 function ModifyAbilityChecker_LargeBottomPocket(mastery, ability, owner)
 	return GetAbilityItemSlot(ability, owner) == 'Inventory2';
 end
+-- 군용 주머니
+function ModifyAbilityChecker_MilitaryBag(mastery, ability, owner)
+	return GetAbilityItemSlot(ability, owner) == 'Inventory1' or GetAbilityItemSlot(ability, owner) == 'Inventory2';
+end
 -- 황금에 대한 열정
 function ModifyAbilityChecker_PassionForGold(mastery, ability, owner)
 	return GetAbilityItemSlot(ability, owner) == 'AlchemyBag';
@@ -1488,11 +1497,17 @@ end
 function ModifyAbilityByMastery_WhiteHeat(ability, owner, mastery)
 	local additiveEffect = {};
 	local applyAmount = mastery.ApplyAmount;
+	local masteryTable = GetMastery(owner)
 	-- 세트효과 번쩍이는 빛 
-	local mastery_TwinkleLight = GetMasteryMastered(GetMastery(owner), 'TwinkleLight');
+	local mastery_TwinkleLight = GetMasteryMastered(masteryTable, 'TwinkleLight');
 	if mastery_TwinkleLight then
 		applyAmount = applyAmount + mastery_TwinkleLight.ApplyAmount;
 		table.insert(additiveEffect, mastery_TwinkleLight);
+	end
+	local mastery_StrongLight = GetMasteryMastered(masteryTable, 'StrongLight');
+	if mastery_StrongLight then
+		applyAmount = applyAmount + mastery_StrongLight.ApplyAmount;
+		table.insert(additiveEffect, mastery_StrongLight);
 	end
 	ability.ApplyTargetBuff = GetClassList('Buff')[mastery.Buff.name];
 	ability.ApplyTargetBuffChance = math.min(ability.ApplyTargetBuffChance + applyAmount, 100);
@@ -1772,7 +1787,7 @@ function ModifyAbilityByMastery_Whirlwind(ability, owner, mastery)
 end
 -- 보조 제어 프로그램
 function ModifyAbilityChecker_Module_SubControl(mastery, ability)
-	return ability.Cost > 0;
+	return ability.CastDelay > 0;
 end
 function ModifyAbilityByMastery_Module_SubControl(ability, owner, mastery)
 	local host = ability;
@@ -1879,6 +1894,20 @@ function ModifyAbilityChecker_FortressOfFrost(mastery, ability)
 	return ability.name == 'IronWall';
 end
 function ModifyAbilityByMastery_FortressOfFrost(ability, owner, mastery)
+	ability.Active = false;
+end
+-- 전사의 계승자
+function ModifyAbilityChecker_SuccessorOfWarrior(mastery, ability)
+	return ability.name == 'Tima_AttackMode' or ability.name == 'Tima_ChaserMode';
+end
+function ModifyAbilityByMastery_SuccessorOfWarrior(ability, owner, mastery)
+	ability.Active = false;
+end
+-- 수호자의 계승자
+function ModifyAbilityChecker_SuccessorOfGuardian(mastery, ability)
+	return ability.name == 'Tima_DefenceMode' or ability.name == 'Tima_CheckMode';
+end
+function ModifyAbilityByMastery_SuccessorOfGuardian(ability, owner, mastery)
 	ability.Active = false;
 end
 -- 백병기 전문가
@@ -2073,7 +2102,7 @@ function ModifyAbilityByMastery_ConnectionEnergy(ability, owner, mastery)
 		host = GetHostClass(ability);
 	end
 	MultiColumnModifier(ability, host, 'ApplyAmountChangeStep', function(v, vHost) return v + math.floor(vHost * mastery.ApplyAmount / 100) end);
-	ability.CastDelay = math.max(0, ability.CastDelay - math.floor( host.CastDelay * mastery.ApplyAmount / 100));
+	ability.CastDelay = math.max(0, ability.CastDelay - math.floor( host.CastDelay * mastery.ApplyAmount2 / 100));
 end
 -- 능숙한 썰기
 function ModifyAbilityChecker_GoodChopping(mastery, ability)
@@ -2124,6 +2153,68 @@ function ModifyAbilityByMastery_SkilledFinger(ability, owner, mastery)
 	end
 	ability.Cost = math.max(0, ability.Cost - math.floor( host.Cost * mastery.ApplyAmount /100));
 	ability.CastDelay = math.max(0, ability.CastDelay - math.floor( host.CastDelay * mastery.ApplyAmount / 100));
+end
+-- 우렁찬 울음
+function ModifyAbilityChecker_ResonantCrying(mastery, ability)
+	return (ability.Type == 'Heal' or ability.Type == 'Assist') and ability.TargetType == 'Area' and (tonumber(ability.RangeRadius) or 0) > 0;
+end
+function ModifyAbilityByMastery_ResonantCrying(ability, owner, mastery)
+	local GetExpandRange = function(rangeType)
+		local rangeCls = GetClassList('Range')[rangeType];
+		if not rangeCls then
+			return rangeType;
+		end
+		return rangeCls.ExpandedRange or rangeType;
+	end
+	ability.ApplyRange = GetExpandRange(ability.ApplyRange);
+	ability.GuideRange = GetExpandRange(ability.GuideRange);
+	InvalidateObject(ability);
+end
+-- 끊이지 않는 노래
+function ModifyAbilityChecker_EndlessSong(mastery, ability)
+	return (ability.Type == 'Heal' or ability.Type == 'Assist') and ability.CastDelay > 0;
+end
+function ModifyAbilityByMastery_EndlessSong(ability, owner, mastery)
+	local host = ability;
+	if not IsClass(ability) then
+		host = GetHostClass(ability);
+	end
+	ability.CastDelay = math.max(0, ability.CastDelay - math.floor( host.CastDelay * mastery.ApplyAmount / 100));
+end
+-- 막 잡은 먹잇감
+function ModifyAbilityChecker_FastFishing(mastery, ability)
+	return ability.name == 'PreyDown' or ability.name == 'PreyThrow';
+end
+function ModifyAbilityByMastery_FastFishing(ability, owner, mastery)
+	if ability.TurnPlayType == 'Main' then
+		ability.TurnPlayType = 'Half';
+	elseif ability.TurnPlayType == 'Half' then
+		ability.TurnPlayType = 'Free';
+	end
+end
+-- 노장의 기백
+function ModifyAbilityChecker_VeteranSpirit(mastery, ability)
+	return ability.Type == 'Attack' and ability.CastDelay > 0;
+end
+function ModifyAbilityByMastery_VeteranSpirit(ability, owner, mastery)
+	local host = ability;
+	if not IsClass(ability) then
+		host = GetHostClass(ability);
+	end
+	local applyAmount = math.floor(mastery.CustomCacheData / mastery.ApplyAmount) * mastery.ApplyAmount2;
+	ability.CastDelay = math.max(0, ability.CastDelay - math.floor(host.CastDelay * applyAmount / 100));
+end
+-- 노익장
+function ModifyAbilityChecker_LegendVeteran(mastery, ability)
+	return ability.Type == 'Attack';
+end
+function ModifyAbilityByMastery_LegendVeteran(ability, owner, mastery)
+	local host = ability;
+	if not IsClass(ability) then
+		host = GetHostClass(ability);
+	end
+	local applyAmount = math.floor(mastery.CustomCacheData / mastery.ApplyAmount) * mastery.ApplyAmount3;
+	MultiColumnModifier(ability, host, 'ApplyAmountChangeStep', function(v, vHost) return v + math.floor(vHost * applyAmount / 100) end);
 end
 ------------------------------------------------------
 -- 버프 어빌리티 조정자
