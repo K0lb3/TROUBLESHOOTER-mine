@@ -11,8 +11,10 @@ def main():
         src = os.path.join(PACK, *item.get("pack").split("/"))
         dst = os.path.join(DATA, *item.get("original").split("\\"))
 
-        if os.path.exists(dst) and os.path.getsize(src) == item.get("size"):
+        dsize = os.path.getsize(dst)
+        if os.path.exists(dst) and (dsize == int(item.get("size")) or dsize == 0):
             continue
+        print(dst)
         os.makedirs(os.path.dirname(dst), exist_ok=True)
 
         PROCESS[item.get("method")](src, dst, item)

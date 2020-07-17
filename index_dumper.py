@@ -17,25 +17,26 @@ def main():
     mode = int(mode)
     
     break_size = int(input("Break Size (Bytes): "))
-
     d = Dumper("ProtoLion.exe")
     fp = "ProtoLion.dmp"
 
-    #break_size = 63610880
+    #break_size = 82944000
     last_size = 0
     if mode == 0:
         from datetime import datetime
-
+        states = []
         log = []
         while True:
-            mem = d.memory_info()["WorkingSetSize"]
-            log.append("%s - %d" % (str(datetime.now()), mem))
+            mem = d.memory_info["WorkingSetSize"]
+            if (mem == last_size) and mem not in states:
+                log.append("%s - %d" % (str(datetime.now()), mem))
+                states.append(mem)
 
-            # since the break size can increase if the target increases in size,
-            # we stop when the programm stopped processing the target, so when the size stays the same
-            # compare the timestamps in the produced log with the load log from Process Monitor
-            if mem > break_size and mem == last_size:
-                break
+                # since the break size can increase if the target increases in size,
+                # we stop when the programm stopped processing the target, so when the size stays the same
+                # compare the timestamps in the produced log with the load log from Process Monitor
+                if mem > break_size:
+                    break
             last_size = mem
 
         open("log.txt", "wt", encoding="utf8").write("\n".join(log))
@@ -145,7 +146,7 @@ class Dumper:
 
         # print( 'fHandle Status: ', win32api.FormatMessage(win32api.GetLastError()))
         success = dbghelp.MiniDumpWriteDump(
-            self.pHandle.handle,  # Process handle
+            self.phandle.handle,  # Process handle
             self.pid,  # Process ID
             fHandle.handle,  # File handle
             MINIDUMP_TYPES_CLASS.MiniDumpWithFullMemory,  # Dump type - MiniDumpNormal
