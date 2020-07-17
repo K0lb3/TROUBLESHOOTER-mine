@@ -1157,7 +1157,7 @@ function ModifyAbilityByMastery_AbsoluteZero(ability, owner, mastery)
 end
 -- 재장전
 function ModifyAbilityChecker_Reload(mastery, ability)
-	return ability.Type == 'Attack' and ability.HitRateType == 'Force';
+	return ability.Type == 'Attack' and ability.HitRateType == 'Force' and ability.CastDelay > 0;
 end
 function ModifyAbilityByMastery_Reload(ability, owner, mastery)
 	local additiveEffect = {};
@@ -2016,7 +2016,9 @@ function ModifyAbilityByMastery_SpreadingBlaze(ability, owner, mastery)
 		return rangeCls.ExpandedRange or rangeType;
 	end
 	ability.TargetRange = GetExpandRange(ability.TargetRange);
-	if ability.Target == 'Self' or ability.Target == 'Ground' or ability.Target == 'EmptyGround' then
+	-- 적용 범위 증가 (자신 주위 광역 or 부채꼴 or 직선)
+	local applyRangeCls = GetClassList('Range')[ability.ApplyRange];
+	if ability.Target == 'Self' or applyRangeCls.Type == 'Fan' or applyRangeCls.Type == 'StraightLine' then
 		ability.ApplyRange = GetExpandRange(ability.ApplyRange);
 		ability.GuideRange = GetExpandRange(ability.GuideRange);
 	end

@@ -1351,6 +1351,11 @@ function AbilityAI_Howl_Obedience(ability, self, abilities, args, aiConfig)
 end
 function AbilityAI_SpinWeb(ability, self, abilities, args, aiConfig)
 	local filteredAbilities = table.filter(abilities, function(ab) return ab.name == 'Move' or ab == ability; end);
+	
+	local ff = _G[ability.UseableChecker];
+	if #filteredAbilities == 1 and ff and ff(self, ability, GetPosition(self), false, {}) ~= nil then
+		return nil;
+	end
 	return GeneralAI(self, filteredAbilities, function(self, adb, args)
 		if adb.OnFieldEffect('Fire') or adb.OnFieldEffect('Spark') or adb.OnFieldEffect('PoisonGas') or adb.OnFieldEffect('Web') then
 			return -9988;
@@ -2335,6 +2340,68 @@ function AbilityAI_Potion_Scourge(ability, self, abilities, args, aiConfig)
 	return GeneralAI(self, filteredAbilities, 'AttackMove_Defensive', {{Strategy = MakeNormalAbilityUseAI(ability), Target = 'Assist'}}, aiConfig, args);
 end
 
+function AbilityAI_PreyFishing(ability, self, abilities, args, aiConfig)
+	local availableEnemies = table.filter(GetTargetInRangeSight(self, ability.TargetRange, 'Enemy', true), function(unit)
+		return _G[ability.TargetUseableChecker](self, ability, unit, {}) == nil;
+	end);
+	if #availableEnemies == 0 then
+		return nil;
+	end
+	
+	return ability, GetPosition(table.randompick(availableEnemies)), {}, 1;
+end
+
+function AbilityAI_PreyThrow(ability, self, abilities, args, aiConfig)
+	local allUnit = GetAllUnitInSight(self, true);
+	local allAllies = table.filter(allUnit, function(unit)
+		return self ~= unit and IsTeamOrAlly(self, unit);
+	end);
+	aiConfig.AllowZeroTarget = true;
+	local mission = GetMission(self);
+	return FindAIMainAction(self, {ability}, {{Strategy = function(self, adb, args)
+		if GetObjectByPosition(mission, adb.Position) then
+			return -31;
+		end
+		if #adb.ApplyTargets > 0 then
+			return 1000 + #adb.ApplyTargets * 10;
+		end
+		local distanceSum = 0;
+		for _, ally in ipairs(allAllies) do
+			distanceSum = distanceSum + GetDistance3D(adb.Position, GetPosition(ally));
+		end
+		
+		if distanceSum == 0 then
+			return -12;	--?? 이럴수는 없음
+		end
+		
+		return 1000 / distanceSum;
+	end, Target = 'Attack'}}, aiConfig, args);
+end
+
+function AbilityAI_PreySeal(ability, self, abilities, args, aiConfig)
+	local allUnit = GetAllUnitInSight(self, true);
+	local allAllies = table.filter(allUnit, function(unit)
+		return self ~= unit and IsTeamOrAlly(self, unit);
+	end);
+	aiConfig.AllowZeroTarget = true;
+	local mission = GetMission(self);
+	return FindAIMainAction(self, {ability}, {{Strategy = function(self, adb, args)		
+		local distanceSum = 0;
+		if GetObjectByPosition(mission, adb.Position) then
+			return -31;
+		end
+		for _, ally in ipairs(allAllies) do
+			distanceSum = distanceSum + GetDistance3D(adb.Position, GetPosition(ally));
+		end
+		
+		if distanceSum == 0 then
+			return -12;	--?? 이럴수는 없음
+		end
+		
+		return 1000 / distanceSum;
+	end, Target = 'Any'}}, aiConfig, args);
+end
+
 function NormalForceAbilityActionAI(self, adb, args)
 	local score = 1000 - adb.Distance * 10 + math.random(1, 9) + adb.Hate * (args.HateRatio or 1) + GetTeamHate(args, GetTeam(adb.Object));
 	if not args.AllowObstacle and adb.ObstacleShot then
@@ -2813,7 +2880,9 @@ function CalculateIntendAbility(self, abilities, args)
 			table.bininsert(intendAbility, {Priority = pr, Ability = ability}, scoreFunc, true);
 		end
 	end
-	return table.map(intendAbility, function(d) return d.Ability.name; end);
+	local ret = table.map(intendAbility, function(d) return d.Ability.name; end);
+	LogAndPrint('CalculateIntendAbility', ret);
+	return ret;
 end
 function NormalMonsterActionBase(self, adb, args)
 	-- 아무 행동을 하지 않는것보다는 아무개 행동이라도 하게 하려고...

@@ -140,7 +140,7 @@ function Interaction_HackOff(user, target, interactionCls, ability, ds)
 end
 
 function Interaction_Investigate(user, target, interactionCls, ability, ds)
-	return Result_FireWorldEvent('InvestigationOccured', {Detective = user}, target);
+	return Result_FireWorldEvent('InvestigationOccured', {Detective = user, Ability = ability.name}, target);
 end
 
 function Interaction_OpenCargo(user, target, interactionCls, ability, ds)
@@ -148,7 +148,6 @@ end
 
 function Interaction_InvestigatePsionicStone(user, target, interactionCls, ability, ds)
 	local actions = {};
-	LogAndPrint('Interaction_InvestigatePsionicStone', ability.name, ability.ApplyAmount);
 	-- 이능석 추출
 	local targetEvent = Result_FireWorldEvent('InvestigationPsionicOccured', {Unit = target, Detective = user, Effective = ability.ApplyAmount});
 	table.insert(actions, targetEvent);

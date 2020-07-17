@@ -74,7 +74,7 @@ function CheckUsableByTurnState_HavingPrey(self, ability)
 	end
 	
 	if IsEnemy(self, prey) then
-		return ability.name == 'PreyThrow';
+		return ability.name == 'PreyThrow' or ability.name == 'PreySeal';
 	else
 		return ability.name == 'PreyDown';
 	end
@@ -868,9 +868,17 @@ function AbilityPrevMaster(self, ability, isFreeAction, userInfoArgs, subPositio
 			end
 		end
 		if ability.SPFullAbility then
-			-- SP 전부 소모
-			SetInstantProperty(self, 'InstantSP', self.SP);
-			AddSPPropertyActions(applies, self, self.ESP.name, -1 * self.SP, true, nil);
+			local addSP = -1 * self.SP;
+			-- 황금 깃털
+			local mastery_Amulet_Dorori_Feather_Gold = GetMasteryMastered(GetMastery(self), 'Amulet_Dorori_Feather_Gold');
+			if mastery_Amulet_Dorori_Feather_Gold then
+				addSP = 0;
+			end
+			if addSP ~= 0 then
+				-- SP 전부 소모
+				SetInstantProperty(self, 'InstantSP', self.SP);
+				AddSPPropertyActions(applies, self, self.ESP.name, addSP, true, nil);
+			end
 		end
 		
 		-- 쿨다운
@@ -1554,7 +1562,7 @@ function Result_CreateObject(objKey, objName, pos, team, initScp, initScpArgs, a
 	action.object_key = objKey;
 	action.object_name = objName;
 	action.pos = pos;
-	action.pos2 = dir;
+	action.direction = dir;
 	action.team = team;
 	action.init_scp = initScp;
 	action.init_scp_args = initScpArgs;
@@ -2527,6 +2535,41 @@ function ABL_PREY_DOWN(self, ability, usingPosList, userInfoArgs, targetInfoArgs
 		UnsubscribeWorldEvent(self, subscriptionID);
 	end);
 	
+	table.insert(actions, Result_SetPosition(target, usingPosList[1]));
+	table.insert(actions, Result_RemoveBuff(self, 'HavingPrey'));
+	table.insert(actions, Result_DirectingScript(function()
+		return Result_RemoveBuff(target, 'BeingFished', true);
+	end, nil, true, true));
+	return unpack(actions);
+end
+function ABL_PREY_SEAL(self, ability, usingPosList, userInfoArgs, targetInfoArgs)
+	local actions = {};
+	
+	local buff_HavingPrey = GetBuff(self, 'HavingPrey');
+	
+	local target = GetUnit(GetMission(self), buff_HavingPrey.ReferenceTarget);
+	userInfoArgs.Target = target;
+	userInfoArgs.MainTargetHandle = GetHandle(target);
+	targetInfoArgs.Target = target;
+	targetInfoArgs.TargetHandle = GetHandle(target);
+	
+	IncreaseSurprizeMoveCounter(self);
+	IncreaseSurprizeMoveCounter(target);
+	
+	SubscribeWorldEvent(self, 'AbilityUsed', function(eventArg, ds, subscriptionID)
+		if eventArg.Unit ~= self then
+			return;
+		end
+		DecreaseSurprizeMoveCounter(self);
+		DecreaseSurprizeMoveCounter(target);
+		UnsubscribeWorldEvent(self, subscriptionID);
+	end);
+	for __, buff in ipairs(GetBuffList(target)) do
+		if buff.Type == 'Buff' and (buff.SubType == 'Physical' or buff.SubType == 'Mental') then
+			InsertBuffActions(actions, self, target, buff.name, -buff.Lv);
+		end
+	end
+	InsertBuffActions(actions, self, target, ability.ApplyTargetBuff.name, 1, false, nil, true);
 	table.insert(actions, Result_SetPosition(target, usingPosList[1]));
 	table.insert(actions, Result_RemoveBuff(self, 'HavingPrey'));
 	table.insert(actions, Result_DirectingScript(function()

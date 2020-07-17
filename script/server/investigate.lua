@@ -30,38 +30,12 @@ function InitializeInvestigationTarget(unitDecl, obj, reinitialize)
 									or SafeIndex(investigationInfo, 'OpenReward_Lock', 1, 'Priority')
 									or SafeIndex(investigationInfo, 'Priority');
 		SetInstantProperty(obj, 'InformationPriority', infomationPriority);		-- 있으면 설정될듯
+		SetInstantPropertyWithUpdate(obj, 'InvestigationInfo', investigationInfo);
 	end
 	
 	SubscribeWorldEvent(obj, 'InvestigationOccured', investigationTargetCls.InvestigationOccuredCallback(obj, investigationInfo));
 	
-	if investigationInfo.Type == 'Lock' then
-		if not reinitialize then
-			obj.Base_Untargetable = false;
-		end
-		SubscribeWorldEvent(obj, 'UnitDead', function(eventArg, ds)
-			if eventArg.Unit ~= obj then
-				return;
-			end
-			
-			local pos = GetPosition(obj);
-			local objKey = GetObjKey(obj);
-			local openReward = SafeIndex(investigationInfo, 'OpenReward_Lock', 1);
-			local isInformationType = openReward.Type == 'Information';
-			local actions = {};
-			local unitInitializeFunc = function(unit, arg)
-				UNIT_INITIALIZER_NON_BATTLE(unit, unit.Team);
-			end;
-			local createAction = Result_CreateObject(GenerateUnnamedObjKey(obj), 'Object_ItemCube_Off', pos, GetTeam(obj), unitInitializeFunc, {}, 'DoNothingAI', nil, true);
-			createAction.sequential = true;		
-			ds:WorldAction(createAction);
-			if isInformationType then
-				return InvestigateInformationHolder(eventArg.Detective, obj, function()
-					BreakLock(eventArg.Detective, obj, ds);
-				end, nil, ds);
-			end
-			BreakLock(eventArg.Detective, obj, ds);
-		end);
-	elseif investigationInfo.Type == 'Pc' then		
+	if investigationInfo.Type == 'Pc' then
 		local interactorKey = SafeIndex(investigationInfo, 'ConditionOutputInteraction', 1, 'Interactor');
 		local interacteeKey = SafeIndex(investigationInfo, 'ConditionOutputInteraction', 1, 'Interactee');
 		local successActionList = SafeIndex(investigationInfo, 'OnSuccessActionList', 1, 'Action');
@@ -183,7 +157,7 @@ function OnInvestigationOccured_Chest(obj, investigationInfo)
 				objectOff = chestTypeCls.ObjectOff.name;
 			end
 		end		
-		local createAction = Result_CreateObject(GenerateUnnamedObjKey(obj), objectOff, pos, GetTeam(obj), unitInitializeFunc, {}, 'DoNothingAI', nil, true);
+		local createAction = Result_CreateObject(GenerateUnnamedObjKey(obj), objectOff, pos, GetTeam(obj), unitInitializeFunc, {}, 'DoNothingAI', nil, true, GetDirection(obj));
 		createAction.sequential = true;		
 		ds:WorldAction(Result_DestroyObject(obj, false, true));
 		ds:WorldAction(createAction);
@@ -292,41 +266,121 @@ end
 
 function OnInvestigationOccured_Lock(obj, investigationInfo)
 	return function(eventArg, ds)
+		-- 스킵 가능
+		ds:RunScriptArgs('SetDirectingSkipEnabled', true);
+		ds:SkipPointOn();
 		local pos = GetPosition(obj);
 		local objKey = GetObjKey(obj);
 		local particleID = ds:PlayParticle(objKey, '_CENTER_', 'Particles/Dandylion/OpenChest', 1);
+		local playSoundID = ds:PlaySound3D('BoxOpen.wav', objKey, '_CENTER_', 3000, 'Effect', 1.0);
 		local deadAniID = ds:PlayPose(objKey, 'Dead', '', true);
+		ds:Connect(playSoundID, deadAniID, 0);
 		ds:Connect(particleID, deadAniID, 0.3333);
 		local openReward = SafeIndex(investigationInfo, 'OpenReward_Lock', 1);
 		local isInformationType = openReward.Type == 'Information';
-		local actions = {};
 		local unitInitializeFunc = function(unit, arg)
 			UNIT_INITIALIZER_NON_BATTLE(unit, unit.Team);
 		end;
-		local createAction = Result_CreateObject(GenerateUnnamedObjKey(obj), 'Object_ItemCubeLock_Off', pos, GetTeam(obj), unitInitializeFunc, {}, 'DoNothingAI', nil, true);
+		local objectOff = 'Object_ItemCubeLock_Off';
+		local keyItem = nil;
+		local lockType = SafeIndex(investigationInfo, 'LockType');
+		if lockType then
+			local lockTypeCls = GetClassList('LockType')[lockType];
+			if lockTypeCls and lockTypeCls.name then
+				objectOff = lockTypeCls.ObjectOff.name;
+				keyItem = SafeIndex(lockTypeCls, 'KeyItem', 'name');
+			end
+		end
+		local usingPos = GetPosition(obj);
+		local success = false;
+		if eventArg.Ability == 'InvestigateLock_Key' then
+			if keyItem then
+				local ability = GetAbilityObject(eventArg.Detective, eventArg.Ability);
+				if ability and ability.UseCount > 0 then
+					local equipItem = GetWithoutError(eventArg.Detective, 'Inventory2');
+					if equipItem and equipItem.name == keyItem then
+						success = true;
+					end
+				end
+			end
+		elseif eventArg.Ability == 'InvestigateLock_Force' then
+			local ability = GetAbilityObject(eventArg.Detective, eventArg.Ability);
+			if ability then
+				local mission = GetMission(obj);
+				local weather = mission.Weather.name;
+				local missionTime = mission.MissionTime.name;
+				local temperature = mission.Temperature.name;
+				local hitRate = ability.GetHitRateCalculator(eventArg.Detective, obj, ability, usingPos, weather, missionTime, temperature);
+				-- 성공 확률 테스트
+				if RandomTest(hitRate) then
+					success = true;
+				end
+			end
+		end
+		if not success then
+			ds:ShowFrontmessageWithText(GameMessageFormText({ Type = 'LockForceFailed' }, 'Corn'), 'Corn');
+			ds:WorldAction(Result_AddFieldEffect('Fire', { usingPos }, obj));
+			ds:UpdateBalloonCivilMessage(GetObjKey(eventArg.Detective), 'LockForceFailed', eventArg.Detective.Info.AgeType);
+		end
+		
+		local createAction = Result_CreateObject(GenerateUnnamedObjKey(obj), objectOff, pos, GetTeam(obj), unitInitializeFunc, {}, 'DoNothingAI', nil, true, GetDirection(obj));
 		createAction.sequential = true;		
 		ds:WorldAction(Result_DestroyObject(obj, false, true));
 		ds:WorldAction(createAction);
-		if isInformationType then
-			return InvestigateInformationHolder(eventArg.Detective, obj, function() 
-				BreakLock(eventArg.Detective, obj, ds, deadAniID);
-			end, deadAniID, ds);
-		end
 		
-		local itemCollections = SafeIndex(openReward, 'ItemCollection', 1, 'Slot');
-		if itemCollections == nil or #itemCollections == 0 then
-			OpenEmptyChest(eventArg.Detective, ds, deadAniID);
-			return;
+		local actions = {};
+		if success then
+			-- 열쇠 소모
+			if eventArg.Ability == 'InvestigateLock_Key' then
+				UpdateAbilityPropertyActions(actions, eventArg.Detective, eventArg.Ability, 'UseCount', 0);
+			end
+		
+			-- 유닛, 회사 통계 갱신
+			AddUnitStats(eventArg.Detective, 'OpenChest', 1, true);
+			local company = GetCompany(eventArg.Detective);
+			if company then
+				ds:AddSteamStat('OpenChestCount', 1, GetUserTeam(company));
+			end
+			
+			table.append(actions, {(function()
+				if isInformationType then
+					return InvestigateInformationHolder(eventArg.Detective, obj, function() 
+						OpenEmptyChest(eventArg.Detective, ds, deadAniID);
+					end, deadAniID, ds);
+				else
+					local itemCollections = GetItemCollections(GetMission(obj), openReward);
+					if itemCollections then
+						itemCollections = RebaseXmlTableToClassTable(itemCollections);
+					else
+						local setType = GetItemCollectionSet(GetMission(obj), openReward);
+						if setType == nil or setType == 'None' then
+							itemCollections = nil;
+						else
+							itemCollections = GetClassList('ItemBox')[setType].Slot;
+						end
+					end
+					if itemCollections == nil or #itemCollections == 0 then
+						OpenEmptyChest(eventArg.Detective, ds, deadAniID);
+						return;
+					end
+					local picker = RandomPicker.new();
+					for i, slot in ipairs(itemCollections) do
+						picker:addChoice(slot.Priority, SafeIndex(slot, 'Item'));
+					end
+					local pickedItem = picker:pick();
+					local giveItem = Result_GiveItemByItemIndicator(eventArg.Detective, pickedItem, {});
+					if giveItem == nil then
+						OpenEmptyChest(eventArg.Detective, ds, deadAniID);
+						return;
+					end
+					return GiveItemWithInstantEquipDialog(ds, giveItem, eventArg.Detective, deadAniID, 1.5);
+				end
+			end)() });
 		end
-		local picker = RandomPicker.new();
-		for i, slot in ipairs(itemCollections) do
-			picker:addChoice(slot.Priority, SafeIndex(slot, 'Item', 1));
-		end
-		local giveItem = Result_GiveItemByItemIndicator(eventArg.Detective, picker:pick(), {});
-		if giveItem == nil then
-			OpenEmptyChest(eventArg.Detective, ds, deadAniID);
-		end
-		return giveItem;
+		-- 스킵 종료
+		ds:SkipPointOff();
+		ds:RunScriptArgs('SetDirectingSkipEnabled', false);
+		return unpack(actions);
 	end;
 end
 

@@ -145,7 +145,7 @@ function Battle(Attacker, Defender, ability, actions, phase, resultModifier, usi
 		realDamage = ApplyDamageTest(Defender, damage, damageInfo);
 	end
 	local isDead = (Defender.HP <= realDamage);
-	local buffApplied = AddBattleResultEventAction(actions, Attacker, Defender, ability, damage, attackerState, defenderState, masteryTable_Attacker, masteryTable_Defender, resultModifier, isDead);
+	local buffApplied = AddBattleResultEventAction(actions, Attacker, Defender, ability, damage, attackerState, defenderState, masteryTable_Attacker, masteryTable_Defender, resultModifier, isDead, realDamage);
 	if IsMissionServer() then
 		LogAndPrint(string.format('[%s]>>== Battle ==: [%s] use [%s] Ability to [%s]', GetMissionGID(Attacker), Attacker.name, ability.name, SafeIndex(Defender, 'name')));
 		LogAndPrintDev('Damage: ', damage, 'State: ', attackerState..'/'..defenderState, 'KB:', knockbackPower);
@@ -406,7 +406,7 @@ end
 ------------------------------------------------------------------------------------------------------------------------
 -- 전투 상황으로 인한 이벤트 처리
 -------------------------------------------------------------------------------------------------------------------------
-function AddBattleResultEventAction(actions, Attacker, Defender, ability, damage, attackerState, defenderState, masteryTable_Attacker, masteryTable_Defender, resultModifier, isDead)
+function AddBattleResultEventAction(actions, Attacker, Defender, ability, damage, attackerState, defenderState, masteryTable_Attacker, masteryTable_Defender, resultModifier, isDead, realDamage)
 	local buffApplied = false;
 	local isHit = defenderState ~= 'Dodge' and (damage <= 0 or (Defender and GetBuff(Defender, 'StarShield') == nil));
 	
@@ -459,7 +459,7 @@ function AddBattleResultEventAction(actions, Attacker, Defender, ability, damage
 
 	-- 3. 일반 특성 이벤트
 	-- 1) 피격 시 이벤트
-	AddBattleResultEventAction_Normal_Hitable(actions, Attacker, Defender, ability, damage, attackerState, defenderState, masteryTable_Attacker, masteryTable_Defender);	
+	AddBattleResultEventAction_Normal_Hitable(actions, Attacker, Defender, ability, damage, attackerState, defenderState, masteryTable_Attacker, masteryTable_Defender, realDamage);	
 	-- 2) 회피 시 이벤트
 	AddBattleResultEventAction_Normal_Dodge(actions, Attacker, Defender, ability, damage, attackerState, defenderState, masteryTable_Attacker, masteryTable_Defender);	
 	-- 3) 사망 시 이벤트
@@ -473,7 +473,7 @@ end
 -------------------------------------------------------------------------------------------------------------------------
 -- 피격 시.
 ------------------------------------------------
-function AddBattleResultEventAction_Normal_Hitable(actions, Attacker, Defender, ability, damage, attackerState, defenderState, masteryTable_Attacker, masteryTable_Defender)
+function AddBattleResultEventAction_Normal_Hitable(actions, Attacker, Defender, ability, damage, attackerState, defenderState, masteryTable_Attacker, masteryTable_Defender, realDamage)
 	-- 방어자가 있어야 하는 로직 구분자.
 	if not Defender then
 		return;
@@ -711,6 +711,14 @@ function AddBattleResultEventAction_Normal_Hitable(actions, Attacker, Defender, 
 		end
 	end
 	
+	-- 선혈의 야수
+	if ability.Type == 'Attack' then
+		local mastery_BloodyBeast = GetMasteryMastered(masteryTable_Attacker, 'BloodyBeast');
+		if mastery_BloodyBeast and realDamage > 0 and HasBuffType(Defender, nil, nil, mastery_BloodyBeast.BuffGroup.name) then
+			mastery_BloodyBeast.CountChecker = 1;
+		end
+	end
+	
 	local ConditionalMasteryBuffApplier = function(masteryTable, masteryType, conditionFunc, doFunc)
 		local mastery = GetMasteryMastered(masteryTable, masteryType);
 		if mastery and conditionFunc(mastery) then
@@ -851,6 +859,20 @@ function AddBattleResultEventAction_Normal_Dead(actions, Attacker, Defender, abi
 	if mastery_AllPoison and HasBuffType(Defender, 'Debuff', nil, mastery_AllPoison.BuffGroup.name) then
 		mastery_AllPoison.CountChecker = 1;
 	end
+	-- 선혈의 괴수
+	local mastery_BloodyMonster = GetMasteryMastered(masteryTable_Attacker, 'BloodyMonster');
+	if mastery_BloodyMonster and HasBuffType(Defender, 'Debuff', nil, mastery_BloodyMonster.BuffGroup.name) then
+		mastery_BloodyMonster.CountChecker = 1;
+	end
+	-- 지배자
+	local mastery_Overlord = GetMasteryMastered(masteryTable_Attacker, 'Overlord');
+	if mastery_Overlord and IsEnemy(Attacker, Defender) then
+		local allyList = GetTargetInRangeSight(Attacker, 'Sight', 'Team', true);
+		local enemyList = GetTargetInRangeSight(Attacker, 'Sight', 'Enemy', true);
+		if #enemyList > #allyList then
+			mastery_Overlord.CountChecker = 1;
+		end
+	end
 	
 	-- 얼어붙은 영혼 수확자
 	local mastery_FrozenReaper = GetMasteryMastered(masteryTable_Attacker, 'FrozenReaper');
@@ -858,6 +880,12 @@ function AddBattleResultEventAction_Normal_Dead(actions, Attacker, Defender, abi
 		if IsEnemy(Attacker, Defender) and HasBuff(Defender, mastery_FrozenReaper.Buff.name) then
 			mastery_FrozenReaper.CountChecker = 1;
 		end
+	end
+	
+	-- 붉은 송곳니
+	local mastery_Amulet_Dorori_Fang_Red = GetMasteryMastered(masteryTable_Attacker, 'Amulet_Dorori_Fang_Red');
+	if mastery_Amulet_Dorori_Fang_Red and HasBuffType(Defender, nil, nil, mastery_Amulet_Dorori_Fang_Red.BuffGroup.name) then
+		mastery_Amulet_Dorori_Fang_Red.CountChecker = 1;
 	end
 end
 -------------------------------------------------------------------------------------------------------
@@ -1255,6 +1283,14 @@ function GetModifyResultActions_Final(actions, Attacker, Defender, ability, phas
 			AddMasteryInvokedEvent(Defender, mastery_HeavyEquipment.name, 'FinalHit');
 		end
 	end
+	-- 버프. 고치
+	if defenderState ~= 'Dodge' and knockbackPower > 0 then
+		local buff_CocoonWeb = GetBuff(Defender, 'CocoonWeb');
+		if buff_CocoonWeb then
+			knockbackPower = 0;
+			AddBattleEvent(Defender, 'BuffInvokedFromAbility', { Buff = buff_CocoonWeb.name, EventType = 'FinalHit', NoEffect = true});
+		end
+	end
 	return damage, attackerState, defenderState, knockbackPower;
 end
 -----------------------------------------------------------------------------------------------------------
@@ -1588,14 +1624,24 @@ function AddSPPropertyActions(actions, target, properetyType, amount, isStatusUp
 			ReasonToAddBattleEventMulti(target, reasons, 'Ending');
 			AddMasteryInvokedEvent(target, mastery_AccelerationEnergy.name, 'Ending');
 		end
-		
+		-- 보조전력
 		local mastery_AuxiliaryPower = GetMasteryMastered(masteryTable, 'AuxiliaryPower');
 		if mastery_AuxiliaryPower then
-			InsertBuffActions(actions, target, target, mastery_AuxiliaryPower.name, amount, true, nil, ds == nil);
+			InsertBuffActions(actions, target, target, mastery_AuxiliaryPower.Buff.name, amount, true, nil, ds == nil);
 			if ds then
 				MasteryActivatedHelper(ds, mastery_AuxiliaryPower, target, 'SPIncreased');
 			else
 				AddMasteryInvokedEvent(target, mastery_AuxiliaryPower.name, 'Ending');
+			end
+		end
+		-- 강화된 신경망
+		local mastery_EnhancedNeuralNetwork = GetMasteryMastered(masteryTable, 'EnhancedNeuralNetwork');
+		if mastery_EnhancedNeuralNetwork then
+			InsertBuffActions(actions, target, target, mastery_EnhancedNeuralNetwork.Buff.name, amount, true, nil, ds == nil);
+			if ds then
+				MasteryActivatedHelper(ds, mastery_EnhancedNeuralNetwork, target, 'SPIncreased');
+			else
+				AddMasteryInvokedEvent(target, mastery_EnhancedNeuralNetwork.name, 'Ending');
 			end
 		end
 	end

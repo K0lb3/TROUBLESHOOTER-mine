@@ -73,7 +73,7 @@ function ApplyTamingActions(actions, user, target)
 	table.insert(actions, Result_DirectingScript(function(mid, ds, args)
 		ds:ChangeCameraTarget(targetKey, '_SYSTEM_', false, false);
 		ds:PlayParticle(targetKey, '_BOTTOM_', 'Particles/Dandylion/LevelUp', 2);
-		ds:Move(targetKey, moveTo, false, true);
+		ds:Move(targetKey, moveTo, false, false);
 		ds:LookAt(targetKey, userKey);
 		ds:ChangeCameraTarget(userKey, '_SYSTEM_', false, false);
 		ds:ReleasePose(userKey, 'TameEnd');

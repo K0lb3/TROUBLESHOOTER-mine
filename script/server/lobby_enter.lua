@@ -39,6 +39,9 @@ function LobbyEnter(ldm, company, lobbyType)
 	-- 무기 코스튬
 	CheckWeaponCostumeUnlock(ldm, company, dc);
 	
+	-- 아시아 서버 한정 보상 지급
+--	CheckAsiaServerErrorReward(ldm, company, dc);
+	
 	local isResetActivityReport = company.ResetActivityReport;
 	if isResetActivityReport then
 		
@@ -911,4 +914,163 @@ function CheckWeaponCostumeUnlock(ldm, company, dc)
 	if needCommit then
 		dc:Commit('CheckWeaponCostumeUnlock');
 	end
+end
+
+function CheckAsiaServerErrorReward(ldm, company, dc)
+	if not company.NeedAsiaServerErrorReward then
+		return;
+	end
+
+	local maxLv = 0;
+	local rosters = GetAllRoster(company, 'Pc');
+	for i, pcInfo in ipairs(rosters) do
+		maxLv = math.max(maxLv, pcInfo.Lv);
+	end
+	LogAndPrint('CheckAsiaServerErrorReward - company:', company.CompanyName, ', maxLv:', maxLv);
+	if maxLv <= 0 then
+		return;
+	end	
+	
+	-- 3레벨 보정
+	maxLv = math.min(maxLv + 3, 50);
+	
+	local allRosters = GetAllRoster(company, 'All');
+	for _, pcInfo in ipairs(allRosters) do
+		-- 3레벨 증가
+		local curLv = pcInfo.Lv;
+		local nextLv = math.min(curLv + 3, 50);
+		if nextLv > curLv then
+			LogAndPrint(string.format(' - %s Lv: %d -> %d', pcInfo.RosterKey, curLv, nextLv));
+			dc:UpdatePCProperty(pcInfo, 'Lv', nextLv);
+		end
+		-- 직업레벨 16렙
+		local targetjob = pcInfo.Object.Job.name;
+		local targetKey, expKey;
+		if pcInfo.RosterType == 'Pc' then
+			targetKey = string.format('EnableJobs/%s/Lv', targetjob);
+			expKey = string.format('EnableJobs/%s/Exp', targetjob);
+		elseif pcInfo.RosterType == 'Beast' or pcInfo.RosterType == 'Machine' then
+			targetKey = 'JobLv';
+			expKey = 'JobExp';
+		end
+		local prevJobLv = SafeIndex(pcInfo, unpack(string.split(targetKey, '/')));
+		local prevJobExp = SafeIndex(pcInfo, unpack(string.split(expKey, '/')));
+		if prevJobLv < 16 then
+			LogAndPrint(string.format(' - %s JobLv: %d, %d -> 16, 0', pcInfo.RosterKey, prevJobLv, nextLv));
+			dc:UpdatePCProperty(pcInfo, targetKey, 16);
+			dc:UpdatePCProperty(pcInfo, expKey, 0);
+		end
+	end
+	
+	-- 빌 지급
+	local vill = 0;
+	if maxLv <= 10 then
+		vill = 250000;
+	elseif maxLv <= 20 then
+		vill = 500000;	
+	elseif maxLv <= 30 then
+		vill = 1000000;
+	elseif maxLv <= 40 then
+		vill = 1500000;
+	elseif maxLv <= 50 then
+		vill = 2000000;
+	end
+	LogAndPrint(string.format(' - Vill: +%d', vill));
+	dc:AddCompanyProperty(company, 'Vill', vill);
+	
+	-- 훈련서 지급
+	local count = 0;
+	if maxLv <= 10 then
+		count = 1000;
+	elseif maxLv <= 20 then
+		count = 1000;	
+	elseif maxLv <= 30 then
+		count = 1000;
+	elseif maxLv <= 40 then
+		count = 1000;
+	elseif maxLv <= 50 then
+		count = 1000;
+	end
+	LogAndPrint(string.format(' - Statement_Mastery: +%d', count));
+	dc:GiveItem(company, 'Statement_Mastery', count, true);
+	
+	-- 아이템 지급
+	local itemLv = {};
+	if maxLv <= 10 then
+		itemLv = {};
+	elseif maxLv <= 20 then
+		itemLv = { 15, 20 };	
+	elseif maxLv <= 30 then
+		itemLv = { 25, 30 };
+	elseif maxLv <= 40 then
+		itemLv = { 35, 40 };
+	elseif maxLv <= 50 then
+		itemLv = { 45 };
+	end
+	
+	local itemList = GetClassList('Item');
+	local itemLvList = {};
+	for k, itemCls in pairs(itemList) do
+		if (itemCls.Category.name == 'Weapon' or itemCls.Category.name == 'Armor') and itemCls.Rank.name == 'Epic' then
+			local lv = itemCls.RequireLv;
+			if itemLvList[lv] == nil then
+				itemLvList[lv] = {};
+			end
+			table.insert(itemLvList[lv], itemCls);
+		end
+	end
+	
+	for _, pcInfo in ipairs(rosters) do
+		for _, lv in ipairs(itemLv) do
+			local weapons = table.filter(itemLvList[lv] or {}, function(itemCls)
+				for _, enableEquipWeapon in ipairs (pcInfo.Object.EnableEquipWeapon) do
+					if itemCls.Type.name == enableEquipWeapon then
+						return true;
+					end
+				end
+				return false;
+			end);
+			local armors = table.filter(itemLvList[lv] or {}, function(itemCls)
+				for _, enableEquipBody in ipairs (pcInfo.Object.EnableEquipBody) do
+					if itemCls.Type.name == enableEquipBody then
+						return true;
+					end
+				end
+				return false;
+			end);
+			LogAndPrint(pcInfo.name, lv);
+			LogAndPrint('- weapons:', table.map(weapons or {}, function(itemCls) return itemCls.name end));
+			LogAndPrint('- armors:', table.map(armors or {}, function(itemCls) return itemCls.name end));
+			for _, itemCls in ipairs(weapons) do
+				dc:GiveItem(company, itemCls.name, 10, true);
+			end
+			for _, itemCls in ipairs(armors) do
+				dc:GiveItem(company, itemCls.name, 10, true);
+			end
+		end
+	end
+	
+	-- 추가 세트 아이템 제작 재료
+	if maxLv >= 41 then
+		local rewardList = {};
+		local setList = { 'GoldNeguriESPSet', 'GoldNeguriAttackSet' };
+		for _, setName in ipairs(setList) do
+			local setCls = GetClassList('ItemSet')[setName];
+			for i = 1, 5 do
+				local itemName = setCls[string.format('Item%d', i)];
+				LogAndPrint('i:', i, ', itemName:', itemName);
+				local recipeCls = GetClassList('Recipe')[itemName];
+				for _, matInfo in pairs(recipeCls.RequireMaterials) do
+					rewardList[matInfo.Item] = (rewardList[matInfo.Item] or 0) + 10 * matInfo.Amount;
+				end
+			end
+		end
+		LogAndPrint('rewardList:', rewardList);
+		for itemName, itemCount in pairs(rewardList) do
+			dc:GiveItem(company, itemName, itemCount, true);
+		end
+	end
+		
+	dc:UpdateCompanyProperty(company, 'NeedAsiaServerErrorReward', false);
+	dc:Commit('CheckAsiaServerErrorReward');
 end

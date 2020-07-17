@@ -547,9 +547,10 @@ function Buff_Overwatching_TestMoveStep(eventArg, buff, owner, giver, ds)
 	local range = CalculateRange(owner, overwatch.TargetRange, GetPosition(owner));
 	local p = eventArg.Position;
 	if BuffHelper.IsPositionInRange(p, range) then
-		local eventCmd = ds:SubscribeFSMEvent(GetObjKey(eventArg.Unit), 'StepForward', 'CheckUnitArrivePosition', {CheckPos=p}, true);
-		if eventArg.MoveID then
-			ds:Connect(eventCmd, eventArg.MoveID, 0);
+		local eventCmd = ds:SubscribeFSMEvent(GetObjKey(eventArg.Unit), 'StepForward', 'CheckUnitArrivePosition', {CheckPos=p}, true, true);
+		if eventArg.MoveID and ds:GetRefID(eventArg.MoveID) ~= eventArg.MoveID then
+			ds:Connect(eventCmd, eventArg.MoveID, 0);		-- 루프를 만들어서 교체를 시키려고
+			ds:Connect(eventArg.MoveID, eventCmd, 0);
 		else
 			ds:SetConditional(eventCmd);
 		end
@@ -612,12 +613,13 @@ function Buff_Flow_TestMoveStep(eventArg, buff, owner, giver, ds, reposition)
 	end
 	local p = eventArg.Position;
 	if BuffHelper.IsPositionInRange(p, flowWatchingArea) then
-		local eventCmd = ds:SubscribeFSMEvent(GetObjKey(eventArg.Unit), 'StepForward', 'CheckUnitArrivePosition', {CheckPos=p}, true);
+		local eventCmd = ds:SubscribeFSMEvent(GetObjKey(eventArg.Unit), 'StepForward', 'CheckUnitArrivePosition', {CheckPos=p}, true, true);
 		
 		flowAlreadyHitSet[GetObjKey(eventArg.Unit)] = true;
 		SetInstantProperty(owner, 'FlowAlreadyHitSet', flowAlreadyHitSet);
-		if eventArg.MoveID then
-			ds:Connect(eventCmd, eventArg.MoveID, 0);
+		if eventArg.MoveID and ds:GetRefID(eventArg.MoveID) ~= eventArg.MoveID then
+			ds:Connect(eventCmd, eventArg.MoveID, 0);		-- 루프를 만들어서 교체를 시키려고
+			ds:Connect(eventArg.MoveID, eventCmd, 0);
 		else
 			ds:SetConditional(eventCmd);
 		end
@@ -807,9 +809,10 @@ function Buff_Patrol_FindEnemy(owner, findObj, findPos, ds, ownerMoved, moveID, 
 		local moveObjectKey = (ownerMoved and ownerKey or findObjectKey);
 		local eventCmd = nil;
 		if not findBySearch then
-			eventCmd = ds:SubscribeFSMEvent(moveObjectKey, 'StepForward', 'CheckUnitArrivePosition', {CheckPos=findPos}, true);
+			eventCmd = ds:SubscribeFSMEvent(moveObjectKey, 'StepForward', 'CheckUnitArrivePosition', {CheckPos=findPos}, true, true);
 			if moveID then
 				ds:Connect(eventCmd, moveID, 0);
+				ds:Connect(moveID, eventCmd, 0);
 			else
 				ds:SetConditional(eventCmd);
 			end
@@ -1970,6 +1973,18 @@ function Buff_ModifyAbility_BuffRemoved(eventArg, buff, owner, giver, ds)
 	end
 	return Buff_ModifyAbility_Apply(owner);
 end
+function Buff_InvalidateFieldEffect_BuffAdded(eventArg, buff, owner, giver, ds)
+	if eventArg.Buff ~= buff then
+		return;
+	end
+	return Result_FireWorldEvent('InvalidateBuffAffectorTarget', {Unit = owner});
+end
+function Buff_InvalidateFieldEffect_BuffRemoved(eventArg, buff, owner, giver, ds)
+	if eventArg.Buff ~= buff then
+		return;
+	end
+	return Result_FireWorldEvent('InvalidateBuffAffectorTarget', {Unit = owner});
+end
 ---------------------------------------------------------------------------------------------
 -- 개별 이벤트 핸들러
 --------------------------------------------------------------------------------
@@ -2176,7 +2191,7 @@ function Buff_MakeConcoction_UnitTurnStart(eventArg, buff, owner, giver, ds)
 end
 function Buff_LostSoul_UnitTurnStart(eventArg, buff, owner, giver, ds)
 	local nearObjects = table.filter(GetNearObject(owner, buff.ApplyAmount), function(o) 
-		return o ~= owner and IsInSight(owner, o) and not o.Obstacle;
+		return o ~= owner and IsInSight(owner, o) and not o.Obstacle and GetRelation(owner, o) ~= 'None';
 	end);
 	local nearest = nil;
 	local nearestDist = nil;
@@ -2572,7 +2587,7 @@ end
 function Buff_Frenzy_UnitTurnStart(eventArg, buff, owner, giver, ds)
 	local units = GetAllUnitInSight(owner, true);
 	local targets = table.filter(units, function(o)
-		return owner ~= o and IsEnemy(owner, o) and not o.PublicTarget;
+		return owner ~= o and IsEnemy(owner, o) and not o.PublicTarget and not o.Untargetable;
 	end);
 	if #targets > 0 then
 		return;
@@ -2581,6 +2596,79 @@ function Buff_Frenzy_UnitTurnStart(eventArg, buff, owner, giver, ds)
 	ds:UpdateBattleEvent(GetObjKey(owner), 'BuffDischarged', { Buff = buff.name });
 	table.insert(actions, Result_RemoveBuff(owner, buff.name, true));
 	table.insert(actions, Result_TurnEnd(owner));
+	return unpack(actions);
+end
+-- 부화 중인 야샤알
+function Buff_HatchedObjectYasha_UnitTurnStart(eventArg, buff, owner, giver, ds)
+	local hatchingCount = GetInstantProperty(owner, 'HatchingCount') or 1;
+	Buff_HatchedObjectYasha_DoHatching(ds, owner, hatchingCount);
+end
+function Buff_HatchedObjectYasha_DoHatching(ds, owner, hatchingCount)
+	local monType = GetInstantProperty(owner, 'HatchingMonster');
+	if not monType then
+		return;
+	end
+	local range = GetInstantProperty(owner, 'HatchingRange') or 'Sphere4';
+	local aiType = GetInstantProperty(owner, 'HatchingAI') or 'NormalMonsterAI';
+	
+	-- 부화 위치 픽커
+	local mission = GetMission(owner);
+	local ownerPos = GetPosition(owner);
+	local targetRange = table.filter(CalculateRange(owner, range, ownerPos), function(pos)
+		return not GetObjectByPosition(mission, pos) and not IsSamePosition(ownerPos, pos);
+	end);
+	
+	local posPicker = RandomPicker.new(false);
+	for _, pos in ipairs(targetRange) do
+		local dist = GetDistance3D(ownerPos, pos);
+		local score = math.floor(1000 / math.max(dist, 1));
+		posPicker:addChoice(score, pos);
+	end
+	
+	local objKey = GetObjKey(owner);
+	local sleepID = ds:Sleep(0);
+	
+	local actions = {};
+	-- HatchingCount 마리 부화
+	for i = 1, hatchingCount do
+		local newObjKey = GenerateUnnamedObjKey(mission);
+		local movePos = posPicker:pick();
+		if not movePos then
+			break;
+		end
+		
+		local unitInitializeFunc = function(unit, arg)
+			UNIT_INITIALIZER(unit, unit.Team);
+		end;
+		
+		local createAction = Result_CreateMonster(newObjKey, monType, ownerPos, GetTeam(owner), unitInitializeFunc, {}, aiType, {}, true);
+		ApplyActions(mission, { createAction }, false);
+		local target = GetUnit(mission, newObjKey);
+		if not target then
+			break;
+		end
+		
+		local moveID = ds:Move(newObjKey, movePos, false, false, 'Amove', 0, 0, false, 1, false, true, true, true);
+		local moveAction = Result_Move(movePos, target);
+		moveAction._ref = moveID;
+		moveAction._ref_offset = 0;
+		moveAction.directing_id = moveID;
+		moveAction.mission_direct_move = true;
+		moveAction.no_zoc = true;
+		ds:WorldAction(moveAction, false);
+		ds:Connect(moveID, sleepID, 0);
+		
+		-- 대기
+		local allyList = GetTargetInRangeSight(target, 'Sight', 'Team', true);
+		local enemyList = GetTargetInRangeSight(target, 'Sight', 'Enemy', true);
+		local battleAllyExist = table.exist(allyList, function(obj)
+			return not obj.PreBattleState and obj.name ~= owner.name;
+		end);
+		if #enemyList == 0 and not battleAllyExist then
+			InsertBuffActions(actions, target, target, 'Stand', 1, true);
+		end
+	end
+	
 	return unpack(actions);
 end
 ----------------------------------------------------------------------------
@@ -3706,14 +3794,22 @@ function Buff_Flare_BuffAdded(eventArg, buff, owner, giver, ds)
 end
 -- 은신
 function Buff_Stealth_BuffAdded(eventArg, buff, owner, giver, ds)
-	if eventArg.Unit ~= owner or eventArg.Buff ~= buff then
-		return;
+	if eventArg.Buff == buff then
+		local mission = GetMission(owner);
+		for _, aiSession in pairs(GetAllAISession(mission)) do
+			aiSession:RemoveTemporalSightObject(owner);
+		end
+		SetInstantProperty(owner, 'StealthDetected', nil);
+	elseif eventArg.Buff.Detected then
+		return Result_RemoveBuff(owner, buff.name, true), Result_DirectingScript(function(mid, ds, args)
+			ds:Sleep(0.05);
+			ds:PlayParticle(GetObjKey(owner), '_CENTER_', 'Particles/Dandylion/UnleashedCamouflage', 2, false, false, true);
+			ds:Sleep(0.5);
+			ds:UpdateBattleEvent(GetObjKey(owner), 'BuffDischarged', { Buff = buff.name });
+			ds:ChangeCameraTarget(GetObjKey(owner), '_SYSTEM_', false);
+			ds:Sleep(0.05);
+		end, nil, true);
 	end
-	local mission = GetMission(owner);
-	for _, aiSession in pairs(GetAllAISession(mission)) do
-		aiSession:RemoveTemporalSightObject(owner);
-	end
-	SetInstantProperty(owner, 'StealthDetected', nil);
 end
 -- 거대화
 function Buff_Giant_BuffAdded(eventArg, buff, owner, giver, ds)
@@ -4546,9 +4642,10 @@ end
 ----------------------------------------------------------------------------
 -- 연막 생성기
 function Buff_Generator_Smoke_UnitMovedSingleStep_Self(eventArg, buff, owner, giver, ds)
-	local eventCmd = ds:SubscribeFSMEvent(GetObjKey(owner), 'StepForward', 'CheckUnitArrivePosition', {CheckPos=eventArg.Position}, true);
-	if eventArg.MoveID then
-		ds:Connect(eventCmd, eventArg.MoveID, 0);
+	local eventCmd = ds:SubscribeFSMEvent(GetObjKey(owner), 'StepForward', 'CheckUnitArrivePosition', {CheckPos=eventArg.Position}, true, true);
+	if eventArg.MoveID and ds:GetRefID(eventArg.MoveID) ~= eventArg.MoveID then
+		ds:Connect(eventCmd, eventArg.MoveID, 0);		-- 루프를 만들어서 교체를 시키려고
+		ds:Connect(eventArg.MoveID, eventCmd, 0);
 	else
 		ds:SetConditional(eventCmd);
 	end
@@ -4671,9 +4768,10 @@ function Buff_Stealth_Detected(owner, findObj, findPos, ds, ownerMoved, moveID, 
 	local needReleaseFindObject = findPos ~= nil;
 	if findPos then
 		local moveObjectKey = (ownerMoved and ownerKey or findObjectKey);
-		local eventCmd = ds:SubscribeFSMEvent(moveObjectKey, 'StepForward', 'CheckUnitArrivePosition', {CheckPos=findPos}, true);
+		local eventCmd = ds:SubscribeFSMEvent(moveObjectKey, 'StepForward', 'CheckUnitArrivePosition', {CheckPos=findPos}, true, true);
 		if moveID then
 			ds:Connect(eventCmd, moveID, 0);
+			ds:Connect(moveID, eventCmd, 0);
 		else
 			ds:SetConditional(eventCmd);
 		end
@@ -5411,6 +5509,40 @@ function Buff_HavingPrey_PreAbilityUsing(eventArg, buff, owner, giver, ds)
 	table.insert(actions, Result_RemoveBuff(target, 'BeingFished'));
 	return unpack(actions);
 end
+-- 경계
+function Buff_Overwatching_PreAbilityUsing(eventArg, buff, owner, giver, ds)
+	if GetRelation(owner, eventArg.Unit) ~= 'Enemy'
+		or eventArg.Ability.Type ~= 'Attack' 
+		or eventArg.Unit.Cloaking
+		or not owner.TurnState.TurnEnded 
+		or not GetBuffStatus(owner, 'Attackable', 'And') then
+		return;
+	end
+	
+	local removeBuff = Result_RemoveBuff(owner, 'Overwatching');
+	
+	local overwatchAbility = FindAbility(owner, owner.OverwatchAbility);
+	if overwatchAbility == nil then
+		return removeBuff;
+	end
+	
+	local userPos = GetPosition(eventArg.Unit);
+	local range = CalculateRange(owner, overwatchAbility.TargetRange, GetPosition(owner));
+	local canHit = BuffHelper.IsPositionInRange(userPos, range);
+	if not canHit then
+		return;
+	end	
+	
+	local battleEvents = {{Object = owner, EventType = 'OverwatchingShot', Args = nil}};
+	local abilityAction = Result_UseAbility(owner, owner.OverwatchAbility, userPos, {ReactionAbility=true, Overwatch=true, BattleEvents = battleEvents}, true, {NoCamera=true});
+	abilityAction.free_action = true;
+	abilityAction.final_useable_checker = function()
+		return GetBuffStatus(owner, 'Attackable', 'And')
+			and PositionInRange(CalculateRange(owner, overwatchAbility.TargetRange, GetPosition(owner)), userPos)
+	end;
+	return removeBuff, abilityAction;
+end
+-- 제로의 영역
 function Buff_Flow_PreAbilityUsing(eventArg, buff, owner, giver, ds)
 	if GetRelation(owner, eventArg.Unit) ~= 'Enemy'
 		or eventArg.Ability.Type ~= 'Attack' 

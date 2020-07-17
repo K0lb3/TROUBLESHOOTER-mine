@@ -281,6 +281,8 @@ function SetBeastUnitInitiallize(mid, stage, team, beastMembers, singlePlay)
 				end
 			end
 		end
+		-- 야수 등급 설정
+		SetAutoType(member, 'Grade', pc.BeastType.Monster.Grade);
 	end
 end
 function SetMachineUnitInitiallize(mid, stage, team, machineMembers, singlePlay)
@@ -373,7 +375,8 @@ function GlobalInvestigationPsionicOccured(eventArg, ds)
 	local unitInitializeFunc = function(unit, arg)
 		UNIT_INITIALIZER_NON_BATTLE(unit, unit.Team);
 	end;
-	local createAction = Result_CreateObject(GenerateUnnamedObjKey(obj), stoneCls.ExtractedObject.Object.name, pos, '_neutral_', unitInitializeFunc, {}, 'DoNothingAI', nil, true);
+	LogAndPrint('dir:', GetDirection(obj));
+	local createAction = Result_CreateObject(GenerateUnnamedObjKey(obj), stoneCls.ExtractedObject.Object.name, pos, '_neutral_', unitInitializeFunc, {}, 'DoNothingAI', nil, true, GetDirection(obj));
 	createAction.sequential = true;
 	if not obj.BackgroundObject then
 		ds:WorldAction(Result_PropertyUpdated('BackgroundObject', true, obj));
@@ -1042,14 +1045,20 @@ function MapInitializerShared(mid, stage, memberInfos, activeQuests)
 					unit.Object = chestTypeCls.MonsterActive.name;
 				end
 			end
+		elseif invType == 'Lock' then
+			local lockType = SafeIndex(investigationInfo, 'LockType');
+			if lockType then
+				local lockTypeCls = GetClassList('LockType')[lockType];
+				if lockTypeCls and lockTypeCls.name then
+					unit.Object = lockTypeCls.MonsterActive.name;
+				end
+			end
 		end
 		if not IsValidString(unit.Key) then
 			unit.Key = GenerateUnnamedObjKey(mid);
 		end
 		unit.AI = {{AIType='DoNothingAI'}};
-		if invType == 'Lock' then
-			unit.Team = 'fake_citizen';
-		elseif invType == 'Server' and investigationInfo.ServerType[1].Type == 'Enemy' then
+		if invType == 'Server' and investigationInfo.ServerType[1].Type == 'Enemy' then
 			unit.Team = investigationInfo.ServerType[1].Team;
 		else
 			unit.Team = '_neutral_';

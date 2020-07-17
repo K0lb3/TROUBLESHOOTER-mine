@@ -13,6 +13,7 @@ function CalculatedProperty_FieldEffect_CustomEventHandler(self)
 			table.insert(eventHandlers, {Event='UnitPositionChanged', Script=FieldEffect_UnitPositionChanged_ThroughTile(i), Order=1});
 		else
 			table.insert(eventHandlers, {Event='FieldEffectRemoved', Script=FieldEffect_FieldEffectRemoved_InTile(i), Order=1});
+			table.insert(eventHandlers, {Event='InvalidateBuffAffectorTarget', Script=FieldEffect_InvalidateBuffAffectorTarget_InTile(i), Order=1});
 		end
 	end
 	
@@ -128,15 +129,6 @@ function FieldEffect_ApplyBuffToTargets(ds, targetArgs, fieldEffect, buffAffecto
 	end
 end
 
-function HasFieldEffectInstance(pos, instanceList, moveIdentifier)
-	for _, instance in ipairs(instanceList) do
-		if IsSamePosition(instance.Position, pos) and instance.MoveIdentifier < moveIdentifier then
-			return true;
-		end
-	end
-	return false;
-end
-
 function FieldEffect_UnitMoved_ThroughTile(affectorIndex)
 	return function(eventArg, fieldEffect, instanceList, ds)
 		if eventArg.Unit.Untargetable and eventArg.Unit.HP <= 0 then
@@ -146,12 +138,12 @@ function FieldEffect_UnitMoved_ThroughTile(affectorIndex)
 		local targetArgs = {};
 
 		local startPos = eventArg.Path[1];
-		local startInRange = HasFieldEffectInstance(startPos, instanceList, eventArg.MoveIdentifier);
+		local startInRange = HasFieldEffectInstance(fieldEffect, startPos, eventArg.MoveIdentifier);
 
 		local targetPos = nil;
 
 		for _, pos in ipairs(eventArg.Path) do
-			if HasFieldEffectInstance(pos, instanceList, eventArg.MoveIdentifier) then
+			if HasFieldEffectInstance(fieldEffect, pos, eventArg.MoveIdentifier) then
 				targetPos = pos;
 				break;
 			end
@@ -175,8 +167,8 @@ function FieldEffect_UnitPositionChanged_ThroughTile(affectorIndex)
 
 		local applyPositions = table.map(instanceList, function(instance) return PositionPropertyToTable(instance.Position); end);
 		
-		local startInRange = HasFieldEffectInstance(eventArg.BeginPosition, instanceList, eventArg.MoveIdentifier);
-		local endInRange = HasFieldEffectInstance(eventArg.Position, instanceList, eventArg.MoveIdentifier);
+		local startInRange = HasFieldEffectInstance(fieldEffect, eventArg.BeginPosition, eventArg.MoveIdentifier);
+		local endInRange = HasFieldEffectInstance(fieldEffect, eventArg.Position, eventArg.MoveIdentifier);
 		
 		if not startInRange and endInRange then
 			table.insert(targetArgs, { targetUnit = eventArg.Unit, buffLevel = 1, checkPos = eventArg.Position });		
@@ -376,4 +368,32 @@ function FieldEffect_RemoveFieldEffect_FieldEffectAdded(eventArg, fieldEffect, i
 	local ret = Result_RemoveFieldEffect(fieldEffect.RemoveFieldEffect, removePosList);
 	ret.sequential = true;
 	return ret;
+end
+
+function FieldEffect_InvalidateBuffAffectorTarget_InTile(affectorIndex)
+	return function(eventArg, fieldEffect, instanceList, ds)
+		local target = eventArg.Unit;
+		if target.Untargetable and target.HP <= 0 then
+			return;
+		end
+		
+		local curPos = GetPosition(target);
+		local curInRange = HasFieldEffectInstance(fieldEffect, curPos);
+		if not curInRange then
+			return;
+		end
+		
+		local buffAffector = fieldEffect.BuffAffector[affectorIndex];
+		local buffImmuned = BuffImmunityTest(buffAffector.ApplyBuff, target);
+		local hasBuff = HasBuff(target, buffAffector.ApplyBuff.name);
+		
+		local targetArgs = {};
+		if hasBuff and buffImmuned then
+			table.insert(targetArgs, { targetUnit = target, buffLevel = -1, checkPos = curPos });
+		elseif not hasBuff and not buffImmuned then
+			table.insert(targetArgs, { targetUnit = target, buffLevel = 1, checkPos = curPos });
+		end
+		
+		FieldEffect_ApplyBuffToTargets(ds, targetArgs, fieldEffect, buffAffector);
+	end
 end

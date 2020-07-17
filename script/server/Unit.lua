@@ -37,6 +37,12 @@ function UNIT_INITIALIZER(self, team, datatable)
 				for __, interactionCls in pairs(GetClassList(idspace)) do
 					if interactionCls.AutoAbility then
 						GiveAbility(self, interactionCls.Ability.name, false);
+						for _, autoActive in ipairs(interactionCls.Ability.AutoActiveAbility) do
+							local autoActiveAbility = GetAbilityObject(self, autoActive);
+							if not autoActiveAbility then
+								GiveAbility(self, autoActive, false);
+							end
+						end
 					end
 				end
 			end

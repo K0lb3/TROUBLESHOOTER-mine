@@ -3280,3 +3280,9 @@ function LobbyAction_NewWeaponCostumeConfirmed(dc, company, args)
 	end
 	return {Success = true};
 end
+function LobbyAction_CompanyNameTest(dc, company, args)
+	return {Success = CompanyNameDuplicateTest(args.CompanyName)};
+end
+function LobbyAction_ToggleMailLock(dc, company, args)
+	return {Success = UpdateMailProperty(company, args.MailId, 'Lock', args.Lock)};
+end

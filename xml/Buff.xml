@@ -1125,6 +1125,8 @@
 			</Effects>
 			<EventHandler>
 				<property Event="BuffRemoved_Self" Script="Buff_StarlightJail_BuffRemoved" Order="1"/>
+				<property Event="BuffAdded_Self" Script="Buff_IronWall_BuffAdded" Order="1"/>
+				<property Event="BuffRemoved_Self" Script="Buff_IronWall_BuffRemoved" Order="1"/>
 			</EventHandler>
 		</class>
 		<class name="EntanglingRoots" Title="휘감는 뿌리" Desc_Base="" FinalDesc="" FinalDesc2="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/EntanglingRoots" SubImage="Buff/EntanglingRoots" ImmuneRace="" NeutralizeBuff="None" Type="Debuff" SubType="Physical" Group="Earth" Stack="false" Base_MaxStack="1" Turn="3" Movable="false" Attackable="true" BreakType="EarthResistance" UseSelfDischarger="true" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_Dodge="-20" Eval_Block="-20" AbilityBuffEvent="BuffAdded">

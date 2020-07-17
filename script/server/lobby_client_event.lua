@@ -975,3 +975,34 @@ function LobbyClientEvent_Open_DrakyNest2(company)
 	StartLobbyDialog(company, 'Open_DrakyNest2');
 	return true;
 end
+-- 아시아 서버 한정 보상 지급
+function LobbyClientEvent_CheckAsiaServerErrorReward_NeedReward(company)
+	if not company.NeedAsiaServerErrorReward then
+		return false;
+	end
+	StartLobbyDialog(company, 'CheckAsiaServerErrorReward', {need_reward=true});
+	return true;
+end
+function LobbyClientEvent_CheckAsiaServerErrorReward_NoReward(company)
+	if not company.NeedAsiaServerErrorReward then
+		return false;
+	end
+	StartLobbyDialog(company, 'CheckAsiaServerErrorReward', {need_reward=false});
+	return true;
+end
+function ProgressCheckAsiaServerErrorReward(ds, self, company, env, parsedScript)
+	local needReward = parsedScript.NeedReward;
+	if needReward then
+		-- 보상 공지
+		ProgressNoticeAction(ds, self, company, env, { NoticeType = 'AsiaServerErrorReward' });
+		-- 보상 지급
+		local dc = ds:GetDatabaseCommiter();
+		CheckAsiaServerErrorReward(ds, company, dc)
+		return true;
+	else
+		-- 보상 받을 유저가 아님
+		local dc = ds:GetDatabaseCommiter();
+		dc:UpdateCompanyProperty(company, 'NeedAsiaServerErrorReward', false);
+		return dc:Commit('ProgressCheckAsiaServerErrorReward');	
+	end
+end
