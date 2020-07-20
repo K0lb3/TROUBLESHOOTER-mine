@@ -1,18 +1,23 @@
 import os, shutil, zipfile
 from PIL import Image
-import xml.etree.ElementTree as ET
-
+#import xml.etree.ElementTree as ET
+import re
 from path import LOCAL, PACK, DATA
 
 # copy or extract files
 def main():
-    tree = ET.parse(os.path.join(LOCAL, "index.xml"))
-    for item in tree.getroot():
+    index_path = os.path.join(LOCAL, "index.xml")
+    #root = ET.parse(index_path).getroot()
+
+    # manual parse because of invalid path of some entries
+    reItem = re.compile(r' (\w+?)="(.+?)"')
+    root = [{match[1]:match[2] for match in reItem.finditer(line)} for line in open(index_path, "rt", encoding="utf8", errors="replace").read().split("\n") if len(line)>9]
+    for item in root:
         src = os.path.join(PACK, *item.get("pack").split("/"))
         dst = os.path.join(DATA, *item.get("original").split("\\"))
 
-        dsize = os.path.getsize(dst)
-        if os.path.exists(dst) and (dsize == int(item.get("size")) or dsize == 0):
+        dsize = os.path.getsize(dst) if os.path.exists(dst) else -1
+        if dsize == int(item.get("size")) or dsize == 0:
             continue
         print(dst)
         os.makedirs(os.path.dirname(dst), exist_ok=True)
