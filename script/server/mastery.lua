@@ -3650,6 +3650,29 @@ function Mastery_Amulet_Neguri_GoldESP_Set_UnitTurnStart(eventArg, mastery, owne
 	InsertBuffActions(actions, owner, owner, mastery.Buff.name, 1, true);
 	return unpack(actions);
 end
+-- 흉폭함
+function Mastery_SavageBeast_UnitTurnStart(eventArg, mastery, owner, ds)
+	local actions = {};
+	MasteryActivatedHelper(ds, mastery, owner, 'UnitTurnStart_Self');
+	-- 코스트
+	local addCost = mastery.ApplyAmount;
+	AddActionCostForDS(actions, owner, addCost, true, nil, ds);		
+	return unpack(actions);
+end
+-- 사검
+function Mastery_EvilSword_UnitTurnStart(eventArg, mastery, owner, ds)
+	if owner.Cost < owner.MaxCost then
+		return;
+	end
+	local actions = {};
+	MasteryActivatedHelper(ds, mastery, owner, 'UnitTurnStart_Self');
+	-- 코스트
+	local addCost = -mastery.ApplyAmount;
+	AddActionCostForDS(actions, owner, addCost, true, nil, ds);
+	-- 버프
+	InsertBuffActions(actions, owner, owner, mastery.Buff.name, 1, true);	
+	return unpack(actions);
+end
 -----------------------------------------------------------------------
 -- 턴 획득 [UnitTurnAcquired]
 -------------------------------------------------------------------------------
@@ -3694,12 +3717,12 @@ end
 -- 전장의 방랑자
 function Mastery_BattleWanderer_UnitTurnEnd(eventArg, mastery, owner, ds)
 	local enemyList = GetTargetInRangeSight(owner, 'Sight', 'Enemy', true);
-	if #enemyList >= 0 then
+	if #enemyList > 0 then
 		return;
 	end
 	
 	local actions = {};
-	AddActionApplyActForDS(actions, owner, -mastery.ApplyAmount2, 'Friendly');
+	AddActionApplyActForDS(actions, owner, -mastery.ApplyAmount2, ds, 'Friendly');
 	MasteryActivatedHelper(ds, mastery, owner, 'UnitTurnEnd_Self');
 	return unpack(actions);
 end
@@ -3907,7 +3930,7 @@ function Mastery_ExpandCobweb_UnitTurnEnd(eventArg, mastery, owner, ds)
 		return;
 	end
 	
-	local range = table.filter(CalculateRange(owner, 'Box1_Attack', GetPosition(owner)), function(pos)
+	local range = table.filter(CalculateRange(owner, mastery.Range, GetPosition(owner)), function(pos)
 		local fieldEffects = GetFieldEffectByPosition(owner, pos);
 		for _, instance in ipairs(fieldEffects) do
 			local type = instance.Owner.name;
@@ -4614,12 +4637,33 @@ function Mastery_WandererFighter_UnitTurnEnd(eventArg, mastery, owner, ds)
 	AddActionApplyActForDS(actions, owner, -mastery.ApplyAmount2, ds, 'Friendly');
 	return unpack(actions);
 end
+-- 탈혼검
+function Mastery_SoulTakerBlade_UnitTurnEnd(eventArg, mastery, owner, ds)
+	if owner.Cost < owner.MaxCost then
+		return;
+	end
+	-- 사검
+	local masteryTable = GetMastery(owner);
+	local mastery_EvilSword = GetMasteryMastered(masteryTable, 'EvilSword');
+	if not mastery_EvilSword then
+		return;
+	end
+	local actions = {};
+	MasteryActivatedHelper(ds, mastery, owner, 'UnitTurnEnd_Self');
+	MasteryActivatedHelper(ds, mastery_EvilSword, owner, 'UnitTurnEnd_Self');
+	-- 코스트
+	local addCost = -mastery.ApplyAmount;
+	AddActionCostForDS(actions, owner, addCost, true, nil, ds);
+	-- 버프
+	InsertBuffActions(actions, owner, owner, mastery.Buff.name, 1, true);	
+	return unpack(actions);
+end
 -----------------------------------------------------------------------
--- 버프 추가.
+-- 버프 추가. [BuffAdded]
 -------------------------------------------------------------------------------
 
 -----------------------------------------------------------------------
--- 버프 제거.
+-- 버프 제거. [BuffRemoved]
 -------------------------------------------------------------------------------
 function Mastery_Awakening_BuffRemoved(eventArg, mastery, owner, ds)
 	if eventArg.Unit ~= owner or eventArg.BuffName ~= mastery.SubBuff.name then
@@ -5794,7 +5838,6 @@ end
 -- 지원 사격
 function Mastery_SupportingFire_AbilityUsed(eventArg, mastery, owner, ds)
 	if eventArg.Unit == owner
-		or not IsAllyOrTeam(owner, eventArg.Unit)
 		or eventArg.Ability.Type ~= 'Attack'
 		or mastery.DuplicateApplyChecker > 0
 		or owner.IsMovingNow > 0
@@ -5803,8 +5846,22 @@ function Mastery_SupportingFire_AbilityUsed(eventArg, mastery, owner, ds)
 		return;
 	end
 	
-	local limit = 1;
 	local masteryTable = GetMastery(owner);
+	
+	-- '연계된 함정'으로 덫에 발동하기 위해 따로 체크
+	local isAllyTeam = IsAllyOrTeam(owner, eventArg.Unit);
+	-- 연계된 함정
+	local mastery_ChainTrap = GetMasteryMastered(masteryTable, 'ChainTrap');
+	if mastery_ChainTrap and eventArg.Unit.name == 'Utility_TrapInstance' then
+		-- 트랩이 발동 후에 _dummy 팀으로 바뀌는데, 그 전의 오리지널 팀으로 아군 체크를 함
+		local originalTeam = GetInstantProperty(eventArg.Unit, 'TrapOriginalTeam') or GetTeam(eventArg.Unit);
+		isAllyTeam = IsTeamOrAllyByTeam(owner, originalTeam);
+	end
+	if not isAllyTeam then
+		return;
+	end
+	
+	local limit = 1;
 	-- 전장의 지배자
 	local mastery_BattleOwner = GetMasteryMastered(masteryTable, 'BattleOwner');
 	if mastery_BattleOwner then
@@ -5909,7 +5966,7 @@ function Mastery_SupportingFire_ActivateTest(actions, mastery, eventArg, owner, 
 	table.insert(actions, overwatchAction);
 	table.insert(actions, Result_DirectingScript(function(mid, ds, args)
 		mastery.DuplicateApplyChecker = mastery.DuplicateApplyChecker - 1;
-	end, nil, true, true));
+	end, nil, true, false));
 	return true;
 end
 -- 강한 유대감
@@ -6037,6 +6094,7 @@ function Mastery_TrapSystem_AbilityUsed(eventArg, mastery, owner, ds)
 	local trapHunterCount, trapDesignCount, powerfulTrapCount = 0, 0, 0;
 	local actions = {};
 	local appliedTargets = {};
+	SetInstantProperty(owner, 'TrapOriginalTeam', GetTeam(trapHost));
 	table.insert(actions, Result_ChangeTeam(owner, '_dummy'));
 	ForeachAbilityUsingInfo({eventArg.PrimaryTargetInfos, eventArg.SecondaryTargetInfos}, function (targetInfo)
 		local target = targetInfo.Target;
@@ -8094,7 +8152,7 @@ function Mastery_LawOfTheJungle_AbilityUsed(eventArg, mastery, owner, ds)
 			deadCount = deadCount + 1;
 		end
 	end);
-	if deadCount < 1 then
+	if deadCount < 1 or not RandomTest(mastery.ApplyAmount) then
 		return;
 	end
 	
@@ -9066,6 +9124,29 @@ function Mastery_Amulet_Dorori_Fang_Red_AbilityUsed(eventArg, mastery, owner, ds
 	local actions = {};
 	MasteryActivatedHelper(ds, mastery, owner, 'AbilityUsed');
 	AddActionCostForDS(actions, owner, mastery.ApplyAmount, true, nil, ds);
+	return unpack(actions);
+end
+-- 탈혼검
+function Mastery_SoulTakerBlade_AbilityUsed(eventArg, mastery, owner, ds)
+	if eventArg.Ability.Type ~= 'Attack' then
+		return;
+	end
+	local hasAnyDead = HasAnyAbilityUsingInfo({eventArg.PrimaryTargetInfos, eventArg.SecondaryTargetInfos}, function (targetInfo)
+		return IsEnemy(owner, targetInfo.Target) and targetInfo.IsDead;
+	end);
+	if not hasAnyDead then
+		return;
+	end
+	-- 영혼 흡수
+	local masteryTable = GetMastery(owner);
+	local mastery_DrainSoul = GetMasteryMastered(masteryTable, 'DrainSoul');
+	if not mastery_DrainSoul then
+		return;
+	end
+	local actions = {};
+	MasteryActivatedHelper(ds, mastery, owner, 'AbilityUsed');
+	MasteryActivatedHelper(ds, mastery_DrainSoul, owner, 'AbilityUsed');
+	InsertBuffActions(actions, owner, owner, mastery.SubBuff.name, 1, true);
 	return unpack(actions);
 end
 -----------------------------------------------------------------------
@@ -14917,7 +14998,7 @@ function Mastery_HatchedObjectYasha_InvestigationOccured(eventArg, mastery, owne
 	-- 남은 야샤 소환, 버프 해제
 	local buff = GetBuff(owner, 'HatchedObjectYasha');
 	if buff and buff.Life > 0 then
-		Buff_HatchedObjectYasha_DoHatching(ds, owner, buff.Life);
+		table.append(actions, { Buff_HatchedObjectYasha_DoHatching(ds, owner, buff.Life) });
 		InsertBuffActions(actions, owner, owner, buff.name, -1 * buff.Lv);
 	end
 	

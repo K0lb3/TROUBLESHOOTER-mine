@@ -1077,7 +1077,17 @@ end
 function GetBuffDischargeOnAttackText(buff)
 	local result = '';
 	if buff.DischargeOnAttack then
-		result = result..GuideMessage('Buff_DischargeOnAttack');
+		local abilityText = GetWithoutError(GetClassList('AbilityType')['Attack'], 'Title');
+		if buff.DischargeOnAttackType ~= 'None' then
+			local subTypeText = GetWithoutError(GetClassList('AbilitySubType')[buff.DischargeOnAttackType], 'Title');
+			if not subTypeText then
+				subTypeText = GetWithoutError(GetClassList('AbilityHitRateType')[buff.DischargeOnAttackType], 'Title');
+			end
+			if subTypeText then
+				abilityText = subTypeText..' '..abilityText;
+			end
+		end
+		result = result..FormatMessage(GuideMessage('Buff_DischargeOnAttack'), { Ability = abilityText });
 	end			
 	return result;
 end
@@ -1101,6 +1111,25 @@ function GetBuffDischargeDamageTypeText(buff)
 	end			
 	return result;
 end
+-- $DischargeOnOverchargeRelease$
+function GetBuffDischargeOnOverchargeReleaseText(buff)
+	local result = '';
+	if buff.DischargeOnOverchargeRelease then
+		result = result..FormatMessage(GuideMessage('Buff_DischargeOnOverchargeRelease'), { Overcharge = GetWord('SPFullGained') });
+	end			
+	return result;
+end
+-- $GetBuffDischargeOnNoAttackableTargetText$
+function GetBuffDischargeOnNoAttackableTargetText(buff)
+	local result = '';
+	if buff.DischargeOnNoAttackableTarget then
+		result = result..GuideMessage('Buff_DischargeOnNoAttackableTarget');
+	end			
+	return result;
+end
+
+
+
 -- $ActionController$
 function GetBuffActionControllerText(buff)
 	local result = '';
@@ -1121,7 +1150,7 @@ end
 function GetBuffHPDrainValueText(buff)
 	local result = '';
 	if buff.HPDrain > 0 then
-		result = '$White$'..'$HPDrain$'..'%'..'$Blue_ON$';
+		result = '$White$'..'$HPDrain$'..'%'..'$ColorEnd$';
 	end
 	return result;
 end
@@ -1139,7 +1168,7 @@ function GetBuffExplosionText(buff)
 	if buff.ExplosionType ~= 'None' then
 		local abilityList = GetClassList('Ability');
 		local curAbility = abilityList[buff.ExplosionType];
-		result = '$White$'..curAbility.Title..'$Blue_ON$';
+		result = '$White$'..curAbility.Title..'$ColorEnd$';
 	end
 	return result;
 end
@@ -1148,7 +1177,7 @@ function GetNonCoverableMessage(buff)
 	if buff.Coverable then
 		return '';
 	end
-	return '$Perano$' .. GuideMessage('Buff_NonCoverable') .. '$Blue_ON$';
+	return '$Perano$' .. GuideMessage('Buff_NonCoverable') .. '$ColorEnd$';
 end
 -- $BuffSystemMessage$
 function GetBuffSystemMessageText(buff)
@@ -1302,10 +1331,6 @@ function GetBuffSystemMessageText(buff)
 			result = ConnentTextToText(result, '\n', curStatusMsg);
 		end
 	end	
-	-- 존오브컨트롤 해제 여부
-	if not buff.ScentOfPresence then
-		result = ConnentTextToText(result, '\n', GuideMessage('ScentOfPresence'));
-	end	
 	
 	-- 이 위까지 능력치 부분
 	-- 추가로 소모 코스트로 상태 해제 로직 경고문.
@@ -1343,10 +1368,37 @@ function GetBuffSystemMessageText(buff)
 	if buff.FinalDesc and buff.FinalDesc ~= '' then
 		result = ConnentTextToText(result, '\n', buff.FinalDesc);
 	end
-	-- 추가 기능 메시지2. FinalDesc
-	if buff.FinalDesc2 and buff.FinalDesc2 ~= '' then
-		result = ConnentTextToText(result, '\n', buff.FinalDesc2);
+
+	-- 공격하면 꺠어나는 메세지.
+	if buff.DischargeOnAttack then
+		result = ConnentTextToText(result, '\n', '$Perano$'..'$DischargeOnAttack$'..'$Blue_ON$');
 	end
+	-- 떄리면 꺠어나는 메세지.
+	if buff.DischargeOnHit then
+		result = ConnentTextToText(result, '\n', '$Perano$'..'$DischargeOnHit$'..'$Blue_ON$');
+	end
+	-- 과충전하면 깨어나는 메세지.
+	if buff.DischargeOnOverchargeRelease then
+		result = ConnentTextToText(result, '\n', '$Perano$'..'$DischargeOnOverchargeRelease$'..'$Blue_ON$');
+	end
+	-- 턴 시작 시, 주위에 공격 대상이 없으면 깨어나는 메세지.
+	if buff.DischargeOnNoAttackableTarget then
+		result = ConnentTextToText(result, '\n', '$Perano$'..'$DischargeOnNoAttackableTarget$'..'$Blue_ON$');
+	end
+	-- 존오브컨트롤 해제 여부
+	if not buff.ScentOfPresence then
+		result = ConnentTextToText(result, '\n', '$YellowOrange$'..GuideMessage('ScentOfPresence')..'$Blue_ON$');
+	end
+	
+	---------------------------------------------------------
+	-- 여기부터는 시스템적인 정보
+	----------------------------------------------------------
+	
+	-- 불사 메세지.
+	if buff.Immortal then
+		result = ConnentTextToText(result, '\n', '$Orange$'..'$ImmortalMessage$'..'$Blue_ON$');
+	end
+	
 	-- 스택 가능.
 	if buff.Stack then
 		local buffMaxStack = buff:MaxStack();
@@ -1354,19 +1406,8 @@ function GetBuffSystemMessageText(buff)
 			local buffLevelText = string.format(GuideMessage('BuffMaxLevel'), buffMaxStack);
 			result = ConnentTextToText(result, '\n', buffLevelText);
 		end
-	end				
-	-- 공격하면 꺠어나는 메세지.
-	if buff.DischargeOnAttack then
-		result = ConnentTextToText(result, '\n', '$DischargeOnAttack$');
 	end
-	-- 떄리면 꺠어나는 메세지.
-	if buff.DischargeOnHit then
-		result = ConnentTextToText(result, '\n', '$DischargeOnHit$');
-	end
-	-- 불사 메세지.
-	if buff.Immortal then
-		result = ConnentTextToText(result, '\n', '$ImmortalMessage$');
-	end
+	
 	-- 상태 속성
 	if buff.Group ~= 'None' then
 		local buffGroupList = GetClassList('BuffGroup');
@@ -1389,6 +1430,7 @@ function GetBuffSystemMessageText(buff)
 	if buff.Coverable == false then
 		result = ConnentTextToText(result, '\n', '$NonCoverableMessage$');
 	end
+	
 	-- 버프 인스턴스에는 표시하지 않을 정보
 	if not IsBuffInstance(buff) then
 		-- 턴 보여준다. 맨마지막			

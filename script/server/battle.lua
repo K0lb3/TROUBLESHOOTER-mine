@@ -1225,15 +1225,6 @@ function GetModifyResultActions_Final(actions, Attacker, Defender, ability, phas
 				AddMasteryInvokedEvent(Defender, mastery_IronHeart.name, 'FirstHit');
 			end
 		end
-		-- 물렁살
-		local mastery_TenderSkin = GetMasteryMastered(masteryTable_Defender, 'TenderSkin');
-		if mastery_TenderSkin then
-			if damage > Defender.MaxHP * mastery_TenderSkin.ApplyAmount / 100 then
-				damage = damage * mastery_TenderSkin.ApplyAmount2 / 100;
-				damageFlag.TenderSkin = true;
-				AddMasteryInvokedEvent(Defender, mastery_TenderSkin.name, 'FirstHit');
-			end
-		end
 	end
 	----------------------------------------------------------------------------
 	-- 넉백 처리
@@ -1352,8 +1343,8 @@ function AddActionRestoreHP(actions, user, target, amount, damageType)
 	
 	-- 생존 본능
 	local mastery_InstinctForSurvival = GetMasteryMastered(masteryTable, 'InstinctForSurvival');
-	if mastery_InstinctForSurvival and target.HP <= target.MaxHP * mastery_InstinctForSurvival.ApplyAmount / 100 then
-		amount = amount * (1 + mastery_InstinctForSurvival.ApplyAmount2 / 100);
+	if mastery_InstinctForSurvival then
+		amount = amount * (1 + mastery_InstinctForSurvival.ApplyAmount / 100);
 		table.insert(reasons, MakeMasteryStatInfo(mastery_InstinctForSurvival.name, nil));
 	end
 	
@@ -1368,13 +1359,7 @@ function AddActionRestoreHP(actions, user, target, amount, damageType)
 end
 function AddActionCost(actions, target, amount, sequential, updateStatus)
 	local reasons = {};
-	if target.CostType.name == 'Rage' then
-		local mastery_SavageBeast = GetMasteryMastered(GetMastery(target), 'SavageBeast');
-		if mastery_SavageBeast and amount > 0 then
-			amount = amount * (1 + mastery_SavageBeast.ApplyAmount / 100);
-			table.insert(reasons, MakeMasteryStatInfo(mastery_SavageBeast.name, nil));
-		end
-	elseif target.CostType.name == 'Fuel' then
+	if target.CostType.name == 'Fuel' then
 		local multiplier = 0;
 		-- 고급 연료
 		local mastery_Module_GoodEnergy = GetMasteryMastered(GetMastery(target), 'Module_GoodEnergy');

@@ -761,6 +761,58 @@ function LobbyAction_AddMastery(dc, company, args)
 	return {Success = true};
 end
 
+function SharedExtractMasteryAction(dc, company, roster, extractMasteries)
+	local itemCounterBase = LobbyInventoryItemCounter(company);
+	local masteryTable = table.shallowcopy(GetMastery(roster));
+	
+	local consumeItems = {};
+	local itemCounter = function(itemName)
+		local baseCount = itemCounterBase(itemName);
+		return baseCount - (consumeItems[itemName] or 0);
+	end
+	
+	for _, masteryName in ipairs(extractMasteries) do
+		-- 추출 가능 여부 체크
+		local isEnable, reason = MasteryExtractTest(roster, company, masteryTable, masteryName, itemCounter);
+		if not isEnable then
+			LogAndPrint('LobbyAction_ExtractMastery :', isEnable);
+			for index, value in ipairs (reason) do
+				LogAndPrint('reason'..index..': '..value);
+			end
+			return false;
+		end
+		
+		local curMastery = masteryTable[masteryName];
+		local extractItem = curMastery.ExtractItem;
+		
+		-- 1) 로스터 마스터리 레벨 초기화
+		dc:UpdateMasteryLv(roster, masteryName, 0);
+		-- 2) 회사 마스터리 카운트 증가
+		dc:AcquireMastery(company, masteryName, 1, true);
+		-- 3) 필요 아이템 소모
+		if curMastery.Cost > 0 then
+			consumeItems[extractItem] = (consumeItems[extractItem] or 0) + curMastery.Cost;
+		end
+		
+		-- 4) 특성 해제로 사라지는 장착 슬롯에 착용 중인 아이템이 있으면 해제
+		local unequipItemSlot = nil;
+		if Set.new({'AlchemyBag', 'GrenadeBag', 'DoubleGear', 'Module_AuxiliaryWeapon', 'Module_AssistEquipment'})[masteryName] then
+			unequipItemSlot = masteryName;
+		end
+		if unequipItemSlot then
+			local unequipItem = GetWithoutError(roster.Object, unequipItemSlot);
+			if unequipItem and unequipItem.name then
+				dc:UnequipItem(roster, unequipItemSlot);
+			end
+		end
+		masteryTable[masteryName] = nil;
+	end
+	for itemName, count in pairs(consumeItems) do
+		dc:TakeItem(GetInventoryItemByType(company, itemName), count);
+	end
+	return true;
+end
+
 function LobbyAction_ExtractMastery(dc, company, args)
 	local roster = GetRoster(company, args.Roster);
 	if roster == nil then
@@ -769,44 +821,8 @@ function LobbyAction_ExtractMastery(dc, company, args)
 	end
 	
 	local masteryName = args.Mastery;
-	local itemCounter = LobbyInventoryItemCounter(company);
-	local masteryTable = GetMastery(roster);
-	
-	-- 추출 가능 여부 체크
-	local isEnable, reason = MasteryExtractTest(roster, company, masteryTable, masteryName, itemCounter);
-	if not isEnable then
-		LogAndPrint('LobbyAction_ExtractMastery :', isEnable);
-		for index, value in ipairs (reason) do
-			LogAndPrint('reason'..index..': '..value);
-		end
-		return {Success = false};
-	end
-	
-	local curMastery = masteryTable[masteryName];
-	local extractItem = curMastery.ExtractItem;
-	
-	-- 1) 로스터 마스터리 레벨 초기화
-	dc:UpdateMasteryLv(roster, masteryName, 0);
-	-- 2) 회사 마스터리 카운트 증가
-	dc:AcquireMastery(company, masteryName, 1, true);
-	-- 3) 필요 아이템 소모
-	if curMastery.Cost > 0 then
-		dc:TakeItem(GetInventoryItemByType(company, extractItem), curMastery.Cost);
-	end
-	
-	-- 4) 특성 해제로 사라지는 장착 슬롯에 착용 중인 아이템이 있으면 해제
-	local unequipItemSlot = nil;
-	if Set.new({'AlchemyBag', 'GrenadeBag', 'DoubleGear', 'Module_AuxiliaryWeapon', 'Module_AssistEquipment'})[masteryName] then
-		unequipItemSlot = masteryName;
-	end
-	if unequipItemSlot then
-		local unequipItem = GetWithoutError(roster.Object, unequipItemSlot);
-		if unequipItem and unequipItem.name then
-			dc:UnequipItem(roster, unequipItemSlot);
-		end
-	end
-		
-	return {Success = true};
+
+	return {Success = SharedExtractMasteryAction(dc, company, roster, {masteryName})};
 end
 
 function LobbyAction_ExtractMasteryAll(dc, company, args)
@@ -3285,4 +3301,133 @@ function LobbyAction_CompanyNameTest(dc, company, args)
 end
 function LobbyAction_ToggleMailLock(dc, company, args)
 	return {Success = UpdateMailProperty(company, args.MailId, 'Lock', args.Lock)};
+end
+
+function ProgressRetrainBeastMasteryAction(ldm, self, company, env, parsedScript)
+	local roster = GetRoster(company, parsedScript.RosterName);
+	if roster == nil then
+		return false;
+	end
+	
+	local beastType = roster.BeastType.name;
+	
+	local beastTypeCls = GetClassList('BeastType')[beastType];
+	if beastTypeCls == nil then
+		return false;
+	end
+	
+	local retrainChain = {};
+	local retrainStage = math.max(1, roster.RetrainStage);
+	local dc = ldm:GetDatabaseCommiter();
+	
+	-- 마지막 진행상태 복원
+	local candidateMasteries = {};
+	for i = 1, 4 do
+		local candidateName = GetWithoutError(roster, string.format('EvolutionMasteryCandidate%d', i));
+		if candidateName and candidateName ~= 'None' then
+			table.insert(candidateMasteries, candidateName);
+		end
+	end
+	
+	local retrainCost = {Training = 3, Nature = 2};
+
+	local helpInfo = {};
+	for _, masteryType in ipairs({'Training', 'Nature', 'Gene', 'ESP'}) do
+		local helpKey = 'EvolutionMastery'..masteryType;
+		helpInfo[helpKey] = GetWithoutError(company.Progress.Tutorial, helpKey);
+	end
+	
+	local masteryList = GetClassList('Mastery');
+	local needInitialize = true;
+	local needUpload = false;
+	local targetStages = {};
+	for i = retrainStage, #beastTypeCls.EvolutionType do
+		local evoM = roster['EvolutionMastery' .. i];
+		local evoMastery = masteryList[evoM];
+		if evoMastery.Type.name ~= 'Gene' and evoMastery.Type.CheckType ~= 'ESP' then
+			table.insert(targetStages, {Stage = i, Mastery = evoMastery});
+		end
+	end
+	for i, stageInfo in ipairs(targetStages) do
+		local stage = stageInfo.Stage;
+		local evoMastery = stageInfo.Mastery;
+		if #candidateMasteries < 4 then
+			candidateMasteries = PickBeastUniqueMasteryCandidate(roster, beastTypeCls, true, 4, true);
+			for j = 1, 4 do
+				dc:UpdatePCProperty(roster, string.format('EvolutionMasteryCandidate%d', j), candidateMasteries[j]);
+			end
+			dc:Commit('ProgressRetrainBeastMasteryAction');
+		end
+		
+		local id, ok, result = ldm:Dialog('ScoutBeast', {BeastType = beastTypeCls.name, CandidateMasteries = candidateMasteries, TargetKey = roster.RosterKey, HelpInfo = helpInfo, EvolutionStage = stage, RetrainMode = true, NeedInitialize = i == 1, NeedUpload = i == #targetStages});
+		
+		helpInfo = result.HelpInfo or {};
+		for key, value in pairs(helpInfo) do
+			local prevValue = GetWithoutError(company.Progress.Tutorial, key);
+			if prevValue ~= nil and prevValue ~= value then
+				dc:UpdateCompanyProperty(company, string.format('Progress/Tutorial/%s', key), value);
+			end
+		end
+		
+		dc:UpdatePCProperty(roster, string.format('EvolutionMastery%d', stage), result.Mastery);
+		dc:UpdatePCProperty(roster, 'RetrainStage', stage + 1);
+		local loseCP;
+		if result.Mastery == evoMastery.name then
+			loseCP = 1;
+		else
+			loseCP = retrainCost[evoMastery.Type.name] or 1;
+		end
+		dc:AddPCProperty(roster, 'RetrainCostCP', loseCP, 0, 100);
+		for j = 1, 4 do
+			dc:UpdatePCProperty(roster, string.format('EvolutionMasteryCandidate%d', j), 'None');
+		end
+		
+		if #result.ExtractMasteries > 0 then
+			SharedExtractMasteryAction(dc, company, roster, result.ExtractMasteries);
+		end
+		
+		dc:Commit('ProgressRetrainBeastMasteryAction');
+		candidateMasteries = {};
+	end
+	dc:AddPCProperty(roster, 'CP', -roster.RetrainCostCP, 0, 100);
+	dc:UpdatePCProperty(roster, 'RetrainCostCP', 0);
+	dc:UpdatePCProperty(roster, 'RetrainStage', -1);
+	local rosterTitle = nil;
+	if roster.RosterTitle ~= '' then
+		rosterTitle = RawText(roster.RosterTitle);
+	else
+		rosterTitle = ClassDataText('ObjectInfo', roster.Info.name, 'Title');
+	end	
+	ldm:ShowFrontmessageWithText(FormatMessageText(GuideMessageText('RetrainStress'), {Beast = rosterTitle, LoseAmount = RawText(roster.RetrainCostCP)}));
+	
+	return dc:Commit('DialogAction:'..env._cur_dialog.name);
+end
+
+function LobbyAction_RetrainBeast(dc, company, args)
+	local roster = GetRoster(company, args.Roster);
+	if roster == nil then
+		LogAndPrint('LobbyAction_EvolveBeast : roster is nil!');
+		return {Success = false, Item = 'None', Count = 0};
+	end
+	local beastType = roster.BeastType.name;
+	local beastTypeCls = GetClassList('BeastType')[beastType];
+	if not beastTypeCls then
+		return {Success = false, Item = 'None', Count = 0};
+	end
+	
+	local retrainStage = roster.RetrainStage;
+	if retrainStage < 0 then
+		local itemCounter = LobbyInventoryItemCounter(company);
+		local enable = IsEnableRetrainBeast(roster, itemCounter);
+		if not enable then
+			return {Success = false};
+		end
+		-- 1) 필요 아이템 소모
+		dc:TakeItem(GetInventoryItemByType(company, 'Statement_Mastery'), 20);
+		dc:UpdatePCProperty(roster, 'RetrainStage', 0);
+		dc:Commit('LobbyAction_RetrainBeast');
+	end
+	
+	StartLobbyDialog(company, 'RetrainBeast_EntryPoint', {roster_name = args.Roster});
+	return {Success = true};
 end

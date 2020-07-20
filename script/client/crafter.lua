@@ -113,6 +113,9 @@ function MapComponentDrakyEgg(type, component)
 	local candidate = { 'Mon_Beast_Dragon_Egg_A', 'Mon_Beast_Dragon_Egg_B', 'Mon_Beast_Dragon_Egg_C' };
 	return { Type = "Model", Name = candidate[math.random(1, #candidate)] };
 end
+function MapComponentYashaEgg(type, component)
+	return { Type = "Model", Name = 'Mon_Beast_Spider_Egg' };
+end
 
 function GetNamedEventFullArgumentList(self, key)
 	local result = {};

@@ -511,6 +511,41 @@ function IsEnableBeastEvolution(company, pcInfo, beastTypeName, itemCounter)
 	
 	return isEnable, needItem, needCount, reason;
 end
+function IsEnableRetrainBeast(beast, itemCounter)
+	local reason = {};
+	-- 완전체인가
+	if beast.BeastType.EvolutionStage < #beast.BeastType.EvolutionType then
+		reason['NotMaxEvolutionStage'] = true;
+	end
+	
+	-- 충성적인가
+	local pcStateKey = GetPcStateFromConditionValue_Beast(beast.CP, beast.MaxCP);
+	if pcStateKey ~= 'BeastLoyaltyGood' then
+		reason['NotLoyal'] = true;
+	end
+	
+	-- 훈련서가 충분한가
+	if itemCounter('Statement_Mastery') < 20 then
+		reason['NotEnoughManual'] = true;
+	end
+
+	local masteryList = GetClassList('Mastery');
+	local ext = false;
+	-- 재훈련 가능한 슬롯이 있나
+	for i = 1, #beast.BeastType.EvolutionType do
+		local evoM = beast['EvolutionMastery' .. i];
+		local evoMastery = masteryList[evoM];
+		if evoMastery ~= nil and (evoMastery.Type.name ~= 'Gene' and evoMastery.Type.CheckType ~= 'ESP') then
+			ext = true;
+			break;
+		end
+	end
+	if not ext then
+		reason['NoRetrainMastery'] = true;
+	end
+	
+	return table.empty(reason), reason;
+end
 --------------------------------------------------------
 -- 진화 레벨 제한에 걸렸는지
 --------------------------------------------------------

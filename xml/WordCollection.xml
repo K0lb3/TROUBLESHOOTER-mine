@@ -373,6 +373,7 @@
 	<class name="EmptySlot" Text="비어 있는 슬롯"/>
 	<class name="EnableAcquired" Text="습득 가능"/>
 	<class name="EnableChangeName" Text="이름 변경 가능"/>
+	<class name="EnableChange" Text="변경 가능"/>
 	<class name="EnableCompleted" Text="완료 가능"/>
 	<class name="EnableConnectionArea" Text="통신 양호"/>
 	<class name="EnableCraft" Text="제작 가능"/>
@@ -796,6 +797,7 @@
 	<class name="Normal_Menu" Text="[!Menu]현재 상태"/>
 	<class name="Normal_Slot" Text="기본 특성 슬롯"/>
 	<class name="NotEquipEmptySlot" Text="장착 불가"/>
+	<class name="NotEnableChange" Text="변경 불가능"/>
 	<class name="NothingGetEnemyInformation" Text="지원 없음"/>
 	<class name="Notice" Text="[!시스템메시지]알림"/>
 	<class name="NotIdentified" Text="감정되지 않은"/>

@@ -65,13 +65,13 @@
 			<rule property="RequireMaterials" type="table" default=""/>
 			<rule property="AdditionalCraftExpRatio" type="calculated" default="CalculatedProperty_Recipe_AdditionalCraftExpRatio"/>
 		</schema>
-		<class name="Grenade_FlashBang" Opened="true" UnLockRecipe="" Category="Grenade" RequireLv="1">
+		<class name="Grenade_FlashBang" Opened="true" UnLockRecipe="Grenade_EMP" Category="Grenade" RequireLv="1">
 			<RequireMaterials>
 				<property Item="MetalPart" Amount="1"/>
-				<property Item="PsionicStone_FlashDust" Amount="3"/>
+				<property Item="PsionicStone_FlashDust" Amount="2"/>
 			</RequireMaterials>
 		</class>
-		<class name="Grenade_Frag" Opened="true" UnLockRecipe="" Category="Grenade" RequireLv="1">
+		<class name="Grenade_Frag" Opened="true" UnLockRecipe="Grenade_Frag_Uncommon" Category="Grenade" RequireLv="1">
 			<RequireMaterials>
 				<property Item="MetalPart" Amount="1"/>
 				<property Item="PsionicStone_FlameDust" Amount="1"/>
@@ -79,37 +79,37 @@
 				<property Item="PsionicStone_FlashDust" Amount="1"/>
 			</RequireMaterials>
 		</class>
-		<class name="Grenade_Gas" Opened="true" UnLockRecipe="" Category="Grenade" RequireLv="1">
+		<class name="Grenade_Gas" Opened="true" UnLockRecipe="Grenade_Gas_Uncommon" Category="Grenade" RequireLv="1">
 			<RequireMaterials>
 				<property Item="MetalPart" Amount="1"/>
-				<property Item="PsionicStone_MistDust" Amount="3"/>
+				<property Item="PsionicStone_MistDust" Amount="2"/>
 			</RequireMaterials>
 		</class>
-		<class name="Grenade_Incendiary" Opened="true" UnLockRecipe="" Category="Grenade" RequireLv="1">
+		<class name="Grenade_Incendiary" Opened="true" UnLockRecipe="Grenade_Incendiary_Uncommon" Category="Grenade" RequireLv="1">
 			<RequireMaterials>
 				<property Item="MetalPart" Amount="1"/>
-				<property Item="PsionicStone_FlameDust" Amount="3"/>
+				<property Item="PsionicStone_FlameDust" Amount="2"/>
 			</RequireMaterials>
 		</class>
-		<class name="Grenade_Freezing" Opened="true" UnLockRecipe="" Category="Grenade" RequireLv="1">
+		<class name="Grenade_Freezing" Opened="true" UnLockRecipe="Grenade_Freezing_Uncommon" Category="Grenade" RequireLv="1">
 			<RequireMaterials>
 				<property Item="MetalPart" Amount="1"/>
-				<property Item="PsionicStone_FrostDust" Amount="3"/>
+				<property Item="PsionicStone_FrostDust" Amount="2"/>
 			</RequireMaterials>
 		</class>
-		<class name="Grenade_Smoke" Opened="true" UnLockRecipe="" Category="Grenade" RequireLv="1">
+		<class name="Grenade_Smoke" Opened="true" UnLockRecipe="Grenade_Smoke_Uncommon" Category="Grenade" RequireLv="1">
 			<RequireMaterials>
 				<property Item="MetalPart" Amount="1"/>
-				<property Item="PsionicStone_VerdureDust" Amount="3"/>
+				<property Item="PsionicStone_VerdureDust" Amount="2"/>
 			</RequireMaterials>
 		</class>
-		<class name="Grenade_WindPressure" Opened="true" UnLockRecipe="" Category="Grenade" RequireLv="1">
+		<class name="Grenade_WindPressure" Opened="true" UnLockRecipe="Grenade_WindPressure_Uncommon, Grenade_WebSpider" Category="Grenade" RequireLv="1">
 			<RequireMaterials>
 				<property Item="MetalPart" Amount="1"/>
 				<property Item="PsionicStone_StormDust" Amount="3"/>
 			</RequireMaterials>
 		</class>
-		<class name="Grenade_Frag_Uncommon" Opened="true" UnLockRecipe="" Category="Grenade" RequireLv="2">
+		<class name="Grenade_Frag_Uncommon" Opened="false" UnLockRecipe="" Category="Grenade" RequireLv="1">
 			<RequireMaterials>
 				<property Item="MetalPart_Uncomon" Amount="1"/>
 				<property Item="PsionicStone_FlameFragment" Amount="1"/>
@@ -117,47 +117,47 @@
 				<property Item="PsionicStone_FlashFragment" Amount="1"/>
 			</RequireMaterials>
 		</class>
-		<class name="Grenade_Gas_Uncommon" Opened="true" UnLockRecipe="" Category="Grenade" RequireLv="2">
+		<class name="Grenade_Gas_Uncommon" Opened="false" UnLockRecipe="" Category="Grenade" RequireLv="1">
 			<RequireMaterials>
 				<property Item="MetalPart_Uncomon" Amount="1"/>
-				<property Item="PsionicStone_MistFragment" Amount="3"/>
+				<property Item="PsionicStone_MistFragment" Amount="2"/>
 			</RequireMaterials>
 		</class>
-		<class name="Grenade_Incendiary_Uncommon" Opened="true" UnLockRecipe="" Category="Grenade" RequireLv="2">
+		<class name="Grenade_Incendiary_Uncommon" Opened="false" UnLockRecipe="" Category="Grenade" RequireLv="1">
 			<RequireMaterials>
 				<property Item="MetalPart_Uncomon" Amount="1"/>
-				<property Item="PsionicStone_FlameFragment" Amount="3"/>
+				<property Item="PsionicStone_FlameFragment" Amount="2"/>
 			</RequireMaterials>
 		</class>
-		<class name="Grenade_Freezing_Uncommon" Opened="true" UnLockRecipe="" Category="Grenade" RequireLv="2">
+		<class name="Grenade_Freezing_Uncommon" Opened="false" UnLockRecipe="" Category="Grenade" RequireLv="1">
 			<RequireMaterials>
 				<property Item="MetalPart_Uncomon" Amount="1"/>
-				<property Item="PsionicStone_FrostFragment" Amount="3"/>
+				<property Item="PsionicStone_FrostFragment" Amount="2"/>
 			</RequireMaterials>
 		</class>
-		<class name="Grenade_Smoke_Uncommon" Opened="true" UnLockRecipe="" Category="Grenade" RequireLv="2">
+		<class name="Grenade_Smoke_Uncommon" Opened="false" UnLockRecipe="" Category="Grenade" RequireLv="1">
 			<RequireMaterials>
 				<property Item="MetalPart_Uncomon" Amount="1"/>
-				<property Item="PsionicStone_VerdureFragment" Amount="3"/>
+				<property Item="PsionicStone_VerdureFragment" Amount="2"/>
 			</RequireMaterials>
 		</class>
-		<class name="Grenade_WindPressure_Uncommon" Opened="true" UnLockRecipe="" Category="Grenade" RequireLv="2">
+		<class name="Grenade_WindPressure_Uncommon" Opened="false" UnLockRecipe="" Category="Grenade" RequireLv="1">
 			<RequireMaterials>
 				<property Item="MetalPart_Uncomon" Amount="1"/>
-				<property Item="PsionicStone_StormFragment" Amount="3"/>
+				<property Item="PsionicStone_StormFragment" Amount="2"/>
 			</RequireMaterials>
 		</class>
-		<class name="Grenade_WebSpider" Opened="true" UnLockRecipe="" Category="Grenade" RequireLv="2">
+		<class name="Grenade_WebSpider" Opened="false" UnLockRecipe="" Category="Grenade" RequireLv="2">
 			<RequireMaterials>
 				<property Item="MetalPart_Uncomon" Amount="1"/>
 				<property Item="PsionicStone_StormFragment" Amount="1"/>
-				<property Item="FiberYasha" Amount="3"/>
+				<property Item="FiberYasha" Amount="2"/>
 			</RequireMaterials>
 		</class>
-		<class name="Grenade_EMP" Opened="true" UnLockRecipe="" Category="Grenade" RequireLv="2">
+		<class name="Grenade_EMP" Opened="false" UnLockRecipe="" Category="Grenade" RequireLv="2">
 			<RequireMaterials>
 				<property Item="MetalPart_Uncomon" Amount="1"/>
-				<property Item="PsionicStone_FlashFragment" Amount="3"/>
+				<property Item="PsionicStone_FlashFragment" Amount="2"/>
 			</RequireMaterials>
 		</class>
 		<class name="Potion_HP_Uncommon" Opened="true" UnLockRecipe="Potion_HP_Rare, Potion_Brave, Potion_Faith" Category="Potion" RequireLv="1">
@@ -319,122 +319,122 @@
 		</class>
 		<class name="PsionicStone_FlameFragment" Opened="true" UnLockRecipe="" Category="PsionicStone" RequireLv="1">
 			<RequireMaterials>
-				<property Item="PsionicStone_FlameDust" Amount="5"/>
+				<property Item="PsionicStone_FlameDust" Amount="3"/>
 			</RequireMaterials>
 		</class>
 		<class name="PsionicStone_FlameElement" Opened="true" UnLockRecipe="PsionicStone_FlameCrystal" Category="PsionicStone" RequireLv="1">
 			<RequireMaterials>
-				<property Item="PsionicStone_FlameFragment" Amount="5"/>
+				<property Item="PsionicStone_FlameFragment" Amount="3"/>
 			</RequireMaterials>
 		</class>
 		<class name="PsionicStone_FlameCrystal" Opened="false" UnLockRecipe="PsionicStone_FlameCore" Category="PsionicStone" RequireLv="1">
 			<RequireMaterials>
-				<property Item="PsionicStone_FlameElement" Amount="5"/>
+				<property Item="PsionicStone_FlameElement" Amount="3"/>
 			</RequireMaterials>
 		</class>
 		<class name="PsionicStone_FlameCore" Opened="false" UnLockRecipe="" Category="PsionicStone" RequireLv="1">
 			<RequireMaterials>
-				<property Item="PsionicStone_FlameCrystal" Amount="5"/>
+				<property Item="PsionicStone_FlameCrystal" Amount="3"/>
 			</RequireMaterials>
 		</class>
 		<class name="PsionicStone_FlashFragment" Opened="true" UnLockRecipe="" Category="PsionicStone" RequireLv="1">
 			<RequireMaterials>
-				<property Item="PsionicStone_FlashDust" Amount="5"/>
+				<property Item="PsionicStone_FlashDust" Amount="3"/>
 			</RequireMaterials>
 		</class>
 		<class name="PsionicStone_FlashElement" Opened="true" UnLockRecipe="PsionicStone_FlashCrystal" Category="PsionicStone" RequireLv="1">
 			<RequireMaterials>
-				<property Item="PsionicStone_FlashFragment" Amount="5"/>
+				<property Item="PsionicStone_FlashFragment" Amount="3"/>
 			</RequireMaterials>
 		</class>
 		<class name="PsionicStone_FlashCrystal" Opened="false" UnLockRecipe="PsionicStone_FlashCore" Category="PsionicStone" RequireLv="1">
 			<RequireMaterials>
-				<property Item="PsionicStone_FlashElement" Amount="5"/>
+				<property Item="PsionicStone_FlashElement" Amount="3"/>
 			</RequireMaterials>
 		</class>
 		<class name="PsionicStone_FlashCore" Opened="false" UnLockRecipe="" Category="PsionicStone" RequireLv="1">
 			<RequireMaterials>
-				<property Item="PsionicStone_FlashCrystal" Amount="5"/>
+				<property Item="PsionicStone_FlashCrystal" Amount="3"/>
 			</RequireMaterials>
 		</class>
 		<class name="PsionicStone_FrostFragment" Opened="true" UnLockRecipe="" Category="PsionicStone" RequireLv="1">
 			<RequireMaterials>
-				<property Item="PsionicStone_FrostDust" Amount="5"/>
+				<property Item="PsionicStone_FrostDust" Amount="3"/>
 			</RequireMaterials>
 		</class>
 		<class name="PsionicStone_FrostElement" Opened="true" UnLockRecipe="PsionicStone_FrostCrystal" Category="PsionicStone" RequireLv="1">
 			<RequireMaterials>
-				<property Item="PsionicStone_FrostFragment" Amount="5"/>
+				<property Item="PsionicStone_FrostFragment" Amount="3"/>
 			</RequireMaterials>
 		</class>
 		<class name="PsionicStone_FrostCrystal" Opened="false" UnLockRecipe="PsionicStone_FrostCore" Category="PsionicStone" RequireLv="1">
 			<RequireMaterials>
-				<property Item="PsionicStone_FrostElement" Amount="5"/>
+				<property Item="PsionicStone_FrostElement" Amount="3"/>
 			</RequireMaterials>
 		</class>
 		<class name="PsionicStone_FrostCore" Opened="false" UnLockRecipe="" Category="PsionicStone" RequireLv="1">
 			<RequireMaterials>
-				<property Item="PsionicStone_FrostCrystal" Amount="5"/>
+				<property Item="PsionicStone_FrostCrystal" Amount="3"/>
 			</RequireMaterials>
 		</class>
 		<class name="PsionicStone_MistFragment" Opened="true" UnLockRecipe="" Category="PsionicStone" RequireLv="1">
 			<RequireMaterials>
-				<property Item="PsionicStone_MistDust" Amount="5"/>
+				<property Item="PsionicStone_MistDust" Amount="3"/>
 			</RequireMaterials>
 		</class>
 		<class name="PsionicStone_MistElement" Opened="true" UnLockRecipe="PsionicStone_MistCrystal" Category="PsionicStone" RequireLv="1">
 			<RequireMaterials>
-				<property Item="PsionicStone_MistFragment" Amount="5"/>
+				<property Item="PsionicStone_MistFragment" Amount="3"/>
 			</RequireMaterials>
 		</class>
 		<class name="PsionicStone_MistCrystal" Opened="false" UnLockRecipe="PsionicStone_MistCore" Category="PsionicStone" RequireLv="1">
 			<RequireMaterials>
-				<property Item="PsionicStone_MistElement" Amount="5"/>
+				<property Item="PsionicStone_MistElement" Amount="3"/>
 			</RequireMaterials>
 		</class>
 		<class name="PsionicStone_MistCore" Opened="false" UnLockRecipe="" Category="PsionicStone" RequireLv="1">
 			<RequireMaterials>
-				<property Item="PsionicStone_MistCrystal" Amount="5"/>
+				<property Item="PsionicStone_MistCrystal" Amount="3"/>
 			</RequireMaterials>
 		</class>
 		<class name="PsionicStone_StormFragment" Opened="true" UnLockRecipe="" Category="PsionicStone" RequireLv="1">
 			<RequireMaterials>
-				<property Item="PsionicStone_StormDust" Amount="5"/>
+				<property Item="PsionicStone_StormDust" Amount="3"/>
 			</RequireMaterials>
 		</class>
 		<class name="PsionicStone_StormElement" Opened="true" UnLockRecipe="PsionicStone_StormCrystal" Category="PsionicStone" RequireLv="1">
 			<RequireMaterials>
-				<property Item="PsionicStone_StormFragment" Amount="5"/>
+				<property Item="PsionicStone_StormFragment" Amount="3"/>
 			</RequireMaterials>
 		</class>
 		<class name="PsionicStone_StormCrystal" Opened="false" UnLockRecipe="PsionicStone_StormCore" Category="PsionicStone" RequireLv="1">
 			<RequireMaterials>
-				<property Item="PsionicStone_StormElement" Amount="5"/>
+				<property Item="PsionicStone_StormElement" Amount="3"/>
 			</RequireMaterials>
 		</class>
 		<class name="PsionicStone_StormCore" Opened="false" UnLockRecipe="" Category="PsionicStone" RequireLv="1">
 			<RequireMaterials>
-				<property Item="PsionicStone_StormCrystal" Amount="5"/>
+				<property Item="PsionicStone_StormCrystal" Amount="3"/>
 			</RequireMaterials>
 		</class>
 		<class name="PsionicStone_VerdureFragment" Opened="true" UnLockRecipe="" Category="PsionicStone" RequireLv="1">
 			<RequireMaterials>
-				<property Item="PsionicStone_VerdureDust" Amount="5"/>
+				<property Item="PsionicStone_VerdureDust" Amount="3"/>
 			</RequireMaterials>
 		</class>
 		<class name="PsionicStone_VerdureElement" Opened="true" UnLockRecipe="PsionicStone_VerdureCrystal" Category="PsionicStone" RequireLv="1">
 			<RequireMaterials>
-				<property Item="PsionicStone_VerdureFragment" Amount="5"/>
+				<property Item="PsionicStone_VerdureFragment" Amount="3"/>
 			</RequireMaterials>
 		</class>
 		<class name="PsionicStone_VerdureCrystal" Opened="false" UnLockRecipe="PsionicStone_VerdureCore" Category="PsionicStone" RequireLv="1">
 			<RequireMaterials>
-				<property Item="PsionicStone_VerdureElement" Amount="5"/>
+				<property Item="PsionicStone_VerdureElement" Amount="3"/>
 			</RequireMaterials>
 		</class>
 		<class name="PsionicStone_VerdureCore" Opened="false" UnLockRecipe="" Category="PsionicStone" RequireLv="1">
 			<RequireMaterials>
-				<property Item="PsionicStone_VerdureCrystal" Amount="5"/>
+				<property Item="PsionicStone_VerdureCrystal" Amount="3"/>
 			</RequireMaterials>
 		</class>
 		<class name="FiberYasha" Opened="true" UnLockRecipe="" Category="MaterialReinforce" RequireLv="1">
@@ -3127,10 +3127,22 @@
 				<property Item="MetalPart_Uncomon" Amount="3"/>
 			</RequireMaterials>
 		</class>
-		<class name="Extractor_Rare" Opened="false" UnLockRecipe="" Category="Tool" RequireLv="1">
+		<class name="Extractor_Rare" Opened="false" UnLockRecipe="Extractor_Epic" Category="Tool" RequireLv="1">
 			<RequireMaterials>
 				<property Item="Conductor_Semi" Amount="1"/>
 				<property Item="MetalPart_Rare" Amount="3"/>
+			</RequireMaterials>
+		</class>
+		<class name="Extractor_Epic" Opened="false" UnLockRecipe="Extractor_Legend" Category="Tool" RequireLv="1">
+			<RequireMaterials>
+				<property Item="Conductor_Super" Amount="1"/>
+				<property Item="MetalPart_Rare" Amount="3"/>
+			</RequireMaterials>
+		</class>
+		<class name="Extractor_Legend" Opened="false" UnLockRecipe="" Category="Tool" RequireLv="1">
+			<RequireMaterials>
+				<property Item="Conductor_Perfect" Amount="1"/>
+				<property Item="MetalPart_Epic" Amount="3"/>
 			</RequireMaterials>
 		</class>
 		<class name="Ring_Extractor_Set" Opened="false" UnLockRecipe="" Category="Accessory" RequireLv="1">

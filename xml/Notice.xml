@@ -14,7 +14,7 @@
 			<property Key="Link" Text="[colour=&apos;FF0000FF&apos;](링크)[colour=&apos;FFFFFFFF&apos;]" LinkURL="http://store.steampowered.com/app/470310/Troubleshooter/"/>
 		</Links>
 	</class>
-	<class name="UpdateNotice" CheckFuncLogin="None" Version="20200624" NextUpdate="20200701" ThisUpdate="20200612" ChnUpdate="0" JpnUpdate="0">
+	<class name="UpdateNotice" CheckFuncLogin="None" Version="20200710" NextUpdate="20200717" ThisUpdate="20200710" ChnUpdate="0" JpnUpdate="0">
 		<property name="Message" value="안녕하세요 트러블슈터 개발팀입니다.
 
 $NoticeContent$
@@ -56,5 +56,20 @@ $LangText$ 사용자분들에게 알려드립니다.[colour='FFFFFFFF']
 유럽 서버는 2020년 6월 5일까지의 북미 서버의 데이터를 사용하므로 이전에 북미 서버를 사용했던 분들은 사용하던 데이터 그대로 유럽 서버에서 게임을 이어서 할 수 있습니다.
 
 그러나 2020년 6월 5일 이후부터는 북미 서버와 유럽 서버는 데이터가 공유되지 않으므로 이 점 주의하시기 바랍니다."/>
+	</class>
+	<class name="AsiaServerErrorReward" Version="20200706" CheckFunc="Disabled" Message="서버 장애로 인해 7월 5일 오후 10시 30분까지 진행했던 플레이 기록이 7월 5일 오전 4시 버전 데이터로 롤백되었습니다.
+
+이로 인해 소중한 시간을 망쳐버려 죄송합니다.
+
+복구할 수 없는 약 20시간의 플레이를 저희가 감히 보상할 수 있다고 생각하지 않습니다.
+
+하지만 무엇이라도 보상하지 않는다면 여러분의 소중한 경험을 더 망쳐버리는 결과를 가져올 것이므로 저희는 저희가 여러분의 소중한 하루에 대한 보상을 아래와 같은 식으로 최대한 보상하려고 합니다.
+
+이에 각 회사 레벨 진행에 따라 다음과 같은 보상을 지급합니다.
+
+관련 링크: $Link$">
+		<Links>
+			<property Key="Link" Text="[colour=&apos;FF0000FF&apos;](링크)[colour=&apos;FFFFFFFF&apos;]" LinkURL="https://steamcommunity.com/games/470310/announcements/detail/2513520701542781025"/>
+		</Links>
 	</class>
 </idspace>

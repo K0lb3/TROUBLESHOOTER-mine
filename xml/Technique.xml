@@ -475,7 +475,11 @@
 		</class>
 		<class name="CursedSword" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
 			<RequireMasteries>
-				<property name="Swordmaster"/>
+				<property name="DrainSoul"/>
+			</RequireMasteries>
+		</class>
+		<class name="EvilSword" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
+			<RequireMasteries>
 				<property name="DrainSoul"/>
 			</RequireMasteries>
 		</class>

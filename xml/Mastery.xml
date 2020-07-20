@@ -1405,7 +1405,7 @@
 		</class>
 		<class name="Rampage" Base_Title="광란" Edible="false" Life="false" IsEnableESP="false" Category="Job" Type="Slaughterer" MaxLv="1" Cost="0" MasterRate="0" FlavorText="폭발하면 더 이상 멈출 수 없습니다." ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="30" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
 			<Desc_Base>
-				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="공격한 대상을 $Dead$으로 만들면, $ActionTime$이 $Value$ 감소합니다.">
+				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="적을 $Dead$으로 만들면, $ActionTime$이 $Value$ 감소합니다.">
 					<FormatKeyword>
 						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
 						<property FormatKey="ActionTime" Color="None" Idspace="Status" Key="Act" Value="Title" ValueType="string"/>
@@ -1966,7 +1966,6 @@
 				</property>
 			</Desc_Base>
 		</class>
-		<class name="QuickDelivery" Base_Title="신속배달" Edible="false" Life="false" IsEnableESP="false" Category="Organization" Type="Organization" MaxLv="1" Cost="0" MasterRate="0" FlavorText="한 번 경험하면 절대 잊을 수 없지." ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_MoveDist="1" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false"/>
 		<class name="OneSpoon" Base_Title="한술" Edible="false" Life="false" IsEnableESP="false" Category="Organization" Type="Organization" MaxLv="1" Cost="0" MasterRate="0" FlavorText="우리는 모두 가슴에 숟가락 하나를 품고 있지." ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="30" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="true" ReactionShooting="true">
 			<Desc_Base>
 				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="아군이 자신에게 근접한 적을 공격할 경우, 해당 적을 공격할 수 있으면 이어서 공격을 가합니다."/>
@@ -1988,6 +1987,151 @@
 				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="자신이 주는 피해량이 자신의 잃은 체력의 $Value$만큼 증가합니다.">
 					<FormatKeyword>
 						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
+					</FormatKeyword>
+				</property>
+			</Desc_Base>
+		</class>
+		<class name="OblivionOfPain" Base_Title="고통의 망각" Edible="false" Life="false" IsEnableESP="false" Category="PC" Type="Training" MaxLv="1" Cost="0" MasterRate="0" FlavorText="아무도 죽기를 원하지 않는다." ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="Rebirth" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="1" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
+			<Desc_Base>
+				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="$Buff$ 상태에서 피해를 입을 시, $Buff$ 상태의 지속 시간이 $Value$ 감소합니다.">
+					<FormatKeyword>
+						<property FormatKey="Buff" Color="None" Idspace="None" Key="None" Value="$MasteryBuff$" ValueType="text"/>
+						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
+					</FormatKeyword>
+				</property>
+			</Desc_Base>
+		</class>
+		<class name="RoadOfKiller" Base_Title="살수의 길" Edible="false" Life="false" IsEnableESP="false" Category="PC" Type="Training" MaxLv="1" Cost="0" MasterRate="0" FlavorText="검은 흉기. 검술은 살인술. 그 어떤 대의명분이나 미사여구로 포장해도 그게 진실이오" ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="Percent" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="10" Base_ApplyAmount2="10" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
+			<Desc_Base>
+				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="$Race$인 적을 공격할 경우, 적의 $Stat$, $Stat2$[이] $Value$ 감소합니다.">
+					<FormatKeyword>
+						<property FormatKey="Race" Color="White" Idspace="Race" Key="Human" Value="Title" ValueType="string"/>
+						<property FormatKey="Stat" Color="None" Idspace="Status" Key="Dodge" Value="Title" ValueType="string"/>
+						<property FormatKey="Stat2" Color="None" Idspace="Status" Key="Block" Value="Title" ValueType="string"/>
+						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
+					</FormatKeyword>
+				</property>
+				<property CaseColor="Perano" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="$Race$인 적을 $Dead$으로 만들면, $ActionTime$이 $Value$ 감소합니다.">
+					<FormatKeyword>
+						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue2$" ValueType="text"/>
+						<property FormatKey="ActionTime" Color="None" Idspace="Status" Key="Act" Value="Title" ValueType="string"/>
+						<property FormatKey="Race" Color="White" Idspace="Race" Key="Human" Value="Title" ValueType="string"/>
+					</FormatKeyword>
+				</property>
+			</Desc_Base>
+		</class>
+		<class name="CrueltyRobbery" Base_Title="잔인한 강탈" Edible="false" Life="false" IsEnableESP="false" Category="PC" Type="Personality" MaxLv="1" Cost="0" MasterRate="0" FlavorText="권력에 취한 자들의 오만만큼 잔인한 것은 없다." ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="Excitement" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="1" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
+			<Desc_Base>
+				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="적에게 치명타를 적중시키면, 적이 장착한 소모성 아이템 중 무작위의 아이템 $Value$개를 훔쳐옵니다.">
+					<FormatKeyword>
+						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
+					</FormatKeyword>
+				</property>
+				<property CaseColor="Perano" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="$Mastery$ 발동으로 아이템을 훔치면, $Buff$ 상태가 됩니다.">
+					<FormatKeyword>
+						<property FormatKey="Buff" Color="None" Idspace="None" Key="None" Value="$MasteryBuff$" ValueType="text"/>
+						<property FormatKey="Mastery" Color="White" Idspace="Mastery" Key="CrueltyRobbery" Value="Title" ValueType="string"/>
+					</FormatKeyword>
+				</property>
+				<property CaseColor="Orange" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="획득한 아이템은 착용 후 사용할 수 있습니다."/>
+			</Desc_Base>
+		</class>
+		<class name="Viciousness" Base_Title="악랄함" Edible="false" Life="false" IsEnableESP="false" Category="PC" Type="Personality" MaxLv="1" Cost="0" MasterRate="0" FlavorText="폭력에 저항하지 않는다면 더 심해질 뿐이다." ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="Percent" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="20" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
+			<Desc_Base>
+				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="정신적 상태 이상인 적에게 주는 피해량이 $Value$ 증가합니다.">
+					<FormatKeyword>
+						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
+					</FormatKeyword>
+				</property>
+			</Desc_Base>
+		</class>
+		<class name="AdvancePreparation" Base_Title="사전 준비" Edible="false" Life="false" IsEnableESP="false" Category="PC" Type="Training" MaxLv="1" Cost="0" MasterRate="0" FlavorText="공연의 완성도를 결정하는 것은 사전 준비와 뛰어난 솜씨이다." ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="1" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
+			<Desc_Base>
+				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="공연 슬롯이 $Value$개 추가됩니다.">
+					<FormatKeyword>
+						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
+					</FormatKeyword>
+				</property>
+				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="턴이 시작할 때마다 무작위의 공연 효과가 $Value$개 추가됩니다.">
+					<FormatKeyword>
+						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
+					</FormatKeyword>
+				</property>
+			</Desc_Base>
+		</class>
+		<class name="QuickDelivery" Base_Title="신속배달" Edible="false" Life="false" IsEnableESP="false" Category="PC" Type="Training" MaxLv="1" Cost="0" MasterRate="0" FlavorText="한 번 경험하면 절대 잊을 수 없지." ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="1" Base_ApplyAmount2="3" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
+			<Desc_Base>
+				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="적을 공격하여 넉백시키면, 가장 많이 밀려난 적의 밀려난 거리 $Value$ 타일 당 $ActionTime$이 $Value2$ 감소합니다.">
+					<FormatKeyword>
+						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
+						<property FormatKey="Value2" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue2$" ValueType="text"/>
+						<property FormatKey="ActionTime" Color="None" Idspace="Status" Key="Act" Value="Title" ValueType="string"/>
+					</FormatKeyword>
+				</property>
+			</Desc_Base>
+		</class>
+		<class name="LargeDelivery" Base_Title="대량배달" Edible="false" Life="false" IsEnableESP="false" Category="PC" Type="Training" MaxLv="1" Cost="0" MasterRate="0" FlavorText="한 번 경험하면 절대 잊을 수 없지." ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="1" Base_ApplyAmount2="5" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
+			<Desc_Base>
+				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="적을 공격하여 넉백시키면, 넉백된 적 $Value$ 명 당 $ActionTime$이 $Value2$ 감소합니다.">
+					<FormatKeyword>
+						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
+						<property FormatKey="Value2" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue2$" ValueType="text"/>
+						<property FormatKey="ActionTime" Color="None" Idspace="Status" Key="Act" Value="Title" ValueType="string"/>
+					</FormatKeyword>
+				</property>
+			</Desc_Base>
+		</class>
+		<class name="MakeStageComeback" Base_Title="권토중래" Edible="false" Life="false" IsEnableESP="false" Category="PC" Type="Desire" MaxLv="1" Cost="0" MasterRate="0" FlavorText="좌절감이 사나이를 키우는 것이다!" ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="Rebirth" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="Percent" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="25" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
+			<Desc_Base>
+				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="$Buff$ 상태에서 자신이 받는 피해량이 $Value$ 감소합니다.">
+					<FormatKeyword>
+						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
+						<property FormatKey="Buff" Color="None" Idspace="None" Key="None" Value="$MasteryBuff$" ValueType="text"/>
+					</FormatKeyword>
+				</property>
+				<property CaseColor="Perano" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="$Buff$ 상태에서 모든 물리적 상태 이상에 면역이 됩니다.">
+					<FormatKeyword>
+						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
+						<property FormatKey="Buff" Color="None" Idspace="None" Key="None" Value="$MasteryBuff$" ValueType="text"/>
+					</FormatKeyword>
+				</property>
+			</Desc_Base>
+		</class>
+		<class name="RestrainedRage" Base_Title="절제된 분노" Edible="false" Life="false" IsEnableESP="false" Category="PC" Type="Training" MaxLv="1" Cost="0" MasterRate="0" FlavorText="분노를 외면하지 마라." ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" BuffGroup="Rage" ApplyAmountType="Percent" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="15" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
+			<Desc_Base>
+				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="$BuffGroup$ 계열 상태에서 적을 공격할 경우, $Stat$[이] $Value$ 증가합니다.">
+					<FormatKeyword>
+						<property FormatKey="Stat" Color="None" Idspace="Status" Key="Accuracy" Value="Title" ValueType="string"/>
+						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
+						<property FormatKey="BuffGroup" Color="None" Idspace="None" Key="None" Value="$MasteryBuffGroup$" ValueType="text"/>
+					</FormatKeyword>
+				</property>
+			</Desc_Base>
+		</class>
+		<class name="FortuneCollector" Base_Title="행운수집가" Edible="false" Life="false" IsEnableESP="false" Category="PC" Type="Training" MaxLv="1" Cost="0" MasterRate="0" FlavorText="행운이란 준비와 기회를 만났을 때 나타난다." ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="Luck" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="10" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
+			<Desc_Base>
+				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="$Buff$ 상태 발동 시, $ActionTime$이 $Value$ 감소합니다.">
+					<FormatKeyword>
+						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
+						<property FormatKey="ActionTime" Color="None" Idspace="Status" Key="Act" Value="Title" ValueType="string"/>
+						<property FormatKey="Buff" Color="None" Idspace="None" Key="None" Value="$MasteryBuff$" ValueType="text"/>
+					</FormatKeyword>
+				</property>
+				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="$Buff$ 상태 해제 시, $ActionTime$이 $Value$ 감소합니다.">
+					<FormatKeyword>
+						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
+						<property FormatKey="ActionTime" Color="None" Idspace="Status" Key="Act" Value="Title" ValueType="string"/>
+						<property FormatKey="Buff" Color="None" Idspace="None" Key="None" Value="$MasteryBuff$" ValueType="text"/>
+					</FormatKeyword>
+				</property>
+			</Desc_Base>
+		</class>
+		<class name="WildDance" Base_Title="막춤" Edible="false" Life="false" IsEnableESP="false" Category="PC" Type="Desire" MaxLv="1" Cost="0" MasterRate="0" FlavorText="둥글게~ 둥글게~" ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="10" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false" PerformanceType="Dance">
+			<Desc_Base>
+				<property CaseColor="LimeGold" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="자신의 턴 시작 시, 다음과 같은 효과가 발생합니다."/>
+				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="사용 가능한 어빌리티에 순차적으로 부여된 $Performance$ 속성을 무작위로 재배치합니다.">
+					<FormatKeyword>
+						<property FormatKey="Performance" Color="None" Idspace="None" Key="None" Value="$MasteryPerformanceEffectList$" ValueType="text"/>
 					</FormatKeyword>
 				</property>
 			</Desc_Base>
@@ -2652,15 +2796,19 @@
 				<property Event="AbilityUsed" Script="Mastery_StrongFellowship_AbilityUsed" Order="1"/>
 			</EventHandler>
 		</class>
-		<class name="LawOfTheJungle" Base_Title="약육강식" Edible="false" Life="false" IsEnableESP="false" Category="Beast" Type="Nature" MaxLv="1" Cost="0" MasterRate="0" FlavorText="강자이면 된다." ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
+		<class name="LawOfTheJungle" Base_Title="약육강식" Edible="false" Life="false" IsEnableESP="false" Category="Beast" Type="Nature" MaxLv="1" Cost="0" MasterRate="0" FlavorText="강자이면 된다." ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="Percent" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="50" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
 			<Desc_Base>
-				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="적을 $Dead$으로 만들면, 무작위의 상태 효과를 획득합니다."/>
+				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="적을 $Dead$으로 만들면, $Value$ 확률로 무작위의 상태 효과를 획득합니다.">
+					<FormatKeyword>
+						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
+					</FormatKeyword>
+				</property>
 			</Desc_Base>
 			<EventHandler>
 				<property Event="AbilityUsed_Self" Script="Mastery_LawOfTheJungle_AbilityUsed" Order="1"/>
 			</EventHandler>
 		</class>
-		<class name="RageBurst" Base_Title="분노 폭발" Edible="false" Life="false" IsEnableESP="false" Category="Beast" Type="Nature" MaxLv="1" Cost="0" MasterRate="0" FlavorText="가득 차면 흘러넘치기 마련이지!" ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="Percent" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="10" Base_ApplyAmount2="1" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
+		<class name="RageBurst" Base_Title="분노 폭발" Edible="false" Life="false" IsEnableESP="false" Category="Beast" Type="Nature" MaxLv="1" Cost="0" MasterRate="0" FlavorText="가득 차면 흘러넘치기 마련이지!" ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="Percent" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="1" Base_ApplyAmount2="0.3" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
 			<Desc_Base>
 				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="$Rage$ $Value$ 당 자신이 주는 피해량이 $Value2$ 증가합니다.">
 					<FormatKeyword>
@@ -2671,37 +2819,38 @@
 				</property>
 			</Desc_Base>
 		</class>
-		<class name="SavageBeast" Base_Title="흉폭함" Edible="false" Life="false" IsEnableESP="false" Category="Beast" Type="Nature" MaxLv="1" Cost="0" MasterRate="0" FlavorText="분노는 이성의 결함이다." ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="Percent" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="100" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
+		<class name="SavageBeast" Base_Title="흉폭함" Edible="false" Life="false" IsEnableESP="false" Category="Beast" Type="Nature" MaxLv="1" Cost="0" MasterRate="0" FlavorText="분노는 이성의 결함이다." ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="10" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
 			<Desc_Base>
-				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="$Rage$ 생성 시, 생성되는 $Rage$가 $Value$ 증가합니다.">
+				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="자신의 턴을 시작할 때마다 $Rage$가 $Value$ 증가합니다.">
 					<FormatKeyword>
 						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
 						<property FormatKey="Rage" Color="Orange" Idspace="CostType" Key="Rage" Value="Title" ValueType="string"/>
 					</FormatKeyword>
 				</property>
+				<property CaseColor="Perano" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="비전투 행동 종료 시, $Rage$가 감소하지 않습니다.">
+					<FormatKeyword>
+						<property FormatKey="Rage" Color="Orange" Idspace="CostType" Key="Rage" Value="Title" ValueType="string"/>
+					</FormatKeyword>
+				</property>
 			</Desc_Base>
+			<EventHandler>
+				<property Event="UnitTurnStart_Self" Script="Mastery_SavageBeast_UnitTurnStart" Order="1"/>
+			</EventHandler>
 		</class>
 		<class name="Foxy" Base_Title="교활함" Edible="false" Life="false" IsEnableESP="false" Category="Beast" Type="Nature" MaxLv="1" Cost="0" MasterRate="0" FlavorText="강한 자에게 약하고 약한 자에게 강하다." ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="Percent" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="20" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
 			<Desc_Base>
-				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="적과의 전투 시 다음과 같은 효과가 발생합니다."/>
-				<property CaseColor="Perano" CaseType="Custom" CaseValueType="string" CaseValue="자신보다 레벨이 낮은 대상 공격 시" CaseLineBreak="true" LineBreak="false" Text="자신이 주는 피해량이 $Value$ 증가합니다.">
-					<FormatKeyword>
-						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
-					</FormatKeyword>
-				</property>
-				<property CaseColor="Perano" CaseType="Custom" CaseValueType="string" CaseValue="자신보다 레벨이 높은 대상 공격 시" CaseLineBreak="true" LineBreak="false" Text="자신이 주는 피해량이 $Value$ 감소합니다.">
+				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="자신보다 레벨이 낮은 적을 공격할 경우, 적에게 주는 피해량이 $Value$ 증가합니다.">
 					<FormatKeyword>
 						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
 					</FormatKeyword>
 				</property>
 			</Desc_Base>
 		</class>
-		<class name="InstinctForSurvival" Base_Title="생존 본능" Edible="false" Life="false" IsEnableESP="false" Category="Beast" Type="Nature" MaxLv="1" Cost="0" MasterRate="0" FlavorText="살아라." ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="Percent" ApplyAmountType2="Percent" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="33" Base_ApplyAmount2="50" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
+		<class name="InstinctForSurvival" Base_Title="생존 본능" Edible="false" Life="false" IsEnableESP="false" Category="Beast" Type="Nature" MaxLv="1" Cost="0" MasterRate="0" FlavorText="살아라." ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="Percent" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="50" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
 			<Desc_Base>
-				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="자신의 체력이 $Value$ 이하인 경우, 체력 회복량이 $Value2$ 증가합니다.">
+				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="모든 체력 회복량이 $Value$ 증가합니다.">
 					<FormatKeyword>
 						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
-						<property FormatKey="Value2" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue2$" ValueType="text"/>
 					</FormatKeyword>
 				</property>
 			</Desc_Base>
@@ -2755,7 +2904,7 @@
 				<property Event="UnitTurnEnd_Self" Script="Mastery_BadSleepType_UnitTurnEnd" Order="1"/>
 			</EventHandler>
 		</class>
-		<class name="Pathfinder" Base_Title="길잡이" Edible="false" Life="false" IsEnableESP="false" Category="Beast" Type="Nature" MaxLv="1" Cost="0" MasterRate="0" FlavorText="이상은 인생을 이끄는 별과 같다" ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="5" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
+		<class name="Pathfinder" Base_Title="길잡이" Edible="false" Life="false" IsEnableESP="false" Category="Beast" Type="Nature" MaxLv="1" Cost="0" MasterRate="0" FlavorText="이상은 인생을 이끄는 별과 같다" ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="8" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
 			<Desc_Base>
 				<property CaseColor="LimeGold" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="자신의 턴 종료 시, 다음과 같은 효과가 발생합니다."/>
 				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="소환한 캐릭터가 시야 내에 있으면 자신과 소환한 캐릭터의 $ActionTime$이 $Value$ 감소합니다.">
@@ -2791,7 +2940,7 @@
 				<property Event="AbilityAffected" Script="Mastery_ILikeAnne_AbilityAffected" Order="1"/>
 			</EventHandler>
 		</class>
-		<class name="Flight" Base_Title="비행" Edible="false" Life="false" IsEnableESP="false" Category="Beast" Type="Nature" MaxLv="1" Cost="0" MasterRate="0" FlavorText="늘 갈망하라, 늘 우직하라." ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="Percent" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="20" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false" BuffModifier="CalculatedProperty_BuffModifier_Flight" NeutralizeFieldEffect="Swamp, Water, ContaminatedWater, Web, Ice, Lava">
+		<class name="Flight" Base_Title="비행" Edible="false" Life="false" IsEnableESP="false" Category="Beast" Type="Gene" MaxLv="1" Cost="0" MasterRate="0" FlavorText="늘 갈망하라, 늘 우직하라." ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="Percent" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="20" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false" BuffModifier="CalculatedProperty_BuffModifier_Flight" NeutralizeFieldEffect="Swamp, Water, ContaminatedWater, Web, Ice, Lava">
 			<Desc_Base>
 				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="항상 $State$ 상태가 적용됩니다.">
 					<FormatKeyword>
@@ -2902,12 +3051,12 @@
 				</property>
 			</Desc_Base>
 		</class>
-		<class name="TenderSkin" Base_Title="물렁살" Edible="false" Life="false" IsEnableESP="false" Category="Beast" Type="Gene" MaxLv="1" Cost="0" MasterRate="0" FlavorText="출렁이는 뱃살만큼 좋은 방어구는 없지." ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="Percent" ApplyAmountType2="Percent" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="66" Base_ApplyAmount2="33" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
+		<class name="TenderSkin" Base_Title="물렁살" Edible="false" Life="false" IsEnableESP="false" Category="Beast" Type="Gene" MaxLv="1" Cost="0" MasterRate="0" FlavorText="출렁이는 뱃살만큼 좋은 방어구는 없지." ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="Percent" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="100" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
 			<Desc_Base>
-				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="자신이 받는 피해량이 자신의 체력의 $Value$를 초과하면, 해당 피해량의 $Value2$의 피해만 받습니다.">
+				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="적으로부터 공격을 받을 경우, 적의 $Stat$[이] $Value$ 감소합니다.">
 					<FormatKeyword>
+						<property FormatKey="Stat" Color="None" Idspace="Status" Key="CriticalStrikeDeal" Value="Title" ValueType="string"/>
 						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
-						<property FormatKey="Value2" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue2$" ValueType="text"/>
 					</FormatKeyword>
 				</property>
 			</Desc_Base>
@@ -2926,9 +3075,9 @@
 				<property Event="MasteryInitialized" Script="Mastery_BadSmell_MasteryInitialized" Order="1"/>
 			</EventHandler>
 		</class>
-		<class name="RevealWildNature" Base_Title="감춰진 야성" Edible="false" Life="false" IsEnableESP="false" Category="Beast" Type="Gene" MaxLv="1" Cost="0" MasterRate="0" FlavorText="길들인다는 것이 야성을 죽이는 것은 아닙니다." ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="Percent" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="1" Base_ApplyAmount2="0.5" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false" CustomCacheData="Mastery_CustomCache_RevealWildNature">
+		<class name="RevealWildNature" Base_Title="감춰진 야성" Edible="false" Life="false" IsEnableESP="false" Category="Beast" Type="Gene" MaxLv="1" Cost="0" MasterRate="0" FlavorText="길들인다는 것이 야성을 죽이는 것은 아닙니다." ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="Percent" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="1" Base_ApplyAmount2="1" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false" CustomCacheData="Mastery_CustomCache_RevealWildNature">
 			<Desc_Base>
-				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="$Stat$, $Stat2$, $Stat3$, $Stat4$[이] 현재 사용하고 있는 $Type$ 특성 $Value$개 당 $Value2$ 증가합니다.">
+				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="$Stat$, $Stat2$, $Stat3$, $Stat4$[이] 현재 사용하고 있는 $Type$, $Type2$ 특성 $Value$개 당 $Value2$ 증가합니다.">
 					<FormatKeyword>
 						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
 						<property FormatKey="Value2" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue2$" ValueType="text"/>
@@ -2937,11 +3086,12 @@
 						<property FormatKey="Stat3" Color="None" Idspace="Status" Key="Accuracy" Value="Title" ValueType="string"/>
 						<property FormatKey="Stat4" Color="None" Idspace="Status" Key="CriticalStrikeChance" Value="Title" ValueType="string"/>
 						<property FormatKey="Type" Color="White" Idspace="MasteryType" Key="Beast" Value="Title" ValueType="string"/>
+						<property FormatKey="Type2" Color="White" Idspace="MasteryCategory" Key="Job" Value="Title" ValueType="string"/>
 					</FormatKeyword>
 				</property>
 			</Desc_Base>
 		</class>
-		<class name="ProtectiveColoration" Base_Title="보호색" Edible="false" Life="false" IsEnableESP="false" Category="Beast" Type="Gene" MaxLv="1" Cost="0" MasterRate="0" FlavorText="너만 가진다는 것은 용서할 수 없어." ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="3" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false" Base_InfoRange="Sphere3" InfoRangeType="Self" InfoRangeRelation="Enemy">
+		<class name="ProtectiveColoration" Base_Title="보호색" Edible="false" Life="false" IsEnableESP="false" Category="Beast" Type="Gene" MaxLv="1" Cost="0" MasterRate="0" FlavorText="너만 가진다는 것은 용서할 수 없어." ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="4" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false" Base_InfoRange="Sphere3" InfoRangeType="Self" InfoRangeRelation="Enemy">
 			<Desc_Base>
 				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="반경 $Value$칸 내의 적에게 상태 효과가 발생하면, 자신에게도 동일한 상태 효과가 발생합니다.">
 					<FormatKeyword>
@@ -3610,7 +3760,7 @@
 						<property FormatKey="ActionTime" Color="White" Idspace="Status" Key="Act" Value="Title" ValueType="string"/>
 					</FormatKeyword>
 				</property>
-				<property CaseColor="Yellow" CaseType="Mastery" CaseValueType="string" CaseValue="TacticalConnection" CaseLineBreak="true" LineBreak="false" Text="아군이 인접한 타일에서 행동을 종료하면 $ActionTime$이 $Value$ 추가 감소합니다.">
+				<property CaseColor="Yellow" CaseType="Mastery" CaseValueType="string" CaseValue="TacticalConnection" CaseLineBreak="true" LineBreak="false" Text="아군이 인접한 4방향의 타일에서 행동을 종료하면 $ActionTime$이 $Value$ 추가 감소합니다.">
 					<FormatKeyword>
 						<property FormatKey="ActionTime" Color="White" Idspace="Status" Key="Act" Value="Title" ValueType="string"/>
 						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue3$" ValueType="text"/>
@@ -4049,7 +4199,7 @@
 						<property FormatKey="ActionTime" Color="None" Idspace="Status" Key="Act" Value="Title" ValueType="string"/>
 					</FormatKeyword>
 				</property>
-				<property CaseColor="Yellow" CaseType="Mastery" CaseValueType="string" CaseValue="TeamPlayer" CaseLineBreak="true" LineBreak="true" Text="인접한 타일에 아군이 적을 공격하여 $Dead$으로 만들면, $ActionTime$이 $Value$ 감소합니다.">
+				<property CaseColor="Yellow" CaseType="Mastery" CaseValueType="string" CaseValue="TeamPlayer" CaseLineBreak="true" LineBreak="true" Text="인접한 4방향의 타일에 위치한 아군이 적을 공격하여 $Dead$으로 만들면, $ActionTime$이 $Value$ 감소합니다.">
 					<FormatKeyword>
 						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
 						<property FormatKey="ActionTime" Color="None" Idspace="Status" Key="Act" Value="Title" ValueType="string"/>
@@ -6014,7 +6164,7 @@
 				<property Event="PreAbilityUsing_Self" Script="MasteryCommon_ResetDuplicateApplyChecker" Order="1"/>
 			</EventHandler>
 		</class>
-		<class name="MultiProcessing" Base_Title="다중 처리" Edible="false" Life="false" IsEnableESP="false" Category="Set" Type="Hacker" MaxLv="1" Cost="0" MasterRate="0" FlavorText="업무를 분담하자!" ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="2" Base_ApplyAmount2="1" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
+		<class name="MultiProcessing" Base_Title="다중 처리" Edible="false" Life="false" IsEnableESP="false" Category="Set" Type="Hacker" MaxLv="1" Cost="0" MasterRate="0" FlavorText="업무를 분담하자!" ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="2" Base_ApplyAmount2="2" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
 			<Desc_Base>
 				<property CaseColor="LimeGold" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="자신의 턴 종료 시, 다음과 같은 효과가 발생합니다."/>
 				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="자신의 턴이 진행되는 동안 $Ability$를 $Value$회 이상 사용한 경우, 사용 가능한 모든 $Ability$의 사용 가능 횟수 $Value2$ 당 $ActionTime$이 $Value$ 감소합니다.">
@@ -6101,6 +6251,23 @@
 						<property FormatKey="Value" Color="White" Idspace="None" Key="None" Value="1" ValueType="text"/>
 						<property FormatKey="Value2" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue2$" ValueType="text"/>
 						<property FormatKey="ActionTime" Color="White" Idspace="Status" Key="Act" Value="Title" ValueType="string"/>
+					</FormatKeyword>
+				</property>
+			</Desc_Base>
+		</class>
+		<class name="ChainTrap" Base_Title="연계된 함정" Edible="false" Life="false" IsEnableESP="false" Category="Set" Type="Hunter" MaxLv="1" Cost="0" MasterRate="0" FlavorText="함정은 결정타를 날리기 위한 준비 작업에 지나지 않아." ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="Percent" ApplyAmountType2="Percent" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="15" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
+			<Desc_Base>
+				<property CaseColor="LimeGold" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="다음 특성에 대한 추가 보너스 상태를 획득합니다."/>
+				<property CaseColor="Yellow" CaseType="Mastery" CaseValueType="string" CaseValue="PowerfulTrap" CaseLineBreak="true" LineBreak="true" Text="자신이 설치한 $Trap$이 적에게 주는 피해량이 $Value$ 증가합니다.">
+					<FormatKeyword>
+						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
+						<property FormatKey="Trap" Color="White" Idspace="None" Key="None" Value="덫" ValueType="text"/>
+					</FormatKeyword>
+				</property>
+				<property CaseColor="Yellow" CaseType="Mastery" CaseValueType="string" CaseValue="SupportingFire" CaseLineBreak="true" LineBreak="false" Text="시야 내 적이 자신이 설치한 $Trap$의 발동으로 피해를 입고도 $Dead$이 되지 않는 경우에도 $Mastery$이 발동합니다.">
+					<FormatKeyword>
+						<property FormatKey="Mastery" Color="White" Idspace="Mastery" Key="SupportingFire" Value="Title" ValueType="string"/>
+						<property FormatKey="Trap" Color="White" Idspace="None" Key="None" Value="덫" ValueType="text"/>
 					</FormatKeyword>
 				</property>
 			</Desc_Base>
@@ -7024,6 +7191,29 @@
 			</Desc_Base>
 			<EventHandler>
 				<property Event="AbilityUsed_Self" Script="Mastery_UnlimitedBlade_AbilityUsed" Order="2"/>
+			</EventHandler>
+		</class>
+		<class name="SoulTakerBlade" Base_Title="탈혼검" Edible="false" Life="false" IsEnableESP="false" Category="Set" Type="Swordmagician" MaxLv="1" Cost="0" MasterRate="0" FlavorText="영혼마저 안식에 들 수 없게 만들지." ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="CurseOfSword" SubBuff="LostSoul" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="10" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
+			<Desc_Base>
+				<property CaseColor="LimeGold" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="다음 특성에 대한 추가 보너스 상태를 획득합니다."/>
+				<property CaseColor="Yellow" CaseType="Mastery" CaseValueType="string" CaseValue="EvilSword" CaseLineBreak="false" LineBreak="false" Text=""/>
+				<property CaseColor="LimeGold" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="자신의 턴 종료 시, 다음과 같은 효과가 발생합니다."/>
+				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="$Vigor$이 최대 수치이면 $Vigor$이 $Value$ 감소하고 $Buff$ 상태가 됩니다.">
+					<FormatKeyword>
+						<property FormatKey="Vigor" Color="WhiteBlue" Idspace="CostType" Key="Vigor" Value="Title" ValueType="string"/>
+						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
+						<property FormatKey="Buff" Color="None" Idspace="None" Key="None" Value="$MasteryBuff$" ValueType="text"/>
+					</FormatKeyword>
+				</property>
+				<property CaseColor="Yellow" CaseType="Mastery" CaseValueType="string" CaseValue="DrainSoul" CaseLineBreak="true" LineBreak="false" Text="적을 $Dead$으로 만들면, $Buff$ 상태가 됩니다.">
+					<FormatKeyword>
+						<property FormatKey="Buff" Color="None" Idspace="None" Key="None" Value="$MasterySubBuff$" ValueType="text"/>
+					</FormatKeyword>
+				</property>
+			</Desc_Base>
+			<EventHandler>
+				<property Event="UnitTurnEnd_Self" Script="Mastery_SoulTakerBlade_UnitTurnEnd" Order="2"/>
+				<property Event="AbilityUsed_Self" Script="Mastery_SoulTakerBlade_AbilityUsed" Order="2"/>
 			</EventHandler>
 		</class>
 		<class name="LegendOfDracula" Base_Title="선혈의 기억" Edible="false" Life="false" IsEnableESP="false" Category="Set" Type="Swordmagician" MaxLv="1" Cost="0" MasterRate="0" FlavorText="끝없는 삶에 대한 집착이야말로 인간의 본능이다." ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="Percent" ApplyAmountType2="None" ApplyAmountType3="Percent" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="25" Base_ApplyAmount2="10" Base_ApplyAmount3="60" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
@@ -9894,9 +10084,6 @@
 					</FormatKeyword>
 				</property>
 			</Desc_Base>
-			<EventHandler>
-				<property Event="UnitGiveDamage_Self" Script="Mastery_FirstAid_UnitGiveDamage" Order="1"/>
-			</EventHandler>
 		</class>
 		<class name="Trick" Base_Title="눈속임" Edible="false" Life="false" IsEnableESP="false" Category="Ability" Type="Shaman" MaxLv="1" Cost="3" MasterRate="25" FlavorText="단 한번이라면 신도 속일 수 있다네" ExtractItem="Statement_Mastery" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="Trick" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false"/>
 		<class name="Mirage" Base_Title="신기루" Edible="false" Life="false" IsEnableESP="false" Category="Ability" Type="Shaman" MaxLv="1" Cost="1" MasterRate="25" FlavorText="갈증에 시달리는 자들은 신기루를 향해 내달린다." ExtractItem="Statement_Mastery" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="Mirage" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false"/>
@@ -10682,7 +10869,7 @@
 		<class name="Module_Overclocking" Base_Title="오버클러킹" Edible="false" Life="false" IsEnableESP="false" Category="SupportModule" Type="Machine" MaxLv="1" Cost="3" MasterRate="0" FlavorText="" ExtractItem="Statement_Module" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="Custom" ModifyAbilityType="Module_Overclocking" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="Percent" ApplyAmountType2="Percent" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="50" Base_ApplyAmount2="50" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
 			<Desc_Base>
 				<property CaseColor="LimeGold" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="시전 지연 시간이 발생하는 어빌리티를 다음과 같이 강화합니다."/>
-				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="어빌리티 사용에 필요한 $Cost$[이] $Value$ 감소합니다.">
+				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="어빌리티 사용에 필요한 $Cost$[이] $Value$ 증가합니다.">
 					<FormatKeyword>
 						<property FormatKey="Cost" Color="Yellow" Idspace="CostType" Key="Fuel" Value="Title" ValueType="string"/>
 						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
@@ -12389,6 +12576,40 @@
 			</EventHandler>
 		</class>
 		<class name="Sniper" Base_Title="저격수" Edible="false" Life="false" IsEnableESP="false" Category="Normal" Type="Sniper" MaxLv="1" Cost="2" MasterRate="15" FlavorText="아군과 적군 모두에게 미움을 받는 존재이지." ExtractItem="Statement_Mastery" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_MaxVigor="20" Base_SightRange="1" Base_SightRange_Night="1" Base_IncreaseCriticalStrikeDeal_Force="20" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false"/>
+		<class name="InvisibleSword" Base_Title="보이지 않는 검" Edible="false" Life="false" IsEnableESP="false" Category="Normal" Type="Swordmagician" MaxLv="1" Cost="2" MasterRate="10" FlavorText="네 눈으로 확인하지 않은 것을 아무리 부정하여도 존재하는 것은 사라지지 않는다. " ExtractItem="Statement_Mastery" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="Percent" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="10" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
+			<Desc_Base>
+				<property CaseColor="LimeGold" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="적과 처음 교전 시, 다음과 같은 효과가 발생합니다."/>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="적을 먼저 공격할 경우" CaseLineBreak="false" LineBreak="false" Text=""/>
+				<property CaseColor="Perano" CaseType="Custom" CaseValueType="string" CaseValue="근접 공격" CaseLineBreak="false" LineBreak="false" Text="$Stat$[이] $Value$ 증가합니다.">
+					<FormatKeyword>
+						<property FormatKey="Stat" Color="None" Idspace="Status" Key="Accuracy" Value="Title" ValueType="string"/>
+						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
+					</FormatKeyword>
+				</property>
+				<property CaseColor="Perano" CaseType="Custom" CaseValueType="string" CaseValue="원거리 공격" CaseLineBreak="false" LineBreak="true" Text="자신이 주는 피해량이 $Value$ 증가합니다.">
+					<FormatKeyword>
+						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
+					</FormatKeyword>
+				</property>
+				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="적에게 먼저 공격 받을 경우" CaseLineBreak="false" LineBreak="false" Text=""/>
+				<property CaseColor="Perano" CaseType="Custom" CaseValueType="string" CaseValue="근접 공격" CaseLineBreak="false" LineBreak="false" Text="$Stat$[이] $Value$ 증가합니다.">
+					<FormatKeyword>
+						<property FormatKey="Stat" Color="None" Idspace="Status" Key="Block" Value="Title" ValueType="string"/>
+						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
+					</FormatKeyword>
+				</property>
+				<property CaseColor="Perano" CaseType="Custom" CaseValueType="string" CaseValue="원거리 공격" CaseLineBreak="false" LineBreak="false" Text="$Stat$[이] $Value$ 증가합니다.">
+					<FormatKeyword>
+						<property FormatKey="Stat" Color="None" Idspace="Status" Key="Dodge" Value="Title" ValueType="string"/>
+						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
+					</FormatKeyword>
+				</property>
+			</Desc_Base>
+			<EventHandler>
+				<property Event="AbilityUsed_Self" Script="Mastery_InvisibleSword_AbilityUsed" Order="1"/>
+				<property Event="AbilityAffected" Script="Mastery_InvisibleSword_AbilityAffected" Order="1"/>
+			</EventHandler>
+		</class>
 		<class name="BehindStory" Base_Title="가려진 과거" Edible="false" Life="false" IsEnableESP="false" Category="Normal" Type="SuperStar" MaxLv="1" Cost="2" MasterRate="25" FlavorText="가장 빛나는 무대에서 지금 뛰고 있는 자들의 어제는 피와 땀 그리고 고통과 외로움으로 가득차 있다." ExtractItem="Statement_Mastery" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="Percent" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="1" Base_ApplyAmount2="3" Base_ApplyAmount3="1" Base_ApplyAmount4="30" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false" CustomCacheData="Mastery_CustomCache_BehindStory">
 			<Desc_Base>
 				<property CaseColor="LimeGold" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="현재 사용하고 있는 특성 $Value$개 당 다음과 같은 효과가 발생합니다.">
@@ -12703,7 +12924,7 @@
 		</class>
 		<class name="TeamPlayer" Base_Title="팀 플레이어" Edible="false" Life="false" IsEnableESP="false" Category="Sub" Type="All" MaxLv="1" Cost="2" MasterRate="25" FlavorText="뭉치면 살고 흩어지면 죽는다." ExtractItem="Statement_Mastery" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="Diamond1" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="Percent" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="20" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
 			<Desc_Base>
-				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="인접한 타일에 아군이 있으면 $Stat$[이] $Value$ 증가합니다.">
+				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="인접한 4방향의 타일에 아군이 있으면 $Stat$[이] $Value$ 증가합니다.">
 					<FormatKeyword>
 						<property FormatKey="Stat" Color="None" Idspace="Status" Key="Accuracy" Value="Title" ValueType="string"/>
 						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
@@ -13098,7 +13319,7 @@
 		</class>
 		<class name="TacticalConnection" Base_Title="전술적 연계" Edible="false" Life="false" IsEnableESP="false" Category="Sub" Type="All" MaxLv="1" Cost="3" MasterRate="25" FlavorText="혼자서는 아무것도 할 수 없지." ExtractItem="Statement_Mastery" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="10" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
 			<Desc_Base>
-				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="아군이 인접한 타일에서 행동을 종료하면 $ActionTime$이 $Value$ 감소합니다.">
+				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="아군이 인접한 4방향의 타일에서 행동을 종료하면 $ActionTime$이 $Value$ 감소합니다.">
 					<FormatKeyword>
 						<property FormatKey="ActionTime" Color="White" Idspace="Status" Key="Act" Value="Title" ValueType="string"/>
 						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
@@ -13594,9 +13815,9 @@
 				</property>
 			</Desc_Base>
 		</class>
-		<class name="ExpandCobweb" Base_Title="거미줄 넓히기" Edible="false" Life="false" IsEnableESP="false" Category="Sub" Type="Yasha" MaxLv="1" Cost="2" MasterRate="15" FlavorText="할 수 있는 일을 다 하고서 하늘의 뜻을 기다려라." ExtractItem="Statement_Mastery" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="Web" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
+		<class name="ExpandCobweb" Base_Title="거미줄 넓히기" Edible="false" Life="false" IsEnableESP="false" Category="Sub" Type="Yasha" MaxLv="1" Cost="2" MasterRate="15" FlavorText="할 수 있는 일을 다 하고서 하늘의 뜻을 기다려라." ExtractItem="Statement_Mastery" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="Diamond1_Attack" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="Web" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
 			<Desc_Base>
-				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="$Buff$ 지형에서 턴을 종료하면, 인접한 지형 중 $Buff$이 생성될 수 있는 지형에는 모두 $Buff$이 생성됩니다.">
+				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="$Buff$ 지형에서 턴을 종료하면, 인접한 4방향의 타일 중 $Buff$이 생성될 수 있는 지형에는 모두 $Buff$이 생성됩니다.">
 					<FormatKeyword>
 						<property FormatKey="Buff" Color="None" Idspace="None" Key="None" Value="$MasteryBuff$" ValueType="text"/>
 					</FormatKeyword>
@@ -14047,7 +14268,7 @@
 				<property Event="AbilityUsed_Self" Script="Mastery_PoisonBullet_AbilityUsed" Order="1"/>
 			</EventHandler>
 		</class>
-		<class name="AntiESPBullet" Base_Title="반이능탄" Edible="false" Life="false" IsEnableESP="false" Category="Sub" Type="Ranger" MaxLv="1" Cost="2" MasterRate="10" FlavorText="적을 알고 나를 알면 백전 백승." ExtractItem="Statement_Mastery" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="SpellReflux" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="Percent" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="50" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
+		<class name="AntiESPBullet" Base_Title="반이능탄" Edible="false" Life="false" IsEnableESP="false" Category="Sub" Type="Ranger" MaxLv="1" Cost="2" MasterRate="10" FlavorText="강한 힘에는 강한 책임이 따른다" ExtractItem="Statement_Mastery" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="SpellReflux" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="Percent" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="50" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
 			<Desc_Base>
 				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="$Ability$를 적에게 적중시키면, 해당 적은 $Value$ 확률로 $Buff$ 상태가 됩니다.">
 					<FormatKeyword>
@@ -14257,6 +14478,26 @@
 					</FormatKeyword>
 				</property>
 			</Desc_Base>
+		</class>
+		<class name="EvilSword" Base_Title="사검" Edible="false" Life="false" IsEnableESP="false" Category="Sub" Type="Swordmagician" MaxLv="1" Cost="2" MasterRate="25" FlavorText="제어하지 못하는 검은 주인을 베기 마련이다." ExtractItem="Statement_Mastery" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="CurseOfSword" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="10" Base_ApplyAmount2="1" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
+			<Desc_Base>
+				<property CaseColor="LimeGold" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="자신의 턴 시작 시, 다음과 같은 효과가 발생합니다.">
+					<FormatKeyword>
+						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
+						<property FormatKey="Value2" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue2$" ValueType="text"/>
+					</FormatKeyword>
+				</property>
+				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="$Vigor$이 최대 수치이면 $Vigor$이 $Value$ 감소하고 $Buff$ 상태가 됩니다.">
+					<FormatKeyword>
+						<property FormatKey="Vigor" Color="WhiteBlue" Idspace="CostType" Key="Vigor" Value="Title" ValueType="string"/>
+						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
+						<property FormatKey="Buff" Color="None" Idspace="None" Key="None" Value="$MasteryBuff$" ValueType="text"/>
+					</FormatKeyword>
+				</property>
+			</Desc_Base>
+			<EventHandler>
+				<property Event="UnitTurnStart_Self" Script="Mastery_EvilSword_UnitTurnStart" Order="2"/>
+			</EventHandler>
 		</class>
 		<class name="EnthusiasticPerformance" Base_Title="열연" Edible="false" Life="false" IsEnableESP="false" Category="Sub" Type="SuperStar" MaxLv="1" Cost="3" MasterRate="10" FlavorText="언제나 지금 이 순간이 나의 최고의 순간이다." ExtractItem="Statement_Mastery" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="2" Base_ApplyAmount2="6" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
 			<Desc_Base>
@@ -14771,7 +15012,11 @@
 		</class>
 		<class name="IronHelmet" Base_Title="강철 투구" Edible="false" Life="false" IsEnableESP="false" Category="Defence" Type="All" MaxLv="1" Cost="2" MasterRate="25" FlavorText="닫혀 버린 마음은 힘으로 열 수 없다." ExtractItem="Statement_Mastery" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
 			<Desc_Base>
-				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="헤드샷에 면역이 됩니다."/>
+				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="$Mastery$에 면역이 됩니다.">
+					<FormatKeyword>
+						<property FormatKey="Mastery" Color="White" Idspace="Mastery" Key="HeadShot" Value="Title" ValueType="string"/>
+					</FormatKeyword>
+				</property>
 			</Desc_Base>
 		</class>
 		<class name="IronArmor" Base_Title="강철 갑옷" Edible="false" Life="false" IsEnableESP="false" Category="Defence" Type="All" MaxLv="1" Cost="2" MasterRate="25" FlavorText="살아남는 자가 승리한다." ExtractItem="Statement_Mastery" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="Percent" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="100" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
@@ -17602,40 +17847,6 @@
 				<property Event="AbilityUsed_Self" Script="Mastery_CursedSword_AbilityUsed" Order="1"/>
 			</EventHandler>
 		</class>
-		<class name="InvisibleSword" Base_Title="보이지 않는 검" Edible="false" Life="false" IsEnableESP="false" Category="Attack" Type="Swordmagician" MaxLv="1" Cost="2" MasterRate="10" FlavorText="네 눈으로 확인하지 않은 것을 아무리 부정하여도 존재하는 것은 사라지지 않는다. " ExtractItem="Statement_Mastery" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="Percent" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="10" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
-			<Desc_Base>
-				<property CaseColor="LimeGold" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="적과 처음 교전 시, 다음과 같은 효과가 발생합니다."/>
-				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="적을 먼저 공격할 경우" CaseLineBreak="false" LineBreak="false" Text=""/>
-				<property CaseColor="Perano" CaseType="Custom" CaseValueType="string" CaseValue="근접 공격" CaseLineBreak="false" LineBreak="false" Text="$Stat$[이] $Value$ 증가합니다.">
-					<FormatKeyword>
-						<property FormatKey="Stat" Color="None" Idspace="Status" Key="Accuracy" Value="Title" ValueType="string"/>
-						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
-					</FormatKeyword>
-				</property>
-				<property CaseColor="Perano" CaseType="Custom" CaseValueType="string" CaseValue="원거리 공격" CaseLineBreak="false" LineBreak="true" Text="자신이 주는 피해량이 $Value$ 증가합니다.">
-					<FormatKeyword>
-						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
-					</FormatKeyword>
-				</property>
-				<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="적에게 먼저 공격 받을 경우" CaseLineBreak="false" LineBreak="false" Text=""/>
-				<property CaseColor="Perano" CaseType="Custom" CaseValueType="string" CaseValue="근접 공격" CaseLineBreak="false" LineBreak="false" Text="$Stat$[이] $Value$ 증가합니다.">
-					<FormatKeyword>
-						<property FormatKey="Stat" Color="None" Idspace="Status" Key="Block" Value="Title" ValueType="string"/>
-						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
-					</FormatKeyword>
-				</property>
-				<property CaseColor="Perano" CaseType="Custom" CaseValueType="string" CaseValue="원거리 공격" CaseLineBreak="false" LineBreak="false" Text="$Stat$[이] $Value$ 증가합니다.">
-					<FormatKeyword>
-						<property FormatKey="Stat" Color="None" Idspace="Status" Key="Dodge" Value="Title" ValueType="string"/>
-						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
-					</FormatKeyword>
-				</property>
-			</Desc_Base>
-			<EventHandler>
-				<property Event="AbilityUsed_Self" Script="Mastery_InvisibleSword_AbilityUsed" Order="1"/>
-				<property Event="AbilityAffected" Script="Mastery_InvisibleSword_AbilityAffected" Order="1"/>
-			</EventHandler>
-		</class>
 		<class name="Swordmaster" Base_Title="검술사" Edible="false" Life="false" IsEnableESP="false" Category="Attack" Type="Swordsman" MaxLv="1" Cost="1" MasterRate="25" FlavorText="진정한 검사란, 검을 쥐지 않고 사물을 베는 자를 말한다." ExtractItem="Statement_Mastery" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_IncreaseHitRate_Slashing="5" Base_IncreaseCriticalStrikeChance_Slashing="5" Base_IncreaseCriticalStrikeDeal_Slashing="5" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false"/>
 		<class name="SlashInjury" Base_Title="상처 베기" Edible="false" Life="false" IsEnableESP="false" Category="Attack" Type="Swordsman" MaxLv="1" Cost="2" MasterRate="25" FlavorText="비겁하다고 외치기 전에 승부를 포기하게나." ExtractItem="Statement_Mastery" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" BuffGroup="Bleeding" SubBuffGroup="Bruise" ApplyAmountType="Percent" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="50" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
 			<Desc_Base>
@@ -18600,8 +18811,13 @@
 				</property>
 			</Desc_Base>
 		</class>
-		<class name="Amulet_Dorori_Feather_Gold" Base_Title="" Edible="false" Life="false" IsEnableESP="false" Category="Equipment" Type="Equipment" MaxLv="1" Cost="0" MasterRate="0" FlavorText="" ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="Percent" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="1" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
+		<class name="Amulet_Dorori_Feather_Gold" Base_Title="" Edible="false" Life="false" IsEnableESP="false" Category="Equipment" Type="Equipment" MaxLv="1" Cost="0" MasterRate="0" FlavorText="" ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="Percent" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="3" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
 			<Desc_Base>
+				<property CaseColor="LimeGold" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="미션 진행 중 $Value$회에 한하여, 다음과 같은 효과가 발생합니다.">
+					<FormatKeyword>
+						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
+					</FormatKeyword>
+				</property>
 				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="$Ability$를 사용하여도 $Overcharge$ 상태가 해제되지 않습니다.">
 					<FormatKeyword>
 						<property FormatKey="Overcharge" Color="White" Idspace="SPCondition" Key="Overcharge" Value="Title" ValueType="string"/>
@@ -19422,6 +19638,7 @@
 				</property>
 			</Desc_Base>
 		</class>
+		<class name="Jacket_PinkHorn" Base_Title="" Edible="false" Life="false" IsEnableESP="false" Category="Equipment" Type="Equipment" MaxLv="1" Cost="0" MasterRate="0" FlavorText="" ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" BuffGroup="Lightning" ApplyAmountType="Percent" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="10" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false" ImmuneDebuff_BuffGroup="true"/>
 		<class name="Coat_Skull_Legend" Base_Title="" Edible="false" Life="false" IsEnableESP="false" Category="Equipment" Type="Equipment" MaxLv="1" Cost="0" MasterRate="0" FlavorText="" ExtractItem="None" UseSubMasteryTooltip="false" UseSubJobMasteryTooltip="false" UseBuffTooltip="true" Mastery="None" Ability="None" ChainAbility="None" ModifyAbility="None" ModifyAbilityType="None" ModifyAbilityOrder="0" Range="None" SubRange1="None" SubRange2="None" TurnPlayType="None" SubType="None" Buff="None" SubBuff="None" ThirdBuff="None" ForthBuff="None" ApplyAmountType="Percent" ApplyAmountType2="None" ApplyAmountType3="None" ApplyAmountType4="None" ApplyAmountType5="None" Base_ApplyAmount="10" CounterMeleeAttack="false" CounterShooting="false" ReactionMeleeAttack="false" ReactionShooting="false">
 			<Desc_Base>
 				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="$Evening$, $Night$, $Indoor_Dark$에서 $Ability$, $Ability2$, $Ability3$에 의해 공격 받을 경우, $Stat$, $Stat2$[이] $Value$ 증가합니다.">

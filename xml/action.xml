@@ -99,4 +99,5 @@
 	<class name="Switch" Title="[!Ignore]스위치" Script="Action_Switch" ArgumentList="SwitchEnvironment, TestExpression, CaseDefinition"/>
 	<class name="CallActionBundle" Title="[!Ignore]액션 모음 수행" Script="Action_CallActionBundle" ArgumentList="ActionBundle"/>
 	<class name="ResetObject" Title="[!Ignore]유닛 상태 초기화" Script="Action_ResetObject" ArgumentList="Unit, MaxHP, MaxCost, ResetSP, Cooldown, UseCount, TurnEnd, IncludeDead"/>
+	<class name="ToggleBossEvent" Title="[!Ignore]보스 연출 토글" Script="Action_ToggleBossEvent" ArgumentList="OffOn"/>
 </idspace>

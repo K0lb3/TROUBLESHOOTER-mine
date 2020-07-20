@@ -106,9 +106,10 @@
 		<List>
 			<property Type="Job" Text="ENGLISH TRANSLATION SUPPORTER" Align="Center" Margin="40"/>
 			<property Type="Name2" Text="BokehBot" Text2="Delayed Hopkick" Align="Center"/>
-			<property Type="Name2" Text="Dj Jazzy Fresherson" Text2="Null Winter" Align="Center"/>
-			<property Type="Name2" Text="S2SKY" Text2="TargetPractice" Align="Center"/>
-			<property Type="Name2" Text="Uriel" Text2="x_equals_speed" Align="Center"/>
+			<property Type="Name2" Text="Echo" Text2="Dj Jazzy Fresherson" Align="Center"/>
+			<property Type="Name2" Text="Null Winter" Text2="S2SKY" Align="Center"/>
+			<property Type="Name2" Text="TargetPractice" Text2="Uriel" Align="Center"/>
+			<property Type="Name2" Text="x_equals_speed" Align="Center"/>
 		</List>
 	</class>
 	<class name="Credit13_2">

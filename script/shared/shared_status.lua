@@ -1567,17 +1567,13 @@ function CalculatedProperty_SpecialCase_Mastery_IncreaseDamage_ESP(obj, arg, dat
 	end
 	
 	-- 마녀의 책
-	local witchBookCount = nil;
 	result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'WitchBook', data, info, function(obj, mastery)
-		witchBookCount = mastery.CustomCacheData;
-		return witchBookCount * mastery.ApplyAmount;
+		return mastery.CustomCacheData * mastery.ApplyAmount;
 	end);
-	if witchBookCount ~= nil then
-		-- 대마녀
-		result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'ArchWitch', data, info, function(obj, mastery)
-			return witchBookCount * mastery.ApplyAmount;
-		end);
-	end
+	-- 대마녀
+	result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'ArchWitch', data, info, function(obj, mastery)
+		return mastery.CustomCacheData * mastery.ApplyAmount;
+	end);
 	
 	-- 특성 현자
 	local addMastery_Sage = GetAdditionalMasteryStatusByMasteryCount(obj, 'Sage', data, function(mastery)
@@ -2390,13 +2386,16 @@ g_masteryApplyAmountExplain = false;
 local customKeywordTable = {
 	Buff = {
 		Dead = function(buff)
-			return GetDeadText();
+			return GetDeadText(true);
 		end,
 		BuffTitleColor = function(buff)
 			return GetBuffTitleColor(buff);
 		end,
 		BuffTitle = function(buff)
-			return GetBuffText(buff);
+			return GetBuffText(buff, true);
+		end,
+		CharacterLevel = function(mastery)
+			return GetWord('CharacterLevel');
 		end,
 		StatusMessage = function(buff)
 			return GetStatusMessage(buff);
@@ -2443,6 +2442,12 @@ local customKeywordTable = {
 		DischargeDamageType = function(buff)
 			return GetBuffDischargeDamageTypeText(buff);
 		end,
+		DischargeOnOverchargeRelease = function(buff)
+			return GetBuffDischargeOnOverchargeReleaseText(buff);
+		end,
+		DischargeOnNoAttackableTarget = function(buff)
+			return GetBuffDischargeOnNoAttackableTargetText(buff);
+		end,
 		ActionController = function(buff)
 			return GetBuffActionControllerText(buff);
 		end,
@@ -2456,25 +2461,25 @@ local customKeywordTable = {
 			return GetBuffExplosionText(buff);
 		end,		
 		ApplyAmountValue = function(buff)
-			return MasteryApplyAmountValue(buff.ApplyAmountType, 'ApplyAmount');
+			return MasteryApplyAmountValue(buff.ApplyAmountType, 'ApplyAmount', true);
 		end,
 		ApplyAmountValue2 = function(buff)
-			return MasteryApplyAmountValue(buff.ApplyAmountType2, 'ApplyAmount2');
+			return MasteryApplyAmountValue(buff.ApplyAmountType2, 'ApplyAmount2', true);
 		end,
 		ApplyAmountValue3 = function(buff)
-			return MasteryApplyAmountValue(buff.ApplyAmountType3, 'ApplyAmount3');
+			return MasteryApplyAmountValue(buff.ApplyAmountType3, 'ApplyAmount3', true);
 		end,
 		ApplyAmountValue4 = function(buff)
-			return MasteryApplyAmountValue(buff.ApplyAmountType4, 'ApplyAmount4');
+			return MasteryApplyAmountValue(buff.ApplyAmountType4, 'ApplyAmount4', true);
 		end,
 		Overcharge = function(buff)
-			return '$White$'..GetWord('SPFullGained')..'$Blue_ON$';
+			return '$White$'..GetWord('SPFullGained')..'$ColorEnd$';
 		end,
 		AddBuffName = function(buff)
 			local buffList = GetClassList('Buff');
 			local buff = SafeIndex(buffList, buff.AddBuff);
 			if buff then
-				return GetBuffText(buff);
+				return GetBuffText(buff, true);
 			else
 				return nil;
 			end
@@ -2483,7 +2488,7 @@ local customKeywordTable = {
 			local buffList = GetClassList('Buff');
 			local buff = SafeIndex(buffList, buff.AddBuff2);
 			if buff then
-				return GetBuffText(buff);
+				return GetBuffText(buff, true);
 			else
 				return nil;
 			end
@@ -2492,7 +2497,7 @@ local customKeywordTable = {
 			local buffList = GetClassList('Buff');
 			local buff = SafeIndex(buffList, buff.AuraBuff);
 			if buff then
-				return GetBuffText(buff);
+				return GetBuffText(buff, true);
 			else
 				return nil;
 			end
@@ -2504,11 +2509,14 @@ local customKeywordTable = {
 			return GetNonCoverableMessage(buff);
 		end,
 		MaxStack = function(buff)
-			return '$White$'..buff.Base_MaxStack..'$Blue_ON$';
+			return '$White$'..buff.Base_MaxStack..'$ColorEnd$';
 		end,
 		BuffGroup = function(buff)
 			return GetBuffGroupText(buff);
 		end,
+		BuffDescBase = function(buff)
+			return GetMasteryMasteryDescBaseText(buff.Desc_Base);
+		end
 	},
 	Mastery = {
 		Dead = function(mastery)
@@ -3642,11 +3650,11 @@ function CalculatedProperty_TextFormater_BuffFormat(buff, arg)
 		end
 	end
 	-- 기본 설명.
-	if buff.Desc_Base ~= '' then
+	if buff.Desc_Base and #buff.Desc_Base > 0 and buff.IsDescBaseShow then
 		if result == '' then
-			result = '$Blue_ON$'..buff.Desc_Base;
+			result = '$Blue_ON$'..'$BuffDescBase$';
 		else
-			result = result..'\n'..'$Blue_ON$'..buff.Desc_Base;
+			result = result..'\n'..'$Blue_ON$'..'$BuffDescBase$';
 		end
 	end
 	-- 자동 설명

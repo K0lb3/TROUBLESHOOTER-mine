@@ -631,7 +631,7 @@ function BuffNeutralizer_Swamp(buff)
 end
 function BuffNeutralizer_Water(buff)
 	buff.Disabled = true;
-	buff.Desc_Base = '';
+	buff.IsDescBaseShow = false;
 	BuffTableColumnReseter(buff, 'Base_ApplyAmount');
 	BuffTableColumnReseter(buff, 'Base_MoveDist');
 	BuffTableColumnReseter(buff, 'Base_Dodge');
@@ -644,7 +644,7 @@ function BuffNeutralizer_Web(buff)
 end
 function BuffNeutralizer_Ice(buff)
 	buff.Disabled = true;
-	buff.Desc_Base = '';
+	buff.IsDescBaseShow = false;
 	buff.Stable = true;
 	BuffTableColumnReseter(buff, 'Base_ApplyAmount');
 	BuffTableColumnReseter(buff, 'Base_Accuracy');
@@ -653,7 +653,7 @@ function BuffNeutralizer_Ice(buff)
 end
 function BuffNeutralizer_Lava(buff)
 	buff.Disabled = true;
-	buff.Desc_Base = '';
+	buff.IsDescBaseShow = false;
 	buff.Stable = true;
 	BuffTableColumnReseter(buff, 'Base_Accuracy');
 	BuffTableColumnReseter(buff, 'Base_Dodge');
@@ -662,7 +662,7 @@ function BuffNeutralizer_Lava(buff)
 end
 function BuffNeutralizer_ContaminatedWater(buff)
 	buff.Disabled = true;
-	buff.Desc_Base = '';
+	buff.IsDescBaseShow = false;
 	BuffTableColumnReseter(buff, 'Base_ApplyAmount');
 	BuffTableColumnReseter(buff, 'Base_RegenVigor');
 	BuffTableColumnReseter(buff, 'Base_MoveDist');
@@ -1070,7 +1070,7 @@ function Mastery_CustomCache_SameTypeMasteryCount(obj, arg)
 	return Mastery_CustomCache_MasteryCountByType(obj, Set.new({obj.Type.name}));
 end
 function Mastery_CustomCache_RevealWildNature(obj, arg)
-	return Mastery_CustomCache_MasteryCountByFunc(obj, function(mastery) return mastery.Category.name == 'Beast' or mastery.Type.name == 'Beast' end);
+	return Mastery_CustomCache_MasteryCountByFunc(obj, function(mastery) return mastery.Category.name == 'Beast' or mastery.Type.name == 'Beast' or mastery.Type.CheckType == 'Job' end);
 end
 function Mastery_CustomCache_MajorTextbooks(obj, arg)
 	return Mastery_CustomCache_JobMasteryCount(obj,arg);

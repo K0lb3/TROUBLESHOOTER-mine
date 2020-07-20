@@ -792,7 +792,7 @@ function Command_whatsalary(company, dc, rosterName)
 end
 function Command_cp(company, dc, propKey, propVal) 
 	local propKey = string.gsub(propKey, '%.', '/');
-	local keyChain = table.map(string.split(propKey, '/'), function(k) if string.match(k, '%d+') then return tonumber(k) else return k end end);
+	local keyChain = table.map(string.split(propKey, '/'), function(k) if string.match(k, '^%d+$') then return tonumber(k) else return k end end);
 	local prevPropValue = SafeIndex(company, unpack(keyChain));
 	dc:UpdateCompanyProperty(company, propKey, propVal);
 	dc:Commit('Command_cp');
@@ -1655,6 +1655,71 @@ function Command_goray(company, dc)
 		dc:UpdateCompanyProperty(company, kv[1], kv[2]);
 	end
 	dc:Commit('Command_goray');
+end
+
+function Command_mission_reward(company, dc, missionStr, cid)
+	local missionResultList = string.split(missionStr, '[, ]');
+	LogAndPrint('missionResultList:', missionResultList);
+
+	local missionList = GetClassList('Mission');
+	local monsterList = GetClassList('Monster');
+	local techniqueList = GetClassList('Technique');
+	local itemList = GetClassList('Item');
+
+	local missionMonSet = {};
+	for _, missionName in ipairs(missionResultList) do
+		local missionCls = missionList[missionName];
+		for _, info in ipairs(missionCls.Enemies) do
+			missionMonSet[info.Type] = true;
+		end
+	end
+	LogAndPrint('missionMonSet:', missionMonSet);
+
+	local rewardItemSet = {};
+	local rewardTechSet = {};
+
+	for monsterName, _ in pairs(missionMonSet) do
+		local monCls = monsterList[monsterName];
+		-- 영웅 이상 장비 아이템
+		for _, reward in ipairs(monCls.Rewards) do
+			local itemCls = itemList[reward.Item]
+			if itemCls.Rank.Weight >= 5 and #itemCls.Type.EquipmentPosition > 0 and itemCls.Type.EquipmentPosition[1] ~= 'None' then
+				rewardItemSet[reward.Item] = true;
+			end
+		end
+		-- 특성 연구
+		for masteryName, _ in pairs(monCls.Masteries) do
+			local tech = GetWithoutError(company.Technique, masteryName);
+			if tech and not tech.Opened then
+				rewardTechSet[masteryName] = true;
+			end
+		end
+	end
+
+	local rewardItemList = {};
+	local rewardTechList = {};
+
+	for k, v in pairs(rewardItemSet) do
+		table.insert(rewardItemList, k);
+	end
+	for k, v in pairs(rewardTechSet) do
+		table.insert(rewardTechList, k);
+	end
+
+--	LogAndPrint('rewardItemList:', rewardItemList);
+	LogAndPrint('rewardTechList:', rewardTechList);
+	
+	-- 쿼리 생성
+	cid = cid or 0;
+	for _, tech in ipairs(rewardTechList) do
+		LogAndPrint(string.format('call set_companyInfo(%d, \'Technique/%s/Opened\', \'true\');', tonumber(cid), tech));
+	end
+	
+	for techType, tech in pairs(company.Technique) do
+		if tech.Opened then
+			LogAndPrint(string.format('call add_companyInfo(%d, \'Mastery/%s/Amount\', 30, @error);', tonumber(cid), tech.name));
+		end
+	end
 end
 
 -- 미션용

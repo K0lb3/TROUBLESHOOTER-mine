@@ -248,6 +248,7 @@
 			</StartingMastery>
 			<Profession>
 				<property Type="Potion" Lv="1"/>
+				<property Type="MaterialReinforce" Lv="1"/>
 				<property Type="Sword" Lv="2"/>
 			</Profession>
 			<FoodEmotions>
@@ -746,7 +747,7 @@
 			<Profession>
 				<property Type="Leather" Lv="1"/>
 				<property Type="Clothes" Lv="2"/>
-				<property Type="Jewel" Lv="2"/>
+				<property Type="Jewel" Lv="3"/>
 			</Profession>
 			<FoodEmotions>
 				<property name="Normal" value="Normal"/>
@@ -987,7 +988,7 @@
 				<property value="StarryNight"/>
 			</StartingMastery>
 			<Profession>
-				<property Type="PsionicStone" Lv="2"/>
+				<property Type="PsionicStone" Lv="3"/>
 			</Profession>
 			<FoodEmotions>
 				<property name="Normal" value="Normal"/>
@@ -1225,7 +1226,7 @@
 				<property Type="MachinePistol" Lv="2"/>
 				<property Type="Grenade" Lv="1"/>
 				<property Type="Leather" Lv="2"/>
-				<property Type="MaterialReinforce" Lv="1"/>
+				<property Type="MaterialReinforce" Lv="2"/>
 			</Profession>
 			<FoodEmotions>
 				<property name="Normal" value="Normal"/>
@@ -2063,7 +2064,7 @@
 				<property Type="Drone" Lv="2"/>
 				<property Type="Gear" Lv="2"/>
 				<property Type="Grenade" Lv="2"/>
-				<property Type="MaterialReinforce" Lv="2"/>
+				<property Type="MaterialReinforce" Lv="3"/>
 			</Profession>
 			<FoodEmotions>
 				<property name="Normal" value="Normal"/>

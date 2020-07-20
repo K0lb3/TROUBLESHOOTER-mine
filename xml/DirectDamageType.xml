@@ -15,6 +15,7 @@
 	<class name="VendureNeguriSet5" Title="" BgColor="DodgerBlue" HitType="Heal" AttackerState="Normal" HitResult="Heal" HitPos="Chest"/>
 	<class name="Poison" Title="중독" BgColor="Red" HitType="Poison" AttackerState="Normal" HitResult="Hit" HitPos="Chest"/>
 	<class name="Bleeding" Title="출혈" BgColor="Red" HitType="Blood" AttackerState="Normal" HitResult="Hit" HitPos="Chest"/>
+	<class name="SpellReflux" Title="마력 역류" BgColor="Red" HitType="Blood" AttackerState="Normal" HitResult="Hit" HitPos="Chest"/>
 	<class name="Lightning_Shock" Title="감전" BgColor="Red" HitType="Lightning" AttackerState="Normal" HitResult="Hit" HitPos="Chest"/>
 	<class name="LightningNeguriSet5" Title="" BgColor="Red" HitType="Lightning" AttackerState="Normal" HitResult="Hit" HitPos="Chest"/>
 	<class name="Fire" Title="화상" BgColor="Red" HitType="Fire" AttackerState="Normal" HitResult="Hit" HitPos="Chest"/>

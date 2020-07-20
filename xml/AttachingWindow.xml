@@ -120,6 +120,12 @@
 		<class name="StatusNeutral" Key="Status" Layout="UnitInfo4" AttachType="Status"/>
 		<class name="StatusCitizen" Key="Status" Layout="UnitInfoCitizen" AttachType="Status"/>
 		<class name="StatusThirdForce" Key="Status" Layout="UnitInfo5" AttachType="Status"/>
+		<class name="StatusSimple" Key="Status" Layout="UnitInfoSimple" AttachType="Status"/>
+		<class name="StatusEnemySimple" Key="Status" Layout="UnitInfo2Simple" AttachType="Status"/>
+		<class name="StatusAllySimple" Key="Status" Layout="UnitInfo3Simple" AttachType="Status"/>
+		<class name="StatusNeutralSimple" Key="Status" Layout="UnitInfo4Simple" AttachType="Status"/>
+		<class name="StatusCitizenSimple" Key="Status" Layout="UnitInfoCitizenSimple" AttachType="Status"/>
+		<class name="StatusThirdForceSimple" Key="Status" Layout="UnitInfo5Simple" AttachType="Status"/>
 		<class name="Test" Key="Test" Layout="Sign" AttachType="TopSign"/>
 		<class name="Balloon" Key="Balloon" Layout="Balloon" AttachType="Balloon"/>
 		<class name="Sign" Key="Sign" Layout="Sign" AttachType="TopSign"/>

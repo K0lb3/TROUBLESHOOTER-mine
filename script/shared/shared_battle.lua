@@ -1531,6 +1531,12 @@ function GetDamageCalculator(Attacker, Defender, Ability, weather, temperature, 
 					damageComposer:AddDecompData('OriginalMultiplier', multiplier_PowerfulTrap, {MakeMasteryStatInfo(mastery_PowerfulTrap.name, multiplier_PowerfulTrap)});
 				end
 			end
+			-- 연계된 함정
+			local mastery_ChainTrap = GetMasteryMastered(masteryTable, 'ChainTrap');
+			if mastery_ChainTrap then
+				local multiplier_ChainTrap = mastery_ChainTrap.ApplyAmount;
+				damageComposer:AddDecompData('OriginalMultiplier', multiplier_ChainTrap, {MakeMasteryStatInfo(mastery_ChainTrap.name, multiplier_ChainTrap)});
+			end
 		end
 	end
 	perfChecker:StartRoutine('NonStatic');
@@ -2682,13 +2688,8 @@ function GetModifyAbilityDamageFromEvent_Normal(info, info_Multiplier, Ability, 
 	if mastery_Foxy then
 		local multiplier_Foxy = 0;
 		if Attacker.Lv > Defender.Lv then
-			multiplier_Foxy = mastery_Foxy.ApplyAmount;
-		elseif Attacker.Lv < Defender.Lv then
-			multiplier_Foxy = -1 * mastery_Foxy.ApplyAmount;
-		end
-		if multiplier_Foxy ~= 0 then
-			multiplier = multiplier + multiplier_Foxy;
-			table.insert(info_Multiplier, MakeMasteryStatInfo(mastery_Foxy.name, multiplier_Foxy));
+			multiplier = multiplier + mastery_Foxy.ApplyAmount;
+			table.insert(info_Multiplier, MakeMasteryStatInfo(mastery_Foxy.name, mastery_Foxy.ApplyAmount));
 		end
 	end
 	
@@ -3252,9 +3253,9 @@ function GetModifyAbilityDamageFromEvent_Normal_Heal_Final(info, Ability, Attack
 	
 	-- 생존 본능
 	local mastery_InstinctForSurvival = GetMasteryMastered(masteryTable_Defender, 'InstinctForSurvival');
-	if mastery_InstinctForSurvival and Defender.HP <= Defender.MaxHP * mastery_InstinctForSurvival.ApplyAmount / 100 then
-		multiplier = multiplier + mastery_InstinctForSurvival.ApplyAmount2;
-		table.insert(info, MakeMasteryStatInfo(mastery_InstinctForSurvival.name, mastery_InstinctForSurvival.ApplyAmount2));
+	if mastery_InstinctForSurvival then
+		multiplier = multiplier + mastery_InstinctForSurvival.ApplyAmount;
+		table.insert(info, MakeMasteryStatInfo(mastery_InstinctForSurvival.name, mastery_InstinctForSurvival.ApplyAmount));
 	end
 	return multiplier;
 end
@@ -4489,7 +4490,7 @@ function GetModifyAbilityCriticalStrikeDealFromEvent(info, Ability, Attacker, De
 		result = result - applyAmount;
 		table.insert(info, MakeMasteryStatInfo(mastery_IronArmor.name, -applyAmount));
 	end	
-	
+		
 	-- 균열 예측 AI
 	local mastery_PredictionCrackingAI = GetMasteryMastered(masteryTable_Defender, 'PredictionCrackingAI');
 	if mastery_PredictionCrackingAI and GetRelation(Attacker, Defender) == 'Enemy' then
@@ -4555,6 +4556,11 @@ function GetModifyAbilityCriticalStrikeDealFromEvent(info, Ability, Attacker, De
 	
 	-- 드라키의 완벽한 비늘
 	result = result + GetMasteryValueByCustomFuncWithInfo(masteryTable_Defender, 'Amulet_Draky_Scale3', info, function(mastery)
+		return -1 * mastery.ApplyAmount;
+	end);
+	
+	-- 물렁살
+	result = result + GetMasteryValueByCustomFuncWithInfo(masteryTable_Defender, 'TenderSkin', info, function(mastery)
 		return -1 * mastery.ApplyAmount;
 	end);
 	

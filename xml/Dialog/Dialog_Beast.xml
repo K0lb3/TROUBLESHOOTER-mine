@@ -20,4 +20,9 @@
 			<property Type="Script" Script="ProgressEvolveBeastMasteryAction" C_RosterName="env.roster_name" C_BeastType="env.beast_type" C_CandiateMasteries="env.candidate_masteries"/>
 		</Scripts>
 	</class>
+	<class name="RetrainBeast_EntryPoint">
+		<Scripts>
+			<property Type="Script" Script="ProgressRetrainBeastMasteryAction" C_RosterName="env.roster_name"/>
+		</Scripts>
+	</class>
 </idspace>

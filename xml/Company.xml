@@ -82,6 +82,7 @@
 		<rule property="WeaponCostume" type="linktable" target="WeaponCostume"/>
 		<rule property="WeaponCostumeOpened" type="bool" default="false"/>
 		<rule property="ZoneState" type="linktable" target="Zone"/>
+		<rule property="NeedAsiaServerErrorReward" type="bool" default="true"/>
 	</schema>
 	<class name="company" LoginTime="0" ClientCount="0" TroublesumUpdateTime="0" RepeatQuestUpdateTime="0" LastMission="">
 		<AlignmentPoint>

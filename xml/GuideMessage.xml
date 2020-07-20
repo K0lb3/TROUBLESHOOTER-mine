@@ -234,9 +234,11 @@
 	<class name="BonusExtractItem" Title="+%d 성공적인 추출!"/>
 	<class name="BonusUpgradeItem" Title="+%d 성공적인 강화! "/>
 	<class name="Buff_BreakType" Title="저항 속성:"/>
-	<class name="Buff_DischargeOnAttack" Title="공격 어빌리티를 사용 할 경우, 해당 상태는 자동 해제 됩니다."/>
+	<class name="Buff_DischargeOnAttack" Title="$Ability$를 사용하면 해제됩니다."/>
 	<class name="Buff_DischargeOnHit" Title="피해를 입으면 $BuffTitle$ 상태가 해제됩니다."/>
 	<class name="Buff_DischargeOnHitDamageType" Title="$DischargeDamageType$ 속성 피해를 입으면 $BuffTitle$ 상태가 해제됩니다."/>
+	<class name="Buff_DischargeOnOverchargeRelease" Title="$Overcharge$ 상태 해제 시 자동 해제됩니다."/>
+	<class name="Buff_DischargeOnNoAttackableTarget" Title="턴 시작 시, 자신의 시야 내 공격할 대상이 없으면 현재 턴을 종료하고 해당 상태가 해제됩니다."/>
 	<class name="Buff_GroupType" Title="상태 계열:"/>
 	<class name="Buff_HPDrain" Title="적에게 입힌 피해량의 $HPDrainValue$를 자신의 체력으로 회복합니다."/>
 	<class name="Buff_HPModifier_Damage" Title="$HPModifyTimingValue$ 시 $HPChange$ 의 피해를 입습니다."/>
@@ -416,7 +418,7 @@
 	<class name="FieldEffect_BaseTurn_Normal" Title="발생한 $FieldEffect$[은] 기본적으로 $Turn$턴 동안 유지되며 한 턴의 턴 대기 시간은 $Wait$입니다."/>
 	<class name="FieldEffect_BuffAffector_ApplyType_InTile" Title="$FieldEffect$[가] 발생한 지형인 경우, $ApplyBuff$ 상태가 됩니다."/>
 	<class name="FieldEffect_BuffAffector_ApplyType_ThroughTile" Title="$FieldEffect$[가] 발생한 지형으로 이동하거나 해당 지형을 지나칠 경우, $ApplyBuff$ 상태가 됩니다."/>
-	<class name="FieldEffect_FieldEffectTimeElapsed" Title="발생한 $FieldEffect$[은] 인접한 타일로 번질 수 있으며, 날씨와 지형에 따라 지속 시간과 번지는 속도가 증가 혹은 감소할 수 있습니다."/>
+	<class name="FieldEffect_FieldEffectTimeElapsed" Title="발생한 $FieldEffect$[은] 인접한 4방향의 타일로 번질 수 있으며, 날씨와 지형에 따라 지속 시간과 번지는 속도가 증가 혹은 감소할 수 있습니다."/>
 	<class name="FieldEffect_FieldEffectTimeElapsed2" Title="발생한 $FieldEffect$[은] 날씨와 지형에 따라 지속 시간이 증가 혹은 감소할 수 있습니다."/>
 	<class name="FieldEffect_FieldEffectTimeElapsed_Bonus_Ratio" Title="턴 시작 시, 인접 타일의 $FieldEffect$[가] 번져올 확률이 $Ratio$ 증가합니다."/>
 	<class name="FieldEffect_FieldEffectTimeElapsed_Bonus_Ratio2" Title="턴 시작 시, 인접 타일의 $FieldEffect$[가] 번져올 확률이 $Ratio$ 감소합니다."/>
@@ -966,6 +968,24 @@ $White$마무리$Blue_ON$ 효과가 발생 후, 모든 공연 슬롯과 $White$�
 [colour='FFFFE959']회복약[colour='FFCCCCCC'] 어빌리티는 해당 아이템을 장착하고 임무를 진행할 경우 활성화 되는 [colour='FFFFFF00']아이템[colour='FFCCCCCC'] 어빌리티이며 임무 중에 사용 가능 횟수가 정해진 [colour='FFFFAA00']횟수 제한[colour='FFCCCCCC'] 어빌리티 입니다.
 
 [colour='FFFFE959']회복약[colour='FFCCCCCC'] 어빌리티를 사용 시 [colour='FFFFE959']행동력[colour='FFFFFFFF'] 1[colour='FFCCCCCC'] 을 소모합니다. 따라서 해당 어빌리티 사용 후 [colour='FF00FF00']이동[colour='FFCCCCCC'] 혹은 [colour='FFFF8000']공격[colour='FFCCCCCC'] 어빌리티 사용이 가능합니다."/>
+	<class name="RetrainBeastGuide" Title="$White$야수 재훈련을 위해서는 아래의 조건을 모두 만족해야 합니다.
+
+$LimeGold$재훈련 비용
+$Manual$훈련서 20개[colour-end]
+
+$LimeGold$재훈련 가능 대상
+$LoyalMaxEvolution$충성적인 완전체 야수[colour-end]
+
+$LimeGold$재훈련 가능한 진화 특성
+$NonGeneMastery$변경 가능한 본성, 훈련 특성을 소유해야 합니다.[colour-end]
+$Tomato$유전, 초능력 특성은 재훈련으로 변경 불가능합니다.[colour-end]
+
+$White$$EvolutionMasteryState$
+
+$Yellow$진화 특성이 변경 가능한 모든 진화 단계에서 무작위의 유전, 초능력, 본성 특성과 모든 훈련 특성 중 하나를 선택할 수 있습니다.
+
+$Tomato$재훈련으로 선택한 특성에 따라 스트레스로 인해 야수의 충성도가 소폭 감소합니다."/>
+	<class name="RetrainStress" Title="$Beast$[가] 재훈련의 스트레스로 인해 충성도가 $LoseAmount$ 하락하였습니다."/>
 	<class name="RestrictedArea" Title="아직 \[%s\]구역에 대한 영향력이 없습니다"/>
 	<class name="RetryFromCheckPoint_LastTry" Title="추가로 의욕이 50 소모됩니다. 모든 캐릭터의 의욕이 최저치에 근접하였으므로 이번에 체크포인트에서 다시 시작하면 다시 시작할 수 없습니다. 계속 진행하시겠습니까?"/>
 	<class name="RetryFromCheckPoint_LowCondition" Title="의욕이 낮아 체크포인트 불러오기를 수행할 수 없습니다."/>

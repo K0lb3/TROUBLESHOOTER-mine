@@ -894,6 +894,8 @@
 				<property childid="Frame/BeastManager/MyBeasts/Swap" event="Clicked" script="OnClickBeastManagerSwapAccept" sound="mouseover_1.wav"/>
 				<property childid="Frame/BeastManager/MyBeasts/Swap" event="MouseEntersSurface" script="EnterToolTip_Line"/>
 				<property childid="Frame/BeastManager/MyBeasts/Swap" event="MouseLeavesSurface" script="LeaveToolTip_Line"/>
+				<property childid="Frame/BeastManager/MyBeasts/FilterMode" event="ListSelectionAccepted" script="OnClickBeastManagerFilterChanged"/>
+				<property childid="Frame/BeastManager/CageBeasts/FilterMode" event="ListSelectionAccepted" script="OnClickBeastManagerFilterChanged"/>
 			</Scripts>
 			<Animations>
 				<property childid="this" anim="Show_Alpha_Window"/>
@@ -1105,6 +1107,9 @@
 				<property childid="Rename" event="MouseEntersSurface" script="EnterFormationButton" sound="mouseover_1.wav"/>
 				<property childid="Rename" event="MouseLeavesSurface" script="LevaeFormationButton"/>
 				<property childid="Rename" event="Clicked" script="RenameRosterClicked" sound="click_character.wav"/>
+				<property childid="Retrain" event="MouseEntersSurface" script="EnterFormationButton" sound="mouseover_1.wav"/>
+				<property childid="Retrain" event="MouseLeavesSurface" script="LevaeFormationButton"/>
+				<property childid="Retrain" event="Clicked" script="RetrainRosterClicked" sound="click_character.wav"/>
 				<property childid="BasicInfo/BasicMasteryButton" event="MouseLeavesSurface" script="LeaveToolTip_Line"/>
 				<property childid="BasicInfo/BasicMasteryButton" event="MouseEntersSurface" script="EnterToolTip_Line" sound="mouseover_1.wav"/>
 				<property childid="BasicInfo/BasicMasteryButton" event="Clicked" script="RosterBasicMasteryClicked" sound="click_character.wav"/>
@@ -2157,6 +2162,7 @@
 			</ChildWindows>
 			<Scripts>
 				<property childid="this" event="KeyUp" script="DialogKeyUpRoot"/>
+				<property childid="this" event="MouseButtonUp" script="OnDialogClickRoot"/>
 				<property childid="this" event="Hidden" script="OnDialogBattleHidden"/>
 				<property childid="ControlButton" event="KeyUp" script="DialogKeyUp"/>
 				<property childid="ControlButton" event="Clicked" script="DialogSkipOrNext"/>
@@ -5519,6 +5525,8 @@
 		<class name="ScoutRoster_Mastery" File="SetCompanyInfo_Mastery.layout">
 			<Scripts>
 				<property childid="this" event="MouseButtonUp" sound="mouseover_5.wav"/>
+				<property childid="this" event="MouseEntersSurface" script="EnterToolTip_Mastery"/>
+				<property childid="this" event="MouseLeavesSurface" script="LeaveToolTip_Mastery"/>
 				<property childid="this" event="SelectStateChanged" script="ScoutRosterMasterySelectChanged"/>
 			</Scripts>
 		</class>
@@ -5563,6 +5571,8 @@
 		<class name="ScoutBeast_Mastery" File="SetCompanyInfo_Mastery.layout">
 			<Scripts>
 				<property childid="this" event="MouseButtonUp" sound="mouseover_5.wav"/>
+				<property childid="this" event="MouseEntersSurface" script="EnterToolTip_Mastery"/>
+				<property childid="this" event="MouseLeavesSurface" script="LeaveToolTip_Mastery"/>
 				<property childid="this" event="SelectStateChanged" script="ScoutBeastMasterySelectChanged"/>
 			</Scripts>
 		</class>
@@ -5612,6 +5622,8 @@
 		<class name="ScoutMachine_Mastery" File="SetCompanyInfo_Mastery.layout">
 			<Scripts>
 				<property childid="this" event="MouseButtonUp" sound="mouseover_5.wav"/>
+				<property childid="this" event="MouseEntersSurface" script="EnterToolTip_Mastery"/>
+				<property childid="this" event="MouseLeavesSurface" script="LeaveToolTip_Mastery"/>
 				<property childid="this" event="SelectStateChanged" script="ScoutMachineMasterySelectChanged"/>
 			</Scripts>
 		</class>
@@ -7312,6 +7324,291 @@
 			</Animations>
 		</class>
 		<class name="UnitInfoCitizen" File="UnitInfoCitizen.layout" Layer="Scene">
+			<Animations>
+				<property childid="this" anim="Show_Alpha_Window"/>
+				<property childid="this" anim="Hide_Alpha_Window"/>
+				<property childid="Rank" anim="PressAnyKeys"/>
+				<property childid="Buff" anim="BuffArrowUp"/>
+				<property childid="Debuff" anim="DebuffArrowDown"/>
+				<property childid="State1" anim="Show_UpdateStateIcon"/>
+				<property childid="State2" anim="Show_UpdateStateIcon"/>
+				<property childid="State3" anim="Show_UpdateStateIcon"/>
+				<property childid="State4" anim="Show_UpdateStateIcon"/>
+				<property childid="State5" anim="Show_UpdateStateIcon"/>
+				<property childid="HP" anim="Show_DamageCount"/>
+				<property childid="HP" anim="Show_HealCount"/>
+				<property childid="HPBar/FrontBar" anim="Show_HPDanger"/>
+				<property childid="HPBar/FrontBar" anim="Hide_HPDanger"/>
+				<property childid="HPBar/FrontBar" anim="Show_DamageGauge"/>
+				<property childid="HPBar/FrontBar" anim="Show_HealGauge_Slow"/>
+				<property childid="HPBar/BackBar" anim="Show_HPBackDanger"/>
+				<property childid="HPBar/BackBar" anim="Show_HPBackHeal"/>
+				<property childid="HPBar/BackBar" anim="Hide_HPBackDanger"/>
+				<property childid="HPBar/BackBar" anim="Show_DamageGauge_Slow"/>
+				<property childid="HPBar/BackBar" anim="Show_HealGauge"/>
+				<property childid="CostBar/Rage/FrontBar" anim="Show_HPDanger"/>
+				<property childid="CostBar/Rage/FrontBar" anim="Hide_HPDanger"/>
+				<property childid="CostBar/Rage/FrontBar" anim="Show_DamageGauge"/>
+				<property childid="CostBar/Rage/FrontBar" anim="Show_HealGauge_Slow"/>
+				<property childid="CostBar/Rage/BackBar" anim="Show_HPBackDanger"/>
+				<property childid="CostBar/Rage/BackBar" anim="Show_HPBackHeal"/>
+				<property childid="CostBar/Rage/BackBar" anim="Hide_HPBackDanger"/>
+				<property childid="CostBar/Rage/BackBar" anim="Show_DamageGauge_Slow"/>
+				<property childid="CostBar/Vigor/FrontBar" anim="Show_HPDanger"/>
+				<property childid="CostBar/Vigor/FrontBar" anim="Hide_HPDanger"/>
+				<property childid="CostBar/Vigor/FrontBar" anim="Show_DamageGauge"/>
+				<property childid="CostBar/Vigor/FrontBar" anim="Show_HealGauge_Slow"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Show_HPBackDanger"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Show_HPBackHeal"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Hide_HPBackDanger"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Show_DamageGauge_Slow"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Show_HealGauge"/>
+				<property childid="CostBar/Fuel/BackBar" anim="Show_HealGauge"/>
+			</Animations>
+		</class>
+		<class name="UnitInfoSimple" File="UnitInfoSimple.layout" Layer="Scene">
+			<Animations>
+				<property childid="this" anim="Show_Alpha_Window"/>
+				<property childid="this" anim="Hide_Alpha_Window"/>
+				<property childid="Rank" anim="PressAnyKeys"/>
+				<property childid="Action1" anim="ShowActionOn"/>
+				<property childid="Action1" anim="ShowActionOn2"/>
+				<property childid="Action1/Frame" anim="PressAnyKeys"/>
+				<property childid="Action2" anim="ShowActionOn"/>
+				<property childid="Action2" anim="ShowActionOn2"/>
+				<property childid="Action2/Frame" anim="PressAnyKeys"/>
+				<property childid="Name" anim="Show_UpdateName"/>
+				<property childid="Name" anim="Show_UpdateName2"/>
+				<property childid="Name" anim="Hide_UpdateName"/>
+				<property childid="Shield" anim="Show_DamageCount_Shield"/>
+				<property childid="Buff" anim="BuffArrowUp"/>
+				<property childid="Debuff" anim="DebuffArrowDown"/>
+				<property childid="State1" anim="Show_UpdateStateIcon"/>
+				<property childid="State2" anim="Show_UpdateStateIcon"/>
+				<property childid="State3" anim="Show_UpdateStateIcon"/>
+				<property childid="State4" anim="Show_UpdateStateIcon"/>
+				<property childid="State5" anim="Show_UpdateStateIcon"/>
+				<property childid="HP" anim="Show_DamageCount"/>
+				<property childid="HP" anim="Show_HealCount"/>
+				<property childid="HPBar/FrontBar" anim="Show_HPDanger"/>
+				<property childid="HPBar/FrontBar" anim="Hide_HPDanger"/>
+				<property childid="HPBar/FrontBar" anim="Show_DamageGauge"/>
+				<property childid="HPBar/FrontBar" anim="Show_HealGauge_Slow"/>
+				<property childid="HPBar/BackBar" anim="Show_HPBackDanger"/>
+				<property childid="HPBar/BackBar" anim="Show_HPBackHeal"/>
+				<property childid="HPBar/BackBar" anim="Hide_HPBackDanger"/>
+				<property childid="HPBar/BackBar" anim="Show_DamageGauge_Slow"/>
+				<property childid="HPBar/BackBar" anim="Show_HealGauge"/>
+				<property childid="CostBar/Rage/FrontBar" anim="Show_HPDanger"/>
+				<property childid="CostBar/Rage/FrontBar" anim="Hide_HPDanger"/>
+				<property childid="CostBar/Rage/FrontBar" anim="Show_DamageGauge"/>
+				<property childid="CostBar/Rage/FrontBar" anim="Show_HealGauge_Slow"/>
+				<property childid="CostBar/Rage/BackBar" anim="Show_HPBackDanger"/>
+				<property childid="CostBar/Rage/BackBar" anim="Show_HPBackHeal"/>
+				<property childid="CostBar/Rage/BackBar" anim="Hide_HPBackDanger"/>
+				<property childid="CostBar/Rage/BackBar" anim="Show_DamageGauge_Slow"/>
+				<property childid="CostBar/Vigor/FrontBar" anim="Show_HPDanger"/>
+				<property childid="CostBar/Vigor/FrontBar" anim="Hide_HPDanger"/>
+				<property childid="CostBar/Vigor/FrontBar" anim="Show_DamageGauge"/>
+				<property childid="CostBar/Vigor/FrontBar" anim="Show_HealGauge_Slow"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Show_HPBackDanger"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Show_HPBackHeal"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Hide_HPBackDanger"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Show_DamageGauge_Slow"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Show_HealGauge"/>
+				<property childid="CostBar/Fuel/BackBar" anim="Show_HealGauge"/>
+			</Animations>
+		</class>
+		<class name="UnitInfo2Simple" File="UnitInfo2Simple.layout" Layer="Scene">
+			<Animations>
+				<property childid="this" anim="Show_Alpha_Window"/>
+				<property childid="this" anim="Hide_Alpha_Window"/>
+				<property childid="Rank" anim="PressAnyKeys"/>
+				<property childid="Name" anim="Show_UpdateName"/>
+				<property childid="Name" anim="Show_UpdateName2"/>
+				<property childid="Name" anim="Hide_UpdateName"/>
+				<property childid="Buff" anim="BuffArrowUp"/>
+				<property childid="Debuff" anim="DebuffArrowDown"/>
+				<property childid="Shield" anim="Show_DamageCount_Shield"/>
+				<property childid="State1" anim="Show_UpdateStateIcon"/>
+				<property childid="State2" anim="Show_UpdateStateIcon"/>
+				<property childid="State3" anim="Show_UpdateStateIcon"/>
+				<property childid="State4" anim="Show_UpdateStateIcon"/>
+				<property childid="State5" anim="Show_UpdateStateIcon"/>
+				<property childid="HP" anim="Show_DamageCount"/>
+				<property childid="HP" anim="Show_HealCount"/>
+				<property childid="HPBar/FrontBar" anim="Show_HPDanger"/>
+				<property childid="HPBar/FrontBar" anim="Hide_HPDanger"/>
+				<property childid="HPBar/FrontBar" anim="Show_DamageGauge"/>
+				<property childid="HPBar/FrontBar" anim="Show_HealGauge_Slow"/>
+				<property childid="HPBar/BackBar" anim="Show_HPBackDanger"/>
+				<property childid="HPBar/BackBar" anim="Show_HPBackHeal"/>
+				<property childid="HPBar/BackBar" anim="Hide_HPBackDanger"/>
+				<property childid="HPBar/BackBar" anim="Show_DamageGauge_Slow"/>
+				<property childid="HPBar/BackBar" anim="Show_HealGauge"/>
+				<property childid="CostBar/Rage/FrontBar" anim="Show_HPDanger"/>
+				<property childid="CostBar/Rage/FrontBar" anim="Hide_HPDanger"/>
+				<property childid="CostBar/Rage/FrontBar" anim="Show_DamageGauge"/>
+				<property childid="CostBar/Rage/FrontBar" anim="Show_HealGauge_Slow"/>
+				<property childid="CostBar/Rage/BackBar" anim="Show_HPBackDanger"/>
+				<property childid="CostBar/Rage/BackBar" anim="Show_HPBackHeal"/>
+				<property childid="CostBar/Rage/BackBar" anim="Hide_HPBackDanger"/>
+				<property childid="CostBar/Rage/BackBar" anim="Show_DamageGauge_Slow"/>
+				<property childid="CostBar/Vigor/FrontBar" anim="Show_HPDanger"/>
+				<property childid="CostBar/Vigor/FrontBar" anim="Hide_HPDanger"/>
+				<property childid="CostBar/Vigor/FrontBar" anim="Show_DamageGauge"/>
+				<property childid="CostBar/Vigor/FrontBar" anim="Show_HealGauge_Slow"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Show_HPBackDanger"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Show_HPBackHeal"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Hide_HPBackDanger"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Show_DamageGauge_Slow"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Show_HealGauge"/>
+				<property childid="CostBar/Fuel/BackBar" anim="Show_HealGauge"/>
+			</Animations>
+		</class>
+		<class name="UnitInfo3Simple" File="UnitInfo3Simple.layout" Layer="Scene">
+			<Animations>
+				<property childid="this" anim="Show_Alpha_Window"/>
+				<property childid="this" anim="Hide_Alpha_Window"/>
+				<property childid="Rank" anim="PressAnyKeys"/>
+				<property childid="Name" anim="Show_UpdateName"/>
+				<property childid="Name" anim="Show_UpdateName2"/>
+				<property childid="Name" anim="Hide_UpdateName"/>
+				<property childid="Buff" anim="BuffArrowUp"/>
+				<property childid="Debuff" anim="DebuffArrowDown"/>
+				<property childid="Shield" anim="Show_DamageCount_Shield"/>
+				<property childid="State1" anim="Show_Alpha_Window"/>
+				<property childid="State1" anim="Show_UpdateStateIcon"/>
+				<property childid="State2" anim="Show_UpdateStateIcon"/>
+				<property childid="State3" anim="Show_UpdateStateIcon"/>
+				<property childid="State4" anim="Show_UpdateStateIcon"/>
+				<property childid="State5" anim="Show_UpdateStateIcon"/>
+				<property childid="HP" anim="Show_DamageCount"/>
+				<property childid="HP" anim="Show_HealCount"/>
+				<property childid="HPBar/FrontBar" anim="Show_HPDanger"/>
+				<property childid="HPBar/FrontBar" anim="Hide_HPDanger"/>
+				<property childid="HPBar/FrontBar" anim="Show_DamageGauge"/>
+				<property childid="HPBar/FrontBar" anim="Show_HealGauge_Slow"/>
+				<property childid="HPBar/BackBar" anim="Show_HPBackDanger"/>
+				<property childid="HPBar/BackBar" anim="Show_HPBackHeal"/>
+				<property childid="HPBar/BackBar" anim="Hide_HPBackDanger"/>
+				<property childid="HPBar/BackBar" anim="Show_DamageGauge_Slow"/>
+				<property childid="HPBar/BackBar" anim="Show_HealGauge"/>
+				<property childid="CostBar/Rage/FrontBar" anim="Show_HPDanger"/>
+				<property childid="CostBar/Rage/FrontBar" anim="Hide_HPDanger"/>
+				<property childid="CostBar/Rage/FrontBar" anim="Show_DamageGauge"/>
+				<property childid="CostBar/Rage/FrontBar" anim="Show_HealGauge_Slow"/>
+				<property childid="CostBar/Rage/BackBar" anim="Show_HPBackDanger"/>
+				<property childid="CostBar/Rage/BackBar" anim="Show_HPBackHeal"/>
+				<property childid="CostBar/Rage/BackBar" anim="Hide_HPBackDanger"/>
+				<property childid="CostBar/Rage/BackBar" anim="Show_DamageGauge_Slow"/>
+				<property childid="CostBar/Vigor/FrontBar" anim="Show_HPDanger"/>
+				<property childid="CostBar/Vigor/FrontBar" anim="Hide_HPDanger"/>
+				<property childid="CostBar/Vigor/FrontBar" anim="Show_DamageGauge"/>
+				<property childid="CostBar/Vigor/FrontBar" anim="Show_HealGauge_Slow"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Show_HPBackDanger"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Show_HPBackHeal"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Hide_HPBackDanger"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Show_DamageGauge_Slow"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Show_HealGauge"/>
+				<property childid="CostBar/Fuel/BackBar" anim="Show_HealGauge"/>
+			</Animations>
+		</class>
+		<class name="UnitInfo4Simple" File="UnitInfo4Simple.layout" Layer="Scene">
+			<Animations>
+				<property childid="this" anim="Show_Alpha_Window"/>
+				<property childid="this" anim="Hide_Alpha_Window"/>
+				<property childid="Rank" anim="PressAnyKeys"/>
+				<property childid="Name" anim="Show_UpdateName"/>
+				<property childid="Name" anim="Show_UpdateName2"/>
+				<property childid="Name" anim="Hide_UpdateName"/>
+				<property childid="Buff" anim="BuffArrowUp"/>
+				<property childid="Debuff" anim="DebuffArrowDown"/>
+				<property childid="Shield" anim="Show_DamageCount_Shield"/>
+				<property childid="State1" anim="Show_UpdateStateIcon"/>
+				<property childid="State2" anim="Show_UpdateStateIcon"/>
+				<property childid="State3" anim="Show_UpdateStateIcon"/>
+				<property childid="State4" anim="Show_UpdateStateIcon"/>
+				<property childid="State5" anim="Show_UpdateStateIcon"/>
+				<property childid="HP" anim="Show_DamageCount"/>
+				<property childid="HP" anim="Show_HealCount"/>
+				<property childid="HPBar/FrontBar" anim="Show_HPDanger"/>
+				<property childid="HPBar/FrontBar" anim="Hide_HPDanger"/>
+				<property childid="HPBar/FrontBar" anim="Show_DamageGauge"/>
+				<property childid="HPBar/FrontBar" anim="Show_HealGauge_Slow"/>
+				<property childid="HPBar/BackBar" anim="Show_HPBackDanger"/>
+				<property childid="HPBar/BackBar" anim="Show_HPBackHeal"/>
+				<property childid="HPBar/BackBar" anim="Hide_HPBackDanger"/>
+				<property childid="HPBar/BackBar" anim="Show_DamageGauge_Slow"/>
+				<property childid="HPBar/BackBar" anim="Show_HealGauge"/>
+				<property childid="CostBar/Rage/FrontBar" anim="Show_HPDanger"/>
+				<property childid="CostBar/Rage/FrontBar" anim="Hide_HPDanger"/>
+				<property childid="CostBar/Rage/FrontBar" anim="Show_DamageGauge"/>
+				<property childid="CostBar/Rage/FrontBar" anim="Show_HealGauge_Slow"/>
+				<property childid="CostBar/Rage/BackBar" anim="Show_HPBackDanger"/>
+				<property childid="CostBar/Rage/BackBar" anim="Show_HPBackHeal"/>
+				<property childid="CostBar/Rage/BackBar" anim="Hide_HPBackDanger"/>
+				<property childid="CostBar/Rage/BackBar" anim="Show_DamageGauge_Slow"/>
+				<property childid="CostBar/Vigor/FrontBar" anim="Show_HPDanger"/>
+				<property childid="CostBar/Vigor/FrontBar" anim="Hide_HPDanger"/>
+				<property childid="CostBar/Vigor/FrontBar" anim="Show_DamageGauge"/>
+				<property childid="CostBar/Vigor/FrontBar" anim="Show_HealGauge_Slow"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Show_HPBackDanger"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Show_HPBackHeal"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Hide_HPBackDanger"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Show_DamageGauge_Slow"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Show_HealGauge"/>
+				<property childid="CostBar/Fuel/BackBar" anim="Show_HealGauge"/>
+			</Animations>
+		</class>
+		<class name="UnitInfo5Simple" File="UnitInfo5Simple.layout" Layer="Scene">
+			<Animations>
+				<property childid="this" anim="Show_Alpha_Window"/>
+				<property childid="this" anim="Hide_Alpha_Window"/>
+				<property childid="Rank" anim="PressAnyKeys"/>
+				<property childid="Name" anim="Show_UpdateName"/>
+				<property childid="Name" anim="Show_UpdateName2"/>
+				<property childid="Name" anim="Hide_UpdateName"/>
+				<property childid="Buff" anim="BuffArrowUp"/>
+				<property childid="Debuff" anim="DebuffArrowDown"/>
+				<property childid="Shield" anim="Show_DamageCount_Shield"/>
+				<property childid="State1" anim="Show_UpdateStateIcon"/>
+				<property childid="State2" anim="Show_UpdateStateIcon"/>
+				<property childid="State3" anim="Show_UpdateStateIcon"/>
+				<property childid="State4" anim="Show_UpdateStateIcon"/>
+				<property childid="State5" anim="Show_UpdateStateIcon"/>
+				<property childid="HP" anim="Show_DamageCount"/>
+				<property childid="HP" anim="Show_HealCount"/>
+				<property childid="HPBar/FrontBar" anim="Show_HPDanger"/>
+				<property childid="HPBar/FrontBar" anim="Hide_HPDanger"/>
+				<property childid="HPBar/FrontBar" anim="Show_DamageGauge"/>
+				<property childid="HPBar/FrontBar" anim="Show_HealGauge_Slow"/>
+				<property childid="HPBar/BackBar" anim="Show_HPBackDanger"/>
+				<property childid="HPBar/BackBar" anim="Show_HPBackHeal"/>
+				<property childid="HPBar/BackBar" anim="Hide_HPBackDanger"/>
+				<property childid="HPBar/BackBar" anim="Show_DamageGauge_Slow"/>
+				<property childid="HPBar/BackBar" anim="Show_HealGauge"/>
+				<property childid="CostBar/Rage/FrontBar" anim="Show_HPDanger"/>
+				<property childid="CostBar/Rage/FrontBar" anim="Hide_HPDanger"/>
+				<property childid="CostBar/Rage/FrontBar" anim="Show_DamageGauge"/>
+				<property childid="CostBar/Rage/FrontBar" anim="Show_HealGauge_Slow"/>
+				<property childid="CostBar/Rage/BackBar" anim="Show_HPBackDanger"/>
+				<property childid="CostBar/Rage/BackBar" anim="Show_HPBackHeal"/>
+				<property childid="CostBar/Rage/BackBar" anim="Hide_HPBackDanger"/>
+				<property childid="CostBar/Rage/BackBar" anim="Show_DamageGauge_Slow"/>
+				<property childid="CostBar/Vigor/FrontBar" anim="Show_HPDanger"/>
+				<property childid="CostBar/Vigor/FrontBar" anim="Hide_HPDanger"/>
+				<property childid="CostBar/Vigor/FrontBar" anim="Show_DamageGauge"/>
+				<property childid="CostBar/Vigor/FrontBar" anim="Show_HealGauge_Slow"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Show_HPBackDanger"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Show_HPBackHeal"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Hide_HPBackDanger"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Show_DamageGauge_Slow"/>
+				<property childid="CostBar/Vigor/BackBar" anim="Show_HealGauge"/>
+				<property childid="CostBar/Fuel/BackBar" anim="Show_HealGauge"/>
+			</Animations>
+		</class>
+		<class name="UnitInfoCitizenSimple" File="UnitInfoCitizenSimple.layout" Layer="Scene">
 			<Animations>
 				<property childid="this" anim="Show_Alpha_Window"/>
 				<property childid="this" anim="Hide_Alpha_Window"/>

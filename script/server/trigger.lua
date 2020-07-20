@@ -2711,6 +2711,10 @@ function Action_ResetObject(mid, ds, conditionOutput, unitIndicator, maxHP, maxC
 	return unpack(actions);
 end
 
+function Action_ToggleBossEvent(mid, ds, conditionOutput, onOff)
+	g_EnableBossEvent = onOff == 'On';
+end
+
 function InitializeCheckTeamArrivedUnitCountTest(mid, session, team, areaIndicator, operation, value)
     local teamCount = GetTeamCount(mid, team);
     local count = 0

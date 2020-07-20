@@ -251,34 +251,34 @@
 			</Dialog>
 			<ItemList>
 				<property Item="PsionicStone_FlameFragment" Category="Material" Type="PsionicStone" Slot="1" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="100"/>
-				<property Item="PsionicStone_FlameElement" Category="Material" Type="PsionicStone" Slot="2" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="500"/>
-				<property Item="PsionicStone_FlameCrystal" Category="Material" Type="PsionicStone" Slot="3" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="2500"/>
-				<property Item="PsionicStone_FlameCore" Category="Material" Type="PsionicStone" Slot="4" Rate="100" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="12500"/>
+				<property Item="PsionicStone_FlameElement" Category="Material" Type="PsionicStone" Slot="2" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="400"/>
+				<property Item="PsionicStone_FlameCrystal" Category="Material" Type="PsionicStone" Slot="3" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="1600"/>
+				<property Item="PsionicStone_FlameCore" Category="Material" Type="PsionicStone" Slot="4" Rate="100" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="6400"/>
 				<property Item="PsionicStone_FlashFragment" Category="Material" Type="PsionicStone" Slot="5" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="100"/>
-				<property Item="PsionicStone_FlashElement" Category="Material" Type="PsionicStone" Slot="6" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="500"/>
-				<property Item="PsionicStone_FlashCrystal" Category="Material" Type="PsionicStone" Slot="7" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="2500"/>
-				<property Item="PsionicStone_FlashCore" Category="Material" Type="PsionicStone" Slot="8" Rate="100" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="12500"/>
+				<property Item="PsionicStone_FlashElement" Category="Material" Type="PsionicStone" Slot="6" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="400"/>
+				<property Item="PsionicStone_FlashCrystal" Category="Material" Type="PsionicStone" Slot="7" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="1600"/>
+				<property Item="PsionicStone_FlashCore" Category="Material" Type="PsionicStone" Slot="8" Rate="100" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="6400"/>
 				<property Item="PsionicStone_FrostFragment" Category="Material" Type="PsionicStone" Slot="9" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="100"/>
-				<property Item="PsionicStone_FrostElement" Category="Material" Type="PsionicStone" Slot="10" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="500"/>
-				<property Item="PsionicStone_FrostCrystal" Category="Material" Type="PsionicStone" Slot="11" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="2500"/>
-				<property Item="PsionicStone_FrostCore" Category="Material" Type="PsionicStone" Slot="12" Rate="100" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="12500"/>
+				<property Item="PsionicStone_FrostElement" Category="Material" Type="PsionicStone" Slot="10" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="400"/>
+				<property Item="PsionicStone_FrostCrystal" Category="Material" Type="PsionicStone" Slot="11" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="1600"/>
+				<property Item="PsionicStone_FrostCore" Category="Material" Type="PsionicStone" Slot="12" Rate="100" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="6400"/>
 				<property Item="PsionicStone_MistFragment" Category="Material" Type="PsionicStone" Slot="13" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="100"/>
-				<property Item="PsionicStone_MistElement" Category="Material" Type="PsionicStone" Slot="14" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="500"/>
-				<property Item="PsionicStone_MistCrystal" Category="Material" Type="PsionicStone" Slot="15" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="2500"/>
-				<property Item="PsionicStone_MistCore" Category="Material" Type="PsionicStone" Slot="16" Rate="100" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="12500"/>
+				<property Item="PsionicStone_MistElement" Category="Material" Type="PsionicStone" Slot="14" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="400"/>
+				<property Item="PsionicStone_MistCrystal" Category="Material" Type="PsionicStone" Slot="15" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="1600"/>
+				<property Item="PsionicStone_MistCore" Category="Material" Type="PsionicStone" Slot="16" Rate="100" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="6400"/>
 				<property Item="PsionicStone_StormFragment" Category="Material" Type="PsionicStone" Slot="17" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="100"/>
-				<property Item="PsionicStone_StormElement" Category="Material" Type="PsionicStone" Slot="18" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="500"/>
-				<property Item="PsionicStone_StormCrystal" Category="Material" Type="PsionicStone" Slot="19" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="2500"/>
-				<property Item="PsionicStone_StormCore" Category="Material" Type="PsionicStone" Slot="20" Rate="100" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="12500"/>
+				<property Item="PsionicStone_StormElement" Category="Material" Type="PsionicStone" Slot="18" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="400"/>
+				<property Item="PsionicStone_StormCrystal" Category="Material" Type="PsionicStone" Slot="19" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="1600"/>
+				<property Item="PsionicStone_StormCore" Category="Material" Type="PsionicStone" Slot="20" Rate="100" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="6400"/>
 				<property Item="PsionicStone_VerdureFragment" Category="Material" Type="PsionicStone" Slot="21" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="100"/>
-				<property Item="PsionicStone_VerdureElement" Category="Material" Type="PsionicStone" Slot="22" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="500"/>
-				<property Item="PsionicStone_VerdureCrystal" Category="Material" Type="PsionicStone" Slot="23" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="2500"/>
-				<property Item="PsionicStone_VerdureCore" Category="Material" Type="PsionicStone" Slot="24" Rate="100" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="12500"/>
+				<property Item="PsionicStone_VerdureElement" Category="Material" Type="PsionicStone" Slot="22" Rate="100" Friendship="None" RandomPriceScript="RandomPrice_Material" Price="400"/>
+				<property Item="PsionicStone_VerdureCrystal" Category="Material" Type="PsionicStone" Slot="23" Rate="100" Friendship="Friendly" RandomPriceScript="RandomPrice_Material" Price="1600"/>
+				<property Item="PsionicStone_VerdureCore" Category="Material" Type="PsionicStone" Slot="24" Rate="100" Friendship="Honored" RandomPriceScript="RandomPrice_Material" Price="6400"/>
 				<property Item="Extractor" Category="Tool" Type="Extractor" Slot="25" Rate="100" Friendship="None" RandomPriceScript="None" Price="250"/>
 				<property Item="Extractor_Uncommon" Category="Tool" Type="Extractor" Slot="26" Rate="100" Friendship="None" RandomPriceScript="None" Price="500"/>
 				<property Item="Extractor_Rare" Category="Tool" Type="Extractor" Slot="27" Rate="100" Friendship="Friendly" RandomPriceScript="None" Price="1000"/>
-				<property Item="Extractor_Epic" Category="Tool" Type="Extractor" Slot="28" Rate="100" Friendship="Honored" RandomPriceScript="None" Price="2500"/>
-				<property Item="Extractor_Legend" Category="Tool" Type="Extractor" Slot="29" Rate="100" Friendship="Revered" RandomPriceScript="None" Price="12500"/>
+				<property Item="Extractor_Epic" Category="Tool" Type="Extractor" Slot="28" Rate="100" Friendship="Honored" RandomPriceScript="None" Price="2000"/>
+				<property Item="Extractor_Legend" Category="Tool" Type="Extractor" Slot="29" Rate="100" Friendship="Revered" RandomPriceScript="None" Price="4000"/>
 			</ItemList>
 			<ValkyrieShop>
 				<property GoodsType="Recipe" Recipe="Jacket_Extractor_Set" Category="Armor" Type="Recipe" Friendship="None" Price="1" Quest="EP1_Quest_Camila08"/>

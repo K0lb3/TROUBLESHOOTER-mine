@@ -62,14 +62,11 @@
 		</schema>
 		<class name="Company">
 			<Stats>
-				<property Title="총 미션 참여 횟수" Type="Value" Stat="MissionTotal"/>
-				<property Title="미션 성공 횟수" Type="Value" Stat="MissionClear"/>
-				<property Title="미션 패배 수" Type="Value" Stat="MissionFail"/>
-				<property Title="미션 성공률" Type="Custom" Format="Percent" Custom="GetCompanyStats_MissionClearRatio"/>
-				<property Title="아군 전투 불능 수" Type="Value" Stat="UnitDead"/>
-				<property Title="전투 불능 확률" Type="Custom" Format="Percent" Custom="GetCompanyStats_UnitDeadRatio"/>
-				<property Title="처치한 적 총 수" Type="Value" Stat="EnemyKill"/>
-				<property Title="미션 당 처치한 적 수" Type="Value" Stat="EnemyKillPerMission"/>
+				<property Title="임무 참여 횟수" Type="Value" Stat="MissionTotal"/>
+				<property Title="임무 성공 횟수" Type="Value" Stat="MissionClear"/>
+				<property Title="임무 성공률" Type="Custom" Format="Percent" Custom="GetCompanyStats_MissionClearRatio"/>
+				<property Title="처치한 적 수" Type="Value" Stat="EnemyKill"/>
+				<property Title="임무 당 처치한 적 수" Type="Value" Stat="EnemyKillPerMission"/>
 				<property Title="시민 구조 수" Type="Value" Stat="Rescue"/>
 				<property Title="오브젝트 파괴 수" Type="Value" Stat="Destruction"/>
 				<property Title="상자 획득 수" Type="Value" Stat="OpenChest"/>
@@ -88,14 +85,14 @@
 		<class name="CompanyReputation"/>
 		<class name="Roster">
 			<Stats>
-				<property Title="사원별 미션 사건 해결수" Type="Value" Stat="MissionClear"/>
-				<property Title="사원별 전투 불능 된 수" Type="Value" Stat="UnitDead"/>
-				<property Title="사원별 처치한 적 총 수" Type="Value" Stat="EnemyKill"/>
-				<property Title="사원별 미션당 처치한 불량배수" Type="Value" Format="Float" Stat="EnemyKillPerMission"/>
+				<property Title="성공한 임무" Type="Value" Stat="MissionClear"/>
+				<property Title="처치한 적 수" Type="Value" Stat="EnemyKill"/>
+				<property Title="임무 당 처치한 적 수" Type="Custom" Format="Float" Custom="GetRosterStats_KillCountPerMission"/>
+				<property Title="공격 당 처치한 적 수" Type="Custom" Format="Float" Custom="GetRosterStats_KillCountByAttack"/>
+				<property Title="임무 당 적에게 입은 피해량" Type="Custom" Format="Float" Custom="GetRosterStats_DefenceDamagePerMission"/>
 				<property Title="시민 구조수" Type="Value" Stat="Rescue"/>
 				<property Title="오브젝트 파괴 수" Type="Value" Stat="Destruction"/>
-				<property Title="무기력 횟수" Type="Value" Stat="ConditionRest"/>
-				<property Title="평균 제압률" Type="Custom" Format="Percent" Custom="GetRosterStats_KillRatio"/>
+				<property Title="임무 생존률" Type="Custom" Format="Percent" Custom="GetRosterStats_ReturnRatio"/>
 				<property Title="평균 명중률" Type="Custom" Format="Percent" Custom="GetRosterStats_HitRatio"/>
 				<property Title="평균 치명타 적중률" Type="Custom" Format="Percent" Custom="GetRosterStats_CriticalRatio"/>
 				<property Title="평균 회피율" Type="Custom" Format="Percent" Custom="GetRosterStats_DodgeRatio"/>

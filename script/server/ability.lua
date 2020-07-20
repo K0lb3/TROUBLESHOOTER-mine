@@ -871,8 +871,9 @@ function AbilityPrevMaster(self, ability, isFreeAction, userInfoArgs, subPositio
 			local addSP = -1 * self.SP;
 			-- 황금 깃털
 			local mastery_Amulet_Dorori_Feather_Gold = GetMasteryMastered(GetMastery(self), 'Amulet_Dorori_Feather_Gold');
-			if mastery_Amulet_Dorori_Feather_Gold then
+			if mastery_Amulet_Dorori_Feather_Gold and mastery_Amulet_Dorori_Feather_Gold.CountChecker < mastery_Amulet_Dorori_Feather_Gold.ApplyAmount then
 				addSP = 0;
+				mastery_Amulet_Dorori_Feather_Gold.CountChecker = mastery_Amulet_Dorori_Feather_Gold.CountChecker + 1;
 			end
 			if addSP ~= 0 then
 				-- SP 전부 소모

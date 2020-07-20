@@ -286,7 +286,7 @@
 		<class name="Demo_CrowStreet_EsjieO" Value="[!BalloonChat][!speaker:Albus]오늘도 이렇게 되는구나..."/>
 		<class name="Demo_CrowStreet_pxcfBn" Value="[!DialogSystemMessageBox]임무 중 체력이 0이 된 아군 캐릭터는 전투 불능이 됩니다. 전투 불능이 된 캐릭터는 더 이상 해당 미션에서 사용할 수 없습니다."/>
 		<class name="Demo_CrowStreet_4tzYAB" Value="전투 불능"/>
-		<class name="Demo_CrowStreet_ythRDU" Value="[!DialogSystemMessageBox]속박 상태의 구출 대상을 구출하려면 인접한 타일로 이동하여[image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Ability/Release&apos;]  [colour=&apos;FFFFFF00&apos;]구출[colour=&apos;FFFFFFFF&apos;] 어빌리티를 사용해야 합니다.
+		<class name="Demo_CrowStreet_ythRDU" Value="[!DialogSystemMessageBox]속박 상태의 구출 대상을 구출하려면 인접한 4방향의 타일로 이동하여[image-size=&apos;w:$ImgSize$ h:$ImgSize$&apos;][image=&apos;Ability/Release&apos;]  [colour=&apos;FFFFFF00&apos;]구출[colour=&apos;FFFFFFFF&apos;] 어빌리티를 사용해야 합니다.
 
 [colour=&apos;FFFFFF00&apos;]구출 행동은 턴을 소모하므로 주위하시기 바랍니다.[colour=&apos;FFFFFFFF&apos;]"/>
 		<class name="Demo_CrowStreet_SLUcbC" Value="상호작용: 구출"/>

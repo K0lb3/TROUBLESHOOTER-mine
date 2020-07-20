@@ -325,8 +325,11 @@ function TurnEnd_Common(eventArg, buff, owner, giver, ds)
 	if owner.CostType.name == 'Rage' then
 		-- 자신의 코스트 자연 감소.
 		if owner.Cost > 0 then
-			local buffRageList = GetBuffType(Defender, nil, nil, 'Rage');
-			if not GetInstantProperty(owner, 'RageGuard') and #buffRageList > 0 then
+			-- 분노 계열 상태
+			local buffRageList = GetBuffType(owner, nil, nil, 'Rage');
+			-- 흉폭함
+			local mastery_SavageBeast = GetMasteryMastered(GetMastery(owner), 'SavageBeast');
+			if not GetInstantProperty(owner, 'RageGuard') and #buffRageList == 0 and not mastery_SavageBeast then
 				local decreaseCost = -1 *  math.max(1, owner.RegenRage * 0.5);
 				local retCost, reasons = AddActionCost(actions, owner, decreaseCost, true);
 				local realAddValue = retCost - owner.Cost;

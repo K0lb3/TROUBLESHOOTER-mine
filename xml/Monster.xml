@@ -6951,7 +6951,6 @@
 			<property Item="Bone_Beast" Min="3" Max="10"/>
 			<property Item="Fang_Beast" Min="3" Max="5"/>
 			<property Item="Skin_Dorori" Min="3" Max="5"/>
-			<property Item="Skin_SavageBeast" Min="3" Max="5"/>
 			<property Item="Jewel_Black_Broken" Min="10" Max="20"/>
 		</Rewards>
 		<AbilityPriority>
@@ -6997,7 +6996,6 @@
 			<property Item="Bone_Beast" Min="3" Max="10"/>
 			<property Item="Fang_Beast" Min="3" Max="5"/>
 			<property Item="Skin_Dorori" Min="3" Max="5"/>
-			<property Item="Skin_SavageBeast" Min="3" Max="5"/>
 			<property Item="Jewel_Black" Min="8" Max="16"/>
 		</Rewards>
 		<AbilityPriority>
@@ -7044,7 +7042,6 @@
 			<property Item="Bone_SavageBeast" Min="3" Max="10"/>
 			<property Item="Fang_SavageBeast" Min="3" Max="5"/>
 			<property Item="Skin_KingDorori" Min="3" Max="5"/>
-			<property Item="Skin_Monster" Min="3" Max="5"/>
 			<property Item="Jewel_Black_Perfect" Min="3" Max="6"/>
 		</Rewards>
 		<AbilityPriority>
@@ -7105,7 +7102,6 @@
 			<property Item="Bone_SavageBeast" Min="3" Max="10"/>
 			<property Item="Fang_SavageBeast" Min="3" Max="5"/>
 			<property Item="Skin_Dorori" Min="3" Max="5"/>
-			<property Item="Skin_SavageBeast" Min="3" Max="5"/>
 			<property Item="Jewel_Red" Min="3" Max="6"/>
 			<property Item="Amulet_Dorori_Fang_Red" Min="1" Max="1"/>
 		</Rewards>
@@ -7160,7 +7156,6 @@
 			<property Item="Bone_Monster" Min="3" Max="10"/>
 			<property Item="Fang_Monster" Min="3" Max="5"/>
 			<property Item="Skin_Dorori" Min="3" Max="5"/>
-			<property Item="Skin_Monster" Min="3" Max="5"/>
 			<property Item="Jewel_Red_Perfect" Min="3" Max="6"/>
 		</Rewards>
 		<AbilityPriority>
@@ -7225,7 +7220,6 @@
 			<property Item="Bone_EvilMonster" Min="3" Max="10"/>
 			<property Item="Fang_EvilMonster" Min="3" Max="5"/>
 			<property Item="Skin_KingDorori_Epic" Min="3" Max="6"/>
-			<property Item="Skin_EvilMonster" Min="3" Max="5"/>
 			<property Item="Jewel_Black_Perfect" Min="3" Max="6"/>
 			<property Item="Amulet_Dorori_Fang_Red" Min="1" Max="1"/>
 		</Rewards>
@@ -7293,7 +7287,6 @@
 			<property Item="Bone_EvilMonster" Min="3" Max="10"/>
 			<property Item="Fang_EvilMonster" Min="3" Max="5"/>
 			<property Item="Skin_KingDorori_Legend" Min="3" Max="5"/>
-			<property Item="Skin_EvilMonster" Min="3" Max="5"/>
 			<property Item="Jewel_Yellow_Shine" Min="3" Max="6"/>
 			<property Item="Amulet_Dorori_Feather_Gold" Min="1" Max="1"/>
 		</Rewards>
@@ -7350,7 +7343,6 @@
 			<property Item="Bone_Beast" Min="3" Max="10"/>
 			<property Item="Fang_Beast" Min="3" Max="5"/>
 			<property Item="Skin_Dorori" Min="3" Max="5"/>
-			<property Item="Skin_SavageBeast" Min="3" Max="5"/>
 			<property Item="Jewel_Red_Broken" Min="10" Max="20"/>
 		</Rewards>
 		<AbilityPriority>
@@ -7398,7 +7390,6 @@
 			<property Item="Bone_Beast" Min="3" Max="10"/>
 			<property Item="Fang_Beast" Min="3" Max="5"/>
 			<property Item="Skin_Dorori" Min="3" Max="5"/>
-			<property Item="Skin_SavageBeast" Min="3" Max="5"/>
 			<property Item="Jewel_Red" Min="8" Max="16"/>
 		</Rewards>
 		<AbilityPriority>
@@ -7451,7 +7442,6 @@
 			<property Item="Bone_SavageBeast" Min="3" Max="10"/>
 			<property Item="Fang_SavageBeast" Min="3" Max="5"/>
 			<property Item="Skin_KingDorori" Min="3" Max="5"/>
-			<property Item="Skin_Monster" Min="3" Max="5"/>
 			<property Item="Jewel_Red_Perfect" Min="3" Max="6"/>
 		</Rewards>
 		<AbilityPriority>
@@ -7501,7 +7491,6 @@
 			<property Item="Bone_Beast" Min="3" Max="10"/>
 			<property Item="Fang_Beast" Min="3" Max="5"/>
 			<property Item="Skin_Dorori" Min="3" Max="5"/>
-			<property Item="Skin_SavageBeast" Min="3" Max="5"/>
 			<property Item="Jewel_Yellow_Broken" Min="10" Max="20"/>
 		</Rewards>
 		<AbilityPriority>
@@ -7547,7 +7536,6 @@
 			<property Item="Bone_Beast" Min="3" Max="10"/>
 			<property Item="Fang_Beast" Min="3" Max="5"/>
 			<property Item="Skin_Dorori" Min="3" Max="5"/>
-			<property Item="Skin_SavageBeast" Min="3" Max="5"/>
 			<property Item="Jewel_Yellow" Min="8" Max="16"/>
 		</Rewards>
 		<AbilityPriority>
@@ -7596,7 +7584,6 @@
 			<property Item="Bone_SavageBeast" Min="3" Max="10"/>
 			<property Item="Fang_SavageBeast" Min="3" Max="5"/>
 			<property Item="Skin_KingDorori" Min="3" Max="5"/>
-			<property Item="Skin_Monster" Min="3" Max="5"/>
 			<property Item="Jewel_Yellow_Perfect" Min="3" Max="6"/>
 		</Rewards>
 		<AbilityPriority>
@@ -7660,7 +7647,6 @@
 			<property Item="Bone_EvilMonster" Min="3" Max="10"/>
 			<property Item="Claw_EvilMonster" Min="3" Max="10"/>
 			<property Item="Fang_EvilMonster" Min="3" Max="10"/>
-			<property Item="Skin_EvilMonster" Min="3" Max="5"/>
 			<property Item="Skin_KingDorori" Min="3" Max="5"/>
 			<property Item="Jewel_Red_Shine" Min="3" Max="8"/>
 		</Rewards>
@@ -7709,7 +7695,6 @@
 			<property Item="Bone_Beast" Min="3" Max="10"/>
 			<property Item="Fang_Beast" Min="3" Max="5"/>
 			<property Item="Skin_Dorori" Min="3" Max="5"/>
-			<property Item="Skin_SavageBeast" Min="3" Max="5"/>
 			<property Item="Jewel_White_Broken" Min="10" Max="20"/>
 		</Rewards>
 		<AbilityPriority>
@@ -7753,7 +7738,6 @@
 			<property Item="Bone_Beast" Min="3" Max="10"/>
 			<property Item="Fang_Beast" Min="3" Max="5"/>
 			<property Item="Skin_Dorori" Min="3" Max="5"/>
-			<property Item="Skin_SavageBeast" Min="3" Max="5"/>
 			<property Item="Jewel_White" Min="8" Max="16"/>
 		</Rewards>
 		<AbilityPriority>
@@ -7798,7 +7782,6 @@
 			<property Item="Bone_SavageBeast" Min="3" Max="10"/>
 			<property Item="Fang_SavageBeast" Min="3" Max="5"/>
 			<property Item="Skin_KingDorori" Min="3" Max="5"/>
-			<property Item="Skin_Monster" Min="3" Max="5"/>
 			<property Item="Jewel_White_Perfect" Min="3" Max="6"/>
 		</Rewards>
 		<AbilityPriority>
@@ -7898,7 +7881,6 @@
 			<property Item="Bone_Beast" Min="3" Max="10"/>
 			<property Item="Fang_Beast" Min="3" Max="5"/>
 			<property Item="Skin_Dorori" Min="3" Max="5"/>
-			<property Item="Skin_SavageBeast" Min="3" Max="5"/>
 			<property Item="Jewel_FiveColor_Broken" Min="10" Max="20"/>
 		</Rewards>
 		<AbilityPriority>
@@ -7943,7 +7925,6 @@
 			<property Item="Bone_Beast" Min="3" Max="10"/>
 			<property Item="Fang_Beast" Min="3" Max="5"/>
 			<property Item="Skin_Dorori" Min="3" Max="5"/>
-			<property Item="Skin_SavageBeast" Min="3" Max="5"/>
 			<property Item="Jewel_FiveColor_Broken" Min="15" Max="20"/>
 		</Rewards>
 		<AbilityPriority>
@@ -8005,7 +7986,6 @@
 			<property Item="Bone_Beast" Min="3" Max="10"/>
 			<property Item="Fang_Beast" Min="3" Max="5"/>
 			<property Item="Skin_Dorori" Min="3" Max="5"/>
-			<property Item="Skin_SavageBeast" Min="3" Max="5"/>
 			<property Item="Jewel_FiveColor_Broken" Min="15" Max="20"/>
 		</Rewards>
 		<AbilityPriority>
@@ -8054,7 +8034,6 @@
 			<property Item="Bone_Beast" Min="3" Max="10"/>
 			<property Item="Fang_Beast" Min="3" Max="5"/>
 			<property Item="Skin_Dorori" Min="3" Max="5"/>
-			<property Item="Skin_SavageBeast" Min="3" Max="5"/>
 			<property Item="Jewel_FiveColor" Min="8" Max="16"/>
 		</Rewards>
 		<AbilityPriority>
@@ -8104,7 +8083,6 @@
 			<property Item="Bone_SavageBeast" Min="3" Max="10"/>
 			<property Item="Fang_SavageBeast" Min="3" Max="5"/>
 			<property Item="Skin_KingDorori" Min="3" Max="5"/>
-			<property Item="Skin_Monster" Min="3" Max="5"/>
 			<property Item="Jewel_FiveColor_Perfect" Min="3" Max="6"/>
 			<property Item="Amulet_Flower" Min="1" Max="1"/>
 		</Rewards>
@@ -9798,10 +9776,10 @@
 			<property name="SharpTeeth" value="1"/>
 		</Masteries>
 		<Rewards>
-			<property Item="Bone_Broken" Min="3" Max="10"/>
-			<property Item="Claw_Broken" Min="3" Max="10"/>
-			<property Item="Fang_Broken" Min="3" Max="10"/>
-			<property Item="Skin_Torn" Min="3" Max="10"/>
+			<property Item="Bone_SavageBeast" Min="3" Max="10"/>
+			<property Item="Claw_SavageBeast" Min="3" Max="10"/>
+			<property Item="Fang_SavageBeast" Min="3" Max="10"/>
+			<property Item="Skin_SavageBeast" Min="3" Max="10"/>
 		</Rewards>
 		<AbilityPriority>
 			<Normal>
@@ -9835,10 +9813,10 @@
 			<property name="SharpTeeth" value="1"/>
 		</Masteries>
 		<Rewards>
-			<property Item="Bone_Beast" Min="3" Max="10"/>
-			<property Item="Claw_Beast" Min="3" Max="10"/>
-			<property Item="Fang_Beast" Min="3" Max="10"/>
-			<property Item="Skin_Beast" Min="3" Max="10"/>
+			<property Item="Bone_SavageBeast" Min="3" Max="10"/>
+			<property Item="Claw_SavageBeast" Min="3" Max="10"/>
+			<property Item="Fang_SavageBeast" Min="3" Max="10"/>
+			<property Item="Skin_SavageBeast" Min="3" Max="10"/>
 		</Rewards>
 		<AbilityPriority>
 			<Normal>
@@ -14531,7 +14509,6 @@
 			<property name="Inventory2" Item="Grenade_Smoke_Uncommon"/>
 		</Equipments>
 		<Masteries>
-			<property name="Aggression" value="1"/>
 			<property name="BloodScent" value="1"/>
 			<property name="Bloodthirst" value="1"/>
 			<property name="BodyTraining" value="1"/>
@@ -14547,6 +14524,7 @@
 			<property name="ShadowZone" value="1"/>
 			<property name="SoCloseYetFar" value="1"/>
 			<property name="Zeroing" value="1"/>
+			<property name="Threat" value="1"/>
 		</Masteries>
 		<Rewards>
 			<property Item="AssultRifle_Common_500" Min="1" Max="1"/>
@@ -14596,13 +14574,10 @@
 			<property name="Inventory2" Item="Grenade_Gas"/>
 		</Equipments>
 		<Masteries>
-			<property name="Bloodthirst" value="1"/>
 			<property name="BodyTraining" value="1"/>
 			<property name="CheatDeath" value="1"/>
 			<property name="ConcentratedFire" value="1"/>
 			<property name="Concentration" value="1"/>
-			<property name="EnergySuit" value="1"/>
-			<property name="EnhancedSuit" value="1"/>
 			<property name="Envenoming" value="1"/>
 			<property name="FinalBlow" value="1"/>
 			<property name="Forestallment" value="1"/>
@@ -14612,7 +14587,10 @@
 			<property name="OpportunityStrikes" value="1"/>
 			<property name="TwilightOfPain" value="1"/>
 			<property name="Veteran" value="1"/>
-			<property name="SurvivalTraining" value="1"/>
+			<property name="LightningReflexes" value="1"/>
+			<property name="PerfectPosition" value="1"/>
+			<property name="Feint" value="1"/>
+			<property name="Alacrity" value="1"/>
 		</Masteries>
 		<Rewards>
 			<property Item="Dagger_Cyrus_Rare" Min="1" Max="1"/>
@@ -15101,9 +15079,9 @@
 			<property name="Parry" value="1"/>
 			<property name="Informant" value="1"/>
 			<property name="LimitBreak" value="1"/>
-			<property name="EnergySuit" value="1"/>
 			<property name="BoundingLeap" value="1"/>
 			<property name="Bruise" value="1"/>
+			<property name="HeavyStrike" value="1"/>
 		</Masteries>
 		<Rewards>
 			<property Item="BattleGlove_OgreFist_Legend" Min="1" Max="1"/>
@@ -15393,32 +15371,32 @@
 			</Rage>
 		</AbilityPriority>
 	</class>
-	<class name="Mon_Gangster_Oliver" Lv="16" Grade="Epic" Info="Gangster_Oliver" Object="Mon_Gangster_Oliver" GradeUp="" RecoveryRatio="0.33">
+	<class name="Mon_Gangster_Oliver" Lv="18" Grade="Epic" Info="Gangster_Oliver" Object="Mon_Gangster_Oliver" GradeUp="" RecoveryRatio="0.33">
 		<Equipments>
-			<property name="Weapon" Item="BattleGlove_CarbonFist_Rare" Lv="5"/>
+			<property name="Weapon" Item="BattleGlove_TitanFist_Rare" Lv="5"/>
 			<property name="Body" Item="Tracksuit_BlackDog" Lv="5"/>
-			<property name="Hand" Item="Wrist_Titan" Lv="5"/>
-			<property name="Leg" Item="Sneakers_Hunter" Lv="5"/>
+			<property name="Hand" Item="Wrist_Ogre_Rare" Lv="5"/>
+			<property name="Leg" Item="Sneakers_Chaser_Rare" Lv="5"/>
 			<property name="Inventory1" Item="Potion_HP_Rare"/>
 			<property name="Inventory2" Item="Amulet_Skull"/>
 		</Equipments>
 		<Masteries>
-			<property name="Robust" value="1"/>
-			<property name="Berserker" value="1"/>
-			<property name="BodyTraining" value="1"/>
-			<property name="Bruise" value="1"/>
+			<property name="ShootingStar" value="1"/>
+			<property name="ImpulseFields" value="1"/>
+			<property name="Nocturnality" value="1"/>
 			<property name="Eclipse" value="1"/>
-			<property name="IndomitableWill" value="1"/>
-			<property name="MusclePower" value="1"/>
-			<property name="SurvivalTraining" value="1"/>
 			<property name="TreasureHunter" value="1"/>
-			<property name="WillToSurvive" value="1"/>
+			<property name="BodyTraining" value="1"/>
+			<property name="MusclePower" value="1"/>
+			<property name="PowerfulMovements" value="1"/>
+			<property name="OwlEye" value="1"/>
+			<property name="Heaviness" value="1"/>
 		</Masteries>
 		<Rewards>
-			<property Item="BattleGlove_CarbonFist_Rare" Min="1" Max="1"/>
+			<property Item="BattleGlove_TitanFist_Rare" Min="1" Max="1"/>
 			<property Item="Tracksuit_BlackDog" Min="1" Max="1"/>
-			<property Item="Wrist_Titan" Min="1" Max="1"/>
-			<property Item="Sneakers_Hunter" Min="1" Max="1"/>
+			<property Item="Wrist_Ogre_Rare" Min="1" Max="1"/>
+			<property Item="Sneakers_Chaser_Rare" Min="1" Max="1"/>
 			<property Item="Potion_HP_Rare" Min="1" Max="1"/>
 			<property Item="Amulet_Skull" Min="1" Max="1"/>
 		</Rewards>
@@ -15438,7 +15416,7 @@
 			</Rage>
 		</AbilityPriority>
 	</class>
-	<class name="Mon_Gangster_PinkHorn" Lv="17" Grade="Legend" Info="Gangster_PinkHorn" Object="Mon_Gangster_PinkHorn" GradeUp="" RecoveryRatio="0.33">
+	<class name="Mon_Gangster_PinkHorn" Lv="19" Grade="Legend" Info="Gangster_PinkHorn" Object="Mon_Gangster_PinkHorn" GradeUp="" RecoveryRatio="0.33">
 		<Equipments>
 			<property name="Weapon" Item="Sword_CarbonBlade_PinkHorn" Lv="6">
 				<Option OptionKey="King" Type1="AttackPower" Value1="20" Type2="ESPPower" Value2="20" Type3="MaxHP" Value3="100" Type4="MoveDist" Value4="1"/>
@@ -15460,11 +15438,13 @@
 			<property name="Alacrity" value="1"/>
 			<property name="Challenger" value="1"/>
 			<property name="ConversionOfEnergy" value="1"/>
-			<property name="DistortionField" value="1"/>
 			<property name="ElectricPulse" value="1"/>
 			<property name="ElectricShock" value="1"/>
 			<property name="Lightningmage" value="1"/>
 			<property name="WeaponBlocking" value="1"/>
+			<property name="SharpBlade" value="1"/>
+			<property name="BodyTraining" value="1"/>
+			<property name="EvilSword" value="1"/>
 		</Masteries>
 		<Rewards>
 			<property Item="Sword_CarbonBlade_PinkHorn" Min="1" Max="1"/>
@@ -17154,7 +17134,7 @@
 			</Rage>
 		</AbilityPriority>
 	</class>
-	<class name="Mon_Gangster_SpoonFighter_ZhoHong" Lv="17" Grade="Epic" Info="Gangster_SpoonFighter_ZhoHong" Object="Mon_Gangster_SpoonFighter_ZhoHong" GradeUp="" RecoveryRatio="0.33">
+	<class name="Mon_Gangster_SpoonFighter_ZhoHong" Lv="18" Grade="Epic" Info="Gangster_SpoonFighter_ZhoHong" Object="Mon_Gangster_SpoonFighter_ZhoHong" GradeUp="" RecoveryRatio="0.33">
 		<Equipments>
 			<property name="Weapon" Item="BattleGlove_TitanFist_Legend" Lv="3"/>
 			<property name="Body" Item="Jacket_Bull_Rare" Lv="5"/>
@@ -17166,10 +17146,10 @@
 		<Masteries>
 			<property name="CloseCombatant" value="1"/>
 			<property name="MuscleArmor" value="1"/>
-			<property name="HeavyStrike" value="1"/>
 			<property name="FinalBlow" value="1"/>
 			<property name="CounterAttack" value="1"/>
 			<property name="CleanHit" value="1"/>
+			<property name="SecondHeart" value="1"/>
 		</Masteries>
 		<Rewards>
 			<property Item="BattleGlove_TitanFist_Legend" Min="1" Max="1"/>
@@ -17661,7 +17641,7 @@
 			<property name="Cauterize" value="1"/>
 			<property name="EternalFlame" value="1"/>
 			<property name="BurnSoul" value="1"/>
-			<property name="FireResistance3" value="1"/>
+			<property name="Magician" value="1"/>
 		</Masteries>
 		<Rewards>
 			<property Item="Bangle_Carbon_Blue_Rare" Min="1" Max="1"/>

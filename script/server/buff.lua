@@ -15,7 +15,7 @@ function CalculatedProperty_BuffCustomEventHandler(self)
 	if self.UseSelfDischarger then
 		table.insert(eventHandlers, {Event='UnitTurnStart_Self', Script=Buff_Turn_Start_SelfDischarge, Order=--[[최우선처리]]0});
 	end
-	
+
 	if self.UseHPModifier then
 		local order = self.HPChangeHitType == 'Heal' and 1 or 2;
 		if self.HPModifyTiming == 'Start' then
@@ -25,7 +25,14 @@ function CalculatedProperty_BuffCustomEventHandler(self)
 			table.insert(eventHandlers, {Event='BuffRemoved_Self', Script=Buff_Apply_HPModifier_LastApply, Order=order});
 		end
 	end
-
+	
+	-- Discharge 공용	
+	if self.DischargeOnOverchargeRelease then
+		table.insert(eventHandlers, {Event='OverchargeEnded', Script=Buff_OverchargeEnded_DischargeOnOverchargeRelease, Order=1});
+	end
+	if self.DischargeOnNoAttackableTarget then
+		table.insert(eventHandlers, {Event='UnitTurnStart_Self', Script=Buff_UnitTurnStart_DischargeOnNoAttackableTarget, Order=1});
+	end
 	if self.DischargeOnAttack then
 		table.insert(eventHandlers, {Event='AbilityUsed_Self', Script=Buff_AbilityUsed_DischargeOnAttack, Order=2});
 	end
@@ -42,7 +49,6 @@ function CalculatedProperty_BuffCustomEventHandler(self)
 		-- Order에 별 의미 없음
 		table.insert(eventHandlers, {Event='PreAbilityUsing_Self', Script=Buff_PreAbilityUsing_DischargeOnAbility, Order=5});
 	end
-	
 	if self.DischargeOnUnconscious then
 		table.insert(eventHandlers, {Event='BuffAdded_Self', Script=Buff_BuffAdded_DischargeOnUnconscious, Order=2});
 	end
@@ -280,9 +286,15 @@ function Buff_Turn_Start_SelfDischarge(eventArg, buff, owner, giver, ds)
 	end
 end
 -- 공격 어빌리티를 사용하면 버프를 제거한다.
+-- DischargeOnAttackType 으로 하위 속성 본다.
 function Buff_AbilityUsed_DischargeOnAttack(eventArg, buff, owner, giver, ds)
-	if eventArg.Ability.Type ~= 'Attack' then
+	if eventArg.Ability.Type ~= 'Attack' or eventArg.Ability.ItemAbility then
 		return;
+	end
+	if buff.DischargeOnAttackType ~= 'None' then
+		if not IsGetAbilitySubType(eventArg.Ability, buff.DischargeOnAttackType) and eventArg.Ability.HitRateType ~= buff.DischargeOnAttackType then
+			return;
+		end
 	end
 	return Result_RemoveBuff(owner, buff.name, true);
 end
@@ -422,6 +434,25 @@ function Buff_PreAbilityUsing_DischargeOnAbility(eventArg, buff, owner, giver, d
 		return;
 	end	
 	return Result_RemoveBuff(owner, buff.name, true);
+end
+-- OverchargeEnded
+function Buff_OverchargeEnded_DischargeOnOverchargeRelease(eventArg, buff, owner, giver, ds)
+	return Result_RemoveBuff(owner, buff.name);
+end
+-- DischargeOnNoAttackableTarget
+function Buff_UnitTurnStart_DischargeOnNoAttackableTarget(eventArg, buff, owner, giver, ds)
+	local units = GetAllUnitInSight(owner, true);
+	local targets = table.filter(units, function(o)
+		return owner ~= o and IsEnemy(owner, o) and not o.PublicTarget and not o.Untargetable;
+	end);
+	if #targets > 0 then
+		return;
+	end
+	local actions = {};
+	ds:UpdateBattleEvent(GetObjKey(owner), 'BuffDischarged', { Buff = buff.name });
+	table.insert(actions, Result_RemoveBuff(owner, buff.name, true));
+	table.insert(actions, Result_TurnEnd(owner));
+	return unpack(actions);
 end
 function Buff_AbilityHolder_Common_AddRef(giver, buff, owner)
 	local refKey = 'AbilityHolder'..(GetWithoutError(buff, 'AbilityHolderKey') or buff.name);
@@ -734,6 +765,15 @@ end
 function IsTeamOrAlly(self, unit)
 	local loseIff = ObjectLoseIFF(self);
 	local rel = GetRelation(self, unit);
+	if self == unit or (not loseIff and (rel == 'Ally' or rel == 'Team')) then
+		return true;
+	end
+	return false;
+end
+function IsTeamOrAllyByTeam(self, team)
+	local mission = GetMission(self);
+	local loseIff = ObjectLoseIFF(self);
+	local rel = GetRelationByTeamName(mission, GetTeam(self), team);
 	if self == unit or (not loseIff and (rel == 'Ally' or rel == 'Team')) then
 		return true;
 	end
@@ -2583,31 +2623,17 @@ function Buff_MaxStackAddBuff_UnitTurnStart(eventArg, buff, owner, giver, ds)
 	InsertBuffActions(actions, owner, owner, buff.AddBuff, 1, true);
 	return unpack(actions);
 end
--- 광폭화
-function Buff_Frenzy_UnitTurnStart(eventArg, buff, owner, giver, ds)
-	local units = GetAllUnitInSight(owner, true);
-	local targets = table.filter(units, function(o)
-		return owner ~= o and IsEnemy(owner, o) and not o.PublicTarget and not o.Untargetable;
-	end);
-	if #targets > 0 then
-		return;
-	end
-	local actions = {};
-	ds:UpdateBattleEvent(GetObjKey(owner), 'BuffDischarged', { Buff = buff.name });
-	table.insert(actions, Result_RemoveBuff(owner, buff.name, true));
-	table.insert(actions, Result_TurnEnd(owner));
-	return unpack(actions);
-end
 -- 부화 중인 야샤알
 function Buff_HatchedObjectYasha_UnitTurnStart(eventArg, buff, owner, giver, ds)
 	local hatchingCount = GetInstantProperty(owner, 'HatchingCount') or 1;
-	Buff_HatchedObjectYasha_DoHatching(ds, owner, hatchingCount);
+	return Buff_HatchedObjectYasha_DoHatching(ds, owner, hatchingCount);
 end
 function Buff_HatchedObjectYasha_DoHatching(ds, owner, hatchingCount)
 	local monType = GetInstantProperty(owner, 'HatchingMonster');
 	if not monType then
 		return;
 	end
+	local team = GetInstantProperty(owner, 'HatchingTeam') or GetTeam(owner);
 	local range = GetInstantProperty(owner, 'HatchingRange') or 'Sphere4';
 	local aiType = GetInstantProperty(owner, 'HatchingAI') or 'NormalMonsterAI';
 	
@@ -2641,7 +2667,7 @@ function Buff_HatchedObjectYasha_DoHatching(ds, owner, hatchingCount)
 			UNIT_INITIALIZER(unit, unit.Team);
 		end;
 		
-		local createAction = Result_CreateMonster(newObjKey, monType, ownerPos, GetTeam(owner), unitInitializeFunc, {}, aiType, {}, true);
+		local createAction = Result_CreateMonster(newObjKey, monType, ownerPos, team, unitInitializeFunc, {}, aiType, {}, true);
 		ApplyActions(mission, { createAction }, false);
 		local target = GetUnit(mission, newObjKey);
 		if not target then
@@ -3977,7 +4003,7 @@ function Buff_Charm_BuffRemoved(eventArg, buff, owner, giver, ds)
 	local actions = {};
 	local objKey = GetObjKey(owner);
 	ds:PlayAni(objKey, 'Rage', false);
-	InsertBuffActions(actions, owner, owner, 'Berserker', 1, true);
+	InsertBuffActions(actions, owner, owner, buff.AddBuff, 1, true);
 	return unpack(actions);
 end
 function Buff_Civil_Confusion_BuffRemoved(eventArg, buff, owner, giver, ds)
@@ -4876,13 +4902,6 @@ function Buff_MakeConcoction_AbilityUsed(eventArg, buff, owner, giver, ds)
 	InsertBuffActions(actions, owner, owner, buff.AddBuff, 1);
 	return unpack(actions);
 end
--- 불안정한 화합물
-function Buff_UnstableConcoction_AbilityUsed(eventArg, buff, owner, giver, ds)
-	if eventArg.Ability.Type ~= 'Attack' or eventArg.Ability.HitRateType ~= 'Throw' then
-		return;
-	end
-	return Result_RemoveBuff(owner, 'UnstableConcoction');
-end
 -- 응축된 마력
 --[[ 
 SpellPower.DuplicateApplyChecker:
@@ -5079,7 +5098,8 @@ function Buff_Berserker_AbilityUsed(eventArg, buff, owner, giver, ds)
 end
 function Buff_Grimreaper_AbilityUsed(eventArg, buff, owner, giver, ds)
 	if eventArg.Unit ~= owner 
-		or eventArg.Ability.Type ~= 'Attack' then
+		or eventArg.Ability.Type ~= 'Attack'
+		or eventArg.Ability.ItemAbility then
 		return;
 	end
 	
@@ -5091,7 +5111,6 @@ function Buff_Grimreaper_AbilityUsed(eventArg, buff, owner, giver, ds)
 			end
 		end
 	end
-	table.insert(actions, Result_RemoveBuff(owner, buff.name, true));
 	return unpack(actions);
 end
 function Buff_SecondImpact_AbilityUsed(eventArg, buff, owner, giver, ds)
@@ -5351,7 +5370,11 @@ function Buff_Trance_AbilityUsed(eventArg, buff, owner, giver, ds)
 		return;
 	end
 	-- 과충전 상태를 해제하는 SP 소모 어빌리티는 제외
+	local comsumeSP = 0;
 	if eventArg.Ability.SPAbility and (eventArg.Ability.SPFullAbility or eventArg.Ability.SP > 0) then
+		comsumeSP = eventArg.UserInfo.InstantSP or 0;
+	end
+	if comsumeSP > 0 then
 		return;
 	end
 	-- 그럴 일은 없지만 과충전 상태가 아니면 제외
@@ -5485,6 +5508,22 @@ function Buff_InformationSharing_AbilityUsed(eventArg, buff, owner, giver, ds)
 		end
 	end
 	return Result_UpdateInstantProperty(owner, buff.name, applyTargets);
+end
+-- 관리자 권한
+function Buff_ManagerAuthority_AbilityUsed(eventArg, buff, owner, giver, ds)
+	-- 관리자 권한 프로토콜은 제외
+	if not IsProtocolAbility(eventArg.Ability) or eventArg.Ability.name == 'ManagerProtocol' then
+		return;
+	end
+	local actions = {};
+	local nextLife = buff.Life - 1;
+	if nextLife <= 0 then
+		ds:UpdateBattleEvent(GetObjKey(owner), 'BuffDischarged', { Buff = buff.name });
+		table.insert(actions, Result_RemoveBuff(owner, buff.name, true));
+	else
+		table.insert(actions, Result_BuffPropertyUpdated('Life', nextLife, owner, buff.name, true, true));
+	end
+	return unpack(actions);
 end
 --------------------------------------------------------------------------------
 -- 데미지 줌
@@ -6239,10 +6278,6 @@ end
 function Buff_UnstableConcoction_ConcoctionFlooded(eventArg, buff, owner, giver, ds)
 	ds:UpdateSteamAchievement('SituationUnstableConcoction', true, GetTeam(owner));
 	return Result_RemoveBuff(owner, buff.name), Buff_FlameExplosion_Activated(buff, buff.ExplosionType, owner, owner, ds);
-end
--- OverchargeEnded
-function Buff_Trance_OverchargeEnded(eventArg, buff, owner, giver, ds)
-	return Result_RemoveBuff(owner, buff.name);
 end
 -- TamingFailed
 function Buff_Taming_TamingFailed(eventArg, buff, owner, giver, ds)

@@ -563,6 +563,36 @@ function SetDrakyEggInitialize(mid, drakyEggList)
 	SetUnitInitialize(mid, 'DrakyEgg', unitList);
 end
 
+function SetYashaEggInitialize(mid, yashaEggList)
+	local genType = 'Mon_Beast_Spider_Egg';
+	
+	local unitList = {};
+	for i, genInfo in ipairs(yashaEggList) do
+		local unit = {};
+		if not genInfo.Key then
+			unit.Key = string.format('_YashaEgg_%d_', i);
+		else
+			unit.Key = genInfo.Key;
+		end
+		unit.Object = genType;
+		unit.Team = genInfo.Team or '_neutral_';
+		unit.AI = {{AIType='DoNothingAI'}};
+		unit.Position = genInfo.Position;
+		unit.Direction = genInfo.Direction;
+		unit.HatchingTeam = genInfo.Team2;
+		table.insert(unitList, unit);
+	end
+	SetUnitInitialize(mid, 'YashaEgg', unitList, nil, function(unit)
+		return unit;
+	end, function(unit, obj)
+		SetInstantProperty(obj, 'HatchingTeam', unit.HatchingTeam);
+		if unit.Team == '_neutral_' then
+			obj.Obstacle = true;
+			obj.PublicTarget = true;
+		end
+	end)
+end
+
 function SetPositionHolderInitialize(mid, positionHolderList)
 	for _, positionHolder in ipairs(positionHolderList) do
 		RegisterPositionHolder(mid, positionHolder.Key or '', positionHolder.Group or '', positionHolder.Position[1], positionHolder.Direction[1]);
@@ -1114,6 +1144,9 @@ function MapInitializerShared(mid, stage, memberInfos, activeQuests)
 	-- 드라키 알
 	SetDrakyEggInitialize(mid, mapComponents.DrakyEgg);
 	
+	-- 야샤 알집
+	SetYashaEggInitialize(mid, mapComponents.YashaEgg);
+	
 	-- 상호작용 지역
 	SetInteractionAreaInitialize(mid, mapComponents.InteractionArea);
 	
@@ -1448,7 +1481,7 @@ function GetRosterUnitInfos(mapComponents)
 	end
 	return rosterUnitInfos;
 end
-
+g_EnableBossEvent = true;
 function RegisterAutoBossEvent(mid, bossList, reinitialize)
 	local dangerBossList = table.filter(bossList, function(o) return GetInstantProperty(o, 'NeedBossDangerEvent') end);
 	
@@ -1458,7 +1491,8 @@ function RegisterAutoBossEvent(mid, bossList, reinitialize)
 			if boss.HP <= 0
 				or eventArg.PropertyName ~= 'HP'
 				or boss.HP > boss.MaxHP / 2
-				or exhausted then
+				or exhausted
+				or not g_EnableBossEvent then
 				return;
 			end
 			SetInstantProperty(boss, 'NeedBossDangerEvent', nil);
@@ -1489,7 +1523,7 @@ function RegisterAutoBossEvent(mid, bossList, reinitialize)
 	local meetBossList = table.filter(bossList, function(o) return GetInstantProperty(o, 'NeedBossMeetEvent') end);
 	local bossKeyMap = Set.new(table.map(meetBossList, function(o) return GetObjKey(o); end));
 	SubscribeGlobalWorldEvent(mid, 'UnitMoved', function(eventArg, ds)
-		if #meetBossList == 0 then
+		if #meetBossList == 0 or not g_EnableBossEvent then
 			return;
 		end
 		if GetTeam(eventArg.Unit) ~= 'player' and bossKeyMap[GetObjKey(eventArg.Unit)] == nil then

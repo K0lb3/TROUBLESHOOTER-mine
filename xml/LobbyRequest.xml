@@ -205,5 +205,6 @@
 		<class name="NewWeaponCostumeConfirmed" RequireArguments="WeaponCostumes" ResponseArguments="Success"/>
 		<class name="CompanyNameTest" RequireArguments="CompanyName" ResponseArguments="Success"/>
 		<class name="ToggleMailLock" RequireArguments="MailId, Lock" ResponseArguments="Success"/>
+		<class name="RetrainBeast" RequireArguments="Roster" ResponseArguments="Success"/>
 	</idspace>
 </idspaces>

@@ -23,7 +23,6 @@
 		<class name="Spoon" Title="스푼교" Type="Crime" BasicMastery="OneSpoon" Image="Mastery/Spoon"/>
 		<class name="Anonymous" Title="어나니머스" Type="Crime" BasicMastery="None" Image="Mastery/Anonymous"/>
 		<class name="Crow" Title="크로우" Type="Crime" BasicMastery="Mobbing" Image="Mastery/Crow"/>
-		<class name="Delivery" Title="배달족" Type="Crime" BasicMastery="QuickDelivery" Image="Mastery/Delivery"/>
 		<class name="Vendetta" Title="벤데타" Type="Crime" BasicMastery="Vendetta" Image="Mastery/Vendetta"/>
 		<class name="Street" Title="거리 불량배" Type="Crime" BasicMastery="Rebellion" Image="Mastery/Street"/>
 		<class name="AngryBull" Title="성난 황소" Type="Crime" BasicMastery="AngryBull" Image="Mastery/AngryBull"/>

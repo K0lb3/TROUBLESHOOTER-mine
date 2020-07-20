@@ -49,23 +49,24 @@
 		<class name="DisableAbilityCam" Title="어빌리티 카메라 끄기" Desc="어빌리티 전용 카메라 연출을 사용하지 않습니다." Order="5" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
 		<class name="DisableRushCam" Title="이동시 근접 카메라 끄기" Desc="이동시 근접 카메라를 사용하지 않습니다." Order="6" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
 		<class name="DisableTurnCam" Title="내 턴 중 카메라 움직임 최소화" Desc="아군 캐릭터의 턴이 활성화 중일 때 조작에 따른 카메라의 움직임을 최소화 합니다." Order="7" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
-		<class name="DisableWiggleCam" Title="어빌리티 카메라 흔들림 끄기" Desc="어빌리티 연출 중 카메라 흔들림 연출을 사용하지 않습니다." Order="7.1" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
-		<class name="ShowTileInfo" Title="타일 정보 표시" Desc="타일 정보를 표시합니다." Order="8" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
-		<class name="HUDCostBar" Title="캐릭터 상태창 기력 표시" Desc="캐릭터의 상태창에 각 캐릭터가 보유한 기력/분노/ 연료 등의 소모값을 표기합니다." Order="9" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
-		<class name="DelayedInventoryFlush" Title="인벤토리 새 아이템 갱신 지연" Desc="미션이 끝난 후 새로 획득한 아이템의 표기를 게임 로비를 나가기 전까지 보류합니다." Order="10" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
-		<class name="SimpleMasteryAchievement" Title="특성 획득표시 간략화" Desc="미션 중 특성을 획득하는 연출을 간소화 합니다." Order="11" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
-		<class name="SimpleGetItem" Title="아이템 획득 간략화" Desc="미션 중 아이템 상자를 열어 아이템을 획득하는 연출을 간소화합니다. 해당 옵션을 사용하면 상자에서 얻은 아이템은 바로 인벤토리로 이동합니다." Order="12" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
-		<class name="SimpleInteraction" Title="상호작용 연출 간략화" Desc="게임내의 상호작용 연출을 간소화 합니다." Order="13" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
-		<class name="SimpleLevelUp" Title="레벨업 연출 간략화" Desc="레벨업에 따른 능력치 변경 사항을 보여주지 않습니다." Order="14" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
-		<class name="AlwaysChallengerMode" Title="도전 모드 항상 활성화" Desc="미션 도전 모드를 항상 활성화 합니다." Order="15" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
-		<class name="ReinforcedMoveRange" Title="이동 범위 격자 표시" Desc="이동 범위를 더 잘 보이게 합니다." Order="16" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
-		<class name="ShowBearing" Title="방위 표시" Desc="지도에 동,서,남,북의 방위 표시를 활성화합니다." Order="17" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
-		<class name="SPAbilityAlwaysVisible" Title="과충전 어빌리티 항상 표시" Desc="과충전 어빌리티가 과충전 여부와 관계없이 항상 표기됩니다." Order="18" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
-		<class name="ShowAllianceListAct" Title="아군 목록에 턴 대기시간 표시하기" Desc="미션 진행중에 우하단의 아군 목록에 다음 턴 대기시간을 표시합니다." Order="19" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
-		<class name="ShowCSDDamage" Title="치명타 피해량 수치 보여주기" Desc="어빌리티 선택 시의 치명타 피해량 정보에 치명타 발생 시의 피해량 수치를 표시합니다." Order="20" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
-		<class name="HideSelectionCount" Title="선택지 비율 숨기기" Desc="선택지의 선택 비율을 표시하지 않습니다." Order="21" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
-		<class name="ShowCharacterVoiceText" Title="캐릭터 연출 시 대사 표시" Desc="캐릭터 연출 시의 음성 대사를 자막으로 표시합니다." Order="22" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
-		<class name="CharacterVoiceTextFrequency" Title="캐릭터 대사 재생 빈도" Desc="캐릭터 연출 시의 음성 대사의 빈도를 결정합니다." Order="23" Form="OptionDroplist" Initializer="OptionInitializerDroplist" Converter="StageArgumentNumberConverter">
+		<class name="DisableWiggleCam" Title="어빌리티 카메라 흔들림 끄기" Desc="어빌리티 연출 중 카메라 흔들림 연출을 사용하지 않습니다." Order="8" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="ShowTileInfo" Title="타일 정보 표시" Desc="타일 정보를 표시합니다." Order="9" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="SimpleStatusWindow" Title="캐릭터 상태창 간략화" Desc="캐릭터의 상태 표시창을 간략화 합니다" Order="10" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="HUDCostBar" Title="캐릭터 상태창 기력 표시" Desc="캐릭터의 상태창에 각 캐릭터가 보유한 기력/분노/ 연료 등의 소모값을 표기합니다." Order="11" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="DelayedInventoryFlush" Title="인벤토리 새 아이템 갱신 지연" Desc="미션이 끝난 후 새로 획득한 아이템의 표기를 게임 로비를 나가기 전까지 보류합니다." Order="12" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="SimpleMasteryAchievement" Title="특성 획득표시 간략화" Desc="미션 중 특성을 획득하는 연출을 간소화 합니다." Order="13" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="SimpleGetItem" Title="아이템 획득 간략화" Desc="미션 중 아이템 상자를 열어 아이템을 획득하는 연출을 간소화합니다. 해당 옵션을 사용하면 상자에서 얻은 아이템은 바로 인벤토리로 이동합니다." Order="14" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="SimpleInteraction" Title="상호작용 연출 간략화" Desc="게임내의 상호작용 연출을 간소화 합니다." Order="15" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="SimpleLevelUp" Title="레벨업 연출 간략화" Desc="레벨업에 따른 능력치 변경 사항을 보여주지 않습니다." Order="16" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="AlwaysChallengerMode" Title="도전 모드 항상 활성화" Desc="미션 도전 모드를 항상 활성화 합니다." Order="17" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="ReinforcedMoveRange" Title="이동 범위 격자 표시" Desc="이동 범위를 더 잘 보이게 합니다." Order="18" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="ShowBearing" Title="방위 표시" Desc="지도에 동,서,남,북의 방위 표시를 활성화합니다." Order="19" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="SPAbilityAlwaysVisible" Title="과충전 어빌리티 항상 표시" Desc="과충전 어빌리티가 과충전 여부와 관계없이 항상 표기됩니다." Order="20" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="ShowAllianceListAct" Title="아군 목록에 턴 대기시간 표시하기" Desc="미션 진행중에 우하단의 아군 목록에 다음 턴 대기시간을 표시합니다." Order="21" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="ShowCSDDamage" Title="치명타 피해량 수치 보여주기" Desc="어빌리티 선택 시의 치명타 피해량 정보에 치명타 발생 시의 피해량 수치를 표시합니다." Order="22" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="HideSelectionCount" Title="선택지 비율 숨기기" Desc="선택지의 선택 비율을 표시하지 않습니다." Order="23" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="ShowCharacterVoiceText" Title="캐릭터 연출 시 대사 표시" Desc="캐릭터 연출 시의 음성 대사를 자막으로 표시합니다." Order="24" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
+		<class name="CharacterVoiceTextFrequency" Title="캐릭터 대사 재생 빈도" Desc="캐릭터 연출 시의 음성 대사의 빈도를 결정합니다." Order="25" Form="OptionDroplist" Initializer="OptionInitializerDroplist" Converter="StageArgumentNumberConverter">
 			<Selection>
 				<property Title="항상" Value="0"/>
 				<property Title="낮음" Value="1"/>

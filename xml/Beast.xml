@@ -74,6 +74,8 @@
 			<rule property="RosterKey" type="string" default=""/>
 			<rule property="RosterTitle" type="string" default=""/>
 			<rule property="BeastType" type="link" target="BeastType" default="None"/>
+			<rule property="RetrainStage" type="number" default="-1"/>
+			<rule property="RetrainCostCP" type="number" default="0"/>
 			<rule property="EvolutionMastery1" type="string" default="None"/>
 			<rule property="EvolutionMastery2" type="string" default="None"/>
 			<rule property="EvolutionMastery3" type="string" default="None"/>
@@ -549,6 +551,9 @@
 				<property Name="ExtremeSpirit" RequireLv="8"/>
 				<property Name="WebNetwork" RequireLv="16"/>
 			</Masteries>
+			<FixedEvolutionMastery>
+				<property Name="GoodSmell" Slot="1" Rate="100"/>
+			</FixedEvolutionMastery>
 		</class>
 		<class name="Mon_Beast_Spider_Black1" Monster="Mon_Beast_Spider_Black1" EvolutionType="Normal" EvolutionStage="1" EvolutionMaxStage="3" LobbySlot="Yasha" LobbyScale="0.275" DisableSummonMissionWeather="Rain" DisableSummonMissionTemperature="" DisableSummonMissionTime="">
 			<Abilities>

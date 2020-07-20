@@ -2354,7 +2354,7 @@ end
 function AbilityAI_PreyThrow(ability, self, abilities, args, aiConfig)
 	local allUnit = GetAllUnitInSight(self, true);
 	local allAllies = table.filter(allUnit, function(unit)
-		return self ~= unit and IsTeamOrAlly(self, unit);
+		return IsTeamOrAlly(self, unit);
 	end);
 	aiConfig.AllowZeroTarget = true;
 	local mission = GetMission(self);
@@ -2371,7 +2371,7 @@ function AbilityAI_PreyThrow(ability, self, abilities, args, aiConfig)
 		end
 		
 		if distanceSum == 0 then
-			return -12;	--?? 이럴수는 없음
+			return math.random(1, 5);
 		end
 		
 		return 1000 / distanceSum;
@@ -2381,7 +2381,7 @@ end
 function AbilityAI_PreySeal(ability, self, abilities, args, aiConfig)
 	local allUnit = GetAllUnitInSight(self, true);
 	local allAllies = table.filter(allUnit, function(unit)
-		return self ~= unit and IsTeamOrAlly(self, unit);
+		return IsTeamOrAlly(self, unit);
 	end);
 	aiConfig.AllowZeroTarget = true;
 	local mission = GetMission(self);
@@ -2395,7 +2395,7 @@ function AbilityAI_PreySeal(ability, self, abilities, args, aiConfig)
 		end
 		
 		if distanceSum == 0 then
-			return -12;	--?? 이럴수는 없음
+			return math.random(1, 5);
 		end
 		
 		return 1000 / distanceSum;

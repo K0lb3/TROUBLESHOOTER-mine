@@ -5,4 +5,9 @@
 			<property Type="Script" Script="ProgressNoticeAction" C_NoticeType="env.notice_type"/>
 		</Scripts>
 	</class>
+	<class name="CheckAsiaServerErrorReward">
+		<Scripts>
+			<property Type="Script" Script="ProgressCheckAsiaServerErrorReward" C_NeedReward="env.need_reward"/>
+		</Scripts>
+	</class>
 </idspace>

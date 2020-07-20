@@ -24,5 +24,6 @@
 	<class name="EscortTarget" Desc="[!Ignore]호위대상" MovableLoader="MapComponentNormal" ArgumentList="Key, EscortTargetType"/>
 	<class name="PsionicStone" Desc="[!Ignore]이능석" MovableLoader="MapComponentPsionicStone" ArgumentList="DashboardKey, Key" TitleFormatterListView="StageMapComponentTitleFormatterPsionicStone" TitleFormatterScene="StageMapComponentTitleFormatterPsionicStone2"/>
 	<class name="DrakyEgg" Desc="[!Ignore]드라키 알" MovableLoader="MapComponentDrakyEgg" ArgumentList="Key, Team" TitleFormatterListView="StageMapComponentTitleFormatterDrakyEgg" TitleFormatterScene="StageMapComponentTitleFormatterDrakyEgg2" ImageFormatter="StageMapComponentImageFormatterDrakyEgg"/>
+	<class name="YashaEgg" Desc="[!Ignore]야샤 알집" MovableLoader="MapComponentYashaEgg" ArgumentList="Key, Team, Team2" TitleFormatterListView="StageMapComponentTitleFormatterDrakyEgg" TitleFormatterScene="StageMapComponentTitleFormatterDrakyEgg2" ImageFormatter="StageMapComponentImageFormatterYashaEgg"/>
 	<class name="PositionHolder" Desc="[!Ignore]위치지정" MovableLoader="MapComponentPositionHolder" ArgumentList="Key, Group" TitleFormatterListView="StageMapComponentTitleFormatterPositionHolder" TitleFormatterScene="StageMapComponentTitleFormatterPositionHolder2" ImageFormatter="StageMapComponentImageFormatterPositionHolder"/>
 </idspace>
