@@ -40,7 +40,7 @@ function Battle(Attacker, Defender, ability, actions, phase, resultModifier, usi
 	-- C1. 피해량을 계산 합니다
 	perfChecker:StartRoutine('DamageCalculation');
 	perfChecker:Dive();
-	local damage = GetDamageCalculator(Attacker, Defender, ability, weather, temperature, usingPos, chainIndex, nil, SafeIndex(resultModifier, 'DamagePuff_Add'), abilityDetailInfo, perfChecker);
+	local damage = GetDamageCalculator(Attacker, Defender, ability, weather, temperature, usingPos, chainIndex, nil, SafeIndex(resultModifier, 'DamagePuff_Add'), abilityDetailInfo, perfChecker, damageFlag);
 	perfChecker:Rise();
 	if SafeIndex(resultModifier, 'DamagePuff') then
 		damage = damage * (100 + SafeIndex(resultModifier, 'DamagePuff')) / 100;
@@ -239,6 +239,17 @@ function IsEnableDodge(actions, hitRate, Attacker, Defender, ability, phase, mas
 				end
 			end
 		end	
+		-- 특성 신중함
+		local mastery_Discretion = GetMasteryMastered(masteryTable_Attacker, 'Discretion');
+		if mastery_Discretion and IsStableAttack(Attacker) and IsUnprotectedExposureState(Defender) then
+			AddMasteryInvokedEvent(Attacker, mastery_Discretion.name, 'FirstHit');
+			return false, mastery_Discretion.name;
+		end
+		-- 특성 그림자 암살
+		local mastery_ShadowAssasine = GetMasteryMastered(masteryTable_Attacker, 'ShadowAssasine');
+		if mastery_ShadowAssasine and not Attacker.ExposedByEnemy then
+			return false, mastery_ShadowAssasine.name;
+		end
 	end
 	
 	-- 반응 공격 회피
@@ -380,6 +391,11 @@ function IsEnableBlock(blockRate, Attacker, Defender, ability, phase, masteryTab
 				return false, mastery_FinalBlow.name;
 			end
 		end
+		-- 특성 그림자 암살
+		local mastery_ShadowAssasine = GetMasteryMastered(masteryTable_Attacker, 'ShadowAssasine');
+		if mastery_ShadowAssasine and not Attacker.ExposedByEnemy then
+			return false, mastery_ShadowAssasine.name;
+		end
 	end
 	return AbilityBlockRateTest(Attacker, Defender, blockRate, damage);
 end
@@ -399,6 +415,12 @@ function IsEnableCriticalStrikeChance(criticalStrikeChance, Attacker, Defender, 
 				AddMasteryInvokedEvent(Attacker, mastery_FinalBlow.name, 'FirstHit');
 				return true, mastery_FinalBlow.name;
 			end
+		end
+		-- 특성 그림자 암살
+		local mastery_ShadowAssasine = GetMasteryMastered(masteryTable_Attacker, 'ShadowAssasine');
+		if mastery_ShadowAssasine and not Attacker.ExposedByEnemy then
+			AddMasteryInvokedEvent(Attacker, mastery_ShadowAssasine.name, 'FirstHit');
+			return true, mastery_ShadowAssasine.name;
 		end
 	end
 	return AbilityCriticalStrikeChanceTest(Attacker, Defender, criticalStrikeChance, damage);
@@ -719,6 +741,34 @@ function AddBattleResultEventAction_Normal_Hitable(actions, Attacker, Defender, 
 		end
 	end
 	
+	-- 위치 선점
+	if ability.Type == 'Attack' then
+		local mastery_PreoccupyPosition = GetMasteryMastered(masteryTable_Attacker, 'PreoccupyPosition');
+		if mastery_PreoccupyPosition and IsEnemy(Attacker, Defender) then
+			local _, height = GetDistanceFromObjectToObjectAbility(ability, Attacker, Defender);
+			if IsAttakerHighPosition(height, Attacker, Defender, masteryTable_Attacker, masteryTable_Defender) then
+				mastery_PreoccupyPosition.CountChecker = 1;
+			end
+		end
+	end
+	
+	-- 촘촘한 비늘
+	local mastery_DenseScale = GetMasteryMastered(masteryTable_Defender, 'DenseScale');
+	if mastery_DenseScale and ability.Type == 'Attack' then
+		local prevType = GetInstantProperty(owner, 'DenseScale_LastDamageType');
+		if prevType ~= ability.SubType then
+			table.insert(actions, Result_UpdateInstantProperty(owner, 'DenseScale_LastDamageType', ability.SubType, true));
+		end
+	end
+	-- 익숙한 고통
+	local mastery_FamiliarSuffering = GetMasteryMastered(masteryTable_Defender, 'FamiliarSuffering');
+	if mastery_FamiliarSuffering and ability.Type == 'Attack' then
+		local prevType = GetInstantProperty(owner, 'FamiliarSuffering_LastDamageType');
+		if prevType ~= ability.SubType then
+			table.insert(actions, Result_UpdateInstantProperty(owner, 'FamiliarSuffering_LastDamageType', ability.SubType, true));
+		end
+	end	
+	
 	local ConditionalMasteryBuffApplier = function(masteryTable, masteryType, conditionFunc, doFunc)
 		local mastery = GetMasteryMastered(masteryTable, masteryType);
 		if mastery and conditionFunc(mastery) then
@@ -767,6 +817,12 @@ function AddBattleResultEventAction_Normal_Hitable(actions, Attacker, Defender, 
 		ConditionalMasteryBuffApplier(masteryTable_Attacker, 'DirtyBreath', function(m) return ability.HitRateType == 'Force' end);
 		-- 특성 맹독 괴수
 		ConditionalMasteryBuffApplier(masteryTable_Attacker, 'PoisonMonster', function(m) return attackerState == 'Critical' and HasBuffType(Defender, 'Debuff', nil, m.BuffGroup.name) end);
+		-- 특성 예광탄
+		ConditionalMasteryBuffApplier(masteryTable_Attacker, 'TracerBullet', function(m) return IsGetAbilitySubType(ability, 'Piercing') and ability.HitRateType == 'Force' end, function(m)
+			if Attacker.ExposedByEnemy then
+				InsertBuffActionsModifier(actions, Attacker, Attacker, m.SubBuff.name, 1, m.Buff.Turn, true);
+			end
+		end);
 	end
 end
 -------------------------------------------------------------------------------------------------------------------------
@@ -1280,6 +1336,13 @@ function GetModifyResultActions_Final(actions, Attacker, Defender, ability, phas
 		if buff_CocoonWeb then
 			knockbackPower = 0;
 			AddBattleEvent(Defender, 'BuffInvokedFromAbility', { Buff = buff_CocoonWeb.name, EventType = 'FinalHit', NoEffect = true});
+		end
+	end
+	if defenderState ~= 'Dodge' and knockbackPower > 0 then
+		local mastery_BigBody = GetMasteryMastered(masteryTable_Defender, 'BigBody');
+		if mastery_BigBody then
+			knockbackPower = 0;
+			AddMasteryInvokedEvent(Defender, mastery_BigBody.name, 'FinalHit');
 		end
 	end
 	return damage, attackerState, defenderState, knockbackPower;

@@ -3367,6 +3367,17 @@ function Buff_ControlTakeover_BuffAdded(eventArg, buff, owner, giver, ds)
 	end
 	table.insert(actions, Result_FireWorldEvent('FriendlyMachineHasJoined', {Machine = owner, FirstJoin = true}, nil, true));
 	table.insert(actions, Result_GiveAbility(owner, 'ControlGiveBack'));
+	if giver then
+		-- 자율 행동 강화 프로그램
+		local mastery_RestartOptimaztionAlgorithm = GetMasteryMastered(GetMastery(giver), 'RestartOptimaztionAlgorithm');
+		if mastery_RestartOptimaztionAlgorithm then
+			MasteryActivatedHelper(ds, mastery_RestartOptimaztionAlgorithm, owner, 'BuffAdded');
+			table.insert(actions, Result_PropertyUpdated('Act', -owner.Speed, nil, nil, true));
+			if not owner.TurnState.TurnEnded then
+				table.append(actions, {GetInitializeTurnActions(owner)});
+			end
+		end
+	end
 	return unpack(actions);
 end
 -- 먹이를 낚음

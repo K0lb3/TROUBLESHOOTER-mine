@@ -41,7 +41,7 @@
 		<rule property="ProtocolDetail" type="string" default="None"/>
 		<rule property="RepeatIndex" type="number" default="0"/>
 	</schema>
-	<class name="AbilityUserInfo" UserHandle="-1" MainTargetHandle="-1" MissionEnded="false" Prepared="false" AttackerState="Normal" DefenderState="None" Preemptive="false" NoVoice="false" InstantCost="0" InstantSP="0">
+	<class name="AbilityUserInfo" UserHandle="-1" MainTargetHandle="-1" Prepared="false" AttackerState="Normal" DefenderState="None" Preemptive="false" NoVoice="false" InstantCost="0" InstantSP="0">
 		<UsingPosList type="lua_value" value="{}"/>
 	</class>
 	<class name="PrimaryTargetInfo" UserHandle="-1" TargetHandle="-1" AttackerState="Normal" DefenderState="None" ChainID="-1" ChainTriggerID="0">

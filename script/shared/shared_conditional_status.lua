@@ -168,6 +168,19 @@ function GetConditionalStatus_Block(self, arg, info, calcOption)
 		end
 	end);
 	
+	-- 끈질긴 저항
+	result = result + GetMasteryValueByCustomFuncWithInfo(masteryTable_Defender, 'PersistentResistance', info, function(mastery)
+		local lostHPRatio = (self.MaxHP - self.HP) / self.MaxHP;
+		return math.floor(lostHPRatio * 100 / mastery.ApplyAmount) * mastery.ApplyAmount2;
+	end);
+	
+	-- 반짝이는 순간
+	result = result + GetMasteryValueByCustomFuncWithInfo(masteryTable_Defender, 'TwinkleDesire', info, function(mastery)
+		if self.Overcharge > 0 then
+			return mastery.ApplyAmount;
+		end
+	end);
+	
 	return result;
 end
 
@@ -252,6 +265,27 @@ function GetConditionalStatus_Accuracy_Base(self, arg, info, calcOption)
 			table.insert(info, MakeMasteryStatInfo(mastery_FlowOfBlood.name, curAdditionalAccuracy));
 		end
 	end
+	
+	-- 절제된 분노
+	result = result + GetMasteryValueByCustomFuncWithInfo(masteryTable_Attacker, 'RestrainedRage', info, function(mastery)
+		if #GetBuffType(self, nil, nil, mastery.BuffGroup.name) > 0 then 
+			return mastery.ApplyAmount;
+		end
+	end);
+	
+	-- 각인된 고통
+	result = result + GetMasteryValueByCustomFuncWithInfo(masteryTable_Attacker, 'CarvingPain', info, function(mastery)
+		if #GetBuffType(self, nil, nil, mastery.BuffGroup.name) > 0 then
+			return math.floor((1 - self.HP / self.MaxHP) * 100 / mastery.ApplyAmount) * mastery.ApplyAmount;
+		end
+	end);
+	
+	-- 반짝이는 순간
+	result = result + GetMasteryValueByCustomFuncWithInfo(masteryTable_Attacker, 'TwinkleDesire', info, function(mastery)
+		if self.Overcharge > 0 then
+			return mastery.ApplyAmount;
+		end
+	end);
 
 	return result;
 end
@@ -308,7 +342,7 @@ function GetConditionalStatus_Accuracy_Environment(self, arg, info, calcOption)
 			end
 		end);
 	end
-	
+
 	return result;
 end
 function GetTargetInRangeSightRepositionWithCache(cache, usePrevPos, obj, range, relation, isMySight, allowSelf)
@@ -534,6 +568,13 @@ function GetConditionalStatus_CriticalStrikeChance(self, arg, info, calcOption)
 		end
 	end);
 	
+	-- 반짝이는 순간
+	result = result + GetMasteryValueByCustomFuncWithInfo(masteryTable_Attacker, 'TwinkleDesire', info, function(mastery)
+		if self.Overcharge > 0 then
+			return mastery.ApplyAmount;
+		end
+	end);
+	
 	return result;
 end
 
@@ -641,6 +682,12 @@ function GetConditionalStatus_Dodge(self, arg, info, calcOption)
 		end
 	end
 	
+	-- 유도된 사각
+	result = result + GetMasteryValueByCustomFuncWithInfo(masteryTable_Defender, 'InducedBlindSpot', info, function(mastery)
+		local enemyList = GetTargetInRangeSightRepositionWithCache(cache, usePrevPos, self, mastery.Range, 'Enemy', true);
+		return math.floor(#enemyList / mastery.ApplyAmount2) * mastery.ApplyAmount3;
+	end);
+	
 	-- 온도 추움, 한파
 	local value_Temperature = 0;
 	if calcOption.MissionTemperature == 'Cold' then
@@ -673,6 +720,13 @@ function GetConditionalStatus_Dodge(self, arg, info, calcOption)
 			end
 		end);
 	end
+		
+	-- 반짝이는 순간
+	result = result + GetMasteryValueByCustomFuncWithInfo(masteryTable_Defender, 'TwinkleDesire', info, function(mastery)
+		if self.Overcharge > 0 then
+			return mastery.ApplyAmount;
+		end
+	end);
 	
 	return result;
 end

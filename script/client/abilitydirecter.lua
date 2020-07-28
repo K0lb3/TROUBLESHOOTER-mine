@@ -1941,7 +1941,12 @@ function PlayAbilityDirectInternal(ad, ability, userInfo, primaryTargetInfos, se
 	ad:Wait(-1);
 	local endID = ad:EndSpecialScene();
 	
-	if ability.Type == 'Attack' and not ad:GetConfig('NoVoice') and not ad:GetConfig('Preemptive') then
+	local missionEnded = false;
+	if IsClient() then
+		missionEnded = ad:GetConfig('ActionId') == GetSession().last_ability_id;
+	end
+	
+	if ability.Type == 'Attack' and not ad:GetConfig('NoVoice') and not ad:GetConfig('Preemptive') and not missionEnded then
 		local lastID = ProcessAbilityDamageFeedback(ad, userInfo, endID);
 		return ProcessAbilityAttackVoice(ad, userInfo, primaryTargetInfos, secondaryTargetInfos, lastID);
 	else

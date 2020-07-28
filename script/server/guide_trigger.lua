@@ -1148,3 +1148,13 @@ function GuideTriggerChecker_AutoRetreat(eventArg, ds, company)
 	end
 	return true, eventArg.Unit;
 end
+-- 역공학
+function GuideTriggerChecker_ReverseEngineering(eventArg, ds, company)
+	if GetCompanyByTeam(eventArg.Unit, GetTeam(eventArg.Unit)) ~= company then
+		return false;
+	end
+	if eventArg.Ability.name ~= 'HackingProtocol' then
+		return false;
+	end
+	return company.Stats.HackingSuccessCount + GetCompanyStats(company)['HackingSuccessCount'] >= 3, eventArg.Unit;
+end

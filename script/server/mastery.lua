@@ -2338,6 +2338,86 @@ end
 -----------------------------------------------------------------------
 -- 턴 시작. [UnitTurnStart]
 -------------------------------------------------------------------------------
+-- 흑수저
+function Mastery_BlackSpoon_UnitTurnStart(eventArg, mastery, owner, ds)
+	local nearSpoonest = table.filter(GetNearObject(owner, mastery.ApplyAmount + 0.4), function(o)
+		return o ~= owner and IsAllyOrTeam(owner, o) and o.Affiliation.name == 'Spoon';
+	end);
+	
+	local actions = {};
+	for _, o in ipairs(nearSpoonest) do
+		AddActionApplyActForDS(actions, o, -mastery.ApplyAmount, ds, 'Friendly');
+		InsertBuffActions(actions, owner, o, mastery.Buff.name, 1, true);
+		InsertBuffActions(actions, owner, o, mastery.SubBuff.name, 1, true);
+		local mentalDebuffs = GetBuffType(o, 'Debuff', 'Mental');
+		for _, b in ipairs(mentalDebuffs) do
+			InsertBuffActions(actions, owner, o, b.name, -b.Lv, true);
+			ds:UpdateBattleEvent(GetObjKey(o), 'BuffDischarged', { Buff = b.name });
+		end
+	end
+	
+	if #actions == 0 then
+		return;
+	end
+	
+	MasteryActivatedHelper(ds, mastery, owner, 'UnitTurnStart_Self');
+	return unpack(actions);
+end
+-- 재회의 약속
+function Mastery_MeetAgain_UnitTurnStart(eventArg, mastery, owner, ds)
+	if owner.HP / owner.MaxHP >= 0.5 
+		or not GetBuffStatus(owner, 'Healable', 'And') then
+		return;
+	end
+	
+	local healAbility = FindAbilityIf(owner, function (ability) 
+		if ability.Type ~= 'Heal' then
+			return false;
+		end
+		
+		local range = CalculateRange(owner, ability.TargetRange, GetPosition(owner));
+		return PositionInRange(range, GetPosition(owner));
+	end);
+	
+	if healAbility == nil then
+		return;
+	end
+
+	local battleEvents = {};
+	table.insert(battleEvents, {Object = owner, EventType = 'HealSupport', Args = nil});
+	
+	local healAction = Result_UseAbilityTarget(owner, healAbility.name, owner, {ReactionAbility=true, SupportHeal=true, BattleEvents=battleEvents}, true, {});
+	healAction.free_action = true;
+	healAction.final_useable_checker = function()
+		return not GetBuffStatus(owner, 'Unconscious', 'Or')
+			and PositionInRange(CalculateRange(owner, healAbility.TargetRange, GetPosition(owner)), GetPosition(owner));
+	end;
+	return healAction;
+end
+-- 괴도
+function Mastery_PhantomThief_UnitTurnStart(eventArg, mastery, owner, ds)
+	local buffList = GetBuffList(owner);
+	local actions = {};
+	for _, buff in ipairs(buffList) do
+		if mastery.CustomCacheData[buff.name] then
+			InsertBuffActions(actions, owner, owner, buff.name, -1 * buff.Lv);
+		end
+	end
+	MasteryActivatedHelper(ds, mastery, owner, 'UnitTurnStart_Self');
+	return unpack(actions);
+end
+-- 사전 준비
+function Mastery_AdvancePreparation_UnitTurnStart(eventArg, mastery, owner, ds)
+	local actions = {};
+	if owner.PerformanceType == 'None' then
+		return;
+	end
+	
+	local randomEffect = table.randompick(GetClassList('Performance')[owner.PerformanceType].Effect);
+	AddPerformanceEffectAction(actions, owner, randomEffect.Type, 'AdvancePreparation');
+	MasteryActivatedHelper(ds, mastery, owner, 'UnitTurnStart_Self');
+	return unpack(actions);
+end
 -- 죽음을 경배하라.
 function Mastery_Skull_UnitTurnStart(eventArg, mastery, owner, ds)
 	if mastery.DuplicateApplyChecker <= 0 then
@@ -3085,7 +3165,7 @@ function Mastery_Vivacious_UnitTurnStart(eventArg, mastery, owner, ds)
 	end
 	local addAmount = #buffList / mastery.ApplyAmount * mastery.ApplyAmount2;
 	AddSPPropertyActions(actions, owner, 'Spirit', addAmount, true, ds, true);
-	MasteryActivatedHelper(ds, mastery, owner, 'UnitTurnStar_Self');
+	MasteryActivatedHelper(ds, mastery, owner, 'UnitTurnStart_Self');
 	return unpack(actions);
 end
 -- 이독 제독
@@ -3099,7 +3179,7 @@ function Mastery_PoisonRemovePoison_UnitTurnStart(eventArg, mastery, owner, ds)
 	end
 	local actions = {};
 	local objKey = GetObjKey(owner);
-	MasteryActivatedHelper(ds, mastery, owner, 'UnitTurnStar_Self');
+	MasteryActivatedHelper(ds, mastery, owner, 'UnitTurnStart_Self');
 	for _, buff in ipairs(buffList) do
 		InsertBuffActions(actions, owner, owner, buff.name, -1 * buff.Lv, true);
 		ds:UpdateBattleEvent(objKey, 'BuffDischarged', { Buff = buff.name });
@@ -3149,7 +3229,7 @@ function Mastery_LifeAura_UnitTurnStart(eventArg, mastery, owner, ds)
 	table.scoresort(list, function(target) return target.Act end);
 	
 	local actions = {};
-	MasteryActivatedHelper(ds, mastery, owner, 'UnitTurnStar_Self');
+	MasteryActivatedHelper(ds, mastery, owner, 'UnitTurnStart_Self');
 	for _, target in ipairs(list) do
 		local targetKey = GetObjKey(target);
 		-- 기력 회복
@@ -3673,6 +3753,23 @@ function Mastery_EvilSword_UnitTurnStart(eventArg, mastery, owner, ds)
 	InsertBuffActions(actions, owner, owner, mastery.Buff.name, 1, true);	
 	return unpack(actions);
 end
+-- 거짓 협박
+function Mastery_FalseThreat_UnitTurnStart(eventArg, mastery, owner, ds)
+	local curRange = mastery.Range;
+	local targetRange = CalculateRange(owner, curRange, GetPosition(owner));
+	local targetObjects = BuffHelper.GetObjectsInRange(GetMission(owner), targetRange, function(target)
+		return GetRelation(owner, target) == 'Enemy';
+	end);
+	if #targetObjects == 0 then
+		return;
+	end
+	local actions = {};
+	MasteryActivatedHelper(ds, mastery, owner, 'UnitTurnStart_Self', true);	
+	for _, target in ipairs(targetObjects) do
+		InsertBuffActions(actions, owner, target, mastery.Buff.name, 1);
+	end
+	return unpack(actions);
+end
 -----------------------------------------------------------------------
 -- 턴 획득 [UnitTurnAcquired]
 -------------------------------------------------------------------------------
@@ -3687,6 +3784,11 @@ function Mastery_PerformanceSystem_UnitTurnAcquired(eventArg, mastery, owner, ds
 	local uesableAbilityList = GetAvailableAbility(owner);
 	uesableAbilityList = table.filter(uesableAbilityList, function(ability) return not IsMoveTypeAbility(ability) end);	
 	uesableAbilityList = SortAbilityList(owner, uesableAbilityList);
+	
+	local mastery_WildDance = GetMasteryMastered(GetMastery(owner), 'WildDance');
+	if mastery_WildDance then
+		uesableAbilityList = table.shuffle(uesableAbilityList);
+	end
 	
 	for _, info in ipairs(owner.PerformanceList) do
 		local stepCount = info.StepCount;
@@ -4658,44 +4760,167 @@ function Mastery_SoulTakerBlade_UnitTurnEnd(eventArg, mastery, owner, ds)
 	InsertBuffActions(actions, owner, owner, mastery.Buff.name, 1, true);	
 	return unpack(actions);
 end
------------------------------------------------------------------------
--- 버프 추가. [BuffAdded]
--------------------------------------------------------------------------------
-
------------------------------------------------------------------------
--- 버프 제거. [BuffRemoved]
--------------------------------------------------------------------------------
-function Mastery_Awakening_BuffRemoved(eventArg, mastery, owner, ds)
-	if eventArg.Unit ~= owner or eventArg.BuffName ~= mastery.SubBuff.name then
+-- 현장 지휘
+function Mastery_FieldCommand_UnitTurnEnd(eventArg, mastery, owner, ds)
+	local curRange = mastery.Range;
+	local targetRange = CalculateRange(owner, curRange, GetPosition(owner));
+	local targetObjects = BuffHelper.GetObjectsInRange(GetMission(owner), targetRange, function(target)
+		return GetRelation(owner, target) == 'Team';
+	end);
+	if #targetObjects == 0 then
 		return;
 	end
 	local actions = {};
-	InsertBuffActions(actions, owner, owner, mastery.Buff.name, 1);
-	ds:AddMissionChat(GetMasteryEventKey(owner), 'MasteryEvent', {ObjectKey = GetObjKey(owner), MasteryType = mastery.name, EventType = 'BuffRemoved'});
-	return unpack(actions);
-end
--- 연막 이동
-function Mastery_MoveWithSmokeScreen_BuffRemoved(eventArg, mastery, owner, ds)
-	if eventArg.Unit ~= owner or eventArg.BuffName ~= mastery.Buff.name then
-		return;
+	MasteryActivatedHelper(ds, mastery, owner, 'UnitTurnEnd_Self', true);
+	for _, target in ipairs(targetObjects) do
+		InsertBuffActions(actions, owner, target, mastery.Buff.name, 1);
 	end
-	if eventArg.Buff.IsTurnShow then
-		return;
-	end	
-	local actions = {};
-	local modifier = function(b)
-		b.IsTurnShow = true;
-	end;
-	InsertBuffActions(actions, owner, owner, mastery.Buff.name, 1, true, modifier);
-	table.insert(actions, Result_BuffPropertyUpdated('IsTurnShow', true, owner, mastery.Buff.name, false, true));
-	table.insert(actions, Result_BuffPropertyUpdated('Turn', mastery.ApplyAmount, owner, mastery.Buff.name, false, true));
-	table.insert(actions, Result_BuffPropertyUpdated('Life', mastery.ApplyAmount, owner, mastery.Buff.name, true, true));
-	MasteryActivatedHelper(ds, mastery, owner, 'BuffRemoved_Self');
 	return unpack(actions);
 end
 -----------------------------------------------------------------------
 -- 어빌리티 사용 [AbilityUsed]
 -------------------------------------------------------------------------------
+-- 선봉장
+function Mastery_Vanguard_AbilityUsed(eventArg, mastery, owner, ds)	
+	if owner.TurnState.TurnEnded
+		or eventArg.Ability.Type ~= 'Attack'
+		or table.count(GetAllUnitInSight(owner, true), function(obj) return IsEnemy(owner, obj) and obj.HP > 0; end) > 0 then
+		return;
+	end
+	local allDead = true;
+	local killExist = false;
+	ForeachAbilityUsingInfo({eventArg.PrimaryTargetInfos, eventArg.SecondaryTargetInfos}, function(info)
+		if not IsInSight(owner, info.Target, true) 
+			or not IsEnemy(owner, info.Target) then
+			return true;
+		end
+		if info.Target.HP > 0 then
+			allDead = false;
+			return false;
+		else
+			killExist = true;
+		end
+		return true;
+	end);
+	if not (allDead and killExist) then
+		return;
+	end
+	local targetObjects = Linq.new(GetNearObject(owner, mastery.ApplyAmount + 0.4))
+		:where(function(o) return GetRelation(owner, o) == 'Team' end)
+		:toList();
+	if #targetObjects == 0 then
+		return;
+	end
+	local actions = {};
+	MasteryActivatedHelper(ds, mastery, owner, 'AbilityUsed_Self', true);
+	for _, target in ipairs(targetObjects) do
+		InsertBuffActions(actions, owner, target, mastery.Buff.name, addBuffLv, true);
+	end
+	return unpack(actions);
+end
+-- 호시탐탐
+function Mastery_WaitOpportunity_AbilityUsed(eventArg, mastery, owner, ds)
+	if eventArg.Ability.Type ~= 'Attack'
+		or not IsEnemy(owner, eventArg.Unit)
+		or not IsInSight(owner, GetPosition(eventArg.Unit), true) then
+		return;
+	end
+	
+	if not HasAnyAbilityUsingInfo({eventArg.PrimaryTargetInfos, eventArg.SecondaryTargetInfos}, function (targetInfo)
+		return IsTeamOrAlly(owner, targetInfo.Target);
+	end) then
+		return;
+	end
+	
+	local actions = {};
+	AddActionApplyActForDS(actions, owner, -mastery.ApplyAmount, ds, 'Friendly');
+	MasteryActivatedHelper(ds, mastery, owner, 'AbilityUsed');
+	return unpack(actions);
+end
+-- 기회 차단
+function Mastery_BreakOpportunity_AbilityUsed(eventArg, mastery, owner, ds)
+	if eventArg.Ability.Type ~= 'Attack'
+		or not SafeIndex(eventArg, 'ResultModifier', 'ReactionAbility') then
+		return;
+	end
+	
+	local actions = {};
+	ForeachAbilityUsingInfo({eventArg.PrimaryTargetInfos, eventArg.SecondaryTargetInfos}, function (targetInfo)
+		if IsEnemy(owner, targetInfo.Target) and targetInfo.DefenderState ~= 'Dodge' then
+			InsertBuffActions(actions, owner, targetInfo.Target, mastery.Buff.name, 1, true);
+		end
+	end);
+	
+	if #actions == 0 then
+		return;
+	end
+	
+	MasteryActivatedHelper(ds, mastery, owner, 'AbilityUsed_Self');
+	return unpack(actions);
+end
+-- 액션 배우
+function Mastery_ActionActor_AbilityUsed(eventArg, mastery, owner, ds)
+	local lastUsedAbility = GetInstantProperty(owner, 'LastAbility');
+	if lastUsedAbility == nil then
+		return;
+	end
+	if (not IsMoveTypeAbility(eventArg.Ability) or not IsMoveTypeAbility(GetClassList('Ability')[lastUsedAbility]))
+		and eventArg.Ability.name ~= lastUsedAbility then
+		return;
+	end
+	
+	local actions = {};
+	AddActionApplyActForDS(actions, owner, -mastery.ApplyAmount, ds, 'Friendly');
+	MasteryActivatedHelper(ds, mastery, owner, 'AbilityUsed_Self');
+	return unpack(actions);
+end
+-- 대량배달
+function Mastery_LargeDelivery_AbilityUsed(eventArg, mastery, owner, ds)
+	if eventArg.Ability.KnockbackPower <= 0 then
+		return;
+	end
+	local knockbackCount = 0;
+	ForeachAbilityUsingInfo({eventArg.PrimaryTargetInfos, eventArg.SecondaryTargetInfos}, function (targetInfo)
+		if IsInvalidPosition(targetInfo.AfterPosition) then
+			return;
+		end
+		knockbackCount = knockbackCount + 1;
+	end);
+	
+	if knockbackCount == 0 then
+		return;
+	end
+	
+	local hasteAmount = math.floor(knockbackCount / mastery.ApplyAmount) * mastery.ApplyAmount2;
+	local actions = {};
+	AddActionApplyActForDS(actions, owner, -hasteAmount, ds, 'Friendly');
+	MasteryActivatedHelper(ds, mastery, owner, 'AbilityUsed_Self');
+	return unpack(actions);
+end
+-- 신속배달
+function Mastery_QuickDelivery_AbilityUsed(eventArg, mastery, owner, ds)
+	if eventArg.Ability.KnockbackPower <= 0 then
+		return;
+	end
+	local longestKnockback = 0;
+	ForeachAbilityUsingInfo({eventArg.PrimaryTargetInfos, eventArg.SecondaryTargetInfos}, function (targetInfo)
+		if IsInvalidPosition(targetInfo.AfterPosition) then
+			return;
+		end
+		
+		longestKnockback = math.max(longestKnockback, GetDistance3D(targetInfo.TargetPos, targetInfo.AfterPosition));
+	end);
+	
+	if longestKnockback == 0 then
+		return;
+	end
+	
+	local hasteAmount = math.floor(longestKnockback / mastery.ApplyAmount) * mastery.ApplyAmount2;
+	local actions = {};
+	AddActionApplyActForDS(actions, owner, -hasteAmount, ds, 'Friendly');
+	MasteryActivatedHelper(ds, mastery, owner, 'AbilityUsed_Self');
+	return unpack(actions);
+end
 -- 막 잡은 먹잇감
 function Mastery_FastFishing_AbilityUsed(eventArg, mastery, owner, ds)
 	if eventArg.Ability.name ~= 'PreyThrow' then
@@ -5660,7 +5885,7 @@ function Mastery_OntheSkyHunter_AbilityUsed(eventArg, mastery, owner, ds)
 	
 	local targetEnemyInfos = FilterAbilityUsingInfo({eventArg.PrimaryTargetInfos, eventArg.SecondaryTargetInfos}, function(targetInfo)
 		local height = GetHeight(prevPos, targetInfo.TargetPos);
-		local attackerHight = IsAttakerHighPosition(height, GetMastery(owner), GetMastery(targetInfo.Target));	
+		local attackerHight = IsAttakerHighPosition(height, owner, targetInfo.Target);
 		return attackerHight and IsEnemy(owner, targetInfo.Target);
 	end);
 	
@@ -6699,6 +6924,46 @@ function Mastery_AntiESPBullet_AbilityUsed(eventArg, mastery, owner, ds)
 	end
 	return unpack(actions);
 end
+-- 작렬탄
+function Mastery_ExplosiveBullet_AbilityUsed(eventArg, mastery, owner, ds)
+	if eventArg.Ability.Type ~= 'Attack'
+		or eventArg.Ability.HitRateType ~= 'Force'
+		or eventArg.Ability.SubType ~= 'Piercing'
+		or eventArg.Ability.TargetType ~= 'Single' then
+		return;
+	end
+	
+	local deadTargets = {};
+	ForeachAbilityUsingInfo({eventArg.PrimaryTargetInfos, eventArg.SecondaryTargetInfos}, function (targetInfo)
+		if targetInfo.DefenderState == 'Dodge' then
+			return;
+		end
+		local target = targetInfo.Target;
+		local targetKey = GetObjKey(target);
+		if IsEnemy(owner, target) and targetInfo.IsDead then
+			deadTargets[targetKey] = targetInfo.Target;
+		end
+	end);
+	if table.empty(deadTargets) then
+		return;
+	end
+	
+	local actions = {};
+	MasteryActivatedHelper(ds, mastery, owner, 'AbilityUsed_Self', false);
+	local sleepID = ds:Sleep(0);
+	local sleepIndex = 1;
+	for _, target in pairs(deadTargets) do
+		local abilityAction, destroyAction = Mastery_Explode_UnitDead_Share({ Killer = owner }, mastery, target, ds, mastery.ChainAbility);
+		abilityAction.directing_config = { NoCamera=true, Preemtive=true };
+		abilityAction.nonsequential = true;
+		abilityAction.sequential = nil;
+		abilityAction._ref = sleepID;
+		abilityAction._ref_offset = sleepIndex * 0.1;
+		sleepIndex = sleepIndex + 1;
+		table.append(actions, { abilityAction, destroyAction} );
+	end
+	return unpack(actions);
+end
 -- 마력 흡수
 function Mastery_SpellAbsorbing_AbilityUsed(eventArg, mastery, owner, ds)
 	if eventArg.Ability.Type ~= 'Attack' then
@@ -7401,6 +7666,66 @@ function Mastery_Module_Retribution_AbilityUsed(eventArg, mastery, owner, ds)
 	ds:WorldAction(retributionAttack, true);
 	mastery.DuplicateApplyChecker = mastery.DuplicateApplyChecker - 1;
 end
+-- 분노의 응징
+function Mastery_RetributionOfRage_AbilityUsed(eventArg, mastery, owner, ds)
+	if GetRelation(owner, eventArg.Unit) ~= 'Enemy'
+		or owner == eventArg.Unit
+		or eventArg.Ability.Type ~= 'Attack'
+		or eventArg.DirectingConfig.Preemptive
+		or not owner.TurnState.TurnEnded 
+		or not GetBuffStatus(owner, 'Attackable', 'And') 
+		or eventArg.Unit.HP <= 0 then
+		return;
+	end
+	
+	if not HasBuffType(owner, nil, nil, mastery.BuffGroup.name) then
+		return;
+	end
+
+	-- 아군이 포함되어 있어야 발동함
+	local hasDeadAlly = HasAnyAbilityUsingInfo({eventArg.PrimaryTargetInfos, eventArg.SecondaryTargetInfos}, function(targetInfo)
+		return targetInfo.IsDead and IsTeamOrAlly(owner, targetInfo.Target);
+	end);
+	if not hasDeadAlly then
+		return;
+	end
+	
+	local retributionAbility = FindAbility(owner, owner.OverwatchAbility);
+	if retributionAbility == nil then
+		-- 어빌리티가 존재하지만 비활성화된 경우에는 에러 로그를 남가지 않음
+		if not FindAbility(owner, owner.OverwatchAbility, false) then
+			LogAndPrint('[DataError]', 'No Ability for Retribution.', 'owner.OverwatchAbility:', owner.OverwatchAbility);
+		end
+		return;
+	end
+	
+	local myPos = GetPosition(owner);
+	local enemyPos = GetPosition(eventArg.Unit);
+	local range = CalculateRange(owner, retributionAbility.TargetRange, myPos);
+	if not PositionInRange(range, enemyPos) then
+		return;
+	end
+	
+	ds:AddMissionChat(GetMasteryEventKey(owner), 'MasteryEvent', {ObjectKey = GetObjKey(owner), MasteryType = mastery.name, EventType = 'AbilityUsed'});
+	
+	local applyAct = mastery.ApplyAmount;
+	local action, reasons = GetApplyActAction(owner, applyAct, nil, 'Cost');
+	local battleEvents = {};
+	table.insert(battleEvents, { Object = owner, EventType = 'MasteryInvokedBeginning', Args = {Mastery = mastery.name} });
+	if action then
+		ds:WorldAction(action, true);
+		table.insert(battleEvents, { Object = owner, EventType = 'AddWait', Args = { Time = applyAct } });
+	end
+	table.append(battleEvents, ReasonToBattleEventTableMulti(owner, reasons, 'FirstHit'));
+	
+	local retributionAttack = Result_UseAbility(owner, retributionAbility.name, enemyPos, {ReactionAbility = true, Retribution = true, BattleEvents = battleEvents}, true, {});
+	retributionAttack.free_action = true;
+	retributionAttack.final_useable_checker = function()
+		return GetBuffStatus(owner, 'Attackable', 'And')
+			and PositionInRange(CalculateRange(owner, retributionAbility.TargetRange, GetPosition(owner)), enemyPos)
+	end;
+	ds:WorldAction(retributionAttack, true);
+end
 -- 칼날 폭풍
 function Mastery_Bladestorm_AbilityUsed(eventArg, mastery, owner, ds)
 	if eventArg.Unit ~= owner
@@ -7715,6 +8040,13 @@ function Mastery_PositionOfAdvantage_AbilityUsed(eventArg, mastery, owner, ds)
 	if not mastery_PreoccupyPosition then
 		return;
 	end
+	-- 높은 위치
+	local isHeightPosition = mastery_PreoccupyPosition.CountChecker > 0;
+	mastery_PreoccupyPosition.CountChecker = 0;
+	-- 안정된 자세
+	local isStableAttack = GetInstantProperty(owner, 'StableAttack');
+	SetInstantProperty(owner, 'StableAttack', nil);	
+	
 	mastery.DuplicateApplyChecker = mastery.DuplicateApplyChecker - 1;
 	if mastery.DuplicateApplyChecker > 0 then
 		return;
@@ -7736,18 +8068,9 @@ function Mastery_PositionOfAdvantage_AbilityUsed(eventArg, mastery, owner, ds)
 		return;
 	end
 	
-	local isStableAttack = GetInstantProperty(owner, 'StableAttack');
-	SetInstantProperty(owner, 'StableAttack', nil);
-	
 	-- 안정된 자세도 아니고, 높은 위치가 적용되는 적이 하나도 없으면 무시
-	if not isStableAttack then
-		local heightTargets = table.filter(hitTargets, function(target)
-			local _, height = GetDistanceFromObjectToObjectAbility(eventArg.Ability, owner, target);
-			return IsAttakerHighPosition(height, masteryTable, GetMastery(target));	
-		end);
-		if #heightTargets == 0 then
-			return;
-		end
+	if not isStableAttack and not isHeightPosition then
+		return;
 	end
 	
 	local actions = {};
@@ -7927,7 +8250,7 @@ end
 function Mastery_CursedSword_AbilityUsed(eventArg, mastery, owner, ds)
 	if eventArg.Unit ~= owner
 		or eventArg.Ability.Type ~= 'Attack'
-		or eventArg.Ability.SubType ~= 'Slashing' then
+		or eventArg.Ability.HitRateType ~= 'Melee' then
 		return;
 	end
 	local applyTargets = {};
@@ -7977,20 +8300,20 @@ function Mastery_CursedSword_AbilityUsed(eventArg, mastery, owner, ds)
 	ds:AddMissionChat(GetMasteryEventKey(owner), 'MasteryEvent', {ObjectKey = objKey, MasteryType = mastery.name, EventType = 'AbilityUsed'});
 	return unpack(actions);
 end
--- 특성 보이지 않는 검
-function Mastery_InvisibleSword_AbilityUsed(eventArg, mastery, owner, ds)
+-- 특성 보이지 않는 검, 감춰진 살의
+function Mastery_CommonBattleTargets_AbilityUsed(eventArg, mastery, owner, ds)
 	if eventArg.Unit ~= owner or eventArg.Ability.Type ~= 'Attack' then
 		return;
 	end
-	local battleTargets = GetInstantProperty(owner, 'InvisibleSword') or {};
+	local battleTargets = GetInstantProperty(owner, mastery.name) or {};
 	ForeachAbilityUsingInfo({eventArg.PrimaryTargetInfos, eventArg.SecondaryTargetInfos}, function (targetInfo)
 		local target = targetInfo.Target;
 		if IsEnemy(owner, target) then
 			local targetKey = GetObjKey(target);
 			battleTargets[targetKey] = true;
 		end
-	end);	
-	return Result_UpdateInstantProperty(owner, 'InvisibleSword', battleTargets);
+	end);
+	return Result_UpdateInstantProperty(owner, mastery.name, battleTargets);
 end
 -- 특성 무한검
 function Mastery_UnlimitedBlade_AbilityUsed(eventArg, mastery, owner, ds)
@@ -9149,6 +9472,66 @@ function Mastery_SoulTakerBlade_AbilityUsed(eventArg, mastery, owner, ds)
 	InsertBuffActions(actions, owner, owner, mastery.SubBuff.name, 1, true);
 	return unpack(actions);
 end
+-- 철저한 응징
+function Mastery_ThoroughRetribution_AbilityUsed(eventArg, mastery, owner, ds)
+	if eventArg.Ability.Type ~= 'Attack' then
+		return;
+	end
+	local applyTargets = {};
+	ForeachAbilityUsingInfo({eventArg.PrimaryTargetInfos, eventArg.SecondaryTargetInfos}, function(targetInfo)
+		local target = targetInfo.Target;
+		if IsEnemy(owner, target) and targetInfo.IsDead then
+			Linq.new(GetNearObject(target, mastery.ApplyAmount + 0.4))
+				:where(function(o) return IsEnemy(owner, o) and target ~= o end)
+				:foreach(function(o) applyTargets[GetObjKey(o)] = o end);
+		end
+	end);
+	if table.empty(applyTargets) then
+		return;
+	end
+	local actions = {};
+	MasteryActivatedHelper(ds, mastery, owner, 'AbilityUsed');
+	for _, target in pairs(applyTargets) do
+		InsertBuffActions(actions, owner, target, mastery.Buff.name, 1, true);
+	end
+	return unpack(actions);
+end
+-- 재기동 최적화 알고리즘
+function Mastery_RestartOptimaztionAlgorithm_AbilityUsed(eventArg, mastery, owner, ds)
+	if eventArg.Ability.name ~= 'Restart' then
+		return;
+	end
+	local actions = {};
+	MasteryActivatedHelper(ds, mastery, owner, 'AbilityUsed_Self');
+	-- 어빌리티 재사용 대기 시간 감소
+	AddAbilityCoolActions(actions, owner, -mastery.ApplyAmount2, function (ability)
+		return IsProtocolAbility(ability) and ability.name ~= eventArg.Ability.name;
+	end);	
+	return unpack(actions);
+end	
+-- 교묘한 일격
+function Mastery_CleverBlow_AbilityUsed(eventArg, mastery, owner, ds)
+	if eventArg.Ability.Type ~= 'Attack' then
+		return;
+	end
+	local applyTargets = {};
+	ForeachAbilityUsingInfo({eventArg.PrimaryTargetInfos, eventArg.SecondaryTargetInfos}, function(targetInfo)
+		local target = targetInfo.Target;
+		local targetKey = GetObjKey(target);
+		if IsEnemy(owner, target) and targetInfo.MainDamage > 0 and target.HP > 0 and (target.CostType.name == 'Vigor' or target.CostType.name == 'Rage') then
+			applyTargets[targetKey] = target;
+		end
+	end);
+	if table.empty(applyTargets) then
+		return;
+	end
+	local actions = {};
+	MasteryActivatedHelper(ds, mastery, owner, 'AbilityUsed');
+	for _, target in pairs(applyTargets) do
+		AddActionCostForDS(actions, target, -1 * mastery.ApplyAmount, true, nil, ds);
+	end
+	return unpack(actions);
+end
 -----------------------------------------------------------------------
 -- 어빌리티 사용 임박 [PreAbilityUsing]
 -----------------------------------------------------------------------
@@ -9437,6 +9820,17 @@ end
 ------------------------------------------------------------------------------------
 -- 적에게 피해를 받을때 [UnitTakeDamage]
 --------------------------------------------------------------------------------------
+-- 고통의 망각
+function Mastery_OblivionOfPain_UnitTakeDamage(eventArg, mastery, owner, ds)
+	local buff = GetBuff(owner, mastery.Buff.name);
+	if buff == nil
+		or eventArg.Damage <= 0
+		or SafeIndex(eventArg, 'DamageInfo', 'damage_type') == 'Ability' then
+		return;
+	end
+	
+	return Mastery_OblivionOfPain_ApplyAction(mastery, buff, owner, ds, 'UnitTakeDamage_Self');
+end
 -- 해골 인장
 function Mastery_Amulet_Scourge_UnitTakeDamage(eventArg, mastery, owner, ds)
 	if mastery.CountChecker <= 0 then
@@ -9799,20 +10193,15 @@ function Mastery_Steal_AbilityUsed(eventArg, mastery, owner, ds)
 	end
 	local stealTarget = table.shuffle(stealTargets)[1];
 	local target = stealTarget.Target;
-	local equipPosList = stealTarget.EquipPosList;
-	local equipPos = table.shuffle(equipPosList)[1];
+	local equipPos = stealTarget.EquipPos;
 	
 	local ownerMasteryTable = GetMastery(owner);
 	local targetMasteryTable = GetMastery(target);
-	local mastery_PhantomThief = GetMasteryMastered(ownerMasteryTable, 'PhantomThief');
 	local mastery_ArseneLupin = GetMasteryMastered(ownerMasteryTable, 'ArseneLupin');
 	local mastery_Sherlock = GetMasteryMastered(targetMasteryTable, 'Sherlock');
 	local mastery_Detective = GetMasteryMastered(targetMasteryTable, 'Detective');
 
 	local prob = mastery.ApplyAmount;
-	if mastery_PhantomThief then
-		prob = prob * mastery_PhantomThief.ApplyAmount;
-	end
 
 	if RandomTest(100 - prob) then
 		return;
@@ -9823,11 +10212,6 @@ function Mastery_Steal_AbilityUsed(eventArg, mastery, owner, ds)
 		isStealSuccess = false;
 	end
 	
-	local isPhantomThief = false;	
-	if mastery_PhantomThief then
-		isPhantomThief = true;
-	end
-	
 	local actions = {};
 	
 	local ownerKey = GetObjKey(owner);
@@ -9835,12 +10219,6 @@ function Mastery_Steal_AbilityUsed(eventArg, mastery, owner, ds)
 	
 	local battleMessageID = ds:UpdateBattleEvent(ownerKey, 'MasteryInvoked', { Mastery = mastery.name });
 	local lastActionID = battleMessageID;
-	
-	if isPhantomThief then
-		local phantomThiefID = ds:UpdateBattleEvent(ownerKey, 'MasteryInvoked', { Mastery = mastery_PhantomThief.name });
-		ds:Connect(phantomThiefID, lastActionID, 0.2);
-		lastActionID = phantomThiefID;
-	end
 	
 	if isStealSuccess then
 		lastActionID = ApplyStealActions(actions, ds, owner, target, equipPos, lastActionID, 1.5);
@@ -9870,9 +10248,6 @@ function Mastery_Steal_AbilityUsed(eventArg, mastery, owner, ds)
 	end
 	
 	ds:AddMissionChat(GetMasteryEventKey(owner), 'MasteryEvent', {ObjectKey = ownerKey, MasteryType = mastery.name, EventType = 'AbilityUsed_Self'});
-	if isPhantomThief then
-		ds:AddMissionChat(GetMasteryEventKey(owner), 'MasteryEvent', {ObjectKey = ownerKey, MasteryType = mastery_PhantomThief.name, EventType = 'AbilityUsed_Self'});
-	end
 	if mastery_ArseneLupin then
 		ds:AddMissionChat(GetMasteryEventKey(owner), 'MasteryEvent', {ObjectKey = ownerKey, MasteryType = mastery_ArseneLupin.name, EventType = 'AbilityUsed_Self'});
 	end
@@ -9882,6 +10257,43 @@ function Mastery_Steal_AbilityUsed(eventArg, mastery, owner, ds)
 	if mastery_Detective then
 		ds:AddMissionChat(GetMasteryEventKey(owner), 'MasteryEvent', {ObjectKey = ownerKey, MasteryType = mastery_Detective.name, EventType = 'AbilityUsed_Self'});
 	end
+	
+	return unpack(actions);
+end
+-- 잔인한 강탈
+function Mastery_CrueltyRobbery_AbilityUsed(eventArg, mastery, owner, ds)
+	if eventArg.Unit ~= owner or eventArg.Ability.Type ~= 'Attack' then
+		return;
+	end
+	local stealTargets = FindStealTargets(owner, eventArg, function(owner, target, targetInfo)
+		return IsEnemy(owner, target) and targetInfo.AttackerState == 'Critical' and targetInfo.DefenderState ~= 'Dodge';
+	end);
+	if #stealTargets == 0 then
+		return;
+	end
+	
+	local ownerKey = GetObjKey(owner);
+	local battleMessageID = ds:UpdateBattleEvent(ownerKey, 'MasteryInvoked', { Mastery = mastery.name });
+	local lastActionID = battleMessageID;
+	
+	stealTargets = table.shuffle(stealTargets);
+	local actions = {};
+	for i = 1, mastery.ApplyAmount do
+		if i > #stealTargets then
+			break;
+		end
+			
+		local stealTarget = stealTargets[i];
+		local target = stealTarget.Target;
+		local equipPos = stealTarget.EquipPos;
+
+		local targetKey = GetObjKey(target);
+		
+		lastActionID = ApplyStealActions(actions, ds, owner, target, equipPos, lastActionID, 1.5);
+	end
+	InsertBuffActions(actions, owner, owner, mastery.Buff.name, 1, true);
+
+	ds:AddMissionChat(GetMasteryEventKey(owner), 'MasteryEvent', {ObjectKey = ownerKey, MasteryType = mastery.name, EventType = 'AbilityUsed_Self'});
 	
 	return unpack(actions);
 end
@@ -9896,20 +10308,26 @@ function Mastery_Rob_AbilityUsed(eventArg, mastery, owner, ds)
 	if #stealTargets == 0 then
 		return;
 	end
-	local stealTarget = table.shuffle(stealTargets)[1];
-	local target = stealTarget.Target;
-	local equipPosList = stealTarget.EquipPosList;
-	local equipPos = table.shuffle(equipPosList)[1];
-
-	local actions = {};
 	
 	local ownerKey = GetObjKey(owner);
-	local targetKey = GetObjKey(target);
-	
 	local battleMessageID = ds:UpdateBattleEvent(ownerKey, 'MasteryInvoked', { Mastery = mastery.name });
 	local lastActionID = battleMessageID;
 	
-	lastActionID = ApplyStealActions(actions, ds, owner, target, equipPos, lastActionID, 1.5);
+	stealTargets = table.shuffle(stealTargets);
+	local actions = {};
+	for i = 1, mastery.ApplyAmount do
+		if i > #stealTargets then
+			break;
+		end
+			
+		local stealTarget = stealTargets[i];
+		local target = stealTarget.Target;
+		local equipPos = stealTarget.EquipPos;
+
+		local targetKey = GetObjKey(target);
+		
+		lastActionID = ApplyStealActions(actions, ds, owner, target, equipPos, lastActionID, 1.5);
+	end
 	InsertBuffActions(actions, owner, owner, mastery.Buff.name, 1, true);
 
 	ds:AddMissionChat(GetMasteryEventKey(owner), 'MasteryEvent', {ObjectKey = ownerKey, MasteryType = mastery.name, EventType = 'AbilityUsed_Self'});
@@ -9953,7 +10371,9 @@ function FindStealTargets(owner, eventArg, checkFunc)
 		if #stealPosList == 0 then
 			return;
 		end
-		table.insert(stealTargets, { Target = target, EquipPosList = stealPosList });
+		for _, equipPos in ipairs(stealPosList) do
+			table.insert(stealTargets, { Target = target, EquipPos = equipPos });
+		end
 		stealTargetSet[targetKey] = true;
 	end);
 	
@@ -10760,13 +11180,30 @@ end
 ------------------------------------------------------------------------------------
 -- 어빌리티에 영향 받음. [AbilityAffected]
 --------------------------------------------------------------------------------------
--- 촘촘한 비늘
-function Mastery_DenseScale_AbilityAffected(eventArg, mastery, owner, ds)
-	if eventArg.Ability.Type ~= 'Attack' then
+-- 고통의 망각
+function Mastery_OblivionOfPain_ApplyAction(mastery, buff, owner, ds, eventType)
+	local addTurn = -mastery.ApplyAmount;
+	local actions = {};
+	if buff.Life + addTurn <= 0 then
+		table.insert(actions, Result_RemoveBuff(owner, buff.name));
+	else
+		table.insert(actions, Result_BuffPropertyUpdated('Life', buff.Life + addTurn, owner, buff.name, true, true));
+	end
+	MasteryActivatedHelper(ds, mastery, owner, eventType);
+	return unpack(actions);
+end
+function Mastery_OblivionOfPain_AbilityAffected(eventArg, mastery, owner, ds)
+	local buff = GetBuff(owner, mastery.Buff.name);
+	if buff == nil or
+		eventArg.Ability.Type ~= 'Attack' then
 		return;
 	end
 	
-	return Result_UpdateInstantProperty(owner, 'DenseScale_LastDamageType', eventArg.Ability.SubType, true);
+	if not table.exist(eventArg.AbilityTargetInfos, function(targetInfo) return targetInfo.DefenderState ~= 'Dodge' and targetInfo.MainDamage > 0; end) then
+		return;
+	end
+	
+	return Mastery_OblivionOfPain_ApplyAction(mastery, buff, owner, ds, 'AbilityAffected');
 end
 -- 동족 포식
 function Mastery_Cannibalization_Test(mastery, owner, ds, invoker)
@@ -11660,9 +12097,77 @@ function Mastery_Module_AutoDefence_AbilityAffected(eventArg, mastery, owner, ds
 	AddActionApplyActForDS(actions, owner, -mastery.ApplyAmount, ds, 'Friendly');
 	return unpack(actions);
 end
+-- 죽음의 문턱
+function Mastery_DeathDoor_AbilityAffected(eventArg, mastery, owner, ds)
+	if eventArg.Ability.Type ~= 'Attack' then
+		return;
+	end
+	if not HasBuff(owner, mastery.Buff.name) then
+		return;
+	end
+	if not IsEnemy(owner, eventArg.User) then
+		return;
+	end
+	local hasAnyDamage = HasAnyAbilityUsingInfo(eventArg.AbilityTargetInfos, function (targetInfo)
+		return targetInfo.MainDamage > 0;
+	end);
+	if not hasAnyDamage then
+		return;
+	end
+	local actions = {};
+	MasteryActivatedHelper(ds, mastery, owner, 'AbilityAffected');
+	AddActionApplyActForDS(actions, owner, -mastery.ApplyAmount, ds, 'Friendly');
+	return unpack(actions);
+end
+-- 고통의 불꽃
+function Mastery_FlameOfPain_AbilityAffected(eventArg, mastery, owner, ds)
+	if eventArg.Ability.Type ~= 'Attack'
+		or GetRelation(owner, eventArg.User) ~= 'Enemy' then
+		return;
+	end
+	local hasAnyCritical = HasAnyAbilityUsingInfo(eventArg.AbilityTargetInfos, function (targetInfo)
+		return targetInfo.AttackerState == 'Critical' and targetInfo.DefenderState ~= 'Dodge' and targetInfo.MainDamage > 0;
+	end);
+	if not hasAnyCritical then
+		return;
+	end
+	if owner.HP >= owner.MaxHP then
+		return;
+	end
+	local consumedSP = mastery.ApplyAmount2;
+	if owner.SP < consumedSP then
+		return;
+	end	
+	local actions = {};
+	MasteryActivatedHelper(ds, mastery, owner, 'AbilityAffected');
+	AddSPPropertyActionsObject(actions, owner, -consumedSP, true, ds, true);
+	local addHP = math.floor(owner.MaxHP * mastery.ApplyAmount/100);
+	local reasons = AddActionRestoreHP(actions, owner, owner, addHP);
+	ReasonToUpdateBattleEventMulti(owner, ds, reasons);
+	if owner.HP < owner.MaxHP then
+		DirectDamageByType(ds, owner, 'HPRestore', -1 * addHP, math.min(owner.HP + addHP, owner.MaxHP), true, false);
+		AddMasteryDamageChat(ds, owner, mastery, -1 * addHP);
+	end
+	return unpack(actions);
+end
 ------------------------------------------------------------------------------------
 -- 적에게 피해를 입을때. [UnitTakeDamage]
 --------------------------------------------------------------------------------------
+-- 분홍 도깨비
+function Mastery_PinkGoblin_UnitTakeDamage(eventArg, mastery, owner, ds)
+	if eventArg.Damage <= 0 then
+		return;
+	end
+	local applySet = GetInstantProperty(owner, mastery.name) or {};
+	
+	if applySet[GetObjKey(eventArg.Giver)] ~= nil then
+		return;
+	end
+	
+	applySet[GetObjKey(eventArg.Giver)] = true;
+	SetInstantProperty(owner, mastery.name, applySet);
+	return Result_UpdateInstantProperty(owner, mastery.name, applySet);
+end
 -- 특성 암석화
 function Mastery_Solidification_UnitTakeDamage(eventArg, mastery, owner, ds)
 	-- 어빌리티 피격 처리는 AbilityAffected 핸들러에서 진행함
@@ -12515,16 +13020,16 @@ function Mastery_Module_ConversionOfFuel_InvokeCommon(mastery, owner, ds, damage
 	return unpack(actions);
 end
 -- 특성 보이지 않는 검
-function Mastery_InvisibleSword_AbilityAffected(eventArg, mastery, owner, ds)
+function Mastery_CommonBattleTargets_AbilityAffected(eventArg, mastery, owner, ds)
 	if eventArg.Target ~= owner
 		or eventArg.Ability.Type ~= 'Attack'
 		or not IsEnemy(owner, eventArg.User) then
 		return;
 	end
-	local battleTargets = GetInstantProperty(owner, 'InvisibleSword') or {};
+	local battleTargets = GetInstantProperty(owner, mastery.name) or {};
 	local targetKey = GetObjKey(eventArg.User);
 	battleTargets[targetKey] = true;
-	return Result_UpdateInstantProperty(owner, 'InvisibleSword', battleTargets);
+	return Result_UpdateInstantProperty(owner, mastery.name, battleTargets);
 end
 function Mastery_SpellPowerOfCrack_AbilityAffected(eventArg, mastery, owner, ds)
 	if eventArg.Target ~= owner
@@ -12691,6 +13196,13 @@ function Mastery_RushReady_AbilityAffected(eventArg, mastery, owner, ds)
 end
 -- 붉은 꽃
 function Mastery_Amulet_Flower_AbilityAffected(eventArg, mastery, owner, ds)
+	return Mastery_CriticalRageBuff_AbilityAffected(eventArg, mastery, owner, ds);
+end
+-- 다혈질
+function Mastery_HotTempered_AbilityAffected(eventArg, mastery, owner, ds)
+	return Mastery_CriticalRageBuff_AbilityAffected(eventArg, mastery, owner, ds);
+end
+function Mastery_CriticalRageBuff_AbilityAffected(eventArg, mastery, owner, ds)
 	if eventArg.Target ~= owner
 		or GetRelation(owner, eventArg.User) ~= 'Enemy'
 		or eventArg.Ability.Type ~= 'Attack' then
@@ -12702,16 +13214,11 @@ function Mastery_Amulet_Flower_AbilityAffected(eventArg, mastery, owner, ds)
 	if not hasAnyCritical then
 		return;
 	end
-	local prob = mastery.ApplyAmount;
-	if not RandomTest(prob) then
-		return;
-	end
 	local dataList = GetClassList('Buff_'..mastery.BuffGroup.name);
 	if not dataList then
 		LogAndPrint('Random BuffGroup is not defined -:', mastery.BuffGroup.name);
 		return;
 	end
-	
 	local rageBuffList = Linq.new(dataList)
 		:select(function(pair) return pair[1]; end)
 		:toList();
@@ -12972,6 +13479,16 @@ end
 --------------------------------------------------------------------------------------------
 -- 유닛을 죽임 [UnitKilled]
 --------------------------------------------------------------------------------------------
+-- 살수의 길
+function Mastery_RoadOfKiller_UnitKilled(eventArg, mastery, owner, ds)
+	if eventArg.Unit.Race.name ~= 'Human' then
+		return;
+	end
+	local actions = {};
+	AddActionApplyActForDS(actions, owner, -mastery.ApplyAmount2, ds, 'Friendly');
+	MasteryActivatedHelper(ds, mastery, owner, 'UnitKilled_Self');
+	return unpack(actions);
+end
 -- 무장 해제
 function Mastery_Disarming_UnitKilled(eventArg, mastery, owner, ds)
 	if mastery.DuplicateApplyChecker > 0 then
@@ -14049,6 +14566,17 @@ end
 --------------------------------------------------------------------------------
 -- 버프 추가 [BuffAdded]
 ----------------------------------------------------------------------------
+-- 행운수집가
+function Mastery_FortuneCollector_BuffAdded(eventArg, mastery, owner, ds)
+	if eventArg.BuffName ~= mastery.Buff.name then
+		return;
+	end
+	
+	local actions = {};
+	AddActionApplyActForDS(actions, owner, -mastery.ApplyAmount, ds, 'Friendly');
+	MasteryActivatedHelper(ds, mastery, owner, 'BuffAdded_Self');
+	return unpack(actions);
+end
 -- 숙면
 function Mastery_DeepSleep_BuffAdded(eventArg, mastery, owner, ds)
 	if eventArg.Buff.Group ~= mastery.BuffGroup.name then
@@ -14286,6 +14814,45 @@ end
 --------------------------------------------------------------------------------
 -- 버프 제거 [BuffRemoved]
 ----------------------------------------------------------------------------
+-- 행운수집가
+function Mastery_FortuneCollector_BuffRemoved(eventArg, mastery, owner, ds)	
+	if eventArg.BuffName ~= mastery.Buff.name then
+		return;
+	end
+	
+	local actions = {};
+	AddActionApplyActForDS(actions, owner, -mastery.ApplyAmount, ds, 'Friendly');
+	MasteryActivatedHelper(ds, mastery, owner, 'BuffAdded_Self');
+	return unpack(actions);
+end
+function Mastery_Awakening_BuffRemoved(eventArg, mastery, owner, ds)
+	if eventArg.Unit ~= owner or eventArg.BuffName ~= mastery.SubBuff.name then
+		return;
+	end
+	local actions = {};
+	InsertBuffActions(actions, owner, owner, mastery.Buff.name, 1);
+	ds:AddMissionChat(GetMasteryEventKey(owner), 'MasteryEvent', {ObjectKey = GetObjKey(owner), MasteryType = mastery.name, EventType = 'BuffRemoved'});
+	return unpack(actions);
+end
+-- 연막 이동
+function Mastery_MoveWithSmokeScreen_BuffRemoved(eventArg, mastery, owner, ds)
+	if eventArg.Unit ~= owner or eventArg.BuffName ~= mastery.Buff.name then
+		return;
+	end
+	if eventArg.Buff.IsTurnShow then
+		return;
+	end	
+	local actions = {};
+	local modifier = function(b)
+		b.IsTurnShow = true;
+	end;
+	InsertBuffActions(actions, owner, owner, mastery.Buff.name, 1, true, modifier);
+	table.insert(actions, Result_BuffPropertyUpdated('IsTurnShow', true, owner, mastery.Buff.name, false, true));
+	table.insert(actions, Result_BuffPropertyUpdated('Turn', mastery.ApplyAmount, owner, mastery.Buff.name, false, true));
+	table.insert(actions, Result_BuffPropertyUpdated('Life', mastery.ApplyAmount, owner, mastery.Buff.name, true, true));
+	MasteryActivatedHelper(ds, mastery, owner, 'BuffRemoved_Self');
+	return unpack(actions);
+end
 -- 꿈속의 꿈
 function Mastery_DreamInDream_BuffRemoved(eventArg, mastery, owner, ds)
 	if eventArg.Buff.Group ~= mastery.BuffGroup.name then

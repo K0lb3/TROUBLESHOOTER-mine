@@ -60,7 +60,7 @@
 				<property name="Legend" value="1"/>
 			</ItemDropRatio>
 		</class>
-		<class name="Elite" Title="정예" Desc_Format="$WhiteBlue$정예$Blue_ON$ 특성이 활성화됩니다." Image="Icons/Rank_Elite" TunrListImage="HUD/Rank_Elite" TabImage="Icons/EliteTab" TabPushedImage="Icons/EliteTab_Pushed" Color="DodgerBlue" TextColor="White" BackgroundColor="Combine_Yellow" EvolutionBackgroundColor="Combine_Yellow" Weight="2" HackingPenalty="2" BattleEventRatio="1" ExpRatio="1.25" MasteryRatio="1.5" DeBuffRatio="1.5" BaseItemDropRate="15">
+		<class name="Elite" Title="정예" Desc_Format="$WhiteBlue$정예$Blue_ON$ 특성이 활성화됩니다." Image="Icons/Rank_Elite" TunrListImage="HUD/Rank_Elite" TabImage="Icons/EliteTab" TabPushedImage="Icons/EliteTab_Pushed" Color="DodgerBlue" TextColor="White" BackgroundColor="Combine_Yellow" EvolutionBackgroundColor="Combine_Yellow" Weight="2" HackingPenalty="2" BattleEventRatio="1" ExpRatio="1.5" MasteryRatio="1.5" DeBuffRatio="1.5" BaseItemDropRate="15">
 			<ItemDropRatio>
 				<property name="Poor" value="0.8"/>
 				<property name="Common" value="1"/>
@@ -70,7 +70,7 @@
 				<property name="Legend" value="1.5"/>
 			</ItemDropRatio>
 		</class>
-		<class name="Epic" Title="영웅" Desc_Format="$WhiteBlue$영웅$Blue_ON$ 특성이 활성화됩니다." Image="Icons/Rank_Epic" TunrListImage="HUD/Rank_Epic" TabImage="Icons/EpicTab" TabPushedImage="Icons/EpicTab_Pushed" Color="BlueViolet" TextColor="White" BackgroundColor="Combine_Blue" EvolutionBackgroundColor="Combine_Blue" Weight="3" HackingPenalty="3" BattleEventRatio="0.5" ExpRatio="1.5" MasteryRatio="1.75" DeBuffRatio="1.25" BaseItemDropRate="25">
+		<class name="Epic" Title="영웅" Desc_Format="$WhiteBlue$영웅$Blue_ON$ 특성이 활성화됩니다." Image="Icons/Rank_Epic" TunrListImage="HUD/Rank_Epic" TabImage="Icons/EpicTab" TabPushedImage="Icons/EpicTab_Pushed" Color="BlueViolet" TextColor="White" BackgroundColor="Combine_Blue" EvolutionBackgroundColor="Combine_Blue" Weight="3" HackingPenalty="3" BattleEventRatio="0.5" ExpRatio="2" MasteryRatio="1.75" DeBuffRatio="1.25" BaseItemDropRate="25">
 			<ItemDropRatio>
 				<property name="Poor" value="0.5"/>
 				<property name="Common" value="0.9"/>
@@ -80,7 +80,7 @@
 				<property name="Legend" value="2"/>
 			</ItemDropRatio>
 		</class>
-		<class name="Legend" Title="전설" Desc_Format="$WhiteBlue$전설$Blue_ON$ 특성이 활성화됩니다." Image="Icons/Rank_Legend" TunrListImage="HUD/Rank_Legend" TabImage="Icons/LegendTab" TabPushedImage="Icons/LegendTab_Pushed" Color="OrangeRed" TextColor="White" BackgroundColor="Combine_Red" EvolutionBackgroundColor="Combine_Red" Weight="4" HackingPenalty="4" BattleEventRatio="0.5" ExpRatio="2" MasteryRatio="2" DeBuffRatio="1" BaseItemDropRate="35">
+		<class name="Legend" Title="전설" Desc_Format="$WhiteBlue$전설$Blue_ON$ 특성이 활성화됩니다." Image="Icons/Rank_Legend" TunrListImage="HUD/Rank_Legend" TabImage="Icons/LegendTab" TabPushedImage="Icons/LegendTab_Pushed" Color="OrangeRed" TextColor="White" BackgroundColor="Combine_Red" EvolutionBackgroundColor="Combine_Red" Weight="4" HackingPenalty="4" BattleEventRatio="0.5" ExpRatio="3" MasteryRatio="2" DeBuffRatio="1" BaseItemDropRate="35">
 			<ItemDropRatio>
 				<property name="Poor" value="0.1"/>
 				<property name="Common" value="0.5"/>

@@ -17299,4 +17299,66 @@
 			<property value="0"/>
 		</LocalLookPosRatio>
 	</class>
+	<class name="Albus_Fresh03" AdjustToTarget="false" CamLookOrigin="Bottom" CamPosOrigin="Bottom" DOFEnable="false" DOFFocusInnerRange="100000" DOFFocusOuterRange="500" FOV="60" FogOfWarDisable="false" HumanHandle="false" RayCollideCustomRange="2500" RayCollideRangeMethod="Min" TriggerSound="CameraMove.wav">
+		<DiagonalCamPosOffset>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</DiagonalCamPosOffset>
+		<DiagonalCamPosRatio>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</DiagonalCamPosRatio>
+		<DiagonalLookPosOffset>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</DiagonalLookPosOffset>
+		<DiagonalLookPosRatio>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</DiagonalLookPosRatio>
+		<GlobalCamPosOffset>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</GlobalCamPosOffset>
+		<GlobalCamPosRatio>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</GlobalCamPosRatio>
+		<GlobalLookPosOffset>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</GlobalLookPosOffset>
+		<GlobalLookPosRatio>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</GlobalLookPosRatio>
+		<LocalCamPosOffset>
+			<property value="-140"/>
+			<property value="220"/>
+			<property value="200"/>
+		</LocalCamPosOffset>
+		<LocalCamPosRatio>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</LocalCamPosRatio>
+		<LocalLookPosOffset>
+			<property value="70"/>
+			<property value="130"/>
+			<property value="-40"/>
+		</LocalLookPosOffset>
+		<LocalLookPosRatio>
+			<property value="0"/>
+			<property value="0"/>
+			<property value="0"/>
+		</LocalLookPosRatio>
+	</class>
 </idspace>

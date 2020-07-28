@@ -35,24 +35,24 @@
 			<rule property="AddExpRatio" type="number" default="0"/>
 			<rule property="Category" type="link" target="Craft" default="None"/>
 		</schema>
-		<class name="Accessory" Title="악세서리 세공" AddExpRatio="0.8" Image="Icons/Craft_Accessory" Desc="반지, 손목 고리를 제작할 수 있습니다." Category="Armor"/>
-		<class name="Clothes" Title="의상 제작" AddExpRatio="2.5" Image="Icons/Craft_Clothes" Desc="자켓, 코트, 트레이닝복 등을 제작할 수 있습니다." Category="Armor"/>
-		<class name="Leather" Title="가죽 세공" AddExpRatio="0.3" Image="Icons/Craft_Leather" Desc="가죽으로 된 방어구를 제작할 수 있습니다." Category="Armor"/>
-		<class name="Potion" Title="약물 제조" AddExpRatio="0.4" Image="Icons/Craft_Potion" Desc="사용 가능한 약물을 제조할 수 있습니다." Category="Consume"/>
-		<class name="Machine" Title="기계 제작" AddExpRatio="2.5" Image="Icons/Craft_Machine" Desc="기계의 골격을 제작할 수 있습니다." Category="Machine"/>
-		<class name="Jewel" Title="보석 세공" AddExpRatio="0.6" Image="Icons/Craft_Jewel" Desc="각종 보석 재료를 더 좋은 등급의 재료로 제작할 수 있습니다." Category="Material"/>
-		<class name="MaterialReinforce" Title="재료 강화" AddExpRatio="0.4" Image="Icons/Craft_MaterialReinforce" Desc="각종 제작 재료를 더 좋은 등급의 재료로 제작할 수 있습니다." Category="Material"/>
-		<class name="PsionicStone" Title="이능석 합성" AddExpRatio="0.2" Image="Icons/Craft_PsionicStone" Desc="이능석을 더욱 강력한 이능석으로 합성할 수 있습니다." Category="Material"/>
-		<class name="Grenade" Title="폭탄 제조" AddExpRatio="0.6" Image="Icons/Craft_Grenade" Desc="수류탄 류 아이템을 제작할 수 있습니다." Category="Tool"/>
-		<class name="Tool" Title="도구 제작" AddExpRatio="0.4" Image="Icons/Craft_Tool" Desc="기능성 아이템을 제작할 수 있습니다." Category="Tool"/>
-		<class name="Gear" Title="기어 제작" AddExpRatio="5" Image="Icons/Craft_Gear" Desc="기어를 제작할 수 있습니다." Category="Tool"/>
-		<class name="Drone" Title="다목적 지원 장치 제작" AddExpRatio="2.5" Image="Icons/Craft_Drone" Desc="다목적 지원 장치를 제작할 수 있습니다." Category="Weapon"/>
-		<class name="MachinePistol" Title="기관권총 제작" AddExpRatio="2.5" Image="Icons/Craft_MachinePistol" Desc="기관 권총을 제작할 수 있습니다." Category="Weapon"/>
-		<class name="BattleGlove" Title="전투 장갑 제작" AddExpRatio="2.5" Image="Icons/Craft_BattleGlove" Desc="전투 장갑을 제작할 수 있습니다." Category="Weapon"/>
-		<class name="Spray" Title="스프레이 제작" AddExpRatio="2" Image="Icons/Craft_Spray" Desc="다양한 스프레이를 제작할 수 있습니다." Category="Weapon"/>
-		<class name="Sword" Title="검 제작" AddExpRatio="2.5" Image="Icons/Craft_Sword" Desc="검을 제작할 수 있습니다." Category="Weapon"/>
-		<class name="SniperRifle" Title="저격총 제작" AddExpRatio="2.5" Image="Icons/Craft_SniperRifle" Desc="저격총을 제작할 수 있습니다." Category="Weapon"/>
-		<class name="Bangle" Title="팔찌 제작" AddExpRatio="2.5" Image="Icons/Craft_Bangle" Desc="팔찌를 제작할 수 있습니다." Category="Weapon"/>
+		<class name="Accessory" Title="악세서리 세공" AddExpRatio="2" Image="Icons/Craft_Accessory" Desc="반지, 손목 고리를 제작할 수 있습니다." Category="Armor"/>
+		<class name="Clothes" Title="의상 제작" AddExpRatio="6" Image="Icons/Craft_Clothes" Desc="자켓, 코트, 트레이닝복 등을 제작할 수 있습니다." Category="Armor"/>
+		<class name="Leather" Title="가죽 세공" AddExpRatio="1.5" Image="Icons/Craft_Leather" Desc="가죽으로 된 방어구를 제작할 수 있습니다." Category="Armor"/>
+		<class name="Potion" Title="약물 제조" AddExpRatio="2" Image="Icons/Craft_Potion" Desc="사용 가능한 약물을 제조할 수 있습니다." Category="Consume"/>
+		<class name="Machine" Title="기계 제작" AddExpRatio="6" Image="Icons/Craft_Machine" Desc="기계의 골격을 제작할 수 있습니다." Category="Machine"/>
+		<class name="Jewel" Title="보석 세공" AddExpRatio="2.5" Image="Icons/Craft_Jewel" Desc="각종 보석 재료를 더 좋은 등급의 재료로 제작할 수 있습니다." Category="Material"/>
+		<class name="MaterialReinforce" Title="재료 강화" AddExpRatio="2" Image="Icons/Craft_MaterialReinforce" Desc="각종 제작 재료를 더 좋은 등급의 재료로 제작할 수 있습니다." Category="Material"/>
+		<class name="PsionicStone" Title="이능석 합성" AddExpRatio="1.5" Image="Icons/Craft_PsionicStone" Desc="이능석을 더욱 강력한 이능석으로 합성할 수 있습니다." Category="Material"/>
+		<class name="Grenade" Title="폭탄 제조" AddExpRatio="2" Image="Icons/Craft_Grenade" Desc="수류탄 류 아이템을 제작할 수 있습니다." Category="Tool"/>
+		<class name="Tool" Title="도구 제작" AddExpRatio="2" Image="Icons/Craft_Tool" Desc="기능성 아이템을 제작할 수 있습니다." Category="Tool"/>
+		<class name="Gear" Title="기어 제작" AddExpRatio="6" Image="Icons/Craft_Gear" Desc="기어를 제작할 수 있습니다." Category="Tool"/>
+		<class name="Drone" Title="다목적 지원 장치 제작" AddExpRatio="6" Image="Icons/Craft_Drone" Desc="다목적 지원 장치를 제작할 수 있습니다." Category="Weapon"/>
+		<class name="MachinePistol" Title="기관권총 제작" AddExpRatio="6" Image="Icons/Craft_MachinePistol" Desc="기관 권총을 제작할 수 있습니다." Category="Weapon"/>
+		<class name="BattleGlove" Title="전투 장갑 제작" AddExpRatio="6" Image="Icons/Craft_BattleGlove" Desc="전투 장갑을 제작할 수 있습니다." Category="Weapon"/>
+		<class name="Spray" Title="스프레이 제작" AddExpRatio="6" Image="Icons/Craft_Spray" Desc="다양한 스프레이를 제작할 수 있습니다." Category="Weapon"/>
+		<class name="Sword" Title="검 제작" AddExpRatio="6" Image="Icons/Craft_Sword" Desc="검을 제작할 수 있습니다." Category="Weapon"/>
+		<class name="SniperRifle" Title="저격총 제작" AddExpRatio="6" Image="Icons/Craft_SniperRifle" Desc="저격총을 제작할 수 있습니다." Category="Weapon"/>
+		<class name="Bangle" Title="팔찌 제작" AddExpRatio="6" Image="Icons/Craft_Bangle" Desc="팔찌를 제작할 수 있습니다." Category="Weapon"/>
 	</idspace>
 	<idspace id="Recipe">
 		<schema>

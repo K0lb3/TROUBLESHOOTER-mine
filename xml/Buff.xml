@@ -882,7 +882,7 @@
 				<property Event="UnitTurnStart_Self" Script="Buff_DistrustRescue_UnitTurnStart" Order="1"/>
 			</EventHandler>
 		</class>
-		<class name="DetectingWatchtower" Title="[!Ignore]감시" FinalDesc="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/Detecting" SubImage="Buff/Detecting" ImmuneRace="" NeutralizeBuff="None" Type="System" SubType="None" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" UseActionController="true" ActionController="NoAction" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Mute="true" UseAddedMesssage="false" UseActionControlMessage="false">
+		<class name="DetectingWatchtower" Title="[!Ignore]감시" FinalDesc="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/Detecting" SubImage="Buff/Detecting" ImmuneRace="" NeutralizeBuff="None" Type="System" SubType="None" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" UseActionController="true" ActionController="DoNothingAI" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Mute="true" UseAddedMesssage="false" UseActionControlMessage="false">
 			<EventHandler>
 				<property Event="UnitMovedSingleStep" Script="Buff_DetectingWatchtower_UnitMovedSingleStep" Order="1"/>
 				<property Event="UnitDead_Self" Script="Buff_Watchtower_UnitDead" Order="1"/>
@@ -893,7 +893,7 @@
 				<property Event="UnitTakeDamage_Self" Script="Buff_DetectingWatchtower_UnitTakeDamage" Order="1"/>
 			</EventHandler>
 		</class>
-		<class name="Dormant" Title="[!Ignore]작동 중지" FinalDesc="" IsAutoTooltip="true" IsAutoStatusTooltip="false" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/Shotdown" SubImage="Buff/Shotdown" ImmuneRace="" NeutralizeBuff="None" Type="System" SubType="None" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" UseActionController="true" ActionController="NoAction" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_SightRange="-100" Mute="true" UseAddedMessage="false" UseActionControlMessage="false">
+		<class name="Dormant" Title="[!Ignore]작동 중지" FinalDesc="" IsAutoTooltip="true" IsAutoStatusTooltip="false" IsStatusPerLevelTooltip="false" IsTurnShow="false" IsHelpShow="true" Image="Buff/Shotdown" SubImage="Buff/Shotdown" ImmuneRace="" NeutralizeBuff="None" Type="System" SubType="None" Group="None" Stack="false" Base_MaxStack="1" Turn="99999" Movable="true" Attackable="true" BreakType="None" UseActionController="true" ActionController="DoNothingAI" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_SightRange="-100" Mute="true" UseAddedMessage="false" UseActionControlMessage="false">
 			<EventHandler>
 				<property Event="UnitDead_Self" Script="Buff_Watchtower_UnitDead" Order="1"/>
 				<property Event="HackingOccured" Script="Buff_Dormant_HackingOccured" Order="1"/>
@@ -1339,7 +1339,7 @@
 				<property MeshName="Spider_Web_Hold.mesh" ParticlePos="_BOTTOM_" Animation="bg"/>
 			</MeshEffects>
 		</class>
-		<class name="CocoonWeb" Title="거미줄 고치" FinalDesc="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/CocoonWeb" SubImage="Buff/CocoonWeb" ImmuneRace="" NeutralizeBuff="None" Type="Debuff" SubType="Physical" Group="None" Stack="false" Base_MaxStack="1" Turn="3" Movable="false" Attackable="false" BreakType="None" UseActionController="true" ActionController="NoAction" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Base_Dodge="-10" Eval_Block="-10" AbilityBuffEvent="BuffAdded" HideModel="true">
+		<class name="CocoonWeb" Title="거미줄 고치" FinalDesc="" IsAutoTooltip="true" IsAutoStatusTooltip="true" IsStatusPerLevelTooltip="false" IsTurnShow="true" IsHelpShow="true" Image="Buff/CocoonWeb" SubImage="Buff/CocoonWeb" ImmuneRace="" NeutralizeBuff="None" Type="Debuff" SubType="Physical" Group="None" Stack="false" Base_MaxStack="1" Turn="3" Movable="false" Attackable="false" BreakType="None" UseActionController="true" ActionController="DoNothingAI" AddBuff="None" ApplyAmountType="None" ApplyAmountType2="None" ApplyAmountType3="None" Unconscious="true" AbilityBuffEvent="BuffAdded" HideModel="true">
 			<Effects>
 				<property ParticleName="Particles/Dandylion/Buff_StickyWeb" ParticlePos="_BOTTOM_" DirectClear="true"/>
 			</Effects>
@@ -1507,7 +1507,7 @@
 				<property Event="UnitTurnStart_Self" Script="Buff_LostSoul_UnitTurnStart" Order="1"/>
 			</EventHandler>
 			<Desc_Base>
-				<property CaseColor="LimeGold" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="주위 반경 $Value$칸 내 가장 가까운 대상에게 다음과 같은 효과가 발생합니다.">
+				<property CaseColor="LimeGold" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="턴 시작 시, 주위 반경 $Value$칸 내 가장 가까운 대상에게 다음과 같은 효과가 발생합니다.">
 					<FormatKeyword>
 						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue$" ValueType="text"/>
 					</FormatKeyword>
@@ -2582,7 +2582,7 @@
 						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue2$" ValueType="text"/>
 					</FormatKeyword>
 				</property>
-				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="true" LineBreak="true" Text="$Mastery$ 발동 확률이 $Value$ 추가 증가합니다.">
+				<property CaseColor="Blue_ON" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="true" LineBreak="false" Text="$Mastery$ 발동 확률이 $Value$ 추가 증가합니다.">
 					<FormatKeyword>
 						<property FormatKey="Mastery" Color="White" Idspace="Mastery" Key="HeadShot" Value="Title" ValueType="string"/>
 						<property FormatKey="Value" Color="None" Idspace="None" Key="None" Value="$ApplyAmountValue3$" ValueType="text"/>

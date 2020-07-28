@@ -82,6 +82,10 @@ function GetTargetScoreRatio(self, target)
 	if HasBuff(target, 'Giant_SideEffect') then
 		scoreRatio = scoreRatio - 1;
 	end	
+	local mastery_BigBody = GetMasteryMastered(GetMastery(target), 'BigBody');
+	if mastery_BigBody then
+		scoreRatio = scoreRatio + mastery_BigBody.ApplyAmount / 100;
+	end
 	return math.max(scoreRatio, 0.1);	-- 최소 0.1 보정
 end
 --------------------------------------------------------------

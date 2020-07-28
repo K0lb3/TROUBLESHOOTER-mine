@@ -11,7 +11,8 @@ local reservedCompanyStats = {
 	'LegendaryMachineKill',
 	'LegendaryBeastKill',
 	'DodgeOnCover',
-	'OpenChest'
+	'OpenChest',
+	'HackingSuccessCount',
 };
 function GetReservedStat_Company(company, stats)
 	local retStats = {};

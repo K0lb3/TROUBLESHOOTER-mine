@@ -83,6 +83,13 @@ function BuffImmunityTest(buff, victim)
 			return true, 'Mastery_PerfectSpirit';
 		end
 	end
+	-- 권토중래
+	if buff.Type == 'Debuff' and buff.SubType == 'Physical' then
+		local mastery_MakeStageComeback = GetMasteryMastered(masteryTable, 'MakeStageComeback');
+		if mastery_MakeStageComeback and GetBuff(victim, mastery_MakeStageComeback.Buff.name) then
+			return true, 'Mastery_MakeStageComeback';
+		end
+	end
 	return false;
 end
 

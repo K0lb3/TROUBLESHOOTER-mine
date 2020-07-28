@@ -13,7 +13,7 @@ function CalculatedProperty_Recipe_AdditionalCraftExpRatio(recipe, arg)
 	if not curProfession then
 		return result;
 	end
-	result = math.max(2, 0.5 * curProfession.AddExpRatio * ( math.floor(item.RequireLv/5) + item.Rank.Weight));
+	result = math.max(2, curProfession.AddExpRatio * ( math.floor(item.RequireLv/5) + item.Rank.Weight));
 	result = math.floor(result*100)/100;
 	return result;
 end

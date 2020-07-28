@@ -449,7 +449,7 @@ end
 ----------------------------------------------------------------
 -- 장착 가능한 아이템 인지 ( 상점 용 ) = 지금 당장 차는게 아니고 훗날 찰수 있는지 여부.
 ----------------------------------------------------------------
-function IsEnableEquipItem_EnableEquipCompare(obj, item)
+function IsEnableEquipItem_EnableEquipCompare(obj, item, levelCheck)
 	local equipPosList = item.Type.EquipmentPosition;
 	if #equipPosList == 0 or equipPosList[1] == 'None' then
 		return false;
@@ -458,7 +458,9 @@ function IsEnableEquipItem_EnableEquipCompare(obj, item)
 		local enableEquipType = 'EnableEquip'..equipPos;
 		for index, value in ipairs (obj[enableEquipType]) do
 			if value == item.Type.name then
-				return true;
+				if not levelCheck or obj.Lv >= item.RequireLv then
+					return true;
+				end
 			end
 		end
 	end
@@ -926,7 +928,7 @@ function GetCraftExp(itemName, itemCount, isClient)
 end
 function GetCraftExp_Additional(recipe, curCraftCount)
 	local result = 0;
-	result = math.min(100, recipe.AdditionalCraftExpRatio * curCraftCount);
+	result = math.min(1000, recipe.AdditionalCraftExpRatio * curCraftCount);
 	return result;
 end
 --------------------------------------------------------------

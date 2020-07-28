@@ -358,8 +358,8 @@ function TurnEnd_Common(eventArg, buff, owner, giver, ds)
 	return;
 end
 function AbilityUsed_Common(eventArg, buff, owner, giver, ds)
-	if eventArg.Unit ~= owner
-		or IsMoveTypeAbility(eventArg.Ability) then
+	SetInstantProperty(owner, 'LastAbility', eventArg.Ability.name);
+	if IsMoveTypeAbility(eventArg.Ability) then
 		return;
 	end
 	local actions = {};
@@ -418,10 +418,7 @@ function AbilityUsed_Common(eventArg, buff, owner, giver, ds)
 		end
 	end
 	
-	if #actions > 0 then
-		return unpack(actions);
-	end
-	return;
+	return unpack(actions);
 end
 function Moved_Common(eventArg, buff, owner, giver, ds)
 	if eventArg.Unit ~= owner then

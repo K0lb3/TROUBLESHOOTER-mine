@@ -3276,6 +3276,13 @@
 				<property name="Veteran"/>
 			</RequireMasteries>
 		</class>
+		<class name="ReverseEngineering" Type="Mastery" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
+			<RequireMasteries>
+				<property name="DataStructure"/>
+				<property name="Abstraction"/>
+				<property name="Algorithm"/>
+			</RequireMasteries>
+		</class>
 		<class name="Module_EnhancedAuxiliaryPower" Type="Module" IsAutoSlot="true" Opened="false" UnLockTechnique="" RequireLevel="0" RewardItem="None" RewardItemMinCount="0" RewardItemMaxCount="0" System="false" RequireModuleCost="0">
 			<RequireItems>
 				<property Item="MetalPart_Uncomon" Count="3"/>

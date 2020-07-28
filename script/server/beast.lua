@@ -86,6 +86,7 @@ function ApplyTamingActions(actions, user, target)
 	InsertBuffActions(actions, user, target, 'SummonBeast', 1, true, nil, true);
 	table.insert(actions, Result_PropertyUpdated('Act', target.Wait, target, true, true));
 	SetInstantProperty(user, 'SummonBeast', { Owner = user, Target = target });
+	table.insert(actions, Result_UpdateInstantProperty(user, 'SummonBeastKey', GetObjKey(target)));
 	SetInstantProperty(target, 'SummonMaster', GetObjKey(user));
 	SetInstantProperty(target, 'SummonBefore', true);
 	SetInstantProperty(target, 'Subordinate', true);
@@ -177,6 +178,7 @@ function ApplySummonBeastActions(actions, user, target, targetPos)
 	table.insert(actions, Result_PropertyUpdated('Act', target.Wait, target, true, true));
 	table.insert(actions, Result_PropertyUpdated('TurnState/TurnEnded', true, target, true, true));
 	SetInstantProperty(user, 'SummonBeast', { Owner = user, Target = target });
+	table.insert(actions, Result_UpdateInstantProperty(user, 'SummonBeastKey', GetObjKey(target)));
 	SetInstantProperty(target, 'SummonMaster', GetObjKey(user));
 	SetInstantProperty(target, 'Subordinate', true);
 	table.insert(actions, Result_UpdateInstantProperty(target, 'DisableRetreat', true));

@@ -250,7 +250,6 @@
 		<class name="Mon_Gangster_StreetHelmet" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
 		<class name="Mon_Gangster_StreetNormal2" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
 		<class name="Mon_Gangster_StreetThin" Category="Crimnal" MaxExp="250" BonusItem="Valkyrie_Troublemaker"/>
-		<class name="Mon_Gangster_Tray" Category="Crimnal" MaxExp="25" BonusItem="Valkyrie_Troublemaker"/>
 		<class name="Mon_Gangster_CheChe" Category="Wanted" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerCheChe"/>
 		<class name="Mon_Gangster_Felix" Category="Wanted" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerFelix"/>
 		<class name="Mon_Gangster_TwinkleJack" Category="Wanted" MaxExp="25" BonusItem="Valkyrie_Troublemaker" Achievement="TroublemakerTwinkleJack"/>

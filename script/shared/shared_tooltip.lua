@@ -1459,8 +1459,12 @@ function GetBuffSystemMessageText(buff)
 	return result;
 end
 -- $MasteryBuff$
-function GetMasteryBuffText(buff)
+function GetMasteryBuffText(mastery, col)
+	local buff = mastery[col];
 	local result = GetBuffText(buff, true);
+	if g_masteryApplyAmountExplain then
+		result = result .. '('..col..')';
+	end
 	return result;
 end
 -- $MasteryBuffGroup$

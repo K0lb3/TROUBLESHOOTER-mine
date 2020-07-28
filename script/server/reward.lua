@@ -117,6 +117,7 @@ function GetRewardItem(company, self, expTaker, isOverKill, isPerfectKill, safet
 	local mastery_LegendaryServant = GetMasteryMastered(masteryTable, 'LegendaryServant');
 	local mastery_GreedBeast = GetMasteryMastered(masteryTable, 'GreedBeast');
 	local mastery_GreedEye = GetMasteryMastered(masteryTable, 'GreedEye');
+	local mastery_DisposalMaterials = GetMasteryMastered(masteryTable, 'DisposalMaterials');
 	local mastery_TannerSet3 = GetMasteryMastered(masteryTable, 'TannerSet3');
 	local mastery_WreckingSet3 = GetMasteryMastered(masteryTable, 'WreckingSet3');
 	local mastery_CollectorSet3 = GetMasteryMastered(masteryTable, 'CollectorSet3');
@@ -173,6 +174,13 @@ function GetRewardItem(company, self, expTaker, isOverKill, isPerfectKill, safet
 			-- 특성 탐욕의 눈 보석 아이템 확률 X배
 			if mastery_GreedEye and item.Type.name == 'Jewel' then
 				local applyAmount = mastery_GreedEye.CustomCacheData[item.Rank.name];
+				if applyAmount then
+					curProb = curProb * (1 + applyAmount / 100);
+				end
+			end
+			-- 특성 능숙한 해체 부품 아이템 확률 X배
+			if mastery_DisposalMaterials and item.Type.name == 'Parts' then
+				local applyAmount = mastery_DisposalMaterials.CustomCacheData[item.Rank.name];
 				if applyAmount then
 					curProb = curProb * (1 + applyAmount / 100);
 				end

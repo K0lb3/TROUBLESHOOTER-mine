@@ -29,6 +29,7 @@
 		<class name="ProtocolCount" APIName="stat_ProtocolCount" Type="INT"/>
 		<class name="PerformanceFinishCount" APIName="stat_PerformanceFinishCount" Type="INT"/>
 		<class name="FoodSetEffectCount" APIName="stat_FoodSetEffectCount" Type="INT"/>
+		<class name="HackingSuccessCount" APIName="stat_HackingSuccessCount" Type="INT"/>
 	</idspace>
 	<idspace id="SteamAchievement">
 		<schema>
@@ -220,5 +221,6 @@
 		<class name="TroublemakerFrogGold" APIName="ACH_TROUBLEMAKER_FROG_GOLD"/>
 		<class name="TroublemakerTimaYellow" APIName="ACH_TROUBLEMAKER_TIMA_YELLOW"/>
 		<class name="TroublemakerSpiderBlackWidow4" APIName="ACH_TROUBLEMAKER_SPIDER_BLACK_WIDOW4"/>
+		<class name="SituationReverseEngineering" APIName="ACH_SITUATION_REVERSE_ENGINEERING"/>
 	</idspace>
 </idspaces>

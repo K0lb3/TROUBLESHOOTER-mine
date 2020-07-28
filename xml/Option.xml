@@ -74,6 +74,7 @@
 				<property Title="안함" Value="3"/>
 			</Selection>
 		</class>
+		<class name="NoAskingExtractMastery" Title="특성 해제 경고 표시 안함" Desc="특성을 해제할 시 추가적인 경고 없이 바로 해제합니다." Order="26" Form="OptionCheckbox" Initializer="OptionInitializerCheckbox"/>
 	</idspace>
 	<idspace id="OptionGraphics">
 		<schema>

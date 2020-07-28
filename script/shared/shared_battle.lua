@@ -237,6 +237,13 @@ function GetHitRateCalculator_HackingProtocol(Attacker, Defender, Ability, using
 		table.insert(info, { Type = buff_Firewall.name, Value = - buff_Firewall.ApplyAmount, ValueType = 'Buff' });
 	end
 	
+	-- 역공학
+	local mastery_ReverseEngineering = GetMasteryMastered(masteryTable, 'ReverseEngineering');
+	if mastery_ReverseEngineering then
+		ret = ret + mastery_ReverseEngineering.ApplyAmount;
+		table.insert(info, MakeMasteryStatInfo(mastery_ReverseEngineering.name, mastery_ReverseEngineering.ApplyAmount));
+	end	
+	
 	table.sort(info, function (infoA, infoB) return infoA.Value > infoB.Value end);
 	
 	return math.max(0, math.min(100, ret)), info, ret;
@@ -571,6 +578,20 @@ function GetCurrentDodge_Normal(addInfo, minusInfo, Ability, Attacker, Defender,
 				return mastery.ApplyAmount;
 			end
 		end);
+		
+		-- 살수의 길
+		minusValue = minusValue + GetMasteryValueByCustomFuncWithInfo(masteryTable_Attacker, 'GoldNeguriESPSet3', minusInfo, function(mastery)
+			if Defender.Race.name == 'Human' then
+				return mastery.ApplyAmount;
+			end
+		end);
+		
+		-- 무모함
+		minusValue = minusValue + GetMasteryValueByCustomFuncWithInfo(masteryTable_Defender, 'Recklessness', minusInfo, function(mastery)
+			if Ability.Type == 'Attack' and HasBuffType(Defender, nil, nil, mastery.BuffGroup.name) then
+				return mastery.ApplyAmount2;
+			end
+		end);
 	end
 	if aiFlag ~= 'Static' then
 		if IsMeleeDistance(GetAbilityUsingPosition(Attacker), GetAbilityUsingPosition(Defender)) then
@@ -591,7 +612,7 @@ function GetCurrentDodge_Normal(addInfo, minusInfo, Ability, Attacker, Defender,
 		-- 하늘 위를 걷는 자
 		local mastery_OntheSkyWalker = GetMasteryMastered(masteryTable_Defender, 'OntheSkyWalker');
 		if mastery_OntheSkyWalker then
-			local attackerHigh, attackerLow = IsAttakerHighPosition(height, masteryTable_Attacker, masteryTable_Defender);
+			local attackerHigh, attackerLow = IsAttakerHighPosition(height, Attacker, Defender, masteryTable_Attacker, masteryTable_Defender);
 			if attackerLow then
 				addValue = addValue + mastery_OntheSkyWalker.ApplyAmount;
 				table.insert(addInfo, MakeMasteryStatInfo(mastery_OntheSkyWalker.name, mastery_OntheSkyWalker.ApplyAmount));
@@ -642,7 +663,7 @@ function GetCurrentDodge_Normal(addInfo, minusInfo, Ability, Attacker, Defender,
 		-- 고지대 엄폐
 		local mastery_HighPositionCover = GetMasteryMastered(masteryTable_Defender, 'HighPositionCover');
 		if mastery_HighPositionCover then
-			local attackerHigh, attackerLow = IsAttakerHighPosition(height, masteryTable_Attacker, masteryTable_Defender);
+			local attackerHigh, attackerLow = IsAttakerHighPosition(height, Attacker, Defender, masteryTable_Attacker, masteryTable_Defender);
 			if attackerLow then
 				local coverState = GetCoverStateForCritical(Defender, masteryTable_Defender, GetAbilityUsingPosition(Attacker), Attacker);
 				local addDodge = 0;
@@ -659,6 +680,13 @@ function GetCurrentDodge_Normal(addInfo, minusInfo, Ability, Attacker, Defender,
 				end
 			end
 		end
+		
+		-- 플람베
+		minusValue = minusValue + GetMasteryValueByCustomFuncWithInfo(masteryTable_Attacker, 'Flambee', minusInfo, function(mastery)
+			if Ability.Type == 'Attack' and IsGetAbilitySubType(Ability, 'Fire') and IsObjectOnFieldEffect(Defender, 'Fire') then
+				return mastery.ApplyAmount;
+			end
+		end);
 	end
 	
 	return addValue, minusValue;
@@ -813,7 +841,7 @@ function GetModifyAbilityAccuracyFromEvent_Normal_Position(info, Ability, Attack
 	-- 1) 대상과의 거리에 따른 명중률 패널티
 	result = result + GetHitRateByDistance(info, Attacker, Ability.HitRateType, distance, masteryTable_Attacker, masteryTable_Defender);
 	-- 2) 대상간의 고저차에 따른 명중률 패널티/보너스
-	result = result + GetPenaltyHitRateByHeight(info, Attacker, Ability.HitRateType, height, masteryTable_Attacker, masteryTable_Defender);
+	result = result + GetPenaltyHitRateByHeight(info, Attacker, Defender, Ability.HitRateType, height, masteryTable_Attacker, masteryTable_Defender);
 	-- 3) 대상간의 엄폐에 따른 패널티 (경계 사격 시에는 적용되지 않음)
 	if not damageFlag.Overwatch then
 		result = result + GetHitRateByCoverState(info, Attacker, Defender, masteryTable_Attacker, masteryTable_Defender, Ability.HitRateType, Ability.AbilityWithMove);
@@ -831,7 +859,7 @@ function GetModifyAbilityAccuracyFromEvent_Normal_Position(info, Ability, Attack
 	-- 조건이 복수로 적용 가능한 특성들
 	local notStableAttack = damageFlag.ReactionAbility or damageFlag.Counter;
 	local passCount = IsStableAttack(Attacker) and not notStableAttack and 1 or 0;
-	passCount = passCount + (IsAttakerHighPosition(height, masteryTable_Attacker, masteryTable_Defender) and 1 or 0);
+	passCount = passCount + (IsAttakerHighPosition(height, Attacker, Defender, masteryTable_Attacker, masteryTable_Defender) and 1 or 0);
 	if passCount > 0 then
 		local mastery_SnipingTraining = GetMasteryMastered(masteryTable_Attacker, 'SnipingTraining');
 		if mastery_SnipingTraining then
@@ -1072,6 +1100,41 @@ function GetModifyAbilityAccuracyFromEvent_Normal_Attacker(info, Ability, Attack
 			return math.floor(#buffList / mastery.ApplyAmount) * mastery.ApplyAmount2;
 		end
 	end);
+	-- 능숙한 도살자
+	result = result + GetMasteryValueByCustomFuncWithInfo(masteryTable_Attacker, 'ExpertButchery', info, function(mastery)
+		if Ability.Type == 'Attack' and (Defender.Race.name == 'Human' or Defender.Race.name == 'Beast') then
+			return mastery.ApplyAmount;
+		end
+	end);
+	-- 유효 사격
+	result = result + GetMasteryValueByCustomFuncWithInfo(masteryTable_Attacker, 'EffectiveFire', info, function(mastery)
+		if Ability.Type == 'Attack' and IsGetAbilitySubType(Ability, 'Piercing') and Ability.HitRateType == 'Force' and IsUnprotectedExposureState(Defender) then
+			return mastery.ApplyAmount;
+		end
+	end);
+	-- 무모함
+	result = result + GetMasteryValueByCustomFuncWithInfo(masteryTable_Attacker, 'Recklessness', info, function(mastery)
+		if Ability.Type == 'Attack' and HasBuffType(Attacker, nil, nil, mastery.BuffGroup.name) then
+			return mastery.ApplyAmount;
+		end
+	end);
+		
+	-- 사냥감 확인
+	result = result + GetMasteryValueByCustomFuncWithInfo(masteryTable_Attacker, 'ConfirmTarget', info, function(mastery)
+		local summonBeastKey = GetInstantProperty(Attacker, 'SummonBeastKey');
+		local summonBeast;
+		if IsMissionServer() then
+			summonBeast = GetUnit(Attacker, summonBeastKey);
+		elseif IsClient() then
+			summonBeast = GetUnit(summonBeastKey);
+		end
+		if summonBeast == nil then
+			return;
+		end
+		if Ability.Type == 'Attack' and IsInSight(summonBeast, GetPosition(Defender), true) then
+			return mastery.ApplyAmount;
+		end
+	end);
 	
 	-- 방어자 특성.
 	-- 특성 사각 지대. 거리 1타일당 명중률 2% 감소.
@@ -1162,12 +1225,18 @@ end
 -- 높이에 따른 명중률 패널티
 ---------------------------------------------------------------------
 local highHeightAmount = nil;
-function IsAttakerHighPosition(height, masteryTable_Attacker, masteryTable_Defender)
+function IsAttakerHighPosition(height, Attacker, Defender, masteryTable_Attacker, masteryTable_Defender)
 	if highHeightAmount == nil then
 		highHeightAmount = GetSystemConstant('HighHeight');
 	end
-	local mastery_Flight_Attacker = GetMasteryMastered(masteryTable_Attacker, 'Flight');
-	local mastery_Flight_Defender = GetMasteryMastered(masteryTable_Defender, 'Flight');
+	if masteryTable_Attacker == nil then
+		masteryTable_Attacker = GetMastery(Attacker);
+	end
+	if masteryTable_Defender == nil then
+		masteryTable_Defender = GetMastery(Defender);
+	end
+	local mastery_Flight_Attacker = GetMasteryMastered(masteryTable_Attacker, 'Flight') or HasBuff(Attacker, 'ClimbWeb');
+	local mastery_Flight_Defender = GetMasteryMastered(masteryTable_Defender, 'Flight') or HasBuff(Defender, 'ClimbWeb');
 	local attackerHigh = false;
 	local attackerLow = false;
 	if not mastery_Flight_Attacker and not mastery_Flight_Defender then
@@ -1180,11 +1249,11 @@ function IsAttakerHighPosition(height, masteryTable_Attacker, masteryTable_Defen
 	end
 	return attackerHigh, attackerLow;
 end
-function GetPenaltyHitRateByHeight(info, Attacker, hitRateType, height, masteryTable_Attacker, masteryTable_Defender)
+function GetPenaltyHitRateByHeight(info, Attacker, Defender, hitRateType, height, masteryTable_Attacker, masteryTable_Defender)
 	local penaltyHitRate = 0;
 	local additionalHitRate = 0;
 	
-	local attackerHigh, attackerLow = IsAttakerHighPosition(height, masteryTable_Attacker, masteryTable_Defender);
+	local attackerHigh, attackerLow = IsAttakerHighPosition(height, Attacker, Defender, masteryTable_Attacker, masteryTable_Defender);
 	if attackerHigh then
 		if hitRateType == 'Force' then
 			local penaltyHitRateBase = 20;
@@ -1329,7 +1398,7 @@ function CalculateAbilityMinDamage(Ability, Phase, Attacker, Defender)
 	return math.max(#hitRatios, minDamage);
 end
 DamageComposer = nil;
-function GetDamageCalculator(Attacker, Defender, Ability, weather, temperature, usingPos, chainIndex, aiFlag, additionalDamage, abilityDetailInfo, perfChecker)
+function GetDamageCalculator(Attacker, Defender, Ability, weather, temperature, usingPos, chainIndex, aiFlag, additionalDamage, abilityDetailInfo, perfChecker, damageFlag)
 	if perfChecker == nil then
 		perfChecker = MockPerfChecker;
 	end
@@ -1378,7 +1447,7 @@ function GetDamageCalculator(Attacker, Defender, Ability, weather, temperature, 
 		local info_event = {};
 		local info_eventMulti = {};
 		perfChecker:StartRoutine('GetModifyAbilityDamageFromEvent');
-		local eventMultiplier, eventAdd = GetModifyAbilityDamageFromEvent(info_event, info_eventMulti, Ability, Attacker, Defender, masteryTable_Attacker, masteryTable_Defender, weather, temperature, usingPos, aiFlag, perfChecker);
+		local eventMultiplier, eventAdd = GetModifyAbilityDamageFromEvent(info_event, info_eventMulti, Ability, Attacker, Defender, masteryTable_Attacker, masteryTable_Defender, weather, temperature, usingPos, aiFlag, perfChecker, damageFlag);
 		damageComposer:AddDecompData('OriginalMultiplier', eventMultiplier, info_eventMulti);
 		damageComposer:AddDecompData('AdditionalDamage', eventAdd, info_event);
 		
@@ -1513,6 +1582,15 @@ function GetDamageCalculator(Attacker, Defender, Ability, weather, temperature, 
 					end
 					demultiplier = demultiplier + minusValue;
 					table.insert(demultiInfo, MakeMasteryStatInfo(mastery_DenseScale.name, minusValue));
+				end
+			end
+			-- 익숙한 고통
+			local mastery_FamiliarSuffering = GetMasteryMastered(masteryTable_Defender, 'FamiliarSuffering');
+			if mastery_FamiliarSuffering then
+				if IsGetAbilitySubType(Ability, GetInstantProperty(Defender, 'FamiliarSuffering_LastDamageType')) then
+					local minusValue = mastery_FamiliarSuffering.ApplyAmount;
+					demultiplier = demultiplier + minusValue;
+					table.insert(demultiInfo, MakeMasteryStatInfo(mastery_FamiliarSuffering.name, minusValue));
 				end
 			end
 			
@@ -1717,7 +1795,7 @@ end
 -------------------------------------------------------------------------------
 -- 특정 상황에서 얻어지는 Multiplier
 -----------------------------------------------------------------------------
-function GetModifyAbilityDamageFromEvent(info, info_Multiplier, Ability, Attacker, Defender, masteryTable_Attacker, masteryTable_Defender, weather, temperature, usingPos, aiFlag, perfChecker)
+function GetModifyAbilityDamageFromEvent(info, info_Multiplier, Ability, Attacker, Defender, masteryTable_Attacker, masteryTable_Defender, weather, temperature, usingPos, aiFlag, perfChecker, damageFlag)
 	local multiplier = 0;
 	local add = 0;
 	if not IsMission() then
@@ -1745,7 +1823,7 @@ function GetModifyAbilityDamageFromEvent(info, info_Multiplier, Ability, Attacke
 		add = add + add_Normal_SP;
 		
 		-- 3. 일반.
-		local multiplier_Normal, add_Normal = GetModifyAbilityDamageFromEvent_Normal(info, info_Multiplier, Ability, Attacker, Defender, masteryTable_Attacker, masteryTable_Defender, usingPos, weather, temperature);
+		local multiplier_Normal, add_Normal = GetModifyAbilityDamageFromEvent_Normal(info, info_Multiplier, Ability, Attacker, Defender, masteryTable_Attacker, masteryTable_Defender, usingPos, weather, temperature, damageFlag);
 		multiplier = multiplier + multiplier_Normal;
 		add = add + add_Normal;
 		
@@ -1852,7 +1930,7 @@ function GetBuffValueByCustomFuncWithInfo(owner, buffName, info, customFunc)
 	end
 	return value;
 end
-function GetModifyAbilityDamageFromEvent_Normal(info, info_Multiplier, Ability, Attacker, Defender, masteryTable_Attacker, masteryTable_Defender, usingPos, weather, temperature)
+function GetModifyAbilityDamageFromEvent_Normal(info, info_Multiplier, Ability, Attacker, Defender, masteryTable_Attacker, masteryTable_Defender, usingPos, weather, temperature, damageFlag)
 	local multiplier = 0;
 	local add = 0;
 	
@@ -2319,7 +2397,35 @@ function GetModifyAbilityDamageFromEvent_Normal(info, info_Multiplier, Ability, 
 			multiplier = multiplier + multiplier_Debuff_Light;
 			table.insert(info_Multiplier, { Type = mastery_ShootingStar.name, Value = multiplier_Debuff_Light, ValueType = 'Mastery'});
 		end
-	end
+	end	
+	
+	-- 노익장
+	multiplier = multiplier + GetMasteryValueByCustomFuncWithInfo(masteryTable_Attacker, 'LegendVeteran', info_Multiplier, function(mastery)
+		if Ability.Type == 'Attack' and Attacker.Lv > Defender.Lv and GetRelation(Attacker, Defender) == 'Enemy' then
+			return mastery.ApplyAmount3;
+		end
+	end);
+	
+	-- 분홍 도깨비
+	multiplier = multiplier + GetMasteryValueByCustomFuncWithInfo(masteryTable_Attacker, 'PinkGoblin', info_Multiplier, function(mastery)
+		if Ability.Type == 'Attack' and (GetInstantProperty(Attacker, mastery.name) or {})[GetObjKey(Defender)] then
+			return mastery.ApplyAmount;
+		end
+	end);
+	
+	-- 억눌린 분노
+	multiplier = multiplier + GetMasteryValueByCustomFuncWithInfo(masteryTable_Attacker, 'PentUpRage', info_Multiplier, function(mastery)
+		if Ability.Type == 'Attack' and (SafeIndex(damageFlag, 'ReactionAbility') or SafeIndex(damageFlag, 'Counter')) then
+			return mastery.ApplyAmount;
+		end
+	end);
+
+	-- 악랄함
+	multiplier = multiplier + GetMasteryValueByCustomFuncWithInfo(masteryTable_Attacker, 'Viciousness', info_Multiplier, function(mastery)
+		if Ability.Type == 'Attack' and #GetBuffType(Defender, 'Debuff', 'Mental') > 0 then
+			return mastery.ApplyAmount;
+		end
+	end);
 	
 	-- 2. 방어자 특성	
 	-- 생존의지 WillToSurvive
@@ -3024,13 +3130,24 @@ function GetModifyAbilityDamageFromEvent_Normal(info, info_Multiplier, Ability, 
 		end
 	end);
 	
-	-- 노익장
-	multiplier = multiplier + GetMasteryValueByCustomFuncWithInfo(masteryTable_Attacker, 'LegendVeteran', info_Multiplier, function(mastery)
-		if Ability.Type == 'Attack' and Attacker.Lv > Defender.Lv and GetRelation(Attacker, Defender) == 'Enemy' then
-			return mastery.ApplyAmount3;
+	-- 권토중래
+	multiplier = multiplier + GetMasteryValueByCustomFuncWithInfo(masteryTable_Defender, 'MakeStageComeback', info_Multiplier, function(mastery)
+		if Ability.Type == 'Attack' and GetBuff(Defender, mastery.Buff.name) then
+			return -mastery.ApplyAmount;
 		end
 	end);
 	
+	-- 삶의 무게 (공격 시)
+	multiplier = multiplier + GetMasteryValueByCustomFuncWithInfo(masteryTable_Attacker, 'WeightOfLife', info_Multiplier, function(mastery)
+		local targetList = GetTargetInRangeSightReposition(SafeIndex(Ability, 'AbilityWithMove'), Attacker, 'Sight', 'Enemy', true);
+		return math.floor(#targetList / mastery.ApplyAmount) * mastery.ApplyAmount2;
+	end);
+	-- 삶의 무게 (방어 시)
+	multiplier = multiplier + GetMasteryValueByCustomFuncWithInfo(masteryTable_Defender, 'WeightOfLife', info_Multiplier, function(mastery)
+		local targetList = GetTargetInRangeSightReposition(SafeIndex(Ability, 'AbilityWithMove'), Defender, 'Sight', 'Team', true);
+		return -1 * math.floor(#targetList / mastery.ApplyAmount) * mastery.ApplyAmount2;
+	end);
+
 	return multiplier, add;
 end
 ----------------------------------------------------------------------------------------
@@ -3774,6 +3891,13 @@ function GetModifyAbilityCriticalStrikeChanceFromEvent(info, Ability, Attacker, 
 			return mastery.ApplyAmount2;
 		end
 	end);
+	
+	-- 무모함
+	result = result + GetMasteryValueByCustomFuncWithInfo(masteryTable_Attacker, 'Recklessness', info, function(mastery)
+		if Ability.Type == 'Attack' and HasBuffType(Attacker, nil, nil, mastery.BuffGroup.name) then
+			return mastery.ApplyAmount;
+		end
+	end);
 
 	return result;
 end
@@ -4070,13 +4194,13 @@ function GetModifyAbilityBlockFromEvent(info, infoMinus, Ability, Attacker, Defe
 	calcOption.MasteryTable = masteryTable_Defender;
 	local result = GetConditionalStatus(Defender, 'Block', info, calcOption);
 	local resultMinus = 0;
+	
+	local myPosition = GetPosition(Attacker);
+	if IsClient() and Ability.AbilityWithMove then
+		myPosition = GetSession().current_using_pos;
+	end
 
-	if Ability.Type ~= 'Heal' then
-		local myPosition = GetPosition(Attacker);
-		if IsClient() and Ability.AbilityWithMove then
-			myPosition = GetSession().current_using_pos;
-		end
-		
+	if Ability.Type ~= 'Heal' then		
 		local coverState = GetCoverStateForCritical(Defender, masteryTable_Defender, myPosition, Attacker);
 		if coverState ~= 'None' then
 			local abilityHitRateTypeList = GetClassList('AbilityHitRateType');
@@ -4110,7 +4234,7 @@ function GetModifyAbilityBlockFromEvent(info, infoMinus, Ability, Attacker, Defe
 			-- 고지대 엄폐
 			local mastery_HighPositionCover = GetMasteryMastered(masteryTable_Defender, 'HighPositionCover');
 			if mastery_HighPositionCover then
-				local attackerHigh, attackerLow = IsAttakerHighPosition(GetHeight(myPosition, GetPosition(Defender)), masteryTable_Attacker, masteryTable_Defender);
+				local attackerHigh, attackerLow = IsAttakerHighPosition(GetHeight(myPosition, GetPosition(Defender)), Attacker, Defender, masteryTable_Attacker, masteryTable_Defender);
 				if attackerLow then
 					local addBlock;
 					if coverState == 'Full' then
@@ -4367,6 +4491,13 @@ function GetModifyAbilityBlockFromEvent(info, infoMinus, Ability, Attacker, Defe
 		end
 	end);
 	
+	-- 부러지지 않는 검
+	result = result + GetMasteryValueByCustomFuncWithInfo(masteryTable_Defender, 'UnbreakableSword', info, function(mastery)
+		if Ability.Type == 'Attack' and IsGetAbilitySubType(Ability, 'Slashing') and Ability.HitRateType == 'Melee' then
+			return mastery.ApplyAmount;
+		end
+	end);
+	
 	-- 해골복/해골 자켓/해골 코트/해골 활동복
 	if IsDarkTime(missionTime) and (Ability.HitRateType == 'Force' or Ability.HitRateType == 'Throw' or Ability.HitRateType == 'Fall') then
 		local mastery_ScullArmor = GetMasteryMasteredList(masteryTable_Defender, {'Jacket_Skull', 'Jacket_Skull_Legend', 'Coat_Skull_Legend', 'Tracksuit_Skull_Legend'});
@@ -4394,6 +4525,46 @@ function GetModifyAbilityBlockFromEvent(info, infoMinus, Ability, Attacker, Defe
 	resultMinus = resultMinus + GetMasteryValueByCustomFuncWithInfo(masteryTable_Attacker, 'Amulet_Tima_Gold', infoMinus, function(mastery)
 		if Ability.Type == 'Attack' and Ability.HitRateType == 'Melee' and GetRelation(Attacker, Defender) == 'Enemy' then
 			return mastery.ApplyAmount;
+		end
+	end);
+	
+	-- 플람베
+	resultMinus = resultMinus + GetMasteryValueByCustomFuncWithInfo(masteryTable_Attacker, 'Flambee', infoMinus, function(mastery)
+		if Ability.Type == 'Attack' and IsGetAbilitySubType(Ability, 'Fire') and IsObjectOnFieldEffect(Defender, 'Fire') then
+			return mastery.ApplyAmount;
+		end
+	end);
+	
+	-- 유리한 저격 위치
+	resultMinus = resultMinus + GetMasteryValueByCustomFuncWithInfo(masteryTable_Attacker, 'PositionOfAdvantageOnSnipe', infoMinus, function(mastery)
+		local attackerHigh, attackerLow = IsAttakerHighPosition(GetHeight(myPosition, GetPosition(Defender)), Attacker, Defender, masteryTable_Attacker, masteryTable_Defender);
+		if attackerHigh or IsStableAttack(Attacker) then
+			return mastery.ApplyAmount;
+		end
+	end);
+
+	-- 살수의 길
+	resultMinus = resultMinus + GetMasteryValueByCustomFuncWithInfo(masteryTable_Attacker, 'RoadOfKiller', infoMinus, function(mastery)
+		if Defender.Race.name == 'Human' then
+			return mastery.ApplyAmount;
+		end
+	end);
+	
+	-- 감춰진 살의
+	resultMinus = resultMinus + GetMasteryValueByCustomFuncWithInfo(masteryTable_Attacker, 'HiddenMurderousIntent', infoMinus, function(mastery)
+		if Ability.Type == 'Attack' and Ability.HitRateType == 'Melee' and GetRelation(Attacker, Defender) == 'Enemy' then
+			local targetKey = GetObjKey(Defender);
+			local prevTargets = GetInstantProperty(Attacker, mastery.name) or {};
+			if not prevTargets[targetKey] then
+				return mastery.ApplyAmount;
+			end
+		end
+	end);
+	
+	-- 무모함
+	resultMinus = resultMinus + GetMasteryValueByCustomFuncWithInfo(masteryTable_Defender, 'Recklessness', infoMinus, function(mastery)
+		if Ability.Type == 'Attack' and HasBuffType(Defender, nil, nil, mastery.BuffGroup.name) then
+			return mastery.ApplyAmount2;
 		end
 	end);
 	

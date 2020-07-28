@@ -31,6 +31,7 @@
 			<rule property="ProtocolUseCount" type="number" default="0"/>
 			<rule property="PerformanceFinishCount" type="number" default="0"/>
 			<rule property="FoodSetEffectCount" type="number" default="0"/>
+			<rule property="HackingSuccessCount" type="number" default="0"/>
 		</schema>
 		<class name="Stats"/>
 	</idspace>

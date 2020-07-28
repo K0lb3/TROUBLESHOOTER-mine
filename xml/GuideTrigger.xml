@@ -112,4 +112,5 @@
 	<class name="Gourmand" EventType="" Checker="" Director="" FrontmessageKey="GourmandAchieved" Mastery="Gourmand" Achievement="SituationGourmand"/>
 	<class name="StickyWeb" EventType="BuffAdded" Checker="GuideTriggerChecker_StickyWeb" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="StickyWeb"/>
 	<class name="AutoRetreat" EventType="RunIntoBattle" Checker="GuideTriggerChecker_AutoRetreat" Director="GuideTriggerDirector_BattleDialogMessage" HelpMessage="AutoRetreat"/>
+	<class name="ReverseEngineering" EventType="AbilityUsed" Checker="GuideTriggerChecker_ReverseEngineering" Director="GuideTriggerDirector_AchievementMastery" FrontmessageKey="ReverseEngineeringAchieved" Mastery="ReverseEngineering" Reserved="true" Restorer="GuideTriggerRestorer_Mastery"/>
 </idspace>

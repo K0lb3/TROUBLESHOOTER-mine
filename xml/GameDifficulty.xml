@@ -39,7 +39,7 @@
 			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="적의 전략적 판단" CaseLineBreak="true" LineBreak="true" Text="자신의 안전과 적의 제압을 상황에 따라 적절하게 선택합니다."/>
 			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="보스 유닛" CaseLineBreak="true" LineBreak="true" Text="해당 미션의 권장 레벨보다 $BossFixLv$레벨 낮은 보스는 미션 권장 레벨의 $BossFixLv$레벨 이하까지 레벨이 상승합니다."/>
 			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="정예 유닛" CaseLineBreak="true" LineBreak="true" Text="등장하는 정예 유닛의 수가 대폭 증가합니다."/>
-			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="적 유닛 수" CaseLineBreak="true" LineBreak="true" Text="각 미션당 등장하는 적 수가 대폭 증가합니다."/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="적 유닛 수" CaseLineBreak="true" LineBreak="false" Text="각 미션당 등장하는 적 수가 대폭 증가합니다."/>
 			<property CaseColor="Orange" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="플레이어 팀이 강력하지 않으면 미션 진행 시간이 길어질 수 있습니다."/>
 		</Desc_Base>
 	</class>
@@ -49,8 +49,9 @@
 			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="적의 전략적 판단" CaseLineBreak="true" LineBreak="true" Text="적의 제압을 우선합니다."/>
 			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="보스 유닛" CaseLineBreak="true" LineBreak="true" Text="해당 미션의 권장 레벨보다 낮은 보스는 미션 권장 레벨까지 레벨이 상승합니다."/>
 			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="정예 유닛" CaseLineBreak="true" LineBreak="true" Text="일반 적들은 모두 정예 유닛으로 등장합니다."/>
-			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="적 유닛 수" CaseLineBreak="true" LineBreak="true" Text="각 미션당 등장하는 적 수가 대폭 증가합니다."/>
-			<property CaseColor="Orange" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="해당 난이도를 사용하려면 사건 일지가 필요합니다. 사건 일지는 시나리오 진행을 통하여 활성화 가능합니다."/>
+			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="적 유닛 수" CaseLineBreak="true" LineBreak="false" Text="각 미션당 등장하는 적 수가 대폭 증가합니다."/>
+			<property CaseColor="Orange" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="플레이어 팀이 강력하지 않으면 미션 진행 시간이 길어질 수 있습니다."/>
+			<property CaseColor="Perano" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="false" Text="해당 난이도를 사용하려면 사건 일지가 필요합니다. 사건 일지는 시나리오 진행을 통하여 활성화 가능합니다."/>
 		</Desc_Base>
 	</class>
 	<class name="Impossible" Title="불가능한" Image="Loading_LunarKill3" TutorialSet="Skipped" UseBossLvFix="true" BossFixLv="0">
@@ -60,6 +61,7 @@
 			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="보스 유닛" CaseLineBreak="true" LineBreak="true" Text="해당 미션의 권장 레벨보다 낮은 보스는 미션 권장 레벨까지 레벨이 상승합니다."/>
 			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="정예 유닛" CaseLineBreak="true" LineBreak="true" Text="일반 적들은 모두 정예 유닛으로 등장합니다."/>
 			<property CaseColor="Yellow" CaseType="Custom" CaseValueType="string" CaseValue="적 유닛 수" CaseLineBreak="true" LineBreak="true" Text="각 미션당 등장하는 적 수가 대폭 증가합니다."/>
+			<property CaseColor="Orange" CaseType="None" CaseValueType="string" CaseValue="" CaseLineBreak="false" LineBreak="true" Text="플레이어 팀이 강력하지 않으면 미션 진행 시간이 길어질 수 있습니다."/>
 		</Desc_Base>
 	</class>
 </idspace>

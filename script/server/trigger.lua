@@ -1251,11 +1251,11 @@ function CheckUnitBuffState(mid, session, eventArg, unit, buffName, onOff)
 	if eventArg.BuffName ~= buffName then   return nil; end
 	
 	local have = eventArg.EventType == 'BuffAdded';   -- 더해진거면 true 빠진거면 false
-	
+	local giver = GetBuffGiver(eventArg.Buff);
 	if onOff == 'On' then
-		return have, {Unit = testUnit, BuffName = buffName};
+		return have, {Unit = testUnit, BuffName = buffName, Giver = giver};
 	else
-		return not have, {Unit = testUnit, BuffName = buffName};
+		return not have, {Unit = testUnit, BuffName = buffName, Giver = giver};
 	end
 end
 

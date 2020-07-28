@@ -1025,7 +1025,7 @@ function UpdateCompanyAndRosterStats(mission, dc, company, lineup, missionAttrib
 			'UseAbilityConceal', 'Rescue', 'Destruction',
 			'OpenChest', 'LuckAdded', 'DodgeOnCover',
 			'MissionClearWithBeast', 'TamingSuccessCount', 'TrapUseCount',
-			'ProtocolUseCount', 'PerformanceFinishCount',
+			'ProtocolUseCount', 'PerformanceFinishCount', 'HackingSuccessCount',
 		};
 		for _, stat in ipairs(addStatList) do
 			if companyStats[stat] > 0 then

@@ -22,6 +22,7 @@
 		<class name="Damage" Format="Number"/>
 		<class name="AttackerState" Format="String"/>
 		<class name="DefenderState" Format="String"/>
+		<class name="Giver" Format="Unit"/>
 	</idspace>
 	<idspace id="Condition">
 		<schema>
@@ -84,8 +85,8 @@
 		<class name="UnitArrivedToUnit" Desc="[!Ignore]유닛A가 유닛B 주위 도착" EventType="UnitMoved, AbilityUsed, UnitPositionChanged" Script="CHECK_UNIT_TO_ARRIVED_TO_UNIT" ArgumentList="Unit, Unit2, Range" OutputList="Unit1, Unit2" Initialize="InitializeUnitArrivedToUnit"/>
 		<class name="UnitAttacked" Desc="[!Ignore]유닛 공격당함" EventType="UnitTakeDamage" Script="CheckUnitAttacked" ArgumentList="Unit, Relation" OutputList="Unit, Attacker, Damage, AttackerState, DefenderState" Instant="true"/>
 		<class name="UnitBattleStateTest" Desc="[!Ignore]유닛 전투 상태 확인" EventType="BuffAdded, BuffRemoved" Script="CheckUnitBattleStateTest" ArgumentList="Unit, BattleState" OutputList="Unit" Initialize="InitializeUnitBattleStateTest"/>
-		<class name="UnitBuffState" Desc="[!Ignore]유닛 버프 보유 상황" EventType="BuffAdded, BuffRemoved" Script="CheckUnitBuffState" ArgumentList="Unit, BuffName, OnOff" OutputList="Unit, BuffName" Initialize="InitializeUnitBuffState"/>
-		<class name="UnitBuffStateEvent" Desc="[!Ignore]유닛 버프 보유 상황(이벤트)" EventType="BuffAdded, BuffRemoved" Script="CheckUnitBuffState" ArgumentList="Unit, BuffName, OnOff" OutputList="Unit, BuffName" Instant="true"/>
+		<class name="UnitBuffState" Desc="[!Ignore]유닛 버프 보유 상황" EventType="BuffAdded, BuffRemoved" Script="CheckUnitBuffState" ArgumentList="Unit, BuffName, OnOff" OutputList="Unit, BuffName, Giver" Initialize="InitializeUnitBuffState"/>
+		<class name="UnitBuffStateEvent" Desc="[!Ignore]유닛 버프 보유 상황(이벤트)" EventType="BuffAdded, BuffRemoved" Script="CheckUnitBuffState" ArgumentList="Unit, BuffName, OnOff" OutputList="Unit, BuffName, Giver" Instant="true"/>
 		<class name="UnitCostTest" Desc="[!Ignore]유닛 코스트 확인" EventType="UnitTurnStart" Script="CheckUnitCostTest" ArgumentList="Unit, Operation, Value" OutputList="Unit" Initialize="InitializeUnitCostTest"/>
 		<class name="UnitDead" Desc="[!Ignore]유닛 전투불능" EventType="UnitDead, UnitBeingExcluded" Script="CHECK_UNIT_DEAD" ArgumentList="Unit, CheckKiller" OutputList="Unit, Killer" Initialize="InitializeUnitDead"/>
 		<class name="UnitDeadEvent" Desc="[!Ignore]유닛 전투불능(인스턴트)" EventType="UnitDead, UnitBeingExcluded" Script="CHECK_UNIT_DEAD" ArgumentList="Unit, CheckKiller" OutputList="Unit, Killer" Instant="true"/>

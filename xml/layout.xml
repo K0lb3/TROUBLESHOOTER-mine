@@ -1758,6 +1758,7 @@
 				<property childid="Frame/List/Bottom/Yes" event="Clicked" script="OnCommonMessageBoxYes"/>
 				<property childid="Frame/List/Bottom/No" event="Clicked" script="OnCommonMessageBoxNo"/>
 				<property childid="this" event="KeyUp" script="OnCommonMessageBoxYesNoShortCut"/>
+				<property childid="Frame/List/OptionHolder/Option" event="SelectStateChanged" script="OnToggleCommonMessageBoxOption"/>
 			</Scripts>
 		</class>
 		<class name="CommonResourceFinder" File="CommonResourceFinder.layout"/>
@@ -2818,6 +2819,11 @@
 				<property childid="Inventory/Filter_Option" event="Clicked" script="ShowInventoryCustomFilter"/>
 				<!--<property childid="Inventory/ApplyChanges" event="Clicked" script="OnWarehouseApplyChanges"/>-->
 				<property childid="this" event="Updated" script="OnUpdateWarehouseManager"/>
+				<property childid="Inventory/SearchFilter" event="TextChanged" script="OnSearchFilterTextChanged"/>
+				<property childid="Inventory/SearchFilter" event="Updated" script="OnSearchFilterUpdated"/>
+				<property childid="Inventory/SearchFilter" event="Search" script="ReloadWarehouse"/>
+				<property childid="Inventory/SearchFilter" event="Activated" script="OnSearchFilterActivated"/>
+				<property childid="Inventory/SearchFilter" event="Deactivated" script="OnSearchFilterDeactivated"/>
 			</Scripts>
 			<Animations>
 				<property childid="this" anim="Show_Alpha_Window_NoTop"/>
@@ -4139,6 +4145,8 @@
 				<property childid="Mastery/SubMastery6" layout="MasteryComponent"/>
 				<property childid="Mastery/SubMastery7" layout="MasteryComponent"/>
 				<property childid="Mastery/SubMastery8" layout="MasteryComponent"/>
+				<property childid="Mastery/SubMastery9" layout="MasteryComponent"/>
+				<property childid="Mastery/SubMastery10" layout="MasteryComponent"/>
 				<property childid="Mastery/AbilityMastery1" layout="MasteryComponent"/>
 				<property childid="Mastery/AbilityMastery2" layout="MasteryComponent"/>
 				<property childid="Mastery/AbilityMastery3" layout="MasteryComponent"/>
@@ -4147,6 +4155,8 @@
 				<property childid="Mastery/AbilityMastery6" layout="MasteryComponent"/>
 				<property childid="Mastery/AbilityMastery7" layout="MasteryComponent"/>
 				<property childid="Mastery/AbilityMastery8" layout="MasteryComponent"/>
+				<property childid="Mastery/AbilityMastery9" layout="MasteryComponent"/>
+				<property childid="Mastery/AbilityMastery10" layout="MasteryComponent"/>
 				<property childid="Mastery/AttackMastery1" layout="MasteryComponent"/>
 				<property childid="Mastery/AttackMastery2" layout="MasteryComponent"/>
 				<property childid="Mastery/AttackMastery3" layout="MasteryComponent"/>
@@ -4155,6 +4165,8 @@
 				<property childid="Mastery/AttackMastery6" layout="MasteryComponent"/>
 				<property childid="Mastery/AttackMastery7" layout="MasteryComponent"/>
 				<property childid="Mastery/AttackMastery8" layout="MasteryComponent"/>
+				<property childid="Mastery/AttackMastery9" layout="MasteryComponent"/>
+				<property childid="Mastery/AttackMastery10" layout="MasteryComponent"/>
 				<property childid="Mastery/BasicMastery1" layout="MasteryComponent"/>
 				<property childid="Mastery/BasicMastery2" layout="MasteryComponent"/>
 				<property childid="Mastery/BasicMastery3" layout="MasteryComponent"/>
@@ -4163,6 +4175,8 @@
 				<property childid="Mastery/BasicMastery6" layout="MasteryComponent"/>
 				<property childid="Mastery/BasicMastery7" layout="MasteryComponent"/>
 				<property childid="Mastery/BasicMastery8" layout="MasteryComponent"/>
+				<property childid="Mastery/BasicMastery9" layout="MasteryComponent"/>
+				<property childid="Mastery/BasicMastery10" layout="MasteryComponent"/>
 				<property childid="Mastery/DefenceMastery1" layout="MasteryComponent"/>
 				<property childid="Mastery/DefenceMastery2" layout="MasteryComponent"/>
 				<property childid="Mastery/DefenceMastery3" layout="MasteryComponent"/>
@@ -4171,6 +4185,8 @@
 				<property childid="Mastery/DefenceMastery6" layout="MasteryComponent"/>
 				<property childid="Mastery/DefenceMastery7" layout="MasteryComponent"/>
 				<property childid="Mastery/DefenceMastery8" layout="MasteryComponent"/>
+				<property childid="Mastery/DefenceMastery9" layout="MasteryComponent"/>
+				<property childid="Mastery/DefenceMastery10" layout="MasteryComponent"/>
 				<property childid="Mastery/List_Company/Slot1" layout="MasterySlotComponent"/>
 				<property childid="Mastery/List_Company/Slot2" layout="MasterySlotComponent"/>
 				<property childid="Mastery/List_Company/Slot3" layout="MasterySlotComponent"/>
@@ -6923,6 +6939,8 @@
 				<property childid="Troublemaker/TroublemakerDetail/Race" event="MouseEntersSurface" script="EnterToolTip_Simple" sound="mouseover_2.wav"/>
 				<property childid="Troublemaker/TroublemakerDetail/Affiliation" event="MouseLeavesSurface" script="LeaveToolTip_Simple"/>
 				<property childid="Troublemaker/TroublemakerDetail/Affiliation" event="MouseEntersSurface" script="EnterToolTip_Simple" sound="mouseover_2.wav"/>
+				<property childid="Troublemaker/TroublemakerDetail/PC" event="MouseLeavesSurface" script="LeaveToolTip_Simple"/>
+				<property childid="Troublemaker/TroublemakerDetail/PC" event="MouseEntersSurface" script="EnterToolTip_Simple" sound="mouseover_2.wav"/>
 				<property childid="Troublemaker/TroublemakerDetail/Ability/Ability1" event="MouseEntersSurface" script="EnterToolTip_Ability" sound="mouseover_2.wav"/>
 				<property childid="Troublemaker/TroublemakerDetail/Ability/Ability1" event="MouseLeavesSurface" script="LeaveToolTip_Ability"/>
 				<property childid="Troublemaker/TroublemakerDetail/Ability/Ability2" event="MouseEntersSurface" script="EnterToolTip_Ability" sound="mouseover_2.wav"/>
@@ -8162,6 +8180,8 @@
 				<property childid="this" anim="TranslationBackLogElemLowlight"/>
 				<property childid="this" anim="TranslationBackLogElemHighlight"/>
 			</Animations>
+		</class>
+		<class name="TileInfoFieldEffect" File="TileInfoFieldEffect.layout">
 		</class>
 	</idspace>
 </idspaces>

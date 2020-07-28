@@ -2218,6 +2218,11 @@ function ModifyAbilityByMastery_LegendVeteran(ability, owner, mastery)
 	local applyAmount = math.floor(mastery.CustomCacheData / mastery.ApplyAmount) * mastery.ApplyAmount3;
 	MultiColumnModifier(ability, host, 'ApplyAmountChangeStep', function(v, vHost) return v + math.floor(vHost * applyAmount / 100) end);
 end
+-- 정보 장악
+function ModifyAbilityByMastery_InformationDomination(ability, owner, mastery)
+	ability.ApplyTargetBuffDuration = math.max(0, ability.ApplyTargetBuffDuration + mastery.ApplyAmount);
+	ability.ApplyTargetBuff.Turn = ability.ApplyTargetBuffDuration;
+end
 ------------------------------------------------------
 -- 버프 어빌리티 조정자
 ------------------------------------------------------

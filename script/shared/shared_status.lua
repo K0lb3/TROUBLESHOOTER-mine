@@ -526,6 +526,13 @@ function GetAdditionalMasteryStatusByMasteryCount(obj, masteryName, data, ifFunc
 	end
 	return result;
 end
+function AdditionalMasteryStatusObjectStatusGetter(obj, stat, data)
+	if data then
+		return CalculatedProperty_Status(obj, stat, data);
+	else
+		return obj[stat];
+	end
+end
 function GetAdditionalMasteryStatusByCustomFunc(obj, masteryName, data, customFunc)
 	if data then
 		local masteryList = GetClassList('Mastery');
@@ -681,6 +688,11 @@ function CalculatedProperty_SpecialCase_Mastery_MaxHP(obj, arg, data)
 		return math.floor(mastery.CustomCacheData / mastery.ApplyAmount) * mastery.ApplyAmount2;
 	end);
 	
+	-- 무술 단련
+	result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'MartialArtistTraining', data, info, function(obj, mastery)
+		return math.floor(mastery.CustomCacheData['All'] / mastery.ApplyAmount) * mastery.ApplyAmount2;
+	end);
+	
 	return result, info;
 end
 function CalculatedProperty_SpecialCase_Mastery_AttackPower(obj, arg, data)
@@ -717,6 +729,14 @@ function CalculatedProperty_SpecialCase_Mastery_AttackPower(obj, arg, data)
 	-- 다재다능
 	result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'Versatility', data, info, function(obj, mastery)
 		return math.floor(mastery.CustomCacheData / mastery.ApplyAmount) * mastery.ApplyAmount2;
+	end);
+	-- 괴력
+	result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'HerculeanStrength', data, info, function(obj, mastery)
+		return math.floor(AdditionalMasteryStatusObjectStatusGetter(obj, 'MaxHP', data) * mastery.ApplyAmount / 100);
+	end);
+	-- 무술 단련
+	result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'MartialArtistTraining', data, info, function(obj, mastery)
+		return math.floor(mastery.CustomCacheData['Fighter'] / mastery.ApplyAmount) * mastery.ApplyAmount3;
 	end);
 	
 	return result, info;
@@ -963,6 +983,7 @@ end
 function CalculatedProperty_SpecialCase_Mastery_Armor(obj, arg, data)
 	local result = 0;
 	local info = {};
+	-- 근육 갑옷
 	local muscleArmor = 0;
 	if data then
 		local masteryList = GetClassList('Mastery');
@@ -1312,6 +1333,11 @@ function CalculatedProperty_SpecialCase_Mastery_Block(obj, arg, data)
 		return math.floor(mastery.CustomCacheData / mastery.ApplyAmount3) * mastery.ApplyAmount4;
 	end);
 	
+	-- 무술 단련
+	result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'MartialArtistTraining', data, info, function(obj, mastery)
+		return math.floor(mastery.CustomCacheData['MartialArtist'] / mastery.ApplyAmount) * mastery.ApplyAmount4;
+	end);
+	
 	return result, info;
 end
 function CalculatedProperty_SpecialCase_Mastery_IncreaseDamage(obj, arg, data)
@@ -1505,26 +1531,12 @@ end
 function CalculatedProperty_SpecialCase_Mastery_PerformanceSlot(obj, arg, data)
 	local result = 0;
 	local info = {};
-	-- 신기한 재주
-	result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'ClownTalent', data, info, function(obj, mastery)
-		return mastery.ApplyAmount;
-	end);
-	-- 흥겨운 몸짓
-	result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'DancerTalent', data, info, function(obj, mastery)
-		return mastery.ApplyAmount;
-	end);
-	-- 빛나는 재능
-	result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'ShiningTalent', data, info, function(obj, mastery)
-		return mastery.ApplyAmount;
-	end);
-	-- 천부적 재능
-	result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'Genius_Leton', data, info, function(obj, mastery)
-		return mastery.ApplyAmount;
-	end);
-	-- 열연
-	result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, 'EnthusiasticPerformance', data, info, function(obj, mastery)
-		return mastery.ApplyAmount;
-	end);
+	-- 신기한 재주, 흥겨운 몸짓, 빛나는 재능, 천부적 재능, 열연, 사전 준비
+	for _, masteryType in ipairs({'ClownTalent', 'DancerTalent', 'ShiningTalent', 'Genius_Leton', 'EnthusiasticPerformance', 'AdvancePreparation'}) do
+		result = result + GetAdditionalMasteryStatusByCustomFuncWithInfo(obj, masteryType, data, info, function(obj, mastery)
+			return mastery.ApplyAmount;
+		end);
+	end
 	-- 직업 특성이 없는 경우
 	-- 신기한 재주, 흥겨운 몸짓
 	local masteryTable = GetMastery(obj);
@@ -2722,16 +2734,16 @@ local customKeywordTable = {
 			return result;
 		end,
 		MasteryBuff = function(mastery)
-			return GetMasteryBuffText(mastery.Buff);
+			return GetMasteryBuffText(mastery, 'Buff');
 		end,
 		MasterySubBuff = function(mastery)
-			return GetMasteryBuffText(mastery.SubBuff);
+			return GetMasteryBuffText(mastery, 'SubBuff');
 		end,
 		MasteryThirdBuff = function(mastery)
-			return GetMasteryBuffText(mastery.ThirdBuff);
+			return GetMasteryBuffText(mastery, 'ThirdBuff');
 		end,
 		MasteryForthBuff = function(mastery)
-			return GetMasteryBuffText(mastery.ForthBuff);
+			return GetMasteryBuffText(mastery, 'ForthBuff');
 		end,
 		MasteryBuffGroup = function(mastery)
 			return GetMasteryBuffGroupText(mastery.BuffGroup);
@@ -3177,7 +3189,7 @@ local customKeywordTable = {
 			return MasteryApplyAmountValue(danceFinish.ApplyAmountType2, 'ApplyAmount2');
 		end,
 		MasteryBuff = function(danceFinish)
-			return GetMasteryBuffText(danceFinish.Buff);
+			return GetMasteryBuffText(danceFinish, 'Buff');
 		end
 	},
 	PcStatus = {
@@ -3405,7 +3417,7 @@ local customKeywordTable = {
 			local result = '';
 			local mastery = GetClassList('Mastery')[item.Mastery.name];
 			if mastery then
-				result = GetMasteryBuffText(mastery.Buff);
+				result = GetMasteryBuffText(mastery, 'Buff');
 			end
 			return result;
 		end,
@@ -3413,7 +3425,7 @@ local customKeywordTable = {
 			local result = '';
 			local mastery = GetClassList('Mastery')[item.Mastery.name];
 			if mastery then
-				result = GetMasteryBuffText(mastery.SubBuff);
+				result = GetMasteryBuffText(mastery, 'SubBuff');
 			end
 			return result;
 		end,
@@ -3421,7 +3433,7 @@ local customKeywordTable = {
 			local result = '';
 			local mastery = GetClassList('Mastery')[item.Mastery.name];
 			if mastery then
-				result = GetMasteryBuffText(mastery.ThirdBuff);
+				result = GetMasteryBuffText(mastery, 'ThirdBuff');
 			end
 			return result;
 		end,
@@ -3429,7 +3441,7 @@ local customKeywordTable = {
 			local result = '';
 			local mastery = GetClassList('Mastery')[item.Mastery.name];
 			if mastery then
-				result = GetMasteryBuffText(mastery.ForthBuff);
+				result = GetMasteryBuffText(mastery, 'ForthBuff');
 			end
 			return result;
 		end,

@@ -794,6 +794,10 @@ function GetBaseMastery_Monster(target, monster)	-- 현 시점에서 targetster�
 		local monsterKey = GetInstantProperty(target, 'MonsterType');
 		curMonster = monsterList[monsterKey];
 	end
+	local monsterBasicMastery = SafeIndex(curMonster, 'BasicMastery');
+	if monsterBasicMastery and monsterBasicMastery ~= 'None' then
+		list[monsterBasicMastery] = 1;
+	end
 	local monsterMasteries = SafeIndex(curMonster, 'Masteries');
 	if monsterMasteries then
 		if #monsterMasteries > 0 then
@@ -1237,6 +1241,26 @@ end
 -- 마도서
 function Mastery_CustomCache_SpellBook(obj, arg)
 	return Mastery_CustomCache_MasteryCountByType(obj, Set.new({'Mage', 'BlackMage'}));
+end
+-- 괴도
+function Mastery_CustomCache_PhantomThief(obj, arg)
+	local ret = {};
+	for key, buffCls in pairs(GetClassList('Buff')) do
+		if not buffCls.UseActionController or buffCls.ActionController ~= 'DoNothingAI' then
+			if buffCls.Movable == false then
+				ret[key] = true;
+			end
+		end
+	end
+	return ret;
+end
+-- 무술 단련
+function Mastery_CustomCache_MartialArtistTraining(obj, arg)
+	local ret = {};
+	for _, type in ipairs({ 'All', 'Fighter', 'MartialArtist' }) do
+		ret[type] = Mastery_CustomCache_MasteryCountByType(obj, Set.new({type}));
+	end
+	return ret;
 end
 -----------------------------------------------------------------
 -- MasteryBoardManager

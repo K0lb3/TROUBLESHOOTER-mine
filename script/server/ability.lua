@@ -1602,7 +1602,7 @@ function Result_ActionDelimiter()
 	return {type='ActionDelimiter'};
 end
 function Result_EndMission(team)
-	return {type='EndMission', winner=team, sequential = true};
+	return {type='EndMission', winner=team};
 end
 function Result_Resurrect(target, mode, resetSP, invoker)
 	if resetSP == nil then
@@ -3329,6 +3329,15 @@ function ABL_HACKING_PROTOCOL(self, ability, target, userInfoArgs, targetInfoArg
 		-- 정보 제어
 		if commandAbility.ApplyTargetSubBuff.name then
 			InsertBuffActions(actions, self, self, commandAbility.ApplyTargetSubBuff.name, 1, nil, nil, true);
+		end
+		
+		local company = GetCompany_Shared(self);
+		if company then
+			AddCompanyStats(company, 'HackingSuccessCount', 1);
+			local team = GetTeam(self);
+			table.insert(actions, Result_DirectingScript(function(mid, ds, args)
+				ds:AddSteamStat('HackingSuccessCount', 1, team);
+			end));
 		end
 	else
 		InsertBuffActions(actions, self, target, protocolCls.FailedApplyTargetBuff.name, protocolCls.FailedApplyTargetBuffLv, nil, nil, true);
