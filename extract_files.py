@@ -2,7 +2,7 @@ import os, shutil, zipfile
 from PIL import Image
 #import xml.etree.ElementTree as ET
 import re
-from path import LOCAL, PACK, DATA
+from path import DUMP, LOCAL, PACK, DATA
 
 # copy or extract files
 def main():
@@ -38,10 +38,19 @@ def process_zip(src, dst, item):
         return
 
 
+DUMP_FILES = os.listdir(DUMP)
+
 def process_encrypted_zip(src, dst, item):
-    # create dummy file
-    with open(dst, "wb") as f:
-        pass
+    virtual = item.get("virtual")
+    if virtual in DUMP_FILES:
+        src = os.path.join(DUMP, virtual)
+        shutil.copy(src, dst)
+        print("New encrypted", dst)
+        if os.path.exists(dst + "(encrypted)"):
+            os.unlink(dst + "(encrypted)")
+    else:
+        with open(dst, "wb") as f:
+            pass
 
 
 PROCESS = {
