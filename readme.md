@@ -10,7 +10,7 @@ Python 3.5+ is required to run the scripts.
 
 You have to clone/copy this repo into the Troubleshooter main folder
 e.g. ``Steam\steamapps\common\Troubleshooter\TROUBLESHOOTER-mine``
-or adjust the ROOT folder in ``path.py``.
+or adjust the GAME folder in ``path.py``.
 
 * extract_files.py - uses index.xml to restore the data structure
 * extract_imagesets.py - splits the extracted imagesets into its single images
