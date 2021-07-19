@@ -9,5 +9,5 @@ We can abuse this fact by modifying the libzip libary, so that it dumps all file
 The unencrypted zip files are opened as file, while the encrypted zip files are opened from memory, as they are decrypted in memory, so by modifying the [zip_open_from_source function](https://github.com/nih-at/libzip/blob/184ddda3d0a7f9a17c5ce0dd117d38eb48fa7ca9/lib/zip_open.c#L79) our modified lib will only dump the content of encrypted zips and not of the normal ones.
 
 
-You can find a compiled version of a modified libzip library within the [build dir](https://github.com/K0lb3/TROUBLESHOOTER-mine/tree/master/zip_dump/build),
-if you want to compile it yourself, download libzip and add the intercept function as done in the [zip_open.c](https://github.com/K0lb3/TROUBLESHOOTER-mine/tree/master/zip_dump/zip_open.c) in this dir.
+You can find a compiled version of a modified libzip library within the [build dir](https://github.com/K0lb3/TROUBLESHOOTER-mine/tree/master/zip%20dump/build),
+if you want to compile it yourself, download libzip and add the intercept function as done in the [zip_open.c](https://github.com/K0lb3/TROUBLESHOOTER-mine/tree/master/zip%20dump/zip_open.c) in this dir.
