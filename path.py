@@ -11,7 +11,6 @@ if not os.path.exists(GAME):
 
 # source dirs
 PACK = os.path.join(GAME, "Package")
-DUMP = os.path.join(GAME, "Release","bin","zip_dump")
 
 # extract dir - where the data will be copied to
 DATA = os.path.join(ROOT, "Original")
