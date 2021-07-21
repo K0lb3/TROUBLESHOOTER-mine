@@ -21,4 +21,4 @@ It's a small cli tool that makes it possible to decrypt the encrypted files of t
 It can also encrypt files again, which can be used to create mods.
 Since the devs encrypted their assets for whatever reason and might use the encryption for their network protocols as well, I won't publicize the code of this tool nor how the encryption works.
 
-[VirusTotal]()
+[VirusTotal 0/89](https://www.virustotal.com/gui/url/837ec474b84ae6d360b47b61d704fc542963f65a9b2d49b3a55ddc26d8e353da/detection)
