@@ -1,2 +1,0 @@
----- 마스터리 프리체크 모음 ----
--- scp(pc, boardType, masteryName, masteryTable)

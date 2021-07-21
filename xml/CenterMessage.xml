@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<idspace id="CenterMessage">
-	<schema>
-		<rule property="Message" type="string" default="\[$Title$\] $Message$"/>
-		<rule property="FormatTableMaker" type="function" default="FunctionProperty_ChatFormat_Default"/>
-	</schema>
-	<class name="GetQuest" MainColor="Yellow" Title="QUEST ACCEPT" Sound="QuestAccept.wav" Message="$QuestName$ $Message$" FormatTableMaker="FunctionProperty_ChatFormat_QuestMessage"/>
-	<class name="CompleteQuest" MainColor="Yellow" Title="QUEST COMPLETE" Sound="QuestSuccess.wav" Message="$QuestName$ $Message$" FormatTableMaker="FunctionProperty_ChatFormat_QuestMessage"/>
-</idspace>

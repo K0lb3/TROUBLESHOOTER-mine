@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<idspace id="WorldProperty">
-	<schema>
-		<rule property="ZoneState" type="linktable" target="Zone"/>
-		<rule property="ShopOption" type="linktable" target="Shop"/>
-		<rule property="FoodRecommend" type="maptable" subtype="table" target="FoodShop" default="None, None, None"/>
-	</schema>
-	<class name="WorldProperty" ShopOptionRefreshTime="0" FoodRecommendRefreshTime="0" MailboxExpireCheckTime="0" MailboxReturnCheckTime="0"/>
-</idspace>

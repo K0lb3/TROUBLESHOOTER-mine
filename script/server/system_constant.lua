@@ -1,1 +1,0 @@
-DASHBOARD_MAIN_PANEL_KEY = '__main_panel__';

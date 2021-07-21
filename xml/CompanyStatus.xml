@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<idspace id="CompanyStatus">
-	<class name="EscapeTimeBonus" Title="미션 탈출 시간" Image="Lobby/LobbyMenuButton_Company"/>
-	<class name="DestroyRewardBonus" Title="불법 시설 철거 보상" Image="Lobby/LobbyMenuButton_Company"/>
-	<class name="RescueRewardBonus" Title="시민 구조 보상" Image="Lobby/LobbyMenuButton_Company"/>
-</idspace>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<idspaces>
-	<idspace id="Sentence">
-		<class name="sample_escort_people_JkOmfy" Value="[!Dashboard:EscortCounter]남은 호위대상"/>
-		<class name="sample_escort_people_SdsZHX" Value="[!Dashboard:TimeLimiter]적 지원 도착까지 남은시간"/>
-		<class name="sample_escort_people_rZ3S2G" Value="[!Objective]대상을 호위하여 지역을 벗어나세요"/>
-	</idspace>
-</idspaces>

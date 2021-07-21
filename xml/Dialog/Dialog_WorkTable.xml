@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<idspace id="Dialog">
-	<class name="WorkTable_Main">
-		<Scripts>
-			<property Type="ItemUpgrade"/>
-			<property Type="Finish"/>
-		</Scripts>
-	</class>
-</idspace>
