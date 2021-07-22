@@ -13,4 +13,4 @@ if not os.path.exists(GAME):
 PACK = os.path.join(GAME, "Package")
 
 # extract dir - where the data will be copied to
-DATA = os.path.join(ROOT, "Original")
+DATA = os.path.join(ROOT, "Data")

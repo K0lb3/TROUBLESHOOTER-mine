@@ -10,10 +10,9 @@ You have to clone/copy this repo into the Troubleshooter main folder
 e.g. ``Steam\steamapps\common\Troubleshooter\TROUBLESHOOTER-mine``
 or adjust the GAME folder in ``path.py``.
 
-* ~~extract_files.py - uses index.xml to restore the data structure~~
-* extract_files_troublecrypt.py - decrypts the index, restores the original data structure, and decrypts all encrypted files
+* extract_files.py - decrypts, unpacks and copies the "pack"ed files into the "Data" directory using the original file paths and names
 * extract_imagesets.py - splits the extracted image sets into its single images
-* index_dumper.py - used to extract the index.xml from the game
+
 
 ## Troublecrypt.exe
 

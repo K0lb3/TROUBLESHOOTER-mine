@@ -45,5 +45,5 @@ if __name__ == "__main__":
     for root, _, files in os.walk(DATA):
         for f in files:
             if f.endswith(".imageset"):
-                handle_imageset(os.path.join(root, f))
+                handle_imageset(os.path.join(root, f), False)
 
