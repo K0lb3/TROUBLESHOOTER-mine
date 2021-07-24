@@ -11,6 +11,7 @@ from path import LOCAL, PACK, DATA
 TROUBLECRYPT = os.path.join(LOCAL, "troublecrypt.exe")
 # copy or extract files
 def main():
+    os.makedirs(DATA, exist_ok = True)
     # 1. update index.xml in pack
     index_fp = os.path.join(DATA, "index.xml")
     troublecrypt_cli(os.path.join(PACK, "index"), index_fp)

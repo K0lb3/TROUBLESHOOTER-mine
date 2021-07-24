@@ -14,7 +14,7 @@ PACK = os.path.join(GAME, "Package")
 if not os.path.exists(PACK):
     print("Couldn't find the Package folder.")
     print("Path: ", PACK)
-    print("Please move the directory holding the scripts to a directory within the Troubleshooter foler")
+    print("Please move the directory holding the scripts to a directory within the Troubleshooter folder")
     print("or set the GAME path in path.py, please note to add a r before the path or replace all \\ with \\\\.")
 
 
