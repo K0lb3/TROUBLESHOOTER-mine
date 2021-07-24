@@ -5,6 +5,12 @@ This repo contains scripts that can be used to convert the ``pack`` structure of
 ## Scripts
 
 Python 3.5+ is required to run the scripts.
+The ``pillow`` module is required for the ``extract_imagesets`` script.
+You can install it via
+``pip install pillow``
+or
+``python -m pip install pillow``
+
 
 You have to clone/copy this repo into the Troubleshooter main folder
 e.g. ``Steam\steamapps\common\Troubleshooter\TROUBLESHOOTER-mine``
