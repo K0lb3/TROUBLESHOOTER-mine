@@ -1,5 +1,4 @@
 import os, shutil, zipfile
-from PIL import Image
 import xml.etree.ElementTree as ET
 import subprocess
 import ctypes
