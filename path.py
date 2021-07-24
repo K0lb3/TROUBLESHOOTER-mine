@@ -7,10 +7,16 @@ ROOT = os.path.dirname(LOCAL)
 GAME = r"E:\Program Files (x86)\Steam\steamapps\common\Troubleshooter"
 # in case the path isn't configured, assume that the scripts are in a sub-dir of the Troubleshooter dir
 if not os.path.exists(GAME):
-    GAME = os.path.dirname(ROOT)
+    GAME = ROOT
 
 # source dirs
 PACK = os.path.join(GAME, "Package")
+if not os.path.exists(PACK):
+    print("Couldn't find the Package folder.")
+    print("Path: ", PACK)
+    print("Please move the directory holding the scripts to a directory within the Troubleshooter foler")
+    print("or set the GAME path in path.py, please note to add a r before the path or replace all \\ with \\\\.")
+
 
 # extract dir - where the data will be copied to
 DATA = os.path.join(ROOT, "Data")
