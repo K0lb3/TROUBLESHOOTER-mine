@@ -5,6 +5,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 test.py
+etc/
 
 # C extensions
 *.so
@@ -16,7 +17,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
