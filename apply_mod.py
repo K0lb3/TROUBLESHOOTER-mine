@@ -31,9 +31,8 @@ def main():
                 backup_path = os.path.join(BACKUP, *item.get("pack").split("/"))
                 os.makedirs(os.path.dirname(backup_path), exist_ok=True)
                 # only create a backup if the file size fits, otherwise the backup might be replaced by an old mod
-                if os.path.getsize(pack_path) == item.get(
-                    "csize"
-                ) and not os.path.exists(backup_path):
+                if os.path.getsize(pack_path) == item.get("csize"
+                ) and (not os.path.exists(backup_path) or os.path.getsize(backup_path) != item.get("csize")):
                     copy(pack_path, backup_path)
                 pack(fp, pack_path, item)
                 # item.set("pack", f"..\\{os.path.basename(OVERRIDE)}\\{item.get('pack')}")
