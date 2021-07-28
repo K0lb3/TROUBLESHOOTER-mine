@@ -1,6 +1,7 @@
 import os
 
-LOCAL = os.path.dirname(os.path.realpath(__file__))
+LIB = os.path.dirname(os.path.realpath(__file__))
+LOCAL = os.path.dirname(LIB)
 ROOT = os.path.dirname(LOCAL)
 
 # path of the game
@@ -19,4 +20,15 @@ if not os.path.exists(PACK):
 
 
 # extract dir - where the data will be copied to
-DATA = os.path.join(ROOT, "Data")
+DATA = os.path.join(ROOT, "Data") # can be set to another path, e.g. r"D:\TroubleCrypt\Data"
+
+# unpacked mod data - still has to be packed
+MOD = os.path.join(GAME, "Mod")
+# packed mod data used by the game - don't edit this one for now
+# OVERRIDE = os.path.join(GAME, "Override")
+# backup of the original files
+BACKUP = os.path.join(GAME, "BackUp")
+
+# path of troublecrypt
+TROUBLECRYPT_EXE = os.path.join(LIB, "troublecrypt.exe")
+TROUBLECRYPT_LIB = os.path.join(LIB, "troublecrypt.dll")
