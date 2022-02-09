@@ -2,6 +2,8 @@ import os
 import xml.etree.ElementTree as ET
 from lib.paths import PACK, DATA
 from lib.crypt import decrypt, extract
+from zipfile import ZipFile
+import io
 
 
 def main():
@@ -15,6 +17,12 @@ def main():
         f.seek(end - 16)
         data = f.read(16)
         f.truncate(end - (16 - len(data.rstrip("\x00"))))
+    if data[:2] == b"PK":
+        with ZipFile(io.BytesIO(dec), 'r') as zip:
+            data = zip.open("index").read()
+        with open(index_fp, "wb") as f:
+            f.write(data)
+            
     # parse index.xml
     tree = ET.parse(index_fp)
     root = tree.getroot()
